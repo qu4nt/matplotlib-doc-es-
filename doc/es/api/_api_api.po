@@ -1,0 +1,383 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_api_api.po\n"
+"X-Crowdin-File-ID: 136\n"
+"Language: es_ES\n"
+
+#: ../../api/_api_api.rst:3
+msgid "``matplotlib._api``"
+msgstr ""
+
+#: matplotlib._api:1 of
+msgid "Helper functions for managing the Matplotlib API."
+msgstr ""
+
+#: matplotlib._api:3 matplotlib._api.deprecation:3 of
+msgid "This documentation is only relevant for Matplotlib developers, not for users."
+msgstr ""
+
+#: matplotlib._api:7 of
+msgid "This module and its submodules are for internal use only.  Do not use them in your own code.  We may change the API at any time with no warning."
+msgstr ""
+
+#: matplotlib._api.caching_module_getattr:2 of
+msgid "Helper decorator for implementing module-level ``__getattr__`` as a class."
+msgstr ""
+
+#: matplotlib._api.caching_module_getattr:4 of
+msgid "This decorator must be used at the module toplevel as follows::"
+msgstr ""
+
+#: matplotlib._api.caching_module_getattr:11 of
+msgid "The ``__getattr__`` class will be replaced by a ``__getattr__`` function such that trying to access ``name`` on the module will resolve the corresponding property (which may be decorated e.g. with ``_api.deprecated`` for deprecating module globals).  The properties are all implicitly cached.  Moreover, a suitable AttributeError is generated and raised if no property with the given name exists."
+msgstr ""
+
+#: matplotlib._api.check_getitem:2 of
+msgid "*kwargs* must consist of a single *key, value* pair.  If *key* is in *_mapping*, return ``_mapping[value]``; else, raise an appropriate ValueError."
+msgstr ""
+
+#: matplotlib._api.check_getitem:19 matplotlib._api.check_in_list:31
+#: matplotlib._api.check_isinstance:19 matplotlib._api.check_shape:22
+#: matplotlib._api.classproperty:18
+#: matplotlib._api.deprecation.delete_parameter:29
+#: matplotlib._api.deprecation.deprecated:31
+#: matplotlib._api.deprecation.rename_parameter:23
+#: matplotlib._api.deprecation.warn_deprecated:51 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib._api.check_in_list:2 of
+msgid "For each *key, value* pair in *kwargs*, check that *value* is in *_values*."
+msgstr ""
+
+#: matplotlib._api.check_in_list
+#: matplotlib._api.deprecation.deprecate_method_override
+#: matplotlib._api.deprecation.warn_deprecated of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib._api.check_in_list:8 of
+msgid "**_values**"
+msgstr ""
+
+#: of
+msgid "iterable"
+msgstr ""
+
+#: matplotlib._api.check_in_list:8 of
+msgid "Sequence of values to check on."
+msgstr ""
+
+#: matplotlib._api.check_in_list:11 of
+msgid "**_print_supported_values**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib._api.check_in_list:11 of
+msgid "Whether to print *_values* when raising ValueError."
+msgstr ""
+
+#: matplotlib._api.check_in_list:18
+#: matplotlib._api.deprecation.deprecate_method_override:36 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib._api.check_in_list:14 of
+msgid "*key, value* pairs as keyword arguments to find in *_values*."
+msgstr ""
+
+#: matplotlib._api.check_in_list of
+msgid "Raises"
+msgstr ""
+
+#: matplotlib._api.check_in_list:28 of
+msgid "ValueError"
+msgstr ""
+
+#: matplotlib._api.check_in_list:23 of
+msgid "If any *value* in *kwargs* is not found in *_values*."
+msgstr ""
+
+#: matplotlib._api.check_isinstance:2 of
+msgid "For each *key, value* pair in *kwargs*, check that *value* is an instance of one of *_types*; if not, raise an appropriate TypeError."
+msgstr ""
+
+#: matplotlib._api.check_isinstance:5 of
+msgid "As a special case, a ``None`` entry in *_types* is treated as NoneType."
+msgstr ""
+
+#: matplotlib._api.check_shape:2 of
+msgid "For each *key, value* pair in *kwargs*, check that *value* has the shape *_shape*, if not, raise an appropriate ValueError."
+msgstr ""
+
+#: matplotlib._api.check_shape:5 of
+msgid "*None* in the shape is treated as a \"free\" size that can have any length. e.g. (None, 2) -> (N, 2)"
+msgstr ""
+
+#: matplotlib._api.check_shape:8 of
+msgid "The values checked must be numpy arrays."
+msgstr ""
+
+#: matplotlib._api.check_shape:23 of
+msgid "To check for (N, 2) shaped arrays"
+msgstr ""
+
+#: matplotlib._api.classproperty:1
+#: matplotlib._api.deprecation.deprecate_privatize_attribute:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib._api.classproperty:2 of
+msgid "Like `property`, but also triggers on access via the class, and it is the *class* that's passed as argument."
+msgstr ""
+
+#: matplotlib._api.select_matching_signature:2 of
+msgid "Select and call the function that accepts ``*args, **kwargs``."
+msgstr ""
+
+#: matplotlib._api.select_matching_signature:4 of
+msgid "*funcs* is a list of functions which should not raise any exception (other than `TypeError` if the arguments passed do not match their signature)."
+msgstr ""
+
+#: matplotlib._api.select_matching_signature:7 of
+msgid "`select_matching_signature` tries to call each of the functions in *funcs* with ``*args, **kwargs`` (in the order in which they are given).  Calls that fail with a `TypeError` are silently skipped.  As soon as a call succeeds, `select_matching_signature` returns its return value.  If no function accepts ``*args, **kwargs``, then the `TypeError` raised by the last failing call is re-raised."
+msgstr ""
+
+#: matplotlib._api.select_matching_signature:14 of
+msgid "Callers should normally make sure that any ``*args, **kwargs`` can only bind a single *func* (to avoid any ambiguity), although this is not checked by `select_matching_signature`."
+msgstr ""
+
+#: matplotlib._api.select_matching_signature:28 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib._api.select_matching_signature:29 of
+msgid "`select_matching_signature` is intended to help implementing signature-overloaded functions.  In general, such functions should be avoided, except for back-compatibility concerns.  A typical use pattern is ::"
+msgstr ""
+
+#: matplotlib._api.select_matching_signature:45 of
+msgid "which allows *my_func* to be called either with two parameters (*old1* and *old2*) or a single one (*new*).  Note that the new signature is given last, so that callers get a `TypeError` corresponding to the new signature if the arguments they passed in do not match any signature."
+msgstr ""
+
+#: matplotlib._api.warn_external:2 of
+msgid "`warnings.warn` wrapper that sets *stacklevel* to \"outside Matplotlib\"."
+msgstr ""
+
+#: matplotlib._api.warn_external:4 of
+msgid "The original emitter of the warning can be obtained by patching this function back to `warnings.warn`, i.e. ``_api.warn_external = warnings.warn`` (or ``functools.partial(warnings.warn, stacklevel=2)``, etc.)."
+msgstr ""
+
+#: matplotlib._api.deprecation:1 of
+msgid "Helper functions for deprecating parts of the Matplotlib API."
+msgstr ""
+
+#: matplotlib._api.deprecation:7 of
+msgid "This module is for internal use only.  Do not use it in your own code. We may change the API at any time with no warning."
+msgstr ""
+
+#: matplotlib._api.deprecation.MatplotlibDeprecationWarning:1 of
+msgid "Bases: :py:class:`DeprecationWarning`"
+msgstr ""
+
+#: matplotlib._api.deprecation.MatplotlibDeprecationWarning:2 of
+msgid "A class for issuing deprecation warnings for Matplotlib users."
+msgstr ""
+
+#: matplotlib._api.deprecation.delete_parameter:2 of
+msgid "Decorator indicating that parameter *name* of *func* is being deprecated."
+msgstr ""
+
+#: matplotlib._api.deprecation.delete_parameter:4 of
+msgid "The actual implementation of *func* should keep the *name* parameter in its signature, or accept a ``**kwargs`` argument (through which *name* would be passed)."
+msgstr ""
+
+#: matplotlib._api.deprecation.delete_parameter:8 of
+msgid "Parameters that come after the deprecated parameter effectively become keyword-only (as they cannot be passed positionally without triggering the DeprecationWarning on the deprecated parameter), and should be marked as such after the deprecation period has passed and the deprecated parameter is removed."
+msgstr ""
+
+#: matplotlib._api.deprecation.delete_parameter:14 of
+msgid "Parameters other than *since*, *name*, and *func* are keyword-only and forwarded to `.warn_deprecated`."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_method_override:2 of
+msgid "Return ``obj.method`` with a deprecation if it was overridden, else None."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_method_override:11 of
+msgid "**method**"
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_method_override:8 of
+msgid "An unbound method, i.e. an expression of the form ``Class.method_name``.  Remember that within the body of a method, one can always use ``__class__`` to refer to the class that is currently being defined."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_method_override:15 of
+msgid "**obj**"
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_method_override:14 of
+msgid "Either an object of the class where *method* is defined, or a subclass of that class."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_method_override:19 of
+msgid "**allow_empty**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_method_override:18 of
+msgid "Whether to allow overrides by \"empty\" methods without emitting a warning."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_method_override:22 of
+msgid "Additional parameters passed to `warn_deprecated` to generate the deprecation warning; must at least include the \"since\" key."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_privatize_attribute:2 of
+msgid "Helper to deprecate public access to an attribute (or method)."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_privatize_attribute:4 of
+msgid "This helper should only be used at class scope, as follows::"
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecate_privatize_attribute:9 of
+msgid "where *all* parameters are forwarded to `deprecated`.  This form makes ``attr`` a property which forwards read and write access to ``self._attr`` (same name but with a leading underscore), with a deprecation warning. Note that the attribute name is derived from *the name this helper is assigned to*.  This helper also works for deprecating methods."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecated:2 of
+msgid "Decorator to mark a function, a class, or a property as deprecated."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecated:4 of
+msgid "When deprecating a classmethod, a staticmethod, or a property, the ``@deprecated`` decorator should go *under* ``@classmethod`` and ``@staticmethod`` (i.e., `deprecated` should directly decorate the underlying callable), but *over* ``@property``."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecated:9 of
+msgid "When deprecating a class ``C`` intended to be used as a base class in a multiple inheritance hierarchy, ``C`` *must* define an ``__init__`` method (if ``C`` instead inherited its ``__init__`` from its own base class, then ``@deprecated`` would mess up ``__init__`` inheritance when installing its own (deprecation-emitting) ``C.__init__``)."
+msgstr ""
+
+#: matplotlib._api.deprecation.deprecated:15 of
+msgid "Parameters are the same as for `warn_deprecated`, except that *obj_type* defaults to 'class' if decorating a class, 'attribute' if decorating a property, and 'function' otherwise."
+msgstr ""
+
+#: matplotlib._api.deprecation.make_keyword_only:2 of
+msgid "Decorator indicating that passing parameter *name* (or any of the following ones) positionally to *func* is being deprecated."
+msgstr ""
+
+#: matplotlib._api.deprecation.make_keyword_only:5 of
+msgid "When used on a method that has a pyplot wrapper, this should be the outermost decorator, so that :file:`boilerplate.py` can access the original signature."
+msgstr ""
+
+#: matplotlib._api.deprecation.rename_parameter:2 of
+msgid "Decorator indicating that parameter *old* of *func* is renamed to *new*."
+msgstr ""
+
+#: matplotlib._api.deprecation.rename_parameter:4 of
+msgid "The actual implementation of *func* should use *new*, not *old*.  If *old* is passed to *func*, a DeprecationWarning is emitted, and its value is used, even if *new* is also passed by keyword (this is to simplify pyplot wrapper functions, which always pass *new* explicitly to the Axes method). If *new* is also passed but positionally, a TypeError will be raised by the underlying function during argument binding."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:2 of
+msgid "Display a standardized deprecation."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:8 of
+msgid "**since**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:8 of
+msgid "The release at which this API became deprecated."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:14 of
+msgid "**message**"
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:11 of
+#, python-format
+msgid "Override the default deprecation message.  The ``%(since)s``, ``%(name)s``, ``%(alternative)s``, ``%(obj_type)s``, ``%(addendum)s``, and ``%(removal)s`` format specifiers will be replaced by the values of the respective arguments passed to this function."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:17 of
+msgid "**name**"
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:17 of
+msgid "The name of the deprecated object."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:22 of
+msgid "**alternative**"
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:20 of
+msgid "An alternative API that the user may use in place of the deprecated API.  The deprecation warning will tell the user about this alternative if provided."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:26 of
+msgid "**pending**"
+msgstr ""
+
+#: of
+msgid "bool, optional"
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:25 of
+msgid "If True, uses a PendingDeprecationWarning instead of a DeprecationWarning.  Cannot be used together with *removal*."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:29 of
+msgid "**obj_type**"
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:29 of
+msgid "The object type being deprecated."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:32 of
+msgid "**addendum**"
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:32 of
+msgid "Additional text appended directly to the final message."
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:48 of
+msgid "**removal**"
+msgstr ""
+
+#: matplotlib._api.deprecation.warn_deprecated:35 of
+msgid "The expected removal version.  With the default (an empty string), a removal version is automatically computed from *since*.  Set to other Falsy values to not schedule a removal date.  Cannot be used together with *pending*."
+msgstr ""
+

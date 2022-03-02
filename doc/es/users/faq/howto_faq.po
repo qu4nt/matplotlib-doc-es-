@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:35\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/users/faq/howto_faq.po\n"
+"X-Crowdin-File-ID: 3374\n"
+"Language: es_ES\n"
+
+#: ../../users/faq/howto_faq.rst:7
+msgid "How-to"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:10
+msgid "Contents"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:15
+msgid "Check whether a figure is empty"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:16
+msgid "Empty can actually mean different things. Does the figure contain any artists? Does a figure with an empty `~.axes.Axes` still count as empty? Is the figure empty if it was rendered pure white (there may be artists present, but they could be outside the drawing area or transparent)?"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:21
+msgid "For the purpose here, we define empty as: \"The figure does not contain any artists except it's background patch.\" The exception for the background is necessary, because by default every figure contains a `.Rectangle` as it's background patch. This definition could be checked via::"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:34
+msgid "We've decided not to include this as a figure method because this is only one way of defining empty, and checking the above is only rarely necessary. Usually the user or program handling the figure know if they have added something to the figure."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:39
+msgid "Checking whether a figure would render empty cannot be reliably checked except by actually rendering the figure and investigating the rendered result."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:45
+msgid "Find all objects in a figure of a certain type"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:47
+msgid "Every Matplotlib artist (see :doc:`/tutorials/intermediate/artists`) has a method called :meth:`~matplotlib.artist.Artist.findobj` that can be used to recursively search the artist for any artists it may contain that meet some criteria (e.g., match all :class:`~matplotlib.lines.Line2D` instances or match some arbitrary filter function).  For example, the following snippet finds every object in the figure which has a ``set_color`` property and makes the object blue::"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:61
+msgid "You can also filter on class instances::"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:70
+msgid "Prevent ticklabels from having an offset"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:71
+msgid "The default formatter will use an offset to reduce the length of the ticklabels.  To turn this feature off on a per-axis basis::"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:77
+msgid "set :rc:`axes.formatter.useoffset`, or use a different formatter.  See :mod:`~matplotlib.ticker` for details."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:83
+msgid "Save transparent figures"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:85
+msgid "The :meth:`~matplotlib.pyplot.savefig` command has a keyword argument *transparent* which, if 'True', will make the figure and axes backgrounds transparent when saving, but will not affect the displayed image on the screen."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:90
+msgid "If you need finer grained control, e.g., you do not want full transparency or you want to affect the screen displayed version as well, you can set the alpha properties directly.  The figure has a :class:`~matplotlib.patches.Rectangle` instance called *patch* and the axes has a Rectangle instance called *patch*.  You can set any property on them directly (*facecolor*, *edgecolor*, *linewidth*, *linestyle*, *alpha*).  e.g.::"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:103
+msgid "If you need *all* the figure elements to be transparent, there is currently no global alpha setting, but you can set the alpha channel on individual elements, e.g.::"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:113
+msgid "Save multiple plots to one pdf file"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:115
+msgid "Many image file formats can only have one image per file, but some formats support multi-page files.  Currently, Matplotlib only provides multi-page output to pdf files, using either the pdf or pgf backends, via the `.backend_pdf.PdfPages` and `.backend_pgf.PdfPages` classes."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:123
+msgid "Make room for tick labels"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:125
+msgid "By default, Matplotlib uses fixed percentage margins around subplots. This can lead to labels overlapping or being cut off at the figure boundary. There are multiple ways to fix this:"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:129
+msgid "Manually adapt the subplot parameters using `.Figure.subplots_adjust` / `.pyplot.subplots_adjust`."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:131
+msgid "Use one of the automatic layout mechanisms:"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:133
+msgid "constrained layout (:doc:`/tutorials/intermediate/constrainedlayout_guide`)"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:134
+msgid "tight layout (:doc:`/tutorials/intermediate/tight_layout_guide`)"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:136
+msgid "Calculate good values from the size of the plot elements yourself (:doc:`/gallery/pyplots/auto_subplots_adjust`)"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:142
+msgid "Align my ylabels across multiple subplots"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:144
+msgid "If you have multiple subplots over one another, and the y data have different scales, you can often get ylabels that do not align vertically across the multiple subplots, which can be unattractive. By default, Matplotlib positions the x location of the ylabel so that it does not overlap any of the y ticks.  You can override this default behavior by specifying the coordinates of the label.  The example below shows the default behavior in the left subplots, and the manual setting in the right subplots."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:161
+msgid "Control the draw order of plot elements"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:163
+msgid "The draw order of plot elements, and thus which elements will be on top, is determined by the `~.Artist.set_zorder` property. See :doc:`/gallery/misc/zorder_demo` for a detailed description."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:170
+msgid "Make the aspect ratio for plots equal"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:172
+msgid "The Axes property :meth:`~matplotlib.axes.Axes.set_aspect` controls the aspect ratio of the axes.  You can set it to be 'auto', 'equal', or some ratio which controls the ratio::"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:180
+msgid "See :doc:`/gallery/subplots_axes_and_figures/axis_equal_demo` for a complete example."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:186
+msgid "Draw multiple y-axis scales"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:188
+msgid "A frequent request is to have two scales for the left and right y-axis, which is possible using :func:`~matplotlib.pyplot.twinx` (more than two scales are not currently supported, though it is on the wish list).  This works pretty well, though there are some quirks when you are trying to interactively pan and zoom, because both scales do not get the signals."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:195
+msgid "The approach uses :func:`~matplotlib.pyplot.twinx` (and its sister :func:`~matplotlib.pyplot.twiny`) to use *2 different axes*, turning the axes rectangular frame off on the 2nd axes to keep it from obscuring the first, and manually setting the tick locs and labels as desired.  You can use separate ``matplotlib.ticker`` formatters and locators as desired because the two axes are independent."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:7
+msgid "(`Source code <../../users/faq/howto_faq-1.py>`__, `png <../../users/faq/howto_faq-1.png>`__, `pdf <../../users/faq/howto_faq-1.pdf>`__)"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:224
+msgid "See :doc:`/gallery/subplots_axes_and_figures/two_scales` for a complete example."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:230
+msgid "Generate images without having a window appear"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:232
+msgid "Simply do not call `~matplotlib.pyplot.show`, and directly save the figure to the desired format::"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:241
+msgid ":doc:`/gallery/user_interfaces/web_application_server_sgskip` for information about running matplotlib inside of a web application."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:247
+msgid "Work with threads"
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:249
+msgid "Matplotlib is not thread-safe: in fact, there are known race conditions that affect certain artists.  Hence, if you work with threads, it is your responsibility to set up the proper locks to serialize access to Matplotlib artists."
+msgstr ""
+
+#: ../../users/faq/howto_faq.rst:254
+msgid "You may be able to work on separate figures from separate threads.  However, you must in that case use a *non-interactive backend* (typically Agg), because most GUI backends *require* being run from the main thread as well."
+msgstr ""
+

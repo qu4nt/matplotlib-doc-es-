@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:35\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/users/faq/troubleshooting_faq.po\n"
+"X-Crowdin-File-ID: 3378\n"
+"Language: es_ES\n"
+
+#: ../../users/faq/troubleshooting_faq.rst:7
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:10
+msgid "Contents"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:15
+msgid "Obtaining Matplotlib version"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:17
+msgid "To find out your Matplotlib version number, import it and print the ``__version__`` attribute::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:28
+msgid ":file:`matplotlib` install location"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:30
+msgid "You can find what directory Matplotlib is installed in by importing it and printing the ``__file__`` attribute::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:40
+msgid ":file:`matplotlib` configuration and cache directory locations"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:42
+msgid "Each user has a Matplotlib configuration directory which may contain a :ref:`matplotlibrc <customizing-with-matplotlibrc-files>` file. To locate your :file:`matplotlib/` configuration directory, use :func:`matplotlib.get_configdir`::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:51
+msgid "On Unix-like systems, this directory is generally located in your :envvar:`HOME` directory under the :file:`.config/` directory."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:54
+msgid "In addition, users have a cache directory. On Unix-like systems, this is separate from the configuration directory by default. To locate your :file:`.cache/` directory, use :func:`matplotlib.get_cachedir`::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:62
+msgid "On Windows, both the config directory and the cache directory are the same and are in your :file:`Documents and Settings` or :file:`Users` directory by default::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:72
+msgid "If you would like to use a different configuration directory, you can do so by specifying the location in your :envvar:`MPLCONFIGDIR` environment variable -- see :ref:`setting-linux-osx-environment-variables`.  Note that :envvar:`MPLCONFIGDIR` sets the location of both the configuration directory and the cache directory."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:82
+msgid "Getting help"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:84
+msgid "There are a number of good resources for getting help with Matplotlib. There is a good chance your question has already been asked:"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:87
+msgid "The `mailing list archive <http://matplotlib.1069221.n5.nabble.com/>`_."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:89
+msgid "`GitHub issues <https://github.com/matplotlib/matplotlib/issues>`_."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:91
+msgid "Stackoverflow questions tagged `matplotlib <https://stackoverflow.com/questions/tagged/matplotlib>`_."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:94
+msgid "If you are unable to find an answer to your question through search, please provide the following information in your e-mail to the `mailing list <https://mail.python.org/mailman/listinfo/matplotlib-users>`_:"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:98
+msgid "Your operating system (Linux/Unix users: post the output of ``uname -a``)."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:100
+msgid "Matplotlib version::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:104
+msgid "Where you obtained Matplotlib (e.g., your Linux distribution's packages, GitHub, PyPI, or `Anaconda <https://www.anaconda.com/>`_)."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:107
+msgid "Any customizations to your ``matplotlibrc`` file (see :doc:`/tutorials/introductory/customizing`)."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:110
+msgid "If the problem is reproducible, please try to provide a *minimal*, standalone Python script that demonstrates the problem.  This is *the* critical step. If you can't post a piece of code that we can run and reproduce your error, the chances of getting help are significantly diminished.  Very often, the mere act of trying to minimize your code to the smallest bit that produces the error will help you find a bug in *your* code that is causing the problem."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:118
+msgid "Matplotlib provides debugging information through the `logging` library, and a helper function to set the logging level: one can call ::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:123
+msgid "to obtain this debugging information."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:125
+msgid "Standard functions from the `logging` module are also applicable; e.g. one could call ``logging.basicConfig(level=\"DEBUG\")`` even before importing Matplotlib (this is in particular necessary to get the logging info emitted during Matplotlib's import), or attach a custom handler to the \"matplotlib\" logger.  This may be useful if you use a custom logging configuration."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:131
+msgid "If you compiled Matplotlib yourself, please also provide:"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:133
+msgid "any changes you have made to ``setup.py`` or ``setupext.py``."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:134
+msgid "the output of::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:139
+msgid "The beginning of the build output contains lots of details about your platform that are useful for the Matplotlib developers to diagnose your problem."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:143
+msgid "your compiler version -- e.g., ``gcc --version``."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:145
+msgid "Including this information in your first e-mail to the mailing list will save a lot of time."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:148
+msgid "You will likely get a faster response writing to the mailing list than filing a bug in the bug tracker.  Most developers check the bug tracker only periodically.  If your problem has been determined to be a bug and can not be quickly solved, you may be asked to file a bug in the tracker so the issue doesn't get lost."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:157
+msgid "Problems with recent git versions"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:159
+msgid "First make sure you have a clean build and install (see :ref:`clean-install`), get the latest git update, install it and run a simple test script in debug mode::"
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:169
+msgid "and post :file:`build.out` and :file:`run.out` to the `matplotlib-devel <https://mail.python.org/mailman/listinfo/matplotlib-devel>`_ mailing list (please do not post git problems to the `users list <https://mail.python.org/mailman/listinfo/matplotlib-users>`_)."
+msgstr ""
+
+#: ../../users/faq/troubleshooting_faq.rst:174
+msgid "Of course, you will want to clearly describe your problem, what you are expecting and what you are getting, but often a clean build and install will help.  See also :ref:`reporting-problems`."
+msgstr ""
+

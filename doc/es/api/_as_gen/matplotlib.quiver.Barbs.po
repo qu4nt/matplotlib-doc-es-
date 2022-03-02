@@ -1,0 +1,621 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:19\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.quiver.Barbs.po\n"
+"X-Crowdin-File-ID: 1374\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.quiver.Barbs.rst:2
+msgid "matplotlib.quiver.Barbs"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:1 of
+msgid "Bases: :py:class:`matplotlib.collections.PolyCollection`"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:2 of
+msgid "Specialized PolyCollection for barbs."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:4 of
+msgid "The only API method is :meth:`set_UVC`, which can be used to change the size, orientation, and color of the arrows.  Locations are changed using the :meth:`set_offsets` collection method. Possibly this method will be useful in animations."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:9 of
+msgid "There is one internal function :meth:`_find_tails` which finds exactly what should be put on the barb given the vector magnitude. From there :meth:`_make_barbs` is used to find the vertices of the polygon to represent the barb based on this information."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:32 of
+msgid "The constructor takes one required argument, an Axes instance, followed by the args and kwargs described by the following pyplot interface documentation:"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:36 of
+msgid "Plot a 2D field of barbs."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:38 of
+msgid "Call signature::"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:42 of
+msgid "Where *X*, *Y* define the barb locations, *U*, *V* define the barb directions, and *C* optionally sets the color."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:45 of
+msgid "All arguments may be 1D or 2D. *U*, *V*, *C* may be masked arrays, but masked *X*, *Y* are not supported at present."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:48 of
+msgid "Barbs are traditionally used in meteorology as a way to plot the speed and direction of wind observations, but can technically be used to plot any two dimensional vector quantity.  As opposed to arrows, which give vector magnitude by the length of the arrow, the barbs give more quantitative information about the vector magnitude by putting slanted lines or a triangle for various increments in magnitude, as show schematically below::"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:62 of
+msgid "The largest increment is given by a triangle (or \"flag\"). After those come full lines (barbs). The smallest increment is a half line.  There is only, of course, ever at most 1 half line.  If the magnitude is small and only needs a single half-line and no full lines or triangles, the half-line is offset from the end of the barb so that it can be easily distinguished from barbs with a single full line.  The magnitude for the barb shown above would nominally be 65, using the standard increments of 50, 10, and 5."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:71 of
+msgid "See also https://en.wikipedia.org/wiki/Wind_barb."
+msgstr ""
+
+#: matplotlib.quiver.Barbs matplotlib.quiver.Barbs.set_offsets of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:84 of
+msgid "**X, Y**"
+msgstr ""
+
+#: of
+msgid "1D or 2D array-like, optional"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:76 of
+msgid "The x and y coordinates of the barb locations. See *pivot* for how the barbs are drawn to the x, y positions."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:79 of
+msgid "If not given, they will be generated as a uniform integer meshgrid based on the dimensions of *U* and *V*."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:82 of
+msgid "If *X* and *Y* are 1D but *U*, *V* are 2D, *X*, *Y* are expanded to 2D using ``X, Y = np.meshgrid(X, Y)``. In this case ``len(X)`` and ``len(Y)`` must match the column and row dimensions of *U* and *V*."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:87 of
+msgid "**U, V**"
+msgstr ""
+
+#: of
+msgid "1D or 2D array-like"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:87 of
+msgid "The x and y components of the barb shaft."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:94 of
+msgid "**C**"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:90 of
+msgid "Numeric data that defines the barb colors by colormapping via *norm* and *cmap*."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:93 of
+msgid "This does not support explicit colors. If you want to set colors directly, use *barbcolor* instead."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:98 of
+msgid "**length**"
+msgstr ""
+
+#: of
+msgid "float, default: 7"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:97 of
+msgid "Length of the barb in points; the other parts of the barb are scaled against this."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:103 of
+msgid "**pivot**"
+msgstr ""
+
+#: of
+msgid "{'tip', 'middle'} or float, default: 'tip'"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:101 of
+msgid "The part of the arrow that is anchored to the *X*, *Y* grid. The barb rotates about this point. This can also be a number, which shifts the start of the barb that many points away from grid point."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:108 of
+msgid "**barbcolor**"
+msgstr ""
+
+#: of
+msgid "color or color sequence"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:106 of
+msgid "The color of all parts of the barb except for the flags.  This parameter is analogous to the *edgecolor* parameter for polygons, which can be used instead. However this parameter will override facecolor."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:115 of
+msgid "**flagcolor**"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:111 of
+msgid "The color of any flags on the barb.  This parameter is analogous to the *facecolor* parameter for polygons, which can be used instead. However, this parameter will override facecolor.  If this is not set (and *C* has not either) then *flagcolor* will be set to match *barbcolor* so that the barb has a uniform color. If *C* has been set, *flagcolor* has no effect."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:125 of
+msgid "**sizes**"
+msgstr ""
+
+#: of
+msgid "dict, optional"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:118 of
+msgid "A dictionary of coefficients specifying the ratio of a given feature to the length of the barb. Only those values one wishes to override need to be included.  These features include:"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:122 of
+msgid "'spacing' - space between features (flags, full/half barbs)"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:123 of
+msgid "'height' - height (distance from shaft to top) of a flag or full barb"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:124 of
+msgid "'width' - width of a flag, twice the width of a full barb"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:125 of
+msgid "'emptybarb' - radius of the circle used for low magnitudes"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:129 of
+msgid "**fill_empty**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:128 of
+msgid "Whether the empty barbs (circles) that are drawn should be filled with the flag color.  If they are not filled, the center is transparent."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:135 of
+msgid "**rounding**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:132 of
+msgid "Whether the vector magnitude should be rounded when allocating barb components.  If True, the magnitude is rounded to the nearest multiple of the half-barb increment.  If False, the magnitude is simply truncated to the next lowest multiple."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:144 of
+msgid "**barb_increments**"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:138 of
+msgid "A dictionary of increments specifying values to associate with different parts of the barb. Only those values one wishes to override need to be included."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:142 of
+msgid "'half' - half barbs (Default is 5)"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:143 of
+msgid "'full' - full barbs (Default is 10)"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:144 of
+msgid "'flag' - flags (default is 50)"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:153 of
+msgid "**flip_barb**"
+msgstr ""
+
+#: of
+msgid "bool or array-like of bool, default: False"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:147 of
+msgid "Whether the lines and flags should point opposite to normal. Normal behavior is for the barbs and lines to point right (comes from wind barbs having these features point towards low pressure in the Northern Hemisphere)."
+msgstr ""
+
+#: matplotlib.quiver.Barbs:152 of
+msgid "A single value is applied to all barbs. Individual barbs can be flipped by passing a bool array of the same size as *U* and *V*."
+msgstr ""
+
+#: matplotlib.quiver.Barbs of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:160 of
+msgid "**barbs** : `~matplotlib.quiver.Barbs`"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:159 of
+msgid "Barbs"
+msgstr ""
+
+#: matplotlib.quiver.Barbs of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:165 of
+msgid "**data**"
+msgstr ""
+
+#: of
+msgid "indexable object, optional"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:165 of
+msgid "DATA_PARAMETER_PLACEHOLDER"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:226 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:168 of
+msgid "The barbs can further be customized using `.PolyCollection` keyword arguments:"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:10 matplotlib.quiver.Barbs:175 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:10 matplotlib.quiver.Barbs:175 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:13 matplotlib.quiver.Barbs:177 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:13 matplotlib.quiver.Barbs:177 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:14 matplotlib.quiver.Barbs:178 of
+msgid ":meth:`alpha <matplotlib.collections.Collection.set_alpha>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:14 matplotlib.quiver.Barbs:178 of
+msgid "array-like or scalar or None"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:15 matplotlib.quiver.Barbs:179 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:15 matplotlib.artist.Barbs.set:21
+#: matplotlib.artist.Barbs.set:30 matplotlib.artist.Barbs.set:42
+#: matplotlib.artist.Barbs.set:51 matplotlib.quiver.Barbs:179
+#: matplotlib.quiver.Barbs:185 matplotlib.quiver.Barbs:194
+#: matplotlib.quiver.Barbs:206 matplotlib.quiver.Barbs:215 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:16 matplotlib.quiver.Barbs:180 of
+msgid ":meth:`antialiased <matplotlib.collections.Collection.set_antialiased>` or aa or antialiaseds"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:16 matplotlib.quiver.Barbs:180 of
+msgid "bool or list of bools"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:17 matplotlib.quiver.Barbs:181 of
+msgid ":meth:`array <matplotlib.cm.ScalarMappable.set_array>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:17 matplotlib.quiver.Barbs:181 of
+msgid "array-like or None"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:18 matplotlib.quiver.Barbs:182 of
+msgid ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:18 matplotlib.quiver.Barbs:182 of
+msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:19 matplotlib.quiver.Barbs:183 of
+msgid ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:19 matplotlib.quiver.Barbs:183 of
+msgid "(vmin: float, vmax: float)"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:20 matplotlib.quiver.Barbs:184 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:20 matplotlib.quiver.Barbs:184 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:21 matplotlib.quiver.Barbs:185 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:22 matplotlib.quiver.Barbs:186 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:22 matplotlib.quiver.Barbs:186 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:23 matplotlib.quiver.Barbs:187 of
+msgid ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:23 matplotlib.quiver.Barbs:187 of
+msgid "`.Colormap` or str or None"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:24 matplotlib.quiver.Barbs:188 of
+msgid ":meth:`color <matplotlib.collections.Collection.set_color>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:24 matplotlib.quiver.Barbs:188 of
+msgid "color or list of rgba tuples"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:25 matplotlib.quiver.Barbs:189 of
+msgid ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` or ec or edgecolors"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:25 matplotlib.quiver.Barbs:189 of
+msgid "color or list of colors or 'face'"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:26 matplotlib.quiver.Barbs:190 of
+msgid ":meth:`facecolor <matplotlib.collections.Collection.set_facecolor>` or facecolors or fc"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:26 matplotlib.quiver.Barbs:190 of
+msgid "color or list of colors"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:27 matplotlib.quiver.Barbs:191 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:27 matplotlib.quiver.Barbs:191 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:28 matplotlib.quiver.Barbs:192 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:28 matplotlib.artist.Barbs.set:47
+#: matplotlib.quiver.Barbs:192 matplotlib.quiver.Barbs:211 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:29 matplotlib.quiver.Barbs:193 of
+msgid ":meth:`hatch <matplotlib.collections.Collection.set_hatch>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:29 matplotlib.quiver.Barbs:193 of
+msgid "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:30 matplotlib.quiver.Barbs:194 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:31 matplotlib.quiver.Barbs:195 of
+msgid ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:31 matplotlib.quiver.Barbs:195 of
+msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:32 matplotlib.quiver.Barbs:196 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:32 matplotlib.quiver.Barbs:196 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:33 matplotlib.quiver.Barbs:197 of
+msgid ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` or dashes or linestyles or ls"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:33 matplotlib.quiver.Barbs:197 of
+msgid "str or tuple or list thereof"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:34 matplotlib.quiver.Barbs:198 of
+msgid ":meth:`linewidth <matplotlib.collections.Collection.set_linewidth>` or linewidths or lw"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:34 matplotlib.quiver.Barbs:198 of
+msgid "float or list of floats"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:35 matplotlib.quiver.Barbs:199 of
+msgid ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:35 matplotlib.quiver.Barbs:199 of
+msgid "`.Normalize` or None"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:36 matplotlib.quiver.Barbs:200 of
+msgid ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:36 matplotlib.artist.Barbs.set:46
+#: matplotlib.quiver.Barbs:200 matplotlib.quiver.Barbs:210 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:201 of
+msgid ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
+msgstr ""
+
+#: matplotlib.quiver.Barbs:201 of
+msgid "(N, 2) or (2,) array-like"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:38 matplotlib.quiver.Barbs:202 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:38 matplotlib.quiver.Barbs:202 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:39 matplotlib.quiver.Barbs:203 of
+msgid ":meth:`paths <matplotlib.collections.PolyCollection.set_verts>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:39 matplotlib.artist.Barbs.set:49
+#: matplotlib.quiver.Barbs:203 matplotlib.quiver.Barbs:213 of
+msgid "list of array-like"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:40 matplotlib.quiver.Barbs:204 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:40 matplotlib.quiver.Barbs:204 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:41 matplotlib.quiver.Barbs:205 of
+msgid ":meth:`pickradius <matplotlib.collections.Collection.set_pickradius>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:41 matplotlib.artist.Barbs.set:52
+#: matplotlib.quiver.Barbs:205 matplotlib.quiver.Barbs:216 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:42 matplotlib.quiver.Barbs:206 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:43 matplotlib.quiver.Barbs:207 of
+msgid ":meth:`sizes <matplotlib.collections._CollectionWithSizes.set_sizes>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:43 matplotlib.quiver.Barbs:207 of
+msgid "ndarray or None"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:44 matplotlib.quiver.Barbs:208 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:44 matplotlib.quiver.Barbs:208 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:45 matplotlib.quiver.Barbs:209 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:45 matplotlib.quiver.Barbs:209 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:46 matplotlib.quiver.Barbs:210 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:47 matplotlib.quiver.Barbs:211 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:48 matplotlib.quiver.Barbs:212 of
+msgid ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:48 matplotlib.quiver.Barbs:212 of
+msgid "list of str or None"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:49 matplotlib.quiver.Barbs:213 of
+msgid ":meth:`verts <matplotlib.collections.PolyCollection.set_verts>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:50 matplotlib.quiver.Barbs:214 of
+msgid ":meth:`verts_and_codes <matplotlib.collections.PolyCollection.set_verts_and_codes>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:12 matplotlib.artist.Barbs.set:50
+#: matplotlib.quiver.Barbs:214 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:51 matplotlib.quiver.Barbs:215 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:52 matplotlib.quiver.Barbs:216 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:2 of
+msgid "Set multiple properties at once."
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:4 of
+msgid "Supported properties are"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:12 of
+msgid ":meth:`UVC <matplotlib.quiver.Barbs.set_UVC>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:37 of
+msgid ":meth:`offsets <matplotlib.quiver.Barbs.set_offsets>`"
+msgstr ""
+
+#: matplotlib.artist.Barbs.set:37 of
+msgid "sequence of pairs of floats"
+msgstr ""
+
+#: matplotlib.quiver.Barbs.set_offsets:2 of
+msgid "Set the offsets for the barb polygons.  This saves the offsets passed in and masks them as appropriate for the existing U/V data."
+msgstr ""
+
+#: matplotlib.quiver.Barbs.set_offsets:22 of
+msgid "**xy**"
+msgstr ""
+

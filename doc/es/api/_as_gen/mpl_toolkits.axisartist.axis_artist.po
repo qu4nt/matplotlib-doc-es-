@@ -1,0 +1,245 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:21\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/mpl_toolkits.axisartist.axis_artist.po\n"
+"X-Crowdin-File-ID: 1580\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:2
+msgid "mpl\\_toolkits.axisartist.axis\\_artist"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:1 of
+msgid "The :mod:`.axis_artist` module implements custom artists to draw axis elements (axis lines and labels, tick lines and labels, grid lines)."
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:4 of
+msgid "Axis lines and labels and tick lines and labels are managed by the `AxisArtist` class; grid lines are managed by the `GridlinesCollection` class."
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:7 of
+msgid "There is one `AxisArtist` per Axis; it can be accessed through the ``axis`` dictionary of the parent Axes (which should be a `mpl_toolkits.axislines.Axes`), e.g. ``ax.axis[\"bottom\"]``."
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:11 of
+msgid "Children of the AxisArtist are accessed as attributes: ``.line`` and ``.label`` for the axis line and label, ``.major_ticks``, ``.major_ticklabels``, ``.minor_ticks``, ``.minor_ticklabels`` for the tick lines and labels (e.g. ``ax.axis[\"bottom\"].line``)."
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:16 of
+msgid "Children properties (colors, fonts, line widths, etc.) can be set using setters, e.g. ::"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:22 of
+msgid "However, things like the locations of ticks, and their ticklabels need to be changed from the side of the grid_helper."
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:26 of
+msgid "axis_direction"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:28 of
+msgid "`AxisArtist`, `AxisLabel`, `TickLabels` have an *axis_direction* attribute, which adjusts the location, angle, etc. The *axis_direction* must be one of \"left\", \"right\", \"bottom\", \"top\", and follows the Matplotlib convention for rectangular axis."
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:33 of
+msgid "For example, for the *bottom* axis (the left and right is relative to the direction of the increasing coordinate),"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:36 of
+msgid "ticklabels and axislabel are on the right"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:37 of
+msgid "ticklabels and axislabel have text angle of 0"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:38 of
+msgid "ticklabels are baseline, center-aligned"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:39 of
+msgid "axislabel is top, center-aligned"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:41 of
+msgid "The text angles are actually relative to (90 + angle of the direction to the ticklabel), which gives 0 for bottom axis."
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:45 of
+msgid "Parameter"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:45
+#: mpl_toolkits.axisartist.axis_artist:47
+#: mpl_toolkits.axisartist.axis_artist:48 of
+msgid "left"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:45
+#: mpl_toolkits.axisartist.axis_artist:52 of
+msgid "bottom"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:45
+#: mpl_toolkits.axisartist.axis_artist:47
+#: mpl_toolkits.axisartist.axis_artist:48
+#: mpl_toolkits.axisartist.axis_artist:53
+#: mpl_toolkits.axisartist.axis_artist:54 of
+msgid "right"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:45
+#: mpl_toolkits.axisartist.axis_artist:52 of
+msgid "top"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:47 of
+msgid "ticklabels location"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:48 of
+msgid "axislabel location"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:49 of
+msgid "ticklabels angle"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:49 of
+msgid "90"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:49
+#: mpl_toolkits.axisartist.axis_artist:50 of
+msgid "0"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:49 of
+msgid "-90"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:49
+#: mpl_toolkits.axisartist.axis_artist:50 of
+msgid "180"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:50 of
+msgid "axislabel angle"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:51 of
+msgid "ticklabel va"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:51
+#: mpl_toolkits.axisartist.axis_artist:52
+#: mpl_toolkits.axisartist.axis_artist:53
+#: mpl_toolkits.axisartist.axis_artist:54 of
+msgid "center"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:51 of
+msgid "baseline"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:52 of
+msgid "axislabel va"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:53 of
+msgid "ticklabel ha"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:54 of
+msgid "axislabel ha"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:57 of
+msgid "Ticks are by default direct opposite side of the ticklabels. To make ticks to the same side of the ticklabels, ::"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:62 of
+msgid "The following attributes can be customized (use the ``set_xxx`` methods):"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:64 of
+msgid "`Ticks`: ticksize, tick_out"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:65 of
+msgid "`TickLabels`: pad"
+msgstr ""
+
+#: mpl_toolkits.axisartist.axis_artist:66 of
+msgid "`AxisLabel`: pad"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:14
+msgid "Classes"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid ":py:obj:`AttributeCopier <mpl_toolkits.axisartist.axis_artist.AttributeCopier>`\\ \\(\\)"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid ":py:obj:`AxisArtist <mpl_toolkits.axisartist.axis_artist.AxisArtist>`\\ \\(axes\\, helper\\[\\, offset\\, ...\\]\\)"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid "An artist which draws axis (a line along which the n-th axes coord is constant) line, ticks, ticklabels, and axis label."
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid ":py:obj:`AxisLabel <mpl_toolkits.axisartist.axis_artist.AxisLabel>`\\ \\(\\*args\\[\\, axis\\_direction\\, axis\\]\\)"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid "Axis Label."
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid ":py:obj:`GridlinesCollection <mpl_toolkits.axisartist.axis_artist.GridlinesCollection>`\\ \\(\\*args\\[\\, which\\, axis\\]\\)"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>
+msgid "Parameters"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid ":py:obj:`LabelBase <mpl_toolkits.axisartist.axis_artist.LabelBase>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid "A base class for AxisLabel and TickLabels."
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid ":py:obj:`TickLabels <mpl_toolkits.axisartist.axis_artist.TickLabels>`\\ \\(\\*\\[\\, axis\\_direction\\]\\)"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid "Tick Labels."
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid ":py:obj:`Ticks <mpl_toolkits.axisartist.axis_artist.Ticks>`\\ \\(ticksize\\[\\, tick\\_out\\, axis\\]\\)"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axisartist.axis_artist.rst:32:<autosummary>:1
+msgid "Ticks are derived from Line2D, and note that ticks themselves are markers."
+msgstr ""
+

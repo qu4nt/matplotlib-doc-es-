@@ -1,0 +1,1065 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/dates_api.po\n"
+"X-Crowdin-File-ID: 1776\n"
+"Language: es_ES\n"
+
+#: ../../api/dates_api.rst:3
+msgid "``matplotlib.dates``"
+msgstr ""
+
+#: matplotlib.dates:1 of
+msgid "Matplotlib provides sophisticated date plotting capabilities, standing on the shoulders of python :mod:`datetime` and the add-on module :mod:`dateutil`."
+msgstr ""
+
+#: matplotlib.dates:4 of
+msgid "By default, Matplotlib uses the units machinery described in `~matplotlib.units` to convert `datetime.datetime`, and `numpy.datetime64` objects when plotted on an x- or y-axis. The user does not need to do anything for dates to be formatted, but dates often have strict formatting needs, so this module provides many axis locators and formatters. A basic example using `numpy.datetime64` is::"
+msgstr ""
+
+#: matplotlib.dates:22 of
+msgid ":doc:`/gallery/text_labels_and_annotations/date`"
+msgstr ""
+
+#: matplotlib.dates:23 of
+msgid ":doc:`/gallery/ticks/date_concise_formatter`"
+msgstr ""
+
+#: matplotlib.dates:24 of
+msgid ":doc:`/gallery/ticks/date_demo_convert`"
+msgstr ""
+
+#: matplotlib.dates:29 of
+msgid "Matplotlib date format"
+msgstr ""
+
+#: matplotlib.dates:31 of
+msgid "Matplotlib represents dates using floating point numbers specifying the number of days since a default epoch of 1970-01-01 UTC; for example, 1970-01-01, 06:00 is the floating point number 0.25. The formatters and locators require the use of `datetime.datetime` objects, so only dates between year 0001 and 9999 can be represented.  Microsecond precision is achievable for (approximately) 70 years on either side of the epoch, and 20 microseconds for the rest of the allowable range of dates (year 0001 to 9999). The epoch can be changed at import time via `.dates.set_epoch` or :rc:`dates.epoch` to other dates if necessary; see :doc:`/gallery/ticks/date_precision_and_epochs` for a discussion."
+msgstr ""
+
+#: matplotlib.dates:44 of
+msgid "Before Matplotlib 3.3, the epoch was 0000-12-31 which lost modern microsecond precision and also made the default axis limit of 0 an invalid datetime.  In 3.3 the epoch was changed as above.  To convert old ordinal floats to the new epoch, users can do::"
+msgstr ""
+
+#: matplotlib.dates:52 of
+msgid "There are a number of helper functions to convert between :mod:`datetime` objects and Matplotlib dates:"
+msgstr ""
+
+#: matplotlib.dates:67:<autosummary>:1 of
+msgid ":py:obj:`datestr2num <matplotlib.dates.datestr2num>`"
+msgstr ""
+
+#: matplotlib.dates.datestr2num:2 matplotlib.dates:67:<autosummary>:1 of
+msgid "Convert a date string to a datenum using `dateutil.parser.parse`."
+msgstr ""
+
+#: matplotlib.dates:67:<autosummary>:1 of
+msgid ":py:obj:`date2num <matplotlib.dates.date2num>`"
+msgstr ""
+
+#: matplotlib.dates.date2num:2 matplotlib.dates:67:<autosummary>:1 of
+msgid "Convert datetime objects to Matplotlib dates."
+msgstr ""
+
+#: matplotlib.dates:67:<autosummary>:1 of
+msgid ":py:obj:`num2date <matplotlib.dates.num2date>`"
+msgstr ""
+
+#: matplotlib.dates.num2date:2 matplotlib.dates:67:<autosummary>:1 of
+msgid "Convert Matplotlib dates to `~datetime.datetime` objects."
+msgstr ""
+
+#: matplotlib.dates:67:<autosummary>:1 of
+msgid ":py:obj:`num2timedelta <matplotlib.dates.num2timedelta>`"
+msgstr ""
+
+#: matplotlib.dates.num2timedelta:2 matplotlib.dates:67:<autosummary>:1 of
+msgid "Convert number of days to a `~datetime.timedelta` object."
+msgstr ""
+
+#: matplotlib.dates:67:<autosummary>:1 of
+msgid ":py:obj:`drange <matplotlib.dates.drange>`"
+msgstr ""
+
+#: matplotlib.dates.drange:2 matplotlib.dates:67:<autosummary>:1 of
+msgid "Return a sequence of equally spaced Matplotlib dates."
+msgstr ""
+
+#: matplotlib.dates:67:<autosummary>:1 of
+msgid ":py:obj:`set_epoch <matplotlib.dates.set_epoch>`"
+msgstr ""
+
+#: matplotlib.dates.set_epoch:2 matplotlib.dates:67:<autosummary>:1 of
+msgid "Set the epoch (origin for dates) for datetime calculations."
+msgstr ""
+
+#: matplotlib.dates:67:<autosummary>:1 of
+msgid ":py:obj:`get_epoch <matplotlib.dates.get_epoch>`"
+msgstr ""
+
+#: matplotlib.dates.get_epoch:2 matplotlib.dates:67:<autosummary>:1 of
+msgid "Get the epoch used by `.dates`."
+msgstr ""
+
+#: matplotlib.dates:70 of
+msgid "Like Python's `datetime.datetime`, Matplotlib uses the Gregorian calendar for all conversions between dates and floating point numbers. This practice is not universal, and calendar differences can cause confusing differences between what Python and Matplotlib give as the number of days since 0001-01-01 and what other software and databases yield.  For example, the US Naval Observatory uses a calendar that switches from Julian to Gregorian in October, 1582.  Hence, using their calculator, the number of days between 0001-01-01 and 2006-04-01 is 732403, whereas using the Gregorian calendar via the datetime module we find::"
+msgstr ""
+
+#: matplotlib.dates:84 of
+msgid "All the Matplotlib date converters, tickers and formatters are timezone aware. If no explicit timezone is provided, :rc:`timezone` is assumed.  If you want to use a custom time zone, pass a `datetime.tzinfo` instance with the tz keyword argument to `num2date`, `.Axis.axis_date`, and any custom date tickers or locators you create."
+msgstr ""
+
+#: matplotlib.dates:90 of
+msgid "A wide range of specific and general purpose date tick locators and formatters are provided in this module.  See :mod:`matplotlib.ticker` for general information on tick locators and formatters.  These are described below."
+msgstr ""
+
+#: matplotlib.dates:95 of
+msgid "The dateutil_ module provides additional code to handle date ticking, making it easy to place ticks on any kinds of dates.  See examples below."
+msgstr ""
+
+#: matplotlib.dates:101 of
+msgid "Date tickers"
+msgstr ""
+
+#: matplotlib.dates:103 of
+msgid "Most of the date tickers can locate single or multiple values.  For example::"
+msgstr ""
+
+#: matplotlib.dates:114 of
+msgid "In addition, most of the constructors take an interval argument::"
+msgstr ""
+
+#: matplotlib.dates:119 of
+msgid "The rrule locator allows completely general date ticking::"
+msgstr ""
+
+#: matplotlib.dates:125 of
+msgid "The available date tickers are:"
+msgstr ""
+
+#: matplotlib.dates:127 of
+msgid "`MicrosecondLocator`: Locate microseconds."
+msgstr ""
+
+#: matplotlib.dates:129 of
+msgid "`SecondLocator`: Locate seconds."
+msgstr ""
+
+#: matplotlib.dates:131 of
+msgid "`MinuteLocator`: Locate minutes."
+msgstr ""
+
+#: matplotlib.dates:133 of
+msgid "`HourLocator`: Locate hours."
+msgstr ""
+
+#: matplotlib.dates:135 of
+msgid "`DayLocator`: Locate specified days of the month."
+msgstr ""
+
+#: matplotlib.dates:137 of
+msgid "`WeekdayLocator`: Locate days of the week, e.g., MO, TU."
+msgstr ""
+
+#: matplotlib.dates:139 of
+msgid "`MonthLocator`: Locate months, e.g., 7 for July."
+msgstr ""
+
+#: matplotlib.dates:141 of
+msgid "`YearLocator`: Locate years that are multiples of base."
+msgstr ""
+
+#: matplotlib.dates:143 of
+msgid "`RRuleLocator`: Locate using a `matplotlib.dates.rrulewrapper`. `.rrulewrapper` is a simple wrapper around dateutil_'s `dateutil.rrule` which allow almost arbitrary date tick specifications.  See :doc:`rrule example </gallery/ticks/date_demo_rrule>`."
+msgstr ""
+
+#: matplotlib.dates:148 of
+msgid "`AutoDateLocator`: On autoscale, this class picks the best `DateLocator` (e.g., `RRuleLocator`) to set the view limits and the tick locations.  If called with ``interval_multiples=True`` it will make ticks line up with sensible multiples of the tick intervals.  E.g. if the interval is 4 hours, it will pick hours 0, 4, 8, etc as ticks.  This behaviour is not guaranteed by default."
+msgstr ""
+
+#: matplotlib.dates:156 of
+msgid "Date formatters"
+msgstr ""
+
+#: matplotlib.dates:158 of
+msgid "The available date formatters are:"
+msgstr ""
+
+#: matplotlib.dates:160 of
+msgid "`AutoDateFormatter`: attempts to figure out the best format to use.  This is most useful when used with the `AutoDateLocator`."
+msgstr ""
+
+#: matplotlib.dates:163 of
+msgid "`ConciseDateFormatter`: also attempts to figure out the best format to use, and to make the format as compact as possible while still having complete date information.  This is most useful when used with the `AutoDateLocator`."
+msgstr ""
+
+#: matplotlib.dates:167 of
+msgid "`DateFormatter`: use `~datetime.datetime.strftime` format strings."
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:1 matplotlib.dates.ConciseDateFormatter:1
+#: matplotlib.dates.DateFormatter:1 of
+msgid "Bases: :py:class:`matplotlib.ticker.Formatter`"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:2 of
+msgid "A `.Formatter` which attempts to figure out the best format to use.  This is most useful when used with the `AutoDateLocator`."
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:5 of
+msgid "`.AutoDateFormatter` has a ``.scale`` dictionary that maps tick scales (the interval in days between one major tick) to format strings; this dictionary defaults to ::"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:19 of
+msgid "The formatter uses the format string corresponding to the lowest key in the dictionary that is greater or equal to the current scale.  Dictionary entries can be customized::"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:27 of
+msgid "Custom callables can also be used instead of format strings.  The following example shows how to use a custom format function to strip trailing zeros from decimal seconds and adds the date to the first ticklabel::"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:62 of
+msgid "Autoformat the date labels."
+msgstr ""
+
+#: dateutil.rrule.rrule matplotlib.dates.AutoDateFormatter
+#: matplotlib.dates.AutoDateLocator matplotlib.dates.ConciseDateFormatter
+#: matplotlib.dates.DateFormatter matplotlib.dates.DateLocator
+#: matplotlib.dates.RRuleLocator matplotlib.dates.date2num
+#: matplotlib.dates.datestr2num matplotlib.dates.drange
+#: matplotlib.dates.epoch2num matplotlib.dates.num2date
+#: matplotlib.dates.num2epoch matplotlib.dates.num2timedelta
+#: matplotlib.dates.set_epoch of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:68
+#: matplotlib.dates.ConciseDateFormatter:12 of
+msgid "**locator** : `.ticker.Locator`"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:67
+#: matplotlib.dates.ConciseDateFormatter:11 of
+msgid "ticker.Locator"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:68
+#: matplotlib.dates.ConciseDateFormatter:12 of
+msgid "Locator that this axis is using."
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:71
+#: matplotlib.dates.ConciseDateFormatter:15 of
+msgid "**tz**"
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:71
+#: matplotlib.dates.ConciseDateFormatter:15 of
+msgid "Passed to `.dates.date2num`."
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:75 of
+msgid "**defaultfmt**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:74 of
+msgid "The default format to use if none of the values in ``self.scaled`` are greater than the unit returned by ``locator._get_unit()``."
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:94
+#: matplotlib.dates.ConciseDateFormatter:52 matplotlib.dates.DateFormatter:50
+#: of
+msgid "**usetex** : bool, default: :rc:`text.usetex`"
+msgstr ""
+
+#: of
+msgid "bool, default:"
+msgstr ""
+
+#: matplotlib.dates.AutoDateFormatter:78 of
+msgid "To enable/disable the use of TeX's math mode for rendering the results of the formatter. If any entries in ``self.scaled`` are set as functions, then it is up to the customized function to enable or disable TeX's math mode itself."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:1 matplotlib.dates.MicrosecondLocator:1
+#: matplotlib.dates.RRuleLocator:1 of
+msgid "Bases: :py:class:`matplotlib.dates.DateLocator`"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:2 of
+msgid "On autoscale, this class picks the best `DateLocator` to set the view limits and the tick locations."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:50 of
+msgid "**intervald**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:21 of
+msgid "Mapping of tick frequencies to multiples allowed for that ticking. The default is ::"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:37 of
+msgid "where the keys are defined in `dateutil.rrule`."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:39 of
+msgid "The interval is used to specify multiples that are appropriate for the frequency of ticking. For instance, every 7 days is sensible for daily ticks, but for minutes/seconds, 15 or 30 make sense."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:43 of
+msgid "When customizing, you should only modify the values for the existing keys. You should not add or delete entries."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:46 of
+msgid "Example for forcing ticks every 3 hours::"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:62 matplotlib.dates.DateLocator:44
+#: matplotlib.dates.RRuleLocator:21 of
+msgid "**tz** : `datetime.tzinfo`"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:61 matplotlib.dates.DateLocator:43
+#: matplotlib.dates.RRuleLocator:20 of
+msgid "datetime.tzinfo"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:62 matplotlib.dates.DateFormatter:33 of
+msgid "Ticks timezone."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:66 of
+msgid "**minticks**"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:65 of
+msgid "The minimum number of ticks desired; controls whether ticks occur yearly, monthly, etc."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:76 of
+msgid "**maxticks**"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:69 of
+msgid "The maximum number of ticks desired; controls the interval between ticks (ticking every other, every 3, etc.).  For fine-grained control, this can be a dictionary mapping individual rrule frequency constants (YEARLY, MONTHLY, etc.) to their own maximum number of ticks.  This can be used to keep the number of ticks appropriate to the format chosen in `AutoDateFormatter`. Any frequency not specified in this dictionary is given a default value."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:95 of
+msgid "**interval_multiples**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator:79 of
+msgid "Whether ticks should be chosen to be multiple of the interval, locking them to 'nicer' locations.  For example, this will force the ticks to be at hours 0, 6, 12, 18 when hourly ticking is done at 6 hour intervals."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator.get_locator:2 of
+msgid "Pick the best locator based on a distance."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator.nonsingular:2
+#: matplotlib.dates.DateLocator.nonsingular:2 of
+msgid "Given the proposed upper and lower extent, adjust the range if it is too close to being singular (i.e. a range of ~0)."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator.tick_values:2
+#: matplotlib.dates.MicrosecondLocator.tick_values:2
+#: matplotlib.dates.RRuleLocator.tick_values:2 of
+msgid "Return the values of the located ticks given **vmin** and **vmax**."
+msgstr ""
+
+#: matplotlib.dates.AutoDateLocator.tick_values:5
+#: matplotlib.dates.MicrosecondLocator.tick_values:5
+#: matplotlib.dates.RRuleLocator.tick_values:5 of
+msgid "To get tick locations with the vmin and vmax values defined automatically for the associated :attr:`axis` simply call the Locator instance::"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateConverter:1 of
+msgid "Bases: :py:class:`matplotlib.dates.DateConverter`"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateConverter.axisinfo:2
+#: matplotlib.dates.DateConverter.axisinfo:2 of
+msgid "Return the `~matplotlib.units.AxisInfo` for *unit*."
+msgstr ""
+
+#: matplotlib.dates.ConciseDateConverter.axisinfo:4
+#: matplotlib.dates.DateConverter.axisinfo:4 of
+msgid "*unit* is a tzinfo instance or None. The *axis* argument is required but not used."
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:2 of
+msgid "A `.Formatter` which attempts to figure out the best format to use for the date, and to make it as compact as possible, but still be complete. This is most useful when used with the `AutoDateLocator`::"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:21 of
+msgid "**formats**"
+msgstr ""
+
+#: of
+msgid "list of 6 strings, optional"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:18 of
+#, python-format
+msgid "Format strings for 6 levels of tick labelling: mostly years, months, days, hours, minutes, and seconds.  Strings use the same format codes as `~datetime.datetime.strftime`.  Default is ``['%Y', '%b', '%d', '%H:%M', '%H:%M', '%S.%f']``"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:27 of
+msgid "**zero_formats**"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:24 of
+#, python-format
+msgid "Format strings for tick labels that are \"zeros\" for a given tick level.  For instance, if most ticks are months, ticks around 1 Jan 2005 will be labeled \"Dec\", \"2005\", \"Feb\".  The default is ``['', '%Y', '%b', '%b-%d', '%H:%M', '%H:%M']``"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:35 of
+msgid "**offset_formats**"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:30 of
+msgid "Format strings for the 6 levels that is applied to the \"offset\" string found on the right side of an x-axis, or top of a y-axis. Combined with the tick labels this should completely specify the date.  The default is::"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:38 of
+msgid "**show_offset**"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:38 of
+msgid "Whether to show the offset or not."
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:41 matplotlib.dates.DateFormatter:36
+#: of
+msgid "To enable/disable the use of TeX's math mode for rendering the results of the formatter."
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:55 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:56 of
+msgid "See :doc:`/gallery/ticks/date_concise_formatter`"
+msgstr ""
+
+#: ../../api/dates_api.rst:7
+msgid "(`Source code <../api/dates_api-1.py>`__, `png <../api/dates_api-1.png>`__, `pdf <../api/dates_api-1.pdf>`__)"
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter:85 of
+msgid "Autoformat the date labels.  The default format is used to form an initial string, and then redundant elements are removed."
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter.format_data_short:2 of
+msgid "Return a short string version of the tick value."
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter.format_data_short:4 of
+msgid "Defaults to the position-independent long value."
+msgstr ""
+
+#: matplotlib.dates.ConciseDateFormatter.format_ticks:2 of
+msgid "Return the tick labels for all the ticks at once."
+msgstr ""
+
+#: matplotlib.dates.DateConverter:1 of
+msgid "Bases: :py:class:`matplotlib.units.ConversionInterface`"
+msgstr ""
+
+#: matplotlib.dates.DateConverter:2 of
+msgid "Converter for `datetime.date` and `datetime.datetime` data, or for date/time data represented as it would be converted by `date2num`."
+msgstr ""
+
+#: matplotlib.dates.DateConverter:5 of
+msgid "The 'unit' tag for such data is None or a tzinfo instance."
+msgstr ""
+
+#: matplotlib.dates.DateConverter.convert:2 of
+msgid "If *value* is not already a number or sequence of numbers, convert it with `date2num`."
+msgstr ""
+
+#: matplotlib.dates.DateConverter.convert:5 of
+msgid "The *unit* and *axis* arguments are not used."
+msgstr ""
+
+#: matplotlib.dates.DateConverter.default_units:2 of
+msgid "Return the tzinfo instance of *x* or of its first element, or None"
+msgstr ""
+
+#: matplotlib.dates.DateFormatter:2 of
+msgid "Format a tick (in days since the epoch) with a `~datetime.datetime.strftime` format string."
+msgstr ""
+
+#: matplotlib.dates.DateFormatter:30 of
+msgid "**fmt**"
+msgstr ""
+
+#: matplotlib.dates.DateFormatter:30 of
+msgid "`~datetime.datetime.strftime` format string"
+msgstr ""
+
+#: matplotlib.dates.DateFormatter:33 of
+msgid "**tz** : `datetime.tzinfo`, default: :rc:`timezone`"
+msgstr ""
+
+#: matplotlib.dates.DateFormatter:32 of
+msgid "datetime.tzinfo, default: rcParams[\"timezone\"] (default: 'UTC')"
+msgstr ""
+
+#: matplotlib.dates.DateLocator:1 of
+msgid "Bases: :py:class:`matplotlib.ticker.Locator`"
+msgstr ""
+
+#: matplotlib.dates.DateLocator:2 of
+msgid "Determines the tick locations when plotting dates."
+msgstr ""
+
+#: matplotlib.dates.DateLocator:4 of
+msgid "This class is subclassed by other Locators and is not meant to be used on its own."
+msgstr ""
+
+#: matplotlib.dates.DateLocator.datalim_to_dt:2 of
+msgid "Convert axis data interval to datetime objects."
+msgstr ""
+
+#: matplotlib.dates.DateLocator.set_tzinfo:2 of
+msgid "Set time zone info."
+msgstr ""
+
+#: matplotlib.dates.DateLocator.viewlim_to_dt:2 of
+msgid "Convert the view interval to datetime objects."
+msgstr ""
+
+#: matplotlib.dates.DayLocator:1 matplotlib.dates.HourLocator:1
+#: matplotlib.dates.MinuteLocator:1 matplotlib.dates.MonthLocator:1
+#: matplotlib.dates.SecondLocator:1 matplotlib.dates.WeekdayLocator:1
+#: matplotlib.dates.YearLocator:1 of
+msgid "Bases: :py:class:`matplotlib.dates.RRuleLocator`"
+msgstr ""
+
+#: matplotlib.dates.DayLocator:2 of
+msgid "Make ticks on occurrences of each day of the month.  For example, 1, 15, 30."
+msgstr ""
+
+#: matplotlib.dates.DayLocator:24 of
+msgid "Mark every day in *bymonthday*; *bymonthday* can be an int or sequence."
+msgstr ""
+
+#: matplotlib.dates.DayLocator:26 of
+msgid "Default is to tick every day of the month: ``bymonthday=range(1, 32)``."
+msgstr ""
+
+#: matplotlib.dates.HourLocator:2 of
+msgid "Make ticks on occurrences of each hour."
+msgstr ""
+
+#: matplotlib.dates.HourLocator:23 of
+msgid "Mark every hour in *byhour*; *byhour* can be an int or sequence. Default is to tick every hour: ``byhour=range(24)``"
+msgstr ""
+
+#: matplotlib.dates.HourLocator:26 matplotlib.dates.MinuteLocator:26
+#: matplotlib.dates.MonthLocator:26 matplotlib.dates.SecondLocator:26 of
+msgid "*interval* is the interval between each iteration.  For example, if ``interval=2``, mark every second occurrence."
+msgstr ""
+
+#: matplotlib.dates.MicrosecondLocator:2 of
+msgid "Make ticks on regular intervals of one or more microsecond(s)."
+msgstr ""
+
+#: matplotlib.dates.MicrosecondLocator:6 of
+msgid "By default, Matplotlib uses a floating point representation of time in days since the epoch, so plotting data with microsecond time resolution does not work well for dates that are far (about 70 years) from the epoch (check with `~.dates.get_epoch`)."
+msgstr ""
+
+#: matplotlib.dates.MicrosecondLocator:12 of
+msgid "If you want sub-microsecond resolution time plots, it is strongly recommended to use floating point seconds, not datetime-like time representation."
+msgstr ""
+
+#: matplotlib.dates.MicrosecondLocator:16 of
+msgid "If you really must use datetime.datetime() or similar and still need microsecond precision, change the time origin via `.dates.set_epoch` to something closer to the dates being plotted. See :doc:`/gallery/ticks/date_precision_and_epochs`."
+msgstr ""
+
+#: matplotlib.dates.MicrosecondLocator:39 of
+msgid "*interval* is the interval between each iteration.  For example, if ``interval=2``, mark every second microsecond."
+msgstr ""
+
+#: matplotlib.dates.MicrosecondLocator.set_data_interval:2
+#: matplotlib.dates.MicrosecondLocator.set_view_interval:2 of
+msgid "[*Deprecated*]"
+msgstr ""
+
+#: matplotlib.dates.MicrosecondLocator.set_data_interval:15
+#: matplotlib.dates.MicrosecondLocator.set_view_interval:15
+#: matplotlib.dates.date2num:26 matplotlib.dates.epoch2num:23
+#: matplotlib.dates.num2date:31 matplotlib.dates.num2epoch:23 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.dates.MicrosecondLocator.set_data_interval:16
+#: matplotlib.dates.MicrosecondLocator.set_view_interval:16 of
+msgid "\\"
+msgstr ""
+
+#: matplotlib.dates.MinuteLocator:2 of
+msgid "Make ticks on occurrences of each minute."
+msgstr ""
+
+#: matplotlib.dates.MinuteLocator:23 of
+msgid "Mark every minute in *byminute*; *byminute* can be an int or sequence.  Default is to tick every minute: ``byminute=range(60)``"
+msgstr ""
+
+#: matplotlib.dates.MonthLocator:2 of
+msgid "Make ticks on occurrences of each month, e.g., 1, 3, 12."
+msgstr ""
+
+#: matplotlib.dates.MonthLocator:23 of
+msgid "Mark every month in *bymonth*; *bymonth* can be an int or sequence.  Default is ``range(1, 13)``, i.e. every month."
+msgstr ""
+
+#: matplotlib.dates.SecondLocator:2 of
+msgid "Make ticks on occurrences of each second."
+msgstr ""
+
+#: matplotlib.dates.SecondLocator:23 of
+msgid "Mark every second in *bysecond*; *bysecond* can be an int or sequence.  Default is to tick every second: ``bysecond = range(60)``"
+msgstr ""
+
+#: matplotlib.dates.WeekdayLocator:2 of
+msgid "Make ticks on occurrences of each weekday."
+msgstr ""
+
+#: matplotlib.dates.WeekdayLocator:23 of
+msgid "Mark every weekday in *byweekday*; *byweekday* can be a number or sequence."
+msgstr ""
+
+#: matplotlib.dates.WeekdayLocator:26 of
+msgid "Elements of *byweekday* must be one of MO, TU, WE, TH, FR, SA, SU, the constants from :mod:`dateutil.rrule`, which have been imported into the :mod:`matplotlib.dates` namespace."
+msgstr ""
+
+#: matplotlib.dates.WeekdayLocator:30 of
+msgid "*interval* specifies the number of weeks to skip.  For example, ``interval=2`` plots every second week."
+msgstr ""
+
+#: matplotlib.dates.YearLocator:2 of
+msgid "Make ticks on a given day of each year that is a multiple of base."
+msgstr ""
+
+#: matplotlib.dates.YearLocator:4 of
+msgid "Examples::"
+msgstr ""
+
+#: matplotlib.dates.YearLocator:30 of
+msgid "Mark years that are multiple of base on a given month and day (default jan 1)."
+msgstr ""
+
+#: matplotlib.dates.date2num:8 of
+msgid "**d** : `datetime.datetime` or `numpy.datetime64` or sequences of these"
+msgstr ""
+
+#: matplotlib.dates.date2num:7 of
+msgid "datetime.datetime or numpy.datetime64 or sequences of these"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta.normalized matplotlib.dates.date2num
+#: matplotlib.dates.drange matplotlib.dates.epoch2num
+#: matplotlib.dates.get_epoch matplotlib.dates.num2date
+#: matplotlib.dates.num2epoch matplotlib.dates.num2timedelta of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.dates.date2num:23 of
+msgid "float or sequence of floats"
+msgstr ""
+
+#: matplotlib.dates.date2num:13 of
+msgid "Number of days since the epoch.  See `.get_epoch` for the epoch, which can be changed by :rc:`date.epoch` or `.set_epoch`.  If the epoch is \"1970-01-01T00:00:00\" (default) then noon Jan 1 1970 (\"1970-01-01T12:00:00\") returns 0.5."
+msgstr ""
+
+#: matplotlib.dates.date2num:27 of
+msgid "The Gregorian calendar is assumed; this is not universal practice. For details see the module docstring."
+msgstr ""
+
+#: matplotlib.dates.datestr2num:8 matplotlib.dates.num2epoch:8 of
+msgid "**d**"
+msgstr ""
+
+#: of
+msgid "str or sequence of str"
+msgstr ""
+
+#: matplotlib.dates.datestr2num:8 of
+msgid "The dates to convert."
+msgstr ""
+
+#: matplotlib.dates.datestr2num:24 of
+msgid "**default**"
+msgstr ""
+
+#: of
+msgid "datetime.datetime, optional"
+msgstr ""
+
+#: matplotlib.dates.datestr2num:11 of
+msgid "The default date to use when fields are missing in *d*."
+msgstr ""
+
+#: matplotlib.dates.drange:4 of
+msgid "The dates start at *dstart* and reach up to, but not including *dend*. They are spaced by *delta*."
+msgstr ""
+
+#: matplotlib.dates.drange:10 of
+msgid "**dstart, dend** : `~datetime.datetime`"
+msgstr ""
+
+#: matplotlib.dates.drange:9 of
+msgid "datetime"
+msgstr ""
+
+#: matplotlib.dates.drange:10 of
+msgid "The date limits."
+msgstr ""
+
+#: matplotlib.dates.drange:13 of
+msgid "**delta** : `datetime.timedelta`"
+msgstr ""
+
+#: matplotlib.dates.drange:12 of
+msgid "datetime.timedelta"
+msgstr ""
+
+#: matplotlib.dates.drange:13 of
+msgid "Spacing of the dates."
+msgstr ""
+
+#: matplotlib.dates.drange:30 matplotlib.dates.epoch2num:20
+#: matplotlib.dates.num2epoch:20 of
+msgid "`numpy.array`"
+msgstr ""
+
+#: matplotlib.dates.drange:18 of
+msgid "A list floats representing Matplotlib dates."
+msgstr ""
+
+#: matplotlib.dates.epoch2num:2 of
+msgid "[*Deprecated*] Convert UNIX time to days since Matplotlib epoch."
+msgstr ""
+
+#: matplotlib.dates.epoch2num:8 of
+msgid "**e**"
+msgstr ""
+
+#: of
+msgid "list of floats"
+msgstr ""
+
+#: matplotlib.dates.epoch2num:8 matplotlib.dates.num2epoch:13 of
+msgid "Time in seconds since 1970-01-01."
+msgstr ""
+
+#: matplotlib.dates.epoch2num:13 matplotlib.dates.num2epoch:8 of
+msgid "Time in days since Matplotlib epoch (see `~.dates.get_epoch()`)."
+msgstr ""
+
+#: matplotlib.dates.get_epoch:21 matplotlib.dates.set_epoch:33 of
+msgid "**epoch**"
+msgstr ""
+
+#: matplotlib.dates.get_epoch:9 of
+msgid "String for the epoch (parsable by `numpy.datetime64`)."
+msgstr ""
+
+#: matplotlib.dates.num2date:10 matplotlib.dates.num2timedelta:10 of
+msgid "**x**"
+msgstr ""
+
+#: matplotlib.dates.num2date:8 of
+msgid "Number of days (fraction part represents hours, minutes, seconds) since the epoch.  See `.get_epoch` for the epoch, which can be changed by :rc:`date.epoch` or `.set_epoch`."
+msgstr ""
+
+#: matplotlib.dates.num2date:13 of
+msgid "**tz** : str, default: :rc:`timezone`"
+msgstr ""
+
+#: of
+msgid "str, default:"
+msgstr ""
+
+#: matplotlib.dates.num2date:13 of
+msgid "Timezone of *x*."
+msgstr ""
+
+#: matplotlib.dates.num2date:28 of
+msgid "`~datetime.datetime` or sequence of `~datetime.datetime`"
+msgstr ""
+
+#: matplotlib.dates.num2date:18 of
+msgid "Dates are returned in timezone *tz*."
+msgstr ""
+
+#: matplotlib.dates.num2date:20 of
+msgid "If *x* is a sequence, a sequence of `~datetime.datetime` objects will be returned."
+msgstr ""
+
+#: matplotlib.dates.num2date:32 of
+msgid "The addition of one here is a historical artifact. Also, note that the Gregorian calendar is assumed; this is not universal practice. For details, see the module docstring."
+msgstr ""
+
+#: matplotlib.dates.num2epoch:2 of
+msgid "[*Deprecated*] Convert days since Matplotlib epoch to UNIX time."
+msgstr ""
+
+#: matplotlib.dates.num2timedelta:4 of
+msgid "If *x* is a sequence, a sequence of `~datetime.timedelta` objects will be returned."
+msgstr ""
+
+#: of
+msgid "float, sequence of floats"
+msgstr ""
+
+#: matplotlib.dates.num2timedelta:10 of
+msgid "Number of days. The fraction part represents hours, minutes, seconds."
+msgstr ""
+
+#: matplotlib.dates.num2timedelta:27 of
+msgid "`datetime.timedelta` or list[`datetime.timedelta`]"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:2 of
+msgid "The relativedelta type is designed to be applied to an existing datetime and can replace specific components of that datetime, or represents an interval of time."
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:6 of
+msgid "It is based on the specification of the excellent work done by M.-A. Lemburg in his `mx.DateTime <https://www.egenix.com/products/python/mxBase/mxDateTime/>`_ extension. However, notice that this type does *NOT* implement the same algorithm as his work. Do *NOT* expect it to behave like mx.DateTime's counterpart."
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:12 of
+msgid "There are two different ways to build a relativedelta instance. The first one is passing it two date/datetime classes::"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:17 of
+msgid "The second one is passing it any number of the following keyword arguments::"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:52 of
+msgid "There are relative and absolute forms of the keyword arguments. The plural is relative, and the singular is absolute. For each argument in the order below, the absolute form is applied first (by setting each attribute to that value) and then the relative form (by adding the value to the attribute)."
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:58 of
+msgid "The order of attributes considered when this relativedelta is added to a datetime is:"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:61 of
+msgid "Year"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:62 of
+msgid "Month"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:63 of
+msgid "Day"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:64 of
+msgid "Hours"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:65 of
+msgid "Minutes"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:66 of
+msgid "Seconds"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:67 of
+msgid "Microseconds"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:69 of
+msgid "Finally, weekday is applied, using the rule described above."
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:71 of
+msgid "For example"
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta:80 of
+msgid "First, the day is set to 1 (the first of the month), then 25 hours are added, to get to the 2nd day and 14th hour, finally the weekday is applied, but since the 2nd is already a Monday there is no effect."
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta.normalized:2 of
+msgid "Return a version of this object represented entirely using integer values for the relative attributes."
+msgstr ""
+
+#: dateutil.relativedelta.relativedelta.normalized:8 of
+msgid "Returns a :class:`dateutil.relativedelta.relativedelta` object."
+msgstr ""
+
+#: dateutil.rrule.rrule:1 of
+msgid "Bases: :py:class:`dateutil.rrule.rrulebase`"
+msgstr ""
+
+#: dateutil.rrule.rrule:2 of
+msgid "That's the base of the rrule operation. It accepts all the keywords defined in the RFC as its constructor parameters (except byday, which was renamed to byweekday) and more. The constructor prototype is::"
+msgstr ""
+
+#: dateutil.rrule.rrule:8 of
+msgid "Where freq must be one of YEARLY, MONTHLY, WEEKLY, DAILY, HOURLY, MINUTELY, or SECONDLY."
+msgstr ""
+
+#: dateutil.rrule.rrule:12 of
+msgid "Per RFC section 3.3.10, recurrence instances falling on invalid dates and times are ignored rather than coerced:"
+msgstr ""
+
+#: dateutil.rrule.rrule:15 of
+msgid "Recurrence rules may generate recurrence instances with an invalid date (e.g., February 30) or nonexistent local time (e.g., 1:30 AM on a day where the local time is moved forward by an hour at 1:00 AM).  Such recurrence instances MUST be ignored and MUST NOT be counted as part of the recurrence set."
+msgstr ""
+
+#: dateutil.rrule.rrule:21 of
+msgid "This can lead to possibly surprising behavior when, for example, the start date occurs at the end of the month:"
+msgstr ""
+
+#: dateutil.rrule.rrule:34 of
+msgid "Additionally, it supports the following keyword arguments:"
+msgstr ""
+
+#: dateutil.rrule.rrule:36 of
+msgid "The recurrence start. Besides being the base for the recurrence, missing parameters in the final recurrence instances will also be extracted from this date. If not given, datetime.now() will be used instead."
+msgstr ""
+
+#: dateutil.rrule.rrule:41 of
+msgid "The interval between each freq iteration. For example, when using YEARLY, an interval of 2 means once every two years, but with HOURLY, it means once every two hours. The default interval is 1."
+msgstr ""
+
+#: dateutil.rrule.rrule:45 of
+msgid "The week start day. Must be one of the MO, TU, WE constants, or an integer, specifying the first day of the week. This will affect recurrences based on weekly periods. The default week start is got from calendar.firstweekday(), and may be modified by calendar.setfirstweekday()."
+msgstr ""
+
+#: dateutil.rrule.rrule:51 of
+msgid "If given, this determines how many occurrences will be generated.  .. note::     As of version 2.5.0, the use of the keyword ``until`` in conjunction     with ``count`` is deprecated, to make sure ``dateutil`` is fully     compliant with `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/     html/rfc5545#section-3.3.10>`_. Therefore, ``until`` and ``count``     **must not** occur in the same call to ``rrule``."
+msgstr ""
+
+#: dateutil.rrule.rrule:52 of
+msgid "If given, this determines how many occurrences will be generated."
+msgstr ""
+
+#: dateutil.rrule.rrule:55 dateutil.rrule.rrule:67 of
+msgid "As of version 2.5.0, the use of the keyword ``until`` in conjunction with ``count`` is deprecated, to make sure ``dateutil`` is fully compliant with `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/ html/rfc5545#section-3.3.10>`_. Therefore, ``until`` and ``count`` **must not** occur in the same call to ``rrule``."
+msgstr ""
+
+#: dateutil.rrule.rrule:60 of
+msgid "If given, this must be a datetime instance specifying the upper-bound limit of the recurrence. The last recurrence in the rule is the greatest datetime that is less than or equal to the value specified in the ``until`` parameter.  .. note::     As of version 2.5.0, the use of the keyword ``until`` in conjunction     with ``count`` is deprecated, to make sure ``dateutil`` is fully     compliant with `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/     html/rfc5545#section-3.3.10>`_. Therefore, ``until`` and ``count``     **must not** occur in the same call to ``rrule``."
+msgstr ""
+
+#: dateutil.rrule.rrule:61 of
+msgid "If given, this must be a datetime instance specifying the upper-bound limit of the recurrence. The last recurrence in the rule is the greatest datetime that is less than or equal to the value specified in the ``until`` parameter."
+msgstr ""
+
+#: dateutil.rrule.rrule:72 of
+msgid "If given, it must be either an integer, or a sequence of integers, positive or negative. Each given integer will specify an occurrence number, corresponding to the nth occurrence of the rule inside the frequency period. For example, a bysetpos of -1 if combined with a MONTHLY frequency, and a byweekday of (MO, TU, WE, TH, FR), will result in the last work day of every month."
+msgstr ""
+
+#: dateutil.rrule.rrule:79 of
+msgid "If given, it must be either an integer, or a sequence of integers, meaning the months to apply the recurrence to."
+msgstr ""
+
+#: dateutil.rrule.rrule:82 of
+msgid "If given, it must be either an integer, or a sequence of integers, meaning the month days to apply the recurrence to."
+msgstr ""
+
+#: dateutil.rrule.rrule:85 of
+msgid "If given, it must be either an integer, or a sequence of integers, meaning the year days to apply the recurrence to."
+msgstr ""
+
+#: dateutil.rrule.rrule:88 of
+msgid "If given, it must be either an integer, or a sequence of integers, positive or negative. Each integer will define an offset from the Easter Sunday. Passing the offset 0 to byeaster will yield the Easter Sunday itself. This is an extension to the RFC specification."
+msgstr ""
+
+#: dateutil.rrule.rrule:93 of
+msgid "If given, it must be either an integer, or a sequence of integers, meaning the week numbers to apply the recurrence to. Week numbers have the meaning described in ISO8601, that is, the first week of the year is that containing at least four days of the new year."
+msgstr ""
+
+#: dateutil.rrule.rrule:98 of
+msgid "If given, it must be either an integer (0 == MO), a sequence of integers, one of the weekday constants (MO, TU, etc), or a sequence of these constants. When given, these variables will define the weekdays where the recurrence will be applied. It's also possible to use an argument n for the weekday instances, which will mean the nth occurrence of this weekday in the period. For example, with MONTHLY, or with YEARLY and BYMONTH, using FR(+1) in byweekday will specify the first friday of the month where the recurrence happens. Notice that in the RFC documentation, this is specified as BYDAY, but was renamed to avoid the ambiguity of that keyword."
+msgstr ""
+
+#: dateutil.rrule.rrule:109 of
+msgid "If given, it must be either an integer, or a sequence of integers, meaning the hours to apply the recurrence to."
+msgstr ""
+
+#: dateutil.rrule.rrule:112 of
+msgid "If given, it must be either an integer, or a sequence of integers, meaning the minutes to apply the recurrence to."
+msgstr ""
+
+#: dateutil.rrule.rrule:115 of
+msgid "If given, it must be either an integer, or a sequence of integers, meaning the seconds to apply the recurrence to."
+msgstr ""
+
+#: dateutil.rrule.rrule:118 of
+msgid "If given, it must be a boolean value specifying to enable or disable caching of results. If you will use the same rrule instance multiple times, enabling caching will improve the performance considerably."
+msgstr ""
+
+#: dateutil.rrule.rrule.replace:2 of
+msgid "Return new rrule with same attributes except for those attributes given new values by whichever keyword arguments are specified."
+msgstr ""
+
+#: matplotlib.dates.set_epoch:4 of
+msgid "The default epoch is :rc:`dates.epoch` (by default 1970-01-01T00:00)."
+msgstr ""
+
+#: matplotlib.dates.set_epoch:6 of
+msgid "If microsecond accuracy is desired, the date being plotted needs to be within approximately 70 years of the epoch. Matplotlib internally represents dates as days since the epoch, so floating point dynamic range needs to be within a factor of 2^52."
+msgstr ""
+
+#: matplotlib.dates.set_epoch:11 of
+msgid "`~.dates.set_epoch` must be called before any dates are converted (i.e. near the import section) or a RuntimeError will be raised."
+msgstr ""
+
+#: matplotlib.dates.set_epoch:14 of
+msgid "See also :doc:`/gallery/ticks/date_precision_and_epochs`."
+msgstr ""
+
+#: matplotlib.dates.set_epoch:19 of
+msgid "valid UTC date parsable by `numpy.datetime64` (do not include timezone)."
+msgstr ""
+

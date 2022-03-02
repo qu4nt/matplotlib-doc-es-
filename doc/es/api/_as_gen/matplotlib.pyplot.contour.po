@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:16\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.pyplot.contour.po\n"
+"X-Crowdin-File-ID: 1106\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.pyplot.contour.rst:2
+msgid "matplotlib.pyplot.contour"
+msgstr ""
+
+#: matplotlib.pyplot.contour:2 of
+msgid "Plot contour lines."
+msgstr ""
+
+#: matplotlib.pyplot.contour:4 of
+msgid "Call signature::"
+msgstr ""
+
+#: matplotlib.pyplot.contour:8 of
+msgid "`.contour` and `.contourf` draw contour lines and filled contours, respectively.  Except as noted, function signatures and return values are the same for both versions."
+msgstr ""
+
+#: matplotlib.pyplot.contour of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.contour:25 of
+msgid "**X, Y**"
+msgstr ""
+
+#: of
+msgid "array-like, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:15 of
+msgid "The coordinates of the values in *Z*."
+msgstr ""
+
+#: matplotlib.pyplot.contour:17 of
+msgid "*X* and *Y* must both be 2D with the same shape as *Z* (e.g. created via `numpy.meshgrid`), or they must both be 1-D such that ``len(X) == N`` is the number of columns in *Z* and ``len(Y) == M`` is the number of rows in *Z*."
+msgstr ""
+
+#: matplotlib.pyplot.contour:22 of
+msgid "*X* and *Y* must both be ordered monotonically."
+msgstr ""
+
+#: matplotlib.pyplot.contour:24 of
+msgid "If not given, they are assumed to be integer indices, i.e. ``X = range(N)``, ``Y = range(M)``."
+msgstr ""
+
+#: matplotlib.pyplot.contour:28 of
+msgid "**Z**"
+msgstr ""
+
+#: of
+msgid "(M, N) array-like"
+msgstr ""
+
+#: matplotlib.pyplot.contour:28 of
+msgid "The height values over which the contour is drawn."
+msgstr ""
+
+#: matplotlib.pyplot.contour:38 of
+msgid "**levels**"
+msgstr ""
+
+#: of
+msgid "int or array-like, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:31 of
+msgid "Determines the number and positions of the contour lines / regions."
+msgstr ""
+
+#: matplotlib.pyplot.contour:33 of
+msgid "If an int *n*, use `~matplotlib.ticker.MaxNLocator`, which tries to automatically choose no more than *n+1* \"nice\" contour levels between *vmin* and *vmax*."
+msgstr ""
+
+#: matplotlib.pyplot.contour:37 of
+msgid "If array-like, draw contour lines at the specified levels. The values must be in increasing order."
+msgstr ""
+
+#: matplotlib.pyplot.contour of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.pyplot.contour:45 of
+msgid "`~.contour.QuadContourSet`"
+msgstr ""
+
+#: matplotlib.pyplot.contour of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.contour:54 of
+msgid "**corner_mask** : bool, default: :rc:`contour.corner_mask`"
+msgstr ""
+
+#: of
+msgid "bool, default:"
+msgstr ""
+
+#: matplotlib.pyplot.contour:50 of
+msgid "Enable/disable corner masking, which only has an effect if *Z* is a masked array.  If ``False``, any quad touching a masked point is masked out.  If ``True``, only the triangular corners of quads nearest those points are always masked out, other triangular corners comprising three unmasked points are contoured as usual."
+msgstr ""
+
+#: matplotlib.pyplot.contour:69 of
+msgid "**colors**"
+msgstr ""
+
+#: of
+msgid "color string or sequence of colors, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:57 of
+msgid "The colors of the levels, i.e. the lines for `.contour` and the areas for `.contourf`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:60 of
+msgid "The sequence is cycled for the levels in ascending order. If the sequence is shorter than the number of levels, it's repeated."
+msgstr ""
+
+#: matplotlib.pyplot.contour:63 of
+msgid "As a shortcut, single color strings may be used in place of one-element lists, i.e. ``'red'`` instead of ``['red']`` to color all levels with the same color. This shortcut does only work for color strings, not for other ways of specifying colors."
+msgstr ""
+
+#: matplotlib.pyplot.contour:68 of
+msgid "By default (value *None*), the colormap specified by *cmap* will be used."
+msgstr ""
+
+#: matplotlib.pyplot.contour:72 of
+msgid "**alpha**"
+msgstr ""
+
+#: of
+msgid "float, default: 1"
+msgstr ""
+
+#: matplotlib.pyplot.contour:72 of
+msgid "The alpha blending value, between 0 (transparent) and 1 (opaque)."
+msgstr ""
+
+#: matplotlib.pyplot.contour:78 of
+msgid "**cmap** : str or `.Colormap`, default: :rc:`image.cmap`"
+msgstr ""
+
+#: of
+msgid "str or"
+msgstr ""
+
+#: matplotlib.pyplot.contour:75 of
+msgid "A `.Colormap` instance or registered colormap name. The colormap maps the level values to colors."
+msgstr ""
+
+#: matplotlib.pyplot.contour:78 of
+msgid "If both *colors* and *cmap* are given, an error is raised."
+msgstr ""
+
+#: matplotlib.pyplot.contour:83 of
+msgid "**norm** : `~matplotlib.colors.Normalize`, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:82 of
+msgid "Normalize, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:81 of
+msgid "If a colormap is used, the `.Normalize` instance scales the level values to the canonical colormap range [0, 1] for mapping to colors. If not given, the default linear scaling is used."
+msgstr ""
+
+#: matplotlib.pyplot.contour:88 of
+msgid "**vmin, vmax**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:86 of
+msgid "If not *None*, either or both of these values will be supplied to the `.Normalize` instance, overriding the default color scaling based on *levels*."
+msgstr ""
+
+#: matplotlib.pyplot.contour:99 of
+msgid "**origin** : {*None*, 'upper', 'lower', 'image'}, default: None"
+msgstr ""
+
+#: of
+msgid "{"
+msgstr ""
+
+#: matplotlib.pyplot.contour:91 of
+msgid "Determines the orientation and exact position of *Z* by specifying the position of ``Z[0, 0]``.  This is only relevant, if *X*, *Y* are not given."
+msgstr ""
+
+#: matplotlib.pyplot.contour:95 of
+msgid "*None*: ``Z[0, 0]`` is at X=0, Y=0 in the lower left corner."
+msgstr ""
+
+#: matplotlib.pyplot.contour:96 of
+msgid "'lower': ``Z[0, 0]`` is at X=0.5, Y=0.5 in the lower left corner."
+msgstr ""
+
+#: matplotlib.pyplot.contour:97 of
+msgid "'upper': ``Z[0, 0]`` is at X=N+0.5, Y=0.5 in the upper left corner."
+msgstr ""
+
+#: matplotlib.pyplot.contour:99 of
+msgid "'image': Use the value from :rc:`image.origin`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:109 of
+msgid "**extent**"
+msgstr ""
+
+#: of
+msgid "(x0, x1, y0, y1), optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:102 of
+msgid "If *origin* is not *None*, then *extent* is interpreted as in `.imshow`: it gives the outer pixel boundaries. In this case, the position of Z[0, 0] is the center of the pixel, not a corner. If *origin* is *None*, then (*x0*, *y0*) is the position of Z[0, 0], and (*x1*, *y1*) is the position of Z[-1, -1]."
+msgstr ""
+
+#: matplotlib.pyplot.contour:108 of
+msgid "This argument is ignored if *X* and *Y* are specified in the call to contour."
+msgstr ""
+
+#: matplotlib.pyplot.contour:114 of
+msgid "**locator**"
+msgstr ""
+
+#: of
+msgid "ticker.Locator subclass, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:112 of
+msgid "The locator is used to determine the contour levels if they are not given explicitly via *levels*. Defaults to `~.ticker.MaxNLocator`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:150 of
+msgid "**extend**"
+msgstr ""
+
+#: of
+msgid "{'neither', 'both', 'min', 'max'}, default: 'neither'"
+msgstr ""
+
+#: matplotlib.pyplot.contour:117 of
+msgid "Determines the ``contourf``-coloring of values that are outside the *levels* range."
+msgstr ""
+
+#: matplotlib.pyplot.contour:120 of
+msgid "If 'neither', values outside the *levels* range are not colored. If 'min', 'max' or 'both', color the values below, above or below and above the *levels* range."
+msgstr ""
+
+#: matplotlib.pyplot.contour:124 of
+msgid "Values below ``min(levels)`` and above ``max(levels)`` are mapped to the under/over values of the `.Colormap`. Note that most colormaps do not have dedicated colors for these by default, so that the over and under values are the edge values of the colormap. You may want to set these values explicitly using `.Colormap.set_under` and `.Colormap.set_over`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:133 of
+msgid "An existing `.QuadContourSet` does not get notified if properties of its colormap are changed. Therefore, an explicit call `.QuadContourSet.changed()` is needed after modifying the colormap. The explicit call can be left out, if a colorbar is assigned to the `.QuadContourSet` because it internally calls `.QuadContourSet.changed()`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:140 of
+msgid "Example::"
+msgstr ""
+
+#: matplotlib.pyplot.contour:154 of
+msgid "**xunits, yunits**"
+msgstr ""
+
+#: of
+msgid "registered units, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:153 of
+msgid "Override axis units by specifying an instance of a :class:`matplotlib.units.ConversionInterface`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:159 of
+msgid "**antialiased**"
+msgstr ""
+
+#: of
+msgid "bool, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:157 of
+msgid "Enable antialiasing, overriding the defaults.  For filled contours, the default is *True*.  For line contours, it is taken from :rc:`lines.antialiased`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:168 of
+msgid "**nchunk**"
+msgstr ""
+
+#: of
+msgid "int >= 0, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:162 of
+msgid "If 0, no subdivision of the domain.  Specify a positive integer to divide the domain into subdomains of *nchunk* by *nchunk* quads. Chunking reduces the maximum length of polygons generated by the contouring algorithm which reduces the rendering workload passed on to the backend and also requires slightly less RAM.  It can however introduce rendering artifacts at chunk boundaries depending on the backend, the *antialiased* flag and value of *alpha*."
+msgstr ""
+
+#: matplotlib.pyplot.contour:180 of
+msgid "**linewidths** : float or array-like, default: :rc:`contour.linewidth`"
+msgstr ""
+
+#: of
+msgid "float or array-like, default:"
+msgstr ""
+
+#: matplotlib.pyplot.contour:171 matplotlib.pyplot.contour:183 of
+msgid "*Only applies to* `.contour`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:173 of
+msgid "The line width of the contour lines."
+msgstr ""
+
+#: matplotlib.pyplot.contour:175 of
+msgid "If a number, all levels will be plotted with this linewidth."
+msgstr ""
+
+#: matplotlib.pyplot.contour:177 of
+msgid "If a sequence, the levels in ascending order will be plotted with the linewidths in the order specified."
+msgstr ""
+
+#: matplotlib.pyplot.contour:180 of
+msgid "If None, this falls back to :rc:`lines.linewidth`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:192 of
+msgid "**linestyles** : {*None*, 'solid', 'dashed', 'dashdot', 'dotted'}, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:185 of
+msgid "If *linestyles* is *None*, the default is 'solid' unless the lines are monochrome.  In that case, negative contours will take their linestyle from :rc:`contour.negative_linestyle` setting."
+msgstr ""
+
+#: matplotlib.pyplot.contour:189 of
+msgid "*linestyles* can also be an iterable of the above strings specifying a set of linestyles to be used. If this iterable is shorter than the number of contour levels it will be repeated as necessary."
+msgstr ""
+
+#: matplotlib.pyplot.contour:200 of
+msgid "**hatches**"
+msgstr ""
+
+#: of
+msgid "list[str], optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:195 of
+msgid "*Only applies to* `.contourf`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:197 of
+msgid "A list of cross hatch patterns to use on the filled areas. If None, no hatching will be added to the contour. Hatching is supported in the PostScript, PDF, SVG and Agg backends only."
+msgstr ""
+
+#: matplotlib.pyplot.contour:208 of
+msgid "**data**"
+msgstr ""
+
+#: of
+msgid "indexable object, optional"
+msgstr ""
+
+#: matplotlib.pyplot.contour:203 of
+msgid "If given, all parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception)."
+msgstr ""
+
+#: matplotlib.pyplot.contour:211 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.pyplot.contour:212 of
+msgid "`.contourf` differs from the MATLAB version in that it does not draw the polygon edges. To draw edges, add line contours with calls to `.contour`."
+msgstr ""
+
+#: matplotlib.pyplot.contour:216 of
+msgid "`.contourf` fills intervals that are closed at the top; that is, for boundaries *z1* and *z2*, the filled region is::"
+msgstr ""
+
+#: matplotlib.pyplot.contour:221 of
+msgid "except for the lowest interval, which is closed on both sides (i.e. it includes the lowest value)."
+msgstr ""
+
+#: matplotlib.pyplot.contour:224 of
+msgid "`.contour` and `.contourf` use a `marching squares <https://en.wikipedia.org/wiki/Marching_squares>`_ algorithm to compute contour locations.  More information can be found in the source ``src/_contour.h``."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.pyplot.contour.examples:2
+msgid "Examples using ``matplotlib.pyplot.contour``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.contour.examples:10
+msgid "Interactive functions"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.contour.examples:10
+#: ../../api/_as_gen/matplotlib.pyplot.contour.examples:18
+msgid ":ref:`sphx_glr_gallery_event_handling_ginput_manual_clabel_sgskip.py`"
+msgstr ""
+

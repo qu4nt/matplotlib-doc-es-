@@ -1,0 +1,584 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:17\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.pyplot.figlegend.po\n"
+"X-Crowdin-File-ID: 1130\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.pyplot.figlegend.rst:2
+msgid "matplotlib.pyplot.figlegend"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:2 of
+msgid "Place a legend on the figure."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:4 of
+msgid "Call signatures::"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:11 of
+msgid "The call signatures correspond to the following different ways to use this method:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:14 of
+msgid "**1. Automatic detection of elements to be shown in the legend**"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:16 of
+msgid "The elements to be added to the legend are automatically determined, when you do not pass in any extra arguments."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:19 of
+msgid "In this case, the labels are taken from the artist. You can specify them either at artist creation or by calling the :meth:`~.Artist.set_label` method on the artist::"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:26 of
+msgid "or::"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:32 of
+msgid "Specific lines can be excluded from the automatic legend element selection by defining a label starting with an underscore. This is default for all artists, so calling `.Figure.legend` without any arguments and without setting the labels manually will result in no legend being drawn."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:38 of
+msgid "**2. Explicitly listing the artists and labels in the legend**"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:40 of
+msgid "For full control of which artists have a legend entry, it is possible to pass an iterable of legend artists followed by an iterable of legend labels respectively::"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:46 of
+msgid "**3. Explicitly listing the artists in the legend**"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:48 of
+msgid "This is similar to 2, but the labels are taken from the artists' label properties. Example::"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:55 of
+msgid "**4. Labeling existing plot elements**"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:57 of
+msgid "Discouraged"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:59 of
+msgid "This call signature is discouraged, because the relation between plot elements and labels is only implicit by their order and can easily be mixed up."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:63 of
+msgid "To make a legend for all artists on all Axes, call this function with an iterable of strings, one for each legend item. For example::"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:80 of
+msgid "**handles** : list of `.Artist`, optional"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:74 of
+msgid "A list of Artists (lines, patches) to be added to the legend. Use this together with *labels*, if you need full control on what is shown in the legend and the automatic mechanism described above is not sufficient."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:79 of
+msgid "The length of handles and labels should be the same in this case. If they are not, they are truncated to the smaller length."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:86 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "list of str, optional"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:83 of
+msgid "A list of labels to show next to the artists. Use this together with *handles*, if you need full control on what is shown in the legend and the automatic mechanism described above is not sufficient."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:93 of
+msgid "`~matplotlib.legend.Legend`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:138 of
+msgid "**loc** : str or pair of floats, default: :rc:`legend.loc` ('best' for axes, 'upper right' for figures)"
+msgstr ""
+
+#: of
+msgid "str or pair of floats, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:98 of
+msgid "The location of the legend."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:100 of
+msgid "The strings ``'upper left', 'upper right', 'lower left', 'lower right'`` place the legend at the corresponding corner of the axes/figure."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:104 of
+msgid "The strings ``'upper center', 'lower center', 'center left', 'center right'`` place the legend at the center of the corresponding edge of the axes/figure."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:109 of
+msgid "The string ``'center'`` places the legend at the center of the axes/figure."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:111 of
+msgid "The string ``'best'`` places the legend at the location, among the nine locations defined so far, with the minimum overlap with other drawn artists.  This option can be quite slow for plots with large amounts of data; your plotting speed may benefit from providing a specific location."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:116 of
+msgid "The location can also be a 2-tuple giving the coordinates of the lower-left corner of the legend in axes coordinates (in which case *bbox_to_anchor* will be ignored)."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:120 of
+msgid "For back-compatibility, ``'center right'`` (but no other location) can also be spelled ``'right'``, and each \"string\" locations can also be given as a numeric value:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:125 of
+msgid "Location String"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:125 of
+msgid "Location Code"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:127 of
+msgid "'best'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:127 of
+msgid "0"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:128 of
+msgid "'upper right'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:128 of
+msgid "1"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:129 of
+msgid "'upper left'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:129 of
+msgid "2"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:130 of
+msgid "'lower left'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:130 of
+msgid "3"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:131 of
+msgid "'lower right'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:131 of
+msgid "4"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:132 of
+msgid "'right'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:132 of
+msgid "5"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:133 of
+msgid "'center left'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:133 of
+msgid "6"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:134 of
+msgid "'center right'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:134 of
+msgid "7"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:135 of
+msgid "'lower center'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:135 of
+msgid "8"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:136 of
+msgid "'upper center'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:136 of
+msgid "9"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:137 of
+msgid "'center'"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:137 of
+msgid "10"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:161 of
+msgid "**bbox_to_anchor** : `.BboxBase`, 2-tuple, or 4-tuple of floats"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:160 of
+msgid "BboxBase, 2-tuple, or 4-tuple of floats"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:141 of
+msgid "Box that is used to position the legend in conjunction with *loc*. Defaults to `axes.bbox` (if called as a method to `.Axes.legend`) or `figure.bbox` (if `.Figure.legend`).  This argument allows arbitrary placement of the legend."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:146 of
+msgid "Bbox coordinates are interpreted in the coordinate system given by *bbox_transform*, with the default transform Axes or Figure coordinates, depending on which ``legend`` is called."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:150 of
+msgid "If a 4-tuple or `.BboxBase` is given, then it specifies the bbox ``(x, y, width, height)`` that the legend is placed in. To put the legend in the best location in the bottom right quadrant of the axes (or figure)::"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:157 of
+msgid "A 2-tuple ``(x, y)`` places the corner of the legend specified by *loc* at x, y.  For example, to put the legend's upper right-hand corner in the center of the axes (or figure) the following keywords can be used::"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:164 of
+msgid "**ncol**"
+msgstr ""
+
+#: of
+msgid "int, default: 1"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:164 of
+msgid "The number of columns that the legend has."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:168 of
+msgid "**prop** : None or `matplotlib.font_manager.FontProperties` or dict"
+msgstr ""
+
+#: of
+msgid "None or"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:167 of
+msgid "The font properties of the legend. If None (default), the current :data:`matplotlib.rcParams` will be used."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:173 of
+msgid "**fontsize**"
+msgstr ""
+
+#: of
+msgid "int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:171 of
+msgid "The font size of the legend. If the value is numeric the size will be the absolute font size in points. String values are relative to the current default font size. This argument is only used if *prop* is not specified."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:182 of
+msgid "**labelcolor** : str or list, default: :rc:`legend.labelcolor`"
+msgstr ""
+
+#: of
+msgid "str or list, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:176 of
+msgid "The color of the text in the legend. Either a valid color string (for example, 'red'), or a list of color strings. The labelcolor can also be made to match the color of the line or marker using 'linecolor', 'markerfacecolor' (or 'mfc'), or 'markeredgecolor' (or 'mec')."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:181 of
+msgid "Labelcolor can be set globally using :rc:`legend.labelcolor`. If None, use :rc:`text.color`."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:186 of
+msgid "**numpoints** : int, default: :rc:`legend.numpoints`"
+msgstr ""
+
+#: of
+msgid "int, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:185 of
+msgid "The number of marker points in the legend when creating a legend entry for a `.Line2D` (line)."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:190 of
+msgid "**scatterpoints** : int, default: :rc:`legend.scatterpoints`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:189 of
+msgid "The number of marker points in the legend when creating a legend entry for a `.PathCollection` (scatter plot)."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:196 of
+msgid "**scatteryoffsets** : iterable of floats, default: ``[0.375, 0.5, 0.3125]``"
+msgstr ""
+
+#: of
+msgid "iterable of floats, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:193 of
+msgid "The vertical offset (relative to the font size) for the markers created for a scatter plot legend entry. 0.0 is at the base the legend text, and 1.0 is at the top. To draw all markers at the same height, set to ``[0.5]``."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:200 of
+msgid "**markerscale** : float, default: :rc:`legend.markerscale`"
+msgstr ""
+
+#: of
+msgid "float, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:199 of
+msgid "The relative size of legend markers compared with the originally drawn ones."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:204 of
+msgid "**markerfirst**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:203 of
+msgid "If *True*, legend marker is placed to the left of the legend label. If *False*, legend marker is placed to the right of the legend label."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:207 of
+msgid "**frameon** : bool, default: :rc:`legend.frameon`"
+msgstr ""
+
+#: of
+msgid "bool, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:207 of
+msgid "Whether the legend should be drawn on a patch (frame)."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:211 of
+msgid "**fancybox** : bool, default: :rc:`legend.fancybox`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:210 of
+msgid "Whether round edges should be enabled around the `.FancyBboxPatch` which makes up the legend's background."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:214 of
+msgid "**shadow** : bool, default: :rc:`legend.shadow`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:214 of
+msgid "Whether to draw a shadow behind the legend."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:219 of
+msgid "**framealpha** : float, default: :rc:`legend.framealpha`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:217 of
+msgid "The alpha transparency of the legend's background. If *shadow* is activated and *framealpha* is ``None``, the default value is ignored."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:223 of
+msgid "**facecolor** : \"inherit\" or color, default: :rc:`legend.facecolor`"
+msgstr ""
+
+#: of
+msgid "\"inherit\" or color, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:222 of
+msgid "The legend's background color. If ``\"inherit\"``, use :rc:`axes.facecolor`."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:227 of
+msgid "**edgecolor** : \"inherit\" or color, default: :rc:`legend.edgecolor`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:226 of
+msgid "The legend's background patch edge color. If ``\"inherit\"``, use take :rc:`axes.edgecolor`."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:232 of
+msgid "**mode**"
+msgstr ""
+
+#: of
+msgid "{\"expand\", None}"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:230 of
+msgid "If *mode* is set to ``\"expand\"`` the legend will be horizontally expanded to fill the axes area (or *bbox_to_anchor* if defines the legend's size)."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:237 of
+msgid "**bbox_transform** : None or `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:235 of
+msgid "The transform for the bounding box (*bbox_to_anchor*). For a value of ``None`` (default) the Axes' :data:`~matplotlib.axes.Axes.transAxes` transform will be used."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:240 of
+msgid "**title**"
+msgstr ""
+
+#: of
+msgid "str or None"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:240 of
+msgid "The legend's title. Default is no title (``None``)."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:245 of
+msgid "**title_fontproperties** : None or `matplotlib.font_manager.FontProperties` or dict"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:243 of
+msgid "The font properties of the legend's title. If None (default), the *title_fontsize* argument will be used if present; if *title_fontsize* is also None, the current :rc:`legend.title_fontsize` will be used."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:251 of
+msgid "**title_fontsize** : int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, default: :rc:`legend.title_fontsize`"
+msgstr ""
+
+#: of
+msgid "int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:248 of
+msgid "The font size of the legend's title. Note: This cannot be combined with *title_fontproperties*. If you want to set the fontsize alongside other font properties, use the *size* parameter in *title_fontproperties*."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:254 of
+msgid "**borderpad** : float, default: :rc:`legend.borderpad`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:254 of
+msgid "The fractional whitespace inside the legend border, in font-size units."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:257 of
+msgid "**labelspacing** : float, default: :rc:`legend.labelspacing`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:257 of
+msgid "The vertical space between the legend entries, in font-size units."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:260 of
+msgid "**handlelength** : float, default: :rc:`legend.handlelength`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:260 of
+msgid "The length of the legend handles, in font-size units."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:263 of
+msgid "**handleheight** : float, default: :rc:`legend.handleheight`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:263 of
+msgid "The height of the legend handles, in font-size units."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:266 of
+msgid "**handletextpad** : float, default: :rc:`legend.handletextpad`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:266 of
+msgid "The pad between the legend handle and text, in font-size units."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:269 of
+msgid "**borderaxespad** : float, default: :rc:`legend.borderaxespad`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:269 of
+msgid "The pad between the axes and legend border, in font-size units."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:272 of
+msgid "**columnspacing** : float, default: :rc:`legend.columnspacing`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:272 of
+msgid "The spacing between columns, in font-size units."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:280 of
+msgid "**handler_map**"
+msgstr ""
+
+#: of
+msgid "dict or None"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:275 of
+msgid "The custom dictionary mapping instances or types to a legend handler. This *handler_map* updates the default handler map found at `matplotlib.legend.Legend.get_legend_handler_map`."
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:285 of
+msgid ":obj:`.Axes.legend`"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:289 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.pyplot.figlegend:290 of
+msgid "Some artists are not supported by this function.  See :doc:`/tutorials/intermediate/legend_guide` for details."
+msgstr ""
+

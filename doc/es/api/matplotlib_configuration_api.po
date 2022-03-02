@@ -1,0 +1,1703 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/matplotlib_configuration_api.po\n"
+"X-Crowdin-File-ID: 1806\n"
+"Language: es_ES\n"
+
+#: ../../api/matplotlib_configuration_api.rst:3
+msgid "``matplotlib``"
+msgstr ""
+
+#: ../../api/matplotlib_configuration_api.rst:8
+msgid "Backend management"
+msgstr ""
+
+#: matplotlib.use:2 of
+msgid "Select the backend used for rendering and GUI integration."
+msgstr ""
+
+#: matplotlib.rc_context matplotlib.rc_file matplotlib.rc_params_from_file
+#: matplotlib.set_loglevel matplotlib.use of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.use:23 of
+msgid "**backend**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.use:8 of
+msgid "The backend to switch to.  This can either be one of the standard backend names, which are case-insensitive:"
+msgstr ""
+
+#: matplotlib.use:11 of
+msgid "interactive backends: GTK3Agg, GTK3Cairo, GTK4Agg, GTK4Cairo, MacOSX, nbAgg, QtAgg, QtCairo, TkAgg, TkCairo, WebAgg, WX, WXAgg, WXCairo, Qt5Agg, Qt5Cairo"
+msgstr ""
+
+#: matplotlib.use:15 of
+msgid "non-interactive backends: agg, cairo, pdf, pgf, ps, svg, template"
+msgstr ""
+
+#: matplotlib.use:18 of
+msgid "or a string of the form: ``module://my.module.name``."
+msgstr ""
+
+#: matplotlib.use:20 of
+msgid "Switching to an interactive backend is not possible if an unrelated event loop has already been started (e.g., switching to GTK3Agg if a TkAgg window has already been opened).  Switching to a non-interactive backend is always possible."
+msgstr ""
+
+#: matplotlib.use:36 of
+msgid "**force**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.use:26 of
+msgid "If True (the default), raise an `ImportError` if the backend cannot be set up (either because it fails to import, or because an incompatible GUI interactive framework is already running); if False, silently ignore the failure."
+msgstr ""
+
+#: matplotlib.use:41 of
+msgid ":ref:`backends`"
+msgstr ""
+
+#: matplotlib.use:43 of
+msgid ":obj:`matplotlib.get_backend`"
+msgstr ""
+
+#: matplotlib.get_backend:2 of
+msgid "Return the name of the current backend."
+msgstr ""
+
+#: matplotlib.get_backend:16 of
+msgid ":obj:`matplotlib.use`"
+msgstr ""
+
+#: matplotlib.interactive:2 of
+msgid "Set whether to redraw after every plotting command (e.g. `.pyplot.xlabel`)."
+msgstr ""
+
+#: matplotlib.is_interactive:2 of
+msgid "Return whether to redraw after every plotting command."
+msgstr ""
+
+#: matplotlib.is_interactive:6 of
+msgid "This function is only intended for use in backends. End users should use `.pyplot.isinteractive` instead."
+msgstr ""
+
+#: ../../api/matplotlib_configuration_api.rst:19
+msgid "Default values and styling"
+msgstr ""
+
+#: ../../api/matplotlib_configuration_api.rst:23
+msgid "An instance of `RcParams` for handling default Matplotlib values."
+msgstr ""
+
+#: matplotlib.RcParams:2 of
+msgid "A dictionary object including validation."
+msgstr ""
+
+#: matplotlib.RcParams:4 of
+msgid "Validating functions are defined and associated with rc parameters in :mod:`matplotlib.rcsetup`."
+msgstr ""
+
+#: matplotlib.RcParams:7 of
+msgid "The list of rcParams is:"
+msgstr ""
+
+#: matplotlib.RcParams:9 of
+msgid "_internal.classic_mode"
+msgstr ""
+
+#: matplotlib.RcParams:10 of
+msgid "agg.path.chunksize"
+msgstr ""
+
+#: matplotlib.RcParams:11 of
+msgid "animation.bitrate"
+msgstr ""
+
+#: matplotlib.RcParams:12 of
+msgid "animation.codec"
+msgstr ""
+
+#: matplotlib.RcParams:13 of
+msgid "animation.convert_args"
+msgstr ""
+
+#: matplotlib.RcParams:14 of
+msgid "animation.convert_path"
+msgstr ""
+
+#: matplotlib.RcParams:15 of
+msgid "animation.embed_limit"
+msgstr ""
+
+#: matplotlib.RcParams:16 of
+msgid "animation.ffmpeg_args"
+msgstr ""
+
+#: matplotlib.RcParams:17 of
+msgid "animation.ffmpeg_path"
+msgstr ""
+
+#: matplotlib.RcParams:18 of
+msgid "animation.frame_format"
+msgstr ""
+
+#: matplotlib.RcParams:19 of
+msgid "animation.html"
+msgstr ""
+
+#: matplotlib.RcParams:20 of
+msgid "animation.writer"
+msgstr ""
+
+#: matplotlib.RcParams:21 of
+msgid "axes.autolimit_mode"
+msgstr ""
+
+#: matplotlib.RcParams:22 of
+msgid "axes.axisbelow"
+msgstr ""
+
+#: matplotlib.RcParams:23 of
+msgid "axes.edgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:24 of
+msgid "axes.facecolor"
+msgstr ""
+
+#: matplotlib.RcParams:25 of
+msgid "axes.formatter.limits"
+msgstr ""
+
+#: matplotlib.RcParams:26 of
+msgid "axes.formatter.min_exponent"
+msgstr ""
+
+#: matplotlib.RcParams:27 of
+msgid "axes.formatter.offset_threshold"
+msgstr ""
+
+#: matplotlib.RcParams:28 of
+msgid "axes.formatter.use_locale"
+msgstr ""
+
+#: matplotlib.RcParams:29 of
+msgid "axes.formatter.use_mathtext"
+msgstr ""
+
+#: matplotlib.RcParams:30 of
+msgid "axes.formatter.useoffset"
+msgstr ""
+
+#: matplotlib.RcParams:31 of
+msgid "axes.grid"
+msgstr ""
+
+#: matplotlib.RcParams:32 of
+msgid "axes.grid.axis"
+msgstr ""
+
+#: matplotlib.RcParams:33 of
+msgid "axes.grid.which"
+msgstr ""
+
+#: matplotlib.RcParams:34 of
+msgid "axes.labelcolor"
+msgstr ""
+
+#: matplotlib.RcParams:35 of
+msgid "axes.labelpad"
+msgstr ""
+
+#: matplotlib.RcParams:36 of
+msgid "axes.labelsize"
+msgstr ""
+
+#: matplotlib.RcParams:37 of
+msgid "axes.labelweight"
+msgstr ""
+
+#: matplotlib.RcParams:38 of
+msgid "axes.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:39 of
+msgid "axes.prop_cycle"
+msgstr ""
+
+#: matplotlib.RcParams:40 of
+msgid "axes.spines.bottom"
+msgstr ""
+
+#: matplotlib.RcParams:41 of
+msgid "axes.spines.left"
+msgstr ""
+
+#: matplotlib.RcParams:42 of
+msgid "axes.spines.right"
+msgstr ""
+
+#: matplotlib.RcParams:43 of
+msgid "axes.spines.top"
+msgstr ""
+
+#: matplotlib.RcParams:44 of
+msgid "axes.titlecolor"
+msgstr ""
+
+#: matplotlib.RcParams:45 of
+msgid "axes.titlelocation"
+msgstr ""
+
+#: matplotlib.RcParams:46 of
+msgid "axes.titlepad"
+msgstr ""
+
+#: matplotlib.RcParams:47 of
+msgid "axes.titlesize"
+msgstr ""
+
+#: matplotlib.RcParams:48 of
+msgid "axes.titleweight"
+msgstr ""
+
+#: matplotlib.RcParams:49 of
+msgid "axes.titley"
+msgstr ""
+
+#: matplotlib.RcParams:50 of
+msgid "axes.unicode_minus"
+msgstr ""
+
+#: matplotlib.RcParams:51 of
+msgid "axes.xmargin"
+msgstr ""
+
+#: matplotlib.RcParams:52 of
+msgid "axes.ymargin"
+msgstr ""
+
+#: matplotlib.RcParams:53 of
+msgid "axes.zmargin"
+msgstr ""
+
+#: matplotlib.RcParams:54 of
+msgid "axes3d.grid"
+msgstr ""
+
+#: matplotlib.RcParams:55 of
+msgid "backend"
+msgstr ""
+
+#: matplotlib.RcParams:56 of
+msgid "backend_fallback"
+msgstr ""
+
+#: matplotlib.RcParams:57 of
+msgid "boxplot.bootstrap"
+msgstr ""
+
+#: matplotlib.RcParams:58 of
+msgid "boxplot.boxprops.color"
+msgstr ""
+
+#: matplotlib.RcParams:59 of
+msgid "boxplot.boxprops.linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:60 of
+msgid "boxplot.boxprops.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:61 of
+msgid "boxplot.capprops.color"
+msgstr ""
+
+#: matplotlib.RcParams:62 of
+msgid "boxplot.capprops.linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:63 of
+msgid "boxplot.capprops.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:64 of
+msgid "boxplot.flierprops.color"
+msgstr ""
+
+#: matplotlib.RcParams:65 of
+msgid "boxplot.flierprops.linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:66 of
+msgid "boxplot.flierprops.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:67 of
+msgid "boxplot.flierprops.marker"
+msgstr ""
+
+#: matplotlib.RcParams:68 of
+msgid "boxplot.flierprops.markeredgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:69 of
+msgid "boxplot.flierprops.markeredgewidth"
+msgstr ""
+
+#: matplotlib.RcParams:70 of
+msgid "boxplot.flierprops.markerfacecolor"
+msgstr ""
+
+#: matplotlib.RcParams:71 of
+msgid "boxplot.flierprops.markersize"
+msgstr ""
+
+#: matplotlib.RcParams:72 of
+msgid "boxplot.meanline"
+msgstr ""
+
+#: matplotlib.RcParams:73 of
+msgid "boxplot.meanprops.color"
+msgstr ""
+
+#: matplotlib.RcParams:74 of
+msgid "boxplot.meanprops.linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:75 of
+msgid "boxplot.meanprops.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:76 of
+msgid "boxplot.meanprops.marker"
+msgstr ""
+
+#: matplotlib.RcParams:77 of
+msgid "boxplot.meanprops.markeredgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:78 of
+msgid "boxplot.meanprops.markerfacecolor"
+msgstr ""
+
+#: matplotlib.RcParams:79 of
+msgid "boxplot.meanprops.markersize"
+msgstr ""
+
+#: matplotlib.RcParams:80 of
+msgid "boxplot.medianprops.color"
+msgstr ""
+
+#: matplotlib.RcParams:81 of
+msgid "boxplot.medianprops.linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:82 of
+msgid "boxplot.medianprops.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:83 of
+msgid "boxplot.notch"
+msgstr ""
+
+#: matplotlib.RcParams:84 of
+msgid "boxplot.patchartist"
+msgstr ""
+
+#: matplotlib.RcParams:85 of
+msgid "boxplot.showbox"
+msgstr ""
+
+#: matplotlib.RcParams:86 of
+msgid "boxplot.showcaps"
+msgstr ""
+
+#: matplotlib.RcParams:87 of
+msgid "boxplot.showfliers"
+msgstr ""
+
+#: matplotlib.RcParams:88 of
+msgid "boxplot.showmeans"
+msgstr ""
+
+#: matplotlib.RcParams:89 of
+msgid "boxplot.vertical"
+msgstr ""
+
+#: matplotlib.RcParams:90 of
+msgid "boxplot.whiskerprops.color"
+msgstr ""
+
+#: matplotlib.RcParams:91 of
+msgid "boxplot.whiskerprops.linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:92 of
+msgid "boxplot.whiskerprops.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:93 of
+msgid "boxplot.whiskers"
+msgstr ""
+
+#: matplotlib.RcParams:94 of
+msgid "contour.corner_mask"
+msgstr ""
+
+#: matplotlib.RcParams:95 of
+msgid "contour.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:96 of
+msgid "contour.negative_linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:97 of
+msgid "date.autoformatter.day"
+msgstr ""
+
+#: matplotlib.RcParams:98 of
+msgid "date.autoformatter.hour"
+msgstr ""
+
+#: matplotlib.RcParams:99 of
+msgid "date.autoformatter.microsecond"
+msgstr ""
+
+#: matplotlib.RcParams:100 of
+msgid "date.autoformatter.minute"
+msgstr ""
+
+#: matplotlib.RcParams:101 of
+msgid "date.autoformatter.month"
+msgstr ""
+
+#: matplotlib.RcParams:102 of
+msgid "date.autoformatter.second"
+msgstr ""
+
+#: matplotlib.RcParams:103 of
+msgid "date.autoformatter.year"
+msgstr ""
+
+#: matplotlib.RcParams:104 of
+msgid "date.converter"
+msgstr ""
+
+#: matplotlib.RcParams:105 of
+msgid "date.epoch"
+msgstr ""
+
+#: matplotlib.RcParams:106 of
+msgid "date.interval_multiples"
+msgstr ""
+
+#: matplotlib.RcParams:107 of
+msgid "docstring.hardcopy"
+msgstr ""
+
+#: matplotlib.RcParams:108 of
+msgid "errorbar.capsize"
+msgstr ""
+
+#: matplotlib.RcParams:109 of
+msgid "figure.autolayout"
+msgstr ""
+
+#: matplotlib.RcParams:110 of
+msgid "figure.constrained_layout.h_pad"
+msgstr ""
+
+#: matplotlib.RcParams:111 of
+msgid "figure.constrained_layout.hspace"
+msgstr ""
+
+#: matplotlib.RcParams:112 of
+msgid "figure.constrained_layout.use"
+msgstr ""
+
+#: matplotlib.RcParams:113 of
+msgid "figure.constrained_layout.w_pad"
+msgstr ""
+
+#: matplotlib.RcParams:114 of
+msgid "figure.constrained_layout.wspace"
+msgstr ""
+
+#: matplotlib.RcParams:115 of
+msgid "figure.dpi"
+msgstr ""
+
+#: matplotlib.RcParams:116 of
+msgid "figure.edgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:117 of
+msgid "figure.facecolor"
+msgstr ""
+
+#: matplotlib.RcParams:118 of
+msgid "figure.figsize"
+msgstr ""
+
+#: matplotlib.RcParams:119 of
+msgid "figure.frameon"
+msgstr ""
+
+#: matplotlib.RcParams:120 of
+msgid "figure.max_open_warning"
+msgstr ""
+
+#: matplotlib.RcParams:121 of
+msgid "figure.raise_window"
+msgstr ""
+
+#: matplotlib.RcParams:122 of
+msgid "figure.subplot.bottom"
+msgstr ""
+
+#: matplotlib.RcParams:123 of
+msgid "figure.subplot.hspace"
+msgstr ""
+
+#: matplotlib.RcParams:124 of
+msgid "figure.subplot.left"
+msgstr ""
+
+#: matplotlib.RcParams:125 of
+msgid "figure.subplot.right"
+msgstr ""
+
+#: matplotlib.RcParams:126 of
+msgid "figure.subplot.top"
+msgstr ""
+
+#: matplotlib.RcParams:127 of
+msgid "figure.subplot.wspace"
+msgstr ""
+
+#: matplotlib.RcParams:128 of
+msgid "figure.titlesize"
+msgstr ""
+
+#: matplotlib.RcParams:129 of
+msgid "figure.titleweight"
+msgstr ""
+
+#: matplotlib.RcParams:130 of
+msgid "font.cursive"
+msgstr ""
+
+#: matplotlib.RcParams:131 of
+msgid "font.family"
+msgstr ""
+
+#: matplotlib.RcParams:132 of
+msgid "font.fantasy"
+msgstr ""
+
+#: matplotlib.RcParams:133 of
+msgid "font.monospace"
+msgstr ""
+
+#: matplotlib.RcParams:134 of
+msgid "font.sans-serif"
+msgstr ""
+
+#: matplotlib.RcParams:135 of
+msgid "font.serif"
+msgstr ""
+
+#: matplotlib.RcParams:136 of
+msgid "font.size"
+msgstr ""
+
+#: matplotlib.RcParams:137 of
+msgid "font.stretch"
+msgstr ""
+
+#: matplotlib.RcParams:138 of
+msgid "font.style"
+msgstr ""
+
+#: matplotlib.RcParams:139 of
+msgid "font.variant"
+msgstr ""
+
+#: matplotlib.RcParams:140 of
+msgid "font.weight"
+msgstr ""
+
+#: matplotlib.RcParams:141 of
+msgid "grid.alpha"
+msgstr ""
+
+#: matplotlib.RcParams:142 of
+msgid "grid.color"
+msgstr ""
+
+#: matplotlib.RcParams:143 of
+msgid "grid.linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:144 of
+msgid "grid.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:145 of
+msgid "hatch.color"
+msgstr ""
+
+#: matplotlib.RcParams:146 of
+msgid "hatch.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:147 of
+msgid "hist.bins"
+msgstr ""
+
+#: matplotlib.RcParams:148 of
+msgid "image.aspect"
+msgstr ""
+
+#: matplotlib.RcParams:149 of
+msgid "image.cmap"
+msgstr ""
+
+#: matplotlib.RcParams:150 of
+msgid "image.composite_image"
+msgstr ""
+
+#: matplotlib.RcParams:151 of
+msgid "image.interpolation"
+msgstr ""
+
+#: matplotlib.RcParams:152 of
+msgid "image.lut"
+msgstr ""
+
+#: matplotlib.RcParams:153 of
+msgid "image.origin"
+msgstr ""
+
+#: matplotlib.RcParams:154 of
+msgid "image.resample"
+msgstr ""
+
+#: matplotlib.RcParams:155 of
+msgid "interactive"
+msgstr ""
+
+#: matplotlib.RcParams:156 of
+msgid "keymap.back"
+msgstr ""
+
+#: matplotlib.RcParams:157 of
+msgid "keymap.copy"
+msgstr ""
+
+#: matplotlib.RcParams:158 of
+msgid "keymap.forward"
+msgstr ""
+
+#: matplotlib.RcParams:159 of
+msgid "keymap.fullscreen"
+msgstr ""
+
+#: matplotlib.RcParams:160 of
+msgid "keymap.grid"
+msgstr ""
+
+#: matplotlib.RcParams:161 of
+msgid "keymap.grid_minor"
+msgstr ""
+
+#: matplotlib.RcParams:162 of
+msgid "keymap.help"
+msgstr ""
+
+#: matplotlib.RcParams:163 of
+msgid "keymap.home"
+msgstr ""
+
+#: matplotlib.RcParams:164 of
+msgid "keymap.pan"
+msgstr ""
+
+#: matplotlib.RcParams:165 of
+msgid "keymap.quit"
+msgstr ""
+
+#: matplotlib.RcParams:166 of
+msgid "keymap.quit_all"
+msgstr ""
+
+#: matplotlib.RcParams:167 of
+msgid "keymap.save"
+msgstr ""
+
+#: matplotlib.RcParams:168 of
+msgid "keymap.xscale"
+msgstr ""
+
+#: matplotlib.RcParams:169 of
+msgid "keymap.yscale"
+msgstr ""
+
+#: matplotlib.RcParams:170 of
+msgid "keymap.zoom"
+msgstr ""
+
+#: matplotlib.RcParams:171 of
+msgid "legend.borderaxespad"
+msgstr ""
+
+#: matplotlib.RcParams:172 of
+msgid "legend.borderpad"
+msgstr ""
+
+#: matplotlib.RcParams:173 of
+msgid "legend.columnspacing"
+msgstr ""
+
+#: matplotlib.RcParams:174 of
+msgid "legend.edgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:175 of
+msgid "legend.facecolor"
+msgstr ""
+
+#: matplotlib.RcParams:176 of
+msgid "legend.fancybox"
+msgstr ""
+
+#: matplotlib.RcParams:177 of
+msgid "legend.fontsize"
+msgstr ""
+
+#: matplotlib.RcParams:178 of
+msgid "legend.framealpha"
+msgstr ""
+
+#: matplotlib.RcParams:179 of
+msgid "legend.frameon"
+msgstr ""
+
+#: matplotlib.RcParams:180 of
+msgid "legend.handleheight"
+msgstr ""
+
+#: matplotlib.RcParams:181 of
+msgid "legend.handlelength"
+msgstr ""
+
+#: matplotlib.RcParams:182 of
+msgid "legend.handletextpad"
+msgstr ""
+
+#: matplotlib.RcParams:183 of
+msgid "legend.labelcolor"
+msgstr ""
+
+#: matplotlib.RcParams:184 of
+msgid "legend.labelspacing"
+msgstr ""
+
+#: matplotlib.RcParams:185 of
+msgid "legend.loc"
+msgstr ""
+
+#: matplotlib.RcParams:186 of
+msgid "legend.markerscale"
+msgstr ""
+
+#: matplotlib.RcParams:187 of
+msgid "legend.numpoints"
+msgstr ""
+
+#: matplotlib.RcParams:188 of
+msgid "legend.scatterpoints"
+msgstr ""
+
+#: matplotlib.RcParams:189 of
+msgid "legend.shadow"
+msgstr ""
+
+#: matplotlib.RcParams:190 of
+msgid "legend.title_fontsize"
+msgstr ""
+
+#: matplotlib.RcParams:191 of
+msgid "lines.antialiased"
+msgstr ""
+
+#: matplotlib.RcParams:192 of
+msgid "lines.color"
+msgstr ""
+
+#: matplotlib.RcParams:193 of
+msgid "lines.dash_capstyle"
+msgstr ""
+
+#: matplotlib.RcParams:194 of
+msgid "lines.dash_joinstyle"
+msgstr ""
+
+#: matplotlib.RcParams:195 of
+msgid "lines.dashdot_pattern"
+msgstr ""
+
+#: matplotlib.RcParams:196 of
+msgid "lines.dashed_pattern"
+msgstr ""
+
+#: matplotlib.RcParams:197 of
+msgid "lines.dotted_pattern"
+msgstr ""
+
+#: matplotlib.RcParams:198 of
+msgid "lines.linestyle"
+msgstr ""
+
+#: matplotlib.RcParams:199 of
+msgid "lines.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:200 of
+msgid "lines.marker"
+msgstr ""
+
+#: matplotlib.RcParams:201 of
+msgid "lines.markeredgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:202 of
+msgid "lines.markeredgewidth"
+msgstr ""
+
+#: matplotlib.RcParams:203 of
+msgid "lines.markerfacecolor"
+msgstr ""
+
+#: matplotlib.RcParams:204 of
+msgid "lines.markersize"
+msgstr ""
+
+#: matplotlib.RcParams:205 of
+msgid "lines.scale_dashes"
+msgstr ""
+
+#: matplotlib.RcParams:206 of
+msgid "lines.solid_capstyle"
+msgstr ""
+
+#: matplotlib.RcParams:207 of
+msgid "lines.solid_joinstyle"
+msgstr ""
+
+#: matplotlib.RcParams:208 of
+msgid "markers.fillstyle"
+msgstr ""
+
+#: matplotlib.RcParams:209 of
+msgid "mathtext.bf"
+msgstr ""
+
+#: matplotlib.RcParams:210 of
+msgid "mathtext.cal"
+msgstr ""
+
+#: matplotlib.RcParams:211 of
+msgid "mathtext.default"
+msgstr ""
+
+#: matplotlib.RcParams:212 of
+msgid "mathtext.fallback"
+msgstr ""
+
+#: matplotlib.RcParams:213 of
+msgid "mathtext.fontset"
+msgstr ""
+
+#: matplotlib.RcParams:214 of
+msgid "mathtext.it"
+msgstr ""
+
+#: matplotlib.RcParams:215 of
+msgid "mathtext.rm"
+msgstr ""
+
+#: matplotlib.RcParams:216 of
+msgid "mathtext.sf"
+msgstr ""
+
+#: matplotlib.RcParams:217 of
+msgid "mathtext.tt"
+msgstr ""
+
+#: matplotlib.RcParams:218 of
+msgid "patch.antialiased"
+msgstr ""
+
+#: matplotlib.RcParams:219 of
+msgid "patch.edgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:220 of
+msgid "patch.facecolor"
+msgstr ""
+
+#: matplotlib.RcParams:221 of
+msgid "patch.force_edgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:222 of
+msgid "patch.linewidth"
+msgstr ""
+
+#: matplotlib.RcParams:223 of
+msgid "path.effects"
+msgstr ""
+
+#: matplotlib.RcParams:224 of
+msgid "path.simplify"
+msgstr ""
+
+#: matplotlib.RcParams:225 of
+msgid "path.simplify_threshold"
+msgstr ""
+
+#: matplotlib.RcParams:226 of
+msgid "path.sketch"
+msgstr ""
+
+#: matplotlib.RcParams:227 of
+msgid "path.snap"
+msgstr ""
+
+#: matplotlib.RcParams:228 of
+msgid "pcolor.shading"
+msgstr ""
+
+#: matplotlib.RcParams:229 of
+msgid "pcolormesh.snap"
+msgstr ""
+
+#: matplotlib.RcParams:230 of
+msgid "pdf.compression"
+msgstr ""
+
+#: matplotlib.RcParams:231 of
+msgid "pdf.fonttype"
+msgstr ""
+
+#: matplotlib.RcParams:232 of
+msgid "pdf.inheritcolor"
+msgstr ""
+
+#: matplotlib.RcParams:233 of
+msgid "pdf.use14corefonts"
+msgstr ""
+
+#: matplotlib.RcParams:234 of
+msgid "pgf.preamble"
+msgstr ""
+
+#: matplotlib.RcParams:235 of
+msgid "pgf.rcfonts"
+msgstr ""
+
+#: matplotlib.RcParams:236 of
+msgid "pgf.texsystem"
+msgstr ""
+
+#: matplotlib.RcParams:237 of
+msgid "polaraxes.grid"
+msgstr ""
+
+#: matplotlib.RcParams:238 of
+msgid "ps.distiller.res"
+msgstr ""
+
+#: matplotlib.RcParams:239 of
+msgid "ps.fonttype"
+msgstr ""
+
+#: matplotlib.RcParams:240 of
+msgid "ps.papersize"
+msgstr ""
+
+#: matplotlib.RcParams:241 of
+msgid "ps.useafm"
+msgstr ""
+
+#: matplotlib.RcParams:242 of
+msgid "ps.usedistiller"
+msgstr ""
+
+#: matplotlib.RcParams:243 of
+msgid "savefig.bbox"
+msgstr ""
+
+#: matplotlib.RcParams:244 of
+msgid "savefig.directory"
+msgstr ""
+
+#: matplotlib.RcParams:245 of
+msgid "savefig.dpi"
+msgstr ""
+
+#: matplotlib.RcParams:246 of
+msgid "savefig.edgecolor"
+msgstr ""
+
+#: matplotlib.RcParams:247 of
+msgid "savefig.facecolor"
+msgstr ""
+
+#: matplotlib.RcParams:248 of
+msgid "savefig.format"
+msgstr ""
+
+#: matplotlib.RcParams:249 of
+msgid "savefig.orientation"
+msgstr ""
+
+#: matplotlib.RcParams:250 of
+msgid "savefig.pad_inches"
+msgstr ""
+
+#: matplotlib.RcParams:251 of
+msgid "savefig.transparent"
+msgstr ""
+
+#: matplotlib.RcParams:252 of
+msgid "scatter.edgecolors"
+msgstr ""
+
+#: matplotlib.RcParams:253 of
+msgid "scatter.marker"
+msgstr ""
+
+#: matplotlib.RcParams:254 of
+msgid "svg.fonttype"
+msgstr ""
+
+#: matplotlib.RcParams:255 of
+msgid "svg.hashsalt"
+msgstr ""
+
+#: matplotlib.RcParams:256 of
+msgid "svg.image_inline"
+msgstr ""
+
+#: matplotlib.RcParams:257 of
+msgid "text.antialiased"
+msgstr ""
+
+#: matplotlib.RcParams:258 of
+msgid "text.color"
+msgstr ""
+
+#: matplotlib.RcParams:259 of
+msgid "text.hinting"
+msgstr ""
+
+#: matplotlib.RcParams:260 of
+msgid "text.hinting_factor"
+msgstr ""
+
+#: matplotlib.RcParams:261 of
+msgid "text.kerning_factor"
+msgstr ""
+
+#: matplotlib.RcParams:262 of
+msgid "text.latex.preamble"
+msgstr ""
+
+#: matplotlib.RcParams:263 of
+msgid "text.usetex"
+msgstr ""
+
+#: matplotlib.RcParams:264 of
+msgid "timezone"
+msgstr ""
+
+#: matplotlib.RcParams:265 of
+msgid "tk.window_focus"
+msgstr ""
+
+#: matplotlib.RcParams:266 of
+msgid "toolbar"
+msgstr ""
+
+#: matplotlib.RcParams:267 of
+msgid "webagg.address"
+msgstr ""
+
+#: matplotlib.RcParams:268 of
+msgid "webagg.open_in_browser"
+msgstr ""
+
+#: matplotlib.RcParams:269 of
+msgid "webagg.port"
+msgstr ""
+
+#: matplotlib.RcParams:270 of
+msgid "webagg.port_retries"
+msgstr ""
+
+#: matplotlib.RcParams:271 of
+msgid "xaxis.labellocation"
+msgstr ""
+
+#: matplotlib.RcParams:272 of
+msgid "xtick.alignment"
+msgstr ""
+
+#: matplotlib.RcParams:273 of
+msgid "xtick.bottom"
+msgstr ""
+
+#: matplotlib.RcParams:274 of
+msgid "xtick.color"
+msgstr ""
+
+#: matplotlib.RcParams:275 of
+msgid "xtick.direction"
+msgstr ""
+
+#: matplotlib.RcParams:276 of
+msgid "xtick.labelbottom"
+msgstr ""
+
+#: matplotlib.RcParams:277 of
+msgid "xtick.labelcolor"
+msgstr ""
+
+#: matplotlib.RcParams:278 of
+msgid "xtick.labelsize"
+msgstr ""
+
+#: matplotlib.RcParams:279 of
+msgid "xtick.labeltop"
+msgstr ""
+
+#: matplotlib.RcParams:280 of
+msgid "xtick.major.bottom"
+msgstr ""
+
+#: matplotlib.RcParams:281 of
+msgid "xtick.major.pad"
+msgstr ""
+
+#: matplotlib.RcParams:282 of
+msgid "xtick.major.size"
+msgstr ""
+
+#: matplotlib.RcParams:283 of
+msgid "xtick.major.top"
+msgstr ""
+
+#: matplotlib.RcParams:284 of
+msgid "xtick.major.width"
+msgstr ""
+
+#: matplotlib.RcParams:285 of
+msgid "xtick.minor.bottom"
+msgstr ""
+
+#: matplotlib.RcParams:286 of
+msgid "xtick.minor.pad"
+msgstr ""
+
+#: matplotlib.RcParams:287 of
+msgid "xtick.minor.size"
+msgstr ""
+
+#: matplotlib.RcParams:288 of
+msgid "xtick.minor.top"
+msgstr ""
+
+#: matplotlib.RcParams:289 of
+msgid "xtick.minor.visible"
+msgstr ""
+
+#: matplotlib.RcParams:290 of
+msgid "xtick.minor.width"
+msgstr ""
+
+#: matplotlib.RcParams:291 of
+msgid "xtick.top"
+msgstr ""
+
+#: matplotlib.RcParams:292 of
+msgid "yaxis.labellocation"
+msgstr ""
+
+#: matplotlib.RcParams:293 of
+msgid "ytick.alignment"
+msgstr ""
+
+#: matplotlib.RcParams:294 of
+msgid "ytick.color"
+msgstr ""
+
+#: matplotlib.RcParams:295 of
+msgid "ytick.direction"
+msgstr ""
+
+#: matplotlib.RcParams:296 of
+msgid "ytick.labelcolor"
+msgstr ""
+
+#: matplotlib.RcParams:297 of
+msgid "ytick.labelleft"
+msgstr ""
+
+#: matplotlib.RcParams:298 of
+msgid "ytick.labelright"
+msgstr ""
+
+#: matplotlib.RcParams:299 of
+msgid "ytick.labelsize"
+msgstr ""
+
+#: matplotlib.RcParams:300 of
+msgid "ytick.left"
+msgstr ""
+
+#: matplotlib.RcParams:301 of
+msgid "ytick.major.left"
+msgstr ""
+
+#: matplotlib.RcParams:302 of
+msgid "ytick.major.pad"
+msgstr ""
+
+#: matplotlib.RcParams:303 of
+msgid "ytick.major.right"
+msgstr ""
+
+#: matplotlib.RcParams:304 of
+msgid "ytick.major.size"
+msgstr ""
+
+#: matplotlib.RcParams:305 of
+msgid "ytick.major.width"
+msgstr ""
+
+#: matplotlib.RcParams:306 of
+msgid "ytick.minor.left"
+msgstr ""
+
+#: matplotlib.RcParams:307 of
+msgid "ytick.minor.pad"
+msgstr ""
+
+#: matplotlib.RcParams:308 of
+msgid "ytick.minor.right"
+msgstr ""
+
+#: matplotlib.RcParams:309 of
+msgid "ytick.minor.size"
+msgstr ""
+
+#: matplotlib.RcParams:310 of
+msgid "ytick.minor.visible"
+msgstr ""
+
+#: matplotlib.RcParams:311 of
+msgid "ytick.minor.width"
+msgstr ""
+
+#: matplotlib.RcParams:312 of
+msgid "ytick.right"
+msgstr ""
+
+#: matplotlib.RcParams:325 matplotlib.rc_context:24 of
+msgid ":ref:`customizing-with-matplotlibrc-files`"
+msgstr ""
+
+#: matplotlib.RcParams.find_all:2 of
+msgid "Return the subset of this RcParams dictionary whose keys match, using :func:`re.search`, the given ``pattern``."
+msgstr ""
+
+#: matplotlib.RcParams.find_all:7 of
+msgid "Changes to the returned dictionary are *not* propagated to the parent RcParams dictionary."
+msgstr ""
+
+#: matplotlib.rc_context:2 of
+msgid "Return a context manager for temporarily changing rcParams."
+msgstr ""
+
+#: matplotlib.rc_context:8 of
+msgid "**rc**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.rc_context:8 of
+msgid "The rcParams to temporarily set."
+msgstr ""
+
+#: matplotlib.rc_context:19 matplotlib.rc_file:10
+#: matplotlib.rc_params_from_file:8 of
+msgid "**fname**"
+msgstr ""
+
+#: of
+msgid "str or path-like"
+msgstr ""
+
+#: matplotlib.rc_context:11 of
+msgid "A file with Matplotlib rc settings. If both *fname* and *rc* are given, settings from *rc* take precedence."
+msgstr ""
+
+#: matplotlib.rc_context:30 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.rc_context:31 of
+msgid "Passing explicit values via a dict::"
+msgstr ""
+
+#: matplotlib.rc_context:39 of
+msgid "Loading settings from a file::"
+msgstr ""
+
+#: matplotlib.rc:2 of
+msgid "Set the current `.rcParams`.  *group* is the grouping for the rc, e.g., for ``lines.linewidth`` the group is ``lines``, for ``axes.facecolor``, the group is ``axes``, and so on.  Group may also be a list or tuple of group names, e.g., (*xtick*, *ytick*). *kwargs* is a dictionary attribute name/value pairs, e.g.,::"
+msgstr ""
+
+#: matplotlib.rc:10 of
+msgid "sets the current `.rcParams` and is equivalent to::"
+msgstr ""
+
+#: matplotlib.rc:15 of
+msgid "The following aliases are available to save typing for interactive users:"
+msgstr ""
+
+#: matplotlib.rc:18 of
+msgid "Alias"
+msgstr ""
+
+#: matplotlib.rc:18 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.rc:20 of
+msgid "'lw'"
+msgstr ""
+
+#: matplotlib.rc:20 of
+msgid "'linewidth'"
+msgstr ""
+
+#: matplotlib.rc:21 of
+msgid "'ls'"
+msgstr ""
+
+#: matplotlib.rc:21 of
+msgid "'linestyle'"
+msgstr ""
+
+#: matplotlib.rc:22 of
+msgid "'c'"
+msgstr ""
+
+#: matplotlib.rc:22 of
+msgid "'color'"
+msgstr ""
+
+#: matplotlib.rc:23 of
+msgid "'fc'"
+msgstr ""
+
+#: matplotlib.rc:23 of
+msgid "'facecolor'"
+msgstr ""
+
+#: matplotlib.rc:24 of
+msgid "'ec'"
+msgstr ""
+
+#: matplotlib.rc:24 of
+msgid "'edgecolor'"
+msgstr ""
+
+#: matplotlib.rc:25 of
+msgid "'mew'"
+msgstr ""
+
+#: matplotlib.rc:25 of
+msgid "'markeredgewidth'"
+msgstr ""
+
+#: matplotlib.rc:26 of
+msgid "'aa'"
+msgstr ""
+
+#: matplotlib.rc:26 of
+msgid "'antialiased'"
+msgstr ""
+
+#: matplotlib.rc:29 of
+msgid "Thus you could abbreviate the above call as::"
+msgstr ""
+
+#: matplotlib.rc:33 of
+msgid "Note you can use python's kwargs dictionary facility to store dictionaries of default parameters.  e.g., you can customize the font rc as follows::"
+msgstr ""
+
+#: matplotlib.rc:42 of
+msgid "This enables you to easily switch between several configurations.  Use ``matplotlib.style.use('default')`` or :func:`~matplotlib.rcdefaults` to restore the default `.rcParams` after changes."
+msgstr ""
+
+#: matplotlib.rc:56 matplotlib.set_loglevel:22 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.rc:57 of
+msgid "Similar functionality is available by using the normal dict interface, i.e. ``rcParams.update({\"lines.linewidth\": 2, ...})`` (but ``rcParams.update`` does not support abbreviations or grouping)."
+msgstr ""
+
+#: matplotlib.rcdefaults:2 of
+msgid "Restore the `.rcParams` from Matplotlib's internal default style."
+msgstr ""
+
+#: matplotlib.rc_file:4 matplotlib.rc_file_defaults:4 matplotlib.rcdefaults:4
+#: of
+msgid "Style-blacklisted `.rcParams` (defined in `matplotlib.style.core.STYLE_BLACKLIST`) are not updated."
+msgstr ""
+
+#: matplotlib.rcdefaults:18 of
+msgid ":obj:`matplotlib.rc_file_defaults`"
+msgstr ""
+
+#: matplotlib.rcdefaults:19 of
+msgid "Restore the `.rcParams` from the rc file originally loaded by Matplotlib."
+msgstr ""
+
+#: matplotlib.rcdefaults:20 of
+msgid ":obj:`matplotlib.style.use`"
+msgstr ""
+
+#: matplotlib.rcdefaults:21 of
+msgid "Use a specific style file.  Call ``style.use('default')`` to restore the default style."
+msgstr ""
+
+#: matplotlib.rc_file_defaults:2 of
+msgid "Restore the `.rcParams` from the original rc file loaded by Matplotlib."
+msgstr ""
+
+#: matplotlib.rc_file:2 of
+msgid "Update `.rcParams` from file."
+msgstr ""
+
+#: matplotlib.rc_file:10 matplotlib.rc_params_from_file:8 of
+msgid "A file with Matplotlib rc settings."
+msgstr ""
+
+#: matplotlib.rc_file:28 matplotlib.rc_params_from_file:29 of
+msgid "**use_default_template**"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.rc_file:13 of
+msgid "If True, initialize with default parameters before updating with those in the given file. If False, the current configuration persists and only the parameters specified in the file are updated."
+msgstr ""
+
+#: matplotlib.rc_params:2 of
+msgid "Construct a `RcParams` instance from the default Matplotlib rc file."
+msgstr ""
+
+#: matplotlib.rc_params_from_file:2 of
+msgid "Construct a `RcParams` from file *fname*."
+msgstr ""
+
+#: matplotlib.rc_params_from_file:11 of
+msgid "**fail_on_error**"
+msgstr ""
+
+#: matplotlib.rc_params_from_file:11 of
+msgid "If True, raise an error when the parser fails to convert a parameter."
+msgstr ""
+
+#: matplotlib.rc_params_from_file:14 of
+msgid "If True, initialize with default parameters before updating with those in the given file. If False, the configuration class only contains the parameters specified in the file. (Useful for updating dicts.)"
+msgstr ""
+
+#: matplotlib.get_configdir:2 of
+msgid "Return the string path of the configuration directory."
+msgstr ""
+
+#: matplotlib.get_configdir:4 of
+msgid "The directory is chosen as follows:"
+msgstr ""
+
+#: matplotlib.get_configdir:6 of
+msgid "If the MPLCONFIGDIR environment variable is supplied, choose that."
+msgstr ""
+
+#: matplotlib.get_configdir:7 of
+msgid "On Linux, follow the XDG specification and look first in ``$XDG_CONFIG_HOME``, if defined, or ``$HOME/.config``.  On other platforms, choose ``$HOME/.matplotlib``."
+msgstr ""
+
+#: matplotlib.get_configdir:10 of
+msgid "If the chosen directory exists and is writable, use that as the configuration directory."
+msgstr ""
+
+#: matplotlib.get_configdir:12 of
+msgid "Else, create a temporary directory, and use it as the configuration directory."
+msgstr ""
+
+#: matplotlib.matplotlib_fname:2 of
+msgid "Get the location of the config file."
+msgstr ""
+
+#: matplotlib.matplotlib_fname:4 of
+msgid "The file location is determined in the following order"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:6 of
+msgid "``$PWD/matplotlibrc``"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:7 of
+msgid "``$MATPLOTLIBRC`` if it is not a directory"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:8 of
+msgid "``$MATPLOTLIBRC/matplotlibrc``"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:9 of
+msgid "``$MPLCONFIGDIR/matplotlibrc``"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:13 of
+msgid "On Linux,"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:11 of
+msgid "``$XDG_CONFIG_HOME/matplotlib/matplotlibrc`` (if ``$XDG_CONFIG_HOME`` is defined)"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:13 of
+msgid "or ``$HOME/.config/matplotlib/matplotlibrc`` (if ``$XDG_CONFIG_HOME`` is not defined)"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:15 of
+msgid "On other platforms, - ``$HOME/.matplotlib/matplotlibrc`` if ``$HOME`` is defined"
+msgstr ""
+
+#: matplotlib.matplotlib_fname:17 of
+msgid "Lastly, it looks in ``$MATPLOTLIBDATA/matplotlibrc``, which should always exist."
+msgstr ""
+
+#: matplotlib.get_data_path:2 of
+msgid "Return the path to Matplotlib data."
+msgstr ""
+
+#: ../../api/matplotlib_configuration_api.rst:51
+msgid "Logging"
+msgstr ""
+
+#: matplotlib.set_loglevel:2 of
+msgid "Set Matplotlib's root logger and root logger handler level, creating the handler if it does not exist yet."
+msgstr ""
+
+#: matplotlib.set_loglevel:5 of
+msgid "Typically, one should call ``set_loglevel(\"info\")`` or ``set_loglevel(\"debug\")`` to get additional debugging information."
+msgstr ""
+
+#: matplotlib.set_loglevel:19 of
+msgid "**level**"
+msgstr ""
+
+#: of
+msgid "{\"notset\", \"debug\", \"info\", \"warning\", \"error\", \"critical\"}"
+msgstr ""
+
+#: matplotlib.set_loglevel:11 of
+msgid "The log level of the handler."
+msgstr ""
+
+#: matplotlib.set_loglevel:23 of
+msgid "The first time this function is called, an additional handler is attached to Matplotlib's root handler; this handler is reused every time and this function simply manipulates the logger and handler's level."
+msgstr ""
+
+#: ../../api/matplotlib_configuration_api.rst:56
+msgid "Colormaps"
+msgstr ""
+
+#: ../../docstring matplotlib.colormaps:2 of
+msgid "Container for colormaps that are known to Matplotlib by name."
+msgstr ""
+
+#: ../../docstring matplotlib.colormaps:4 of
+msgid "Experimental"
+msgstr ""
+
+#: ../../docstring matplotlib.colormaps:6 of
+msgid "While we expect the API to be final, we formally mark it as experimental for 3.5 because we want to keep the option to still adapt the API for 3.6 should the need arise."
+msgstr ""
+
+#: ../../docstring matplotlib.colormaps:10 of
+msgid "The universal registry instance is `matplotlib.colormaps`. There should be no need for users to instantiate `.ColormapRegistry` themselves."
+msgstr ""
+
+#: ../../docstring matplotlib.colormaps:13 of
+msgid "Read access uses a dict-like interface mapping names to `.Colormap`\\s::"
+msgstr ""
+
+#: ../../docstring matplotlib.colormaps:18 of
+msgid "Returned `.Colormap`\\s are copies, so that their modification does not change the global definition of the colormap."
+msgstr ""
+
+#: ../../docstring matplotlib.colormaps:21 of
+msgid "Additional colormaps can be added via `.ColormapRegistry.register`::"
+msgstr ""
+
+#: ../../api/matplotlib_configuration_api.rst:62
+msgid "Miscellaneous"
+msgstr ""
+
+#: matplotlib.get_cachedir:2 of
+msgid "Return the string path of the cache directory."
+msgstr ""
+
+#: matplotlib.get_cachedir:4 of
+msgid "The procedure used to find the directory is the same as for _get_config_dir, except using ``$XDG_CACHE_HOME``/``$HOME/.cache`` instead."
+msgstr ""
+

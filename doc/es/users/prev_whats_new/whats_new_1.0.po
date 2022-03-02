@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:34\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/users/prev_whats_new/whats_new_1.0.po\n"
+"X-Crowdin-File-ID: 3442\n"
+"Language: es_ES\n"
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:4
+msgid "What's new in Matplotlib 1.0 (Jul 06, 2010)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:7
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:12
+msgid "HTML5/Canvas backend"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:14
+msgid "Simon Ratcliffe and Ludwig Schwardt have released an `HTML5/Canvas <https://code.google.com/archive/p/mplh5canvas>`__ backend for matplotlib.  The backend is almost feature complete, and they have done a lot of work comparing their html5 rendered images with our core renderer Agg.  The backend features client/server interactive navigation of matplotlib figures in an html5 compliant browser."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:22
+msgid "Sophisticated subplot grid layout"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:24
+msgid "Jae-Joon Lee has written :mod:`~matplotlib.gridspec`, a new module for doing complex subplot layouts, featuring row and column spans and more.  See :doc:`/tutorials/intermediate/arranging_axes` for a tutorial overview."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:35
+msgid "Easy pythonic subplots"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:37
+msgid "Fernando Perez got tired of all the boilerplate code needed to create a figure and multiple subplots when using the matplotlib API, and wrote a :func:`~matplotlib.pyplot.subplots` helper function.  Basic usage allows you to create the figure and an array of subplots with numpy indexing (starts with 0).  e.g.::"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:46
+msgid "See :doc:`/gallery/subplots_axes_and_figures/subplot` for several code examples."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:49
+msgid "Contour fixes and and triplot"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:51
+msgid "Ian Thomas has fixed a long-standing bug that has vexed our most talented developers for years.  :func:`~matplotlib.pyplot.contourf` now handles interior masked regions, and the boundaries of line and filled contours coincide."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:56
+msgid "Additionally, he has contributed a new module :mod:`~matplotlib.tri` and helper function :func:`~matplotlib.pyplot.triplot` for creating and plotting unstructured triangular grids."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:66
+msgid "multiple calls to show supported"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:68
+msgid "A long standing request is to support multiple calls to :func:`~matplotlib.pyplot.show`.  This has been difficult because it is hard to get consistent behavior across operating systems, user interface toolkits and versions.  Eric Firing has done a lot of work on rationalizing show across backends, with the desired behavior to make show raise all newly created figures and block execution until they are closed.  Repeated calls to show should raise newly created figures since the last call.  Eric has done a lot of testing on the user interface toolkits and versions and platforms he has access to, but it is not possible to test them all, so please report problems to the `mailing list <https://mail.python.org/mailman/listinfo/matplotlib-users>`__ and `bug tracker <https://github.com/matplotlib/matplotlib/issues>`__."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:85
+msgid "mplot3d graphs can be embedded in arbitrary axes"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:87
+msgid "You can now place an mplot3d graph into an arbitrary axes location, supporting mixing of 2D and 3D graphs in the same figure, and/or multiple 3D graphs in a single figure, using the \"projection\" keyword argument to add_axes or add_subplot.  Thanks Ben Root."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:7
+msgid "(`Source code <../../users/prev_whats_new/whats_new_1-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_1-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-0-1.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:117
+msgid "tick_params"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:119
+msgid "Eric Firing wrote tick_params, a convenience method for changing the appearance of ticks and tick labels. See pyplot function :func:`~matplotlib.pyplot.tick_params` and associated Axes method :meth:`~matplotlib.axes.Axes.tick_params`."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:125
+msgid "Lots of performance and feature enhancements"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:128
+msgid "Faster magnification of large images, and the ability to zoom in to a single pixel"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:131
+msgid "Local installs of documentation work better"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:133
+msgid "Improved \"widgets\" -- mouse grabbing is supported"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:135
+msgid "More accurate snapping of lines to pixel boundaries"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:137
+msgid "More consistent handling of color, particularly the alpha channel, throughout the API"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:141
+msgid "Much improved software carpentry"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:143
+msgid "The matplotlib trunk is probably in as good a shape as it has ever been, thanks to improved `software carpentry <https://software-carpentry.org/>`__.  We now have a `buildbot <https://buildbot.net>`__ which runs a suite of `nose <http://code.google.com/p/python-nose/>`__ regression tests on every svn commit, auto-generating a set of images and comparing them against a set of known-goods, sending emails to developers on failures with a pixel-by-pixel image comparison.  Releases and release bugfixes happen in branches, allowing active new feature development to happen in the trunk while keeping the release branches stable. Thanks to Andrew Straw, Michael Droettboom and other matplotlib developers for the heavy lifting."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:157
+msgid "Bugfix marathon"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_1.0.rst:159
+msgid "Eric Firing went on a bug fixing and closing marathon, closing over 100 bugs on the (now-closed) SourceForge bug tracker with help from Jae-Joon Lee, Michael Droettboom, Christoph Gohlke and Michiel de Hoon."
+msgstr ""
+

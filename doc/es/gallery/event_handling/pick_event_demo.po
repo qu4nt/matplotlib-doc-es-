@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:26\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/gallery/event_handling/pick_event_demo.po\n"
+"X-Crowdin-File-ID: 2242\n"
+"Language: es_ES\n"
+
+#: ../../gallery/event_handling/pick_event_demo.rst:13
+msgid "Click :ref:`here <sphx_glr_download_gallery_event_handling_pick_event_demo.py>` to download the full example code"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:23
+msgid "Pick Event Demo"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:26
+msgid "You can enable picking by setting the \"picker\" property of an artist (for example, a matplotlib Line2D, Text, Patch, Polygon, AxesImage, etc...)"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:30
+msgid "There are a variety of meanings of the picker property:"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:32
+msgid "*None* - picking is disabled for this artist (default)"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:34
+msgid "bool - if *True* then picking will be enabled and the artist will fire a pick event if the mouse event is over the artist."
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:37
+msgid "Setting ``pickradius`` will add an epsilon tolerance in points and the artist will fire off an event if its data is within epsilon of the mouse event.  For some artists like lines and patch collections, the artist may provide additional data to the pick event that is generated, for example, the indices of the data within epsilon of the pick event"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:43
+msgid "function - if picker is callable, it is a user supplied function which determines whether the artist is hit by the mouse event."
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:46
+msgid "hit, props = picker(artist, mouseevent)"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:48
+msgid "to determine the hit test.  If the mouse event is over the artist, return hit=True and props is a dictionary of properties you want added to the PickEvent attributes."
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:52
+msgid "After you have enabled an artist for picking by setting the \"picker\" property, you need to connect to the figure canvas pick_event to get pick callbacks on mouse press events.  For example,"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:60
+msgid "def pick_handler(event):"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:57
+msgid "mouseevent = event.mouseevent artist = event.artist # now do something with this..."
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:62
+msgid "The pick event (matplotlib.backend_bases.PickEvent) which is passed to your callback is always fired with two attributes:"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:71
+msgid "mouseevent - the mouse event that generate the pick event.  The"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:66
+msgid "mouse event in turn has attributes like x and y (the coordinates in display space, such as pixels from left, bottom) and xdata, ydata (the coords in data space).  Additionally, you can get information about which buttons were pressed, which keys were pressed, which Axes the mouse is over, etc.  See matplotlib.backend_bases.MouseEvent for details."
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:73
+msgid "artist - the matplotlib.artist that generated the pick event."
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:75
+msgid "Additionally, certain artists like Line2D and PatchCollection may attach additional meta data like the indices into the data that meet the picker criteria (for example, all the points in the line that are within the specified epsilon tolerance)"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:80
+msgid "The examples below illustrate each of these methods."
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:252
+msgid "**Total running time of the script:** ( 0 minutes  1.082 seconds)"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:267
+msgid ":download:`Download Python source code: pick_event_demo.py <pick_event_demo.py>`"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:273
+msgid ":download:`Download Jupyter notebook: pick_event_demo.ipynb <pick_event_demo.ipynb>`"
+msgstr ""
+
+#: ../../gallery/event_handling/pick_event_demo.rst:280
+msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

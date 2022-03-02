@@ -1,0 +1,1133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:24\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/table_api.po\n"
+"X-Crowdin-File-ID: 1958\n"
+"Language: es_ES\n"
+
+#: ../../api/table_api.rst:3
+msgid "``matplotlib.table``"
+msgstr ""
+
+#: matplotlib.table:1 of
+msgid "Tables drawing."
+msgstr ""
+
+#: matplotlib.table:4 of
+msgid "The table implementation in Matplotlib is lightly maintained. For a more featureful table implementation, you may wish to try `blume <https://github.com/swfiua/blume>`_."
+msgstr ""
+
+#: matplotlib.table:8 of
+msgid "Use the factory function `~matplotlib.table.table` to create a ready-made table from texts. If you need more control, use the `.Table` class and its methods."
+msgstr ""
+
+#: matplotlib.table:12 of
+msgid "The table consists of a grid of cells, which are indexed by (row, column). The cell (0, 0) is positioned at the top left."
+msgstr ""
+
+#: matplotlib.table:15 of
+msgid "Thanks to John Gill for providing the class and table."
+msgstr ""
+
+#: matplotlib.table.Cell:1 of
+msgid "Bases: :py:class:`matplotlib.patches.Rectangle`"
+msgstr ""
+
+#: matplotlib.table.Cell:2 of
+msgid "A cell is a `.Rectangle` with some associated `.Text`."
+msgstr ""
+
+#: matplotlib.table.Cell:4 of
+msgid "As a user, you'll most likely not creates cells yourself. Instead, you should use either the `~matplotlib.table.table` factory function or `.Table.add_cell`."
+msgstr ""
+
+#: matplotlib.table.Cell matplotlib.table.Cell.draw
+#: matplotlib.table.Cell.set_figure matplotlib.table.Cell.set_transform
+#: matplotlib.table.Table matplotlib.table.Table.add_cell
+#: matplotlib.table.Table.auto_set_column_width matplotlib.table.Table.contains
+#: matplotlib.table.Table.draw matplotlib.table.Table.set_fontsize
+#: matplotlib.table.table of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.table.Cell:32 of
+msgid "**xy**"
+msgstr ""
+
+#: of
+msgid "2-tuple"
+msgstr ""
+
+#: matplotlib.table.Cell:32 of
+msgid "The position of the bottom left corner of the cell."
+msgstr ""
+
+#: matplotlib.table.Cell:35 of
+msgid "**width**"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:49 matplotlib.artist.Table.set:19
+#: matplotlib.artist.Table.set:31 matplotlib.table.Cell.set_text_props:53
+#: matplotlib.table.Cell.set_text_props:54
+#: matplotlib.table.Cell.set_text_props:55 matplotlib.table.table:89
+#: matplotlib.table.table:101 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.table.Cell:35 of
+msgid "The cell width."
+msgstr ""
+
+#: matplotlib.table.Cell:38 of
+msgid "**height**"
+msgstr ""
+
+#: matplotlib.table.Cell:38 of
+msgid "The cell height."
+msgstr ""
+
+#: matplotlib.table.Cell:41 of
+msgid "**edgecolor**"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:22 matplotlib.table.Cell.set_text_props:15
+#: matplotlib.table.Cell.set_text_props:20 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.table.Cell:41 of
+msgid "The color of the cell border."
+msgstr ""
+
+#: matplotlib.table.Cell:44 of
+msgid "**facecolor**"
+msgstr ""
+
+#: matplotlib.table.Cell:44 of
+msgid "The cell facecolor."
+msgstr ""
+
+#: matplotlib.table.Cell:47 of
+msgid "**fill**"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:15 matplotlib.artist.Cell.set:20
+#: matplotlib.artist.Cell.set:26 matplotlib.artist.Cell.set:31
+#: matplotlib.artist.Cell.set:38 matplotlib.artist.Cell.set:44
+#: matplotlib.artist.Table.set:14 matplotlib.artist.Table.set:16
+#: matplotlib.artist.Table.set:21 matplotlib.artist.Table.set:25
+#: matplotlib.artist.Table.set:30 matplotlib.table.Cell.set_text_props:14
+#: matplotlib.table.Cell.set_text_props:31
+#: matplotlib.table.Cell.set_text_props:36
+#: matplotlib.table.Cell.set_text_props:40
+#: matplotlib.table.Cell.set_text_props:47
+#: matplotlib.table.Cell.set_text_props:51
+#: matplotlib.table.Cell.set_text_props:52 matplotlib.table.table:84
+#: matplotlib.table.table:86 matplotlib.table.table:91
+#: matplotlib.table.table:95 matplotlib.table.table:100 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.table.Cell:47 of
+msgid "Whether the cell background is filled."
+msgstr ""
+
+#: matplotlib.table.Cell:50 of
+msgid "**text**"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:28 matplotlib.artist.Cell.set:43
+#: matplotlib.artist.Table.set:20 matplotlib.artist.Table.set:29
+#: matplotlib.table.Cell.set_text_props:29
+#: matplotlib.table.Cell.set_text_props:34
+#: matplotlib.table.Cell.set_text_props:48 matplotlib.table.table:90
+#: matplotlib.table.table:99 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.table.Cell:50 of
+msgid "The cell text."
+msgstr ""
+
+#: matplotlib.table.Cell:53 matplotlib.table.Table:43 matplotlib.table.table:54
+#: of
+msgid "**loc**"
+msgstr ""
+
+#: of
+msgid "{'left', 'center', 'right'}, default: 'right'"
+msgstr ""
+
+#: matplotlib.table.Cell:53 of
+msgid "The alignment of the text within the cell."
+msgstr ""
+
+#: matplotlib.table.Cell:57 of
+msgid "**fontproperties**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.table.Cell:56 of
+msgid "A dict defining the font properties of the text. Supported keys and values are the keyword arguments accepted by `.FontProperties`."
+msgstr ""
+
+#: matplotlib.table.Cell:76 of
+msgid "**visible_edges**"
+msgstr ""
+
+#: of
+msgid "str, default: 'closed'"
+msgstr ""
+
+#: matplotlib.table.Cell:60 of
+msgid "The cell edges to be drawn with a line: a substring of 'BRTL' (bottom, right, top, left), or one of 'open' (no edges drawn), 'closed' (all edges drawn), 'horizontal' (bottom and top), 'vertical' (right and left)."
+msgstr ""
+
+#: ../../docstring matplotlib.table.Cell.PAD:2 of
+msgid "Padding between text and rectangle."
+msgstr ""
+
+#: matplotlib.table.Cell.auto_set_font_size:2 of
+msgid "Shrink font size until the text fits into the cell width."
+msgstr ""
+
+#: matplotlib.table.Cell.draw:2 matplotlib.table.Table.draw:2 of
+msgid "Draw the Artist (and its children) using the given renderer."
+msgstr ""
+
+#: matplotlib.table.Cell.draw:4 matplotlib.table.Table.draw:4 of
+msgid "This has no effect if the artist is not visible (`.Artist.get_visible` returns False)."
+msgstr ""
+
+#: matplotlib.table.Cell.draw:18 matplotlib.table.Table.draw:18 of
+msgid "**renderer** : `.RendererBase` subclass."
+msgstr ""
+
+#: matplotlib.table.Cell.draw:17 matplotlib.table.Table.draw:17 of
+msgid "RendererBase subclass."
+msgstr ""
+
+#: matplotlib.table.Cell.draw:21 matplotlib.table.Table.draw:21
+#: matplotlib.table.Table.edges:16 matplotlib.table.Table.get_celld:16
+#: matplotlib.table.Table.set_fontsize:19 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.table.Cell.draw:22 matplotlib.table.Table.draw:22 of
+msgid "This method is overridden in the Artist subclasses."
+msgstr ""
+
+#: matplotlib.table.Cell.get_fontsize:2 of
+msgid "Return the cell fontsize."
+msgstr ""
+
+#: matplotlib.table.Cell.get_path:2 of
+msgid "Return a `.Path` for the `.visible_edges`."
+msgstr ""
+
+#: matplotlib.table.Cell.get_required_width:2 of
+msgid "Return the minimal required width for the cell."
+msgstr ""
+
+#: matplotlib.table.Cell.get_text:2 of
+msgid "Return the cell `.Text` instance."
+msgstr ""
+
+#: matplotlib.table.Cell.get_text_bounds:2 of
+msgid "Return the text bounds as *(x, y, width, height)* in table coordinates."
+msgstr ""
+
+#: matplotlib.artist.Cell.set:2 matplotlib.artist.Table.set:2 of
+msgid "Set multiple properties at once."
+msgstr ""
+
+#: matplotlib.artist.Cell.set:4 matplotlib.artist.Table.set:4 of
+msgid "Supported properties are"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:10 matplotlib.artist.Table.set:10
+#: matplotlib.table.Cell.set_text_props:10 matplotlib.table.table:80 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:10 matplotlib.artist.Table.set:10
+#: matplotlib.table.Cell.set_text_props:10 matplotlib.table.table:80 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:12 matplotlib.artist.Table.set:12
+#: matplotlib.table.Cell.set_text_props:12 matplotlib.table.table:82 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:12 matplotlib.artist.Table.set:12
+#: matplotlib.table.Cell.set_text_props:12 matplotlib.table.table:82 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:13 matplotlib.artist.Table.set:13
+#: matplotlib.table.Cell.set_text_props:13 matplotlib.table.table:83 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:13 matplotlib.artist.Table.set:13
+#: matplotlib.table.Cell.set_text_props:13 matplotlib.table.table:83 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:14 of
+msgid ":meth:`angle <matplotlib.patches.Rectangle.set_angle>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:14 matplotlib.artist.Cell.set:25
+#: matplotlib.artist.Cell.set:27 matplotlib.artist.Cell.set:30
+#: matplotlib.artist.Cell.set:41 matplotlib.artist.Cell.set:42
+#: matplotlib.artist.Cell.set:45 matplotlib.artist.Cell.set:46
+#: matplotlib.artist.Cell.set:48 matplotlib.table.Cell.set_text_props:17
+#: matplotlib.table.Cell.set_text_props:18
+#: matplotlib.table.Cell.set_text_props:19 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:15 matplotlib.artist.Table.set:14
+#: matplotlib.table.Cell.set_text_props:14 matplotlib.table.table:84 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:16 of
+msgid ":meth:`antialiased <matplotlib.patches.Patch.set_antialiased>` or aa"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:16 matplotlib.artist.Cell.set:40
+#: matplotlib.artist.Table.set:27 matplotlib.table.Cell.set_text_props:44
+#: matplotlib.table.Cell.set_text_props:49 matplotlib.table.table:97 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:17 of
+msgid ":meth:`bounds <matplotlib.patches.Rectangle.set_bounds>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:17 of
+msgid "(left, bottom, width, height)"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:18 of
+msgid ":meth:`capstyle <matplotlib.patches.Patch.set_capstyle>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:18 of
+msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:19 matplotlib.artist.Table.set:15
+#: matplotlib.table.Cell.set_text_props:17 matplotlib.table.table:85 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:19 matplotlib.artist.Table.set:15
+#: matplotlib.table.table:85 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:20 matplotlib.artist.Table.set:16
+#: matplotlib.table.Cell.set_text_props:18 matplotlib.table.table:86 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:21 matplotlib.artist.Table.set:17
+#: matplotlib.table.Cell.set_text_props:19 matplotlib.table.table:87 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:21 matplotlib.artist.Table.set:17
+#: matplotlib.table.table:87 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:22 of
+msgid ":meth:`color <matplotlib.patches.Patch.set_color>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:23 of
+msgid ":meth:`edgecolor <matplotlib.patches.Patch.set_edgecolor>` or ec"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:23 matplotlib.artist.Cell.set:24 of
+msgid "color or None"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:24 of
+msgid ":meth:`facecolor <matplotlib.patches.Patch.set_facecolor>` or fc"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:25 matplotlib.artist.Table.set:18
+#: matplotlib.table.Cell.set_text_props:21 matplotlib.table.table:88 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:26 of
+msgid ":meth:`fill <matplotlib.patches.Patch.set_fill>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:27 of
+msgid ":meth:`fontsize <matplotlib.table.Cell.set_fontsize>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:28 matplotlib.artist.Table.set:20
+#: matplotlib.table.Cell.set_text_props:29 matplotlib.table.table:90 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:29 of
+msgid ":meth:`hatch <matplotlib.patches.Patch.set_hatch>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:29 of
+msgid "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:30 of
+msgid ":meth:`height <matplotlib.patches.Rectangle.set_height>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:31 matplotlib.artist.Table.set:21
+#: matplotlib.table.Cell.set_text_props:31 matplotlib.table.table:91 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:32 of
+msgid ":meth:`joinstyle <matplotlib.patches.Patch.set_joinstyle>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:32 of
+msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:33 matplotlib.artist.Table.set:22
+#: matplotlib.table.Cell.set_text_props:32 matplotlib.table.table:92 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:33 matplotlib.artist.Table.set:22
+#: matplotlib.table.Cell.set_text_props:32
+#: matplotlib.table.Cell.set_text_props:45 matplotlib.table.table:92 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:34 of
+msgid ":meth:`linestyle <matplotlib.patches.Patch.set_linestyle>` or ls"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:34 of
+msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:35 of
+msgid ":meth:`linewidth <matplotlib.patches.Patch.set_linewidth>` or lw"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:35 of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:36 matplotlib.artist.Table.set:23
+#: matplotlib.table.Cell.set_text_props:37 matplotlib.table.table:93 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:36 matplotlib.artist.Table.set:23
+#: matplotlib.table.Cell.set_text_props:37 matplotlib.table.table:93 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:37 matplotlib.artist.Table.set:24
+#: matplotlib.table.Cell.set_text_props:38 matplotlib.table.table:94 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:37 matplotlib.artist.Table.set:24
+#: matplotlib.table.Cell.set_text_props:38 matplotlib.table.table:94 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:38 matplotlib.artist.Table.set:25
+#: matplotlib.table.Cell.set_text_props:40 matplotlib.table.table:95 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:39 matplotlib.artist.Table.set:26
+#: matplotlib.table.Cell.set_text_props:43 matplotlib.table.table:96 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:39 matplotlib.artist.Table.set:26
+#: matplotlib.table.Cell.set_text_props:43 matplotlib.table.table:96 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:40 matplotlib.artist.Table.set:27
+#: matplotlib.table.Cell.set_text_props:44 matplotlib.table.table:97 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:41 of
+msgid ":meth:`text_props <matplotlib.table.Cell.set_text_props>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:42 matplotlib.artist.Table.set:28
+#: matplotlib.table.Cell.set_text_props:46 matplotlib.table.table:98 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:43 matplotlib.artist.Table.set:29
+#: matplotlib.table.Cell.set_text_props:48 matplotlib.table.table:99 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:44 matplotlib.artist.Table.set:30
+#: matplotlib.table.Cell.set_text_props:51 matplotlib.table.table:100 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:45 of
+msgid ":meth:`width <matplotlib.patches.Rectangle.set_width>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:46 of
+msgid ":meth:`x <matplotlib.patches.Rectangle.set_x>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:47 of
+msgid ":meth:`xy <matplotlib.patches.Rectangle.set_xy>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:47 matplotlib.table.Cell.set_text_props:39 of
+msgid "(float, float)"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:48 of
+msgid ":meth:`y <matplotlib.patches.Rectangle.set_y>`"
+msgstr ""
+
+#: matplotlib.artist.Cell.set:49 matplotlib.artist.Table.set:31
+#: matplotlib.table.Cell.set_text_props:55 matplotlib.table.table:101 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_figure:2 of
+msgid "Set the `.Figure` instance the artist belongs to."
+msgstr ""
+
+#: matplotlib.table.Cell.set_figure:21 of
+msgid "**fig** : `.Figure`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_figure:20 of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.table.Cell.set_fontsize:2 of
+msgid "Set the text fontsize."
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:2 of
+msgid "Update the text properties."
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:4 of
+msgid "Valid keyword arguments are:"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:15 of
+msgid ":meth:`backgroundcolor <matplotlib.text.Text.set_backgroundcolor>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:16 of
+msgid ":meth:`bbox <matplotlib.text.Text.set_bbox>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:16 of
+msgid "dict with properties for `.patches.FancyBboxPatch`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:20 of
+msgid ":meth:`color <matplotlib.text.Text.set_color>` or c"
+msgstr ""
+
+#: matplotlib.artist.Table.set:18 matplotlib.table.Cell.set_text_props:21
+#: matplotlib.table.table:88 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:22 of
+msgid ":meth:`fontfamily <matplotlib.text.Text.set_fontfamily>` or family"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:22 of
+msgid "{FONTNAME, 'serif', 'sans-serif', 'cursive', 'fantasy', 'monospace'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:23 of
+msgid ":meth:`fontproperties <matplotlib.text.Text.set_fontproperties>` or font or font_properties"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:23 of
+msgid "`.font_manager.FontProperties` or `str` or `pathlib.Path`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:24 of
+msgid ":meth:`fontsize <matplotlib.text.Text.set_fontsize>` or size"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:24 of
+msgid "float or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:25 of
+msgid ":meth:`fontstretch <matplotlib.text.Text.set_fontstretch>` or stretch"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:25 of
+msgid "{a numeric value in range 0-1000, 'ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', 'extra-expanded', 'ultra-expanded'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:26 of
+msgid ":meth:`fontstyle <matplotlib.text.Text.set_fontstyle>` or style"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:26 of
+msgid "{'normal', 'italic', 'oblique'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:27 of
+msgid ":meth:`fontvariant <matplotlib.text.Text.set_fontvariant>` or variant"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:27 of
+msgid "{'normal', 'small-caps'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:28 of
+msgid ":meth:`fontweight <matplotlib.text.Text.set_fontweight>` or weight"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:28 of
+msgid "{a numeric value in range 0-1000, 'ultralight', 'light', 'normal', 'regular', 'book', 'medium', 'roman', 'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:30 of
+msgid ":meth:`horizontalalignment <matplotlib.text.Text.set_horizontalalignment>` or ha"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:30 of
+msgid "{'center', 'right', 'left'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:33 of
+msgid ":meth:`linespacing <matplotlib.text.Text.set_linespacing>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:33 of
+msgid "float (multiple of font size)"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:34 of
+msgid ":meth:`math_fontfamily <matplotlib.text.Text.set_math_fontfamily>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:35 of
+msgid ":meth:`multialignment <matplotlib.text.Text.set_multialignment>` or ma"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:35 of
+msgid "{'left', 'right', 'center'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:36 of
+msgid ":meth:`parse_math <matplotlib.text.Text.set_parse_math>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:39 of
+msgid ":meth:`position <matplotlib.text.Text.set_position>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:41 of
+msgid ":meth:`rotation <matplotlib.text.Text.set_rotation>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:41 of
+msgid "float or {'vertical', 'horizontal'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:42 of
+msgid ":meth:`rotation_mode <matplotlib.text.Text.set_rotation_mode>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:42 of
+msgid "{None, 'default', 'anchor'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:45 of
+msgid ":meth:`text <matplotlib.text.Text.set_text>`"
+msgstr ""
+
+#: matplotlib.artist.Table.set:28 matplotlib.table.Cell.set_text_props:46
+#: matplotlib.table.table:98 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:47 of
+msgid ":meth:`transform_rotates_text <matplotlib.text.Text.set_transform_rotates_text>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:49 of
+msgid ":meth:`usetex <matplotlib.text.Text.set_usetex>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:50 of
+msgid ":meth:`verticalalignment <matplotlib.text.Text.set_verticalalignment>` or va"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:50 of
+msgid "{'center', 'top', 'bottom', 'baseline', 'center_baseline'}"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:52 of
+msgid ":meth:`wrap <matplotlib.text.Text.set_wrap>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:53 of
+msgid ":meth:`x <matplotlib.text.Text.set_x>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_text_props:54 of
+msgid ":meth:`y <matplotlib.text.Text.set_y>`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_transform:2 of
+msgid "Set the artist transform."
+msgstr ""
+
+#: matplotlib.table.Cell.set_transform:21 of
+msgid "**t** : `.Transform`"
+msgstr ""
+
+#: matplotlib.table.Cell.set_transform:20 of
+msgid "Transform"
+msgstr ""
+
+#: matplotlib.table.Cell.visible_edges:2 of
+msgid "The cell edges to be drawn with a line."
+msgstr ""
+
+#: matplotlib.table.Cell.visible_edges:4 of
+msgid "Reading this property returns a substring of 'BRTL' (bottom, right, top, left')."
+msgstr ""
+
+#: matplotlib.table.Cell.visible_edges:7 of
+msgid "When setting this property, you can use a substring of 'BRTL' or one of {'open', 'closed', 'horizontal', 'vertical'}."
+msgstr ""
+
+#: matplotlib.table.Table:1 of
+msgid "Bases: :py:class:`matplotlib.artist.Artist`"
+msgstr ""
+
+#: matplotlib.table.Table:2 of
+msgid "A table of cells."
+msgstr ""
+
+#: matplotlib.table.Table:4 of
+msgid "The table consists of a grid of cells, which are indexed by (row, column)."
+msgstr ""
+
+#: matplotlib.table.Table:6 of
+msgid "For a simple table, you'll have a full grid of cells with indices from (0, 0) to (num_rows-1, num_cols-1), in which the cell (0, 0) is positioned at the top left. However, you can also add cells with negative indices. You don't have to add a cell to every grid position, so you can create tables that have holes."
+msgstr ""
+
+#: matplotlib.table.Table:12 of
+msgid "*Note*: You'll usually not create an empty table from scratch. Instead use `~matplotlib.table.table` to create a table from data."
+msgstr ""
+
+#: matplotlib.table.Table:39 of
+msgid "**ax** : `matplotlib.axes.Axes`"
+msgstr ""
+
+#: matplotlib.table.Table:38 of
+msgid "matplotlib.axes.Axes"
+msgstr ""
+
+#: matplotlib.table.Table:39 of
+msgid "The `~.axes.Axes` to plot the table into."
+msgstr ""
+
+#: matplotlib.table.Table:42 matplotlib.table.table:53 of
+msgid "The position of the cell with respect to *ax*. This must be one of the `~.Table.codes`."
+msgstr ""
+
+#: matplotlib.table.Table:50 of
+msgid "**bbox** : `.Bbox` or None"
+msgstr ""
+
+#: matplotlib.table.Table:49 of
+msgid "Bbox or None"
+msgstr ""
+
+#: matplotlib.table.Table:46 matplotlib.table.table:57 of
+msgid "A bounding box to draw the table into. If this is not *None*, this overrides *loc*."
+msgstr ""
+
+#: matplotlib.table.Table matplotlib.table.table of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.table.Table:64 matplotlib.table.table:111 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.table.Table:55 of
+msgid "`.Artist` properties."
+msgstr ""
+
+#: ../../docstring matplotlib.table.Table.AXESPAD:2 of
+msgid "The border between the Axes and the table edge in Axes units."
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:2 of
+msgid "Create a cell and add it to the table."
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:8 of
+msgid "**row**"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:8 of
+msgid "Row index."
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:11
+#: matplotlib.table.Table.auto_set_column_width:21 of
+msgid "**col**"
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:11 of
+msgid "Column index."
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:14 of
+msgid "**\\*args, **kwargs**"
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:14 of
+msgid "All other parameters are passed on to `Cell`."
+msgstr ""
+
+#: matplotlib.table.Table.add_cell matplotlib.table.Table.contains
+#: matplotlib.table.table of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:31 of
+msgid "`.Cell`"
+msgstr ""
+
+#: matplotlib.table.Table.add_cell:19 of
+msgid "The created cell."
+msgstr ""
+
+#: matplotlib.table.Table.auto_set_column_width:2 of
+msgid "Automatically set the widths of given columns to optimal sizes."
+msgstr ""
+
+#: of
+msgid "int or sequence of ints"
+msgstr ""
+
+#: matplotlib.table.Table.auto_set_column_width:8 of
+msgid "The indices of the columns to auto-scale."
+msgstr ""
+
+#: matplotlib.table.Table.auto_set_font_size:2 of
+msgid "Automatically set font size."
+msgstr ""
+
+#: ../../docstring matplotlib.table.Table.codes:2 of
+msgid "Possible values where to place the table relative to the Axes."
+msgstr ""
+
+#: matplotlib.table.Table.contains:2 of
+msgid "Test whether the artist contains the mouse event."
+msgstr ""
+
+#: matplotlib.table.Table.contains:8 of
+msgid "**mouseevent** : `matplotlib.backend_bases.MouseEvent`"
+msgstr ""
+
+#: matplotlib.table.Table.contains:7 of
+msgid "matplotlib.backend_bases.MouseEvent"
+msgstr ""
+
+#: matplotlib.table.Table.contains:13 of
+msgid "**contains**"
+msgstr ""
+
+#: matplotlib.table.Table.contains:13 of
+msgid "Whether any values are within the radius."
+msgstr ""
+
+#: matplotlib.table.Table.contains:30 of
+msgid "**details**"
+msgstr ""
+
+#: matplotlib.table.Table.contains:16 of
+msgid "An artist-specific dictionary of details of the event context, such as which points are contained in the pick radius. See the individual Artist subclasses for details."
+msgstr ""
+
+#: matplotlib.table.Table.edges:2 of
+msgid "The default value of `~.Cell.visible_edges` for newly added cells using `.add_cell`."
+msgstr ""
+
+#: matplotlib.table.Table.edges:17 of
+msgid "This setting does currently only affect newly created cells using `.add_cell`."
+msgstr ""
+
+#: matplotlib.table.Table.edges:20 of
+msgid "To change existing cells, you have to set their edges explicitly::"
+msgstr ""
+
+#: matplotlib.table.Table.get_celld:2 of
+msgid "Return a dict of cells in the table mapping *(row, column)* to `.Cell`\\s."
+msgstr ""
+
+#: matplotlib.table.Table.get_celld:17 of
+msgid "You can also directly index into the Table object to access individual cells::"
+msgstr ""
+
+#: matplotlib.table.Table.get_children:2 of
+msgid "Return the Artists contained by the table."
+msgstr ""
+
+#: matplotlib.table.Table.get_window_extent:2 of
+msgid "Get the artist's bounding box in display space."
+msgstr ""
+
+#: matplotlib.table.Table.get_window_extent:4 of
+msgid "The bounding box' width and height are nonnegative."
+msgstr ""
+
+#: matplotlib.table.Table.get_window_extent:6 of
+msgid "Subclasses should override for inclusion in the bounding box \"tight\" calculation. Default is to return an empty bounding box at 0, 0."
+msgstr ""
+
+#: matplotlib.table.Table.get_window_extent:10 of
+msgid "Be careful when using this function, the results will not update if the artist window extent of the artist changes.  The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure).  This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly."
+msgstr ""
+
+#: matplotlib.table.Table.scale:2 of
+msgid "Scale column widths by *xscale* and row heights by *yscale*."
+msgstr ""
+
+#: matplotlib.artist.Table.set:19 matplotlib.table.table:89 of
+msgid ":meth:`fontsize <matplotlib.table.Table.set_fontsize>`"
+msgstr ""
+
+#: matplotlib.table.Table.set_fontsize:2 of
+msgid "Set the font size, in points, of the cell text."
+msgstr ""
+
+#: matplotlib.table.Table.set_fontsize:16 of
+msgid "**size**"
+msgstr ""
+
+#: matplotlib.table.Table.set_fontsize:20 of
+msgid "As long as auto font size has not been disabled, the value will be clipped such that the text fits horizontally into the cell."
+msgstr ""
+
+#: matplotlib.table.Table.set_fontsize:23 of
+msgid "You can disable this behavior using `.auto_set_font_size`."
+msgstr ""
+
+#: matplotlib.table.Table.set_fontsize:28 of
+msgid "However, there is no automatic scaling of the row height so that the text may exceed the cell boundary."
+msgstr ""
+
+#: matplotlib.table.table:2 of
+msgid "Add a table to an `~.axes.Axes`."
+msgstr ""
+
+#: matplotlib.table.table:4 of
+msgid "At least one of *cellText* or *cellColours* must be specified. These parameters must be 2D lists, in which the outer lists define the rows and the inner list define the column values per row. Each row must have the same number of elements."
+msgstr ""
+
+#: matplotlib.table.table:9 of
+msgid "The table can optionally have row and column headers, which are configured using *rowLabels*, *rowColours*, *rowLoc* and *colLabels*, *colColours*, *colLoc* respectively."
+msgstr ""
+
+#: matplotlib.table.table:13 of
+msgid "For finer grained control over tables, use the `.Table` class and add it to the axes with `.Axes.add_table`."
+msgstr ""
+
+#: matplotlib.table.table:22 of
+msgid "**cellText**"
+msgstr ""
+
+#: of
+msgid "2D list of str, optional"
+msgstr ""
+
+#: matplotlib.table.table:19 of
+msgid "The texts to place into the table cells."
+msgstr ""
+
+#: matplotlib.table.table:21 of
+msgid "*Note*: Line breaks in the strings are currently not accounted for and will result in the text exceeding the cell boundaries."
+msgstr ""
+
+#: matplotlib.table.table:25 of
+msgid "**cellColours**"
+msgstr ""
+
+#: of
+msgid "2D list of colors, optional"
+msgstr ""
+
+#: matplotlib.table.table:25 of
+msgid "The background colors of the cells."
+msgstr ""
+
+#: matplotlib.table.table:28 of
+msgid "**cellLoc**"
+msgstr ""
+
+#: matplotlib.table.table:28 of
+msgid "The alignment of the text within the cells."
+msgstr ""
+
+#: matplotlib.table.table:32 of
+msgid "**colWidths**"
+msgstr ""
+
+#: of
+msgid "list of float, optional"
+msgstr ""
+
+#: matplotlib.table.table:31 of
+msgid "The column widths in units of the axes. If not given, all columns will have a width of *1 / ncols*."
+msgstr ""
+
+#: matplotlib.table.table:35 of
+msgid "**rowLabels**"
+msgstr ""
+
+#: of
+msgid "list of str, optional"
+msgstr ""
+
+#: matplotlib.table.table:35 of
+msgid "The text of the row header cells."
+msgstr ""
+
+#: matplotlib.table.table:38 of
+msgid "**rowColours**"
+msgstr ""
+
+#: of
+msgid "list of colors, optional"
+msgstr ""
+
+#: matplotlib.table.table:38 of
+msgid "The colors of the row header cells."
+msgstr ""
+
+#: matplotlib.table.table:41 of
+msgid "**rowLoc**"
+msgstr ""
+
+#: of
+msgid "{'left', 'center', 'right'}, default: 'left'"
+msgstr ""
+
+#: matplotlib.table.table:41 of
+msgid "The text alignment of the row header cells."
+msgstr ""
+
+#: matplotlib.table.table:44 of
+msgid "**colLabels**"
+msgstr ""
+
+#: matplotlib.table.table:44 of
+msgid "The text of the column header cells."
+msgstr ""
+
+#: matplotlib.table.table:47 of
+msgid "**colColours**"
+msgstr ""
+
+#: matplotlib.table.table:47 of
+msgid "The colors of the column header cells."
+msgstr ""
+
+#: matplotlib.table.table:50 of
+msgid "**colLoc**"
+msgstr ""
+
+#: matplotlib.table.table:50 of
+msgid "The text alignment of the column header cells."
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.table.table:58 of
+msgid "**bbox** : `.Bbox`, optional"
+msgstr ""
+
+#: matplotlib.table.table:57 of
+msgid "Bbox, optional"
+msgstr ""
+
+#: matplotlib.table.table:62 of
+msgid "**edges**"
+msgstr ""
+
+#: of
+msgid "substring of 'BRTL' or {'open', 'closed', 'horizontal', 'vertical'}"
+msgstr ""
+
+#: matplotlib.table.table:61 of
+msgid "The cell edges to be drawn with a line. See also `~.Cell.visible_edges`."
+msgstr ""
+
+#: matplotlib.table.table:69 of
+msgid "`~matplotlib.table.Table`"
+msgstr ""
+
+#: matplotlib.table.table:67 of
+msgid "The created table."
+msgstr ""
+
+#: matplotlib.table.table:74 of
+msgid "`.Table` properties."
+msgstr ""
+

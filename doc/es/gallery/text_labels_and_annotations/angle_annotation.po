@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:30\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/gallery/text_labels_and_annotations/angle_annotation.po\n"
+"X-Crowdin-File-ID: 2924\n"
+"Language: es_ES\n"
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:13
+msgid "Click :ref:`here <sphx_glr_download_gallery_text_labels_and_annotations_angle_annotation.py>` to download the full example code"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:23
+msgid "Scale invariant angle label"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:25
+msgid "This example shows how to create a scale invariant angle annotation. It is often useful to mark angles between lines or inside shapes with a circular arc. While Matplotlib provides an `~.patches.Arc`, an inherent problem when directly using it for such purposes is that an arc being circular in data space is not necessarily circular in display space. Also, the arc's radius is often best defined in a coordinate system which is independent of the actual data coordinates - at least if you want to be able to freely zoom into your plot without the annotation growing to infinity."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:34
+msgid "This calls for a solution where the arc's center is defined in data space, but its radius in a physical unit like points or pixels, or as a ratio of the Axes dimension. The following ``AngleAnnotation`` class provides such solution."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:38
+msgid "The example below serves two purposes:"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:40
+msgid "It provides a ready-to-use solution for the problem of easily drawing angles in graphs."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:42
+msgid "It shows how to subclass a Matplotlib artist to enhance its functionality, as well as giving a hands-on example on how to use Matplotlib's :doc:`transform system </tutorials/advanced/transforms_tutorial>`."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:46
+msgid "If mainly interested in the former, you may copy the below class and jump to the :ref:`angle-annotation-usage` section."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:52
+msgid "AngleAnnotation class"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:53
+msgid "The essential idea here is to subclass `~.patches.Arc` and set its transform to the `~.transforms.IdentityTransform`, making the parameters of the arc defined in pixel space. We then override the ``Arc``'s attributes ``_center``, ``theta1``, ``theta2``, ``width`` and ``height`` and make them properties, coupling to internal methods that calculate the respective parameters each time the attribute is accessed and thereby ensuring that the arc in pixel space stays synchronized with the input points and size. For example, each time the arc's drawing method would query its ``_center`` attribute, instead of receiving the same number all over again, it will instead receive the result of the ``get_center_in_pixels`` method we defined in the subclass. This method transforms the center in data coordinates to pixels via the Axes transform ``ax.transData``. The size and the angles are calculated in a similar fashion, such that the arc changes its shape automatically when e.g. zooming or panning interactively."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:69
+msgid "The functionality of this class allows to annotate the arc with a text. This text is a `~.text.Annotation` stored in an attribute ``text``. Since the arc's position and radius are defined only at draw time, we need to update the text's position accordingly. This is done by reimplementing the ``Arc``'s ``draw()`` method to let it call an updating method for the text."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:75
+msgid "The arc and the text will be added to the provided Axes at instantiation: it is hence not strictly necessary to keep a reference to it."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:250
+msgid "Usage"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:252
+msgid "Required arguments to ``AngleAnnotation`` are the center of the arc, *xy*, and two points, such that the arc spans between the two vectors connecting *p1* and *p2* with *xy*, respectively. Those are given in data coordinates. Further arguments are the *size* of the arc and its *unit*. Additionally, a *text* can be specified, that will be drawn either in- or outside of the arc, according to the value of *textposition*. Usage of those arguments is shown below."
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:307
+msgid "``AngleLabel`` options"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:309
+msgid "The *textposition* and *unit* keyword arguments may be used to modify the location of the text label, as shown below:"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:383
+msgid "References"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:385
+msgid "The use of the following functions, methods, classes and modules is shown in this example:"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:388
+msgid "`matplotlib.patches.Arc`"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:389
+msgid "`matplotlib.axes.Axes.annotate` / `matplotlib.pyplot.annotate`"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:390
+msgid "`matplotlib.text.Annotation`"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:391
+msgid "`matplotlib.transforms.IdentityTransform`"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:392
+msgid "`matplotlib.transforms.TransformedBbox`"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:393
+msgid "`matplotlib.transforms.Bbox`"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:408
+msgid ":download:`Download Python source code: angle_annotation.py <angle_annotation.py>`"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:414
+msgid ":download:`Download Jupyter notebook: angle_annotation.ipynb <angle_annotation.ipynb>`"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/angle_annotation.rst:421
+msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

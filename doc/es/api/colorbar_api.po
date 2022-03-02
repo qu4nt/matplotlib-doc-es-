@@ -1,0 +1,757 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/colorbar_api.po\n"
+"X-Crowdin-File-ID: 1768\n"
+"Language: es_ES\n"
+
+#: ../../api/colorbar_api.rst:3
+msgid "``matplotlib.colorbar``"
+msgstr ""
+
+#: matplotlib.colorbar:1 of
+msgid "Colorbars are a visualization of the mapping from scalar values to colors. In Matplotlib they are drawn into a dedicated `~.axes.Axes`."
+msgstr ""
+
+#: matplotlib.colorbar:5 of
+msgid "Colorbars are typically created through `.Figure.colorbar` or its pyplot wrapper `.pyplot.colorbar`, which internally use `.Colorbar` together with `.make_axes_gridspec` (for `.GridSpec`-positioned axes) or `.make_axes` (for non-`.GridSpec`-positioned axes)."
+msgstr ""
+
+#: matplotlib.colorbar:10 of
+msgid "End-users most likely won't need to directly use this module's API."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:2 of
+msgid "Draw a colorbar in an existing axes."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:4 of
+msgid "Typically, colorbars are created using `.Figure.colorbar` or `.pyplot.colorbar` and associated with `.ScalarMappable`\\s (such as an `.AxesImage` generated via `~.axes.Axes.imshow`)."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:8 of
+msgid "In order to draw a colorbar not associated with other elements in the figure, e.g. when showing a colormap by itself, one can create an empty `.ScalarMappable`, or directly pass *cmap* and *norm* instead of *mappable* to `Colorbar`."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:13 of
+msgid "Useful public methods are :meth:`set_label` and :meth:`add_lines`."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar matplotlib.colorbar.Colorbar.add_lines
+#: matplotlib.colorbar.Colorbar.get_ticks
+#: matplotlib.colorbar.Colorbar.set_label
+#: matplotlib.colorbar.Colorbar.set_ticklabels
+#: matplotlib.colorbar.Colorbar.set_ticks matplotlib.colorbar.colorbar_factory
+#: matplotlib.colorbar.make_axes matplotlib.colorbar.make_axes_gridspec of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:18 matplotlib.colorbar.Colorbar:93 of
+msgid "**ax** : `~matplotlib.axes.Axes`"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:17 matplotlib.colorbar.Colorbar:92
+#: matplotlib.colorbar.colorbar_factory:12 matplotlib.colorbar.make_axes:36
+#: matplotlib.colorbar.make_axes_gridspec:22 of
+msgid "Axes"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:18 matplotlib.colorbar.Colorbar:93 of
+msgid "The `~.axes.Axes` instance in which the colorbar is drawn."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:30 of
+msgid "**mappable** : `.ScalarMappable`"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:29 matplotlib.colorbar.colorbar_factory:15 of
+msgid "ScalarMappable"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:21 of
+msgid "The mappable whose colormap and norm will be used."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:23 of
+msgid "To show the under- and over- value colors, the mappable's norm should be specified as ::"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:28 of
+msgid "To show the colors versus index instead of on a 0-1 scale, use::"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:34 of
+msgid "**cmap** : `~matplotlib.colors.Colormap`, default: :rc:`image.cmap`"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:33 of
+msgid "Colormap, default: rcParams[\"image.cmap\"] (default: 'viridis')"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:33 of
+msgid "The colormap to use.  This parameter is ignored, unless *mappable* is None."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:38 of
+msgid "**norm** : `~matplotlib.colors.Normalize`"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:37 of
+msgid "Normalize"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:37 of
+msgid "The normalization to use.  This parameter is ignored, unless *mappable* is None."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:41 of
+msgid "**alpha**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:41 of
+msgid "The colorbar transparency between 0 (transparent) and 1 (opaque)."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:44 of
+msgid "**values, boundaries**"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:44 of
+msgid "If unset, the colormap will be displayed on a 0-1 scale."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:47 matplotlib.colorbar.make_axes:23
+#: matplotlib.colorbar.make_axes_gridspec:36 of
+msgid "**orientation**"
+msgstr ""
+
+#: of
+msgid "{'vertical', 'horizontal'}"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:50 of
+msgid "**ticklocation**"
+msgstr ""
+
+#: of
+msgid "{'auto', 'left', 'right', 'top', 'bottom'}"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:53 of
+msgid "**extend**"
+msgstr ""
+
+#: of
+msgid "{'neither', 'both', 'min', 'max'}"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:56 of
+msgid "**spacing**"
+msgstr ""
+
+#: of
+msgid "{'uniform', 'proportional'}"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:59 of
+msgid "**ticks** : `~matplotlib.ticker.Locator` or array-like of float"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:58 of
+msgid "Locator or array-like of float"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:62 of
+msgid "**format** : str or `~matplotlib.ticker.Formatter`"
+msgstr ""
+
+#: of
+msgid "str or"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:65 of
+msgid "**drawedges**"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:68 of
+msgid "**filled**"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:71 of
+msgid "**extendfrac**"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:74 of
+msgid "**extendrec**"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:88 matplotlib.colorbar.Colorbar.set_label:8 of
+msgid "**label**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:96 of
+msgid "**lines**"
+msgstr ""
+
+#: of
+msgid "list"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:96 of
+msgid "A list of `.LineCollection` (empty if no lines were drawn)."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:100 of
+msgid "**dividers** : `.LineCollection`"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:99 of
+msgid "LineCollection"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar:99 of
+msgid "A LineCollection (empty if *drawedges* is ``False``)."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:2 of
+msgid "Draw lines on the colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:4 of
+msgid "The lines are appended to the list :attr:`lines`."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:9 of
+msgid "**levels**"
+msgstr ""
+
+#: of
+msgid "array-like"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:9 of
+msgid "The positions of the lines."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:13 of
+msgid "**colors**"
+msgstr ""
+
+#: of
+msgid "color or list of colors"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:12 of
+msgid "Either a single color applying to all lines or one color value for each line."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:17 of
+msgid "**linewidths**"
+msgstr ""
+
+#: of
+msgid "float or array-like"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:16 of
+msgid "Either a single linewidth applying to all lines or one linewidth for each line."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:28 of
+msgid "**erase**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:20 of
+msgid "Whether to remove any previously added lines."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:31
+#: matplotlib.colorbar.ColorbarPatch:15 matplotlib.colorbar.colorbar_factory:34
+#: of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.add_lines:32 of
+msgid "Alternatively, this method can also be called with the signature ``colorbar.add_lines(contour_set, erase=True)``, in which case *levels*, *colors*, and *linewidths* are taken from *contour_set*."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.draw_all:2 of
+msgid "Calculate any free parameters based on the current cmap and norm, and do all the drawing."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.get_ticks:2 of
+msgid "Return the ticks as a list of locations."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.get_ticks:21
+#: matplotlib.colorbar.Colorbar.set_ticks:14 of
+msgid "**minor**"
+msgstr ""
+
+#: of
+msgid "boolean, default: False"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.get_ticks:8 of
+msgid "if True return the minor ticks."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.minorticks_off:2 of
+msgid "Turn the minor ticks of the colorbar off."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.minorticks_on:2 of
+msgid "Turn on colorbar minor ticks."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.remove:2 of
+msgid "Remove this colorbar from the figure."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.remove:4 of
+msgid "If the colorbar was created with ``use_gridspec=True`` the previous gridspec is restored."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_alpha:2 of
+msgid "Set the transparency between 0 (transparent) and 1 (opaque)."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_alpha:4 of
+msgid "If an array is provided, *alpha* will be set to None to use the transparency values associated with the colormap."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:2 of
+msgid "Add a label to the long axis of the colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:8 of
+msgid "The label text."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:17 of
+msgid "**loc**"
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:11 of
+msgid "The location of the label."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:13 of
+msgid "For horizontal orientation one of {'left', 'center', 'right'}"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:14 of
+msgid "For vertical orientation one of {'bottom', 'center', 'top'}"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:16 of
+msgid "Defaults to :rc:`xaxis.labellocation` or :rc:`yaxis.labellocation` depending on the orientation."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:35
+#: matplotlib.colorbar.Colorbar.set_ticklabels:44
+#: matplotlib.colorbar.Colorbar.set_ticks:31
+#: matplotlib.colorbar.colorbar_factory:19 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_label:20 of
+msgid "Keyword arguments are passed to `~.Axes.set_xlabel` / `~.Axes.set_ylabel`. Supported keywords are *labelpad* and `.Text` properties."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:2 of
+msgid "Set tick labels."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:4 of
+msgid "Discouraged"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:6 of
+msgid "The use of this method is discouraged, because of the dependency on tick positions. In most cases, you'll want to use ``set_ticks(positions, labels=labels)`` instead."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:10 of
+msgid "If you are using this method, you should always fix the tick positions before, e.g. by using `.Colorbar.set_ticks` or by explicitly setting a `~.ticker.FixedLocator` on the long axis of the colorbar. Otherwise, ticks are free to move and the labels may end up in unexpected positions."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:21 of
+msgid "**ticklabels** : sequence of str or of `.Text`"
+msgstr ""
+
+#: of
+msgid "sequence of str or of"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:19 of
+msgid "Texts for labeling each tick location in the sequence set by `.Colorbar.set_ticks`; the number of labels must match the number of locations."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:28 of
+msgid "**update_ticks**, default: True"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:24 of
+msgid "This keyword argument is ignored and will be be removed. Deprecated"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:28 of
+msgid "minor"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:28 of
+msgid "If True, set minor ticks instead of major ticks."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticklabels:31 of
+msgid "`.Text` properties for the labels."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticks:2 of
+msgid "Set tick locations."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticks:8 of
+msgid "**ticks**"
+msgstr ""
+
+#: of
+msgid "list of floats"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticks:8 of
+msgid "List of tick locations."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticks:11 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "list of str, optional"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticks:11 of
+msgid "List of tick labels. If not set, the labels show the data value."
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticks:14 of
+msgid "If ``False``, set the major ticks; if ``True``, the minor ticks."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.set_ticks:17 of
+msgid "`.Text` properties for the labels. These take effect only if you pass *labels*. In other cases, please use `~.Axes.tick_params`."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.update_normal:2 of
+msgid "Update solid patches, lines, etc."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.update_normal:4 of
+msgid "This is meant to be called when the norm of the image or contour plot to which this colorbar belongs changes."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.update_normal:7 of
+msgid "If the norm on the mappable is different than before, this resets the locator and formatter for the axis, so if these have been customized, they will need to be customized again.  However, if the norm only changes values of *vmin*, *vmax* or *cmap* then the old formatter and locator will be preserved."
+msgstr ""
+
+#: matplotlib.colorbar.Colorbar.update_ticks:2 of
+msgid "Setup the ticks and ticklabels. This should not be needed by users."
+msgstr ""
+
+#: matplotlib.colorbar.ColorbarPatch:1 of
+msgid "Bases: :py:class:`matplotlib.colorbar.Colorbar`"
+msgstr ""
+
+#: matplotlib.colorbar.ColorbarPatch:2 of
+msgid "[*Deprecated*]"
+msgstr ""
+
+#: matplotlib.colorbar.ColorbarPatch:16 of
+msgid "\\"
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:2 of
+msgid "[*Deprecated*] Create a colorbar on the given axes for the given mappable."
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:5 of
+msgid "This is a low-level function to turn an existing axes into a colorbar axes.  Typically, you'll want to use `~.Figure.colorbar` instead, which automatically handles creation and placement of a suitable axes as well."
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:13 of
+msgid "**cax** : `~matplotlib.axes.Axes`"
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:13 of
+msgid "The `~.axes.Axes` to turn into a colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:16 of
+msgid "**mappable** : `~matplotlib.cm.ScalarMappable`"
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:16 of
+msgid "The mappable to be described by the colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:19 of
+msgid "Keyword arguments are passed to the respective colorbar class."
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory matplotlib.colorbar.make_axes
+#: matplotlib.colorbar.make_axes_gridspec of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:31 of
+msgid "`.Colorbar`"
+msgstr ""
+
+#: matplotlib.colorbar.colorbar_factory:24 of
+msgid "The created colorbar instance."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:2 of
+msgid "Create an `~.axes.Axes` suitable for a colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:4 of
+msgid "The axes is placed in the figure of the *parents* axes, by resizing and repositioning *parents*."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:10 of
+msgid "**parents** : `~.axes.Axes` or list of `~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:9 of
+msgid "Axes or list of Axes"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:10 of
+msgid "The Axes to use as parents for placing the colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:18 matplotlib.colorbar.make_axes_gridspec:31
+#: of
+msgid "**location**"
+msgstr ""
+
+#: of
+msgid "None or {'left', 'right', 'top', 'bottom'}"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:13 matplotlib.colorbar.make_axes_gridspec:26
+#: of
+msgid "The location, relative to the parent axes, where the colorbar axes is created.  It also determines the *orientation* of the colorbar (colorbars on the left and right are vertical, colorbars at the top and bottom are horizontal).  If None, the location will come from the *orientation* if it is set (vertical colorbars on the right, horizontal ones at the bottom), or default to 'right' if *orientation* is unset."
+msgstr ""
+
+#: of
+msgid "None or {'vertical', 'horizontal'}"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:21 matplotlib.colorbar.make_axes_gridspec:34
+#: of
+msgid "The orientation of the colorbar.  It is preferable to set the *location* of the colorbar, as that also determines the *orientation*; passing incompatible values for *location* and *orientation* raises an exception."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:26 matplotlib.colorbar.make_axes_gridspec:39
+#: of
+msgid "**fraction**"
+msgstr ""
+
+#: of
+msgid "float, default: 0.15"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:26 matplotlib.colorbar.make_axes_gridspec:39
+#: of
+msgid "Fraction of original axes to use for colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:29 matplotlib.colorbar.make_axes_gridspec:42
+#: of
+msgid "**shrink**"
+msgstr ""
+
+#: of
+msgid "float, default: 1.0"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:29 matplotlib.colorbar.make_axes_gridspec:42
+#: of
+msgid "Fraction by which to multiply the size of the colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:32 matplotlib.colorbar.make_axes_gridspec:45
+#: of
+msgid "**aspect**"
+msgstr ""
+
+#: of
+msgid "float, default: 20"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:32 matplotlib.colorbar.make_axes_gridspec:45
+#: of
+msgid "Ratio of long to short dimensions."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:37 of
+msgid "**cax** : `~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:37 matplotlib.colorbar.make_axes_gridspec:50
+#: of
+msgid "The child axes."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:43 matplotlib.colorbar.make_axes_gridspec:56
+#: of
+msgid "**kw**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:40 matplotlib.colorbar.make_axes_gridspec:53
+#: of
+msgid "The reduced keyword dictionary to be passed when creating the colorbar instance."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes matplotlib.colorbar.make_axes_gridspec of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:48 matplotlib.colorbar.make_axes_gridspec:61
+#: of
+msgid "**pad**"
+msgstr ""
+
+#: of
+msgid "float, default: 0.05 if vertical, 0.15 if horizontal"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:48 matplotlib.colorbar.make_axes_gridspec:61
+#: of
+msgid "Fraction of original axes between colorbar and new image axes."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:52 matplotlib.colorbar.make_axes_gridspec:65
+#: of
+msgid "**anchor**"
+msgstr ""
+
+#: of
+msgid "(float, float), optional"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:51 matplotlib.colorbar.make_axes_gridspec:64
+#: of
+msgid "The anchor point of the colorbar axes. Defaults to (0.0, 0.5) if vertical; (0.5, 1.0) if horizontal."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:66 matplotlib.colorbar.make_axes_gridspec:79
+#: of
+msgid "**panchor** : (float, float), or *False*, optional"
+msgstr ""
+
+#: of
+msgid "(float, float), or"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes:55 matplotlib.colorbar.make_axes_gridspec:68
+#: of
+msgid "The anchor point of the colorbar parent axes. If *False*, the parent axes' anchor will be unchanged. Defaults to (1.0, 0.5) if vertical; (0.5, 0.0) if horizontal."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:2 of
+msgid "Create a `.SubplotBase` suitable for a colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:4 of
+msgid "The axes is placed in the figure of the *parent* axes, by resizing and repositioning *parent*."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:7 of
+msgid "This function is similar to `.make_axes`. Primary differences are"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:9 of
+msgid "`.make_axes_gridspec` should only be used with a `.SubplotBase` parent."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:11 of
+msgid "`.make_axes` creates an `~.axes.Axes`; `.make_axes_gridspec` creates a `.SubplotBase`."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:14 of
+msgid "`.make_axes` updates the position of the parent.  `.make_axes_gridspec` replaces the ``grid_spec`` attribute of the parent with a new one."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:17 of
+msgid "While this function is meant to be compatible with `.make_axes`, there could be some minor differences."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:23 of
+msgid "**parent** : `~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:23 of
+msgid "The Axes to use as parent for placing the colorbar."
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:50 of
+msgid "**cax** : `~.axes.SubplotBase`"
+msgstr ""
+
+#: matplotlib.colorbar.make_axes_gridspec:49 of
+msgid "SubplotBase"
+msgstr ""
+

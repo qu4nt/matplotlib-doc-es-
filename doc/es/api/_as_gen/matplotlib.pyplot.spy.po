@@ -1,0 +1,449 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:18\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.pyplot.spy.po\n"
+"X-Crowdin-File-ID: 1286\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.pyplot.spy.rst:2
+msgid "matplotlib.pyplot.spy"
+msgstr ""
+
+#: matplotlib.pyplot.spy:2 of
+msgid "Plot the sparsity pattern of a 2D array."
+msgstr ""
+
+#: matplotlib.pyplot.spy:4 of
+msgid "This visualizes the non-zero values of the array."
+msgstr ""
+
+#: matplotlib.pyplot.spy:6 of
+msgid "Two plotting styles are available: image and marker. Both are available for full arrays, but only the marker style works for `scipy.sparse.spmatrix` instances."
+msgstr ""
+
+#: matplotlib.pyplot.spy:10 of
+msgid "**Image style**"
+msgstr ""
+
+#: matplotlib.pyplot.spy:12 of
+msgid "If *marker* and *markersize* are *None*, `~.Axes.imshow` is used. Any extra remaining keyword arguments are passed to this method."
+msgstr ""
+
+#: matplotlib.pyplot.spy:15 of
+msgid "**Marker style**"
+msgstr ""
+
+#: matplotlib.pyplot.spy:17 of
+msgid "If *Z* is a `scipy.sparse.spmatrix` or *marker* or *markersize* are *None*, a `.Line2D` object will be returned with the value of marker determining the marker type, and any remaining keyword arguments passed to `~.Axes.plot`."
+msgstr ""
+
+#: matplotlib.pyplot.spy of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.spy:25 of
+msgid "**Z**"
+msgstr ""
+
+#: of
+msgid "(M, N) array-like"
+msgstr ""
+
+#: matplotlib.pyplot.spy:25 of
+msgid "The array to be plotted."
+msgstr ""
+
+#: matplotlib.pyplot.spy:33 of
+msgid "**precision**"
+msgstr ""
+
+#: of
+msgid "float or 'present', default: 0"
+msgstr ""
+
+#: matplotlib.pyplot.spy:28 of
+msgid "If *precision* is 0, any non-zero value will be plotted. Otherwise, values of :math:`|Z| > precision` will be plotted."
+msgstr ""
+
+#: matplotlib.pyplot.spy:31 of
+msgid "For `scipy.sparse.spmatrix` instances, you can also pass 'present'. In this case any value present in the array will be plotted, even if it is identically zero."
+msgstr ""
+
+#: matplotlib.pyplot.spy:47 of
+msgid "**aspect**"
+msgstr ""
+
+#: of
+msgid "{'equal', 'auto', None} or float, default: 'equal'"
+msgstr ""
+
+#: matplotlib.pyplot.spy:36 of
+msgid "The aspect ratio of the Axes.  This parameter is particularly relevant for images since it determines whether data pixels are square."
+msgstr ""
+
+#: matplotlib.pyplot.spy:40 of
+msgid "This parameter is a shortcut for explicitly calling `.Axes.set_aspect`. See there for further details."
+msgstr ""
+
+#: matplotlib.pyplot.spy:43 of
+msgid "'equal': Ensures an aspect ratio of 1. Pixels will be square."
+msgstr ""
+
+#: matplotlib.pyplot.spy:44 of
+msgid "'auto': The Axes is kept fixed and the aspect is adjusted so that the data fit in the Axes. In general, this will result in non-square pixels."
+msgstr ""
+
+#: matplotlib.pyplot.spy:47 of
+msgid "*None*: Use :rc:`image.aspect`."
+msgstr ""
+
+#: matplotlib.pyplot.spy:52 of
+msgid "**origin** : {'upper', 'lower'}, default: :rc:`image.origin`"
+msgstr ""
+
+#: of
+msgid "{'upper', 'lower'}, default:"
+msgstr ""
+
+#: matplotlib.pyplot.spy:50 of
+msgid "Place the [0, 0] index of the array in the upper left or lower left corner of the Axes. The convention 'upper' is typically used for matrices and images."
+msgstr ""
+
+#: matplotlib.pyplot.spy of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.pyplot.spy:59 of
+msgid "`~matplotlib.image.AxesImage` or `.Line2D`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:57 of
+msgid "The return type depends on the plotting style (see above)."
+msgstr ""
+
+#: matplotlib.pyplot.spy of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.spy:133 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.pyplot.spy:64 of
+msgid "The supported additional parameters depend on the plotting style."
+msgstr ""
+
+#: matplotlib.pyplot.spy:66 of
+msgid "For the image style, you can pass the following additional parameters of `~.Axes.imshow`:"
+msgstr ""
+
+#: matplotlib.pyplot.spy:69 of
+msgid "*cmap*"
+msgstr ""
+
+#: matplotlib.pyplot.spy:70 of
+msgid "*alpha*"
+msgstr ""
+
+#: matplotlib.pyplot.spy:71 of
+msgid "*url*"
+msgstr ""
+
+#: matplotlib.pyplot.spy:72 of
+msgid "any `.Artist` properties (passed on to the `.AxesImage`)"
+msgstr ""
+
+#: matplotlib.pyplot.spy:74 of
+msgid "For the marker style, you can pass any `.Line2D` property except for *linestyle*:"
+msgstr ""
+
+#: matplotlib.pyplot.spy:81 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.pyplot.spy:81 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.pyplot.spy:83 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:83 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.pyplot.spy:84 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:84 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.pyplot.spy:85 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:85 matplotlib.pyplot.spy:86 matplotlib.pyplot.spy:88
+#: matplotlib.pyplot.spy:99 matplotlib.pyplot.spy:113 matplotlib.pyplot.spy:120
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.pyplot.spy:86 of
+msgid ":meth:`antialiased <matplotlib.lines.Line2D.set_antialiased>` or aa"
+msgstr ""
+
+#: matplotlib.pyplot.spy:87 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:87 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:88 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:89 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:89 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.pyplot.spy:90 of
+msgid ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
+msgstr ""
+
+#: matplotlib.pyplot.spy:90 matplotlib.pyplot.spy:104 matplotlib.pyplot.spy:106
+#: matplotlib.pyplot.spy:107 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.pyplot.spy:91 of
+msgid ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:91 matplotlib.pyplot.spy:116 of
+msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.pyplot.spy:92 of
+msgid ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:92 matplotlib.pyplot.spy:117 of
+msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.pyplot.spy:93 of
+msgid ":meth:`dashes <matplotlib.lines.Line2D.set_dashes>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:93 of
+msgid "sequence of floats (on/off ink in points) or (None, None)"
+msgstr ""
+
+#: matplotlib.pyplot.spy:94 of
+msgid ":meth:`data <matplotlib.lines.Line2D.set_data>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:94 of
+msgid "(2, N) array or two 1D arrays"
+msgstr ""
+
+#: matplotlib.pyplot.spy:95 of
+msgid ":meth:`drawstyle <matplotlib.lines.Line2D.set_drawstyle>` or ds"
+msgstr ""
+
+#: matplotlib.pyplot.spy:95 of
+msgid "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
+msgstr ""
+
+#: matplotlib.pyplot.spy:96 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:96 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:97 of
+msgid ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:97 of
+msgid "{'full', 'left', 'right', 'bottom', 'top', 'none'}"
+msgstr ""
+
+#: matplotlib.pyplot.spy:98 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:98 matplotlib.pyplot.spy:119 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.pyplot.spy:99 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:100 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:100 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.pyplot.spy:101 of
+msgid ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` or ls"
+msgstr ""
+
+#: matplotlib.pyplot.spy:101 of
+msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
+msgstr ""
+
+#: matplotlib.pyplot.spy:102 of
+msgid ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
+msgstr ""
+
+#: matplotlib.pyplot.spy:102 matplotlib.pyplot.spy:105
+#: matplotlib.pyplot.spy:108 matplotlib.pyplot.spy:112
+#: matplotlib.pyplot.spy:123 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.pyplot.spy:103 of
+msgid ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:103 of
+msgid "marker style string, `~.path.Path` or `~.markers.MarkerStyle`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:104 of
+msgid ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` or mec"
+msgstr ""
+
+#: matplotlib.pyplot.spy:105 of
+msgid ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` or mew"
+msgstr ""
+
+#: matplotlib.pyplot.spy:106 of
+msgid ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` or mfc"
+msgstr ""
+
+#: matplotlib.pyplot.spy:107 of
+msgid ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` or mfcalt"
+msgstr ""
+
+#: matplotlib.pyplot.spy:108 of
+msgid ":meth:`markersize <matplotlib.lines.Line2D.set_markersize>` or ms"
+msgstr ""
+
+#: matplotlib.pyplot.spy:109 of
+msgid ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:109 of
+msgid "None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]"
+msgstr ""
+
+#: matplotlib.pyplot.spy:110 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:110 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:111 of
+msgid ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:111 of
+msgid "float or callable[[Artist, Event], tuple[bool, dict]]"
+msgstr ""
+
+#: matplotlib.pyplot.spy:112 of
+msgid ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:113 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:114 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:114 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.pyplot.spy:115 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:115 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.pyplot.spy:116 of
+msgid ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:117 of
+msgid ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:118 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:118 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.pyplot.spy:119 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:120 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:121 of
+msgid ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:121 matplotlib.pyplot.spy:122 of
+msgid "1D array"
+msgstr ""
+
+#: matplotlib.pyplot.spy:122 of
+msgid ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
+msgstr ""
+
+#: matplotlib.pyplot.spy:123 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+

@@ -1,0 +1,292 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/dviread.po\n"
+"X-Crowdin-File-ID: 1780\n"
+"Language: es_ES\n"
+
+#: ../../api/dviread.rst:3
+msgid "``matplotlib.dviread``"
+msgstr ""
+
+#: matplotlib.dviread:1 of
+msgid "A module for reading dvi files output by TeX. Several limitations make this not (currently) useful as a general-purpose dvi preprocessor, but it is currently used by the pdf backend for processing usetex text."
+msgstr ""
+
+#: matplotlib.dviread:5 of
+msgid "Interface::"
+msgstr ""
+
+#: matplotlib.dviread.Dvi:1 matplotlib.dviread.DviFont:1
+#: matplotlib.dviread.PsfontsMap:1 matplotlib.dviread.Tfm:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.dviread.Dvi:2 of
+msgid "A reader for a dvi (\"device-independent\") file, as produced by TeX."
+msgstr ""
+
+#: matplotlib.dviread.Dvi:4 of
+msgid "The current implementation can only iterate through pages in order, and does not even attempt to verify the postamble."
+msgstr ""
+
+#: matplotlib.dviread.Dvi:7 of
+msgid "This class can be used as a context manager to close the underlying file upon exit. Pages can be read via iteration. Here is an overly simple way to extract text without trying to detect whitespace::"
+msgstr ""
+
+#: matplotlib.dviread.Dvi:33 matplotlib.dviread.Vf:40 of
+msgid "Read the data from the file named *filename* and convert TeX's internal units to units of *dpi* per inch. *dpi* only sets the units and does not limit the resolution. Use None to return TeX's internal units."
+msgstr ""
+
+#: matplotlib.dviread.Dvi.close:2 of
+msgid "Close the underlying file if it is open."
+msgstr ""
+
+#: matplotlib.dviread.DviFont:2 of
+msgid "Encapsulation of a font that a DVI file can refer to."
+msgstr ""
+
+#: matplotlib.dviread.DviFont:4 of
+msgid "This class holds a font's texname and size, supports comparison, and knows the widths of glyphs in the same units as the AFM file. There are also internal attributes (for use by dviread.py) that are *not* used for comparison."
+msgstr ""
+
+#: matplotlib.dviread.DviFont:9 of
+msgid "The size is in Adobe points (converted from TeX points)."
+msgstr ""
+
+#: matplotlib.dviread.DviFont matplotlib.dviread.PsfontsMap
+#: matplotlib.dviread.Tfm matplotlib.dviread.Vf
+#: matplotlib.dviread.find_tex_file of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:14 of
+msgid "**scale**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:14 of
+msgid "Factor by which the font is scaled from its natural size."
+msgstr ""
+
+#: matplotlib.dviread.DviFont:17 of
+msgid "**tfm**"
+msgstr ""
+
+#: of
+msgid "Tfm"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:17 of
+msgid "TeX font metrics for this font"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:22 matplotlib.dviread.DviFont:41 of
+msgid "**texname**"
+msgstr ""
+
+#: of
+msgid "bytes"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:20 of
+msgid "Name of the font as used internally by TeX and friends, as an ASCII bytestring.  This is usually very different from any external font names; `PsfontsMap` can be used to find the external name of the font."
+msgstr ""
+
+#: matplotlib.dviread.DviFont:36 of
+msgid "**vf**"
+msgstr ""
+
+#: of
+msgid "Vf"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:25 of
+msgid "A TeX \"virtual font\" file, or None if this font is not virtual."
+msgstr ""
+
+#: matplotlib.dviread.DviFont matplotlib.dviread.Tfm of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:45 of
+msgid "**size**"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:44 of
+msgid "Size of the font in Adobe points, converted from the slightly smaller TeX points."
+msgstr ""
+
+#: matplotlib.dviread.DviFont:50 of
+msgid "**widths**"
+msgstr ""
+
+#: of
+msgid "list"
+msgstr ""
+
+#: matplotlib.dviread.DviFont:48 of
+msgid "Widths of glyphs in glyph-space units, typically 1/1000ths of the point size."
+msgstr ""
+
+#: matplotlib.dviread.PsFont:1 of
+msgid "Bases: :py:class:`tuple`"
+msgstr ""
+
+#: matplotlib.dviread.PsFont:22 of
+msgid "Create new instance of PsFont(texname, psname, effects, encoding, filename)"
+msgstr ""
+
+#: ../../docstring matplotlib.dviread.PsFont.effects:2 of
+msgid "Alias for field number 2"
+msgstr ""
+
+#: ../../docstring matplotlib.dviread.PsFont.encoding:2 of
+msgid "Alias for field number 3"
+msgstr ""
+
+#: ../../docstring matplotlib.dviread.PsFont.filename:2 of
+msgid "Alias for field number 4"
+msgstr ""
+
+#: ../../docstring matplotlib.dviread.PsFont.psname:2 of
+msgid "Alias for field number 1"
+msgstr ""
+
+#: ../../docstring matplotlib.dviread.PsFont.texname:2 of
+msgid "Alias for field number 0"
+msgstr ""
+
+#: matplotlib.dviread.PsfontsMap:2 of
+msgid "A psfonts.map formatted file, mapping TeX fonts to PS fonts."
+msgstr ""
+
+#: matplotlib.dviread.PsfontsMap:16 matplotlib.dviread.Tfm:20
+#: matplotlib.dviread.Vf:16 matplotlib.dviread.find_tex_file:14 of
+msgid "**filename**"
+msgstr ""
+
+#: of
+msgid "str or path-like"
+msgstr ""
+
+#: matplotlib.dviread.PsfontsMap:19 matplotlib.dviread.Vf:19 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.dviread.PsfontsMap:20 of
+msgid "For historical reasons, TeX knows many Type-1 fonts by different names than the outside world. (For one thing, the names have to fit in eight characters.) Also, TeX's native fonts are not Type-1 but Metafont, which is nontrivial to convert to PostScript except as a bitmap. While high-quality conversions to Type-1 format exist and are shipped with modern TeX distributions, we need to know which Type-1 fonts are the counterparts of which native fonts. For these reasons a mapping is needed from internal font names to font file names."
+msgstr ""
+
+#: matplotlib.dviread.PsfontsMap:30 of
+msgid "A texmf tree typically includes mapping files called e.g. :file:`psfonts.map`, :file:`pdftex.map`, or :file:`dvipdfm.map`. The file :file:`psfonts.map` is used by :program:`dvips`, :file:`pdftex.map` by :program:`pdfTeX`, and :file:`dvipdfm.map` by :program:`dvipdfm`. :file:`psfonts.map` might avoid embedding the 35 PostScript fonts (i.e., have no filename for them, as in the Times-Bold example above), while the pdf-related files perhaps only avoid the \"Base 14\" pdf fonts. But the user may have configured these files differently."
+msgstr ""
+
+#: matplotlib.dviread.PsfontsMap:42 matplotlib.dviread.Vf:27 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.dviread.Tfm:2 of
+msgid "A TeX Font Metric file."
+msgstr ""
+
+#: matplotlib.dviread.Tfm:4 of
+msgid "This implementation covers only the bare minimum needed by the Dvi class."
+msgstr ""
+
+#: matplotlib.dviread.Tfm:25 of
+msgid "**checksum**"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: matplotlib.dviread.Tfm:25 of
+msgid "Used for verifying against the dvi file."
+msgstr ""
+
+#: matplotlib.dviread.Tfm:28 of
+msgid "**design_size**"
+msgstr ""
+
+#: matplotlib.dviread.Tfm:28 of
+msgid "Design size of the font (unknown units)"
+msgstr ""
+
+#: matplotlib.dviread.Tfm:34 of
+msgid "**width, height, depth**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.dviread.Tfm:31 of
+msgid "Dimensions of each character, need to be scaled by the factor specified in the dvi file. These are dicts because indexing may not start from 0."
+msgstr ""
+
+#: matplotlib.dviread.Vf:1 of
+msgid "Bases: :py:class:`matplotlib.dviread.Dvi`"
+msgstr ""
+
+#: matplotlib.dviread.Vf:2 of
+msgid "A virtual font (\\*.vf file) containing subroutines for dvi files."
+msgstr ""
+
+#: matplotlib.dviread.Vf:20 of
+msgid "The virtual font format is a derivative of dvi: http://mirrors.ctan.org/info/knuth/virtual-fonts This class reuses some of the machinery of `Dvi` but replaces the `_read` loop and dispatch mechanism."
+msgstr ""
+
+#: matplotlib.dviread.find_tex_file:2 of
+msgid "Find a file in the texmf tree."
+msgstr ""
+
+#: matplotlib.dviread.find_tex_file:4 of
+msgid "Calls :program:`kpsewhich` which is an interface to the kpathsea library [Ra043a4f19cd5-1]_. Most existing TeX distributions on Unix-like systems use kpathsea. It is also available as part of MikTeX, a popular distribution on Windows."
+msgstr ""
+
+#: matplotlib.dviread.find_tex_file:9 of
+msgid "*If the file is not found, an empty string is returned*."
+msgstr ""
+
+#: matplotlib.dviread.find_tex_file:28 of
+msgid "**format**"
+msgstr ""
+
+#: of
+msgid "str or bytes"
+msgstr ""
+
+#: matplotlib.dviread.find_tex_file:17 of
+msgid "Used as the value of the ``--format`` option to :program:`kpsewhich`. Could be e.g. 'tfm' or 'vf' to limit the search to that type of files. Deprecated."
+msgstr ""
+
+#: matplotlib.dviread.find_tex_file:31 of
+msgid "References"
+msgstr ""
+
+#: matplotlib.dviread.find_tex_file:32 of
+msgid "`Kpathsea documentation <http://www.tug.org/kpathsea/>`_ The library that :program:`kpsewhich` is part of."
+msgstr ""
+
+#: matplotlib.dviread.find_tex_file:37 of
+msgid "[Ra043a4f19cd5-1]_"
+msgstr ""
+

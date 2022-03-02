@@ -1,0 +1,1020 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/legend_api.po\n"
+"X-Crowdin-File-ID: 1796\n"
+"Language: es_ES\n"
+
+#: ../../api/legend_api.rst:3
+msgid "``matplotlib.legend``"
+msgstr ""
+
+#: matplotlib.legend:1 of
+msgid "The legend module defines the Legend class, which is responsible for drawing legends associated with axes and/or figures."
+msgstr ""
+
+#: matplotlib.legend:6 of
+msgid "It is unlikely that you would ever create a Legend instance manually. Most users would normally create a legend via the `~.Axes.legend` function. For more details on legends there is also a :doc:`legend guide </tutorials/intermediate/legend_guide>`."
+msgstr ""
+
+#: matplotlib.legend:11 of
+msgid "The `Legend` class is a container of legend handles and legend texts."
+msgstr ""
+
+#: matplotlib.legend:13 of
+msgid "The legend handler map specifies how to create legend handles from artists (lines, patches, etc.) in the axes or figures. Default legend handlers are defined in the :mod:`~matplotlib.legend_handler` module. While not all artist types are covered by the default legend handlers, custom legend handlers can be defined to support arbitrary objects."
+msgstr ""
+
+#: matplotlib.legend:19 of
+msgid "See the :doc:`legend guide </tutorials/intermediate/legend_guide>` for more information."
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:1 of
+msgid "Bases: :py:class:`matplotlib.offsetbox.DraggableOffsetBox`"
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:2 of
+msgid "Wrapper around a `.Legend` to support mouse dragging."
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend matplotlib.legend.Legend
+#: matplotlib.legend.Legend.contains matplotlib.legend.Legend.draw
+#: matplotlib.legend.Legend.get_tightbbox
+#: matplotlib.legend.Legend.set_bbox_to_anchor
+#: matplotlib.legend.Legend.set_draggable matplotlib.legend.Legend.set_frame_on
+#: of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:8 of
+msgid "**legend** : `.Legend`"
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:7 of
+msgid "Legend"
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:8 of
+msgid "The `.Legend` instance to wrap."
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:12
+#: matplotlib.legend.Legend.set_draggable:12 of
+msgid "**use_blit**"
+msgstr ""
+
+#: of
+msgid "bool, optional"
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:11
+#: matplotlib.legend.Legend.set_draggable:11 of
+msgid "Use blitting for faster image composition. For details see :ref:`func-animation`."
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:29
+#: matplotlib.legend.Legend.set_draggable:18 of
+msgid "**update**"
+msgstr ""
+
+#: of
+msgid "{'loc', 'bbox'}, optional"
+msgstr ""
+
+#: matplotlib.legend.DraggableLegend:15 of
+msgid "If \"loc\", update the *loc* parameter of the legend upon finalizing. If \"bbox\", update the *bbox_to_anchor* parameter."
+msgstr ""
+
+#: matplotlib.legend.Legend:1 of
+msgid "Bases: :py:class:`matplotlib.artist.Artist`"
+msgstr ""
+
+#: matplotlib.legend.Legend:2 of
+msgid "Place a legend on the axes at location loc."
+msgstr ""
+
+#: matplotlib.legend.Legend:29 of
+msgid "**parent** : `~matplotlib.axes.Axes` or `.Figure`"
+msgstr ""
+
+#: matplotlib.legend.Legend:28 of
+msgid "Axes or Figure"
+msgstr ""
+
+#: matplotlib.legend.Legend:29 of
+msgid "The artist that contains the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend:32 of
+msgid "**handles** : list of `.Artist`"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.legend.Legend:32 of
+msgid "A list of Artists (lines, patches) to be added to the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend:40 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "list of str"
+msgstr ""
+
+#: matplotlib.legend.Legend:35 of
+msgid "A list of labels to show next to the artists. The length of handles and labels should be the same. If they are not, they are truncated to the smaller of both lengths."
+msgstr ""
+
+#: matplotlib.legend.Legend of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.legend.Legend:85 of
+msgid "**loc** : str or pair of floats, default: :rc:`legend.loc` ('best' for axes, 'upper right' for figures)"
+msgstr ""
+
+#: of
+msgid "str or pair of floats, default:"
+msgstr ""
+
+#: matplotlib.legend.Legend:45 of
+msgid "The location of the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend:47 of
+msgid "The strings ``'upper left', 'upper right', 'lower left', 'lower right'`` place the legend at the corresponding corner of the axes/figure."
+msgstr ""
+
+#: matplotlib.legend.Legend:51 of
+msgid "The strings ``'upper center', 'lower center', 'center left', 'center right'`` place the legend at the center of the corresponding edge of the axes/figure."
+msgstr ""
+
+#: matplotlib.legend.Legend:56 of
+msgid "The string ``'center'`` places the legend at the center of the axes/figure."
+msgstr ""
+
+#: matplotlib.legend.Legend:58 of
+msgid "The string ``'best'`` places the legend at the location, among the nine locations defined so far, with the minimum overlap with other drawn artists.  This option can be quite slow for plots with large amounts of data; your plotting speed may benefit from providing a specific location."
+msgstr ""
+
+#: matplotlib.legend.Legend:63 of
+msgid "The location can also be a 2-tuple giving the coordinates of the lower-left corner of the legend in axes coordinates (in which case *bbox_to_anchor* will be ignored)."
+msgstr ""
+
+#: matplotlib.legend.Legend:67 of
+msgid "For back-compatibility, ``'center right'`` (but no other location) can also be spelled ``'right'``, and each \"string\" locations can also be given as a numeric value:"
+msgstr ""
+
+#: matplotlib.legend.Legend:72 of
+msgid "Location String"
+msgstr ""
+
+#: matplotlib.legend.Legend:72 of
+msgid "Location Code"
+msgstr ""
+
+#: matplotlib.legend.Legend:74 of
+msgid "'best'"
+msgstr ""
+
+#: matplotlib.legend.Legend:74 of
+msgid "0"
+msgstr ""
+
+#: matplotlib.legend.Legend:75 of
+msgid "'upper right'"
+msgstr ""
+
+#: matplotlib.legend.Legend:75 of
+msgid "1"
+msgstr ""
+
+#: matplotlib.legend.Legend:76 of
+msgid "'upper left'"
+msgstr ""
+
+#: matplotlib.legend.Legend:76 of
+msgid "2"
+msgstr ""
+
+#: matplotlib.legend.Legend:77 of
+msgid "'lower left'"
+msgstr ""
+
+#: matplotlib.legend.Legend:77 of
+msgid "3"
+msgstr ""
+
+#: matplotlib.legend.Legend:78 of
+msgid "'lower right'"
+msgstr ""
+
+#: matplotlib.legend.Legend:78 of
+msgid "4"
+msgstr ""
+
+#: matplotlib.legend.Legend:79 of
+msgid "'right'"
+msgstr ""
+
+#: matplotlib.legend.Legend:79 of
+msgid "5"
+msgstr ""
+
+#: matplotlib.legend.Legend:80 of
+msgid "'center left'"
+msgstr ""
+
+#: matplotlib.legend.Legend:80 of
+msgid "6"
+msgstr ""
+
+#: matplotlib.legend.Legend:81 of
+msgid "'center right'"
+msgstr ""
+
+#: matplotlib.legend.Legend:81 of
+msgid "7"
+msgstr ""
+
+#: matplotlib.legend.Legend:82 of
+msgid "'lower center'"
+msgstr ""
+
+#: matplotlib.legend.Legend:82 of
+msgid "8"
+msgstr ""
+
+#: matplotlib.legend.Legend:83 of
+msgid "'upper center'"
+msgstr ""
+
+#: matplotlib.legend.Legend:83 of
+msgid "9"
+msgstr ""
+
+#: matplotlib.legend.Legend:84 of
+msgid "'center'"
+msgstr ""
+
+#: matplotlib.legend.Legend:84 of
+msgid "10"
+msgstr ""
+
+#: matplotlib.legend.Legend:108 of
+msgid "**bbox_to_anchor** : `.BboxBase`, 2-tuple, or 4-tuple of floats"
+msgstr ""
+
+#: matplotlib.legend.Legend:107 of
+msgid "BboxBase, 2-tuple, or 4-tuple of floats"
+msgstr ""
+
+#: matplotlib.legend.Legend:88 of
+msgid "Box that is used to position the legend in conjunction with *loc*. Defaults to `axes.bbox` (if called as a method to `.Axes.legend`) or `figure.bbox` (if `.Figure.legend`).  This argument allows arbitrary placement of the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend:93 of
+msgid "Bbox coordinates are interpreted in the coordinate system given by *bbox_transform*, with the default transform Axes or Figure coordinates, depending on which ``legend`` is called."
+msgstr ""
+
+#: matplotlib.legend.Legend:97 of
+msgid "If a 4-tuple or `.BboxBase` is given, then it specifies the bbox ``(x, y, width, height)`` that the legend is placed in. To put the legend in the best location in the bottom right quadrant of the axes (or figure)::"
+msgstr ""
+
+#: matplotlib.legend.Legend:104 of
+msgid "A 2-tuple ``(x, y)`` places the corner of the legend specified by *loc* at x, y.  For example, to put the legend's upper right-hand corner in the center of the axes (or figure) the following keywords can be used::"
+msgstr ""
+
+#: matplotlib.legend.Legend:111 of
+msgid "**ncol**"
+msgstr ""
+
+#: of
+msgid "int, default: 1"
+msgstr ""
+
+#: matplotlib.legend.Legend:111 of
+msgid "The number of columns that the legend has."
+msgstr ""
+
+#: matplotlib.legend.Legend:115 of
+msgid "**prop** : None or `matplotlib.font_manager.FontProperties` or dict"
+msgstr ""
+
+#: of
+msgid "None or"
+msgstr ""
+
+#: matplotlib.legend.Legend:114 of
+msgid "The font properties of the legend. If None (default), the current :data:`matplotlib.rcParams` will be used."
+msgstr ""
+
+#: matplotlib.legend.Legend:120 of
+msgid "**fontsize**"
+msgstr ""
+
+#: of
+msgid "int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}"
+msgstr ""
+
+#: matplotlib.legend.Legend:118 of
+msgid "The font size of the legend. If the value is numeric the size will be the absolute font size in points. String values are relative to the current default font size. This argument is only used if *prop* is not specified."
+msgstr ""
+
+#: matplotlib.legend.Legend:129 of
+msgid "**labelcolor** : str or list, default: :rc:`legend.labelcolor`"
+msgstr ""
+
+#: of
+msgid "str or list, default:"
+msgstr ""
+
+#: matplotlib.legend.Legend:123 of
+msgid "The color of the text in the legend. Either a valid color string (for example, 'red'), or a list of color strings. The labelcolor can also be made to match the color of the line or marker using 'linecolor', 'markerfacecolor' (or 'mfc'), or 'markeredgecolor' (or 'mec')."
+msgstr ""
+
+#: matplotlib.legend.Legend:128 of
+msgid "Labelcolor can be set globally using :rc:`legend.labelcolor`. If None, use :rc:`text.color`."
+msgstr ""
+
+#: matplotlib.legend.Legend:133 of
+msgid "**numpoints** : int, default: :rc:`legend.numpoints`"
+msgstr ""
+
+#: of
+msgid "int, default:"
+msgstr ""
+
+#: matplotlib.legend.Legend:132 of
+msgid "The number of marker points in the legend when creating a legend entry for a `.Line2D` (line)."
+msgstr ""
+
+#: matplotlib.legend.Legend:137 of
+msgid "**scatterpoints** : int, default: :rc:`legend.scatterpoints`"
+msgstr ""
+
+#: matplotlib.legend.Legend:136 of
+msgid "The number of marker points in the legend when creating a legend entry for a `.PathCollection` (scatter plot)."
+msgstr ""
+
+#: matplotlib.legend.Legend:143 of
+msgid "**scatteryoffsets** : iterable of floats, default: ``[0.375, 0.5, 0.3125]``"
+msgstr ""
+
+#: of
+msgid "iterable of floats, default:"
+msgstr ""
+
+#: matplotlib.legend.Legend:140 of
+msgid "The vertical offset (relative to the font size) for the markers created for a scatter plot legend entry. 0.0 is at the base the legend text, and 1.0 is at the top. To draw all markers at the same height, set to ``[0.5]``."
+msgstr ""
+
+#: matplotlib.legend.Legend:147 of
+msgid "**markerscale** : float, default: :rc:`legend.markerscale`"
+msgstr ""
+
+#: of
+msgid "float, default:"
+msgstr ""
+
+#: matplotlib.legend.Legend:146 of
+msgid "The relative size of legend markers compared with the originally drawn ones."
+msgstr ""
+
+#: matplotlib.legend.Legend:151 of
+msgid "**markerfirst**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.legend.Legend:150 of
+msgid "If *True*, legend marker is placed to the left of the legend label. If *False*, legend marker is placed to the right of the legend label."
+msgstr ""
+
+#: matplotlib.legend.Legend:154 of
+msgid "**frameon** : bool, default: :rc:`legend.frameon`"
+msgstr ""
+
+#: of
+msgid "bool, default:"
+msgstr ""
+
+#: matplotlib.legend.Legend:154 of
+msgid "Whether the legend should be drawn on a patch (frame)."
+msgstr ""
+
+#: matplotlib.legend.Legend:158 of
+msgid "**fancybox** : bool, default: :rc:`legend.fancybox`"
+msgstr ""
+
+#: matplotlib.legend.Legend:157 of
+msgid "Whether round edges should be enabled around the `.FancyBboxPatch` which makes up the legend's background."
+msgstr ""
+
+#: matplotlib.legend.Legend:161 of
+msgid "**shadow** : bool, default: :rc:`legend.shadow`"
+msgstr ""
+
+#: matplotlib.legend.Legend:161 of
+msgid "Whether to draw a shadow behind the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend:166 of
+msgid "**framealpha** : float, default: :rc:`legend.framealpha`"
+msgstr ""
+
+#: matplotlib.legend.Legend:164 of
+msgid "The alpha transparency of the legend's background. If *shadow* is activated and *framealpha* is ``None``, the default value is ignored."
+msgstr ""
+
+#: matplotlib.legend.Legend:170 of
+msgid "**facecolor** : \"inherit\" or color, default: :rc:`legend.facecolor`"
+msgstr ""
+
+#: of
+msgid "\"inherit\" or color, default:"
+msgstr ""
+
+#: matplotlib.legend.Legend:169 of
+msgid "The legend's background color. If ``\"inherit\"``, use :rc:`axes.facecolor`."
+msgstr ""
+
+#: matplotlib.legend.Legend:174 of
+msgid "**edgecolor** : \"inherit\" or color, default: :rc:`legend.edgecolor`"
+msgstr ""
+
+#: matplotlib.legend.Legend:173 of
+msgid "The legend's background patch edge color. If ``\"inherit\"``, use take :rc:`axes.edgecolor`."
+msgstr ""
+
+#: matplotlib.legend.Legend:179 of
+msgid "**mode**"
+msgstr ""
+
+#: of
+msgid "{\"expand\", None}"
+msgstr ""
+
+#: matplotlib.legend.Legend:177 of
+msgid "If *mode* is set to ``\"expand\"`` the legend will be horizontally expanded to fill the axes area (or *bbox_to_anchor* if defines the legend's size)."
+msgstr ""
+
+#: matplotlib.legend.Legend:184 of
+msgid "**bbox_transform** : None or `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.legend.Legend:182 of
+msgid "The transform for the bounding box (*bbox_to_anchor*). For a value of ``None`` (default) the Axes' :data:`~matplotlib.axes.Axes.transAxes` transform will be used."
+msgstr ""
+
+#: matplotlib.legend.Legend:187 of
+msgid "**title**"
+msgstr ""
+
+#: of
+msgid "str or None"
+msgstr ""
+
+#: matplotlib.legend.Legend:187 of
+msgid "The legend's title. Default is no title (``None``)."
+msgstr ""
+
+#: matplotlib.legend.Legend:192 of
+msgid "**title_fontproperties** : None or `matplotlib.font_manager.FontProperties` or dict"
+msgstr ""
+
+#: matplotlib.legend.Legend:190 of
+msgid "The font properties of the legend's title. If None (default), the *title_fontsize* argument will be used if present; if *title_fontsize* is also None, the current :rc:`legend.title_fontsize` will be used."
+msgstr ""
+
+#: matplotlib.legend.Legend:198 of
+msgid "**title_fontsize** : int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, default: :rc:`legend.title_fontsize`"
+msgstr ""
+
+#: of
+msgid "int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, default:"
+msgstr ""
+
+#: matplotlib.legend.Legend:195 of
+msgid "The font size of the legend's title. Note: This cannot be combined with *title_fontproperties*. If you want to set the fontsize alongside other font properties, use the *size* parameter in *title_fontproperties*."
+msgstr ""
+
+#: matplotlib.legend.Legend:201 of
+msgid "**borderpad** : float, default: :rc:`legend.borderpad`"
+msgstr ""
+
+#: matplotlib.legend.Legend:201 of
+msgid "The fractional whitespace inside the legend border, in font-size units."
+msgstr ""
+
+#: matplotlib.legend.Legend:204 of
+msgid "**labelspacing** : float, default: :rc:`legend.labelspacing`"
+msgstr ""
+
+#: matplotlib.legend.Legend:204 of
+msgid "The vertical space between the legend entries, in font-size units."
+msgstr ""
+
+#: matplotlib.legend.Legend:207 of
+msgid "**handlelength** : float, default: :rc:`legend.handlelength`"
+msgstr ""
+
+#: matplotlib.legend.Legend:207 of
+msgid "The length of the legend handles, in font-size units."
+msgstr ""
+
+#: matplotlib.legend.Legend:210 of
+msgid "**handleheight** : float, default: :rc:`legend.handleheight`"
+msgstr ""
+
+#: matplotlib.legend.Legend:210 of
+msgid "The height of the legend handles, in font-size units."
+msgstr ""
+
+#: matplotlib.legend.Legend:213 of
+msgid "**handletextpad** : float, default: :rc:`legend.handletextpad`"
+msgstr ""
+
+#: matplotlib.legend.Legend:213 of
+msgid "The pad between the legend handle and text, in font-size units."
+msgstr ""
+
+#: matplotlib.legend.Legend:216 of
+msgid "**borderaxespad** : float, default: :rc:`legend.borderaxespad`"
+msgstr ""
+
+#: matplotlib.legend.Legend:216 of
+msgid "The pad between the axes and legend border, in font-size units."
+msgstr ""
+
+#: matplotlib.legend.Legend:219 of
+msgid "**columnspacing** : float, default: :rc:`legend.columnspacing`"
+msgstr ""
+
+#: matplotlib.legend.Legend:219 of
+msgid "The spacing between columns, in font-size units."
+msgstr ""
+
+#: matplotlib.legend.Legend:228 of
+msgid "**handler_map**"
+msgstr ""
+
+#: of
+msgid "dict or None"
+msgstr ""
+
+#: matplotlib.legend.Legend:222 of
+msgid "The custom dictionary mapping instances or types to a legend handler. This *handler_map* updates the default handler map found at `matplotlib.legend.Legend.get_legend_handler_map`."
+msgstr ""
+
+#: matplotlib.legend.Legend:231 matplotlib.legend.Legend.draw:21 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.legend.Legend:232 of
+msgid "Users can specify any arbitrary location for the legend using the *bbox_to_anchor* keyword argument. *bbox_to_anchor* can be a `.BboxBase` (or derived there from) or a tuple of 2 or 4 floats. See `set_bbox_to_anchor` for more detail."
+msgstr ""
+
+#: matplotlib.legend.Legend:237 of
+msgid "The legend location can be specified by setting *loc* with a tuple of 2 floats, which is interpreted as the lower-left corner of the legend in the normalized axes coordinate."
+msgstr ""
+
+#: matplotlib.legend.Legend.contains:2 of
+msgid "Test whether the artist contains the mouse event."
+msgstr ""
+
+#: matplotlib.legend.Legend.contains:8 of
+msgid "**mouseevent** : `matplotlib.backend_bases.MouseEvent`"
+msgstr ""
+
+#: matplotlib.legend.Legend.contains:7 of
+msgid "matplotlib.backend_bases.MouseEvent"
+msgstr ""
+
+#: matplotlib.legend.Legend.contains matplotlib.legend.Legend.get_tightbbox
+#: matplotlib.legend.Legend.set_draggable of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.legend.Legend.contains:13 of
+msgid "**contains**"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:14 matplotlib.artist.Legend.set:17
+#: matplotlib.artist.Legend.set:19 matplotlib.artist.Legend.set:21
+#: matplotlib.artist.Legend.set:23 matplotlib.artist.Legend.set:27
+#: matplotlib.artist.Legend.set:33 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.legend.Legend.contains:13 of
+msgid "Whether any values are within the radius."
+msgstr ""
+
+#: matplotlib.legend.Legend.contains:30 of
+msgid "**details**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.legend.Legend.contains:16 of
+msgid "An artist-specific dictionary of details of the event context, such as which points are contained in the pick radius. See the individual Artist subclasses for details."
+msgstr ""
+
+#: matplotlib.legend.Legend.draw:2 of
+msgid "Draw the Artist (and its children) using the given renderer."
+msgstr ""
+
+#: matplotlib.legend.Legend.draw:4 of
+msgid "This has no effect if the artist is not visible (`.Artist.get_visible` returns False)."
+msgstr ""
+
+#: matplotlib.legend.Legend.draw:18 of
+msgid "**renderer** : `.RendererBase` subclass."
+msgstr ""
+
+#: matplotlib.legend.Legend.draw:17 of
+msgid "RendererBase subclass."
+msgstr ""
+
+#: matplotlib.legend.Legend.draw:22 of
+msgid "This method is overridden in the Artist subclasses."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_frame_on:2 of
+msgid "Set whether the legend box patch is drawn."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_frame_on:21 of
+msgid "**b**"
+msgstr ""
+
+#: matplotlib.legend.Legend.get_bbox_to_anchor:2 of
+msgid "Return the bbox that the legend will be anchored to."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_children:2 of
+msgid "Return a list of the child `.Artist`\\s of this `.Artist`."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_default_handler_map:2 of
+msgid "A class method that returns the default handler map."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_draggable:2 of
+msgid "Return ``True`` if the legend is draggable, ``False`` otherwise."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_frame:2 of
+msgid "Return the `~.patches.Rectangle` used to frame the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_frame_on:2 of
+msgid "Get whether the legend box patch is drawn."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_legend_handler:2 of
+msgid "Return a legend handler from *legend_handler_map* that corresponds to *orig_handler*."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_legend_handler:5 of
+msgid "*legend_handler_map* should be a dictionary object (that is returned by the get_legend_handler_map method)."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_legend_handler:8 of
+msgid "It first checks if the *orig_handle* itself is a key in the *legend_handler_map* and return the associated value. Otherwise, it checks for each of the classes in its method-resolution-order. If no matching key is found, it returns ``None``."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_legend_handler_map:2 of
+msgid "Return the handler map."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_lines:2 of
+msgid "Return the list of `~.lines.Line2D`\\s in the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_patches:2 of
+msgid "Return the list of `~.patches.Patch`\\s in the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_texts:2 of
+msgid "Return the list of `~.text.Text`\\s in the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_tightbbox:2 of
+msgid "Like `.Artist.get_window_extent`, but includes any clipping."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_tightbbox:9 of
+msgid "**renderer** : `.RendererBase` subclass"
+msgstr ""
+
+#: matplotlib.legend.Legend.get_tightbbox:8 of
+msgid "RendererBase subclass"
+msgstr ""
+
+#: matplotlib.legend.Legend.get_tightbbox:8 of
+msgid "renderer that will be used to draw the figures (i.e. ``fig.canvas.get_renderer()``)"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:16 matplotlib.legend.Legend.get_tightbbox:26 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.legend.Legend.get_tightbbox:14 of
+msgid "The enclosing bounding box (in figure pixel coordinates)."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_title:2 of
+msgid "Return the `.Text` instance for the legend title."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_window_extent:2 of
+msgid "Get the artist's bounding box in display space."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_window_extent:4 of
+msgid "The bounding box' width and height are nonnegative."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_window_extent:6 of
+msgid "Subclasses should override for inclusion in the bounding box \"tight\" calculation. Default is to return an empty bounding box at 0, 0."
+msgstr ""
+
+#: matplotlib.legend.Legend.get_window_extent:10 of
+msgid "Be careful when using this function, the results will not update if the artist window extent of the artist changes.  The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure).  This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly."
+msgstr ""
+
+#: matplotlib.artist.Legend.set:2 of
+msgid "Set multiple properties at once."
+msgstr ""
+
+#: matplotlib.artist.Legend.set:4 of
+msgid "Supported properties are"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:10 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:10 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:12 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:12 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:13 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:13 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:14 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:15 of
+msgid ":meth:`bbox_to_anchor <matplotlib.legend.Legend.set_bbox_to_anchor>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:15 of
+msgid "`~matplotlib.transforms.BboxBase` or tuple"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:16 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:17 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:18 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:18 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:19 of
+msgid ":meth:`draggable <matplotlib.legend.Legend.set_draggable>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:20 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:20 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:21 of
+msgid ":meth:`frame_on <matplotlib.legend.Legend.set_frame_on>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:22 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:22 matplotlib.artist.Legend.set:32 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:23 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:24 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:24 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:25 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:25 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:26 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:26 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:27 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:28 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:28 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:29 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:29 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:30 of
+msgid ":meth:`title <matplotlib.legend.Legend.set_title>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:30 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:31 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:31 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:32 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:33 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:34 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.artist.Legend.set:34 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:2 of
+msgid "Set the bbox that the legend will be anchored to."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:15 of
+msgid "**bbox** : `~matplotlib.transforms.BboxBase` or tuple"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:14 of
+msgid "BboxBase or tuple"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:8 of
+msgid "The bounding box can be specified in the following ways:"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:10 of
+msgid "A `.BboxBase` instance"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:11 of
+msgid "A tuple of ``(left, bottom, width, height)`` in the given transform (normalized axes coordinate if None)"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:13 of
+msgid "A tuple of ``(left, bottom)`` where the width and height will be assumed to be zero."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:15 of
+msgid "*None*, to remove the bbox anchoring, and use the parent bbox."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:32 of
+msgid "**transform** : `~matplotlib.transforms.Transform`, optional"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:31 of
+msgid "Transform, optional"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_bbox_to_anchor:18 of
+msgid "A transform to apply to the bounding box. If not specified, this will use a transform to the bounding box of the parent."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_default_handler_map:2 of
+msgid "A class method to set the default handler map."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_draggable:2 of
+msgid "Enable or disable mouse dragging support of the legend."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_draggable:8 of
+msgid "**state**"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_draggable:8 of
+msgid "Whether mouse dragging is enabled."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_draggable:15 of
+msgid "The legend parameter to be changed when dragged:"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_draggable:17 of
+msgid "'loc': update the *loc* parameter of the legend"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_draggable:18 of
+msgid "'bbox': update the *bbox_to_anchor* parameter of the legend"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_draggable:36 of
+msgid "`.DraggableLegend` or *None*"
+msgstr ""
+
+#: matplotlib.legend.Legend.set_draggable:23 of
+msgid "If *state* is ``True`` this returns the `.DraggableLegend` helper instance. Otherwise this returns *None*."
+msgstr ""
+
+#: matplotlib.legend.Legend.set_title:2 of
+msgid "Set the legend title. Fontproperties can be optionally set with *prop* parameter."
+msgstr ""
+
+#: matplotlib.legend.Legend.update_default_handler_map:2 of
+msgid "A class method to update the default handler map."
+msgstr ""
+

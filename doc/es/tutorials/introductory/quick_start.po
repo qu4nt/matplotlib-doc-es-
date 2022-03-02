@@ -1,0 +1,398 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:33\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/tutorials/introductory/quick_start.po\n"
+"X-Crowdin-File-ID: 3326\n"
+"Language: es_ES\n"
+
+#: ../../tutorials/introductory/quick_start.rst:13
+msgid "Click :ref:`here <sphx_glr_download_tutorials_introductory_quick_start.py>` to download the full example code"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:23
+msgid "Quick start guide"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:25
+msgid "This tutorial covers some basic usage patterns and best practices to help you get started with Matplotlib."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:49
+msgid "A simple example"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:51
+msgid "Matplotlib graphs your data on `.Figure`\\s (e.g., windows, Jupyter widgets, etc.), each of which can contain one or more `~.axes.Axes`, an area where points can be specified in terms of x-y coordinates (or theta-r in a polar plot, x-y-z in a 3D plot, etc).  The simplest way of creating a Figure with an Axes is using `.pyplot.subplots`. We can then use `.Axes.plot` to draw some data on the Axes:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:77
+#: ../../tutorials/introductory/quick_start.rst:201
+#: ../../tutorials/introductory/quick_start.rst:257
+#: ../../tutorials/introductory/quick_start.rst:297
+#: ../../tutorials/introductory/quick_start.rst:376
+#: ../../tutorials/introductory/quick_start.rst:455
+#: ../../tutorials/introductory/quick_start.rst:505
+#: ../../tutorials/introductory/quick_start.rst:618
+#: ../../tutorials/introductory/quick_start.rst:662
+#: ../../tutorials/introductory/quick_start.rst:719
+#: ../../tutorials/introductory/quick_start.rst:767
+#: ../../tutorials/introductory/quick_start.rst:845
+#: ../../tutorials/introductory/quick_start.rst:904
+#: ../../tutorials/introductory/quick_start.rst:958
+#: ../../tutorials/introductory/quick_start.rst:1037
+msgid "Out:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:91
+msgid "Parts of a Figure"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:93
+msgid "Here are the components of a Matplotlib Figure."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:98
+msgid ":class:`~matplotlib.figure.Figure`"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:100
+msgid "The **whole** figure.  The Figure keeps track of all the child :class:`~matplotlib.axes.Axes`, a group of 'special' Artists (titles, figure legends, colorbars, etc), and even nested subfigures."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:105
+msgid "The easiest way to create a new Figure is with pyplot::"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:111
+msgid "It is often convenient to create the Axes together with the Figure, but you can also manually add Axes later on.  Note that many :doc:`Matplotlib backends </users/explain/backends>` support zooming and panning on figure windows."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:117
+msgid ":class:`~matplotlib.axes.Axes`"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:119
+msgid "An Axes is an Artist attached to a Figure that contains a region for plotting data, and usually includes two (or three in the case of 3D) :class:`~matplotlib.axis.Axis` objects (be aware of the difference between **Axes** and **Axis**) that provide ticks and tick labels to provide scales for the data in the Axes. Each :class:`~.axes.Axes` also has a title (set via :meth:`~matplotlib.axes.Axes.set_title`), an x-label (set via :meth:`~matplotlib.axes.Axes.set_xlabel`), and a y-label set via :meth:`~matplotlib.axes.Axes.set_ylabel`)."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:129
+msgid "The :class:`~.axes.Axes` class and its member functions are the primary entry point to working with the OOP interface, and have most of the plotting methods defined on them (e.g. ``ax.plot()``, shown above, uses the `~.Axes.plot` method)"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:135
+msgid ":class:`~matplotlib.axis.Axis`"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:137
+msgid "These objects set the scale and limits and generate ticks (the marks on the Axis) and ticklabels (strings labeling the ticks).  The location of the ticks is determined by a `~matplotlib.ticker.Locator` object and the ticklabel strings are formatted by a `~matplotlib.ticker.Formatter`.  The combination of the correct `.Locator` and `.Formatter` gives very fine control over the tick locations and labels."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:145
+msgid ":class:`~matplotlib.artist.Artist`"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:147
+msgid "Basically, everything visible on the Figure is an Artist (even `.Figure`, `Axes <.axes.Axes>`, and `~.axis.Axis` objects).  This includes `.Text` objects, `.Line2D` objects, :mod:`.collections` objects, `.Patch` objects, etc. When the Figure is rendered, all of the Artists are drawn to the **canvas**.  Most Artists are tied to an Axes; such an Artist cannot be shared by multiple Axes, or moved from one to another."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:157
+msgid "Types of inputs to plotting functions"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:159
+msgid "Plotting functions expect `numpy.array` or `numpy.ma.masked_array` as input, or objects that can be passed to `numpy.asarray`. Classes that are similar to arrays ('array-like') such as `pandas` data objects and `numpy.matrix` may not work as intended.  Common convention is to convert these to `numpy.array` objects prior to plotting. For example, to convert a `numpy.matrix` ::"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:169
+msgid "Most methods will also parse an addressable object like a *dict*, a `numpy.recarray`, or a `pandas.DataFrame`.  Matplotlib allows you provide the ``data`` keyword argument and generate plots passing the strings corresponding to the *x* and *y* variables."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:215
+msgid "Coding styles"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:218
+msgid "The object-oriented and the pyplot interfaces"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:220
+msgid "As noted above, there are essentially two ways to use Matplotlib:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:222
+msgid "Explicitly create Figures and Axes, and call methods on them (the \"object-oriented (OO) style\")."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:224
+msgid "Rely on pyplot to automatically create and manage the Figures and Axes, and use pyplot functions for plotting."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:227
+msgid "So one can use the OO-style"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:268
+msgid "or the pyplot-style:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:308
+msgid "(In addition, there is a third approach, for the case when embedding Matplotlib in a GUI application, which completely drops pyplot, even for figure creation. See the corresponding section in the gallery for more info: :ref:`user_interfaces`.)"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:313
+msgid "Matplotlib's documentation and examples use both the OO and the pyplot styles. In general, we suggest using the OO style, particularly for complicated plots, and functions and scripts that are intended to be reused as part of a larger project. However, the pyplot style can be very convenient for quick interactive work."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:321
+msgid "You may find older examples that use the ``pylab`` interface, via ``from pylab import *``. This approach is strongly deprecated."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:325
+msgid "Making a helper functions"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:327
+msgid "If you need to make the same plots over and over again with different data sets, or want to easily wrap Matplotlib methods, use the recommended signature function below."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:353
+msgid "which you would then use twice to populate two subplots:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:387
+msgid "Note that if you want to install these as a python package, or any other customizations you could use one of the many templates on the web; Matplotlib has one at `mpl-cookiecutter <https://github.com/matplotlib/matplotlib-extension-cookiecutter>`_"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:394
+msgid "Styling Artists"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:396
+msgid "Most plotting methods have styling options for the Artists, accessible either when a plotting method is called, or from a \"setter\" on the Artist.  In the plot below we manually set the *color*, *linewidth*, and *linestyle* of the Artists created by `~.Axes.plot`, and we set the linestyle of the second line after the fact with `~.Line2D.set_linestyle`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:428
+msgid "Colors"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:430
+msgid "Matplotlib has a very flexible array of colors that are accepted for most Artists; see the :doc:`colors tutorial </tutorials/colors/colors>` for a list of specifications. Some Artists will take multiple colors.  i.e. for a `~.Axes.scatter` plot, the edge of the markers can be different colors from the interior:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:467
+msgid "Linewidths, linestyles, and markersizes"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:469
+msgid "Line widths are typically in typographic points (1 pt = 1/72 inch) and available for Artists that have stroked lines.  Similarly, stroked lines can have a linestyle.  See the :doc:`linestyles example </gallery/lines_bars_and_markers/linestyles>`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:474
+msgid "Marker size depends on the method being used.  `~.Axes.plot` specifies markersize in points, and is generally the \"diameter\" or width of the marker.  `~.Axes.scatter` specifies markersize as approximately proportional to the visual area of the marker.  There is an array of markerstyles available as string codes (see :mod:`~.matplotlib.markers`), or users can define their own `~.MarkerStyle` (see :doc:`/gallery/lines_bars_and_markers/marker_reference`):"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:517
+msgid "Labelling plots"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:520
+msgid "Axes labels and text"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:522
+msgid "`~.Axes.set_xlabel`, `~.Axes.set_ylabel`, and `~.Axes.set_title` are used to add text in the indicated locations (see :doc:`/tutorials/text/text_intro` for more discussion).  Text can also be directly added to plots using `~.Axes.text`:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:559
+msgid "All of the `~.Axes.text` functions return a `matplotlib.text.Text` instance.  Just as with lines above, you can customize the properties by passing keyword arguments into the text functions::"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:565
+msgid "These properties are covered in more detail in :doc:`/tutorials/text/text_props`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:569
+msgid "Using mathematical expressions in text"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:571
+msgid "Matplotlib accepts TeX equation expressions in any text expression. For example to write the expression :math:`\\sigma_i=15` in the title, you can write a TeX expression surrounded by dollar signs::"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:577
+msgid "where the ``r`` preceding the title string signifies that the string is a *raw* string and not to treat backslashes as python escapes. Matplotlib has a built-in TeX expression parser and layout engine, and ships its own math fonts – for details see :doc:`/tutorials/text/mathtext`.  You can also use LaTeX directly to format your text and incorporate the output directly into your display figures or saved postscript – see :doc:`/tutorials/text/usetex`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:586
+msgid "Annotations"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:588
+msgid "We can also annotate points on a plot, often by connecting an arrow pointing to *xy*, to a piece of text at *xytext*:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:629
+msgid "In this basic example, both *xy* and *xytext* are in data coordinates. There are a variety of other coordinate systems one can choose -- see :ref:`annotations-tutorial` and :ref:`plotting-guide-annotation` for details.  More examples also can be found in :doc:`/gallery/text_labels_and_annotations/annotation_demo`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:636
+msgid "Legends"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:638
+msgid "Often we want to identify lines or markers with a `.Axes.legend`:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:673
+msgid "Legends in Matplotlib are quite flexible in layout, placement, and what Artists they can represent. They are discussed in detail in :doc:`/tutorials/intermediate/legend_guide`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:678
+msgid "Axis scales and ticks"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:680
+msgid "Each Axes has two (or three) `~.axis.Axis` objects representing the x- and y-axis. These control the *scale* of the Axis, the tick *locators* and the tick *formatters*. Additional Axes can be attached to display further Axis objects."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:686
+msgid "Scales"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:688
+msgid "In addition to the linear scale, Matplotlib supplies non-linear scales, such as a log-scale.  Since log-scales are used so much there are also direct methods like `~.Axes.loglog`, `~.Axes.semilogx`, and `~.Axes.semilogy`.  There are a number of scales (see :doc:`/gallery/scales/scales` for other examples).  Here we set the scale manually:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:730
+msgid "The scale sets the mapping from data values to spacing along the Axis. This happens in both directions, and gets combined into a *transform*, which is the way that Matplotlib maps from data coordinates to Axes, Figure, or screen coordinates.  See :doc:`/tutorials/advanced/transforms_tutorial`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:736
+msgid "Tick locators and formatters"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:738
+msgid "Each Axis has a tick *locator* and *formatter* that choose where along the Axis objects to put tick marks.  A simple interface to this is `~.Axes.set_xticks`:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:778
+msgid "Different scales can have different locators and formatters; for instance the log-scale above uses `~.LogLocator` and `~.LogFormatter`. See :doc:`/gallery/ticks/tick-locators` and :doc:`/gallery/ticks/tick-formatters` for other formatters and locators and information for writing your own."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:785
+msgid "Plotting dates and strings"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:787
+msgid "Matplotlib can handle plotting arrays of dates and arrays of strings, as well as floating point numbers.  These get special locators and formatters as appropriate.  For dates:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:818
+msgid "For more information see the date examples (e.g. :doc:`/gallery/text_labels_and_annotations/date`)"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:821
+msgid "For strings, we get categorical plotting (see: :doc:`/gallery/lines_bars_and_markers/categorical_variables`)."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:856
+msgid "One caveat about categorical plotting is that some methods of parsing text files return a list of strings, even if the strings all represent numbers or dates.  If you pass 1000 strings, Matplotlib will think you meant 1000 categories and will add 1000 ticks to your plot!"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:863
+msgid "Additional Axis objects"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:865
+msgid "Plotting data of different magnitude in one chart may require an additional y-axis. Such an Axis can be created by using `~.Axes.twinx` to add a new Axes with an invisible x-axis and a y-axis positioned at the right (analogously for `~.Axes.twiny`). See :doc:`/gallery/subplots_axes_and_figures/two_scales` for another example."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:871
+msgid "Similarly, you can add a `~.Axes.secondary_xaxis` or `~.Axes.secondary_yaxis` having a different scale than the main Axis to represent the data in different scales or units. See :doc:`/gallery/subplots_axes_and_figures/secondary_axis` for further examples."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:916
+msgid "Color mapped data"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:918
+msgid "Often we want to have a third dimension in a plot represented by a colors in a colormap. Matplotlib has a number of plot types that do this:"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:970
+msgid "Colormaps"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:972
+msgid "These are all examples of Artists that derive from  `~.ScalarMappable` objects.  They all can set a linear mapping between *vmin* and *vmax* into the colormap specified by *cmap*.  Matplotlib has many colormaps to choose from (:doc:`/tutorials/colors/colormaps`) you can make your own (:doc:`/tutorials/colors/colormap-manipulation`) or download as `third-party packages <https://matplotlib.org/mpl-third-party/#colormaps-and-styles>`_."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:981
+msgid "Normalizations"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:983
+msgid "Sometimes we want a non-linear mapping of the data to the colormap, as in the ``LogNorm`` example above.  We do this by supplying the ScalarMappable with the *norm* argument instead of *vmin* and *vmax*. More normalizations are shown at :doc:`/tutorials/colors/colormapnorms`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:989
+msgid "Colorbars"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:991
+msgid "Adding a `~.Figure.colorbar` gives a key to relate the color back to the underlying data. Colorbars are figure-level Artists, and are attached to a ScalarMappable (where they get their information about the norm and colormap) and usually steal space from a parent Axes.  Placement of colorbars can be complex: see :doc:`/gallery/subplots_axes_and_figures/colorbar_placement` for details.  You can also change the appearance of colorbars with the *extend* keyword to add arrows to the ends, and *shrink* and *aspect* to control the size.  Finally, the colorbar will have default locators and formatters appropriate to the norm.  These can be changed as for other Axis objects."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1005
+msgid "Working with multiple Figures and Axes"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1007
+msgid "You can open multiple Figures with multiple calls to ``fig = plt.figure()`` or ``fig2, ax = plt.subplots()``.  By keeping the object references you can add Artists to either Figure."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1011
+msgid "Multiple Axes can be added a number of ways, but the most basic is ``plt.subplots()`` as used above.  One can achieve more complex layouts, with Axes objects spanning columns or rows, using `~.pyplot.subplot_mosaic`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1048
+msgid "Matplotlib has quite sophisticated tools for arranging Axes: See :doc:`/tutorials/intermediate/arranging_axes` and :doc:`/tutorials/provisional/mosaic`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1054
+msgid "More reading"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1056
+msgid "For more plot types see :doc:`Plot types </plot_types/index>` and the :doc:`API reference </api/index>`, in particlar the :doc:`Axes API </api/axes_api>`."
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1063
+msgid "**Total running time of the script:** ( 0 minutes  8.342 seconds)"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1078
+msgid ":download:`Download Python source code: quick_start.py <quick_start.py>`"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1084
+msgid ":download:`Download Jupyter notebook: quick_start.ipynb <quick_start.ipynb>`"
+msgstr ""
+
+#: ../../tutorials/introductory/quick_start.rst:1091
+msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

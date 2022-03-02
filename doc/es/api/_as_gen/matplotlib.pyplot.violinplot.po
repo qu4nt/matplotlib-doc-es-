@@ -1,0 +1,208 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:19\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.pyplot.violinplot.po\n"
+"X-Crowdin-File-ID: 1344\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.pyplot.violinplot.rst:2
+msgid "matplotlib.pyplot.violinplot"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:2 of
+msgid "Make a violin plot."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:4 of
+msgid "Make a violin plot for each column of *dataset* or each vector in sequence *dataset*.  Each filled area extends to represent the entire data range, with optional lines at the mean, the median, the minimum, the maximum, and user-specified quantiles."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:12 of
+msgid "**dataset**"
+msgstr ""
+
+#: of
+msgid "Array or a sequence of vectors."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:12 of
+msgid "The input data."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:16 of
+msgid "**positions**"
+msgstr ""
+
+#: of
+msgid "array-like, default: [1, 2, ..., n]"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:15 of
+msgid "The positions of the violins. The ticks and limits are automatically set to match the positions."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:20 of
+msgid "**vert**"
+msgstr ""
+
+#: of
+msgid "bool, default: True."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:19 of
+msgid "If true, creates a vertical violin plot. Otherwise, creates a horizontal violin plot."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:25 of
+msgid "**widths**"
+msgstr ""
+
+#: of
+msgid "array-like, default: 0.5"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:23 of
+msgid "Either a scalar or a vector that sets the maximal width of each violin. The default is 0.5, which uses about half of the available horizontal space."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:28 of
+msgid "**showmeans**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:28 of
+msgid "If `True`, will toggle rendering of the means."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:31 of
+msgid "**showextrema**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:31 of
+msgid "If `True`, will toggle rendering of the extrema."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:34 of
+msgid "**showmedians**"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:34 of
+msgid "If `True`, will toggle rendering of the medians."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:39 of
+msgid "**quantiles**"
+msgstr ""
+
+#: of
+msgid "array-like, default: None"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:37 of
+msgid "If not None, set a list of floats in interval [0, 1] for each violin, which stands for the quantiles that will be rendered for that violin."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:43 of
+msgid "**points**"
+msgstr ""
+
+#: of
+msgid "int, default: 100"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:42 of
+msgid "Defines the number of points to evaluate each of the gaussian kernel density estimations at."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:50 of
+msgid "**bw_method**"
+msgstr ""
+
+#: of
+msgid "str, scalar or callable, optional"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:46 of
+msgid "The method used to calculate the estimator bandwidth.  This can be 'scott', 'silverman', a scalar constant or a callable.  If a scalar, this will be used directly as `kde.factor`.  If a callable, it should take a `GaussianKDE` instance as its only parameter and return a scalar. If None (default), 'scott' is used."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:56 of
+msgid "**data**"
+msgstr ""
+
+#: of
+msgid "indexable object, optional"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:53 of
+msgid "If given, the following parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception):"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:56 of
+msgid "*dataset*"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:97 of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:61 of
+msgid "A dictionary mapping each component of the violinplot to a list of the corresponding collection instances created. The dictionary has the following keys:"
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:65 of
+msgid "``bodies``: A list of the `~.collections.PolyCollection` instances containing the filled area of each violin."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:68 of
+msgid "``cmeans``: A `~.collections.LineCollection` instance that marks the mean values of each of the violin's distribution."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:71 of
+msgid "``cmins``: A `~.collections.LineCollection` instance that marks the bottom of each violin's distribution."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:74 of
+msgid "``cmaxes``: A `~.collections.LineCollection` instance that marks the top of each violin's distribution."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:77 of
+msgid "``cbars``: A `~.collections.LineCollection` instance that marks the centers of each violin's distribution."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:80 of
+msgid "``cmedians``: A `~.collections.LineCollection` instance that marks the median values of each of the violin's distribution."
+msgstr ""
+
+#: matplotlib.pyplot.violinplot:83 of
+msgid "``cquantiles``: A `~.collections.LineCollection` instance created to identify the quantile values of each of the violin's distribution."
+msgstr ""
+

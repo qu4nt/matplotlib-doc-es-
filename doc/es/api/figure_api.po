@@ -1,0 +1,4717 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/figure_api.po\n"
+"X-Crowdin-File-ID: 1782\n"
+"Language: es_ES\n"
+
+#: ../../api/figure_api.rst:3
+msgid "``matplotlib.figure``"
+msgstr ""
+
+#: matplotlib.figure:1 of
+msgid "`matplotlib.figure` implements the following classes:"
+msgstr ""
+
+#: matplotlib.figure:5 of
+msgid "`Figure`"
+msgstr ""
+
+#: matplotlib.figure:4 of
+msgid "Top level `~matplotlib.artist.Artist`, which holds all plot elements. Many methods are implemented in `FigureBase`."
+msgstr ""
+
+#: matplotlib.figure:10 of
+msgid "`SubFigure`"
+msgstr ""
+
+#: matplotlib.figure:8 of
+msgid "A logical figure inside a figure, usually added to a figure (or parent `SubFigure`) with `Figure.add_subfigure` or `Figure.subfigures` methods (provisional API v3.4)."
+msgstr ""
+
+#: matplotlib.figure:13 of
+msgid "`SubplotParams`"
+msgstr ""
+
+#: matplotlib.figure:13 of
+msgid "Control the default spacing between subplots."
+msgstr ""
+
+#: matplotlib.figure.Figure:2 of
+msgid "The top level container for all the plot elements."
+msgstr ""
+
+#: matplotlib.figure.Figure:4 of
+msgid "The Figure instance supports callbacks through a *callbacks* attribute which is a `.CallbackRegistry` instance.  The events you can connect to are 'dpi_changed', and the callback will be called with ``func(fig)`` where fig is the `Figure` instance."
+msgstr ""
+
+#: matplotlib.figure.Figure of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.figure.Figure:24 of
+msgid "**patch**"
+msgstr ""
+
+#: matplotlib.figure.Figure:24 of
+msgid "The `.Rectangle` instance representing the figure background patch."
+msgstr ""
+
+#: matplotlib.figure.Figure:30 of
+msgid "**suppressComposite**"
+msgstr ""
+
+#: matplotlib.figure.Figure:27 of
+msgid "For multiple images, the figure will make composite images depending on the renderer option_image_nocomposite function.  If *suppressComposite* is a boolean, this will override the renderer."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback matplotlib.artist.Artist.draw
+#: matplotlib.artist.Artist.findobj matplotlib.artist.Artist.get_cursor_data
+#: matplotlib.artist.Artist.set_agg_filter matplotlib.artist.Artist.set_alpha
+#: matplotlib.artist.Artist.set_animated matplotlib.artist.Artist.set_clip_box
+#: matplotlib.artist.Artist.set_clip_on matplotlib.artist.Artist.set_clip_path
+#: matplotlib.artist.Artist.set_figure matplotlib.artist.Artist.set_gid
+#: matplotlib.artist.Artist.set_in_layout matplotlib.artist.Artist.set_label
+#: matplotlib.artist.Artist.set_path_effects
+#: matplotlib.artist.Artist.set_picker matplotlib.artist.Artist.set_rasterized
+#: matplotlib.artist.Artist.set_sketch_params matplotlib.artist.Artist.set_snap
+#: matplotlib.artist.Artist.set_transform matplotlib.artist.Artist.set_url
+#: matplotlib.artist.Artist.set_visible matplotlib.artist.Artist.set_zorder
+#: matplotlib.artist.Artist.update matplotlib.figure.Figure
+#: matplotlib.figure.Figure.draw matplotlib.figure.Figure.figimage
+#: matplotlib.figure.Figure.get_constrained_layout_pads
+#: matplotlib.figure.Figure.ginput matplotlib.figure.Figure.savefig
+#: matplotlib.figure.Figure.set_canvas
+#: matplotlib.figure.Figure.set_constrained_layout
+#: matplotlib.figure.Figure.set_constrained_layout_pads
+#: matplotlib.figure.Figure.set_dpi matplotlib.figure.Figure.set_figheight
+#: matplotlib.figure.Figure.set_figwidth
+#: matplotlib.figure.Figure.set_size_inches
+#: matplotlib.figure.Figure.set_tight_layout matplotlib.figure.Figure.show
+#: matplotlib.figure.Figure.tight_layout
+#: matplotlib.figure.FigureBase.add_artist
+#: matplotlib.figure.FigureBase.add_axes
+#: matplotlib.figure.FigureBase.add_gridspec
+#: matplotlib.figure.FigureBase.add_subfigure
+#: matplotlib.figure.FigureBase.add_subplot
+#: matplotlib.figure.FigureBase.align_labels
+#: matplotlib.figure.FigureBase.align_xlabels
+#: matplotlib.figure.FigureBase.align_ylabels
+#: matplotlib.figure.FigureBase.autofmt_xdate
+#: matplotlib.figure.FigureBase.colorbar
+#: matplotlib.figure.FigureBase.get_tightbbox
+#: matplotlib.figure.FigureBase.legend
+#: matplotlib.figure.FigureBase.set_edgecolor
+#: matplotlib.figure.FigureBase.set_facecolor
+#: matplotlib.figure.FigureBase.set_frameon
+#: matplotlib.figure.FigureBase.set_linewidth
+#: matplotlib.figure.FigureBase.subfigures
+#: matplotlib.figure.FigureBase.subplot_mosaic
+#: matplotlib.figure.FigureBase.subplots
+#: matplotlib.figure.FigureBase.subplots_adjust
+#: matplotlib.figure.FigureBase.suptitle matplotlib.figure.FigureBase.supxlabel
+#: matplotlib.figure.FigureBase.supylabel matplotlib.figure.FigureBase.text
+#: matplotlib.figure.SubFigure matplotlib.figure.SubFigure.draw
+#: matplotlib.figure.SubFigure.get_constrained_layout_pads
+#: matplotlib.figure.SubplotParams matplotlib.figure.figaspect of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.figure.Figure:42 of
+msgid "**figsize** : 2-tuple of floats, default: :rc:`figure.figsize`"
+msgstr ""
+
+#: of
+msgid "2-tuple of floats, default:"
+msgstr ""
+
+#: matplotlib.figure.Figure:42 of
+msgid "Figure dimension ``(width, height)`` in inches."
+msgstr ""
+
+#: matplotlib.figure.Figure:45 of
+msgid "**dpi** : float, default: :rc:`figure.dpi`"
+msgstr ""
+
+#: of
+msgid "float, default:"
+msgstr ""
+
+#: matplotlib.figure.Figure:45 of
+msgid "Dots per inch."
+msgstr ""
+
+#: matplotlib.figure.Figure:48 matplotlib.figure.SubFigure:49 of
+msgid "**facecolor** : default: :rc:`figure.facecolor`"
+msgstr ""
+
+#: of
+msgid "default:"
+msgstr ""
+
+#: matplotlib.figure.Figure:48 of
+msgid "The figure patch facecolor."
+msgstr ""
+
+#: matplotlib.figure.Figure:51 matplotlib.figure.SubFigure:52 of
+msgid "**edgecolor** : default: :rc:`figure.edgecolor`"
+msgstr ""
+
+#: matplotlib.figure.Figure:51 matplotlib.figure.SubFigure:52 of
+msgid "The figure patch edge color."
+msgstr ""
+
+#: matplotlib.figure.Figure:55 matplotlib.figure.FigureBase.set_linewidth:21
+#: matplotlib.figure.SubFigure:56 of
+msgid "**linewidth**"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:21 matplotlib.artist.Figure.set:24
+#: matplotlib.artist.Figure.set:26 matplotlib.artist.Figure.set:42
+#: matplotlib.artist.FigureBase.set:34 matplotlib.artist.SubFigure.set:34
+#: matplotlib.figure.Figure:123 matplotlib.figure.Figure:126
+#: matplotlib.figure.Figure:128 matplotlib.figure.Figure:144
+#: matplotlib.figure.FigureBase.add_axes:110
+#: matplotlib.figure.FigureBase.add_subplot:130
+#: matplotlib.figure.FigureBase.gca:69 matplotlib.figure.FigureBase.text:79
+#: matplotlib.figure.FigureBase.text:80 matplotlib.figure.FigureBase.text:81
+#: matplotlib.figure.SubFigure:95 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.figure.Figure:54 matplotlib.figure.SubFigure:55 of
+msgid "The linewidth of the frame (i.e. the edge linewidth of the figure patch)."
+msgstr ""
+
+#: matplotlib.figure.Figure:58 matplotlib.figure.SubFigure:62 of
+msgid "**frameon** : bool, default: :rc:`figure.frameon`"
+msgstr ""
+
+#: of
+msgid "bool, default:"
+msgstr ""
+
+#: matplotlib.figure.Figure:58 matplotlib.figure.SubFigure:59 of
+msgid "If ``False``, suppress drawing the figure background patch."
+msgstr ""
+
+#: matplotlib.figure.Figure:62 of
+msgid "**subplotpars** : `SubplotParams`"
+msgstr ""
+
+#: matplotlib.figure.Figure:61 of
+msgid "SubplotParams"
+msgstr ""
+
+#: matplotlib.figure.Figure:61 of
+msgid "Subplot parameters. If not given, the default subplot parameters :rc:`figure.subplot.*` are used."
+msgstr ""
+
+#: matplotlib.figure.Figure:71 of
+msgid "**tight_layout** : bool or dict, default: :rc:`figure.autolayout`"
+msgstr ""
+
+#: of
+msgid "bool or dict, default:"
+msgstr ""
+
+#: matplotlib.figure.Figure:65 of
+msgid "Whether to use the tight layout mechanism. See `.set_tight_layout`."
+msgstr ""
+
+#: matplotlib.figure.Figure:67 matplotlib.figure.Figure:76
+#: matplotlib.figure.FigureBase.legend:57 of
+msgid "Discouraged"
+msgstr ""
+
+#: matplotlib.figure.Figure:69 of
+msgid "The use of this parameter is discouraged. Please use ``layout='tight'`` instead for the common case of ``tight_layout=True`` and use `.set_tight_layout` otherwise."
+msgstr ""
+
+#: matplotlib.figure.Figure:79 of
+msgid "**constrained_layout** : bool, default: :rc:`figure.constrained_layout.use`"
+msgstr ""
+
+#: matplotlib.figure.Figure:74 of
+msgid "This is equal to ``layout='constrained'``."
+msgstr ""
+
+#: matplotlib.figure.Figure:78 of
+msgid "The use of this parameter is discouraged. Please use ``layout='constrained'`` instead."
+msgstr ""
+
+#: matplotlib.figure.Figure:103 of
+msgid "**layout**"
+msgstr ""
+
+#: of
+msgid "{'constrained', 'tight'}, optional"
+msgstr ""
+
+#: matplotlib.figure.Figure:82 of
+msgid "The layout mechanism for positioning of plot elements. Supported values:"
+msgstr ""
+
+#: matplotlib.figure.Figure:85 of
+msgid "'constrained': The constrained layout solver usually gives the best layout results and is thus recommended. However, it is computationally expensive and can be slow for complex figures with many elements."
+msgstr ""
+
+#: matplotlib.figure.Figure:90 of
+msgid "See :doc:`/tutorials/intermediate/constrainedlayout_guide` for examples."
+msgstr ""
+
+#: matplotlib.figure.Figure:93 of
+msgid "'tight': Use the tight layout mechanism. This is a relatively simple algorithm, that adjusts the subplot parameters so that decorations like tick labels, axis labels and titles have enough space. See `.Figure.set_tight_layout` for further details."
+msgstr ""
+
+#: matplotlib.figure.Figure:98 of
+msgid "If not given, fall back to using the parameters *tight_layout* and *constrained_layout*, including their config defaults :rc:`figure.autolayout` and :rc:`figure.constrained_layout.use`."
+msgstr ""
+
+#: matplotlib.figure.Figure matplotlib.figure.Figure.figimage
+#: matplotlib.figure.Figure.savefig matplotlib.figure.FigureBase.add_axes
+#: matplotlib.figure.FigureBase.add_gridspec
+#: matplotlib.figure.FigureBase.add_subfigure
+#: matplotlib.figure.FigureBase.add_subplot matplotlib.figure.FigureBase.legend
+#: matplotlib.figure.FigureBase.suptitle matplotlib.figure.FigureBase.supxlabel
+#: matplotlib.figure.FigureBase.supylabel matplotlib.figure.FigureBase.text
+#: matplotlib.figure.SubFigure of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.figure.Figure:154 of
+msgid "**\\*\\*kwargs** : `.Figure` properties, optional"
+msgstr ""
+
+#: matplotlib.figure.Figure:153 of
+msgid "Figure properties, optional"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:10 matplotlib.artist.FigureBase.set:10
+#: matplotlib.artist.SubFigure.set:10 matplotlib.figure.Figure:112
+#: matplotlib.figure.FigureBase.add_axes:59
+#: matplotlib.figure.FigureBase.add_subplot:79
+#: matplotlib.figure.FigureBase.colorbar:80
+#: matplotlib.figure.FigureBase.colorbar:128
+#: matplotlib.figure.FigureBase.gca:18 matplotlib.figure.FigureBase.text:36
+#: matplotlib.figure.SubFigure:71 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:10 matplotlib.artist.FigureBase.set:10
+#: matplotlib.artist.SubFigure.set:10 matplotlib.figure.Figure:112
+#: matplotlib.figure.FigureBase.add_axes:59
+#: matplotlib.figure.FigureBase.add_subplot:79
+#: matplotlib.figure.FigureBase.colorbar:80
+#: matplotlib.figure.FigureBase.colorbar:128
+#: matplotlib.figure.FigureBase.gca:18 matplotlib.figure.FigureBase.text:36
+#: matplotlib.figure.SubFigure:71 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:12 matplotlib.artist.FigureBase.set:12
+#: matplotlib.artist.SubFigure.set:12 matplotlib.figure.Figure:114
+#: matplotlib.figure.FigureBase.add_axes:62
+#: matplotlib.figure.FigureBase.add_subplot:82
+#: matplotlib.figure.FigureBase.gca:21 matplotlib.figure.FigureBase.text:38
+#: matplotlib.figure.SubFigure:73 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:12 matplotlib.artist.FigureBase.set:12
+#: matplotlib.artist.SubFigure.set:12 matplotlib.figure.Figure:114
+#: matplotlib.figure.FigureBase.add_axes:62
+#: matplotlib.figure.FigureBase.add_subplot:82
+#: matplotlib.figure.FigureBase.gca:21 matplotlib.figure.FigureBase.text:38
+#: matplotlib.figure.SubFigure:73 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:13 matplotlib.artist.FigureBase.set:13
+#: matplotlib.artist.SubFigure.set:13 matplotlib.figure.Figure:115
+#: matplotlib.figure.FigureBase.add_axes:63
+#: matplotlib.figure.FigureBase.add_subplot:83
+#: matplotlib.figure.FigureBase.gca:22 matplotlib.figure.FigureBase.text:39
+#: matplotlib.figure.SubFigure:74 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:13 matplotlib.artist.FigureBase.set:13
+#: matplotlib.artist.SubFigure.set:13 matplotlib.figure.Figure:115
+#: matplotlib.figure.FigureBase.add_axes:63
+#: matplotlib.figure.FigureBase.add_subplot:83
+#: matplotlib.figure.FigureBase.gca:22 matplotlib.figure.FigureBase.text:39
+#: matplotlib.figure.SubFigure:74 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:14 matplotlib.artist.FigureBase.set:14
+#: matplotlib.artist.SubFigure.set:14 matplotlib.figure.Figure:116
+#: matplotlib.figure.FigureBase.add_axes:65
+#: matplotlib.figure.FigureBase.add_subplot:85
+#: matplotlib.figure.FigureBase.gca:24 matplotlib.figure.FigureBase.text:40
+#: matplotlib.figure.SubFigure:75 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:14 matplotlib.artist.Figure.set:17
+#: matplotlib.artist.Figure.set:27 matplotlib.artist.Figure.set:29
+#: matplotlib.artist.Figure.set:34 matplotlib.artist.Figure.set:41
+#: matplotlib.artist.FigureBase.set:14 matplotlib.artist.FigureBase.set:16
+#: matplotlib.artist.FigureBase.set:21 matplotlib.artist.FigureBase.set:23
+#: matplotlib.artist.FigureBase.set:28 matplotlib.artist.FigureBase.set:33
+#: matplotlib.artist.SubFigure.set:14 matplotlib.artist.SubFigure.set:16
+#: matplotlib.artist.SubFigure.set:21 matplotlib.artist.SubFigure.set:23
+#: matplotlib.artist.SubFigure.set:28 matplotlib.artist.SubFigure.set:33
+#: matplotlib.figure.Figure:116 matplotlib.figure.Figure:119
+#: matplotlib.figure.Figure:129 matplotlib.figure.Figure:131
+#: matplotlib.figure.Figure:136 matplotlib.figure.Figure:143
+#: matplotlib.figure.FigureBase.add_axes:65
+#: matplotlib.figure.FigureBase.add_axes:67
+#: matplotlib.figure.FigureBase.add_axes:68
+#: matplotlib.figure.FigureBase.add_axes:69
+#: matplotlib.figure.FigureBase.add_axes:74
+#: matplotlib.figure.FigureBase.add_axes:78
+#: matplotlib.figure.FigureBase.add_axes:80
+#: matplotlib.figure.FigureBase.add_axes:82
+#: matplotlib.figure.FigureBase.add_axes:89
+#: matplotlib.figure.FigureBase.add_axes:95
+#: matplotlib.figure.FigureBase.add_subplot:85
+#: matplotlib.figure.FigureBase.add_subplot:87
+#: matplotlib.figure.FigureBase.add_subplot:88
+#: matplotlib.figure.FigureBase.add_subplot:89
+#: matplotlib.figure.FigureBase.add_subplot:94
+#: matplotlib.figure.FigureBase.add_subplot:98
+#: matplotlib.figure.FigureBase.add_subplot:100
+#: matplotlib.figure.FigureBase.add_subplot:102
+#: matplotlib.figure.FigureBase.add_subplot:109
+#: matplotlib.figure.FigureBase.add_subplot:115
+#: matplotlib.figure.FigureBase.gca:24 matplotlib.figure.FigureBase.gca:26
+#: matplotlib.figure.FigureBase.gca:27 matplotlib.figure.FigureBase.gca:28
+#: matplotlib.figure.FigureBase.gca:33 matplotlib.figure.FigureBase.gca:37
+#: matplotlib.figure.FigureBase.gca:39 matplotlib.figure.FigureBase.gca:41
+#: matplotlib.figure.FigureBase.gca:48 matplotlib.figure.FigureBase.gca:54
+#: matplotlib.figure.FigureBase.text:40 matplotlib.figure.FigureBase.text:57
+#: matplotlib.figure.FigureBase.text:62 matplotlib.figure.FigureBase.text:66
+#: matplotlib.figure.FigureBase.text:73 matplotlib.figure.FigureBase.text:77
+#: matplotlib.figure.FigureBase.text:78 matplotlib.figure.SubFigure:75
+#: matplotlib.figure.SubFigure:77 matplotlib.figure.SubFigure:82
+#: matplotlib.figure.SubFigure:84 matplotlib.figure.SubFigure:89
+#: matplotlib.figure.SubFigure:94 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:15 matplotlib.figure.Figure:117 of
+msgid ":meth:`canvas <matplotlib.figure.Figure.set_canvas>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:15 matplotlib.figure.Figure:117 of
+msgid "FigureCanvas"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:16 matplotlib.artist.FigureBase.set:15
+#: matplotlib.artist.SubFigure.set:15 matplotlib.figure.Figure:118
+#: matplotlib.figure.FigureBase.add_axes:73
+#: matplotlib.figure.FigureBase.add_subplot:93
+#: matplotlib.figure.FigureBase.gca:32 matplotlib.figure.FigureBase.text:43
+#: matplotlib.figure.SubFigure:76 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:16 matplotlib.artist.FigureBase.set:15
+#: matplotlib.artist.SubFigure.set:15 matplotlib.figure.Figure:118
+#: matplotlib.figure.FigureBase.add_axes:73
+#: matplotlib.figure.FigureBase.add_subplot:93
+#: matplotlib.figure.FigureBase.gca:32 matplotlib.figure.SubFigure:76 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:17 matplotlib.artist.FigureBase.set:16
+#: matplotlib.artist.SubFigure.set:16 matplotlib.figure.Figure:119
+#: matplotlib.figure.FigureBase.add_axes:74
+#: matplotlib.figure.FigureBase.add_subplot:94
+#: matplotlib.figure.FigureBase.gca:33 matplotlib.figure.FigureBase.text:44
+#: matplotlib.figure.SubFigure:77 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:18 matplotlib.artist.FigureBase.set:17
+#: matplotlib.artist.SubFigure.set:17 matplotlib.figure.Figure:120
+#: matplotlib.figure.FigureBase.add_axes:75
+#: matplotlib.figure.FigureBase.add_subplot:95
+#: matplotlib.figure.FigureBase.gca:34 matplotlib.figure.FigureBase.text:45
+#: matplotlib.figure.SubFigure:78 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:18 matplotlib.artist.FigureBase.set:17
+#: matplotlib.artist.SubFigure.set:17 matplotlib.figure.Figure:120
+#: matplotlib.figure.FigureBase.add_axes:75
+#: matplotlib.figure.FigureBase.add_subplot:95
+#: matplotlib.figure.FigureBase.gca:34 matplotlib.figure.SubFigure:78 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:19 matplotlib.figure.Figure:121 of
+msgid ":meth:`constrained_layout <matplotlib.figure.Figure.set_constrained_layout>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:19 matplotlib.figure.Figure:121 of
+msgid "bool or dict or None"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:20 matplotlib.figure.Figure:122 of
+msgid ":meth:`constrained_layout_pads <matplotlib.figure.Figure.set_constrained_layout_pads>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:20 matplotlib.figure.Figure:122 of
+msgid "float, default: :rc:`figure.constrained_layout.w_pad`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:21 matplotlib.figure.Figure:123 of
+msgid ":meth:`dpi <matplotlib.figure.Figure.set_dpi>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:22 matplotlib.artist.FigureBase.set:18
+#: matplotlib.artist.SubFigure.set:18 matplotlib.figure.Figure:124
+#: matplotlib.figure.SubFigure:79 of
+msgid ":meth:`edgecolor <matplotlib.figure.FigureBase.set_edgecolor>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:22 matplotlib.artist.Figure.set:23
+#: matplotlib.artist.FigureBase.set:18 matplotlib.artist.FigureBase.set:19
+#: matplotlib.artist.SubFigure.set:18 matplotlib.artist.SubFigure.set:19
+#: matplotlib.figure.Figure:124 matplotlib.figure.Figure:125
+#: matplotlib.figure.FigureBase.add_axes:76
+#: matplotlib.figure.FigureBase.add_subplot:96
+#: matplotlib.figure.FigureBase.gca:35 matplotlib.figure.FigureBase.text:41
+#: matplotlib.figure.FigureBase.text:46 matplotlib.figure.SubFigure:79
+#: matplotlib.figure.SubFigure:80 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:23 matplotlib.artist.FigureBase.set:19
+#: matplotlib.artist.SubFigure.set:19 matplotlib.figure.Figure:125
+#: matplotlib.figure.SubFigure:80 of
+msgid ":meth:`facecolor <matplotlib.figure.FigureBase.set_facecolor>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:24 matplotlib.figure.Figure:126 of
+msgid ":meth:`figheight <matplotlib.figure.Figure.set_figheight>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:25 matplotlib.artist.FigureBase.set:20
+#: matplotlib.artist.SubFigure.set:20 matplotlib.figure.Figure:127
+#: matplotlib.figure.FigureBase.add_axes:77
+#: matplotlib.figure.FigureBase.add_subplot:97
+#: matplotlib.figure.FigureBase.gca:36 matplotlib.figure.FigureBase.text:47
+#: matplotlib.figure.SubFigure:81 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:25 matplotlib.artist.FigureBase.set:20
+#: matplotlib.artist.SubFigure.set:20 matplotlib.figure.Figure:127
+#: matplotlib.figure.FigureBase.add_axes:77
+#: matplotlib.figure.FigureBase.add_subplot:97
+#: matplotlib.figure.FigureBase.gca:36 matplotlib.figure.FigureBase.text:47
+#: matplotlib.figure.SubFigure:81 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:26 matplotlib.figure.Figure:128 of
+msgid ":meth:`figwidth <matplotlib.figure.Figure.set_figwidth>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:27 matplotlib.artist.FigureBase.set:21
+#: matplotlib.artist.SubFigure.set:21 matplotlib.figure.Figure:129
+#: matplotlib.figure.SubFigure:82 of
+msgid ":meth:`frameon <matplotlib.figure.FigureBase.set_frameon>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:28 matplotlib.artist.FigureBase.set:22
+#: matplotlib.artist.SubFigure.set:22 matplotlib.figure.Figure:130
+#: matplotlib.figure.FigureBase.add_axes:79
+#: matplotlib.figure.FigureBase.add_subplot:99
+#: matplotlib.figure.FigureBase.gca:38 matplotlib.figure.FigureBase.text:55
+#: matplotlib.figure.SubFigure:83 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:28 matplotlib.artist.Figure.set:40
+#: matplotlib.artist.FigureBase.set:22 matplotlib.artist.FigureBase.set:32
+#: matplotlib.artist.SubFigure.set:22 matplotlib.artist.SubFigure.set:32
+#: matplotlib.figure.Figure:130 matplotlib.figure.Figure:142
+#: matplotlib.figure.FigureBase.add_axes:79
+#: matplotlib.figure.FigureBase.add_axes:92
+#: matplotlib.figure.FigureBase.add_axes:94
+#: matplotlib.figure.FigureBase.add_axes:97
+#: matplotlib.figure.FigureBase.add_axes:104
+#: matplotlib.figure.FigureBase.add_subplot:99
+#: matplotlib.figure.FigureBase.add_subplot:112
+#: matplotlib.figure.FigureBase.add_subplot:114
+#: matplotlib.figure.FigureBase.add_subplot:117
+#: matplotlib.figure.FigureBase.add_subplot:124
+#: matplotlib.figure.FigureBase.gca:38 matplotlib.figure.FigureBase.gca:51
+#: matplotlib.figure.FigureBase.gca:53 matplotlib.figure.FigureBase.gca:56
+#: matplotlib.figure.FigureBase.gca:63 matplotlib.figure.FigureBase.text:55
+#: matplotlib.figure.FigureBase.text:60 matplotlib.figure.FigureBase.text:74
+#: matplotlib.figure.SubFigure:83 matplotlib.figure.SubFigure:93 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:29 matplotlib.artist.FigureBase.set:23
+#: matplotlib.artist.SubFigure.set:23 matplotlib.figure.Figure:131
+#: matplotlib.figure.FigureBase.add_axes:80
+#: matplotlib.figure.FigureBase.add_subplot:100
+#: matplotlib.figure.FigureBase.gca:39 matplotlib.figure.FigureBase.text:57
+#: matplotlib.figure.SubFigure:84 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:30 matplotlib.artist.FigureBase.set:24
+#: matplotlib.artist.SubFigure.set:24 matplotlib.figure.Figure:132
+#: matplotlib.figure.FigureBase.add_axes:81
+#: matplotlib.figure.FigureBase.add_subplot:101
+#: matplotlib.figure.FigureBase.gca:40 matplotlib.figure.FigureBase.text:58
+#: matplotlib.figure.SubFigure:85 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:30 matplotlib.artist.FigureBase.set:24
+#: matplotlib.artist.SubFigure.set:24 matplotlib.figure.Figure:132
+#: matplotlib.figure.FigureBase.add_axes:81
+#: matplotlib.figure.FigureBase.add_subplot:101
+#: matplotlib.figure.FigureBase.gca:40 matplotlib.figure.FigureBase.text:58
+#: matplotlib.figure.FigureBase.text:71 matplotlib.figure.SubFigure:85 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:31 matplotlib.artist.FigureBase.set:25
+#: matplotlib.artist.SubFigure.set:25 matplotlib.figure.Figure:133
+#: matplotlib.figure.SubFigure:86 of
+msgid ":meth:`linewidth <matplotlib.figure.FigureBase.set_linewidth>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:31 matplotlib.artist.FigureBase.set:25
+#: matplotlib.artist.SubFigure.set:25 matplotlib.figure.Figure:133
+#: matplotlib.figure.SubFigure:86 of
+msgid "number"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:32 matplotlib.artist.FigureBase.set:26
+#: matplotlib.artist.SubFigure.set:26 matplotlib.figure.Figure:134
+#: matplotlib.figure.FigureBase.add_axes:84
+#: matplotlib.figure.FigureBase.add_subplot:104
+#: matplotlib.figure.FigureBase.gca:43 matplotlib.figure.FigureBase.text:63
+#: matplotlib.figure.SubFigure:87 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:32 matplotlib.artist.FigureBase.set:26
+#: matplotlib.artist.SubFigure.set:26 matplotlib.figure.Figure:134
+#: matplotlib.figure.FigureBase.add_axes:84
+#: matplotlib.figure.FigureBase.add_subplot:104
+#: matplotlib.figure.FigureBase.gca:43 matplotlib.figure.FigureBase.text:63
+#: matplotlib.figure.SubFigure:87 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:33 matplotlib.artist.FigureBase.set:27
+#: matplotlib.artist.SubFigure.set:27 matplotlib.figure.Figure:135
+#: matplotlib.figure.FigureBase.add_axes:85
+#: matplotlib.figure.FigureBase.add_subplot:105
+#: matplotlib.figure.FigureBase.gca:44 matplotlib.figure.FigureBase.text:64
+#: matplotlib.figure.SubFigure:88 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:33 matplotlib.artist.FigureBase.set:27
+#: matplotlib.artist.SubFigure.set:27 matplotlib.figure.Figure:135
+#: matplotlib.figure.FigureBase.add_axes:85
+#: matplotlib.figure.FigureBase.add_subplot:105
+#: matplotlib.figure.FigureBase.gca:44 matplotlib.figure.FigureBase.text:64
+#: matplotlib.figure.SubFigure:88 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:34 matplotlib.artist.FigureBase.set:28
+#: matplotlib.artist.SubFigure.set:28 matplotlib.figure.Figure:136
+#: matplotlib.figure.FigureBase.add_axes:89
+#: matplotlib.figure.FigureBase.add_subplot:109
+#: matplotlib.figure.FigureBase.gca:48 matplotlib.figure.FigureBase.text:66
+#: matplotlib.figure.SubFigure:89 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:35 matplotlib.figure.Figure:137 of
+msgid ":meth:`size_inches <matplotlib.figure.Figure.set_size_inches>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:35 matplotlib.figure.Figure:137 of
+msgid "(float, float) or float"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:36 matplotlib.artist.FigureBase.set:29
+#: matplotlib.artist.SubFigure.set:29 matplotlib.figure.Figure:138
+#: matplotlib.figure.FigureBase.add_axes:90
+#: matplotlib.figure.FigureBase.add_subplot:110
+#: matplotlib.figure.FigureBase.gca:49 matplotlib.figure.FigureBase.text:69
+#: matplotlib.figure.SubFigure:90 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:36 matplotlib.artist.FigureBase.set:29
+#: matplotlib.artist.SubFigure.set:29 matplotlib.figure.Figure:138
+#: matplotlib.figure.FigureBase.add_axes:90
+#: matplotlib.figure.FigureBase.add_subplot:110
+#: matplotlib.figure.FigureBase.gca:49 matplotlib.figure.FigureBase.text:69
+#: matplotlib.figure.SubFigure:90 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:37 matplotlib.artist.FigureBase.set:30
+#: matplotlib.artist.SubFigure.set:30 matplotlib.figure.Figure:139
+#: matplotlib.figure.FigureBase.add_axes:91
+#: matplotlib.figure.FigureBase.add_subplot:111
+#: matplotlib.figure.FigureBase.gca:50 matplotlib.figure.FigureBase.text:70
+#: matplotlib.figure.SubFigure:91 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:37 matplotlib.artist.FigureBase.set:30
+#: matplotlib.artist.SubFigure.set:30 matplotlib.figure.Figure:139
+#: matplotlib.figure.FigureBase.add_axes:91
+#: matplotlib.figure.FigureBase.add_subplot:111
+#: matplotlib.figure.FigureBase.gca:50 matplotlib.figure.FigureBase.text:70
+#: matplotlib.figure.FigureBase.text:75 matplotlib.figure.SubFigure:91 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:38 matplotlib.figure.Figure:140 of
+msgid ":meth:`tight_layout <matplotlib.figure.Figure.set_tight_layout>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:38 matplotlib.figure.Figure:140 of
+msgid "bool or dict with keys \"pad\", \"w_pad\", \"h_pad\", \"rect\" or None"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:39 matplotlib.artist.FigureBase.set:31
+#: matplotlib.artist.SubFigure.set:31 matplotlib.figure.Figure:141
+#: matplotlib.figure.FigureBase.add_axes:93
+#: matplotlib.figure.FigureBase.add_subplot:113
+#: matplotlib.figure.FigureBase.gca:52 matplotlib.figure.FigureBase.text:72
+#: matplotlib.figure.SubFigure:92 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:39 matplotlib.artist.FigureBase.set:31
+#: matplotlib.artist.SubFigure.set:31 matplotlib.figure.Figure:141
+#: matplotlib.figure.FigureBase.add_axes:93
+#: matplotlib.figure.FigureBase.add_subplot:113
+#: matplotlib.figure.FigureBase.gca:52 matplotlib.figure.FigureBase.text:72
+#: matplotlib.figure.SubFigure:92 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:40 matplotlib.artist.FigureBase.set:32
+#: matplotlib.artist.SubFigure.set:32 matplotlib.figure.Figure:142
+#: matplotlib.figure.FigureBase.add_axes:94
+#: matplotlib.figure.FigureBase.add_subplot:114
+#: matplotlib.figure.FigureBase.gca:53 matplotlib.figure.FigureBase.text:74
+#: matplotlib.figure.SubFigure:93 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:41 matplotlib.artist.FigureBase.set:33
+#: matplotlib.artist.SubFigure.set:33 matplotlib.figure.Figure:143
+#: matplotlib.figure.FigureBase.add_axes:95
+#: matplotlib.figure.FigureBase.add_subplot:115
+#: matplotlib.figure.FigureBase.gca:54 matplotlib.figure.FigureBase.text:77
+#: matplotlib.figure.SubFigure:94 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.artist.Figure.set:42 matplotlib.artist.FigureBase.set:34
+#: matplotlib.artist.SubFigure.set:34 matplotlib.figure.Figure:144
+#: matplotlib.figure.FigureBase.add_axes:110
+#: matplotlib.figure.FigureBase.add_subplot:130
+#: matplotlib.figure.FigureBase.gca:69 matplotlib.figure.FigureBase.text:81
+#: matplotlib.figure.SubFigure:95 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:2 of
+msgid "Add an `.Artist` to the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:4 of
+msgid "Usually artists are added to Axes objects using `.Axes.add_artist`; this method can be used in the rare cases where one needs to add artists directly to the figure instead."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:13 of
+msgid "**artist** : `~matplotlib.artist.Artist`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:12 of
+msgid "Artist"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:11 of
+msgid "The artist to add to the figure. If the added artist has no transform previously set, its transform will be set to ``figure.transSubfigure``."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:16 of
+msgid "**clip**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:16 of
+msgid "Whether the added artist should be clipped by the figure patch."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback matplotlib.artist.Artist.findobj
+#: matplotlib.artist.Artist.get_sketch_params
+#: matplotlib.figure.Figure.execute_constrained_layout
+#: matplotlib.figure.Figure.figimage matplotlib.figure.Figure.get_size_inches
+#: matplotlib.figure.Figure.ginput matplotlib.figure.FigureBase.add_artist
+#: matplotlib.figure.FigureBase.add_axes
+#: matplotlib.figure.FigureBase.add_gridspec
+#: matplotlib.figure.FigureBase.add_subfigure
+#: matplotlib.figure.FigureBase.add_subplot
+#: matplotlib.figure.FigureBase.colorbar matplotlib.figure.FigureBase.contains
+#: matplotlib.figure.FigureBase.get_tightbbox
+#: matplotlib.figure.FigureBase.legend
+#: matplotlib.figure.FigureBase.subplot_mosaic
+#: matplotlib.figure.FigureBase.subplots matplotlib.figure.FigureBase.suptitle
+#: matplotlib.figure.FigureBase.supxlabel
+#: matplotlib.figure.FigureBase.supylabel matplotlib.figure.FigureBase.text
+#: matplotlib.figure.figaspect of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:33 of
+msgid "`~matplotlib.artist.Artist`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_artist:21 of
+msgid "The added artist."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:2 of
+msgid "Add an Axes to the figure."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:4
+#: matplotlib.figure.FigureBase.add_axes:4
+#: matplotlib.figure.FigureBase.add_subplot:4
+#: matplotlib.figure.FigureBase.legend:4 of
+msgid "Call signatures::"
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:27
+#: matplotlib.figure.FigureBase.add_axes:13 of
+msgid "**rect**"
+msgstr ""
+
+#: of
+msgid "sequence of float"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:12 of
+msgid "The dimensions [left, bottom, width, height] of the new Axes. All quantities are in fractions of figure width and height."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:18
+#: matplotlib.figure.FigureBase.add_subplot:37 of
+msgid "**projection**"
+msgstr ""
+
+#: of
+msgid "{None, 'aitoff', 'hammer', 'lambert', 'mollweide', 'polar', 'rectilinear', str}, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:16 of
+msgid "The projection type of the `~.axes.Axes`. *str* is the name of a custom projection, see `~matplotlib.projections`. The default None results in a 'rectilinear' projection."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:21
+#: matplotlib.figure.FigureBase.add_subplot:40 of
+msgid "**polar**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:21
+#: matplotlib.figure.FigureBase.add_subplot:40 of
+msgid "If True, equivalent to projection='polar'."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:26
+#: matplotlib.figure.FigureBase.add_subplot:45 of
+msgid "**axes_class** : subclass type of `~.axes.Axes`, optional"
+msgstr ""
+
+#: of
+msgid "subclass type of"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:24
+#: matplotlib.figure.FigureBase.add_subplot:43 of
+msgid "The `.axes.Axes` subclass that is instantiated.  This parameter is incompatible with *projection* and *polar*.  See :ref:`axisartist_users-guide-index` for examples."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:31
+#: matplotlib.figure.FigureBase.add_subplot:50 of
+msgid "**sharex, sharey** : `~.axes.Axes`, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:30
+#: matplotlib.figure.FigureBase.add_subplot:49
+#: matplotlib.figure.FigureBase.colorbar:19 of
+msgid "Axes, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:29
+#: matplotlib.figure.FigureBase.add_subplot:48 of
+msgid "Share the x or y `~matplotlib.axis` with sharex and/or sharey. The axis will have the same limits, ticks, and scale as the axis of the shared axes."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:34
+#: matplotlib.figure.FigureBase.add_subplot:53 of
+msgid "**label**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:34
+#: matplotlib.figure.FigureBase.add_subplot:53 of
+msgid "A label for the returned Axes."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:43 of
+msgid "`~.axes.Axes`, or a subclass of `~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:39 of
+msgid "The returned axes class depends on the projection used. It is `~.axes.Axes` if rectilinear projection is used and `.projections.polar.PolarAxes` if polar projection is used."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:54
+#: matplotlib.figure.FigureBase.add_axes:114
+#: matplotlib.figure.FigureBase.add_gridspec:27
+#: matplotlib.figure.FigureBase.add_subfigure:25
+#: matplotlib.figure.FigureBase.add_subplot:134
+#: matplotlib.figure.FigureBase.suptitle:55
+#: matplotlib.figure.FigureBase.supxlabel:55
+#: matplotlib.figure.FigureBase.supylabel:55 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:48 of
+msgid "This method also takes the keyword arguments for the returned Axes class. The keyword arguments for the rectilinear Axes class `~.axes.Axes` can be found in the following table but there might also be other keyword arguments if another projection is used, see the actual Axes class."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:61
+#: matplotlib.figure.FigureBase.add_subplot:81
+#: matplotlib.figure.FigureBase.gca:20 of
+msgid ":meth:`adjustable <matplotlib.axes.Axes.set_adjustable>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:61
+#: matplotlib.figure.FigureBase.add_subplot:81
+#: matplotlib.figure.FigureBase.gca:20 of
+msgid "{'box', 'datalim'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:64
+#: matplotlib.figure.FigureBase.add_subplot:84
+#: matplotlib.figure.FigureBase.gca:23 of
+msgid ":meth:`anchor <matplotlib.axes.Axes.set_anchor>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:64
+#: matplotlib.figure.FigureBase.add_subplot:84
+#: matplotlib.figure.FigureBase.gca:23 of
+msgid "(float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:66
+#: matplotlib.figure.FigureBase.add_subplot:86
+#: matplotlib.figure.FigureBase.gca:25 of
+msgid ":meth:`aspect <matplotlib.axes.Axes.set_aspect>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:66
+#: matplotlib.figure.FigureBase.add_subplot:86
+#: matplotlib.figure.FigureBase.gca:25 of
+msgid "{'auto', 'equal'} or float"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:67
+#: matplotlib.figure.FigureBase.add_subplot:87
+#: matplotlib.figure.FigureBase.gca:26 of
+msgid ":meth:`autoscale_on <matplotlib.axes.Axes.set_autoscale_on>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:68
+#: matplotlib.figure.FigureBase.add_subplot:88
+#: matplotlib.figure.FigureBase.gca:27 of
+msgid ":meth:`autoscalex_on <matplotlib.axes.Axes.set_autoscalex_on>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:69
+#: matplotlib.figure.FigureBase.add_subplot:89
+#: matplotlib.figure.FigureBase.gca:28 of
+msgid ":meth:`autoscaley_on <matplotlib.axes.Axes.set_autoscaley_on>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:70
+#: matplotlib.figure.FigureBase.add_subplot:90
+#: matplotlib.figure.FigureBase.gca:29 of
+msgid ":meth:`axes_locator <matplotlib.axes.Axes.set_axes_locator>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:70
+#: matplotlib.figure.FigureBase.add_subplot:90
+#: matplotlib.figure.FigureBase.gca:29 of
+msgid "Callable[[Axes, Renderer], Bbox]"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:71
+#: matplotlib.figure.FigureBase.add_subplot:91
+#: matplotlib.figure.FigureBase.gca:30 of
+msgid ":meth:`axisbelow <matplotlib.axes.Axes.set_axisbelow>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:71
+#: matplotlib.figure.FigureBase.add_subplot:91
+#: matplotlib.figure.FigureBase.gca:30 of
+msgid "bool or 'line'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:72
+#: matplotlib.figure.FigureBase.add_subplot:92
+#: matplotlib.figure.FigureBase.gca:31 of
+msgid ":meth:`box_aspect <matplotlib.axes.Axes.set_box_aspect>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:72
+#: matplotlib.figure.FigureBase.add_axes:88
+#: matplotlib.figure.FigureBase.add_subplot:92
+#: matplotlib.figure.FigureBase.add_subplot:108
+#: matplotlib.figure.FigureBase.gca:31 matplotlib.figure.FigureBase.gca:47 of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:76
+#: matplotlib.figure.FigureBase.add_subplot:96
+#: matplotlib.figure.FigureBase.gca:35 of
+msgid ":meth:`facecolor <matplotlib.axes.Axes.set_facecolor>` or fc"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:78
+#: matplotlib.figure.FigureBase.add_subplot:98
+#: matplotlib.figure.FigureBase.gca:37 of
+msgid ":meth:`frame_on <matplotlib.axes.Axes.set_frame_on>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:82
+#: matplotlib.figure.FigureBase.add_subplot:102
+#: matplotlib.figure.FigureBase.gca:41 of
+msgid ":meth:`navigate <matplotlib.axes.Axes.set_navigate>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:83
+#: matplotlib.figure.FigureBase.add_subplot:103
+#: matplotlib.figure.FigureBase.gca:42 of
+msgid ":meth:`navigate_mode <matplotlib.axes.Axes.set_navigate_mode>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:83
+#: matplotlib.figure.FigureBase.add_axes:87
+#: matplotlib.figure.FigureBase.add_axes:96
+#: matplotlib.figure.FigureBase.add_axes:101
+#: matplotlib.figure.FigureBase.add_axes:102
+#: matplotlib.figure.FigureBase.add_axes:103
+#: matplotlib.figure.FigureBase.add_axes:108
+#: matplotlib.figure.FigureBase.add_axes:109
+#: matplotlib.figure.FigureBase.add_subplot:103
+#: matplotlib.figure.FigureBase.add_subplot:107
+#: matplotlib.figure.FigureBase.add_subplot:116
+#: matplotlib.figure.FigureBase.add_subplot:121
+#: matplotlib.figure.FigureBase.add_subplot:122
+#: matplotlib.figure.FigureBase.add_subplot:123
+#: matplotlib.figure.FigureBase.add_subplot:128
+#: matplotlib.figure.FigureBase.add_subplot:129
+#: matplotlib.figure.FigureBase.gca:42 matplotlib.figure.FigureBase.gca:46
+#: matplotlib.figure.FigureBase.gca:55 matplotlib.figure.FigureBase.gca:60
+#: matplotlib.figure.FigureBase.gca:61 matplotlib.figure.FigureBase.gca:62
+#: matplotlib.figure.FigureBase.gca:67 matplotlib.figure.FigureBase.gca:68
+#: matplotlib.figure.FigureBase.text:43 matplotlib.figure.FigureBase.text:44
+#: matplotlib.figure.FigureBase.text:45 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:86
+#: matplotlib.figure.FigureBase.add_subplot:106
+#: matplotlib.figure.FigureBase.gca:45 of
+msgid ":meth:`position <matplotlib.axes.Axes.set_position>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:86
+#: matplotlib.figure.FigureBase.add_subplot:106
+#: matplotlib.figure.FigureBase.gca:45 of
+msgid "[left, bottom, width, height] or `~matplotlib.transforms.Bbox`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:87
+#: matplotlib.figure.FigureBase.add_subplot:107
+#: matplotlib.figure.FigureBase.gca:46 of
+msgid ":meth:`prop_cycle <matplotlib.axes.Axes.set_prop_cycle>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:88
+#: matplotlib.figure.FigureBase.add_subplot:108
+#: matplotlib.figure.FigureBase.gca:47 of
+msgid ":meth:`rasterization_zorder <matplotlib.axes.Axes.set_rasterization_zorder>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:92
+#: matplotlib.figure.FigureBase.add_subplot:112
+#: matplotlib.figure.FigureBase.gca:51 of
+msgid ":meth:`title <matplotlib.axes.Axes.set_title>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:96
+#: matplotlib.figure.FigureBase.add_subplot:116
+#: matplotlib.figure.FigureBase.gca:55 of
+msgid ":meth:`xbound <matplotlib.axes.Axes.set_xbound>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:97
+#: matplotlib.figure.FigureBase.add_subplot:117
+#: matplotlib.figure.FigureBase.gca:56 of
+msgid ":meth:`xlabel <matplotlib.axes.Axes.set_xlabel>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:98
+#: matplotlib.figure.FigureBase.add_subplot:118
+#: matplotlib.figure.FigureBase.gca:57 of
+msgid ":meth:`xlim <matplotlib.axes.Axes.set_xlim>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:98
+#: matplotlib.figure.FigureBase.add_axes:105
+#: matplotlib.figure.FigureBase.add_subplot:118
+#: matplotlib.figure.FigureBase.add_subplot:125
+#: matplotlib.figure.FigureBase.gca:57 matplotlib.figure.FigureBase.gca:64 of
+msgid "(bottom: float, top: float)"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:99
+#: matplotlib.figure.FigureBase.add_subplot:119
+#: matplotlib.figure.FigureBase.gca:58 of
+msgid ":meth:`xmargin <matplotlib.axes.Axes.set_xmargin>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:99
+#: matplotlib.figure.FigureBase.add_axes:106
+#: matplotlib.figure.FigureBase.add_subplot:119
+#: matplotlib.figure.FigureBase.add_subplot:126
+#: matplotlib.figure.FigureBase.gca:58 matplotlib.figure.FigureBase.gca:65 of
+msgid "float greater than -0.5"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:100
+#: matplotlib.figure.FigureBase.add_subplot:120
+#: matplotlib.figure.FigureBase.gca:59 of
+msgid ":meth:`xscale <matplotlib.axes.Axes.set_xscale>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:100
+#: matplotlib.figure.FigureBase.add_axes:107
+#: matplotlib.figure.FigureBase.add_subplot:120
+#: matplotlib.figure.FigureBase.add_subplot:127
+#: matplotlib.figure.FigureBase.gca:59 matplotlib.figure.FigureBase.gca:66 of
+msgid "{\"linear\", \"log\", \"symlog\", \"logit\", ...} or `.ScaleBase`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:101
+#: matplotlib.figure.FigureBase.add_subplot:121
+#: matplotlib.figure.FigureBase.gca:60 of
+msgid ":meth:`xticklabels <matplotlib.axes.Axes.set_xticklabels>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:102
+#: matplotlib.figure.FigureBase.add_subplot:122
+#: matplotlib.figure.FigureBase.gca:61 of
+msgid ":meth:`xticks <matplotlib.axes.Axes.set_xticks>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:103
+#: matplotlib.figure.FigureBase.add_subplot:123
+#: matplotlib.figure.FigureBase.gca:62 of
+msgid ":meth:`ybound <matplotlib.axes.Axes.set_ybound>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:104
+#: matplotlib.figure.FigureBase.add_subplot:124
+#: matplotlib.figure.FigureBase.gca:63 of
+msgid ":meth:`ylabel <matplotlib.axes.Axes.set_ylabel>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:105
+#: matplotlib.figure.FigureBase.add_subplot:125
+#: matplotlib.figure.FigureBase.gca:64 of
+msgid ":meth:`ylim <matplotlib.axes.Axes.set_ylim>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:106
+#: matplotlib.figure.FigureBase.add_subplot:126
+#: matplotlib.figure.FigureBase.gca:65 of
+msgid ":meth:`ymargin <matplotlib.axes.Axes.set_ymargin>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:107
+#: matplotlib.figure.FigureBase.add_subplot:127
+#: matplotlib.figure.FigureBase.gca:66 of
+msgid ":meth:`yscale <matplotlib.axes.Axes.set_yscale>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:108
+#: matplotlib.figure.FigureBase.add_subplot:128
+#: matplotlib.figure.FigureBase.gca:67 of
+msgid ":meth:`yticklabels <matplotlib.axes.Axes.set_yticklabels>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:109
+#: matplotlib.figure.FigureBase.add_subplot:129
+#: matplotlib.figure.FigureBase.gca:68 of
+msgid ":meth:`yticks <matplotlib.axes.Axes.set_yticks>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:119
+#: matplotlib.figure.FigureBase.subplots:71 of
+msgid ":obj:`.Figure.add_subplot`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:121
+#: matplotlib.figure.FigureBase.add_subplot:141
+#: matplotlib.figure.FigureBase.subplots:73 of
+msgid ":obj:`.pyplot.subplot`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:123
+#: matplotlib.figure.FigureBase.add_subplot:143 of
+msgid ":obj:`.pyplot.axes`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:125
+#: matplotlib.figure.FigureBase.add_subplot:145 of
+msgid ":obj:`.Figure.subplots`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:127
+#: matplotlib.figure.FigureBase.add_subplot:147
+#: matplotlib.figure.FigureBase.subplots:69 of
+msgid ":obj:`.pyplot.subplots`"
+msgstr ""
+
+#: matplotlib.artist.Artist.draw:21 matplotlib.artist.Artist.set_clip_path:24
+#: matplotlib.figure.Figure.draw:21 matplotlib.figure.Figure.figimage:57
+#: matplotlib.figure.Figure.get_size_inches:28
+#: matplotlib.figure.Figure.ginput:51
+#: matplotlib.figure.Figure.set_size_inches:40
+#: matplotlib.figure.FigureBase.add_axes:131
+#: matplotlib.figure.FigureBase.align_xlabels:36
+#: matplotlib.figure.FigureBase.align_ylabels:36
+#: matplotlib.figure.FigureBase.colorbar:44
+#: matplotlib.figure.FigureBase.legend:289 matplotlib.figure.SubFigure.draw:21
+#: matplotlib.figure.figaspect:30 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:132 of
+msgid "In rare circumstances, `.add_axes` may be called with a single argument, an Axes instance already created in the present figure but not in the figure's list of Axes."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:65
+#: matplotlib.figure.Figure.sticky_edges:30
+#: matplotlib.figure.FigureBase.add_axes:138
+#: matplotlib.figure.FigureBase.add_gridspec:38
+#: matplotlib.figure.FigureBase.add_subplot:153
+#: matplotlib.figure.FigureBase.align_xlabels:42
+#: matplotlib.figure.FigureBase.align_ylabels:42
+#: matplotlib.figure.FigureBase.sticky_edges:30
+#: matplotlib.figure.FigureBase.subplots:79
+#: matplotlib.figure.SubFigure.sticky_edges:30 matplotlib.figure.figaspect:39
+#: of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_axes:139 of
+msgid "Some simple examples::"
+msgstr ""
+
+#: matplotlib.figure.Figure.add_axobserver:2 of
+msgid "Whenever the Axes state change, ``func(self)`` will be called."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:2 of
+msgid "Add a callback function that will be called whenever one of the `.Artist`'s properties changes."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:14 of
+msgid "**func**"
+msgstr ""
+
+#: of
+msgid "callable"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:9 of
+msgid "The callback function. It must have the signature::"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:13 of
+msgid "where *artist* is the calling `.Artist`. Return values may exist but are ignored."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:26 of
+msgid "int"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:19 of
+msgid "The observer id associated with the callback. This id can be used for removing the callback with `.remove_callback` later."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:31
+#: matplotlib.artist.Artist.pchanged:19 of
+msgid ":obj:`remove_callback`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:2 of
+msgid "Return a `.GridSpec` that has this figure as a parent.  This allows complex layout of Axes in the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:9 of
+msgid "**nrows**"
+msgstr ""
+
+#: of
+msgid "int, default: 1"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:9 of
+msgid "Number of rows in grid."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:12 of
+msgid "**ncols**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:12 of
+msgid "Number or columns in grid."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:19 of
+msgid "`.GridSpec`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:24 of
+msgid "Keyword arguments are passed to `.GridSpec`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:32 of
+msgid ":obj:`matplotlib.pyplot.subplots`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_gridspec:39 of
+msgid "Adding a subplot that spans two rows::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subfigure:2 of
+msgid "Add a `~.figure.SubFigure` to the figure as part of a subplot arrangement."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subfigure:10 matplotlib.figure.SubFigure:46
+#: of
+msgid "**subplotspec** : `.gridspec.SubplotSpec`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subfigure:9 matplotlib.figure.SubFigure:45
+#: of
+msgid "gridspec.SubplotSpec"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subfigure:9 matplotlib.figure.SubFigure:45
+#: of
+msgid "Defines the region in a parent gridspec where the subfigure will be placed."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subfigure:17 of
+msgid "`.figure.SubFigure`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subfigure:22 of
+msgid "Are passed to the `~.figure.SubFigure` object."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subfigure:30 of
+msgid ":obj:`.Figure.subfigures`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:2 of
+msgid "Add an `~.axes.Axes` to the figure as part of a subplot arrangement."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:32 of
+msgid "**\\*args** : int, (int, int, *index*), or `.SubplotSpec`, default: (1, 1, 1)"
+msgstr ""
+
+#: of
+msgid "int, (int, int,"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:14 of
+msgid "The position of the subplot described by one of"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:16 of
+msgid "Three integers (*nrows*, *ncols*, *index*). The subplot will take the *index* position on a grid with *nrows* rows and *ncols* columns. *index* starts at 1 in the upper left corner and increases to the right.  *index* can also be a two-tuple specifying the (*first*, *last*) indices (1-based, and including *last*) of the subplot, e.g., ``fig.add_subplot(3, 1, (1, 2))`` makes a subplot that spans the upper 2/3 of the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:23 of
+msgid "A 3-digit integer. The digits are interpreted as if given separately as three single-digit integers, i.e. ``fig.add_subplot(235)`` is the same as ``fig.add_subplot(2, 3, 5)``. Note that this can only be used if there are no more than 9 subplots."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:28 of
+msgid "A `.SubplotSpec`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:30 of
+msgid "In rare circumstances, `.add_subplot` may be called with a single argument, a subplot Axes instance already created in the present figure but not in the figure's list of Axes."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:35 of
+msgid "The projection type of the subplot (`~.axes.Axes`). *str* is the name of a custom projection, see `~matplotlib.projections`. The default None results in a 'rectilinear' projection."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:64 of
+msgid "`.axes.SubplotBase`, or another subclass of `~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:58 of
+msgid "The Axes of the subplot. The returned Axes base class depends on the projection used. It is `~.axes.Axes` if rectilinear projection is used and `.projections.polar.PolarAxes` if polar projection is used. The returned Axes is then a subplot subclass of the base class."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:69 of
+msgid "This method also takes the keyword arguments for the returned Axes base class; except for the *figure* argument. The keyword arguments for the rectilinear base class `~.axes.Axes` can be found in the following table but there might also be other keyword arguments if another projection is used."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.add_subplot:139 of
+msgid ":obj:`.Figure.add_axes`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_labels:2 of
+msgid "Align the xlabels and ylabels of subplots with the same subplots row or column (respectively) if label alignment is being done automatically (i.e. the label position is not manually set)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_labels:6
+#: matplotlib.figure.FigureBase.align_xlabels:6
+#: matplotlib.figure.FigureBase.align_ylabels:6 of
+msgid "Alignment persists for draw events after this is called."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_labels:20
+#: matplotlib.figure.FigureBase.align_xlabels:25
+#: matplotlib.figure.FigureBase.align_ylabels:25 of
+msgid "**axs** : list of `~matplotlib.axes.Axes`"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_labels:11 of
+msgid "Optional list (or ndarray) of `~matplotlib.axes.Axes` to align the labels. Default is to align all Axes on the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_labels:25
+#: matplotlib.figure.FigureBase.align_ylabels:30 of
+msgid ":obj:`matplotlib.figure.Figure.align_xlabels`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_labels:27
+#: matplotlib.figure.FigureBase.align_xlabels:30 of
+msgid ":obj:`matplotlib.figure.Figure.align_ylabels`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_xlabels:2 of
+msgid "Align the xlabels of subplots in the same subplot column if label alignment is being done automatically (i.e. the label position is not manually set)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_xlabels:8 of
+msgid "If a label is on the bottom, it is aligned with labels on Axes that also have their label on the bottom and that have the same bottom-most subplot row.  If the label is on the top, it is aligned with labels on Axes with the same top-most row."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_xlabels:16 of
+msgid "Optional list of (or ndarray) `~matplotlib.axes.Axes` to align the xlabels. Default is to align all Axes on the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_xlabels:32
+#: matplotlib.figure.FigureBase.align_ylabels:32 of
+msgid ":obj:`matplotlib.figure.Figure.align_labels`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_xlabels:37
+#: matplotlib.figure.FigureBase.align_ylabels:37 of
+msgid "This assumes that ``axs`` are from the same `.GridSpec`, so that their `.SubplotSpec` positions correspond to figure positions."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_xlabels:43 of
+msgid "Example with rotated xtick labels::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_ylabels:2 of
+msgid "Align the ylabels of subplots in the same subplot column if label alignment is being done automatically (i.e. the label position is not manually set)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_ylabels:8 of
+msgid "If a label is on the left, it is aligned with labels on Axes that also have their label on the left and that have the same left-most subplot column.  If the label is on the right, it is aligned with labels on Axes with the same right-most column."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_ylabels:16 of
+msgid "Optional list (or ndarray) of `~matplotlib.axes.Axes` to align the ylabels. Default is to align all Axes on the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.align_ylabels:43 of
+msgid "Example with large yticks labels::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:2 of
+msgid "Date ticklabels often overlap, so it is useful to rotate them and right align them.  Also, a common use case is a number of subplots with shared x-axis where the x-axis is date data.  The ticklabels are often long, and it helps to rotate them on the bottom subplot and turn them off on other subplots, as well as turn off xlabels."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:13
+#: matplotlib.figure.FigureBase.subplots_adjust:19
+#: matplotlib.figure.SubplotParams:38 of
+msgid "**bottom**"
+msgstr ""
+
+#: of
+msgid "float, default: 0.2"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:13 of
+msgid "The bottom of the subplots for `subplots_adjust`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:16 of
+msgid "**rotation**"
+msgstr ""
+
+#: of
+msgid "float, default: 30 degrees"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:16 of
+msgid "The rotation angle of the xtick labels in degrees."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:19 of
+msgid "**ha**"
+msgstr ""
+
+#: of
+msgid "{'left', 'center', 'right'}, default: 'right'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:19 of
+msgid "The horizontal alignment of the xticklabels."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:35 of
+msgid "**which**"
+msgstr ""
+
+#: of
+msgid "{'major', 'minor', 'both'}, default: 'major'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.autofmt_xdate:22 of
+msgid "Selects which ticklabels to rotate."
+msgstr ""
+
+#: matplotlib.figure.Figure.axes:2 of
+msgid "List of Axes in the Figure. You can access and modify the Axes in the Figure through this list."
+msgstr ""
+
+#: matplotlib.figure.Figure.axes:5 of
+msgid "Do not modify the list itself. Instead, use `~Figure.add_axes`, `~.Figure.add_subplot` or `~.Figure.delaxes` to add or remove an Axes."
+msgstr ""
+
+#: matplotlib.figure.Figure.axes:8 of
+msgid "Note: The `.Figure.axes` property and `~.Figure.get_axes` method are equivalent."
+msgstr ""
+
+#: matplotlib.figure.Figure.clear:2 of
+msgid "Clear the figure -- synonym for `clf`."
+msgstr ""
+
+#: matplotlib.figure.Figure.clf:2 of
+msgid "Clear the figure."
+msgstr ""
+
+#: matplotlib.figure.Figure.clf:4 of
+msgid "Set *keep_observers* to True if, for example, a gui widget is tracking the Axes in the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:2 of
+msgid "Add a colorbar to a plot."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:17 of
+msgid "**mappable**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:8 of
+msgid "The `matplotlib.cm.ScalarMappable` (i.e., `~matplotlib.image.AxesImage`, `~matplotlib.contour.ContourSet`, etc.) described by this colorbar. This argument is mandatory for the `.Figure.colorbar` method but optional for the `.pyplot.colorbar` function, which sets the default to the current image."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:14 of
+msgid "Note that one can create a `.ScalarMappable` \"on-the-fly\" to generate colorbars not attached to a previously drawn artist, e.g. ::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:20 of
+msgid "**cax** : `~matplotlib.axes.Axes`, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:20 of
+msgid "Axes into which the colorbar will be drawn."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:24 of
+msgid "**ax** : `~matplotlib.axes.Axes`, list of Axes, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:23 of
+msgid "Axes, list of Axes, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:23 of
+msgid "One or more parent axes from which space for a new colorbar axes will be stolen, if *cax* is None.  This has no effect if *cax* is set."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:29 of
+msgid "**use_gridspec**"
+msgstr ""
+
+#: of
+msgid "bool, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:27 of
+msgid "If *cax* is ``None``, a new *cax* is created as an instance of Axes.  If *ax* is an instance of Subplot and *use_gridspec* is ``True``, *cax* is created as an instance of Subplot using the :mod:`.gridspec` module."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:41 of
+msgid "**colorbar** : `~matplotlib.colorbar.Colorbar`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:40 of
+msgid "Colorbar"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:45 of
+msgid "Additional keyword arguments are of two kinds:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:47 of
+msgid "axes properties:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:54 of
+msgid "location"
+msgstr ""
+
+#: of
+msgid "None or {'left', 'right', 'top', 'bottom'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:50 of
+msgid "The location, relative to the parent axes, where the colorbar axes is created.  It also determines the *orientation* of the colorbar (colorbars on the left and right are vertical, colorbars at the top and bottom are horizontal).  If None, the location will come from the *orientation* if it is set (vertical colorbars on the right, horizontal ones at the bottom), or default to 'right' if *orientation* is unset."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:58 of
+msgid "orientation"
+msgstr ""
+
+#: of
+msgid "None or {'vertical', 'horizontal'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:57 of
+msgid "The orientation of the colorbar.  It is preferable to set the *location* of the colorbar, as that also determines the *orientation*; passing incompatible values for *location* and *orientation* raises an exception."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:60 of
+msgid "fraction"
+msgstr ""
+
+#: of
+msgid "float, default: 0.15"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:61 of
+msgid "Fraction of original axes to use for colorbar."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:62 of
+msgid "shrink"
+msgstr ""
+
+#: of
+msgid "float, default: 1.0"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:63 of
+msgid "Fraction by which to multiply the size of the colorbar."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:65 of
+msgid "aspect"
+msgstr ""
+
+#: of
+msgid "float, default: 20"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:65 of
+msgid "Ratio of long to short dimensions."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:67 of
+msgid "pad"
+msgstr ""
+
+#: of
+msgid "float, default: 0.05 if vertical, 0.15 if horizontal"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:68 of
+msgid "Fraction of original axes between colorbar and new image axes."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:70 of
+msgid "anchor"
+msgstr ""
+
+#: of
+msgid "(float, float), optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:70 of
+msgid "The anchor point of the colorbar axes. Defaults to (0.0, 0.5) if vertical; (0.5, 1.0) if horizontal."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:75 of
+msgid "panchor : (float, float), or *False*, optional"
+msgstr ""
+
+#: of
+msgid "(float, float), or"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:73 of
+msgid "The anchor point of the colorbar parent axes. If *False*, the parent axes' anchor will be unchanged. Defaults to (1.0, 0.5) if vertical; (0.5, 0.0) if horizontal."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:77 of
+msgid "colorbar properties:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:82 of
+msgid "*extend*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:82 of
+msgid "{'neither', 'both', 'min', 'max'} If not 'neither', make pointed end(s) for out-of- range values.  These are set for a given colormap using the colormap set_under and set_over methods."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:86 of
+msgid "*extendfrac*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:86 of
+#, python-format
+msgid "{*None*, 'auto', length, lengths} If set to *None*, both the minimum and maximum triangular colorbar extensions with have a length of 5% of the interior colorbar length (this is the default setting). If set to 'auto', makes the triangular colorbar extensions the same lengths as the interior boxes (when *spacing* is set to 'uniform') or the same lengths as the respective adjacent interior boxes (when *spacing* is set to 'proportional'). If a scalar, indicates the length of both the minimum and maximum triangular colorbar extensions as a fraction of the interior colorbar length. A two-element sequence of fractions may also be given, indicating the lengths of the minimum and maximum colorbar extensions respectively as a fraction of the interior colorbar length."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:102 of
+msgid "*extendrect*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:102 of
+msgid "bool If *False* the minimum and maximum colorbar extensions will be triangular (the default). If *True* the extensions will be rectangular."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:106 of
+msgid "*spacing*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:106 of
+msgid "{'uniform', 'proportional'} Uniform spacing gives each discrete color the same space; proportional makes the space proportional to the data interval."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:110 of
+msgid "*ticks*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:110 of
+msgid "*None* or list of ticks or Locator If None, ticks are determined automatically from the input."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:113 of
+msgid "*format*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:113 of
+#, python-format
+msgid "None or str or Formatter If None, `~.ticker.ScalarFormatter` is used. If a format string is given, e.g., '%.3f', that is used. An alternative `~.ticker.Formatter` may be given instead."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:117 of
+msgid "*drawedges*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:117 of
+msgid "bool Whether to draw lines at color boundaries."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:119 of
+msgid "*label*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:119 of
+msgid "str The label on the colorbar's long axis."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:123 of
+msgid "The following will probably be useful only in the context of indexed colors (that is, when the mappable has norm=NoNorm()), or other unusual circumstances."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:130 of
+msgid "*boundaries*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:130 of
+msgid "None or a sequence"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:131 of
+msgid "*values*"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:131 of
+msgid "None or a sequence which must be of length 1 less than the sequence of *boundaries*. For each region delimited by adjacent entries in *boundaries*, the colormapped to the corresponding value in values will be used."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:138 of
+msgid "If *mappable* is a `~.contour.ContourSet`, its *extend* kwarg is included automatically."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:141 of
+msgid "The *shrink* kwarg provides a simple way to scale the colorbar with respect to the axes. Note that if *cax* is specified, it determines the size of the colorbar and *shrink* and *aspect* kwargs are ignored."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:145 of
+msgid "For more precise control, you can manually specify the positions of the axes objects in which the mappable and the colorbar are drawn.  In this case, do not use any of the axes properties kwargs."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:149 of
+msgid "It is known that some vector graphics viewers (svg and pdf) renders white gaps between segments of the colorbar.  This is due to bugs in the viewers, not Matplotlib.  As a workaround, the colorbar can be rendered with overlapping segments::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.colorbar:158 of
+msgid "However this has negative consequences in other circumstances, e.g. with semi-transparent images (alpha < 1) and colorbar extensions; therefore, this workaround is not used by default (see issue #1188)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.contains:2 of
+msgid "Test whether the mouse event occurred on the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.contains:21 of
+msgid "bool, {}"
+msgstr ""
+
+#: matplotlib.artist.Artist.convert_xunits:2 of
+msgid "Convert *x* using the unit type of the xaxis."
+msgstr ""
+
+#: matplotlib.artist.Artist.convert_xunits:4 of
+msgid "If the artist is not in contained in an Axes or if the xaxis does not have units, *x* itself is returned."
+msgstr ""
+
+#: matplotlib.artist.Artist.convert_yunits:2 of
+msgid "Convert *y* using the unit type of the yaxis."
+msgstr ""
+
+#: matplotlib.artist.Artist.convert_yunits:4 of
+msgid "If the artist is not in contained in an Axes or if the yaxis does not have units, *y* itself is returned."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.delaxes:2 of
+msgid "Remove the `~.axes.Axes` *ax* from the figure; update the current Axes."
+msgstr ""
+
+#: matplotlib.figure.Figure.dpi:2 of
+msgid "The resolution in dots per inch."
+msgstr ""
+
+#: matplotlib.artist.Artist.draw:2 matplotlib.figure.Figure.draw:2
+#: matplotlib.figure.SubFigure.draw:2 of
+msgid "Draw the Artist (and its children) using the given renderer."
+msgstr ""
+
+#: matplotlib.artist.Artist.draw:4 matplotlib.figure.Figure.draw:4
+#: matplotlib.figure.SubFigure.draw:4 of
+msgid "This has no effect if the artist is not visible (`.Artist.get_visible` returns False)."
+msgstr ""
+
+#: matplotlib.artist.Artist.draw:18 matplotlib.figure.Figure.draw:18
+#: matplotlib.figure.SubFigure.draw:18 of
+msgid "**renderer** : `.RendererBase` subclass."
+msgstr ""
+
+#: matplotlib.artist.Artist.draw:17 matplotlib.figure.Figure.draw:17
+#: matplotlib.figure.SubFigure.draw:17 of
+msgid "RendererBase subclass."
+msgstr ""
+
+#: matplotlib.artist.Artist.draw:22 matplotlib.figure.Figure.draw:22
+#: matplotlib.figure.SubFigure.draw:22 of
+msgid "This method is overridden in the Artist subclasses."
+msgstr ""
+
+#: matplotlib.figure.Figure.draw_artist:2 of
+msgid "Draw `.Artist` *a* only."
+msgstr ""
+
+#: matplotlib.figure.Figure.draw_artist:4 of
+msgid "This method can only be used after an initial draw of the figure, because that creates and caches the renderer needed here."
+msgstr ""
+
+#: matplotlib.figure.Figure.draw_without_rendering:2 of
+msgid "Draw the figure with no output.  Useful to get the final size of artists that require a draw before their size is known (e.g. text)."
+msgstr ""
+
+#: matplotlib.figure.Figure.execute_constrained_layout:2 of
+msgid "Use ``layoutgrid`` to determine pos positions within Axes."
+msgstr ""
+
+#: matplotlib.figure.Figure.execute_constrained_layout:4 of
+msgid "See also `.set_constrained_layout_pads`."
+msgstr ""
+
+#: matplotlib.figure.Figure.execute_constrained_layout:22 of
+msgid "**layoutgrid**"
+msgstr ""
+
+#: of
+msgid "private debugging object"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:2 of
+msgid "Add a non-resampled image to the figure."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:4 of
+msgid "The image is attached to the lower or upper left corner depending on *origin*."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:14 of
+msgid "**X**"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:10 of
+msgid "The image data. This is an array of one of the following shapes:"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:12 of
+msgid "MxN: luminance (grayscale) values"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:13 of
+msgid "MxNx3: RGB values"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:14 of
+msgid "MxNx4: RGBA values"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:17 of
+msgid "**xo, yo**"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:17 of
+msgid "The *x*/*y* image offset in pixels."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_alpha:21 matplotlib.figure.Figure.figimage:20
+#: of
+msgid "**alpha**"
+msgstr ""
+
+#: of
+msgid "None or float"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:20 of
+msgid "The alpha blending value."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:24 of
+msgid "**norm** : `matplotlib.colors.Normalize`"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:23 of
+msgid "matplotlib.colors.Normalize"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:23 of
+msgid "A `.Normalize` instance to map the luminance to the interval [0, 1]."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:27 of
+msgid "**cmap** : str or `matplotlib.colors.Colormap`, default: :rc:`image.cmap`"
+msgstr ""
+
+#: of
+msgid "str or"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:27 of
+msgid "The colormap to use."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:31 of
+msgid "**vmin, vmax**"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:30 of
+msgid "If *norm* is not given, these values set the data limits for the colormap."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:35 of
+msgid "**origin** : {'upper', 'lower'}, default: :rc:`image.origin`"
+msgstr ""
+
+#: of
+msgid "{'upper', 'lower'}, default:"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:34 of
+msgid "Indicates where the [0, 0] index of the array is in the upper left or lower left corner of the axes."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:38 of
+msgid "**resize**"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:38 of
+msgid "If *True*, resize the figure to match the given image size."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:45 of
+msgid "`matplotlib.image.FigureImage`"
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:50 of
+msgid "Additional kwargs are `.Artist` kwargs passed on to `.FigureImage`."
+msgstr ""
+
+#: matplotlib.figure.Figure.figimage:58 of
+msgid "figimage complements the Axes image (`~matplotlib.axes.Axes.imshow`) which will be resampled to fit the current Axes.  If you want a resampled image to fill the entire figure, you can define an `~matplotlib.axes.Axes` with extent [0, 0, 1, 1]."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:2 of
+msgid "Find artist objects."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:4 of
+msgid "Recursively find all `.Artist` instances contained in the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:16 of
+msgid "**match**"
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:9 of
+msgid "A filter criterion for the matches. This can be"
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:11 of
+msgid "*None*: Return all objects contained in artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:12 of
+msgid "A function with signature ``def match(artist: Artist) -> bool``. The result will only contain artists for which the function returns *True*."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:15 of
+msgid "A class instance: e.g., `.Line2D`. The result will only contain artists of this class or its subclasses (``isinstance`` check)."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:19 of
+msgid "**include_self**"
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:19 of
+msgid "Include *self* in the list to be checked for a match."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:36 of
+msgid "list of `.Artist`"
+msgstr ""
+
+#: matplotlib.artist.Artist.format_cursor_data:2 of
+msgid "Return a string representation of *data*."
+msgstr ""
+
+#: matplotlib.artist.Artist.format_cursor_data:5
+#: matplotlib.artist.Artist.get_cursor_data:5 of
+msgid "This method is intended to be overridden by artist subclasses. As an end-user of Matplotlib you will most likely not call this method yourself."
+msgstr ""
+
+#: matplotlib.artist.Artist.format_cursor_data:9 of
+msgid "The default implementation converts ints and floats and arrays of ints and floats into a comma-separated string enclosed in square brackets, unless the artist has an associated colorbar, in which case scalar values are formatted using the colorbar's formatter."
+msgstr ""
+
+#: matplotlib.artist.Artist.format_cursor_data:25 of
+msgid ":obj:`get_cursor_data`"
+msgstr ""
+
+#: matplotlib.figure.Figure.frameon:2 matplotlib.figure.FigureBase.frameon:2
+#: matplotlib.figure.FigureBase.get_frameon:2
+#: matplotlib.figure.SubFigure.frameon:2 of
+msgid "Return the figure's background patch visibility, i.e. whether the figure background will be drawn. Equivalent to ``Figure.patch.get_visible()``."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.gca:2 of
+msgid "Get the current Axes."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.gca:4 of
+msgid "If there is currently no Axes on this Figure, a new one is created using `.Figure.add_subplot`.  (To test whether there is currently an Axes on a Figure, check whether ``figure.axes`` is empty.  To test whether there is currently a Figure on the pyplot figure stack, check whether `.pyplot.get_fignums()` is empty.)"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.gca:10 of
+msgid "The following kwargs are supported for ensuring the returned Axes adheres to the given projection etc., and for Axes creation if the active Axes does not exist:"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_agg_filter:2 of
+msgid "Return filter function to be used for agg filter."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_alpha:2 of
+msgid "Return the alpha value used for blending - not supported on all backends."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_animated:2 of
+msgid "Return whether the artist is animated."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_children:2 of
+msgid "Get a list of artists contained in the figure."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_clip_box:2 of
+msgid "Return the clipbox."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_clip_on:2 of
+msgid "Return whether the artist uses clipping."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_clip_path:2 of
+msgid "Return the clip path."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_constrained_layout:2
+#: matplotlib.figure.SubFigure.get_constrained_layout:2 of
+msgid "Return whether constrained layout is being used."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_constrained_layout:4
+#: matplotlib.figure.Figure.get_constrained_layout_pads:7
+#: matplotlib.figure.Figure.set_constrained_layout:10
+#: matplotlib.figure.Figure.set_constrained_layout_pads:7
+#: matplotlib.figure.SubFigure.get_constrained_layout:4
+#: matplotlib.figure.SubFigure.get_constrained_layout_pads:7 of
+msgid "See :doc:`/tutorials/intermediate/constrainedlayout_guide`."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_constrained_layout_pads:2
+#: matplotlib.figure.SubFigure.get_constrained_layout_pads:2 of
+msgid "Get padding for ``constrained_layout``."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_constrained_layout_pads:4
+#: matplotlib.figure.SubFigure.get_constrained_layout_pads:4 of
+msgid "Returns a list of ``w_pad, h_pad`` in inches and ``wspace`` and ``hspace`` as fractions of the subplot."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_constrained_layout_pads:25
+#: matplotlib.figure.SubFigure.get_constrained_layout_pads:25 of
+msgid "**relative**"
+msgstr ""
+
+#: matplotlib.figure.Figure.get_constrained_layout_pads:12
+#: matplotlib.figure.SubFigure.get_constrained_layout_pads:12 of
+msgid "If `True`, then convert from inches to figure relative."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:2 of
+msgid "Return the cursor data for a given event."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:9 of
+msgid "Cursor data can be used by Artists to provide additional context information for a given event. The default implementation just returns *None*."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:13 of
+msgid "Subclasses can override the method and return arbitrary data. However, when doing so, they must ensure that `.format_cursor_data` can convert the data to a string representation."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:17 of
+msgid "The only current use case is displaying the z-value of an `.AxesImage` in the status bar of a plot window, while moving the mouse."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:30 of
+msgid "**event** : `matplotlib.backend_bases.MouseEvent`"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:29 of
+msgid "matplotlib.backend_bases.MouseEvent"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:35 of
+msgid ":obj:`format_cursor_data`"
+msgstr ""
+
+#: matplotlib.figure.Figure.get_dpi:2 of
+msgid "Return the resolution in dots per inch as a float."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_edgecolor:2 of
+msgid "Get the edge color of the Figure rectangle."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_facecolor:2 of
+msgid "Get the face color of the Figure rectangle."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_figheight:2 of
+msgid "Return the figure height in inches."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_figure:2 of
+msgid "Return the `.Figure` instance the artist belongs to."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_figwidth:2 of
+msgid "Return the figure width in inches."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_gid:2 of
+msgid "Return the group id."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_in_layout:2 of
+msgid "Return boolean flag, ``True`` if artist is included in layout calculations."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_in_layout:5 of
+msgid "E.g. :doc:`/tutorials/intermediate/constrainedlayout_guide`, `.Figure.tight_layout()`, and ``fig.savefig(fname, bbox_inches='tight')``."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_label:2 of
+msgid "Return the label used for this artist in the legend."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_linewidth:2 of
+msgid "Get the line width of the Figure rectangle."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_picker:2 of
+msgid "Return the picking behavior of the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_picker:4 of
+msgid "The possible values are described in `.set_picker`."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_picker:17 of
+msgid ":obj:`set_picker`, :obj:`pickable`, :obj:`pick`"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_rasterized:2 of
+msgid "Return whether the artist is to be rasterized."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_size_inches:2 of
+msgid "Return the current size of the figure in inches."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_size_inches:15 of
+msgid "ndarray"
+msgstr ""
+
+#: matplotlib.figure.Figure.get_size_inches:9 of
+msgid "The size (width, height) of the figure in inches."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_size_inches:20
+#: matplotlib.figure.Figure.set_figheight:25
+#: matplotlib.figure.Figure.set_figwidth:25 of
+msgid ":obj:`matplotlib.figure.Figure.set_size_inches`"
+msgstr ""
+
+#: matplotlib.figure.Figure.get_size_inches:22 of
+msgid ":obj:`matplotlib.figure.Figure.get_figwidth`"
+msgstr ""
+
+#: matplotlib.figure.Figure.get_size_inches:24 of
+msgid ":obj:`matplotlib.figure.Figure.get_figheight`"
+msgstr ""
+
+#: matplotlib.figure.Figure.get_size_inches:29 of
+msgid "The size in pixels can be obtained by multiplying with `Figure.dpi`."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:2 of
+msgid "Return the sketch parameters for the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:29 of
+msgid "tuple or None"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:9 of
+msgid "A 3-tuple with the following elements:"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:11 of
+msgid "*scale*: The amplitude of the wiggle perpendicular to the source line."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:13 of
+msgid "*length*: The length of the wiggle along the line."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:14 of
+msgid "*randomness*: The scale factor by which the length is shrunken or expanded."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:17 of
+msgid "Returns *None* if no sketch parameters were set."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_snap:2 of
+msgid "Return the snap setting."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_snap:4 of
+msgid "See `.set_snap` for details."
+msgstr ""
+
+#: matplotlib.figure.Figure.get_tight_layout:2 of
+msgid "Return whether `.tight_layout` is called when drawing."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:2 of
+msgid "Return a (tight) bounding box of the figure *in inches*."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:4 of
+msgid "Note that `.FigureBase` differs from all other artists, which return their `.Bbox` in pixels."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:7 of
+msgid "Artists that have ``artist.set_in_layout(False)`` are not included in the bbox."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:14 of
+msgid "**renderer** : `.RendererBase` subclass"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:13 of
+msgid "RendererBase subclass"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:13 of
+msgid "renderer that will be used to draw the figures (i.e. ``fig.canvas.get_renderer()``)"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:19 of
+msgid "**bbox_extra_artists** : list of `.Artist` or ``None``"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:17 of
+msgid "List of artists to include in the tight bounding box.  If ``None`` (default), then all artist children of each Axes are included in the tight bounding box."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:36 of
+msgid "`.BboxBase`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_tightbbox:24 of
+msgid "containing the bounding box (in figure inches)."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_transform:2 of
+msgid "Return the `.Transform` instance used by this artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_transformed_clip_path_and_affine:2 of
+msgid "Return the clip path with the non-affine part of its transformation applied, and the remaining affine part of its transformation."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_url:2 of
+msgid "Return the url."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_visible:2 of
+msgid "Return the visibility."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_window_extent:2 of
+msgid "Get the artist's bounding box in display space."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_window_extent:4 of
+msgid "The bounding box' width and height are nonnegative."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_window_extent:6 of
+msgid "Subclasses should override for inclusion in the bounding box \"tight\" calculation. Default is to return an empty bounding box at 0, 0."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.get_window_extent:10 of
+msgid "Be careful when using this function, the results will not update if the artist window extent of the artist changes.  The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure).  This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_zorder:2 of
+msgid "Return the artist's zorder."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:2 of
+msgid "Blocking call to interact with a figure."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:4 of
+msgid "Wait until the user clicks *n* times on the figure, and return the coordinates of each click in a list."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:7 of
+msgid "There are three possible interactions:"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:9 of
+msgid "Add a point."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:10 of
+msgid "Remove the most recently added point."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:11 of
+msgid "Stop the interaction and return the points added so far."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:13 of
+msgid "The actions are assigned to mouse buttons via the arguments *mouse_add*, *mouse_pop* and *mouse_stop*."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:20 of
+msgid "**n**"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:19 of
+msgid "Number of mouse clicks to accumulate. If negative, accumulate clicks until the input is terminated manually."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:24 of
+msgid "**timeout**"
+msgstr ""
+
+#: of
+msgid "float, default: 30 seconds"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:23 of
+msgid "Number of seconds to wait before timing out. If zero or negative will never timeout."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:27 of
+msgid "**show_clicks**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:27 of
+msgid "If True, show a red cross at the location of each click."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:30 of
+msgid "**mouse_add** : `.MouseButton` or None, default: `.MouseButton.LEFT`"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:29 of
+msgid "MouseButton or None, default: MouseButton.LEFT"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:30 of
+msgid "Mouse button used to add points."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:33 of
+msgid "**mouse_pop** : `.MouseButton` or None, default: `.MouseButton.RIGHT`"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:32 of
+msgid "MouseButton or None, default: MouseButton.RIGHT"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:33 of
+msgid "Mouse button used to remove the most recently added point."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:36 of
+msgid "**mouse_stop** : `.MouseButton` or None, default: `.MouseButton.MIDDLE`"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:35 of
+msgid "MouseButton or None, default: MouseButton.MIDDLE"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:36 of
+msgid "Mouse button used to stop input."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:48 of
+msgid "list of tuples"
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:41 of
+msgid "A list of the clicked (x, y) coordinates."
+msgstr ""
+
+#: matplotlib.figure.Figure.ginput:52 of
+msgid "The keyboard can also be used to select points in case your mouse does not have one or more of the buttons.  The delete and backspace keys act like right clicking (i.e., remove last point), the enter key terminates input and any other key (not already used by the window manager) selects a point."
+msgstr ""
+
+#: matplotlib.artist.Artist.have_units:2 of
+msgid "Return whether units are set on any axis."
+msgstr ""
+
+#: matplotlib.artist.Artist.is_transform_set:2 of
+msgid "Return whether the Artist has an explicitly set transform."
+msgstr ""
+
+#: matplotlib.artist.Artist.is_transform_set:4 of
+msgid "This is *True* after `.set_transform` has been called."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:2 of
+msgid "Place a legend on the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:11 of
+msgid "The call signatures correspond to the following different ways to use this method:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:14 of
+msgid "**1. Automatic detection of elements to be shown in the legend**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:16 of
+msgid "The elements to be added to the legend are automatically determined, when you do not pass in any extra arguments."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:19 of
+msgid "In this case, the labels are taken from the artist. You can specify them either at artist creation or by calling the :meth:`~.Artist.set_label` method on the artist::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:26 of
+msgid "or::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:32 of
+msgid "Specific lines can be excluded from the automatic legend element selection by defining a label starting with an underscore. This is default for all artists, so calling `.Figure.legend` without any arguments and without setting the labels manually will result in no legend being drawn."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:38 of
+msgid "**2. Explicitly listing the artists and labels in the legend**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:40 of
+msgid "For full control of which artists have a legend entry, it is possible to pass an iterable of legend artists followed by an iterable of legend labels respectively::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:46 of
+msgid "**3. Explicitly listing the artists in the legend**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:48 of
+msgid "This is similar to 2, but the labels are taken from the artists' label properties. Example::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:55 of
+msgid "**4. Labeling existing plot elements**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:59 of
+msgid "This call signature is discouraged, because the relation between plot elements and labels is only implicit by their order and can easily be mixed up."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:63 of
+msgid "To make a legend for all artists on all Axes, call this function with an iterable of strings, one for each legend item. For example::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:80 of
+msgid "**handles** : list of `.Artist`, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:74 of
+msgid "A list of Artists (lines, patches) to be added to the legend. Use this together with *labels*, if you need full control on what is shown in the legend and the automatic mechanism described above is not sufficient."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:79 of
+msgid "The length of handles and labels should be the same in this case. If they are not, they are truncated to the smaller length."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:86 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "list of str, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:83 of
+msgid "A list of labels to show next to the artists. Use this together with *handles*, if you need full control on what is shown in the legend and the automatic mechanism described above is not sufficient."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:93 of
+msgid "`~matplotlib.legend.Legend`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:138 of
+msgid "**loc** : str or pair of floats, default: :rc:`legend.loc` ('best' for axes, 'upper right' for figures)"
+msgstr ""
+
+#: of
+msgid "str or pair of floats, default:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:98 of
+msgid "The location of the legend."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:100 of
+msgid "The strings ``'upper left', 'upper right', 'lower left', 'lower right'`` place the legend at the corresponding corner of the axes/figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:104 of
+msgid "The strings ``'upper center', 'lower center', 'center left', 'center right'`` place the legend at the center of the corresponding edge of the axes/figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:109 of
+msgid "The string ``'center'`` places the legend at the center of the axes/figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:111 of
+msgid "The string ``'best'`` places the legend at the location, among the nine locations defined so far, with the minimum overlap with other drawn artists.  This option can be quite slow for plots with large amounts of data; your plotting speed may benefit from providing a specific location."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:116 of
+msgid "The location can also be a 2-tuple giving the coordinates of the lower-left corner of the legend in axes coordinates (in which case *bbox_to_anchor* will be ignored)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:120 of
+msgid "For back-compatibility, ``'center right'`` (but no other location) can also be spelled ``'right'``, and each \"string\" locations can also be given as a numeric value:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:125 of
+msgid "Location String"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:125 of
+msgid "Location Code"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:127 of
+msgid "'best'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:127 of
+msgid "0"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:128 of
+msgid "'upper right'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:128 of
+msgid "1"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:129 of
+msgid "'upper left'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:129 of
+msgid "2"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:130 of
+msgid "'lower left'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:130 of
+msgid "3"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:131 of
+msgid "'lower right'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:131 of
+msgid "4"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:132 of
+msgid "'right'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:132 of
+msgid "5"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:133 of
+msgid "'center left'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:133 of
+msgid "6"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:134 of
+msgid "'center right'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:134 of
+msgid "7"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:135 of
+msgid "'lower center'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:135 of
+msgid "8"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:136 of
+msgid "'upper center'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:136 of
+msgid "9"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:137 of
+msgid "'center'"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:137 of
+msgid "10"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:161 of
+msgid "**bbox_to_anchor** : `.BboxBase`, 2-tuple, or 4-tuple of floats"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:160 of
+msgid "BboxBase, 2-tuple, or 4-tuple of floats"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:141 of
+msgid "Box that is used to position the legend in conjunction with *loc*. Defaults to `axes.bbox` (if called as a method to `.Axes.legend`) or `figure.bbox` (if `.Figure.legend`).  This argument allows arbitrary placement of the legend."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:146 of
+msgid "Bbox coordinates are interpreted in the coordinate system given by *bbox_transform*, with the default transform Axes or Figure coordinates, depending on which ``legend`` is called."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:150 of
+msgid "If a 4-tuple or `.BboxBase` is given, then it specifies the bbox ``(x, y, width, height)`` that the legend is placed in. To put the legend in the best location in the bottom right quadrant of the axes (or figure)::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:157 of
+msgid "A 2-tuple ``(x, y)`` places the corner of the legend specified by *loc* at x, y.  For example, to put the legend's upper right-hand corner in the center of the axes (or figure) the following keywords can be used::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:164 of
+msgid "**ncol**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:164 of
+msgid "The number of columns that the legend has."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:168 of
+msgid "**prop** : None or `matplotlib.font_manager.FontProperties` or dict"
+msgstr ""
+
+#: of
+msgid "None or"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:167 of
+msgid "The font properties of the legend. If None (default), the current :data:`matplotlib.rcParams` will be used."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:173 of
+msgid "**fontsize**"
+msgstr ""
+
+#: of
+msgid "int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:171 of
+msgid "The font size of the legend. If the value is numeric the size will be the absolute font size in points. String values are relative to the current default font size. This argument is only used if *prop* is not specified."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:182 of
+msgid "**labelcolor** : str or list, default: :rc:`legend.labelcolor`"
+msgstr ""
+
+#: of
+msgid "str or list, default:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:176 of
+msgid "The color of the text in the legend. Either a valid color string (for example, 'red'), or a list of color strings. The labelcolor can also be made to match the color of the line or marker using 'linecolor', 'markerfacecolor' (or 'mfc'), or 'markeredgecolor' (or 'mec')."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:181 of
+msgid "Labelcolor can be set globally using :rc:`legend.labelcolor`. If None, use :rc:`text.color`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:186 of
+msgid "**numpoints** : int, default: :rc:`legend.numpoints`"
+msgstr ""
+
+#: of
+msgid "int, default:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:185 of
+msgid "The number of marker points in the legend when creating a legend entry for a `.Line2D` (line)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:190 of
+msgid "**scatterpoints** : int, default: :rc:`legend.scatterpoints`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:189 of
+msgid "The number of marker points in the legend when creating a legend entry for a `.PathCollection` (scatter plot)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:196 of
+msgid "**scatteryoffsets** : iterable of floats, default: ``[0.375, 0.5, 0.3125]``"
+msgstr ""
+
+#: of
+msgid "iterable of floats, default:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:193 of
+msgid "The vertical offset (relative to the font size) for the markers created for a scatter plot legend entry. 0.0 is at the base the legend text, and 1.0 is at the top. To draw all markers at the same height, set to ``[0.5]``."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:200 of
+msgid "**markerscale** : float, default: :rc:`legend.markerscale`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:199 of
+msgid "The relative size of legend markers compared with the originally drawn ones."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:204 of
+msgid "**markerfirst**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:203 of
+msgid "If *True*, legend marker is placed to the left of the legend label. If *False*, legend marker is placed to the right of the legend label."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:207 of
+msgid "**frameon** : bool, default: :rc:`legend.frameon`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:207 of
+msgid "Whether the legend should be drawn on a patch (frame)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:211 of
+msgid "**fancybox** : bool, default: :rc:`legend.fancybox`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:210 of
+msgid "Whether round edges should be enabled around the `.FancyBboxPatch` which makes up the legend's background."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:214 of
+msgid "**shadow** : bool, default: :rc:`legend.shadow`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:214 of
+msgid "Whether to draw a shadow behind the legend."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:219 of
+msgid "**framealpha** : float, default: :rc:`legend.framealpha`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:217 of
+msgid "The alpha transparency of the legend's background. If *shadow* is activated and *framealpha* is ``None``, the default value is ignored."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:223 of
+msgid "**facecolor** : \"inherit\" or color, default: :rc:`legend.facecolor`"
+msgstr ""
+
+#: of
+msgid "\"inherit\" or color, default:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:222 of
+msgid "The legend's background color. If ``\"inherit\"``, use :rc:`axes.facecolor`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:227 of
+msgid "**edgecolor** : \"inherit\" or color, default: :rc:`legend.edgecolor`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:226 of
+msgid "The legend's background patch edge color. If ``\"inherit\"``, use take :rc:`axes.edgecolor`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:232 of
+msgid "**mode**"
+msgstr ""
+
+#: of
+msgid "{\"expand\", None}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:230 of
+msgid "If *mode* is set to ``\"expand\"`` the legend will be horizontally expanded to fill the axes area (or *bbox_to_anchor* if defines the legend's size)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:237 of
+msgid "**bbox_transform** : None or `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:235 of
+msgid "The transform for the bounding box (*bbox_to_anchor*). For a value of ``None`` (default) the Axes' :data:`~matplotlib.axes.Axes.transAxes` transform will be used."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:240 of
+msgid "**title**"
+msgstr ""
+
+#: of
+msgid "str or None"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:240 of
+msgid "The legend's title. Default is no title (``None``)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:245 of
+msgid "**title_fontproperties** : None or `matplotlib.font_manager.FontProperties` or dict"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:243 of
+msgid "The font properties of the legend's title. If None (default), the *title_fontsize* argument will be used if present; if *title_fontsize* is also None, the current :rc:`legend.title_fontsize` will be used."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:251 of
+msgid "**title_fontsize** : int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, default: :rc:`legend.title_fontsize`"
+msgstr ""
+
+#: of
+msgid "int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, default:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:248 of
+msgid "The font size of the legend's title. Note: This cannot be combined with *title_fontproperties*. If you want to set the fontsize alongside other font properties, use the *size* parameter in *title_fontproperties*."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:254 of
+msgid "**borderpad** : float, default: :rc:`legend.borderpad`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:254 of
+msgid "The fractional whitespace inside the legend border, in font-size units."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:257 of
+msgid "**labelspacing** : float, default: :rc:`legend.labelspacing`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:257 of
+msgid "The vertical space between the legend entries, in font-size units."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:260 of
+msgid "**handlelength** : float, default: :rc:`legend.handlelength`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:260 of
+msgid "The length of the legend handles, in font-size units."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:263 of
+msgid "**handleheight** : float, default: :rc:`legend.handleheight`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:263 of
+msgid "The height of the legend handles, in font-size units."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:266 of
+msgid "**handletextpad** : float, default: :rc:`legend.handletextpad`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:266 of
+msgid "The pad between the legend handle and text, in font-size units."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:269 of
+msgid "**borderaxespad** : float, default: :rc:`legend.borderaxespad`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:269 of
+msgid "The pad between the axes and legend border, in font-size units."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:272 of
+msgid "**columnspacing** : float, default: :rc:`legend.columnspacing`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:272 of
+msgid "The spacing between columns, in font-size units."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:280 of
+msgid "**handler_map**"
+msgstr ""
+
+#: of
+msgid "dict or None"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:275 of
+msgid "The custom dictionary mapping instances or types to a legend handler. This *handler_map* updates the default handler map found at `matplotlib.legend.Legend.get_legend_handler_map`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:285 of
+msgid ":obj:`.Axes.legend`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.legend:290 of
+msgid "Some artists are not supported by this function.  See :doc:`/tutorials/intermediate/legend_guide` for details."
+msgstr ""
+
+#: matplotlib.figure.Figure.mouseover:2
+#: matplotlib.figure.FigureBase.mouseover:2
+#: matplotlib.figure.SubFigure.mouseover:2 of
+msgid "If this property is set to *True*, the artist will be queried for custom context information when the mouse cursor moves over it."
+msgstr ""
+
+#: matplotlib.figure.Figure.mouseover:5
+#: matplotlib.figure.FigureBase.mouseover:5
+#: matplotlib.figure.SubFigure.mouseover:5 of
+msgid "See also :meth:`get_cursor_data`, :class:`.ToolCursorPosition` and :class:`.NavigationToolbar2`."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:2 of
+msgid "Call all of the registered callbacks."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:4 of
+msgid "This function is triggered internally when a property is changed."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:17
+#: matplotlib.artist.Artist.remove_callback:16 of
+msgid ":obj:`add_callback`"
+msgstr ""
+
+#: matplotlib.artist.Artist.pick:2 of
+msgid "Process a pick event."
+msgstr ""
+
+#: matplotlib.artist.Artist.pick:4 of
+msgid "Each child artist will fire a pick event if *mouseevent* is over the artist and the artist has picker set."
+msgstr ""
+
+#: matplotlib.artist.Artist.pick:18 of
+msgid ":obj:`set_picker`, :obj:`get_picker`, :obj:`pickable`"
+msgstr ""
+
+#: matplotlib.artist.Artist.pickable:2 of
+msgid "Return whether the artist is pickable."
+msgstr ""
+
+#: matplotlib.artist.Artist.pickable:16 of
+msgid ":obj:`set_picker`, :obj:`get_picker`, :obj:`pick`"
+msgstr ""
+
+#: matplotlib.artist.Artist.properties:2 of
+msgid "Return a dictionary of all the properties of the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove:2 of
+msgid "Remove the artist from the figure if possible."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove:4 of
+msgid "The effect will not be visible until the figure is redrawn, e.g., with `.FigureCanvasBase.draw_idle`.  Call `~.axes.Axes.relim` to update the axes limits if desired."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove:8 of
+msgid "Note: `~.axes.Axes.relim` will not see collections even if the collection was added to the axes with *autolim* = True."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove:11 of
+msgid "Note: there is no support for removing the artist's legend entry."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove_callback:2 of
+msgid "Remove a callback based on its observer id."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:2 of
+msgid "Save the current figure."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:4 of
+msgid "Call signature::"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:12 of
+msgid "The available output formats depend on the backend being used."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:33 of
+msgid "**fname**"
+msgstr ""
+
+#: of
+msgid "str or path-like or binary file-like"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:17 of
+msgid "A path, or a Python file-like object, or possibly some backend-dependent object such as `matplotlib.backends.backend_pdf.PdfPages`."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:21 of
+msgid "If *format* is set, it determines the output format, and the file is saved as *fname*.  Note that *fname* is used verbatim, and there is no attempt to make the extension, if any, of *fname* match *format*, and no extension is appended."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:26 of
+msgid "If *format* is not set, then the format is inferred from the extension of *fname*, if there is one.  If *format* is not set and *fname* has no extension, then the file is saved with :rc:`savefig.format` and the appropriate extension is appended to *fname*."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:39 of
+msgid "**dpi** : float or 'figure', default: :rc:`savefig.dpi`"
+msgstr ""
+
+#: of
+msgid "float or 'figure', default:"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:38 of
+msgid "The resolution in dots per inch.  If 'figure', use the figure's dpi value."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:43 of
+msgid "**format**"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:42 of
+msgid "The file format, e.g. 'png', 'pdf', 'svg', ... The behavior when this is unset is documented under *fname*."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:55 of
+msgid "**metadata**"
+msgstr ""
+
+#: of
+msgid "dict, optional"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:46 of
+msgid "Key/value pairs to store in the image metadata. The supported keys and defaults depend on the image format and backend:"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:49 of
+msgid "'png' with Agg backend: See the parameter ``metadata`` of `~.FigureCanvasAgg.print_png`."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:51 of
+msgid "'pdf' with pdf backend: See the parameter ``metadata`` of `~.backend_pdf.PdfPages`."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:53 of
+msgid "'svg' with svg backend: See the parameter ``metadata`` of `~.FigureCanvasSVG.print_svg`."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:55 of
+msgid "'eps' and 'ps' with PS backend: Only 'Creator' is supported."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:59 of
+msgid "**bbox_inches** : str or `.Bbox`, default: :rc:`savefig.bbox`"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:58 of
+msgid "Bounding box in inches: only the given portion of the figure is saved.  If 'tight', try to figure out the tight bbox of the figure."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:62 of
+msgid "**pad_inches** : float, default: :rc:`savefig.pad_inches`"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:62 of
+msgid "Amount of padding around the figure when bbox_inches is 'tight'."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:66 of
+msgid "**facecolor** : color or 'auto', default: :rc:`savefig.facecolor`"
+msgstr ""
+
+#: of
+msgid "color or 'auto', default:"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:65 of
+msgid "The facecolor of the figure.  If 'auto', use the current figure facecolor."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:70 of
+msgid "**edgecolor** : color or 'auto', default: :rc:`savefig.edgecolor`"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:69 of
+msgid "The edgecolor of the figure.  If 'auto', use the current figure edgecolor."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:78 of
+msgid "**backend**"
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:73 of
+msgid "Use a non-default backend to render the file, e.g. to render a png file with the \"cairo\" backend rather than the default \"agg\", or a pdf file with the \"pgf\" backend rather than the default \"pdf\".  Note that the default backend is normally sufficient.  See :ref:`the-builtin-backends` for a list of valid backends for each file format.  Custom backends can be referenced as \"module://...\"."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:81 of
+msgid "**orientation**"
+msgstr ""
+
+#: of
+msgid "{'landscape', 'portrait'}"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:81 of
+msgid "Currently only supported by the postscript backend."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:86 of
+msgid "**papertype**"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:84 of
+msgid "One of 'letter', 'legal', 'executive', 'ledger', 'a0' through 'a10', 'b0' through 'b10'. Only supported for postscript output."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:102 of
+msgid "**transparent**"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:89 of
+msgid "If *True*, the Axes patches will all be transparent; the Figure patch will also be transparent unless *facecolor* and/or *edgecolor* are specified via kwargs."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:93 of
+msgid "If *False* has no effect and the color of the Axes and Figure patches are unchanged (unless the Figure patch is specified via the *facecolor* and/or *edgecolor* keyword arguments in which case those colors are used)."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:98 of
+msgid "The transparency of these patches will be restored to their original values upon exit of this function."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:101 of
+msgid "This is useful, for example, for displaying a plot on top of a colored background on a web page."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:106 of
+msgid "**bbox_extra_artists** : list of `~matplotlib.artist.Artist`, optional"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:105 of
+msgid "A list of extra artists that will be considered when the tight bbox is calculated."
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:119 of
+msgid "**pil_kwargs**"
+msgstr ""
+
+#: matplotlib.figure.Figure.savefig:109 of
+msgid "Additional keyword arguments that are passed to `PIL.Image.Image.save` when saving the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.sca:2 of
+msgid "Set the current Axes to be *a* and return *a*."
+msgstr ""
+
+#: matplotlib.artist.Figure.set:2 matplotlib.artist.FigureBase.set:2
+#: matplotlib.artist.SubFigure.set:2 of
+msgid "Set multiple properties at once."
+msgstr ""
+
+#: matplotlib.artist.Figure.set:4 matplotlib.artist.FigureBase.set:4
+#: matplotlib.artist.SubFigure.set:4 of
+msgid "Supported properties are"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_agg_filter:2 of
+msgid "Set the agg filter."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_agg_filter:25 of
+msgid "**filter_func**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_agg_filter:8 of
+msgid "A filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_alpha:2 of
+msgid "Set the alpha value used for blending - not supported on all backends."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_alpha:8 of
+msgid "*alpha* must be within the 0-1 range, inclusive."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_animated:2 of
+msgid "Set whether the artist is intended to be used in an animation."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_animated:4 of
+msgid "If True, the artist is excluded from regular drawing of the figure. You have to call `.Figure.draw_artist` / `.Axes.draw_artist` explicitly on the artist. This appoach is used to speed up animations using blitting."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_animated:9 of
+msgid "See also `matplotlib.animation` and :doc:`/tutorials/advanced/blitting`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_animated:28
+#: matplotlib.artist.Artist.set_clip_on:23
+#: matplotlib.artist.Artist.set_visible:21
+#: matplotlib.figure.FigureBase.set_frameon:23 of
+msgid "**b**"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_canvas:2 of
+msgid "Set the canvas that contains the figure"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_canvas:21 of
+msgid "**canvas**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_box:2 of
+msgid "Set the artist's clip `.Bbox`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_box:21 of
+msgid "**clipbox** : `.Bbox`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_box:20 of
+msgid "Bbox"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_on:2 of
+msgid "Set whether the artist uses clipping."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_on:4 of
+msgid "When False artists will be visible outside of the axes which can lead to unexpected results."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:2 of
+msgid "Set the artist's clip path."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:9 of
+msgid "**path** : `.Patch` or `.Path` or `.TransformedPath` or None"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:8 of
+msgid "Patch or Path or TransformedPath or None"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:8 of
+msgid "The clip path. If given a `.Path`, *transform* must be provided as well. If *None*, a previously set clip path is removed."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:21 of
+msgid "**transform** : `~matplotlib.transforms.Transform`, optional"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:20 of
+msgid "Transform, optional"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:12 of
+msgid "Only used if *path* is a `.Path`, in which case the given `.Path` is converted to a `.TransformedPath` using *transform*."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:25 of
+msgid "For efficiency, if *path* is a `.Rectangle` this method will set the clipping box to the corresponding rectangle and set the clipping path to ``None``."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:29 of
+msgid "For technical reasons (support of `~.Artist.set`), a tuple (*path*, *transform*) is also accepted as a single positional parameter."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout:2 of
+msgid "Set whether ``constrained_layout`` is used upon drawing. If None, :rc:`figure.constrained_layout.use` value will be used."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout:5 of
+msgid "When providing a dict containing the keys `w_pad`, `h_pad` the default ``constrained_layout`` paddings will be overridden.  These pads are in inches and default to 3.0/72.0. ``w_pad`` is the width padding and ``h_pad`` is the height padding."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout:28 of
+msgid "**constrained**"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:2 of
+msgid "Set padding for ``constrained_layout``."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:4 of
+msgid "Tip: The parameters can be passed from a dictionary by using ``fig.set_constrained_layout(**pad_dict)``."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:14 of
+msgid "**w_pad** : float, default: :rc:`figure.constrained_layout.w_pad`"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:12 of
+msgid "Width padding in inches.  This is the pad around Axes and is meant to make sure there is enough room for fonts to look good.  Defaults to 3 pts = 0.04167 inches"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:17 of
+msgid "**h_pad** : float, default: :rc:`figure.constrained_layout.h_pad`"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:17 of
+msgid "Height padding in inches. Defaults to 3 pts."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:21 of
+msgid "**wspace** : float, default: :rc:`figure.constrained_layout.wspace`"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:20 of
+msgid "Width padding between subplots, expressed as a fraction of the subplot width.  The total padding ends up being w_pad + wspace."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:38 of
+msgid "**hspace** : float, default: :rc:`figure.constrained_layout.hspace`"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_constrained_layout_pads:24 of
+msgid "Height padding between subplots, expressed as a fraction of the subplot width. The total padding ends up being h_pad + hspace."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_dpi:2 of
+msgid "Set the resolution of the figure in dots-per-inch."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_dpi:21 matplotlib.figure.Figure.set_figheight:8
+#: matplotlib.figure.Figure.set_figwidth:8 of
+msgid "**val**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.set_edgecolor:2 of
+msgid "Set the edge color of the Figure rectangle."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.set_edgecolor:21
+#: matplotlib.figure.FigureBase.set_facecolor:21 of
+msgid "**color**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.set_facecolor:2 of
+msgid "Set the face color of the Figure rectangle."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_figheight:2 of
+msgid "Set the height of the figure in inches."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_figheight:18
+#: matplotlib.figure.Figure.set_figwidth:18
+#: matplotlib.figure.Figure.set_size_inches:27 of
+msgid "**forward**"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_figheight:11
+#: matplotlib.figure.Figure.set_figwidth:11 of
+msgid "See `set_size_inches`."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_figheight:23
+#: matplotlib.figure.Figure.set_size_inches:34 of
+msgid ":obj:`matplotlib.figure.Figure.set_figwidth`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_figure:2 of
+msgid "Set the `.Figure` instance the artist belongs to."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_figure:21 of
+msgid "**fig** : `.Figure`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_figure:20 of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_figwidth:2 of
+msgid "Set the width of the figure in inches."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_figwidth:23
+#: matplotlib.figure.Figure.set_size_inches:36 of
+msgid ":obj:`matplotlib.figure.Figure.set_figheight`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.set_frameon:2 of
+msgid "Set the figure's background patch visibility, i.e. whether the figure background will be drawn. Equivalent to ``Figure.patch.set_visible()``."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_gid:2 of
+msgid "Set the (group) id for the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_gid:21 of
+msgid "**gid**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_in_layout:2 of
+msgid "Set if artist is to be included in layout calculations, E.g. :doc:`/tutorials/intermediate/constrainedlayout_guide`, `.Figure.tight_layout()`, and ``fig.savefig(fname, bbox_inches='tight')``."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_in_layout:24 of
+msgid "**in_layout**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:2 of
+msgid "Set a label that will be displayed in the legend."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:21 matplotlib.figure.FigureBase.text:13
+#: of
+msgid "**s**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:8 of
+msgid "*s* will be converted to a string by calling `str`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.set_linewidth:2 of
+msgid "Set the line width of the Figure rectangle."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_path_effects:2 of
+msgid "Set the path effects."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_path_effects:21 of
+msgid "**path_effects** : `.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_path_effects:20 of
+msgid "AbstractPathEffect"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:2 of
+msgid "Define the picking behavior of the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:45 of
+msgid "**picker**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:8 of
+msgid "This can be one of the following:"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:10 of
+msgid "*None*: Picking is disabled for this artist (default)."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:12 of
+msgid "A boolean: If *True* then picking will be enabled and the artist will fire a pick event if the mouse event is over the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:16 of
+msgid "A float: If picker is a number it is interpreted as an epsilon tolerance in points and the artist will fire off an event if its data is within epsilon of the mouse event.  For some artists like lines and patch collections, the artist may provide additional data to the pick event that is generated, e.g., the indices of the data within epsilon of the pick event"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:24 of
+msgid "A function: If picker is callable, it is a user supplied function which determines whether the artist is hit by the mouse event::"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:30 of
+msgid "to determine the hit test.  if the mouse event is over the artist, return *hit=True* and props is a dictionary of properties you want added to the PickEvent attributes."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:2 of
+msgid "Force rasterized (bitmap) drawing for vector graphics output."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:4 of
+msgid "Rasterized drawing is not supported by all artists. If you try to enable this on an artist that does not support it, the command has no effect and a warning will be issued."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:8 of
+msgid "This setting is ignored for pixel-based output."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:10 of
+msgid "See also :doc:`/gallery/misc/rasterization_demo`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:28 of
+msgid "**rasterized**"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:2 of
+msgid "Set the figure size in inches."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:13 of
+msgid "**w**"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:12 of
+msgid "Width and height in inches (if height not specified as a separate argument) or width."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:16 of
+msgid "**h**"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:16 of
+msgid "Height in inches."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:19 of
+msgid "If ``True``, the canvas size is automatically updated, e.g., you can resize the figure window from the shell."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:32 of
+msgid ":obj:`matplotlib.figure.Figure.get_size_inches`"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_size_inches:41 of
+msgid "To transform from pixels to inches divide by `Figure.dpi`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:2 of
+msgid "Set the sketch parameters."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:10 of
+msgid "**scale**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:8 of
+msgid "The amplitude of the wiggle perpendicular to the source line, in pixels.  If scale is `None`, or not provided, no sketch filter will be provided."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:14 of
+msgid "**length**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:13 of
+msgid "The length of the wiggle along the line, in pixels (default 128.0)"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:36 of
+msgid "**randomness**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:17 of
+msgid "The scale factor by which the length is shrunken or expanded (default 16.0)"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:20 of
+msgid "The PGF backend uses this argument as an RNG seed and not as described above. Using the same seed yields the same random shape."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:2 of
+msgid "Set the snapping behavior."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:4 of
+msgid "Snapping aligns positions with the pixel grid, which results in clearer images. For example, if a black line of 1px width was defined at a position in between two pixels, the resulting image would contain the interpolated value of that line in the pixel grid, which would be a grey value on both adjacent pixel positions. In contrast, snapping will move the line to the nearest integer pixel value, so that the resulting image will really contain a 1px wide black line."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:13 of
+msgid "Snapping is currently only supported by the Agg and MacOSX backends."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:36 of
+msgid "**snap**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:18 of
+msgid "Possible values:"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:20 of
+msgid "*True*: Snap vertices to the nearest pixel center."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:21 of
+msgid "*False*: Do not modify vertex positions."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:22 of
+msgid "*None*: (auto) If the path contains only rectilinear line segments, round to the nearest pixel center."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_tight_layout:2 of
+msgid "Set whether and how `.tight_layout` is called when drawing."
+msgstr ""
+
+#: matplotlib.figure.Figure.set_tight_layout:24 of
+msgid "**tight**"
+msgstr ""
+
+#: matplotlib.figure.Figure.set_tight_layout:8 of
+msgid "If a bool, sets whether to call `.tight_layout` upon drawing. If ``None``, use :rc:`figure.autolayout` instead. If a dict, pass it as kwargs to `.tight_layout`, overriding the default paddings."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_transform:2 of
+msgid "Set the artist transform."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_transform:21 of
+msgid "**t** : `.Transform`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_transform:20 of
+msgid "Transform"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_url:2 of
+msgid "Set the url for the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_url:21 of
+msgid "**url**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_visible:2 of
+msgid "Set the artist's visibility."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_zorder:2 of
+msgid "Set the zorder for the artist.  Artists with lower zorder values are drawn first."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_zorder:22 of
+msgid "**level**"
+msgstr ""
+
+#: matplotlib.figure.Figure.show:2 of
+msgid "If using a GUI backend with pyplot, display the figure window."
+msgstr ""
+
+#: matplotlib.figure.Figure.show:4 of
+msgid "If the figure was not created using `~.pyplot.figure`, it will lack a `~.backend_bases.FigureManagerBase`, and this method will raise an AttributeError."
+msgstr ""
+
+#: matplotlib.figure.Figure.show:10 of
+msgid "This does not manage an GUI event loop. Consequently, the figure may only be shown briefly or not shown at all if you or your environment are not managing an event loop."
+msgstr ""
+
+#: matplotlib.figure.Figure.show:14 of
+msgid "Proper use cases for `.Figure.show` include running this from a GUI application or an IPython shell."
+msgstr ""
+
+#: matplotlib.figure.Figure.show:17 of
+msgid "If you're running a pure python shell or executing a non-GUI python script, you should use `matplotlib.pyplot.show` instead, which takes care of managing the event loop for you."
+msgstr ""
+
+#: matplotlib.figure.Figure.show:38 of
+msgid "**warn**"
+msgstr ""
+
+#: matplotlib.figure.Figure.show:24 of
+msgid "If ``True`` and we are not running headless (i.e. on Linux with an unset DISPLAY), issue warning when called on a non-GUI backend."
+msgstr ""
+
+#: matplotlib.figure.Figure.stale:2 matplotlib.figure.FigureBase.stale:2
+#: matplotlib.figure.SubFigure.stale:2 of
+msgid "Whether the artist is 'stale' and needs to be re-drawn for the output to match the internal state of the artist."
+msgstr ""
+
+#: matplotlib.figure.Figure.sticky_edges:2
+#: matplotlib.figure.FigureBase.sticky_edges:2
+#: matplotlib.figure.SubFigure.sticky_edges:2 of
+msgid "``x`` and ``y`` sticky edge lists for autoscaling."
+msgstr ""
+
+#: matplotlib.figure.Figure.sticky_edges:4
+#: matplotlib.figure.FigureBase.sticky_edges:4
+#: matplotlib.figure.SubFigure.sticky_edges:4 of
+msgid "When performing autoscaling, if a data limit coincides with a value in the corresponding sticky_edges list, then no margin will be added--the view limit \"sticks\" to the edge. A typical use case is histograms, where one usually expects no margin on the bottom edge (0) of the histogram."
+msgstr ""
+
+#: matplotlib.figure.Figure.sticky_edges:10
+#: matplotlib.figure.FigureBase.sticky_edges:10
+#: matplotlib.figure.SubFigure.sticky_edges:10 of
+msgid "Moreover, margin expansion \"bumps\" against sticky edges and cannot cross them.  For example, if the upper data limit is 1.0, the upper view limit computed by simple margin application is 1.2, but there is a sticky edge at 1.1, then the actual upper view limit will be 1.1."
+msgstr ""
+
+#: matplotlib.figure.Figure.sticky_edges:15
+#: matplotlib.figure.FigureBase.sticky_edges:15
+#: matplotlib.figure.SubFigure.sticky_edges:15 of
+msgid "This attribute cannot be assigned to; however, the ``x`` and ``y`` lists can be modified in place as needed."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:2 of
+msgid "Add a subfigure to this figure or subfigure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:4 of
+msgid "A subfigure has the same artist methods as a figure, and is logically the same as a figure, but cannot print itself. See :doc:`/gallery/subplots_axes_and_figures/subfigures`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:11
+#: matplotlib.figure.FigureBase.subplots:10 of
+msgid "**nrows, ncols**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:11 of
+msgid "Number of rows/columns of the subfigure grid."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:15
+#: matplotlib.figure.FigureBase.subplots:41 of
+msgid "**squeeze**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:14 of
+msgid "If True, extra dimensions are squeezed out from the returned array of subfigures."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:21 of
+msgid "**wspace, hspace**"
+msgstr ""
+
+#: of
+msgid "float, default: None"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:18 of
+msgid "The amount of width/height reserved for space between subfigures, expressed as a fraction of the average subfigure width/height. If not given, the values will be inferred from a figure or rcParams when necessary."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:26 of
+msgid "**width_ratios** : array-like of length *ncols*, optional"
+msgstr ""
+
+#: of
+msgid "array-like of length"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:24 of
+msgid "Defines the relative widths of the columns. Each column gets a relative width of ``width_ratios[i] / sum(width_ratios)``. If not given, all columns will have the same width."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:44 of
+msgid "**height_ratios** : array-like of length *nrows*, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subfigures:29 of
+msgid "Defines the relative heights of the rows. Each row gets a relative height of ``height_ratios[i] / sum(height_ratios)``. If not given, all rows will have the same height."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:2 of
+msgid "Build a layout of Axes based on ASCII art or nested lists."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:4 of
+msgid "This is a helper function to build complex GridSpec layouts visually."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:8 of
+msgid "This API is provisional and may be revised in the future based on early user feedback."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:44 of
+msgid "**mosaic**"
+msgstr ""
+
+#: of
+msgid "list of list of {hashable or nested} or str"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:14 of
+msgid "A visual layout of how you want your Axes to be arranged labeled as strings.  For example ::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:20 of
+msgid "produces 4 Axes:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:22 of
+msgid "'A panel' which is 1 row high and spans the first two columns"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:23 of
+msgid "'edge' which is 2 rows high and is on the right edge"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:24 of
+msgid "'C panel' which in 1 row and 1 column wide in the bottom left"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:25 of
+msgid "a blank space 1 row and 1 column wide in the bottom center"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:27 of
+msgid "Any of the entries in the layout can be a list of lists of the same form to create nested layouts."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:30 of
+msgid "If input is a str, then it can either be a multi-line string of the form ::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:38 of
+msgid "where each character is a column and each line is a row. Or it can be a single-line string where rows are separated by ``;``::"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:43 of
+msgid "The string notation allows only single character Axes labels and does not support nesting but is very terse."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:50
+#: matplotlib.figure.FigureBase.subplots:27 of
+msgid "**sharex, sharey**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:47 of
+msgid "If True, the x-axis (*sharex*) or y-axis (*sharey*) will be shared among all subplots.  In that case, tick label visibility and axis units behave as for `subplots`.  If False, each subplot's x- or y-axis will be independent."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:54
+#: matplotlib.figure.FigureBase.subplots:45 of
+msgid "**subplot_kw**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:53 of
+msgid "Dictionary with keywords passed to the `.Figure.add_subplot` call used to create each subplot."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:58
+#: matplotlib.figure.FigureBase.subplots:50 of
+msgid "**gridspec_kw**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:57 of
+msgid "Dictionary with keywords passed to the `.GridSpec` constructor used to create the grid the subplots are placed on."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:64 of
+msgid "**empty_sentinel**"
+msgstr ""
+
+#: of
+msgid "object, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:61 of
+msgid "Entry in the layout to mean \"leave this space empty\".  Defaults to ``'.'``. Note, if *layout* is a string, it is processed via `inspect.cleandoc` to remove leading white space, which may interfere with using white-space as the empty sentinel."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:83 of
+msgid "dict[label, Axes]"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplot_mosaic:69 of
+msgid "A dictionary mapping the labels to the Axes objects.  The order of the axes is left-to-right and top-to-bottom of their position in the total layout."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:2 of
+msgid "Add a set of subplots to this figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:4 of
+msgid "This utility wrapper makes it convenient to create common layouts of subplots in a single call."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:10 of
+msgid "Number of rows/columns of the subplot grid."
+msgstr ""
+
+#: of
+msgid "bool or {'none', 'all', 'row', 'col'}, default: False"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:13 of
+msgid "Controls sharing of x-axis (*sharex*) or y-axis (*sharey*):"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:15 of
+msgid "True or 'all': x- or y-axis will be shared among all subplots."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:16 of
+msgid "False or 'none': each subplot x- or y-axis will be independent."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:17 of
+msgid "'row': each subplot row will share an x- or y-axis."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:18 of
+msgid "'col': each subplot column will share an x- or y-axis."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:20 of
+msgid "When subplots have a shared x-axis along a column, only the x tick labels of the bottom subplot are created. Similarly, when subplots have a shared y-axis along a row, only the y tick labels of the first column subplot are created. To later turn other subplots' ticklabels on, use `~matplotlib.axes.Axes.tick_params`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:26 of
+msgid "When subplots have a shared axis that has units, calling `.Axis.set_units` will update each axis with the new units."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:30 of
+msgid "If True, extra dimensions are squeezed out from the returned array of Axes:"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:33 of
+msgid "if only one subplot is constructed (nrows=ncols=1), the resulting single Axes object is returned as a scalar."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:35 of
+msgid "for Nx1 or 1xM subplots, the returned object is a 1D numpy object array of Axes objects."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:37 of
+msgid "for NxM, subplots with N>1 and M>1 are returned as a 2D array."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:39 of
+msgid "If False, no squeezing at all is done: the returned Axes object is always a 2D array containing Axes instances, even if it ends up being 1x1."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:44 of
+msgid "Dict with keywords passed to the `.Figure.add_subplot` call used to create each subplot."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:48 of
+msgid "Dict with keywords passed to the `~matplotlib.gridspec.GridSpec` constructor used to create the grid the subplots are placed on."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:64 of
+msgid "`~.axes.Axes` or array of Axes"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots:55 of
+msgid "Either a single `~matplotlib.axes.Axes` object or an array of Axes objects if more than one subplot was created. The dimensions of the resulting array can be controlled with the *squeeze* keyword, see above."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:2 of
+msgid "Adjust the subplot layout parameters."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:4 of
+msgid "Unset parameters are left unmodified; initial values are given by :rc:`figure.subplot.[name]`."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:11
+#: matplotlib.figure.SubplotParams:30 of
+msgid "**left**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:10
+#: matplotlib.figure.SubplotParams:29 of
+msgid "The position of the left edge of the subplots, as a fraction of the figure width."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:15
+#: matplotlib.figure.SubplotParams:34 of
+msgid "**right**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:14
+#: matplotlib.figure.SubplotParams:33 of
+msgid "The position of the right edge of the subplots, as a fraction of the figure width."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:18
+#: matplotlib.figure.SubplotParams:37 of
+msgid "The position of the bottom edge of the subplots, as a fraction of the figure height."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:23
+#: matplotlib.figure.SubplotParams:42 of
+msgid "**top**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:22
+#: matplotlib.figure.SubplotParams:41 of
+msgid "The position of the top edge of the subplots, as a fraction of the figure height."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:27
+#: matplotlib.figure.SubplotParams:46 of
+msgid "**wspace**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:26
+#: matplotlib.figure.SubplotParams:45 of
+msgid "The width of the padding between subplots, as a fraction of the average Axes width."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:44
+#: matplotlib.figure.SubplotParams:63 of
+msgid "**hspace**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.subplots_adjust:30
+#: matplotlib.figure.SubplotParams:49 of
+msgid "The height of the padding between subplots, as a fraction of the average Axes height."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:2 of
+msgid "Add a centered suptitle to the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:8
+#: matplotlib.figure.FigureBase.supxlabel:8
+#: matplotlib.figure.FigureBase.supylabel:8 of
+msgid "**t**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:8 of
+msgid "The suptitle text."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:11
+#: matplotlib.figure.FigureBase.supxlabel:11
+#: matplotlib.figure.FigureBase.supylabel:11 of
+msgid "**x**"
+msgstr ""
+
+#: of
+msgid "float, default: 0.5"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:11
+#: matplotlib.figure.FigureBase.supxlabel:11
+#: matplotlib.figure.FigureBase.supylabel:11 of
+msgid "The x location of the text in figure coordinates."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:14
+#: matplotlib.figure.FigureBase.supxlabel:14
+#: matplotlib.figure.FigureBase.supylabel:14 of
+msgid "**y**"
+msgstr ""
+
+#: of
+msgid "float, default: 0.98"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:14
+#: matplotlib.figure.FigureBase.supxlabel:14
+#: matplotlib.figure.FigureBase.supylabel:14 of
+msgid "The y location of the text in figure coordinates."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:17
+#: matplotlib.figure.FigureBase.supxlabel:17
+#: matplotlib.figure.FigureBase.supylabel:17 of
+msgid "**horizontalalignment, ha**"
+msgstr ""
+
+#: of
+msgid "{'center', 'left', 'right'}, default: center"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:17
+#: matplotlib.figure.FigureBase.supxlabel:17
+#: matplotlib.figure.FigureBase.supylabel:17 of
+msgid "The horizontal alignment of the text relative to (*x*, *y*)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:20
+#: matplotlib.figure.FigureBase.supxlabel:20
+#: matplotlib.figure.FigureBase.supylabel:20 of
+msgid "**verticalalignment, va**"
+msgstr ""
+
+#: of
+msgid "{'top', 'center', 'bottom', 'baseline'}, default: top"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:20
+#: matplotlib.figure.FigureBase.supxlabel:20
+#: matplotlib.figure.FigureBase.supylabel:20 of
+msgid "The vertical alignment of the text relative to (*x*, *y*)."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:24
+#: matplotlib.figure.FigureBase.supxlabel:24
+#: matplotlib.figure.FigureBase.supylabel:24 of
+msgid "**fontsize, size** : default: :rc:`figure.titlesize`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:23
+#: matplotlib.figure.FigureBase.supxlabel:23
+#: matplotlib.figure.FigureBase.supylabel:23 of
+msgid "The font size of the text. See `.Text.set_size` for possible values."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:28
+#: matplotlib.figure.FigureBase.supxlabel:28
+#: matplotlib.figure.FigureBase.supylabel:28 of
+msgid "**fontweight, weight** : default: :rc:`figure.titleweight`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:27
+#: matplotlib.figure.FigureBase.supxlabel:27
+#: matplotlib.figure.FigureBase.supylabel:27 of
+msgid "The font weight of the text. See `.Text.set_weight` for possible values."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:35
+#: matplotlib.figure.FigureBase.supxlabel:35
+#: matplotlib.figure.FigureBase.supylabel:35 of
+msgid "text"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:33 of
+msgid "The `.Text` instance of the suptitle."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:43
+#: matplotlib.figure.FigureBase.supxlabel:43
+#: matplotlib.figure.FigureBase.supylabel:43 of
+msgid "**fontproperties**"
+msgstr ""
+
+#: of
+msgid "None or dict, optional"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:40
+#: matplotlib.figure.FigureBase.supxlabel:40
+#: matplotlib.figure.FigureBase.supylabel:40 of
+msgid "A dict of font properties. If *fontproperties* is given the default values for font size and weight are taken from the `.FontProperties` defaults. :rc:`figure.titlesize` and :rc:`figure.titleweight` are ignored in this case."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.suptitle:46
+#: matplotlib.figure.FigureBase.supxlabel:46
+#: matplotlib.figure.FigureBase.supylabel:46 of
+msgid "Additional kwargs are `matplotlib.text.Text` properties."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.supxlabel:2 of
+msgid "Add a centered supxlabel to the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.supxlabel:8 of
+msgid "The supxlabel text."
+msgstr ""
+
+#: of
+msgid "float, default: 0.01"
+msgstr ""
+
+#: of
+msgid "{'top', 'center', 'bottom', 'baseline'}, default: bottom"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.supxlabel:33 of
+msgid "The `.Text` instance of the supxlabel."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.supylabel:2 of
+msgid "Add a centered supylabel to the figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.supylabel:8 of
+msgid "The supylabel text."
+msgstr ""
+
+#: of
+msgid "float, default: 0.02"
+msgstr ""
+
+#: of
+msgid "{'center', 'left', 'right'}, default: left"
+msgstr ""
+
+#: of
+msgid "{'top', 'center', 'bottom', 'baseline'}, default: center"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.supylabel:33 of
+msgid "The `.Text` instance of the supylabel."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:2 of
+msgid "Add text to figure."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:10 of
+msgid "**x, y**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:8 of
+msgid "The position to place the text. By default, this is in figure coordinates, floats in [0, 1]. The coordinate system can be changed using the *transform* keyword."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:13 of
+msgid "The text string."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:18 of
+msgid "**fontdict**"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:16 of
+msgid "A dictionary to override the default text properties. If not given, the defaults are determined by :rc:`font.*`. Properties passed as *kwargs* override the corresponding ones given in *fontdict*."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:25 of
+msgid "`~.text.Text`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:85 of
+msgid "**\\*\\*kwargs** : `~matplotlib.text.Text` properties"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:84 of
+msgid "Text properties"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:30 of
+msgid "Other miscellaneous text parameters."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:41 of
+msgid ":meth:`backgroundcolor <matplotlib.text.Text.set_backgroundcolor>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:42 of
+msgid ":meth:`bbox <matplotlib.text.Text.set_bbox>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:42 of
+msgid "dict with properties for `.patches.FancyBboxPatch`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:46 of
+msgid ":meth:`color <matplotlib.text.Text.set_color>` or c"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:48 of
+msgid ":meth:`fontfamily <matplotlib.text.Text.set_fontfamily>` or family"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:48 of
+msgid "{FONTNAME, 'serif', 'sans-serif', 'cursive', 'fantasy', 'monospace'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:49 of
+msgid ":meth:`fontproperties <matplotlib.text.Text.set_fontproperties>` or font or font_properties"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:49 of
+msgid "`.font_manager.FontProperties` or `str` or `pathlib.Path`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:50 of
+msgid ":meth:`fontsize <matplotlib.text.Text.set_fontsize>` or size"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:50 of
+msgid "float or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:51 of
+msgid ":meth:`fontstretch <matplotlib.text.Text.set_fontstretch>` or stretch"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:51 of
+msgid "{a numeric value in range 0-1000, 'ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', 'extra-expanded', 'ultra-expanded'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:52 of
+msgid ":meth:`fontstyle <matplotlib.text.Text.set_fontstyle>` or style"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:52 of
+msgid "{'normal', 'italic', 'oblique'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:53 of
+msgid ":meth:`fontvariant <matplotlib.text.Text.set_fontvariant>` or variant"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:53 of
+msgid "{'normal', 'small-caps'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:54 of
+msgid ":meth:`fontweight <matplotlib.text.Text.set_fontweight>` or weight"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:54 of
+msgid "{a numeric value in range 0-1000, 'ultralight', 'light', 'normal', 'regular', 'book', 'medium', 'roman', 'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:56 of
+msgid ":meth:`horizontalalignment <matplotlib.text.Text.set_horizontalalignment>` or ha"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:56 of
+msgid "{'center', 'right', 'left'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:59 of
+msgid ":meth:`linespacing <matplotlib.text.Text.set_linespacing>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:59 of
+msgid "float (multiple of font size)"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:60 of
+msgid ":meth:`math_fontfamily <matplotlib.text.Text.set_math_fontfamily>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:61 of
+msgid ":meth:`multialignment <matplotlib.text.Text.set_multialignment>` or ma"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:61 of
+msgid "{'left', 'right', 'center'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:62 of
+msgid ":meth:`parse_math <matplotlib.text.Text.set_parse_math>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:65 of
+msgid ":meth:`position <matplotlib.text.Text.set_position>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:65 of
+msgid "(float, float)"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:67 of
+msgid ":meth:`rotation <matplotlib.text.Text.set_rotation>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:67 of
+msgid "float or {'vertical', 'horizontal'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:68 of
+msgid ":meth:`rotation_mode <matplotlib.text.Text.set_rotation_mode>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:68 of
+msgid "{None, 'default', 'anchor'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:71 of
+msgid ":meth:`text <matplotlib.text.Text.set_text>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:73 of
+msgid ":meth:`transform_rotates_text <matplotlib.text.Text.set_transform_rotates_text>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:75 of
+msgid ":meth:`usetex <matplotlib.text.Text.set_usetex>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:76 of
+msgid ":meth:`verticalalignment <matplotlib.text.Text.set_verticalalignment>` or va"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:76 of
+msgid "{'center', 'top', 'bottom', 'baseline', 'center_baseline'}"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:78 of
+msgid ":meth:`wrap <matplotlib.text.Text.set_wrap>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:79 of
+msgid ":meth:`x <matplotlib.text.Text.set_x>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:80 of
+msgid ":meth:`y <matplotlib.text.Text.set_y>`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:90 of
+msgid ":obj:`.Axes.text`"
+msgstr ""
+
+#: matplotlib.figure.FigureBase.text:92 of
+msgid ":obj:`.pyplot.text`"
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:2 of
+msgid "Adjust the padding between and around subplots."
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:4 of
+msgid "To exclude an artist on the Axes from the bounding box calculation that determines the subplot parameters (i.e. legend, or annotation), set ``a.set_in_layout(False)`` for that artist."
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:12 of
+msgid "**pad**"
+msgstr ""
+
+#: of
+msgid "float, default: 1.08"
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:11 of
+msgid "Padding between the figure edge and the edges of subplots, as a fraction of the font size."
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:16 of
+msgid "**h_pad, w_pad** : float, default: *pad*"
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:15 of
+msgid "Padding (height/width) between edges of adjacent subplots, as a fraction of the font size."
+msgstr ""
+
+#: of
+msgid "tuple (left, bottom, right, top), default: (0, 0, 1, 1)"
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:19 of
+msgid "A rectangle in normalized figure coordinates into which the whole subplots area (including labels) will fit."
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:32 of
+msgid ":obj:`.Figure.set_tight_layout`"
+msgstr ""
+
+#: matplotlib.figure.Figure.tight_layout:34 of
+msgid ":obj:`.pyplot.tight_layout`"
+msgstr ""
+
+#: matplotlib.artist.Artist.update:2 of
+msgid "Update this artist's properties from the dict *props*."
+msgstr ""
+
+#: matplotlib.artist.Artist.update:21 of
+msgid "**props**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.artist.Artist.update_from:2 of
+msgid "Copy properties from *other* to *self*."
+msgstr ""
+
+#: matplotlib.figure.Figure.waitforbuttonpress:2 of
+msgid "Blocking call to interact with the figure."
+msgstr ""
+
+#: matplotlib.figure.Figure.waitforbuttonpress:4 of
+msgid "Wait for user input and return True if a key was pressed, False if a mouse button was pressed and None if no input was given within *timeout* seconds.  Negative values deactivate *timeout*."
+msgstr ""
+
+#: matplotlib.figure.FigureBase:2 of
+msgid "Base class for `.figure.Figure` and `.figure.SubFigure` containing the methods that add artists to the figure or subfigure, create Axes, etc."
+msgstr ""
+
+#: matplotlib.figure.FigureBase.axes:2 of
+msgid "The `~.axes.Axes` instance the artist resides in, or *None*."
+msgstr ""
+
+#: matplotlib.figure.SubFigure:2 of
+msgid "Logical figure that can be placed inside a figure."
+msgstr ""
+
+#: matplotlib.figure.SubFigure:4 of
+msgid "Typically instantiated using `.Figure.add_subfigure` or `.SubFigure.add_subfigure`, or `.SubFigure.subfigures`.  A subfigure has the same methods as a figure except for those particularly tied to the size or dpi of the figure, and is confined to a prescribed region of the figure. For example the following puts two subfigures side-by-side::"
+msgstr ""
+
+#: matplotlib.figure.SubFigure:15 of
+msgid "See :doc:`/gallery/subplots_axes_and_figures/subfigures`"
+msgstr ""
+
+#: matplotlib.figure.SubFigure:42 of
+msgid "**parent** : `.figure.Figure` or `.figure.SubFigure`"
+msgstr ""
+
+#: matplotlib.figure.SubFigure:41 of
+msgid "figure.Figure or figure.SubFigure"
+msgstr ""
+
+#: matplotlib.figure.SubFigure:41 of
+msgid "Figure or subfigure that contains the SubFigure.  SubFigures can be nested."
+msgstr ""
+
+#: matplotlib.figure.SubFigure:49 of
+msgid "The figure patch face color."
+msgstr ""
+
+#: matplotlib.figure.SubFigure:105 of
+msgid "**\\*\\*kwargs** : `.SubFigure` properties, optional"
+msgstr ""
+
+#: matplotlib.figure.SubFigure:104 of
+msgid "SubFigure properties, optional"
+msgstr ""
+
+#: matplotlib.figure.SubFigure.axes:2 of
+msgid "List of Axes in the SubFigure.  You can access and modify the Axes in the SubFigure through this list."
+msgstr ""
+
+#: matplotlib.figure.SubFigure.axes:5 of
+msgid "Do not modify the list itself. Instead, use `~.SubFigure.add_axes`, `~.SubFigure.add_subplot` or `~.SubFigure.delaxes` to add or remove an Axes."
+msgstr ""
+
+#: matplotlib.figure.SubFigure.axes:9 of
+msgid "Note: The `.SubFigure.axes` property and `~.SubFigure.get_axes` method are equivalent."
+msgstr ""
+
+#: matplotlib.figure.SubplotParams:2 of
+msgid "A class to hold the parameters for a subplot."
+msgstr ""
+
+#: matplotlib.figure.SubplotParams:23 of
+msgid "Defaults are given by :rc:`figure.subplot.[name]`."
+msgstr ""
+
+#: matplotlib.figure.SubplotParams.update:2 of
+msgid "Update the dimensions of the passed parameters. *None* means unchanged."
+msgstr ""
+
+#: matplotlib.figure.figaspect:2 of
+msgid "Calculate the width and height for a figure with a specified aspect ratio."
+msgstr ""
+
+#: matplotlib.figure.figaspect:4 of
+msgid "While the height is taken from :rc:`figure.figsize`, the width is adjusted to match the desired aspect ratio. Additionally, it is ensured that the width is in the range [4., 16.] and the height is in the range [2., 16.]. If necessary, the default height is adjusted to ensure this."
+msgstr ""
+
+#: matplotlib.figure.figaspect:15 of
+msgid "**arg**"
+msgstr ""
+
+#: of
+msgid "float or 2D array"
+msgstr ""
+
+#: matplotlib.figure.figaspect:12 of
+msgid "If a float, this defines the aspect ratio (i.e. the ratio height / width). In case of an array the aspect ratio is number of rows / number of columns, so that the array could be fitted in the figure undistorted."
+msgstr ""
+
+#: matplotlib.figure.figaspect:27 of
+msgid "**width, height**"
+msgstr ""
+
+#: matplotlib.figure.figaspect:20 of
+msgid "The figure size in inches."
+msgstr ""
+
+#: matplotlib.figure.figaspect:31 of
+msgid "If you want to create an Axes within the figure, that still preserves the aspect ratio, be sure to create it with equal width and height. See examples below."
+msgstr ""
+
+#: matplotlib.figure.figaspect:35 of
+msgid "Thanks to Fernando Perez for this function."
+msgstr ""
+
+#: matplotlib.figure.figaspect:40 of
+msgid "Make a figure twice as tall as it is wide::"
+msgstr ""
+
+#: matplotlib.figure.figaspect:47 of
+msgid "Make a figure with the proper aspect for an array::"
+msgstr ""
+

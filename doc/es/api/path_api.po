@@ -1,0 +1,763 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:24\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/path_api.po\n"
+"X-Crowdin-File-ID: 1826\n"
+"Language: es_ES\n"
+
+#: ../../api/path_api.rst:3
+msgid "``matplotlib.path``"
+msgstr ""
+
+#: matplotlib.path:1 of
+msgid "A module for dealing with the polylines used throughout Matplotlib."
+msgstr ""
+
+#: matplotlib.path:3 of
+msgid "The primary class for polyline handling in Matplotlib is `Path`.  Almost all vector drawing makes use of `Path`\\s somewhere in the drawing pipeline."
+msgstr ""
+
+#: matplotlib.path:6 of
+msgid "Whilst a `Path` instance itself cannot be drawn, some `.Artist` subclasses, such as `.PathPatch` and `.PathCollection`, can be used for convenient `Path` visualisation."
+msgstr ""
+
+#: matplotlib.path.Path:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.path.Path:2 of
+msgid "A series of possibly disconnected, possibly closed, line and curve segments."
+msgstr ""
+
+#: matplotlib.path.Path:5 of
+msgid "The underlying storage is made up of two parallel numpy arrays:"
+msgstr ""
+
+#: matplotlib.path.Path:7 of
+msgid "*vertices*: an Nx2 float array of vertices"
+msgstr ""
+
+#: matplotlib.path.Path:8 of
+msgid "*codes*: an N-length uint8 array of path codes, or None"
+msgstr ""
+
+#: matplotlib.path.Path:10 of
+msgid "These two arrays always have the same length in the first dimension.  For example, to represent a cubic curve, you must provide three vertices and three ``CURVE4`` codes."
+msgstr ""
+
+#: matplotlib.path.Path:14 of
+msgid "The code types are:"
+msgstr ""
+
+#: matplotlib.path.Path:18 of
+msgid "``STOP``"
+msgstr ""
+
+#: of
+msgid "1 vertex (ignored)"
+msgstr ""
+
+#: matplotlib.path.Path:17 of
+msgid "A marker for the end of the entire path (currently not required and ignored)"
+msgstr ""
+
+#: matplotlib.path.Path:21 of
+msgid "``MOVETO``"
+msgstr ""
+
+#: of
+msgid "1 vertex"
+msgstr ""
+
+#: matplotlib.path.Path:21 of
+msgid "Pick up the pen and move to the given vertex."
+msgstr ""
+
+#: matplotlib.path.Path:24 of
+msgid "``LINETO``"
+msgstr ""
+
+#: matplotlib.path.Path:24 of
+msgid "Draw a line from the current position to the given vertex."
+msgstr ""
+
+#: matplotlib.path.Path:28 of
+msgid "``CURVE3``"
+msgstr ""
+
+#: of
+msgid "1 control point, 1 endpoint"
+msgstr ""
+
+#: matplotlib.path.Path:27 of
+msgid "Draw a quadratic Bezier curve from the current position, with the given control point, to the given end point."
+msgstr ""
+
+#: matplotlib.path.Path:32 of
+msgid "``CURVE4``"
+msgstr ""
+
+#: of
+msgid "2 control points, 1 endpoint"
+msgstr ""
+
+#: matplotlib.path.Path:31 of
+msgid "Draw a cubic Bezier curve from the current position, with the given control points, to the given end point."
+msgstr ""
+
+#: matplotlib.path.Path:35 of
+msgid "``CLOSEPOLY``"
+msgstr ""
+
+#: matplotlib.path.Path:35 of
+msgid "Draw a line segment to the start point of the current polyline."
+msgstr ""
+
+#: matplotlib.path.Path:37 of
+msgid "If *codes* is None, it is interpreted as a ``MOVETO`` followed by a series of ``LINETO``."
+msgstr ""
+
+#: matplotlib.path.Path:40 of
+msgid "Users of Path objects should not access the vertices and codes arrays directly.  Instead, they should use `iter_segments` or `cleaned` to get the vertex/code pairs.  This helps, in particular, to consistently handle the case of *codes* being None."
+msgstr ""
+
+#: matplotlib.path.Path:45 of
+msgid "Some behavior of Path objects can be controlled by rcParams. See the rcParams whose keys start with 'path.'."
+msgstr ""
+
+#: matplotlib.path.Path:50 of
+msgid "The vertices and codes arrays should be treated as immutable -- there are a number of optimizations and assumptions made up front in the constructor that will not change when the data changes."
+msgstr ""
+
+#: matplotlib.path.Path:73 of
+msgid "Create a new path with the given vertices and codes."
+msgstr ""
+
+#: matplotlib.path.Path matplotlib.path.Path.circle
+#: matplotlib.path.Path.contains_point matplotlib.path.Path.contains_points
+#: matplotlib.path.Path.get_extents matplotlib.path.Path.iter_bezier
+#: matplotlib.path.Path.iter_segments
+#: matplotlib.path.get_path_collection_extents of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.path.Path:82 of
+msgid "**vertices**"
+msgstr ""
+
+#: of
+msgid "(N, 2) array-like"
+msgstr ""
+
+#: matplotlib.path.Path:79 of
+msgid "The path vertices, as an array, masked array or sequence of pairs. Masked values, if any, will be converted to NaNs, which are then handled correctly by the Agg PathIterator and other consumers of path data, such as :meth:`iter_segments`."
+msgstr ""
+
+#: matplotlib.path.Path:87 of
+msgid "**codes**"
+msgstr ""
+
+#: of
+msgid "array-like or None, optional"
+msgstr ""
+
+#: matplotlib.path.Path:85 of
+msgid "N-length array of integers representing the codes of the path. If not None, codes must be the same length as vertices. If None, *vertices* will be treated as a series of line segments."
+msgstr ""
+
+#: matplotlib.path.Path:93 of
+msgid "**_interpolation_steps**"
+msgstr ""
+
+#: of
+msgid "int, optional"
+msgstr ""
+
+#: matplotlib.path.Path:90 of
+msgid "Used as a hint to certain projections, such as Polar, that this path should be linearly interpolated immediately before drawing. This attribute is primarily an implementation detail and is not intended for public use."
+msgstr ""
+
+#: matplotlib.path.Path:99 of
+msgid "**closed**"
+msgstr ""
+
+#: of
+msgid "bool, optional"
+msgstr ""
+
+#: matplotlib.path.Path:96 of
+msgid "If *codes* is None and closed is True, vertices will be treated as line segments of a closed polygon.  Note that the last vertex will then be ignored (as the corresponding code will be set to CLOSEPOLY)."
+msgstr ""
+
+#: matplotlib.path.Path:116 matplotlib.path.Path.circle:23 of
+msgid "**readonly**"
+msgstr ""
+
+#: matplotlib.path.Path:102 of
+msgid "Makes the path behave in an immutable way and sets the vertices and codes as read-only arrays."
+msgstr ""
+
+#: ../../docstring matplotlib.path.Path.NUM_VERTICES_FOR_CODE:2 of
+msgid "A dictionary mapping Path codes to the number of vertices that the code expects."
+msgstr ""
+
+#: matplotlib.path.Path.arc:2 of
+msgid "Return a `Path` for the unit circle arc from angles *theta1* to *theta2* (in degrees)."
+msgstr ""
+
+#: matplotlib.path.Path.arc:5 of
+msgid "*theta2* is unwrapped to produce the shortest arc within 360 degrees. That is, if *theta2* > *theta1* + 360, the arc will be from *theta1* to *theta2* - 360 and not a full circle plus some extra overlap."
+msgstr ""
+
+#: matplotlib.path.Path.arc:9 matplotlib.path.Path.wedge:9 of
+msgid "If *n* is provided, it is the number of spline segments to make. If *n* is not provided, the number of spline segments is determined based on the delta between *theta1* and *theta2*."
+msgstr ""
+
+#: matplotlib.path.Path.arc:13 of
+msgid "Masionobe, L.  2003.  `Drawing an elliptical arc using polylines, quadratic or cubic Bezier curves <http://www.spaceroots.org/documents/ellipse/index.html>`_."
+msgstr ""
+
+#: matplotlib.path.Path.circle:2 of
+msgid "Return a `Path` representing a circle of a given radius and center."
+msgstr ""
+
+#: matplotlib.path.Path.circle:8 of
+msgid "**center**"
+msgstr ""
+
+#: of
+msgid "(float, float), default: (0, 0)"
+msgstr ""
+
+#: matplotlib.path.Path.circle:8 of
+msgid "The center of the circle."
+msgstr ""
+
+#: matplotlib.path.Path.circle:11 matplotlib.path.Path.contains_point:24
+#: matplotlib.path.Path.contains_points:24 of
+msgid "**radius**"
+msgstr ""
+
+#: of
+msgid "float, default: 1"
+msgstr ""
+
+#: matplotlib.path.Path.circle:11 of
+msgid "The radius of the circle."
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:36 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.path.Path.circle:14 of
+msgid "Whether the created path should have the \"readonly\" argument set when creating the Path instance."
+msgstr ""
+
+#: matplotlib.path.Path.circle:26 matplotlib.path.Path.contains_point:39
+#: matplotlib.path.Path.contains_points:39
+#: matplotlib.path.get_path_collection_extents:33 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.path.Path.circle:27 of
+msgid "The circle is approximated using 8 cubic Bezier curves, as described in"
+msgstr ""
+
+#: matplotlib.path.Path.circle:29 of
+msgid "Lancaster, Don.  `Approximating a Circle or an Ellipse Using Four Bezier Cubic Splines <https://www.tinaja.com/glib/ellipse4.pdf>`_."
+msgstr ""
+
+#: matplotlib.path.Path.cleaned:2 of
+msgid "Return a new Path with vertices and codes cleaned according to the parameters."
+msgstr ""
+
+#: matplotlib.path.Path.cleaned:17 of
+msgid ":obj:`Path.iter_segments`"
+msgstr ""
+
+#: matplotlib.path.Path.cleaned:18 of
+msgid "for details of the keyword arguments."
+msgstr ""
+
+#: matplotlib.path.Path.clip_to_bbox:2 of
+msgid "Clip the path to the given bounding box."
+msgstr ""
+
+#: matplotlib.path.Path.clip_to_bbox:4 of
+msgid "The path must be made up of one or more closed polygons.  This algorithm will not behave correctly for unclosed paths."
+msgstr ""
+
+#: matplotlib.path.Path.clip_to_bbox:7 of
+msgid "If *inside* is `True`, clip to the inside of the box, otherwise to the outside of the box."
+msgstr ""
+
+#: matplotlib.path.Path.codes:2 of
+msgid "The list of codes in the `Path` as a 1D numpy array.  Each code is one of `STOP`, `MOVETO`, `LINETO`, `CURVE3`, `CURVE4` or `CLOSEPOLY`.  For codes that correspond to more than one vertex (`CURVE3` and `CURVE4`), that code will be repeated so that the length of `self.vertices` and `self.codes` is always the same."
+msgstr ""
+
+#: matplotlib.path.Path.contains_path:2 of
+msgid "Return whether this (closed) path completely contains the given path."
+msgstr ""
+
+#: matplotlib.path.Path.contains_path:4 of
+msgid "If *transform* is not ``None``, the path will be transformed before checking for containment."
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:2 of
+msgid "Return whether the area enclosed by the path contains the given point."
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:4 matplotlib.path.Path.contains_points:4
+#: of
+msgid "The path is always treated as closed; i.e. if the last code is not CLOSEPOLY an implicit segment connecting the last vertex to the first vertex is assumed."
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:11 of
+msgid "**point**"
+msgstr ""
+
+#: of
+msgid "(float, float)"
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:11 of
+msgid "The point (x, y) to check."
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:16
+#: matplotlib.path.Path.contains_points:16 of
+msgid "**transform** : `matplotlib.transforms.Transform`, optional"
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:15
+#: matplotlib.path.Path.contains_points:15 of
+msgid "matplotlib.transforms.Transform, optional"
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:14 of
+msgid "If not ``None``, *point* will be compared to ``self`` transformed by *transform*; i.e. for a correct check, *transform* should transform the path into the coordinate system of *point*."
+msgstr ""
+
+#: of
+msgid "float, default: 0"
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:19 of
+msgid "Add an additional margin on the path in coordinates of *point*. The path is extended tangentially by *radius/2*; i.e. if you would draw the path with a linewidth of *radius*, all points on the line would still be considered to be contained in the area. Conversely, negative values shrink the area: Points on the imaginary line will be considered outside the area."
+msgstr ""
+
+#: matplotlib.path.Path.contains_point matplotlib.path.Path.contains_points
+#: matplotlib.path.Path.get_extents of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:40
+#: matplotlib.path.Path.contains_points:40 of
+msgid "The current algorithm has some limitations:"
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:42
+#: matplotlib.path.Path.contains_points:42 of
+msgid "The result is undefined for points exactly at the boundary (i.e. at the path shifted by *radius/2*)."
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:44
+#: matplotlib.path.Path.contains_points:44 of
+msgid "The result is undefined if there is no enclosed area, i.e. all vertices are on a straight line."
+msgstr ""
+
+#: matplotlib.path.Path.contains_point:46
+#: matplotlib.path.Path.contains_points:46 of
+msgid "If bounding lines start to cross each other due to *radius* shift, the result is not guaranteed to be correct."
+msgstr ""
+
+#: matplotlib.path.Path.contains_points:2 of
+msgid "Return whether the area enclosed by the path contains the given points."
+msgstr ""
+
+#: matplotlib.path.Path.contains_points:11 of
+msgid "**points**"
+msgstr ""
+
+#: of
+msgid "(N, 2) array"
+msgstr ""
+
+#: matplotlib.path.Path.contains_points:11 of
+msgid "The points to check. Columns contain x and y values."
+msgstr ""
+
+#: matplotlib.path.Path.contains_points:14 of
+msgid "If not ``None``, *points* will be compared to ``self`` transformed by *transform*; i.e. for a correct check, *transform* should transform the path into the coordinate system of *points*."
+msgstr ""
+
+#: matplotlib.path.Path.contains_points:19 of
+msgid "Add an additional margin on the path in coordinates of *points*. The path is extended tangentially by *radius/2*; i.e. if you would draw the path with a linewidth of *radius*, all points on the line would still be considered to be contained in the area. Conversely, negative values shrink the area: Points on the imaginary line will be considered outside the area."
+msgstr ""
+
+#: matplotlib.path.Path.contains_points:36 of
+msgid "length-N bool array"
+msgstr ""
+
+#: matplotlib.path.Path.copy:2 of
+msgid "Return a shallow copy of the `Path`, which will share the vertices and codes with the source `Path`."
+msgstr ""
+
+#: matplotlib.path.Path.__deepcopy__:2 of
+msgid "Return a deepcopy of the `Path`.  The `Path` will not be readonly, even if the source `Path` is."
+msgstr ""
+
+#: matplotlib.path.Path.get_extents:2 of
+msgid "Get Bbox of the path."
+msgstr ""
+
+#: matplotlib.path.Path.get_extents:8 of
+msgid "**transform**"
+msgstr ""
+
+#: matplotlib.path.Path.get_extents:8 of
+msgid "Transform to apply to path before computing extents, if any."
+msgstr ""
+
+#: matplotlib.path.Path.get_extents:11 matplotlib.path.Path.iter_bezier:9 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.path.Path.get_extents:11 of
+msgid "Forwarded to `.iter_bezier`."
+msgstr ""
+
+#: matplotlib.path.Path.get_extents:28 of
+msgid "matplotlib.transforms.Bbox"
+msgstr ""
+
+#: matplotlib.path.Path.get_extents:16 of
+msgid "The extents of the path Bbox([[xmin, ymin], [xmax, ymax]])"
+msgstr ""
+
+#: matplotlib.path.Path.hatch:2 of
+msgid "Given a hatch specifier, *hatchpattern*, generates a Path that can be used in a repeated hatching pattern.  *density* is the number of lines per unit square."
+msgstr ""
+
+#: matplotlib.path.Path.interpolated:2 of
+msgid "Return a new path resampled to length N x steps."
+msgstr ""
+
+#: matplotlib.path.Path.interpolated:4 of
+msgid "Codes other than LINETO are not handled correctly."
+msgstr ""
+
+#: matplotlib.path.Path.intersects_bbox:2 of
+msgid "Return whether this path intersects a given `~.transforms.Bbox`."
+msgstr ""
+
+#: matplotlib.path.Path.intersects_bbox:4 of
+msgid "If *filled* is True, then this also returns True if the path completely encloses the `.Bbox` (i.e., the path is treated as filled)."
+msgstr ""
+
+#: matplotlib.path.Path.intersects_bbox:7 of
+msgid "The bounding box is always considered filled."
+msgstr ""
+
+#: matplotlib.path.Path.intersects_path:2 of
+msgid "Return whether if this path intersects another given path."
+msgstr ""
+
+#: matplotlib.path.Path.intersects_path:4 of
+msgid "If *filled* is True, then this also returns True if one path completely encloses the other (i.e., the paths are treated as filled)."
+msgstr ""
+
+#: matplotlib.path.Path.iter_bezier:2 of
+msgid "Iterate over each bezier curve (lines included) in a Path."
+msgstr ""
+
+#: matplotlib.path.Path.iter_bezier:8 of
+msgid "Forwarded to `.iter_segments`."
+msgstr ""
+
+#: matplotlib.path.Path.iter_bezier of
+msgid "Yields"
+msgstr ""
+
+#: matplotlib.path.Path.iter_bezier:16 of
+msgid "**B**"
+msgstr ""
+
+#: of
+msgid "matplotlib.bezier.BezierSegment"
+msgstr ""
+
+#: matplotlib.path.Path.iter_bezier:14 of
+msgid "The bezier curves that make up the current path. Note in particular that freestanding points are bezier curves of order 0, and lines are bezier curves of order 1 (with two control points)."
+msgstr ""
+
+#: matplotlib.path.Path.iter_bezier:34 of
+msgid "**code**"
+msgstr ""
+
+#: of
+msgid "Path.code_type"
+msgstr ""
+
+#: matplotlib.path.Path.iter_bezier:19 of
+msgid "The code describing what kind of curve is being returned. Path.MOVETO, Path.LINETO, Path.CURVE3, Path.CURVE4 correspond to bezier curves with 1, 2, 3, and 4 control points (respectively). Path.CLOSEPOLY is a Path.LINETO with the control points correctly chosen based on the start/end points of the current stroke."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:2 of
+msgid "Iterate over all curve segments in the path."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:4 of
+msgid "Each iteration returns a pair ``(vertices, code)``, where ``vertices`` is a sequence of 1-3 coordinate pairs, and ``code`` is a `Path` code."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:7 of
+msgid "Additionally, this method can provide a number of standard cleanups and conversions to the path."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:14 of
+msgid "**transform** : None or :class:`~matplotlib.transforms.Transform`"
+msgstr ""
+
+#: of
+msgid "None or"
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:13 of
+msgid "If not None, the given affine transformation will be applied to the path."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:18 of
+msgid "**remove_nans**"
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:17 of
+msgid "Whether to remove all NaNs from the path and skip over them using MOVETO commands."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:22 of
+msgid "**clip**"
+msgstr ""
+
+#: of
+msgid "None or (float, float, float, float), optional"
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:21 of
+msgid "If not None, must be a four-tuple (x1, y1, x2, y2) defining a rectangle in which to clip the path."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:27 of
+msgid "**snap**"
+msgstr ""
+
+#: of
+msgid "None or bool, optional"
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:25 of
+msgid "If True, snap all nodes to pixels; if False, don't snap them. If None, snap if the path contains only segments parallel to the x or y axes, and no more than 1024 of them."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:30 of
+msgid "**stroke_width**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:30 of
+msgid "The width of the stroke being drawn (used for path snapping)."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:36 of
+msgid "**simplify**"
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:33 of
+msgid "Whether to simplify the path by removing vertices that do not affect its appearance.  If None, use the :attr:`should_simplify` attribute.  See also :rc:`path.simplify` and :rc:`path.simplify_threshold`."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:40 of
+msgid "**curves**"
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:39 of
+msgid "If True, curve segments will be returned as curve segments. If False, all curves will be converted to line segments."
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:57 of
+msgid "**sketch**"
+msgstr ""
+
+#: of
+msgid "None or sequence, optional"
+msgstr ""
+
+#: matplotlib.path.Path.iter_segments:43 of
+msgid "If not None, must be a 3-tuple of the form (scale, length, randomness), representing the sketch parameters."
+msgstr ""
+
+#: matplotlib.path.Path.make_compound_path:2 of
+msgid "Make a compound path from a list of `Path` objects. Blindly removes all `Path.STOP` control points."
+msgstr ""
+
+#: matplotlib.path.Path.make_compound_path_from_polys:2 of
+msgid "Make a compound path object to draw a number of polygons with equal numbers of sides XY is a (numpolys x numsides x 2) numpy array of vertices.  Return object is a :class:`Path`."
+msgstr ""
+
+#: ../../gallery/misc/histogram_path.py:7
+msgid "(`Source code <../gallery/misc/histogram_path.py>`__, `png <../gallery/misc/histogram_path_00_00.png>`__, `pdf <../gallery/misc/histogram_path_00_00.pdf>`__)"
+msgstr ""
+
+#: matplotlib.path.Path.readonly:2 of
+msgid "`True` if the `Path` is read-only."
+msgstr ""
+
+#: matplotlib.path.Path.should_simplify:2 of
+msgid "`True` if the vertices array should be simplified."
+msgstr ""
+
+#: matplotlib.path.Path.simplify_threshold:2 of
+msgid "The fraction of a pixel difference below which vertices will be simplified out."
+msgstr ""
+
+#: matplotlib.path.Path.to_polygons:2 of
+msgid "Convert this path to a list of polygons or polylines.  Each polygon/polyline is an Nx2 array of vertices.  In other words, each polygon has no ``MOVETO`` instructions or curves.  This is useful for displaying in backends that do not support compound paths or Bezier curves."
+msgstr ""
+
+#: matplotlib.path.Path.to_polygons:8 of
+msgid "If *width* and *height* are both non-zero then the lines will be simplified so that vertices outside of (0, 0), (width, height) will be clipped."
+msgstr ""
+
+#: matplotlib.path.Path.to_polygons:12 of
+msgid "If *closed_only* is `True` (default), only closed polygons, with the last point being the same as the first point, will be returned.  Any unclosed polylines in the path will be explicitly closed.  If *closed_only* is `False`, any unclosed polygons in the path will be returned as unclosed polygons, and the closed polygons will be returned explicitly closed by setting the last point to the same as the first point."
+msgstr ""
+
+#: matplotlib.path.Path.transformed:2 of
+msgid "Return a transformed copy of the path."
+msgstr ""
+
+#: matplotlib.path.Path.transformed:16 of
+msgid ":obj:`matplotlib.transforms.TransformedPath`"
+msgstr ""
+
+#: matplotlib.path.Path.transformed:17 of
+msgid "A specialized path class that will cache the transformed result and automatically update when the transform changes."
+msgstr ""
+
+#: matplotlib.path.Path.unit_circle:2 of
+msgid "Return the readonly :class:`Path` of the unit circle."
+msgstr ""
+
+#: matplotlib.path.Path.unit_circle:4 of
+msgid "For most cases, :func:`Path.circle` will be what you want."
+msgstr ""
+
+#: matplotlib.path.Path.unit_circle_righthalf:2 of
+msgid "Return a `Path` of the right half of a unit circle."
+msgstr ""
+
+#: matplotlib.path.Path.unit_circle_righthalf:4 of
+msgid "See `Path.circle` for the reference on the approximation used."
+msgstr ""
+
+#: matplotlib.path.Path.unit_rectangle:2 of
+msgid "Return a `Path` instance of the unit rectangle from (0, 0) to (1, 1)."
+msgstr ""
+
+#: matplotlib.path.Path.unit_regular_asterisk:2 of
+msgid "Return a :class:`Path` for a unit regular asterisk with the given numVertices and radius of 1.0, centered at (0, 0)."
+msgstr ""
+
+#: matplotlib.path.Path.unit_regular_polygon:2 of
+msgid "Return a :class:`Path` instance for a unit regular polygon with the given *numVertices* such that the circumscribing circle has radius 1.0, centered at (0, 0)."
+msgstr ""
+
+#: matplotlib.path.Path.unit_regular_star:2 of
+msgid "Return a :class:`Path` for a unit regular star with the given numVertices and radius of 1.0, centered at (0, 0)."
+msgstr ""
+
+#: matplotlib.path.Path.vertices:2 of
+msgid "The list of vertices in the `Path` as an Nx2 numpy array."
+msgstr ""
+
+#: matplotlib.path.Path.wedge:2 of
+msgid "Return a `Path` for the unit circle wedge from angles *theta1* to *theta2* (in degrees)."
+msgstr ""
+
+#: matplotlib.path.Path.wedge:5 of
+msgid "*theta2* is unwrapped to produce the shortest wedge within 360 degrees. That is, if *theta2* > *theta1* + 360, the wedge will be from *theta1* to *theta2* - 360 and not a full circle plus some extra overlap."
+msgstr ""
+
+#: matplotlib.path.Path.wedge:13 of
+msgid "See `Path.arc` for the reference on the approximation used."
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:2 of
+msgid "Given a sequence of `Path`\\s, `.Transform`\\s objects, and offsets, as found in a `.PathCollection`, returns the bounding box that encapsulates all of them."
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:10 of
+msgid "**master_transform** : `.Transform`"
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:9 of
+msgid "Transform"
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:10 of
+msgid "Global transformation applied to all paths."
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:13 of
+msgid "**paths** : list of `Path`"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:16 of
+msgid "**transforms** : list of `.Affine2D`"
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:19 of
+msgid "**offsets**"
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:30 of
+msgid "**offset_transform** : `.Affine2D`"
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:29 of
+msgid "Affine2D"
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:22 of
+msgid "Transform applied to the offsets before offsetting the path."
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:34 of
+msgid "The way that *paths*, *transforms* and *offsets* are combined follows the same method as for collections:  Each is iterated over independently, so if you have 3 paths, 2 transforms and 1 offset, their combinations are as follows:"
+msgstr ""
+
+#: matplotlib.path.get_path_collection_extents:39 of
+msgid "(A, A, A), (B, B, A), (C, A, A)"
+msgstr ""
+

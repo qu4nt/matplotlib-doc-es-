@@ -1,0 +1,430 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:24\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/patheffects_api.po\n"
+"X-Crowdin-File-ID: 1828\n"
+"Language: es_ES\n"
+
+#: ../../api/patheffects_api.rst:3
+msgid "``matplotlib.patheffects``"
+msgstr ""
+
+#: matplotlib.patheffects:1 of
+msgid "Defines classes for path effects. The path effects are supported in `.Text`, `.Line2D` and `.Patch`."
+msgstr ""
+
+#: matplotlib.patheffects:5 of
+msgid ":doc:`/tutorials/advanced/patheffects_guide`"
+msgstr ""
+
+#: matplotlib.patheffects.AbstractPathEffect:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.patheffects.AbstractPathEffect:2 of
+msgid "A base class for path effects."
+msgstr ""
+
+#: matplotlib.patheffects.AbstractPathEffect:4 of
+msgid "Subclasses should override the ``draw_path`` method to add effect functionality."
+msgstr ""
+
+#: matplotlib.patheffects.AbstractPathEffect matplotlib.patheffects.Normal
+#: matplotlib.patheffects.PathEffectRenderer
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers
+#: matplotlib.patheffects.PathPatchEffect
+#: matplotlib.patheffects.SimpleLineShadow
+#: matplotlib.patheffects.SimplePatchShadow matplotlib.patheffects.TickedStroke
+#: matplotlib.patheffects.withSimplePatchShadow
+#: matplotlib.patheffects.withTickedStroke of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.patheffects.AbstractPathEffect:44
+#: matplotlib.patheffects.Normal:44 matplotlib.patheffects.PathPatchEffect:30
+#: matplotlib.patheffects.SimpleLineShadow:29
+#: matplotlib.patheffects.SimplePatchShadow:29
+#: matplotlib.patheffects.TickedStroke:43
+#: matplotlib.patheffects.withSimplePatchShadow:38
+#: matplotlib.patheffects.withTickedStroke:38 of
+msgid "**offset**"
+msgstr ""
+
+#: of
+msgid "(float, float), default: (0, 0)"
+msgstr ""
+
+#: matplotlib.patheffects.AbstractPathEffect:31
+#: matplotlib.patheffects.Normal:31 of
+msgid "The (x, y) offset to apply to the path, measured in points."
+msgstr ""
+
+#: matplotlib.patheffects.AbstractPathEffect.draw_path:2
+#: matplotlib.patheffects.PathPatchEffect.draw_path:2 of
+msgid "Derived should override this method. The arguments are the same as :meth:`matplotlib.backend_bases.RendererBase.draw_path` except the first argument is a renderer."
+msgstr ""
+
+#: matplotlib.patheffects.Normal:1 matplotlib.patheffects.PathPatchEffect:1
+#: matplotlib.patheffects.SimpleLineShadow:1
+#: matplotlib.patheffects.SimplePatchShadow:1 matplotlib.patheffects.Stroke:1
+#: matplotlib.patheffects.TickedStroke:1 of
+msgid "Bases: :py:class:`matplotlib.patheffects.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.patheffects.Normal:2 of
+msgid "The \"identity\" PathEffect."
+msgstr ""
+
+#: matplotlib.patheffects.Normal:4 of
+msgid "The Normal PathEffect's sole purpose is to draw the original artist with no special path effect."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer:1 of
+msgid "Bases: :py:class:`matplotlib.backend_bases.RendererBase`"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer:2 of
+msgid "Implements a Renderer which contains another renderer."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer:4 of
+msgid "This proxy then intercepts draw calls, calling the appropriate :class:`AbstractPathEffect` draw method."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer:8 of
+msgid "Not all methods have been overridden on this RendererBase subclass. It may be necessary to add further methods to extend the PathEffects capabilities further."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer:36 of
+msgid "**path_effects** : iterable of :class:`AbstractPathEffect`"
+msgstr ""
+
+#: of
+msgid "iterable of"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer:36 of
+msgid "The path effects which this renderer represents."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer:52 of
+msgid "**renderer** : `matplotlib.backend_bases.RendererBase` subclass"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer:51 of
+msgid "matplotlib.backend_bases.RendererBase subclass"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:2 of
+msgid "Draw a marker at each of *path*'s vertices (excluding control points)."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:4 of
+msgid "This provides a fallback implementation of draw_markers that makes multiple calls to :meth:`draw_path`.  Some backends may want to override this method in order to draw the marker only once and reuse it multiple times."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:12 of
+msgid "**gc** : `.GraphicsContextBase`"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:11 of
+msgid "GraphicsContextBase"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:12 of
+msgid "The graphics context."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:15 of
+msgid "**marker_trans** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:14
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:30 of
+msgid "matplotlib.transforms.Transform"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:15 of
+msgid "An affine transform applied to the marker."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:31 of
+msgid "**trans** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_markers:18 of
+msgid "An affine transform applied to the path."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_path:2 of
+msgid "Draw a `~.path.Path` instance using the given affine transform."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_path_collection:2 of
+msgid "Draw a collection of paths selecting drawing properties from the lists *facecolors*, *edgecolors*, *linewidths*, *linestyles* and *antialiaseds*. *offsets* is a list of offsets to apply to each of the paths.  The offsets in *offsets* are first transformed by *offsetTrans* before being applied."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_path_collection:9 of
+msgid "*offset_position* is unused now, but the argument is kept for backwards compatibility."
+msgstr ""
+
+#: matplotlib.patheffects.PathEffectRenderer.draw_path_collection:12 of
+msgid "This provides a fallback implementation of :meth:`draw_path_collection` that makes multiple calls to :meth:`draw_path`.  Some backends may want to override this in order to render each set of path data only once, and then reference that path multiple times with the different offsets, colors, styles etc.  The generator methods :meth:`_iter_collection_raw_paths` and :meth:`_iter_collection` are provided to help with (and standardize) the implementation across backends.  It is highly recommended to use those generators, so that changes to the behavior of :meth:`draw_path_collection` can be made globally."
+msgstr ""
+
+#: matplotlib.patheffects.PathPatchEffect:2 of
+msgid "Draws a `.PathPatch` instance whose Path comes from the original PathEffect artist."
+msgstr ""
+
+#: matplotlib.patheffects.PathPatchEffect:30
+#: matplotlib.patheffects.SimpleLineShadow:29
+#: matplotlib.patheffects.TickedStroke:43
+#: matplotlib.patheffects.withTickedStroke:38 of
+msgid "The (x, y) offset to apply to the path, in points."
+msgstr ""
+
+#: matplotlib.patheffects.PathPatchEffect:49
+#: matplotlib.patheffects.SimpleLineShadow:58
+#: matplotlib.patheffects.SimplePatchShadow:57
+#: matplotlib.patheffects.TickedStroke:71
+#: matplotlib.patheffects.withSimplePatchShadow:66
+#: matplotlib.patheffects.withTickedStroke:66 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.patheffects.PathPatchEffect:33 of
+msgid "All keyword arguments are passed through to the :class:`~matplotlib.patches.PathPatch` constructor. The properties which cannot be overridden are \"path\", \"clip_box\" \"transform\" and \"clip_path\"."
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow:2 of
+msgid "A simple shadow via a line."
+msgstr ""
+
+#: of
+msgid "(float, float), default: (2, -2)"
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow:34 of
+msgid "**shadow_color**"
+msgstr ""
+
+#: of
+msgid "color, default: 'black'"
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow:32 of
+msgid "The shadow color. A value of ``None`` takes the original artist's color with a scale factor of *rho*."
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow:37
+#: matplotlib.patheffects.SimplePatchShadow:36
+#: matplotlib.patheffects.withSimplePatchShadow:45 of
+msgid "**alpha**"
+msgstr ""
+
+#: of
+msgid "float, default: 0.3"
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow:37 of
+msgid "The alpha transparency of the created shadow patch."
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow:41
+#: matplotlib.patheffects.SimplePatchShadow:40
+#: matplotlib.patheffects.withSimplePatchShadow:49 of
+msgid "**rho**"
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow:40 of
+msgid "A scale factor to apply to the rgbFace color if *shadow_color* is ``None``."
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow:44
+#: matplotlib.patheffects.SimplePatchShadow:43
+#: matplotlib.patheffects.TickedStroke:60
+#: matplotlib.patheffects.withSimplePatchShadow:52
+#: matplotlib.patheffects.withTickedStroke:55 of
+msgid "Extra keywords are stored and passed through to :meth:`AbstractPathEffect._update_gc`."
+msgstr ""
+
+#: matplotlib.patheffects.SimpleLineShadow.draw_path:2
+#: matplotlib.patheffects.SimplePatchShadow.draw_path:2
+#: matplotlib.patheffects._subclass_with_normal.<locals>.withEffect.draw_path:2
+#: of
+msgid "Overrides the standard draw_path to add the shadow offset and necessary color changes for the shadow."
+msgstr ""
+
+#: matplotlib.patheffects.SimplePatchShadow:2 of
+msgid "A simple shadow via a filled patch."
+msgstr ""
+
+#: matplotlib.patheffects.SimplePatchShadow:29
+#: matplotlib.patheffects.withSimplePatchShadow:38 of
+msgid "The (x, y) offset of the shadow in points."
+msgstr ""
+
+#: matplotlib.patheffects.SimplePatchShadow:32
+#: matplotlib.patheffects.withSimplePatchShadow:41 of
+msgid "**shadow_rgbFace**"
+msgstr ""
+
+#: of
+msgid "color"
+msgstr ""
+
+#: matplotlib.patheffects.SimplePatchShadow:32
+#: matplotlib.patheffects.withSimplePatchShadow:41 of
+msgid "The shadow color."
+msgstr ""
+
+#: matplotlib.patheffects.SimplePatchShadow:35
+#: matplotlib.patheffects.withSimplePatchShadow:44 of
+msgid "The alpha transparency of the created shadow patch. http://matplotlib.1069221.n5.nabble.com/path-effects-question-td27630.html"
+msgstr ""
+
+#: matplotlib.patheffects.SimplePatchShadow:39
+#: matplotlib.patheffects.withSimplePatchShadow:48 of
+msgid "A scale factor to apply to the rgbFace color if *shadow_rgbFace* is not specified."
+msgstr ""
+
+#: matplotlib.patheffects.Stroke:2 of
+msgid "A line based PathEffect which re-draws a stroke."
+msgstr ""
+
+#: matplotlib.patheffects.Stroke:23 matplotlib.patheffects.withStroke:32 of
+msgid "The path will be stroked with its gc updated with the given keyword arguments, i.e., the keyword arguments should be valid gc parameter values."
+msgstr ""
+
+#: matplotlib.patheffects.Stroke.draw_path:2
+#: matplotlib.patheffects.TickedStroke.draw_path:2
+#: matplotlib.patheffects._subclass_with_normal.<locals>.withEffect.draw_path:2
+#: of
+msgid "Draw the path with updated gc."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:2 of
+msgid "A line-based PathEffect which draws a path with a ticked style."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:4 of
+msgid "This line style is frequently used to represent constraints in optimization.  The ticks may be used to indicate that one side of the line is invalid or to represent a closed boundary of a domain (i.e. a wall or the edge of a pipe)."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:9 of
+msgid "The spacing, length, and angle of ticks can be controlled."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:11 of
+msgid "This line style is sometimes referred to as a hatched line."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:13 of
+msgid "See also the :doc:`contour demo example </gallery/lines_bars_and_markers/lines_with_ticks_demo>`."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:16 of
+msgid "See also the :doc:`contours in optimization example </gallery/images_contours_and_fields/contours_in_optimization_demo>`."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:46
+#: matplotlib.patheffects.withTickedStroke:41 of
+msgid "**spacing**"
+msgstr ""
+
+#: of
+msgid "float, default: 10.0"
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:46
+#: matplotlib.patheffects.withTickedStroke:41 of
+msgid "The spacing between ticks in points."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:52
+#: matplotlib.patheffects.withTickedStroke:47 of
+msgid "**angle**"
+msgstr ""
+
+#: of
+msgid "float, default: 45.0"
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:49
+#: matplotlib.patheffects.withTickedStroke:44 of
+msgid "The angle between the path and the tick in degrees.  The angle is measured as if you were an ant walking along the curve, with zero degrees pointing directly ahead, 90 to your left, -90 to your right, and 180 behind you."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:57
+#: matplotlib.patheffects.withTickedStroke:52 of
+msgid "**length**"
+msgstr ""
+
+#: of
+msgid "float, default: 1.414"
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:55
+#: matplotlib.patheffects.withTickedStroke:50 of
+msgid "The length of the tick relative to spacing. Recommended length = 1.414 (sqrt(2)) when angle=45, length=1.0 when angle=90 and length=2.0 when angle=60."
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:74
+#: matplotlib.patheffects.withTickedStroke:69 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.patheffects.TickedStroke:75
+#: matplotlib.patheffects.withTickedStroke:70 of
+msgid "See :doc:`/gallery/misc/tickedstroke_demo`."
+msgstr ""
+
+#: matplotlib.patheffects.withSimplePatchShadow:1 of
+msgid "Bases: :py:class:`matplotlib.patheffects.SimplePatchShadow`"
+msgstr ""
+
+#: matplotlib.patheffects.withSimplePatchShadow:2 of
+msgid "A shortcut PathEffect for applying `.SimplePatchShadow` and then drawing the original Artist."
+msgstr ""
+
+#: matplotlib.patheffects.withSimplePatchShadow:5
+#: matplotlib.patheffects.withStroke:5
+#: matplotlib.patheffects.withTickedStroke:5 of
+msgid "With this class you can use ::"
+msgstr ""
+
+#: matplotlib.patheffects.withSimplePatchShadow:9
+#: matplotlib.patheffects.withStroke:9
+#: matplotlib.patheffects.withTickedStroke:9 of
+msgid "as a shortcut for ::"
+msgstr ""
+
+#: matplotlib.patheffects.withStroke:1 of
+msgid "Bases: :py:class:`matplotlib.patheffects.Stroke`"
+msgstr ""
+
+#: matplotlib.patheffects.withStroke:2 of
+msgid "A shortcut PathEffect for applying `.Stroke` and then drawing the original Artist."
+msgstr ""
+
+#: matplotlib.patheffects.withTickedStroke:1 of
+msgid "Bases: :py:class:`matplotlib.patheffects.TickedStroke`"
+msgstr ""
+
+#: matplotlib.patheffects.withTickedStroke:2 of
+msgid "A shortcut PathEffect for applying `.TickedStroke` and then drawing the original Artist."
+msgstr ""
+

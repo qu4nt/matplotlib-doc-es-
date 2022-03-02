@@ -1,0 +1,378 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/backend_ps_api.po\n"
+"X-Crowdin-File-ID: 1740\n"
+"Language: es_ES\n"
+
+#: ../../api/backend_ps_api.rst:2
+msgid ":mod:`.backend_ps`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps:1 of
+msgid "A PostScript backend, which can produce both PostScript .ps and .eps."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.FigureCanvasPS:1 of
+msgid "Bases: :py:class:`matplotlib.backend_bases.FigureCanvasBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.FigureCanvasPS.draw:2 of
+msgid "Render the `.Figure`."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.FigureCanvasPS.draw:4 of
+msgid "It is important that this method actually walk the artist tree even if not output is produced because this will trigger deferred work (like computing limits auto-limits and tick values) that users may want access to before saving to disk."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.FigureCanvasPS.get_default_filetype:2 of
+msgid "Return the default savefig file format as specified in :rc:`savefig.format`."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.FigureCanvasPS.get_default_filetype:5 of
+msgid "The returned string does not include a period. This method is overridden in backends that only support a single file type."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.GraphicsContextPS:1 of
+msgid "Bases: :py:class:`matplotlib.backend_bases.GraphicsContextBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.GraphicsContextPS:2 of
+msgid "[*Deprecated*]"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.GraphicsContextPS:15
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:37 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.GraphicsContextPS:16 of
+msgid "\\"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.GraphicsContextPS.get_capstyle:2 of
+msgid "Return the `.CapStyle`."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.GraphicsContextPS.get_joinstyle:2 of
+msgid "Return the `.JoinStyle`."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.PsBackendHelper:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS:1 of
+msgid "Bases: :py:class:`matplotlib.backends._backend_pdf_ps.RendererPDFPSBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS:2 of
+msgid "The renderer handles all the drawing primitives using a graphics context instance that controls the colors/styles."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:2 of
+msgid "Draw a Gouraud-shaded triangle."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles
+#: matplotlib.backends.backend_ps.RendererPS.draw_image
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers
+#: matplotlib.backends.backend_ps.RendererPS.draw_text of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:8
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:8
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:12
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:8 of
+msgid "**gc** : `.GraphicsContextBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:7
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:7
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:11
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:7 of
+msgid "GraphicsContextBase"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:8
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:12
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:8 of
+msgid "The graphics context."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:11
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles:8 of
+msgid "**points**"
+msgstr ""
+
+#: of
+msgid "(3, 2) array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:11 of
+msgid "Array of (x, y) points for the triangle."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:14
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles:11 of
+msgid "**colors**"
+msgstr ""
+
+#: of
+msgid "(3, 4) array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:14 of
+msgid "RGBA colors for each point of the triangle."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:30
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles:27 of
+msgid "**transform** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:29
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles:26
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:14
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:30 of
+msgid "matplotlib.transforms.Transform"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangle:17
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles:14 of
+msgid "An affine transform to apply to the points."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles:2 of
+msgid "Draw a series of Gouraud triangles."
+msgstr ""
+
+#: of
+msgid "(N, 3, 2) array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles:8 of
+msgid "Array of *N* (x, y) points for the triangles."
+msgstr ""
+
+#: of
+msgid "(N, 3, 4) array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles:11 of
+msgid "Array of *N* RGBA colors for each point of the triangles."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:2 of
+msgid "Draw an RGBA image."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:8 of
+msgid "A graphics context with clipping information."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:12
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:11 of
+msgid "**x**"
+msgstr ""
+
+#: of
+msgid "scalar"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:11 of
+msgid "The distance in physical units (i.e., dots or pixels) from the left hand side of the canvas."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:16
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:14 of
+msgid "**y**"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:15 of
+msgid "The distance in physical units (i.e., dots or pixels) from the bottom side of the canvas."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:19 of
+msgid "**im**"
+msgstr ""
+
+#: of
+msgid "(N, M, 4) array-like of np.uint8"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:19 of
+msgid "An array of RGBA pixels."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:43 of
+msgid "**transform** : `matplotlib.transforms.Affine2DBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:42 of
+msgid "matplotlib.transforms.Affine2DBase"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_image:22 of
+msgid "If and only if the concrete backend is written such that :meth:`option_scale_image` returns ``True``, an affine transformation (i.e., an `.Affine2DBase`) *may* be passed to :meth:`draw_image`.  The translation vector of the transformation is given in physical units (i.e., dots or pixels). Note that the transformation does not override *x* and *y*, and has to be applied *before* translating the result by *x* and *y* (this can be accomplished by adding *x* and *y* to the translation vector defined by *transform*)."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:2 of
+msgid "Draw a marker at each of *path*'s vertices (excluding control points)."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:4 of
+msgid "This provides a fallback implementation of draw_markers that makes multiple calls to :meth:`draw_path`.  Some backends may want to override this method in order to draw the marker only once and reuse it multiple times."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:15 of
+msgid "**marker_trans** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:15 of
+msgid "An affine transform applied to the marker."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:31 of
+msgid "**trans** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_markers:18 of
+msgid "An affine transform applied to the path."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_mathtext:2 of
+msgid "Draw the math text using matplotlib.mathtext."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_path:2 of
+msgid "Draw a `~.path.Path` instance using the given affine transform."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_path_collection:2 of
+msgid "Draw a collection of paths selecting drawing properties from the lists *facecolors*, *edgecolors*, *linewidths*, *linestyles* and *antialiaseds*. *offsets* is a list of offsets to apply to each of the paths.  The offsets in *offsets* are first transformed by *offsetTrans* before being applied."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_path_collection:9 of
+msgid "*offset_position* is unused now, but the argument is kept for backwards compatibility."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_path_collection:12 of
+msgid "This provides a fallback implementation of :meth:`draw_path_collection` that makes multiple calls to :meth:`draw_path`.  Some backends may want to override this in order to render each set of path data only once, and then reference that path multiple times with the different offsets, colors, styles etc.  The generator methods :meth:`_iter_collection_raw_paths` and :meth:`_iter_collection` are provided to help with (and standardize) the implementation across backends.  It is highly recommended to use those generators, so that changes to the behavior of :meth:`draw_path_collection` can be made globally."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:2 of
+msgid "Draw the text instance."
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:11 of
+msgid "The x location of the text in display coords."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:14 of
+msgid "The y location of the text baseline in display coords."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:17 of
+msgid "**s**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:17 of
+msgid "The text string."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:20 of
+msgid "**prop** : `matplotlib.font_manager.FontProperties`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:19 of
+msgid "matplotlib.font_manager.FontProperties"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:20 of
+msgid "The font properties."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:23 of
+msgid "**angle**"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:23 of
+msgid "The rotation angle in degrees anti-clockwise."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:34 of
+msgid "**mtext** : `matplotlib.text.Text`"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:33 of
+msgid "matplotlib.text.Text"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:26 of
+msgid "The original text object to be rendered."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:38 of
+msgid "**Note for backend implementers:**"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:40 of
+msgid "When you are trying to determine if you have gotten your bounding box right (which is what enables the text layout/alignment to work properly), it helps to change the line in text.py::"
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.draw_text:46 of
+msgid "to if 1, and then the actual bounding box will be plotted along with your text."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.RendererPS.get_image_magnification:2 of
+msgid "Get the factor by which to magnify images passed to draw_image. Allows a backend to have images at a different resolution to other artists."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.convert_psfrags:2 of
+msgid "When we want to use the LaTeX backend with postscript, we write PSFrag tags to a temporary postscript file, each one marking a position for LaTeX to render some text. convert_psfrags generates a LaTeX document containing the commands to convert those tags to text. LaTeX/dvips produces the postscript file that includes the actual text."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.get_bbox_header:2 of
+msgid "Return a postscript header string for the given bbox lbrt=(l, b, r, t). Optionally, return rotate command."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.gs_distill:2 of
+msgid "Use ghostscript's pswrite or epswrite device to distill a file. This yields smaller files without illegal encapsulated postscript operators. The output is low-level, converting text to outlines."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.pstoeps:2 of
+msgid "Convert the postscript to encapsulated postscript.  The bbox of the eps file will be replaced with the given *bbox* argument. If None, original bbox will be used."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.quote_ps_string:2 of
+msgid "Quote dangerous characters of S for use in a PostScript string constant."
+msgstr ""
+
+#: matplotlib.backends.backend_ps.xpdf_distill:2 of
+msgid "Use ghostscript's ps2pdf and xpdf's/poppler's pdftops to distill a file. This yields smaller files without illegal encapsulated postscript operators. This distiller is preferred, generating high-level postscript output that treats text as text."
+msgstr ""
+

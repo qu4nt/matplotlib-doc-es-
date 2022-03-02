@@ -1,0 +1,436 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/prev_api_changes/api_changes_1.5.0.po\n"
+"X-Crowdin-File-ID: 1900\n"
+"Language: es_ES\n"
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:3
+msgid "API Changes in 1.5.0"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:6
+msgid "Code Changes"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:9
+msgid "Reversed `matplotlib.cbook.ls_mapper`, added `.ls_mapper_r`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:11
+msgid "Formerly, `matplotlib.cbook.ls_mapper` was a dictionary with the long-form line-style names (``\"solid\"``) as keys and the short forms (``\"-\"``) as values.  This long-to-short mapping is now done by `.ls_mapper_r`, and the short-to-long mapping is done by the `.ls_mapper`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:18
+msgid "Prevent moving artists between Axes, Property-ify Artist.axes, deprecate Artist.{get,set}_axes"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:20
+msgid "This was done to prevent an Artist that is already associated with an Axes from being moved/added to a different Axes. This was never supported as it causes havoc with the transform stack. The apparent support for this (as it did not raise an exception) was the source of multiple bug reports and questions on SO."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:26
+msgid "For almost all use-cases, the assignment of the axes to an artist should be taken care of by the axes as part of the ``Axes.add_*`` method, hence the deprecation of {get,set}_axes."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:30
+msgid "Removing the ``set_axes`` method will also remove the 'axes' line from the ACCEPTS kwarg tables (assuming that the removal date gets here before that gets overhauled)."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:35
+msgid "Tightened input validation on 'pivot' kwarg to quiver"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:37
+msgid "Tightened validation so that only {'tip', 'tail', 'mid', and 'middle'} (but any capitalization) are valid values for the *pivot* keyword argument in the `.Quiver` class (and hence `.axes.Axes.quiver` and `.pyplot.quiver` which both fully delegate to `.Quiver`).  Previously any input matching 'mid.*' would be interpreted as 'middle', 'tip.*' as 'tip' and any string not matching one of those patterns as 'tail'."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:44
+msgid "The value of `.Quiver.pivot` is normalized to be in the set {'tip', 'tail', 'middle'} in `.Quiver`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:48
+msgid "Reordered ``Axes.get_children``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:50
+msgid "The artist order returned by `.axes.Axes.get_children` did not match the one used by `.axes.Axes.draw`.  They now use the same order, as `.axes.Axes.draw` now calls `.axes.Axes.get_children`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:55
+msgid "Changed behaviour of contour plots"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:57
+msgid "The default behaviour of :func:`~matplotlib.pyplot.contour` and :func:`~matplotlib.pyplot.contourf` when using a masked array is now determined by the new keyword argument *corner_mask*, or if this is not specified then the new :rc:`contour.corner_mask` instead.  The new default behaviour is equivalent to using ``corner_mask=True``; the previous behaviour can be obtained using ``corner_mask=False`` or by changing the rcParam.  The example https://matplotlib.org/examples/pylab_examples/contour_corner_mask.html demonstrates the difference.  Use of the old contouring algorithm, which is obtained with ``corner_mask='legacy'``, is now deprecated."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:67
+msgid "Contour labels may now appear in different places than in earlier versions of Matplotlib."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:70
+msgid "In addition, the keyword argument *nchunk* now applies to :func:`~matplotlib.pyplot.contour` as well as :func:`~matplotlib.pyplot.contourf`, and it subdivides the domain into subdomains of exactly *nchunk* by *nchunk* quads, whereas previously it was only roughly *nchunk* by *nchunk* quads."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:76
+msgid "The C/C++ object that performs contour calculations used to be stored in the public attribute ``QuadContourSet.Cntr``, but is now stored in a private attribute and should not be accessed by end users."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:81
+msgid "Added set_params function to all Locator types"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:83
+msgid "This was a bug fix targeted at making the api for Locators more consistent."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:85
+msgid "In the old behavior, only locators of type MaxNLocator have set_params() defined, causing its use on any other Locator to raise an AttributeError *( aside: set_params(args) is a function that sets the parameters of a Locator instance to be as specified within args)*. The fix involves moving set_params() to the Locator class such that all subtypes will have this function defined."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:91
+msgid "Since each of the Locator subtypes have their own modifiable parameters, a universal set_params() in Locator isn't ideal. Instead, a default no-operation function that raises a warning is implemented in Locator. Subtypes extending Locator will then override with their own implementations. Subtypes that do not have a need for set_params() will fall back onto their parent's implementation, which raises a warning as intended."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:98
+msgid "In the new behavior, Locator instances will not raise an AttributeError when set_params() is called. For Locators that do not implement set_params(), the default implementation in Locator is used."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:103
+msgid "Disallow ``None`` as x or y value in ax.plot"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:105
+msgid "Do not allow ``None`` as a valid input for the ``x`` or ``y`` args in `.axes.Axes.plot`.  This may break some user code, but this was never officially supported (ex documented) and allowing ``None`` objects through can lead to confusing exceptions downstream."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:110
+msgid "To create an empty line use ::"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:115
+msgid "In either case to update the data in the `.Line2D` object you must update both the ``x`` and ``y`` data."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:120
+msgid "Removed *args* and *kwargs* from `.MicrosecondLocator.__call__`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:122
+msgid "The call signature of :meth:`~matplotlib.dates.MicrosecondLocator.__call__` has changed from ``__call__(self, *args, **kwargs)`` to ``__call__(self)``. This is consistent with the superclass :class:`~matplotlib.ticker.Locator` and also all the other Locators derived from this superclass."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:129
+msgid "No `ValueError` for the MicrosecondLocator and YearLocator"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:131
+msgid "The :class:`~matplotlib.dates.MicrosecondLocator` and :class:`~matplotlib.dates.YearLocator` objects when called will return an empty list if the axes have no data or the view has no interval. Previously, they raised a `ValueError`. This is consistent with all the Date Locators."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:138
+msgid "'OffsetBox.DrawingArea' respects the 'clip' keyword argument"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:140
+msgid "The call signature was ``OffsetBox.DrawingArea(..., clip=True)`` but nothing was done with the *clip* argument. The object did not do any clipping regardless of that parameter. Now the object can and does clip the child `.Artist`\\ s if they are set to be clipped."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:145
+msgid "You can turn off the clipping on a per-child basis using ``child.set_clip_on(False)``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:149
+msgid "Add salt to clipPath id"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:151
+msgid "Add salt to the hash used to determine the id of the ``clipPath`` nodes.  This is to avoid conflicts when two svg documents with the same clip path are included in the same document (see https://github.com/ipython/ipython/issues/8133 and https://github.com/matplotlib/matplotlib/issues/4349 ), however this means that the svg output is no longer deterministic if the same figure is saved twice.  It is not expected that this will affect any users as the current ids are generated from an md5 hash of properties of the clip path and any user would have a very difficult time anticipating the value of the id."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:163
+msgid "Changed snap threshold for circle markers to inf"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:165
+msgid "When drawing circle markers above some marker size (previously 6.0) the path used to generate the marker was snapped to pixel centers.  However, this ends up distorting the marker away from a circle.  By setting the snap threshold to inf snapping is never done on circles."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:170
+msgid "This change broke several tests, but is an improvement."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:173
+msgid "Preserve units with Text position"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:175
+msgid "Previously the 'get_position' method on Text would strip away unit information even though the units were still present.  There was no inherent need to do this, so it has been changed so that unit data (if present) will be preserved. Essentially a call to 'get_position' will return the exact value from a call to 'set_position'."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:181
+msgid "If you wish to get the old behaviour, then you can use the new method called 'get_unitless_position'."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:185
+msgid "New API for custom Axes view changes"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:187
+msgid "Interactive pan and zoom were previously implemented using a Cartesian-specific algorithm that was not necessarily applicable to custom Axes. Three new private methods, ``matplotlib.axes._base._AxesBase._get_view``, ``matplotlib.axes._base._AxesBase._set_view``, and ``matplotlib.axes._base._AxesBase._set_view_from_bbox``, allow for custom *Axes* classes to override the pan and zoom algorithms. Implementors of custom *Axes* who override these methods may provide suitable behaviour for both pan and zoom as well as the view navigation buttons on the interactive toolbars."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:198
+msgid "MathTex visual changes"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:200
+msgid "The spacing commands in mathtext have been changed to more closely match vanilla TeX."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:205
+msgid "Improved spacing in mathtext"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:207
+msgid "The extra space that appeared after subscripts and superscripts has been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:211
+msgid "No annotation coordinates wrap"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:213
+msgid "In #2351 for 1.4.0 the behavior of ['axes points', 'axes pixel', 'figure points', 'figure pixel'] as coordinates was change to no longer wrap for negative values.  In 1.4.3 this change was reverted for 'axes points' and 'axes pixel' and in addition caused 'axes fraction' to wrap.  For 1.5 the behavior has been reverted to as it was in 1.4.0-1.4.2, no wrapping for any type of coordinate."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:221
+msgid "Deprecation"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:224
+msgid "Deprecated ``GraphicsContextBase.set_graylevel``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:226
+msgid "The ``GraphicsContextBase.set_graylevel`` function has been deprecated in 1.5 and will be removed in 1.6.  It has been unused.  The `.GraphicsContextBase.set_foreground` could be used instead."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:231
+msgid "deprecated idle_event"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:233
+msgid "The ``idle_event`` was broken or missing in most backends and causes spurious warnings in some cases, and its use in creating animations is now obsolete due to the animations module. Therefore code involving it has been removed from all but the wx backend (where it partially works), and its use is deprecated.  The `.animation` module may be used instead to create animations."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:240
+msgid "``color_cycle`` deprecated"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:242
+msgid "In light of the new property cycling feature, the Axes method ``set_color_cycle`` is now deprecated. Calling this method will replace the current property cycle with one that cycles just the given colors."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:247
+msgid "Similarly, the rc parameter *axes.color_cycle* is also deprecated in lieu of the new :rc:`axes.prop_cycle` parameter. Having both parameters in the same rc file is not recommended as the result cannot be predicted. For compatibility, setting *axes.color_cycle* will replace the cycler in :rc:`axes.prop_cycle` with a color cycle. Accessing *axes.color_cycle* will return just the color portion of the property cycle, if it exists."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:255
+msgid "Timeline for removal has not been set."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:259
+msgid "Bundled jquery"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:261
+msgid "The version of jquery bundled with the webagg backend has been upgraded from 1.7.1 to 1.11.3.  If you are using the version of jquery bundled with webagg you will need to update your html files as such"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:272
+msgid "Code Removed"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:275
+msgid "Removed ``Image`` from main namespace"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:277
+msgid "``Image`` was imported from PIL/pillow to test if PIL is available, but there is no reason to keep ``Image`` in the namespace once the availability has been determined."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:282
+msgid "Removed ``lod`` from Artist"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:284
+msgid "Removed the method ``set_lod`` and all references to the attribute ``_lod`` as they are not used anywhere else in the code base.  It appears to be a feature stub that was never built out."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:289
+msgid "Removed threading related classes from cbook"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:290
+msgid "The classes ``Scheduler``, ``Timeout``, and ``Idle`` were in cbook, but are not used internally.  They appear to be a prototype for the idle event system which was not working and has recently been pulled out."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:295
+msgid "Removed *Lena* images from sample_data"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:297
+msgid "The ``lena.png`` and ``lena.jpg`` images have been removed from Matplotlib's sample_data directory. The images are also no longer available from `matplotlib.cbook.get_sample_data`. We suggest using ``matplotlib.cbook.get_sample_data('grace_hopper.png')`` or ``matplotlib.cbook.get_sample_data('grace_hopper.jpg')`` instead."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:305
+msgid "Legend"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:306
+msgid "Removed handling of *loc* as a positional argument to `.Legend`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:310
+msgid "Legend handlers"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:311
+msgid "Remove code to allow legend handlers to be callable.  They must now implement a method ``legend_artist``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:316
+msgid "Axis"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:317
+msgid "Removed method ``set_scale``.  This is now handled via a private method which should not be used directly by users.  It is called via ``Axes.set_{x,y}scale`` which takes care of ensuring the related changes are also made to the Axes object."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:323
+msgid "finance.py"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:325
+msgid "Removed functions with ambiguous argument order from finance.py"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:329
+msgid "Annotation"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:331
+msgid "Removed ``textcoords`` and ``xytext`` proprieties from Annotation objects."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:335
+msgid "sphinxext.ipython_*.py"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:337
+msgid "Both ``ipython_console_highlighting`` and ``ipython_directive`` have been moved to IPython."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:340
+msgid "Change your import from ``matplotlib.sphinxext.ipython_directive`` to ``IPython.sphinxext.ipython_directive`` and from ``matplotlib.sphinxext.ipython_directive`` to ``IPython.sphinxext.ipython_directive``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:347
+msgid "LineCollection.color"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:349
+msgid "Deprecated in 2005, use ``set_color``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:353
+msgid "remove ``'faceted'`` as a valid value for *shading* in ``tri.tripcolor``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:355
+msgid "Use *edgecolor* instead.  Added validation on *shading* to only be valid values."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:360
+msgid "Remove ``faceted`` kwarg from scatter"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:362
+msgid "Remove support for the ``faceted`` kwarg.  This was deprecated in d48b34288e9651ff95c3b8a071ef5ac5cf50bae7 (2008-04-18!) and replaced by ``edgecolor``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:368
+msgid "Remove ``set_colorbar`` method from ``ScalarMappable``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:370
+msgid "Remove ``set_colorbar`` method, use `~.cm.ScalarMappable.colorbar` attribute directly."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:375
+msgid "patheffects.svg"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:377
+msgid "remove ``get_proxy_renderer`` method from ``AbstarctPathEffect`` class"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:378
+msgid "remove ``patch_alpha`` and ``offset_xy`` from ``SimplePatchShadow``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:382
+msgid "Remove ``testing.image_util.py``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:383
+msgid "Contained only a no-longer used port of functionality from PIL"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:387
+msgid "Remove ``mlab.FIFOBuffer``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:389
+msgid "Not used internally and not part of core mission of mpl."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:393
+msgid "Remove ``mlab.prepca``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:394
+msgid "Deprecated in 2009."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:398
+msgid "Remove ``NavigationToolbar2QTAgg``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:399
+msgid "Added no functionality over the base ``NavigationToolbar2Qt``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:403
+msgid "mpl.py"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.5.0.rst:405
+msgid "Remove the module ``matplotlib.mpl``.  Deprecated in 1.3 by PR #1670 and commit 78ce67d161625833cacff23cfe5d74920248c5b2"
+msgstr ""
+

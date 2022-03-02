@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/animation_api.po\n"
+"X-Crowdin-File-ID: 1712\n"
+"Language: es_ES\n"
+
+#: ../../api/animation_api.rst:3
+msgid "``matplotlib.animation``"
+msgstr ""
+
+#: ../../api/animation_api.rst:13
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../api/animation_api.rst:16
+msgid "Inheritance Diagrams"
+msgstr ""
+
+#: ../../api/animation_api.rst:27
+msgid "Animation"
+msgstr ""
+
+#: ../../api/animation_api.rst:29
+msgid "The easiest way to make a live animation in Matplotlib is to use one of the `Animation` classes."
+msgstr ""
+
+#: ../../api/animation_api.rst:264:<autosummary>:1
+#: ../../api/animation_api.rst:39:<autosummary>:1
+msgid ":py:obj:`Animation <matplotlib.animation.Animation>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:264:<autosummary>:1
+#: ../../api/animation_api.rst:39:<autosummary>:1
+msgid "A base class for Animations."
+msgstr ""
+
+#: ../../api/animation_api.rst:39:<autosummary>:1
+msgid ":py:obj:`FuncAnimation <matplotlib.animation.FuncAnimation>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:39:<autosummary>:1
+msgid "Makes an animation by repeatedly calling a function *func*."
+msgstr ""
+
+#: ../../api/animation_api.rst:39:<autosummary>:1
+msgid ":py:obj:`ArtistAnimation <matplotlib.animation.ArtistAnimation>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:39:<autosummary>:1
+msgid "Animation using a fixed set of `.Artist` objects."
+msgstr ""
+
+#: ../../api/animation_api.rst:40
+msgid "In both cases it is critical to keep a reference to the instance object.  The animation is advanced by a timer (typically from the host GUI framework) which the `Animation` object holds the only reference to.  If you do not hold a reference to the `Animation` object, it (and hence the timers) will be garbage collected which will stop the animation."
+msgstr ""
+
+#: ../../api/animation_api.rst:47
+msgid "To save an animation use `Animation.save`, `Animation.to_html5_video`, or `Animation.to_jshtml`."
+msgstr ""
+
+#: ../../api/animation_api.rst:50
+msgid "See :ref:`ani_writer_classes` below for details about what movie formats are supported."
+msgstr ""
+
+#: ../../api/animation_api.rst:57
+msgid "``FuncAnimation``"
+msgstr ""
+
+#: ../../api/animation_api.rst:59
+msgid "The inner workings of `FuncAnimation` is more-or-less::"
+msgstr ""
+
+#: ../../api/animation_api.rst:66
+msgid "with details to handle 'blitting' (to dramatically improve the live performance), to be non-blocking, not repeatedly start/stop the GUI event loop, handle repeats, multiple animated axes, and easily save the animation to a movie file."
+msgstr ""
+
+#: ../../api/animation_api.rst:71
+msgid "'Blitting' is a `standard technique <https://en.wikipedia.org/wiki/Bit_blit>`__ in computer graphics.  The general gist is to take an existing bit map (in our case a mostly rasterized figure) and then 'blit' one more artist on top.  Thus, by managing a saved 'clean' bitmap, we can only re-draw the few artists that are changing at each frame and possibly save significant amounts of time.  When we use blitting (by passing ``blit=True``), the core loop of `FuncAnimation` gets a bit more complicated::"
+msgstr ""
+
+#: ../../api/animation_api.rst:102
+msgid "This is of course leaving out many details (such as updating the background when the figure is resized or fully re-drawn).  However, this hopefully minimalist example gives a sense of how ``init_func`` and ``func`` are used inside of `FuncAnimation` and the theory of how 'blitting' works."
+msgstr ""
+
+#: ../../api/animation_api.rst:108
+msgid "The expected signature on ``func`` and ``init_func`` is very simple to keep `FuncAnimation` out of your book keeping and plotting logic, but this means that the callable objects you pass in must know what artists they should be working on.  There are several approaches to handling this, of varying complexity and encapsulation.  The simplest approach, which works quite well in the case of a script, is to define the artist at a global scope and let Python sort things out.  For example ::"
+msgstr ""
+
+#: ../../api/animation_api.rst:139
+msgid "The second method is to use `functools.partial` to 'bind' artists to function.  A third method is to use closures to build up the required artists and functions.  A fourth method is to create a class."
+msgstr ""
+
+#: ../../api/animation_api.rst:144 ../../api/animation_api.rst:163
+#: ../../api/animation_api.rst:243
+msgid "Examples"
+msgstr ""
+
+#: ../../api/animation_api.rst:160
+msgid "``ArtistAnimation``"
+msgstr ""
+
+#: ../../api/animation_api.rst:171
+msgid "Writer Classes"
+msgstr ""
+
+#: ../../api/animation_api.rst:173
+msgid "The provided writers fall into a few broad categories."
+msgstr ""
+
+#: ../../api/animation_api.rst:175
+msgid "The Pillow writer relies on the Pillow library to write the animation, keeping all data in memory."
+msgstr ""
+
+#: ../../api/animation_api.rst:183:<autosummary>:1
+msgid ":py:obj:`PillowWriter <matplotlib.animation.PillowWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:184
+msgid "The HTML writer generates JavaScript-based animations."
+msgstr ""
+
+#: ../../api/animation_api.rst:191:<autosummary>:1
+msgid ":py:obj:`HTMLWriter <matplotlib.animation.HTMLWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:191:<autosummary>:1
+msgid "Writer for JavaScript-based HTML movies."
+msgstr ""
+
+#: ../../api/animation_api.rst:192
+msgid "The pipe-based writers stream the captured frames over a pipe to an external process.  The pipe-based variants tend to be more performant, but may not work on all systems."
+msgstr ""
+
+#: ../../api/animation_api.rst:202:<autosummary>:1
+msgid ":py:obj:`FFMpegWriter <matplotlib.animation.FFMpegWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:202:<autosummary>:1
+msgid "Pipe-based ffmpeg writer."
+msgstr ""
+
+#: ../../api/animation_api.rst:202:<autosummary>:1
+msgid ":py:obj:`ImageMagickWriter <matplotlib.animation.ImageMagickWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:202:<autosummary>:1
+msgid "Pipe-based animated gif."
+msgstr ""
+
+#: ../../api/animation_api.rst:203
+msgid "The file-based writers save temporary files for each frame which are stitched into a single file at the end.  Although slower, these writers can be easier to debug."
+msgstr ""
+
+#: ../../api/animation_api.rst:213:<autosummary>:1
+msgid ":py:obj:`FFMpegFileWriter <matplotlib.animation.FFMpegFileWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:213:<autosummary>:1
+msgid "File-based ffmpeg writer."
+msgstr ""
+
+#: ../../api/animation_api.rst:213:<autosummary>:1
+msgid ":py:obj:`ImageMagickFileWriter <matplotlib.animation.ImageMagickFileWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:213:<autosummary>:1
+msgid "File-based animated gif writer."
+msgstr ""
+
+#: ../../api/animation_api.rst:214
+msgid "Fundamentally, a `MovieWriter` provides a way to grab sequential frames from the same underlying `~matplotlib.figure.Figure` object.  The base class `MovieWriter` implements 3 methods and a context manager.  The only difference between the pipe-based and file-based writers is in the arguments to their respective ``setup`` methods."
+msgstr ""
+
+#: ../../api/animation_api.rst:220
+msgid "The ``setup()`` method is used to prepare the writer (possibly opening a pipe), successive calls to ``grab_frame()`` capture a single frame at a time and ``finish()`` finalizes the movie and writes the output file to disk.  For example ::"
+msgstr ""
+
+#: ../../api/animation_api.rst:232
+msgid "If using the writer classes directly (not through `Animation.save`), it is strongly encouraged to use the `~MovieWriter.saving` context manager ::"
+msgstr ""
+
+#: ../../api/animation_api.rst:240
+msgid "to ensures that setup and cleanup are performed as necessary."
+msgstr ""
+
+#: ../../api/animation_api.rst:253
+msgid "Helper Classes"
+msgstr ""
+
+#: ../../api/animation_api.rst:256
+msgid "Animation Base Classes"
+msgstr ""
+
+#: ../../api/animation_api.rst:264:<autosummary>:1
+msgid ":py:obj:`TimedAnimation <matplotlib.animation.TimedAnimation>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:264:<autosummary>:1
+msgid "`Animation` subclass for time-based animation."
+msgstr ""
+
+#: ../../api/animation_api.rst:266
+msgid "Writer Registry"
+msgstr ""
+
+#: ../../api/animation_api.rst:268
+msgid "A module-level registry is provided to map between the name of the writer and the class to allow a string to be passed to `Animation.save` instead of a writer instance."
+msgstr ""
+
+#: ../../api/animation_api.rst:277:<autosummary>:1
+msgid ":py:obj:`MovieWriterRegistry <matplotlib.animation.MovieWriterRegistry>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:277:<autosummary>:1
+msgid "Registry of available writer classes by human readable name."
+msgstr ""
+
+#: ../../api/animation_api.rst:279
+msgid "Writer Base Classes"
+msgstr ""
+
+#: ../../api/animation_api.rst:281
+msgid "To reduce code duplication base classes"
+msgstr ""
+
+#: ../../api/animation_api.rst:290:<autosummary>:1
+msgid ":py:obj:`AbstractMovieWriter <matplotlib.animation.AbstractMovieWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:290:<autosummary>:1
+msgid "Abstract base class for writing movies."
+msgstr ""
+
+#: ../../api/animation_api.rst:290:<autosummary>:1
+msgid ":py:obj:`MovieWriter <matplotlib.animation.MovieWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:290:<autosummary>:1
+msgid "Base class for writing movies."
+msgstr ""
+
+#: ../../api/animation_api.rst:290:<autosummary>:1
+msgid ":py:obj:`FileMovieWriter <matplotlib.animation.FileMovieWriter>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:290:<autosummary>:1
+msgid "`MovieWriter` for writing to individual files and stitching at the end."
+msgstr ""
+
+#: ../../api/animation_api.rst:291
+msgid "and mixins"
+msgstr ""
+
+#: ../../api/animation_api.rst:299:<autosummary>:1
+msgid ":py:obj:`FFMpegBase <matplotlib.animation.FFMpegBase>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:299:<autosummary>:1
+msgid "Mixin class for FFMpeg output."
+msgstr ""
+
+#: ../../api/animation_api.rst:299:<autosummary>:1
+msgid ":py:obj:`ImageMagickBase <matplotlib.animation.ImageMagickBase>`"
+msgstr ""
+
+#: ../../api/animation_api.rst:299:<autosummary>:1
+msgid "Mixin class for ImageMagick output."
+msgstr ""
+
+#: ../../api/animation_api.rst:300
+msgid "are provided."
+msgstr ""
+
+#: ../../api/animation_api.rst:302
+msgid "See the source code for how to easily implement new `MovieWriter` classes."
+msgstr ""
+

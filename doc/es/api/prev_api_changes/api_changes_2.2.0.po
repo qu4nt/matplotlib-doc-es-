@@ -1,0 +1,278 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/prev_api_changes/api_changes_2.2.0.po\n"
+"X-Crowdin-File-ID: 1916\n"
+"Language: es_ES\n"
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:3
+msgid "API Changes in 2.2.0"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:8
+msgid "New dependency"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:10
+msgid "`kiwisolver <https://github.com/nucleic/kiwi>`__ is now a required dependency to support the new constrained_layout,  see :doc:`/tutorials/intermediate/constrainedlayout_guide` for more details."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:17
+msgid "Deprecations"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:20
+msgid "Classes, functions, and methods"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:22
+msgid "The unused and untested ``Artist.onRemove`` and ``Artist.hitlist`` methods have been deprecated."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:25
+msgid "The now unused ``mlab.less_simple_linear_interpolation`` function is deprecated."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:28
+msgid "The unused ``ContourLabeler.get_real_label_width`` method is deprecated."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:30
+msgid "The unused ``FigureManagerBase.show_popup`` method is deprecated.  This introduced in e945059b327d42a99938b939a1be867fa023e7ba in 2005 but never built out into any of the backends."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:34
+msgid "``backend_tkagg.AxisMenu`` is deprecated, as it has become unused since the removal of \"classic\" toolbars."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:39
+msgid "Changed function signatures"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:41
+msgid "kwarg ``fig`` to `.GridSpec.get_subplot_params` is deprecated,  use ``figure`` instead."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:44
+msgid "Using `.pyplot.axes` with an `~matplotlib.axes.Axes` as argument is deprecated. This sets the current axes, i.e. it has the same effect as `.pyplot.sca`. For clarity ``plt.sca(ax)`` should be preferred over ``plt.axes(ax)``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:49
+msgid "Using strings instead of booleans to control grid and tick visibility is deprecated.  Using ``\"on\"``, ``\"off\"``, ``\"true\"``, or ``\"false\"`` to control grid and tick visibility has been deprecated.  Instead, use normal booleans (``True``/``False``) or boolean-likes.  In the future, all non-empty strings may be interpreted as ``True``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:55
+msgid "When given 2D inputs with non-matching numbers of columns, `~.pyplot.plot` currently cycles through the columns of the narrower input, until all the columns of the wider input have been plotted.  This behavior is deprecated; in the future, only broadcasting (1 column to *n* columns) will be performed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:62
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:121
+msgid "rcparams"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:64
+msgid "The :rc:`backend.qt4` and :rc:`backend.qt5` rcParams were deprecated in version 2.2.  In order to force the use of a specific Qt binding, either import that binding first, or set the ``QT_API`` environment variable."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:69
+msgid "Deprecation of the ``nbagg.transparent`` rcParam.  To control transparency of figure patches in the nbagg (or any other) backend, directly set ``figure.patch.facecolor``, or the ``figure.facecolor`` rcParam."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:75
+msgid "Deprecated ``Axis.unit_data``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:77
+msgid "Use `.Axis.units` (which has long existed) instead."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:81
+msgid "Removals"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:84
+msgid "Function Signatures"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:86
+msgid "Contouring no longer supports ``legacy`` corner masking.  The deprecated ``ContourSet.vmin`` and ``ContourSet.vmax`` properties have been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:90
+msgid "Passing ``None`` instead of ``\"none\"`` as format to `~.Axes.errorbar` is no longer supported."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:93
+msgid "The ``bgcolor`` keyword argument to ``Axes`` has been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:96
+msgid "Modules, methods, and functions"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:98
+msgid "The ``matplotlib.finance``, ``mpl_toolkits.exceltools`` and ``mpl_toolkits.gtktools`` modules have been removed.  ``matplotlib.finance`` remains available at https://github.com/matplotlib/mpl_finance."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:102
+msgid "The ``mpl_toolkits.mplot3d.art3d.iscolor`` function has been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:104
+msgid "The ``Axes.get_axis_bgcolor``, ``Axes.set_axis_bgcolor``, ``Bbox.update_from_data``, ``Bbox.update_datalim_numerix``, ``MaxNLocator.bin_boundaries`` methods have been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:108
+msgid "``mencoder`` can no longer be used to encode animations."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:110
+msgid "The unused ``FONT_SCALE`` and ``fontd`` attributes of the `.RendererSVG` class have been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:114
+msgid "colormaps"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:116
+msgid "The ``spectral`` colormap has been removed.  The ``Vega*`` colormaps, which were aliases for the ``tab*`` colormaps, have been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:123
+msgid "The following deprecated rcParams have been removed:"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:125
+msgid "``axes.color_cycle`` (see ``axes.prop_cycle``),"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:126
+msgid "``legend.isaxes``,"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:127
+msgid "``svg.embed_char_paths`` (see ``svg.fonttype``),"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:128
+msgid "``text.fontstyle``, ``text.fontangle``, ``text.fontvariant``, ``text.fontweight``, ``text.fontsize`` (renamed to ``text.style``, etc.),"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:130
+msgid "``tick.size`` (renamed to ``tick.major.size``)."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:135
+msgid "Only accept string-like for Categorical input"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:137
+msgid "Do not accept mixed string / float / int input, only strings are valid categoricals."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:141
+msgid "Removal of unused imports"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:142
+msgid "Many unused imports were removed from the codebase.  As a result, trying to import certain classes or functions from the \"wrong\" module (e.g. `~.Figure` from :mod:`matplotlib.backends.backend_agg` instead of :mod:`matplotlib.figure`) will now raise an `ImportError`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:149
+msgid "``Axes3D.get_xlim``, ``get_ylim`` and ``get_zlim`` now return a tuple"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:151
+msgid "They previously returned an array.  Returning a tuple is consistent with the behavior for 2D axes."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:156
+msgid "Exception type changes"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:158
+msgid "If `.MovieWriterRegistry` can't find the requested `.MovieWriter`, a more helpful `RuntimeError` message is now raised instead of the previously raised `KeyError`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:162
+msgid "`~.tight_layout.auto_adjust_subplotpars` now raises `ValueError` instead of `RuntimeError` when sizes of input lists don't match"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:167
+msgid "`.Figure.set_figwidth` and `.Figure.set_figheight` default *forward* to True"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:169
+msgid "`matplotlib.figure.Figure.set_figwidth` and `matplotlib.figure.Figure.set_figheight` had the keyword argument ``forward=False`` by default, but `.figure.Figure.set_size_inches` now defaults to ``forward=True``.  This makes these functions conistent."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:176
+msgid "Do not truncate svg sizes to nearest point"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:178
+msgid "There is no reason to size the SVG out put in integer points, change to out putting floats for the *height*, *width*, and *viewBox* attributes of the *svg* element."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:184
+msgid "Fontsizes less than 1 pt are clipped to be 1 pt."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:186
+msgid "FreeType doesn't allow fonts to get smaller than 1 pt, so all Agg backends were silently rounding up to 1 pt.  PDF (other vector backends?) were letting us write fonts that were less than 1 pt, but they could not be placed properly because position information comes from FreeType.  This change makes it so no backends can use fonts smaller than 1 pt, consistent with FreeType and ensuring more consistent results across backends."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:197
+msgid "Changes to Qt backend class MRO"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:199
+msgid "To support both Agg and cairo rendering for Qt backends all of the non-Agg specific code previously in ``backend_qt5agg.FigureCanvasQTAggBase`` has been moved to :class:`.backend_qt5.FigureCanvasQT` so it can be shared with the cairo implementation.  The ``FigureCanvasQTAggBase.paintEvent``, ``FigureCanvasQTAggBase.blit``, and ``FigureCanvasQTAggBase.print_figure`` methods have moved to :meth:`.FigureCanvasQTAgg.paintEvent`, :meth:`.FigureCanvasQTAgg.blit`, and :meth:`.FigureCanvasQTAgg.print_figure`. The first two methods assume that the instance is also a ``QWidget`` so to use ``FigureCanvasQTAggBase`` it was required to multiple inherit from a ``QWidget`` sub-class."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:210
+msgid "Having moved all of its methods either up or down the class hierarchy ``FigureCanvasQTAggBase`` has been deprecated.  To do this without warning and to preserve as much API as possible, ``.backend_qt5agg.FigureCanvasQTAggBase`` now inherits from :class:`.backend_qt5.FigureCanvasQTAgg`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:215
+msgid "The MRO for :class:`.FigureCanvasQTAgg` and ``FigureCanvasQTAggBase`` used to be ::"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:231
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:253
+msgid "and ::"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:240
+msgid "respectively.  They are now ::"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:271
+msgid "`.axes.Axes.imshow` clips RGB values to the valid range"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:273
+msgid "When `.axes.Axes.imshow` is passed an RGB or RGBA value with out-of-range values, it now logs a warning and clips them to the valid range. The old behaviour, wrapping back in to the range, often hid outliers and made interpreting RGB images unreliable."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:280
+msgid "GTKAgg and GTKCairo backends deprecated"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.2.0.rst:282
+msgid "The GTKAgg and GTKCairo backends have been deprecated. These obsolete backends allow figures to be rendered via the GTK+ 2 toolkit. They are untested, known to be broken, will not work with Python 3, and their use has been discouraged for some time. Instead, use the ``GTK3Agg`` and ``GTK3Cairo`` backends for rendering to GTK+ 3 windows."
+msgstr ""
+

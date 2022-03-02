@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:16\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.colors.make_norm_from_scale.po\n"
+"X-Crowdin-File-ID: 972\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.colors.make_norm_from_scale.rst:2
+msgid "matplotlib.colors.make\\_norm\\_from\\_scale"
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale:2 of
+msgid "Decorator for building a `.Normalize` subclass from a `~.scale.ScaleBase` subclass."
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale:5 of
+msgid "After ::"
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale:11 of
+msgid "*norm_cls* is filled with methods so that normalization computations are forwarded to *scale_cls* (i.e., *scale_cls* is the scale that would be used for the colorbar of a mappable normalized with *norm_cls*)."
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale:15 of
+msgid "If *init* is not passed, then the constructor signature of *norm_cls* will be ``norm_cls(vmin=None, vmax=None, clip=False)``; these three parameters will be forwarded to the base class (``Normalize.__init__``), and a *scale_cls* object will be initialized with no arguments (other than a dummy axis)."
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale:21 of
+msgid "If the *scale_cls* constructor takes additional parameters, then *init* should be passed to `make_norm_from_scale`.  It is a callable which is *only* used for its signature.  First, this signature will become the signature of *norm_cls*.  Second, the *norm_cls* constructor will bind the parameters passed to it using this signature, extract the bound *vmin*, *vmax*, and *clip* values, pass those to ``Normalize.__init__``, and forward the remaining bound values (including any defaults defined by the signature) to the *scale_cls* constructor."
+msgstr ""
+

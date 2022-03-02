@@ -1,0 +1,551 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:18\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.pyplot.subplot.po\n"
+"X-Crowdin-File-ID: 1298\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.rst:2
+msgid "matplotlib.pyplot.subplot"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:2 of
+msgid "Add an Axes to the current figure or retrieve an existing Axes."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:4 of
+msgid "This is a wrapper of `.Figure.add_subplot` which provides additional behavior when working with the implicit API (see the notes section)."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:7 of
+msgid "Call signatures::"
+msgstr ""
+
+#: matplotlib.pyplot.subplot of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:30 of
+msgid "**\\*args** : int, (int, int, *index*), or `.SubplotSpec`, default: (1, 1, 1)"
+msgstr ""
+
+#: of
+msgid "int, (int, int,"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:17 of
+msgid "The position of the subplot described by one of"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:19 of
+msgid "Three integers (*nrows*, *ncols*, *index*). The subplot will take the *index* position on a grid with *nrows* rows and *ncols* columns. *index* starts at 1 in the upper left corner and increases to the right. *index* can also be a two-tuple specifying the (*first*, *last*) indices (1-based, and including *last*) of the subplot, e.g., ``fig.add_subplot(3, 1, (1, 2))`` makes a subplot that spans the upper 2/3 of the figure."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:26 of
+msgid "A 3-digit integer. The digits are interpreted as if given separately as three single-digit integers, i.e. ``fig.add_subplot(235)`` is the same as ``fig.add_subplot(2, 3, 5)``. Note that this can only be used if there are no more than 9 subplots."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:30 of
+msgid "A `.SubplotSpec`."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:35 of
+msgid "**projection**"
+msgstr ""
+
+#: of
+msgid "{None, 'aitoff', 'hammer', 'lambert', 'mollweide', 'polar', 'rectilinear', str}, optional"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:33 of
+msgid "The projection type of the subplot (`~.axes.Axes`). *str* is the name of a custom projection, see `~matplotlib.projections`. The default None results in a 'rectilinear' projection."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:38 of
+msgid "**polar**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:38 of
+msgid "If True, equivalent to projection='polar'."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:43 of
+msgid "**sharex, sharey** : `~.axes.Axes`, optional"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:42 of
+msgid "Axes, optional"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:41 of
+msgid "Share the x or y `~matplotlib.axis` with sharex and/or sharey. The axis will have the same limits, ticks, and scale as the axis of the shared axes."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:46 of
+msgid "**label**"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:92 matplotlib.pyplot.subplot:105
+#: matplotlib.pyplot.subplot:107 matplotlib.pyplot.subplot:110
+#: matplotlib.pyplot.subplot:117 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:46 of
+msgid "A label for the returned axes."
+msgstr ""
+
+#: matplotlib.pyplot.subplot of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:57 of
+msgid "`.axes.SubplotBase`, or another subclass of `~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:51 of
+msgid "The axes of the subplot. The returned axes base class depends on the projection used. It is `~.axes.Axes` if rectilinear projection is used and `.projections.polar.PolarAxes` if polar projection is used. The returned axes is then a subplot subclass of the base class."
+msgstr ""
+
+#: matplotlib.pyplot.subplot of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:127 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:62 of
+msgid "This method also takes the keyword arguments for the returned axes base class; except for the *figure* argument. The keyword arguments for the rectilinear base class `~.axes.Axes` can be found in the following table but there might also be other keyword arguments if another projection is used."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:72 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:72 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:74 of
+msgid ":meth:`adjustable <matplotlib.axes.Axes.set_adjustable>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:74 of
+msgid "{'box', 'datalim'}"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:75 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:75 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:76 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:76 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:77 of
+msgid ":meth:`anchor <matplotlib.axes.Axes.set_anchor>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:77 of
+msgid "(float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:78 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:78 matplotlib.pyplot.subplot:80
+#: matplotlib.pyplot.subplot:81 matplotlib.pyplot.subplot:82
+#: matplotlib.pyplot.subplot:87 matplotlib.pyplot.subplot:91
+#: matplotlib.pyplot.subplot:93 matplotlib.pyplot.subplot:95
+#: matplotlib.pyplot.subplot:102 matplotlib.pyplot.subplot:108 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:79 of
+msgid ":meth:`aspect <matplotlib.axes.Axes.set_aspect>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:79 of
+msgid "{'auto', 'equal'} or float"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:80 of
+msgid ":meth:`autoscale_on <matplotlib.axes.Axes.set_autoscale_on>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:81 of
+msgid ":meth:`autoscalex_on <matplotlib.axes.Axes.set_autoscalex_on>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:82 of
+msgid ":meth:`autoscaley_on <matplotlib.axes.Axes.set_autoscaley_on>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:83 of
+msgid ":meth:`axes_locator <matplotlib.axes.Axes.set_axes_locator>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:83 of
+msgid "Callable[[Axes, Renderer], Bbox]"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:84 of
+msgid ":meth:`axisbelow <matplotlib.axes.Axes.set_axisbelow>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:84 of
+msgid "bool or 'line'"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:85 of
+msgid ":meth:`box_aspect <matplotlib.axes.Axes.set_box_aspect>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:85 matplotlib.pyplot.subplot:101 of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:86 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:86 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:87 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:88 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:88 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:89 of
+msgid ":meth:`facecolor <matplotlib.axes.Axes.set_facecolor>` or fc"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:89 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:90 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:90 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:91 of
+msgid ":meth:`frame_on <matplotlib.axes.Axes.set_frame_on>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:92 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:93 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:94 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:94 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:95 of
+msgid ":meth:`navigate <matplotlib.axes.Axes.set_navigate>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:96 of
+msgid ":meth:`navigate_mode <matplotlib.axes.Axes.set_navigate_mode>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:96 matplotlib.pyplot.subplot:100
+#: matplotlib.pyplot.subplot:109 matplotlib.pyplot.subplot:114
+#: matplotlib.pyplot.subplot:115 matplotlib.pyplot.subplot:116
+#: matplotlib.pyplot.subplot:121 matplotlib.pyplot.subplot:122 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:97 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:97 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:98 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:98 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:99 of
+msgid ":meth:`position <matplotlib.axes.Axes.set_position>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:99 of
+msgid "[left, bottom, width, height] or `~matplotlib.transforms.Bbox`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:100 of
+msgid ":meth:`prop_cycle <matplotlib.axes.Axes.set_prop_cycle>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:101 of
+msgid ":meth:`rasterization_zorder <matplotlib.axes.Axes.set_rasterization_zorder>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:102 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:103 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:103 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:104 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:104 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:105 of
+msgid ":meth:`title <matplotlib.axes.Axes.set_title>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:106 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:106 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:107 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:108 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:109 of
+msgid ":meth:`xbound <matplotlib.axes.Axes.set_xbound>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:110 of
+msgid ":meth:`xlabel <matplotlib.axes.Axes.set_xlabel>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:111 of
+msgid ":meth:`xlim <matplotlib.axes.Axes.set_xlim>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:111 matplotlib.pyplot.subplot:118 of
+msgid "(bottom: float, top: float)"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:112 of
+msgid ":meth:`xmargin <matplotlib.axes.Axes.set_xmargin>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:112 matplotlib.pyplot.subplot:119 of
+msgid "float greater than -0.5"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:113 of
+msgid ":meth:`xscale <matplotlib.axes.Axes.set_xscale>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:113 matplotlib.pyplot.subplot:120 of
+msgid "{\"linear\", \"log\", \"symlog\", \"logit\", ...} or `.ScaleBase`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:114 of
+msgid ":meth:`xticklabels <matplotlib.axes.Axes.set_xticklabels>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:115 of
+msgid ":meth:`xticks <matplotlib.axes.Axes.set_xticks>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:116 of
+msgid ":meth:`ybound <matplotlib.axes.Axes.set_ybound>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:117 of
+msgid ":meth:`ylabel <matplotlib.axes.Axes.set_ylabel>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:118 of
+msgid ":meth:`ylim <matplotlib.axes.Axes.set_ylim>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:119 of
+msgid ":meth:`ymargin <matplotlib.axes.Axes.set_ymargin>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:120 of
+msgid ":meth:`yscale <matplotlib.axes.Axes.set_yscale>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:121 of
+msgid ":meth:`yticklabels <matplotlib.axes.Axes.set_yticklabels>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:122 of
+msgid ":meth:`yticks <matplotlib.axes.Axes.set_yticks>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:123 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:123 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:132 of
+msgid ":obj:`.Figure.add_subplot`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:134 of
+msgid ":obj:`.pyplot.subplots`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:136 of
+msgid ":obj:`.pyplot.axes`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:138 of
+msgid ":obj:`.Figure.subplots`"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:142 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:143 of
+msgid "Creating a new Axes will delete any pre-existing Axes that overlaps with it beyond sharing a boundary::"
+msgstr ""
+
+#: matplotlib.pyplot.subplot:154 of
+msgid "If you do not want this behavior, use the `.Figure.add_subplot` method or the `.pyplot.axes` function instead."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:157 of
+msgid "If no *kwargs* are passed and there exists an Axes in the location specified by *args* then that Axes will be returned rather than a new Axes being created."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:161 of
+msgid "If *kwargs* are passed and there exists an Axes in the location specified by *args*, the projection type is the same, and the *kwargs* match with the existing Axes, then the existing Axes is returned.  Otherwise a new Axes is created with the specified parameters.  We save a reference to the *kwargs* which we use for this comparison.  If any of the values in *kwargs* are mutable we will not detect the case where they are mutated. In these cases we suggest using `.Figure.add_subplot` and the explicit Axes API rather than the implicit pyplot API."
+msgstr ""
+
+#: matplotlib.pyplot.subplot:173 of
+msgid "Examples"
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.pyplot.subplot.examples:2
+msgid "Examples using ``matplotlib.pyplot.subplot``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:10
+msgid "Resizing axes with tight layout"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:10
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:18
+msgid ":ref:`sphx_glr_gallery_subplots_axes_and_figures_demo_tight_layout.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:29
+msgid "Shared Axis"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:29
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:37
+msgid ":ref:`sphx_glr_gallery_subplots_axes_and_figures_shared_axis_demo.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:48
+msgid "Simple Colorbar"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:48
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:56
+msgid ":ref:`sphx_glr_gallery_axes_grid1_simple_colorbar.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:67
+msgid "Pyplot tutorial"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:67
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:75
+msgid ":ref:`sphx_glr_tutorials_introductory_pyplot.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:86
+msgid "Constrained Layout Guide"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:86
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:94
+msgid ":ref:`sphx_glr_tutorials_intermediate_constrainedlayout_guide.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:105
+msgid "Tight Layout guide"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:105
+#: ../../api/_as_gen/matplotlib.pyplot.subplot.examples:113
+msgid ":ref:`sphx_glr_tutorials_intermediate_tight_layout_guide.py`"
+msgstr ""
+

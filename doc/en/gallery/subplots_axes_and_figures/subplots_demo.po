@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:13
+msgid ""
+"Click :ref:`here "
+"<sphx_glr_download_gallery_subplots_axes_and_figures_subplots_demo.py>` "
+"to download the full example code"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:23
+msgid "Creating multiple subplots using ``plt.subplots``"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:25
+msgid ""
+"`.pyplot.subplots` creates a figure and a grid of subplots with a single "
+"call, while providing reasonable control over how the individual plots "
+"are created. For more advanced use cases you can use `.GridSpec` for a "
+"more general subplot layout or `.Figure.add_subplot` for adding subplots "
+"at arbitrary locations within the figure."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:54
+msgid "A figure with just one subplot"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:56
+msgid ""
+"``subplots()`` without arguments returns a `.Figure` and a single "
+"`~.axes.Axes`."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:59
+msgid ""
+"This is actually the simplest and recommended way of creating a single "
+"Figure and Axes."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:82
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:123
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:159
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:194
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:308
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:342
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:379
+msgid "Out:"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:94
+msgid "Stacking subplots in one direction"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:96
+msgid ""
+"The first two optional arguments of `.pyplot.subplots` define the number "
+"of rows and columns of the subplot grid."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:99
+msgid ""
+"When stacking in one direction only, the returned ``axs`` is a 1D numpy "
+"array containing the list of created Axes."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:134
+msgid ""
+"If you are creating just a few Axes, it's handy to unpack them "
+"immediately to dedicated variables for each Axes. That way, we can use "
+"``ax1`` instead of the more verbose ``axs[0]``."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:170
+msgid ""
+"To obtain side-by-side subplots, pass parameters ``1, 2`` for one row and"
+" two columns."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:206
+msgid "Stacking subplots in two directions"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:208
+msgid "When stacking in two directions, the returned ``axs`` is a 2D NumPy array."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:210
+msgid ""
+"If you have to set parameters for each subplot it's handy to iterate over"
+" all subplots in a 2D grid using ``for ax in axs.flat:``."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:249
+msgid ""
+"You can use tuple-unpacking also in 2D to assign all subplots to "
+"dedicated variables:"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:282
+msgid "Sharing axes"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:284
+msgid ""
+"By default, each Axes is scaled individually. Thus, if the ranges are "
+"different the tick values of the subplots do not align."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:319
+msgid "You can use *sharex* or *sharey* to align the horizontal or vertical axis."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:353
+msgid ""
+"Setting *sharex* or *sharey* to ``True`` enables global sharing across "
+"the whole grid, i.e. also the y-axes of vertically stacked subplots have "
+"the same scale when using ``sharey=True``."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:390
+msgid ""
+"For subplots that are sharing axes one set of tick labels is enough. Tick"
+" labels of inner Axes are automatically removed by *sharex* and *sharey*."
+" Still there remains an unused empty space between the subplots."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:394
+msgid ""
+"To precisely control the positioning of the subplots, one can explicitly "
+"create a `.GridSpec` with `.Figure.add_gridspec`, and then call its "
+"`~.GridSpecBase.subplots` method.  For example, we can reduce the height "
+"between vertical subplots using ``add_gridspec(hspace=0)``."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:399
+msgid ""
+"`.label_outer` is a handy method to remove labels and ticks from subplots"
+" that are not at the edge of the grid."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:433
+msgid ""
+"Apart from ``True`` and ``False``, both *sharex* and *sharey* accept the "
+"values 'row' and 'col' to share the values only per row or column."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:467
+msgid ""
+"If you want a more complex sharing structure, you can first create the "
+"grid of axes with no sharing, and then call `.axes.Axes.sharex` or "
+"`.axes.Axes.sharey` to add sharing info a posteriori."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:503
+msgid "Polar axes"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:505
+msgid ""
+"The parameter *subplot_kw* of `.pyplot.subplots` controls the subplot "
+"properties (see also `.Figure.add_subplot`). In particular, this can be "
+"used to create a grid of polar Axes."
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:534
+msgid "**Total running time of the script:** ( 0 minutes  5.737 seconds)"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:549
+msgid ""
+":download:`Download Python source code: subplots_demo.py "
+"<subplots_demo.py>`"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:555
+msgid ""
+":download:`Download Jupyter notebook: subplots_demo.ipynb "
+"<subplots_demo.ipynb>`"
+msgstr ""
+
+#: ../../gallery/subplots_axes_and_figures/subplots_demo.rst:562
+msgid ""
+"Keywords: matplotlib code example, codex, python plot, pyplot `Gallery "
+"generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

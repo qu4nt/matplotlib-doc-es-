@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_as_gen/matplotlib.colors.SymLogNorm.rst:2
+msgid "matplotlib.colors.SymLogNorm"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:1 of
+msgid "Bases: :py:class:`matplotlib.colors.SymLogNorm`"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:2 of
+msgid ""
+"The symmetrical logarithmic scale is logarithmic in both the positive and"
+" negative directions from the origin."
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:5 of
+msgid ""
+"Since the values close to zero tend toward infinity, there is a need to "
+"have a range around zero that is linear.  The parameter *linthresh* "
+"allows the user to specify the size of this range (-*linthresh*, "
+"*linthresh*)."
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm
+#: matplotlib.colors.make_norm_from_scale.<locals>.Norm.__call__ of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:14 of
+msgid "**linthresh**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:13 of
+msgid ""
+"The range within which the plot is linear (to avoid having the plot go to"
+" infinity around zero)."
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:22 of
+msgid "**linscale**"
+msgstr ""
+
+#: of
+msgid "float, default: 1"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:17 of
+msgid ""
+"This allows the linear range (-*linthresh* to *linthresh*) to be "
+"stretched relative to the logarithmic range. Its value is the number of "
+"decades to use for each half of the linear range. For example, when "
+"*linscale* == 1.0 (the default), the space used for the positive and "
+"negative halves of the linear range will be equal to one decade in the "
+"logarithmic range."
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:38 of
+msgid "**base**"
+msgstr ""
+
+#: of
+msgid "float, default: 10"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:52 of
+msgid "**vmin, vmax**"
+msgstr ""
+
+#: of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:50 of
+msgid ""
+"If *vmin* and/or *vmax* is not given, they are initialized from the "
+"minimum and maximum value, respectively, of the first input processed; "
+"i.e., ``__call__(A)`` calls ``autoscale_None(A)``."
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:69
+#: matplotlib.colors.make_norm_from_scale.<locals>.Norm.__call__:21 of
+msgid "**clip**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:55 of
+msgid ""
+"If ``True`` values falling outside the range ``[vmin, vmax]``, are mapped"
+" to 0 or 1, whichever is closer, and masked values are set to 1.  If "
+"``False`` masked values remain masked."
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:59 of
+msgid ""
+"Clipping silently defeats the purpose of setting the over, under, and "
+"masked colors in a colormap, so it is likely to lead to surprises; "
+"therefore the default is ``clip=False``."
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:72
+#: matplotlib.colors.make_norm_from_scale.<locals>.Norm.__call__:24 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.colors.SymLogNorm:73 of
+msgid "Returns 0 if ``vmin == vmax``."
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale.<locals>.Norm.__call__:2 of
+msgid ""
+"Normalize *value* data in the ``[vmin, vmax]`` interval into the ``[0.0, "
+"1.0]`` interval and return it."
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale.<locals>.Norm.__call__:9 of
+msgid "**value**"
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale.<locals>.Norm.__call__:9 of
+msgid "Data to normalize."
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale.<locals>.Norm.__call__:12 of
+msgid "If ``None``, defaults to ``self.clip`` (which defaults to ``False``)."
+msgstr ""
+
+#: matplotlib.colors.make_norm_from_scale.<locals>.Norm.__call__:25 of
+msgid ""
+"If not already initialized, ``self.vmin`` and ``self.vmax`` are "
+"initialized using ``self.autoscale_None(value)``."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.colors.SymLogNorm.examples:2
+msgid "Examples using ``matplotlib.colors.SymLogNorm``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.SymLogNorm.examples:10
+msgid "Colormap Normalizations"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.SymLogNorm.examples:10
+#: ../../api/_as_gen/matplotlib.colors.SymLogNorm.examples:18
+msgid ":ref:`sphx_glr_gallery_userdemo_colormap_normalizations.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.SymLogNorm.examples:29
+msgid "Colormap Normalizations Symlognorm"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.SymLogNorm.examples:29
+#: ../../api/_as_gen/matplotlib.colors.SymLogNorm.examples:37
+msgid ":ref:`sphx_glr_gallery_userdemo_colormap_normalizations_symlognorm.py`"
+msgstr ""
+

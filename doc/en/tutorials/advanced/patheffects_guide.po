@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../tutorials/advanced/patheffects_guide.rst:13
+msgid ""
+"Click :ref:`here "
+"<sphx_glr_download_tutorials_advanced_patheffects_guide.py>` to download "
+"the full example code"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:23
+msgid "Path effects guide"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:25
+msgid "Defining paths that objects follow on a canvas."
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:29
+msgid ""
+"Matplotlib's :mod:`.patheffects` module provides functionality to apply a"
+" multiple draw stage to any Artist which can be rendered via a "
+"`.path.Path`."
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:32
+msgid ""
+"Artists which can have a path effect applied to them include "
+"`.patches.Patch`, `.lines.Line2D`, `.collections.Collection` and even "
+"`.text.Text`. Each artist's path effects can be controlled via the "
+"`.Artist.set_path_effects` method, which takes an iterable of "
+"`AbstractPathEffect` instances."
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:37
+msgid ""
+"The simplest path effect is the `Normal` effect, which simply draws the "
+"artist without any effect:"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:69
+msgid ""
+"Whilst the plot doesn't look any different to what you would expect "
+"without any path effects, the drawing of the text has now been changed to"
+" use the path effects framework, opening up the possibilities for more "
+"interesting examples."
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:75
+msgid "Adding a shadow"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:77
+msgid ""
+"A far more interesting path effect than `Normal` is the drop-shadow, "
+"which we can apply to any of our path based artists. The classes "
+"`SimplePatchShadow` and `SimpleLineShadow` do precisely this by drawing "
+"either a filled patch or a line patch below the original artist:"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:111
+msgid ""
+"Notice the two approaches to setting the path effects in this example. "
+"The first uses the ``with*`` classes to include the desired functionality"
+" automatically followed with the \"normal\" effect, whereas the latter "
+"explicitly defines the two path effects to draw."
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:117
+msgid "Making an artist stand out"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:119
+msgid ""
+"One nice way of making artists visually stand out is to draw an outline "
+"in a bold color below the actual artist. The :class:`Stroke` path effect "
+"makes this a relatively simple task:"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:150
+msgid ""
+"It is important to note that this effect only works because we have drawn"
+" the text path twice; once with a thick black line, and then once with "
+"the original text path on top."
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:154
+msgid ""
+"You may have noticed that the keywords to `Stroke` and "
+"`SimplePatchShadow` and `SimpleLineShadow` are not the usual Artist "
+"keywords (*facecolor* *edgecolor*, etc.). This is because with these path"
+" effects we are operating at lower level of Matplotlib. In fact, the "
+"keywords which are accepted are those for a "
+"`matplotlib.backend_bases.GraphicsContextBase` instance, which have been "
+"designed for making it easy to create new backends - and not for its user"
+" interface."
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:164
+msgid "Greater control of the path effect artist"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:166
+msgid ""
+"As already mentioned, some of the path effects operate at a lower level "
+"than most users will be used to, meaning that setting keywords such as "
+"*facecolor* and *edgecolor* raise an AttributeError. Luckily there is a "
+"generic `PathPatchEffect` path effect which creates a "
+"`.patches.PathPatch` class with the original path.  The keywords to this "
+"effect are identical to those of `.patches.PathPatch`:"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:223
+msgid ""
+":download:`Download Python source code: patheffects_guide.py "
+"<patheffects_guide.py>`"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:229
+msgid ""
+":download:`Download Jupyter notebook: patheffects_guide.ipynb "
+"<patheffects_guide.ipynb>`"
+msgstr ""
+
+#: ../../tutorials/advanced/patheffects_guide.rst:236
+msgid ""
+"Keywords: matplotlib code example, codex, python plot, pyplot `Gallery "
+"generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

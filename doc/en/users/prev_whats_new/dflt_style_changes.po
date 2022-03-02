@@ -1,0 +1,1048 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:5
+msgid "Changes to the default style"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"The most important changes in matplotlib 2.0 are the changes to the "
+"default style."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:10
+msgid ""
+"While it is impossible to select the best default for all cases, these "
+"are designed to work well in the most common cases."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:13
+msgid ""
+"A 'classic' style sheet is provided so reverting to the 1.x default "
+"values is a single line of python"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:22
+msgid ""
+"See :ref:`customizing-with-matplotlibrc-files` for details about how to "
+"persistently and selectively revert many of these changes."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:31
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:34
+msgid "Colors, color cycles, and colormaps"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:37
+msgid "Colors in default property cycle"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:39
+msgid ""
+"The colors in the default property cycle have been changed from ``['b', "
+"'g', 'r', 'c', 'm', 'y', 'k']`` to the category10 color palette used by "
+"`Vega <https://github.com/vega/vega/wiki/Scales#scale-range-literals>`__ "
+"and `d3 <https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-"
+"Scales.md#category10>`__ originally developed at Tableau."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-1.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-1.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-1.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:92
+msgid ""
+"In addition to changing the colors, an additional method to specify "
+"colors was added.  Previously, the default colors were the single "
+"character short-hand notations for red, green, blue, cyan, magenta, "
+"yellow, and black.  This made them easy to type and usable in the "
+"abbreviated style string in ``plot``, however the new default colors are "
+"only specified via hex values.  To access these colors outside of the "
+"property cycling the notation for colors ``'CN'``, where ``N`` takes "
+"values 0-9, was added to denote the first 10 colors in "
+":rc:`axes.prop_cycle`. See :doc:`/tutorials/colors/colors` for more "
+"details."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:103
+msgid "To restore the old color cycle use"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:110
+msgid "or set"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:116
+#: ../../users/prev_whats_new/dflt_style_changes.rst:186
+#: ../../users/prev_whats_new/dflt_style_changes.rst:220
+#: ../../users/prev_whats_new/dflt_style_changes.rst:392
+#: ../../users/prev_whats_new/dflt_style_changes.rst:435
+#: ../../users/prev_whats_new/dflt_style_changes.rst:507
+#: ../../users/prev_whats_new/dflt_style_changes.rst:597
+#: ../../users/prev_whats_new/dflt_style_changes.rst:769
+#: ../../users/prev_whats_new/dflt_style_changes.rst:841
+#: ../../users/prev_whats_new/dflt_style_changes.rst:888
+#: ../../users/prev_whats_new/dflt_style_changes.rst:969
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1040
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1216
+msgid "in your :file:`matplotlibrc` file."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:120
+msgid "Colormap"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:122
+msgid ""
+"The new default colormap used by `matplotlib.cm.ScalarMappable` instances"
+" is 'viridis' (aka `option D <https://bids.github.io/colormap/>`__)."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-2.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-2.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-2.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:145
+msgid ""
+"For an introduction to color theory and how 'viridis' was generated watch"
+" Nathaniel Smith and Stéfan van der Walt's talk from SciPy2015. See `here"
+" for many more details <https://bids.github.io/colormap/>`__ about the "
+"other alternatives and the tools used to create the color map.  For "
+"details on all of the colormaps available in matplotlib see "
+":doc:`/tutorials/colors/colormaps`."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:157
+msgid "The previous default can be restored using"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:163
+msgid "or setting"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:169
+msgid "in your :file:`matplotlibrc` file; however this is strongly discouraged."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:172
+msgid "Interactive figures"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:174
+msgid ""
+"The default interactive figure background color has changed from grey to "
+"white, which matches the default background color used when saving."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:177
+#: ../../users/prev_whats_new/dflt_style_changes.rst:242
+msgid "The previous defaults can be restored by ::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:181
+#: ../../users/prev_whats_new/dflt_style_changes.rst:431
+msgid "or by setting ::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:190
+msgid "Grid lines"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:192
+msgid ""
+"The default style of grid lines was changed from black dashed lines to "
+"thicker solid light grey lines."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-3.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-3.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-3.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:208
+#: ../../users/prev_whats_new/dflt_style_changes.rst:957
+msgid "The previous default can be restored by using::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:214
+#: ../../users/prev_whats_new/dflt_style_changes.rst:252
+#: ../../users/prev_whats_new/dflt_style_changes.rst:384
+#: ../../users/prev_whats_new/dflt_style_changes.rst:489
+#: ../../users/prev_whats_new/dflt_style_changes.rst:592
+#: ../../users/prev_whats_new/dflt_style_changes.rst:830
+msgid "or by setting::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:224
+msgid "Figure size, font size, and screen dpi"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:226
+msgid ""
+"The default dpi used for on-screen display was changed from 80 dpi to 100"
+" dpi, the same as the default dpi for saving files.  Due to this change, "
+"the on-screen display is now more what-you-see-is-what-you-get for saved "
+"files.  To keep the figure the same size in terms of pixels, in order to "
+"maintain approximately the same size on the screen, the default figure "
+"size was reduced from 8x6 inches to 6.4x4.8 inches.  As a consequence of "
+"this the default font sizes used for the title, tick labels, and axes "
+"labels were reduced to maintain their size relative to the overall size "
+"of the figure.  By default the dpi of the saved image is now the dpi of "
+"the `~matplotlib.figure.Figure` instance being saved."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:238
+msgid ""
+"This will have consequences if you are trying to match text in a figure "
+"directly with external text."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:262
+msgid "In your :file:`matplotlibrc` file."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:264
+msgid ""
+"In addition, the ``forward`` kwarg to `~.Figure.set_size_inches` now "
+"defaults to `True` to improve the interactive experience.  Backend "
+"canvases that adjust the size of their bound `matplotlib.figure.Figure` "
+"must pass ``forward=False`` to avoid circular behavior.  This default is "
+"not configurable."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:272
+msgid "Plotting functions"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:275
+msgid "``scatter``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:277
+msgid ""
+"The following changes were made to the default behavior of "
+"`~matplotlib.axes.Axes.scatter`"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:280
+msgid ""
+"The default size of the elements in a scatter plot is now based on "
+":rc:`lines.markersize` so it is consistent with ``plot(X, Y, 'o')``.  The"
+" old value was 20, and the new value is 36 (6^2)."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:283
+msgid "Scatter markers no longer have a black edge."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:284
+msgid ""
+"If the color of the markers is not specified it will follow the property "
+"cycle, pulling from the 'patches' cycle on the ``Axes``."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-4.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-4.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-4.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:310
+msgid ""
+"The classic default behavior of `~matplotlib.axes.Axes.scatter` can only "
+"be recovered through ``mpl.style.use('classic')``.  The marker size can "
+"be recovered via ::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:316
+msgid ""
+"however, this will also affect the default marker size of "
+"`~matplotlib.axes.Axes.plot`.  To recover the classic behavior on a per-"
+"call basis pass the following kwargs::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:323
+msgid "``plot``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:325
+msgid ""
+"The following changes were made to the default behavior of "
+"`~matplotlib.axes.Axes.plot`"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:328
+msgid "the default linewidth increased from 1 to 1.5"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:329
+msgid ""
+"the dash patterns associated with ``'--'``, ``':'``, and ``'-.'`` have "
+"changed"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:331
+msgid "the dash patterns now scale with line width"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-5.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-5.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-5.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:376
+#: ../../users/prev_whats_new/dflt_style_changes.rst:427
+#: ../../users/prev_whats_new/dflt_style_changes.rst:471
+#: ../../users/prev_whats_new/dflt_style_changes.rst:587
+#: ../../users/prev_whats_new/dflt_style_changes.rst:819
+msgid "The previous defaults can be restored by setting::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:395
+msgid "``errorbar``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:397
+msgid "By default, caps on the ends of errorbars are not present."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-6.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-6.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-6.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:423
+msgid ""
+"This also changes the return value of "
+":meth:`~matplotlib.axes.Axes.errorbar` as the list of 'caplines' will be "
+"empty by default."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:439
+msgid "``boxplot``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:441
+msgid ""
+"Previously, boxplots were composed of a mish-mash of styles that were, "
+"for better for worse, inherited from Matlab. Most of the elements were "
+"blue, but the medians were red. The fliers (outliers) were black plus-"
+"symbols ('+') and the whiskers were dashed lines, which created ambiguity"
+" if the (solid and black) caps were not drawn."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:447
+msgid ""
+"For the new defaults, everything is black except for the median and mean "
+"lines (if drawn), which are set to the first two elements of the current "
+"color cycle. Also, the default flier markers are now hollow circles, "
+"which maintain the ability of the plus-symbols to overlap without "
+"obscuring data too much."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-7.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-7.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-7.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:511
+msgid "``fill_between`` and ``fill_betweenx``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:513
+msgid ""
+"`~matplotlib.axes.Axes.fill_between` and "
+"`~matplotlib.axes.Axes.fill_betweenx` both follow the patch color cycle."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-8.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-8.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-8.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:536
+msgid ""
+"If the facecolor is set via the ``facecolors`` or ``color`` keyword "
+"argument, then the color is not cycled."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:539
+msgid ""
+"To restore the previous behavior, explicitly pass the keyword argument "
+"``facecolors='C0'`` to the method call."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:544
+msgid "Patch edges and color"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:546
+msgid ""
+"Most artists drawn with a patch (``~matplotlib.axes.Axes.bar``, "
+"``~matplotlib.axes.Axes.pie``, etc) no longer have a black edge by "
+"default.  The default face color is now ``'C0'`` instead of ``'b'``."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-9.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-9.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-9.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:600
+msgid "``hexbin``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:602
+msgid ""
+"The default value of the *linecolor* keyword argument for `~.Axes.hexbin`"
+" has changed from ``'none'`` to ``'face'``. If 'none' is now supplied, no"
+" line edges are drawn around the hexagons."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:609
+msgid "``bar`` and ``barh``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:611
+msgid ""
+"The default value of the ``align`` kwarg for both `~.Axes.bar` and "
+"`~.Axes.barh` is changed from ``'edge'`` to ``'center'``."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-10.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-10.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-10.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:637
+msgid ""
+"To restore the previous behavior explicitly pass the keyword argument "
+"``align='edge'`` to the method call."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:642
+msgid "Hatching"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:645
+msgid "The color of the lines in the hatch is now determined by"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:647
+msgid "If an edge color is explicitly set, use that for the hatch color"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:648
+msgid ""
+"If the edge color is not explicitly set, use :rc:`hatch.color` which is "
+"looked up at artist creation time."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:651
+msgid ""
+"The width of the lines in a hatch pattern is now configurable by the "
+"rcParams :rc:`hatch.linewidth`, which defaults to 1 point.  The old "
+"behavior for the line width was different depending on backend:"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:655
+msgid "PDF: 0.1 pt"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:656
+msgid "SVG: 1.0 pt"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:657
+msgid "PS:  1 px"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:658
+msgid "Agg: 1 px"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:660
+msgid ""
+"The old line width behavior can not be restored across all backends "
+"simultaneously, but can be restored for a single backend by setting::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:666
+msgid "The behavior of the PS and Agg backends was DPI dependent, thus::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:674
+msgid "There is no direct API level control of the hatch color or linewidth."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:676
+msgid ""
+"Hatching patterns are now rendered at a consistent density, regardless of"
+" DPI. Formerly, high DPI figures would be more dense than the default, "
+"and low DPI figures would be less dense.  This old behavior cannot be "
+"directly restored, but the density may be increased by repeating the "
+"hatch specifier."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:685
+msgid "Fonts"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:688
+msgid "Normal text"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:690
+msgid ""
+"The default font has changed from \"Bitstream Vera Sans\" to \"DejaVu "
+"Sans\".  DejaVu Sans has additional international and math characters, "
+"but otherwise has the same appearance as Bitstream Vera Sans. Latin, "
+"Greek, Cyrillic, Armenian, Georgian, Hebrew, and Arabic are `all "
+"supported <https://dejavu-fonts.github.io/>`__ (but right-to-left "
+"rendering is still not handled by matplotlib). In addition, DejaVu "
+"contains a sub-set of emoji symbols."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-11.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-11.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-11.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:718
+msgid ""
+"See the `DejaVu Sans PDF sample for full coverage "
+"<http://dejavu.sourceforge.net/samples/DejaVuSans.pdf>`__."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:722
+msgid "Math text"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:724
+msgid ""
+"The default math font when using the built-in math rendering engine "
+"(mathtext) has changed from \"Computer Modern\" (i.e. LaTeX-like) to "
+"\"DejaVu Sans\".  This change has no effect if the TeX backend is used "
+"(i.e. ``text.usetex`` is ``True``)."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-12.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-12.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-12.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-13.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-13.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-13.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:758
+msgid "To revert to the old behavior set the::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:763
+#: ../../users/prev_whats_new/dflt_style_changes.rst:883
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1032
+msgid "or set::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:771
+msgid ""
+"This ``rcParam`` is consulted when the text is drawn, not when the artist"
+" is created. Thus all mathtext on a given ``canvas`` will use the same "
+"fontset."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:777
+msgid "Legends"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:779
+msgid "By default, the number of points displayed in a legend is now 1."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:780
+msgid ""
+"The default legend location is ``'best'``, so the legend will be "
+"automatically placed in a location to minimize overlap with data."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:782
+msgid ""
+"The legend defaults now include rounded corners, a lighter boundary, and "
+"partially transparent boundary and background."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-14.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-14.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-14.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:844
+msgid "Image"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:847
+msgid "Interpolation"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:849
+msgid ""
+"The default interpolation method for `~matplotlib.axes.Axes.imshow` is "
+"now ``'nearest'`` and by default it resamples the data (both up and down "
+"sampling) before colormapping."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-15.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-15.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-15.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:878
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1025
+msgid "To restore the previous behavior set::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:891
+msgid "Colormapping pipeline"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:893
+msgid ""
+"Previously, the input data was normalized, then colormapped, and then "
+"resampled to the resolution required for the screen.  This meant that the"
+" final resampling was being done in color space.  Because the color maps "
+"are not generally linear in RGB space, colors not in the colormap may "
+"appear in the final image.  This bug was addressed by an almost complete "
+"overhaul of the image handling code."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:900
+msgid ""
+"The input data is now normalized, then resampled to the correct "
+"resolution (in normalized dataspace), and then colormapped to RGB space."
+"  This ensures that only colors from the colormap appear in the final "
+"image. (If your viewer subsequently resamples the image, the artifact may"
+" reappear.)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:906
+msgid "The previous behavior cannot be restored."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:910
+msgid "Shading"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:912
+msgid ""
+"The default shading mode for light source shading, in "
+"``matplotlib.colors.LightSource.shade``, is now ``overlay``. Formerly, it"
+" was ``hsv``."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:918
+msgid "Plot layout"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:921
+msgid "Auto limits"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:923
+msgid ""
+"The previous auto-scaling behavior was to find 'nice' round numbers as "
+"view limits that enclosed the data limits, but this could produce bad "
+"plots if the data happened to fall on a vertical or horizontal line near "
+"the chosen 'round number' limit.  The new default sets the view limits to"
+" 5% wider than the data range."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-16.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-16.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-16.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:951
+msgid ""
+"The size of the padding in the x and y directions is controlled by the "
+"``'axes.xmargin'`` and ``'axes.ymargin'`` rcParams respectively. Whether "
+"the view limits should be 'round numbers' is controlled by "
+":rc:`axes.autolimit_mode`.  In the original ``'round_number'`` mode, the "
+"view limits coincide with ticks."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:963
+msgid "or setting::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:973
+msgid "Z-order"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:975
+msgid ""
+"Ticks and grids are now plotted above solid elements such as filled "
+"contours, but below lines.  To return to the previous behavior of "
+"plotting ticks and grids above lines, set ``rcParams['axes.axisbelow'] = "
+"False``."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:982
+msgid "Ticks"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:985
+msgid "Direction"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:987
+msgid ""
+"To reduce the collision of tick marks with data, the default ticks now "
+"point outward by default.  In addition, ticks are now drawn only on the "
+"bottom and left spines to prevent a porcupine appearance, and for a "
+"cleaner separation between subplots."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-17.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-17.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-17.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1045
+msgid "Number of ticks"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1047
+msgid ""
+"The default `~matplotlib.ticker.Locator` used for the x and y axis is "
+"`~matplotlib.ticker.AutoLocator` which tries to find, up to some maximum "
+"number, 'nicely' spaced ticks.  The locator now includes an algorithm to "
+"estimate the maximum number of ticks that will leave room for the tick "
+"labels.  By default it also ensures that there are at least two ticks "
+"visible."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-18.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-18.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-18.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1069
+msgid ""
+"There is no way, other than using ``mpl.style.use('classic')``, to "
+"restore the previous behavior as the default.  On an axis-by-axis basis "
+"you may either control the existing locator via: ::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1075
+msgid "or create a new `~matplotlib.ticker.MaxNLocator`::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1080
+msgid ""
+"The algorithm used by `~matplotlib.ticker.MaxNLocator` has been improved,"
+" and this may change the choice of tick locations in some cases.  This "
+"also affects `~matplotlib.ticker.AutoLocator`, which uses ``MaxNLocator``"
+" internally."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1085
+msgid ""
+"For a log-scaled axis the default locator is the "
+"`~matplotlib.ticker.LogLocator`.  Previously the maximum number of ticks "
+"was set to 15, and could not be changed. Now there is a *numticks* kwarg "
+"for setting the maximum to any integer value, to the string 'auto', or to"
+" its default value of None which is equivalent to 'auto'.  With the "
+"'auto' setting the maximum number will be no larger than 9, and will be "
+"reduced depending on the length of the axis in units of the tick font "
+"size.  As in the case of the AutoLocator, the heuristic algorithm reduces"
+" the incidence of overlapping tick labels but does not prevent it."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1098
+msgid "Tick label formatting"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1101
+msgid "``LogFormatter`` labeling of minor ticks"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1103
+msgid ""
+"Minor ticks on a log axis are now labeled when the axis view limits span "
+"a range less than or equal to the interval between two major ticks.  See "
+"`~matplotlib.ticker.LogFormatter` for details. The minor tick labeling is"
+" turned off when using ``mpl.style.use('classic')``, but cannot be "
+"controlled independently via `.rcParams`."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-19.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-19.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-19.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1133
+msgid "``ScalarFormatter`` tick label formatting with offsets"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1135
+msgid ""
+"With the default :rc:`axes.formatter.useoffset`, an offset will be used "
+"when it will save 4 or more digits.  This can be controlled with the new "
+":rc:`axes.formatter.offset_threshold`. To restore the previous behavior "
+"of using an offset to save 2 or more digits, use "
+"``rcParams['axes.formatter.offset_threshold'] = 2``."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/dflt_style_changes-20.py>`__, "
+"`png <../../users/prev_whats_new/dflt_style_changes-20.png>`__, `pdf "
+"<../../users/prev_whats_new/dflt_style_changes-20.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1165
+msgid "``AutoDateFormatter`` format strings"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1167
+msgid ""
+"The default date formats are now all based on ISO format, i.e., with the "
+"slowest-moving value first.  The date formatters are configurable through"
+" the ``date.autoformatter.*`` rcParams."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1173
+msgid "Threshold (tick interval >= than)"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1173
+msgid "rcParam"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1173
+msgid "classic"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1173
+msgid "v2.0"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1175
+msgid "365 days"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1175
+msgid "``'date.autoformatter.year'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1175
+msgid "``'%Y'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1177
+msgid "30 days"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1177
+msgid "``'date.autoformatter.month'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1177
+msgid "``'%b %Y'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1177
+msgid "``'%Y-%m'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1179
+msgid "1 day"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1179
+msgid "``'date.autoformatter.day'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1179
+#, python-format
+msgid "``'%b %d %Y'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1179
+#, python-format
+msgid "``'%Y-%m-%d'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1181
+msgid "1 hour"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1181
+msgid "``'date.autoformatter.hour'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1181
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1183
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1185
+msgid "``'%H:%M:%S'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1181
+msgid "``'%H:%M'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1183
+msgid "1 minute"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1183
+msgid "``'date.autoformatter.minute'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1183
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1185
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1187
+#, python-format
+msgid "``'%H:%M:%S.%f'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1185
+msgid "1 second"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1185
+msgid "``'date.autoformatter.second'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1187
+msgid "1  microsecond"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1187
+msgid "``'date.autoformatter.microsecond'``"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1192
+#, python-format
+msgid ""
+"Python's ``%x`` and ``%X`` date formats may be of particular interest to "
+"format dates based on the current locale."
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1195
+msgid "The previous default can be restored by::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1206
+msgid "or setting ::"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1219
+msgid "mplot3d"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1221
+msgid ""
+"mplot3d now obeys some style-related rcParams, rather than using hard-"
+"coded defaults.  These include:"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1224
+msgid "xtick.major.width"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1225
+msgid "ytick.major.width"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1226
+msgid "xtick.color"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1227
+msgid "ytick.color"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1228
+msgid "axes.linewidth"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1229
+msgid "axes.edgecolor"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1230
+msgid "grid.color"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1231
+msgid "grid.linewidth"
+msgstr ""
+
+#: ../../users/prev_whats_new/dflt_style_changes.rst:1232
+msgid "grid.linestyle"
+msgstr ""
+

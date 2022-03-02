@@ -1,0 +1,1864 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/widgets_api.rst:3
+msgid "``matplotlib.widgets``"
+msgstr ""
+
+#: matplotlib.widgets:2 of
+msgid "GUI neutral widgets"
+msgstr ""
+
+#: matplotlib.widgets:4 of
+msgid ""
+"Widgets that are designed to work for any of the GUI backends. All of "
+"these widgets require you to predefine a `matplotlib.axes.Axes` instance "
+"and pass that as the first parameter.  Matplotlib doesn't try to be too "
+"smart with respect to layout -- you will have to figure out how wide and "
+"tall you want your Axes to be to accommodate your widget."
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:1 matplotlib.widgets.MultiCursor:1
+#: matplotlib.widgets.SubplotTool:1 of
+msgid "Bases: :py:class:`matplotlib.widgets.Widget`"
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:2 of
+msgid "Widget connected to a single `~matplotlib.axes.Axes`."
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:4 of
+msgid ""
+"To guarantee that the widget remains responsive and not garbage-"
+"collected, a reference to the object should be maintained by the user."
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:7 of
+msgid ""
+"This is necessary because the callback registry maintains only weak-refs "
+"to the functions, which are member functions of the widget.  If there are"
+" no references to the widget object it may be garbage collected which "
+"will disconnect the callbacks."
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget matplotlib.widgets.Button
+#: matplotlib.widgets.CheckButtons matplotlib.widgets.RadioButtons
+#: matplotlib.widgets.RangeSlider matplotlib.widgets.Slider
+#: matplotlib.widgets.TextBox of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:27 matplotlib.widgets.Button:44
+#: matplotlib.widgets.CheckButtons:24 matplotlib.widgets.CheckButtons:47
+#: matplotlib.widgets.EllipseSelector:13 matplotlib.widgets.Lasso:13
+#: matplotlib.widgets.LassoSelector:25 matplotlib.widgets.PolygonSelector:22
+#: matplotlib.widgets.RadioButtons:24 matplotlib.widgets.RadioButtons:49
+#: matplotlib.widgets.RectangleSelector:13 matplotlib.widgets.TextBox:26
+#: matplotlib.widgets.TextBox:48 of
+msgid "**ax** : `~matplotlib.axes.Axes`"
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:26 matplotlib.widgets.Button:43
+#: matplotlib.widgets.CheckButtons:23 matplotlib.widgets.CheckButtons:46
+#: matplotlib.widgets.EllipseSelector:12 matplotlib.widgets.Lasso:12
+#: matplotlib.widgets.LassoSelector:24 matplotlib.widgets.PolygonSelector:21
+#: matplotlib.widgets.RadioButtons:23 matplotlib.widgets.RadioButtons:48
+#: matplotlib.widgets.RectangleSelector:12 matplotlib.widgets.TextBox:25
+#: matplotlib.widgets.TextBox:47 of
+msgid "Axes"
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:27 matplotlib.widgets.CheckButtons:24
+#: matplotlib.widgets.CheckButtons:47 matplotlib.widgets.EllipseSelector:13
+#: matplotlib.widgets.Lasso:13 matplotlib.widgets.LassoSelector:25
+#: matplotlib.widgets.PolygonSelector:22 matplotlib.widgets.RadioButtons:24
+#: matplotlib.widgets.RectangleSelector:13 matplotlib.widgets.TextBox:26 of
+msgid "The parent axes for the widget."
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:30 of
+msgid "**canvas** : `~matplotlib.backend_bases.FigureCanvasBase`"
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:29 of
+msgid "FigureCanvasBase"
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:30 of
+msgid "The parent figure canvas for the widget."
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:34 of
+msgid ":obj:`active <active>`"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget:33 matplotlib.widgets.Widget.active:2 of
+msgid "Is the widget active?"
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget.connect_event:2 of
+msgid "Connect a callback function with an event."
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget.connect_event:4 of
+msgid ""
+"This should be used in lieu of ``figure.canvas.mpl_connect`` since this "
+"function stores callback ids for later clean up."
+msgstr ""
+
+#: matplotlib.widgets.AxesWidget.disconnect_events:2 of
+msgid "Disconnect all events created by this widget."
+msgstr ""
+
+#: matplotlib.widgets.Button:1 matplotlib.widgets.CheckButtons:1
+#: matplotlib.widgets.Cursor:1 matplotlib.widgets.Lasso:1
+#: matplotlib.widgets.RadioButtons:1 matplotlib.widgets.SliderBase:1
+#: matplotlib.widgets.TextBox:1 of
+msgid "Bases: :py:class:`matplotlib.widgets.AxesWidget`"
+msgstr ""
+
+#: matplotlib.widgets.Button:2 of
+msgid "A GUI neutral button."
+msgstr ""
+
+#: matplotlib.widgets.Button:4 of
+msgid ""
+"For the button to remain responsive you must keep a reference to it. Call"
+" `.on_clicked` to connect to the button."
+msgstr ""
+
+#: matplotlib.widgets.Button:22 matplotlib.widgets.RangeSlider:37
+#: matplotlib.widgets.Slider:36 of
+msgid "**ax**"
+msgstr ""
+
+#: matplotlib.widgets.Button:22 of
+msgid "The `matplotlib.axes.Axes` the button renders into."
+msgstr ""
+
+#: matplotlib.widgets.Button:25 matplotlib.widgets.Button:47
+#: matplotlib.widgets.RangeSlider:40 matplotlib.widgets.Slider:39
+#: matplotlib.widgets.TextBox:51 of
+msgid "**label**"
+msgstr ""
+
+#: matplotlib.widgets.Button:25 of
+msgid "A `matplotlib.text.Text` instance."
+msgstr ""
+
+#: matplotlib.widgets.Button:28 matplotlib.widgets.Button:54
+#: matplotlib.widgets.TextBox:32 matplotlib.widgets.TextBox:57 of
+msgid "**color**"
+msgstr ""
+
+#: matplotlib.widgets.Button:28 of
+msgid "The color of the button when not hovering."
+msgstr ""
+
+#: matplotlib.widgets.Button:32 matplotlib.widgets.Button:70
+#: matplotlib.widgets.TextBox:36 matplotlib.widgets.TextBox:60 of
+msgid "**hovercolor**"
+msgstr ""
+
+#: matplotlib.widgets.Button:31 of
+msgid "The color of the button when hovering."
+msgstr ""
+
+#: matplotlib.widgets.Button matplotlib.widgets.CheckButtons
+#: matplotlib.widgets.CheckButtons.set_active matplotlib.widgets.Cursor
+#: matplotlib.widgets.EllipseSelector matplotlib.widgets.Lasso
+#: matplotlib.widgets.LassoSelector matplotlib.widgets.MultiCursor
+#: matplotlib.widgets.PolygonSelector matplotlib.widgets.RadioButtons
+#: matplotlib.widgets.RangeSlider matplotlib.widgets.RangeSlider.on_changed
+#: matplotlib.widgets.RangeSlider.set_max
+#: matplotlib.widgets.RangeSlider.set_min
+#: matplotlib.widgets.RangeSlider.set_val matplotlib.widgets.RectangleSelector
+#: matplotlib.widgets.Slider matplotlib.widgets.Slider.on_changed
+#: matplotlib.widgets.Slider.set_val matplotlib.widgets.SliderBase.disconnect
+#: matplotlib.widgets.SpanSelector matplotlib.widgets.SubplotTool
+#: matplotlib.widgets.TextBox matplotlib.widgets.ToolHandles
+#: matplotlib.widgets.ToolLineHandles
+#: matplotlib.widgets.ToolLineHandles.closest
+#: matplotlib.widgets.ToolLineHandles.set_data of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.widgets.Button:44 matplotlib.widgets.TextBox:48 of
+msgid "The `~.axes.Axes` instance the button will be placed into."
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.widgets.Button:47 of
+msgid "The button text."
+msgstr ""
+
+#: matplotlib.widgets.Button:51 of
+msgid "**image**"
+msgstr ""
+
+#: of
+msgid "array-like or PIL Image"
+msgstr ""
+
+#: matplotlib.widgets.Button:50 of
+msgid ""
+"The image to place in the button, if not *None*.  The parameter is "
+"directly forwarded to `~matplotlib.axes.Axes.imshow`."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:81 matplotlib.widgets.RangeSlider:82
+#: matplotlib.widgets.Slider:92 matplotlib.widgets.Slider:93 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.widgets.Button:54 of
+msgid "The color of the button when not activated."
+msgstr ""
+
+#: matplotlib.widgets.Button:57 of
+msgid "The color of the button when the mouse is over it."
+msgstr ""
+
+#: matplotlib.widgets.Button.disconnect:2 of
+msgid "Remove the callback function with connection id *cid*."
+msgstr ""
+
+#: matplotlib.widgets.Button.on_clicked:2
+#: matplotlib.widgets.CheckButtons.on_clicked:2
+#: matplotlib.widgets.RadioButtons.on_clicked:2 of
+msgid "Connect the callback function *func* to button click events."
+msgstr ""
+
+#: matplotlib.widgets.Button.on_clicked:4
+#: matplotlib.widgets.CheckButtons.on_clicked:4
+#: matplotlib.widgets.RadioButtons.on_clicked:4 of
+msgid "Returns a connection id, which can be used to disconnect the callback."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:2 of
+msgid "A GUI neutral set of check buttons."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:4 of
+msgid ""
+"For the check buttons to remain responsive you must keep a reference to "
+"this object."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:7 of
+msgid "Connect to the CheckButtons with the `.on_clicked` method."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:27 matplotlib.widgets.RadioButtons:30 of
+msgid "**labels** : list of `.Text`"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:30 of
+msgid "**rectangles** : list of `.Rectangle`"
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:35 of
+msgid "**lines** : list of (`.Line2D`, `.Line2D`) pairs"
+msgstr ""
+
+#: of
+msgid "list of ("
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:33 of
+msgid ""
+"List of lines for the x's in the check boxes.  These lines exist for each"
+" box, but have ``set_visible(False)`` when its box is not checked."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:41 of
+msgid "Add check buttons to `matplotlib.axes.Axes` instance *ax*."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:50 matplotlib.widgets.RadioButtons:52 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "list of str"
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:50 of
+msgid "The labels of the check buttons."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:67 of
+msgid "**actives**"
+msgstr ""
+
+#: of
+msgid "list of bool, optional"
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons:53 of
+msgid ""
+"The initial check states of the buttons. The list must have the same "
+"length as *labels*. If not given, all buttons are unchecked."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.disconnect:2
+#: matplotlib.widgets.RadioButtons.disconnect:2
+#: matplotlib.widgets.SliderBase.disconnect:2
+#: matplotlib.widgets.TextBox.disconnect:2 of
+msgid "Remove the observer with connection id *cid*."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.get_status:2 of
+msgid "Return a tuple of the status (True/False) of all of the check buttons."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.set_active:2 of
+msgid "Toggle (activate or deactivate) a check button by index."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.set_active:4
+#: matplotlib.widgets.RadioButtons.set_active:4 of
+msgid "Callbacks will be triggered if :attr:`eventson` is True."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.set_active:13 of
+msgid "**index**"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:83
+#: matplotlib.widgets.RangeSlider.on_changed:26 matplotlib.widgets.Slider:94
+#: matplotlib.widgets.Slider.on_changed:26 of
+msgid "int"
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.set_active:9 of
+msgid "Index of the check button to toggle."
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.set_active of
+msgid "Raises"
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.set_active:26 of
+msgid "ValueError"
+msgstr ""
+
+#: matplotlib.widgets.CheckButtons.set_active:18 of
+msgid "If *index* is invalid."
+msgstr ""
+
+#: matplotlib.widgets.Cursor:2 of
+msgid "A crosshair cursor that spans the axes and moves with mouse cursor."
+msgstr ""
+
+#: matplotlib.widgets.Cursor:4 matplotlib.widgets.EllipseSelector:4
+#: matplotlib.widgets.MultiCursor:5 matplotlib.widgets.RectangleSelector:4 of
+msgid "For the cursor to remain responsive you must keep a reference to it."
+msgstr ""
+
+#: matplotlib.widgets.Cursor:9 matplotlib.widgets.SpanSelector:17
+#: matplotlib.widgets.ToolHandles:8 matplotlib.widgets.ToolLineHandles:8 of
+msgid "**ax** : `matplotlib.axes.Axes`"
+msgstr ""
+
+#: matplotlib.widgets.Cursor:8 matplotlib.widgets.SpanSelector:16
+#: matplotlib.widgets.ToolHandles:7 matplotlib.widgets.ToolLineHandles:7 of
+msgid "matplotlib.axes.Axes"
+msgstr ""
+
+#: matplotlib.widgets.Cursor:9 matplotlib.widgets.MultiCursor:13 of
+msgid "The `~.axes.Axes` to attach the cursor to."
+msgstr ""
+
+#: matplotlib.widgets.Cursor:12 matplotlib.widgets.MultiCursor:19 of
+msgid "**horizOn**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.widgets.Cursor:12 matplotlib.widgets.MultiCursor:19 of
+msgid "Whether to draw the horizontal line."
+msgstr ""
+
+#: matplotlib.widgets.Cursor:15 of
+msgid "**vertOn**"
+msgstr ""
+
+#: matplotlib.widgets.Cursor:15 matplotlib.widgets.MultiCursor:22 of
+msgid "Whether to draw the vertical line."
+msgstr ""
+
+#: matplotlib.widgets.Cursor:21 matplotlib.widgets.EllipseSelector:35
+#: matplotlib.widgets.Lasso:20 matplotlib.widgets.LassoSelector:33
+#: matplotlib.widgets.MultiCursor:16 matplotlib.widgets.PolygonSelector:31
+#: matplotlib.widgets.RectangleSelector:35 matplotlib.widgets.SpanSelector:35
+#: matplotlib.widgets.ToolHandles:34 matplotlib.widgets.ToolLineHandles:34 of
+msgid "**useblit**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.widgets.Cursor:18 matplotlib.widgets.MultiCursor:16 of
+msgid "Use blitting for faster drawing if supported by the backend."
+msgstr ""
+
+#: matplotlib.widgets.Cursor matplotlib.widgets.MultiCursor of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.widgets.Cursor:33 matplotlib.widgets.MultiCursor:37 of
+msgid "**\\*\\*lineprops**"
+msgstr ""
+
+#: matplotlib.widgets.Cursor:26 matplotlib.widgets.MultiCursor:30 of
+msgid ""
+"`.Line2D` properties that control the appearance of the lines. See also "
+"`~.Axes.axhline`."
+msgstr ""
+
+#: matplotlib.widgets.Cursor:36 matplotlib.widgets.EllipseSelector:97
+#: matplotlib.widgets.MultiCursor:40 matplotlib.widgets.PolygonSelector:67
+#: matplotlib.widgets.RectangleSelector:97 matplotlib.widgets.SpanSelector:85
+#: of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.widgets.Cursor:37 of
+msgid "See :doc:`/gallery/widgets/cursor`."
+msgstr ""
+
+#: matplotlib.widgets.Cursor.clear:2 of
+msgid "Internal event handler to clear the cursor."
+msgstr ""
+
+#: matplotlib.widgets.Cursor.onmove:2 of
+msgid "Internal event handler to draw the cursor when the mouse moves."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:1 of
+msgid "Bases: :py:class:`matplotlib.widgets.RectangleSelector`"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:2 of
+msgid "Select an elliptical region of an axes."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:6 matplotlib.widgets.RectangleSelector:6
+#: matplotlib.widgets.SpanSelector:10 of
+msgid ""
+"Press and release events triggered at the same coordinates outside the "
+"selection will clear the selector, except when "
+"``ignore_event_outside=True``."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:23 matplotlib.widgets.LassoSelector:29
+#: matplotlib.widgets.PolygonSelector:27
+#: matplotlib.widgets.RectangleSelector:23 matplotlib.widgets.SpanSelector:24
+#: of
+msgid "**onselect**"
+msgstr ""
+
+#: of
+msgid "function"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:16
+#: matplotlib.widgets.RectangleSelector:16 matplotlib.widgets.SpanSelector:20
+#: of
+msgid ""
+"A callback function that is called after a release event and the "
+"selection is created, changed or removed. It must have the signature::"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:22
+#: matplotlib.widgets.RectangleSelector:22 of
+msgid ""
+"where *eclick* and *erelease* are the mouse click and release "
+"`.MouseEvent`\\s that start and complete the selection."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:27
+#: matplotlib.widgets.RectangleSelector:27 of
+msgid "**minspanx**"
+msgstr ""
+
+#: of
+msgid "float, default: 0"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:26
+#: matplotlib.widgets.RectangleSelector:26 of
+msgid ""
+"Selections with an x-span less than or equal to *minspanx* are removed "
+"(when already existing) or cancelled."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:31
+#: matplotlib.widgets.RectangleSelector:31 of
+msgid "**minspany**"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:30
+#: matplotlib.widgets.RectangleSelector:30 of
+msgid ""
+"Selections with an y-span less than or equal to *minspanx* are removed "
+"(when already existing) or cancelled."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:34 matplotlib.widgets.Lasso:19
+#: matplotlib.widgets.LassoSelector:32 matplotlib.widgets.PolygonSelector:30
+#: matplotlib.widgets.RectangleSelector:34 matplotlib.widgets.ToolHandles:20
+#: matplotlib.widgets.ToolLineHandles:20 of
+msgid "Whether to use blitting for faster drawing (if supported by the backend)."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:42 matplotlib.widgets.LassoSelector:37
+#: matplotlib.widgets.PolygonSelector:38
+#: matplotlib.widgets.RectangleSelector:42 matplotlib.widgets.SpanSelector:41
+#: of
+msgid "**props**"
+msgstr ""
+
+#: of
+msgid "dict, optional"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:38 of
+msgid ""
+"Properties with which the ellipse is drawn. See "
+"`matplotlib.patches.Patch` for valid properties. Default:"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:42
+#: matplotlib.widgets.RectangleSelector:42 of
+msgid "``dict(facecolor='red', edgecolor='black', alpha=0.2, fill=True)``"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:46
+#: matplotlib.widgets.RectangleSelector:46 of
+msgid "**spancoords**"
+msgstr ""
+
+#: of
+msgid "{\"data\", \"pixels\"}, default: \"data\""
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:45
+#: matplotlib.widgets.RectangleSelector:45 of
+msgid ""
+"Whether to interpret *minspanx* and *minspany* in data or in pixel "
+"coordinates."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:49
+#: matplotlib.widgets.RectangleSelector:49 of
+msgid "**button** : `.MouseButton`, list of `.MouseButton`, default: all buttons"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:48
+#: matplotlib.widgets.RectangleSelector:48 of
+msgid "MouseButton, list of MouseButton, default: all buttons"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:49
+#: matplotlib.widgets.RectangleSelector:49 of
+msgid "Button(s) that trigger rectangle selection."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:53 matplotlib.widgets.PolygonSelector:57
+#: matplotlib.widgets.RectangleSelector:53 matplotlib.widgets.SpanSelector:64
+#: of
+msgid "**grab_range**"
+msgstr ""
+
+#: of
+msgid "float, default: 10"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:52
+#: matplotlib.widgets.RectangleSelector:52 matplotlib.widgets.SpanSelector:63
+#: of
+msgid ""
+"Distance in pixels within which the interactive tool handles can be "
+"activated."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:60 matplotlib.widgets.PolygonSelector:45
+#: matplotlib.widgets.RectangleSelector:60 matplotlib.widgets.SpanSelector:60
+#: of
+msgid "**handle_props**"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:56
+#: matplotlib.widgets.RectangleSelector:56 of
+msgid ""
+"Properties with which the interactive handles (marker artists) are drawn."
+" See the marker arguments in `matplotlib.lines.Line2D` for valid "
+"properties.  Default values are defined in ``mpl.rcParams`` except for "
+"the default value of ``markeredgecolor`` which will be the same as the "
+"``edgecolor`` property in *props*."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:64
+#: matplotlib.widgets.RectangleSelector:64 matplotlib.widgets.SpanSelector:52
+#: of
+msgid "**interactive**"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:63
+#: matplotlib.widgets.RectangleSelector:63 matplotlib.widgets.SpanSelector:51
+#: of
+msgid ""
+"Whether to draw a set of handles that allow interaction with the widget "
+"after it is drawn."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:76
+#: matplotlib.widgets.RectangleSelector:76 of
+msgid "**state_modifier_keys**"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:67
+#: matplotlib.widgets.RectangleSelector:67 of
+msgid ""
+"Keyboard modifiers which affect the widget's behavior.  Values amend the "
+"defaults."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:70
+#: matplotlib.widgets.RectangleSelector:70 of
+msgid "\"move\": Move the existing shape, default: no modifier."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:71
+#: matplotlib.widgets.RectangleSelector:71 of
+msgid "\"clear\": Clear the current shape, default: \"escape\"."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:72
+#: matplotlib.widgets.RectangleSelector:72 of
+msgid "\"square\": Make the shape square, default: \"shift\"."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:73
+#: matplotlib.widgets.RectangleSelector:73 of
+msgid ""
+"\"center\": Make the initial point the center of the shape, default: "
+"\"ctrl\"."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:76
+#: matplotlib.widgets.RectangleSelector:76 of
+msgid "\"square\" and \"center\" can be combined."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:80
+#: matplotlib.widgets.RectangleSelector:80 matplotlib.widgets.SpanSelector:68
+#: of
+msgid "**drag_from_anywhere**"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:79
+#: matplotlib.widgets.RectangleSelector:79 matplotlib.widgets.SpanSelector:67
+#: of
+msgid "If `True`, the widget can be moved by clicking anywhere within its bounds."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:94
+#: matplotlib.widgets.RectangleSelector:94 matplotlib.widgets.SpanSelector:82
+#: of
+msgid "**ignore_event_outside**"
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:83
+#: matplotlib.widgets.RectangleSelector:83 matplotlib.widgets.SpanSelector:71
+#: of
+msgid "If `True`, the event triggered outside the span selector will be ignored."
+msgstr ""
+
+#: matplotlib.widgets.EllipseSelector:98 of
+msgid ":doc:`/gallery/widgets/rectangle_selector`"
+msgstr ""
+
+#: matplotlib.widgets.Lasso:2 matplotlib.widgets.LassoSelector:2 of
+msgid "Selection curve of an arbitrary shape."
+msgstr ""
+
+#: matplotlib.widgets.Lasso:4 of
+msgid ""
+"The selected path can be used in conjunction with "
+"`~matplotlib.path.Path.contains_point` to select data points from an "
+"image."
+msgstr ""
+
+#: matplotlib.widgets.Lasso:7 of
+msgid ""
+"Unlike `LassoSelector`, this must be initialized with a starting point "
+"*xy*, and the `Lasso` events are destroyed upon release."
+msgstr ""
+
+#: matplotlib.widgets.Lasso:16 of
+msgid "**xy**"
+msgstr ""
+
+#: of
+msgid "(float, float)"
+msgstr ""
+
+#: matplotlib.widgets.Lasso:16 of
+msgid "Coordinates of the start of the lasso."
+msgstr ""
+
+#: matplotlib.widgets.Lasso:37 of
+msgid "**callback**"
+msgstr ""
+
+#: of
+msgid "callable"
+msgstr ""
+
+#: matplotlib.widgets.Lasso:23 of
+msgid ""
+"Whenever the lasso is released, the *callback* function is called and "
+"passed the vertices of the selected path."
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:1 matplotlib.widgets.PolygonSelector:1
+#: matplotlib.widgets.RectangleSelector:1 matplotlib.widgets.SpanSelector:1 of
+msgid "Bases: :py:class:`matplotlib.widgets._SelectorWidget`"
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:4 matplotlib.widgets.PolygonSelector:17 of
+msgid "For the selector to remain responsive you must keep a reference to it."
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:6 of
+msgid ""
+"The selected path can be used in conjunction with `~.Path.contains_point`"
+" to select data points from an image."
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:9 of
+msgid ""
+"In contrast to `Lasso`, `LassoSelector` is written with an interface "
+"similar to `RectangleSelector` and `SpanSelector`, and will continue to "
+"interact with the axes until disconnected."
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:13 of
+msgid "Example usage::"
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:28 of
+msgid ""
+"Whenever the lasso is released, the *onselect* function is called and "
+"passed the vertices of the selected path."
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:36 of
+msgid ""
+"Properties with which the line is drawn, see `matplotlib.lines.Line2D` "
+"for valid properties. Default values are defined in ``mpl.rcParams``."
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:54 of
+msgid "**button** : `.MouseButton` or list of `.MouseButton`, optional"
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:53 of
+msgid "MouseButton or list of MouseButton, optional"
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector:40 of
+msgid ""
+"The mouse buttons used for rectangle selection.  Default is ``None``, "
+"which corresponds to all buttons."
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector.onpress:2
+#: matplotlib.widgets.LassoSelector.onrelease:2 of
+msgid "[*Deprecated*]"
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector.onpress:15
+#: matplotlib.widgets.LassoSelector.onrelease:15
+#: matplotlib.widgets.PolygonSelector:60 matplotlib.widgets.RangeSlider:99
+#: matplotlib.widgets.Slider:110 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.widgets.LassoSelector.onpress:16
+#: matplotlib.widgets.LassoSelector.onrelease:16 of
+msgid "\\"
+msgstr ""
+
+#: matplotlib.widgets.LockDraw:1 matplotlib.widgets.ToolHandles:1
+#: matplotlib.widgets.ToolLineHandles:1 matplotlib.widgets.Widget:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.widgets.LockDraw:2 of
+msgid ""
+"Some widgets, like the cursor, draw onto the canvas, and this is not "
+"desirable under all circumstances, like when the toolbar is in zoom-to-"
+"rect mode and drawing a rectangle.  To avoid this, a widget can acquire a"
+" canvas' lock with ``canvas.widgetlock(widget)`` before drawing on the "
+"canvas; this will prevent other widgets from doing so at the same time "
+"(if they also try to acquire the lock first)."
+msgstr ""
+
+#: matplotlib.widgets.LockDraw.available:2 of
+msgid "Return whether drawing is available to *o*."
+msgstr ""
+
+#: matplotlib.widgets.LockDraw.isowner:2 of
+msgid "Return whether *o* owns this lock."
+msgstr ""
+
+#: matplotlib.widgets.LockDraw.locked:2 of
+msgid "Return whether the lock is currently held by an owner."
+msgstr ""
+
+#: matplotlib.widgets.LockDraw.release:2 of
+msgid "Release the lock from *o*."
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor:2 of
+msgid ""
+"Provide a vertical (default) and/or horizontal line cursor shared between"
+" multiple axes."
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor:10 of
+msgid "**canvas** : `matplotlib.backend_bases.FigureCanvasBase`"
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor:9 of
+msgid "matplotlib.backend_bases.FigureCanvasBase"
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor:10 of
+msgid "The FigureCanvas that contains all the axes."
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor:13 of
+msgid "**axes** : list of `matplotlib.axes.Axes`"
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor:25 of
+msgid "**vertOn: bool, default: True**"
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor:41 of
+msgid "See :doc:`/gallery/widgets/multicursor`."
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor.clear:2 of
+msgid "Clear the cursor."
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor.connect:2 of
+msgid "Connect events."
+msgstr ""
+
+#: matplotlib.widgets.MultiCursor.disconnect:2 of
+msgid "Disconnect events."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:2 of
+msgid "Select a polygon region of an axes."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:4 of
+msgid ""
+"Place vertices with each mouse click, and make the selection by "
+"completing the polygon (clicking on the first vertex). Once drawn "
+"individual vertices can be moved by clicking and dragging with the left "
+"mouse button, or removed by clicking the right mouse button."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:9 of
+msgid "In addition, the following modifier keys can be used:"
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:11 of
+msgid ""
+"Hold *ctrl* and click and drag a vertex to reposition it before the "
+"polygon has been completed."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:13 of
+msgid ""
+"Hold the *shift* key and click and drag anywhere in the axes to move all "
+"vertices."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:15 of
+msgid "Press the *esc* key to start a new polygon."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:25 of
+msgid ""
+"When a polygon is completed or modified after completion, the *onselect* "
+"function is called and passed a list of the vertices as ``(xdata, "
+"ydata)`` tuples."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:34 of
+msgid ""
+"Properties with which the line is drawn, see `matplotlib.lines.Line2D` "
+"for valid properties. Default:"
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:38 of
+msgid "``dict(color='k', linestyle='-', linewidth=2, alpha=0.5)``"
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:41 of
+msgid ""
+"Artist properties for the markers drawn at the vertices of the polygon. "
+"See the marker arguments in `matplotlib.lines.Line2D` for valid "
+"properties.  Default values are defined in ``mpl.rcParams`` except for "
+"the default value of ``markeredgecolor`` which will be the same as the "
+"``color`` property in *props*."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:48 of
+msgid ""
+"A vertex is selected (to complete the polygon or to move a vertex) if the"
+" mouse click is within *grab_range* pixels of the vertex."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:61 of
+msgid ""
+"If only one point remains after removing points, the selector reverts to "
+"an incomplete state and you can start drawing a new polygon from the "
+"existing point."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector:68 of
+msgid ":doc:`/gallery/widgets/polygon_selector_demo`"
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector.onmove:2 of
+msgid "Cursor move event handler and validator."
+msgstr ""
+
+#: matplotlib.widgets.PolygonSelector.verts:2 of
+msgid "The polygon vertices, as a list of ``(x, y)`` pairs."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:2 of
+msgid "A GUI neutral radio button."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:4 of
+msgid ""
+"For the buttons to remain responsive you must keep a reference to this "
+"object."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:7 of
+msgid "Connect to the RadioButtons with the `.on_clicked` method."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:27 matplotlib.widgets.RadioButtons:71 of
+msgid "**activecolor**"
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:27 matplotlib.widgets.RadioButtons:58 of
+msgid "The color of the selected button."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:30 matplotlib.widgets.RadioButtons:52 of
+msgid "The button labels."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:33 of
+msgid "**circles** : list of `~.patches.Circle`"
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:33 of
+msgid "The buttons."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:37 of
+msgid "**value_selected**"
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:36 of
+msgid "The label text of the currently selected button."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:43 of
+msgid "Add radio buttons to an `~.axes.Axes`."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:49 of
+msgid "The axes to add the buttons to."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:55 of
+msgid "**active**"
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons:55 of
+msgid "The index of the initially selected button."
+msgstr ""
+
+#: matplotlib.widgets.RadioButtons.set_active:2 of
+msgid "Select button with number *index*."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:1 matplotlib.widgets.Slider:1 of
+msgid "Bases: :py:class:`matplotlib.widgets.SliderBase`"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:2 of
+msgid ""
+"A slider representing a range of floating point values. Defines the min "
+"and max of the range via the *val* attribute as a tuple of (min, max)."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:5 of
+msgid ""
+"Create a slider that defines a range contained within [*valmin*, "
+"*valmax*] in axes *ax*. For the slider to remain responsive you must "
+"maintain a reference to it. Call :meth:`on_changed` to connect to the "
+"slider event."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:25 matplotlib.widgets.RangeSlider.set_val:21
+#: matplotlib.widgets.Slider:24 matplotlib.widgets.Slider.set_val:21 of
+msgid "**val**"
+msgstr ""
+
+#: of
+msgid "tuple of float"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:24 matplotlib.widgets.Slider:23 of
+msgid "Slider value."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:37 matplotlib.widgets.Slider:36 of
+msgid "The Axes to put the slider in."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:40 matplotlib.widgets.Slider:39 of
+msgid "Slider label."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:43 matplotlib.widgets.Slider:42 of
+msgid "**valmin**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:43 matplotlib.widgets.Slider:42 of
+msgid "The minimum value of the slider."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:46 matplotlib.widgets.Slider:45 of
+msgid "**valmax**"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:46 matplotlib.widgets.Slider:45 of
+msgid "The maximum value of the slider."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:50 matplotlib.widgets.Slider:48 of
+msgid "**valinit**"
+msgstr ""
+
+#: of
+msgid "tuple of float or None, default: None"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:49 of
+msgid ""
+"The initial positions of the slider. If None the initial positions will "
+"be at the 25th and 75th percentiles of the range."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:54 matplotlib.widgets.Slider:52 of
+msgid "**valfmt**"
+msgstr ""
+
+#: of
+msgid "str, default: None"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:53 of
+#, python-format
+msgid ""
+"%-format string used to format the slider values.  If None, a "
+"`.ScalarFormatter` is used instead."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:57 matplotlib.widgets.Slider:55 of
+msgid "**closedmin**"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:57 matplotlib.widgets.Slider:55 of
+msgid "Whether the slider interval is closed on the bottom."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:60 matplotlib.widgets.Slider:58 of
+msgid "**closedmax**"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:60 matplotlib.widgets.Slider:58 of
+msgid "Whether the slider interval is closed on the top."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:63 matplotlib.widgets.Slider:69 of
+msgid "**dragging**"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:63 matplotlib.widgets.Slider:69 of
+msgid "If True the slider can be dragged by the mouse."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:66 matplotlib.widgets.Slider:73 of
+msgid "**valstep**"
+msgstr ""
+
+#: of
+msgid "float, default: None"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:66 of
+msgid "If given, the slider will snap to multiples of *valstep*."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:69 matplotlib.widgets.Slider:76 of
+msgid "**orientation**"
+msgstr ""
+
+#: of
+msgid "{'horizontal', 'vertical'}, default: 'horizontal'"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:69 matplotlib.widgets.Slider:76 of
+msgid "The orientation of the slider."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:73 matplotlib.widgets.Slider:84 of
+msgid "**track_color**"
+msgstr ""
+
+#: of
+msgid "color, default: 'lightgrey'"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:72 matplotlib.widgets.Slider:83 of
+msgid ""
+"The color of the background track. The track is accessible for further "
+"styling via the *track* attribute."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:96 matplotlib.widgets.Slider:107 of
+msgid "**handle_style**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:76 of
+msgid "Properties of the slider handles. Default values are"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:79 matplotlib.widgets.Slider:90 of
+msgid "Key"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:79 matplotlib.widgets.Slider:90 of
+msgid "Value"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:79 matplotlib.widgets.Slider:90 of
+msgid "Default"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:79 matplotlib.widgets.Slider:90 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:81 matplotlib.widgets.Slider:92 of
+msgid "facecolor"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:81 matplotlib.widgets.Slider:92 of
+msgid "'white'"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:81 of
+msgid "The facecolor of the slider handles."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:82 matplotlib.widgets.Slider:93 of
+msgid "edgecolor"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:82 matplotlib.widgets.Slider:93 of
+msgid "'.75'"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:82 of
+msgid "The edgecolor of the slider handles."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:83 matplotlib.widgets.Slider:94 of
+msgid "size"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:83 matplotlib.widgets.Slider:94 of
+msgid "10"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:83 of
+msgid "The size of the slider handles in points."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:86 matplotlib.widgets.Slider:97 of
+msgid ""
+"Other values will be transformed as marker{foo} and passed to the "
+"`~.Line2D` constructor. e.g. ``handle_style = {'style'='x'}`` will result"
+" in ``markerstyle = 'x'``."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider:100 matplotlib.widgets.Slider:111 of
+msgid ""
+"Additional kwargs are passed on to ``self.poly`` which is the "
+"`~matplotlib.patches.Polygon` that draws the slider knob.  See the "
+"`.Polygon` documentation for valid property names (``facecolor``, "
+"``edgecolor``, ``alpha``, etc.)."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.on_changed:2
+#: matplotlib.widgets.Slider.on_changed:2 of
+msgid "Connect *func* as callback function to changes of the slider value."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.on_changed:9
+#: matplotlib.widgets.Slider.on_changed:9 of
+msgid "**func**"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.on_changed:8 of
+msgid ""
+"Function to call when slider is changed. The function must accept a numpy"
+" array with shape (2,) as its argument."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.on_changed
+#: matplotlib.widgets.Slider.on_changed
+#: matplotlib.widgets.ToolLineHandles.closest of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.on_changed:14
+#: matplotlib.widgets.Slider.on_changed:14 of
+msgid "Connection id (which can be used to disconnect *func*)."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.set_max:2 of
+msgid "Set the lower value of the slider to *max*."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.set_max:21 of
+msgid "**max**"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.set_min:2 of
+msgid "Set the lower value of the slider to *min*."
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.set_min:21 of
+msgid "**min**"
+msgstr ""
+
+#: matplotlib.widgets.RangeSlider.set_val:2 matplotlib.widgets.Slider.set_val:2
+#: of
+msgid "Set slider value to *val*."
+msgstr ""
+
+#: of
+msgid "tuple or array-like of float"
+msgstr ""
+
+#: matplotlib.widgets.RectangleSelector:2 of
+msgid "Select a rectangular region of an axes."
+msgstr ""
+
+#: matplotlib.widgets.RectangleSelector:38 of
+msgid ""
+"Properties with which the rectangle is drawn. See "
+"`matplotlib.patches.Patch` for valid properties. Default:"
+msgstr ""
+
+#: matplotlib.widgets.RectangleSelector:110 of
+msgid "See also: :doc:`/gallery/widgets/rectangle_selector`"
+msgstr ""
+
+#: matplotlib.widgets.RectangleSelector.center:2 of
+msgid "Center of rectangle."
+msgstr ""
+
+#: matplotlib.widgets.RectangleSelector.corners:2 of
+msgid "Corners of rectangle from lower left, moving clockwise."
+msgstr ""
+
+#: matplotlib.widgets.RectangleSelector.edge_centers:2 of
+msgid "Midpoint of rectangle edges from left, moving anti-clockwise."
+msgstr ""
+
+#: matplotlib.widgets.RectangleSelector.extents:2 of
+msgid "Return (xmin, xmax, ymin, ymax)."
+msgstr ""
+
+#: matplotlib.widgets.RectangleSelector.geometry:2 of
+msgid ""
+"Return an array of shape (2, 5) containing the x "
+"(``RectangleSelector.geometry[1, :]``) and y "
+"(``RectangleSelector.geometry[0, :]``) coordinates of the four corners of"
+" the rectangle starting and ending in the top left corner."
+msgstr ""
+
+#: matplotlib.widgets.Slider:2 of
+msgid "A slider representing a floating point range."
+msgstr ""
+
+#: matplotlib.widgets.Slider:4 of
+msgid ""
+"Create a slider from *valmin* to *valmax* in axes *ax*. For the slider to"
+" remain responsive you must maintain a reference to it. Call "
+":meth:`on_changed` to connect to the slider event."
+msgstr ""
+
+#: of
+msgid "float, default: 0.5"
+msgstr ""
+
+#: matplotlib.widgets.Slider:48 of
+msgid "The slider initial position."
+msgstr ""
+
+#: matplotlib.widgets.Slider:51 of
+#, python-format
+msgid ""
+"%-format string used to format the slider value.  If None, a "
+"`.ScalarFormatter` is used instead."
+msgstr ""
+
+#: matplotlib.widgets.Slider:62 of
+msgid "**slidermin**"
+msgstr ""
+
+#: of
+msgid "Slider, default: None"
+msgstr ""
+
+#: matplotlib.widgets.Slider:61 of
+msgid ""
+"Do not allow the current slider to have a value less than the value of "
+"the Slider *slidermin*."
+msgstr ""
+
+#: matplotlib.widgets.Slider:66 of
+msgid "**slidermax**"
+msgstr ""
+
+#: matplotlib.widgets.Slider:65 of
+msgid ""
+"Do not allow the current slider to have a value greater than the value of"
+" the Slider *slidermax*."
+msgstr ""
+
+#: of
+msgid "float or array-like, default: None"
+msgstr ""
+
+#: matplotlib.widgets.Slider:72 of
+msgid ""
+"If a float, the slider will snap to multiples of *valstep*. If an array "
+"the slider will snap to the values in the array."
+msgstr ""
+
+#: matplotlib.widgets.Slider:80 of
+msgid "**initcolor**"
+msgstr ""
+
+#: of
+msgid "color, default: 'r'"
+msgstr ""
+
+#: matplotlib.widgets.Slider:79 of
+msgid ""
+"The color of the line at the *valinit* position. Set to ``'none'`` for no"
+" line."
+msgstr ""
+
+#: matplotlib.widgets.Slider:87 of
+msgid "Properties of the slider handle. Default values are"
+msgstr ""
+
+#: matplotlib.widgets.Slider:92 of
+msgid "The facecolor of the slider handle."
+msgstr ""
+
+#: matplotlib.widgets.Slider:93 of
+msgid "The edgecolor of the slider handle."
+msgstr ""
+
+#: matplotlib.widgets.Slider:94 of
+msgid "The size of the slider handle in points."
+msgstr ""
+
+#: matplotlib.widgets.Slider.on_changed:8 of
+msgid ""
+"Function to call when slider is changed. The function must accept a "
+"single float as its arguments."
+msgstr ""
+
+#: matplotlib.widgets.SliderBase:2 of
+msgid ""
+"The base class for constructing Slider widgets. Not intended for direct "
+"usage."
+msgstr ""
+
+#: matplotlib.widgets.SliderBase:5 of
+msgid "For the slider to remain responsive you must maintain a reference to it."
+msgstr ""
+
+#: matplotlib.widgets.SliderBase.disconnect:21 of
+msgid "**cid**"
+msgstr ""
+
+#: matplotlib.widgets.SliderBase.disconnect:8 of
+msgid "Connection id of the observer to be removed."
+msgstr ""
+
+#: matplotlib.widgets.SliderBase.reset:2 of
+msgid "Reset the slider to the initial value."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:2 of
+msgid ""
+"Visually select a min/max range on a single axis and call a function with"
+" those values."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:5 of
+msgid "To guarantee that the selector remains responsive, keep a reference to it."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:7 of
+msgid ""
+"In order to turn off the SpanSelector, set ``span_selector.active`` to "
+"False.  To turn it back on, set it to True."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:27 matplotlib.widgets.ToolLineHandles:14 of
+msgid "**direction**"
+msgstr ""
+
+#: of
+msgid "{\"horizontal\", \"vertical\"}"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:27 of
+msgid "The direction along which to draw the span selector."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:31 of
+msgid "**minspan**"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:30 of
+msgid ""
+"If selection is less than or equal to *minspan*, the selection is removed"
+" (when already existing) or cancelled."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:34 of
+msgid ""
+"If True, use the backend-dependent blitting features for faster canvas "
+"updates."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:38 of
+msgid "Dictionary of `matplotlib.patches.Patch` properties. Default:"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:41 of
+msgid "``dict(facecolor='red', alpha=0.5)``"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:44 of
+msgid "**onmove_callback**"
+msgstr ""
+
+#: of
+msgid "func(min, max), min/max are floats, default: None"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:44 of
+msgid "Called on mouse move while the span is being selected."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:48 of
+msgid "**span_stays**"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:47 of
+msgid ""
+"If True, the span stays visible after the mouse is released. Deprecated, "
+"use *interactive* instead."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:55 of
+msgid ""
+"**button** : `.MouseButton` or list of `.MouseButton`, default: all "
+"buttons"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:54 of
+msgid "MouseButton or list of MouseButton, default: all buttons"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:55 of
+msgid "The mouse buttons which activate the span selector."
+msgstr ""
+
+#: of
+msgid "dict, default: None"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:58 of
+msgid ""
+"Properties of the handle lines at the edges of the span. Only used when "
+"*interactive* is True. See `matplotlib.lines.Line2D` for valid "
+"properties."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector:96 of
+msgid "See also: :doc:`/gallery/widgets/span_selector`"
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector.connect_default_events:2 of
+msgid "Connect the major canvas events to methods."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector.direction:2 of
+msgid "Direction of the span selector: 'vertical' or 'horizontal'."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector.extents:2 of
+msgid "Return extents of the span selector."
+msgstr ""
+
+#: matplotlib.widgets.SpanSelector.new_axes:2 of
+msgid "Set SpanSelector to operate on a new Axes."
+msgstr ""
+
+#: matplotlib.widgets.SubplotTool:2 of
+msgid "A tool to adjust the subplot params of a `matplotlib.figure.Figure`."
+msgstr ""
+
+#: matplotlib.widgets.SubplotTool:29 of
+msgid "**targetfig** : `.Figure`"
+msgstr ""
+
+#: matplotlib.widgets.SubplotTool:28 matplotlib.widgets.SubplotTool:44 of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.widgets.SubplotTool:29 of
+msgid "The figure instance to adjust."
+msgstr ""
+
+#: matplotlib.widgets.SubplotTool:45 of
+msgid "**toolfig** : `.Figure`"
+msgstr ""
+
+#: matplotlib.widgets.SubplotTool:32 of
+msgid "The figure instance to embed the subplot tool into."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:2 of
+msgid "A GUI neutral text input box."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:4 of
+msgid "For the text box to remain responsive you must keep a reference to it."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:6 of
+msgid "Call `.on_text_change` to be updated whenever the text changes."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:8 of
+msgid ""
+"Call `.on_submit` to be updated whenever the user hits enter or leaves "
+"the text entry field."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:29 of
+msgid "**label** : `.Text`"
+msgstr ""
+
+#: matplotlib.widgets.TextBox:28 of
+msgid "Text"
+msgstr ""
+
+#: matplotlib.widgets.TextBox:32 of
+msgid "The color of the text box when not hovering."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:35 of
+msgid "The color of the text box when hovering."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:51 of
+msgid "Label for this text box."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:54 of
+msgid "**initial**"
+msgstr ""
+
+#: matplotlib.widgets.TextBox:54 of
+msgid "Initial value in the text box."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:57 of
+msgid "The color of the box."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:60 of
+msgid "The color of the box when the mouse is over it."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:63 of
+msgid "**label_pad**"
+msgstr ""
+
+#: matplotlib.widgets.TextBox:63 of
+msgid "The distance between the label and the right side of the textbox."
+msgstr ""
+
+#: matplotlib.widgets.TextBox:79 of
+msgid "**textalignment**"
+msgstr ""
+
+#: of
+msgid "{'left', 'center', 'right'}"
+msgstr ""
+
+#: matplotlib.widgets.TextBox:66 of
+msgid "The horizontal location of the text."
+msgstr ""
+
+#: matplotlib.widgets.TextBox.on_submit:2 of
+msgid ""
+"When the user hits enter or leaves the submission box, call this *func* "
+"with event."
+msgstr ""
+
+#: matplotlib.widgets.TextBox.on_submit:5
+#: matplotlib.widgets.TextBox.on_text_change:4 of
+msgid "A connection id is returned which can be used to disconnect."
+msgstr ""
+
+#: matplotlib.widgets.TextBox.on_text_change:2 of
+msgid "When the text changes, call this *func* with event."
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles:2 matplotlib.widgets.ToolLineHandles:2 of
+msgid "Control handles for canvas tools."
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles:8 matplotlib.widgets.ToolLineHandles:8 of
+msgid "Matplotlib axes where tool handles are displayed."
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles:11
+#: matplotlib.widgets.ToolLineHandles.closest:9 of
+msgid "**x, y**"
+msgstr ""
+
+#: of
+msgid "1D arrays"
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles:11 of
+msgid "Coordinates of control handles."
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles:14 of
+msgid "**marker**"
+msgstr ""
+
+#: of
+msgid "str, default: 'o'"
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles:14 of
+msgid "Shape of marker used to display handle. See `matplotlib.pyplot.plot`."
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles:17 of
+msgid "**marker_props**"
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles:17 of
+msgid "Additional marker properties. See `matplotlib.lines.Line2D`."
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles.closest:2 of
+msgid "Return index and pixel distance to closest index."
+msgstr ""
+
+#: matplotlib.widgets.ToolHandles.set_data:2 of
+msgid "Set x and y positions of handles."
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles:11
+#: matplotlib.widgets.ToolLineHandles.set_data:22 of
+msgid "**positions**"
+msgstr ""
+
+#: of
+msgid "1D array"
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles:11 of
+msgid "Positions of handles in data coordinates."
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles:14 of
+msgid "Direction of handles, either 'vertical' or 'horizontal'"
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles:17 of
+msgid "**line_props**"
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles:17 of
+msgid "Additional line properties. See `matplotlib.lines.Line2D`."
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.closest:2 of
+msgid "Return index and pixel distance to closest handle."
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.closest:8 of
+msgid ""
+"x, y position from which the distance will be calculated to determinate "
+"the closest handle"
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.closest:26 of
+msgid "**index, distance**"
+msgstr ""
+
+#: of
+msgid "index of the handle and its distance from"
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.closest:14 of
+msgid "position x, y"
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.direction:2 of
+msgid "Direction of the handle: 'vertical' or 'horizontal'."
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.positions:2 of
+msgid "Positions of the handle in data coordinates."
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.remove:2 of
+msgid "Remove the handles artist from the figure."
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.set_animated:2 of
+msgid "Set the animated state of the handles artist."
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.set_data:2 of
+msgid ""
+"Set x or y positions of handles, depending if the lines are vertical of "
+"horizontal."
+msgstr ""
+
+#: of
+msgid "tuple of length 2"
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.set_data:9 of
+msgid "Set the positions of the handle in data coordinates"
+msgstr ""
+
+#: matplotlib.widgets.ToolLineHandles.set_visible:2 of
+msgid "Set the visibility state of the handles artist."
+msgstr ""
+
+#: matplotlib.widgets.Widget:2 of
+msgid "Abstract base class for GUI neutral widgets."
+msgstr ""
+
+#: matplotlib.widgets.Widget.get_active:2 of
+msgid "Get whether the widget is active."
+msgstr ""
+
+#: matplotlib.widgets.Widget.ignore:2 of
+msgid "Return whether *event* should be ignored."
+msgstr ""
+
+#: matplotlib.widgets.Widget.ignore:4 of
+msgid "This method should be called at the beginning of any event callback."
+msgstr ""
+
+#: matplotlib.widgets.Widget.set_active:2 of
+msgid "Set whether the widget is active."
+msgstr ""
+

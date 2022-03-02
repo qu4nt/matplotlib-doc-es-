@@ -1,0 +1,485 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_as_gen/matplotlib.pyplot.hist.rst:2
+msgid "matplotlib.pyplot.hist"
+msgstr ""
+
+#: matplotlib.pyplot.hist:2 of
+msgid "Plot a histogram."
+msgstr ""
+
+#: matplotlib.pyplot.hist:4 of
+msgid ""
+"Compute and draw the histogram of *x*.  The return value is a tuple (*n*,"
+" *bins*, *patches*) or ([*n0*, *n1*, ...], *bins*, [*patches0*, "
+"*patches1*, ...]) if the input contains multiple data.  See the "
+"documentation of the *weights* parameter to draw a histogram of already-"
+"binned data."
+msgstr ""
+
+#: matplotlib.pyplot.hist:10 of
+msgid ""
+"Multiple data can be provided via *x* as a list of datasets of "
+"potentially different length ([*x0*, *x1*, ...]), or as a 2D ndarray in "
+"which each column is a dataset.  Note that the ndarray form is transposed"
+" relative to the list form."
+msgstr ""
+
+#: matplotlib.pyplot.hist:15 of
+msgid "Masked arrays are not supported."
+msgstr ""
+
+#: matplotlib.pyplot.hist:17 of
+msgid ""
+"The *bins*, *range*, *weights*, and *density* parameters behave as in "
+"`numpy.histogram`."
+msgstr ""
+
+#: matplotlib.pyplot.hist of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.hist:24 of
+msgid "**x**"
+msgstr ""
+
+#: of
+msgid "(n,) array or sequence of (n,) arrays"
+msgstr ""
+
+#: matplotlib.pyplot.hist:23 of
+msgid ""
+"Input values, this takes either a single array or a sequence of arrays "
+"which are not required to be of the same length."
+msgstr ""
+
+#: matplotlib.pyplot.hist:43 of
+msgid "**bins** : int or sequence or str, default: :rc:`hist.bins`"
+msgstr ""
+
+#: of
+msgid "int or sequence or str, default:"
+msgstr ""
+
+#: matplotlib.pyplot.hist:27 of
+msgid ""
+"If *bins* is an integer, it defines the number of equal-width bins in the"
+" range."
+msgstr ""
+
+#: matplotlib.pyplot.hist:30 of
+msgid ""
+"If *bins* is a sequence, it defines the bin edges, including the left "
+"edge of the first bin and the right edge of the last bin; in this case, "
+"bins may be unequally spaced.  All but the last (righthand-most) bin is "
+"half-open.  In other words, if *bins* is::"
+msgstr ""
+
+#: matplotlib.pyplot.hist:37 of
+msgid ""
+"then the first bin is ``[1, 2)`` (including 1, but excluding 2) and the "
+"second ``[2, 3)``.  The last bin, however, is ``[3, 4]``, which "
+"*includes* 4."
+msgstr ""
+
+#: matplotlib.pyplot.hist:41 of
+msgid ""
+"If *bins* is a string, it is one of the binning strategies supported by "
+"`numpy.histogram_bin_edges`: 'auto', 'fd', 'doane', 'scott', 'stone', "
+"'rice', 'sturges', or 'sqrt'."
+msgstr ""
+
+#: matplotlib.pyplot.hist:52 of
+msgid "**range**"
+msgstr ""
+
+#: of
+msgid "tuple or None, default: None"
+msgstr ""
+
+#: matplotlib.pyplot.hist:46 of
+msgid ""
+"The lower and upper range of the bins. Lower and upper outliers are "
+"ignored. If not provided, *range* is ``(x.min(), x.max())``. Range has no"
+" effect if *bins* is a sequence."
+msgstr ""
+
+#: matplotlib.pyplot.hist:50 of
+msgid ""
+"If *bins* is a sequence or *range* is specified, autoscaling is based on "
+"the specified bin range instead of the range of x."
+msgstr ""
+
+#: matplotlib.pyplot.hist:63 of
+msgid "**density**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.pyplot.hist:55 of
+msgid ""
+"If ``True``, draw and return a probability density: each bin will display"
+" the bin's raw count divided by the total number of counts *and the bin "
+"width* (``density = counts / (sum(counts) * np.diff(bins))``), so that "
+"the area under the histogram integrates to 1 (``np.sum(density * "
+"np.diff(bins)) == 1``)."
+msgstr ""
+
+#: matplotlib.pyplot.hist:62 of
+msgid ""
+"If *stacked* is also ``True``, the sum of the histograms is normalized to"
+" 1."
+msgstr ""
+
+#: matplotlib.pyplot.hist:79 of
+msgid "**weights**"
+msgstr ""
+
+#: of
+msgid "(n,) array-like or None, default: None"
+msgstr ""
+
+#: matplotlib.pyplot.hist:66 of
+msgid ""
+"An array of weights, of the same shape as *x*.  Each value in *x* only "
+"contributes its associated weight towards the bin count (instead of 1).  "
+"If *density* is ``True``, the weights are normalized, so that the "
+"integral of the density over the range remains 1."
+msgstr ""
+
+#: matplotlib.pyplot.hist:72 of
+msgid ""
+"This parameter can be used to draw a histogram of data that has already "
+"been binned, e.g. using `numpy.histogram` (by treating each bin as a "
+"single point with a weight equal to its count) ::"
+msgstr ""
+
+#: matplotlib.pyplot.hist:79 of
+msgid "(or you may alternatively use `~.bar()`)."
+msgstr ""
+
+#: matplotlib.pyplot.hist:92 of
+msgid "**cumulative**"
+msgstr ""
+
+#: of
+msgid "bool or -1, default: False"
+msgstr ""
+
+#: matplotlib.pyplot.hist:82 of
+msgid ""
+"If ``True``, then a histogram is computed where each bin gives the counts"
+" in that bin plus all bins for smaller values. The last bin gives the "
+"total number of datapoints."
+msgstr ""
+
+#: matplotlib.pyplot.hist:86 of
+msgid ""
+"If *density* is also ``True`` then the histogram is normalized such that "
+"the last bin equals 1."
+msgstr ""
+
+#: matplotlib.pyplot.hist:89 of
+msgid ""
+"If *cumulative* is a number less than 0 (e.g., -1), the direction of "
+"accumulation is reversed.  In this case, if *density* is also ``True``, "
+"then the histogram is normalized such that the first bin equals 1."
+msgstr ""
+
+#: matplotlib.pyplot.hist:99 of
+msgid "**bottom**"
+msgstr ""
+
+#: of
+msgid "array-like, scalar, or None, default: None"
+msgstr ""
+
+#: matplotlib.pyplot.hist:95 of
+msgid ""
+"Location of the bottom of each bin, ie. bins are drawn from ``bottom`` to"
+" ``bottom + hist(x, bins)`` If a scalar, the bottom of each bin is "
+"shifted by the same amount. If an array, each bin is shifted "
+"independently and the length of bottom must match the number of bins. If "
+"None, defaults to 0."
+msgstr ""
+
+#: matplotlib.pyplot.hist:109 of
+msgid "**histtype**"
+msgstr ""
+
+#: of
+msgid "{'bar', 'barstacked', 'step', 'stepfilled'}, default: 'bar'"
+msgstr ""
+
+#: matplotlib.pyplot.hist:102 of
+msgid "The type of histogram to draw."
+msgstr ""
+
+#: matplotlib.pyplot.hist:104 of
+msgid ""
+"'bar' is a traditional bar-type histogram.  If multiple data are given "
+"the bars are arranged side by side."
+msgstr ""
+
+#: matplotlib.pyplot.hist:106 of
+msgid ""
+"'barstacked' is a bar-type histogram where multiple data are stacked on "
+"top of each other."
+msgstr ""
+
+#: matplotlib.pyplot.hist:108 of
+msgid "'step' generates a lineplot that is by default unfilled."
+msgstr ""
+
+#: matplotlib.pyplot.hist:109 of
+msgid "'stepfilled' generates a lineplot that is by default filled."
+msgstr ""
+
+#: matplotlib.pyplot.hist:116 of
+msgid "**align**"
+msgstr ""
+
+#: of
+msgid "{'left', 'mid', 'right'}, default: 'mid'"
+msgstr ""
+
+#: matplotlib.pyplot.hist:112 of
+msgid "The horizontal alignment of the histogram bars."
+msgstr ""
+
+#: matplotlib.pyplot.hist:114 of
+msgid "'left': bars are centered on the left bin edges."
+msgstr ""
+
+#: matplotlib.pyplot.hist:115 of
+msgid "'mid': bars are centered between the bin edges."
+msgstr ""
+
+#: matplotlib.pyplot.hist:116 of
+msgid "'right': bars are centered on the right bin edges."
+msgstr ""
+
+#: matplotlib.pyplot.hist:120 of
+msgid "**orientation**"
+msgstr ""
+
+#: of
+msgid "{'vertical', 'horizontal'}, default: 'vertical'"
+msgstr ""
+
+#: matplotlib.pyplot.hist:119 of
+msgid ""
+"If 'horizontal', `~.Axes.barh` will be used for bar-type histograms and "
+"the *bottom* kwarg will be the left edges."
+msgstr ""
+
+#: matplotlib.pyplot.hist:126 of
+msgid "**rwidth**"
+msgstr ""
+
+#: of
+msgid "float or None, default: None"
+msgstr ""
+
+#: matplotlib.pyplot.hist:123 of
+msgid ""
+"The relative width of the bars as a fraction of the bin width.  If "
+"``None``, automatically compute the width."
+msgstr ""
+
+#: matplotlib.pyplot.hist:126 of
+msgid "Ignored if *histtype* is 'step' or 'stepfilled'."
+msgstr ""
+
+#: matplotlib.pyplot.hist:129 of
+msgid "**log**"
+msgstr ""
+
+#: matplotlib.pyplot.hist:129 of
+msgid "If ``True``, the histogram axis will be set to a log scale."
+msgstr ""
+
+#: matplotlib.pyplot.hist:133 of
+msgid "**color**"
+msgstr ""
+
+#: of
+msgid "color or array-like of colors or None, default: None"
+msgstr ""
+
+#: matplotlib.pyplot.hist:132 of
+msgid ""
+"Color or sequence of colors, one per dataset.  Default (``None``) uses "
+"the standard line color sequence."
+msgstr ""
+
+#: matplotlib.pyplot.hist:138 of
+msgid "**label**"
+msgstr ""
+
+#: of
+msgid "str or None, default: None"
+msgstr ""
+
+#: matplotlib.pyplot.hist:136 of
+msgid ""
+"String, or sequence of strings to match multiple datasets.  Bar charts "
+"yield multiple patches per dataset, but only the first gets the label, so"
+" that `~.Axes.legend` will work as expected."
+msgstr ""
+
+#: matplotlib.pyplot.hist:143 of
+msgid "**stacked**"
+msgstr ""
+
+#: matplotlib.pyplot.hist:141 of
+msgid ""
+"If ``True``, multiple data are stacked on top of each other If ``False`` "
+"multiple data are arranged side by side if histtype is 'bar' or on top of"
+" each other if histtype is 'step'"
+msgstr ""
+
+#: matplotlib.pyplot.hist of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.pyplot.hist:154 of
+msgid "**n**"
+msgstr ""
+
+#: of
+msgid "array or list of arrays"
+msgstr ""
+
+#: matplotlib.pyplot.hist:148 of
+msgid ""
+"The values of the histogram bins. See *density* and *weights* for a "
+"description of the possible semantics.  If input *x* is an array, then "
+"this is an array of length *nbins*. If input is a sequence of arrays "
+"``[data1, data2, ...]``, then this is a list of arrays with the values of"
+" the histograms for each of the arrays in the same order.  The dtype of "
+"the array *n* (or of its element arrays) will always be float even if no "
+"weighting or normalization is used."
+msgstr ""
+
+#: matplotlib.pyplot.hist:159 of
+msgid "**bins**"
+msgstr ""
+
+#: of
+msgid "array"
+msgstr ""
+
+#: matplotlib.pyplot.hist:157 of
+msgid ""
+"The edges of the bins. Length nbins + 1 (nbins left edges and right edge "
+"of last bin).  Always a single array even when multiple data sets are "
+"passed in."
+msgstr ""
+
+#: matplotlib.pyplot.hist:165 of
+msgid ""
+"**patches** : `.BarContainer` or list of a single `.Polygon` or list of "
+"such objects"
+msgstr ""
+
+#: matplotlib.pyplot.hist:164 of
+msgid "BarContainer or list of a single Polygon or list of such objects"
+msgstr ""
+
+#: matplotlib.pyplot.hist:162 of
+msgid ""
+"Container of individual artists used to create the histogram or list of "
+"such containers if there are multiple input datasets."
+msgstr ""
+
+#: matplotlib.pyplot.hist of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.hist:173 of
+msgid "**data**"
+msgstr ""
+
+#: of
+msgid "indexable object, optional"
+msgstr ""
+
+#: matplotlib.pyplot.hist:170 of
+msgid ""
+"If given, the following parameters also accept a string ``s``, which is "
+"interpreted as ``data[s]`` (unless this raises an exception):"
+msgstr ""
+
+#: matplotlib.pyplot.hist:173 of
+msgid "*x*, *weights*"
+msgstr ""
+
+#: matplotlib.pyplot.hist:179 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.pyplot.hist:176 of
+msgid "`~matplotlib.patches.Patch` properties"
+msgstr ""
+
+#: matplotlib.pyplot.hist:184 of
+msgid ":obj:`hist2d`"
+msgstr ""
+
+#: matplotlib.pyplot.hist:185 of
+msgid "2D histogram with rectangular bins"
+msgstr ""
+
+#: matplotlib.pyplot.hist:186 of
+msgid ":obj:`hexbin`"
+msgstr ""
+
+#: matplotlib.pyplot.hist:187 of
+msgid "2D histogram with hexagonal bins"
+msgstr ""
+
+#: matplotlib.pyplot.hist:191 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.pyplot.hist:192 of
+msgid ""
+"For large numbers of bins (>1000), 'step' and 'stepfilled' can be "
+"significantly faster than 'bar' and 'barstacked'."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.pyplot.hist.examples:2
+msgid "Examples using ``matplotlib.pyplot.hist``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.hist.examples:10
+msgid "SVG Histogram"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.hist.examples:10
+#: ../../api/_as_gen/matplotlib.pyplot.hist.examples:18
+msgid ":ref:`sphx_glr_gallery_user_interfaces_svg_histogram_sgskip.py`"
+msgstr ""
+

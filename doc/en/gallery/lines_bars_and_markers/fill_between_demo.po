@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:13
+msgid ""
+"Click :ref:`here "
+"<sphx_glr_download_gallery_lines_bars_and_markers_fill_between_demo.py>` "
+"to download the full example code"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:23
+msgid "Filling the area between lines"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:25
+msgid ""
+"This example shows how to use `~.axes.Axes.fill_between` to color the "
+"area between two lines."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:46
+msgid "Basic usage"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:47
+msgid ""
+"The parameters *y1* and *y2* can be scalars, indicating a horizontal "
+"boundary at the given y-values. If only *y1* is given, *y2* defaults to "
+"0."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:87
+msgid "Example: Confidence bands"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:88
+msgid ""
+"A common application for `~.axes.Axes.fill_between` is the indication of "
+"confidence bands."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:91
+msgid ""
+"`~.axes.Axes.fill_between` uses the colors of the color cycle as the fill"
+" color. These may be a bit strong when applied to fill areas. It is "
+"therefore often a good practice to lighten the color by making the area "
+"semi-transparent using *alpha*."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:128
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:237
+msgid "Out:"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:140
+msgid "Selectively filling horizontal regions"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:141
+msgid ""
+"The parameter *where* allows to specify the x-ranges to fill. It's a "
+"boolean array with the same size as *x*."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:144
+msgid ""
+"Only x-ranges of contiguous *True* sequences are filled. As a result the "
+"range between neighboring *True* and *False* values is never filled. This"
+" often undesired when the data points should represent a contiguous "
+"quantity. It is therefore recommended to set ``interpolate=True`` unless "
+"the x-distance of the data points is fine enough so that the above effect"
+" is not noticeable. Interpolation approximates the actual x position at "
+"which the *where* condition will change and extends the filling up to "
+"there."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:194
+msgid ""
+"Similar gaps will occur if *y1* or *y2* are masked arrays. Since missing "
+"values cannot be approximated, *interpolate* has no effect in this case. "
+"The gaps around masked values can only be reduced by adding more data "
+"points close to the masked values."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:202
+msgid "Selectively marking horizontal regions across the whole Axes"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:203
+msgid ""
+"The same selection mechanism can be applied to fill the full vertical "
+"height of the axes. To be independent of y-limits, we add a transform "
+"that interprets the x-values in data coorindates and the y-values in axes"
+" coordinates."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:208
+msgid ""
+"The following example marks the regions in which the y-data are above a "
+"given threshold."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:248
+msgid "References"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:250
+msgid ""
+"The use of the following functions, methods, classes and modules is shown"
+" in this example:"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:253
+msgid "`matplotlib.axes.Axes.fill_between` / `matplotlib.pyplot.fill_between`"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:254
+msgid "`matplotlib.axes.Axes.get_xaxis_transform`"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:259
+msgid "**Total running time of the script:** ( 0 minutes  1.334 seconds)"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:274
+msgid ""
+":download:`Download Python source code: fill_between_demo.py "
+"<fill_between_demo.py>`"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:280
+msgid ""
+":download:`Download Jupyter notebook: fill_between_demo.ipynb "
+"<fill_between_demo.ipynb>`"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:287
+msgid ""
+"Keywords: matplotlib code example, codex, python plot, pyplot `Gallery "
+"generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

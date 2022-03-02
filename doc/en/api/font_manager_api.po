@@ -1,0 +1,653 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/font_manager_api.rst:3
+msgid "``matplotlib.font_manager``"
+msgstr ""
+
+#: matplotlib.font_manager:1 of
+msgid "A module for finding, managing, and using fonts across platforms."
+msgstr ""
+
+#: matplotlib.font_manager:3 of
+msgid ""
+"This module provides a single `FontManager` instance that can be shared "
+"across backends and platforms.  The `findfont` function returns the best "
+"TrueType (TTF) font file in the local or system font path that matches "
+"the specified `FontProperties` instance.  The `FontManager` also handles "
+"Adobe Font Metrics (AFM) font files for use by the PostScript backend."
+msgstr ""
+
+#: matplotlib.font_manager:10 of
+msgid ""
+"The design is based on the `W3C Cascading Style Sheet, Level 1 (CSS1) "
+"font specification <http://www.w3.org/TR/1998/REC-CSS2-19980512/>`_. "
+"Future versions may implement the Level 2 or 2.1 specifications."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager:1
+#: matplotlib.font_manager.FontProperties:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager:2 of
+msgid ""
+"On import, the `FontManager` singleton instance creates a list of ttf and"
+" afm fonts and caches their `FontProperties`.  The `FontManager.findfont`"
+" method does a nearest neighbor search to find the font that most closely"
+" matches the specification.  If no good enough match is found, the "
+"default font is returned."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.addfont:2 of
+msgid ""
+"Cache the properties of the font at *path* to make it available to the "
+"`FontManager`.  The type of font is inferred from the path suffix."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.addfont
+#: matplotlib.font_manager.FontManager.findfont
+#: matplotlib.font_manager.FontProperties.set_math_fontfamily
+#: matplotlib.font_manager.afmFontProperty
+#: matplotlib.font_manager.ttfFontProperty of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.addfont:22 of
+msgid "**path**"
+msgstr ""
+
+#: of
+msgid "str or path-like"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:2 of
+msgid "Find a font that most closely matches the given font properties."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:10 of
+msgid "**prop** : str or `~matplotlib.font_manager.FontProperties`"
+msgstr ""
+
+#: of
+msgid "str or"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:8 of
+msgid ""
+"The font properties to search for. This can be either a `.FontProperties`"
+" object or a string defining a `fontconfig patterns`_."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:16 of
+msgid "**fontext**"
+msgstr ""
+
+#: of
+msgid "{'ttf', 'afm'}, default: 'ttf'"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:13 of
+msgid "The extension of the font file:"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:15 of
+msgid "'ttf': TrueType and OpenType fonts (.ttf, .ttc, .otf)"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:16 of
+msgid "'afm': Adobe Font Metrics (.afm)"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:19 of
+msgid "**directory**"
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:19 of
+msgid "If given, only search this directory and its subdirectories."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:23 of
+msgid "**fallback_to_default**"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:22 of
+msgid ""
+"If True, will fallback to the default font family (usually \"DejaVu "
+"Sans\" or \"Helvetica\") if the first lookup hard-fails."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:28 of
+msgid "**rebuild_if_missing**"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:26 of
+msgid ""
+"Whether to rebuild the font cache and search again if the first match "
+"appears to point to a nonexisting font (i.e., the font cache contains "
+"outdated entries)."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont
+#: matplotlib.font_manager.afmFontProperty
+#: matplotlib.font_manager.ttfFontProperty of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:40 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:33 of
+msgid "The filename of the best matching font."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:43
+#: matplotlib.font_manager.get_fontconfig_fonts:15
+#: matplotlib.font_manager.json_dump:20
+#: matplotlib.font_manager.win32InstalledFonts:18 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:44 of
+msgid ""
+"This performs a nearest neighbor search.  Each font is given a similarity"
+" score to the target font properties.  The first font with the highest "
+"score is returned.  If no matches below a certain threshold are found, "
+"the default font (usually DejaVu Sans) is returned."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:50 of
+msgid ""
+"The result is cached, so subsequent lookups don't have to perform the "
+"O(n) nearest neighbor search."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.findfont:53 of
+msgid ""
+"See the `W3C Cascading Style Sheet, Level 1 <http://www.w3.org/TR/1998"
+"/REC-CSS2-19980512/>`_ documentation for a description of the font "
+"finding algorithm."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.get_default_size:2 of
+msgid "Return the default font size."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.get_default_weight:2 of
+msgid "Return the default font weight."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_family:2 of
+msgid ""
+"Return a match score between the list of font families in *families* and "
+"the font family name *family2*."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_family:5 of
+msgid "An exact match at the head of the list returns 0.0."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_family:7 of
+msgid "A match further down the list will return between 0 and 1."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_family:9 of
+msgid "No match will return 1.0."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_size:2 of
+msgid "Return a match score between *size1* and *size2*."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_size:4 of
+msgid ""
+"If *size2* (the size specified in the font file) is 'scalable', this "
+"function always returns 0.0, since any font size can be generated."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_size:7 of
+msgid ""
+"Otherwise, the result is the absolute distance between *size1* and "
+"*size2*, normalized so that the usual range of font sizes (6pt - 72pt) "
+"will lie between 0.0 and 1.0."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_stretch:2 of
+msgid "Return a match score between *stretch1* and *stretch2*."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_stretch:4 of
+msgid ""
+"The result is the absolute value of the difference between the CSS "
+"numeric values of *stretch1* and *stretch2*, normalized between 0.0 and "
+"1.0."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_style:2 of
+msgid "Return a match score between *style1* and *style2*."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_style:4 of
+msgid "An exact match returns 0.0."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_style:6 of
+msgid "A match between 'italic' and 'oblique' returns 0.1."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_style:8 of
+msgid "No match returns 1.0."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_variant:2 of
+msgid "Return a match score between *variant1* and *variant2*."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_variant:4 of
+msgid "An exact match returns 0.0, otherwise 1.0."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_weight:2 of
+msgid "Return a match score between *weight1* and *weight2*."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_weight:4 of
+msgid ""
+"The result is 0.0 if both weight1 and weight 2 are given as strings and "
+"have the same value."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.score_weight:7 of
+msgid ""
+"Otherwise, the result is the absolute value of the difference between the"
+" CSS numeric values of *weight1* and *weight2*, normalized between 0.05 "
+"and 1.0."
+msgstr ""
+
+#: matplotlib.font_manager.FontManager.set_default_weight:2 of
+msgid "Set the default font weight.  The initial value is 'normal'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:2 of
+msgid "A class for storing and manipulating font properties."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:4 of
+msgid ""
+"The font properties are the six properties described in the `W3C "
+"Cascading Style Sheet, Level 1 <http://www.w3.org/TR/1998/REC-"
+"CSS2-19980512/>`_ font specification and *math_fontfamily* for math "
+"fonts:"
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:9 of
+msgid ""
+"family: A list of font names in decreasing order of priority. The items "
+"may include a generic font family name, either 'sans-serif' (default), "
+"'serif', 'cursive', 'fantasy', or 'monospace'. In that case, the actual "
+"font to be used will be looked up from the associated rcParam."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:15 of
+msgid "style: Either 'normal' (default), 'italic' or 'oblique'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:17 of
+msgid "variant: Either 'normal' (default) or 'small-caps'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:19 of
+msgid ""
+"stretch: A numeric value in the range 0-1000 or one of 'ultra-condensed',"
+" 'extra-condensed', 'condensed', 'semi-condensed', 'normal' (default), "
+"'semi-expanded', 'expanded', 'extra-expanded' or 'ultra-expanded'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:24 of
+msgid ""
+"weight: A numeric value in the range 0-1000 or one of 'ultralight', "
+"'light', 'normal' (default), 'regular', 'book', 'medium', 'roman', "
+"'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:29 of
+msgid ""
+"size: Either an relative value of 'xx-small', 'x-small', 'small', "
+"'medium', 'large', 'x-large', 'xx-large' or an absolute font size, e.g., "
+"10 (default)."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:33 of
+msgid ""
+"math_fontfamily: The family of fonts used to render math text; overrides "
+":rc:`mathtext.fontset`. Supported values are the same as the ones "
+"supported by :rc:`mathtext.fontset`: 'dejavusans', 'dejavuserif', 'cm', "
+"'stix', 'stixsans' and 'custom'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:38 of
+msgid ""
+"Alternatively, a font may be specified using the absolute path to a font "
+"file, by using the *fname* kwarg.  However, in this case, it is typically"
+" simpler to just pass the path (as a `pathlib.Path`, not a `str`) to the "
+"*font* kwarg of the `.Text` object."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:43 of
+msgid ""
+"The preferred usage of font sizes is to use the relative values, e.g.,  "
+"'large', instead of absolute font sizes, e.g., 12.  This approach allows "
+"all text sizes to be made larger or smaller based on the font manager's "
+"default font size."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:48 of
+msgid ""
+"This class will also accept a fontconfig_ pattern_, if it is the only "
+"argument provided.  This support does not depend on fontconfig; we are "
+"merely borrowing its pattern syntax for use here."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties:56 of
+msgid ""
+"Note that Matplotlib's internal font manager and fontconfig use a "
+"different algorithm to lookup fonts, so the results of the same pattern "
+"may be different in Matplotlib than in other applications that use "
+"fontconfig."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.copy:2 of
+msgid "Return a copy of self."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_family:2 of
+msgid "Return a list of font names that comprise the font family."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_file:2 of
+msgid "Return the filename of the associated font."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_fontconfig_pattern:2 of
+msgid ""
+"Get a fontconfig_ pattern_ suitable for looking up the font as specified "
+"with fontconfig's ``fc-match`` utility."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_fontconfig_pattern:5
+#: matplotlib.font_manager.FontProperties.set_fontconfig_pattern:4 of
+msgid ""
+"This support does not depend on fontconfig; we are merely borrowing its "
+"pattern syntax for use here."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_math_fontfamily:2 of
+msgid "Return the name of the font family used for math text."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_math_fontfamily:4 of
+msgid "The default font is :rc:`mathtext.fontset`."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_name:2 of
+msgid "Return the name of the font that best matches the font properties."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_size:2 of
+msgid "Return the font size."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_style:2 of
+msgid "Return the font style.  Values are: 'normal', 'italic' or 'oblique'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_stretch:2 of
+msgid ""
+"Return the font stretch or width.  Options are: 'ultra-condensed', "
+"'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-"
+"expanded', 'expanded', 'extra-expanded', 'ultra-expanded'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_variant:2 of
+msgid "Return the font variant.  Values are: 'normal' or 'small-caps'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.get_weight:2 of
+msgid ""
+"Set the font weight.  Options are: A numeric value in the range 0-1000 or"
+" one of 'light', 'normal', 'regular', 'book', 'medium', 'roman', "
+"'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black'"
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_family:2 of
+msgid ""
+"Change the font family.  May be either an alias (generic name is CSS "
+"parlance), such as: 'serif', 'sans-serif', 'cursive', 'fantasy', or "
+"'monospace', a real font name or a list of real font names.  Real font "
+"names are not supported when :rc:`text.usetex` is `True`."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_file:2 of
+msgid ""
+"Set the filename of the fontfile to use.  In this case, all other "
+"properties will be ignored."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_fontconfig_pattern:2 of
+msgid "Set the properties by parsing a fontconfig_ *pattern*."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_math_fontfamily:2 of
+msgid "Set the font family for text in math mode."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_math_fontfamily:4 of
+msgid "If not set explicitly, :rc:`mathtext.fontset` will be used."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_math_fontfamily:20 of
+msgid "**fontfamily**"
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_math_fontfamily:9 of
+msgid "The name of the font family."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_math_fontfamily:11 of
+msgid ""
+"Available font families are defined in the matplotlibrc.template file "
+":ref:`here <customizing-with-matplotlibrc-files>`"
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_math_fontfamily:25 of
+msgid ":obj:`.text.Text.get_math_fontfamily`"
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_size:2 of
+msgid ""
+"Set the font size.  Either an relative value of 'xx-small', 'x-small', "
+"'small', 'medium', 'large', 'x-large', 'xx-large' or an absolute font "
+"size, e.g., 12."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_style:2 of
+msgid "Set the font style.  Values are: 'normal', 'italic' or 'oblique'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_stretch:2 of
+msgid ""
+"Set the font stretch or width.  Options are: 'ultra-condensed', 'extra-"
+"condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', "
+"'expanded', 'extra-expanded' or 'ultra-expanded', or a numeric value in "
+"the range 0-1000."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_variant:2 of
+msgid "Set the font variant.  Values are: 'normal' or 'small-caps'."
+msgstr ""
+
+#: matplotlib.font_manager.FontProperties.set_weight:2 of
+msgid ""
+"Set the font weight.  May be either a numeric value in the range 0-1000 "
+"or one of 'ultralight', 'light', 'normal', 'regular', 'book', 'medium', "
+"'roman', 'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', "
+"'black'"
+msgstr ""
+
+#: matplotlib.font_manager.afmFontProperty:2 of
+msgid "Extract information from an AFM font file."
+msgstr ""
+
+#: matplotlib.font_manager.afmFontProperty:8 of
+msgid "**font** : `.AFM`"
+msgstr ""
+
+#: matplotlib.font_manager.afmFontProperty:7 of
+msgid "AFM"
+msgstr ""
+
+#: matplotlib.font_manager.afmFontProperty:8 of
+msgid "The AFM font file from which information will be extracted."
+msgstr ""
+
+#: matplotlib.font_manager.afmFontProperty:25
+#: matplotlib.font_manager.ttfFontProperty:25 of
+msgid "`FontEntry`"
+msgstr ""
+
+#: matplotlib.font_manager.afmFontProperty:13
+#: matplotlib.font_manager.ttfFontProperty:13 of
+msgid "The extracted font properties."
+msgstr ""
+
+#: matplotlib.font_manager.findSystemFonts:2 of
+msgid ""
+"Search for fonts in the specified font paths.  If no paths are given, "
+"will use a standard set of system paths, as well as the list of fonts "
+"tracked by fontconfig if fontconfig is installed and available.  A list "
+"of TrueType fonts are returned by default with AFM fonts as an option."
+msgstr ""
+
+#: matplotlib.font_manager.get_fontconfig_fonts:2 of
+msgid ""
+"[*Deprecated*] List font filenames known to `fc-list` having the given "
+"extension."
+msgstr ""
+
+#: matplotlib.font_manager.get_fontext_synonyms:2 of
+msgid ""
+"Return a list of file extensions extensions that are synonyms for the "
+"given file extension *fileext*."
+msgstr ""
+
+#: matplotlib.font_manager.is_opentype_cff_font:2 of
+msgid ""
+"Return whether the given font is a Postscript Compact Font Format Font "
+"embedded in an OpenType wrapper.  Used by the PostScript and PDF backends"
+" that can not subset these fonts."
+msgstr ""
+
+#: matplotlib.font_manager.json_dump:2 of
+msgid "Dump `FontManager` *data* as JSON to the file named *filename*."
+msgstr ""
+
+#: matplotlib.font_manager.json_dump:16 of
+msgid ":obj:`json_load`"
+msgstr ""
+
+#: matplotlib.font_manager.json_dump:21 of
+msgid ""
+"File paths that are children of the Matplotlib data path (typically, "
+"fonts shipped with Matplotlib) are stored relative to that data path (to "
+"remain valid across virtualenvs)."
+msgstr ""
+
+#: matplotlib.font_manager.json_dump:25 of
+msgid ""
+"This function temporarily locks the output file to prevent multiple "
+"processes from overwriting one another's output."
+msgstr ""
+
+#: matplotlib.font_manager.json_load:2 of
+msgid "Load a `FontManager` from the JSON file named *filename*."
+msgstr ""
+
+#: matplotlib.font_manager.json_load:16 of
+msgid ":obj:`json_dump`"
+msgstr ""
+
+#: matplotlib.font_manager.list_fonts:2 of
+msgid ""
+"Return a list of all fonts matching any of the extensions, found "
+"recursively under the directory."
+msgstr ""
+
+#: matplotlib.font_manager.ttfFontProperty:2 of
+msgid "Extract information from a TrueType font file."
+msgstr ""
+
+#: matplotlib.font_manager.ttfFontProperty:8 of
+msgid "**font** : `.FT2Font`"
+msgstr ""
+
+#: matplotlib.font_manager.ttfFontProperty:7 of
+msgid "FT2Font"
+msgstr ""
+
+#: matplotlib.font_manager.ttfFontProperty:8 of
+msgid "The TrueType font file from which information will be extracted."
+msgstr ""
+
+#: matplotlib.font_manager.win32FontDirectory:2 of
+msgid ""
+"Return the user-specified font directory for Win32.  This is looked up "
+"from the registry key ::"
+msgstr ""
+
+#: matplotlib.font_manager.win32FontDirectory:7 of
+msgid "If the key is not found, ``%WINDIR%\\Fonts`` will be returned."
+msgstr ""
+
+#: matplotlib.font_manager.win32InstalledFonts:2 of
+msgid ""
+"[*Deprecated*] Search for fonts in the specified font directory, or use "
+"the system directories if none given. Additionally, it is searched for "
+"user fonts installed. A list of TrueType font filenames are returned by "
+"default, or AFM fonts if *fontext* == 'afm'."
+msgstr ""
+
+#: of types.FontEntry:2
+msgid "A class for storing Font properties."
+msgstr ""
+
+#: of types.FontEntry:4
+msgid "It is used when populating the font lookup dictionary."
+msgstr ""
+

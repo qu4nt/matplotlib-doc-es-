@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../devel/MEP/MEP29.rst:3
+msgid "MEP29: Text light markup"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:10
+msgid "Status"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:12
+msgid "Discussion"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:16
+msgid "Branches and Pull requests"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:18
+msgid "None at the moment, proof of concept only."
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:21
+msgid "Abstract"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:23
+msgid "This MEP proposes to add lightweight markup to the text artist."
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:26
+msgid "Detailed description"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:28
+msgid ""
+"Using different size/color/family in a text annotation is difficult "
+"because the `~.Axes.text` method accepts argument for "
+"size/color/family/weight/etc. that are used for the whole text. But, if "
+"one wants, for example, to have different colors, one has to look at the "
+"gallery where one such example is provided: "
+":doc:`/gallery/text_labels_and_annotations/rainbow_text`"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:34
+msgid ""
+"This example takes a list of strings as well as a list of colors which "
+"makes it cumbersome to use. An alternative would be to use a restricted "
+"set of pango_-like markup and to interpret this markup."
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:39
+msgid "Some markup examples::"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:46
+msgid "Implementation"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:48
+msgid ""
+"A proof of concept is provided in `markup_example.py "
+"<https://github.com/rougier/matplotlib/blob/markup/examples/text_labels_and_annotations/markup.py>`_"
+" but it currently only handles the horizontal direction."
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:51
+msgid "Improvements"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:53
+msgid ""
+"This proof of concept uses regex to parse the text but it may be better "
+"to use the html.parser from the standard library."
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:56
+msgid ""
+"Computation of text fragment positions could benefit from the OffsetFrom "
+"class. See for example item 5 in `Using Complex Coordinates with "
+"Annotations "
+"<https://matplotlib.org/devdocs/tutorials/text/annotations.html#using-"
+"complex-coordinates-with-annotations>`_"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:60
+msgid "Problems"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:62
+msgid ""
+"One serious problem is how to deal with text having both LaTeX and HTML-"
+"like tags. For example, consider the following::"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:67
+msgid "Recommendation would be to have mutual exclusion."
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:71
+msgid "Backward compatibility"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:73
+msgid "None at the moment since it is only a proof of concept"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:77
+msgid "Alternatives"
+msgstr ""
+
+#: ../../devel/MEP/MEP29.rst:79
+msgid ""
+"As proposed by @anntzer, this could be also implemented as improvements "
+"to mathtext. For example::"
+msgstr ""
+

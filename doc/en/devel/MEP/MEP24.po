@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../devel/MEP/MEP24.rst:3
+msgid "MEP24: Negative radius in polar plots"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:11
+msgid "Status"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:12
+msgid "*Discussion*"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:15
+msgid "Branches and Pull requests"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:17
+msgid "None"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:20
+msgid "Abstract"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:22
+msgid ""
+"It is clear that polar plots need to be able to gracefully handle "
+"negative r values (not by clipping or reflection)."
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:26
+msgid "Detailed description"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:28
+msgid ""
+"One obvious application that we should support is bB plots (see "
+"https://github.com/matplotlib/matplotlib/issues/1730#issuecomment-40815837),"
+" but this seems more generally useful (for example growth rate as a "
+"function of angle).  The assumption in the current code (as I understand "
+"it) is that the center of the graph is ``r==0``, however it would be good"
+" to be able to set the center to be at any ``r`` (with any value less "
+"than the offset clipped)."
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:37
+msgid "Implementation"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:41
+msgid "Related Issues"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:42
+msgid "#1730, #1603, #2203, #2133"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:47
+msgid "Backward compatibility"
+msgstr ""
+
+#: ../../devel/MEP/MEP24.rst:51
+msgid "Alternatives"
+msgstr ""
+

@@ -1,0 +1,962 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/tri_api.rst:3
+msgid "``matplotlib.tri``"
+msgstr ""
+
+#: matplotlib.tri:1 of
+msgid "Unstructured triangular grid functions."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:2 of
+msgid ""
+"An unstructured triangular grid consisting of npoints points and ntri "
+"triangles.  The triangles can either be specified by the user or "
+"automatically generated using a Delaunay triangulation."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation
+#: matplotlib.tri.triangulation.Triangulation.set_mask
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator.gradient
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator.gradient
+#: matplotlib.tri.trirefine.UniformTriRefiner
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation
+#: matplotlib.tri.tritools.TriAnalyzer
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:10
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator.gradient:10
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator.gradient:10 of
+msgid "**x, y**"
+msgstr ""
+
+#: of
+msgid "(npoints,) array-like"
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:10 of
+msgid "Coordinates of grid points."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:15
+#: matplotlib.tri.triangulation.Triangulation:40 of
+msgid "**triangles**"
+msgstr ""
+
+#: of
+msgid "(ntri, 3) array-like of int, optional"
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:13 of
+msgid ""
+"For each triangle, the indices of the three points that make up the "
+"triangle, ordered in an anticlockwise manner.  If not specified, the "
+"Delaunay triangulation is calculated."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:26
+#: matplotlib.tri.triangulation.Triangulation:43
+#: matplotlib.tri.triangulation.Triangulation.set_mask:21 of
+msgid "**mask**"
+msgstr ""
+
+#: of
+msgid "(ntri,) array-like of bool, optional"
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:18 of
+msgid "Which triangles are masked out."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:29
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:55
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:43 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:30 of
+msgid ""
+"For a Triangulation to be valid it must not have duplicate points, "
+"triangles formed from colinear points, or overlapping triangles."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation
+#: matplotlib.tri.tricontour.TriContourSet matplotlib.tri.tritools.TriAnalyzer
+#: of
+msgid "Attributes"
+msgstr ""
+
+#: of
+msgid "(ntri, 3) array of int"
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:38 of
+msgid ""
+"For each triangle, the indices of the three points that make up the "
+"triangle, ordered in an anticlockwise manner. If you want to take the "
+"*mask* into account, use `get_masked_triangles` instead."
+msgstr ""
+
+#: of
+msgid "(ntri, 3) array of bool"
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:43 of
+msgid "Masked out triangles."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:48 of
+msgid "**is_delaunay**"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation:46 of
+msgid ""
+"Whether the Triangulation is a calculated Delaunay triangulation (where "
+"*triangles* was not specified) or not."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation.calculate_plane_coefficients:2 of
+msgid ""
+"Calculate plane equation coefficients for all unmasked triangles from the"
+" point (x, y) coordinates and specified z-array of shape (npoints). The "
+"returned array has shape (npoints, 3) and allows z-value at (x, y) "
+"position in triangle tri to be calculated using ``z = array[tri, 0] * x  "
+"+ array[tri, 1] * y + array[tri, 2]``."
+msgstr ""
+
+#: matplotlib.tri.Triangulation.edges:2 of
+msgid ""
+"Return integer array of shape (nedges, 2) containing all edges of non-"
+"masked triangles."
+msgstr ""
+
+#: matplotlib.tri.Triangulation.edges:5 of
+msgid ""
+"Each row defines an edge by it's start point index and end point index.  "
+"Each edge appears only once, i.e. for an edge between points *i*  and "
+"*j*, there will only be either *(i, j)* or *(j, i)*."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation.get_cpp_triangulation:2 of
+msgid "Return the underlying C++ Triangulation object, creating it if necessary."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation.get_from_args_and_kwargs:2 of
+msgid ""
+"Return a Triangulation object from the args and kwargs, and the remaining"
+" args and kwargs with the consumed values removed."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation.get_from_args_and_kwargs:5 of
+msgid ""
+"There are two alternatives: either the first argument is a Triangulation "
+"object, in which case it is returned, or the args and kwargs are "
+"sufficient to create a new Triangulation to return.  In the latter case, "
+"see Triangulation.__init__ for the possible args and kwargs."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation.get_masked_triangles:2 of
+msgid "Return an array of triangles that are not masked."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation.get_trifinder:2 of
+msgid ""
+"Return the default `matplotlib.tri.TriFinder` of this triangulation, "
+"creating it if necessary.  This allows the same TriFinder object to be "
+"easily shared."
+msgstr ""
+
+#: matplotlib.tri.Triangulation.neighbors:2 of
+msgid "Return integer array of shape (ntri, 3) containing neighbor triangles."
+msgstr ""
+
+#: matplotlib.tri.Triangulation.neighbors:4 of
+msgid ""
+"For each triangle, the indices of the three triangles that share the same"
+" edges, or -1 if there is no such neighboring triangle.  ``neighbors[i, "
+"j]`` is the triangle that is the neighbor to the edge from point index "
+"``triangles[i, j]`` to point index ``triangles[i, (j+1)%3]``."
+msgstr ""
+
+#: matplotlib.tri.triangulation.Triangulation.set_mask:2 of
+msgid "Set or clear the mask array."
+msgstr ""
+
+#: of
+msgid "None or bool array of length ntri"
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:1 of
+msgid "Bases: :py:class:`matplotlib.contour.ContourSet`"
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:2 of
+msgid ""
+"Create and store a set of contour lines or filled regions for a "
+"triangular grid."
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:5 of
+msgid ""
+"This class is typically not instantiated directly by the user but by "
+"`~.Axes.tricontour` and `~.Axes.tricontourf`."
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:23 of
+msgid "**ax** : `~matplotlib.axes.Axes`"
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:22 of
+msgid "Axes"
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:23 of
+msgid "The Axes object in which the contours are drawn."
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:27 of
+msgid "**collections** : `.silent_list` of `.PathCollection`\\s"
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:26 of
+msgid "silent_list of PathCollections"
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:26 of
+msgid ""
+"The `.Artist`\\s representing the contour. This is a list of "
+"`.PathCollection`\\s for both line and filled contours."
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:30 of
+msgid "**levels**"
+msgstr ""
+
+#: of
+msgid "array"
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:30 of
+msgid "The values of the contour levels."
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:35 of
+msgid "**layers**"
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:33 of
+msgid ""
+"Same as levels for line contours; half-way between levels for filled "
+"contours.  See ``ContourSet._process_colors``."
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:41 of
+msgid ""
+"Draw triangular grid contour lines or filled regions, depending on "
+"whether keyword arg 'filled' is False (default) or True."
+msgstr ""
+
+#: matplotlib.tri.tricontour.TriContourSet:45 of
+msgid ""
+"The first argument of the initializer must be an axes object.  The "
+"remaining arguments and keyword arguments are described in the docstring "
+"of `~.Axes.tricontour`."
+msgstr ""
+
+#: matplotlib.tri.trifinder.TriFinder:2 of
+msgid ""
+"Abstract base class for classes used to find the triangles of a "
+"Triangulation in which (x, y) points lie."
+msgstr ""
+
+#: matplotlib.tri.trifinder.TriFinder:5 of
+msgid ""
+"Rather than instantiate an object of a class derived from TriFinder, it "
+"is usually better to use the function `.Triangulation.get_trifinder`."
+msgstr ""
+
+#: matplotlib.tri.trifinder.TriFinder:8 of
+msgid ""
+"Derived classes implement __call__(x, y) where x and y are array-like "
+"point coordinates of the same shape."
+msgstr ""
+
+#: matplotlib.tri.trifinder.TrapezoidMapTriFinder:1 of
+msgid "Bases: :py:class:`matplotlib.tri.trifinder.TriFinder`"
+msgstr ""
+
+#: matplotlib.tri.trifinder.TrapezoidMapTriFinder:2 of
+msgid ""
+"`~matplotlib.tri.TriFinder` class implemented using the trapezoid map "
+"algorithm from the book \"Computational Geometry, Algorithms and "
+"Applications\", second edition, by M. de Berg, M. van Kreveld, M. "
+"Overmars and O. Schwarzkopf."
+msgstr ""
+
+#: matplotlib.tri.trifinder.TrapezoidMapTriFinder:7 of
+msgid ""
+"The triangulation must be valid, i.e. it must not have duplicate points, "
+"triangles formed from colinear points, or overlapping triangles.  The "
+"algorithm has some tolerance to triangles formed from colinear points, "
+"but this should not be relied upon."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.TriInterpolator:2 of
+msgid "Abstract base class for classes used to interpolate on a triangular grid."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.TriInterpolator:4 of
+msgid "Derived classes implement the following methods:"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.TriInterpolator:6 of
+msgid ""
+"``__call__(x, y)``, where x, y are array-like point coordinates of the "
+"same shape, and that returns a masked array of the same shape containing "
+"the interpolated z-values."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.TriInterpolator:11 of
+msgid ""
+"``gradient(x, y)``, where x, y are array-like point coordinates of the "
+"same shape, and that returns a list of 2 masked arrays of the same shape "
+"containing the 2 derivatives of the interpolator (derivatives of "
+"interpolated z values with respect to x and y)."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:1
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:1 of
+msgid "Bases: :py:class:`matplotlib.tri.triinterpolate.TriInterpolator`"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:2 of
+msgid "Linear interpolator on a triangular grid."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:4 of
+msgid ""
+"Each triangle is represented by a plane so that an interpolated value at "
+"point (x, y) lies on the plane of the triangle containing (x, y). "
+"Interpolated values are therefore continuous across the triangulation, "
+"but their first derivatives are discontinuous at edges between triangles."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:20
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:12
+#: matplotlib.tri.trirefine.UniformTriRefiner:21
+#: matplotlib.tri.tritools.TriAnalyzer:21 of
+msgid "**triangulation** : `~matplotlib.tri.Triangulation`"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:19
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:11
+#: matplotlib.tri.trirefine.UniformTriRefiner:20
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:22
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:24
+#: matplotlib.tri.tritools.TriAnalyzer:20 of
+msgid "Triangulation"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:20
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:12 of
+msgid "The triangulation to interpolate over."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:23
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:15
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:10 of
+msgid "**z**"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:23
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:15 of
+msgid "Array of values, defined at grid points, to interpolate between."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:39
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:31 of
+msgid "**trifinder** : `~matplotlib.tri.TriFinder`, optional"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:38
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:30 of
+msgid "TriFinder, optional"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:18 of
+msgid ""
+"If this is not specified, the Triangulation's default TriFinder will be "
+"used by calling `.Triangulation.get_trifinder`."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:107
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:36 of
+msgid "Methods"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:109
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:38 of
+msgid "**`__call__` (x, y)**"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:109
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:38 of
+msgid "(Returns interpolated values at (x, y) points.)"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:110
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:39 of
+msgid "**`gradient` (x, y)**"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:110
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator:39 of
+msgid "(Returns interpolated derivatives at (x, y) points.)"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator.gradient:2
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator.gradient:2 of
+msgid ""
+"Returns a list of 2 masked arrays containing interpolated derivatives at "
+"the specified (x, y) points."
+msgstr ""
+
+#: of
+msgid "array-like"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator.gradient:9
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator.gradient:9 of
+msgid "x and y coordinates of the same shape and any number of dimensions."
+msgstr ""
+
+#: matplotlib.tri.TriAnalyzer.scale_factors
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator.gradient
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator.gradient
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator.gradient:32
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator.gradient:32 of
+msgid "**dzdx, dzdy**"
+msgstr ""
+
+#: of
+msgid "np.ma.array"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator.gradient:15
+#: matplotlib.tri.triinterpolate.LinearTriInterpolator.gradient:15 of
+msgid ""
+"2 masked arrays of the same shape as *x* and *y*; values corresponding to"
+" (x, y) points outside of the triangulation are masked out. The first "
+"returned array contains the values of :math:`\\frac{\\partial "
+"z}{\\partial x}` and the second those of :math:`\\frac{\\partial "
+"z}{\\partial y}`."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:2 of
+msgid "Cubic interpolator on a triangular grid."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:4 of
+msgid ""
+"In one-dimension - on a segment - a cubic interpolating function is "
+"defined by the values of the function and its derivative at both ends. "
+"This is almost the same in 2D inside a triangle, except that the values "
+"of the function and its 2 derivatives have to be defined at each triangle"
+" node."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:10 of
+msgid ""
+"The CubicTriInterpolator takes the value of the function at each node - "
+"provided by the user - and internally computes the value of the "
+"derivatives, resulting in a smooth interpolation. (As a special feature, "
+"the user can also impose the value of the derivatives at each node, but "
+"this is not supposed to be the common usage.)"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:35 of
+msgid "**kind**"
+msgstr ""
+
+#: of
+msgid "{'min_E', 'geom', 'user'}, optional"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:26 of
+msgid ""
+"Choice of the smoothing algorithm, in order to compute the interpolant "
+"derivatives (defaults to 'min_E'):"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:29 of
+msgid ""
+"if 'min_E': (default) The derivatives at each node is computed to "
+"minimize a bending energy."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:31 of
+msgid ""
+"if 'geom': The derivatives at each node is computed as a weighted average"
+" of relevant triangle normals. To be used for speed optimization (large "
+"grids)."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:34 of
+msgid ""
+"if 'user': The user provides the argument *dz*, no computation is hence "
+"needed."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:38 of
+msgid ""
+"If not specified, the Triangulation's default TriFinder will be used by "
+"calling `.Triangulation.get_trifinder`."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:52 of
+msgid "**dz**"
+msgstr ""
+
+#: of
+msgid "tuple of array-likes (dzdx, dzdy), optional"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:42 of
+msgid ""
+"Used only if  *kind* ='user'. In this case *dz* must be provided as "
+"(dzdx, dzdy) where dzdx, dzdy are arrays of the same shape as *z* and are"
+" the interpolant first derivatives at the *triangulation* points."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:56 of
+msgid ""
+"This note is a bit technical and details how the cubic interpolation is "
+"computed."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:59 of
+msgid ""
+"The interpolation is based on a Clough-Tocher subdivision scheme of the "
+"*triangulation* mesh (to make it clearer, each triangle of the grid will "
+"be divided in 3 child-triangles, and on each child triangle the "
+"interpolated function is a cubic polynomial of the 2 coordinates). This "
+"technique originates from FEM (Finite Element Method) analysis; the "
+"element used is a reduced Hsieh-Clough-Tocher (HCT) element. Its shape "
+"functions are described in [R0be0c58fd53f-1]_. The assembled function is "
+"guaranteed to be C1-smooth, i.e. it is continuous and its first "
+"derivatives are also continuous (this is easy to show inside the "
+"triangles but is also true when crossing the edges)."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:71 of
+msgid ""
+"In the default case (*kind* ='min_E'), the interpolant minimizes a "
+"curvature energy on the functional space generated by the HCT element "
+"shape functions - with imposed values but arbitrary derivatives at each "
+"node. The minimized functional is the integral of the so-called total "
+"curvature (implementation based on an algorithm from [R0be0c58fd53f-2]_ -"
+" PCG sparse solver):"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:78 of
+msgid ""
+"E(z) = \\frac{1}{2} \\int_{\\Omega} \\left(\n"
+"    \\left( \\frac{\\partial^2{z}}{\\partial{x}^2} \\right)^2 +\n"
+"    \\left( \\frac{\\partial^2{z}}{\\partial{y}^2} \\right)^2 +\n"
+"    2\\left( \\frac{\\partial^2{z}}{\\partial{y}\\partial{x}} \\right)^2\n"
+"\\right) dx\\,dy"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:86 of
+msgid ""
+"If the case *kind* ='geom' is chosen by the user, a simple geometric "
+"approximation is used (weighted average of the triangle normal vectors), "
+"which could improve speed on very large grids."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:91 of
+msgid "References"
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:92 of
+msgid ""
+"Michel Bernadou, Kamal Hassan, \"Basis functions for general Hsieh-"
+"Clough-Tocher triangles, complete or reduced.\", International Journal "
+"for Numerical Methods in Engineering, 17(5):784 - 789. 2.01."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:96 of
+msgid "C.T. Kelley, \"Iterative Methods for Optimization\"."
+msgstr ""
+
+#: matplotlib.tri.triinterpolate.CubicTriInterpolator:100 of
+msgid "[R0be0c58fd53f-1]_, [R0be0c58fd53f-2]_"
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:2 of
+msgid "Abstract base class for classes implementing mesh refinement."
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:4 of
+msgid ""
+"A TriRefiner encapsulates a Triangulation object and provides tools for "
+"mesh refinement and interpolation."
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:7 of
+msgid "Derived classes must implement:"
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:9 of
+msgid ""
+"``refine_triangulation(return_tri_index=False, **kwargs)`` , where the "
+"optional keyword arguments *kwargs* are defined in each TriRefiner "
+"concrete implementation, and which returns:"
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:13 of
+msgid "a refined triangulation,"
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:14 of
+msgid ""
+"optionally (depending on *return_tri_index*), for each point of the "
+"refined triangulation: the index of the initial triangulation triangle to"
+" which it belongs."
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:18 of
+msgid "``refine_field(z, triinterpolator=None, **kwargs)``, where:"
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:20 of
+msgid ""
+"*z* array of field values (to refine) defined at the base triangulation "
+"nodes,"
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:22 of
+msgid "*triinterpolator* is an optional `~matplotlib.tri.TriInterpolator`,"
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:23 of
+msgid ""
+"the other optional keyword arguments *kwargs* are defined in each "
+"TriRefiner concrete implementation;"
+msgstr ""
+
+#: matplotlib.tri.trirefine.TriRefiner:26 of
+msgid ""
+"and which returns (as a tuple) a refined triangular mesh and the "
+"interpolated values of the field at the refined triangulation nodes."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner:1 of
+msgid "Bases: :py:class:`matplotlib.tri.trirefine.TriRefiner`"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner:2 of
+msgid "Uniform mesh refinement by recursive subdivisions."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner:8 of
+msgid "The encapsulated triangulation (to be refined)"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:2 of
+msgid "Refine a field defined on the encapsulated triangulation."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:8 of
+msgid ""
+"Values of the field to refine, defined at the nodes of the encapsulated "
+"triangulation. (``n_points`` is the number of points in the initial "
+"triangulation)"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:14 of
+msgid "**triinterpolator** : `~matplotlib.tri.TriInterpolator`, optional"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:13 of
+msgid "TriInterpolator, optional"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:13 of
+msgid ""
+"Interpolator used for field interpolation. If not specified, a "
+"`~matplotlib.tri.CubicTriInterpolator` will be used."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:18
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:20 of
+msgid "**subdiv**"
+msgstr ""
+
+#: of
+msgid "int, default: 3"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:17 of
+msgid ""
+"Recursion level for the subdivision. Each triangle is divided into "
+"``4**subdiv`` child triangles."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:23 of
+msgid "**refi_tri** : `~matplotlib.tri.Triangulation`"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:23 of
+msgid "The returned refined triangulation."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:38 of
+msgid "**refi_z** : 1D array of length: *refi_tri* node count."
+msgstr ""
+
+#: of
+msgid "1D array of length:"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_field:26 of
+msgid "The returned interpolated field (at *refi_tri* nodes)."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:2 of
+msgid ""
+"Compute an uniformly refined triangulation *refi_triangulation* of the "
+"encapsulated :attr:`triangulation`."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:5 of
+msgid ""
+"This function refines the encapsulated triangulation by splitting each "
+"father triangle into 4 child sub-triangles built on the edges midside "
+"nodes, recursing *subdiv* times.  In the end, each triangle is hence "
+"divided into ``4**subdiv`` child triangles."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:14 of
+msgid "**return_tri_index**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:13 of
+msgid ""
+"Whether an index table indicating the father triangle index of each point"
+" is returned."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:17 of
+msgid ""
+"Recursion level for the subdivision. Each triangle is divided into "
+"``4**subdiv`` child triangles; hence, the default results in 64 refined "
+"subtriangles for each triangle of the initial triangulation."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:25 of
+msgid "**refi_triangulation** : `~matplotlib.tri.Triangulation`"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:25 of
+msgid "The refined triangulation."
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:42 of
+msgid "**found_index**"
+msgstr ""
+
+#: of
+msgid "int array"
+msgstr ""
+
+#: matplotlib.tri.trirefine.UniformTriRefiner.refine_triangulation:28 of
+msgid ""
+"Index of the initial triangulation containing triangle, for each point of"
+" *refi_triangulation*. Returned only if *return_tri_index* is set to "
+"True."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer:2 of
+msgid "Define basic tools for triangular mesh analysis and improvement."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer:4 of
+msgid ""
+"A TriAnalyzer encapsulates a `.Triangulation` object and provides basic "
+"tools for mesh analysis and mesh improvement."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer:10 of
+msgid "The encapsulated triangulation to analyze."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer:27 of
+msgid ":obj:`scale_factors <scale_factors>`"
+msgstr ""
+
+#: matplotlib.tri.TriAnalyzer.scale_factors:2
+#: matplotlib.tri.tritools.TriAnalyzer:26 of
+msgid "Factors to rescale the triangulation into a unit square."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios:2 of
+msgid "Return a measure of the triangulation triangles flatness."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios:4 of
+msgid ""
+"The ratio of the incircle radius over the circumcircle radius is a widely"
+" used indicator of a triangle flatness. It is always ``<= 0.5`` and ``== "
+"0.5`` only for equilateral triangles. Circle ratios below 0.01 denote "
+"very flat triangles."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios:9 of
+msgid ""
+"To avoid unduly low values due to a difference of scale between the 2 "
+"axis, the triangular mesh can first be rescaled to fit inside a unit "
+"square with `scale_factors` (Only if *rescale* is True, which is its "
+"default value)."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios:18
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:26 of
+msgid "**rescale**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios:17 of
+msgid ""
+"If True, internally rescale (based on `scale_factors`), so that the "
+"(unmasked) triangles fit exactly inside a unit square mesh."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios:37 of
+msgid "masked array"
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.circle_ratios:23 of
+msgid ""
+"Ratio of the incircle radius over the circumcircle radius, for each "
+"'rescaled' triangle of the encapsulated triangulation. Values "
+"corresponding to masked triangles are masked out."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:2 of
+msgid "Eliminate excessively flat border triangles from the triangulation."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:4 of
+msgid ""
+"Returns a mask *new_mask* which allows to clean the encapsulated "
+"triangulation from its border-located flat triangles (according to their "
+":meth:`circle_ratios`). This mask is meant to be subsequently applied to "
+"the triangulation using `.Triangulation.set_mask`. *new_mask* is an "
+"extension of the initial triangulation mask in the sense that an "
+"initially masked triangle will remain masked."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:12 of
+msgid ""
+"The *new_mask* array is computed recursively; at each step flat triangles"
+" are removed only if they share a side with the current mesh border. Thus"
+" no new holes in the triangulated domain will be created."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:20 of
+msgid "**min_circle_ratio**"
+msgstr ""
+
+#: of
+msgid "float, default: 0.01"
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:19 of
+msgid ""
+"Border triangles with incircle/circumcircle radii ratio r/R will be "
+"removed if r/R < *min_circle_ratio*."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:23 of
+msgid ""
+"If True, first, internally rescale (based on `scale_factors`) so that the"
+" (unmasked) triangles fit exactly inside a unit square mesh.  This "
+"rescaling accounts for the difference of scale which might exist between "
+"the 2 axis."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:40 of
+msgid "array of bool"
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:31 of
+msgid ""
+"Mask to apply to encapsulated triangulation. All the initially masked "
+"triangles remain masked in the *new_mask*."
+msgstr ""
+
+#: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:44 of
+msgid ""
+"The rationale behind this function is that a Delaunay triangulation - of "
+"an unstructured set of points - sometimes contains almost flat triangles "
+"at its border, leading to artifacts in plots (especially for high-"
+"resolution contouring). Masked with computed *new_mask*, the encapsulated"
+" triangulation would contain no more unmasked border triangles with a "
+"circle ratio below *min_circle_ratio*, thus improving the mesh quality "
+"for subsequent plots or interpolation."
+msgstr ""
+
+#: matplotlib.tri.TriAnalyzer.scale_factors:23 of
+msgid "(float, float)"
+msgstr ""
+
+#: matplotlib.tri.TriAnalyzer.scale_factors:9 of
+msgid ""
+"Scaling factors (kx, ky) so that the triangulation ``[triangulation.x * "
+"kx, triangulation.y * ky]`` fits exactly inside a unit square."
+msgstr ""
+

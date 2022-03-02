@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:4
+msgid "What's new in Matplotlib 3.2 (Mar 04, 2020)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:6
+msgid ""
+"For a list of all of the issues and pull requests since the last "
+"revision, see the :ref:`github-stats`."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:10
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:17
+msgid "Unit converters recognize subclasses"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:18
+msgid ""
+"Unit converters now also handle instances of subclasses of the class they"
+" have been registered for."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:22
+msgid "`~.pyplot.imsave` accepts metadata and PIL options"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:23
+msgid ""
+"`~.pyplot.imsave` has gained support for the ``metadata`` and "
+"``pil_kwargs`` parameters. These parameters behave similarly as for the "
+"`.Figure.savefig()` method."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:28
+msgid "`.cbook.normalize_kwargs`"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:29
+msgid ""
+"`.cbook.normalize_kwargs` now presents a convenient interface to "
+"normalize artist properties (e.g., from \"lw\" to \"linewidth\"):"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:35
+msgid ""
+"The first argument is the mapping to be normalized, and the second "
+"argument can be an artist class or an artist instance (it can also be a "
+"mapping in a specific format; see the function's docstring for details)."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:40
+msgid "`.FontProperties` accepts `os.PathLike`"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:41
+msgid ""
+"The *fname* argument to `.FontProperties` can now be an `os.PathLike`, "
+"e.g."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:47
+msgid "Gouraud-shading alpha channel in PDF backend"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:48
+msgid ""
+"The pdf backend now supports an alpha channel in Gouraud-shaded triangle "
+"meshes."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:54
+msgid "Kerning adjustments now use correct values"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:55
+msgid ""
+"Due to an error in how kerning adjustments were applied, previous "
+"versions of Matplotlib would under-correct kerning. This version will now"
+" correctly apply kerning (for fonts supported by FreeType). To restore "
+"the old behavior (e.g., for test images), you may set "
+":rc:`text.kerning_factor` to 6 (instead of 0). Other values have "
+"undefined behavior."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-2-0-1.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-2-0-1.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-2-0-1.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:71
+msgid ""
+"Note how the spacing between characters is uniform between their bounding"
+" boxes (above). With corrected kerning (below), slanted characters (e.g.,"
+" AV or VA) will be spaced closer together, as well as various other "
+"character pairs, depending on font support (e.g., T and e, or the period "
+"after the W)."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-2-0-2.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-2-0-2.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-2-0-2.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:88
+msgid "bar3d lightsource shading"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:89
+msgid ""
+":meth:`~.Axes3D.bar3d` now supports lighting from different angles when "
+"the *shade* parameter is ``True``, which can be configured using the "
+"``lightsource`` parameter."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:94
+msgid "Shifting errorbars"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:95
+msgid ""
+"Previously, `~.Axes.errorbar()` accepted a keyword argument *errorevery* "
+"such that the command ``plt.errorbar(x, y, yerr, errorevery=6)`` would "
+"add error bars to datapoints ``x[::6], y[::6]``."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:99
+msgid ""
+"`~.Axes.errorbar()` now also accepts a tuple for *errorevery* such that "
+"``plt.errorbar(x, y, yerr, errorevery=(start, N))`` adds error bars to "
+"points ``x[start::N], y[start::N]``."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:104
+msgid "Improvements in Logit scale ticker and formatter"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:105
+msgid ""
+"Introduced in version 1.5, the logit scale didn't have an appropriate "
+"ticker and formatter. Previously, the location of ticks was not zoom "
+"dependent, too many labels were displayed causing overlapping which broke"
+" readability, and label formatting did not adapt to precision."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:110
+msgid ""
+"Starting from this version, the logit locator has nearly the same "
+"behavior as the locator for the log scale or the linear scale, depending "
+"on used zoom. The number of ticks is controlled. Some minor labels are "
+"displayed adaptively as sublabels in log scale. Formatting is adapted for"
+" probabilities and the precision adapts to the scale."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:117
+msgid "rcParams for axes title location and color"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:118
+msgid ""
+"Two new rcParams have been added: :rc:`axes.titlelocation` denotes the "
+"default axes title alignment, and :rc:`axes.titlecolor` the default axes "
+"title color."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:121
+msgid ""
+"Valid values for ``axes.titlelocation`` are: left, center, and right. "
+"Valid values for ``axes.titlecolor`` are: auto or a color. Setting it to "
+"auto will fall back to previous behaviour, which is using the color in "
+"``text.color``."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:126
+msgid "3-digit and 4-digit hex colors"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:127
+msgid ""
+"Colors can now be specified using 3-digit or 4-digit hex colors, "
+"shorthand for the colors obtained by duplicating each character, e.g. "
+"``#123`` is equivalent to ``#112233`` and  ``#123a`` is equivalent to "
+"``#112233aa``."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:134
+msgid "Added support for RGB(A) images in pcolorfast"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.2.0.rst:136
+msgid "`.Axes.pcolorfast` now accepts 3D images (RGB or RGBA) arrays."
+msgstr ""
+

@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../gallery/ticks/date_concise_formatter.rst:13
+msgid ""
+"Click :ref:`here "
+"<sphx_glr_download_gallery_ticks_date_concise_formatter.py>` to download "
+"the full example code"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:23
+msgid "Formatting date ticks using ConciseDateFormatter"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:25
+msgid ""
+"Finding good tick values and formatting the ticks for an axis that has "
+"date data is often a challenge.  `~.dates.ConciseDateFormatter` is meant "
+"to improve the strings chosen for the ticklabels, and to minimize the "
+"strings used in those tick labels as much as possible."
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:32
+msgid ""
+"This formatter is a candidate to become the default date tick formatter "
+"in future versions of Matplotlib.  Please report any issues or "
+"suggestions for improvement to the github repository or mailing list."
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:54
+msgid "First, the default formatter."
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:95
+msgid ""
+"The default date formatter is quite verbose, so we have the option of "
+"using `~.dates.ConciseDateFormatter`, as shown below.  Note that for this"
+" example the labels do not need to be rotated as they do for the default "
+"formatter because the labels are as small as possible."
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:132
+msgid ""
+"If all calls to axes that have dates are to be made using this converter,"
+" it is probably most convenient to use the units registry where you do "
+"imports:"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:170
+msgid "Localization of date formats"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:172
+msgid ""
+"Dates formats can be localized if the default formats are not desirable "
+"by manipulating one of three lists of strings."
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:175
+msgid ""
+"The ``formatter.formats`` list of formats is for the normal tick labels, "
+"There are six levels: years, months, days, hours, minutes, seconds. The "
+"``formatter.offset_formats`` is how the \"offset\" string on the right of"
+" the axis is formatted.  This is usually much more verbose than the tick "
+"labels. Finally, the ``formatter.zero_formats`` are the formats of the "
+"ticks that are \"zeros\".  These are tick values that are either the "
+"first of the year, month, or day of month, or the zeroth hour, minute, or"
+" second. These are usually the same as the format of the ticks a level "
+"above.  For example if the axis limits mean the ticks are mostly days, "
+"then we label 1 Mar 2005 simply with a \"Mar\".  If the axis limits are "
+"mostly hours, we label Feb 4 00:00 as simply \"Feb-4\"."
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:187
+msgid ""
+"Note that these format lists can also be passed to "
+"`.ConciseDateFormatter` as optional keyword arguments."
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:190
+msgid ""
+"Here we modify the labels to be \"day month year\", instead of the ISO "
+"\"year month day\":"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:245
+msgid "Registering a converter with localization"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:247
+msgid ""
+"`.ConciseDateFormatter` doesn't have rcParams entries, but localization "
+"can be accomplished by passing keyword arguments to "
+"`.ConciseDateConverter` and registering the datatypes you will use with "
+"the units registry:"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:304
+msgid "**Total running time of the script:** ( 0 minutes  3.697 seconds)"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:319
+msgid ""
+":download:`Download Python source code: date_concise_formatter.py "
+"<date_concise_formatter.py>`"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:325
+msgid ""
+":download:`Download Jupyter notebook: date_concise_formatter.ipynb "
+"<date_concise_formatter.ipynb>`"
+msgstr ""
+
+#: ../../gallery/ticks/date_concise_formatter.rst:332
+msgid ""
+"Keywords: matplotlib code example, codex, python plot, pyplot `Gallery "
+"generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

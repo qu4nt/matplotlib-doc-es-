@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_enums_api.rst:3
+msgid "``matplotlib._enums``"
+msgstr ""
+
+#: matplotlib._enums:1 of
+msgid ""
+"Enums representing sets of strings that Matplotlib uses as input "
+"parameters."
+msgstr ""
+
+#: matplotlib._enums:3 of
+msgid ""
+"Matplotlib often uses simple data types like strings or tuples to define "
+"a concept; e.g. the line capstyle can be specified as one of 'butt', "
+"'round', or 'projecting'. The classes in this module are used internally "
+"and serve to document these concepts formally."
+msgstr ""
+
+#: matplotlib._enums:8 of
+msgid ""
+"As an end-user you will not use these classes directly, but only the "
+"values they define."
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:2 of
+msgid "Define how the connection between two line segments is drawn."
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:4 of
+msgid ""
+"For a visual impression of each *JoinStyle*, `view these docs online "
+"<JoinStyle>`, or run `JoinStyle.demo`."
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:7 of
+msgid ""
+"Lines in Matplotlib are typically defined by a 1D `~.path.Path` and a "
+"finite ``linewidth``, where the underlying 1D `~.path.Path` represents "
+"the center of the stroked line."
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:11 of
+msgid ""
+"By default, `~.backend_bases.GraphicsContextBase` defines the boundaries "
+"of a stroked line to simply be every point within some radius, "
+"``linewidth/2``, away from any point of the center line. However, this "
+"results in corners appearing \"rounded\", which may not be the desired "
+"behavior if you are drawing, for example, a polygon or pointed star."
+msgstr ""
+
+#: matplotlib._enums.CapStyle:12 matplotlib._enums.JoinStyle:17 of
+msgid "**Supported values:**"
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:24 of
+msgid "'miter'"
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:22 of
+msgid ""
+"the \"arrow-tip\" style. Each boundary of the filled-in area will extend "
+"in a straight line parallel to the tangent vector of the centerline at "
+"the point it meets the corner, until they meet in a sharp point."
+msgstr ""
+
+#: matplotlib._enums.CapStyle:22 matplotlib._enums.JoinStyle:27 of
+msgid "'round'"
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:27 of
+msgid "stokes every point within a radius of ``linewidth/2`` of the center lines."
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:30 of
+msgid "'bevel'"
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:30 of
+msgid ""
+"the \"squared-off\" style. It can be thought of as a rounded corner where"
+" the \"circular\" part of the corner has been cut off."
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:35 of
+msgid ""
+"Very long miter tips are cut off (to form a *bevel*) after a backend-"
+"dependent limit called the \"miter limit\", which specifies the maximum "
+"allowed ratio of miter length to line width. For example, the PDF backend"
+" uses the default value of 10 specified by the PDF standard, while the "
+"SVG backend does not even specify the miter limit, resulting in a default"
+" value of 4 per the SVG specification. Matplotlib does not currently "
+"allow the user to adjust this parameter."
+msgstr ""
+
+#: matplotlib._enums.JoinStyle:43 of
+msgid ""
+"A more detailed description of the effect of a miter limit can be found "
+"in the `Mozilla Developer Docs <https://developer.mozilla.org/en-"
+"US/docs/Web/SVG/Attribute/stroke-miterlimit>`_"
+msgstr ""
+
+#: ../../api/_enums_api.rst:7
+msgid ""
+"(`Source code <../api/_enums_api-1.py>`__, `png "
+"<../api/_enums_api-1.png>`__, `pdf <../api/_enums_api-1.pdf>`__)"
+msgstr ""
+
+msgid "Demo of possible JoinStyle's"
+msgstr ""
+
+#: matplotlib._enums.JoinStyle.demo:2 of
+msgid "Demonstrate how each JoinStyle looks for various join angles."
+msgstr ""
+
+#: matplotlib._enums.CapStyle:2 of
+msgid "Define how the two endpoints (caps) of an unclosed line are drawn."
+msgstr ""
+
+#: matplotlib._enums.CapStyle:4 of
+msgid ""
+"How to draw the start and end points of lines that represent a closed "
+"curve (i.e. that end in a `~.path.Path.CLOSEPOLY`) is controlled by the "
+"line's `JoinStyle`. For all other lines, how the start and end points are"
+" drawn is controlled by the *CapStyle*."
+msgstr ""
+
+#: matplotlib._enums.CapStyle:9 of
+msgid ""
+"For a visual impression of each *CapStyle*, `view these docs online "
+"<CapStyle>` or run `CapStyle.demo`."
+msgstr ""
+
+#: matplotlib._enums.CapStyle:16 of
+msgid "'butt'"
+msgstr ""
+
+#: matplotlib._enums.CapStyle:17 of
+msgid "the line is squared off at its endpoint."
+msgstr ""
+
+#: matplotlib._enums.CapStyle:19 of
+msgid "'projecting'"
+msgstr ""
+
+#: matplotlib._enums.CapStyle:19 of
+msgid ""
+"the line is squared off as in *butt*, but the filled in area extends "
+"beyond the endpoint a distance of ``linewidth/2``."
+msgstr ""
+
+#: matplotlib._enums.CapStyle:22 of
+msgid ""
+"like *butt*, but a semicircular cap is added to the end of the line, of "
+"radius ``linewidth/2``."
+msgstr ""
+
+#: ../../api/_enums_api.rst:7
+msgid ""
+"(`Source code <../api/_enums_api-2.py>`__, `png "
+"<../api/_enums_api-2.png>`__, `pdf <../api/_enums_api-2.pdf>`__)"
+msgstr ""
+
+msgid "Demo of possible CapStyle's"
+msgstr ""
+
+#: matplotlib._enums.CapStyle.demo:2 of
+msgid "Demonstrate how each CapStyle looks for a thick line segment."
+msgstr ""
+

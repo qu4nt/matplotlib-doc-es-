@@ -1,0 +1,819 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.rst:2
+msgid "matplotlib.axes.Axes.legend"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:2 of
+msgid "Place a legend on the Axes."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:4 of
+msgid "Call signatures::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:11 of
+msgid ""
+"The call signatures correspond to the following different ways to use "
+"this method:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:14 of
+msgid "**1. Automatic detection of elements to be shown in the legend**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:16 of
+msgid ""
+"The elements to be added to the legend are automatically determined, when"
+" you do not pass in any extra arguments."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:19 of
+msgid ""
+"In this case, the labels are taken from the artist. You can specify them "
+"either at artist creation or by calling the :meth:`~.Artist.set_label` "
+"method on the artist::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:26 of
+msgid "or::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:32 of
+msgid ""
+"Specific lines can be excluded from the automatic legend element "
+"selection by defining a label starting with an underscore. This is "
+"default for all artists, so calling `.Axes.legend` without any arguments "
+"and without setting the labels manually will result in no legend being "
+"drawn."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:38 of
+msgid "**2. Explicitly listing the artists and labels in the legend**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:40 of
+msgid ""
+"For full control of which artists have a legend entry, it is possible to "
+"pass an iterable of legend artists followed by an iterable of legend "
+"labels respectively::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:46 of
+msgid "**3. Explicitly listing the artists in the legend**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:48 of
+msgid ""
+"This is similar to 2, but the labels are taken from the artists' label "
+"properties. Example::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:55 of
+msgid "**4. Labeling existing plot elements**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:57 of
+msgid "Discouraged"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:59 of
+msgid ""
+"This call signature is discouraged, because the relation between plot "
+"elements and labels is only implicit by their order and can easily be "
+"mixed up."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:63 of
+msgid ""
+"To make a legend for all artists on an Axes, call this function with an "
+"iterable of strings, one for each legend item. For example::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:79 of
+msgid "**handles** : sequence of `.Artist`, optional"
+msgstr ""
+
+#: of
+msgid "sequence of"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:73 of
+msgid ""
+"A list of Artists (lines, patches) to be added to the legend. Use this "
+"together with *labels*, if you need full control on what is shown in the "
+"legend and the automatic mechanism described above is not sufficient."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:78 of
+msgid ""
+"The length of handles and labels should be the same in this case. If they"
+" are not, they are truncated to the smaller length."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:85 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "list of str, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:82 of
+msgid ""
+"A list of labels to show next to the artists. Use this together with "
+"*handles*, if you need full control on what is shown in the legend and "
+"the automatic mechanism described above is not sufficient."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:92 of
+msgid "`~matplotlib.legend.Legend`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:137 of
+msgid ""
+"**loc** : str or pair of floats, default: :rc:`legend.loc` ('best' for "
+"axes, 'upper right' for figures)"
+msgstr ""
+
+#: of
+msgid "str or pair of floats, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:97 of
+msgid "The location of the legend."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:99 of
+msgid ""
+"The strings ``'upper left', 'upper right', 'lower left', 'lower right'`` "
+"place the legend at the corresponding corner of the axes/figure."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:103 of
+msgid ""
+"The strings ``'upper center', 'lower center', 'center left', 'center "
+"right'`` place the legend at the center of the corresponding edge of the "
+"axes/figure."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:108 of
+msgid ""
+"The string ``'center'`` places the legend at the center of the "
+"axes/figure."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:110 of
+msgid ""
+"The string ``'best'`` places the legend at the location, among the nine "
+"locations defined so far, with the minimum overlap with other drawn "
+"artists.  This option can be quite slow for plots with large amounts of "
+"data; your plotting speed may benefit from providing a specific location."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:115 of
+msgid ""
+"The location can also be a 2-tuple giving the coordinates of the lower-"
+"left corner of the legend in axes coordinates (in which case "
+"*bbox_to_anchor* will be ignored)."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:119 of
+msgid ""
+"For back-compatibility, ``'center right'`` (but no other location) can "
+"also be spelled ``'right'``, and each \"string\" locations can also be "
+"given as a numeric value:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:124 of
+msgid "Location String"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:124 of
+msgid "Location Code"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:126 of
+msgid "'best'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:126 of
+msgid "0"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:127 of
+msgid "'upper right'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:127 of
+msgid "1"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:128 of
+msgid "'upper left'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:128 of
+msgid "2"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:129 of
+msgid "'lower left'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:129 of
+msgid "3"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:130 of
+msgid "'lower right'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:130 of
+msgid "4"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:131 of
+msgid "'right'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:131 of
+msgid "5"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:132 of
+msgid "'center left'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:132 of
+msgid "6"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:133 of
+msgid "'center right'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:133 of
+msgid "7"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:134 of
+msgid "'lower center'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:134 of
+msgid "8"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:135 of
+msgid "'upper center'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:135 of
+msgid "9"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:136 of
+msgid "'center'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:136 of
+msgid "10"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:160 of
+msgid "**bbox_to_anchor** : `.BboxBase`, 2-tuple, or 4-tuple of floats"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:159 of
+msgid "BboxBase, 2-tuple, or 4-tuple of floats"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:140 of
+msgid ""
+"Box that is used to position the legend in conjunction with *loc*. "
+"Defaults to `axes.bbox` (if called as a method to `.Axes.legend`) or "
+"`figure.bbox` (if `.Figure.legend`).  This argument allows arbitrary "
+"placement of the legend."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:145 of
+msgid ""
+"Bbox coordinates are interpreted in the coordinate system given by "
+"*bbox_transform*, with the default transform Axes or Figure coordinates, "
+"depending on which ``legend`` is called."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:149 of
+msgid ""
+"If a 4-tuple or `.BboxBase` is given, then it specifies the bbox ``(x, y,"
+" width, height)`` that the legend is placed in. To put the legend in the "
+"best location in the bottom right quadrant of the axes (or figure)::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:156 of
+msgid ""
+"A 2-tuple ``(x, y)`` places the corner of the legend specified by *loc* "
+"at x, y.  For example, to put the legend's upper right-hand corner in the"
+" center of the axes (or figure) the following keywords can be used::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:163 of
+msgid "**ncol**"
+msgstr ""
+
+#: of
+msgid "int, default: 1"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:163 of
+msgid "The number of columns that the legend has."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:167 of
+msgid "**prop** : None or `matplotlib.font_manager.FontProperties` or dict"
+msgstr ""
+
+#: of
+msgid "None or"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:166 of
+msgid ""
+"The font properties of the legend. If None (default), the current "
+":data:`matplotlib.rcParams` will be used."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:172 of
+msgid "**fontsize**"
+msgstr ""
+
+#: of
+msgid ""
+"int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', "
+"'xx-large'}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:170 of
+msgid ""
+"The font size of the legend. If the value is numeric the size will be the"
+" absolute font size in points. String values are relative to the current "
+"default font size. This argument is only used if *prop* is not specified."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:181 of
+msgid "**labelcolor** : str or list, default: :rc:`legend.labelcolor`"
+msgstr ""
+
+#: of
+msgid "str or list, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:175 of
+msgid ""
+"The color of the text in the legend. Either a valid color string (for "
+"example, 'red'), or a list of color strings. The labelcolor can also be "
+"made to match the color of the line or marker using 'linecolor', "
+"'markerfacecolor' (or 'mfc'), or 'markeredgecolor' (or 'mec')."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:180 of
+msgid ""
+"Labelcolor can be set globally using :rc:`legend.labelcolor`. If None, "
+"use :rc:`text.color`."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:185 of
+msgid "**numpoints** : int, default: :rc:`legend.numpoints`"
+msgstr ""
+
+#: of
+msgid "int, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:184 of
+msgid ""
+"The number of marker points in the legend when creating a legend entry "
+"for a `.Line2D` (line)."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:189 of
+msgid "**scatterpoints** : int, default: :rc:`legend.scatterpoints`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:188 of
+msgid ""
+"The number of marker points in the legend when creating a legend entry "
+"for a `.PathCollection` (scatter plot)."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:195 of
+msgid ""
+"**scatteryoffsets** : iterable of floats, default: ``[0.375, 0.5, "
+"0.3125]``"
+msgstr ""
+
+#: of
+msgid "iterable of floats, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:192 of
+msgid ""
+"The vertical offset (relative to the font size) for the markers created "
+"for a scatter plot legend entry. 0.0 is at the base the legend text, and "
+"1.0 is at the top. To draw all markers at the same height, set to "
+"``[0.5]``."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:199 of
+msgid "**markerscale** : float, default: :rc:`legend.markerscale`"
+msgstr ""
+
+#: of
+msgid "float, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:198 of
+msgid ""
+"The relative size of legend markers compared with the originally drawn "
+"ones."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:203 of
+msgid "**markerfirst**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:202 of
+msgid ""
+"If *True*, legend marker is placed to the left of the legend label. If "
+"*False*, legend marker is placed to the right of the legend label."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:206 of
+msgid "**frameon** : bool, default: :rc:`legend.frameon`"
+msgstr ""
+
+#: of
+msgid "bool, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:206 of
+msgid "Whether the legend should be drawn on a patch (frame)."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:210 of
+msgid "**fancybox** : bool, default: :rc:`legend.fancybox`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:209 of
+msgid ""
+"Whether round edges should be enabled around the `.FancyBboxPatch` which "
+"makes up the legend's background."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:213 of
+msgid "**shadow** : bool, default: :rc:`legend.shadow`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:213 of
+msgid "Whether to draw a shadow behind the legend."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:218 of
+msgid "**framealpha** : float, default: :rc:`legend.framealpha`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:216 of
+msgid ""
+"The alpha transparency of the legend's background. If *shadow* is "
+"activated and *framealpha* is ``None``, the default value is ignored."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:222 of
+msgid "**facecolor** : \"inherit\" or color, default: :rc:`legend.facecolor`"
+msgstr ""
+
+#: of
+msgid "\"inherit\" or color, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:221 of
+msgid ""
+"The legend's background color. If ``\"inherit\"``, use "
+":rc:`axes.facecolor`."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:226 of
+msgid "**edgecolor** : \"inherit\" or color, default: :rc:`legend.edgecolor`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:225 of
+msgid ""
+"The legend's background patch edge color. If ``\"inherit\"``, use take "
+":rc:`axes.edgecolor`."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:231 of
+msgid "**mode**"
+msgstr ""
+
+#: of
+msgid "{\"expand\", None}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:229 of
+msgid ""
+"If *mode* is set to ``\"expand\"`` the legend will be horizontally "
+"expanded to fill the axes area (or *bbox_to_anchor* if defines the "
+"legend's size)."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:236 of
+msgid "**bbox_transform** : None or `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:234 of
+msgid ""
+"The transform for the bounding box (*bbox_to_anchor*). For a value of "
+"``None`` (default) the Axes' :data:`~matplotlib.axes.Axes.transAxes` "
+"transform will be used."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:239 of
+msgid "**title**"
+msgstr ""
+
+#: of
+msgid "str or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:239 of
+msgid "The legend's title. Default is no title (``None``)."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:244 of
+msgid ""
+"**title_fontproperties** : None or "
+"`matplotlib.font_manager.FontProperties` or dict"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:242 of
+msgid ""
+"The font properties of the legend's title. If None (default), the "
+"*title_fontsize* argument will be used if present; if *title_fontsize* is"
+" also None, the current :rc:`legend.title_fontsize` will be used."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:250 of
+msgid ""
+"**title_fontsize** : int or {'xx-small', 'x-small', 'small', 'medium', "
+"'large', 'x-large', 'xx-large'}, default: :rc:`legend.title_fontsize`"
+msgstr ""
+
+#: of
+msgid ""
+"int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', "
+"'xx-large'}, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:247 of
+msgid ""
+"The font size of the legend's title. Note: This cannot be combined with "
+"*title_fontproperties*. If you want to set the fontsize alongside other "
+"font properties, use the *size* parameter in *title_fontproperties*."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:253 of
+msgid "**borderpad** : float, default: :rc:`legend.borderpad`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:253 of
+msgid "The fractional whitespace inside the legend border, in font-size units."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:256 of
+msgid "**labelspacing** : float, default: :rc:`legend.labelspacing`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:256 of
+msgid "The vertical space between the legend entries, in font-size units."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:259 of
+msgid "**handlelength** : float, default: :rc:`legend.handlelength`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:259 of
+msgid "The length of the legend handles, in font-size units."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:262 of
+msgid "**handleheight** : float, default: :rc:`legend.handleheight`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:262 of
+msgid "The height of the legend handles, in font-size units."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:265 of
+msgid "**handletextpad** : float, default: :rc:`legend.handletextpad`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:265 of
+msgid "The pad between the legend handle and text, in font-size units."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:268 of
+msgid "**borderaxespad** : float, default: :rc:`legend.borderaxespad`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:268 of
+msgid "The pad between the axes and legend border, in font-size units."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:271 of
+msgid "**columnspacing** : float, default: :rc:`legend.columnspacing`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:271 of
+msgid "The spacing between columns, in font-size units."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:279 of
+msgid "**handler_map**"
+msgstr ""
+
+#: of
+msgid "dict or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:274 of
+msgid ""
+"The custom dictionary mapping instances or types to a legend handler. "
+"This *handler_map* updates the default handler map found at "
+"`matplotlib.legend.Legend.get_legend_handler_map`."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:284 of
+msgid ":obj:`.Figure.legend`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:288 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:289 of
+msgid ""
+"Some artists are not supported by this function.  See "
+":doc:`/tutorials/intermediate/legend_guide` for details."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.legend:294 of
+msgid "Examples"
+msgstr ""
+
+#: ../../gallery/text_labels_and_annotations/legend.py:7
+msgid ""
+"(`Source code <../../gallery/text_labels_and_annotations/legend.py>`__, "
+"`png <../../gallery/text_labels_and_annotations/legend_00_00.png>`__, "
+"`pdf <../../gallery/text_labels_and_annotations/legend_00_00.pdf>`__)"
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.legend.examples:2
+msgid "Examples using ``matplotlib.axes.Axes.legend``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:10
+msgid "Fill Between and Alpha"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:10
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:18
+msgid ":ref:`sphx_glr_gallery_lines_bars_and_markers_fill_between_alpha.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:29
+msgid "Lines with a ticked patheffect"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:29
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:37
+msgid ":ref:`sphx_glr_gallery_lines_bars_and_markers_lines_with_ticks_demo.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:48
+msgid "prop_cycle property markevery in rcParams"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:48
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:56
+msgid ":ref:`sphx_glr_gallery_lines_bars_and_markers_markevery_prop_cycle.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:67
+msgid "Bar of pie"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:67
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:75
+msgid ":ref:`sphx_glr_gallery_pie_and_polar_charts_bar_of_pie.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:86
+msgid "Anatomy of a figure"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:86
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:94
+msgid ":ref:`sphx_glr_gallery_showcase_anatomy.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:105
+msgid "Legend Picking"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:105
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:113
+msgid ":ref:`sphx_glr_gallery_event_handling_legend_picking.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:124
+msgid "Plot 2D data on 3D plot"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:124
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:132
+msgid ":ref:`sphx_glr_gallery_mplot3d_2dcollections3d.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:143
+msgid "Basic Usage"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:143
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:151
+msgid ":ref:`sphx_glr_tutorials_introductory_usage.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:162
+msgid "Constrained Layout Guide"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:162
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:170
+msgid ":ref:`sphx_glr_tutorials_intermediate_constrainedlayout_guide.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:181
+msgid "Tight Layout guide"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:181
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:189
+msgid ":ref:`sphx_glr_tutorials_intermediate_tight_layout_guide.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:200
+msgid "Specifying Colors"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:200
+#: ../../api/_as_gen/matplotlib.axes.Axes.legend.examples:208
+msgid ":ref:`sphx_glr_tutorials_colors_colors.py`"
+msgstr ""
+

@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/sphinxext_plot_directive_api.rst:3
+msgid "``matplotlib.sphinxext.plot_directive``"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:2 of
+msgid "A directive for including a Matplotlib plot in a Sphinx document"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:4 of
+msgid ""
+"By default, in HTML output, `plot` will include a .png file with a link "
+"to a high-res .png and .pdf.  In LaTeX output, it will include a .pdf."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:7 of
+msgid "The source code for the plot may be included in one of three ways:"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:9 of
+msgid "**A path to a source file** as the argument to the directive::"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:13 of
+msgid ""
+"When a path to a source file is given, the content of the directive may "
+"optionally contain a caption for the plot::"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:20 of
+msgid ""
+"Additionally, one may specify the name of a function to call (with no "
+"arguments) immediately after importing the module::"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:25 of
+msgid "Included as **inline content** to the directive::"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:35 of
+msgid "Using **doctest** syntax::"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:44 of
+msgid "Options"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:46 of
+msgid "The ``plot`` directive supports the following options:"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:49 of
+msgid "format"
+msgstr ""
+
+#: of
+msgid "{'python', 'doctest'}"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:49 of
+msgid "The format of the input.  If unset, the format is auto-detected."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:54 of
+msgid "include-source"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:52 of
+msgid ""
+"Whether to display the source code. The default can be changed using the "
+"`plot_include_source` variable in :file:`conf.py` (which itself defaults "
+"to False)."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:59 of
+msgid "encoding"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:57 of
+msgid ""
+"If this source file is in a non-UTF8 or non-ASCII encoding, the encoding "
+"must be specified using the ``:encoding:`` option.  The encoding will not"
+" be inferred using the ``-*- coding -*-`` metacomment."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:68 of
+msgid "context"
+msgstr ""
+
+#: of
+msgid "bool or str"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:62 of
+msgid ""
+"If provided, the code will be run in the context of all previous plot "
+"directives for which the ``:context:`` option was specified.  This only "
+"applies to inline code plot directives, not those run from files. If the "
+"``:context: reset`` option is specified, the context is reset for this "
+"and future plots, and previous figures are closed prior to running the "
+"code. ``:context: close-figs`` keeps the context but closes previous "
+"figures before running the code."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:72 of
+msgid "nofigs"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:71 of
+msgid ""
+"If specified, the code block will be run, but no figures will be "
+"inserted.  This is usually useful with the ``:context:`` option."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:77 of
+msgid "caption"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:75 of
+msgid ""
+"If specified, the option's argument will be used as a caption for the "
+"figure. This overwrites the caption given in the content, when the plot "
+"is generated from a file."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:79 of
+msgid ""
+"Additionally, this directive supports all of the options of the `image` "
+"directive, except for *target* (since plot will add its own target).  "
+"These include *alt*, *height*, *width*, *scale*, *align* and *class*."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:84 of
+msgid "Configuration options"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:86 of
+msgid "The plot directive has the following configuration options:"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:89 of
+msgid "plot_include_source"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:89 of
+msgid "Default value for the include-source option (default: False)."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:92 of
+msgid "plot_html_show_source_link"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:92 of
+msgid "Whether to show a link to the source in HTML (default: True)."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:99 of
+msgid "plot_pre_code"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:95 of
+msgid ""
+"Code that should be executed before each plot. If None (the default), it "
+"will default to a string containing::"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:104 of
+msgid "plot_basedir"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:102 of
+msgid ""
+"Base directory, to which ``plot::`` file names are relative to. If None "
+"or empty (the default), file names are relative to the directory where "
+"the file containing the directive is."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:115 of
+msgid "plot_formats"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:107 of
+msgid ""
+"File formats to generate (default: ['png', 'hires.png', 'pdf']). List of "
+"tuples or strings::"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:112 of
+msgid ""
+"that determine the file format and the DPI. For entries whose DPI was "
+"omitted, sensible defaults are chosen. When passing from the command line"
+" through sphinx_build the list should be passed as suffix:dpi,suffix:dpi,"
+" ..."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:118 of
+msgid "plot_html_show_formats"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:118 of
+msgid "Whether to show links to the files in HTML (default: True)."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:122 of
+msgid "plot_rcparams"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:121 of
+msgid ""
+"A dictionary containing any non-standard rcParams that should be applied "
+"before each plot (default: {})."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:127 of
+msgid "plot_apply_rcparams"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:125 of
+msgid ""
+"By default, rcParams are applied when ``:context:`` option is not used in"
+" a plot directive.  If set, this configuration option overrides this "
+"behavior and applies rcParams before each plot."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:135 of
+msgid "plot_working_directory"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:130 of
+msgid ""
+"By default, the working directory will be changed to the directory of the"
+" example, so the code can get at its data files, if any.  Also its path "
+"will be added to `sys.path` so it can import any helper modules sitting "
+"beside it.  This configuration option can be used to specify a central "
+"directory (also added to `sys.path`) where data files and helper modules "
+"for all code are located."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:138 of
+msgid "plot_template"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive:138 of
+msgid "Provide a customized template for preparing restructured text."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.PlotDirective:2 of
+msgid "The ``.. plot::`` directive, as documented in the module's docstring."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.PlotDirective.run:2 of
+msgid "Run the plot directive."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.mark_plot_labels:2 of
+msgid ""
+"To make plots referenceable, we need to move the reference from the "
+"\"htmlonly\" (or \"latexonly\") node to the actual figure node itself."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.out_of_date:2 of
+msgid ""
+"Return whether *derived* is out-of-date relative to *original* or any of "
+"the RST files included in it using the RST include directive "
+"(*includes*). *derived* and *original* are full paths, and *includes* is "
+"optionally a list of full paths which may have been included in the "
+"*original*."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.render_figures:2 of
+msgid "Run a pyplot script and save the images in *output_dir*."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.render_figures:4 of
+msgid ""
+"Save the images under *output_dir* with file names derived from "
+"*output_base*"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.run_code:2 of
+msgid ""
+"[*Deprecated*] Import a Python module from a path, and run the function "
+"given by name, if function_name is not None."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.run_code:16
+#: matplotlib.sphinxext.plot_directive.split_code_at_show:15
+#: matplotlib.sphinxext.plot_directive.unescape_doctest:16 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.split_code_at_show:2 of
+msgid "[*Deprecated*] Split code at plt.show()."
+msgstr ""
+
+#: matplotlib.sphinxext.plot_directive.unescape_doctest:2 of
+msgid ""
+"[*Deprecated*] Extract code from a piece of text, which contains either "
+"Python code or doctests."
+msgstr ""
+

@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../devel/MEP/MEP15.rst:3
+msgid "MEP15: Fix axis autoscaling when limits are specified for one axis only"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:9
+msgid "Status"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:11
+msgid "**Discussion**"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:14
+msgid "Branches and Pull requests"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:16
+msgid "None so far."
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:19
+msgid "Abstract"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:21
+msgid ""
+"When one Axis of a 2-dimensional plot is overridden via `~.Axes.set_xlim`"
+" or `~.Axes.set_ylim`, automatic scaling of the remaining Axis should be "
+"based on the data that falls within the specified limits of the first "
+"Axis."
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:26
+msgid "Detailed description"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:28
+msgid ""
+"When axis limits for a 2-D plot are specified for one axis only (via "
+"`~.Axes.set_xlim` or `~.Axes.set_ylim`), matplotlib currently does not "
+"currently rescale the other axis.  The result is that the displayed "
+"curves or symbols may be compressed into a tiny portion of the available "
+"area, so that the final plot conveys much less information than it would "
+"with appropriate axis scaling."
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:34
+msgid ""
+"The proposed change of behavior would make matplotlib choose the scale "
+"for the remaining axis using only the data that falls within the limits "
+"for the axis where limits were specified."
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:39
+msgid "Implementation"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:41
+msgid ""
+"I don't know enough about the internals of matplotlib to be able to "
+"suggest an implementation."
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:45
+msgid "Backward compatibility"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:47
+msgid ""
+"From the standpoint of software interfaces, there would be no break in "
+"backward compatibility.  Some outputs would be different, but if the user"
+" truly desires the previous behavior, he/she can achieve this by "
+"overriding the axis scaling for both axes."
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:53
+msgid "Alternatives"
+msgstr ""
+
+#: ../../devel/MEP/MEP15.rst:55
+msgid "The only alternative that I can see is to maintain the status quo."
+msgstr ""
+

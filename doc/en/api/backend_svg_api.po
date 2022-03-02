@@ -1,0 +1,599 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/backend_svg_api.rst:2
+msgid ":mod:`.backend_svg`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG:1 of
+msgid "Bases: :py:class:`matplotlib.backend_bases.FigureCanvasBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.draw:2 of
+msgid "Render the `.Figure`."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.draw:4 of
+msgid ""
+"It is important that this method actually walk the artist tree even if "
+"not output is produced because this will trigger deferred work (like "
+"computing limits auto-limits and tick values) that users may want access "
+"to before saving to disk."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.get_default_filetype:2 of
+msgid ""
+"Return the default savefig file format as specified in "
+":rc:`savefig.format`."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.get_default_filetype:5 of
+msgid ""
+"The returned string does not include a period. This method is overridden "
+"in backends that only support a single file type."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text
+#: matplotlib.backends.backend_svg.XMLWriter
+#: matplotlib.backends.backend_svg.XMLWriter.close
+#: matplotlib.backends.backend_svg.XMLWriter.comment
+#: matplotlib.backends.backend_svg.XMLWriter.data
+#: matplotlib.backends.backend_svg.XMLWriter.end
+#: matplotlib.backends.backend_svg.XMLWriter.start of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:8 of
+msgid "**filename**"
+msgstr ""
+
+#: of
+msgid "str or path-like or file-like"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:8 of
+msgid "Output target; if a string, a file will be opened for writing."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:46 of
+msgid "**metadata**"
+msgstr ""
+
+#: of
+msgid "dict[str, Any], optional"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:11 of
+msgid ""
+"Metadata in the SVG file defined as key-value pairs of strings, "
+"datetimes, or lists of strings, e.g., ``{'Creator': 'My software', "
+"'Contributor': ['Me', 'My Friend'], 'Title': 'Awesome'}``."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:15 of
+msgid "The standard keys and their value types are:"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:17 of
+msgid ""
+"*str*: ``'Coverage'``, ``'Description'``, ``'Format'``, ``'Identifier'``,"
+" ``'Language'``, ``'Relation'``, ``'Source'``, ``'Title'``, and "
+"``'Type'``."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:20 of
+msgid ""
+"*str* or *list of str*: ``'Contributor'``, ``'Creator'``, ``'Keywords'``,"
+" ``'Publisher'``, and ``'Rights'``."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:22 of
+msgid ""
+"*str*, *date*, *datetime*, or *tuple* of same: ``'Date'``. If a "
+"non-*str*, then it will be formatted as ISO 8601."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:25 of
+msgid ""
+"Values have been predefined for ``'Creator'``, ``'Date'``, ``'Format'``, "
+"and ``'Type'``. They can be removed by setting them to `None`."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg:29 of
+msgid "Information is encoded as `Dublin Core Metadata`__."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG:1 of
+msgid "Bases: :py:class:`matplotlib.backend_bases.RendererBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.close_group:2 of
+msgid "Close a grouping element with label *s*."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.close_group:4
+#: matplotlib.backends.backend_svg.RendererSVG.open_group:4 of
+msgid "Only used by the SVG renderer."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:2 of
+msgid "Draw a Gouraud-shaded triangle."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:8
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:8
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:12
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:8 of
+msgid "**gc** : `.GraphicsContextBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:7
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:7
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:11
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:7 of
+msgid "GraphicsContextBase"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:8
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:12
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:8 of
+msgid "The graphics context."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:11
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles:8 of
+msgid "**points**"
+msgstr ""
+
+#: of
+msgid "(3, 2) array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:11 of
+msgid "Array of (x, y) points for the triangle."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:14
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles:11 of
+msgid "**colors**"
+msgstr ""
+
+#: of
+msgid "(3, 4) array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:14 of
+msgid "RGBA colors for each point of the triangle."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:30
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles:27 of
+msgid "**transform** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:29
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles:26
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:14
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:30 of
+msgid "matplotlib.transforms.Transform"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle:17
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles:14 of
+msgid "An affine transform to apply to the points."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles:2 of
+msgid "Draw a series of Gouraud triangles."
+msgstr ""
+
+#: of
+msgid "(N, 3, 2) array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles:8 of
+msgid "Array of *N* (x, y) points for the triangles."
+msgstr ""
+
+#: of
+msgid "(N, 3, 4) array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles:11 of
+msgid "Array of *N* RGBA colors for each point of the triangles."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:2 of
+msgid "Draw an RGBA image."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:8 of
+msgid "A graphics context with clipping information."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:12
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:11 of
+msgid "**x**"
+msgstr ""
+
+#: of
+msgid "scalar"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:11 of
+msgid ""
+"The distance in physical units (i.e., dots or pixels) from the left hand "
+"side of the canvas."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:16
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:14 of
+msgid "**y**"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:15 of
+msgid ""
+"The distance in physical units (i.e., dots or pixels) from the bottom "
+"side of the canvas."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:19 of
+msgid "**im**"
+msgstr ""
+
+#: of
+msgid "(N, M, 4) array-like of np.uint8"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:19 of
+msgid "An array of RGBA pixels."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:43 of
+msgid "**transform** : `matplotlib.transforms.Affine2DBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:42 of
+msgid "matplotlib.transforms.Affine2DBase"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_image:22 of
+msgid ""
+"If and only if the concrete backend is written such that "
+":meth:`option_scale_image` returns ``True``, an affine transformation "
+"(i.e., an `.Affine2DBase`) *may* be passed to :meth:`draw_image`.  The "
+"translation vector of the transformation is given in physical units "
+"(i.e., dots or pixels). Note that the transformation does not override "
+"*x* and *y*, and has to be applied *before* translating the result by *x*"
+" and *y* (this can be accomplished by adding *x* and *y* to the "
+"translation vector defined by *transform*)."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:2 of
+msgid "Draw a marker at each of *path*'s vertices (excluding control points)."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:4 of
+msgid ""
+"This provides a fallback implementation of draw_markers that makes "
+"multiple calls to :meth:`draw_path`.  Some backends may want to override "
+"this method in order to draw the marker only once and reuse it multiple "
+"times."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:15 of
+msgid "**marker_trans** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:15 of
+msgid "An affine transform applied to the marker."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:31 of
+msgid "**trans** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_markers:18 of
+msgid "An affine transform applied to the path."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_path:2 of
+msgid "Draw a `~.path.Path` instance using the given affine transform."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_path_collection:2 of
+msgid ""
+"Draw a collection of paths selecting drawing properties from the lists "
+"*facecolors*, *edgecolors*, *linewidths*, *linestyles* and "
+"*antialiaseds*. *offsets* is a list of offsets to apply to each of the "
+"paths.  The offsets in *offsets* are first transformed by *offsetTrans* "
+"before being applied."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_path_collection:9 of
+msgid ""
+"*offset_position* is unused now, but the argument is kept for backwards "
+"compatibility."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_path_collection:12 of
+msgid ""
+"This provides a fallback implementation of :meth:`draw_path_collection` "
+"that makes multiple calls to :meth:`draw_path`.  Some backends may want "
+"to override this in order to render each set of path data only once, and "
+"then reference that path multiple times with the different offsets, "
+"colors, styles etc.  The generator methods "
+":meth:`_iter_collection_raw_paths` and :meth:`_iter_collection` are "
+"provided to help with (and standardize) the implementation across "
+"backends.  It is highly recommended to use those generators, so that "
+"changes to the behavior of :meth:`draw_path_collection` can be made "
+"globally."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:2 of
+msgid "Draw the text instance."
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:11 of
+msgid "The x location of the text in display coords."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:14 of
+msgid "The y location of the text baseline in display coords."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:17 of
+msgid "**s**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:17 of
+msgid "The text string."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:20 of
+msgid "**prop** : `matplotlib.font_manager.FontProperties`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:19 of
+msgid "matplotlib.font_manager.FontProperties"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:20 of
+msgid "The font properties."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:23 of
+msgid "**angle**"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:23 of
+msgid "The rotation angle in degrees anti-clockwise."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:34 of
+msgid "**mtext** : `matplotlib.text.Text`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:33 of
+msgid "matplotlib.text.Text"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:26 of
+msgid "The original text object to be rendered."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:37 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:38 of
+msgid "**Note for backend implementers:**"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:40 of
+msgid ""
+"When you are trying to determine if you have gotten your bounding box "
+"right (which is what enables the text layout/alignment to work properly),"
+" it helps to change the line in text.py::"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.draw_text:46 of
+msgid ""
+"to if 1, and then the actual bounding box will be plotted along with your"
+" text."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.flipy:2 of
+msgid "Return whether y values increase from top to bottom."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.flipy:4 of
+msgid "Note that this only affects drawing of texts and images."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.get_canvas_width_height:2 of
+msgid "Return the canvas width and height in display coords."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.get_image_magnification:2 of
+msgid ""
+"Get the factor by which to magnify images passed to :meth:`draw_image`. "
+"Allows a backend to have images at a different resolution to other "
+"artists."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.get_text_width_height_descent:2
+#: of
+msgid ""
+"Get the width, height, and descent (offset from the bottom to the "
+"baseline), in display coords, of the string *s* with `.FontProperties` "
+"*prop*."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.open_group:2 of
+msgid "Open a grouping element with label *s* and *gid* (if set) as id."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.option_image_nocomposite:2 of
+msgid "Return whether image composition by Matplotlib should be skipped."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.option_image_nocomposite:4 of
+msgid ""
+"Raster backends should usually return False (letting the C-level "
+"rasterizer take care of image composition); vector backends should "
+"usually return ``not rcParams[\"image.composite_image\"]``."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.RendererSVG.option_scale_image:2 of
+msgid ""
+"Return whether arbitrary affine transformations in :meth:`draw_image` are"
+" supported (True for most vector backends)."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter:21 of
+msgid "**file**"
+msgstr ""
+
+#: of
+msgid "writable text file-like object"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.close:2 of
+msgid ""
+"Close open elements, up to (and including) the element identified by the "
+"given identifier."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.close:22 of
+msgid "**id**"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.close:9 of
+msgid "Element identifier, as returned by the :meth:`start` method."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.comment:2 of
+msgid "Add a comment to the output stream."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.comment:21 of
+msgid "**comment**"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.comment:8 of
+msgid "Comment text."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.data:2 of
+msgid "Add character data to the output stream."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.data:21 of
+msgid "**text**"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.data:8 of
+msgid "Character data."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.element:2 of
+msgid ""
+"Add an entire element.  This is the same as calling :meth:`start`, "
+":meth:`data`, and :meth:`end` in sequence. The *text* argument can be "
+"omitted."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.end:2 of
+msgid ""
+"Close the current element (opened by the most recent call to "
+":meth:`start`)."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.end:23
+#: matplotlib.backends.backend_svg.XMLWriter.start:11 of
+msgid "**tag**"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.end:9 of
+msgid ""
+"Element tag.  If given, the tag must match the start tag.  If omitted, "
+"the current element is closed."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.flush:2 of
+msgid "Flush the output stream."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.start:2 of
+msgid ""
+"Open a new element.  Attributes can be given as keyword arguments, or as "
+"a string/string dictionary. The method returns an opaque identifier that "
+"can be passed to the :meth:`close` method, to close all open elements up "
+"to and including this one."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.start:11 of
+msgid "Element tag."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.start:15 of
+msgid "**attrib**"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.start:14 of
+msgid ""
+"Attribute dictionary.  Alternatively, attributes can be given as keyword "
+"arguments."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.start of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.backends.backend_svg.XMLWriter.start:32 of
+msgid "An element identifier."
+msgstr ""
+
+#: matplotlib.backends.backend_svg.short_float_fmt:2 of
+#, python-format
+msgid ""
+"Create a short string representation of a float, which is %f formatting "
+"with trailing zeros and the decimal point removed."
+msgstr ""
+

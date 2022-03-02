@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:3
+msgid "API Changes in 2.0.1"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:6
+msgid "Extensions to `matplotlib.backend_bases.GraphicsContextBase`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:8
+msgid ""
+"To better support controlling the color of hatches, the method "
+"`matplotlib.backend_bases.GraphicsContextBase.set_hatch_color` was added "
+"to the expected API of ``GraphicsContext`` classes.  Calls to this method"
+" are currently wrapped with a ``try:...except Attribute:`` block to "
+"preserve back-compatibility with any third-party backends which do not "
+"extend `~matplotlib.backend_bases.GraphicsContextBase`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:15
+msgid ""
+"This value can be accessed in the backends via "
+"`matplotlib.backend_bases.GraphicsContextBase.get_hatch_color` (which was"
+" added in 2.0 see :ref:`gc_get_hatch_color_wn`) and should be used to "
+"color the hatches."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:20
+msgid ""
+"In the future there may also be ``hatch_linewidth`` and ``hatch_density``"
+" related methods added.  It is encouraged, but not required that third-"
+"party backends extend `~matplotlib.backend_bases.GraphicsContextBase` to "
+"make adapting to these changes easier."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:28
+msgid ""
+"``afm.get_fontconfig_fonts`` returns a list of paths and does not check "
+"for existence"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:30
+msgid ""
+"``afm.get_fontconfig_fonts`` used to return a set of paths encoded as a "
+"``{key: 1, ...}`` dict, and checked for the existence of the paths.  It "
+"now returns a list and dropped the existence check, as the same check is "
+"performed by the caller (``afm.findSystemFonts``) as well."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:37
+msgid ""
+"``bar`` now returns rectangles of negative height or width if the "
+"corresponding input is negative"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:39
+msgid ""
+"`.pyplot.bar` used to normalize the coordinates of the rectangles that it"
+" created, to keep their height and width positives, even if the "
+"corresponding input was negative.  This normalization has been removed to"
+" permit a simpler computation of the correct `.Artist.sticky_edges` to "
+"use."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:46
+msgid "Do not clip line width when scaling dashes"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:48
+msgid ""
+"The algorithm to scale dashes was changed to no longer clip the scaling "
+"factor: the dash patterns now continue to shrink at thin line widths. If "
+"the line width is smaller than the effective pixel size, this may result "
+"in dashed lines turning into solid gray-ish lines.  This also required "
+"slightly tweaking the default patterns for '--', ':', and '.-' so that "
+"with the default line width the final patterns would not change."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:55
+msgid "There is no way to restore the old behavior."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:59
+msgid "Deprecate 'Vega' colormaps"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_2.0.1.rst:61
+msgid ""
+"The \"Vega\" colormaps are deprecated in Matplotlib 2.0.1 and will be "
+"removed in Matplotlib 2.2. Use the \"tab\" colormaps instead: \"tab10\", "
+"\"tab20\", \"tab20b\", \"tab20c\"."
+msgstr ""
+

@@ -1,0 +1,2470 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/axes_api.rst:3
+msgid "``matplotlib.axes``"
+msgstr ""
+
+#: ../../api/axes_api.rst:11
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../api/axes_api.rst:18
+msgid "Inheritance"
+msgstr ""
+
+#: ../../api/axes_api.rst:23
+msgid "The Axes class"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:1 of
+msgid "Bases: :py:class:`matplotlib.axes._base._AxesBase`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:2 of
+msgid ""
+"The `Axes` contains most of the figure elements: `~.axis.Axis`, "
+"`~.axis.Tick`, `~.lines.Line2D`, `~.text.Text`, `~.patches.Polygon`, "
+"etc., and sets the coordinate system."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:6 of
+msgid ""
+"The `Axes` instance supports callbacks through a callbacks attribute "
+"which is a `~.cbook.CallbackRegistry` instance.  The events you can "
+"connect to are 'xlim_changed' and 'ylim_changed' and the callback will be"
+" called with func(*ax*) where *ax* is the `Axes` instance."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:26 of
+msgid "**dataLim** : `.Bbox`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:25 matplotlib.axes._axes.Axes:29 of
+msgid "Bbox"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:26 of
+msgid "The bounding box enclosing all data displayed in the Axes."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:30 of
+msgid "**viewLim** : `.Bbox`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:29 of
+msgid "The view limits in data coordinates."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:36 of
+msgid "Build an Axes in a figure."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:42 of
+msgid "**fig** : `~matplotlib.figure.Figure`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:41 of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:42 of
+msgid "The Axes is built in the `.Figure` *fig*."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:46 of
+msgid "**rect**"
+msgstr ""
+
+#: of
+msgid "[left, bottom, width, height]"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:45 of
+msgid ""
+"The Axes is built in the rectangle *rect*. *rect* is in `.Figure` "
+"coordinates."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:50 of
+msgid "**sharex, sharey** : `~.axes.Axes`, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:49 of
+msgid "Axes, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:49 of
+msgid ""
+"The x or y `~.matplotlib.axis` is shared with the x or y axis in the "
+"input `~.axes.Axes`."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:53 of
+msgid "**frameon**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:53 of
+msgid "Whether the Axes frame is visible."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:57 of
+msgid "**box_aspect**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:56 of
+msgid ""
+"Set a fixed aspect for the Axes box, i.e. the ratio of height to width. "
+"See `~.axes.Axes.set_box_aspect` for details."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:118 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:60 of
+msgid "Other optional keyword arguments:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:66 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:66 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:68 of
+msgid ":meth:`adjustable <matplotlib.axes.Axes.set_adjustable>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:68 of
+msgid "{'box', 'datalim'}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:69 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:69 of
+msgid ""
+"a filter function, which takes a (m, n, 3) float array and a dpi value, "
+"and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:70 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:70 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:71 of
+msgid ":meth:`anchor <matplotlib.axes.Axes.set_anchor>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:71 of
+msgid "(float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:72 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:72 matplotlib.axes._axes.Axes:74
+#: matplotlib.axes._axes.Axes:75 matplotlib.axes._axes.Axes:76
+#: matplotlib.axes._axes.Axes:81 matplotlib.axes._axes.Axes:85
+#: matplotlib.axes._axes.Axes:87 matplotlib.axes._axes.Axes:89
+#: matplotlib.axes._axes.Axes:96 matplotlib.axes._axes.Axes:102 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:73 of
+msgid ":meth:`aspect <matplotlib.axes.Axes.set_aspect>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:73 of
+msgid "{'auto', 'equal'} or float"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:74 of
+msgid ":meth:`autoscale_on <matplotlib.axes.Axes.set_autoscale_on>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:75 of
+msgid ":meth:`autoscalex_on <matplotlib.axes.Axes.set_autoscalex_on>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:76 of
+msgid ":meth:`autoscaley_on <matplotlib.axes.Axes.set_autoscaley_on>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:77 of
+msgid ":meth:`axes_locator <matplotlib.axes.Axes.set_axes_locator>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:77 of
+msgid "Callable[[Axes, Renderer], Bbox]"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:78 of
+msgid ":meth:`axisbelow <matplotlib.axes.Axes.set_axisbelow>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:78 of
+msgid "bool or 'line'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:79 of
+msgid ":meth:`box_aspect <matplotlib.axes.Axes.set_box_aspect>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:79 matplotlib.axes._axes.Axes:95 of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:80 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:80 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:81 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:82 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:82 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:83 of
+msgid ":meth:`facecolor <matplotlib.axes.Axes.set_facecolor>` or fc"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:83 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:84 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:84 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:85 of
+msgid ":meth:`frame_on <matplotlib.axes.Axes.set_frame_on>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:86 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:86 matplotlib.axes._axes.Axes:99
+#: matplotlib.axes._axes.Axes:101 matplotlib.axes._axes.Axes:104
+#: matplotlib.axes._axes.Axes:111 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:87 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:88 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:88 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:89 of
+msgid ":meth:`navigate <matplotlib.axes.Axes.set_navigate>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:90 of
+msgid ":meth:`navigate_mode <matplotlib.axes.Axes.set_navigate_mode>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:90 matplotlib.axes._axes.Axes:94
+#: matplotlib.axes._axes.Axes:103 matplotlib.axes._axes.Axes:108
+#: matplotlib.axes._axes.Axes:109 matplotlib.axes._axes.Axes:110
+#: matplotlib.axes._axes.Axes:115 matplotlib.axes._axes.Axes:116 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:91 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:91 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:92 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:92 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:93 of
+msgid ":meth:`position <matplotlib.axes.Axes.set_position>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:93 of
+msgid "[left, bottom, width, height] or `~matplotlib.transforms.Bbox`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:94 of
+msgid ":meth:`prop_cycle <matplotlib.axes.Axes.set_prop_cycle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:95 of
+msgid ""
+":meth:`rasterization_zorder "
+"<matplotlib.axes.Axes.set_rasterization_zorder>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:96 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:97 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:97 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:98 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:98 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:99 of
+msgid ":meth:`title <matplotlib.axes.Axes.set_title>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:100 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:100 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:101 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:102 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:103 of
+msgid ":meth:`xbound <matplotlib.axes.Axes.set_xbound>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:104 of
+msgid ":meth:`xlabel <matplotlib.axes.Axes.set_xlabel>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:105 of
+msgid ":meth:`xlim <matplotlib.axes.Axes.set_xlim>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:105 matplotlib.axes._axes.Axes:112 of
+msgid "(bottom: float, top: float)"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:106 of
+msgid ":meth:`xmargin <matplotlib.axes.Axes.set_xmargin>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:106 matplotlib.axes._axes.Axes:113 of
+msgid "float greater than -0.5"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:107 of
+msgid ":meth:`xscale <matplotlib.axes.Axes.set_xscale>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:107 matplotlib.axes._axes.Axes:114 of
+msgid "{\"linear\", \"log\", \"symlog\", \"logit\", ...} or `.ScaleBase`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:108 of
+msgid ":meth:`xticklabels <matplotlib.axes.Axes.set_xticklabels>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:109 of
+msgid ":meth:`xticks <matplotlib.axes.Axes.set_xticks>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:110 of
+msgid ":meth:`ybound <matplotlib.axes.Axes.set_ybound>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:111 of
+msgid ":meth:`ylabel <matplotlib.axes.Axes.set_ylabel>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:112 of
+msgid ":meth:`ylim <matplotlib.axes.Axes.set_ylim>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:113 of
+msgid ":meth:`ymargin <matplotlib.axes.Axes.set_ymargin>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:114 of
+msgid ":meth:`yscale <matplotlib.axes.Axes.set_yscale>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:115 of
+msgid ":meth:`yticklabels <matplotlib.axes.Axes.set_yticklabels>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:116 of
+msgid ":meth:`yticks <matplotlib.axes.Axes.set_yticks>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:117 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:117 of
+msgid "float"
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary> matplotlib.axes._axes.Axes of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:135 of
+msgid "`~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes:123 of
+msgid "The new `~.axes.Axes` object."
+msgstr ""
+
+#: ../../api/axes_api.rst:32
+msgid "Subplots"
+msgstr ""
+
+#: ../../api/axes_api.rst:41:<autosummary>:1
+msgid ":py:obj:`SubplotBase <matplotlib.axes.SubplotBase>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:41:<autosummary>:1
+msgid ""
+"Base class for subplots, which are :class:`Axes` instances with "
+"additional methods to facilitate generating and manipulating a set of "
+":class:`Axes` within a figure."
+msgstr ""
+
+#: ../../api/axes_api.rst:41:<autosummary>:1
+msgid ":py:obj:`subplot_class_factory <matplotlib.axes.subplot_class_factory>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:43
+msgid "Plotting"
+msgstr ""
+
+#: ../../api/axes_api.rst:46
+msgid "Basic"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.plot <matplotlib.axes.Axes.plot>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot y versus x as lines and/or markers."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.errorbar <matplotlib.axes.Axes.errorbar>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot y versus x as lines and/or markers with attached errorbars."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.scatter <matplotlib.axes.Axes.scatter>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "A scatter plot of *y* vs."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.plot_date <matplotlib.axes.Axes.plot_date>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot coercing the axis to treat floats as dates."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.step <matplotlib.axes.Axes.step>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Make a step plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.loglog <matplotlib.axes.Axes.loglog>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Make a plot with log scaling on both the x and y axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.semilogx <matplotlib.axes.Axes.semilogx>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Make a plot with log scaling on the x axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.semilogy <matplotlib.axes.Axes.semilogy>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Make a plot with log scaling on the y axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.fill_between <matplotlib.axes.Axes.fill_between>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Fill the area between two horizontal curves."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.fill_betweenx <matplotlib.axes.Axes.fill_betweenx>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Fill the area between two vertical curves."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.bar <matplotlib.axes.Axes.bar>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Make a bar plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.barh <matplotlib.axes.Axes.barh>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Make a horizontal bar plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.bar_label <matplotlib.axes.Axes.bar_label>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Label a bar plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.stem <matplotlib.axes.Axes.stem>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Create a stem plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.eventplot <matplotlib.axes.Axes.eventplot>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot identical parallel lines at the given positions."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.pie <matplotlib.axes.Axes.pie>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot a pie chart."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.stackplot <matplotlib.axes.Axes.stackplot>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Draw a stacked area plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.broken_barh <matplotlib.axes.Axes.broken_barh>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot a horizontal sequence of rectangles."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.vlines <matplotlib.axes.Axes.vlines>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot vertical lines at each *x* from *ymin* to *ymax*."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.hlines <matplotlib.axes.Axes.hlines>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot horizontal lines at each *y* from *xmin* to *xmax*."
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid ":py:obj:`Axes.fill <matplotlib.axes.Axes.fill>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:83:<autosummary>:1
+msgid "Plot filled polygons."
+msgstr ""
+
+#: ../../api/axes_api.rst:85
+msgid "Spans"
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid ":py:obj:`Axes.axhline <matplotlib.axes.Axes.axhline>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid "Add a horizontal line across the axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid ":py:obj:`Axes.axhspan <matplotlib.axes.Axes.axhspan>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid "Add a horizontal span (rectangle) across the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid ":py:obj:`Axes.axvline <matplotlib.axes.Axes.axvline>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid "Add a vertical line across the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid ":py:obj:`Axes.axvspan <matplotlib.axes.Axes.axvspan>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid "Add a vertical span (rectangle) across the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid ":py:obj:`Axes.axline <matplotlib.axes.Axes.axline>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:97:<autosummary>:1
+msgid "Add an infinitely long straight line."
+msgstr ""
+
+#: ../../api/axes_api.rst:99
+msgid "Spectral"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ":py:obj:`Axes.acorr <matplotlib.axes.Axes.acorr>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot the autocorrelation of *x*."
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ":py:obj:`Axes.angle_spectrum <matplotlib.axes.Axes.angle_spectrum>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot the angle spectrum."
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ":py:obj:`Axes.cohere <matplotlib.axes.Axes.cohere>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot the coherence between *x* and *y*."
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ":py:obj:`Axes.csd <matplotlib.axes.Axes.csd>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot the cross-spectral density."
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ""
+":py:obj:`Axes.magnitude_spectrum "
+"<matplotlib.axes.Axes.magnitude_spectrum>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot the magnitude spectrum."
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ":py:obj:`Axes.phase_spectrum <matplotlib.axes.Axes.phase_spectrum>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot the phase spectrum."
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ":py:obj:`Axes.psd <matplotlib.axes.Axes.psd>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot the power spectral density."
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ":py:obj:`Axes.specgram <matplotlib.axes.Axes.specgram>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot a spectrogram."
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid ":py:obj:`Axes.xcorr <matplotlib.axes.Axes.xcorr>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:115:<autosummary>:1
+msgid "Plot the cross correlation between *x* and *y*."
+msgstr ""
+
+#: ../../api/axes_api.rst:117
+msgid "Statistics"
+msgstr ""
+
+#: ../../api/axes_api.rst:129:<autosummary>:1
+msgid ":py:obj:`Axes.boxplot <matplotlib.axes.Axes.boxplot>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:129:<autosummary>:1
+msgid "Draw a box and whisker plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:129:<autosummary>:1
+msgid ":py:obj:`Axes.violinplot <matplotlib.axes.Axes.violinplot>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:129:<autosummary>:1
+msgid "Make a violin plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:129:<autosummary>:1
+msgid ":py:obj:`Axes.violin <matplotlib.axes.Axes.violin>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:129:<autosummary>:1
+msgid "Drawing function for violin plots."
+msgstr ""
+
+#: ../../api/axes_api.rst:129:<autosummary>:1
+msgid ":py:obj:`Axes.bxp <matplotlib.axes.Axes.bxp>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:129:<autosummary>:1
+msgid "Drawing function for box and whisker plots."
+msgstr ""
+
+#: ../../api/axes_api.rst:131
+msgid "Binned"
+msgstr ""
+
+#: ../../api/axes_api.rst:142:<autosummary>:1
+msgid ":py:obj:`Axes.hexbin <matplotlib.axes.Axes.hexbin>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:142:<autosummary>:1
+msgid "Make a 2D hexagonal binning plot of points *x*, *y*."
+msgstr ""
+
+#: ../../api/axes_api.rst:142:<autosummary>:1
+msgid ":py:obj:`Axes.hist <matplotlib.axes.Axes.hist>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:142:<autosummary>:1
+msgid "Plot a histogram."
+msgstr ""
+
+#: ../../api/axes_api.rst:142:<autosummary>:1
+msgid ":py:obj:`Axes.hist2d <matplotlib.axes.Axes.hist2d>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:142:<autosummary>:1
+msgid "Make a 2D histogram plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:142:<autosummary>:1
+msgid ":py:obj:`Axes.stairs <matplotlib.axes.Axes.stairs>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:142:<autosummary>:1
+msgid ""
+"A stepwise constant function as a line with bounding edges or a filled "
+"plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:144
+msgid "Contours"
+msgstr ""
+
+#: ../../api/axes_api.rst:154:<autosummary>:1
+msgid ":py:obj:`Axes.clabel <matplotlib.axes.Axes.clabel>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:154:<autosummary>:1
+msgid "Label a contour plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:154:<autosummary>:1
+msgid ":py:obj:`Axes.contour <matplotlib.axes.Axes.contour>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:154:<autosummary>:1
+msgid "Plot contour lines."
+msgstr ""
+
+#: ../../api/axes_api.rst:154:<autosummary>:1
+msgid ":py:obj:`Axes.contourf <matplotlib.axes.Axes.contourf>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:154:<autosummary>:1
+msgid "Plot filled contours."
+msgstr ""
+
+#: ../../api/axes_api.rst:156
+msgid "2D arrays"
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid ":py:obj:`Axes.imshow <matplotlib.axes.Axes.imshow>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid "Display data as an image, i.e., on a 2D regular raster."
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid ":py:obj:`Axes.matshow <matplotlib.axes.Axes.matshow>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid "Plot the values of a 2D matrix or array as color-coded image."
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid ":py:obj:`Axes.pcolor <matplotlib.axes.Axes.pcolor>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid "Create a pseudocolor plot with a non-regular rectangular grid."
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid ":py:obj:`Axes.pcolorfast <matplotlib.axes.Axes.pcolorfast>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid ":py:obj:`Axes.pcolormesh <matplotlib.axes.Axes.pcolormesh>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid ":py:obj:`Axes.spy <matplotlib.axes.Axes.spy>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:169:<autosummary>:1
+msgid "Plot the sparsity pattern of a 2D array."
+msgstr ""
+
+#: ../../api/axes_api.rst:171
+msgid "Unstructured triangles"
+msgstr ""
+
+#: ../../api/axes_api.rst:183:<autosummary>:1
+msgid ":py:obj:`Axes.tripcolor <matplotlib.axes.Axes.tripcolor>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:183:<autosummary>:1
+msgid "Create a pseudocolor plot of an unstructured triangular grid."
+msgstr ""
+
+#: ../../api/axes_api.rst:183:<autosummary>:1
+msgid ":py:obj:`Axes.triplot <matplotlib.axes.Axes.triplot>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:183:<autosummary>:1
+msgid "Draw a unstructured triangular grid as lines and/or markers."
+msgstr ""
+
+#: ../../api/axes_api.rst:183:<autosummary>:1
+msgid ":py:obj:`Axes.tricontour <matplotlib.axes.Axes.tricontour>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:183:<autosummary>:1
+msgid "Draw contour lines on an unstructured triangular grid."
+msgstr ""
+
+#: ../../api/axes_api.rst:183:<autosummary>:1
+msgid ":py:obj:`Axes.tricontourf <matplotlib.axes.Axes.tricontourf>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:183:<autosummary>:1
+msgid "Draw contour regions on an unstructured triangular grid."
+msgstr ""
+
+#: ../../api/axes_api.rst:185
+msgid "Text and annotations"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ":py:obj:`Axes.annotate <matplotlib.axes.Axes.annotate>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid "Annotate the point *xy* with text *text*."
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ":py:obj:`Axes.text <matplotlib.axes.Axes.text>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid "Add text to the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ":py:obj:`Axes.table <matplotlib.axes.Axes.table>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid "Add a table to an `~.axes.Axes`."
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ":py:obj:`Axes.arrow <matplotlib.axes.Axes.arrow>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid "Add an arrow to the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ":py:obj:`Axes.inset_axes <matplotlib.axes.Axes.inset_axes>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid "Add a child inset Axes to this existing Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ":py:obj:`Axes.indicate_inset <matplotlib.axes.Axes.indicate_inset>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid "Add an inset indicator to the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ""
+":py:obj:`Axes.indicate_inset_zoom "
+"<matplotlib.axes.Axes.indicate_inset_zoom>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ""
+"Add an inset indicator rectangle to the Axes based on the axis limits for"
+" an *inset_ax* and draw connectors between *inset_ax* and the rectangle."
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ":py:obj:`Axes.secondary_xaxis <matplotlib.axes.Axes.secondary_xaxis>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid "Add a second x-axis to this Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid ":py:obj:`Axes.secondary_yaxis <matplotlib.axes.Axes.secondary_yaxis>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:202:<autosummary>:1
+msgid "Add a second y-axis to this Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:204
+msgid "Vector fields"
+msgstr ""
+
+#: ../../api/axes_api.rst:216:<autosummary>:1
+msgid ":py:obj:`Axes.barbs <matplotlib.axes.Axes.barbs>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:216:<autosummary>:1
+msgid "Plot a 2D field of barbs."
+msgstr ""
+
+#: ../../api/axes_api.rst:216:<autosummary>:1
+msgid ":py:obj:`Axes.quiver <matplotlib.axes.Axes.quiver>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:216:<autosummary>:1
+msgid "Plot a 2D field of arrows."
+msgstr ""
+
+#: ../../api/axes_api.rst:216:<autosummary>:1
+msgid ":py:obj:`Axes.quiverkey <matplotlib.axes.Axes.quiverkey>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:216:<autosummary>:1
+msgid "Add a key to a quiver plot."
+msgstr ""
+
+#: ../../api/axes_api.rst:216:<autosummary>:1
+msgid ":py:obj:`Axes.streamplot <matplotlib.axes.Axes.streamplot>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:216:<autosummary>:1
+msgid "Draw streamlines of a vector flow."
+msgstr ""
+
+#: ../../api/axes_api.rst:218
+msgid "Clearing"
+msgstr ""
+
+#: ../../api/axes_api.rst:228:<autosummary>:1
+msgid ":py:obj:`Axes.cla <matplotlib.axes.Axes.cla>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:228:<autosummary>:1
+msgid "Clear the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:228:<autosummary>:1
+msgid ":py:obj:`Axes.clear <matplotlib.axes.Axes.clear>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:230
+msgid "Appearance"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.axis <matplotlib.axes.Axes.axis>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Convenience method to get or set some axis properties."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.set_axis_off <matplotlib.axes.Axes.set_axis_off>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Turn the x- and y-axis off."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.set_axis_on <matplotlib.axes.Axes.set_axis_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Turn the x- and y-axis on."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.set_frame_on <matplotlib.axes.Axes.set_frame_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Set whether the Axes rectangle patch is drawn."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.get_frame_on <matplotlib.axes.Axes.get_frame_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Get whether the Axes rectangle patch is drawn."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.set_axisbelow <matplotlib.axes.Axes.set_axisbelow>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Set whether axis ticks and gridlines are above or below most artists."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.get_axisbelow <matplotlib.axes.Axes.get_axisbelow>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Get whether axis ticks and gridlines are above or below most artists."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.grid <matplotlib.axes.Axes.grid>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Configure the grid lines."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.get_facecolor <matplotlib.axes.Axes.get_facecolor>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Get the facecolor of the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid ":py:obj:`Axes.set_facecolor <matplotlib.axes.Axes.set_facecolor>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:253:<autosummary>:1
+msgid "Set the facecolor of the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:255
+msgid "Property cycle"
+msgstr ""
+
+#: ../../api/axes_api.rst:264:<autosummary>:1
+msgid ":py:obj:`Axes.set_prop_cycle <matplotlib.axes.Axes.set_prop_cycle>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:264:<autosummary>:1
+msgid "Set the property cycle of the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:266
+msgid "Axis / limits"
+msgstr ""
+
+#: ../../api/axes_api.rst:278:<autosummary>:1
+msgid ":py:obj:`Axes.get_xaxis <matplotlib.axes.Axes.get_xaxis>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:278:<autosummary>:1
+msgid "Return the XAxis instance."
+msgstr ""
+
+#: ../../api/axes_api.rst:278:<autosummary>:1
+msgid ":py:obj:`Axes.get_yaxis <matplotlib.axes.Axes.get_yaxis>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:278:<autosummary>:1
+msgid "Return the YAxis instance."
+msgstr ""
+
+#: ../../api/axes_api.rst:280
+msgid "Axis limits and direction"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.invert_xaxis <matplotlib.axes.Axes.invert_xaxis>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Invert the x-axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.xaxis_inverted <matplotlib.axes.Axes.xaxis_inverted>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Return whether the xaxis is oriented in the \"inverse\" direction."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.invert_yaxis <matplotlib.axes.Axes.invert_yaxis>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Invert the y-axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.yaxis_inverted <matplotlib.axes.Axes.yaxis_inverted>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Return whether the yaxis is oriented in the \"inverse\" direction."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.set_xlim <matplotlib.axes.Axes.set_xlim>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Set the x-axis view limits."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.get_xlim <matplotlib.axes.Axes.get_xlim>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Return the x-axis view limits."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.set_ylim <matplotlib.axes.Axes.set_ylim>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Set the y-axis view limits."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.get_ylim <matplotlib.axes.Axes.get_ylim>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Return the y-axis view limits."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.update_datalim <matplotlib.axes.Axes.update_datalim>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Extend the `~.Axes.dataLim` Bbox to include the given points."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.set_xbound <matplotlib.axes.Axes.set_xbound>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Set the lower and upper numerical bounds of the x-axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.get_xbound <matplotlib.axes.Axes.get_xbound>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Return the lower and upper x-axis bounds, in increasing order."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.set_ybound <matplotlib.axes.Axes.set_ybound>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Set the lower and upper numerical bounds of the y-axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid ":py:obj:`Axes.get_ybound <matplotlib.axes.Axes.get_ybound>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:303:<autosummary>:1
+msgid "Return the lower and upper y-axis bounds, in increasing order."
+msgstr ""
+
+#: ../../api/axes_api.rst:305
+msgid "Axis labels, title, and legend"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ":py:obj:`Axes.set_xlabel <matplotlib.axes.Axes.set_xlabel>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Set the label for the x-axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ":py:obj:`Axes.get_xlabel <matplotlib.axes.Axes.get_xlabel>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Get the xlabel text string."
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ":py:obj:`Axes.set_ylabel <matplotlib.axes.Axes.set_ylabel>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Set the label for the y-axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ":py:obj:`Axes.get_ylabel <matplotlib.axes.Axes.get_ylabel>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Get the ylabel text string."
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ":py:obj:`Axes.set_title <matplotlib.axes.Axes.set_title>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Set a title for the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ":py:obj:`Axes.get_title <matplotlib.axes.Axes.get_title>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Get an Axes title."
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ":py:obj:`Axes.legend <matplotlib.axes.Axes.legend>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Place a legend on the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ":py:obj:`Axes.get_legend <matplotlib.axes.Axes.get_legend>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Return the `.Legend` instance, or None if no legend is defined."
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_legend_handles_labels "
+"<matplotlib.axes.Axes.get_legend_handles_labels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:322:<autosummary>:1
+msgid "Return handles and labels for legend"
+msgstr ""
+
+#: ../../api/axes_api.rst:324
+msgid "Axis scales"
+msgstr ""
+
+#: ../../api/axes_api.rst:335:<autosummary>:1
+msgid ":py:obj:`Axes.set_xscale <matplotlib.axes.Axes.set_xscale>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:335:<autosummary>:1
+msgid "Set the x-axis scale."
+msgstr ""
+
+#: ../../api/axes_api.rst:335:<autosummary>:1
+msgid ":py:obj:`Axes.get_xscale <matplotlib.axes.Axes.get_xscale>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:335:<autosummary>:1
+msgid "Return the xaxis' scale (as a str)."
+msgstr ""
+
+#: ../../api/axes_api.rst:335:<autosummary>:1
+msgid ":py:obj:`Axes.set_yscale <matplotlib.axes.Axes.set_yscale>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:335:<autosummary>:1
+msgid "Set the y-axis scale."
+msgstr ""
+
+#: ../../api/axes_api.rst:335:<autosummary>:1
+msgid ":py:obj:`Axes.get_yscale <matplotlib.axes.Axes.get_yscale>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:335:<autosummary>:1
+msgid "Return the yaxis' scale (as a str)."
+msgstr ""
+
+#: ../../api/axes_api.rst:337
+msgid "Autoscaling and margins"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.use_sticky_edges <matplotlib.axes.Axes.use_sticky_edges>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "When autoscaling, whether to obey all `Artist.sticky_edges`."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.margins <matplotlib.axes.Axes.margins>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Set or retrieve autoscaling margins."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.set_xmargin <matplotlib.axes.Axes.set_xmargin>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Set padding of X data limits prior to autoscaling."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.set_ymargin <matplotlib.axes.Axes.set_ymargin>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Set padding of Y data limits prior to autoscaling."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.relim <matplotlib.axes.Axes.relim>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Recompute the data limits based on current artists."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.autoscale <matplotlib.axes.Axes.autoscale>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Autoscale the axis view to the data (toggle)."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.autoscale_view <matplotlib.axes.Axes.autoscale_view>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Autoscale the view limits using the data limits."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.set_autoscale_on <matplotlib.axes.Axes.set_autoscale_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ""
+"Set whether autoscaling is applied to each axis on the next draw or call "
+"to `.Axes.autoscale_view`."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.get_autoscale_on <matplotlib.axes.Axes.get_autoscale_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Return True if each axis is autoscaled, False otherwise."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.set_autoscalex_on <matplotlib.axes.Axes.set_autoscalex_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ""
+"Set whether the x-axis is autoscaled on the next draw or call to "
+"`.Axes.autoscale_view`."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.get_autoscalex_on <matplotlib.axes.Axes.get_autoscalex_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Return whether the x-axis is autoscaled."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.set_autoscaley_on <matplotlib.axes.Axes.set_autoscaley_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ""
+"Set whether the y-axis is autoscaled on the next draw or call to "
+"`.Axes.autoscale_view`."
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid ":py:obj:`Axes.get_autoscaley_on <matplotlib.axes.Axes.get_autoscaley_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:363:<autosummary>:1
+msgid "Return whether the y-axis is autoscaled."
+msgstr ""
+
+#: ../../api/axes_api.rst:365
+msgid "Aspect ratio"
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid ":py:obj:`Axes.apply_aspect <matplotlib.axes.Axes.apply_aspect>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid "Adjust the Axes for a specified data aspect ratio."
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid ":py:obj:`Axes.set_aspect <matplotlib.axes.Axes.set_aspect>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid "Set the aspect ratio of the axes scaling, i.e. y/x-scale."
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid ":py:obj:`Axes.get_aspect <matplotlib.axes.Axes.get_aspect>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid "Return the aspect ratio of the axes scaling."
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid ":py:obj:`Axes.set_box_aspect <matplotlib.axes.Axes.set_box_aspect>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid "Set the Axes box aspect, i.e. the ratio of height to width."
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid ":py:obj:`Axes.get_box_aspect <matplotlib.axes.Axes.get_box_aspect>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid "Return the Axes box aspect, i.e. the ratio of height to width."
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid ":py:obj:`Axes.set_adjustable <matplotlib.axes.Axes.set_adjustable>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid "Set how the Axes adjusts to achieve the required aspect ratio."
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid ":py:obj:`Axes.get_adjustable <matplotlib.axes.Axes.get_adjustable>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:381:<autosummary>:1
+msgid ""
+"Return whether the Axes will adjust its physical dimension ('box') or its"
+" data limits ('datalim') to achieve the desired aspect ratio."
+msgstr ""
+
+#: ../../api/axes_api.rst:383
+msgid "Ticks and tick labels"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.set_xticks <matplotlib.axes.Axes.set_xticks>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Set the xaxis' tick locations and optionally labels."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.get_xticks <matplotlib.axes.Axes.get_xticks>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the xaxis' tick locations in data coordinates."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.set_xticklabels <matplotlib.axes.Axes.set_xticklabels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Set the xaxis' labels with list of string labels."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.get_xticklabels <matplotlib.axes.Axes.get_xticklabels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Get the xaxis' tick labels."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_xmajorticklabels "
+"<matplotlib.axes.Axes.get_xmajorticklabels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the xaxis' major tick labels, as a list of `~.text.Text`."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_xminorticklabels "
+"<matplotlib.axes.Axes.get_xminorticklabels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the xaxis' minor tick labels, as a list of `~.text.Text`."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.get_xgridlines <matplotlib.axes.Axes.get_xgridlines>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the xaxis' grid lines as a list of `.Line2D`\\s."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.get_xticklines <matplotlib.axes.Axes.get_xticklines>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the xaxis' tick lines as a list of `.Line2D`\\s."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.xaxis_date <matplotlib.axes.Axes.xaxis_date>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Set up axis ticks and labels to treat data along the xaxis as dates."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.set_yticks <matplotlib.axes.Axes.set_yticks>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Set the yaxis' tick locations and optionally labels."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.get_yticks <matplotlib.axes.Axes.get_yticks>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the yaxis' tick locations in data coordinates."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.set_yticklabels <matplotlib.axes.Axes.set_yticklabels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Set the yaxis' labels with list of string labels."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.get_yticklabels <matplotlib.axes.Axes.get_yticklabels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Get the yaxis' tick labels."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_ymajorticklabels "
+"<matplotlib.axes.Axes.get_ymajorticklabels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the yaxis' major tick labels, as a list of `~.text.Text`."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_yminorticklabels "
+"<matplotlib.axes.Axes.get_yminorticklabels>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the yaxis' minor tick labels, as a list of `~.text.Text`."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.get_ygridlines <matplotlib.axes.Axes.get_ygridlines>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the yaxis' grid lines as a list of `.Line2D`\\s."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.get_yticklines <matplotlib.axes.Axes.get_yticklines>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Return the yaxis' tick lines as a list of `.Line2D`\\s."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.yaxis_date <matplotlib.axes.Axes.yaxis_date>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Set up axis ticks and labels to treat data along the yaxis as dates."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.minorticks_off <matplotlib.axes.Axes.minorticks_off>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Remove minor ticks from the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.minorticks_on <matplotlib.axes.Axes.minorticks_on>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Display minor ticks on the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.ticklabel_format <matplotlib.axes.Axes.ticklabel_format>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Configure the `.ScalarFormatter` used by default for linear axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.tick_params <matplotlib.axes.Axes.tick_params>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Change the appearance of ticks, tick labels, and gridlines."
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid ":py:obj:`Axes.locator_params <matplotlib.axes.Axes.locator_params>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:424:<autosummary>:1
+msgid "Control behavior of major tick locators."
+msgstr ""
+
+#: ../../api/axes_api.rst:426
+msgid "Units"
+msgstr ""
+
+#: ../../api/axes_api.rst:437:<autosummary>:1
+msgid ":py:obj:`Axes.convert_xunits <matplotlib.axes.Axes.convert_xunits>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:437:<autosummary>:1
+msgid "Convert *x* using the unit type of the xaxis."
+msgstr ""
+
+#: ../../api/axes_api.rst:437:<autosummary>:1
+msgid ":py:obj:`Axes.convert_yunits <matplotlib.axes.Axes.convert_yunits>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:437:<autosummary>:1
+msgid "Convert *y* using the unit type of the yaxis."
+msgstr ""
+
+#: ../../api/axes_api.rst:437:<autosummary>:1
+msgid ":py:obj:`Axes.have_units <matplotlib.axes.Axes.have_units>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:437:<autosummary>:1
+msgid "Return whether units are set on any axis."
+msgstr ""
+
+#: ../../api/axes_api.rst:439
+msgid "Adding artists"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid ":py:obj:`Axes.add_artist <matplotlib.axes.Axes.add_artist>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid "Add an `.Artist` to the Axes; return the artist."
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid ":py:obj:`Axes.add_child_axes <matplotlib.axes.Axes.add_child_axes>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid "Add an `.AxesBase` to the Axes' children; return the child Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid ":py:obj:`Axes.add_collection <matplotlib.axes.Axes.add_collection>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid "Add a `.Collection` to the Axes; return the collection."
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid ":py:obj:`Axes.add_container <matplotlib.axes.Axes.add_container>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid "Add a `.Container` to the axes' containers; return the container."
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid ":py:obj:`Axes.add_image <matplotlib.axes.Axes.add_image>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid "Add an `.AxesImage` to the Axes; return the image."
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid ":py:obj:`Axes.add_line <matplotlib.axes.Axes.add_line>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid "Add a `.Line2D` to the Axes; return the line."
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid ":py:obj:`Axes.add_patch <matplotlib.axes.Axes.add_patch>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid "Add a `.Patch` to the Axes; return the patch."
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid ":py:obj:`Axes.add_table <matplotlib.axes.Axes.add_table>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:455:<autosummary>:1
+msgid "Add a `.Table` to the Axes; return the table."
+msgstr ""
+
+#: ../../api/axes_api.rst:457
+msgid "Twinning and sharing"
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid ":py:obj:`Axes.twinx <matplotlib.axes.Axes.twinx>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid "Create a twin Axes sharing the xaxis."
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid ":py:obj:`Axes.twiny <matplotlib.axes.Axes.twiny>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid "Create a twin Axes sharing the yaxis."
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid ":py:obj:`Axes.sharex <matplotlib.axes.Axes.sharex>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid "Share the x-axis with *other*."
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid ":py:obj:`Axes.sharey <matplotlib.axes.Axes.sharey>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid "Share the y-axis with *other*."
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid ":py:obj:`Axes.get_shared_x_axes <matplotlib.axes.Axes.get_shared_x_axes>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid "Return a reference to the shared axes Grouper object for x axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid ":py:obj:`Axes.get_shared_y_axes <matplotlib.axes.Axes.get_shared_y_axes>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:473:<autosummary>:1
+msgid "Return a reference to the shared axes Grouper object for y axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:475
+msgid "Axes position"
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid ":py:obj:`Axes.get_anchor <matplotlib.axes.Axes.get_anchor>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid "Get the anchor location."
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid ":py:obj:`Axes.set_anchor <matplotlib.axes.Axes.set_anchor>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid "Define the anchor location."
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid ":py:obj:`Axes.get_axes_locator <matplotlib.axes.Axes.get_axes_locator>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid "Return the axes_locator."
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid ":py:obj:`Axes.set_axes_locator <matplotlib.axes.Axes.set_axes_locator>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid "Set the Axes locator."
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid ":py:obj:`Axes.reset_position <matplotlib.axes.Axes.reset_position>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid "Reset the active position to the original position."
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid ":py:obj:`Axes.get_position <matplotlib.axes.Axes.get_position>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid "Return the position of the Axes within the figure as a `.Bbox`."
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid ":py:obj:`Axes.set_position <matplotlib.axes.Axes.set_position>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:492:<autosummary>:1
+msgid "Set the Axes position."
+msgstr ""
+
+#: ../../api/axes_api.rst:494
+msgid "Async/event based"
+msgstr ""
+
+#: ../../api/axes_api.rst:506:<autosummary>:1
+msgid ":py:obj:`Axes.stale <matplotlib.axes.Axes.stale>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:506:<autosummary>:1
+msgid ""
+"Whether the artist is 'stale' and needs to be re-drawn for the output to "
+"match the internal state of the artist."
+msgstr ""
+
+#: ../../api/axes_api.rst:506:<autosummary>:1
+msgid ":py:obj:`Axes.pchanged <matplotlib.axes.Axes.pchanged>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:506:<autosummary>:1
+msgid "Call all of the registered callbacks."
+msgstr ""
+
+#: ../../api/axes_api.rst:506:<autosummary>:1
+msgid ":py:obj:`Axes.add_callback <matplotlib.axes.Axes.add_callback>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:506:<autosummary>:1
+msgid ""
+"Add a callback function that will be called whenever one of the "
+"`.Artist`'s properties changes."
+msgstr ""
+
+#: ../../api/axes_api.rst:506:<autosummary>:1
+msgid ":py:obj:`Axes.remove_callback <matplotlib.axes.Axes.remove_callback>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:506:<autosummary>:1
+msgid "Remove a callback based on its observer id."
+msgstr ""
+
+#: ../../api/axes_api.rst:508
+msgid "Interactive"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.can_pan <matplotlib.axes.Axes.can_pan>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Return whether this Axes supports any pan/zoom button functionality."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.can_zoom <matplotlib.axes.Axes.can_zoom>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Return whether this Axes supports the zoom box button functionality."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.get_navigate <matplotlib.axes.Axes.get_navigate>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Get whether the Axes responds to navigation commands."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.set_navigate <matplotlib.axes.Axes.set_navigate>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Set whether the Axes responds to navigation toolbar commands."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.get_navigate_mode <matplotlib.axes.Axes.get_navigate_mode>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Get the navigation toolbar button status: 'PAN', 'ZOOM', or None."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.set_navigate_mode <matplotlib.axes.Axes.set_navigate_mode>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Set the navigation toolbar button status."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.start_pan <matplotlib.axes.Axes.start_pan>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Called when a pan operation has started."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.drag_pan <matplotlib.axes.Axes.drag_pan>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Called when the mouse moves during a pan operation."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.end_pan <matplotlib.axes.Axes.end_pan>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Called when a pan operation completes (when the mouse button is up.)"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.format_coord <matplotlib.axes.Axes.format_coord>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Return a format string formatting the *x*, *y* coordinates."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ""
+":py:obj:`Axes.format_cursor_data "
+"<matplotlib.axes.Axes.format_cursor_data>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Return a string representation of *data*."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.format_xdata <matplotlib.axes.Axes.format_xdata>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Return *x* formatted as an x-value."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.format_ydata <matplotlib.axes.Axes.format_ydata>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Return *y* formatted as an y-value."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.mouseover <matplotlib.axes.Axes.mouseover>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ""
+"If this property is set to *True*, the artist will be queried for custom "
+"context information when the mouse cursor moves over it."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.in_axes <matplotlib.axes.Axes.in_axes>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Return whether the given event (in display coords) is in the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.contains <matplotlib.axes.Axes.contains>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Test whether the artist contains the mouse event."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.contains_point <matplotlib.axes.Axes.contains_point>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ""
+"Return whether *point* (pair of pixel coordinates) is inside the axes "
+"patch."
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid ":py:obj:`Axes.get_cursor_data <matplotlib.axes.Axes.get_cursor_data>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:540:<autosummary>:1
+msgid "Return the cursor data for a given event."
+msgstr ""
+
+#: ../../api/axes_api.rst:542
+msgid "Children"
+msgstr ""
+
+#: ../../api/axes_api.rst:554:<autosummary>:1
+msgid ":py:obj:`Axes.get_children <matplotlib.axes.Axes.get_children>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:554:<autosummary>:1
+msgid "Return a list of the child `.Artist`\\s of this `.Artist`."
+msgstr ""
+
+#: ../../api/axes_api.rst:554:<autosummary>:1
+msgid ":py:obj:`Axes.get_images <matplotlib.axes.Axes.get_images>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:554:<autosummary>:1
+msgid "Return a list of `.AxesImage`\\s contained by the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:554:<autosummary>:1
+msgid ":py:obj:`Axes.get_lines <matplotlib.axes.Axes.get_lines>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:554:<autosummary>:1
+msgid "Return a list of lines contained by the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:554:<autosummary>:1
+msgid ":py:obj:`Axes.findobj <matplotlib.axes.Axes.findobj>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:554:<autosummary>:1
+msgid "Find artist objects."
+msgstr ""
+
+#: ../../api/axes_api.rst:556
+msgid "Drawing"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ":py:obj:`Axes.draw <matplotlib.axes.Axes.draw>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid "Draw the Artist (and its children) using the given renderer."
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ":py:obj:`Axes.draw_artist <matplotlib.axes.Axes.draw_artist>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid "Efficiently redraw a single artist."
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ":py:obj:`Axes.redraw_in_frame <matplotlib.axes.Axes.redraw_in_frame>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid "Efficiently redraw Axes data, but not axis ticks, labels, etc."
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_renderer_cache "
+"<matplotlib.axes.Axes.get_renderer_cache>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_rasterization_zorder "
+"<matplotlib.axes.Axes.get_rasterization_zorder>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid "Return the zorder value below which artists will be rasterized."
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ""
+":py:obj:`Axes.set_rasterization_zorder "
+"<matplotlib.axes.Axes.set_rasterization_zorder>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid "Set the zorder threshold for rasterization for vector graphics output."
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ":py:obj:`Axes.get_window_extent <matplotlib.axes.Axes.get_window_extent>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ""
+"Return the Axes bounding box in display space; *args* and *kwargs* are "
+"empty."
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ":py:obj:`Axes.get_tightbbox <matplotlib.axes.Axes.get_tightbbox>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:574:<autosummary>:1
+msgid ""
+"Return the tight bounding box of the axes, including axis and their "
+"decorators (xlabel, title, etc)."
+msgstr ""
+
+#: ../../api/axes_api.rst:576
+msgid "Projection"
+msgstr ""
+
+#: ../../api/axes_api.rst:578
+msgid ""
+"Methods used by `~matplotlib.axis.Axis` that must be overridden for non-"
+"rectilinear Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ":py:obj:`Axes.name <matplotlib.axes.Axes.name>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_xaxis_transform "
+"<matplotlib.axes.Axes.get_xaxis_transform>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ""
+"Get the transformation used for drawing x-axis labels, ticks and "
+"gridlines."
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_yaxis_transform "
+"<matplotlib.axes.Axes.get_yaxis_transform>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ""
+"Get the transformation used for drawing y-axis labels, ticks and "
+"gridlines."
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ":py:obj:`Axes.get_data_ratio <matplotlib.axes.Axes.get_data_ratio>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid "Return the aspect ratio of the scaled data."
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_xaxis_text1_transform "
+"<matplotlib.axes.Axes.get_xaxis_text1_transform>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_xaxis_text2_transform "
+"<matplotlib.axes.Axes.get_xaxis_text2_transform>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_yaxis_text1_transform "
+"<matplotlib.axes.Axes.get_yaxis_text1_transform>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:596:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_yaxis_text2_transform "
+"<matplotlib.axes.Axes.get_yaxis_text2_transform>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:598
+msgid "Other"
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid ":py:obj:`Axes.zorder <matplotlib.axes.Axes.zorder>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_default_bbox_extra_artists "
+"<matplotlib.axes.Axes.get_default_bbox_extra_artists>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid ""
+"Return a default list of artists that are used for the bounding box "
+"calculation."
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid ""
+":py:obj:`Axes.get_transformed_clip_path_and_affine "
+"<matplotlib.axes.Axes.get_transformed_clip_path_and_affine>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid ""
+"Return the clip path with the non-affine part of its transformation "
+"applied, and the remaining affine part of its transformation."
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid ":py:obj:`Axes.has_data <matplotlib.axes.Axes.has_data>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid "Return whether any artists have been added to the Axes."
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid ":py:obj:`Axes.set <matplotlib.axes.Axes.set>`"
+msgstr ""
+
+#: ../../api/axes_api.rst:609:<autosummary>:1
+msgid "Set multiple properties at once."
+msgstr ""
+

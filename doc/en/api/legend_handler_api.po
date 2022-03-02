@@ -1,0 +1,397 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/legend_handler_api.rst:3
+msgid "``matplotlib.legend_handler``"
+msgstr ""
+
+#: matplotlib.legend_handler:1 of
+msgid "Default legend handlers."
+msgstr ""
+
+#: matplotlib.legend_handler:5 of
+msgid "This is a low-level legend API, which most end users do not need."
+msgstr ""
+
+#: matplotlib.legend_handler:7 of
+msgid ""
+"We recommend that you are familiar with the :doc:`legend guide "
+"</tutorials/intermediate/legend_guide>` before reading this "
+"documentation."
+msgstr ""
+
+#: matplotlib.legend_handler:10 of
+msgid ""
+"Legend handlers are expected to be a callable object with a following "
+"signature. ::"
+msgstr ""
+
+#: matplotlib.legend_handler:15 of
+msgid ""
+"Where *legend* is the legend itself, *orig_handle* is the original plot, "
+"*fontsize* is the fontsize in pixels, and *handlebox* is a OffsetBox "
+"instance. Within the call, you should create relevant artists (using "
+"relevant properties from the *legend* and/or *orig_handle*) and add them "
+"into the handlebox. The artists needs to be scaled according to the "
+"fontsize (note that the size is in pixel, i.e., this is dpi-scaled "
+"value)."
+msgstr ""
+
+#: matplotlib.legend_handler:23 of
+msgid ""
+"This module includes definition of several legend handler classes derived"
+" from the base class (HandlerBase) with the following method::"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase:2 of
+msgid "A Base class for default legend handlers."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase:4 of
+msgid ""
+"The derived classes are meant to override *create_artists* method, which "
+"has a following signature.::"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase:11 of
+msgid ""
+"The overridden method needs to create artists of the given transform that"
+" fits in the given dimension (xdescent, ydescent, width, height) that are"
+" scaled by fontsize if necessary."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:2 of
+msgid ""
+"Return the artist that this HandlerBase generates for the given original "
+"artist/handle."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist
+#: matplotlib.legend_handler.HandlerCircleCollection
+#: matplotlib.legend_handler.HandlerErrorbar
+#: matplotlib.legend_handler.HandlerLine2D
+#: matplotlib.legend_handler.HandlerLine2DCompound
+#: matplotlib.legend_handler.HandlerLineCollection
+#: matplotlib.legend_handler.HandlerNpoints
+#: matplotlib.legend_handler.HandlerNpointsYoffsets
+#: matplotlib.legend_handler.HandlerPatch
+#: matplotlib.legend_handler.HandlerPathCollection
+#: matplotlib.legend_handler.HandlerRegularPolyCollection
+#: matplotlib.legend_handler.HandlerStem matplotlib.legend_handler.HandlerTuple
+#: of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:9 of
+msgid "**legend** : `~matplotlib.legend.Legend`"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:8 of
+msgid "Legend"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:9 of
+msgid "The legend for which these legend artists are being created."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:12 of
+msgid "**orig_handle** : :class:`matplotlib.artist.Artist` or similar"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:11 of
+msgid "matplotlib.artist.Artist or similar"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:12 of
+msgid "The object for which these legend artists are being created."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:16 of
+msgid "**fontsize**"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:15 of
+msgid ""
+"The fontsize in pixels. The artists being created should be scaled "
+"according to the given fontsize."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:34 of
+msgid "**handlebox** : `matplotlib.offsetbox.OffsetBox`"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:33 of
+msgid "matplotlib.offsetbox.OffsetBox"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerBase.legend_artist:19 of
+msgid ""
+"The box which has been created to hold this legend entry's artists. "
+"Artists created in the `legend_artist` method must be added to this "
+"handlebox inside this method."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerCircleCollection:2 of
+msgid "Handler for `.CircleCollection`\\s."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerCircleCollection:29
+#: matplotlib.legend_handler.HandlerErrorbar:32
+#: matplotlib.legend_handler.HandlerLine2D:38
+#: matplotlib.legend_handler.HandlerLine2DCompound:33
+#: matplotlib.legend_handler.HandlerLineCollection:32
+#: matplotlib.legend_handler.HandlerNpoints:32
+#: matplotlib.legend_handler.HandlerNpointsYoffsets:30
+#: matplotlib.legend_handler.HandlerPathCollection:29
+#: matplotlib.legend_handler.HandlerRegularPolyCollection:29
+#: matplotlib.legend_handler.HandlerStem:32 of
+msgid "**numpoints**"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerCircleCollection:29
+#: matplotlib.legend_handler.HandlerErrorbar:32
+#: matplotlib.legend_handler.HandlerLine2D:38
+#: matplotlib.legend_handler.HandlerLine2DCompound:33
+#: matplotlib.legend_handler.HandlerLineCollection:32
+#: matplotlib.legend_handler.HandlerNpoints:32
+#: matplotlib.legend_handler.HandlerNpointsYoffsets:30
+#: matplotlib.legend_handler.HandlerPathCollection:29
+#: matplotlib.legend_handler.HandlerRegularPolyCollection:29
+#: matplotlib.legend_handler.HandlerStem:32 of
+msgid "Number of points to show in legend entry."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerCircleCollection:33
+#: matplotlib.legend_handler.HandlerNpointsYoffsets:34
+#: matplotlib.legend_handler.HandlerPathCollection:33
+#: matplotlib.legend_handler.HandlerRegularPolyCollection:33
+#: matplotlib.legend_handler.HandlerStem:39 of
+msgid "**yoffsets**"
+msgstr ""
+
+#: of
+msgid "array of floats"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerCircleCollection:32
+#: matplotlib.legend_handler.HandlerNpointsYoffsets:33
+#: matplotlib.legend_handler.HandlerPathCollection:32
+#: matplotlib.legend_handler.HandlerRegularPolyCollection:32
+#: matplotlib.legend_handler.HandlerStem:38 of
+msgid "Length *numpoints* list of y offsets for each point in legend entry."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerCircleCollection:49
+#: matplotlib.legend_handler.HandlerErrorbar:48
+#: matplotlib.legend_handler.HandlerLine2D:54
+#: matplotlib.legend_handler.HandlerLine2DCompound:49
+#: matplotlib.legend_handler.HandlerLineCollection:48
+#: matplotlib.legend_handler.HandlerNpoints:48
+#: matplotlib.legend_handler.HandlerNpointsYoffsets:50
+#: matplotlib.legend_handler.HandlerPatch:53
+#: matplotlib.legend_handler.HandlerPathCollection:49
+#: matplotlib.legend_handler.HandlerRegularPolyCollection:49
+#: matplotlib.legend_handler.HandlerStem:55
+#: matplotlib.legend_handler.HandlerTuple:49 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerCircleCollection:36
+#: matplotlib.legend_handler.HandlerErrorbar:35
+#: matplotlib.legend_handler.HandlerLine2D:41
+#: matplotlib.legend_handler.HandlerLine2DCompound:36
+#: matplotlib.legend_handler.HandlerLineCollection:35
+#: matplotlib.legend_handler.HandlerNpointsYoffsets:37
+#: matplotlib.legend_handler.HandlerPathCollection:36
+#: matplotlib.legend_handler.HandlerRegularPolyCollection:36 of
+msgid "Keyword arguments forwarded to `.HandlerNpoints`."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerErrorbar:2 of
+msgid "Handler for Errorbars."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerErrorbar:29
+#: matplotlib.legend_handler.HandlerLine2D:35
+#: matplotlib.legend_handler.HandlerLine2DCompound:30
+#: matplotlib.legend_handler.HandlerLineCollection:29
+#: matplotlib.legend_handler.HandlerNpoints:29
+#: matplotlib.legend_handler.HandlerStem:29 of
+msgid "**marker_pad**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerErrorbar:29
+#: matplotlib.legend_handler.HandlerLine2D:35
+#: matplotlib.legend_handler.HandlerLine2DCompound:30
+#: matplotlib.legend_handler.HandlerLineCollection:29
+#: matplotlib.legend_handler.HandlerNpoints:29
+#: matplotlib.legend_handler.HandlerStem:29 of
+msgid "Padding between points in legend entry."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerLine2D:2 of
+msgid "Handler for `.Line2D` instances."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerLine2D:16 of
+msgid ":obj:`HandlerLine2DCompound`"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerLine2D:17 of
+msgid ""
+"An earlier handler implementation, which used one artist for the line and"
+" another for the marker(s)."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerLine2DCompound:2 of
+msgid ""
+"Original handler for `.Line2D` instances, that relies on combining a "
+"line-only with a marker-only artist.  May be deprecated in the future."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerLineCollection:2 of
+msgid "Handler for `.LineCollection` instances."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerNpoints:2 of
+msgid "A legend handler that shows *numpoints* points in the legend entry."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerNpoints:35
+#: matplotlib.legend_handler.HandlerPatch:40
+#: matplotlib.legend_handler.HandlerTuple:36 of
+msgid "Keyword arguments forwarded to `.HandlerBase`."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerNpointsYoffsets:2 of
+msgid ""
+"A legend handler that shows *numpoints* in the legend, and allows them to"
+" be individually offset in the y-direction."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerPatch:2 of
+msgid "Handler for `.Patch` instances."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerPatch:37 of
+msgid "**patch_func**"
+msgstr ""
+
+#: of
+msgid "callable, optional"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerPatch:29 of
+msgid ""
+"The function that creates the legend key artist. *patch_func* should have"
+" the signature::"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerPatch:36 of
+msgid ""
+"Subsequently the created artist will have its ``update_prop`` method "
+"called and the appropriate transform will be applied."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerPathCollection:2 of
+msgid "Handler for `.PathCollection`\\s, which are used by `~.Axes.scatter`."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerPolyCollection:2 of
+msgid ""
+"Handler for `.PolyCollection` used in `~.Axes.fill_between` and "
+"`~.Axes.stackplot`."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerRegularPolyCollection:2 of
+msgid "Handler for `.RegularPolyCollection`\\s."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerStem:2 of
+msgid "Handler for plots produced by `~.Axes.stem`."
+msgstr ""
+
+#: of
+msgid "float, default: 0.3"
+msgstr ""
+
+#: of
+msgid "int, optional"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerStem:35 of
+msgid "**bottom**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: of
+msgid "array of floats, optional"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerStem:42 of
+msgid "Keyword arguments forwarded to `.HandlerNpointsYoffsets`."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerStepPatch:2 of
+msgid "Handler for `~.matplotlib.patches.StepPatch` instances."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerTuple:2 of
+msgid "Handler for Tuple."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerTuple:30 of
+msgid "**ndivide**"
+msgstr ""
+
+#: of
+msgid "int, default: 1"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerTuple:29 of
+msgid ""
+"The number of sections to divide the legend area into.  If None, use the "
+"length of the input tuple."
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerTuple:33 of
+msgid "**pad** : float, default: :rc:`legend.borderpad`"
+msgstr ""
+
+#: of
+msgid "float, default:"
+msgstr ""
+
+#: matplotlib.legend_handler.HandlerTuple:33 of
+msgid "Padding in units of fraction of font size."
+msgstr ""
+

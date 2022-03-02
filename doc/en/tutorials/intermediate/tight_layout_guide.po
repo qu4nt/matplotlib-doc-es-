@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:13
+msgid ""
+"Click :ref:`here "
+"<sphx_glr_download_tutorials_intermediate_tight_layout_guide.py>` to "
+"download the full example code"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:23
+msgid "Tight Layout guide"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:25
+msgid "How to use tight-layout to fit plots within your figure cleanly."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:27
+msgid ""
+"*tight_layout* automatically adjusts subplot params so that the "
+"subplot(s) fits in to the figure area. This is an experimental feature "
+"and may not work for some cases. It only checks the extents of "
+"ticklabels, axis labels, and titles."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:32
+msgid ""
+"An alternative to *tight_layout* is :doc:`constrained_layout "
+"</tutorials/intermediate/constrainedlayout_guide>`."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:37
+msgid "Simple Example"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:39
+msgid ""
+"In matplotlib, the location of axes (including subplots) are specified in"
+" normalized figure coordinates. It can happen that your axis labels or "
+"titles (or sometimes even ticklabels) go outside the figure area, and are"
+" thus clipped."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:82
+msgid ""
+"To prevent this, the location of axes needs to be adjusted. For subplots,"
+" this can be done manually by adjusting the subplot parameters using "
+"`.Figure.subplots_adjust`. `.Figure.tight_layout` does this "
+"automatically."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:110
+msgid ""
+"Note that :func:`matplotlib.pyplot.tight_layout` will only adjust the "
+"subplot params when it is called.  In order to perform this adjustment "
+"each time the figure is redrawn, you can call "
+"``fig.set_tight_layout(True)``, or, equivalently, set "
+":rc:`figure.autolayout` to ``True``."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:115
+msgid ""
+"When you have multiple subplots, often you see labels of different axes "
+"overlapping each other."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:145
+msgid ""
+":func:`~matplotlib.pyplot.tight_layout` will also adjust spacing between "
+"subplots to minimize the overlaps."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:174
+msgid ""
+":func:`~matplotlib.pyplot.tight_layout` can take keyword arguments of "
+"*pad*, *w_pad* and *h_pad*. These control the extra padding around the "
+"figure border and between subplots. The pads are specified in fraction of"
+" fontsize."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:205
+msgid ""
+":func:`~matplotlib.pyplot.tight_layout` will work even if the sizes of "
+"subplots are different as far as their grid specification is compatible. "
+"In the example below, *ax1* and *ax2* are subplots of a 2x2 grid, while "
+"*ax3* is of a 1x2 grid."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:242
+msgid ""
+"It works with subplots created with "
+":func:`~matplotlib.pyplot.subplot2grid`. In general, subplots created "
+"from the gridspec (:doc:`/tutorials/intermediate/arranging_axes`) will "
+"work."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:280
+msgid ""
+"Although not thoroughly tested, it seems to work for subplots with aspect"
+" != \"auto\" (e.g., axes with images)."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:313
+msgid "Caveats"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:315
+msgid ""
+"`~matplotlib.pyplot.tight_layout` considers all artists on the axes by "
+"default.  To remove an artist from the layout calculation you can call "
+"`.Artist.set_in_layout`."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:319
+msgid ""
+"``tight_layout`` assumes that the extra space needed for artists is "
+"independent of the original location of axes. This is often true, but "
+"there are rare cases where it is not."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:323
+msgid ""
+"``pad=0`` can clip some texts by a few pixels. This may be a bug or a "
+"limitation of the current algorithm and it is not clear why it happens. "
+"Meanwhile, use of pad larger than 0.3 is recommended."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:328
+msgid "Use with GridSpec"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:330
+msgid ""
+"GridSpec has its own `.GridSpec.tight_layout` method (the pyplot api "
+"`.pyplot.tight_layout` also works)."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:366
+msgid ""
+"You may provide an optional *rect* parameter, which specifies the "
+"bounding box that the subplots will be fit inside. The coordinates must "
+"be in normalized figure coordinates and the default is (0, 0, 1, 1)."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:400
+msgid ""
+"However, we do not recommend that this be used to manually construct more"
+" complicated layouts, like having one GridSpec in the left and one in the"
+" right side of the figure. For these use cases, one should instead take "
+"advantage of :doc:`/gallery/subplots_axes_and_figures/gridspec_nested`, "
+"or the :doc:`/gallery/subplots_axes_and_figures/subfigures`."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:409
+msgid "Legends and Annotations"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:411
+msgid ""
+"Pre Matplotlib 2.2, legends and annotations were excluded from the "
+"bounding box calculations that decide the layout.  Subsequently these "
+"artists were added to the calculation, but sometimes it is undesirable to"
+" include them. For instance in this case it might be good to have the "
+"axes shrink a bit to make room for the legend:"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:442
+msgid ""
+"However, sometimes this is not desired (quite often when using "
+"``fig.savefig('outname.png', bbox_inches='tight')``).  In order to remove"
+" the legend from the bounding box calculation, we simply set its bounding"
+" ``leg.set_in_layout(False)`` and the legend will be ignored."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:474
+msgid "Use with AxesGrid1"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:476
+msgid "While limited, :mod:`mpl_toolkits.axes_grid1` is also supported."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:512
+msgid "Colorbar"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:514
+msgid ""
+"If you create a colorbar with `.Figure.colorbar`, the created colorbar is"
+" drawn in a Subplot as long as the parent axes is also a Subplot, so "
+"`.Figure.tight_layout` will work."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:546
+msgid ""
+"Another option is to use the AxesGrid1 toolkit to explicitly create an "
+"axes for the colorbar."
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:581
+msgid "**Total running time of the script:** ( 0 minutes  5.271 seconds)"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:596
+msgid ""
+":download:`Download Python source code: tight_layout_guide.py "
+"<tight_layout_guide.py>`"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:602
+msgid ""
+":download:`Download Jupyter notebook: tight_layout_guide.ipynb "
+"<tight_layout_guide.ipynb>`"
+msgstr ""
+
+#: ../../tutorials/intermediate/tight_layout_guide.rst:609
+msgid ""
+"Keywords: matplotlib code example, codex, python plot, pyplot `Gallery "
+"generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

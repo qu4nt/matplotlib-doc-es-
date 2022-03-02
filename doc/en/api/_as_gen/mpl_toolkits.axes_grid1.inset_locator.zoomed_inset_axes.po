@@ -1,0 +1,535 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes.rst:2
+msgid "mpl\\_toolkits.axes\\_grid1.inset\\_locator.zoomed\\_inset\\_axes"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:2 of
+msgid ""
+"Create an anchored inset axes by scaling a parent axes. For usage, also "
+"see :doc:`the examples </gallery/axes_grid1/inset_locator_demo2>`."
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes of
+msgid "Parameters"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:9 of
+msgid "**parent_axes** : `matplotlib.axes.Axes`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:8 of
+msgid "matplotlib.axes.Axes"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:9 of
+msgid "Axes to place the inset axes."
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:14 of
+msgid "**zoom**"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:108 of
+msgid "float"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:12 of
+msgid ""
+"Scaling factor of the data axes. *zoom* > 1 will enlarge the coordinates "
+"(i.e., \"zoomed in\"), while *zoom* < 1 will shrink the coordinates "
+"(i.e., \"zoomed out\")."
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:22 of
+msgid "**loc**"
+msgstr ""
+
+#: of
+msgid "str, default: 'upper right'"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:17 of
+msgid ""
+"Location to place the inset axes.  Valid locations are 'upper left', "
+"'upper center', 'upper right', 'center left', 'center', 'center right', "
+"'lower left', 'lower center, 'lower right'. For backward compatibility, "
+"numeric values are accepted as well. See the parameter *loc* of `.Legend`"
+" for details."
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:33 of
+msgid "**bbox_to_anchor** : tuple or `matplotlib.transforms.BboxBase`, optional"
+msgstr ""
+
+#: of
+msgid "tuple or"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:25 of
+msgid ""
+"Bbox that the inset axes will be anchored to. If None, *parent_axes.bbox*"
+" is used. If a tuple, can be either [left, bottom, width, height], or "
+"[left, bottom]. If the kwargs *width* and/or *height* are specified in "
+"relative units, the 2-tuple [left, bottom] cannot be used. Note that the "
+"units of the bounding box are determined through the transform in use. "
+"When using *bbox_to_anchor* it almost always makes sense to also specify "
+"a *bbox_transform*. This might often be the axes transform "
+"*parent_axes.transAxes*."
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:44 of
+msgid "**bbox_transform** : `matplotlib.transforms.Transform`, optional"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:43 of
+msgid "matplotlib.transforms.Transform, optional"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:36 of
+msgid ""
+"Transformation for the bbox that contains the inset axes. If None, a "
+"`.transforms.IdentityTransform` is used (i.e. pixel coordinates). This is"
+" useful when not providing any argument to *bbox_to_anchor*. When using "
+"*bbox_to_anchor* it almost always makes sense to also specify a "
+"*bbox_transform*. This might often be the axes transform "
+"*parent_axes.transAxes*. Inversely, when specifying the axes- or figure-"
+"transform here, be aware that not specifying *bbox_to_anchor* will use "
+"*parent_axes.bbox*, the units of which are in display (pixel) "
+"coordinates."
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:47 of
+msgid "**axes_class** : `matplotlib.axes.Axes` type, default: `.HostAxes`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:46 of
+msgid "matplotlib.axes.Axes type, default: HostAxes"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:47 of
+msgid "The type of the newly created inset axes."
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:109 of
+msgid "**axes_kwargs**"
+msgstr ""
+
+#: of
+msgid "dict, optional"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:50 of
+msgid ""
+"Keyword arguments to pass to the constructor of the inset axes. Valid "
+"arguments include:"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:57 of
+msgid "Property"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:57 of
+msgid "Description"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:59 of
+msgid ":meth:`adjustable <matplotlib.axes.Axes.set_adjustable>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:59 of
+msgid "{'box', 'datalim'}"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:60 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:60 of
+msgid ""
+"a filter function, which takes a (m, n, 3) float array and a dpi value, "
+"and returns a (m, n, 3) array"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:61 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:61 of
+msgid "scalar or None"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:62 of
+msgid ":meth:`anchor <matplotlib.axes.Axes.set_anchor>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:62 of
+msgid "(float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:63 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:63
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:65
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:66
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:67
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:72
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:76
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:78
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:80
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:87
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:93 of
+msgid "bool"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:64 of
+msgid ":meth:`aspect <matplotlib.axes.Axes.set_aspect>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:64 of
+msgid "{'auto', 'equal'} or float"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:65 of
+msgid ":meth:`autoscale_on <matplotlib.axes.Axes.set_autoscale_on>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:66 of
+msgid ":meth:`autoscalex_on <matplotlib.axes.Axes.set_autoscalex_on>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:67 of
+msgid ":meth:`autoscaley_on <matplotlib.axes.Axes.set_autoscaley_on>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:68 of
+msgid ":meth:`axes_locator <matplotlib.axes.Axes.set_axes_locator>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:68 of
+msgid "Callable[[Axes, Renderer], Bbox]"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:69 of
+msgid ":meth:`axisbelow <matplotlib.axes.Axes.set_axisbelow>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:69 of
+msgid "bool or 'line'"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:70 of
+msgid ":meth:`box_aspect <matplotlib.axes.Axes.set_box_aspect>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:70
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:86 of
+msgid "float or None"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:71 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:71 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:72 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:73 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:73 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:74 of
+msgid ":meth:`facecolor <matplotlib.axes.Axes.set_facecolor>` or fc"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:74 of
+msgid "color"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:75 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:75 of
+msgid "`.Figure`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:76 of
+msgid ":meth:`frame_on <matplotlib.axes.Axes.set_frame_on>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:77 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:77
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:90
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:92
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:95
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:102 of
+msgid "str"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:78 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:79 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:79 of
+msgid "object"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:80 of
+msgid ":meth:`navigate <matplotlib.axes.Axes.set_navigate>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:81 of
+msgid ":meth:`navigate_mode <matplotlib.axes.Axes.set_navigate_mode>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:81
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:85
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:94
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:99
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:100
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:101
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:106
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:107 of
+msgid "unknown"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:82 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:82 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:83 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:83 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:84 of
+msgid ":meth:`position <matplotlib.axes.Axes.set_position>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:84 of
+msgid "[left, bottom, width, height] or `~matplotlib.transforms.Bbox`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:85 of
+msgid ":meth:`prop_cycle <matplotlib.axes.Axes.set_prop_cycle>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:86 of
+msgid ""
+":meth:`rasterization_zorder "
+"<matplotlib.axes.Axes.set_rasterization_zorder>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:87 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:88 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:88 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:89 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:89 of
+msgid "bool or None"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:90 of
+msgid ":meth:`title <matplotlib.axes.Axes.set_title>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:91 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:91 of
+msgid "`.Transform`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:92 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:93 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:94 of
+msgid ":meth:`xbound <matplotlib.axes.Axes.set_xbound>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:95 of
+msgid ":meth:`xlabel <matplotlib.axes.Axes.set_xlabel>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:96 of
+msgid ":meth:`xlim <matplotlib.axes.Axes.set_xlim>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:96
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:103 of
+msgid "(bottom: float, top: float)"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:97 of
+msgid ":meth:`xmargin <matplotlib.axes.Axes.set_xmargin>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:97
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:104 of
+msgid "float greater than -0.5"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:98 of
+msgid ":meth:`xscale <matplotlib.axes.Axes.set_xscale>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:98
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:105 of
+msgid "{\"linear\", \"log\", \"symlog\", \"logit\", ...} or `.ScaleBase`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:99 of
+msgid ":meth:`xticklabels <matplotlib.axes.Axes.set_xticklabels>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:100 of
+msgid ":meth:`xticks <matplotlib.axes.Axes.set_xticks>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:101 of
+msgid ":meth:`ybound <matplotlib.axes.Axes.set_ybound>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:102 of
+msgid ":meth:`ylabel <matplotlib.axes.Axes.set_ylabel>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:103 of
+msgid ":meth:`ylim <matplotlib.axes.Axes.set_ylim>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:104 of
+msgid ":meth:`ymargin <matplotlib.axes.Axes.set_ymargin>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:105 of
+msgid ":meth:`yscale <matplotlib.axes.Axes.set_yscale>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:106 of
+msgid ":meth:`yticklabels <matplotlib.axes.Axes.set_yticklabels>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:107 of
+msgid ":meth:`yticks <matplotlib.axes.Axes.set_yticks>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:108 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:114 of
+msgid "**borderpad**"
+msgstr ""
+
+#: of
+msgid "float, default: 0.5"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:112 of
+msgid ""
+"Padding between inset axes and the bbox_to_anchor. The units are axes "
+"font size, i.e. for a default font size of 10 points *borderpad = 0.5* is"
+" equivalent to a padding of 5 points."
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes of
+msgid "Returns"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:131 of
+msgid "**inset_axes** : *axes_class*"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:130 of
+msgid "axes_class"
+msgstr ""
+
+#: mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes:119 of
+msgid "Inset axes object created."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes.examples:2
+msgid "Examples using ``mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes``"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes.examples:10
+msgid "Adding a colorbar to inset axes"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes.examples:10
+#: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes.examples:18
+msgid ":ref:`sphx_glr_gallery_axes_grid1_demo_colorbar_of_inset_axes.py`"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes.examples:29
+msgid "Inset Locator Demo2"
+msgstr ""
+
+#: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes.examples:29
+#: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.zoomed_inset_axes.examples:37
+msgid ":ref:`sphx_glr_gallery_axes_grid1_inset_locator_demo2.py`"
+msgstr ""
+

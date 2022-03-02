@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.rst:2
+msgid "matplotlib.colors.Normalize"
+msgstr ""
+
+#: matplotlib.colors.Normalize:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.colors.Normalize:2 of
+msgid ""
+"A class which, when called, linearly normalizes data into the ``[0.0, "
+"1.0]`` interval."
+msgstr ""
+
+#: matplotlib.colors.Normalize matplotlib.colors.Normalize.__call__ of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.colors.Normalize:32 of
+msgid "**vmin, vmax**"
+msgstr ""
+
+#: of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.colors.Normalize:30 of
+msgid ""
+"If *vmin* and/or *vmax* is not given, they are initialized from the "
+"minimum and maximum value, respectively, of the first input processed; "
+"i.e., ``__call__(A)`` calls ``autoscale_None(A)``."
+msgstr ""
+
+#: matplotlib.colors.Normalize:49 matplotlib.colors.Normalize.__call__:21 of
+msgid "**clip**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.colors.Normalize:35 of
+msgid ""
+"If ``True`` values falling outside the range ``[vmin, vmax]``, are mapped"
+" to 0 or 1, whichever is closer, and masked values are set to 1.  If "
+"``False`` masked values remain masked."
+msgstr ""
+
+#: matplotlib.colors.Normalize:39 of
+msgid ""
+"Clipping silently defeats the purpose of setting the over, under, and "
+"masked colors in a colormap, so it is likely to lead to surprises; "
+"therefore the default is ``clip=False``."
+msgstr ""
+
+#: matplotlib.colors.Normalize:52 matplotlib.colors.Normalize.__call__:24
+#: matplotlib.colors.Normalize.process_value:23 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.colors.Normalize:53 of
+msgid "Returns 0 if ``vmin == vmax``."
+msgstr ""
+
+#: matplotlib.colors.Normalize.__call__:2 of
+msgid ""
+"Normalize *value* data in the ``[vmin, vmax]`` interval into the ``[0.0, "
+"1.0]`` interval and return it."
+msgstr ""
+
+#: matplotlib.colors.Normalize.__call__:9 of
+msgid "**value**"
+msgstr ""
+
+#: matplotlib.colors.Normalize.__call__:9 of
+msgid "Data to normalize."
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.colors.Normalize.__call__:12 of
+msgid "If ``None``, defaults to ``self.clip`` (which defaults to ``False``)."
+msgstr ""
+
+#: matplotlib.colors.Normalize.__call__:25 of
+msgid ""
+"If not already initialized, ``self.vmin`` and ``self.vmax`` are "
+"initialized using ``self.autoscale_None(value)``."
+msgstr ""
+
+#: matplotlib.colors.Normalize.autoscale:2 of
+msgid "Set *vmin*, *vmax* to min, max of *A*."
+msgstr ""
+
+#: matplotlib.colors.Normalize.autoscale_None:2 of
+msgid "If vmin or vmax are not set, use the min/max of *A* to set them."
+msgstr ""
+
+#: matplotlib.colors.Normalize.process_value:2 of
+msgid "Homogenize the input *value* for easy and efficient normalization."
+msgstr ""
+
+#: matplotlib.colors.Normalize.process_value:4 of
+msgid "*value* can be a scalar or sequence."
+msgstr ""
+
+#: matplotlib.colors.Normalize.process_value of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.colors.Normalize.process_value:10 of
+msgid "**result**"
+msgstr ""
+
+#: of
+msgid "masked array"
+msgstr ""
+
+#: matplotlib.colors.Normalize.process_value:10 of
+msgid "Masked array with the same shape as *value*."
+msgstr ""
+
+#: matplotlib.colors.Normalize.process_value:20 of
+msgid "**is_scalar**"
+msgstr ""
+
+#: matplotlib.colors.Normalize.process_value:13 of
+msgid "Whether *value* is a scalar."
+msgstr ""
+
+#: matplotlib.colors.Normalize.process_value:24 of
+msgid ""
+"Float dtypes are preserved; integer types with two bytes or smaller are "
+"converted to np.float32, and larger types are converted to np.float64. "
+"Preserving float32 when possible, and using in-place operations, greatly "
+"improves speed for large arrays."
+msgstr ""
+
+#: matplotlib.colors.Normalize.scaled:2 of
+msgid "Return whether vmin and vmax are set."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.colors.Normalize.examples:2
+msgid "Examples using ``matplotlib.colors.Normalize``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:10
+msgid "Creating annotated heatmaps"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:10
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:18
+msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_image_annotated_heatmap.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:29
+msgid "Colormap Normalizations"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:29
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:37
+msgid ":ref:`sphx_glr_gallery_userdemo_colormap_normalizations.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:48
+msgid "Colormap Normalizations Symlognorm"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:48
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:56
+msgid ":ref:`sphx_glr_gallery_userdemo_colormap_normalizations_symlognorm.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:67
+msgid "Basic Usage"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:67
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:75
+msgid ":ref:`sphx_glr_tutorials_introductory_usage.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:86
+msgid "Constrained Layout Guide"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:86
+#: ../../api/_as_gen/matplotlib.colors.Normalize.examples:94
+msgid ":ref:`sphx_glr_tutorials_intermediate_constrainedlayout_guide.py`"
+msgstr ""
+

@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:13
+msgid ""
+"Click :ref:`here "
+"<sphx_glr_download_gallery_images_contours_and_fields_image_antialiasing.py>`"
+" to download the full example code"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:23
+msgid "Image antialiasing"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:25
+msgid ""
+"Images are represented by discrete pixels, either on the screen or in an "
+"image file.  When data that makes up the image has a different resolution"
+" than its representation on the screen we will see aliasing effects.  How"
+" noticeable these are depends on how much down-sampling takes place in "
+"the change of resolution (if any)."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:31
+msgid ""
+"When subsampling data, aliasing is reduced by smoothing first and then "
+"subsampling the smoothed data.  In Matplotlib, we can do that smoothing "
+"before mapping the data to colors, or we can do the smoothing on the "
+"RGB(A) data in the final image.  The difference between these is shown "
+"below, and controlled with the *interpolation_stage* keyword argument."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:37
+msgid ""
+"The default image interpolation in Matplotlib is 'antialiased', and it is"
+" applied to the data.  This uses a hanning interpolation on the data "
+"provided by the user for reduced aliasing in most situations. Only when "
+"there is upsampling by a factor of 1, 2 or >=3 is 'nearest' neighbor "
+"interpolation used."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:43
+msgid ""
+"Other anti-aliasing filters can be specified in `.Axes.imshow` using the "
+"*interpolation* keyword argument."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:63
+msgid "First we generate a 450x450 pixel image with varying frequency content:"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:94
+msgid ""
+"The following images are subsampled from 450 data pixels to either 125 "
+"pixels or 250 pixels (depending on your display). The Moire patterns in "
+"the 'nearest' interpolation are caused by the high-frequency data being "
+"subsampled.  The 'antialiased' imaged still has some Moire patterns as "
+"well, but they are greatly reduced."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:100
+msgid ""
+"There are substantial differences between the 'data' interpolation and "
+"the 'rgba' interpolation.  The alternating bands of red and blue on the "
+"left third of the image are subsampled.  By interpolating in 'data' space"
+" (the default) the antialiasing filter makes the stripes close to white, "
+"because the average of -1 and +1 is zero, and zero is white in this "
+"colormap."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:107
+msgid ""
+"Conversely, when the anti-aliasing occurs in 'rgba' space, the red and "
+"blue are combined visually to make purple.  This behaviour is more like a"
+" typical image processing package, but note that purple is not in the "
+"original colormap, so it is no longer possible to invert individual "
+"pixels back to their data value."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:146
+msgid ""
+"Even up-sampling an image with 'nearest' interpolation will lead to Moire"
+" patterns when the upsampling factor is not integer. The following image "
+"upsamples 500 data pixels to 530 rendered pixels. You may note a grid of "
+"30 line-like artifacts which stem from the 524 - 500 = 24 extra pixels "
+"that had to be made up. Since interpolation is 'nearest' they are the "
+"same as a neighboring line of pixels and thus stretch the image locally "
+"so that it looks distorted."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:177
+msgid "Better antialiasing algorithms can reduce this effect:"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:202
+msgid ""
+"Apart from the default 'hanning' antialiasing, `~.Axes.imshow` supports a"
+" number of different interpolation algorithms, which may work better or "
+"worse depending on the pattern."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:230
+msgid "References"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:232
+msgid ""
+"The use of the following functions, methods, classes and modules is shown"
+" in this example:"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:235
+msgid "`matplotlib.axes.Axes.imshow`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:240
+msgid "**Total running time of the script:** ( 0 minutes  3.876 seconds)"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:255
+msgid ""
+":download:`Download Python source code: image_antialiasing.py "
+"<image_antialiasing.py>`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:261
+msgid ""
+":download:`Download Jupyter notebook: image_antialiasing.ipynb "
+"<image_antialiasing.ipynb>`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_antialiasing.rst:268
+msgid ""
+"Keywords: matplotlib code example, codex, python plot, pyplot `Gallery "
+"generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_as_gen/matplotlib.patches.ConnectionStyle.rst:2
+msgid "matplotlib.patches.ConnectionStyle"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:1 of
+msgid "Bases: :py:class:`matplotlib.patches._Style`"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:2 of
+msgid ""
+"`ConnectionStyle` is a container class which defines several "
+"connectionstyle classes, which is used to create a path between two "
+"points.  These are mainly used with `FancyArrowPatch`."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:6 of
+msgid "A connectionstyle object can be either created as::"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:10 matplotlib.patches.ConnectionStyle:14
+#: of
+msgid "or::"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:18 of
+msgid "The following classes are defined"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:21 of
+msgid "Class"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:21 of
+msgid "Name"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:21 of
+msgid "Attrs"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:23 of
+msgid "Arc3"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:23 of
+msgid "``arc3``"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:23 of
+msgid "rad=0.0"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:24 of
+msgid "Angle3"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:24 of
+msgid "``angle3``"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:24 of
+msgid "angleA=90, angleB=0"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:25 of
+msgid "Angle"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:25 of
+msgid "``angle``"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:25 of
+msgid "angleA=90, angleB=0, rad=0.0"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:26 of
+msgid "Arc"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:26 of
+msgid "``arc``"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:26 of
+msgid "angleA=0, angleB=0, armA=None, armB=None, rad=0.0"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:27 of
+msgid "Bar"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:27 of
+msgid "``bar``"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:27 of
+msgid "armA=0.0, armB=0.0, fraction=0.3, angle=None"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:30 of
+msgid ""
+"An instance of any connection style class is an callable object, whose "
+"call signature is::"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:37 of
+msgid ""
+"and it returns a `.Path` instance. *posA* and *posB* are tuples of (x, y)"
+" coordinates of the two points to be connected. *patchA* (or *patchB*) is"
+" given, the returned path is clipped so that it start (or end) from the "
+"boundary of the patch. The path is further shrunk by *shrinkA* (or "
+"*shrinkB*) which is given in points."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle:62 of
+msgid "Return the instance of the subclass with the given style name."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle:1
+#: matplotlib.patches.ConnectionStyle.Angle3:1
+#: matplotlib.patches.ConnectionStyle.Arc:1
+#: matplotlib.patches.ConnectionStyle.Arc3:1
+#: matplotlib.patches.ConnectionStyle.Bar:1 of
+msgid "Bases: :py:class:`matplotlib.patches.ConnectionStyle._Base`"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle:2 of
+msgid ""
+"Creates a piecewise continuous quadratic Bezier path between two points. "
+"The path has a one passing-through point placed at the intersecting point"
+" of two lines which cross the start and end point, and have a slope of "
+"angleA and angleB, respectively. The connecting edges are rounded with "
+"*rad*."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle:28
+#: matplotlib.patches.ConnectionStyle.Angle3:27 of
+msgid "*angleA*"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle:28
+#: matplotlib.patches.ConnectionStyle.Angle3:27
+#: matplotlib.patches.ConnectionStyle.Arc:28 of
+msgid "starting angle of the path"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle:31
+#: matplotlib.patches.ConnectionStyle.Angle3:44 of
+msgid "*angleB*"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle:31
+#: matplotlib.patches.ConnectionStyle.Angle3:30
+#: matplotlib.patches.ConnectionStyle.Arc:31 of
+msgid "ending angle of the path"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle:48
+#: matplotlib.patches.ConnectionStyle.Arc3:43 of
+msgid "*rad*"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle:34 of
+msgid "rounding radius of the edge"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Angle3:2 of
+msgid ""
+"Creates a simple quadratic Bezier curve between two points. The middle "
+"control points is placed at the intersecting point of two lines which "
+"cross the start and end point, and have a slope of angleA and angleB, "
+"respectively."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:2 of
+msgid ""
+"Creates a piecewise continuous quadratic Bezier path between two points. "
+"The path can have two passing-through points, a point placed at the "
+"distance of armA and angle of angleA from point A, another point with "
+"respect to point B. The edges are rounded with *rad*."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:28 of
+msgid "*angleA* :"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:31 of
+msgid "*angleB* :"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:34 of
+msgid "*armA* :"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:34 of
+msgid "length of the starting arm"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:37 of
+msgid "*armB* :"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:37 of
+msgid "length of the ending arm"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:54 of
+msgid "*rad* :"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc:40 of
+msgid "rounding radius of the edges"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc3:2 of
+msgid ""
+"Creates a simple quadratic Bezier curve between two points. The curve is "
+"created so that the middle control point (C1) is located at the same "
+"distance from the start (C0) and end points(C2) and the distance of the "
+"C1 to the line connecting C0-C2 is *rad* times the distance of C0-C2."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Arc3:28 of
+msgid "curvature of the curve."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:2 of
+msgid ""
+"A line with *angle* between A and B with *armA* and *armB*. One of the "
+"arms is extended so that they are connected in a right angle. The length "
+"of armA is determined by (*armA* + *fraction* x AB distance). Same for "
+"armB."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:32 of
+msgid "**armA**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:32 of
+msgid "minimum length of armA"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:35 of
+msgid "**armB**"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:35 of
+msgid "minimum length of armB"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:39 of
+msgid "**fraction**"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:38 of
+msgid ""
+"a fraction of the distance between two points that will be added to armA "
+"and armB."
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:56 of
+msgid "**angle**"
+msgstr ""
+
+#: of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.patches.ConnectionStyle.Bar:42 of
+msgid "angle of the connecting line (if None, parallel to A and B)"
+msgstr ""
+

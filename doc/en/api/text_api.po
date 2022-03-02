@@ -1,0 +1,1921 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/text_api.rst:3
+msgid "``matplotlib.text``"
+msgstr ""
+
+#: matplotlib.text:1 of
+msgid "Classes for including text in a figure."
+msgstr ""
+
+#: matplotlib.text.Annotation:1 of
+msgid ""
+"Bases: :py:class:`matplotlib.text.Text`, "
+":py:class:`matplotlib.text._AnnotationBase`"
+msgstr ""
+
+#: matplotlib.text.Annotation:2 of
+msgid ""
+"An `.Annotation` is a `.Text` that can refer to a specific position *xy*."
+" Optionally an arrow pointing from the text to *xy* can be drawn."
+msgstr ""
+
+#: matplotlib.text.Annotation of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.text.Annotation:21 matplotlib.text.Annotation:49
+#: matplotlib.text.Text.set_position:21 of
+msgid "**xy**"
+msgstr ""
+
+#: matplotlib.text.Annotation:21 of
+msgid "The annotated position."
+msgstr ""
+
+#: matplotlib.text.Annotation:24 of
+msgid "**xycoords**"
+msgstr ""
+
+#: matplotlib.text.Annotation:24 of
+msgid "The coordinate system for *xy*."
+msgstr ""
+
+#: matplotlib.text.Annotation:28 of
+msgid "**arrow_patch**"
+msgstr ""
+
+#: matplotlib.text.Annotation:27 of
+msgid "A `.FancyArrowPatch` to point from *xytext* to *xy*."
+msgstr ""
+
+#: matplotlib.text.Annotation:34 of
+msgid "Annotate the point *xy* with text *text*."
+msgstr ""
+
+#: matplotlib.text.Annotation:36 of
+msgid "In the simplest form, the text is placed at *xy*."
+msgstr ""
+
+#: matplotlib.text.Annotation:38 of
+msgid ""
+"Optionally, the text can be displayed in another position *xytext*. An "
+"arrow pointing from the text to the annotated point *xy* can then be "
+"added by defining *arrowprops*."
+msgstr ""
+
+#: matplotlib.text.Annotation matplotlib.text.Annotation.draw
+#: matplotlib.text.Annotation.get_tightbbox
+#: matplotlib.text.Annotation.get_window_extent
+#: matplotlib.text.Annotation.set_figure matplotlib.text.OffsetFrom
+#: matplotlib.text.OffsetFrom.set_unit matplotlib.text.Text.draw
+#: matplotlib.text.Text.get_window_extent
+#: matplotlib.text.Text.set_backgroundcolor matplotlib.text.Text.set_bbox
+#: matplotlib.text.Text.set_clip_box matplotlib.text.Text.set_clip_on
+#: matplotlib.text.Text.set_clip_path matplotlib.text.Text.set_color
+#: matplotlib.text.Text.set_fontfamily matplotlib.text.Text.set_fontname
+#: matplotlib.text.Text.set_fontproperties matplotlib.text.Text.set_fontsize
+#: matplotlib.text.Text.set_fontstretch matplotlib.text.Text.set_fontstyle
+#: matplotlib.text.Text.set_fontvariant matplotlib.text.Text.set_fontweight
+#: matplotlib.text.Text.set_horizontalalignment
+#: matplotlib.text.Text.set_linespacing
+#: matplotlib.text.Text.set_math_fontfamily
+#: matplotlib.text.Text.set_multialignment matplotlib.text.Text.set_parse_math
+#: matplotlib.text.Text.set_position matplotlib.text.Text.set_rotation
+#: matplotlib.text.Text.set_rotation_mode matplotlib.text.Text.set_text
+#: matplotlib.text.Text.set_transform_rotates_text
+#: matplotlib.text.Text.set_usetex matplotlib.text.Text.set_verticalalignment
+#: matplotlib.text.Text.set_wrap matplotlib.text.Text.set_x
+#: matplotlib.text.Text.set_y matplotlib.text.Text.update
+#: matplotlib.text.get_rotation of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.text.Annotation:45 of
+msgid "**text**"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:31 matplotlib.artist.Annotation.set:36
+#: matplotlib.artist.Annotation.set:50 matplotlib.artist.Text.set:29
+#: matplotlib.artist.Text.set:34 matplotlib.artist.Text.set:48
+#: matplotlib.text.Text:50 matplotlib.text.Text:55 matplotlib.text.Text:69 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.text.Annotation:45 of
+msgid "The text of the annotation."
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:41 matplotlib.artist.Text.set:39
+#: matplotlib.text.Text:60 of
+msgid "(float, float)"
+msgstr ""
+
+#: matplotlib.text.Annotation:48 of
+msgid ""
+"The point *(x, y)* to annotate. The coordinate system is determined by "
+"*xycoords*."
+msgstr ""
+
+#: matplotlib.text.Annotation:53 of
+msgid "**xytext** : (float, float), default: *xy*"
+msgstr ""
+
+#: of
+msgid "(float, float), default:"
+msgstr ""
+
+#: matplotlib.text.Annotation:52 of
+msgid ""
+"The position *(x, y)* to place the text at. The coordinate system is "
+"determined by *textcoords*."
+msgstr ""
+
+#: matplotlib.text.Annotation:104 of
+msgid ""
+"**xycoords** : str or `.Artist` or `.Transform` or callable or (float, "
+"float), default: 'data'"
+msgstr ""
+
+#: of
+msgid "str or"
+msgstr ""
+
+#: matplotlib.text.Annotation:56 of
+msgid ""
+"The coordinate system that *xy* is given in. The following types of "
+"values are supported:"
+msgstr ""
+
+#: matplotlib.text.Annotation:59 of
+msgid "One of the following strings:"
+msgstr ""
+
+#: matplotlib.text.Annotation:62 matplotlib.text.Annotation:113 of
+msgid "Value"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:10 matplotlib.artist.Text.set:10
+#: matplotlib.text.Annotation:62 matplotlib.text.Annotation:113
+#: matplotlib.text.Annotation:133 matplotlib.text.Annotation:153
+#: matplotlib.text.Text:31 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.text.Annotation:64 of
+msgid "'figure points'"
+msgstr ""
+
+#: matplotlib.text.Annotation:64 of
+msgid "Points from the lower left of the figure"
+msgstr ""
+
+#: matplotlib.text.Annotation:65 of
+msgid "'figure pixels'"
+msgstr ""
+
+#: matplotlib.text.Annotation:65 of
+msgid "Pixels from the lower left of the figure"
+msgstr ""
+
+#: matplotlib.text.Annotation:66 of
+msgid "'figure fraction'"
+msgstr ""
+
+#: matplotlib.text.Annotation:66 of
+msgid "Fraction of figure from lower left"
+msgstr ""
+
+#: matplotlib.text.Annotation:67 of
+msgid "'subfigure points'"
+msgstr ""
+
+#: matplotlib.text.Annotation:67 of
+msgid "Points from the lower left of the subfigure"
+msgstr ""
+
+#: matplotlib.text.Annotation:68 of
+msgid "'subfigure pixels'"
+msgstr ""
+
+#: matplotlib.text.Annotation:68 of
+msgid "Pixels from the lower left of the subfigure"
+msgstr ""
+
+#: matplotlib.text.Annotation:69 of
+msgid "'subfigure fraction'"
+msgstr ""
+
+#: matplotlib.text.Annotation:69 of
+msgid "Fraction of subfigure from lower left"
+msgstr ""
+
+#: matplotlib.text.Annotation:70 of
+msgid "'axes points'"
+msgstr ""
+
+#: matplotlib.text.Annotation:70 of
+msgid "Points from lower left corner of axes"
+msgstr ""
+
+#: matplotlib.text.Annotation:71 of
+msgid "'axes pixels'"
+msgstr ""
+
+#: matplotlib.text.Annotation:71 of
+msgid "Pixels from lower left corner of axes"
+msgstr ""
+
+#: matplotlib.text.Annotation:72 of
+msgid "'axes fraction'"
+msgstr ""
+
+#: matplotlib.text.Annotation:72 of
+msgid "Fraction of axes from lower left"
+msgstr ""
+
+#: matplotlib.text.Annotation:73 of
+msgid "'data'"
+msgstr ""
+
+#: matplotlib.text.Annotation:73 of
+msgid "Use the coordinate system of the object being annotated (default)"
+msgstr ""
+
+#: matplotlib.text.Annotation:75 of
+msgid "'polar'"
+msgstr ""
+
+#: matplotlib.text.Annotation:75 of
+msgid "*(theta, r)* if not native 'data' coordinates"
+msgstr ""
+
+#: matplotlib.text.Annotation:79 of
+msgid ""
+"Note that 'subfigure pixels' and 'figure pixels' are the same for the "
+"parent figure, so users who want code that is usable in a subfigure can "
+"use 'subfigure pixels'."
+msgstr ""
+
+#: matplotlib.text.Annotation:83 of
+msgid ""
+"An `.Artist`: *xy* is interpreted as a fraction of the artist's "
+"`~matplotlib.transforms.Bbox`. E.g. *(0, 0)* would be the lower left "
+"corner of the bounding box and *(0.5, 1)* would be the center top of the "
+"bounding box."
+msgstr ""
+
+#: matplotlib.text.Annotation:88 of
+msgid "A `.Transform` to transform *xy* to screen coordinates."
+msgstr ""
+
+#: matplotlib.text.Annotation:90 of
+msgid "A function with one of the following signatures::"
+msgstr ""
+
+#: matplotlib.text.Annotation:95 of
+msgid "where *renderer* is a `.RendererBase` subclass."
+msgstr ""
+
+#: matplotlib.text.Annotation:97 of
+msgid ""
+"The result of the function is interpreted like the `.Artist` and "
+"`.Transform` cases above."
+msgstr ""
+
+#: matplotlib.text.Annotation:100 of
+msgid ""
+"A tuple *(xcoords, ycoords)* specifying separate coordinate systems for "
+"*x* and *y*. *xcoords* and *ycoords* must each be of one of the above "
+"described types."
+msgstr ""
+
+#: matplotlib.text.Annotation:104 of
+msgid "See :ref:`plotting-guide-annotation` for more details."
+msgstr ""
+
+#: matplotlib.text.Annotation:117 of
+msgid ""
+"**textcoords** : str or `.Artist` or `.Transform` or callable or (float, "
+"float), default: value of *xycoords*"
+msgstr ""
+
+#: matplotlib.text.Annotation:107 of
+msgid "The coordinate system that *xytext* is given in."
+msgstr ""
+
+#: matplotlib.text.Annotation:109 of
+msgid "All *xycoords* values are valid as well as the following strings:"
+msgstr ""
+
+#: matplotlib.text.Annotation:115 of
+msgid "'offset points'"
+msgstr ""
+
+#: matplotlib.text.Annotation:115 of
+msgid "Offset (in points) from the *xy* value"
+msgstr ""
+
+#: matplotlib.text.Annotation:116 of
+msgid "'offset pixels'"
+msgstr ""
+
+#: matplotlib.text.Annotation:116 of
+msgid "Offset (in pixels) from the *xy* value"
+msgstr ""
+
+#: matplotlib.text.Annotation:172 of
+msgid "**arrowprops**"
+msgstr ""
+
+#: of
+msgid "dict, optional"
+msgstr ""
+
+#: matplotlib.text.Annotation:120 of
+msgid ""
+"The properties used to draw a `.FancyArrowPatch` arrow between the "
+"positions *xy* and *xytext*.  Defaults to None, i.e. no arrow is drawn."
+msgstr ""
+
+#: matplotlib.text.Annotation:124 of
+msgid ""
+"For historical reasons there are two different ways to specify arrows, "
+"\"simple\" and \"fancy\":"
+msgstr ""
+
+#: matplotlib.text.Annotation:127 of
+msgid "**Simple arrow:**"
+msgstr ""
+
+#: matplotlib.text.Annotation:129 of
+msgid ""
+"If *arrowprops* does not contain the key 'arrowstyle' the allowed keys "
+"are:"
+msgstr ""
+
+#: matplotlib.text.Annotation:133 matplotlib.text.Annotation:153 of
+msgid "Key"
+msgstr ""
+
+#: matplotlib.text.Annotation:135 of
+msgid "width"
+msgstr ""
+
+#: matplotlib.text.Annotation:135 of
+msgid "The width of the arrow in points"
+msgstr ""
+
+#: matplotlib.text.Annotation:136 of
+msgid "headwidth"
+msgstr ""
+
+#: matplotlib.text.Annotation:136 of
+msgid "The width of the base of the arrow head in points"
+msgstr ""
+
+#: matplotlib.text.Annotation:137 of
+msgid "headlength"
+msgstr ""
+
+#: matplotlib.text.Annotation:137 of
+msgid "The length of the arrow head in points"
+msgstr ""
+
+#: matplotlib.text.Annotation:138 of
+msgid "shrink"
+msgstr ""
+
+#: matplotlib.text.Annotation:138 of
+msgid "Fraction of total length to shrink from both ends"
+msgstr ""
+
+#: matplotlib.text.Annotation:139 matplotlib.text.Annotation:164 of
+msgid "?"
+msgstr ""
+
+#: matplotlib.text.Annotation:139 of
+msgid "Any key to :class:`matplotlib.patches.FancyArrowPatch`"
+msgstr ""
+
+#: matplotlib.text.Annotation:142 of
+msgid ""
+"The arrow is attached to the edge of the text box, the exact position "
+"(corners or centers) depending on where it's pointing to."
+msgstr ""
+
+#: matplotlib.text.Annotation:145 of
+msgid "**Fancy arrow:**"
+msgstr ""
+
+#: matplotlib.text.Annotation:147 of
+msgid "This is used if 'arrowstyle' is provided in the *arrowprops*."
+msgstr ""
+
+#: matplotlib.text.Annotation:149 of
+msgid ""
+"Valid keys are the following `~matplotlib.patches.FancyArrowPatch` "
+"parameters:"
+msgstr ""
+
+#: matplotlib.text.Annotation:155 of
+msgid "arrowstyle"
+msgstr ""
+
+#: matplotlib.text.Annotation:155 of
+msgid "the arrow style"
+msgstr ""
+
+#: matplotlib.text.Annotation:156 of
+msgid "connectionstyle"
+msgstr ""
+
+#: matplotlib.text.Annotation:156 of
+msgid "the connection style"
+msgstr ""
+
+#: matplotlib.text.Annotation:157 of
+msgid "relpos"
+msgstr ""
+
+#: matplotlib.text.Annotation:157 of
+msgid "see below; default is (0.5, 0.5)"
+msgstr ""
+
+#: matplotlib.text.Annotation:158 of
+msgid "patchA"
+msgstr ""
+
+#: matplotlib.text.Annotation:158 of
+msgid "default is bounding box of the text"
+msgstr ""
+
+#: matplotlib.text.Annotation:159 of
+msgid "patchB"
+msgstr ""
+
+#: matplotlib.text.Annotation:159 of
+msgid "default is None"
+msgstr ""
+
+#: matplotlib.text.Annotation:160 of
+msgid "shrinkA"
+msgstr ""
+
+#: matplotlib.text.Annotation:160 matplotlib.text.Annotation:161 of
+msgid "default is 2 points"
+msgstr ""
+
+#: matplotlib.text.Annotation:161 of
+msgid "shrinkB"
+msgstr ""
+
+#: matplotlib.text.Annotation:162 of
+msgid "mutation_scale"
+msgstr ""
+
+#: matplotlib.text.Annotation:162 of
+msgid "default is text size (in points)"
+msgstr ""
+
+#: matplotlib.text.Annotation:163 of
+msgid "mutation_aspect"
+msgstr ""
+
+#: matplotlib.text.Annotation:163 of
+msgid "default is 1."
+msgstr ""
+
+#: matplotlib.text.Annotation:164 of
+msgid "any key for :class:`matplotlib.patches.PathPatch`"
+msgstr ""
+
+#: matplotlib.text.Annotation:167 of
+msgid ""
+"The exact starting point position of the arrow is defined by *relpos*. "
+"It's a tuple of relative coordinates of the text box, where (0, 0) is the"
+" lower left corner and (1, 1) is the upper right corner. Values <0 and >1"
+" are supported and specify points outside the text box. By default (0.5, "
+"0.5) the starting point is centered in the text box."
+msgstr ""
+
+#: matplotlib.text.Annotation:182 of
+msgid "**annotation_clip**"
+msgstr ""
+
+#: of
+msgid "bool or None, default: None"
+msgstr ""
+
+#: matplotlib.text.Annotation:175 of
+msgid ""
+"Whether to draw the annotation when the annotation point *xy* is outside "
+"the axes area."
+msgstr ""
+
+#: matplotlib.text.Annotation:178 of
+msgid "If *True*, the annotation will only be drawn when *xy* is within the axes."
+msgstr ""
+
+#: matplotlib.text.Annotation:180 of
+msgid "If *False*, the annotation will always be drawn."
+msgstr ""
+
+#: matplotlib.text.Annotation:181 of
+msgid ""
+"If *None*, the annotation will only be drawn when *xy* is within the axes"
+" and *xycoords* is 'data'."
+msgstr ""
+
+#: matplotlib.text.Annotation:185 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.text.Annotation:185 of
+msgid "Additional kwargs are passed to `~matplotlib.text.Text`."
+msgstr ""
+
+#: matplotlib.text.Annotation matplotlib.text.Annotation.get_tightbbox
+#: matplotlib.text.get_rotation of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.text.Annotation:196 of
+msgid "`.Annotation`"
+msgstr ""
+
+#: matplotlib.text.Annotation:201 of
+msgid ":ref:`plotting-guide-annotation`"
+msgstr ""
+
+#: matplotlib.text.Annotation.anncoords:2 of
+msgid "The coordinate system to use for `.Annotation.xyann`."
+msgstr ""
+
+#: matplotlib.text.Annotation.contains:2 matplotlib.text.Text.contains:2 of
+msgid ""
+"Return whether the mouse event occurred inside the axis-aligned bounding-"
+"box of the text."
+msgstr ""
+
+#: matplotlib.text.Annotation.draw:2 matplotlib.text.Text.draw:2 of
+msgid "Draw the Artist (and its children) using the given renderer."
+msgstr ""
+
+#: matplotlib.text.Annotation.draw:4 matplotlib.text.Text.draw:4 of
+msgid ""
+"This has no effect if the artist is not visible (`.Artist.get_visible` "
+"returns False)."
+msgstr ""
+
+#: matplotlib.text.Annotation.draw:18 matplotlib.text.Text.draw:18 of
+msgid "**renderer** : `.RendererBase` subclass."
+msgstr ""
+
+#: matplotlib.text.Annotation.draw:17 matplotlib.text.Text.draw:17 of
+msgid "RendererBase subclass."
+msgstr ""
+
+#: matplotlib.text.Annotation.draw:21 matplotlib.text.Text.draw:21
+#: matplotlib.text.Text.get_prop_tup:18 matplotlib.text.Text.set_clip_path:24
+#: matplotlib.text.Text.set_wrap:19 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.text.Annotation.draw:22 matplotlib.text.Text.draw:22 of
+msgid "This method is overridden in the Artist subclasses."
+msgstr ""
+
+#: matplotlib.text.Annotation.get_anncoords:2 of
+msgid "Return the coordinate system to use for `.Annotation.xyann`."
+msgstr ""
+
+#: matplotlib.text.Annotation.get_anncoords:4
+#: matplotlib.text.Annotation.set_anncoords:4 of
+msgid "See also *xycoords* in `.Annotation`."
+msgstr ""
+
+#: matplotlib.text.Annotation.get_tightbbox:2 of
+msgid "Like `.Artist.get_window_extent`, but includes any clipping."
+msgstr ""
+
+#: matplotlib.text.Annotation.get_tightbbox:9 of
+msgid "**renderer** : `.RendererBase` subclass"
+msgstr ""
+
+#: matplotlib.text.Annotation.get_tightbbox:8 of
+msgid "RendererBase subclass"
+msgstr ""
+
+#: matplotlib.text.Annotation.get_tightbbox:8 of
+msgid ""
+"renderer that will be used to draw the figures (i.e. "
+"``fig.canvas.get_renderer()``)"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:19
+#: matplotlib.text.Annotation.get_tightbbox:26 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.text.Annotation.get_tightbbox:14 of
+msgid "The enclosing bounding box (in figure pixel coordinates)."
+msgstr ""
+
+#: matplotlib.text.Annotation.get_window_extent:2
+#: matplotlib.text.Text.get_window_extent:2 of
+msgid "Return the `.Bbox` bounding the text, in display units."
+msgstr ""
+
+#: matplotlib.text.Annotation.get_window_extent:4
+#: matplotlib.text.Text.get_window_extent:4 of
+msgid ""
+"In addition to being used internally, this is useful for specifying "
+"clickable regions in a png file on a web page."
+msgstr ""
+
+#: matplotlib.text.Annotation.get_window_extent:14
+#: matplotlib.text.Text.get_window_extent:14 of
+msgid "**renderer**"
+msgstr ""
+
+#: of
+msgid "Renderer, optional"
+msgstr ""
+
+#: matplotlib.text.Annotation.get_window_extent:10
+#: matplotlib.text.Text.get_window_extent:10 of
+msgid ""
+"A renderer is needed to compute the bounding box.  If the artist has "
+"already been drawn, the renderer is cached; thus, it is only necessary to"
+" pass this argument when calling `get_window_extent` before the first "
+"`draw`.  In practice, it is usually easier to trigger a draw first (e.g. "
+"by saving the figure)."
+msgstr ""
+
+#: matplotlib.text.Annotation.get_window_extent:32
+#: matplotlib.text.Text.get_window_extent:32 of
+msgid "**dpi**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.text.Annotation.get_window_extent:17
+#: matplotlib.text.Text.get_window_extent:17 of
+msgid ""
+"The dpi value for computing the bbox, defaults to ``self.figure.dpi`` "
+"(*not* the renderer dpi); should be set e.g. if to match regions with a "
+"figure saved with a custom dpi value."
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:2 matplotlib.artist.Text.set:2 of
+msgid "Set multiple properties at once."
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:4 matplotlib.artist.Text.set:4 of
+msgid "Supported properties are"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:10 matplotlib.artist.Text.set:10
+#: matplotlib.text.Text:31 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:12 matplotlib.artist.Text.set:12
+#: matplotlib.text.Text:33 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:12 matplotlib.artist.Text.set:12
+#: matplotlib.text.Text:33 of
+msgid ""
+"a filter function, which takes a (m, n, 3) float array and a dpi value, "
+"and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:13 matplotlib.artist.Text.set:13
+#: matplotlib.text.Text:34 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:13 matplotlib.artist.Text.set:13
+#: matplotlib.text.Text:34 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:14 matplotlib.artist.Text.set:14
+#: matplotlib.text.Text:35 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:14 matplotlib.artist.Annotation.set:20
+#: matplotlib.artist.Annotation.set:33 matplotlib.artist.Annotation.set:38
+#: matplotlib.artist.Annotation.set:42 matplotlib.artist.Annotation.set:49
+#: matplotlib.artist.Annotation.set:53 matplotlib.artist.Annotation.set:54
+#: matplotlib.artist.Text.set:14 matplotlib.artist.Text.set:31
+#: matplotlib.artist.Text.set:36 matplotlib.artist.Text.set:40
+#: matplotlib.artist.Text.set:47 matplotlib.artist.Text.set:51
+#: matplotlib.artist.Text.set:52 matplotlib.text.Text:35
+#: matplotlib.text.Text:52 matplotlib.text.Text:57 matplotlib.text.Text:61
+#: matplotlib.text.Text:68 matplotlib.text.Text:72 matplotlib.text.Text:73 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:15 of
+msgid ":meth:`anncoords <matplotlib.text.Annotation.set_anncoords>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:15 matplotlib.artist.Annotation.set:23
+#: matplotlib.artist.Text.set:17 matplotlib.artist.Text.set:18
+#: matplotlib.artist.Text.set:19 matplotlib.text.Text:38
+#: matplotlib.text.Text:39 matplotlib.text.Text:40 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:16 of
+msgid "``annotation_clip``"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:16 matplotlib.artist.Annotation.set:46
+#: matplotlib.artist.Annotation.set:51 matplotlib.artist.Text.set:44
+#: matplotlib.artist.Text.set:49 matplotlib.text.Text:65
+#: matplotlib.text.Text:70 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:17 matplotlib.artist.Text.set:15
+#: matplotlib.text.Text:36 of
+msgid ":meth:`backgroundcolor <matplotlib.text.Text.set_backgroundcolor>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:17 matplotlib.artist.Annotation.set:22
+#: matplotlib.artist.Text.set:15 matplotlib.artist.Text.set:20
+#: matplotlib.text.Text:36 matplotlib.text.Text:41 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:18 matplotlib.artist.Text.set:16
+#: matplotlib.text.Text:37 of
+msgid ":meth:`bbox <matplotlib.text.Text.set_bbox>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:18 matplotlib.artist.Text.set:16
+#: matplotlib.text.Text:37 of
+msgid "dict with properties for `.patches.FancyBboxPatch`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:19 matplotlib.artist.Text.set:17
+#: matplotlib.text.Text:38 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:20 matplotlib.artist.Text.set:18
+#: matplotlib.text.Text:39 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:21 matplotlib.artist.Text.set:19
+#: matplotlib.text.Text:40 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:21 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:22 matplotlib.text.Text:41 of
+msgid ":meth:`color <matplotlib.text.Text.set_color>` or c"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:23 matplotlib.artist.Text.set:21
+#: matplotlib.text.Text:42 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:24 matplotlib.text.Text:43 of
+msgid ":meth:`fontfamily <matplotlib.text.Text.set_fontfamily>` or family"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:24 matplotlib.artist.Text.set:22
+#: matplotlib.text.Text:43 of
+msgid "{FONTNAME, 'serif', 'sans-serif', 'cursive', 'fantasy', 'monospace'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:25 matplotlib.text.Text:44 of
+msgid ""
+":meth:`fontproperties <matplotlib.text.Text.set_fontproperties>` or font "
+"or font_properties"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:25 matplotlib.artist.Text.set:23
+#: matplotlib.text.Text:44 of
+msgid "`.font_manager.FontProperties` or `str` or `pathlib.Path`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:26 matplotlib.text.Text:45 of
+msgid ":meth:`fontsize <matplotlib.text.Text.set_fontsize>` or size"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:26 matplotlib.artist.Text.set:24
+#: matplotlib.text.Text:45 of
+msgid ""
+"float or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', "
+"'xx-large'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:27 matplotlib.text.Text:46 of
+msgid ":meth:`fontstretch <matplotlib.text.Text.set_fontstretch>` or stretch"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:27 matplotlib.artist.Text.set:25
+#: matplotlib.text.Text:46 of
+msgid ""
+"{a numeric value in range 0-1000, 'ultra-condensed', 'extra-condensed', "
+"'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', "
+"'extra-expanded', 'ultra-expanded'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:28 matplotlib.text.Text:47 of
+msgid ":meth:`fontstyle <matplotlib.text.Text.set_fontstyle>` or style"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:28 matplotlib.artist.Text.set:26
+#: matplotlib.text.Text:47 of
+msgid "{'normal', 'italic', 'oblique'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:29 matplotlib.text.Text:48 of
+msgid ":meth:`fontvariant <matplotlib.text.Text.set_fontvariant>` or variant"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:29 matplotlib.artist.Text.set:27
+#: matplotlib.text.Text:48 of
+msgid "{'normal', 'small-caps'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:30 matplotlib.text.Text:49 of
+msgid ":meth:`fontweight <matplotlib.text.Text.set_fontweight>` or weight"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:30 matplotlib.artist.Text.set:28
+#: matplotlib.text.Text:49 of
+msgid ""
+"{a numeric value in range 0-1000, 'ultralight', 'light', 'normal', "
+"'regular', 'book', 'medium', 'roman', 'semibold', 'demibold', 'demi', "
+"'bold', 'heavy', 'extra bold', 'black'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:31 matplotlib.artist.Text.set:29
+#: matplotlib.text.Text:50 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:32 matplotlib.text.Text:51 of
+msgid ""
+":meth:`horizontalalignment "
+"<matplotlib.text.Text.set_horizontalalignment>` or ha"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:32 matplotlib.artist.Text.set:30
+#: matplotlib.text.Text:51 of
+msgid "{'center', 'right', 'left'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:33 matplotlib.artist.Text.set:31
+#: matplotlib.text.Text:52 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:34 matplotlib.artist.Text.set:32
+#: matplotlib.text.Text:53 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:34 matplotlib.artist.Annotation.set:47
+#: matplotlib.artist.Text.set:32 matplotlib.artist.Text.set:45
+#: matplotlib.text.Text:53 matplotlib.text.Text:66 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:35 matplotlib.artist.Text.set:33
+#: matplotlib.text.Text:54 of
+msgid ":meth:`linespacing <matplotlib.text.Text.set_linespacing>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:35 matplotlib.artist.Text.set:33
+#: matplotlib.text.Text:54 of
+msgid "float (multiple of font size)"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:36 matplotlib.artist.Text.set:34
+#: matplotlib.text.Text:55 of
+msgid ":meth:`math_fontfamily <matplotlib.text.Text.set_math_fontfamily>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:37 matplotlib.text.Text:56 of
+msgid ":meth:`multialignment <matplotlib.text.Text.set_multialignment>` or ma"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:37 matplotlib.artist.Text.set:35
+#: matplotlib.text.Text:56 of
+msgid "{'left', 'right', 'center'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:38 matplotlib.artist.Text.set:36
+#: matplotlib.text.Text:57 of
+msgid ":meth:`parse_math <matplotlib.text.Text.set_parse_math>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:39 matplotlib.artist.Text.set:37
+#: matplotlib.text.Text:58 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:39 matplotlib.artist.Text.set:37
+#: matplotlib.text.Text:58 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:40 matplotlib.artist.Text.set:38
+#: matplotlib.text.Text:59 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:40 matplotlib.artist.Text.set:38
+#: matplotlib.text.Text:59 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:41 matplotlib.artist.Text.set:39
+#: matplotlib.text.Text:60 of
+msgid ":meth:`position <matplotlib.text.Text.set_position>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:42 matplotlib.artist.Text.set:40
+#: matplotlib.text.Text:61 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:43 matplotlib.artist.Text.set:41
+#: matplotlib.text.Text:62 of
+msgid ":meth:`rotation <matplotlib.text.Text.set_rotation>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:43 matplotlib.artist.Text.set:41
+#: matplotlib.text.Text:62 of
+msgid "float or {'vertical', 'horizontal'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:44 matplotlib.artist.Text.set:42
+#: matplotlib.text.Text:63 of
+msgid ":meth:`rotation_mode <matplotlib.text.Text.set_rotation_mode>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:44 matplotlib.artist.Text.set:42
+#: matplotlib.text.Text:63 of
+msgid "{None, 'default', 'anchor'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:45 matplotlib.artist.Text.set:43
+#: matplotlib.text.Text:64 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:45 matplotlib.artist.Text.set:43
+#: matplotlib.text.Text:64 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:46 matplotlib.artist.Text.set:44
+#: matplotlib.text.Text:65 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:47 matplotlib.artist.Text.set:45
+#: matplotlib.text.Text:66 of
+msgid ":meth:`text <matplotlib.text.Text.set_text>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:48 matplotlib.artist.Text.set:46
+#: matplotlib.text.Text:67 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:48 matplotlib.artist.Text.set:46
+#: matplotlib.text.Text:67 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:49 matplotlib.artist.Text.set:47
+#: matplotlib.text.Text:68 of
+msgid ""
+":meth:`transform_rotates_text "
+"<matplotlib.text.Text.set_transform_rotates_text>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:50 matplotlib.artist.Text.set:48
+#: matplotlib.text.Text:69 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:51 matplotlib.artist.Text.set:49
+#: matplotlib.text.Text:70 of
+msgid ":meth:`usetex <matplotlib.text.Text.set_usetex>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:52 matplotlib.text.Text:71 of
+msgid ""
+":meth:`verticalalignment <matplotlib.text.Text.set_verticalalignment>` or"
+" va"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:52 matplotlib.artist.Text.set:50
+#: matplotlib.text.Text:71 of
+msgid "{'center', 'top', 'bottom', 'baseline', 'center_baseline'}"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:53 matplotlib.artist.Text.set:51
+#: matplotlib.text.Text:72 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:54 matplotlib.artist.Text.set:52
+#: matplotlib.text.Text:73 of
+msgid ":meth:`wrap <matplotlib.text.Text.set_wrap>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:55 matplotlib.artist.Text.set:53
+#: matplotlib.text.Text:74 of
+msgid ":meth:`x <matplotlib.text.Text.set_x>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:55 matplotlib.artist.Annotation.set:56
+#: matplotlib.artist.Annotation.set:57 matplotlib.artist.Text.set:53
+#: matplotlib.artist.Text.set:54 matplotlib.artist.Text.set:55
+#: matplotlib.text.Text:74 matplotlib.text.Text:75 matplotlib.text.Text:76
+#: matplotlib.text.get_rotation:26 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:56 matplotlib.artist.Text.set:54
+#: matplotlib.text.Text:75 of
+msgid ":meth:`y <matplotlib.text.Text.set_y>`"
+msgstr ""
+
+#: matplotlib.artist.Annotation.set:57 matplotlib.artist.Text.set:55
+#: matplotlib.text.Text:76 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.text.Annotation.set_anncoords:2 of
+msgid "Set the coordinate system to use for `.Annotation.xyann`."
+msgstr ""
+
+#: matplotlib.text.Annotation.set_figure:2 of
+msgid "Set the `.Figure` instance the artist belongs to."
+msgstr ""
+
+#: matplotlib.text.Annotation.set_figure:21 of
+msgid "**fig** : `.Figure`"
+msgstr ""
+
+#: matplotlib.text.Annotation.set_figure:20 of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.text.Annotation.update_positions:2 of
+msgid "Update the pixel positions of the annotation text and the arrow patch."
+msgstr ""
+
+#: matplotlib.text.Annotation.xyann:2 of
+msgid "The text position."
+msgstr ""
+
+#: matplotlib.text.Annotation.xyann:4 of
+msgid "See also *xytext* in `.Annotation`."
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:2 of
+msgid "Callable helper class for working with `Annotation`."
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:29 of
+msgid "**artist** : `.Artist` or `.BboxBase` or `.Transform`"
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:28 of
+msgid "Artist or BboxBase or Transform"
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:29 of
+msgid "The object to compute the offset from."
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:37 of
+msgid "**ref_coord**"
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:32 of
+msgid ""
+"If *artist* is an `.Artist` or `.BboxBase`, this values is the location "
+"to of the offset origin in fractions of the *artist* bounding box."
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:36 of
+msgid ""
+"If *artist* is a transform, the offset origin is the transform applied to"
+" this value."
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:53 matplotlib.text.OffsetFrom.set_unit:21 of
+msgid "**unit**"
+msgstr ""
+
+#: of
+msgid "{'points, 'pixels'}, default: 'points'"
+msgstr ""
+
+#: matplotlib.text.OffsetFrom:40 of
+msgid "The screen units to use (pixels or points) for the offset input."
+msgstr ""
+
+#: matplotlib.text.OffsetFrom.get_unit:2 of
+msgid "Return the unit for input to the transform used by ``__call__``."
+msgstr ""
+
+#: matplotlib.text.OffsetFrom.set_unit:2 of
+msgid "Set the unit for input to the transform used by ``__call__``."
+msgstr ""
+
+#: of
+msgid "{'points', 'pixels'}"
+msgstr ""
+
+#: matplotlib.text.Text:1 of
+msgid "Bases: :py:class:`matplotlib.artist.Artist`"
+msgstr ""
+
+#: matplotlib.text.Text:2 of
+msgid "Handle storing and drawing of text in window or data coordinates."
+msgstr ""
+
+#: matplotlib.text.Text:23 of
+msgid "Create a `.Text` instance at *x*, *y* with string *text*."
+msgstr ""
+
+#: matplotlib.text.Text:25 of
+msgid "Valid keyword arguments are:"
+msgstr ""
+
+#: matplotlib.artist.Text.set:21 matplotlib.text.Text:42 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.text.Text.get_bbox_patch:2 of
+msgid ""
+"Return the bbox Patch, or None if the `.patches.FancyBboxPatch` is not "
+"made."
+msgstr ""
+
+#: matplotlib.text.Text.get_color:2 of
+msgid "Alias for `get_color`."
+msgstr ""
+
+#: matplotlib.text.Text.get_color:2 of
+msgid "Return the color of the text."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontfamily:2 of
+msgid "Alias for `get_fontfamily`."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontproperties:2 of
+msgid "Alias for `get_fontproperties`."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontfamily:2 of
+msgid "Return the list of font families used for font lookup."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontfamily:16 of
+msgid ":obj:`.font_manager.FontProperties.get_family`"
+msgstr ""
+
+#: matplotlib.text.Text.get_fontname:2 of
+msgid "Return the font name as a string."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontname:16 of
+msgid ":obj:`.font_manager.FontProperties.get_name`"
+msgstr ""
+
+#: matplotlib.text.Text.get_fontproperties:2 of
+msgid "Return the `.font_manager.FontProperties`."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontsize:2 of
+msgid "Return the font size as an integer."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontsize:16 of
+msgid ":obj:`.font_manager.FontProperties.get_size_in_points`"
+msgstr ""
+
+#: matplotlib.text.Text.get_fontstyle:2 of
+msgid "Return the font style as a string."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontstyle:16 of
+msgid ":obj:`.font_manager.FontProperties.get_style`"
+msgstr ""
+
+#: matplotlib.text.Text.get_fontvariant:2 of
+msgid "Return the font variant as a string."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontvariant:16 of
+msgid ":obj:`.font_manager.FontProperties.get_variant`"
+msgstr ""
+
+#: matplotlib.text.Text.get_fontweight:2 of
+msgid "Return the font weight as a string or a number."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontweight:16 of
+msgid ":obj:`.font_manager.FontProperties.get_weight`"
+msgstr ""
+
+#: matplotlib.text.Text.get_horizontalalignment:2 of
+msgid "Alias for `get_horizontalalignment`."
+msgstr ""
+
+#: matplotlib.text.Text.get_horizontalalignment:2 of
+msgid ""
+"Return the horizontal alignment as a string.  Will be one of 'left', "
+"'center' or 'right'."
+msgstr ""
+
+#: matplotlib.text.Text.get_math_fontfamily:2 of
+msgid "Return the font family name for math text rendered by Matplotlib."
+msgstr ""
+
+#: matplotlib.text.Text.get_math_fontfamily:4 of
+msgid "The default value is :rc:`mathtext.fontset`."
+msgstr ""
+
+#: matplotlib.text.Text.get_math_fontfamily:17 of
+msgid ":obj:`set_math_fontfamily`"
+msgstr ""
+
+#: matplotlib.text.Text.get_fontname:2 of
+msgid "Alias for `get_fontname`."
+msgstr ""
+
+#: matplotlib.text.Text.get_parse_math:2 of
+msgid "Return whether mathtext parsing is considered for this `Text`."
+msgstr ""
+
+#: matplotlib.text.Text.get_position:2 of
+msgid "Return the (x, y) position of the text."
+msgstr ""
+
+#: matplotlib.text.Text.get_prop_tup:2 of
+msgid "[*Deprecated*] Return a hashable tuple of properties."
+msgstr ""
+
+#: matplotlib.text.Text.get_prop_tup:4 of
+msgid ""
+"Not intended to be human readable, but useful for backends who want to "
+"cache derived information about text (e.g., layouts) and need to know if "
+"the text has changed."
+msgstr ""
+
+#: matplotlib.text.Text.get_rotation:2 of
+msgid "Return the text angle in degrees between 0 and 360."
+msgstr ""
+
+#: matplotlib.text.Text.get_rotation_mode:2 of
+msgid "Return the text rotation mode."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontsize:2 of
+msgid "Alias for `get_fontsize`."
+msgstr ""
+
+#: matplotlib.text.Text.get_stretch:2 of
+msgid "Return the font stretch as a string or a number."
+msgstr ""
+
+#: matplotlib.text.Text.get_stretch:16 of
+msgid ":obj:`.font_manager.FontProperties.get_stretch`"
+msgstr ""
+
+#: matplotlib.text.Text.get_fontstyle:2 of
+msgid "Alias for `get_fontstyle`."
+msgstr ""
+
+#: matplotlib.text.Text.get_text:2 of
+msgid "Return the text string."
+msgstr ""
+
+#: matplotlib.text.Text.get_transform_rotates_text:2 of
+msgid "Return whether rotations of the transform affect the text direction."
+msgstr ""
+
+#: matplotlib.text.Text.get_unitless_position:2 of
+msgid "Return the (x, y) unitless position of the text."
+msgstr ""
+
+#: matplotlib.text.Text.get_usetex:2 of
+msgid "Return whether this `Text` object uses TeX for rendering."
+msgstr ""
+
+#: matplotlib.text.Text.get_verticalalignment:2 of
+msgid "Alias for `get_verticalalignment`."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontvariant:2 of
+msgid "Alias for `get_fontvariant`."
+msgstr ""
+
+#: matplotlib.text.Text.get_verticalalignment:2 of
+msgid ""
+"Return the vertical alignment as a string.  Will be one of 'top', "
+"'center', 'bottom', 'baseline' or 'center_baseline'."
+msgstr ""
+
+#: matplotlib.text.Text.get_fontweight:2 of
+msgid "Alias for `get_fontweight`."
+msgstr ""
+
+#: matplotlib.text.Text.get_wrap:2 of
+msgid "Return whether the text can be wrapped."
+msgstr ""
+
+#: matplotlib.artist.Text.set:20 of
+msgid ":meth:`color <matplotlib.text.Text.set_color>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:22 of
+msgid ":meth:`fontfamily <matplotlib.text.Text.set_fontfamily>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:23 of
+msgid ":meth:`fontproperties <matplotlib.text.Text.set_fontproperties>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:24 of
+msgid ":meth:`fontsize <matplotlib.text.Text.set_fontsize>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:25 of
+msgid ":meth:`fontstretch <matplotlib.text.Text.set_fontstretch>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:26 of
+msgid ":meth:`fontstyle <matplotlib.text.Text.set_fontstyle>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:27 of
+msgid ":meth:`fontvariant <matplotlib.text.Text.set_fontvariant>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:28 of
+msgid ":meth:`fontweight <matplotlib.text.Text.set_fontweight>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:30 of
+msgid ":meth:`horizontalalignment <matplotlib.text.Text.set_horizontalalignment>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:35 of
+msgid ":meth:`multialignment <matplotlib.text.Text.set_multialignment>`"
+msgstr ""
+
+#: matplotlib.artist.Text.set:50 of
+msgid ":meth:`verticalalignment <matplotlib.text.Text.set_verticalalignment>`"
+msgstr ""
+
+#: matplotlib.text.Text.set_backgroundcolor:2 of
+msgid "Set the background color of the text by updating the bbox."
+msgstr ""
+
+#: matplotlib.text.Text.set_backgroundcolor:15
+#: matplotlib.text.Text.set_color:21 of
+msgid "**color**"
+msgstr ""
+
+#: matplotlib.text.Text.set_backgroundcolor:20 of
+msgid ":obj:`.set_bbox`"
+msgstr ""
+
+#: matplotlib.text.Text.set_backgroundcolor:21 of
+msgid "To change the position of the bounding box"
+msgstr ""
+
+#: matplotlib.text.Text.set_bbox:2 of
+msgid "Draw a bounding box around self."
+msgstr ""
+
+#: matplotlib.text.Text.set_bbox:19 of
+msgid "**rectprops** : dict with properties for `.patches.FancyBboxPatch`"
+msgstr ""
+
+#: of
+msgid "dict with properties for"
+msgstr ""
+
+#: matplotlib.text.Text.set_bbox:8 of
+msgid ""
+"The default boxstyle is 'square'. The mutation scale of the "
+"`.patches.FancyBboxPatch` is set to the fontsize."
+msgstr ""
+
+#: matplotlib.text.Text.set_bbox:22 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.text.Text.set_color:2 of
+msgid "Alias for `set_color`."
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_box:2 of
+msgid "Set the artist's clip `.Bbox`."
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_box:21 of
+msgid "**clipbox** : `.Bbox`"
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_box:20 of
+msgid "Bbox"
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_on:2 of
+msgid "Set whether the artist uses clipping."
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_on:4 of
+msgid ""
+"When False artists will be visible outside of the axes which can lead to "
+"unexpected results."
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_on:23 of
+msgid "**b**"
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:2 of
+msgid "Set the artist's clip path."
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:9 of
+msgid "**path** : `.Patch` or `.Path` or `.TransformedPath` or None"
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:8 of
+msgid "Patch or Path or TransformedPath or None"
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:8 of
+msgid ""
+"The clip path. If given a `.Path`, *transform* must be provided as well. "
+"If *None*, a previously set clip path is removed."
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:21 of
+msgid "**transform** : `~matplotlib.transforms.Transform`, optional"
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:20 of
+msgid "Transform, optional"
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:12 of
+msgid ""
+"Only used if *path* is a `.Path`, in which case the given `.Path` is "
+"converted to a `.TransformedPath` using *transform*."
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:25 of
+msgid ""
+"For efficiency, if *path* is a `.Rectangle` this method will set the "
+"clipping box to the corresponding rectangle and set the clipping path to "
+"``None``."
+msgstr ""
+
+#: matplotlib.text.Text.set_clip_path:29 of
+msgid ""
+"For technical reasons (support of `~.Artist.set`), a tuple (*path*, "
+"*transform*) is also accepted as a single positional parameter."
+msgstr ""
+
+#: matplotlib.text.Text.set_color:2 of
+msgid "Set the foreground color of the text"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontfamily:2 of
+msgid "Alias for `set_fontfamily`."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontproperties:2 of
+msgid "Alias for `set_fontproperties`."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontfamily:2 of
+msgid ""
+"Set the font family.  May be either a single string, or a list of strings"
+" in decreasing priority.  Each string may be either a real font name or a"
+" generic font class name.  If the latter, the specific font names will be"
+" looked up in the corresponding rcParams."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontfamily:7 of
+msgid ""
+"If a `Text` instance is constructed with ``fontfamily=None``, then the "
+"font is set to :rc:`font.family`, and the same is done when "
+"`set_fontfamily()` is called on an existing `Text` instance."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontfamily:22 matplotlib.text.Text.set_fontname:16
+#: of
+msgid "**fontname**"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontfamily:27 matplotlib.text.Text.set_fontname:21
+#: of
+msgid ":obj:`.font_manager.FontProperties.set_family`"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontname:2 of
+msgid "Alias for `set_family`."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontname:4 of
+msgid "One-way alias only: the getter differs."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontproperties:2 of
+msgid "Set the font properties that control the text."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontproperties:23 of
+msgid "**fp** : `.font_manager.FontProperties` or `str` or `pathlib.Path`"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontproperties:22 of
+msgid "font_manager.FontProperties or str or pathlib.Path"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontproperties:8 of
+msgid ""
+"If a `str`, it is interpreted as a fontconfig pattern parsed by "
+"`.FontProperties`.  If a `pathlib.Path`, it is interpreted as the "
+"absolute path to a font file."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontsize:2 of
+msgid "Set the font size."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontsize:16 of
+msgid "**fontsize**"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontsize:8 of
+msgid ""
+"If float, the fontsize in points. The string values denote sizes relative"
+" to the default font size."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontsize:21 of
+msgid ":obj:`.font_manager.FontProperties.set_size`"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontstretch:2 of
+msgid "Set the font stretch (horizontal condensation or expansion)."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontstretch:15 of
+msgid "**stretch**"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontstretch:20 of
+msgid ":obj:`.font_manager.FontProperties.set_stretch`"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontstyle:2 of
+msgid "Set the font style."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontstyle:15 of
+msgid "**fontstyle**"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontstyle:20 of
+msgid ":obj:`.font_manager.FontProperties.set_style`"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontvariant:2 of
+msgid "Set the font variant."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontvariant:15 of
+msgid "**variant**"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontvariant:20 of
+msgid ":obj:`.font_manager.FontProperties.set_variant`"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontweight:2 of
+msgid "Set the font weight."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontweight:15 of
+msgid "**weight**"
+msgstr ""
+
+#: matplotlib.text.Text.set_fontweight:20 of
+msgid ":obj:`.font_manager.FontProperties.set_weight`"
+msgstr ""
+
+#: matplotlib.text.Text.set_horizontalalignment:2 of
+msgid "Alias for `set_horizontalalignment`."
+msgstr ""
+
+#: matplotlib.text.Text.set_horizontalalignment:2 of
+msgid "Set the horizontal alignment to one of"
+msgstr ""
+
+#: matplotlib.text.Text.set_horizontalalignment:21
+#: matplotlib.text.Text.set_multialignment:24
+#: matplotlib.text.Text.set_verticalalignment:21 of
+msgid "**align**"
+msgstr ""
+
+#: matplotlib.text.Text.set_linespacing:2 of
+msgid "Set the line spacing as a multiple of the font size."
+msgstr ""
+
+#: matplotlib.text.Text.set_linespacing:4 of
+msgid "The default line spacing is 1.2."
+msgstr ""
+
+#: matplotlib.text.Text.set_linespacing:22 of
+msgid "**spacing**"
+msgstr ""
+
+#: matplotlib.text.Text.set_multialignment:2 of
+msgid "Alias for `set_multialignment`."
+msgstr ""
+
+#: matplotlib.text.Text.set_math_fontfamily:2 of
+msgid "Set the font family for math text rendered by Matplotlib."
+msgstr ""
+
+#: matplotlib.text.Text.set_math_fontfamily:4 of
+msgid ""
+"This does only affect Matplotlib's own math renderer. It has no effect "
+"when rendering with TeX (``usetex=True``)."
+msgstr ""
+
+#: matplotlib.text.Text.set_math_fontfamily:21 of
+msgid "**fontfamily**"
+msgstr ""
+
+#: matplotlib.text.Text.set_math_fontfamily:10 of
+msgid "The name of the font family."
+msgstr ""
+
+#: matplotlib.text.Text.set_math_fontfamily:12 of
+msgid ""
+"Available font families are defined in the :ref:`matplotlibrc.template "
+"file <customizing-with-matplotlibrc-files>`."
+msgstr ""
+
+#: matplotlib.text.Text.set_math_fontfamily:26 of
+msgid ":obj:`get_math_fontfamily`"
+msgstr ""
+
+#: matplotlib.text.Text.set_multialignment:2 of
+msgid "Set the text alignment for multiline texts."
+msgstr ""
+
+#: matplotlib.text.Text.set_multialignment:4 of
+msgid ""
+"The layout of the bounding box of all the lines is determined by the "
+"horizontalalignment and verticalalignment properties. This property "
+"controls the alignment of the text lines within that box."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontname:2 of
+msgid "Alias for `set_fontname`."
+msgstr ""
+
+#: matplotlib.text.Text.set_parse_math:2 of
+msgid "Override switch to disable any mathtext parsing for this `Text`."
+msgstr ""
+
+#: matplotlib.text.Text.set_parse_math:22 of
+msgid "**parse_math**"
+msgstr ""
+
+#: matplotlib.text.Text.set_parse_math:8 of
+msgid ""
+"If False, this `Text` will never use mathtext.  If True, mathtext will be"
+" used if there is an even number of unescaped dollar signs."
+msgstr ""
+
+#: matplotlib.text.Text.set_position:2 of
+msgid "Set the (*x*, *y*) position of the text."
+msgstr ""
+
+#: matplotlib.text.Text.set_rotation:2 of
+msgid "Set the rotation of the text."
+msgstr ""
+
+#: matplotlib.text.Text.set_rotation:22 matplotlib.text.Text.set_text:23 of
+msgid "**s**"
+msgstr ""
+
+#: matplotlib.text.Text.set_rotation:8 of
+msgid ""
+"The rotation angle in degrees in mathematically positive direction "
+"(counterclockwise). 'horizontal' equals 0, 'vertical' equals 90."
+msgstr ""
+
+#: matplotlib.text.Text.set_rotation_mode:2 of
+msgid "Set text rotation mode."
+msgstr ""
+
+#: matplotlib.text.Text.set_rotation_mode:23 of
+msgid "**m**"
+msgstr ""
+
+#: matplotlib.text.Text.set_rotation_mode:8 of
+msgid ""
+"If ``None`` or ``\"default\"``, the text will be first rotated, then "
+"aligned according to their horizontal and vertical alignments.  If "
+"``\"anchor\"``, then alignment occurs before rotation."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontsize:2 of
+msgid "Alias for `set_fontsize`."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontstretch:2 of
+msgid "Alias for `set_fontstretch`."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontstyle:2 of
+msgid "Alias for `set_fontstyle`."
+msgstr ""
+
+#: matplotlib.text.Text.set_text:2 of
+msgid "Set the text string *s*."
+msgstr ""
+
+#: matplotlib.text.Text.set_text:4 of
+msgid "It may contain newlines (``\\n``) or math in LaTeX syntax."
+msgstr ""
+
+#: matplotlib.text.Text.set_text:9 of
+msgid ""
+"Any object gets converted to its `str` representation, except for "
+"``None`` which is converted to an empty string."
+msgstr ""
+
+#: matplotlib.text.Text.set_transform_rotates_text:2 of
+msgid "Whether rotations of the transform affect the text direction."
+msgstr ""
+
+#: matplotlib.text.Text.set_transform_rotates_text:21 of
+msgid "**t**"
+msgstr ""
+
+#: matplotlib.text.Text.set_usetex:22 of
+msgid "**usetex**"
+msgstr ""
+
+#: matplotlib.text.Text.set_usetex:8 of
+msgid "Whether to render using TeX, ``None`` means to use :rc:`text.usetex`."
+msgstr ""
+
+#: matplotlib.text.Text.set_verticalalignment:2 of
+msgid "Alias for `set_verticalalignment`."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontvariant:2 of
+msgid "Alias for `set_fontvariant`."
+msgstr ""
+
+#: matplotlib.text.Text.set_verticalalignment:2 of
+msgid "Set the vertical alignment."
+msgstr ""
+
+#: matplotlib.text.Text.set_fontweight:2 of
+msgid "Alias for `set_fontweight`."
+msgstr ""
+
+#: matplotlib.text.Text.set_wrap:2 of
+msgid "Set whether the text can be wrapped."
+msgstr ""
+
+#: matplotlib.text.Text.set_wrap:16 of
+msgid "**wrap**"
+msgstr ""
+
+#: matplotlib.text.Text.set_wrap:20 of
+msgid ""
+"Wrapping does not work together with ``savefig(..., "
+"bbox_inches='tight')`` (which is also used internally by ``%matplotlib "
+"inline`` in IPython/Jupyter). The 'tight' setting rescales the canvas to "
+"accommodate all content and happens before wrapping."
+msgstr ""
+
+#: matplotlib.text.Text.set_x:2 of
+msgid "Set the *x* position of the text."
+msgstr ""
+
+#: matplotlib.text.Text.set_x:21 of
+msgid "**x**"
+msgstr ""
+
+#: matplotlib.text.Text.set_y:2 of
+msgid "Set the *y* position of the text."
+msgstr ""
+
+#: matplotlib.text.Text.set_y:21 of
+msgid "**y**"
+msgstr ""
+
+#: matplotlib.text.Text.update:2 of
+msgid "Update this artist's properties from the dict *props*."
+msgstr ""
+
+#: matplotlib.text.Text.update:21 of
+msgid "**props**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.text.Text.update_bbox_position_size:2 of
+msgid "Update the location and the size of the bbox."
+msgstr ""
+
+#: matplotlib.text.Text.update_bbox_position_size:4 of
+msgid ""
+"This method should be used when the position and size of the bbox needs "
+"to be updated before actually drawing the bbox."
+msgstr ""
+
+#: matplotlib.text.Text.update_from:2 of
+msgid "Copy properties from *other* to *self*."
+msgstr ""
+
+#: matplotlib.text.get_rotation:2 of
+msgid "Return *rotation* normalized to an angle between 0 and 360 degrees."
+msgstr ""
+
+#: matplotlib.text.get_rotation:9 of
+msgid "**rotation**"
+msgstr ""
+
+#: of
+msgid "float or {None, 'horizontal', 'vertical'}"
+msgstr ""
+
+#: matplotlib.text.get_rotation:8 of
+msgid ""
+"Rotation angle in degrees. *None* and 'horizontal' equal 0, 'vertical' "
+"equals 90."
+msgstr ""
+

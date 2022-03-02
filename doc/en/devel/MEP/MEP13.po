@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../devel/MEP/MEP13.rst:3
+msgid "MEP13: Use properties for Artists"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:9
+msgid "Status"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:11
+msgid "**Discussion**"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:14
+msgid "Branches and Pull requests"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:16
+msgid "None"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:19
+msgid "Abstract"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:21
+msgid ""
+"Wrap all of the matplotlib getter and setter methods with python "
+"`properties "
+"<https://docs.python.org/3/library/functions.html#property>`_, allowing "
+"them to be read and written like class attributes."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:27
+msgid "Detailed description"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:29
+msgid ""
+"Currently matplotlib uses getter and setter functions (usually prefixed "
+"with get\\_ and set\\_, respectively) for reading and writing data "
+"related to classes.  However, since 2.6 python supports properties, which"
+" allow such setter and getter functions to be accessed as though they "
+"were attributes.  This proposal would implement all existing setter and "
+"getter methods as properties."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:37
+msgid "Implementation"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:39
+msgid ""
+"All existing getter and setter methods will need to have two aliases, one"
+" with the get\\_ or set\\_ prefix and one without. Getter methods that "
+"currently lack prefixes should be recording in a text file."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:43
+msgid ""
+"Classes should be reorganized so setter and getter methods are sequential"
+" in the code, with getter methods first."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:45
+msgid ""
+"Getter and setter methods the provide additional optional optional "
+"arguments should have those arguments accessible in another manner, "
+"either as additional getter or setter methods or attributes of other "
+"classes.  If those classes are not accessible, getters for them should be"
+" added."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:50
+msgid ""
+"Property decorators will be added to the setter and getter methods "
+"without the prefix.  Those with the prefix will be marked as deprecated."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:53
+msgid ""
+"Docstrings will need to be rewritten so the getter with the prefix has "
+"the current docstring and the getter without the prefix has a generic "
+"docstring appropriate for an attribute."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:56
+msgid ""
+"Automatic alias generation will need to be modified so it will also "
+"create aliases for the properties."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:58
+msgid ""
+"All instances of getter and setter method calls will need to be changed "
+"to attribute access."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:60
+msgid "All setter and getter aliases with prefixes will be removed"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:62
+msgid ""
+"The following steps can be done simultaneously: 1, 2, and 3; 4 and 5; 6 "
+"and 7."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:65
+msgid ""
+"Only the following steps must be done in the same release: 4, 5, and 6.  "
+"All other changes can be done in separate releases.  8 should be done "
+"several major releases after everything else."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:70
+msgid "Backward compatibility"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:72
+msgid ""
+"All existing getter methods that do not have a prefix (such as get\\_) "
+"will need to be changed from function calls to attribute access.  In most"
+" cases this will only require removing the parenthesis."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:76
+msgid ""
+"setter and getter methods that have additional optional arguments will "
+"need to have those arguments implemented in another way, either as a "
+"separate property in the same class or as attributes or properties of "
+"another class."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:81
+msgid ""
+"Cases where the setter returns a value will need to be changed to using "
+"the setter followed by the getter."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:84
+msgid ""
+"Cases where there are set_ATTR_on() and set_ATTR_off() methods will be "
+"changed to ATTR_on properties."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:88
+msgid "Examples"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:91
+msgid "axes.Axes.set_axis_off/set_axis_on"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:93 ../../devel/MEP/MEP13.rst:108
+#: ../../devel/MEP/MEP13.rst:139 ../../devel/MEP/MEP13.rst:161
+msgid "Current implementation: ::"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:98 ../../devel/MEP/MEP13.rst:121
+#: ../../devel/MEP/MEP13.rst:144 ../../devel/MEP/MEP13.rst:170
+msgid "New implementation: ::"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:106
+msgid "axes.Axes.get_xlim/set_xlim and get_autoscalex_on/set_autoscalex_on"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:137
+msgid "axes.Axes.get_title/set_title"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:159
+msgid "axes.Axes.get_xticklabels/set_xticklabels"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:180
+msgid "Alternatives"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:182
+msgid ""
+"Instead of using decorators, it is also possible to use the property "
+"function.  This would change the procedure so that all getter methods "
+"that lack a prefix will need to be renamed or removed.  This makes "
+"handling docstrings more difficult and harder to read."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:187
+msgid ""
+"It is not necessary to deprecate the setter and getter methods, but "
+"leaving them in will complicate the code."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:190
+msgid ""
+"This could also serve as an opportunity to rewrite or even remove "
+"automatic alias generation."
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:193
+msgid "Another alternate proposal:"
+msgstr ""
+
+#: ../../devel/MEP/MEP13.rst:195
+msgid ""
+"Convert ``set_xlim``, ``set_xlabel``, ``set_title``, etc. to ``xlim``, "
+"``xlabel``, ``title``,... to make the transition from ``plt`` functions "
+"to ``axes`` methods significantly simpler. These would still be methods, "
+"not properties, but it's still a great usability enhancement while "
+"retaining the interface."
+msgstr ""
+

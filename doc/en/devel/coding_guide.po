@@ -1,0 +1,607 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../devel/coding_guide.rst:14
+msgid "Pull request guidelines"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:16
+msgid ""
+"Pull requests (PRs) are the mechanism for contributing to Matplotlibs "
+"code and documentation."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:20
+msgid "Summary for PR authors"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:24
+msgid ""
+"We value contributions from people with all levels of experience. In "
+"particular if this is your first PR not everything has to be perfect. "
+"We'll guide you through the PR process."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:27
+msgid ""
+"Nevertheless, try to follow the guidelines below as well as you can to "
+"help make the PR process quick and smooth."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:29
+msgid ""
+"Be patient with reviewers. We try our best to respond quickly, but we "
+"have limited bandwidth. If there is no feedback within a couple of days, "
+"please ping us by posting a comment to your PR."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:33
+msgid "When making a PR, pay attention to:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:37
+msgid ":ref:`Target the master branch <pr-branch-selection>`."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:38
+msgid "Adhere to the :ref:`coding_guidelines`."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:39
+msgid "Update the :ref:`documentation <pr-documentation>` if necessary."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:40
+msgid ""
+"Aim at making the PR as \"ready-to-go\" as you can. This helps to speed "
+"up the review process."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:42
+msgid ""
+"It is ok to open incomplete or work-in-progress PRs if you need help or "
+"feedback from the developers. You may mark these as `draft pull requests "
+"<https://docs.github.com/en/github/collaborating-with-pull-requests"
+"/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+"#draft-pull-requests>`_ on GitHub."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:46
+msgid ""
+"When updating your PR, instead of adding new commits to fix something, "
+"please consider amending your initial commit(s) to keep the history "
+"clean. You can achieve this using"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:55
+msgid "See also :ref:`contributing` for how to make a PR."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:58
+msgid "Summary for PR reviewers"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:62
+msgid ""
+"If you have commit rights, then you are trusted to use them. **Please "
+"help review and merge PRs!**"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:64
+msgid ""
+"Be patient and `kind <https://youtu.be/tzFWz5fiVKU?t=49m30s>`__ with "
+"contributors."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:67
+msgid "Content topics:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:71
+msgid "Is the feature / bugfix reasonable?"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:72
+msgid "Does the PR conform with the :ref:`coding_guidelines`?"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:73
+msgid ""
+"Is the :ref:`documentation <pr-documentation>` (docstrings, examples, "
+"what's new, API changes) updated?"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:76
+msgid "Organizational topics:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:80
+msgid "Make sure all :ref:`automated tests <pr-automated-tests>` pass."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:81
+msgid "The PR should :ref:`target the master branch <pr-branch-selection>`."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:82
+msgid "Tag with descriptive :ref:`labels <pr-labels>`."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:83
+msgid "Set the :ref:`milestone <pr-milestones>`."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:84
+msgid "Keep an eye on the :ref:`number of commits <pr-squashing>`."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:85
+msgid "Approve if all of the above topics are handled."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:86
+msgid ":ref:`Merge  <pr-merging>` if a sufficient number of approvals is reached."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:91
+msgid "Detailed guidelines"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:96
+msgid "Documentation"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:98
+msgid ""
+"Every new feature should be documented.  If it's a new module, don't "
+"forget to add a new rst file to the API docs."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:101
+msgid ""
+"Each high-level plotting function should have a small example in the "
+"``Examples`` section of the docstring.  This should be as simple as "
+"possible to demonstrate the method.  More complex examples should go into"
+" a dedicated example file in the :file:`examples` directory, which will "
+"be rendered to the examples gallery in the documentation."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:107
+msgid "Build the docs and make sure all formatting warnings are addressed."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:109
+msgid "See :ref:`documenting-matplotlib` for our documentation style guide."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:111
+msgid ""
+"If your change is a major new feature, add an entry to "
+":file:`doc/users/whats_new.rst`."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:114
+msgid ""
+"If you change the API in a backward-incompatible way, please document it "
+"by adding a file in the relevant subdirectory of "
+":file:`doc/api/next_api_changes/`, probably in the ``behavior/`` "
+"subdirectory."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:122
+msgid "Labels"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:124
+msgid ""
+"If you have the rights to set labels, tag the PR with descriptive labels."
+" See the `list of labels "
+"<https://github.com/matplotlib/matplotlib/labels>`__."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:130
+msgid "Milestones"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:132
+msgid "Set the milestone according to these rules:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:134
+msgid ""
+"*New features and API changes* are milestoned for the next minor release "
+"``v3.X.0``."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:137
+msgid ""
+"*Bugfixes and docstring changes* are milestoned for the next patch "
+"release ``v3.X.Y``"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:140
+msgid ""
+"*Documentation changes* (all .rst files and examples) are milestoned "
+"``v3.X-doc``"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:143
+msgid "If multiple rules apply, choose the first matching from the above list."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:145
+msgid ""
+"Setting a milestone does not imply or guarantee that a PR will be merged "
+"for that release, but if it were to be merged what release it would be "
+"in."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:148
+msgid ""
+"All of these PRs should target the master branch. The milestone tag "
+"triggers an :ref:`automatic backport <automated-backports>` for "
+"milestones which have a corresponding branch."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:155
+msgid "Merging"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:157
+msgid ""
+"Documentation and examples may be merged by the first reviewer.  Use the "
+"threshold \"is this better than it was?\" as the review criteria."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:160
+msgid ""
+"For code changes (anything in ``src`` or ``lib``) at least two core "
+"developers (those with commit rights) should review all pull requests.  "
+"If you are the first to review a PR and approve of the changes use the "
+"GitHub `'approve review' <https://docs.github.com/en/github"
+"/collaborating-with-pull-requests/reviewing-changes-in-pull-requests>`__ "
+"tool to mark it as such.  If you are a subsequent reviewer please approve"
+" the review and if you think no more review is needed, merge the PR."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:169
+msgid ""
+"Ensure that all API changes are documented in a file in one of the "
+"subdirectories of :file:`doc/api/next_api_changes`, and significant new "
+"features have an entry in :file:`doc/user/whats_new`."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:173
+msgid ""
+"If a PR already has a positive review, a core developer (e.g. the first "
+"reviewer, but not necessarily) may champion that PR for merging.  In "
+"order to do so, they should ping all core devs both on GitHub and on the "
+"dev mailing list, and label the PR with the \"Merge with single review?\""
+" label. Other core devs can then either review the PR and merge or reject"
+" it, or simply request that it gets a second review before being merged."
+"  If no one asks for such a second review within a week, the PR can then "
+"be merged on the basis of that single review."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:182
+msgid ""
+"A core dev should only champion one PR at a time and we should try to "
+"keep the flow of championed PRs reasonable."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:185
+msgid ""
+"Do not self merge, except for 'small' patches to un-break the CI or when "
+"another reviewer explicitly allows it (ex, \"Approve modulo CI passing, "
+"may self merge when green\")."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:192
+msgid "Automated tests"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:194
+msgid ""
+"Whenever a pull request is created or updated, various automated test "
+"tools will run on all supported platforms and versions of Python."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:197
+msgid ""
+"Make sure the Linting, GitHub Actions, AppVeyor, CircleCI, and Azure "
+"pipelines are passing before merging (All checks are listed at the bottom"
+" of the GitHub page of your pull request). Here are some tips for finding"
+" the cause of the test failure:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:202
+msgid ""
+"If *Linting* fails, you have a code style issue, which will be listed as "
+"annotations on the pull request's diff."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:204
+msgid ""
+"If a GitHub Actions or AppVeyor run fails, search the log for "
+"``FAILURES``. The subsequent section will contain information on the "
+"failed tests."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:206
+msgid ""
+"If CircleCI fails, likely you have some reStructuredText style issue in "
+"the docs. Search the CircleCI log for ``WARNING``."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:208
+msgid ""
+"If Azure pipelines fail with an image comparison error, you can find the "
+"images as *artifacts* of the Azure job:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:211
+msgid "Click *Details* on the check on the GitHub PR page."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:212
+msgid "Click *View more details on Azure Pipelines* to go to Azure."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:213
+msgid "On the overview page *artifacts* are listed in the section *Related*."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:216
+msgid ""
+"Codecov and LGTM are currently for information only. Their failure is not"
+" necessarily a blocker."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:219
+msgid ""
+"tox_ is not used in the automated testing. It is supported for testing "
+"locally."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:224
+msgid ""
+"If you know your changes do not need to be tested (this is very rare!), "
+"all CIs can be skipped for a given commit by including ``[ci skip]`` or "
+"``[skip ci]`` in the commit message. If you know only a subset of CIs "
+"need to be run (e.g., if you are changing some block of plain "
+"reStructuredText and want only CircleCI to run to render the result), "
+"individual CIs can be skipped on individual commits as well by using the "
+"following substrings in commit messages:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:232
+msgid "GitHub Actions: ``[skip actions]``"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:233
+msgid "AppVeyor: ``[skip appveyor]`` (must be in the first line of the commit)"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:234
+msgid "Azure Pipelines: ``[skip azp]``"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:235
+msgid "CircleCI: ``[skip circle]``"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:240
+msgid "Number of commits and squashing"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:242
+msgid ""
+"Squashing is case-by-case.  The balance is between burden on the "
+"contributor, keeping a relatively clean history, and keeping a history "
+"usable for bisecting.  The only time we are really strict about it is to "
+"eliminate binary files (ex multiple test image re-generations) and to "
+"remove upstream merges."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:248
+msgid ""
+"Do not let perfect be the enemy of the good, particularly for "
+"documentation or example PRs.  If you find yourself making many small "
+"suggestions, either open a PR against the original branch, push changes "
+"to the contributor branch, or merge the PR and then open a new PR against"
+" upstream."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:254
+msgid ""
+"If you push to a contributor branch leave a comment explaining what you "
+"did, ex \"I took the liberty of pushing a small clean-up PR to your "
+"branch, thanks for your work.\".  If you are going to make substantial "
+"changes to the code or intent of the PR please check with the contributor"
+" first."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:264
+msgid "Branches and backports"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:267
+msgid "Current branches"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:268
+msgid "The current active branches are"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:272
+msgid "*master*"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:271
+msgid ""
+"The current development version. Future minor releases (*v3.N.0*) will be"
+" branched from this. Supports Python 3.7+."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:276
+msgid "*v3.N.x*"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:275
+msgid ""
+"Maintenance branch for Matplotlib 3.N. Future patch releases will be "
+"branched from this.  Supports Python 3.6+."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:281
+msgid "*v3.N.M-doc*"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:279
+msgid ""
+"Documentation for the current release.  On a patch release, this will be "
+"replaced by a properly named branch for the new release."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:286
+msgid "Branch selection for pull requests"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:288
+msgid "Generally, all pull requests should target the master branch."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:290
+msgid ""
+"Other branches are fed through :ref:`automatic <automated-backports>` or "
+":ref:`manual <manual-backports>`. Directly targeting other branches is "
+"only rarely necessary for special maintenance work."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:298
+msgid "Backport strategy"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:300
+msgid "We will always backport to the patch release branch (*v3.N.x*):"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:302
+msgid ""
+"critical bug fixes (segfault, failure to import, things that the user can"
+" not work around)"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:304
+msgid "fixes for regressions against the last two releases."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:306
+msgid ""
+"Everything else (regressions against older releases, bugs/api "
+"inconsistencies the user can work around in their code) are on a case-by-"
+"case basis, should be low-risk, and need someone to advocate for and "
+"shepherd through the backport."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:311
+msgid ""
+"The only changes to be backported to the documentation branch "
+"(*v3.N.M-doc*) are changes to :file:`doc`, :file:`examples`, or "
+":file:`tutorials`. Any changes to :file:`lib` or :file:`src` including "
+"docstring-only changes should not be backported to this branch."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:320
+msgid "Automated backports"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:322
+msgid ""
+"We use meeseeksdev bot to automatically backport merges to the correct "
+"maintenance branch base on the milestone.  To work properly the milestone"
+" must be set before merging.  If you have commit rights, the bot can also"
+" be manually triggered after a merge by leaving a message ``@meeseeksdev "
+"backport to BRANCH`` on the PR.  If there are conflicts meeseekdevs will "
+"inform you that the backport needs to be done manually."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:330
+msgid ""
+"The target branch is configured by putting ``on-merge: backport to "
+"TARGETBRANCH`` in the milestone description on it's own line."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:333
+msgid ""
+"If the bot is not working as expected, please report issues to "
+"`Meeseeksdev <https://github.com/MeeseeksBox/MeeseeksDev>`__."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:340
+msgid "Manual backports"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:342
+msgid ""
+"When doing backports please copy the form used by meeseekdev, ``Backport "
+"PR #XXXX: TITLE OF PR``.  If you need to manually resolve conflicts make "
+"note of them and how you resolved them in the commit message."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:347
+msgid "We do a backport from master to v2.2.x assuming:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:349
+msgid ""
+"``matplotlib`` is a read-only remote branch of the matplotlib/matplotlib "
+"repo"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:351
+msgid ""
+"The ``TARGET_SHA`` is the hash of the merge commit you would like to "
+"backport.  This can be read off of the GitHub PR page (in the UI with the"
+" merge notification) or through the git CLI tools."
+msgstr ""
+
+#: ../../devel/coding_guide.rst:355
+msgid ""
+"Assuming that you already have a local branch ``v2.2.x`` (if not, then "
+"``git checkout -b v2.2.x``), and that your remote pointing to "
+"``https://github.com/matplotlib/matplotlib`` is called ``upstream``:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:367
+msgid ""
+"Files with conflicts can be listed by ``git status``, and will have to be"
+" fixed by hand (search on ``>>>>>``).  Once the conflict is resolved, you"
+" will have to re-add the file(s) to the branch and then continue the "
+"cherry pick:"
+msgstr ""
+
+#: ../../devel/coding_guide.rst:378
+msgid ""
+"Use your discretion to push directly to upstream or to open a PR; be sure"
+" to push or PR against the ``v2.2.x`` upstream branch, not ``master``!"
+msgstr ""
+

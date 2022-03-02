@@ -1,0 +1,478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../users/explain/backends.rst:5
+msgid "Backends"
+msgstr ""
+
+#: ../../users/explain/backends.rst:10
+msgid "What is a backend?"
+msgstr ""
+
+#: ../../users/explain/backends.rst:12
+msgid ""
+"A lot of documentation on the website and in the mailing lists refers to "
+"the \"backend\" and many new users are confused by this term. Matplotlib "
+"targets many different use cases and output formats.  Some people use "
+"Matplotlib interactively from the Python shell and have plotting windows "
+"pop up when they type commands.  Some people run `Jupyter "
+"<https://jupyter.org>`_ notebooks and draw inline plots for quick data "
+"analysis. Others embed Matplotlib into graphical user interfaces like "
+"PyQt or PyGObject to build rich applications.  Some people use Matplotlib"
+" in batch scripts to generate postscript images from numerical "
+"simulations, and still others run web application servers to dynamically "
+"serve up graphs."
+msgstr ""
+
+#: ../../users/explain/backends.rst:24
+msgid ""
+"To support all of these use cases, Matplotlib can target different "
+"outputs, and each of these capabilities is called a backend; the "
+"\"frontend\" is the user facing code, i.e., the plotting code, whereas "
+"the \"backend\" does all the hard work behind-the-scenes to make the "
+"figure. There are two types of backends: user interface backends (for use"
+" in PyQt/PySide, PyGObject, Tkinter, wxPython, or macOS/Cocoa); also "
+"referred to as \"interactive backends\") and hardcopy backends to make "
+"image files (PNG, SVG, PDF, PS; also referred to as \"non-interactive "
+"backends\")."
+msgstr ""
+
+#: ../../users/explain/backends.rst:34
+msgid "Selecting a backend"
+msgstr ""
+
+#: ../../users/explain/backends.rst:36
+msgid "There are three ways to configure your backend:"
+msgstr ""
+
+#: ../../users/explain/backends.rst:38
+msgid "The :rc:`backend` parameter in your :file:`matplotlibrc` file"
+msgstr ""
+
+#: ../../users/explain/backends.rst:39
+msgid "The :envvar:`MPLBACKEND` environment variable"
+msgstr ""
+
+#: ../../users/explain/backends.rst:40
+msgid "The function :func:`matplotlib.use`"
+msgstr ""
+
+#: ../../users/explain/backends.rst:42
+msgid "Below is a more detailed description."
+msgstr ""
+
+#: ../../users/explain/backends.rst:44
+msgid ""
+"If there is more than one configuration present, the last one from the "
+"list takes precedence; e.g. calling :func:`matplotlib.use()` will "
+"override the setting in your :file:`matplotlibrc`."
+msgstr ""
+
+#: ../../users/explain/backends.rst:48
+msgid ""
+"Without a backend explicitly set, Matplotlib automatically detects a "
+"usable backend based on what is available on your system and on whether a"
+" GUI event loop is already running.  The first usable backend in the "
+"following list is selected: MacOSX, QtAgg, GTK4Agg, Gtk3Agg, TkAgg, "
+"WxAgg, Agg.  The last, Agg, is a non-interactive backend that can only "
+"write to files.  It is used on Linux, if Matplotlib cannot connect to "
+"either an X display or a Wayland display."
+msgstr ""
+
+#: ../../users/explain/backends.rst:56
+msgid "Here is a detailed description of the configuration methods:"
+msgstr ""
+
+#: ../../users/explain/backends.rst:58
+msgid "Setting :rc:`backend` in your :file:`matplotlibrc` file::"
+msgstr ""
+
+#: ../../users/explain/backends.rst:62
+msgid "See also :doc:`/tutorials/introductory/customizing`."
+msgstr ""
+
+#: ../../users/explain/backends.rst:64
+msgid "Setting the :envvar:`MPLBACKEND` environment variable:"
+msgstr ""
+
+#: ../../users/explain/backends.rst:66
+msgid ""
+"You can set the environment variable either for your current shell or for"
+" a single script."
+msgstr ""
+
+#: ../../users/explain/backends.rst:69
+msgid "On Unix::"
+msgstr ""
+
+#: ../../users/explain/backends.rst:76
+msgid "On Windows, only the former is possible::"
+msgstr ""
+
+#: ../../users/explain/backends.rst:81
+msgid ""
+"Setting this environment variable will override the ``backend`` parameter"
+" in *any* :file:`matplotlibrc`, even if there is a :file:`matplotlibrc` "
+"in your current working directory. Therefore, setting "
+":envvar:`MPLBACKEND` globally, e.g. in your :file:`.bashrc` or "
+":file:`.profile`, is discouraged as it might lead to counter-intuitive "
+"behavior."
+msgstr ""
+
+#: ../../users/explain/backends.rst:87
+msgid ""
+"If your script depends on a specific backend you can use the function "
+":func:`matplotlib.use`::"
+msgstr ""
+
+#: ../../users/explain/backends.rst:93
+msgid ""
+"This should be done before any figure is created, otherwise Matplotlib "
+"may fail to switch the backend and raise an ImportError."
+msgstr ""
+
+#: ../../users/explain/backends.rst:96
+msgid ""
+"Using `~matplotlib.use` will require changes in your code if users want "
+"to use a different backend.  Therefore, you should avoid explicitly "
+"calling `~matplotlib.use` unless absolutely necessary."
+msgstr ""
+
+#: ../../users/explain/backends.rst:103
+msgid "The builtin backends"
+msgstr ""
+
+#: ../../users/explain/backends.rst:105
+msgid ""
+"By default, Matplotlib should automatically select a default backend "
+"which allows both interactive work and plotting from scripts, with output"
+" to the screen and/or to a file, so at least initially, you will not need"
+" to worry about the backend.  The most common exception is if your Python"
+" distribution comes without :mod:`tkinter` and you have no other GUI "
+"toolkit installed. This happens on certain Linux distributions, where you"
+" need to install a Linux package named ``python-tk`` (or similar)."
+msgstr ""
+
+#: ../../users/explain/backends.rst:113
+msgid ""
+"If, however, you want to write graphical user interfaces, or a web "
+"application server "
+"(:doc:`/gallery/user_interfaces/web_application_server_sgskip`), or need "
+"a better understanding of what is going on, read on. To make things "
+"easily more customizable for graphical user interfaces, Matplotlib "
+"separates the concept of the renderer (the thing that actually does the "
+"drawing) from the canvas (the place where the drawing goes).  The "
+"canonical renderer for user interfaces is ``Agg`` which uses the `Anti-"
+"Grain Geometry`_ C++ library to make a raster (pixel) image of the "
+"figure; it is used by the ``QtAgg``, ``GTK4Agg``, ``GTK3Agg``, ``wxAgg``,"
+" ``TkAgg``, and ``macosx`` backends.  An alternative renderer is based on"
+" the Cairo library, used by ``QtCairo``, etc."
+msgstr ""
+
+#: ../../users/explain/backends.rst:126
+msgid ""
+"For the rendering engines, users can also distinguish between `vector "
+"<https://en.wikipedia.org/wiki/Vector_graphics>`_ or `raster "
+"<https://en.wikipedia.org/wiki/Raster_graphics>`_ renderers.  Vector "
+"graphics languages issue drawing commands like \"draw a line from this "
+"point to this point\" and hence are scale free. Raster backends generate "
+"a pixel representation of the line whose accuracy depends on a DPI "
+"setting."
+msgstr ""
+
+#: ../../users/explain/backends.rst:134
+msgid ""
+"Here is a summary of the Matplotlib renderers (there is an eponymous "
+"backend for each; these are *non-interactive backends*, capable of "
+"writing to a file):"
+msgstr ""
+
+#: ../../users/explain/backends.rst:139
+msgid "Renderer"
+msgstr ""
+
+#: ../../users/explain/backends.rst:139
+msgid "Filetypes"
+msgstr ""
+
+#: ../../users/explain/backends.rst:139 ../../users/explain/backends.rst:160
+msgid "Description"
+msgstr ""
+
+#: ../../users/explain/backends.rst:141
+msgid "AGG"
+msgstr ""
+
+#: ../../users/explain/backends.rst:141
+msgid "png"
+msgstr ""
+
+#: ../../users/explain/backends.rst:141
+msgid ""
+"raster_ graphics -- high quality images using the `Anti-Grain Geometry`_ "
+"engine"
+msgstr ""
+
+#: ../../users/explain/backends.rst:143
+msgid "PDF"
+msgstr ""
+
+#: ../../users/explain/backends.rst:143
+msgid "pdf"
+msgstr ""
+
+#: ../../users/explain/backends.rst:143
+msgid "vector_ graphics -- `Portable Document Format`_"
+msgstr ""
+
+#: ../../users/explain/backends.rst:144
+msgid "PS"
+msgstr ""
+
+#: ../../users/explain/backends.rst:144
+msgid "ps, eps"
+msgstr ""
+
+#: ../../users/explain/backends.rst:144
+msgid "vector_ graphics -- Postscript_ output"
+msgstr ""
+
+#: ../../users/explain/backends.rst:145
+msgid "SVG"
+msgstr ""
+
+#: ../../users/explain/backends.rst:145
+msgid "svg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:145
+msgid "vector_ graphics -- `Scalable Vector Graphics`_"
+msgstr ""
+
+#: ../../users/explain/backends.rst:146
+msgid "PGF"
+msgstr ""
+
+#: ../../users/explain/backends.rst:146
+msgid "pgf, pdf"
+msgstr ""
+
+#: ../../users/explain/backends.rst:146
+msgid "vector_ graphics -- using the pgf_ package"
+msgstr ""
+
+#: ../../users/explain/backends.rst:147
+msgid "Cairo"
+msgstr ""
+
+#: ../../users/explain/backends.rst:147
+msgid "png, ps, pdf, svg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:147
+msgid "raster_ or vector_ graphics -- using the Cairo_ library"
+msgstr ""
+
+#: ../../users/explain/backends.rst:151
+msgid ""
+"To save plots using the non-interactive backends, use the "
+"``matplotlib.pyplot.savefig('filename')`` method."
+msgstr ""
+
+#: ../../users/explain/backends.rst:154
+msgid ""
+"These are the user interfaces and renderer combinations supported; these "
+"are *interactive backends*, capable of displaying to the screen and using"
+" appropriate renderers from the table above to write to a file:"
+msgstr ""
+
+#: ../../users/explain/backends.rst:160
+msgid "Backend"
+msgstr ""
+
+#: ../../users/explain/backends.rst:162
+msgid "QtAgg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:162
+msgid ""
+"Agg rendering in a Qt_ canvas (requires PyQt_ or `Qt for Python`_, a.k.a."
+" PySide).  This backend can be activated in IPython with ``%matplotlib "
+"qt``."
+msgstr ""
+
+#: ../../users/explain/backends.rst:165 ../../users/explain/backends.rst:214
+msgid "ipympl"
+msgstr ""
+
+#: ../../users/explain/backends.rst:165
+msgid ""
+"Agg rendering embedded in a Jupyter widget.  (requires ipympl). This "
+"backend can be enabled in a Jupyter notebook with ``%matplotlib ipympl``."
+msgstr ""
+
+#: ../../users/explain/backends.rst:168
+msgid "GTK3Agg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:168
+msgid ""
+"Agg rendering to a GTK_ 3.x canvas (requires PyGObject_, and pycairo_ or "
+"cairocffi_).  This backend can be activated in IPython with ``%matplotlib"
+" gtk3``."
+msgstr ""
+
+#: ../../users/explain/backends.rst:171
+msgid "GTK4Agg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:171
+msgid ""
+"Agg rendering to a GTK_ 4.x canvas (requires PyGObject_, and pycairo_ or "
+"cairocffi_).  This backend can be activated in IPython with ``%matplotlib"
+" gtk4``."
+msgstr ""
+
+#: ../../users/explain/backends.rst:174
+msgid "macosx"
+msgstr ""
+
+#: ../../users/explain/backends.rst:174
+msgid ""
+"Agg rendering into a Cocoa canvas in OSX.  This backend can be activated "
+"in IPython with ``%matplotlib osx``."
+msgstr ""
+
+#: ../../users/explain/backends.rst:176
+msgid "TkAgg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:176
+msgid ""
+"Agg rendering to a Tk_ canvas (requires TkInter_). This backend can be "
+"activated in IPython with ``%matplotlib tk``."
+msgstr ""
+
+#: ../../users/explain/backends.rst:178
+msgid "nbAgg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:178
+msgid ""
+"Embed an interactive figure in a Jupyter classic notebook.  This backend "
+"can be enabled in Jupyter notebooks via ``%matplotlib notebook``."
+msgstr ""
+
+#: ../../users/explain/backends.rst:181
+msgid "WebAgg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:181
+msgid "On ``show()`` will start a tornado server with an interactive figure."
+msgstr ""
+
+#: ../../users/explain/backends.rst:183
+msgid "GTK3Cairo"
+msgstr ""
+
+#: ../../users/explain/backends.rst:183
+msgid ""
+"Cairo rendering to a GTK_ 3.x canvas (requires PyGObject_, and pycairo_ "
+"or cairocffi_)."
+msgstr ""
+
+#: ../../users/explain/backends.rst:185
+msgid "GTK4Cairo"
+msgstr ""
+
+#: ../../users/explain/backends.rst:185
+msgid ""
+"Cairo rendering to a GTK_ 4.x canvas (requires PyGObject_, and pycairo_ "
+"or cairocffi_)."
+msgstr ""
+
+#: ../../users/explain/backends.rst:187
+msgid "wxAgg"
+msgstr ""
+
+#: ../../users/explain/backends.rst:187
+msgid ""
+"Agg rendering to a wxWidgets_ canvas (requires wxPython_ 4). This backend"
+" can be activated in IPython with ``%matplotlib wx``."
+msgstr ""
+
+#: ../../users/explain/backends.rst:192
+msgid ""
+"The names of builtin backends case-insensitive; e.g., 'QtAgg' and 'qtagg'"
+" are equivalent."
+msgstr ""
+
+#: ../../users/explain/backends.rst:216
+msgid ""
+"The Jupyter widget ecosystem is moving too fast to support directly in "
+"Matplotlib.  To install ipympl:"
+msgstr ""
+
+#: ../../users/explain/backends.rst:224
+msgid "or"
+msgstr ""
+
+#: ../../users/explain/backends.rst:230
+msgid ""
+"See `jupyter-matplotlib <https://github.com/matplotlib/jupyter-"
+"matplotlib>`__ for more details."
+msgstr ""
+
+#: ../../users/explain/backends.rst:236
+msgid "How do I select the Qt implementation?"
+msgstr ""
+
+#: ../../users/explain/backends.rst:238
+msgid ""
+"The QtAgg and QtCairo backends support both Qt 5 and 6, as well as both "
+"Python bindings (`PyQt`_ or `Qt for Python`_, a.k.a. PySide). If any "
+"binding has already been loaded, then it will be used for the Qt backend."
+" Otherwise, the first available binding is used, in the order: PyQt6, "
+"PySide6, PyQt5, PySide2."
+msgstr ""
+
+#: ../../users/explain/backends.rst:243
+msgid ""
+"The :envvar:`QT_API` environment variable can be set to override the "
+"search when nothing has already been loaded. It may be set to (case-"
+"insensitively) PyQt6, PySide6, PyQt5, or PySide2 to pick the version and "
+"binding to use. If the chosen implementation is unavailable, the Qt "
+"backend will fail to load without attempting any other Qt "
+"implementations."
+msgstr ""
+
+#: ../../users/explain/backends.rst:250
+msgid "Using non-builtin backends"
+msgstr ""
+
+#: ../../users/explain/backends.rst:251
+msgid ""
+"More generally, any importable backend can be selected by using any of "
+"the methods above. If ``name.of.the.backend`` is the module containing "
+"the backend, use ``module://name.of.the.backend`` as the backend name, "
+"e.g. ``matplotlib.use('module://name.of.the.backend')``."
+msgstr ""
+

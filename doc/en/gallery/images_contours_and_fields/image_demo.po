@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:13
+msgid ""
+"Click :ref:`here "
+"<sphx_glr_download_gallery_images_contours_and_fields_image_demo.py>` to "
+"download the full example code"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:23
+msgid "Image Demo"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:25
+msgid "Many ways to plot images in Matplotlib."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:27
+msgid ""
+"The most common way to plot images in Matplotlib is with "
+"`~.axes.Axes.imshow`. The following examples demonstrate much of the "
+"functionality of imshow and the many images you can create."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:56
+msgid "First we'll generate a simple bivariate normal distribution."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:92
+msgid "It is also possible to show images of pictures."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:143
+msgid "Interpolating images"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:145
+msgid ""
+"It is also possible to interpolate images before displaying them. Be "
+"careful, as this may manipulate the way your data looks, but it can be "
+"helpful for achieving the look you want. Below we'll display the same "
+"(small) array, interpolated with three different interpolation methods."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:150
+msgid ""
+"The center of the pixel at A[i, j] is plotted at (i+0.5, i+0.5).  If you "
+"are using interpolation='nearest', the region bounded by (i, j) and (i+1,"
+" j+1) will have the same color.  If you are using interpolation, the "
+"pixel center will have the same color as it does with nearest, but other "
+"pixels will be interpolated between the neighboring pixels."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:156
+msgid ""
+"To prevent edge effects when doing interpolation, Matplotlib pads the "
+"input array with identical pixels around the edge: if you have a 5x5 "
+"array with colors a-y as below::"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:166
+msgid "Matplotlib computes the interpolation and resizing on the padded array ::"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:176
+msgid ""
+"and then extracts the central region of the result.  (Extremely old "
+"versions of Matplotlib (<0.63) did not pad the array, but instead "
+"adjusted the view limits to hide the affected edge areas.)"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:180
+msgid ""
+"This approach allows plotting the full extent of an array without edge "
+"effects, and for example to layer multiple images of different sizes over"
+" one another with different interpolation methods -- see "
+":doc:`/gallery/images_contours_and_fields/layer_images`.  It also implies"
+" a performance hit, as this new temporary, padded array must be created. "
+"Sophisticated interpolation also implies a performance hit; for maximal "
+"performance or very large images, interpolation='nearest' is suggested."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:218
+msgid ""
+"You can specify whether images should be plotted with the array origin "
+"x[0, 0] in the upper left or lower right by using the origin parameter. "
+"You can also control the default setting image.origin in your "
+":ref:`matplotlibrc file <customizing-with-matplotlibrc-files>`. For more "
+"on this topic see the :doc:`complete guide on origin and extent "
+"</tutorials/intermediate/imshow_extent>`."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:256
+msgid "Finally, we'll show an image using a clip path."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:297
+msgid "References"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:299
+msgid ""
+"The use of the following functions, methods, classes and modules is shown"
+" in this example:"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:302
+msgid "`matplotlib.axes.Axes.imshow` / `matplotlib.pyplot.imshow`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:303
+msgid "`matplotlib.artist.Artist.set_clip_path`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:304
+msgid "`matplotlib.patches.PathPatch`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:309
+msgid "**Total running time of the script:** ( 0 minutes  2.059 seconds)"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:324
+msgid ":download:`Download Python source code: image_demo.py <image_demo.py>`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:330
+msgid ":download:`Download Jupyter notebook: image_demo.ipynb <image_demo.ipynb>`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/image_demo.rst:337
+msgid ""
+"Keywords: matplotlib code example, codex, python plot, pyplot `Gallery "
+"generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

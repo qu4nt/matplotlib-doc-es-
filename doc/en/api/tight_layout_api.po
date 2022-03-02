@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/tight_layout_api.rst:3
+msgid "``matplotlib.tight_layout``"
+msgstr ""
+
+#: matplotlib.tight_layout:1 of
+msgid ""
+"Routines to adjust subplot params so that subplots are nicely fit in the "
+"figure. In doing so, only axis labels, tick labels, axes titles and "
+"offsetboxes that are anchored to axes are currently considered."
+msgstr ""
+
+#: matplotlib.tight_layout:5 of
+msgid ""
+"Internally, this module assumes that the margins (left margin, etc.) "
+"which are differences between ``Axes.get_tightbbox`` and ``Axes.bbox`` "
+"are independent of Axes position. This may fail if ``Axes.adjustable`` is"
+" ``datalim`` as well as such cases as when left or right margin are "
+"affected by xlabel."
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:2 of
+msgid ""
+"[*Deprecated*] Return a dict of subplot parameters to adjust spacing "
+"between subplots or ``None`` if resulting axes would have zero height or "
+"width."
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:5 of
+msgid ""
+"Note that this function ignores geometry information of subplot itself, "
+"but uses what is given by the *nrows_ncols* and *num1num2_list* "
+"parameters.  Also, the results could be incorrect if some subplots have "
+"``adjustable=datalim``."
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars
+#: matplotlib.tight_layout.get_tight_layout_figure of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:13 of
+msgid "**nrows_ncols**"
+msgstr ""
+
+#: of
+msgid "tuple[int, int]"
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:13 of
+msgid "Number of rows and number of columns of the grid."
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:16 of
+msgid "**num1num2_list**"
+msgstr ""
+
+#: of
+msgid "list[tuple[int, int]]"
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:16 of
+msgid "List of numbers specifying the area occupied by the subplot"
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:19 of
+msgid "**subplot_list**"
+msgstr ""
+
+#: of
+msgid "list of subplots"
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:19 of
+msgid "List of subplots that will be used to calculate optimal subplot_params."
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:23
+#: matplotlib.tight_layout.get_tight_layout_figure:21 of
+msgid "**pad**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:22
+#: matplotlib.tight_layout.get_tight_layout_figure:20 of
+msgid ""
+"Padding between the figure edge and the edges of subplots, as a fraction "
+"of the font size."
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:27
+#: matplotlib.tight_layout.get_tight_layout_figure:25 of
+msgid "**h_pad, w_pad**"
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:26 of
+msgid ""
+"Padding (height/width) between edges of adjacent subplots, as a fraction "
+"of the font size.  Defaults to *pad*."
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:38
+#: matplotlib.tight_layout.get_tight_layout_figure:30 of
+msgid "**rect**"
+msgstr ""
+
+#: of
+msgid "tuple[float, float, float, float]"
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:30 of
+msgid "[left, bottom, right, top] in normalized (0, 1) figure coordinates."
+msgstr ""
+
+#: matplotlib.tight_layout.auto_adjust_subplotpars:41 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.tight_layout.get_subplotspec_list:2 of
+msgid "Return a list of subplotspec from the given list of axes."
+msgstr ""
+
+#: matplotlib.tight_layout.get_subplotspec_list:4 of
+msgid ""
+"For an instance of axes that does not support subplotspec, None is "
+"inserted in the list."
+msgstr ""
+
+#: matplotlib.tight_layout.get_subplotspec_list:7 of
+msgid ""
+"If grid_spec is given, None is inserted for those not from the given "
+"grid_spec."
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:2 of
+msgid ""
+"Return subplot parameters for tight-layouted-figure with specified "
+"padding."
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:8 of
+msgid "**fig**"
+msgstr ""
+
+#: of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:11 of
+msgid "**axes_list**"
+msgstr ""
+
+#: of
+msgid "list of Axes"
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:14 of
+msgid "**subplotspec_list** : list of `.SubplotSpec`"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:14 of
+msgid "The subplotspecs of each axes."
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:17 of
+msgid "**renderer**"
+msgstr ""
+
+#: of
+msgid "renderer"
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:24 of
+msgid ""
+"Padding (height/width) between edges of adjacent subplots.  Defaults to "
+"*pad*."
+msgstr ""
+
+#: of
+msgid "tuple[float, float, float, float], optional"
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:28 of
+msgid ""
+"(left, bottom, right, top) rectangle in normalized figure coordinates "
+"that the whole subplots area (including labels) will fit into. Defaults "
+"to using the entire figure."
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:48 of
+msgid "subplotspec or None"
+msgstr ""
+
+#: matplotlib.tight_layout.get_tight_layout_figure:35 of
+msgid ""
+"subplotspec kwargs to be passed to `.Figure.subplots_adjust` or None if "
+"tight_layout could not be accomplished."
+msgstr ""
+

@@ -1,0 +1,340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../devel/MEP/MEP19.rst:3
+msgid "MEP19: Continuous Integration"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:6
+msgid "Status"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:8
+msgid "**Completed**"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:11
+msgid "Branches and Pull requests"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:14
+msgid "Abstract"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:16
+msgid ""
+"matplotlib could benefit from better and more reliable continuous "
+"integration, both for testing and building installers and documentation."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:21
+msgid "Detailed description"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:24
+msgid "Current state-of-the-art"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:26
+msgid "**Testing**"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:28
+msgid ""
+"matplotlib currently uses Travis-CI for automated tests.  While Travis-CI"
+" should be praised for how much it does as a free service, it has a "
+"number of shortcomings:"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:32
+msgid "It often fails due to network timeouts when installing dependencies."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:34
+msgid "It often fails for inexplicable reasons."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:36
+msgid ""
+"build or test products can only be saved from build off of branches on "
+"the main repo, not pull requests, so it is often difficult to \"post "
+"mortem\" analyse what went wrong.  This is particularly frustrating when "
+"the failure can not be subsequently reproduced locally."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:42
+msgid ""
+"It is not extremely fast.  matplotlib's cpu and memory requirements for "
+"testing are much higher than the average Python project."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:45
+msgid ""
+"It only tests on Ubuntu Linux, and we have only minimal control over the "
+"specifics of the platform.  It can be upgraded at any time outside of our"
+" control, causing unexpected delays at times that may not be convenient "
+"in our release schedule."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:50
+msgid ""
+"On the plus side, Travis-CI's integration with github -- automatically "
+"testing all pending pull requests -- is exceptional."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:53
+msgid "**Builds**"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:55
+msgid ""
+"There is no centralized effort for automated binary builds for "
+"matplotlib.  However, the following disparate things are being done [If "
+"the authors mentioned here could fill in detail, that would be great!]:"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:60
+msgid "@sandrotosi: builds Debian packages"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:62
+msgid "@takluyver: Has automated Ubuntu builds on Launchpad"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:64
+msgid "@cgohlke: Makes Windows builds (don't know how automated that is)"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:66
+msgid "@r-owen: Makes OS-X builds (don't know how automated that is)"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:68
+msgid "**Documentation**"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:70
+msgid ""
+"Documentation of master is now built by travis and uploaded to "
+"https://matplotlib.org/devdocs/index.html"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:72
+msgid ""
+"@NelleV, I believe, generates the docs automatically and posts them on "
+"the web to chart MEP10 progress."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:76
+msgid "Peculiarities of matplotlib"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:78
+msgid ""
+"matplotlib has complex requirements that make testing and building more "
+"taxing than many other Python projects."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:81
+msgid ""
+"The CPU time to run the tests is quite high.  It puts us beyond the free "
+"accounts of many CI services (e.g. ShiningPanda)"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:84
+msgid ""
+"It has a large number of dependencies, and testing the full matrix of all"
+" combinations is impractical.  We need to be clever about what space we "
+"test and guarantee to support."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:89
+msgid "Requirements"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:91
+msgid "This section outlines the requirements that we would like to have."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:93
+msgid ""
+"Testing all pull requests by hooking into the GitHub API, as Travis-CI "
+"does"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:96
+msgid ""
+"Testing on all major platforms: Linux, Mac OS-X, MS Windows (in that "
+"order of priority, based on user survey)"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:99
+msgid ""
+"Retain the last n days worth of build and test products, to aid in post-"
+"mortem debugging."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:102
+msgid ""
+"Automated nightly binary builds, so that users can test the bleeding edge"
+" without installing a complete compilation environment."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:106
+msgid ""
+"Automated benchmarking.  It would be nice to have a standard benchmark "
+"suite (separate from the tests) whose performance could be tracked over "
+"time, in different backends and platforms.  While this is separate from "
+"building and testing, ideally it would run on the same infrastructure."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:112
+msgid ""
+"Automated nightly building and publishing of documentation (or as part of"
+" testing, to ensure PRs don't introduce documentation bugs). (This would "
+"not replace the static documentation for stable releases as a default)."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:117
+msgid ""
+"The test systems should be manageable by multiple developers, so that no "
+"single person becomes a bottleneck.  (Travis-CI's design does this well "
+"-- storing build configuration in the git repository, rather than "
+"elsewhere, is a very good design.)"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:122
+msgid ""
+"Make it easy to test a large but sparse matrix of different versions of "
+"matplotlib's dependencies.  The matplotlib user survey provides some good"
+" data as to where to focus our efforts: "
+"https://docs.google.com/spreadsheets/d/1jbK0J4cIkyBNncnS-gP7pINSliNy9lI-"
+"N4JHwxlNSXE/edit"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:127
+msgid ""
+"Nice to have: A decentralized design so that those with more obscure "
+"platforms can publish build results to a central dashboard."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:131
+msgid "Implementation"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:133
+msgid "This part is yet-to-be-written."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:135
+msgid ""
+"However, ideally, the implementation would be a third-party service, to "
+"avoid adding system administration to our already stretched time. As we "
+"have some donated funds, this service may be a paid one if it offers "
+"significant time-saving advantages over free offerings."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:141
+msgid "Backward compatibility"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:143
+msgid ""
+"Backward compatibility is not a major concern for this MEP.  We will "
+"replace current tools and procedures with something better and throw out "
+"the old."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:148
+msgid "Alternatives"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:152
+msgid "Hangout Notes"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:155
+msgid "CI Infrastructure"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:157
+msgid ""
+"We like Travis and it will probably remain part of our arsenal in any "
+"event.  The reliability issues are being looked into."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:160
+msgid ""
+"Enable Amazon S3 uploads of testing products on Travis.  This will help "
+"with post-mortem of failures (@mdboom is looking into this now)."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:164
+msgid ""
+"We want Mac coverage.  The best bet is probably to push Travis to enable "
+"it for our project by paying them for a Pro account (since they don't "
+"otherwise allow testing on both Linux and Mac)."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:168
+msgid "We want Windows coverage.  Shining Panda is an option there."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:170
+msgid ""
+"Investigate finding or building a tool that would collect and synthesize "
+"test results from a number of sources and post it to GitHub using the "
+"GitHub API.  This may be of general use to the Scipy community."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:175
+msgid ""
+"For both Windows and Mac, we should document (or better yet, script) the "
+"process of setting up the machine for a build, and how to build binaries "
+"and installers.  This may require getting information from Russel Owen "
+"and Christoph Gohlke.  This is a necessary step for doing automated "
+"builds, but would also be valuable for a number of other reasons."
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:183
+msgid "The test framework itself"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:185
+msgid "We should investigate ways to make it take less time"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:187
+msgid "Eliminating redundant tests, if possible"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:189
+msgid "General performance improvements to matplotlib will help"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:191
+msgid "We should be covering more things, particularly more backends"
+msgstr ""
+
+#: ../../devel/MEP/MEP19.rst:193
+msgid "We should have more unit tests, fewer integration tests, if possible"
+msgstr ""
+

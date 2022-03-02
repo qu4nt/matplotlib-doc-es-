@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../tutorials/colors/colormapnorms.rst:13
+msgid ""
+"Click :ref:`here <sphx_glr_download_tutorials_colors_colormapnorms.py>` "
+"to download the full example code"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:22
+msgid "Colormap Normalization"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:24
+msgid ""
+"Objects that use colormaps by default linearly map the colors in the "
+"colormap from data values *vmin* to *vmax*.  For example::"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:29
+msgid ""
+"will map the data in *Z* linearly from -1 to +1, so *Z=0* will give a "
+"color at the center of the colormap *RdBu_r* (white in this case)."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:33
+msgid ""
+"Matplotlib does this mapping in two steps, with a normalization from the "
+"input data to [0, 1] occurring first, and then mapping onto the indices "
+"in the colormap.  Normalizations are classes defined in the "
+":func:`matplotlib.colors` module.  The default, linear normalization is "
+":func:`matplotlib.colors.Normalize`."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:39
+msgid ""
+"Artists that map data to color pass the arguments *vmin* and *vmax* to "
+"construct a :func:`matplotlib.colors.Normalize` instance, then call it:"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:51
+msgid ""
+"However, there are sometimes cases where it is useful to map data to "
+"colormaps in a non-linear fashion."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:55
+msgid "Logarithmic"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:57
+msgid ""
+"One of the most common transformations is to plot data by taking its "
+"logarithm (to the base-10).  This transformation is useful to display "
+"changes across disparate scales.  Using `.colors.LogNorm` normalizes the "
+"data via :math:`log_{10}`.  In the example below, there are two bumps, "
+"one much smaller than the other. Using `.colors.LogNorm`, the shape and "
+"location of each bump can clearly be seen:"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:110
+msgid "Centered"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:112
+msgid ""
+"In many cases, data is symmetrical around a center, for example, positive"
+" and negative anomalies around a center 0. In this case, we would like "
+"the center to be mapped to 0.5 and the datapoint with the largest "
+"deviation from the center to be mapped to 1.0, if its value is greater "
+"than the center, or 0.0 otherwise. The norm `.colors.CenteredNorm` "
+"creates such a mapping automatically. It is well suited to be combined "
+"with a divergent colormap which uses different colors edges that meet in "
+"the center at an unsaturated color."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:121
+msgid ""
+"If the center of symmetry is different from 0, it can be set with the "
+"*vcenter* argument. For logarithmic scaling on both sides of the center, "
+"see `.colors.SymLogNorm` below; to apply a different mapping above and "
+"below the center, use `.colors.TwoSlopeNorm` below."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:168
+msgid "Symmetric logarithmic"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:170
+msgid ""
+"Similarly, it sometimes happens that there is data that is positive and "
+"negative, but we would still like a logarithmic scaling applied to both."
+"  In this case, the negative numbers are also scaled logarithmically, and"
+" mapped to smaller numbers; e.g., if ``vmin=-vmax``, then the negative "
+"numbers are mapped from 0 to 0.5 and the positive from 0.5 to 1."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:177
+msgid ""
+"Since the logarithm of values close to zero tends toward infinity, a "
+"small range around zero needs to be mapped linearly.  The parameter "
+"*linthresh* allows the user to specify the size of this range "
+"(-*linthresh*, *linthresh*).  The size of this range in the colormap is "
+"set by *linscale*.  When *linscale* == 1.0 (the default), the space used "
+"for the positive and negative halves of the linear range will be equal to"
+" one decade in the logarithmic range."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:223
+msgid "Power-law"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:225
+msgid ""
+"Sometimes it is useful to remap the colors onto a power-law relationship "
+"(i.e. :math:`y=x^{\\gamma}`, where :math:`\\gamma` is the power).  For "
+"this we use the `.colors.PowerNorm`.  It takes as an argument *gamma* "
+"(*gamma* == 1.0 will just yield the default linear normalization):"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:233
+msgid ""
+"There should probably be a good reason for plotting the data using this "
+"type of transformation.  Technical viewers are used to linear and "
+"logarithmic axes and data transformations.  Power laws are less common, "
+"and viewers should explicitly be made aware that they have been used."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:275
+msgid "Discrete bounds"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:277
+msgid ""
+"Another normalization that comes with Matplotlib is "
+"`.colors.BoundaryNorm`. In addition to *vmin* and *vmax*, this takes as "
+"arguments boundaries between which data is to be mapped.  The colors are "
+"then linearly distributed between these \"bounds\".  It can also take an "
+"*extend* argument to add upper and/or lower out-of-bounds values to the "
+"range over which the colors are distributed. For instance:"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:295
+msgid ""
+"Note: Unlike the other norms, this norm returns values from 0 to "
+"*ncolors*-1."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:354
+msgid "TwoSlopeNorm: Different mapping on either side of a center"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:356
+msgid ""
+"Sometimes we want to have a different colormap on either side of a "
+"conceptual center point, and we want those two colormaps to have "
+"different linear scales.  An example is a topographic map where the land "
+"and ocean have a center at zero, but land typically has a greater "
+"elevation range than the water has depth range, and they are often "
+"represented by a different colormap."
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:412
+msgid "FuncNorm: Arbitrary function normalization"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:414
+msgid ""
+"If the above norms do not provide the normalization you want, you can use"
+" `~.colors.FuncNorm` to define your own.  Note that this example is the "
+"same as `~.colors.PowerNorm` with a power of 0.5:"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:456
+msgid "Custom normalization: Manually implement two linear ranges"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:458
+msgid ""
+"The `.TwoSlopeNorm` described above makes a useful example for defining "
+"your own norm.  Note for the colorbar to work, you must define an inverse"
+" for your norm:"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:512
+msgid "**Total running time of the script:** ( 0 minutes  5.486 seconds)"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:527
+msgid ""
+":download:`Download Python source code: colormapnorms.py "
+"<colormapnorms.py>`"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:533
+msgid ""
+":download:`Download Jupyter notebook: colormapnorms.ipynb "
+"<colormapnorms.ipynb>`"
+msgstr ""
+
+#: ../../tutorials/colors/colormapnorms.rst:540
+msgid ""
+"Keywords: matplotlib code example, codex, python plot, pyplot `Gallery "
+"generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

@@ -1,0 +1,552 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/backend_pgf_api.rst:2
+msgid ":mod:`.backend_pgf`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.FigureCanvasPgf:1 of
+msgid "Bases: :py:class:`matplotlib.backend_bases.FigureCanvasBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.FigureCanvasPgf.draw:2 of
+msgid "Render the `.Figure`."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.FigureCanvasPgf.draw:4 of
+msgid ""
+"It is important that this method actually walk the artist tree even if "
+"not output is produced because this will trigger deferred work (like "
+"computing limits auto-limits and tick values) that users may want access "
+"to before saving to disk."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.FigureCanvasPgf.get_default_filetype:2 of
+msgid ""
+"Return the default savefig file format as specified in "
+":rc:`savefig.format`."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.FigureCanvasPgf.get_default_filetype:5 of
+msgid ""
+"The returned string does not include a period. This method is overridden "
+"in backends that only support a single file type."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.FigureCanvasPgf.print_pdf:2 of
+msgid "Use LaTeX to compile a pgf generated figure to pdf."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.FigureCanvasPgf.print_pgf:2 of
+msgid ""
+"Output pgf macros for drawing the figure so it can be included and "
+"rendered in latex documents."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.FigureCanvasPgf.print_png:2 of
+msgid "Use LaTeX to compile a pgf figure to pdf and convert it to png."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.LatexError:1 of
+msgid "Bases: :py:class:`Exception`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.LatexManager:1
+#: matplotlib.backends.backend_pgf.PdfPages:1
+#: matplotlib.backends.backend_pgf.TmpDirCleaner:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.LatexManager:2 of
+msgid ""
+"The LatexManager opens an instance of the LaTeX application for "
+"determining the metrics of text elements. The LaTeX environment can be "
+"modified by setting fonts and/or a custom preamble in `.rcParams`."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.LatexManager.get_width_height_descent:2 of
+msgid ""
+"Get the width, total height, and descent (in TeX points) for a text "
+"typeset by the current LaTeX environment."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:2 of
+msgid "A multi-page PDF file using the pgf backend"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:17 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:33 of
+msgid "Create a new PdfPages object."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages
+#: matplotlib.backends.backend_pgf.PdfPages.savefig
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text
+#: matplotlib.backends.backend_pgf.RendererPgf.points_to_pixels of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:40 of
+msgid "**filename**"
+msgstr ""
+
+#: of
+msgid "str or path-like"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:39 of
+msgid ""
+"Plots using `PdfPages.savefig` will be written to a file at this "
+"location. Any older file with the same name is overwritten."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:44 of
+msgid "**keep_empty**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:43 of
+msgid ""
+"If set to False, then empty pdf files will be deleted automatically when "
+"closed."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:70 of
+msgid "**metadata**"
+msgstr ""
+
+#: of
+msgid "dict, optional"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:47 of
+msgid ""
+"Information dictionary object (see PDF reference section 10.2.1 'Document"
+" Information Dictionary'), e.g.: ``{'Creator': 'My software', 'Author': "
+"'Me', 'Title': 'Awesome'}``."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:51 of
+msgid ""
+"The standard keys are 'Title', 'Author', 'Subject', 'Keywords', "
+"'Creator', 'Producer', 'CreationDate', 'ModDate', and 'Trapped'. Values "
+"have been predefined for 'Creator', 'Producer' and 'CreationDate'. They "
+"can be removed by setting them to `None`."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages:56 of
+msgid ""
+"Note that some versions of LaTeX engines may ignore the 'Producer' key "
+"and set it to themselves."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages.close:2 of
+msgid ""
+"Finalize this object, running LaTeX in a temporary directory and moving "
+"the final pdf file to *filename*."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages.get_pagecount:2 of
+msgid "Return the current number of pages in the multipage pdf file."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages.savefig:2 of
+msgid "Save a `.Figure` to this file as a new page."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages.savefig:4 of
+msgid "Any other keyword arguments are passed to `~.Figure.savefig`."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages.savefig:22 of
+msgid "**figure** : `.Figure` or int, default: the active figure"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages.savefig:21 of
+msgid "Figure or int, default: the active figure"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.PdfPages.savefig:9 of
+msgid "The figure, or index of the figure, that is saved to the file."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf:1 of
+msgid "Bases: :py:class:`matplotlib.backend_bases.RendererBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf:2 of
+msgid ""
+"Create a new PGF renderer that translates any drawing instruction into "
+"text commands to be interpreted in a latex pgfpicture environment."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf:21 of
+msgid "**figure** : `matplotlib.figure.Figure`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf:20 of
+msgid "matplotlib.figure.Figure"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf:21 of
+msgid "Matplotlib figure to initialize height, width and dpi from."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf:25 of
+msgid "**fh**"
+msgstr ""
+
+#: of
+msgid "file-like"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf:24 of
+msgid "File handle for the output of the drawing commands."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:2 of
+msgid "Draw an RGBA image."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:8
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:12
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:8 of
+msgid "**gc** : `.GraphicsContextBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:7
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:11
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:7 of
+msgid "GraphicsContextBase"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:8 of
+msgid "A graphics context with clipping information."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:12
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:11 of
+msgid "**x**"
+msgstr ""
+
+#: of
+msgid "scalar"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:11 of
+msgid ""
+"The distance in physical units (i.e., dots or pixels) from the left hand "
+"side of the canvas."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:16
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:14 of
+msgid "**y**"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:15 of
+msgid ""
+"The distance in physical units (i.e., dots or pixels) from the bottom "
+"side of the canvas."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:19 of
+msgid "**im**"
+msgstr ""
+
+#: of
+msgid "(N, M, 4) array-like of np.uint8"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:19 of
+msgid "An array of RGBA pixels."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:43 of
+msgid "**transform** : `matplotlib.transforms.Affine2DBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:42 of
+msgid "matplotlib.transforms.Affine2DBase"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_image:22 of
+msgid ""
+"If and only if the concrete backend is written such that "
+":meth:`option_scale_image` returns ``True``, an affine transformation "
+"(i.e., an `.Affine2DBase`) *may* be passed to :meth:`draw_image`.  The "
+"translation vector of the transformation is given in physical units "
+"(i.e., dots or pixels). Note that the transformation does not override "
+"*x* and *y*, and has to be applied *before* translating the result by *x*"
+" and *y* (this can be accomplished by adding *x* and *y* to the "
+"translation vector defined by *transform*)."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:2 of
+msgid "Draw a marker at each of *path*'s vertices (excluding control points)."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:4 of
+msgid ""
+"This provides a fallback implementation of draw_markers that makes "
+"multiple calls to :meth:`draw_path`.  Some backends may want to override "
+"this method in order to draw the marker only once and reuse it multiple "
+"times."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:12
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:8 of
+msgid "The graphics context."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:15 of
+msgid "**marker_trans** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:14
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:30 of
+msgid "matplotlib.transforms.Transform"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:15 of
+msgid "An affine transform applied to the marker."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:31 of
+msgid "**trans** : `matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_markers:18 of
+msgid "An affine transform applied to the path."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_path:2 of
+msgid "Draw a `~.path.Path` instance using the given affine transform."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:2 of
+msgid "Draw the text instance."
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:11 of
+msgid "The x location of the text in display coords."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:14 of
+msgid "The y location of the text baseline in display coords."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:17 of
+msgid "**s**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:17 of
+msgid "The text string."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:20 of
+msgid "**prop** : `matplotlib.font_manager.FontProperties`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:19 of
+msgid "matplotlib.font_manager.FontProperties"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:20 of
+msgid "The font properties."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:23 of
+msgid "**angle**"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:23 of
+msgid "The rotation angle in degrees anti-clockwise."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:34 of
+msgid "**mtext** : `matplotlib.text.Text`"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:33 of
+msgid "matplotlib.text.Text"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:26 of
+msgid "The original text object to be rendered."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:37
+#: matplotlib.backends.backend_pgf.TmpDirCleaner:15
+#: matplotlib.backends.backend_pgf.TmpDirCleaner.add:15
+#: matplotlib.backends.backend_pgf.TmpDirCleaner.cleanup_remaining_tmpdirs:15
+#: of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:38 of
+msgid "**Note for backend implementers:**"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:40 of
+msgid ""
+"When you are trying to determine if you have gotten your bounding box "
+"right (which is what enables the text layout/alignment to work properly),"
+" it helps to change the line in text.py::"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.draw_text:46 of
+msgid ""
+"to if 1, and then the actual bounding box will be plotted along with your"
+" text."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.flipy:2 of
+msgid "Return whether y values increase from top to bottom."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.flipy:4 of
+msgid "Note that this only affects drawing of texts and images."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.get_canvas_width_height:2 of
+msgid "Return the canvas width and height in display coords."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.get_text_width_height_descent:2
+#: of
+msgid ""
+"Get the width, height, and descent (offset from the bottom to the "
+"baseline), in display coords, of the string *s* with `.FontProperties` "
+"*prop*."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.option_image_nocomposite:2 of
+msgid "Return whether image composition by Matplotlib should be skipped."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.option_image_nocomposite:4 of
+msgid ""
+"Raster backends should usually return False (letting the C-level "
+"rasterizer take care of image composition); vector backends should "
+"usually return ``not rcParams[\"image.composite_image\"]``."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.option_scale_image:2 of
+msgid ""
+"Return whether arbitrary affine transformations in :meth:`draw_image` are"
+" supported (True for most vector backends)."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.points_to_pixels:2 of
+msgid "Convert points to display units."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.points_to_pixels:4 of
+msgid ""
+"You need to override this function (unless your backend doesn't have a "
+"dpi, e.g., postscript or svg).  Some imaging systems assume some value "
+"for pixels per inch::"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.points_to_pixels:13 of
+msgid "**points**"
+msgstr ""
+
+#: of
+msgid "float or array-like"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.points_to_pixels:13 of
+msgid "a float or a numpy array of float"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.points_to_pixels of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.RendererPgf.points_to_pixels:30 of
+msgid "Points converted to pixels"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.TmpDirCleaner:2
+#: matplotlib.backends.backend_pgf.TmpDirCleaner.add:2
+#: matplotlib.backends.backend_pgf.TmpDirCleaner.cleanup_remaining_tmpdirs:2 of
+msgid "[*Deprecated*]"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.TmpDirCleaner:16
+#: matplotlib.backends.backend_pgf.TmpDirCleaner.add:16
+#: matplotlib.backends.backend_pgf.TmpDirCleaner.cleanup_remaining_tmpdirs:16
+#: of
+msgid "\\"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.common_texification:2 of
+msgid ""
+"Do some necessary and/or useful substitutions for texts to be included in"
+" LaTeX documents."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.common_texification:5 of
+#, python-format
+msgid ""
+"This distinguishes text-mode and math-mode by replacing the math "
+"separator ``$`` with ``\\(\\displaystyle %s\\)``. Escaped math separators"
+" (``\\$``) are ignored."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.common_texification:9 of
+msgid "The following characters are escaped in text segments: ``_^$%``"
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.get_fontspec:2 of
+msgid "Build fontspec preamble from rc."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.get_preamble:2 of
+msgid "Get LaTeX preamble from rc."
+msgstr ""
+
+#: matplotlib.backends.backend_pgf.make_pdf_to_png_converter:2 of
+msgid "Return a function that converts a pdf file to a png file."
+msgstr ""
+

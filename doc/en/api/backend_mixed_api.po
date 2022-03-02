@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/backend_mixed_api.rst:2
+msgid ":mod:`.backend_mixed`"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:2 of
+msgid ""
+"A helper class to implement a renderer that switches between vector and "
+"raster drawing.  An example may be a PDF writer, where most things are "
+"drawn with PDF vector commands, but some very complex objects, such as "
+"quad meshes, are rasterised and then output as images."
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:33 of
+msgid "**figure** : `matplotlib.figure.Figure`"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:32 of
+msgid "matplotlib.figure.Figure"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:33 of
+msgid "The figure instance."
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:36 of
+msgid "**width**"
+msgstr ""
+
+#: of
+msgid "scalar"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:36 of
+msgid "The width of the canvas in logical units"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:39 of
+msgid "**height**"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:39 of
+msgid "The height of the canvas in logical units"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:42 of
+msgid "**dpi**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:42 of
+msgid "The dpi of the canvas"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:47 of
+msgid "**vector_renderer** : `matplotlib.backend_bases.RendererBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:46
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:64 of
+msgid "matplotlib.backend_bases.RendererBase"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:45 of
+msgid ""
+"An instance of a subclass of `~matplotlib.backend_bases.RendererBase` "
+"that will be used for the vector drawing."
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:65 of
+msgid "**raster_renderer_class** : `matplotlib.backend_bases.RendererBase`"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer:50 of
+msgid ""
+"The renderer class to use for the raster drawing.  If not provided, this "
+"will use the Agg backend (which is currently the only viable option "
+"anyway.)"
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer.start_rasterizing:2 of
+msgid ""
+"Enter \"raster\" mode.  All subsequent drawing commands (until "
+"`stop_rasterizing` is called) will be drawn with the raster backend."
+msgstr ""
+
+#: matplotlib.backends.backend_mixed.MixedModeRenderer.stop_rasterizing:2 of
+msgid ""
+"Exit \"raster\" mode.  All of the drawing that was done since the last "
+"`start_rasterizing` call will be copied to the vector backend by calling "
+"draw_image."
+msgstr ""
+

@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_as_gen/matplotlib.pyplot.eventplot.rst:2
+msgid "matplotlib.pyplot.eventplot"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:2 of
+msgid "Plot identical parallel lines at the given positions."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:4 of
+msgid ""
+"This type of plot is commonly used in neuroscience for representing "
+"neural events, where it is usually called a spike raster, dot raster, or "
+"raster plot."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:8 of
+msgid ""
+"However, it is useful in any situation where you wish to show the timing "
+"or position of multiple sets of discrete events, such as the arrival "
+"times of people to a business on each day of the month or the date of "
+"hurricanes each year of the last century."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:25 of
+msgid "**positions**"
+msgstr ""
+
+#: of
+msgid "array-like or list of array-like"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:16 of
+msgid "A 1D array-like defines the positions of one sequence of events."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:18 of
+msgid ""
+"Multiple groups of events may be passed as a list of array-likes. Each "
+"group can be styled independently by passing lists of values to "
+"*lineoffsets*, *linelengths*, *linewidths*, *colors* and *linestyles*."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:23 of
+msgid ""
+"Note that *positions* can be a 2D array, but in practice different event "
+"groups usually have different counts so that one will use a list of "
+"different-length arrays rather than a 2D array."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:33 of
+msgid "**orientation**"
+msgstr ""
+
+#: of
+msgid "{'horizontal', 'vertical'}, default: 'horizontal'"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:28 of
+msgid "The direction of the event sequence:"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:30 of
+msgid ""
+"'horizontal': the events are arranged horizontally. The indicator lines "
+"are vertical."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:32 of
+msgid ""
+"'vertical': the events are arranged vertically. The indicator lines are "
+"horizontal."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:40 of
+msgid "**lineoffsets**"
+msgstr ""
+
+#: of
+msgid "float or array-like, default: 1"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:36 of
+msgid ""
+"The offset of the center of the lines from the origin, in the direction "
+"orthogonal to *orientation*."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:39 matplotlib.pyplot.eventplot:46
+#: matplotlib.pyplot.eventplot:52 matplotlib.pyplot.eventplot:58
+#: matplotlib.pyplot.eventplot:71 of
+msgid ""
+"If *positions* is 2D, this can be a sequence with length matching the "
+"length of *positions*."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:47 of
+msgid "**linelengths**"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:43 of
+msgid ""
+"The total height of the lines (i.e. the lines stretches from ``lineoffset"
+" - linelength/2`` to ``lineoffset + linelength/2``)."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:53 of
+msgid "**linewidths** : float or array-like, default: :rc:`lines.linewidth`"
+msgstr ""
+
+#: of
+msgid "float or array-like, default:"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:50 of
+msgid "The line width(s) of the event lines, in points."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:59 of
+msgid "**colors** : color or list of colors, default: :rc:`lines.color`"
+msgstr ""
+
+#: of
+msgid "color or list of colors, default:"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:56 of
+msgid "The color(s) of the event lines."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:72 of
+msgid "**linestyles**"
+msgstr ""
+
+#: of
+msgid "str or tuple or list of such values, default: 'solid'"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:62 of
+msgid ""
+"Default is 'solid'. Valid strings are ['solid', 'dashed', 'dashdot', "
+"'dotted', '-', '--', '-.', ':']. Dash tuples should be of the form::"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:68 of
+msgid "where *onoffseq* is an even length tuple of on and off ink in points."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:78 of
+msgid "**data**"
+msgstr ""
+
+#: of
+msgid "indexable object, optional"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:75 of
+msgid ""
+"If given, the following parameters also accept a string ``s``, which is "
+"interpreted as ``data[s]`` (unless this raises an exception):"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:78 of
+msgid ""
+"*positions*, *lineoffsets*, *linelengths*, *linewidths*, *colors*, "
+"*linestyles*"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:82 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:81 of
+msgid ""
+"Other keyword arguments are line collection properties.  See "
+"`.LineCollection` for a list of the valid properties."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:94 of
+msgid "list of `.EventCollection`"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:87 of
+msgid "The `.EventCollection` that were added."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:97 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:98 of
+msgid ""
+"For *linelengths*, *linewidths*, *colors*, and *linestyles*, if only a "
+"single value is given, that value is applied to all lines.  If an array-"
+"like is given, it must have the same length as *positions*, and each "
+"value will be applied to the corresponding row of the array."
+msgstr ""
+
+#: matplotlib.pyplot.eventplot:105 of
+msgid "Examples"
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/eventplot_demo.py:7
+msgid ""
+"(`Source code "
+"<../../gallery/lines_bars_and_markers/eventplot_demo.py>`__, `png "
+"<../../gallery/lines_bars_and_markers/eventplot_demo.png>`__, `pdf "
+"<../../gallery/lines_bars_and_markers/eventplot_demo.pdf>`__)"
+msgstr ""
+

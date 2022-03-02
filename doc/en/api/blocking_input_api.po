@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/blocking_input_api.rst:3
+msgid "``matplotlib.blocking_input``"
+msgstr ""
+
+#: matplotlib.blocking_input:1 of
+msgid "Classes used for blocking interaction with figure windows:"
+msgstr ""
+
+#: matplotlib.blocking_input:5 of
+msgid "`BlockingInput`"
+msgstr ""
+
+#: matplotlib.blocking_input:4 of
+msgid ""
+"Creates a callable object to retrieve events in a blocking way for "
+"interactive sessions.  Base class of the other classes listed here."
+msgstr ""
+
+#: matplotlib.blocking_input:9 of
+msgid "`BlockingKeyMouseInput`"
+msgstr ""
+
+#: matplotlib.blocking_input:8 of
+msgid ""
+"Creates a callable object to retrieve key or mouse clicks in a blocking "
+"way for interactive sessions.  Used by `~.Figure.waitforbuttonpress`."
+msgstr ""
+
+#: matplotlib.blocking_input:13 of
+msgid "`BlockingMouseInput`"
+msgstr ""
+
+#: matplotlib.blocking_input:12 of
+msgid ""
+"Creates a callable object to retrieve mouse clicks in a blocking way for "
+"interactive sessions.  Used by `~.Figure.ginput`."
+msgstr ""
+
+#: matplotlib.blocking_input:18 of
+msgid "`BlockingContourLabeler`"
+msgstr ""
+
+#: matplotlib.blocking_input:16 of
+msgid ""
+"Creates a callable object to retrieve mouse clicks in a blocking way that"
+" will then be used to place labels on a `.ContourSet`.  Used by "
+"`~.Axes.clabel`."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler:1 of
+msgid "Bases: :py:class:`matplotlib.blocking_input.BlockingMouseInput`"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler:2
+#: matplotlib.blocking_input.BlockingKeyMouseInput:2 of
+msgid "Callable for retrieving mouse clicks and key presses in a blocking way."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler:4 of
+msgid "Used to place contour labels."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler.add_click:2
+#: matplotlib.blocking_input.BlockingMouseInput.add_click:2 of
+msgid "Add the coordinates of an event to the list of clicks."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler.add_click
+#: matplotlib.blocking_input.BlockingContourLabeler.button1
+#: matplotlib.blocking_input.BlockingContourLabeler.button3
+#: matplotlib.blocking_input.BlockingContourLabeler.pop_click
+#: matplotlib.blocking_input.BlockingMouseInput.add_click
+#: matplotlib.blocking_input.BlockingMouseInput.cleanup
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_add
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_pop
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_stop
+#: matplotlib.blocking_input.BlockingMouseInput.pop_click of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler.add_click:21
+#: matplotlib.blocking_input.BlockingContourLabeler.button1:21
+#: matplotlib.blocking_input.BlockingContourLabeler.button3:24
+#: matplotlib.blocking_input.BlockingContourLabeler.pop_click:21
+#: matplotlib.blocking_input.BlockingMouseInput.add_click:21
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_add:21
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_pop:21
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_stop:21
+#: matplotlib.blocking_input.BlockingMouseInput.pop_click:21 of
+msgid "**event** : `~.backend_bases.MouseEvent`"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler.add_click:20
+#: matplotlib.blocking_input.BlockingContourLabeler.button1:20
+#: matplotlib.blocking_input.BlockingContourLabeler.button3:23
+#: matplotlib.blocking_input.BlockingContourLabeler.pop_click:20
+#: matplotlib.blocking_input.BlockingMouseInput.add_click:20
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_add:20
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_pop:20
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_stop:20
+#: matplotlib.blocking_input.BlockingMouseInput.pop_click:20 of
+msgid "MouseEvent"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler.button1:2 of
+msgid "Process an button-1 event (add a label to a contour)."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler.button3:2 of
+msgid "Process an button-3 event (remove a label if not in inline mode)."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler.button3:4 of
+msgid ""
+"Unfortunately, if one is doing inline labels, then there is currently no "
+"way to fix the broken contour - once humpty-dumpty is broken, he can't be"
+" put back together.  In inline mode, this does nothing."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingContourLabeler.pop_click:2
+#: matplotlib.blocking_input.BlockingMouseInput.pop_click:2 of
+msgid "Remove a click (by default, the last) from the list of clicks."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingInput:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingInput:2 of
+msgid "Callable for retrieving events in a blocking way."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingInput.add_event:2 of
+msgid "For base class, this just appends an event to events."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingInput.cleanup:2 of
+msgid "Disconnect all callbacks."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingInput.on_event:2 of
+msgid "Event handler; will be passed to the current figure to retrieve events."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingInput.pop_event:2 of
+msgid "Remove an event from the event list -- by default, the last."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingInput.pop_event:4 of
+msgid ""
+"Note that this does not check that there are events, much like the normal"
+" pop method.  If no events exist, this will throw an exception."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingInput.post_event:2 of
+msgid "For baseclass, do nothing but collect events."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingKeyMouseInput:1
+#: matplotlib.blocking_input.BlockingMouseInput:1 of
+msgid "Bases: :py:class:`matplotlib.blocking_input.BlockingInput`"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingKeyMouseInput.post_event:2 of
+msgid "Determine if it is a key event."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput:2 of
+msgid "Callable for retrieving mouse clicks in a blocking way."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput:4 of
+msgid ""
+"This class will also retrieve keypresses and map them to mouse clicks: "
+"delete and backspace are a right click, enter is like a middle click, and"
+" all others are like a left click."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.cleanup:21 of
+msgid "**event** : `~.backend_bases.MouseEvent`, optional"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.cleanup:20 of
+msgid "MouseEvent, optional"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.cleanup:8 of
+msgid "Not used"
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.key_event:2 of
+msgid "Process a key press event, mapping keys to appropriate mouse clicks."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event:2 of
+msgid "Process a mouse click event."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_add:2 of
+msgid "Process an button-1 event (add a click if inside axes)."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_pop:2 of
+msgid "Process an button-3 event (remove the last click)."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.mouse_event_stop:2 of
+msgid "Process an button-2 event (end blocking input)."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.pop:2 of
+msgid "Remove a click and the associated event from the list of clicks."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.pop:4 of
+msgid "Defaults to the last click."
+msgstr ""
+
+#: matplotlib.blocking_input.BlockingMouseInput.post_event:2 of
+msgid "Process an event."
+msgstr ""
+

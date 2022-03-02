@@ -1,0 +1,649 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:4
+msgid "Changes for 0.98.0"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:6
+msgid ""
+":func:`matplotlib.image.imread` now no longer always returns RGBA data---"
+"if the image is luminance or RGB, it will return a MxN or MxNx3 array if "
+"possible.  Also uint8 is no longer always forced to float."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:10
+msgid ""
+"Rewrote the :class:`matplotlib.cm.ScalarMappable` callback infrastructure"
+" to use :class:`matplotlib.cbook.CallbackRegistry` rather than custom "
+"callback handling.  Any users of "
+"``matplotlib.cm.ScalarMappable.add_observer`` of the "
+":class:`~matplotlib.cm.ScalarMappable` should use the "
+":attr:`matplotlib.cm.ScalarMappable.callbacksSM` "
+":class:`~matplotlib.cbook.CallbackRegistry` instead."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:18
+msgid ""
+"New axes function and Axes method provide control over the plot color "
+"cycle: ``matplotlib.axes.set_default_color_cycle`` and "
+"``matplotlib.axes.Axes.set_color_cycle``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:22
+msgid ""
+"Matplotlib now requires Python 2.4, so :mod:`matplotlib.cbook` will no "
+"longer provide :class:`set`, :func:`enumerate`, :func:`reversed` or "
+"``izip`` compatibility functions."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:26
+msgid ""
+"In Numpy 1.0, bins are specified by the left edges only.  The axes method"
+" :meth:`matplotlib.axes.Axes.hist` now uses future Numpy 1.3 semantics "
+"for histograms.  Providing ``binedges``, the last value gives the upper-"
+"right edge now, which was implicitly set to +infinity in Numpy 1.0.  This"
+" also means that the last bin doesn't contain upper outliers any more by "
+"default."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:33
+msgid ""
+"New axes method and pyplot function, :func:`~matplotlib.pyplot.hexbin`, "
+"is an alternative to :func:`~matplotlib.pyplot.scatter` for large "
+"datasets.  It makes something like a :func:`~matplotlib.pyplot.pcolor` of"
+" a 2-D histogram, but uses hexagonal bins."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:39
+msgid ""
+"New kwarg, ``symmetric``, in :class:`matplotlib.ticker.MaxNLocator` "
+"allows one require an axis to be centered around zero."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:42
+msgid ""
+"Toolkits must now be imported from ``mpl_toolkits`` (not "
+"``matplotlib.toolkits``)"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:45
+msgid "Notes about the transforms refactoring"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:47
+msgid ""
+"A major new feature of the 0.98 series is a more flexible and extensible "
+"transformation infrastructure, written in Python/Numpy rather than a "
+"custom C extension."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:51
+msgid ""
+"The primary goal of this refactoring was to make it easier to extend "
+"matplotlib to support new kinds of projections.  This is mostly an "
+"internal improvement, and the possible user-visible changes it allows are"
+" yet to come."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:56
+msgid ""
+"See :mod:`matplotlib.transforms` for a description of the design of the "
+"new transformation framework."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:59
+msgid ""
+"For efficiency, many of these functions return views into Numpy arrays.  "
+"This means that if you hold on to a reference to them, their contents may"
+" change.  If you want to store a snapshot of their current values, use "
+"the Numpy array method copy()."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:64
+msgid ""
+"The view intervals are now stored only in one place -- in the "
+":class:`matplotlib.axes.Axes` instance, not in the locator instances as "
+"well.  This means locators must get their limits from their "
+":class:`matplotlib.axis.Axis`, which in turn looks up its limits from the"
+" :class:`~matplotlib.axes.Axes`.  If a locator is used temporarily and "
+"not assigned to an Axis or Axes, (e.g., in :mod:`matplotlib.contour`), a "
+"dummy axis must be created to store its bounds.  Call "
+":meth:`matplotlib.ticker.TickHelper.create_dummy_axis` to do so."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:74
+msgid ""
+"The functionality of ``Pbox`` has been merged with "
+":class:`~matplotlib.transforms.Bbox`.  Its methods now all return copies "
+"rather than modifying in place."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:78
+msgid ""
+"The following lists many of the simple changes necessary to update code "
+"from the old transformation framework to the new one.  In particular, "
+"methods that return a copy are named with a verb in the past tense, "
+"whereas methods that alter an object in place are named with a verb in "
+"the present tense."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:85
+msgid ":mod:`matplotlib.transforms`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:88
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:164
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:192
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:206
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:219
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:230
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:240
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:250
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:260
+msgid "Old method"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:88
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:164
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:192
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:206
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:219
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:230
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:240
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:250
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:260
+msgid "New method"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:90
+msgid "``Bbox.get_bounds``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:90
+msgid ":attr:`.transforms.Bbox.bounds`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:92
+msgid "``Bbox.width``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:92
+msgid ":attr:`transforms.Bbox.width <.transforms.BboxBase.width>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:95
+msgid "``Bbox.height``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:95
+msgid ":attr:`transforms.Bbox.height <.transforms.BboxBase.height>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:98
+msgid "``Bbox.intervalx().get_bounds()`` ``Bbox.intervalx().set_bounds()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:98
+msgid ":attr:`.transforms.Bbox.intervalx` [It is now a property.]"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:101
+msgid "``Bbox.intervaly().get_bounds()`` ``Bbox.intervaly().set_bounds()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:101
+msgid ":attr:`.transforms.Bbox.intervaly` [It is now a property.]"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:104
+msgid "``Bbox.xmin``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:104
+msgid ""
+":attr:`.transforms.Bbox.x0` or :attr:`transforms.Bbox.xmin "
+"<.transforms.BboxBase.xmin>` [1]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:108
+msgid "``Bbox.ymin``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:108
+msgid ""
+":attr:`.transforms.Bbox.y0` or :attr:`transforms.Bbox.ymin "
+"<.transforms.BboxBase.ymin>` [1]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:112
+msgid "``Bbox.xmax``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:112
+msgid ""
+":attr:`.transforms.Bbox.x1` or :attr:`transforms.Bbox.xmax "
+"<.transforms.BboxBase.xmax>` [1]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:116
+msgid "``Bbox.ymax``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:116
+msgid ""
+":attr:`.transforms.Bbox.y1` or :attr:`transforms.Bbox.ymax "
+"<.transforms.BboxBase.ymax>` [1]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:120
+msgid "``Bbox.overlaps(bboxes)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:120
+msgid "`Bbox.count_overlaps(bboxes) <.BboxBase.count_overlaps>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:123
+msgid "``bbox_all(bboxes)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:123
+msgid "`Bbox.union(bboxes) <.BboxBase.union>` [It is a staticmethod.]"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:126
+msgid "``lbwh_to_bbox(l, b, w, h)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:126
+msgid ""
+"`Bbox.from_bounds(x0, y0, w, h) <.Bbox.from_bounds>` [It is a "
+"staticmethod.]"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:129
+msgid "``inverse_transform_bbox(trans, bbox)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:129
+msgid "``bbox.inverse_transformed(trans)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:132
+msgid "``Interval.contains_open(v)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:132
+msgid "`interval_contains_open(tuple, v) <.interval_contains_open>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:135
+msgid "``Interval.contains(v)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:135
+msgid "`interval_contains(tuple, v) <.interval_contains>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:137
+msgid "``identity_transform()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:137
+msgid ":class:`.transforms.IdentityTransform`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:139
+msgid "``blend_xy_sep_transform(xtrans, ytrans)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:139
+msgid "`blended_transform_factory(xtrans, ytrans) <.blended_transform_factory>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:142
+msgid "``scale_transform(xs, ys)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:142
+msgid "`Affine2D().scale(xs[, ys]) <.Affine2D.scale>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:144
+msgid "``get_bbox_transform(boxin, boxout)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:144
+msgid ""
+"`BboxTransform(boxin, boxout) <.BboxTransform>` or "
+"`BboxTransformFrom(boxin) <.BboxTransformFrom>` or "
+"`BboxTransformTo(boxout) <.BboxTransformTo>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:148
+msgid "``Transform.seq_xy_tup(points)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:148
+msgid "`Transform.transform(points) <.Transform.transform>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:150
+msgid "``Transform.inverse_xy_tup(points)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:150
+msgid "`Transform.inverted() <.Transform.inverted>`.transform(points)"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:154
+msgid ""
+"The :class:`~matplotlib.transforms.Bbox` is bound by the points (x0, y0) "
+"to (x1, y1) and there is no defined order to these points, that is, x0 is"
+" not necessarily the left edge of the box.  To get the left edge of the "
+":class:`.Bbox`, use the read-only property :attr:`xmin "
+"<matplotlib.transforms.BboxBase.xmin>`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:161
+msgid ":mod:`matplotlib.axes`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:166
+msgid "``Axes.get_position()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:166
+msgid ":meth:`matplotlib.axes.Axes.get_position` [2]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:168
+msgid "``Axes.set_position()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:168
+msgid ":meth:`matplotlib.axes.Axes.set_position` [3]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:170
+msgid "``Axes.toggle_log_lineary()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:170
+msgid ":meth:`matplotlib.axes.Axes.set_yscale` [4]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:172
+msgid "``Subplot`` class"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:172
+msgid "removed"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:175
+msgid "The ``Polar`` class has moved to :mod:`matplotlib.projections.polar`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:177
+msgid ""
+":meth:`matplotlib.axes.Axes.get_position` used to return a list of "
+"points, now it returns a :class:`matplotlib.transforms.Bbox` instance."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:181
+msgid ""
+":meth:`matplotlib.axes.Axes.set_position` now accepts either four scalars"
+" or a :class:`matplotlib.transforms.Bbox` instance."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:184
+msgid ""
+"Since the recfactoring allows for more than two scale types ('log' or "
+"'linear'), it no longer makes sense to have a toggle. "
+"``Axes.toggle_log_lineary()`` has been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:189
+msgid ":mod:`matplotlib.artist`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:194
+msgid "``Artist.set_clip_path(path)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:194
+msgid "``Artist.set_clip_path(path, transform)`` [5]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:197
+msgid ""
+":meth:`matplotlib.artist.Artist.set_clip_path` now accepts a "
+":class:`matplotlib.path.Path` instance and a "
+":class:`matplotlib.transforms.Transform` that will be applied to the path"
+" immediately before clipping."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:203
+msgid ":mod:`matplotlib.collections`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:208
+msgid "*linestyle*"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:208
+msgid "*linestyles* [6]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:211
+msgid ""
+"Linestyles are now treated like all other collection attributes, i.e.  a "
+"single value or multiple values may be provided."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:216
+msgid ":mod:`matplotlib.colors`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:221
+msgid "``ColorConvertor.to_rgba_list(c)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:221
+msgid ""
+"``colors.to_rgba_array(c)`` [:meth:`matplotlib.colors.to_rgba_array` "
+"returns an Nx4 NumPy array of RGBA color quadruples.]"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:227
+msgid ":mod:`matplotlib.contour`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:232
+msgid "``Contour._segments``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:232
+msgid ""
+"``matplotlib.contour.Contour.get_paths`` [Returns a list of "
+":class:`matplotlib.path.Path` instances.]"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:237
+msgid ":mod:`matplotlib.figure`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:242
+msgid "``Figure.dpi.get()`` ``Figure.dpi.set()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:242
+msgid ":attr:`matplotlib.figure.Figure.dpi` *(a property)*"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:247
+msgid ":mod:`matplotlib.patches`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:252
+msgid "``Patch.get_verts()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:252
+msgid ""
+":meth:`matplotlib.patches.Patch.get_path` [Returns a "
+":class:`matplotlib.path.Path` instance]"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:257
+msgid ":mod:`matplotlib.backend_bases`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:262
+msgid "``GraphicsContext.set_clip_rectangle(tuple)``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:262
+msgid ""
+"`GraphicsContext.set_clip_rectangle(bbox) "
+"<.GraphicsContextBase.set_clip_rectangle>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:265
+msgid "``GraphicsContext.get_clip_path()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:265
+msgid ""
+"`GraphicsContext.get_clip_path() <.GraphicsContextBase.get_clip_path>` "
+"[7]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:268
+msgid "``GraphicsContext.set_clip_path()``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:268
+msgid ""
+"`GraphicsContext.set_clip_path() <.GraphicsContextBase.set_clip_path>` "
+"[8]_"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:272
+msgid ""
+":meth:`matplotlib.backend_bases.GraphicsContextBase.get_clip_path` "
+"returns a tuple of the form (*path*, *affine_transform*), where *path* is"
+" a :class:`matplotlib.path.Path` instance and *affine_transform* is a "
+":class:`matplotlib.transforms.Affine2D` instance."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:277
+msgid ""
+":meth:`matplotlib.backend_bases.GraphicsContextBase.set_clip_path` now "
+"only accepts a :class:`matplotlib.transforms.TransformedPath` instance."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:281
+msgid ":class:`~matplotlib.backend_bases.RendererBase`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:283
+msgid "New methods:"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:285
+msgid ""
+":meth:`draw_path(self, gc, path, transform, rgbFace) "
+"<matplotlib.backend_bases.RendererBase.draw_path>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:288
+msgid ""
+":meth:`draw_markers(self, gc, marker_path, marker_trans, path, trans, "
+"rgbFace) <matplotlib.backend_bases.RendererBase.draw_markers>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:292
+msgid ""
+":meth:`draw_path_collection(self, master_transform, cliprect, clippath, "
+"clippath_trans, paths, all_transforms, offsets, offsetTrans, facecolors, "
+"edgecolors, linewidths, linestyles, antialiaseds) "
+"<matplotlib.backend_bases.RendererBase.draw_path_collection>` "
+"*[optional]*"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:299
+msgid "Changed methods:"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:301
+msgid ""
+"``draw_image(self, x, y, im, bbox)`` is now :meth:`draw_image(self, x, y,"
+" im, bbox, clippath, clippath_trans) "
+"<matplotlib.backend_bases.RendererBase.draw_image>`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:305
+msgid "Removed methods:"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:307
+msgid "``draw_arc``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:309
+msgid "``draw_line_collection``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:311
+msgid "``draw_line``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:313
+msgid "``draw_lines``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:315
+msgid "``draw_point``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:317
+msgid "``draw_quad_mesh``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:319
+msgid "``draw_poly_collection``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:321
+msgid "``draw_polygon``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:323
+msgid "``draw_rectangle``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_0.98.0.rst:325
+msgid "``draw_regpoly_collection``"
+msgstr ""
+

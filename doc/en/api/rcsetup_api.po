@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/rcsetup_api.rst:3
+msgid "``matplotlib.rcsetup``"
+msgstr ""
+
+#: matplotlib.rcsetup:1 of
+msgid ""
+"The rcsetup module contains the validation code for customization using "
+"Matplotlib's rc settings."
+msgstr ""
+
+#: matplotlib.rcsetup:4 of
+msgid ""
+"Each rc setting is assigned a function used to validate any attempted "
+"changes to that setting.  The validation functions are defined in the "
+"rcsetup module, and are used to construct the rcParams global object "
+"which stores the settings and is referenced throughout Matplotlib."
+msgstr ""
+
+#: matplotlib.rcsetup:9 of
+msgid ""
+"The default values of the rc settings are set in the default matplotlibrc"
+" file. Any additions or deletions to the parameter set listed here should"
+" also be propagated to the :file:`matplotlibrc.template` in Matplotlib's "
+"root source directory."
+msgstr ""
+
+#: matplotlib.rcsetup.ValidateInStrings:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.rcsetup.ValidateInStrings:2 of
+msgid "*valid* is a list of legal strings."
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:2 of
+msgid ""
+"Create a `~cycler.Cycler` object much like :func:`cycler.cycler`, but "
+"includes input validation."
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:5 of
+msgid "Call signatures::"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:11 of
+msgid "Form 1 copies a given `~cycler.Cycler` object."
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:13 of
+msgid ""
+"Form 2 creates a `~cycler.Cycler` which cycles over one or more "
+"properties simultaneously. If multiple properties are given, their value "
+"lists must have the same length."
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:17 of
+msgid ""
+"Form 3 creates a `~cycler.Cycler` for a single property. This form exists"
+" for compatibility with the original cycler. Its use is discouraged in "
+"favor of the kwarg form, i.e. ``cycler(label=values)``."
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_markeverylist
+#: matplotlib.rcsetup.cycler matplotlib.rcsetup.validate_markevery of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:24 of
+msgid "**cycler**"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:47 of
+msgid "Cycler"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:24 of
+msgid "Copy constructor for Cycler."
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:29 of
+msgid "**label**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:27 of
+msgid ""
+"The property key. Must be a valid `.Artist` property. For example, "
+"'color' or 'linestyle'. Aliases are allowed, such as 'c' for 'color' and "
+"'lw' for 'linewidth'."
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:33 of
+msgid "**values**"
+msgstr ""
+
+#: of
+msgid "iterable"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:32 of
+msgid ""
+"Finite-length iterable of the property values. These values are validated"
+" and will raise a ValueError if invalid."
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_markeverylist
+#: matplotlib.rcsetup.cycler matplotlib.rcsetup.validate_markevery of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:38 of
+msgid "A new :class:`~cycler.Cycler` for the given properties."
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:50 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:51 of
+msgid "Creating a cycler for a single property:"
+msgstr ""
+
+#: matplotlib.rcsetup.cycler:55 of
+msgid ""
+"Creating a cycler for simultaneously cycling over multiple properties "
+"(e.g. red circle, green plus, blue cross):"
+msgstr ""
+
+#: matplotlib.rcsetup.validate_bool:2 of
+msgid "Convert b to ``bool`` or raise."
+msgstr ""
+
+#: matplotlib.rcsetup.validate_color:2
+#: matplotlib.rcsetup.validate_color_or_inherit:2 of
+msgid "Return a valid color arg."
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_colorlist:2 of
+msgid "return a list of colorspecs"
+msgstr ""
+
+#: matplotlib.rcsetup.validate_cycler:2 of
+msgid "Return a Cycler object from a string repr or the object itself."
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_floatlist:2
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_floatlistlist:2 of
+msgid "return a list of floats"
+msgstr ""
+
+#: matplotlib.rcsetup.validate_dpi:2 of
+msgid "Confirm s is string 'figure' or convert s to float or raise."
+msgstr ""
+
+#: matplotlib.rcsetup.validate_fonttype:2 of
+msgid ""
+"Confirm that this is a Postscript or PDF font type that we know how to "
+"convert to."
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_hatchlist:2
+#: matplotlib.rcsetup.validate_hatch:2 of
+msgid ""
+"Validate a hatch pattern. A hatch pattern string can have any sequence of"
+" the following characters: ``\\ / | - + * . x o O``."
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_markeverylist:2
+#: matplotlib.rcsetup.validate_markevery:2 of
+msgid "Validate the markevery property of a Line2D object."
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_markeverylist:8
+#: matplotlib.rcsetup.validate_markevery:8 of
+msgid "**s**"
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_markeverylist:25
+#: matplotlib.rcsetup.validate_markevery:25 of
+msgid "None, int, (int, int), slice, float, (float, float), or list[int]"
+msgstr ""
+
+#: matplotlib.rcsetup._listify_validator.<locals>.validate_strlist:2 of
+msgid "return a list of strings"
+msgstr ""
+

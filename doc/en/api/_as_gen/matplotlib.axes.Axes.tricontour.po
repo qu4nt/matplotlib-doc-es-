@@ -1,0 +1,518 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.rst:2
+msgid "matplotlib.axes.Axes.tricontour"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:2 of
+msgid "Draw contour lines on an unstructured triangular grid."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:4 of
+msgid "The triangulation can be specified in one of two ways; either ::"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:8 of
+msgid "where *triangulation* is a `.Triangulation` object, or ::"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:16 of
+msgid ""
+"in which case a `.Triangulation` object will be created.  See that class'"
+" docstring for an explanation of these cases."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:19 of
+msgid "The remaining arguments may be::"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:23 of
+msgid ""
+"where *Z* is the array of values to contour, one per point in the "
+"triangulation.  The level values are chosen automatically."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:30 of
+msgid ""
+"contour up to *levels+1* automatically chosen contour levels (*levels* "
+"intervals)."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:37 of
+msgid ""
+"draw contour lines at the values specified in sequence *levels*, which "
+"must be in increasing order."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:44 of
+msgid ""
+"Use keyword arguments to control colors, linewidth, origin, cmap ... see "
+"below for more details."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:52 of
+msgid "**triangulation** : `.Triangulation`, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:51 of
+msgid "Triangulation, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:50 of
+msgid "The unstructured triangular grid."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:52 of
+msgid "If specified, then *x*, *y*, *triangles*, and *mask* are not accepted."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:55 of
+msgid "**x, y**"
+msgstr ""
+
+#: of
+msgid "array-like, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:55 of
+msgid "The coordinates of the values in *Z*."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:60 of
+msgid "**triangles**"
+msgstr ""
+
+#: of
+msgid "(ntri, 3) array-like of int, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:58 of
+msgid ""
+"For each triangle, the indices of the three points that make up the "
+"triangle, ordered in an anticlockwise manner.  If not specified, the "
+"Delaunay triangulation is calculated."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:63 of
+msgid "**mask**"
+msgstr ""
+
+#: of
+msgid "(ntri,) array-like of bool, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:63 of
+msgid "Which triangles are masked out."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:66 of
+msgid "**Z**"
+msgstr ""
+
+#: of
+msgid "2D array-like"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:66 of
+msgid "The height values over which the contour is drawn."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:76 of
+msgid "**levels**"
+msgstr ""
+
+#: of
+msgid "int or array-like, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:69 of
+msgid "Determines the number and positions of the contour lines / regions."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:71 of
+msgid ""
+"If an int *n*, use `~matplotlib.ticker.MaxNLocator`, which tries to "
+"automatically choose no more than *n+1* \"nice\" contour levels between "
+"*vmin* and *vmax*."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:75 of
+msgid ""
+"If array-like, draw contour lines at the specified levels.  The values "
+"must be in increasing order."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:83 of
+msgid "`~matplotlib.tri.TriContourSet`"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:98 of
+msgid "**colors**"
+msgstr ""
+
+#: of
+msgid "color string or sequence of colors, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:88 of
+msgid "The colors of the levels, i.e., the contour lines."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:90 of
+msgid ""
+"The sequence is cycled for the levels in ascending order. If the sequence"
+" is shorter than the number of levels, it's repeated."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:93 of
+msgid ""
+"As a shortcut, single color strings may be used in place of one-element "
+"lists, i.e. ``'red'`` instead of ``['red']`` to color all levels with the"
+" same color. This shortcut does only work for color strings, not for "
+"other ways of specifying colors."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:98 of
+msgid "By default (value *None*), the colormap specified by *cmap* will be used."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:101 of
+msgid "**alpha**"
+msgstr ""
+
+#: of
+msgid "float, default: 1"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:101 of
+msgid "The alpha blending value, between 0 (transparent) and 1 (opaque)."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:107 of
+msgid "**cmap** : str or `.Colormap`, default: :rc:`image.cmap`"
+msgstr ""
+
+#: of
+msgid "str or"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:104 of
+msgid ""
+"A `.Colormap` instance or registered colormap name. The colormap maps the"
+" level values to colors."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:107 of
+msgid "If both *colors* and *cmap* are given, an error is raised."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:112 of
+msgid "**norm** : `~matplotlib.colors.Normalize`, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:111 of
+msgid "Normalize, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:110 of
+msgid ""
+"If a colormap is used, the `.Normalize` instance scales the level values "
+"to the canonical colormap range [0, 1] for mapping to colors. If not "
+"given, the default linear scaling is used."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:117 of
+msgid "**vmin, vmax**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:115 of
+msgid ""
+"If not *None*, either or both of these values will be supplied to the "
+"`.Normalize` instance, overriding the default color scaling based on "
+"*levels*."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:126 of
+msgid "**origin** : {*None*, 'upper', 'lower', 'image'}, default: None"
+msgstr ""
+
+#: of
+msgid "{"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:120 of
+msgid ""
+"Determines the orientation and exact position of *Z* by specifying the "
+"position of ``Z[0, 0]``.  This is only relevant, if *X*, *Y* are not "
+"given."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:123 of
+msgid "*None*: ``Z[0, 0]`` is at X=0, Y=0 in the lower left corner."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:124 of
+msgid "'lower': ``Z[0, 0]`` is at X=0.5, Y=0.5 in the lower left corner."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:125 of
+msgid "'upper': ``Z[0, 0]`` is at X=N+0.5, Y=0.5 in the upper left corner."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:126 of
+msgid "'image': Use the value from :rc:`image.origin`."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:136 of
+msgid "**extent**"
+msgstr ""
+
+#: of
+msgid "(x0, x1, y0, y1), optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:129 of
+msgid ""
+"If *origin* is not *None*, then *extent* is interpreted as in `.imshow`: "
+"it gives the outer pixel boundaries. In this case, the position of Z[0, "
+"0] is the center of the pixel, not a corner. If *origin* is *None*, then "
+"(*x0*, *y0*) is the position of Z[0, 0], and (*x1*, *y1*) is the position"
+" of Z[-1, -1]."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:135 of
+msgid ""
+"This argument is ignored if *X* and *Y* are specified in the call to "
+"contour."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:141 of
+msgid "**locator**"
+msgstr ""
+
+#: of
+msgid "ticker.Locator subclass, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:139 of
+msgid ""
+"The locator is used to determine the contour levels if they are not given"
+" explicitly via *levels*. Defaults to `~.ticker.MaxNLocator`."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:163 of
+msgid "**extend**"
+msgstr ""
+
+#: of
+msgid "{'neither', 'both', 'min', 'max'}, default: 'neither'"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:144 of
+msgid ""
+"Determines the ``tricontour``-coloring of values that are outside the "
+"*levels* range."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:147 of
+msgid ""
+"If 'neither', values outside the *levels* range are not colored.  If "
+"'min', 'max' or 'both', color the values below, above or below and above "
+"the *levels* range."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:151 of
+msgid ""
+"Values below ``min(levels)`` and above ``max(levels)`` are mapped to the "
+"under/over values of the `.Colormap`. Note that most colormaps do not "
+"have dedicated colors for these by default, so that the over and under "
+"values are the edge values of the colormap.  You may want to set these "
+"values explicitly using `.Colormap.set_under` and `.Colormap.set_over`."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:159 of
+msgid ""
+"An existing `.TriContourSet` does not get notified if properties of its "
+"colormap are changed. Therefore, an explicit call to "
+"`.ContourSet.changed()` is needed after modifying the colormap. The "
+"explicit call can be left out, if a colorbar is assigned to the "
+"`.TriContourSet` because it internally calls `.ContourSet.changed()`."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:167 of
+msgid "**xunits, yunits**"
+msgstr ""
+
+#: of
+msgid "registered units, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:166 of
+msgid ""
+"Override axis units by specifying an instance of a "
+":class:`matplotlib.units.ConversionInterface`."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:172 of
+msgid "**antialiased**"
+msgstr ""
+
+#: of
+msgid "bool, optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:170 of
+msgid ""
+"Enable antialiasing, overriding the defaults.  For filled contours, the "
+"default is *True*.  For line contours, it is taken from "
+":rc:`lines.antialiased`."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:182 of
+msgid "**linewidths** : float or array-like, default: :rc:`contour.linewidth`"
+msgstr ""
+
+#: of
+msgid "float or array-like, default:"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:175 of
+msgid "The line width of the contour lines."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:177 of
+msgid "If a number, all levels will be plotted with this linewidth."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:179 of
+msgid ""
+"If a sequence, the levels in ascending order will be plotted with the "
+"linewidths in the order specified."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:182 of
+msgid "If None, this falls back to :rc:`lines.linewidth`."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:200 of
+msgid ""
+"**linestyles** : {*None*, 'solid', 'dashed', 'dashdot', 'dotted'}, "
+"optional"
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:185 of
+msgid ""
+"If *linestyles* is *None*, the default is 'solid' unless the lines are "
+"monochrome.  In that case, negative contours will take their linestyle "
+"from :rc:`contour.negative_linestyle` setting."
+msgstr ""
+
+#: matplotlib.tri.tricontour.tricontour:189 of
+msgid ""
+"*linestyles* can also be an iterable of the above strings specifying a "
+"set of linestyles to be used. If this iterable is shorter than the number"
+" of contour levels it will be repeated as necessary."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:2
+msgid "Examples using ``matplotlib.axes.Axes.tricontour``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:10
+msgid "Contour plot of irregularly spaced data"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:10
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:18
+msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_irregulardatagrid.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:29
+msgid "Tricontour Demo"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:29
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:37
+msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_tricontour_demo.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:48
+msgid "Tricontour Smooth Delaunay"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:48
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:56
+msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_tricontour_smooth_delaunay.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:67
+msgid "Tricontour Smooth User"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:67
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:75
+msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_tricontour_smooth_user.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:86
+msgid "Trigradient Demo"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:86
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:94
+msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_trigradient_demo.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:105
+msgid "Triangular 3D contour plot"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:105
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:113
+msgid ":ref:`sphx_glr_gallery_mplot3d_tricontour3d.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:124
+msgid "tricontour(x, y, z)"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:124
+#: ../../api/_as_gen/matplotlib.axes.Axes.tricontour.examples:132
+msgid ":ref:`sphx_glr_plot_types_unstructured_tricontour.py`"
+msgstr ""
+

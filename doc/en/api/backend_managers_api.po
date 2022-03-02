@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/backend_managers_api.rst:3
+msgid ":mod:`matplotlib.backend_managers`"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolEvent:1
+#: matplotlib.backend_managers.ToolManager:1
+#: matplotlib.backend_managers.ToolManagerMessageEvent:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolEvent:2 of
+msgid "Event for tool manipulation (add/remove)."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:2 of
+msgid ""
+"Manager for actions triggered by user interactions (key press, toolbar "
+"clicks, ...) on a Figure."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:21 of
+msgid ":obj:`figure <figure>` : `.Figure`"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:20
+#: matplotlib.backend_managers.ToolManager.set_figure:7 of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:21
+#: matplotlib.backend_managers.ToolManager.figure:2 of
+msgid "Figure that holds the canvas."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:24 of
+msgid "**keypresslock** : `~matplotlib.widgets.LockDraw`"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:23
+#: matplotlib.backend_managers.ToolManager:27 of
+msgid "LockDraw"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:24 of
+msgid "`.LockDraw` object to know if the `canvas` key_press_event is locked."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:28 of
+msgid "**messagelock** : `~matplotlib.widgets.LockDraw`"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager:27 of
+msgid "`.LockDraw` object to know if the message is available to write."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.active_toggle:2 of
+msgid "Currently toggled tools."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:2 of
+msgid "Add *tool* to `ToolManager`."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:4 of
+msgid ""
+"If successful, adds a new event ``tool_trigger_{name}`` where ``{name}`` "
+"is the *name* of the tool; the event is fired every time the tool is "
+"triggered."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool
+#: matplotlib.backend_managers.ToolManager.get_tool
+#: matplotlib.backend_managers.ToolManager.get_tool_keymap
+#: matplotlib.backend_managers.ToolManager.remove_tool
+#: matplotlib.backend_managers.ToolManager.set_figure
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect
+#: matplotlib.backend_managers.ToolManager.trigger_tool
+#: matplotlib.backend_managers.ToolManager.update_keymap of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:11
+#: matplotlib.backend_managers.ToolManager.get_tool_keymap:8
+#: matplotlib.backend_managers.ToolManager.remove_tool:21
+#: matplotlib.backend_managers.ToolManager.trigger_tool:8
+#: matplotlib.backend_managers.ToolManager.update_keymap:8 of
+msgid "**name**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:11 of
+msgid "Name of the tool, treated as the ID, has to be unique."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:21 of
+msgid "**tool**"
+msgstr ""
+
+#: of
+msgid "class_like, i.e. str or type"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:14 of
+msgid "Reference to find the class of the Tool to added."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:26 of
+msgid ":obj:`matplotlib.backend_tools.ToolBase`"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:27 of
+msgid "The base class for tools."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:31 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.add_tool:32 of
+msgid "args and kwargs get passed directly to the tools constructor."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.canvas:2 of
+msgid "Canvas managed by FigureManager."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool:2 of
+msgid "Return the tool object with the given name."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool:4 of
+msgid "For convenience, this passes tool objects through."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool:9 of
+msgid "**name** : str or `.ToolBase`"
+msgstr ""
+
+#: of
+msgid "str or"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool:9 of
+msgid "Name of the tool, or the tool itself."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool:13 of
+msgid "**warn**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool:12 of
+msgid "Whether a warning should be emitted it no tool with the given name exists."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool
+#: matplotlib.backend_managers.ToolManager.get_tool_keymap
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool:30 of
+msgid "`.ToolBase` or None"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool:18 of
+msgid "The tool or None if no tool with the given name exists."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool_keymap:2 of
+msgid "Return the keymap associated with the specified tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool_keymap:8
+#: matplotlib.backend_managers.ToolManager.update_keymap:8 of
+msgid "Name of the Tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool_keymap:25 of
+msgid "list of str"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.get_tool_keymap:13 of
+msgid "List of keys associated with the tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.message_event:2 of
+msgid "Emit a `ToolManagerMessageEvent`."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.remove_tool:2 of
+msgid "Remove tool named *name*."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.remove_tool:8
+#: matplotlib.backend_managers.ToolManager.trigger_tool:8 of
+msgid "Name of the tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.set_figure:2 of
+msgid "Bind the given figure to the tools."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.set_figure:8 of
+msgid "**figure** : `.Figure`"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.set_figure:24 of
+msgid "**update_tools**"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.set_figure:11 of
+msgid "Force tools to update figure."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:2 of
+msgid "Connect event with string *s* to *func*."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:16 of
+msgid "**s**"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:8 of
+msgid "The name of the event. The following events are recognized:"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:10 of
+msgid "'tool_message_event'"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:11 of
+msgid "'tool_removed_event'"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:12 of
+msgid "'tool_added_event'"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:14 of
+msgid "For every tool added a new event is created"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:16 of
+msgid "'tool_trigger_TOOLNAME', where TOOLNAME is the id of the tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:21 of
+msgid "**func**"
+msgstr ""
+
+#: of
+msgid "callable"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:19 of
+msgid "Callback function for the toolmanager event with signature::"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:39 of
+msgid "cid"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_connect:26 of
+msgid ""
+"The callback id for the connection. This can be used in "
+"`.toolmanager_disconnect`."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_disconnect:2 of
+msgid "Disconnect callback id *cid*."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.toolmanager_disconnect:4 of
+msgid "Example usage::"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.tools:2 of
+msgid "A dict mapping tool name -> controlled tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.trigger_tool:2 of
+msgid "Trigger a tool and emit the ``tool_trigger_{name}`` event."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.trigger_tool:11 of
+msgid "**sender**"
+msgstr ""
+
+#: of
+msgid "object"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.trigger_tool:11 of
+msgid "Object that wishes to trigger the tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.trigger_tool:14 of
+msgid "**canvasevent**"
+msgstr ""
+
+#: of
+msgid "Event"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.trigger_tool:14 of
+msgid "Original Canvas event or None."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.trigger_tool:30 of
+msgid "**data**"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.trigger_tool:17 of
+msgid "Extra data to pass to the tool when triggering."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.update_keymap:2 of
+msgid "Set the keymap to associate with the specified tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.update_keymap:24 of
+msgid "**key**"
+msgstr ""
+
+#: of
+msgid "str or list of str"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManager.update_keymap:11 of
+msgid "Keys to associate with the tool."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManagerMessageEvent:2 of
+msgid "Event carrying messages from toolmanager."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolManagerMessageEvent:4 of
+msgid "Messages usually get displayed to the user by the toolbar."
+msgstr ""
+
+#: matplotlib.backend_managers.ToolTriggerEvent:1 of
+msgid "Bases: :py:class:`matplotlib.backend_managers.ToolEvent`"
+msgstr ""
+
+#: matplotlib.backend_managers.ToolTriggerEvent:2 of
+msgid "Event to inform that a tool has been triggered."
+msgstr ""
+

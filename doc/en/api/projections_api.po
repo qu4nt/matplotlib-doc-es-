@@ -1,0 +1,3242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/projections_api.rst:3
+msgid "``matplotlib.projections``"
+msgstr ""
+
+#: matplotlib.projections:1 of
+msgid "Non-separable transforms that map from data space to screen space."
+msgstr ""
+
+#: matplotlib.projections:3 of
+msgid ""
+"Projections are defined as `~.axes.Axes` subclasses.  They include the "
+"following elements:"
+msgstr ""
+
+#: matplotlib.projections:6 of
+msgid "A transformation from data coordinates into display coordinates."
+msgstr ""
+
+#: matplotlib.projections:8 of
+msgid ""
+"An inverse of that transformation.  This is used, for example, to convert"
+" mouse positions from screen space back into data space."
+msgstr ""
+
+#: matplotlib.projections:11 of
+msgid ""
+"Transformations for the gridlines, ticks and ticklabels.  Custom "
+"projections will often need to place these elements in special locations,"
+" and Matplotlib has a facility to help with doing so."
+msgstr ""
+
+#: matplotlib.projections:15 of
+msgid ""
+"Setting up default values (overriding `~.axes.Axes.cla`), since the "
+"defaults for a rectilinear axes may not be appropriate."
+msgstr ""
+
+#: matplotlib.projections:18 of
+msgid ""
+"Defining the shape of the axes, for example, an elliptical axes, that "
+"will be used to draw the background of the plot and for clipping any data"
+" elements."
+msgstr ""
+
+#: matplotlib.projections:21 of
+msgid ""
+"Defining custom locators and formatters for the projection.  For example,"
+" in a geographic projection, it may be more convenient to display the "
+"grid in degrees, even if the data is in radians."
+msgstr ""
+
+#: matplotlib.projections:25 of
+msgid ""
+"Set up interactive panning and zooming.  This is left as an \"advanced\" "
+"feature left to the reader, but there is an example of this for polar "
+"plots in `matplotlib.projections.polar`."
+msgstr ""
+
+#: matplotlib.projections:29 of
+msgid "Any additional methods for additional convenience or features."
+msgstr ""
+
+#: matplotlib.projections:31 of
+msgid "Once the projection axes is defined, it can be used in one of two ways:"
+msgstr ""
+
+#: matplotlib.projections:33 of
+msgid ""
+"By defining the class attribute ``name``, the projection axes can be "
+"registered with `matplotlib.projections.register_projection` and "
+"subsequently simply invoked by name::"
+msgstr ""
+
+#: matplotlib.projections:39 of
+msgid ""
+"For more complex, parameterisable projections, a generic \"projection\" "
+"object may be defined which includes the method ``_as_mpl_axes``. "
+"``_as_mpl_axes`` should take no arguments and return the projection's "
+"axes subclass and a dictionary of additional arguments to pass to the "
+"subclass' ``__init__`` method.  Subsequently a parameterised projection "
+"can be initialised with::"
+msgstr ""
+
+#: matplotlib.projections:47 of
+msgid ""
+"where MyProjection is an object which implements a ``_as_mpl_axes`` "
+"method."
+msgstr ""
+
+#: matplotlib.projections:49 of
+msgid ""
+"A full-fledged and heavily annotated example is in "
+":doc:`/gallery/misc/custom_projection`.  The polar plot functionality in "
+"`matplotlib.projections.polar` may also be of interest."
+msgstr ""
+
+#: matplotlib.projections.ProjectionRegistry:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.projections.ProjectionRegistry:2 of
+msgid "A mapping of registered projection names to projection classes."
+msgstr ""
+
+#: matplotlib.projections.ProjectionRegistry.get_projection_class:2 of
+msgid "Get a projection class from its *name*."
+msgstr ""
+
+#: matplotlib.projections.ProjectionRegistry.get_projection_names:2 of
+msgid "Return the names of all projections currently registered."
+msgstr ""
+
+#: matplotlib.projections.ProjectionRegistry.register:2 of
+msgid "Register a new set of projections."
+msgstr ""
+
+#: matplotlib.projections.get_projection_class:2 of
+msgid "Get a projection class from its name."
+msgstr ""
+
+#: matplotlib.projections.get_projection_class:4 of
+msgid "If *projection* is None, a standard rectilinear projection is returned."
+msgstr ""
+
+#: ../../api/projections_api.rst:10
+msgid "``matplotlib.projections.polar``"
+msgstr ""
+
+#: matplotlib.projections.polar.InvertedPolarTransform:1
+#: matplotlib.projections.polar.PolarTransform:1 of
+msgid "Bases: :py:class:`matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.projections.polar.InvertedPolarTransform:2 of
+msgid ""
+"The inverse of the polar transform, mapping Cartesian coordinate space "
+"*x* and *y* back to *theta* and *r*."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine
+#: matplotlib.projections.geo.GeoAxes
+#: matplotlib.projections.geo.GeoAxes.drag_pan
+#: matplotlib.projections.geo.GeoAxes.set_yscale
+#: matplotlib.projections.geo.GeoAxes.start_pan
+#: matplotlib.projections.geo.HammerAxes
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine
+#: matplotlib.projections.geo.LambertAxes
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine
+#: matplotlib.projections.geo.MollweideAxes
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine
+#: matplotlib.projections.polar.InvertedPolarTransform
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine
+#: matplotlib.projections.polar.PolarAxes
+#: matplotlib.projections.polar.PolarAxes.drag_pan
+#: matplotlib.projections.polar.PolarAxes.draw
+#: matplotlib.projections.polar.PolarAxes.set_rgrids
+#: matplotlib.projections.polar.PolarAxes.set_rlabel_position
+#: matplotlib.projections.polar.PolarAxes.set_rmax
+#: matplotlib.projections.polar.PolarAxes.set_rmin
+#: matplotlib.projections.polar.PolarAxes.set_rorigin
+#: matplotlib.projections.polar.PolarAxes.set_theta_zero_location
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids
+#: matplotlib.projections.polar.PolarAxes.set_ylim
+#: matplotlib.projections.polar.PolarAxes.set_yscale
+#: matplotlib.projections.polar.PolarAxes.start_pan
+#: matplotlib.projections.polar.PolarTransform
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine
+#: matplotlib.projections.polar.RadialAxis
+#: matplotlib.projections.polar.ThetaAxis of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.projections.polar.InvertedPolarTransform:45
+#: matplotlib.projections.polar.PolarTransform:47 of
+msgid "**shorthand_name**"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:30 matplotlib.artist.AitoffAxes.set:46
+#: matplotlib.artist.AitoffAxes.set:48 matplotlib.artist.AitoffAxes.set:51
+#: matplotlib.artist.AitoffAxes.set:58 matplotlib.artist.GeoAxes.set:30
+#: matplotlib.artist.GeoAxes.set:46 matplotlib.artist.GeoAxes.set:48
+#: matplotlib.artist.GeoAxes.set:51 matplotlib.artist.GeoAxes.set:58
+#: matplotlib.artist.HammerAxes.set:30 matplotlib.artist.HammerAxes.set:46
+#: matplotlib.artist.HammerAxes.set:48 matplotlib.artist.HammerAxes.set:51
+#: matplotlib.artist.HammerAxes.set:58 matplotlib.artist.LambertAxes.set:30
+#: matplotlib.artist.LambertAxes.set:46 matplotlib.artist.LambertAxes.set:48
+#: matplotlib.artist.LambertAxes.set:51 matplotlib.artist.LambertAxes.set:58
+#: matplotlib.artist.MollweideAxes.set:30
+#: matplotlib.artist.MollweideAxes.set:46
+#: matplotlib.artist.MollweideAxes.set:48
+#: matplotlib.artist.MollweideAxes.set:51
+#: matplotlib.artist.MollweideAxes.set:58 matplotlib.artist.PolarAxes.set:30
+#: matplotlib.artist.PolarAxes.set:53 matplotlib.artist.PolarAxes.set:58
+#: matplotlib.artist.PolarAxes.set:60 matplotlib.artist.PolarAxes.set:63
+#: matplotlib.artist.PolarAxes.set:70 matplotlib.artist.RadialAxis.set:20
+#: matplotlib.artist.RadialAxis.set:26 matplotlib.artist.RadialAxis.set:45
+#: matplotlib.artist.RadialTick.set:19 matplotlib.artist.RadialTick.set:21
+#: matplotlib.artist.RadialTick.set:22 matplotlib.artist.RadialTick.set:23
+#: matplotlib.artist.RadialTick.set:31 matplotlib.artist.ThetaAxis.set:20
+#: matplotlib.artist.ThetaAxis.set:26 matplotlib.artist.ThetaAxis.set:44
+#: matplotlib.artist.ThetaTick.set:19 matplotlib.artist.ThetaTick.set:21
+#: matplotlib.artist.ThetaTick.set:22 matplotlib.artist.ThetaTick.set:23
+#: matplotlib.artist.ThetaTick.set:31 matplotlib.projections.geo.AitoffAxes:52
+#: matplotlib.projections.geo.AitoffAxes:65
+#: matplotlib.projections.geo.AitoffAxes:67
+#: matplotlib.projections.geo.AitoffAxes:70
+#: matplotlib.projections.geo.AitoffAxes:77
+#: matplotlib.projections.geo.GeoAxes:73 matplotlib.projections.geo.GeoAxes:86
+#: matplotlib.projections.geo.GeoAxes:88 matplotlib.projections.geo.GeoAxes:91
+#: matplotlib.projections.geo.GeoAxes:98
+#: matplotlib.projections.geo.HammerAxes:52
+#: matplotlib.projections.geo.HammerAxes:65
+#: matplotlib.projections.geo.HammerAxes:67
+#: matplotlib.projections.geo.HammerAxes:70
+#: matplotlib.projections.geo.HammerAxes:77
+#: matplotlib.projections.geo.LambertAxes:52
+#: matplotlib.projections.geo.LambertAxes:65
+#: matplotlib.projections.geo.LambertAxes:67
+#: matplotlib.projections.geo.LambertAxes:70
+#: matplotlib.projections.geo.LambertAxes:77
+#: matplotlib.projections.geo.MollweideAxes:52
+#: matplotlib.projections.geo.MollweideAxes:65
+#: matplotlib.projections.geo.MollweideAxes:67
+#: matplotlib.projections.geo.MollweideAxes:70
+#: matplotlib.projections.geo.MollweideAxes:77
+#: matplotlib.projections.polar.PolarAxes:74
+#: matplotlib.projections.polar.PolarAxes:87
+#: matplotlib.projections.polar.PolarAxes:89
+#: matplotlib.projections.polar.PolarAxes:92
+#: matplotlib.projections.polar.PolarAxes:99 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.projections.polar.InvertedPolarTransform:30
+#: matplotlib.projections.polar.PolarTransform:32 of
+msgid ""
+"A string representing the \"name\" of the transform. The name carries no "
+"significance other than to improve the readability of ``str(transform)`` "
+"when DEBUG=True."
+msgstr ""
+
+#: ../../docstring
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.has_inverse:2
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.has_inverse:2
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.has_inverse:2
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.has_inverse:2
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.has_inverse:2
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.has_inverse:2
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.has_inverse:2
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.has_inverse:2
+#: matplotlib.projections.polar.InvertedPolarTransform.has_inverse:2
+#: matplotlib.projections.polar.PolarAxes.InvertedPolarTransform.has_inverse:2
+#: matplotlib.projections.polar.PolarAxes.PolarTransform.has_inverse:2
+#: matplotlib.projections.polar.PolarTransform.has_inverse:2 of
+msgid "True if this transform has a corresponding inverse transform."
+msgstr ""
+
+#: ../../docstring
+#: matplotlib.projections.polar.InvertedPolarTransform.input_dims:2
+#: matplotlib.projections.polar.PolarAxes.InvertedPolarTransform.input_dims:2
+#: matplotlib.projections.polar.PolarAxes.PolarTransform.input_dims:2
+#: matplotlib.projections.polar.PolarTransform.input_dims:2 of
+msgid ""
+"The number of input dimensions of this transform. Must be overridden "
+"(with integers) in the subclass."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.inverted:2
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.inverted:2
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.inverted:2
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.inverted:2
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.inverted:2
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.inverted:2
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.inverted:2
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.inverted:2
+#: matplotlib.projections.polar.InvertedPolarTransform.inverted:2
+#: matplotlib.projections.polar.PolarTransform.inverted:2 of
+msgid "Return the corresponding inverse transformation."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.inverted:4
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.inverted:4
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.inverted:4
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.inverted:4
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.inverted:4
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.inverted:4
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.inverted:4
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.inverted:4
+#: matplotlib.projections.polar.InvertedPolarTransform.inverted:4
+#: matplotlib.projections.polar.PolarTransform.inverted:4 of
+msgid "It holds ``x == self.inverted().transform(self.transform(x))``."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.inverted:6
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.inverted:6
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.inverted:6
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.inverted:6
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.inverted:6
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.inverted:6
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.inverted:6
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.inverted:6
+#: matplotlib.projections.polar.InvertedPolarTransform.inverted:6
+#: matplotlib.projections.polar.PolarTransform.inverted:6 of
+msgid ""
+"The return value of this method should be treated as temporary.  An "
+"update to *self* does not cause a corresponding update to its inverted "
+"copy."
+msgstr ""
+
+#: ../../docstring
+#: matplotlib.projections.polar.InvertedPolarTransform.output_dims:2
+#: matplotlib.projections.polar.PolarAxes.InvertedPolarTransform.output_dims:2
+#: matplotlib.projections.polar.PolarAxes.PolarTransform.output_dims:2
+#: matplotlib.projections.polar.PolarTransform.output_dims:2 of
+msgid ""
+"The number of output dimensions of this transform. Must be overridden "
+"(with integers) in the subclass."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine:2
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine:2
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine:2
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine:2
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine:2
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine:2
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine:2
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine:2
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine:2
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine:2 of
+msgid "Apply only the non-affine part of this transformation."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine:4
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine:4
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine:4
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine:4
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine:4
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine:4
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine:4
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine:4
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine:4
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine:4 of
+msgid ""
+"``transform(values)`` is always equivalent to "
+"``transform_affine(transform_non_affine(values))``."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine:7
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine:7
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine:7
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine:7
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine:7
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine:7
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine:7
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine:7
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine:7
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine:7 of
+msgid ""
+"In non-affine transformations, this is generally equivalent to "
+"``transform(values)``.  In affine transformations, this is always a no-"
+"op."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine:15
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine:15
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine:15
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine:15
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine:15
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine:15
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine:15
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine:15
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine:15
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine:15 of
+msgid "**values**"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine:33
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine:33
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine:33
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine:33
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine:33
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine:33
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine:33
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine:33
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine:33
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine:33 of
+msgid "array"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine:14
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine:14
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine:14
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine:14
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine:14
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine:14
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine:14
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine:14
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine:14
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine:14 of
+msgid ""
+"The input values as NumPy array of length :attr:`input_dims` or shape (N "
+"x :attr:`input_dims`)."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine
+#: matplotlib.projections.geo.GeoAxes
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform
+#: matplotlib.projections.geo.HammerAxes
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine
+#: matplotlib.projections.geo.LambertAxes
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine
+#: matplotlib.projections.geo.MollweideAxes
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine
+#: matplotlib.projections.polar.PolarAxes
+#: matplotlib.projections.polar.PolarAxes.get_rlabel_position
+#: matplotlib.projections.polar.PolarAxes.get_rmax
+#: matplotlib.projections.polar.PolarAxes.get_rmin
+#: matplotlib.projections.polar.PolarAxes.get_rorigin
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform
+#: matplotlib.projections.polar.PolarAxes.set_rgrids
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids
+#: matplotlib.projections.polar.PolarAxes.set_ylim
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine:20
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.transform_non_affine:20
+#: matplotlib.projections.geo.HammerAxes.HammerTransform.transform_non_affine:20
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform.transform_non_affine:20
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform.transform_non_affine:20
+#: matplotlib.projections.geo.LambertAxes.LambertTransform.transform_non_affine:20
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform.transform_non_affine:20
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform.transform_non_affine:20
+#: matplotlib.projections.polar.InvertedPolarTransform.transform_non_affine:20
+#: matplotlib.projections.polar.PolarTransform.transform_non_affine:20 of
+msgid ""
+"The output values as NumPy array of length :attr:`input_dims` or shape (N"
+" x :attr:`output_dims`), depending on the input."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAffine:1 of
+msgid "Bases: :py:class:`matplotlib.transforms.Affine2DBase`"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAffine:2 of
+msgid ""
+"The affine part of the polar projection.  Scales the output so that "
+"maximum radius rests on the edge of the axes circle."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAffine:24 of
+msgid ""
+"*limits* is the view limit of the data.  The only part of its bounds that"
+" is used is the y limits (for the radius limits). The theta range is "
+"handled by the non-affine transform."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAffine.get_matrix:2 of
+msgid "Get the matrix for the affine part of this transform."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes:1
+#: matplotlib.projections.polar.PolarAxes:1 of
+msgid "Bases: :py:class:`matplotlib.axes._axes.Axes`"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes:2 of
+msgid "A polar graph projection, where the input dimensions are *theta*, *r*."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes:4 of
+msgid "Theta starts pointing east and goes anti-clockwise."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:2
+#: matplotlib.projections.geo.GeoAxes:23
+#: matplotlib.projections.geo.HammerAxes:2
+#: matplotlib.projections.geo.LambertAxes:2
+#: matplotlib.projections.geo.MollweideAxes:2
+#: matplotlib.projections.polar.PolarAxes:24 of
+msgid "Build an Axes in a figure."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:8
+#: matplotlib.projections.geo.GeoAxes:29
+#: matplotlib.projections.geo.HammerAxes:8
+#: matplotlib.projections.geo.LambertAxes:8
+#: matplotlib.projections.geo.MollweideAxes:8
+#: matplotlib.projections.polar.PolarAxes:30 of
+msgid "**fig** : `~matplotlib.figure.Figure`"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:7
+#: matplotlib.projections.geo.GeoAxes:28
+#: matplotlib.projections.geo.HammerAxes:7
+#: matplotlib.projections.geo.LambertAxes:7
+#: matplotlib.projections.geo.MollweideAxes:7
+#: matplotlib.projections.polar.PolarAxes:29 of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:8
+#: matplotlib.projections.geo.GeoAxes:29
+#: matplotlib.projections.geo.HammerAxes:8
+#: matplotlib.projections.geo.LambertAxes:8
+#: matplotlib.projections.geo.MollweideAxes:8
+#: matplotlib.projections.polar.PolarAxes:30 of
+msgid "The Axes is built in the `.Figure` *fig*."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:12
+#: matplotlib.projections.geo.GeoAxes:33
+#: matplotlib.projections.geo.HammerAxes:12
+#: matplotlib.projections.geo.LambertAxes:12
+#: matplotlib.projections.geo.MollweideAxes:12
+#: matplotlib.projections.polar.PolarAxes:34 of
+msgid "**rect**"
+msgstr ""
+
+#: of
+msgid "[left, bottom, width, height]"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:11
+#: matplotlib.projections.geo.GeoAxes:32
+#: matplotlib.projections.geo.HammerAxes:11
+#: matplotlib.projections.geo.LambertAxes:11
+#: matplotlib.projections.geo.MollweideAxes:11
+#: matplotlib.projections.polar.PolarAxes:33 of
+msgid ""
+"The Axes is built in the rectangle *rect*. *rect* is in `.Figure` "
+"coordinates."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:16
+#: matplotlib.projections.geo.GeoAxes:37
+#: matplotlib.projections.geo.HammerAxes:16
+#: matplotlib.projections.geo.LambertAxes:16
+#: matplotlib.projections.geo.MollweideAxes:16
+#: matplotlib.projections.polar.PolarAxes:38 of
+msgid "**sharex, sharey** : `~.axes.Axes`, optional"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:15
+#: matplotlib.projections.geo.GeoAxes:36
+#: matplotlib.projections.geo.HammerAxes:15
+#: matplotlib.projections.geo.LambertAxes:15
+#: matplotlib.projections.geo.MollweideAxes:15
+#: matplotlib.projections.polar.PolarAxes:37 of
+msgid "Axes, optional"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:15
+#: matplotlib.projections.geo.GeoAxes:36
+#: matplotlib.projections.geo.HammerAxes:15
+#: matplotlib.projections.geo.LambertAxes:15
+#: matplotlib.projections.geo.MollweideAxes:15
+#: matplotlib.projections.polar.PolarAxes:37 of
+msgid ""
+"The x or y `~.matplotlib.axis` is shared with the x or y axis in the "
+"input `~.axes.Axes`."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:19
+#: matplotlib.projections.geo.GeoAxes:40
+#: matplotlib.projections.geo.HammerAxes:19
+#: matplotlib.projections.geo.LambertAxes:19
+#: matplotlib.projections.geo.MollweideAxes:19
+#: matplotlib.projections.polar.PolarAxes:41 of
+msgid "**frameon**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:19
+#: matplotlib.projections.geo.GeoAxes:40
+#: matplotlib.projections.geo.HammerAxes:19
+#: matplotlib.projections.geo.LambertAxes:19
+#: matplotlib.projections.geo.MollweideAxes:19
+#: matplotlib.projections.polar.PolarAxes:41 of
+msgid "Whether the Axes frame is visible."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:23
+#: matplotlib.projections.geo.GeoAxes:44
+#: matplotlib.projections.geo.HammerAxes:23
+#: matplotlib.projections.geo.LambertAxes:23
+#: matplotlib.projections.geo.MollweideAxes:23
+#: matplotlib.projections.polar.PolarAxes:45 of
+msgid "**box_aspect**"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:71 of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:22
+#: matplotlib.projections.geo.GeoAxes:43
+#: matplotlib.projections.geo.HammerAxes:22
+#: matplotlib.projections.geo.LambertAxes:22
+#: matplotlib.projections.geo.MollweideAxes:22
+#: matplotlib.projections.polar.PolarAxes:44 of
+msgid ""
+"Set a fixed aspect for the Axes box, i.e. the ratio of height to width. "
+"See `~.axes.Axes.set_box_aspect` for details."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:84
+#: matplotlib.projections.geo.GeoAxes:105
+#: matplotlib.projections.geo.GeoAxes.set_yscale:26
+#: matplotlib.projections.geo.HammerAxes:84
+#: matplotlib.projections.geo.LambertAxes:84
+#: matplotlib.projections.geo.MollweideAxes:84
+#: matplotlib.projections.polar.PolarAxes:106
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:37
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:35
+#: matplotlib.projections.polar.PolarAxes.set_yscale:26 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:26
+#: matplotlib.projections.geo.GeoAxes:47
+#: matplotlib.projections.geo.HammerAxes:26
+#: matplotlib.projections.geo.LambertAxes:26
+#: matplotlib.projections.geo.MollweideAxes:26
+#: matplotlib.projections.polar.PolarAxes:48 of
+msgid "Other optional keyword arguments:"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:10 matplotlib.artist.GeoAxes.set:10
+#: matplotlib.artist.HammerAxes.set:10 matplotlib.artist.LambertAxes.set:10
+#: matplotlib.artist.MollweideAxes.set:10 matplotlib.artist.PolarAxes.set:10
+#: matplotlib.artist.RadialAxis.set:10 matplotlib.artist.RadialTick.set:10
+#: matplotlib.artist.ThetaAxis.set:10 matplotlib.artist.ThetaTick.set:10
+#: matplotlib.projections.geo.AitoffAxes:32
+#: matplotlib.projections.geo.GeoAxes:53
+#: matplotlib.projections.geo.HammerAxes:32
+#: matplotlib.projections.geo.LambertAxes:32
+#: matplotlib.projections.geo.MollweideAxes:32
+#: matplotlib.projections.polar.PolarAxes:54 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:10 matplotlib.artist.GeoAxes.set:10
+#: matplotlib.artist.HammerAxes.set:10 matplotlib.artist.LambertAxes.set:10
+#: matplotlib.artist.MollweideAxes.set:10 matplotlib.artist.PolarAxes.set:10
+#: matplotlib.artist.RadialAxis.set:10 matplotlib.artist.RadialTick.set:10
+#: matplotlib.artist.ThetaAxis.set:10 matplotlib.artist.ThetaTick.set:10
+#: matplotlib.projections.geo.AitoffAxes:32
+#: matplotlib.projections.geo.GeoAxes:53
+#: matplotlib.projections.geo.HammerAxes:32
+#: matplotlib.projections.geo.LambertAxes:32
+#: matplotlib.projections.geo.MollweideAxes:32
+#: matplotlib.projections.polar.PolarAxes:54 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:12 matplotlib.artist.GeoAxes.set:12
+#: matplotlib.artist.HammerAxes.set:12 matplotlib.artist.LambertAxes.set:12
+#: matplotlib.artist.MollweideAxes.set:12 matplotlib.artist.PolarAxes.set:12
+#: matplotlib.projections.geo.AitoffAxes:34
+#: matplotlib.projections.geo.GeoAxes:55
+#: matplotlib.projections.geo.HammerAxes:34
+#: matplotlib.projections.geo.LambertAxes:34
+#: matplotlib.projections.geo.MollweideAxes:34
+#: matplotlib.projections.polar.PolarAxes:56 of
+msgid ":meth:`adjustable <matplotlib.axes.Axes.set_adjustable>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:12 matplotlib.artist.GeoAxes.set:12
+#: matplotlib.artist.HammerAxes.set:12 matplotlib.artist.LambertAxes.set:12
+#: matplotlib.artist.MollweideAxes.set:12 matplotlib.artist.PolarAxes.set:12
+#: matplotlib.projections.geo.AitoffAxes:34
+#: matplotlib.projections.geo.GeoAxes:55
+#: matplotlib.projections.geo.HammerAxes:34
+#: matplotlib.projections.geo.LambertAxes:34
+#: matplotlib.projections.geo.MollweideAxes:34
+#: matplotlib.projections.polar.PolarAxes:56 of
+msgid "{'box', 'datalim'}"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:13 matplotlib.artist.GeoAxes.set:13
+#: matplotlib.artist.HammerAxes.set:13 matplotlib.artist.LambertAxes.set:13
+#: matplotlib.artist.MollweideAxes.set:13 matplotlib.artist.PolarAxes.set:13
+#: matplotlib.artist.RadialAxis.set:12 matplotlib.artist.RadialTick.set:12
+#: matplotlib.artist.ThetaAxis.set:12 matplotlib.artist.ThetaTick.set:12
+#: matplotlib.projections.geo.AitoffAxes:35
+#: matplotlib.projections.geo.GeoAxes:56
+#: matplotlib.projections.geo.HammerAxes:35
+#: matplotlib.projections.geo.LambertAxes:35
+#: matplotlib.projections.geo.MollweideAxes:35
+#: matplotlib.projections.polar.PolarAxes:57 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:13 matplotlib.artist.GeoAxes.set:13
+#: matplotlib.artist.HammerAxes.set:13 matplotlib.artist.LambertAxes.set:13
+#: matplotlib.artist.MollweideAxes.set:13 matplotlib.artist.PolarAxes.set:13
+#: matplotlib.artist.RadialAxis.set:12 matplotlib.artist.RadialTick.set:12
+#: matplotlib.artist.ThetaAxis.set:12 matplotlib.artist.ThetaTick.set:12
+#: matplotlib.projections.geo.AitoffAxes:35
+#: matplotlib.projections.geo.GeoAxes:56
+#: matplotlib.projections.geo.HammerAxes:35
+#: matplotlib.projections.geo.LambertAxes:35
+#: matplotlib.projections.geo.MollweideAxes:35
+#: matplotlib.projections.polar.PolarAxes:57 of
+msgid ""
+"a filter function, which takes a (m, n, 3) float array and a dpi value, "
+"and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:14 matplotlib.artist.GeoAxes.set:14
+#: matplotlib.artist.HammerAxes.set:14 matplotlib.artist.LambertAxes.set:14
+#: matplotlib.artist.MollweideAxes.set:14 matplotlib.artist.PolarAxes.set:14
+#: matplotlib.artist.RadialAxis.set:13 matplotlib.artist.RadialTick.set:13
+#: matplotlib.artist.ThetaAxis.set:13 matplotlib.artist.ThetaTick.set:13
+#: matplotlib.projections.geo.AitoffAxes:36
+#: matplotlib.projections.geo.GeoAxes:57
+#: matplotlib.projections.geo.HammerAxes:36
+#: matplotlib.projections.geo.LambertAxes:36
+#: matplotlib.projections.geo.MollweideAxes:36
+#: matplotlib.projections.polar.PolarAxes:58 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:14 matplotlib.artist.GeoAxes.set:14
+#: matplotlib.artist.HammerAxes.set:14 matplotlib.artist.LambertAxes.set:14
+#: matplotlib.artist.MollweideAxes.set:14 matplotlib.artist.PolarAxes.set:14
+#: matplotlib.artist.RadialAxis.set:13 matplotlib.artist.RadialTick.set:13
+#: matplotlib.artist.ThetaAxis.set:13 matplotlib.artist.ThetaTick.set:13
+#: matplotlib.projections.geo.AitoffAxes:36
+#: matplotlib.projections.geo.GeoAxes:57
+#: matplotlib.projections.geo.HammerAxes:36
+#: matplotlib.projections.geo.LambertAxes:36
+#: matplotlib.projections.geo.MollweideAxes:36
+#: matplotlib.projections.polar.PolarAxes:58 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:15 matplotlib.artist.GeoAxes.set:15
+#: matplotlib.artist.HammerAxes.set:15 matplotlib.artist.LambertAxes.set:15
+#: matplotlib.artist.MollweideAxes.set:15 matplotlib.artist.PolarAxes.set:15
+#: matplotlib.projections.geo.AitoffAxes:37
+#: matplotlib.projections.geo.GeoAxes:58
+#: matplotlib.projections.geo.HammerAxes:37
+#: matplotlib.projections.geo.LambertAxes:37
+#: matplotlib.projections.geo.MollweideAxes:37
+#: matplotlib.projections.polar.PolarAxes:59 of
+msgid ":meth:`anchor <matplotlib.axes.Axes.set_anchor>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:15 matplotlib.artist.GeoAxes.set:15
+#: matplotlib.artist.HammerAxes.set:15 matplotlib.artist.LambertAxes.set:15
+#: matplotlib.artist.MollweideAxes.set:15 matplotlib.artist.PolarAxes.set:15
+#: matplotlib.projections.geo.AitoffAxes:37
+#: matplotlib.projections.geo.GeoAxes:58
+#: matplotlib.projections.geo.HammerAxes:37
+#: matplotlib.projections.geo.LambertAxes:37
+#: matplotlib.projections.geo.MollweideAxes:37
+#: matplotlib.projections.polar.PolarAxes:59 of
+msgid "(float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:16 matplotlib.artist.GeoAxes.set:16
+#: matplotlib.artist.HammerAxes.set:16 matplotlib.artist.LambertAxes.set:16
+#: matplotlib.artist.MollweideAxes.set:16 matplotlib.artist.PolarAxes.set:16
+#: matplotlib.artist.RadialAxis.set:14 matplotlib.artist.RadialTick.set:14
+#: matplotlib.artist.ThetaAxis.set:14 matplotlib.artist.ThetaTick.set:14
+#: matplotlib.projections.geo.AitoffAxes:38
+#: matplotlib.projections.geo.GeoAxes:59
+#: matplotlib.projections.geo.HammerAxes:38
+#: matplotlib.projections.geo.LambertAxes:38
+#: matplotlib.projections.geo.MollweideAxes:38
+#: matplotlib.projections.polar.PolarAxes:60 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:16 matplotlib.artist.AitoffAxes.set:18
+#: matplotlib.artist.AitoffAxes.set:19 matplotlib.artist.AitoffAxes.set:20
+#: matplotlib.artist.AitoffAxes.set:25 matplotlib.artist.AitoffAxes.set:29
+#: matplotlib.artist.AitoffAxes.set:31 matplotlib.artist.AitoffAxes.set:36
+#: matplotlib.artist.AitoffAxes.set:43 matplotlib.artist.AitoffAxes.set:49
+#: matplotlib.artist.GeoAxes.set:16 matplotlib.artist.GeoAxes.set:18
+#: matplotlib.artist.GeoAxes.set:19 matplotlib.artist.GeoAxes.set:20
+#: matplotlib.artist.GeoAxes.set:25 matplotlib.artist.GeoAxes.set:29
+#: matplotlib.artist.GeoAxes.set:31 matplotlib.artist.GeoAxes.set:36
+#: matplotlib.artist.GeoAxes.set:43 matplotlib.artist.GeoAxes.set:49
+#: matplotlib.artist.HammerAxes.set:16 matplotlib.artist.HammerAxes.set:18
+#: matplotlib.artist.HammerAxes.set:19 matplotlib.artist.HammerAxes.set:20
+#: matplotlib.artist.HammerAxes.set:25 matplotlib.artist.HammerAxes.set:29
+#: matplotlib.artist.HammerAxes.set:31 matplotlib.artist.HammerAxes.set:36
+#: matplotlib.artist.HammerAxes.set:43 matplotlib.artist.HammerAxes.set:49
+#: matplotlib.artist.LambertAxes.set:16 matplotlib.artist.LambertAxes.set:18
+#: matplotlib.artist.LambertAxes.set:19 matplotlib.artist.LambertAxes.set:20
+#: matplotlib.artist.LambertAxes.set:25 matplotlib.artist.LambertAxes.set:29
+#: matplotlib.artist.LambertAxes.set:31 matplotlib.artist.LambertAxes.set:36
+#: matplotlib.artist.LambertAxes.set:43 matplotlib.artist.LambertAxes.set:49
+#: matplotlib.artist.MollweideAxes.set:16
+#: matplotlib.artist.MollweideAxes.set:18
+#: matplotlib.artist.MollweideAxes.set:19
+#: matplotlib.artist.MollweideAxes.set:20
+#: matplotlib.artist.MollweideAxes.set:25
+#: matplotlib.artist.MollweideAxes.set:29
+#: matplotlib.artist.MollweideAxes.set:31
+#: matplotlib.artist.MollweideAxes.set:36
+#: matplotlib.artist.MollweideAxes.set:43
+#: matplotlib.artist.MollweideAxes.set:49 matplotlib.artist.PolarAxes.set:16
+#: matplotlib.artist.PolarAxes.set:18 matplotlib.artist.PolarAxes.set:19
+#: matplotlib.artist.PolarAxes.set:20 matplotlib.artist.PolarAxes.set:25
+#: matplotlib.artist.PolarAxes.set:29 matplotlib.artist.PolarAxes.set:31
+#: matplotlib.artist.PolarAxes.set:33 matplotlib.artist.PolarAxes.set:40
+#: matplotlib.artist.PolarAxes.set:61 matplotlib.artist.RadialAxis.set:14
+#: matplotlib.artist.RadialAxis.set:16 matplotlib.artist.RadialAxis.set:21
+#: matplotlib.artist.RadialAxis.set:35 matplotlib.artist.RadialAxis.set:47
+#: matplotlib.artist.RadialTick.set:14 matplotlib.artist.RadialTick.set:16
+#: matplotlib.artist.RadialTick.set:20 matplotlib.artist.RadialTick.set:27
+#: matplotlib.artist.RadialTick.set:32 matplotlib.artist.ThetaAxis.set:14
+#: matplotlib.artist.ThetaAxis.set:16 matplotlib.artist.ThetaAxis.set:21
+#: matplotlib.artist.ThetaAxis.set:34 matplotlib.artist.ThetaAxis.set:46
+#: matplotlib.artist.ThetaTick.set:14 matplotlib.artist.ThetaTick.set:16
+#: matplotlib.artist.ThetaTick.set:20 matplotlib.artist.ThetaTick.set:27
+#: matplotlib.artist.ThetaTick.set:32 matplotlib.projections.geo.AitoffAxes:38
+#: matplotlib.projections.geo.AitoffAxes:40
+#: matplotlib.projections.geo.AitoffAxes:41
+#: matplotlib.projections.geo.AitoffAxes:42
+#: matplotlib.projections.geo.AitoffAxes:47
+#: matplotlib.projections.geo.AitoffAxes:51
+#: matplotlib.projections.geo.AitoffAxes:53
+#: matplotlib.projections.geo.AitoffAxes:55
+#: matplotlib.projections.geo.AitoffAxes:62
+#: matplotlib.projections.geo.AitoffAxes:68
+#: matplotlib.projections.geo.GeoAxes:59 matplotlib.projections.geo.GeoAxes:61
+#: matplotlib.projections.geo.GeoAxes:62 matplotlib.projections.geo.GeoAxes:63
+#: matplotlib.projections.geo.GeoAxes:68 matplotlib.projections.geo.GeoAxes:72
+#: matplotlib.projections.geo.GeoAxes:74 matplotlib.projections.geo.GeoAxes:76
+#: matplotlib.projections.geo.GeoAxes:83 matplotlib.projections.geo.GeoAxes:89
+#: matplotlib.projections.geo.HammerAxes:38
+#: matplotlib.projections.geo.HammerAxes:40
+#: matplotlib.projections.geo.HammerAxes:41
+#: matplotlib.projections.geo.HammerAxes:42
+#: matplotlib.projections.geo.HammerAxes:47
+#: matplotlib.projections.geo.HammerAxes:51
+#: matplotlib.projections.geo.HammerAxes:53
+#: matplotlib.projections.geo.HammerAxes:55
+#: matplotlib.projections.geo.HammerAxes:62
+#: matplotlib.projections.geo.HammerAxes:68
+#: matplotlib.projections.geo.LambertAxes:38
+#: matplotlib.projections.geo.LambertAxes:40
+#: matplotlib.projections.geo.LambertAxes:41
+#: matplotlib.projections.geo.LambertAxes:42
+#: matplotlib.projections.geo.LambertAxes:47
+#: matplotlib.projections.geo.LambertAxes:51
+#: matplotlib.projections.geo.LambertAxes:53
+#: matplotlib.projections.geo.LambertAxes:55
+#: matplotlib.projections.geo.LambertAxes:62
+#: matplotlib.projections.geo.LambertAxes:68
+#: matplotlib.projections.geo.MollweideAxes:38
+#: matplotlib.projections.geo.MollweideAxes:40
+#: matplotlib.projections.geo.MollweideAxes:41
+#: matplotlib.projections.geo.MollweideAxes:42
+#: matplotlib.projections.geo.MollweideAxes:47
+#: matplotlib.projections.geo.MollweideAxes:51
+#: matplotlib.projections.geo.MollweideAxes:53
+#: matplotlib.projections.geo.MollweideAxes:55
+#: matplotlib.projections.geo.MollweideAxes:62
+#: matplotlib.projections.geo.MollweideAxes:68
+#: matplotlib.projections.polar.PolarAxes:60
+#: matplotlib.projections.polar.PolarAxes:62
+#: matplotlib.projections.polar.PolarAxes:63
+#: matplotlib.projections.polar.PolarAxes:64
+#: matplotlib.projections.polar.PolarAxes:69
+#: matplotlib.projections.polar.PolarAxes:73
+#: matplotlib.projections.polar.PolarAxes:75
+#: matplotlib.projections.polar.PolarAxes:77
+#: matplotlib.projections.polar.PolarAxes:84
+#: matplotlib.projections.polar.PolarAxes:90 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:17 matplotlib.artist.GeoAxes.set:17
+#: matplotlib.artist.HammerAxes.set:17 matplotlib.artist.LambertAxes.set:17
+#: matplotlib.artist.MollweideAxes.set:17 matplotlib.artist.PolarAxes.set:17
+#: matplotlib.projections.geo.AitoffAxes:39
+#: matplotlib.projections.geo.GeoAxes:60
+#: matplotlib.projections.geo.HammerAxes:39
+#: matplotlib.projections.geo.LambertAxes:39
+#: matplotlib.projections.geo.MollweideAxes:39
+#: matplotlib.projections.polar.PolarAxes:61 of
+msgid ":meth:`aspect <matplotlib.axes.Axes.set_aspect>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:17 matplotlib.artist.GeoAxes.set:17
+#: matplotlib.artist.HammerAxes.set:17 matplotlib.artist.LambertAxes.set:17
+#: matplotlib.artist.MollweideAxes.set:17 matplotlib.artist.PolarAxes.set:17
+#: matplotlib.projections.geo.AitoffAxes:39
+#: matplotlib.projections.geo.GeoAxes:60
+#: matplotlib.projections.geo.HammerAxes:39
+#: matplotlib.projections.geo.LambertAxes:39
+#: matplotlib.projections.geo.MollweideAxes:39
+#: matplotlib.projections.polar.PolarAxes:61 of
+msgid "{'auto', 'equal'} or float"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:18 matplotlib.artist.GeoAxes.set:18
+#: matplotlib.artist.HammerAxes.set:18 matplotlib.artist.LambertAxes.set:18
+#: matplotlib.artist.MollweideAxes.set:18 matplotlib.artist.PolarAxes.set:18
+#: matplotlib.projections.geo.AitoffAxes:40
+#: matplotlib.projections.geo.GeoAxes:61
+#: matplotlib.projections.geo.HammerAxes:40
+#: matplotlib.projections.geo.LambertAxes:40
+#: matplotlib.projections.geo.MollweideAxes:40
+#: matplotlib.projections.polar.PolarAxes:62 of
+msgid ":meth:`autoscale_on <matplotlib.axes.Axes.set_autoscale_on>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:19 matplotlib.artist.GeoAxes.set:19
+#: matplotlib.artist.HammerAxes.set:19 matplotlib.artist.LambertAxes.set:19
+#: matplotlib.artist.MollweideAxes.set:19 matplotlib.artist.PolarAxes.set:19
+#: matplotlib.projections.geo.AitoffAxes:41
+#: matplotlib.projections.geo.GeoAxes:62
+#: matplotlib.projections.geo.HammerAxes:41
+#: matplotlib.projections.geo.LambertAxes:41
+#: matplotlib.projections.geo.MollweideAxes:41
+#: matplotlib.projections.polar.PolarAxes:63 of
+msgid ":meth:`autoscalex_on <matplotlib.axes.Axes.set_autoscalex_on>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:20 matplotlib.artist.GeoAxes.set:20
+#: matplotlib.artist.HammerAxes.set:20 matplotlib.artist.LambertAxes.set:20
+#: matplotlib.artist.MollweideAxes.set:20 matplotlib.artist.PolarAxes.set:20
+#: matplotlib.projections.geo.AitoffAxes:42
+#: matplotlib.projections.geo.GeoAxes:63
+#: matplotlib.projections.geo.HammerAxes:42
+#: matplotlib.projections.geo.LambertAxes:42
+#: matplotlib.projections.geo.MollweideAxes:42
+#: matplotlib.projections.polar.PolarAxes:64 of
+msgid ":meth:`autoscaley_on <matplotlib.axes.Axes.set_autoscaley_on>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:21 matplotlib.artist.GeoAxes.set:21
+#: matplotlib.artist.HammerAxes.set:21 matplotlib.artist.LambertAxes.set:21
+#: matplotlib.artist.MollweideAxes.set:21 matplotlib.artist.PolarAxes.set:21
+#: matplotlib.projections.geo.AitoffAxes:43
+#: matplotlib.projections.geo.GeoAxes:64
+#: matplotlib.projections.geo.HammerAxes:43
+#: matplotlib.projections.geo.LambertAxes:43
+#: matplotlib.projections.geo.MollweideAxes:43
+#: matplotlib.projections.polar.PolarAxes:65 of
+msgid ":meth:`axes_locator <matplotlib.axes.Axes.set_axes_locator>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:21 matplotlib.artist.GeoAxes.set:21
+#: matplotlib.artist.HammerAxes.set:21 matplotlib.artist.LambertAxes.set:21
+#: matplotlib.artist.MollweideAxes.set:21 matplotlib.artist.PolarAxes.set:21
+#: matplotlib.projections.geo.AitoffAxes:43
+#: matplotlib.projections.geo.GeoAxes:64
+#: matplotlib.projections.geo.HammerAxes:43
+#: matplotlib.projections.geo.LambertAxes:43
+#: matplotlib.projections.geo.MollweideAxes:43
+#: matplotlib.projections.polar.PolarAxes:65 of
+msgid "Callable[[Axes, Renderer], Bbox]"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:22 matplotlib.artist.GeoAxes.set:22
+#: matplotlib.artist.HammerAxes.set:22 matplotlib.artist.LambertAxes.set:22
+#: matplotlib.artist.MollweideAxes.set:22 matplotlib.artist.PolarAxes.set:22
+#: matplotlib.projections.geo.AitoffAxes:44
+#: matplotlib.projections.geo.GeoAxes:65
+#: matplotlib.projections.geo.HammerAxes:44
+#: matplotlib.projections.geo.LambertAxes:44
+#: matplotlib.projections.geo.MollweideAxes:44
+#: matplotlib.projections.polar.PolarAxes:66 of
+msgid ":meth:`axisbelow <matplotlib.axes.Axes.set_axisbelow>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:22 matplotlib.artist.GeoAxes.set:22
+#: matplotlib.artist.HammerAxes.set:22 matplotlib.artist.LambertAxes.set:22
+#: matplotlib.artist.MollweideAxes.set:22 matplotlib.artist.PolarAxes.set:22
+#: matplotlib.projections.geo.AitoffAxes:44
+#: matplotlib.projections.geo.GeoAxes:65
+#: matplotlib.projections.geo.HammerAxes:44
+#: matplotlib.projections.geo.LambertAxes:44
+#: matplotlib.projections.geo.MollweideAxes:44
+#: matplotlib.projections.polar.PolarAxes:66 of
+msgid "bool or 'line'"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:23 matplotlib.artist.GeoAxes.set:23
+#: matplotlib.artist.HammerAxes.set:23 matplotlib.artist.LambertAxes.set:23
+#: matplotlib.artist.MollweideAxes.set:23 matplotlib.artist.PolarAxes.set:23
+#: matplotlib.projections.geo.AitoffAxes:45
+#: matplotlib.projections.geo.GeoAxes:66
+#: matplotlib.projections.geo.HammerAxes:45
+#: matplotlib.projections.geo.LambertAxes:45
+#: matplotlib.projections.geo.MollweideAxes:45
+#: matplotlib.projections.polar.PolarAxes:67 of
+msgid ":meth:`box_aspect <matplotlib.axes.Axes.set_box_aspect>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:23 matplotlib.artist.AitoffAxes.set:42
+#: matplotlib.artist.GeoAxes.set:23 matplotlib.artist.GeoAxes.set:42
+#: matplotlib.artist.HammerAxes.set:23 matplotlib.artist.HammerAxes.set:42
+#: matplotlib.artist.LambertAxes.set:23 matplotlib.artist.LambertAxes.set:42
+#: matplotlib.artist.MollweideAxes.set:23
+#: matplotlib.artist.MollweideAxes.set:42 matplotlib.artist.PolarAxes.set:23
+#: matplotlib.artist.PolarAxes.set:39 matplotlib.projections.geo.AitoffAxes:45
+#: matplotlib.projections.geo.AitoffAxes:61
+#: matplotlib.projections.geo.GeoAxes:66 matplotlib.projections.geo.GeoAxes:82
+#: matplotlib.projections.geo.HammerAxes:45
+#: matplotlib.projections.geo.HammerAxes:61
+#: matplotlib.projections.geo.LambertAxes:45
+#: matplotlib.projections.geo.LambertAxes:61
+#: matplotlib.projections.geo.MollweideAxes:45
+#: matplotlib.projections.geo.MollweideAxes:61
+#: matplotlib.projections.polar.PolarAxes:67
+#: matplotlib.projections.polar.PolarAxes:83 of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:24 matplotlib.artist.GeoAxes.set:24
+#: matplotlib.artist.HammerAxes.set:24 matplotlib.artist.LambertAxes.set:24
+#: matplotlib.artist.MollweideAxes.set:24 matplotlib.artist.PolarAxes.set:24
+#: matplotlib.artist.RadialAxis.set:15 matplotlib.artist.RadialTick.set:15
+#: matplotlib.artist.ThetaAxis.set:15 matplotlib.artist.ThetaTick.set:15
+#: matplotlib.projections.geo.AitoffAxes:46
+#: matplotlib.projections.geo.GeoAxes:67
+#: matplotlib.projections.geo.HammerAxes:46
+#: matplotlib.projections.geo.LambertAxes:46
+#: matplotlib.projections.geo.MollweideAxes:46
+#: matplotlib.projections.polar.PolarAxes:68 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:24 matplotlib.artist.GeoAxes.set:24
+#: matplotlib.artist.HammerAxes.set:24 matplotlib.artist.LambertAxes.set:24
+#: matplotlib.artist.MollweideAxes.set:24 matplotlib.artist.PolarAxes.set:24
+#: matplotlib.artist.RadialAxis.set:15 matplotlib.artist.RadialTick.set:15
+#: matplotlib.artist.ThetaAxis.set:15 matplotlib.artist.ThetaTick.set:15
+#: matplotlib.projections.geo.AitoffAxes:46
+#: matplotlib.projections.geo.GeoAxes:67
+#: matplotlib.projections.geo.HammerAxes:46
+#: matplotlib.projections.geo.LambertAxes:46
+#: matplotlib.projections.geo.MollweideAxes:46
+#: matplotlib.projections.polar.PolarAxes:68 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:25 matplotlib.artist.GeoAxes.set:25
+#: matplotlib.artist.HammerAxes.set:25 matplotlib.artist.LambertAxes.set:25
+#: matplotlib.artist.MollweideAxes.set:25 matplotlib.artist.PolarAxes.set:25
+#: matplotlib.artist.RadialAxis.set:16 matplotlib.artist.RadialTick.set:16
+#: matplotlib.artist.ThetaAxis.set:16 matplotlib.artist.ThetaTick.set:16
+#: matplotlib.projections.geo.AitoffAxes:47
+#: matplotlib.projections.geo.GeoAxes:68
+#: matplotlib.projections.geo.HammerAxes:47
+#: matplotlib.projections.geo.LambertAxes:47
+#: matplotlib.projections.geo.MollweideAxes:47
+#: matplotlib.projections.polar.PolarAxes:69 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:26 matplotlib.artist.GeoAxes.set:26
+#: matplotlib.artist.HammerAxes.set:26 matplotlib.artist.LambertAxes.set:26
+#: matplotlib.artist.MollweideAxes.set:26 matplotlib.artist.PolarAxes.set:26
+#: matplotlib.artist.RadialAxis.set:17 matplotlib.artist.RadialTick.set:17
+#: matplotlib.artist.ThetaAxis.set:17 matplotlib.artist.ThetaTick.set:17
+#: matplotlib.projections.geo.AitoffAxes:48
+#: matplotlib.projections.geo.GeoAxes:69
+#: matplotlib.projections.geo.HammerAxes:48
+#: matplotlib.projections.geo.LambertAxes:48
+#: matplotlib.projections.geo.MollweideAxes:48
+#: matplotlib.projections.polar.PolarAxes:70 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:26 matplotlib.artist.GeoAxes.set:26
+#: matplotlib.artist.HammerAxes.set:26 matplotlib.artist.LambertAxes.set:26
+#: matplotlib.artist.MollweideAxes.set:26 matplotlib.artist.PolarAxes.set:26
+#: matplotlib.artist.RadialAxis.set:17 matplotlib.artist.RadialTick.set:17
+#: matplotlib.artist.ThetaAxis.set:17 matplotlib.artist.ThetaTick.set:17
+#: matplotlib.projections.geo.AitoffAxes:48
+#: matplotlib.projections.geo.GeoAxes:69
+#: matplotlib.projections.geo.HammerAxes:48
+#: matplotlib.projections.geo.LambertAxes:48
+#: matplotlib.projections.geo.MollweideAxes:48
+#: matplotlib.projections.polar.PolarAxes:70 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:27 matplotlib.artist.GeoAxes.set:27
+#: matplotlib.artist.HammerAxes.set:27 matplotlib.artist.LambertAxes.set:27
+#: matplotlib.artist.MollweideAxes.set:27 matplotlib.artist.PolarAxes.set:27
+#: matplotlib.projections.geo.AitoffAxes:49
+#: matplotlib.projections.geo.GeoAxes:70
+#: matplotlib.projections.geo.HammerAxes:49
+#: matplotlib.projections.geo.LambertAxes:49
+#: matplotlib.projections.geo.MollweideAxes:49
+#: matplotlib.projections.polar.PolarAxes:71 of
+msgid ":meth:`facecolor <matplotlib.axes.Axes.set_facecolor>` or fc"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:27 matplotlib.artist.GeoAxes.set:27
+#: matplotlib.artist.HammerAxes.set:27 matplotlib.artist.LambertAxes.set:27
+#: matplotlib.artist.MollweideAxes.set:27 matplotlib.artist.PolarAxes.set:27
+#: matplotlib.projections.geo.AitoffAxes:49
+#: matplotlib.projections.geo.GeoAxes:70
+#: matplotlib.projections.geo.HammerAxes:49
+#: matplotlib.projections.geo.LambertAxes:49
+#: matplotlib.projections.geo.MollweideAxes:49
+#: matplotlib.projections.polar.PolarAxes:71 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:28 matplotlib.artist.GeoAxes.set:28
+#: matplotlib.artist.HammerAxes.set:28 matplotlib.artist.LambertAxes.set:28
+#: matplotlib.artist.MollweideAxes.set:28 matplotlib.artist.PolarAxes.set:28
+#: matplotlib.artist.RadialAxis.set:19 matplotlib.artist.RadialTick.set:18
+#: matplotlib.artist.ThetaAxis.set:19 matplotlib.artist.ThetaTick.set:18
+#: matplotlib.projections.geo.AitoffAxes:50
+#: matplotlib.projections.geo.GeoAxes:71
+#: matplotlib.projections.geo.HammerAxes:50
+#: matplotlib.projections.geo.LambertAxes:50
+#: matplotlib.projections.geo.MollweideAxes:50
+#: matplotlib.projections.polar.PolarAxes:72 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:28 matplotlib.artist.GeoAxes.set:28
+#: matplotlib.artist.HammerAxes.set:28 matplotlib.artist.LambertAxes.set:28
+#: matplotlib.artist.MollweideAxes.set:28 matplotlib.artist.PolarAxes.set:28
+#: matplotlib.artist.RadialAxis.set:19 matplotlib.artist.RadialTick.set:18
+#: matplotlib.artist.ThetaAxis.set:19 matplotlib.artist.ThetaTick.set:18
+#: matplotlib.projections.geo.AitoffAxes:50
+#: matplotlib.projections.geo.GeoAxes:71
+#: matplotlib.projections.geo.HammerAxes:50
+#: matplotlib.projections.geo.LambertAxes:50
+#: matplotlib.projections.geo.MollweideAxes:50
+#: matplotlib.projections.polar.PolarAxes:72 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:29 matplotlib.artist.GeoAxes.set:29
+#: matplotlib.artist.HammerAxes.set:29 matplotlib.artist.LambertAxes.set:29
+#: matplotlib.artist.MollweideAxes.set:29 matplotlib.artist.PolarAxes.set:29
+#: matplotlib.projections.geo.AitoffAxes:51
+#: matplotlib.projections.geo.GeoAxes:72
+#: matplotlib.projections.geo.HammerAxes:51
+#: matplotlib.projections.geo.LambertAxes:51
+#: matplotlib.projections.geo.MollweideAxes:51
+#: matplotlib.projections.polar.PolarAxes:73 of
+msgid ":meth:`frame_on <matplotlib.axes.Axes.set_frame_on>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:30 matplotlib.artist.GeoAxes.set:30
+#: matplotlib.artist.HammerAxes.set:30 matplotlib.artist.LambertAxes.set:30
+#: matplotlib.artist.MollweideAxes.set:30 matplotlib.artist.PolarAxes.set:30
+#: matplotlib.artist.RadialAxis.set:20 matplotlib.artist.RadialTick.set:19
+#: matplotlib.artist.ThetaAxis.set:20 matplotlib.artist.ThetaTick.set:19
+#: matplotlib.projections.geo.AitoffAxes:52
+#: matplotlib.projections.geo.GeoAxes:73
+#: matplotlib.projections.geo.HammerAxes:52
+#: matplotlib.projections.geo.LambertAxes:52
+#: matplotlib.projections.geo.MollweideAxes:52
+#: matplotlib.projections.polar.PolarAxes:74 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:31 matplotlib.artist.GeoAxes.set:31
+#: matplotlib.artist.HammerAxes.set:31 matplotlib.artist.LambertAxes.set:31
+#: matplotlib.artist.MollweideAxes.set:31 matplotlib.artist.PolarAxes.set:31
+#: matplotlib.artist.RadialAxis.set:21 matplotlib.artist.RadialTick.set:20
+#: matplotlib.artist.ThetaAxis.set:21 matplotlib.artist.ThetaTick.set:20
+#: matplotlib.projections.geo.AitoffAxes:53
+#: matplotlib.projections.geo.GeoAxes:74
+#: matplotlib.projections.geo.HammerAxes:53
+#: matplotlib.projections.geo.LambertAxes:53
+#: matplotlib.projections.geo.MollweideAxes:53
+#: matplotlib.projections.polar.PolarAxes:75 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:32 matplotlib.artist.GeoAxes.set:32
+#: matplotlib.artist.HammerAxes.set:32 matplotlib.artist.LambertAxes.set:32
+#: matplotlib.artist.MollweideAxes.set:32 matplotlib.artist.PolarAxes.set:32
+#: matplotlib.artist.RadialAxis.set:23 matplotlib.artist.ThetaAxis.set:23
+#: matplotlib.projections.geo.AitoffAxes:54
+#: matplotlib.projections.geo.GeoAxes:75
+#: matplotlib.projections.geo.HammerAxes:54
+#: matplotlib.projections.geo.LambertAxes:54
+#: matplotlib.projections.geo.MollweideAxes:54
+#: matplotlib.projections.polar.PolarAxes:76 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:32 matplotlib.artist.GeoAxes.set:32
+#: matplotlib.artist.HammerAxes.set:32 matplotlib.artist.LambertAxes.set:32
+#: matplotlib.artist.MollweideAxes.set:32 matplotlib.artist.PolarAxes.set:32
+#: matplotlib.artist.RadialAxis.set:23 matplotlib.artist.ThetaAxis.set:23
+#: matplotlib.projections.geo.AitoffAxes:54
+#: matplotlib.projections.geo.GeoAxes:75
+#: matplotlib.projections.geo.HammerAxes:54
+#: matplotlib.projections.geo.LambertAxes:54
+#: matplotlib.projections.geo.MollweideAxes:54
+#: matplotlib.projections.polar.PolarAxes:76 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:36 matplotlib.artist.GeoAxes.set:36
+#: matplotlib.artist.HammerAxes.set:36 matplotlib.artist.LambertAxes.set:36
+#: matplotlib.artist.MollweideAxes.set:36 matplotlib.artist.PolarAxes.set:33
+#: matplotlib.projections.geo.AitoffAxes:55
+#: matplotlib.projections.geo.GeoAxes:76
+#: matplotlib.projections.geo.HammerAxes:55
+#: matplotlib.projections.geo.LambertAxes:55
+#: matplotlib.projections.geo.MollweideAxes:55
+#: matplotlib.projections.polar.PolarAxes:77 of
+msgid ":meth:`navigate <matplotlib.axes.Axes.set_navigate>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:37 matplotlib.artist.GeoAxes.set:37
+#: matplotlib.artist.HammerAxes.set:37 matplotlib.artist.LambertAxes.set:37
+#: matplotlib.artist.MollweideAxes.set:37 matplotlib.artist.PolarAxes.set:34
+#: matplotlib.projections.geo.AitoffAxes:56
+#: matplotlib.projections.geo.GeoAxes:77
+#: matplotlib.projections.geo.HammerAxes:56
+#: matplotlib.projections.geo.LambertAxes:56
+#: matplotlib.projections.geo.MollweideAxes:56
+#: matplotlib.projections.polar.PolarAxes:78 of
+msgid ":meth:`navigate_mode <matplotlib.axes.Axes.set_navigate_mode>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:33 matplotlib.artist.AitoffAxes.set:34
+#: matplotlib.artist.AitoffAxes.set:35 matplotlib.artist.AitoffAxes.set:37
+#: matplotlib.artist.AitoffAxes.set:41 matplotlib.artist.AitoffAxes.set:50
+#: matplotlib.artist.AitoffAxes.set:52 matplotlib.artist.AitoffAxes.set:54
+#: matplotlib.artist.AitoffAxes.set:55 matplotlib.artist.AitoffAxes.set:56
+#: matplotlib.artist.AitoffAxes.set:57 matplotlib.artist.AitoffAxes.set:59
+#: matplotlib.artist.AitoffAxes.set:61 matplotlib.artist.AitoffAxes.set:62
+#: matplotlib.artist.AitoffAxes.set:63 matplotlib.artist.GeoAxes.set:33
+#: matplotlib.artist.GeoAxes.set:34 matplotlib.artist.GeoAxes.set:35
+#: matplotlib.artist.GeoAxes.set:37 matplotlib.artist.GeoAxes.set:41
+#: matplotlib.artist.GeoAxes.set:50 matplotlib.artist.GeoAxes.set:52
+#: matplotlib.artist.GeoAxes.set:54 matplotlib.artist.GeoAxes.set:55
+#: matplotlib.artist.GeoAxes.set:56 matplotlib.artist.GeoAxes.set:57
+#: matplotlib.artist.GeoAxes.set:59 matplotlib.artist.GeoAxes.set:61
+#: matplotlib.artist.GeoAxes.set:62 matplotlib.artist.GeoAxes.set:63
+#: matplotlib.artist.HammerAxes.set:33 matplotlib.artist.HammerAxes.set:34
+#: matplotlib.artist.HammerAxes.set:35 matplotlib.artist.HammerAxes.set:37
+#: matplotlib.artist.HammerAxes.set:41 matplotlib.artist.HammerAxes.set:50
+#: matplotlib.artist.HammerAxes.set:52 matplotlib.artist.HammerAxes.set:54
+#: matplotlib.artist.HammerAxes.set:55 matplotlib.artist.HammerAxes.set:56
+#: matplotlib.artist.HammerAxes.set:57 matplotlib.artist.HammerAxes.set:59
+#: matplotlib.artist.HammerAxes.set:61 matplotlib.artist.HammerAxes.set:62
+#: matplotlib.artist.HammerAxes.set:63 matplotlib.artist.LambertAxes.set:33
+#: matplotlib.artist.LambertAxes.set:34 matplotlib.artist.LambertAxes.set:35
+#: matplotlib.artist.LambertAxes.set:37 matplotlib.artist.LambertAxes.set:41
+#: matplotlib.artist.LambertAxes.set:50 matplotlib.artist.LambertAxes.set:52
+#: matplotlib.artist.LambertAxes.set:54 matplotlib.artist.LambertAxes.set:55
+#: matplotlib.artist.LambertAxes.set:56 matplotlib.artist.LambertAxes.set:57
+#: matplotlib.artist.LambertAxes.set:59 matplotlib.artist.LambertAxes.set:61
+#: matplotlib.artist.LambertAxes.set:62 matplotlib.artist.LambertAxes.set:63
+#: matplotlib.artist.MollweideAxes.set:33
+#: matplotlib.artist.MollweideAxes.set:34
+#: matplotlib.artist.MollweideAxes.set:35
+#: matplotlib.artist.MollweideAxes.set:37
+#: matplotlib.artist.MollweideAxes.set:41
+#: matplotlib.artist.MollweideAxes.set:50
+#: matplotlib.artist.MollweideAxes.set:52
+#: matplotlib.artist.MollweideAxes.set:54
+#: matplotlib.artist.MollweideAxes.set:55
+#: matplotlib.artist.MollweideAxes.set:56
+#: matplotlib.artist.MollweideAxes.set:57
+#: matplotlib.artist.MollweideAxes.set:59
+#: matplotlib.artist.MollweideAxes.set:61
+#: matplotlib.artist.MollweideAxes.set:62
+#: matplotlib.artist.MollweideAxes.set:63 matplotlib.artist.PolarAxes.set:34
+#: matplotlib.artist.PolarAxes.set:38 matplotlib.artist.PolarAxes.set:43
+#: matplotlib.artist.PolarAxes.set:47 matplotlib.artist.PolarAxes.set:48
+#: matplotlib.artist.PolarAxes.set:51 matplotlib.artist.PolarAxes.set:52
+#: matplotlib.artist.PolarAxes.set:55 matplotlib.artist.PolarAxes.set:56
+#: matplotlib.artist.PolarAxes.set:57 matplotlib.artist.PolarAxes.set:62
+#: matplotlib.artist.PolarAxes.set:67 matplotlib.artist.PolarAxes.set:68
+#: matplotlib.artist.PolarAxes.set:69 matplotlib.artist.PolarAxes.set:73
+#: matplotlib.artist.PolarAxes.set:74 matplotlib.artist.PolarAxes.set:75
+#: matplotlib.artist.RadialAxis.set:18 matplotlib.artist.RadialAxis.set:22
+#: matplotlib.artist.RadialAxis.set:24 matplotlib.artist.RadialAxis.set:36
+#: matplotlib.artist.RadialAxis.set:39 matplotlib.artist.RadialAxis.set:46
+#: matplotlib.artist.ThetaAxis.set:18 matplotlib.artist.ThetaAxis.set:22
+#: matplotlib.artist.ThetaAxis.set:24 matplotlib.artist.ThetaAxis.set:35
+#: matplotlib.artist.ThetaAxis.set:38 matplotlib.artist.ThetaAxis.set:45
+#: matplotlib.projections.geo.AitoffAxes:56
+#: matplotlib.projections.geo.AitoffAxes:60
+#: matplotlib.projections.geo.AitoffAxes:69
+#: matplotlib.projections.geo.AitoffAxes:74
+#: matplotlib.projections.geo.AitoffAxes:75
+#: matplotlib.projections.geo.AitoffAxes:76
+#: matplotlib.projections.geo.AitoffAxes:81
+#: matplotlib.projections.geo.AitoffAxes:82
+#: matplotlib.projections.geo.GeoAxes:77 matplotlib.projections.geo.GeoAxes:81
+#: matplotlib.projections.geo.GeoAxes:90 matplotlib.projections.geo.GeoAxes:95
+#: matplotlib.projections.geo.GeoAxes:96 matplotlib.projections.geo.GeoAxes:97
+#: matplotlib.projections.geo.GeoAxes:102
+#: matplotlib.projections.geo.GeoAxes:103
+#: matplotlib.projections.geo.HammerAxes:56
+#: matplotlib.projections.geo.HammerAxes:60
+#: matplotlib.projections.geo.HammerAxes:69
+#: matplotlib.projections.geo.HammerAxes:74
+#: matplotlib.projections.geo.HammerAxes:75
+#: matplotlib.projections.geo.HammerAxes:76
+#: matplotlib.projections.geo.HammerAxes:81
+#: matplotlib.projections.geo.HammerAxes:82
+#: matplotlib.projections.geo.LambertAxes:56
+#: matplotlib.projections.geo.LambertAxes:60
+#: matplotlib.projections.geo.LambertAxes:69
+#: matplotlib.projections.geo.LambertAxes:74
+#: matplotlib.projections.geo.LambertAxes:75
+#: matplotlib.projections.geo.LambertAxes:76
+#: matplotlib.projections.geo.LambertAxes:81
+#: matplotlib.projections.geo.LambertAxes:82
+#: matplotlib.projections.geo.MollweideAxes:56
+#: matplotlib.projections.geo.MollweideAxes:60
+#: matplotlib.projections.geo.MollweideAxes:69
+#: matplotlib.projections.geo.MollweideAxes:74
+#: matplotlib.projections.geo.MollweideAxes:75
+#: matplotlib.projections.geo.MollweideAxes:76
+#: matplotlib.projections.geo.MollweideAxes:81
+#: matplotlib.projections.geo.MollweideAxes:82
+#: matplotlib.projections.polar.PolarAxes:78
+#: matplotlib.projections.polar.PolarAxes:82
+#: matplotlib.projections.polar.PolarAxes:91
+#: matplotlib.projections.polar.PolarAxes:96
+#: matplotlib.projections.polar.PolarAxes:97
+#: matplotlib.projections.polar.PolarAxes:98
+#: matplotlib.projections.polar.PolarAxes:103
+#: matplotlib.projections.polar.PolarAxes:104 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:38 matplotlib.artist.GeoAxes.set:38
+#: matplotlib.artist.HammerAxes.set:38 matplotlib.artist.LambertAxes.set:38
+#: matplotlib.artist.MollweideAxes.set:38 matplotlib.artist.PolarAxes.set:35
+#: matplotlib.artist.RadialAxis.set:32 matplotlib.artist.RadialTick.set:25
+#: matplotlib.artist.ThetaAxis.set:31 matplotlib.artist.ThetaTick.set:25
+#: matplotlib.projections.geo.AitoffAxes:57
+#: matplotlib.projections.geo.GeoAxes:78
+#: matplotlib.projections.geo.HammerAxes:57
+#: matplotlib.projections.geo.LambertAxes:57
+#: matplotlib.projections.geo.MollweideAxes:57
+#: matplotlib.projections.polar.PolarAxes:79 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:38 matplotlib.artist.GeoAxes.set:38
+#: matplotlib.artist.HammerAxes.set:38 matplotlib.artist.LambertAxes.set:38
+#: matplotlib.artist.MollweideAxes.set:38 matplotlib.artist.PolarAxes.set:35
+#: matplotlib.artist.RadialAxis.set:32 matplotlib.artist.RadialTick.set:25
+#: matplotlib.artist.ThetaAxis.set:31 matplotlib.artist.ThetaTick.set:25
+#: matplotlib.projections.geo.AitoffAxes:57
+#: matplotlib.projections.geo.GeoAxes:78
+#: matplotlib.projections.geo.HammerAxes:57
+#: matplotlib.projections.geo.LambertAxes:57
+#: matplotlib.projections.geo.MollweideAxes:57
+#: matplotlib.projections.polar.PolarAxes:79 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:39 matplotlib.artist.GeoAxes.set:39
+#: matplotlib.artist.HammerAxes.set:39 matplotlib.artist.LambertAxes.set:39
+#: matplotlib.artist.MollweideAxes.set:39 matplotlib.artist.PolarAxes.set:36
+#: matplotlib.artist.RadialAxis.set:33 matplotlib.artist.RadialTick.set:26
+#: matplotlib.artist.ThetaAxis.set:32 matplotlib.artist.ThetaTick.set:26
+#: matplotlib.projections.geo.AitoffAxes:58
+#: matplotlib.projections.geo.GeoAxes:79
+#: matplotlib.projections.geo.HammerAxes:58
+#: matplotlib.projections.geo.LambertAxes:58
+#: matplotlib.projections.geo.MollweideAxes:58
+#: matplotlib.projections.polar.PolarAxes:80 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:39 matplotlib.artist.GeoAxes.set:39
+#: matplotlib.artist.HammerAxes.set:39 matplotlib.artist.LambertAxes.set:39
+#: matplotlib.artist.MollweideAxes.set:39 matplotlib.artist.PolarAxes.set:36
+#: matplotlib.artist.RadialAxis.set:33 matplotlib.artist.RadialTick.set:26
+#: matplotlib.artist.ThetaAxis.set:32 matplotlib.artist.ThetaTick.set:26
+#: matplotlib.projections.geo.AitoffAxes:58
+#: matplotlib.projections.geo.GeoAxes:79
+#: matplotlib.projections.geo.HammerAxes:58
+#: matplotlib.projections.geo.LambertAxes:58
+#: matplotlib.projections.geo.MollweideAxes:58
+#: matplotlib.projections.polar.PolarAxes:80 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:40 matplotlib.artist.GeoAxes.set:40
+#: matplotlib.artist.HammerAxes.set:40 matplotlib.artist.LambertAxes.set:40
+#: matplotlib.artist.MollweideAxes.set:40 matplotlib.artist.PolarAxes.set:37
+#: matplotlib.projections.geo.AitoffAxes:59
+#: matplotlib.projections.geo.GeoAxes:80
+#: matplotlib.projections.geo.HammerAxes:59
+#: matplotlib.projections.geo.LambertAxes:59
+#: matplotlib.projections.geo.MollweideAxes:59
+#: matplotlib.projections.polar.PolarAxes:81 of
+msgid ":meth:`position <matplotlib.axes.Axes.set_position>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:40 matplotlib.artist.GeoAxes.set:40
+#: matplotlib.artist.HammerAxes.set:40 matplotlib.artist.LambertAxes.set:40
+#: matplotlib.artist.MollweideAxes.set:40 matplotlib.artist.PolarAxes.set:37
+#: matplotlib.projections.geo.AitoffAxes:59
+#: matplotlib.projections.geo.GeoAxes:80
+#: matplotlib.projections.geo.HammerAxes:59
+#: matplotlib.projections.geo.LambertAxes:59
+#: matplotlib.projections.geo.MollweideAxes:59
+#: matplotlib.projections.polar.PolarAxes:81 of
+msgid "[left, bottom, width, height] or `~matplotlib.transforms.Bbox`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:41 matplotlib.artist.GeoAxes.set:41
+#: matplotlib.artist.HammerAxes.set:41 matplotlib.artist.LambertAxes.set:41
+#: matplotlib.artist.MollweideAxes.set:41 matplotlib.artist.PolarAxes.set:38
+#: matplotlib.projections.geo.AitoffAxes:60
+#: matplotlib.projections.geo.GeoAxes:81
+#: matplotlib.projections.geo.HammerAxes:60
+#: matplotlib.projections.geo.LambertAxes:60
+#: matplotlib.projections.geo.MollweideAxes:60
+#: matplotlib.projections.polar.PolarAxes:82 of
+msgid ":meth:`prop_cycle <matplotlib.axes.Axes.set_prop_cycle>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:42 matplotlib.artist.GeoAxes.set:42
+#: matplotlib.artist.HammerAxes.set:42 matplotlib.artist.LambertAxes.set:42
+#: matplotlib.artist.MollweideAxes.set:42 matplotlib.artist.PolarAxes.set:39
+#: matplotlib.projections.geo.AitoffAxes:61
+#: matplotlib.projections.geo.GeoAxes:82
+#: matplotlib.projections.geo.HammerAxes:61
+#: matplotlib.projections.geo.LambertAxes:61
+#: matplotlib.projections.geo.MollweideAxes:61
+#: matplotlib.projections.polar.PolarAxes:83 of
+msgid ""
+":meth:`rasterization_zorder "
+"<matplotlib.axes.Axes.set_rasterization_zorder>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:43 matplotlib.artist.GeoAxes.set:43
+#: matplotlib.artist.HammerAxes.set:43 matplotlib.artist.LambertAxes.set:43
+#: matplotlib.artist.MollweideAxes.set:43 matplotlib.artist.PolarAxes.set:40
+#: matplotlib.artist.RadialAxis.set:35 matplotlib.artist.RadialTick.set:27
+#: matplotlib.artist.ThetaAxis.set:34 matplotlib.artist.ThetaTick.set:27
+#: matplotlib.projections.geo.AitoffAxes:62
+#: matplotlib.projections.geo.GeoAxes:83
+#: matplotlib.projections.geo.HammerAxes:62
+#: matplotlib.projections.geo.LambertAxes:62
+#: matplotlib.projections.geo.MollweideAxes:62
+#: matplotlib.projections.polar.PolarAxes:84 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:44 matplotlib.artist.GeoAxes.set:44
+#: matplotlib.artist.HammerAxes.set:44 matplotlib.artist.LambertAxes.set:44
+#: matplotlib.artist.MollweideAxes.set:44 matplotlib.artist.PolarAxes.set:49
+#: matplotlib.artist.RadialAxis.set:37 matplotlib.artist.RadialTick.set:28
+#: matplotlib.artist.ThetaAxis.set:36 matplotlib.artist.ThetaTick.set:28
+#: matplotlib.projections.geo.AitoffAxes:63
+#: matplotlib.projections.geo.GeoAxes:84
+#: matplotlib.projections.geo.HammerAxes:63
+#: matplotlib.projections.geo.LambertAxes:63
+#: matplotlib.projections.geo.MollweideAxes:63
+#: matplotlib.projections.polar.PolarAxes:85 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:44 matplotlib.artist.GeoAxes.set:44
+#: matplotlib.artist.HammerAxes.set:44 matplotlib.artist.LambertAxes.set:44
+#: matplotlib.artist.MollweideAxes.set:44 matplotlib.artist.PolarAxes.set:49
+#: matplotlib.artist.RadialAxis.set:37 matplotlib.artist.RadialTick.set:28
+#: matplotlib.artist.ThetaAxis.set:36 matplotlib.artist.ThetaTick.set:28
+#: matplotlib.projections.geo.AitoffAxes:63
+#: matplotlib.projections.geo.GeoAxes:84
+#: matplotlib.projections.geo.HammerAxes:63
+#: matplotlib.projections.geo.LambertAxes:63
+#: matplotlib.projections.geo.MollweideAxes:63
+#: matplotlib.projections.polar.PolarAxes:85 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:45 matplotlib.artist.GeoAxes.set:45
+#: matplotlib.artist.HammerAxes.set:45 matplotlib.artist.LambertAxes.set:45
+#: matplotlib.artist.MollweideAxes.set:45 matplotlib.artist.PolarAxes.set:50
+#: matplotlib.artist.RadialAxis.set:38 matplotlib.artist.RadialTick.set:29
+#: matplotlib.artist.ThetaAxis.set:37 matplotlib.artist.ThetaTick.set:29
+#: matplotlib.projections.geo.AitoffAxes:64
+#: matplotlib.projections.geo.GeoAxes:85
+#: matplotlib.projections.geo.HammerAxes:64
+#: matplotlib.projections.geo.LambertAxes:64
+#: matplotlib.projections.geo.MollweideAxes:64
+#: matplotlib.projections.polar.PolarAxes:86 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:45 matplotlib.artist.GeoAxes.set:45
+#: matplotlib.artist.HammerAxes.set:45 matplotlib.artist.LambertAxes.set:45
+#: matplotlib.artist.MollweideAxes.set:45 matplotlib.artist.PolarAxes.set:50
+#: matplotlib.artist.RadialAxis.set:38 matplotlib.artist.RadialTick.set:29
+#: matplotlib.artist.ThetaAxis.set:37 matplotlib.artist.ThetaTick.set:29
+#: matplotlib.projections.geo.AitoffAxes:64
+#: matplotlib.projections.geo.GeoAxes:85
+#: matplotlib.projections.geo.HammerAxes:64
+#: matplotlib.projections.geo.LambertAxes:64
+#: matplotlib.projections.geo.MollweideAxes:64
+#: matplotlib.projections.polar.PolarAxes:86 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:46 matplotlib.artist.GeoAxes.set:46
+#: matplotlib.artist.HammerAxes.set:46 matplotlib.artist.LambertAxes.set:46
+#: matplotlib.artist.MollweideAxes.set:46 matplotlib.artist.PolarAxes.set:58
+#: matplotlib.projections.geo.AitoffAxes:65
+#: matplotlib.projections.geo.GeoAxes:86
+#: matplotlib.projections.geo.HammerAxes:65
+#: matplotlib.projections.geo.LambertAxes:65
+#: matplotlib.projections.geo.MollweideAxes:65
+#: matplotlib.projections.polar.PolarAxes:87 of
+msgid ":meth:`title <matplotlib.axes.Axes.set_title>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:47 matplotlib.artist.GeoAxes.set:47
+#: matplotlib.artist.HammerAxes.set:47 matplotlib.artist.LambertAxes.set:47
+#: matplotlib.artist.MollweideAxes.set:47 matplotlib.artist.PolarAxes.set:59
+#: matplotlib.artist.RadialAxis.set:43 matplotlib.artist.RadialTick.set:30
+#: matplotlib.artist.ThetaAxis.set:42 matplotlib.artist.ThetaTick.set:30
+#: matplotlib.projections.geo.AitoffAxes:66
+#: matplotlib.projections.geo.GeoAxes:87
+#: matplotlib.projections.geo.HammerAxes:66
+#: matplotlib.projections.geo.LambertAxes:66
+#: matplotlib.projections.geo.MollweideAxes:66
+#: matplotlib.projections.polar.PolarAxes:88 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:47 matplotlib.artist.GeoAxes.set:47
+#: matplotlib.artist.HammerAxes.set:47 matplotlib.artist.LambertAxes.set:47
+#: matplotlib.artist.MollweideAxes.set:47 matplotlib.artist.PolarAxes.set:59
+#: matplotlib.artist.RadialAxis.set:43 matplotlib.artist.RadialTick.set:30
+#: matplotlib.artist.ThetaAxis.set:42 matplotlib.artist.ThetaTick.set:30
+#: matplotlib.projections.geo.AitoffAxes:66
+#: matplotlib.projections.geo.GeoAxes:87
+#: matplotlib.projections.geo.HammerAxes:66
+#: matplotlib.projections.geo.LambertAxes:66
+#: matplotlib.projections.geo.MollweideAxes:66
+#: matplotlib.projections.polar.PolarAxes:88 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:48 matplotlib.artist.GeoAxes.set:48
+#: matplotlib.artist.HammerAxes.set:48 matplotlib.artist.LambertAxes.set:48
+#: matplotlib.artist.MollweideAxes.set:48 matplotlib.artist.PolarAxes.set:60
+#: matplotlib.artist.RadialAxis.set:45 matplotlib.artist.ThetaAxis.set:44
+#: matplotlib.projections.geo.AitoffAxes:67
+#: matplotlib.projections.geo.GeoAxes:88
+#: matplotlib.projections.geo.HammerAxes:67
+#: matplotlib.projections.geo.LambertAxes:67
+#: matplotlib.projections.geo.MollweideAxes:67
+#: matplotlib.projections.polar.PolarAxes:89 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:49 matplotlib.artist.GeoAxes.set:49
+#: matplotlib.artist.HammerAxes.set:49 matplotlib.artist.LambertAxes.set:49
+#: matplotlib.artist.MollweideAxes.set:49 matplotlib.artist.PolarAxes.set:61
+#: matplotlib.artist.RadialAxis.set:47 matplotlib.artist.RadialTick.set:32
+#: matplotlib.artist.ThetaAxis.set:46 matplotlib.artist.ThetaTick.set:32
+#: matplotlib.projections.geo.AitoffAxes:68
+#: matplotlib.projections.geo.GeoAxes:89
+#: matplotlib.projections.geo.HammerAxes:68
+#: matplotlib.projections.geo.LambertAxes:68
+#: matplotlib.projections.geo.MollweideAxes:68
+#: matplotlib.projections.polar.PolarAxes:90 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:50 matplotlib.artist.GeoAxes.set:50
+#: matplotlib.artist.HammerAxes.set:50 matplotlib.artist.LambertAxes.set:50
+#: matplotlib.artist.MollweideAxes.set:50 matplotlib.artist.PolarAxes.set:62
+#: matplotlib.projections.geo.AitoffAxes:69
+#: matplotlib.projections.geo.GeoAxes:90
+#: matplotlib.projections.geo.HammerAxes:69
+#: matplotlib.projections.geo.LambertAxes:69
+#: matplotlib.projections.geo.MollweideAxes:69
+#: matplotlib.projections.polar.PolarAxes:91 of
+msgid ":meth:`xbound <matplotlib.axes.Axes.set_xbound>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:51 matplotlib.artist.GeoAxes.set:51
+#: matplotlib.artist.HammerAxes.set:51 matplotlib.artist.LambertAxes.set:51
+#: matplotlib.artist.MollweideAxes.set:51 matplotlib.artist.PolarAxes.set:63
+#: matplotlib.projections.geo.AitoffAxes:70
+#: matplotlib.projections.geo.GeoAxes:91
+#: matplotlib.projections.geo.HammerAxes:70
+#: matplotlib.projections.geo.LambertAxes:70
+#: matplotlib.projections.geo.MollweideAxes:70
+#: matplotlib.projections.polar.PolarAxes:92 of
+msgid ":meth:`xlabel <matplotlib.axes.Axes.set_xlabel>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:64 matplotlib.projections.geo.AitoffAxes:71
+#: matplotlib.projections.geo.GeoAxes:92
+#: matplotlib.projections.geo.HammerAxes:71
+#: matplotlib.projections.geo.LambertAxes:71
+#: matplotlib.projections.geo.MollweideAxes:71
+#: matplotlib.projections.polar.PolarAxes:93 of
+msgid ":meth:`xlim <matplotlib.axes.Axes.set_xlim>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:64 matplotlib.projections.geo.AitoffAxes:71
+#: matplotlib.projections.geo.AitoffAxes:78
+#: matplotlib.projections.geo.GeoAxes:92 matplotlib.projections.geo.GeoAxes:99
+#: matplotlib.projections.geo.HammerAxes:71
+#: matplotlib.projections.geo.HammerAxes:78
+#: matplotlib.projections.geo.LambertAxes:71
+#: matplotlib.projections.geo.LambertAxes:78
+#: matplotlib.projections.geo.MollweideAxes:71
+#: matplotlib.projections.geo.MollweideAxes:78
+#: matplotlib.projections.polar.PolarAxes:93
+#: matplotlib.projections.polar.PolarAxes:100 of
+msgid "(bottom: float, top: float)"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:53 matplotlib.artist.GeoAxes.set:53
+#: matplotlib.artist.HammerAxes.set:53 matplotlib.artist.LambertAxes.set:53
+#: matplotlib.artist.MollweideAxes.set:53 matplotlib.artist.PolarAxes.set:65
+#: matplotlib.projections.geo.AitoffAxes:72
+#: matplotlib.projections.geo.GeoAxes:93
+#: matplotlib.projections.geo.HammerAxes:72
+#: matplotlib.projections.geo.LambertAxes:72
+#: matplotlib.projections.geo.MollweideAxes:72
+#: matplotlib.projections.polar.PolarAxes:94 of
+msgid ":meth:`xmargin <matplotlib.axes.Axes.set_xmargin>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:53 matplotlib.artist.AitoffAxes.set:60
+#: matplotlib.artist.GeoAxes.set:53 matplotlib.artist.GeoAxes.set:60
+#: matplotlib.artist.HammerAxes.set:53 matplotlib.artist.HammerAxes.set:60
+#: matplotlib.artist.LambertAxes.set:53 matplotlib.artist.LambertAxes.set:60
+#: matplotlib.artist.MollweideAxes.set:53
+#: matplotlib.artist.MollweideAxes.set:60 matplotlib.artist.PolarAxes.set:65
+#: matplotlib.artist.PolarAxes.set:72 matplotlib.projections.geo.AitoffAxes:72
+#: matplotlib.projections.geo.AitoffAxes:79
+#: matplotlib.projections.geo.GeoAxes:93 matplotlib.projections.geo.GeoAxes:100
+#: matplotlib.projections.geo.HammerAxes:72
+#: matplotlib.projections.geo.HammerAxes:79
+#: matplotlib.projections.geo.LambertAxes:72
+#: matplotlib.projections.geo.LambertAxes:79
+#: matplotlib.projections.geo.MollweideAxes:72
+#: matplotlib.projections.geo.MollweideAxes:79
+#: matplotlib.projections.polar.PolarAxes:94
+#: matplotlib.projections.polar.PolarAxes:101 of
+msgid "float greater than -0.5"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:54 matplotlib.artist.GeoAxes.set:54
+#: matplotlib.artist.HammerAxes.set:54 matplotlib.artist.LambertAxes.set:54
+#: matplotlib.artist.MollweideAxes.set:54 matplotlib.artist.PolarAxes.set:66
+#: matplotlib.projections.geo.AitoffAxes:73
+#: matplotlib.projections.geo.GeoAxes:94
+#: matplotlib.projections.geo.HammerAxes:73
+#: matplotlib.projections.geo.LambertAxes:73
+#: matplotlib.projections.geo.MollweideAxes:73
+#: matplotlib.projections.polar.PolarAxes:95 of
+msgid ":meth:`xscale <matplotlib.axes.Axes.set_xscale>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:66 matplotlib.projections.geo.AitoffAxes:73
+#: matplotlib.projections.geo.AitoffAxes:80
+#: matplotlib.projections.geo.GeoAxes:94 matplotlib.projections.geo.GeoAxes:101
+#: matplotlib.projections.geo.HammerAxes:73
+#: matplotlib.projections.geo.HammerAxes:80
+#: matplotlib.projections.geo.LambertAxes:73
+#: matplotlib.projections.geo.LambertAxes:80
+#: matplotlib.projections.geo.MollweideAxes:73
+#: matplotlib.projections.geo.MollweideAxes:80
+#: matplotlib.projections.polar.PolarAxes:95
+#: matplotlib.projections.polar.PolarAxes:102 of
+msgid "{\"linear\", \"log\", \"symlog\", \"logit\", ...} or `.ScaleBase`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:55 matplotlib.artist.GeoAxes.set:55
+#: matplotlib.artist.HammerAxes.set:55 matplotlib.artist.LambertAxes.set:55
+#: matplotlib.artist.MollweideAxes.set:55 matplotlib.artist.PolarAxes.set:67
+#: matplotlib.projections.geo.AitoffAxes:74
+#: matplotlib.projections.geo.GeoAxes:95
+#: matplotlib.projections.geo.HammerAxes:74
+#: matplotlib.projections.geo.LambertAxes:74
+#: matplotlib.projections.geo.MollweideAxes:74
+#: matplotlib.projections.polar.PolarAxes:96 of
+msgid ":meth:`xticklabels <matplotlib.axes.Axes.set_xticklabels>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:56 matplotlib.artist.GeoAxes.set:56
+#: matplotlib.artist.HammerAxes.set:56 matplotlib.artist.LambertAxes.set:56
+#: matplotlib.artist.MollweideAxes.set:56 matplotlib.artist.PolarAxes.set:68
+#: matplotlib.projections.geo.AitoffAxes:75
+#: matplotlib.projections.geo.GeoAxes:96
+#: matplotlib.projections.geo.HammerAxes:75
+#: matplotlib.projections.geo.LambertAxes:75
+#: matplotlib.projections.geo.MollweideAxes:75
+#: matplotlib.projections.polar.PolarAxes:97 of
+msgid ":meth:`xticks <matplotlib.axes.Axes.set_xticks>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:57 matplotlib.artist.GeoAxes.set:57
+#: matplotlib.artist.HammerAxes.set:57 matplotlib.artist.LambertAxes.set:57
+#: matplotlib.artist.MollweideAxes.set:57 matplotlib.artist.PolarAxes.set:69
+#: matplotlib.projections.geo.AitoffAxes:76
+#: matplotlib.projections.geo.GeoAxes:97
+#: matplotlib.projections.geo.HammerAxes:76
+#: matplotlib.projections.geo.LambertAxes:76
+#: matplotlib.projections.geo.MollweideAxes:76
+#: matplotlib.projections.polar.PolarAxes:98 of
+msgid ":meth:`ybound <matplotlib.axes.Axes.set_ybound>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:58 matplotlib.artist.GeoAxes.set:58
+#: matplotlib.artist.HammerAxes.set:58 matplotlib.artist.LambertAxes.set:58
+#: matplotlib.artist.MollweideAxes.set:58 matplotlib.artist.PolarAxes.set:70
+#: matplotlib.projections.geo.AitoffAxes:77
+#: matplotlib.projections.geo.GeoAxes:98
+#: matplotlib.projections.geo.HammerAxes:77
+#: matplotlib.projections.geo.LambertAxes:77
+#: matplotlib.projections.geo.MollweideAxes:77
+#: matplotlib.projections.polar.PolarAxes:99 of
+msgid ":meth:`ylabel <matplotlib.axes.Axes.set_ylabel>`"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:78
+#: matplotlib.projections.geo.GeoAxes:99
+#: matplotlib.projections.geo.HammerAxes:78
+#: matplotlib.projections.geo.LambertAxes:78
+#: matplotlib.projections.geo.MollweideAxes:78
+#: matplotlib.projections.polar.PolarAxes:100 of
+msgid ":meth:`ylim <matplotlib.axes.Axes.set_ylim>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:60 matplotlib.artist.GeoAxes.set:60
+#: matplotlib.artist.HammerAxes.set:60 matplotlib.artist.LambertAxes.set:60
+#: matplotlib.artist.MollweideAxes.set:60 matplotlib.artist.PolarAxes.set:72
+#: matplotlib.projections.geo.AitoffAxes:79
+#: matplotlib.projections.geo.GeoAxes:100
+#: matplotlib.projections.geo.HammerAxes:79
+#: matplotlib.projections.geo.LambertAxes:79
+#: matplotlib.projections.geo.MollweideAxes:79
+#: matplotlib.projections.polar.PolarAxes:101 of
+msgid ":meth:`ymargin <matplotlib.axes.Axes.set_ymargin>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:61 matplotlib.artist.GeoAxes.set:61
+#: matplotlib.artist.HammerAxes.set:61 matplotlib.artist.LambertAxes.set:61
+#: matplotlib.artist.MollweideAxes.set:61 matplotlib.artist.PolarAxes.set:73
+#: matplotlib.projections.geo.AitoffAxes:80
+#: matplotlib.projections.geo.GeoAxes:101
+#: matplotlib.projections.geo.HammerAxes:80
+#: matplotlib.projections.geo.LambertAxes:80
+#: matplotlib.projections.geo.MollweideAxes:80
+#: matplotlib.projections.polar.PolarAxes:102 of
+msgid ":meth:`yscale <matplotlib.axes.Axes.set_yscale>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:62 matplotlib.artist.GeoAxes.set:62
+#: matplotlib.artist.HammerAxes.set:62 matplotlib.artist.LambertAxes.set:62
+#: matplotlib.artist.MollweideAxes.set:62 matplotlib.artist.PolarAxes.set:74
+#: matplotlib.projections.geo.AitoffAxes:81
+#: matplotlib.projections.geo.GeoAxes:102
+#: matplotlib.projections.geo.HammerAxes:81
+#: matplotlib.projections.geo.LambertAxes:81
+#: matplotlib.projections.geo.MollweideAxes:81
+#: matplotlib.projections.polar.PolarAxes:103 of
+msgid ":meth:`yticklabels <matplotlib.axes.Axes.set_yticklabels>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:63 matplotlib.artist.GeoAxes.set:63
+#: matplotlib.artist.HammerAxes.set:63 matplotlib.artist.LambertAxes.set:63
+#: matplotlib.artist.MollweideAxes.set:63 matplotlib.artist.PolarAxes.set:75
+#: matplotlib.projections.geo.AitoffAxes:82
+#: matplotlib.projections.geo.GeoAxes:103
+#: matplotlib.projections.geo.HammerAxes:82
+#: matplotlib.projections.geo.LambertAxes:82
+#: matplotlib.projections.geo.MollweideAxes:82
+#: matplotlib.projections.polar.PolarAxes:104 of
+msgid ":meth:`yticks <matplotlib.axes.Axes.set_yticks>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:64 matplotlib.artist.GeoAxes.set:64
+#: matplotlib.artist.HammerAxes.set:64 matplotlib.artist.LambertAxes.set:64
+#: matplotlib.artist.MollweideAxes.set:64 matplotlib.artist.PolarAxes.set:76
+#: matplotlib.artist.RadialAxis.set:48 matplotlib.artist.RadialTick.set:33
+#: matplotlib.artist.ThetaAxis.set:47 matplotlib.artist.ThetaTick.set:33
+#: matplotlib.projections.geo.AitoffAxes:83
+#: matplotlib.projections.geo.GeoAxes:104
+#: matplotlib.projections.geo.HammerAxes:83
+#: matplotlib.projections.geo.LambertAxes:83
+#: matplotlib.projections.geo.MollweideAxes:83
+#: matplotlib.projections.polar.PolarAxes:105 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:64 matplotlib.artist.GeoAxes.set:64
+#: matplotlib.artist.HammerAxes.set:64 matplotlib.artist.LambertAxes.set:64
+#: matplotlib.artist.MollweideAxes.set:64 matplotlib.artist.PolarAxes.set:44
+#: matplotlib.artist.PolarAxes.set:45 matplotlib.artist.PolarAxes.set:46
+#: matplotlib.artist.PolarAxes.set:76 matplotlib.artist.RadialAxis.set:34
+#: matplotlib.artist.RadialAxis.set:48 matplotlib.artist.RadialTick.set:24
+#: matplotlib.artist.RadialTick.set:33 matplotlib.artist.ThetaAxis.set:33
+#: matplotlib.artist.ThetaAxis.set:47 matplotlib.artist.ThetaTick.set:24
+#: matplotlib.artist.ThetaTick.set:33 matplotlib.projections.geo.AitoffAxes:83
+#: matplotlib.projections.geo.GeoAxes:104
+#: matplotlib.projections.geo.HammerAxes:83
+#: matplotlib.projections.geo.LambertAxes:83
+#: matplotlib.projections.geo.MollweideAxes:83
+#: matplotlib.projections.polar.PolarAxes:105
+#: matplotlib.projections.polar.PolarAxes.get_rlabel_position:21
+#: matplotlib.projections.polar.PolarAxes.get_rmax:21
+#: matplotlib.projections.polar.PolarAxes.get_rmin:21
+#: matplotlib.projections.polar.PolarAxes.get_rorigin:21 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:101
+#: matplotlib.projections.geo.GeoAxes:122
+#: matplotlib.projections.geo.HammerAxes:101
+#: matplotlib.projections.geo.LambertAxes:101
+#: matplotlib.projections.geo.MollweideAxes:101
+#: matplotlib.projections.polar.PolarAxes:123 of
+msgid "`~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:89
+#: matplotlib.projections.geo.GeoAxes:110
+#: matplotlib.projections.geo.HammerAxes:89
+#: matplotlib.projections.geo.LambertAxes:89
+#: matplotlib.projections.geo.MollweideAxes:89
+#: matplotlib.projections.polar.PolarAxes:111 of
+msgid "The new `~.axes.Axes` object."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarTransform:2 of
+msgid ""
+"The base polar transform.  This handles projection *theta* and *r* into "
+"Cartesian coordinate space *x* and *y*, but does not perform the ultimate"
+" affine transformation into the correct position."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarTransform.transform_path_non_affine:2 of
+msgid ""
+"Apply the non-affine part of this transform to `.Path` *path*, returning "
+"a new `.Path`."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarTransform.transform_path_non_affine:5 of
+msgid ""
+"``transform_path(path)`` is equivalent to "
+"``transform_path_affine(transform_path_non_affine(values))``."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator:1
+#: matplotlib.projections.polar.ThetaLocator:1 of
+msgid "Bases: :py:class:`matplotlib.ticker.Locator`"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator:2 of
+msgid "Used to locate radius ticks."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator:4 of
+msgid ""
+"Ensures that all ticks are strictly positive.  For all other tasks, it "
+"delegates to the base `.Locator` (which may be different depending on the"
+" scale of the *r*-axis)."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator.nonsingular:2 of
+msgid "Adjust a range as needed to avoid singularities."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator.nonsingular:4 of
+msgid ""
+"This method gets called during autoscaling, with ``(v0, v1)`` set to the "
+"data limits on the axes if the axes contains any data, or ``(-inf, "
+"+inf)`` if not."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator.nonsingular:8 of
+msgid ""
+"If ``v0 == v1`` (possibly up to some floating point slop), this method "
+"returns an expanded interval around this value."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator.nonsingular:10 of
+msgid ""
+"If ``(v0, v1) == (-inf, +inf)``, this method returns appropriate default "
+"view limits."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator.nonsingular:12 of
+msgid "Otherwise, ``(v0, v1)`` is returned without modification."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator.view_limits:2
+#: matplotlib.projections.polar.ThetaLocator.view_limits:2 of
+msgid "Select a scale for the range from vmin to vmax."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialLocator.view_limits:4
+#: matplotlib.projections.polar.ThetaLocator.view_limits:4 of
+msgid "Subclasses should override this method to change locator behaviour."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.ThetaFormatter:1
+#: matplotlib.projections.polar.ThetaFormatter:1 of
+msgid "Bases: :py:class:`matplotlib.ticker.Formatter`"
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaFormatter:2 of
+msgid ""
+"Used to format the *theta* tick labels.  Converts the native unit of "
+"radians into degrees and adds a degree symbol."
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaLocator:2 of
+msgid "Used to locate theta ticks."
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaLocator:4 of
+msgid ""
+"This will work the same as the base locator except in the case that the "
+"view spans the entire circle. In such cases, the previously used default "
+"locations of every 45 degrees are returned."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.can_pan:2
+#: matplotlib.projections.polar.PolarAxes.can_pan:2 of
+msgid "Return whether this axes supports the pan/zoom button functionality."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.can_pan:4 of
+msgid ""
+"For polar axes, this is slightly misleading. Both panning and zooming are"
+" performed by the same button. Panning is performed in azimuth while "
+"zooming is done along the radial."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.can_zoom:2
+#: matplotlib.projections.polar.PolarAxes.can_zoom:2 of
+msgid "Return whether this axes supports the zoom box button functionality."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.can_zoom:4 of
+msgid "Polar axes do not support zoom boxes."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.cla:2
+#: matplotlib.projections.geo.LambertAxes.cla:2
+#: matplotlib.projections.polar.PolarAxes.cla:2 of
+msgid "Clear the Axes."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:2
+#: matplotlib.projections.polar.PolarAxes.drag_pan:2 of
+msgid "Called when the mouse moves during a pan operation."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:8
+#: matplotlib.projections.geo.GeoAxes.start_pan:19
+#: matplotlib.projections.polar.PolarAxes.drag_pan:8
+#: matplotlib.projections.polar.PolarAxes.start_pan:19 of
+msgid "**button** : `.MouseButton`"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:7
+#: matplotlib.projections.geo.GeoAxes.start_pan:18
+#: matplotlib.projections.polar.PolarAxes.drag_pan:7
+#: matplotlib.projections.polar.PolarAxes.start_pan:18 of
+msgid "MouseButton"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:8
+#: matplotlib.projections.geo.GeoAxes.start_pan:11
+#: matplotlib.projections.polar.PolarAxes.drag_pan:8
+#: matplotlib.projections.polar.PolarAxes.start_pan:11 of
+msgid "The pressed mouse button."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:11
+#: matplotlib.projections.polar.PolarAxes.drag_pan:11 of
+msgid "**key**"
+msgstr ""
+
+#: of
+msgid "str or None"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:11
+#: matplotlib.projections.polar.PolarAxes.drag_pan:11 of
+msgid "The pressed key, if any."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:22
+#: matplotlib.projections.geo.GeoAxes.start_pan:8
+#: matplotlib.projections.polar.PolarAxes.drag_pan:22
+#: matplotlib.projections.polar.PolarAxes.start_pan:8 of
+msgid "**x, y**"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:14
+#: matplotlib.projections.geo.GeoAxes.start_pan:8
+#: matplotlib.projections.polar.PolarAxes.drag_pan:14
+#: matplotlib.projections.polar.PolarAxes.start_pan:8 of
+msgid "The mouse coordinates in display coords."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:25
+#: matplotlib.projections.geo.GeoAxes.end_pan:15
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform:28
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform:28
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform:28
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform:28
+#: matplotlib.projections.geo.GeoAxes.set_yscale:29
+#: matplotlib.projections.geo.GeoAxes.start_pan:22
+#: matplotlib.projections.polar.PolarAxes.drag_pan:25
+#: matplotlib.projections.polar.PolarAxes.draw:21
+#: matplotlib.projections.polar.PolarAxes.end_pan:15
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform:28
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform:28
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform:28
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform:28
+#: matplotlib.projections.polar.PolarAxes.set_yscale:29
+#: matplotlib.projections.polar.PolarAxes.start_pan:22
+#: matplotlib.projections.polar.RadialAxis.cla:15
+#: matplotlib.projections.polar.ThetaAxis.cla:15 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.drag_pan:26
+#: matplotlib.projections.geo.GeoAxes.end_pan:16
+#: matplotlib.projections.geo.GeoAxes.start_pan:23
+#: matplotlib.projections.polar.PolarAxes.drag_pan:26
+#: matplotlib.projections.polar.PolarAxes.end_pan:16
+#: matplotlib.projections.polar.PolarAxes.start_pan:23 of
+msgid "This is intended to be overridden by new projection types."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.draw:2 of
+msgid "Draw the Artist (and its children) using the given renderer."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.draw:4 of
+msgid ""
+"This has no effect if the artist is not visible (`.Artist.get_visible` "
+"returns False)."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.draw:18 of
+msgid "**renderer** : `.RendererBase` subclass."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.draw:17 of
+msgid "RendererBase subclass."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.draw:22 of
+msgid "This method is overridden in the Artist subclasses."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.end_pan:2
+#: matplotlib.projections.polar.PolarAxes.end_pan:2 of
+msgid "Called when a pan operation completes (when the mouse button is up.)"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.format_coord:2 of
+msgid "Return a format string formatting the *x*, *y* coordinates."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_data_ratio:2 of
+msgid ""
+"Return the aspect ratio of the data itself.  For a polar plot, this "
+"should always be 1.0"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_rlabel_position:9 of
+msgid "The theta position of the radius labels in degrees."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_rmax:9 of
+msgid "Outer radial limit."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_rmin:9 of
+msgid "The inner radial limit."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_theta_direction:2 of
+msgid "Get the direction in which theta increases."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_theta_direction:5 of
+msgid "-1:"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_theta_direction:5
+#: matplotlib.projections.polar.PolarAxes.set_theta_direction:5 of
+msgid "Theta increases in the clockwise direction"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_theta_direction:22 of
+msgid "1:"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_theta_direction:8
+#: matplotlib.projections.polar.PolarAxes.set_theta_direction:8 of
+msgid "Theta increases in the counterclockwise direction"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_theta_offset:2 of
+msgid "Get the offset for the location of 0 in radians."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_thetamax:2 of
+msgid "Return the maximum theta limit in degrees."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.get_thetamin:2 of
+msgid "Get the minimum theta limit in degrees."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform:12
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform:12
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform:12
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform:12
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform:12
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform:12
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform:12
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform:12 of
+msgid "**transform**"
+msgstr ""
+
+#: of
+msgid "Transform"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform:9
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform:9 of
+msgid ""
+"The transform used for drawing x-axis labels, which will add *pad_points*"
+" of padding (in points) between the axis and the label. The x-direction "
+"is in data coordinates and the y-direction is in axis coordinates"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform:15
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform:15
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform:15
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform:15
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform:15
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform:15
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform:15
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform:15 of
+msgid "**valign**"
+msgstr ""
+
+#: of
+msgid "{'center', 'top', 'bottom', 'baseline', 'center_baseline'}"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform:15
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform:15
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform:15
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform:15
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform:15
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform:15
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform:15
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform:15 of
+msgid "The text vertical alignment."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform:25
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform:25
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform:25
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform:25
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform:25
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform:25
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform:25
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform:25 of
+msgid "**halign**"
+msgstr ""
+
+#: of
+msgid "{'center', 'left', 'right'}"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform:18
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform:18
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform:18
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform:18
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform:18
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform:18
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform:18
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform:18 of
+msgid "The text horizontal alignment."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text1_transform:29
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform:29
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_transform:8
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform:29
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform:29
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_transform:8
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text1_transform:29
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform:29
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_transform:8
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform:29
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform:29
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_transform:8 of
+msgid ""
+"This transformation is primarily used by the `~matplotlib.axis.Axis` "
+"class, and is meant to be overridden by new kinds of projections that may"
+" need to place axis elements in different locations."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform:9
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_text2_transform:9 of
+msgid ""
+"The transform used for drawing secondary x-axis labels, which will add "
+"*pad_points* of padding (in points) between the axis and the label.  The "
+"x-direction is in data coordinates and the y-direction is in axis "
+"coordinates"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_xaxis_transform:2
+#: matplotlib.projections.polar.PolarAxes.get_xaxis_transform:2 of
+msgid ""
+"Get the transformation used for drawing x-axis labels, ticks and "
+"gridlines.  The x-direction is in data coordinates and the y-direction is"
+" in axis coordinates."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text1_transform:9
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text1_transform:9 of
+msgid ""
+"The transform used for drawing y-axis labels, which will add *pad_points*"
+" of padding (in points) between the axis and the label. The x-direction "
+"is in axis coordinates and the y-direction is in data coordinates"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_text2_transform:9
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_text2_transform:9 of
+msgid ""
+"The transform used for drawing secondart y-axis labels, which will add "
+"*pad_points* of padding (in points) between the axis and the label.  The "
+"x-direction is in axis coordinates and the y-direction is in data "
+"coordinates"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_yaxis_transform:2
+#: matplotlib.projections.polar.PolarAxes.get_yaxis_transform:2 of
+msgid ""
+"Get the transformation used for drawing y-axis labels, ticks and "
+"gridlines.  The x-direction is in axis coordinates and the y-direction is"
+" in data coordinates."
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:2 matplotlib.artist.GeoAxes.set:2
+#: matplotlib.artist.HammerAxes.set:2 matplotlib.artist.LambertAxes.set:2
+#: matplotlib.artist.MollweideAxes.set:2 matplotlib.artist.PolarAxes.set:2
+#: matplotlib.artist.RadialAxis.set:2 matplotlib.artist.RadialTick.set:2
+#: matplotlib.artist.ThetaAxis.set:2 matplotlib.artist.ThetaTick.set:2 of
+msgid "Set multiple properties at once."
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:4 matplotlib.artist.GeoAxes.set:4
+#: matplotlib.artist.HammerAxes.set:4 matplotlib.artist.LambertAxes.set:4
+#: matplotlib.artist.MollweideAxes.set:4 matplotlib.artist.PolarAxes.set:4
+#: matplotlib.artist.RadialAxis.set:4 matplotlib.artist.RadialTick.set:4
+#: matplotlib.artist.ThetaAxis.set:4 matplotlib.artist.ThetaTick.set:4 of
+msgid "Supported properties are"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:41 of
+msgid ":meth:`rgrids <matplotlib.projections.polar.PolarAxes.set_rgrids>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:41 of
+msgid "tuple with floats"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:42 of
+msgid ""
+":meth:`rlabel_position "
+"<matplotlib.projections.polar.PolarAxes.set_rlabel_position>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:42 of
+msgid "number"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:43 of
+msgid ":meth:`rlim <matplotlib.projections.polar.PolarAxes.set_rlim>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:44 of
+msgid ":meth:`rmax <matplotlib.projections.polar.PolarAxes.set_rmax>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:45 of
+msgid ":meth:`rmin <matplotlib.projections.polar.PolarAxes.set_rmin>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:46 of
+msgid ":meth:`rorigin <matplotlib.projections.polar.PolarAxes.set_rorigin>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:47 of
+msgid ":meth:`rscale <matplotlib.projections.polar.PolarAxes.set_rscale>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:48 of
+msgid ":meth:`rticks <matplotlib.projections.polar.PolarAxes.set_rticks>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:51 of
+msgid ""
+":meth:`theta_direction "
+"<matplotlib.projections.polar.PolarAxes.set_theta_direction>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:52 of
+msgid ""
+":meth:`theta_offset "
+"<matplotlib.projections.polar.PolarAxes.set_theta_offset>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:53 of
+msgid ""
+":meth:`theta_zero_location "
+"<matplotlib.projections.polar.PolarAxes.set_theta_zero_location>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:54 of
+msgid ":meth:`thetagrids <matplotlib.projections.polar.PolarAxes.set_thetagrids>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:54 of
+msgid "tuple with floats, degrees"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:55 of
+msgid ":meth:`thetalim <matplotlib.projections.polar.PolarAxes.set_thetalim>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:56 of
+msgid ":meth:`thetamax <matplotlib.projections.polar.PolarAxes.set_thetamax>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:57 of
+msgid ":meth:`thetamin <matplotlib.projections.polar.PolarAxes.set_thetamin>`"
+msgstr ""
+
+#: matplotlib.artist.PolarAxes.set:71 of
+msgid ":meth:`ylim <matplotlib.projections.polar.PolarAxes.set_ylim>`"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:2 of
+msgid "Set the radial gridlines on a polar plot."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:8 of
+msgid "**radii**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:8 of
+msgid "The radii for the radial gridlines"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:12
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:12 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "tuple with strings or None"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:11 of
+msgid ""
+"The labels to use at each radial gridline. The "
+"`matplotlib.ticker.ScalarFormatter` will be used if None."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:15 of
+msgid "**angle**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:15
+#: matplotlib.projections.polar.PolarAxes.set_rlabel_position:8 of
+msgid "The angular position of the radius labels in degrees."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:19
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:17 of
+msgid "**fmt**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:18 of
+#, python-format
+msgid ""
+"Format string used in `matplotlib.ticker.FormatStrFormatter`. For example"
+" '%f'."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:24
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:22 of
+msgid "**lines** : list of `.lines.Line2D`"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:24 of
+msgid "The radial gridlines."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:29
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:27 of
+msgid "**labels** : list of `.text.Text`"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:27
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:25 of
+msgid "The tick labels."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:34
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:32 of
+msgid "*kwargs* are optional `.Text` properties for the labels."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:42 of
+msgid ":obj:`.PolarAxes.set_thetagrids`"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:44
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:42 of
+msgid ":obj:`.Axis.get_gridlines`"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rgrids:46
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:44 of
+msgid ":obj:`.Axis.get_ticklabels`"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rlabel_position:2 of
+msgid "Update the theta position of the radius labels."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rlabel_position:21 of
+msgid "**value**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rlim:2 of
+msgid "See `~.polar.PolarAxes.set_ylim`."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rmax:2 of
+msgid "Set the outer radial limit."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rmax:21 of
+msgid "**rmax**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rmin:2 of
+msgid "Set the inner radial limit."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rmin:21 of
+msgid "**rmin**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rorigin:2 of
+msgid "Update the radial origin."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_rorigin:21 of
+msgid "**rorigin**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_direction:2 of
+msgid "Set the direction in which theta increases."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_direction:5 of
+msgid "clockwise, -1:"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_direction:22 of
+msgid "counterclockwise, anticlockwise, 1:"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_offset:2 of
+msgid "Set the offset for the location of 0 in radians."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:2 of
+msgid "Set the location of theta's zero."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:4 of
+msgid "This simply calls `set_theta_offset` with the correct value in radians."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:9 of
+msgid "**loc**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:9 of
+msgid ""
+"May be one of \"N\", \"NW\", \"W\", \"SW\", \"S\", \"SE\", \"E\", or "
+"\"NE\"."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:27 of
+msgid "**offset**"
+msgstr ""
+
+#: of
+msgid "float, default: 0"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:12 of
+msgid ""
+"An offset in degrees to apply from the specified *loc*. **Note:** this "
+"offset is *always* applied counter-clockwise regardless of the direction "
+"setting."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:2 of
+msgid "Set the theta gridlines in a polar plot."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:8 of
+msgid "**angles**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:8 of
+msgid "The angles of the theta gridlines."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:11 of
+msgid ""
+"The labels to use at each theta gridline. The "
+"`.projections.polar.ThetaFormatter` will be used if None."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:15 of
+#, python-format
+msgid ""
+"Format string used in `matplotlib.ticker.FormatStrFormatter`. For example"
+" '%f'. Note that the angle that is used is in radians."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:22 of
+msgid "The theta gridlines."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetagrids:40 of
+msgid ":obj:`.PolarAxes.set_rgrids`"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetalim:2 of
+msgid "Set the minimum and maximum theta values."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetalim:4 of
+msgid "Can take the following signatures:"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetalim:6 of
+msgid "``set_thetalim(minval, maxval)``: Set the limits in radians."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetalim:7 of
+msgid ""
+"``set_thetalim(thetamin=minval, thetamax=maxval)``: Set the limits in "
+"degrees."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetalim:10 of
+msgid ""
+"where minval and maxval are the minimum and maximum limits. Values are "
+"wrapped in to the range :math:`[0, 2\\pi]` (in radians), so for example "
+"it is possible to do ``set_thetalim(-np.pi / 2, np.pi / 2)`` to have an "
+"axes symmetric around 0. A ValueError is raised if the absolute angle "
+"difference is larger than a full circle."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetamax:2 of
+msgid "Set the maximum theta limit in degrees."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_thetamin:2 of
+msgid "Set the minimum theta limit in degrees."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:2 of
+msgid "Set the data limits for the radial axis."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:12 of
+msgid "**bottom**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:8 of
+msgid ""
+"The bottom limit (default: None, which leaves the bottom limit "
+"unchanged). The bottom and top ylims may be passed as the tuple "
+"(*bottom*, *top*) as the first positional argument (or as the *bottom* "
+"keyword argument)."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:16 of
+msgid "**top**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:15 of
+msgid "The top limit (default: None, which leaves the top limit unchanged)."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:19 of
+msgid "**emit**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:19 of
+msgid "Whether to notify observers of limit change."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:23 of
+msgid "**auto**"
+msgstr ""
+
+#: of
+msgid "bool or None, default: False"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:22 of
+msgid ""
+"Whether to turn on autoscaling of the y-axis. True turns on, False turns "
+"off, None leaves unchanged."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:29 of
+msgid "**ymin, ymax**"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:26 of
+msgid ""
+"These arguments are deprecated and will be removed in a future version.  "
+"They are equivalent to *bottom* and *top* respectively, and it is an "
+"error to pass both *ymin* and *bottom* or *ymax* and *top*."
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:46 of
+msgid "**bottom, top**"
+msgstr ""
+
+#: of
+msgid "(float, float)"
+msgstr ""
+
+#: matplotlib.projections.polar.PolarAxes.set_ylim:34 of
+msgid "The new y-axis limits in data coordinates."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:2
+#: matplotlib.projections.polar.PolarAxes.set_yscale:2 of
+msgid "Set the y-axis scale."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:8
+#: matplotlib.projections.polar.PolarAxes.set_yscale:8 of
+msgid ""
+"**value** : {\"linear\", \"log\", \"symlog\", \"logit\", ...} or "
+"`.ScaleBase`"
+msgstr ""
+
+#: of
+msgid "{\"linear\", \"log\", \"symlog\", \"logit\", ...} or"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:8
+#: matplotlib.projections.polar.PolarAxes.set_yscale:8 of
+msgid "The axis scale type to apply."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:11
+#: matplotlib.projections.polar.PolarAxes.set_yscale:11 of
+msgid ""
+"Different keyword arguments are accepted, depending on the scale. See the"
+" respective class keyword arguments:"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:14
+#: matplotlib.projections.polar.PolarAxes.set_yscale:14 of
+msgid "`matplotlib.scale.LinearScale`"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:15
+#: matplotlib.projections.polar.PolarAxes.set_yscale:15 of
+msgid "`matplotlib.scale.LogScale`"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:16
+#: matplotlib.projections.polar.PolarAxes.set_yscale:16 of
+msgid "`matplotlib.scale.SymmetricalLogScale`"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:17
+#: matplotlib.projections.polar.PolarAxes.set_yscale:17 of
+msgid "`matplotlib.scale.LogitScale`"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:18
+#: matplotlib.projections.polar.PolarAxes.set_yscale:18 of
+msgid "`matplotlib.scale.FuncScale`"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:30
+#: matplotlib.projections.polar.PolarAxes.set_yscale:30 of
+msgid ""
+"By default, Matplotlib supports the above mentioned scales. Additionally,"
+" custom scales may be registered using `matplotlib.scale.register_scale`."
+" These scales can then also be used here."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.start_pan:2
+#: matplotlib.projections.polar.PolarAxes.start_pan:2 of
+msgid "Called when a pan operation has started."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis:1 of
+msgid "Bases: :py:class:`matplotlib.axis.YAxis`"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis:2 of
+msgid "A radial Axis."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis:4 of
+msgid ""
+"This overrides certain properties of a `.YAxis` to provide special-casing"
+" for a radial axis."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis:31
+#: matplotlib.projections.polar.ThetaAxis:31 of
+msgid "**axes** : `matplotlib.axes.Axes`"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis:30
+#: matplotlib.projections.polar.ThetaAxis:30 of
+msgid "matplotlib.axes.Axes"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis:31
+#: matplotlib.projections.polar.ThetaAxis:31 of
+msgid "The `~.axes.Axes` to which the created Axis belongs."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis:48
+#: matplotlib.projections.polar.ThetaAxis:48 of
+msgid "**pickradius**"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis:34
+#: matplotlib.projections.polar.ThetaAxis:34 of
+msgid "The acceptance radius for containment tests. See also `.Axis.contains`."
+msgstr ""
+
+#: ../../docstring matplotlib.projections.polar.RadialAxis.axis_name:2
+#: matplotlib.projections.polar.ThetaAxis.axis_name:2 of
+msgid "Read-only name identifying the axis."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.cla:2
+#: matplotlib.projections.polar.ThetaAxis.cla:2 of
+msgid "[*Deprecated*]"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.cla:16
+#: matplotlib.projections.polar.ThetaAxis.cla:16 of
+msgid "\\"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.clear:2
+#: matplotlib.projections.polar.ThetaAxis.clear:2 of
+msgid "Clear the axis."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.clear:4
+#: matplotlib.projections.polar.ThetaAxis.clear:4 of
+msgid "This resets axis properties to their default values:"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.clear:6
+#: matplotlib.projections.polar.ThetaAxis.clear:6 of
+msgid "the label"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.clear:7
+#: matplotlib.projections.polar.ThetaAxis.clear:7 of
+msgid "the scale"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.clear:8
+#: matplotlib.projections.polar.ThetaAxis.clear:8 of
+msgid "locators, formatters and ticks"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.clear:9
+#: matplotlib.projections.polar.ThetaAxis.clear:9 of
+msgid "major and minor grid"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.clear:10
+#: matplotlib.projections.polar.ThetaAxis.clear:10 of
+msgid "units"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialAxis.clear:11
+#: matplotlib.projections.polar.ThetaAxis.clear:11 of
+msgid "registered callbacks"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:18 matplotlib.artist.ThetaAxis.set:18 of
+msgid ":meth:`data_interval <matplotlib.axis.Axis.set_data_interval>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:22 matplotlib.artist.ThetaAxis.set:22 of
+msgid ":meth:`inverted <matplotlib.axis.Axis.set_inverted>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:24 matplotlib.artist.ThetaAxis.set:24 of
+msgid ":meth:`label_coords <matplotlib.axis.Axis.set_label_coords>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:25 of
+msgid ":meth:`label_position <matplotlib.axis.YAxis.set_label_position>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:25 matplotlib.artist.RadialAxis.set:31 of
+msgid "{'left', 'right'}"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:26 matplotlib.artist.ThetaAxis.set:26 of
+msgid ":meth:`label_text <matplotlib.axis.Axis.set_label_text>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:27 matplotlib.artist.ThetaAxis.set:27 of
+msgid ":meth:`major_formatter <matplotlib.axis.Axis.set_major_formatter>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:27 matplotlib.artist.RadialAxis.set:29
+#: matplotlib.artist.ThetaAxis.set:27 matplotlib.artist.ThetaAxis.set:29 of
+msgid "`~matplotlib.ticker.Formatter`, ``str``, or function"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:28 matplotlib.artist.ThetaAxis.set:28 of
+msgid ":meth:`major_locator <matplotlib.axis.Axis.set_major_locator>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:28 matplotlib.artist.RadialAxis.set:30
+#: matplotlib.artist.ThetaAxis.set:28 matplotlib.artist.ThetaAxis.set:30 of
+msgid "`~matplotlib.ticker.Locator`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:29 matplotlib.artist.ThetaAxis.set:29 of
+msgid ":meth:`minor_formatter <matplotlib.axis.Axis.set_minor_formatter>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:30 matplotlib.artist.ThetaAxis.set:30 of
+msgid ":meth:`minor_locator <matplotlib.axis.Axis.set_minor_locator>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:31 of
+msgid ":meth:`offset_position <matplotlib.axis.YAxis.set_offset_position>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:34 matplotlib.artist.ThetaAxis.set:33 of
+msgid ":meth:`pickradius <matplotlib.axis.Axis.set_pickradius>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:36 matplotlib.artist.ThetaAxis.set:35 of
+msgid ""
+":meth:`remove_overlapping_locs "
+"<matplotlib.axis.Axis.set_remove_overlapping_locs>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:39 matplotlib.artist.ThetaAxis.set:38 of
+msgid ":meth:`tick_params <matplotlib.axis.Axis.set_tick_params>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:40 matplotlib.artist.ThetaAxis.set:39 of
+msgid ":meth:`ticklabels <matplotlib.axis.Axis.set_ticklabels>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:40 matplotlib.artist.ThetaAxis.set:39 of
+msgid "sequence of str or of `.Text`\\s"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:41 matplotlib.artist.ThetaAxis.set:40 of
+msgid ":meth:`ticks <matplotlib.axis.Axis.set_ticks>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:41 matplotlib.artist.ThetaAxis.set:40 of
+msgid "list of floats"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:42 of
+msgid ":meth:`ticks_position <matplotlib.axis.YAxis.set_ticks_position>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:42 of
+msgid "{'left', 'right', 'both', 'default', 'none'}"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:44 matplotlib.artist.ThetaAxis.set:43 of
+msgid ":meth:`units <matplotlib.axis.Axis.set_units>`"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:44 matplotlib.artist.ThetaAxis.set:43 of
+msgid "units tag"
+msgstr ""
+
+#: matplotlib.artist.RadialAxis.set:46 matplotlib.artist.ThetaAxis.set:45 of
+msgid ":meth:`view_interval <matplotlib.axis.Axis.set_view_interval>`"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialTick:1 of
+msgid "Bases: :py:class:`matplotlib.axis.YTick`"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialTick:2 of
+msgid "A radial-axis tick."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialTick:4 of
+msgid ""
+"This subclass of `.YTick` provides radial ticks with some small "
+"modification to their re-positioning such that ticks are rotated based on"
+" axes limits.  This results in ticks that are correctly perpendicular to "
+"the spine. Labels are also rotated to be perpendicular to the spine, when"
+" 'auto' rotation is enabled."
+msgstr ""
+
+#: matplotlib.projections.polar.RadialTick:28
+#: matplotlib.projections.polar.ThetaTick:31 of
+msgid ""
+"bbox is the Bound2D bounding box in display coords of the Axes loc is the"
+" tick location in data coords size is the tick size in points"
+msgstr ""
+
+#: matplotlib.artist.RadialTick.set:21 matplotlib.artist.ThetaTick.set:21 of
+msgid ":meth:`label <matplotlib.axis.Tick.set_label1>`"
+msgstr ""
+
+#: matplotlib.artist.RadialTick.set:22 matplotlib.artist.ThetaTick.set:22 of
+msgid ":meth:`label1 <matplotlib.axis.Tick.set_label1>`"
+msgstr ""
+
+#: matplotlib.artist.RadialTick.set:23 matplotlib.artist.ThetaTick.set:23 of
+msgid ":meth:`label2 <matplotlib.axis.Tick.set_label2>`"
+msgstr ""
+
+#: matplotlib.artist.RadialTick.set:24 matplotlib.artist.ThetaTick.set:24 of
+msgid ":meth:`pad <matplotlib.axis.Tick.set_pad>`"
+msgstr ""
+
+#: matplotlib.artist.RadialTick.set:31 matplotlib.artist.ThetaTick.set:31 of
+msgid ":meth:`url <matplotlib.axis.Tick.set_url>`"
+msgstr ""
+
+#: matplotlib.projections.polar.RadialTick.update_position:2
+#: matplotlib.projections.polar.ThetaTick.update_position:2 of
+msgid "Set the location of tick in data coords with scalar *loc*."
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaAxis:1 of
+msgid "Bases: :py:class:`matplotlib.axis.XAxis`"
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaAxis:2 of
+msgid "A theta Axis."
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaAxis:4 of
+msgid ""
+"This overrides certain properties of an `.XAxis` to provide special-"
+"casing for an angular axis."
+msgstr ""
+
+#: matplotlib.artist.ThetaAxis.set:25 of
+msgid ":meth:`label_position <matplotlib.axis.XAxis.set_label_position>`"
+msgstr ""
+
+#: matplotlib.artist.ThetaAxis.set:25 of
+msgid "{'top', 'bottom'}"
+msgstr ""
+
+#: matplotlib.artist.ThetaAxis.set:41 of
+msgid ":meth:`ticks_position <matplotlib.axis.XAxis.set_ticks_position>`"
+msgstr ""
+
+#: matplotlib.artist.ThetaAxis.set:41 of
+msgid "{'top', 'bottom', 'both', 'default', 'none'}"
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaTick:1 of
+msgid "Bases: :py:class:`matplotlib.axis.XTick`"
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaTick:2 of
+msgid "A theta-axis tick."
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaTick:4 of
+msgid ""
+"This subclass of `.XTick` provides angular ticks with some small "
+"modification to their re-positioning such that ticks are rotated based on"
+" tick location. This results in ticks that are correctly perpendicular to"
+" the arc spine."
+msgstr ""
+
+#: matplotlib.projections.polar.ThetaTick:9 of
+msgid ""
+"When 'auto' rotation is enabled, labels are also rotated to be parallel "
+"to the spine. The label padding is also applied here since it's not "
+"possible to use a generic axes transform to produce tick-specific "
+"padding."
+msgstr ""
+
+#: ../../api/projections_api.rst:17
+msgid "``matplotlib.projections.geo``"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes:1
+#: matplotlib.projections.geo.HammerAxes:1
+#: matplotlib.projections.geo.LambertAxes:1
+#: matplotlib.projections.geo.MollweideAxes:1 of
+msgid "Bases: :py:class:`matplotlib.projections.geo.GeoAxes`"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform:1
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform:1
+#: matplotlib.projections.geo.HammerAxes.HammerTransform:1
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform:1
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform:1
+#: matplotlib.projections.geo.LambertAxes.LambertTransform:1
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform:1
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform:1 of
+msgid "Bases: :py:class:`matplotlib.projections.geo._GeoTransform`"
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform:2 of
+msgid "The base Aitoff transform."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform:23
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform:2
+#: matplotlib.projections.geo.HammerAxes.HammerTransform:23
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform:2
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform:2
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform:2
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform:23 of
+msgid "Create a new geographical transform."
+msgstr ""
+
+#: matplotlib.projections.geo.AitoffAxes.AitoffTransform:25
+#: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform:4
+#: matplotlib.projections.geo.HammerAxes.HammerTransform:25
+#: matplotlib.projections.geo.HammerAxes.InvertedHammerTransform:4
+#: matplotlib.projections.geo.LambertAxes.InvertedLambertTransform:4
+#: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform:4
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform:25 of
+msgid ""
+"Resolution is the number of steps to interpolate between each input line "
+"segment to approximate its path in curved space."
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:33 matplotlib.artist.GeoAxes.set:33
+#: matplotlib.artist.HammerAxes.set:33 matplotlib.artist.LambertAxes.set:33
+#: matplotlib.artist.MollweideAxes.set:33 of
+msgid ""
+":meth:`latitude_grid "
+"<matplotlib.projections.geo.GeoAxes.set_latitude_grid>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:34 matplotlib.artist.GeoAxes.set:34
+#: matplotlib.artist.HammerAxes.set:34 matplotlib.artist.LambertAxes.set:34
+#: matplotlib.artist.MollweideAxes.set:34 of
+msgid ""
+":meth:`longitude_grid "
+"<matplotlib.projections.geo.GeoAxes.set_longitude_grid>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:35 matplotlib.artist.GeoAxes.set:35
+#: matplotlib.artist.HammerAxes.set:35 matplotlib.artist.LambertAxes.set:35
+#: matplotlib.artist.MollweideAxes.set:35 of
+msgid ""
+":meth:`longitude_grid_ends "
+"<matplotlib.projections.geo.GeoAxes.set_longitude_grid_ends>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:52 matplotlib.artist.GeoAxes.set:52
+#: matplotlib.artist.HammerAxes.set:52 matplotlib.artist.LambertAxes.set:52
+#: matplotlib.artist.MollweideAxes.set:52 of
+msgid ":meth:`xlim <matplotlib.projections.geo.GeoAxes.set_xlim>`"
+msgstr ""
+
+#: matplotlib.artist.AitoffAxes.set:59 matplotlib.artist.GeoAxes.set:59
+#: matplotlib.artist.HammerAxes.set:59 matplotlib.artist.LambertAxes.set:59
+#: matplotlib.artist.MollweideAxes.set:59 of
+msgid ":meth:`ylim <matplotlib.projections.geo.GeoAxes.set_xlim>`"
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes:2 of
+msgid "An abstract base class for geographic projections."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.ThetaFormatter:2 of
+msgid ""
+"Used to format the theta tick labels.  Converts the native unit of "
+"radians into degrees and adds a degree symbol."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.can_pan:4 of
+msgid "This axes object does not support interactive pan/zoom."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.can_zoom:4 of
+msgid "This axes object does not support interactive zoom box."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.format_coord:2 of
+msgid "Return a format string formatting the coordinate."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.get_data_ratio:2 of
+msgid "Return the aspect ratio of the data itself."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_latitude_grid:2 of
+msgid "Set the number of degrees between each latitude grid."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_longitude_grid:2 of
+msgid "Set the number of degrees between each longitude grid."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_longitude_grid_ends:2 of
+msgid "Set the latitude(s) at which to stop drawing the longitude grids."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_xlim:2 of
+msgid "Not supported. Please consider using Cartopy."
+msgstr ""
+
+#: matplotlib.projections.geo.GeoAxes.set_yscale:2 of
+msgid "Set the x-axis scale."
+msgstr ""
+
+#: matplotlib.projections.geo.HammerAxes.HammerTransform:2 of
+msgid "The base Hammer transform."
+msgstr ""
+
+#: matplotlib.projections.geo.LambertAxes.LambertTransform:2 of
+msgid "The base Lambert transform."
+msgstr ""
+
+#: matplotlib.projections.geo.LambertAxes.LambertTransform:23 of
+msgid ""
+"Create a new Lambert transform.  Resolution is the number of steps to "
+"interpolate between each input line segment to approximate its path in "
+"curved Lambert space."
+msgstr ""
+
+#: matplotlib.projections.geo.MollweideAxes.MollweideTransform:2 of
+msgid "The base Mollweide transform."
+msgstr ""
+

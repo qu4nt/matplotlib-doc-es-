@@ -1,0 +1,748 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:3
+msgid "What's new in Matplotlib 3.5.0 (Nov 15, 2021)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:5
+msgid ""
+"For a list of all of the issues and pull requests since the last "
+"revision, see the :ref:`github-stats`."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:9
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:15
+msgid "Figure and Axes creation / management"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:18
+msgid "``subplot_mosaic`` supports simple Axes sharing"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:20
+msgid ""
+"`.Figure.subplot_mosaic`, `.pyplot.subplot_mosaic` support *simple* Axes "
+"sharing (i.e., only `True`/`False` may be passed to *sharex*/*sharey*). "
+"When `True`, tick label visibility and Axis units will be shared."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:17
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-1.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-1.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-1.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:38
+msgid "Figure now has ``draw_without_rendering`` method"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:40
+msgid ""
+"Some aspects of a figure are only determined at draw-time, such as the "
+"exact position of text artists or deferred computation like automatic "
+"data limits. If you need these values, you can use "
+"``figure.canvas.draw()`` to force a full draw. However, this has side "
+"effects, sometimes requires an open file, and is doing more work than is "
+"needed."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:46
+msgid ""
+"The new `.Figure.draw_without_rendering` method runs all the updates that"
+" ``draw()`` does, but skips rendering the figure. It's thus more "
+"efficient if you need the updated values to configure further aspects of "
+"the figure."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:51
+msgid "Figure ``__init__`` passes keyword arguments through to set"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:53
+msgid ""
+"Similar to many other sub-classes of `~.Artist`, the `~.FigureBase`, "
+"`~.SubFigure`, and `~.Figure` classes will now pass any additional "
+"keyword arguments to `~.Artist.set` to allow properties of the newly "
+"created object to be set at initialization time. For example::"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:62
+msgid "Plotting methods"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:65
+msgid "Add ``Annulus`` patch"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:67
+msgid "`.Annulus` is a new class for drawing elliptical annuli."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-2.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-2.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-2.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:83
+msgid "``set_data`` method for ``FancyArrow`` patch"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:85
+msgid ""
+"`.FancyArrow`, the patch returned by ``ax.arrow``, now has a ``set_data``"
+" method that allows modifying the arrow after creation, e.g., for "
+"animation."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:89
+msgid "New arrow styles in ``ArrowStyle`` and ``ConnectionPatch``"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:91
+msgid ""
+"The new *arrow* parameter to `.ArrowStyle` substitutes the use of the "
+"*beginarrow* and *endarrow* parameters in the creation of arrows. It "
+"receives arrows strings like ``'<-'``, ``']-[``' and ``']->``' instead of"
+" individual booleans."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:96
+msgid ""
+"Two new styles ``']->'`` and ``'<-['`` are also added via this mechanism."
+" `.ConnectionPatch`, which accepts arrow styles though its *arrowstyle* "
+"parameter, also accepts these new styles."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-3.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-3.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-3.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:124
+msgid "Setting collection offset transform after initialization"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:126
+msgid ""
+"The added `.collections.Collection.set_offset_transform` may be used to "
+"set the offset transform after initialization. This can be helpful when "
+"creating a `.collections.Collection` outside an Axes object, and later "
+"adding it with `.Axes.add_collection()` and setting the offset transform "
+"to `.Axes.transData`."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:132
+msgid "Colors and colormaps"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:135
+msgid "Colormap registry (experimental)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:137
+msgid ""
+"Colormaps are now managed via `matplotlib.colormaps` (or "
+"`.pyplot.colormaps`), which is a `.ColormapRegistry`. While we are "
+"confident that the API is final, we formally mark it as experimental for "
+"3.5 because we want to keep the option to still modify the API for 3.6 "
+"should the need arise."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:142
+msgid "Colormaps can be obtained using item access::"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:147
+msgid "To register new colormaps use::"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:151
+msgid ""
+"We recommend to use the new API instead of the `~.cm.get_cmap` and "
+"`~.cm.register_cmap` functions for new code. `matplotlib.cm.get_cmap` and"
+" `matplotlib.cm.register_cmap` will eventually be deprecated and removed."
+" Within `.pyplot`, ``plt.get_cmap()`` and ``plt.register_cmap()`` will "
+"continue to be supported for backward compatibility."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:158
+msgid "Image interpolation now possible at RGBA stage"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:160
+msgid ""
+"Images in Matplotlib created via `~.axes.Axes.imshow` are resampled to "
+"match the resolution of the current canvas. It is useful to apply an "
+"auto-aliasing filter when downsampling to reduce Moiré effects. By "
+"default, interpolation is done on the data, a norm applied, and then the "
+"colormapping performed."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:165
+msgid ""
+"However, it is often desirable for the anti-aliasing interpolation to "
+"happen in RGBA space, where the colors are interpolated rather than the "
+"data. This usually leads to colors outside the colormap, but visually "
+"blends adjacent colors, and is what browsers and other image processing "
+"software do."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:170
+msgid ""
+"A new keyword argument *interpolation_stage* is provided for "
+"`~.axes.Axes.imshow` to set the stage at which the anti-aliasing "
+"interpolation happens. The default is the current behaviour of \"data\", "
+"with the alternative being \"rgba\" for the newly-available behavior."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:178
+msgid "Example of the interpolation stage options."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:180
+msgid ""
+"For more details see the discussion of the new keyword argument in "
+":doc:`/gallery/images_contours_and_fields/image_antialiasing`."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:184
+msgid "``imshow`` supports half-float arrays"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:186
+msgid ""
+"The `~.axes.Axes.imshow` method now supports half-float arrays, i.e., "
+"NumPy arrays with dtype ``np.float16``."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:190
+msgid "A callback registry has been added to Normalize objects"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:192
+msgid ""
+"`.colors.Normalize` objects now have a callback registry, ``callbacks``, "
+"that can be connected to by other objects to be notified when the norm is"
+" updated. The callback emits the key ``changed`` when the norm is "
+"modified. `.cm.ScalarMappable` is now a listener and will register a "
+"change when the norm's vmin, vmax or other attributes are changed."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:199
+msgid "Titles, ticks, and labels"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:202
+msgid "Settings tick positions and labels simultaneously in ``set_ticks``"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:204
+msgid ""
+"`.Axis.set_ticks` (and the corresponding `.Axes.set_xticks` / "
+"`.Axes.set_yticks`) has a new parameter *labels* allowing to set tick "
+"positions and labels simultaneously."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:208
+msgid ""
+"Previously, setting tick labels was done using `.Axis.set_ticklabels` (or"
+" the corresponding `.Axes.set_xticklabels` / `.Axes.set_yticklabels`); "
+"this usually only makes sense if tick positions were previously fixed "
+"with `~.Axis.set_ticks`::"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:216
+msgid "The combined functionality is now available in `~.Axis.set_ticks`::"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:220
+msgid ""
+"The use of `.Axis.set_ticklabels` is discouraged, but it will stay "
+"available for backward compatibility."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:223
+msgid ""
+"Note: This addition makes the API of `~.Axis.set_ticks` also more similar"
+" to `.pyplot.xticks` / `.pyplot.yticks`, which already had the additional"
+" *labels* parameter."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:228
+msgid "Fonts and Text"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:231
+msgid "Triple and quadruple dot mathtext accents"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:233
+msgid ""
+"In addition to single and double dot accents, mathtext now supports "
+"triple and quadruple dot accents."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:11
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-4.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-4.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-4.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:244
+msgid "Font properties of legend title are configurable"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:246
+msgid ""
+"Title's font properties can be set via the *title_fontproperties* keyword"
+" argument, for example:"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-5.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-5.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-5.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:257
+msgid "``Text`` and ``TextBox`` added *parse_math* option"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:259
+msgid ""
+"`.Text` and `.TextBox` objects now allow a *parse_math* keyword-only "
+"argument which controls whether math should be parsed from the displayed "
+"string. If *True*, the string will be parsed as a math text object. If "
+"*False*, the string will be considered a literal and no parsing will "
+"occur."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:265
+msgid "Text can be positioned inside TextBox widget"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:267
+msgid ""
+"A new parameter called *textalignment* can be used to control for the "
+"position of the text inside the Axes of the `.TextBox` widget."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-6.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-6.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-6.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:282
+msgid "Simplifying the font setting for usetex mode"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:284
+msgid ""
+"Now the :rc:`font.family` accepts some font names as value for a more "
+"user-friendly setup."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:295
+msgid "Type 42 subsetting is now enabled for PDF/PS backends"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:297
+msgid ""
+"`~matplotlib.backends.backend_pdf` and `~matplotlib.backends.backend_ps` "
+"now use a unified Type 42 font subsetting interface, with the help of "
+"`fontTools <https://fonttools.readthedocs.io/en/latest/>`_"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:301
+msgid ""
+"Set :rc:`pdf.fonttype` or :rc:`ps.fonttype` to ``42`` to trigger this "
+"workflow::"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:317
+msgid "rcParams improvements"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:320
+msgid "Allow setting default legend labelcolor globally"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:322
+msgid ""
+"A new :rc:`legend.labelcolor` sets the default *labelcolor* argument for "
+"`.Figure.legend`.  The special values  'linecolor', 'markerfacecolor' (or"
+" 'mfc'), or 'markeredgecolor' (or 'mec') will cause the legend text to "
+"match the corresponding color of marker."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-7.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-7.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-7.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:345
+msgid "3D Axes improvements"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:348
+msgid "Axes3D now allows manual control of draw order"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:350
+msgid ""
+"The `~mpl_toolkits.mplot3d.axes3d.Axes3D` class now has *computed_zorder*"
+" parameter. When set to False, Artists are drawn using their ``zorder`` "
+"attribute."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-8.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-8.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-8.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:387
+msgid "Allow changing the vertical axis in 3d plots"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:389
+msgid ""
+"`~mpl_toolkits.mplot3d.axes3d.Axes3D.view_init` now has the parameter "
+"*vertical_axis* which allows switching which axis is aligned vertically."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-9.py>`__, `png "
+"<../../users/prev_whats_new/whats_new_3-5-0-9.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-9.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:415
+msgid "``plot_surface`` supports masked arrays and NaNs"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:417
+msgid ""
+"`.axes3d.Axes3D.plot_surface` supports masked arrays and NaNs, and will "
+"now hide quads that contain masked or NaN points. The behaviour is "
+"similar to `.Axes.contour` with ``corner_mask=True``."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-10.py>`__, `png"
+" <../../users/prev_whats_new/whats_new_3-5-0-10.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-10.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:438
+msgid "3D plotting methods support *data* keyword argument"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:440
+msgid ""
+"To match all 2D plotting methods, the 3D Axes now support the *data* "
+"keyword argument. This allows passing arguments indirectly from a "
+"DataFrame-like structure. ::"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:457
+msgid "Interactive tool improvements"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:460
+msgid "Colorbars now have pan and zoom functionality"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:462
+msgid ""
+"Interactive plots with colorbars can now be zoomed and panned on the "
+"colorbar axis. This adjusts the *vmin* and *vmax* of the "
+"``ScalarMappable`` associated with the colorbar. This is currently only "
+"enabled for continuous norms. Norms used with contourf and categoricals, "
+"such as ``BoundaryNorm`` and ``NoNorm``, have the interactive capability "
+"disabled by default. ``cb.ax.set_navigate()`` can be used to set whether "
+"a colorbar axes is interactive or not."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:470
+msgid "Updated the appearance of Slider widgets"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:472
+msgid ""
+"The appearance of `~.Slider` and `~.RangeSlider` widgets were updated and"
+" given new styling parameters for the added handles."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
+msgid ""
+"(`Source code <../../users/prev_whats_new/whats_new_3-5-0-11.py>`__, `png"
+" <../../users/prev_whats_new/whats_new_3-5-0-11.png>`__, `pdf "
+"<../../users/prev_whats_new/whats_new_3-5-0-11.pdf>`__)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:512
+msgid "Removing points on a PolygonSelector"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:514
+msgid ""
+"After completing a `~matplotlib.widgets.PolygonSelector`, individual "
+"points can now be removed by right-clicking on them."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:518
+msgid "Dragging selectors"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:520
+msgid ""
+"The `~matplotlib.widgets.SpanSelector`, "
+"`~matplotlib.widgets.RectangleSelector` and "
+"`~matplotlib.widgets.EllipseSelector` have a new keyword argument, "
+"*drag_from_anywhere*, which when set to `True` allows you to click and "
+"drag from anywhere inside the selector to move it. Previously it was only"
+" possible to move it by either activating the move modifier button, or "
+"clicking on the central handle."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:527
+msgid ""
+"The size of the `~matplotlib.widgets.SpanSelector` can now be changed "
+"using the edge handles."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:531
+msgid "Clearing selectors"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:533
+msgid ""
+"The selectors (`~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, "
+"`~.widgets.PolygonSelector`, `~.widgets.RectangleSelector`, and "
+"`~.widgets.SpanSelector`) have a new method *clear*, which will clear the"
+" current selection and get the selector ready to make a new selection. "
+"This is equivalent to pressing the *escape* key."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:540
+msgid "Setting artist properties of selectors"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:542
+msgid ""
+"The artist properties of the `~.widgets.EllipseSelector`, "
+"`~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, "
+"`~.widgets.RectangleSelector` and `~.widgets.SpanSelector` selectors can "
+"be changed using the ``set_props`` and ``set_handle_props`` methods."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:548
+msgid "Ignore events outside selection"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:550
+msgid ""
+"The `~.widgets.EllipseSelector`, `~.widgets.RectangleSelector` and "
+"`~.widgets.SpanSelector` selectors have a new keyword argument, "
+"*ignore_event_outside*, which when set to `True` will ignore events "
+"outside of the current selection. The handles or the new dragging "
+"functionality can instead be used to change the selection."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:557
+msgid "``CallbackRegistry`` objects gain a method to temporarily block signals"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:559
+msgid ""
+"The context manager `~matplotlib.cbook.CallbackRegistry.blocked` can be "
+"used to block callback signals from being processed by the "
+"``CallbackRegistry``. The optional keyword, *signal*, can be used to "
+"block a specific signal from being processed and let all other signals "
+"pass."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:583
+msgid "Directional sizing cursors"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:585
+msgid ""
+"Canvases now support setting directional sizing cursors, i.e., horizontal"
+" and vertical double arrows. These are used in e.g., selector widgets. "
+"Try the :doc:`/gallery/widgets/mouse_cursor` example to see the cursor in"
+" your desired backend."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:591
+msgid "Sphinx extensions"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:594
+msgid "More configuration of ``mathmpl`` sphinx extension"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:596
+msgid ""
+"The `matplotlib.sphinxext.mathmpl` sphinx extension supports two new "
+"configuration options that may be specified in your ``conf.py``:"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:599
+msgid ""
+"``mathmpl_fontsize`` (float), which sets the font size of the math text "
+"in points;"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:601
+msgid ""
+"``mathmpl_srcset`` (list of str), which provides a list of sizes to "
+"support `responsive resolution images <https://developer.mozilla.org/en-"
+"US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images>`__ The "
+"list should contain additional x-descriptors (``'1.5x'``, ``'2x'``, etc.)"
+" to generate (1x is the default and always included.)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:608
+msgid "Backend-specific improvements"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:611
+msgid "GTK backend"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:613
+msgid ""
+"A backend supporting GTK4_ has been added. Both Agg and Cairo renderers "
+"are supported. The GTK4 backends may be selected as GTK4Agg or GTK4Cairo."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:619
+msgid "Qt backends"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:621
+msgid ""
+"Support for Qt6 (using either PyQt6_ or PySide6_) has been added, with "
+"either the Agg or Cairo renderers. Simultaneously, support for Qt4 has "
+"been dropped. Both Qt6 and Qt5 are supported by a combined backend (QtAgg"
+" or QtCairo), and the loaded version is determined by modules already "
+"imported, the :envvar:`QT_API` environment variable, and available "
+"packages. See :ref:`QT_API-usage` for details. The versioned Qt5 backend "
+"names (Qt5Agg or Qt5Cairo) remain supported for backwards compatibility."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:633
+msgid "HiDPI support in Cairo-based, GTK, and Tk backends"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:635
+msgid ""
+"The GTK3 backends now support HiDPI fully, including mixed monitor cases "
+"(on Wayland only). The newly added GTK4 backends also support HiDPI."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:638
+msgid ""
+"The TkAgg backend now supports HiDPI **on Windows only**, including mixed"
+" monitor cases."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:641
+msgid ""
+"All Cairo-based backends correctly support HiDPI as well as their Agg "
+"counterparts did (i.e., if the toolkit supports HiDPI, then the \\*Cairo "
+"backend will now support it, but not otherwise.)"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:646
+msgid "Qt figure options editor improvements"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:648
+msgid ""
+"The figure options editor in the Qt backend now also supports editing the"
+" left and right titles (plus the existing centre title). Editing Axis "
+"limits is better supported when using a date converter. The ``symlog`` "
+"option is now available in Axis scaling options. All entries with the "
+"same label are now shown in the Curves tab."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:655
+msgid "WX backends support mouse navigation buttons"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:657
+msgid ""
+"The WX backends now support navigating through view states using the "
+"mouse forward/backward buttons, as in other backends."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:661
+msgid "WebAgg uses asyncio instead of Tornado"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:663
+msgid ""
+"The WebAgg backend defaults to using `asyncio` over Tornado for timer "
+"support. This allows using the WebAgg backend in JupyterLite."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:667
+msgid "Version information"
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:669
+msgid ""
+"We switched to the `release-branch-semver`_ version scheme of setuptools-"
+"scm. This only affects the version information for development builds. "
+"Their version number now describes the targeted release, i.e. "
+"3.5.0.dev820+g6768ef8c4c is 820 commits after the previous release and is"
+" scheduled to be officially released as 3.5.0 later."
+msgstr ""
+
+#: ../../users/prev_whats_new/whats_new_3.5.0.rst:675
+msgid ""
+"In addition to the string ``__version__``, there is now a namedtuple "
+"``__version_info__`` as well, which is modelled after "
+"`sys.version_info`_. Its primary use is safely comparing version "
+"information, e.g.  ``if __version_info__ >= (3, 4, 2)``."
+msgstr ""
+

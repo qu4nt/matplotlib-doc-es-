@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2002 - 2012 John Hunter, Darren Dale, Eric Firing, Michael
+# Droettboom and the Matplotlib development team; 2012 - 2022 The Matplotlib
+# development team
+# This file is distributed under the same license as the Matplotlib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Matplotlib 3.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../devel/MEP/MEP23.rst:3
+msgid "MEP23: Multiple Figures per GUI window"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:11
+msgid "Status"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:13
+msgid "**Discussion**"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:16
+msgid "Branches and Pull requests"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:18
+msgid ""
+"**Previous work** - https://github.com/matplotlib/matplotlib/pull/2465 "
+"**To-delete**"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:23
+msgid "Abstract"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:25
+msgid ""
+"Add the possibility to have multiple figures grouped under the same "
+"`~.backend_template.FigureManager`"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:29
+msgid "Detailed description"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:31
+msgid "Under the current structure, every canvas has its own window."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:33
+msgid ""
+"This is and may continue to be the desired method of operation for most "
+"use cases."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:36
+msgid ""
+"Sometimes when there are too many figures open at the same time, it is "
+"desirable to be able to group these under the same window "
+"[see](https://github.com/matplotlib/matplotlib/issues/2194)."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:40
+msgid ""
+"The proposed solution modifies `.FigureManagerBase` to contain and manage"
+" more than one ``Canvas``. The settings parameter "
+":rc:`backend.multifigure` control when the **MultiFigure** behaviour is "
+"desired."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:44
+msgid "**Note**"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:46
+msgid ""
+"It is important to note, that the proposed solution, assumes that the "
+"[MEP22](https://github.com/matplotlib/matplotlib/wiki/Mep22) is already "
+"in place. This is simply because the actual implementation of the "
+"``Toolbar`` makes it pretty hard to switch between canvases."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:52
+msgid "Implementation"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:54
+msgid ""
+"The first implementation will be done in GTK3 using a Notebook as canvas "
+"container."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:58
+msgid "``FigureManagerBase``"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:60
+msgid "will add the following new methods"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:62
+msgid ""
+"``add_canvas``: To add a canvas to an existing "
+"`~.backend_template.FigureManager` object"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:64
+msgid ""
+"``remove_canvas``: To remove a canvas from a "
+"`~.backend_template.FigureManager` object, if it is the last one, it will"
+" be destroyed"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:67
+msgid ""
+"``move_canvas``: To move a canvas from one "
+"`~.backend_template.FigureManager` to another."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:69
+msgid ""
+"``set_canvas_title``: To change the title associated with a specific "
+"canvas container"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:71
+msgid ""
+"``get_canvas_title``: To get the title associated with a specific canvas "
+"container"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:73
+msgid ""
+"``get_active_canvas``: To get the canvas that is in the foreground and is"
+" subject to the gui events. There is no ``set_active_canvas`` because the"
+" active canvas, is defined when ``show`` is called on a ``Canvas`` "
+"object."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:79
+msgid "``new_figure_manager``"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:81
+msgid ""
+"To control which `~.backend_template.FigureManager` will contain the new "
+"figures, an extra optional parameter *figuremanager* will be added, this "
+"parameter value will be passed to ``new_figure_manager_given_figure``."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:86
+msgid "``new_figure_manager_given_figure``"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:88
+msgid ""
+"If *figuremanager* parameter is given, this "
+"`~.backend_template.FigureManager` object will be used instead of "
+"creating a new one."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:91
+msgid ""
+"If ``rcParams['backend.multifigure']`` is True: The last "
+"`~.backend_template.FigureManager` object will be used instead of "
+"creating a new one."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:96
+msgid "``NavigationBase``"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:98
+msgid ""
+"Modifies the ``NavigationBase`` to keep a list of canvases, directing the"
+" actions to the active one."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:102
+msgid "Backward compatibility"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:104
+msgid ""
+"For the **MultiFigure** properties to be visible, the user has to "
+"activate them directly setting ``rcParams['backend.multifigure'] = True``"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:108
+msgid ""
+"It should be backwards compatible for backends that adhere to the current"
+" `.FigureManagerBase` structure even if they have not implemented the "
+"**MultiFigure** magic yet."
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:114
+msgid "Alternatives"
+msgstr ""
+
+#: ../../devel/MEP/MEP23.rst:116
+msgid ""
+"Instead of modifying the `.FigureManagerBase` it could be possible to add"
+" a parallel class, that handles the cases where "
+"``rcParams['backend.multifigure'] = True``.  This will warranty that "
+"there won't be any problems with custom made backends, but also makes "
+"bigger the code, and more things to maintain."
+msgstr ""
+

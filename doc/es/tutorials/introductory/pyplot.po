@@ -1,0 +1,458 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:33\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/tutorials/introductory/pyplot.po\n"
+"X-Crowdin-File-ID: 3324\n"
+"Language: es_ES\n"
+
+#: ../../tutorials/introductory/pyplot.rst:13
+msgid "Click :ref:`here <sphx_glr_download_tutorials_introductory_pyplot.py>` to download the full example code"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:23
+msgid "Pyplot tutorial"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:25
+msgid "An introduction to the pyplot interface."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:30
+msgid "Intro to pyplot"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:32
+msgid ":mod:`matplotlib.pyplot` is a collection of functions that make matplotlib work like MATLAB. Each ``pyplot`` function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:39
+msgid "In :mod:`matplotlib.pyplot` various states are preserved across function calls, so that it keeps track of things like the current figure and plotting area, and the plotting functions are directed to the current axes (please note that \"axes\" here and in most places in the documentation refers to the *axes* :ref:`part of a figure <figure_parts>` and not the strict mathematical term for more than one axis)."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:49
+msgid "the pyplot API is generally less-flexible than the object-oriented API. Most of the function calls you see here can also be called as methods from an ``Axes`` object. We recommend browsing the tutorials and examples to see how this works."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:54
+msgid "Generating visualizations with pyplot is very quick:"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:80
+msgid "You may be wondering why the x-axis ranges from 0-3 and the y-axis from 1-4.  If you provide a single list or array to `~.pyplot.plot`, matplotlib assumes it is a sequence of y values, and automatically generates the x values for you.  Since python ranges start with 0, the default x vector has the same length as y but starts with 0.  Hence the x data are ``[0, 1, 2, 3]``."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:88
+msgid "`~.pyplot.plot` is a versatile function, and will take an arbitrary number of arguments.  For example, to plot x versus y, you can write:"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:109
+msgid "Out:"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:121
+msgid "Formatting the style of your plot"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:123
+msgid "For every x, y pair of arguments, there is an optional third argument which is the format string that indicates the color and line type of the plot.  The letters and symbols of the format string are from MATLAB, and you concatenate a color string with a line style string. The default format string is 'b-', which is a solid blue line.  For example, to plot the above with red circles, you would issue"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:153
+msgid "See the `~.pyplot.plot` documentation for a complete list of line styles and format strings.  The `~.pyplot.axis` function in the example above takes a list of ``[xmin, xmax, ymin, ymax]`` and specifies the viewport of the axes."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:159
+msgid "If matplotlib were limited to working with lists, it would be fairly useless for numeric processing.  Generally, you will use `numpy <https://numpy.org/>`_ arrays.  In fact, all sequences are converted to numpy arrays internally.  The example below illustrates plotting several lines with different format styles in one function call using arrays."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:197
+msgid "Plotting with keyword strings"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:199
+msgid "There are some instances where you have data in a format that lets you access particular variables with strings. For example, with `numpy.recarray` or `pandas.DataFrame`."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:203
+msgid "Matplotlib allows you provide such an object with the ``data`` keyword argument. If provided, then you may generate plots with the strings corresponding to these variables."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:240
+msgid "Plotting with categorical variables"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:242
+msgid "It is also possible to create a plot using categorical variables. Matplotlib allows you to pass categorical variables directly to many plotting functions. For example:"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:282
+msgid "Controlling line properties"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:284
+msgid "Lines have many attributes that you can set: linewidth, dash style, antialiased, etc; see `matplotlib.lines.Line2D`.  There are several ways to set line properties"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:288
+msgid "Use keyword arguments::"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:293
+msgid "Use the setter methods of a ``Line2D`` instance.  ``plot`` returns a list of ``Line2D`` objects; e.g., ``line1, line2 = plot(x1, y1, x2, y2)``.  In the code below we will suppose that we have only one line so that the list returned is of length 1.  We use tuple unpacking with ``line,`` to get the first element of that list::"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:302
+msgid "Use `~.pyplot.setp`.  The example below uses a MATLAB-style function to set multiple properties on a list of lines.  ``setp`` works transparently with a list of objects or a single object.  You can either use python keyword arguments or MATLAB-style string/value pairs::"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:315
+msgid "Here are the available `~.lines.Line2D` properties."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:318
+msgid "Property"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:318
+msgid "Value Type"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:320
+msgid "alpha"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:320
+#: ../../tutorials/introductory/pyplot.rst:340
+msgid "float"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:321
+msgid "animated"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:321
+#: ../../tutorials/introductory/pyplot.rst:322
+#: ../../tutorials/introductory/pyplot.rst:324
+#: ../../tutorials/introductory/pyplot.rst:347
+msgid "[True | False]"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:322
+msgid "antialiased or aa"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:323
+msgid "clip_box"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:323
+msgid "a matplotlib.transform.Bbox instance"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:324
+msgid "clip_on"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:325
+msgid "clip_path"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:325
+msgid "a Path instance and a Transform instance, a Patch"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:326
+msgid "color or c"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:326
+#: ../../tutorials/introductory/pyplot.rst:337
+#: ../../tutorials/introductory/pyplot.rst:339
+msgid "any matplotlib color"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:327
+msgid "contains"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:327
+msgid "the hit testing function"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:328
+msgid "dash_capstyle"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:328
+#: ../../tutorials/introductory/pyplot.rst:344
+msgid "[``'butt'`` | ``'round'`` | ``'projecting'``]"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:329
+msgid "dash_joinstyle"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:329
+#: ../../tutorials/introductory/pyplot.rst:345
+msgid "[``'miter'`` | ``'round'`` | ``'bevel'``]"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:330
+msgid "dashes"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:330
+msgid "sequence of on/off ink in points"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:331
+msgid "data"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:331
+msgid "(np.array xdata, np.array ydata)"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:332
+msgid "figure"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:332
+msgid "a matplotlib.figure.Figure instance"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:333
+msgid "label"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:333
+msgid "any string"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:334
+msgid "linestyle or ls"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:334
+msgid "[ ``'-'`` | ``'--'`` | ``'-.'`` | ``':'`` | ``'steps'`` | ...]"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:335
+msgid "linewidth or lw"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:335
+#: ../../tutorials/introductory/pyplot.rst:338
+msgid "float value in points"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:336
+msgid "marker"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:336
+msgid "[ ``'+'`` | ``','`` | ``'.'`` | ``'1'`` | ``'2'`` | ``'3'`` | ``'4'`` ]"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:337
+msgid "markeredgecolor or mec"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:338
+msgid "markeredgewidth or mew"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:339
+msgid "markerfacecolor or mfc"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:340
+msgid "markersize or ms"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:341
+msgid "markevery"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:341
+msgid "[ None | integer | (startind, stride) ]"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:342
+msgid "picker"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:342
+msgid "used in interactive line selection"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:343
+msgid "pickradius"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:343
+msgid "the line pick selection radius"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:344
+msgid "solid_capstyle"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:345
+msgid "solid_joinstyle"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:346
+msgid "transform"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:346
+msgid "a matplotlib.transforms.Transform instance"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:347
+msgid "visible"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:348
+msgid "xdata"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:348
+#: ../../tutorials/introductory/pyplot.rst:349
+msgid "np.array"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:349
+msgid "ydata"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:350
+msgid "zorder"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:350
+msgid "any number"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:353
+msgid "To get a list of settable line properties, call the `~.pyplot.setp` function with a line or lines as argument"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:370
+msgid "Working with multiple figures and axes"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:372
+msgid "MATLAB, and :mod:`.pyplot`, have the concept of the current figure and the current axes.  All plotting functions apply to the current axes.  The function `~.pyplot.gca` returns the current axes (a `matplotlib.axes.Axes` instance), and `~.pyplot.gcf` returns the current figure (a `matplotlib.figure.Figure` instance). Normally, you don't have to worry about this, because it is all taken care of behind the scenes.  Below is a script to create two subplots."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:414
+msgid "The `~.pyplot.figure` call here is optional because a figure will be created if none exists, just as an axes will be created (equivalent to an explicit ``subplot()`` call) if none exists. The `~.pyplot.subplot` call specifies ``numrows, numcols, plot_number`` where ``plot_number`` ranges from 1 to ``numrows*numcols``.  The commas in the ``subplot`` call are optional if ``numrows*numcols<10``.  So ``subplot(211)`` is identical to ``subplot(2, 1, 1)``."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:423
+msgid "You can create an arbitrary number of subplots and axes.  If you want to place an axes manually, i.e., not on a rectangular grid, use `~.pyplot.axes`, which allows you to specify the location as ``axes([left, bottom, width, height])`` where all values are in fractional (0 to 1) coordinates.  See :doc:`/gallery/subplots_axes_and_figures/axes_demo` for an example of placing axes manually and :doc:`/gallery/subplots_axes_and_figures/subplot` for an example with lots of subplots."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:432
+msgid "You can create multiple figures by using multiple `~.pyplot.figure` calls with an increasing figure number.  Of course, each figure can contain as many axes and subplots as your heart desires::"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:452
+msgid "You can clear the current figure with `~.pyplot.clf` and the current axes with `~.pyplot.cla`.  If you find it annoying that states (specifically the current image, figure and axes) are being maintained for you behind the scenes, don't despair: this is just a thin stateful wrapper around an object oriented API, which you can use instead (see :doc:`/tutorials/intermediate/artists`)"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:459
+msgid "If you are making lots of figures, you need to be aware of one more thing: the memory required for a figure is not completely released until the figure is explicitly closed with `~.pyplot.close`.  Deleting all references to the figure, and/or using the window manager to kill the window in which the figure appears on the screen, is not enough, because pyplot maintains internal references until `~.pyplot.close` is called."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:471
+msgid "Working with text"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:473
+msgid "`~.pyplot.text` can be used to add text in an arbitrary location, and `~.pyplot.xlabel`, `~.pyplot.ylabel` and `~.pyplot.title` are used to add text in the indicated locations (see :doc:`/tutorials/text/text_intro` for a more detailed example)"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:512
+msgid "All of the `~.pyplot.text` functions return a `matplotlib.text.Text` instance.  Just as with lines above, you can customize the properties by passing keyword arguments into the text functions or using `~.pyplot.setp`::"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:518
+msgid "These properties are covered in more detail in :doc:`/tutorials/text/text_props`."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:522
+msgid "Using mathematical expressions in text"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:524
+msgid "matplotlib accepts TeX equation expressions in any text expression. For example to write the expression :math:`\\sigma_i=15` in the title, you can write a TeX expression surrounded by dollar signs::"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:530
+msgid "The ``r`` preceding the title string is important -- it signifies that the string is a *raw* string and not to treat backslashes as python escapes.  matplotlib has a built-in TeX expression parser and layout engine, and ships its own math fonts -- for details see :doc:`/tutorials/text/mathtext`.  Thus you can use mathematical text across platforms without requiring a TeX installation.  For those who have LaTeX and dvipng installed, you can also use LaTeX to format your text and incorporate the output directly into your display figures or saved postscript -- see :doc:`/tutorials/text/usetex`."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:542
+msgid "Annotating text"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:544
+msgid "The uses of the basic `~.pyplot.text` function above place text at an arbitrary position on the Axes.  A common use for text is to annotate some feature of the plot, and the `~.pyplot.annotate` method provides helper functionality to make annotations easy.  In an annotation, there are two points to consider: the location being annotated represented by the argument ``xy`` and the location of the text ``xytext``.  Both of these arguments are ``(x, y)`` tuples."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:585
+msgid "In this basic example, both the ``xy`` (arrow tip) and ``xytext`` locations (text location) are in data coordinates.  There are a variety of other coordinate systems one can choose -- see :ref:`annotations-tutorial` and :ref:`plotting-guide-annotation` for details.  More examples can be found in :doc:`/gallery/text_labels_and_annotations/annotation_demo`."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:594
+msgid "Logarithmic and other nonlinear axes"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:596
+msgid ":mod:`matplotlib.pyplot` supports not only linear axis scales, but also logarithmic and logit scales. This is commonly used if data spans many orders of magnitude. Changing the scale of an axis is easy:"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:600
+msgid "plt.xscale('log')"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:602
+msgid "An example of four plots with the same data and different scales for the y axis is shown below."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:670
+msgid "It is also possible to add your own scale, see `matplotlib.scale` for details."
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:676
+msgid "**Total running time of the script:** ( 0 minutes  3.456 seconds)"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:691
+msgid ":download:`Download Python source code: pyplot.py <pyplot.py>`"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:697
+msgid ":download:`Download Jupyter notebook: pyplot.ipynb <pyplot.ipynb>`"
+msgstr ""
+
+#: ../../tutorials/introductory/pyplot.rst:704
+msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

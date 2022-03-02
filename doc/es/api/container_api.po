@@ -1,0 +1,270 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/container_api.po\n"
+"X-Crowdin-File-ID: 1772\n"
+"Language: es_ES\n"
+
+#: ../../api/container_api.rst:3
+msgid "``matplotlib.container``"
+msgstr ""
+
+#: matplotlib.container.BarContainer:1 matplotlib.container.ErrorbarContainer:1
+#: matplotlib.container.StemContainer:1 of
+msgid "Bases: :py:class:`matplotlib.container.Container`"
+msgstr ""
+
+#: matplotlib.container.BarContainer:2 of
+msgid "Container for the artists of bar plots (e.g. created by `.Axes.bar`)."
+msgstr ""
+
+#: matplotlib.container.BarContainer:4 of
+msgid "The container can be treated as a tuple of the *patches* themselves. Additionally, you can access these and further parameters by the attributes."
+msgstr ""
+
+#: matplotlib.container.BarContainer matplotlib.container.ErrorbarContainer
+#: matplotlib.container.StemContainer of
+msgid "Attributes"
+msgstr ""
+
+#: matplotlib.container.BarContainer:23 of
+msgid "**patches** : list of :class:`~matplotlib.patches.Rectangle`"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.container.BarContainer:23 of
+msgid "The artists of the bars."
+msgstr ""
+
+#: matplotlib.container.BarContainer:27 of
+msgid "**errorbar** : None or :class:`~matplotlib.container.ErrorbarContainer`"
+msgstr ""
+
+#: of
+msgid "None or"
+msgstr ""
+
+#: matplotlib.container.BarContainer:26 of
+msgid "A container for the error bar artists if error bars are present. *None* otherwise."
+msgstr ""
+
+#: matplotlib.container.BarContainer:30 of
+msgid "**datavalues**"
+msgstr ""
+
+#: of
+msgid "None or array-like"
+msgstr ""
+
+#: matplotlib.container.BarContainer:30 of
+msgid "The underlying data values corresponding to the bars."
+msgstr ""
+
+#: matplotlib.container.BarContainer:35 of
+msgid "**orientation**"
+msgstr ""
+
+#: of
+msgid "{'vertical', 'horizontal'}, default: None"
+msgstr ""
+
+#: matplotlib.container.BarContainer:33 of
+msgid "If 'vertical', the bars are assumed to be vertical. If 'horizontal', the bars are assumed to be horizontal."
+msgstr ""
+
+#: matplotlib.container.Container:1 of
+msgid "Bases: :py:class:`tuple`"
+msgstr ""
+
+#: matplotlib.container.Container:2 of
+msgid "Base class for containers."
+msgstr ""
+
+#: matplotlib.container.Container:4 of
+msgid "Containers are classes that collect semantically related Artists such as the bars of a bar plot."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:2 of
+msgid "Add a callback function that will be called whenever one of the `.Artist`'s properties changes."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback matplotlib.artist.Artist.set_label
+#: matplotlib.container.StemContainer of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:14 of
+msgid "**func**"
+msgstr ""
+
+#: of
+msgid "callable"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:9 of
+msgid "The callback function. It must have the signature::"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:13 of
+msgid "where *artist* is the calling `.Artist`. Return values may exist but are ignored."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:26 of
+msgid "int"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:19 of
+msgid "The observer id associated with the callback. This id can be used for removing the callback with `.remove_callback` later."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:31
+#: matplotlib.artist.Artist.pchanged:19 of
+msgid ":obj:`remove_callback`"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_label:2 of
+msgid "Return the label used for this artist in the legend."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:2 of
+msgid "Call all of the registered callbacks."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:4 of
+msgid "This function is triggered internally when a property is changed."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:17
+#: matplotlib.artist.Artist.remove_callback:16 of
+msgid ":obj:`add_callback`"
+msgstr ""
+
+#: matplotlib.artist.Artist.remove_callback:2 of
+msgid "Remove a callback based on its observer id."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:2 of
+msgid "Set a label that will be displayed in the legend."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:21 of
+msgid "**s**"
+msgstr ""
+
+#: of
+msgid "object"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:8 of
+msgid "*s* will be converted to a string by calling `str`."
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:2 of
+msgid "Container for the artists of error bars (e.g. created by `.Axes.errorbar`)."
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:4 of
+msgid "The container can be treated as the *lines* tuple itself. Additionally, you can access these and further parameters by the attributes."
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:30 of
+msgid "**lines**"
+msgstr ""
+
+#: of
+msgid "tuple"
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:23 of
+msgid "Tuple of ``(data_line, caplines, barlinecols)``."
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:25 of
+msgid "data_line : :class:`~matplotlib.lines.Line2D` instance of x, y plot markers and/or line."
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:27 of
+msgid "caplines : tuple of :class:`~matplotlib.lines.Line2D` instances of the error bar caps."
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:29 of
+msgid "barlinecols : list of :class:`~matplotlib.collections.LineCollection` with the horizontal and vertical error ranges."
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:34 of
+msgid "**has_xerr, has_yerr**"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.container.ErrorbarContainer:33 of
+msgid "``True`` if the errorbar has x/y errors."
+msgstr ""
+
+#: matplotlib.container.StemContainer:2 of
+msgid "Container for the artists created in a :meth:`.Axes.stem` plot."
+msgstr ""
+
+#: matplotlib.container.StemContainer:4 of
+msgid "The container can be treated like a namedtuple ``(markerline, stemlines, baseline)``."
+msgstr ""
+
+#: matplotlib.container.StemContainer:22 of
+msgid "**markerline** : :class:`~matplotlib.lines.Line2D`"
+msgstr ""
+
+#: matplotlib.container.StemContainer:21 matplotlib.container.StemContainer:28
+#: of
+msgid "Line2D"
+msgstr ""
+
+#: matplotlib.container.StemContainer:22 of
+msgid "The artist of the markers at the stem heads."
+msgstr ""
+
+#: matplotlib.container.StemContainer:25 of
+msgid "**stemlines** : list of :class:`~matplotlib.lines.Line2D`"
+msgstr ""
+
+#: matplotlib.container.StemContainer:25 of
+msgid "The artists of the vertical lines for all stems."
+msgstr ""
+
+#: matplotlib.container.StemContainer:29 of
+msgid "**baseline** : :class:`~matplotlib.lines.Line2D`"
+msgstr ""
+
+#: matplotlib.container.StemContainer:28 of
+msgid "The artist of the horizontal baseline."
+msgstr ""
+
+#: matplotlib.container.StemContainer:57 of
+msgid "**markerline_stemlines_baseline**"
+msgstr ""
+
+#: matplotlib.container.StemContainer:41 of
+msgid "Tuple of ``(markerline, stemlines, baseline)``. ``markerline`` contains the `.LineCollection` of the markers, ``stemlines`` is a `.LineCollection` of the main lines, ``baseline`` is the `.Line2D` of the baseline."
+msgstr ""
+

@@ -1,0 +1,594 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:24\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/sankey_api.po\n"
+"X-Crowdin-File-ID: 1946\n"
+"Language: es_ES\n"
+
+#: ../../api/sankey_api.rst:3
+msgid "``matplotlib.sankey``"
+msgstr ""
+
+#: matplotlib.sankey:1 of
+msgid "Module for creating Sankey diagrams using Matplotlib."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:2 of
+msgid "Sankey diagram."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:4 of
+msgid "Sankey diagrams are a specific type of flow diagram, in which the width of the arrows is shown proportionally to the flow quantity.  They are typically used to visualize energy or material or cost transfers between processes. `Wikipedia (6/1/2011) <https://en.wikipedia.org/wiki/Sankey_diagram>`_"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:28 of
+msgid "Create a new Sankey instance."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:30 of
+msgid "The optional arguments listed below are applied to all subdiagrams so that there is consistent alignment and formatting."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:33 of
+msgid "In order to draw a complex Sankey diagram, create an instance of :class:`Sankey` by calling it without any kwargs::"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:38 of
+msgid "Then add simple Sankey sub-diagrams::"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:45 of
+msgid "Finally, create the full diagram::"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:49 of
+msgid "Or, instead, simply daisy-chain those calls::"
+msgstr ""
+
+#: matplotlib.sankey.Sankey matplotlib.sankey.Sankey.add of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:61 of
+msgid "**ax** : `~.axes.Axes`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:60 of
+msgid "Axes"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:60 of
+msgid "Axes onto which the data should be plotted.  If *ax* isn't provided, new Axes will be created."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:69 of
+msgid "**scale**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:114 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:64 of
+msgid "Scaling factor for the flows.  *scale* sizes the width of the paths in order to maintain proper layout.  The same scale is applied to all subdiagrams.  The value should be chosen such that the product of the scale and the sum of the inputs is approximately 1.0 (and the product of the scale and the sum of the outputs is approximately -1.0)."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:73 of
+msgid "**unit**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:99 matplotlib.sankey.Sankey.add:112 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:72 of
+msgid "The physical unit associated with the flow quantities.  If *unit* is None, then none of the quantities are labeled."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:80 of
+msgid "**format**"
+msgstr ""
+
+#: of
+msgid "str or callable"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:76 of
+msgid "A Python number formatting string or callable used to label the flows with their quantities (i.e., a number times a unit, where the unit is given). If a format string is given, the label will be ``format % quantity``. If a callable is given, it will be called with ``quantity`` as an argument."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:84 of
+msgid "**gap**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:83 of
+msgid "Space between paths that break in/break away to/from the top or bottom."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:87 of
+msgid "**radius**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:87 of
+msgid "Inner radius of the vertical paths."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:90 of
+msgid "**shoulder**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:90 of
+msgid "Size of the shoulders of output arrows."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:93 of
+msgid "**offset**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:93 of
+msgid "Text offset (from the dip or tip of the arrow)."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:97 of
+msgid "**head_angle**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:96 of
+msgid "Angle, in degrees, of the arrow heads (and negative of the angle of the tails)."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:101 of
+msgid "**margin**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:100 of
+msgid "Minimum space between Sankey outlines and the edge of the plot area."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:106 of
+msgid "**tolerance**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:104 of
+msgid "Acceptable maximum of the magnitude of the sum of flows.  The magnitude of the sum of connected flows cannot be greater than *tolerance*."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:113 matplotlib.sankey.Sankey.add:118 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:109 of
+msgid "Any additional keyword arguments will be passed to :meth:`add`, which will create the first subdiagram."
+msgstr ""
+
+#: matplotlib.sankey.Sankey:118 matplotlib.sankey.Sankey.finish:46 of
+msgid ":obj:`Sankey.add`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:120 matplotlib.sankey.Sankey.add:123 of
+msgid ":obj:`Sankey.finish`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey:126 of
+msgid "Examples"
+msgstr ""
+
+#: ../../gallery/specialty_plots/sankey_basics.py:7
+msgid "(`Source code <../gallery/specialty_plots/sankey_basics.py>`__)"
+msgstr ""
+
+#: ../../gallery/specialty_plots/sankey_basics.py:15
+msgid "(`png <../gallery/specialty_plots/sankey_basics_00_00.png>`__, `pdf <../gallery/specialty_plots/sankey_basics_00_00.pdf>`__)"
+msgstr ""
+
+#: ../../gallery/specialty_plots/sankey_basics.py:22
+msgid "(`png <../gallery/specialty_plots/sankey_basics_00_01.png>`__, `pdf <../gallery/specialty_plots/sankey_basics_00_01.pdf>`__)"
+msgstr ""
+
+#: ../../gallery/specialty_plots/sankey_basics.py:29
+msgid "(`png <../gallery/specialty_plots/sankey_basics_00_02.png>`__, `pdf <../gallery/specialty_plots/sankey_basics_00_02.pdf>`__)"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:2 of
+msgid "Add a simple Sankey diagram with flows at the same hierarchical level."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:10 of
+msgid "**patchlabel**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:8 of
+msgid "Label to be placed at the center of the diagram. Note that *label* (not *patchlabel*) can be passed as keyword argument to create an entry in the legend."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:23 of
+msgid "**flows**"
+msgstr ""
+
+#: of
+msgid "list of float"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:13 of
+msgid "Array of flow values.  By convention, inputs are positive and outputs are negative."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:16 of
+msgid "Flows are placed along the top of the diagram from the inside out in order of their index within *flows*.  They are placed along the sides of the diagram from the top down and along the bottom from the outside in."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:21 of
+msgid "If the sum of the inputs and outputs is nonzero, the discrepancy will appear as a cubic Bezier curve along the top and bottom edges of the trunk."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:29 of
+msgid "**orientations**"
+msgstr ""
+
+#: of
+msgid "list of {-1, 0, 1}"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:26 of
+msgid "List of orientations of the flows (or a single orientation to be used for all flows).  Valid values are 0 (inputs from the left, outputs to the right), 1 (from and to the top) or -1 (from and to the bottom)."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:37 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "list of (str or None)"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:32 of
+msgid "List of labels for the flows (or a single label to be used for all flows).  Each label may be *None* (no label), or a labeling string. If an entry is a (possibly empty) string, then the quantity for the corresponding flow will be shown below the string.  However, if the *unit* of the main diagram is None, then quantities are never shown, regardless of the value of this argument."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:41 of
+msgid "**trunklength**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:40 of
+msgid "Length between the bases of the input and output groups (in data-space units)."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:48 of
+msgid "**pathlengths**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:44 of
+msgid "List of lengths of the vertical arrows before break-in or after break-away.  If a single value is given, then it will be applied to the first (inside) paths on the top and bottom, and the length of all other arrows will be justified accordingly.  The *pathlengths* are not applied to the horizontal inputs and outputs."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:52 of
+msgid "**prior**"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:51 of
+msgid "Index of the prior diagram to which this diagram should be connected."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:57 of
+msgid "**connect**"
+msgstr ""
+
+#: of
+msgid "(int, int)"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:55 of
+msgid "A (prior, this) tuple indexing the flow of the prior diagram and the flow of this diagram which should be connected.  If this is the first diagram or *prior* is *None*, *connect* will be ignored."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:64 of
+msgid "**rotation**"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:60 of
+msgid "Angle of rotation of the diagram in degrees.  The interpretation of the *orientations* argument will be rotated accordingly (e.g., if *rotation* == 90, an *orientations* entry of 1 means to/from the left).  *rotation* is ignored if this diagram is connected to an existing one (using *prior* and *connect*)."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:71 of
+msgid "Sankey"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:69 of
+msgid "The current `.Sankey` instance."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:76 of
+msgid "Additional keyword arguments set `matplotlib.patches.PathPatch` properties, listed below.  For example, one may want to use ``fill=False`` or ``label=\"A legend entry\"``."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:84 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:84 matplotlib.sankey.Sankey.finish:9 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:86 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:86 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:87 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:87 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:88 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:88 matplotlib.sankey.Sankey.add:92
+#: matplotlib.sankey.Sankey.add:98 matplotlib.sankey.Sankey.add:101
+#: matplotlib.sankey.Sankey.add:108 matplotlib.sankey.Sankey.add:113 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:89 of
+msgid ":meth:`antialiased <matplotlib.patches.Patch.set_antialiased>` or aa"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:89 matplotlib.sankey.Sankey.add:110 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:90 of
+msgid ":meth:`capstyle <matplotlib.patches.Patch.set_capstyle>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:90 of
+msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:91 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:91 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:92 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:93 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:93 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:94 of
+msgid ":meth:`color <matplotlib.patches.Patch.set_color>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:94 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:95 of
+msgid ":meth:`edgecolor <matplotlib.patches.Patch.set_edgecolor>` or ec"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:95 matplotlib.sankey.Sankey.add:96 of
+msgid "color or None"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:96 of
+msgid ":meth:`facecolor <matplotlib.patches.Patch.set_facecolor>` or fc"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:97 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:97 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:98 of
+msgid ":meth:`fill <matplotlib.patches.Patch.set_fill>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:99 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:100 of
+msgid ":meth:`hatch <matplotlib.patches.Patch.set_hatch>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:100 of
+msgid "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:101 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:102 of
+msgid ":meth:`joinstyle <matplotlib.patches.Patch.set_joinstyle>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:102 of
+msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:103 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:103 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:104 of
+msgid ":meth:`linestyle <matplotlib.patches.Patch.set_linestyle>` or ls"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:104 of
+msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:105 of
+msgid ":meth:`linewidth <matplotlib.patches.Patch.set_linewidth>` or lw"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:105 of
+msgid "float or None"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:106 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:106 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:107 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:107 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:108 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:109 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:109 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:110 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:111 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:111 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:112 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:113 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.add:114 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:2 of
+msgid "Adjust the axes and return a list of information about the Sankey subdiagram(s)."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:5 of
+msgid "Return value is a list of subdiagrams represented with the following fields:"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:9 of
+msgid "Field"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:11 of
+msgid "*patch*"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:11 of
+msgid "Sankey outline (an instance of :class:`~matplotlib.patches.PathPatch`)"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:13 of
+msgid "*flows*"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:13 of
+msgid "values of the flows (positive for input, negative for output)"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:15 of
+msgid "*angles*"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:15 of
+msgid "list of angles of the arrows [deg/90] For example, if the diagram has not been rotated, an input to the top side will have an angle of 3 (DOWN), and an output from the top side will have an angle of 1 (UP).  If a flow has been skipped (because its magnitude is less than *tolerance*), then its angle will be *None*."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:22 of
+msgid "*tips*"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:22 of
+msgid "array in which each row is an [x, y] pair indicating the positions of the tips (or \"dips\") of the flow paths If the magnitude of a flow is less the *tolerance* for the instance of :class:`Sankey`, the flow is skipped and its tip will be at the center of the diagram."
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:29 of
+msgid "*text*"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:29 of
+msgid ":class:`~matplotlib.text.Text` instance for the label of the diagram"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:31 of
+msgid "*texts*"
+msgstr ""
+
+#: matplotlib.sankey.Sankey.finish:31 of
+msgid "list of :class:`~matplotlib.text.Text` instances for the labels of flows"
+msgstr ""
+

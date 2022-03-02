@@ -1,0 +1,860 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:12\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.axes.Axes.plot.po\n"
+"X-Crowdin-File-ID: 600\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.plot.rst:2
+msgid "matplotlib.axes.Axes.plot"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:2 of
+msgid "Plot y versus x as lines and/or markers."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:4 of
+msgid "Call signatures::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:9 of
+msgid "The coordinates of the points or line nodes are given by *x*, *y*."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:11 of
+msgid "The optional parameter *fmt* is a convenient way for defining basic formatting like color, marker and linestyle. It's a shortcut string notation described in the *Notes* section below."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:20 of
+msgid "You can use `.Line2D` properties as keyword arguments for more control on the appearance. Line properties and *fmt* can be mixed. The following two calls yield identical results:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:28 of
+msgid "When conflicting with *fmt*, keyword arguments take precedence."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:30 of
+msgid "**Plotting labelled data**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:32 of
+msgid "There's a convenient way for plotting objects with labelled data (i.e. data that can be accessed by index ``obj['y']``). Instead of giving the data in *x* and *y*, you can provide the object in the *data* parameter and just give the labels for *x* and *y*::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:39 of
+msgid "All indexable objects are supported. This could e.g. be a `dict`, a `pandas.DataFrame` or a structured numpy array."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:42 of
+msgid "**Plotting multiple sets of data**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:44 of
+msgid "There are various ways to plot multiple sets of data."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:46 of
+msgid "The most straight forward way is just to call `plot` multiple times. Example:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:52 of
+msgid "If *x* and/or *y* are 2D arrays a separate data set will be drawn for every column. If both *x* and *y* are 2D, they must have the same shape. If only one of them is 2D with shape (N, m) the other must have length N and will be used for every data set m."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:57 of
+msgid "Example:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:63 of
+msgid "is equivalent to:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:68 of
+msgid "The third way is to specify multiple sets of *[x]*, *y*, *[fmt]* groups::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:73 of
+msgid "In this case, any additional keyword argument applies to all datasets. Also this syntax cannot be combined with the *data* parameter."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:77 of
+msgid "By default, each line is assigned a different style specified by a 'style cycle'. The *fmt* and line property parameters are only necessary if you want explicit deviations from these defaults. Alternatively, you can also change the style cycle using :rc:`axes.prop_cycle`."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:94 of
+msgid "**x, y**"
+msgstr ""
+
+#: of
+msgid "array-like or scalar"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:86 of
+msgid "The horizontal / vertical coordinates of the data points. *x* values are optional and default to ``range(len(y))``."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:89 of
+msgid "Commonly, these parameters are 1D arrays."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:91 of
+msgid "They can also be scalars, or two-dimensional (in that case, the columns represent separate data sets)."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:94 of
+msgid "These arguments cannot be passed as keywords."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:104 of
+msgid "**fmt**"
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:97 of
+msgid "A format string, e.g. 'ro' for red circles. See the *Notes* section for a full description of the format strings."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:100 of
+msgid "Format strings are just an abbreviation for quickly setting basic line properties. All of these and more can also be controlled by keyword arguments."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:104 of
+msgid "This argument cannot be passed as keyword."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:116 of
+msgid "**data**"
+msgstr ""
+
+#: of
+msgid "indexable object, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:107 of
+msgid "An object with labelled data. If given, provide the label names to plot in *x* and *y*."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:111 of
+msgid "Technically there's a slight ambiguity in calls where the second label is a valid *fmt*. ``plot('n', 'o', data=obj)`` could be ``plt(x, y)`` or ``plt(y, fmt)``. In such cases, the former interpretation is chosen, but a warning is issued. You may suppress the warning by adding an empty format string ``plot('n', 'o', '', data=obj)``."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:123 of
+msgid "list of `.Line2D`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:121 of
+msgid "A list of lines representing the plotted data."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:129 of
+msgid "**scalex, scaley**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:128 of
+msgid "These parameters determine if the view limits are adapted to the data limits. The values are passed on to `autoscale_view`."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:195 of
+msgid "**\\*\\*kwargs** : `.Line2D` properties, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:194 of
+msgid "Line2D properties, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:132 of
+msgid "*kwargs* are used to specify properties like a line label (for auto legends), linewidth, antialiasing, marker face color. Example::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:139 of
+msgid "If you specify multiple lines with one plot call, the kwargs apply to all those lines. In case the label object is iterable, each element is used as labels for each set of data."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:143 of
+msgid "Here is a list of available `.Line2D` properties:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:149 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:149 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:151 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:151 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:152 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:152 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:153 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:153 matplotlib.axes._axes.Axes.plot:154
+#: matplotlib.axes._axes.Axes.plot:156 matplotlib.axes._axes.Axes.plot:167
+#: matplotlib.axes._axes.Axes.plot:181 matplotlib.axes._axes.Axes.plot:188 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:154 of
+msgid ":meth:`antialiased <matplotlib.lines.Line2D.set_antialiased>` or aa"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:155 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:155 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:156 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:157 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:157 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:158 of
+msgid ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:158 matplotlib.axes._axes.Axes.plot:172
+#: matplotlib.axes._axes.Axes.plot:174 matplotlib.axes._axes.Axes.plot:175
+#: matplotlib.axes._axes.Axes.plot:275 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:159 of
+msgid ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:159 matplotlib.axes._axes.Axes.plot:184 of
+msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:160 of
+msgid ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:160 matplotlib.axes._axes.Axes.plot:185 of
+msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:161 of
+msgid ":meth:`dashes <matplotlib.lines.Line2D.set_dashes>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:161 of
+msgid "sequence of floats (on/off ink in points) or (None, None)"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:162 of
+msgid ":meth:`data <matplotlib.lines.Line2D.set_data>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:162 of
+msgid "(2, N) array or two 1D arrays"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:163 of
+msgid ":meth:`drawstyle <matplotlib.lines.Line2D.set_drawstyle>` or ds"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:163 of
+msgid "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:164 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:164 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:165 of
+msgid ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:165 of
+msgid "{'full', 'left', 'right', 'bottom', 'top', 'none'}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:166 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:166 matplotlib.axes._axes.Axes.plot:187 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:167 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:168 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:168 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:169 of
+msgid ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` or ls"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:169 of
+msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:170 of
+msgid ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:170 matplotlib.axes._axes.Axes.plot:173
+#: matplotlib.axes._axes.Axes.plot:176 matplotlib.axes._axes.Axes.plot:180
+#: matplotlib.axes._axes.Axes.plot:191 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:171 of
+msgid ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:171 of
+msgid "marker style string, `~.path.Path` or `~.markers.MarkerStyle`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:172 of
+msgid ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` or mec"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:173 of
+msgid ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` or mew"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:174 of
+msgid ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` or mfc"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:175 of
+msgid ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` or mfcalt"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:176 of
+msgid ":meth:`markersize <matplotlib.lines.Line2D.set_markersize>` or ms"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:177 of
+msgid ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:177 of
+msgid "None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:178 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:178 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:179 of
+msgid ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:179 of
+msgid "float or callable[[Artist, Event], tuple[bool, dict]]"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:180 of
+msgid ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:181 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:182 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:182 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:183 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:183 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:184 of
+msgid ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:185 of
+msgid ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:186 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:186 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:187 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:188 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:189 of
+msgid ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:189 matplotlib.axes._axes.Axes.plot:190 of
+msgid "1D array"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:190 of
+msgid ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:191 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:200 of
+msgid ":obj:`scatter`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:201 of
+msgid "XY scatter plot with markers of varying size and/or color ( sometimes also called bubble chart)."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:205 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:206 of
+msgid "**Format Strings**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:208 of
+msgid "A format string consists of a part for color, marker and line::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:212 of
+msgid "Each of them is optional. If not provided, the value from the style cycle is used. Exception: If ``line`` is given, but no ``marker``, the data will be a line without markers."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:216 of
+msgid "Other combinations such as ``[color][marker][line]`` are also supported, but note that their parsing may be ambiguous."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:219 of
+msgid "**Markers**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:222 matplotlib.axes._axes.Axes.plot:254
+#: matplotlib.axes._axes.Axes.plot:275 of
+msgid "character"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:222 matplotlib.axes._axes.Axes.plot:254 of
+msgid "description"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:224 of
+msgid "``'.'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:224 of
+msgid "point marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:225 of
+msgid "``','``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:225 of
+msgid "pixel marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:226 of
+msgid "``'o'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:226 of
+msgid "circle marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:227 of
+msgid "``'v'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:227 of
+msgid "triangle_down marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:228 of
+msgid "``'^'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:228 of
+msgid "triangle_up marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:229 of
+msgid "``'<'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:229 of
+msgid "triangle_left marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:230 of
+msgid "``'>'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:230 of
+msgid "triangle_right marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:231 of
+msgid "``'1'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:231 of
+msgid "tri_down marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:232 of
+msgid "``'2'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:232 of
+msgid "tri_up marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:233 of
+msgid "``'3'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:233 of
+msgid "tri_left marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:234 of
+msgid "``'4'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:234 of
+msgid "tri_right marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:235 of
+msgid "``'8'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:235 of
+msgid "octagon marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:236 of
+msgid "``'s'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:236 of
+msgid "square marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:237 of
+msgid "``'p'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:237 of
+msgid "pentagon marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:238 of
+msgid "``'P'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:238 of
+msgid "plus (filled) marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:239 of
+msgid "``'*'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:239 of
+msgid "star marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:240 of
+msgid "``'h'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:240 of
+msgid "hexagon1 marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:241 of
+msgid "``'H'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:241 of
+msgid "hexagon2 marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:242 of
+msgid "``'+'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:242 of
+msgid "plus marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:243 of
+msgid "``'x'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:243 of
+msgid "x marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:244 of
+msgid "``'X'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:244 of
+msgid "x (filled) marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:245 of
+msgid "``'D'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:245 of
+msgid "diamond marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:246 of
+msgid "``'d'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:246 of
+msgid "thin_diamond marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:247 of
+msgid "``'|'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:247 of
+msgid "vline marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:248 of
+msgid "``'_'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:248 of
+msgid "hline marker"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:251 of
+msgid "**Line Styles**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:256 of
+msgid "``'-'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:256 of
+msgid "solid line style"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:257 of
+msgid "``'--'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:257 of
+msgid "dashed line style"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:258 of
+msgid "``'-.'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:258 of
+msgid "dash-dot line style"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:259 of
+msgid "``':'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:259 of
+msgid "dotted line style"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:262 of
+msgid "Example format strings::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:270 of
+msgid "**Colors**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:272 of
+msgid "The supported color abbreviations are the single letter codes"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:277 of
+msgid "``'b'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:277 of
+msgid "blue"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:278 of
+msgid "``'g'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:278 of
+msgid "green"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:279 of
+msgid "``'r'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:279 of
+msgid "red"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:280 of
+msgid "``'c'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:280 of
+msgid "cyan"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:281 of
+msgid "``'m'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:281 of
+msgid "magenta"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:282 of
+msgid "``'y'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:282 of
+msgid "yellow"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:283 of
+msgid "``'k'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:283 of
+msgid "black"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:284 of
+msgid "``'w'``"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:284 of
+msgid "white"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:287 of
+msgid "and the ``'CN'`` colors that index into the default property cycle."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.plot:289 of
+msgid "If the color is the only part of the format string, you can additionally use any  `matplotlib.colors` spec, e.g. full names (``'green'``) or hex strings (``'#008000'``)."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.plot.examples:2
+msgid "Examples using ``matplotlib.axes.Axes.plot``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.plot.examples:10
+msgid "The double pendulum problem"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.plot.examples:10
+#: ../../api/_as_gen/matplotlib.axes.Axes.plot.examples:18
+msgid ":ref:`sphx_glr_gallery_animation_double_pendulum.py`"
+msgstr ""
+

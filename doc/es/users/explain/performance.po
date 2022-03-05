@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-05 22:33\n"
+"PO-Revision-Date: 2022-03-05 23:39\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -24,55 +24,55 @@ msgstr "Rendimiento"
 
 #: ../../users/explain/performance.rst:6
 msgid "Whether exploring data in interactive mode or programmatically saving lots of plots, rendering performance can be a challenging bottleneck in your pipeline. Matplotlib provides multiple ways to greatly reduce rendering time at the cost of a slight change (to a settable tolerance) in your plot's appearance. The methods available to reduce rendering time depend on the type of plot that is being created."
-msgstr ""
+msgstr "Tanto si se exploran los datos en modo interactivo, como si se guardan muchos gráficos de forma programada, el rendimiento de la renderización puede ser un desafiante cuello de botella en su pipeline. Matplotlib proporciona múltiples maneras de reducir significativamente el tiempo de renderizado mediante un ligero cambio (a una tolerancia ajustable) en la apariencia de su gráfico. Los métodos disponibles para reducir el tiempo de renderizado dependen del tipo de gráfico que se esté creando."
 
 #: ../../users/explain/performance.rst:15
 msgid "Line segment simplification"
-msgstr ""
+msgstr "Simplificación de segmentos de línea"
 
 #: ../../users/explain/performance.rst:17
 msgid "For plots that have line segments (e.g. typical line plots, outlines of polygons, etc.), rendering performance can be controlled by :rc:`path.simplify` and :rc:`path.simplify_threshold`, which can be defined e.g. in the :file:`matplotlibrc` file (see :doc:`/tutorials/introductory/customizing` for more information about the :file:`matplotlibrc` file). :rc:`path.simplify` is a Boolean indicating whether or not line segments are simplified at all. :rc:`path.simplify_threshold` controls how much line segments are simplified; higher thresholds result in quicker rendering."
-msgstr ""
+msgstr "Para los gráficos que tienen segmentos de línea (por ejemplo, los típicos gráficos de línea, los contornos de los polígonos, etc.), el rendimiento de la representación puede controlarse mediante :rc:`path.simplify` y :rc:`path.simplify_threshold`, que pueden definirse, por ejemplo, en el archivo :file:`matplotlibrc` (ver :doc:`/tutorials/introductory/customizing` para más información sobre el archivo :file:`matplotlibrc`). :rc:`path.simplify` es un booleano que indica si los segmentos de línea se simplifican o no. :rc:`path.simplify_threshold` controla la cantidad de segmentos de línea que se simplifican; los umbrales más altos dan lugar a una representación más rápida."
 
 #: ../../users/explain/performance.rst:27
 msgid "The following script will first display the data without any simplification, and then display the same data with simplification. Try interacting with both of them::"
-msgstr ""
+msgstr "El siguiente script mostrará primero los datos sin ninguna simplificación, y luego mostrará los mismos datos con simplificación. Pruebe a interactuar con ambos::"
 
 #: ../../users/explain/performance.rst:49
 msgid "Matplotlib currently defaults to a conservative simplification threshold of ``1/9``. To change default settings to use a different value, change the :file:`matplotlibrc` file. Alternatively, users can create a new style for interactive plotting (with maximal simplification) and another style for publication quality plotting (with minimal simplification) and activate them as necessary. See :doc:`/tutorials/introductory/customizing` for instructions on how to perform these actions."
-msgstr ""
+msgstr "Matplotlib actualmente utiliza por defecto un umbral de simplificación conservador de ``1/9``. Para cambiar la configuración por defecto y utilizar un valor diferente, cambie el archivo :file:`matplotlibrc`. Como alternativa, los usuarios pueden crear un nuevo estilo para el trazado interactivo (con la máxima simplificación) y otro estilo para el trazado de calidad de publicación (con la mínima simplificación) y activarlos según sea necesario. Consultar :doc:`/tutorials/introductory/customizing` para ver instrucciones sobre cómo realizar estas acciones."
 
 #: ../../users/explain/performance.rst:59
 msgid "The simplification works by iteratively merging line segments into a single vector until the next line segment's perpendicular distance to the vector (measured in display-coordinate space) is greater than the ``path.simplify_threshold`` parameter."
-msgstr ""
+msgstr "La simplificación se realiza fusionando iterativamente los segmentos de línea en un único vector hasta que la distancia perpendicular del siguiente segmento de línea hacia el vector (medida en el espacio de coordenadas de la pantalla) sea mayor que el parámetro ``path.simplify_threshold``."
 
 #: ../../users/explain/performance.rst:65
 msgid "Changes related to how line segments are simplified were made in version 2.1. Rendering time will still be improved by these parameters prior to 2.1, but rendering time for some kinds of data will be vastly improved in versions 2.1 and greater."
-msgstr ""
+msgstr "En la versión 2.1 se han realizado cambios relacionados con la simplificación de los segmentos de línea. El tiempo de renderizado seguirá mejorando gracias a estos parámetros antes de la versión 2.1, pero el tiempo de renderizado para algunos tipos de datos mejorará enormemente en las versiones 2.1 y posteriores."
 
 #: ../../users/explain/performance.rst:71
 msgid "Marker simplification"
-msgstr ""
+msgstr "Simplificación del marcador"
 
 #: ../../users/explain/performance.rst:73
 msgid "Markers can also be simplified, albeit less robustly than line segments. Marker simplification is only available to :class:`~matplotlib.lines.Line2D` objects (through the ``markevery`` property). Wherever :class:`~matplotlib.lines.Line2D` construction parameters are passed through, such as :func:`matplotlib.pyplot.plot` and :meth:`matplotlib.axes.Axes.plot`, the ``markevery`` parameter can be used::"
-msgstr ""
+msgstr "Los marcadores también pueden simplificarse, aunque de forma menos robusta que los segmentos de línea. La simplificación de marcadores sólo está disponible para los objetos :class:`~matplotlib.lines.Line2D` (a través de la propiedad ``markevery``). Siempre que se pasen parámetros de construcción :class:`~matplotlib.lines.Line2D`, como :func:`matplotlib.pyplot.plot` y :meth:`matplotlib.axes.Axes.plot`, se puede utilizar el parámetro ``markevery``::"
 
 #: ../../users/explain/performance.rst:85
 msgid "The ``markevery`` argument allows for naive subsampling, or an attempt at evenly spaced (along the *x* axis) sampling. See the :doc:`/gallery/lines_bars_and_markers/markevery_demo` for more information."
-msgstr ""
+msgstr "El argumento ``markevery`` permite un submuestreo ingenuo, o un intento de muestreo uniformemente espaciado (a lo largo del eje *x*). Consulte el documento :doc:`/gallery/lines_bars_and_markers/markevery_demo` para obtener más información."
 
 #: ../../users/explain/performance.rst:91
 msgid "Splitting lines into smaller chunks"
-msgstr ""
+msgstr "Dividir las líneas en prociones más pequeñas"
 
 #: ../../users/explain/performance.rst:93
 msgid "If you are using the Agg backend (see :ref:`what-is-a-backend`), then you can make use of :rc:`agg.path.chunksize` This allows users to specify a chunk size, and any lines with greater than that many vertices will be split into multiple lines, each of which has no more than ``agg.path.chunksize`` many vertices. (Unless ``agg.path.chunksize`` is zero, in which case there is no chunking.) For some kind of data, chunking the line up into reasonable sizes can greatly decrease rendering time."
-msgstr ""
+msgstr "Si está utilizando el backend Agg (ver :ref:`what-is-a-backend`), puede utilizar :rc:`agg.path.chunksize`. Esto permite a los usuarios especificar un tamaño de cada bloque, y cualquier línea con más de ese número de vértices se dividirá en múltiples líneas, cada una de las cuales no tiene más vértices que ``agg.path.chunksize`` (a no ser que ``agg.path.chunksize`` sea cero, en cuyo caso no hay troceado). Para algunos tipos de datos, la división de la línea en tamaños razonables puede reducir mucho el tiempo de renderizado."
 
 #: ../../users/explain/performance.rst:103
 msgid "The following script will first display the data without any chunk size restriction, and then display the same data with a chunk size of 10,000. The difference can best be seen when the figures are large, try maximizing the GUI and then interacting with them::"
-msgstr ""
+msgstr "El siguiente script mostrará primero los datos sin ninguna restricción de tamaño de bloque, y luego mostrará los mismos datos con un tamaño de bloque de 10.000. La diferencia puede verse mejor cuando las cifras son grandes, pruebe a maximizar la GUI y luego a interactuar con ellas::"
 
 #: ../../users/explain/performance.rst:129
 msgid "Legends"

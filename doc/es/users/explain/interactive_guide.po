@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-05 23:39\n"
+"PO-Revision-Date: 2022-03-06 00:48\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -164,135 +164,135 @@ msgstr "Esto nos da la ilusión de tener simultáneamente ventanas GUI interacti
 
 #: ../../users/explain/interactive_guide.rst:166
 msgid "This time-share technique only allows the event loop to run while python is otherwise idle and waiting for user input.  If you want the GUI to be responsive during long running code it is necessary to periodically flush the GUI event queue as described :ref:`above <spin_event_loop>`.  In this case it is your code, not the REPL, which is blocking the process so you need to handle the \"time-share\" manually. Conversely, a very slow figure draw will block the prompt until it finishes drawing."
-msgstr ""
+msgstr "Esta técnica de tiempo compartido sólo permite que el bucle de eventos se ejecute mientras python está inactivo y esperando la respuesta del usuario.  Si quiere que la interfaz gráfica de usuario responda durante la ejecución de un código largo es necesario vaciar periódicamente la cola de eventos de esa interfaz gráfica como se describe :ref:`above <spin_event_loop>`.  En este caso es su código, no el REPL, el que está bloqueando el proceso por lo que necesita manejar el \"tiempo compartido\" manualmente. A la inversa, el dibujo muy lento de una figura bloqueará el prompt hasta que termine de dibujarse."
 
 #: ../../users/explain/interactive_guide.rst:176
 msgid "Full embedding"
-msgstr ""
+msgstr "Inserción completa"
 
 #: ../../users/explain/interactive_guide.rst:178
 msgid "It is also possible to go the other direction and fully embed figures (and a `Python interpreter <https://docs.python.org/3/extending/embedding.html>`__) in a rich native application.  Matplotlib provides classes for each toolkit which can be directly embedded in GUI applications (this is how the built-in windows are implemented!).  See :ref:`user_interfaces` for more details."
-msgstr ""
+msgstr "También es posible ir en la otra dirección e incrustar completamente las figuras (y un intérprete de  `Python interpreter <https://docs.python.org/3/extending/embedding.html>`__) en una aplicación nativa enrriquecida. Matplotlib proporciona clases para cada juego de herramientas que pueden ser incrustadas directamente en aplicaciones GUI (¡así es como se implementan las ventanas incorporadas!).  Ver :ref:`user_interfaces` para más detalles."
 
 #: ../../users/explain/interactive_guide.rst:190
 msgid "Scripts and functions"
-msgstr ""
+msgstr "Scripts y funciones"
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:252:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:361:<autosummary>:1
 msgid ":py:obj:`backend_bases.FigureCanvasBase.flush_events <matplotlib.backend_bases.FigureCanvasBase.flush_events>`"
-msgstr ""
+msgstr ":py:obj:`backend_bases.FigureCanvasBase.flush_events <matplotlib.backend_bases.FigureCanvasBase.flush_events>`"
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:252:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:361:<autosummary>:1
 msgid "Flush the GUI events for the figure."
-msgstr ""
+msgstr "Limpiar los eventos de la interfaz gráfica de usuario para la figura."
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:252:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:361:<autosummary>:1
 msgid ":py:obj:`backend_bases.FigureCanvasBase.draw_idle <matplotlib.backend_bases.FigureCanvasBase.draw_idle>`"
-msgstr ""
+msgstr ":py:obj:`backend_bases.FigureCanvasBase.draw_idle <matplotlib.backend_bases.FigureCanvasBase.draw_idle>`"
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:252:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:361:<autosummary>:1
 msgid "Request a widget redraw once control returns to the GUI event loop."
-msgstr ""
+msgstr "Solicitar el redibujo del widget una vez que el control vuelve al bucle de eventos de la GUI."
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 msgid ":py:obj:`figure.Figure.ginput <matplotlib.figure.Figure.ginput>`"
-msgstr ""
+msgstr ":py:obj:`figure.Figure.ginput <matplotlib.figure.Figure.ginput>`"
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 msgid "Blocking call to interact with a figure."
-msgstr ""
+msgstr "Llamada de bloqueo para interactuar con una figura."
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 msgid ":py:obj:`pyplot.ginput <matplotlib.pyplot.ginput>`"
-msgstr ""
+msgstr ":py:obj:`pyplot.ginput <matplotlib.pyplot.ginput>`"
 
 #: ../../users/explain/interactive_guide.rst:206
 msgid "There are several use-cases for using interactive figures in scripts:"
-msgstr ""
+msgstr "Hay varios casos de uso para utilizar figuras interactivas en los scripts:"
 
 #: ../../users/explain/interactive_guide.rst:208
 msgid "capture user input to steer the script"
-msgstr ""
+msgstr "capturar la entrada del usuario para dirigir el script"
 
 #: ../../users/explain/interactive_guide.rst:209
 msgid "progress updates as a long running script progresses"
-msgstr ""
+msgstr "actualizaciones de progreso a medida que avanza un script de ejecución larga"
 
 #: ../../users/explain/interactive_guide.rst:210
 msgid "streaming updates from a data source"
-msgstr ""
+msgstr "actualizaciones de flujo desde una fuente de datos"
 
 #: ../../users/explain/interactive_guide.rst:213
 msgid "Blocking functions"
-msgstr ""
+msgstr "Funciones de bloqueo"
 
 #: ../../users/explain/interactive_guide.rst:215
 msgid "If you only need to collect points in an Axes you can use `.figure.Figure.ginput` or more generally the tools from `.blocking_input` the tools will take care of starting and stopping the event loop for you.  However if you have written some custom event handling or are using `.widgets` you will need to manually run the GUI event loop using the methods described :ref:`above <cp_block_the_prompt>`."
-msgstr ""
+msgstr "Si sólo necesita recoger puntos en un Eje puedes utilizar `.figure.Figure.ginput` o, en general, las herramientas de `.blocking_input` las herramientas se encargarán de iniciar y detener el bucle de eventos por Ud.  Sin embargo, si ha escrito algún manejo de eventos personalizado o está usando `.widgets` tendrá que ejecutar manualmente el bucle de eventos de la GUI usando los métodos descritos :ref:`above <cp_block_the_prompt>`."
 
 #: ../../users/explain/interactive_guide.rst:222
 msgid "You can also use the methods described in :ref:`cp_block_the_prompt` to suspend run the GUI event loop.  Once the loop exits your code will resume.  In general, any place you would use `time.sleep` you can use `.pyplot.pause` instead with the added benefit of interactive figures."
-msgstr ""
+msgstr "También puede utilizar los métodos descritos en  :ref:`cp_block_the_prompt` para suspender la ejecución del bucle de eventos de la GUI.  Una vez que el bucle finalice, su código se reanudará.  En general, en cualquier lugar en el que se utilizaría `time.sleep` puede utilizar `.pyplot.pause` en su lugar con el beneficio añadido de las figuras interactivas."
 
 #: ../../users/explain/interactive_guide.rst:227
 msgid "For example, if you want to poll for data you could use something like ::"
-msgstr ""
+msgstr "Por ejemplo, si quiere sondear los datos podría usar algo como ::"
 
 #: ../../users/explain/interactive_guide.rst:237
 msgid "which would poll for new data and update the figure at 1Hz."
-msgstr ""
+msgstr "que sondearía los nuevos datos y actualizaría la figura a 1Hz."
 
 #: ../../users/explain/interactive_guide.rst:242
 msgid "Explicitly spinning the event Loop"
-msgstr ""
+msgstr "Girar explícitamente el bucle de eventos"
 
 #: ../../users/explain/interactive_guide.rst:253
 msgid "If you have open windows that have pending UI events (mouse clicks, button presses, or draws) you can explicitly process those events by calling `.FigureCanvasBase.flush_events`. This will run the GUI event loop until all UI events currently waiting have been processed.  The exact behavior is backend-dependent but typically events on all figure are processed and only events waiting to be processed (not those added during processing) will be handled."
-msgstr ""
+msgstr "Si tiene ventanas abiertas con eventos pendientes en la interfaz del usuario (clics del ratón, pulsaciones de botones o gráficos), puede procesar explícitamente esos eventos llamando a `.FigureCanvasBase.flush_events`. Esto ejecutará el bucle de eventos de la interfaz gráfica de usuario hasta que se hayan procesado todos los eventos de interfaz de usuario que estén pendientes. El comportamiento exacto depende del backend, pero normalmente se procesan los eventos de todas las figuras y sólo se gestionan los eventos en espera de ser procesados (no los añadidos durante el procesamiento)."
 
 #: ../../users/explain/interactive_guide.rst:261
 msgid "For example ::"
-msgstr ""
+msgstr "Por ejemplo ::"
 
 #: ../../users/explain/interactive_guide.rst:281
 msgid "While this will feel a bit laggy (as we are only processing user input every 100ms whereas 20-30ms is what feels \"responsive\") it will respond."
-msgstr ""
+msgstr "Aunque esto se sienta un poco lento (ya que sólo estamos procesando la entrada del usuario cada 100ms, mientras que 20-30ms es lo que se siente \"responsivo\"), responderá."
 
 #: ../../users/explain/interactive_guide.rst:285
 msgid "If you make changes to the plot and want it re-rendered you will need to call `~.FigureCanvasBase.draw_idle` to request that the canvas be re-drawn.  This method can be thought of *draw_soon* in analogy to `asyncio.loop.call_soon`."
-msgstr ""
+msgstr "Si realiza cambios en el gráfico y quiere que se vuelva a renderizar tendrá que llamar a `~.FigureCanvasBase.draw_idle` para solicitar que se vuelva a dibujar el lienzo. Este método puede ser pensado como *draw_soon* en analogía con `asyncio.loop.call_soon`."
 
 #: ../../users/explain/interactive_guide.rst:290
 msgid "We can add this our example above as ::"
-msgstr ""
+msgstr "Podemos añadir este nuestro ejemplo anterior como ::"
 
 #: ../../users/explain/interactive_guide.rst:304
 msgid "The more frequently you call `.FigureCanvasBase.flush_events` the more responsive your figure will feel but at the cost of spending more resources on the visualization and less on your computation."
-msgstr ""
+msgstr "Cuanto más frecuentemente se llame a `.FigureCanvasBase.flush_events` más responsiva se sentirá la figura, pero a costa de destinar más recursos a la visualización y menos a su cómputo."
 
 #: ../../users/explain/interactive_guide.rst:312
 msgid "Stale artists"
-msgstr ""
+msgstr "Artists caducados"
 
 #: ../../users/explain/interactive_guide.rst:314
 msgid "Artists (as of Matplotlib 1.5) have a **stale** attribute which is `True` if the internal state of the artist has changed since the last time it was rendered. By default the stale state is propagated up to the Artists parents in the draw tree, e.g., if the color of a `.Line2D` instance is changed, the `.axes.Axes` and `.figure.Figure` that contain it will also be marked as \"stale\".  Thus, ``fig.stale`` will report if any artist in the figure has been modified and is out of sync with what is displayed on the screen.  This is intended to be used to determine if ``draw_idle`` should be called to schedule a re-rendering of the figure."
-msgstr ""
+msgstr "Los artists (a partir de Matplotlib 1.5) tienen un atributo **stale** que es `True` si el estado interno del artist ha cambiado desde la última vez que se renderizó. Por defecto, el estado caducado se propaga a los padres de los Artists en la estructura del dibujo, por ejemplo, si el color de una instancia de `.Line2D` se cambia, el `.axes.Axes` y `.figure.Figure` que lo contienen también se marcarán como \"caducado\".  Así, ``fig.stale`` informará si algún artist de la figura ha sido modificado y no está sincronizado con lo que se muestra en la pantalla.  Esto está pensado para determinar si se debe llamar a ``draw_idle`` para programar una nueva renderización de la figura."
 
 #: ../../users/explain/interactive_guide.rst:325
 msgid "Each artist has a `.Artist.stale_callback` attribute which holds a callback with the signature ::"
-msgstr ""
+msgstr "Cada artist tiene un atributo `.Artist.stale_callback` que contiene una llamada de retorno con la firma ::"
 
 #: ../../users/explain/interactive_guide.rst:331
 msgid "which by default is set to a function that forwards the stale state to the artist's parent.   If you wish to suppress a given artist from propagating set this attribute to None."
-msgstr ""
+msgstr "que, por defecto, se establece como una función que reenvía el estado caducado al padre del artist. Si desea suprimir la propagación de un artist determinado, establezca este atributo como None."
 
 #: ../../users/explain/interactive_guide.rst:335
 msgid "`.figure.Figure` instances do not have a containing artist and their default callback is `None`.  If you call `.pyplot.ion` and are not in ``IPython`` we will install a callback to invoke `~.backend_bases.FigureCanvasBase.draw_idle` whenever the `.figure.Figure` becomes stale.  In ``IPython`` we use the ``'post_execute'`` hook to invoke `~.backend_bases.FigureCanvasBase.draw_idle` on any stale figures after having executed the user's input, but before returning the prompt to the user.  If you are not using `.pyplot` you can use the callback `Figure.stale_callback` attribute to be notified when a figure has become stale."

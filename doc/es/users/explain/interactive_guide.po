@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-06 00:48\n"
+"PO-Revision-Date: 2022-03-06 01:54\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -296,75 +296,75 @@ msgstr "que, por defecto, se establece como una función que reenvía el estado 
 
 #: ../../users/explain/interactive_guide.rst:335
 msgid "`.figure.Figure` instances do not have a containing artist and their default callback is `None`.  If you call `.pyplot.ion` and are not in ``IPython`` we will install a callback to invoke `~.backend_bases.FigureCanvasBase.draw_idle` whenever the `.figure.Figure` becomes stale.  In ``IPython`` we use the ``'post_execute'`` hook to invoke `~.backend_bases.FigureCanvasBase.draw_idle` on any stale figures after having executed the user's input, but before returning the prompt to the user.  If you are not using `.pyplot` you can use the callback `Figure.stale_callback` attribute to be notified when a figure has become stale."
-msgstr ""
+msgstr "Las instancias de `.figure.Figure` no tienen un artist contenedor y su retorno por defecto es `None`.  Si llama a `.pyplot.ion` y no está en ``IPython`` instalaremos una llamada de retorno para invocar a `~.backend_bases.FigureCanvasBase.draw_idle` cada vez que el `.figure.Figure` caduque.  En ``IPython`` utilizamos el hook ``'post_execute`` para invocar a `~.backend_bases.FigureCanvasBase.draw_idle` en cualquier figura caduca después de haber ejecutado la entrada del usuario, pero antes de devolver el prompt al usuario.  Si no utiliza `.pyplot`, puede utilizar el atributo de retorno `Figure.stale_callback` para que le notifique cuando una figura se ha quedado caduca."
 
 #: ../../users/explain/interactive_guide.rst:351
 msgid "Idle draw"
-msgstr ""
+msgstr "Dibujo inactivo"
 
 #: ../../users/explain/interactive_guide.rst:361:<autosummary>:1
 msgid ":py:obj:`backend_bases.FigureCanvasBase.draw <matplotlib.backend_bases.FigureCanvasBase.draw>`"
-msgstr ""
+msgstr ":py:obj:`backend_bases.FigureCanvasBase.draw <matplotlib.backend_bases.FigureCanvasBase.draw>`"
 
 #: ../../users/explain/interactive_guide.rst:361:<autosummary>:1
 msgid "Render the `.Figure`."
-msgstr ""
+msgstr "Renderiza la `.Figure`."
 
 #: ../../users/explain/interactive_guide.rst:362
 msgid "In almost all cases, we recommend using `backend_bases.FigureCanvasBase.draw_idle` over `backend_bases.FigureCanvasBase.draw`.  ``draw`` forces a rendering of the figure whereas ``draw_idle`` schedules a rendering the next time the GUI window is going to re-paint the screen.  This improves performance by only rendering pixels that will be shown on the screen.  If you want to be sure that the screen is updated as soon as possible do ::"
-msgstr ""
+msgstr "En casi todos los casos, recomendamos utilizar `backend_bases.FigureCanvasBase.draw_idle` en lugar de `backend_bases.FigureCanvasBase.draw`.  ``draw`` fuerza una renderización de la figura mientras que ``draw_idle`` programa una renderización la próxima vez que la ventana GUI vaya a repintar la pantalla.  Esto mejora el rendimiento al renderizar sólo los píxeles que se mostrarán en la pantalla. Si quiere asegurarse de que la pantalla se actualiza lo antes posible hágalo ::"
 
 #: ../../users/explain/interactive_guide.rst:376
 msgid "Threading"
-msgstr ""
+msgstr "Subprocesos"
 
 #: ../../users/explain/interactive_guide.rst:378
 msgid "Most GUI frameworks require that all updates to the screen, and hence their main event loop, run on the main thread.  This makes pushing periodic updates of a plot to a background thread impossible. Although it seems backwards, it is typically easier to push your computations to a background thread and periodically update the figure on the main thread."
-msgstr ""
+msgstr "La mayoría de los frameworks de GUI requieren que todas las actualizaciones de la pantalla, y por tanto su bucle de eventos principal, se ejecuten en el subproceso principal. Esto hace que sea imposible enviar las actualizaciones periódicas de un gráfico a un segundo plano. Aunque parezca un retroceso, normalmente es más fácil pasar los cálculos a un subproceso en segundo plano y actualizar periódicamente la figura en el subproceso principal."
 
 #: ../../users/explain/interactive_guide.rst:385
 msgid "In general Matplotlib is not thread safe.  If you are going to update `.Artist` objects in one thread and draw from another you should make sure that you are locking in the critical sections."
-msgstr ""
+msgstr "En general, Matplotlib no es seguro para subprocesos.  Si va a actualizar objetos `.Artist` en un subproceso y dibujar desde otro, debe asegurarse de bloquear las secciones críticas."
 
 #: ../../users/explain/interactive_guide.rst:392
 msgid "Eventloop integration mechanism"
-msgstr ""
+msgstr "Mecanismo de integración Eventloop"
 
 #: ../../users/explain/interactive_guide.rst:395
 msgid "CPython / readline"
-msgstr ""
+msgstr "CPython / readline"
 
 #: ../../users/explain/interactive_guide.rst:397
 msgid "The Python C API provides a hook, :c:data:`PyOS_InputHook`, to register a function to be run (\"The function will be called when Python's interpreter prompt is about to become idle and wait for user input from the terminal.\").  This hook can be used to integrate a second event loop (the GUI event loop) with the python input prompt loop. The hook functions typically exhaust all pending events on the GUI event queue, run the main loop for a short fixed amount of time, or run the event loop until a key is pressed on stdin."
-msgstr ""
+msgstr "La API de Python C proporciona un hook, :c:data:`PyOS_InputHook`, para registrar una función que se ejecutará (\"La función será llamada cuando el intérprete de Python esté a punto de quedar inactivo y esperar la entrada del usuario desde el terminal\").  Este hook puede utilizarse para integrar un segundo bucle de eventos (el bucle de eventos de la GUI) con el bucle del prompt de entrada de Python. Las funciones hook normalmente agotan todos los eventos pendientes en la cola de eventos de la GUI, ejecutan el bucle principal durante un corto período de tiempo fijo, o ejecutan el bucle de eventos hasta que se pulsa una tecla en stdin."
 
 #: ../../users/explain/interactive_guide.rst:406
 msgid "Matplotlib does not currently do any management of :c:data:`PyOS_InputHook` due to the wide range of ways that Matplotlib is used.  This management is left to downstream libraries -- either user code or the shell.  Interactive figures, even with Matplotlib in 'interactive mode', may not work in the vanilla python repl if an appropriate :c:data:`PyOS_InputHook` is not registered."
-msgstr ""
+msgstr "Matplotlib no hace actualmente ninguna gestión de :c:data:`PyOS_InputHook` debido a la amplia gama de formas en las que se utiliza Matplotlib.  Esta gestión se deja a las bibliotecas derivadas -- ya sea el código del usuario o el shell.  Las figuras interactivas, incluso con Matplotlib en 'modo interactivo', pueden no funcionar en la réplica de vanilla python si no se registra un :c:data:`PyOS_InputHook` apropiado."
 
 #: ../../users/explain/interactive_guide.rst:412
 msgid "Input hooks, and helpers to install them, are usually included with the python bindings for GUI toolkits and may be registered on import. IPython also ships input hook functions for all of the GUI frameworks Matplotlib supports which can be installed via ``%matplotlib``.  This is the recommended method of integrating Matplotlib and a prompt."
-msgstr ""
+msgstr "Los hooks de entrada, y los ayudantes para instalarlos, suelen incluirse con los enlaces de python para los conjuntos de herramientas de interfaz gráfica de usuario y pueden registrarse al importarlos. IPython también incluye funciones hook de entrada para todos los marcos de trabajo GUI que Matplotlib soporta y que pueden ser instalados a través de ``%matplotlib``.  Este es el método recomendado para integrar Matplotlib y un prompt."
 
 #: ../../users/explain/interactive_guide.rst:420
 msgid "IPython / prompt_toolkit"
-msgstr ""
+msgstr "IPython / prompt_toolkit"
 
 #: ../../users/explain/interactive_guide.rst:422
 msgid "With IPython >= 5.0 IPython has changed from using CPython's readline based prompt to a ``prompt_toolkit`` based prompt.  ``prompt_toolkit`` has the same conceptual input hook, which is fed into ``prompt_toolkit`` via the :meth:`IPython.terminal.interactiveshell.TerminalInteractiveShell.inputhook` method.  The source for the ``prompt_toolkit`` input hooks lives at :mod:`IPython.terminal.pt_inputhooks`."
-msgstr ""
+msgstr "Con IPython >= 5.0 IPython ha cambiado de usar el prompt basado en readline de CPython a un prompt basado en ``prompt_toolkit``.  ``prompt_toolkit`` tiene el mismo hook de entrada conceptual, que se introduce en ``prompt_toolkit`` a través del método :meth:`IPython.terminal.interactiveshell.TerminalInteractiveShell.inputhook`.  La fuente de los hooks de entrada de ``prompt_toolkit`` se encuentran en :mod:`IPython.terminal.pt_inputhooks`."
 
 #: ../../users/explain/interactive_guide.rst:432
 msgid "Footnotes"
-msgstr ""
+msgstr "Notas al pie"
 
 #: ../../users/explain/interactive_guide.rst:433
 msgid "A limitation of this design is that you can only wait for one input, if there is a need to multiplex between multiple sources then the loop would look something like ::"
-msgstr ""
+msgstr "Una limitación de este diseño es que sólo puede esperar una entrada, si hay necesidad de hacer un multiplex entre múltiples fuentes entonces el bucle se vería algo como ::"
 
 #: ../../users/explain/interactive_guide.rst:442
 msgid "Or you can `write your own <https://www.youtube.com/watch?v=ZzfHjytDceU>`__ if you must."
-msgstr ""
+msgstr "O puedes `escribir el tuyo propio <https://www.youtube.com/watch?v=ZzfHjytDceU>`__ si es necesario."
 
 #: ../../users/explain/interactive_guide.rst:445
 msgid "These examples are aggressively dropping many of the complexities that must be dealt with in the real world such as keyboard interrupts, timeouts, bad input, resource allocation and cleanup, etc."

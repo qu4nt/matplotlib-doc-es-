@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-08 18:33\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,67 +20,67 @@ msgstr ""
 
 #: ../../users/project/history.rst:4
 msgid "History"
-msgstr ""
+msgstr "Historia"
 
 #: ../../users/project/history.rst:8
 msgid "The following introductory text was written in 2008 by John D. Hunter (1968-2012), the original author of Matplotlib."
-msgstr ""
+msgstr "El siguiente texto introductorio fue escrito en 2008 por John D. Hunter (1968-2012), el autor original de Matplotlib."
 
 #: ../../users/project/history.rst:11
 msgid "Matplotlib is a library for making 2D plots of arrays in `Python <https://www.python.org>`_.  Although it has its origins in emulating the MATLAB graphics commands, it is independent of MATLAB, and can be used in a Pythonic, object oriented way.  Although Matplotlib is written primarily in pure Python, it makes heavy use of `NumPy <https://numpy.org>`_ and other extension code to provide good performance even for large arrays."
-msgstr ""
+msgstr "Matplotlib es una biblioteca para hacer gráficos 2D de matrices en `Python <https://www.python.org>`_.  Aunque tiene su origen en la emulación de los comandos gráficos de MATLAB, es independiente de éste y puede utilizarse de forma pitónica y orientada a objetos.  Aunque Matplotlib está escrito principalmente en Python puro, hace un uso intensivo de `NumPy <https://numpy.org>`_ y otro código de extensión para proporcionar un buen rendimiento incluso para arreglos grandes."
 
 #: ../../users/project/history.rst:19
 msgid "Matplotlib is designed with the philosophy that you should be able to create simple plots with just a few commands, or just one!  If you want to see a histogram of your data, you shouldn't need to instantiate objects, call methods, set properties, and so on; it should just work."
-msgstr ""
+msgstr "Matplotlib está diseñado con la filosofía de que deberías ser capaz de crear gráficos sencillos con unos pocos comandos, ¡o con uno solo!  Si quieres ver un histograma de tus datos, no deberías necesitar instanciar objetos, invocar métodos, establecer propiedades, etc.; simplemente debería funcionar."
 
 #: ../../users/project/history.rst:25
 msgid "For years, I used to use MATLAB exclusively for data analysis and visualization.  MATLAB excels at making nice looking plots easy.  When I began working with EEG data, I found that I needed to write applications to interact with my data, and developed an EEG analysis application in MATLAB.  As the application grew in complexity, interacting with databases, http servers, manipulating complex data structures, I began to strain against the limitations of MATLAB as a programming language, and decided to start over in Python.  Python more than makes up for all of MATLAB's deficiencies as a programming language, but I was having difficulty finding a 2D plotting package (for 3D `VTK <http://www.vtk.org/>`_ more than exceeds all of my needs)."
-msgstr ""
+msgstr "Durante años, solía utilizar MATLAB exclusivamente para el análisis y la visualización de datos.  MATLAB es excelente para hacer fácilmente gráficos de aspecto agradable.  Cuando empecé a trabajar con datos de EEG, descubrí que necesitaba escribir aplicaciones para interactuar con mis datos, y desarrollé una aplicación de análisis de EEG en MATLAB.  A medida que la aplicación crecía en complejidad, interactuando con bases de datos, servidores http, manipulando estructuras de datos complejas, empecé a tener dificultades con las limitaciones de MATLAB como lenguaje de programación, y decidí empezar de nuevo en Python.  Python compensa con creces todas las deficiencias de MATLAB como lenguaje de programación, pero tenía dificultades para encontrar un paquete de gráficos 2D (para 3D `VTK <http://www.vtk.org/>`_ supera con creces todas mis necesidades)."
 
 #: ../../users/project/history.rst:38
 msgid "When I went searching for a Python plotting package, I had several requirements:"
-msgstr ""
+msgstr "Cuando busqué un paquete de gráficos para Python, tenía varios requisitos:"
 
 #: ../../users/project/history.rst:41
 msgid "Plots should look great - publication quality.  One important requirement for me is that the text looks good (antialiased, etc.)"
-msgstr ""
+msgstr "Los gráficos deben tener un buen aspecto - calidad de publicación.  Un requisito importante para mí es que el texto se vea bien (antialiasing, etc.)"
 
 #: ../../users/project/history.rst:44
 msgid "Postscript output for inclusion with TeX documents"
-msgstr ""
+msgstr "Salida Postscript para incluirla en documentos TeX"
 
 #: ../../users/project/history.rst:46
 msgid "Embeddable in a graphical user interface for application development"
-msgstr ""
+msgstr "Incorporación de una interfaz gráfica de usuario para el desarrollo de aplicaciones"
 
 #: ../../users/project/history.rst:49
 msgid "Code should be easy enough that I can understand it and extend it"
-msgstr ""
+msgstr "El código debe ser lo suficientemente fácil como para que pueda entenderlo y ampliarlo"
 
 #: ../../users/project/history.rst:52
 msgid "Making plots should be easy"
-msgstr ""
+msgstr "Hacer gráficos debería ser fácil"
 
 #: ../../users/project/history.rst:54
 msgid "Finding no package that suited me just right, I did what any self-respecting Python programmer would do: rolled up my sleeves and dived in.  Not having any real experience with computer graphics, I decided to emulate MATLAB's plotting capabilities because that is something MATLAB does very well.  This had the added advantage that many people have a lot of MATLAB experience, and thus they can quickly get up to steam plotting in python.  From a developer's perspective, having a fixed user interface (the pylab interface) has been very useful, because the guts of the code base can be redesigned without affecting user code."
-msgstr ""
+msgstr "Al no encontrar ningún paquete que se adaptara a mis necesidades, hice lo que cualquier programador de Python que se respete: me arremangué y me puse a trabajar.  Al no tener ninguna experiencia real con los gráficos por ordenador, decidí emular las capacidades de trazado de MATLAB porque eso es algo que MATLAB hace muy bien.  Esto tenía la ventaja añadida de que mucha gente tiene mucha experiencia con MATLAB y, por tanto, puede ponerse rápidamente a trabajar con gráficos en python.  Desde el punto de vista del desarrollador, tener una interfaz de usuario fija (la interfaz de pylab) ha sido muy útil, porque las bases de código pueden ser rediseñadas sin afectar al código del usuario."
 
 #: ../../users/project/history.rst:65
 msgid "The Matplotlib code is conceptually divided into three parts: the *pylab interface* is the set of functions provided by :mod:`pylab` which allow the user to create plots with code quite similar to MATLAB figure generating code (:doc:`/tutorials/introductory/pyplot`).  The *Matplotlib frontend* or *Matplotlib API* is the set of classes that do the heavy lifting, creating and managing figures, text, lines, plots and so on (:doc:`/tutorials/intermediate/artists`).  This is an abstract interface that knows nothing about output.  The *backends* are device-dependent drawing devices, aka renderers, that transform the frontend representation to hardcopy or a display device (:ref:`what-is-a-backend`).  Example backends: PS creates `PostScript® <https://www.adobe.com/products/postscript.html>`_ hardcopy, SVG creates `Scalable Vector Graphics <https://www.w3.org/Graphics/SVG/>`_ hardcopy, Agg creates PNG output using the high quality `Anti-Grain Geometry <http://agg.sourceforge.net/antigrain.com/>`_ library that ships with Matplotlib, GTK embeds Matplotlib in a `Gtk+ <https://www.gtk.org/>`_ application, GTKAgg uses the Anti-Grain renderer to create a figure and embed it in a Gtk+ application, and so on for `PDF <https://acrobat.adobe.com/us/en/acrobat/about-adobe-pdf.html>`_, `WxWidgets <https://www.wxpython.org/>`_, `Tkinter <https://docs.python.org/3/library/tkinter.html>`_, etc."
-msgstr ""
+msgstr "El código de Matplotlib está conceptualmente dividido en tres partes: la *interfaz de Matplotlib* es el conjunto de funciones proporcionadas por :mod:`pylab` que permiten al usuario crear gráficos con un código bastante similar al código de generación de figuras de MATLAB (:doc:`/tutorials/introductory/pyplot`).  El *Matplotlib frontend* o *Matplotlib API* es el conjunto de clases que hacen el trabajo pesado, creando y gestionando figuras, texto, líneas, gráficos y demás (:doc:`/tutorials/intermediate/artists`).  Se trata de una interfaz abstracta que no sabe nada sobre la salida.  Los *backends* son dispositivos de dibujo dependientes del dispositivo, también conocidos como renderizadores, que transforman la representación del frontend en una copia impresa o en un dispositivo de visualización (:ref:`what-is-a-backend`).  Ejemplos de backends: PS crea `PostScript® <https://www.adobe.com/products/postscript.html>`_ en papel, SVG crea `Scalable Vector Graphics <https://www.w3.org/Graphics/SVG/>`_ en papel, Agg crea una salida PNG usando la librería de alta calidad `Anti-Grain Geometry <http://agg.sourceforge.net/antigrain.com/>`_ que viene con Matplotlib, GTK incrusta Matplotlib en una aplicación `Gtk+ <https://www. gtk.org/>`_, GTKAgg utiliza el renderizador Anti-Grain para crear una figura e incrustarla en una aplicación Gtk+, y así sucesivamente para `PDF <https://acrobat.adobe.com/us/en/acrobat/about-adobe-pdf.html>`_, `WxWidgets <https://www.wxpython.org/>`_, `Tkinter <https://docs.python.org/3/library/tkinter.html>`_, etc."
 
 #: ../../users/project/history.rst:89
 msgid "Matplotlib is used by many people in many different contexts.  Some people want to automatically generate PostScript files to send to a printer or publishers.  Others deploy Matplotlib on a web application server to generate PNG output for inclusion in dynamically-generated web pages.  Some use Matplotlib interactively from the Python shell in Tkinter on Windows. My primary use is to embed Matplotlib in a Gtk+ EEG application that runs on Windows, Linux and Macintosh OS X."
-msgstr ""
+msgstr "Matplotlib es utilizado por muchas personas en muchos contextos diferentes.  Algunas personas quieren generar automáticamente archivos PostScript para enviarlos a una impresora o a editores.  Otros despliegan Matplotlib en un servidor de aplicaciones web para generar una salida PNG para incluirla en páginas web generadas dinámicamente.  Algunos utilizan Matplotlib de forma interactiva desde el entorno de Python en Tkinter en Windows. Mi uso principal es insertar Matplotlib en una aplicación Gtk+ EEG que se ejecuta en Windows, Linux y Macintosh OS X."
 
 #: ../../users/project/history.rst:100
 msgid "Matplotlib's original logo (2003 -- 2008)."
-msgstr ""
+msgstr "El logotipo original de Matplotlib (2003 -- 2008)."
 
 #: ../../users/project/history.rst:7
 msgid "(`Source code <../../users/project/history-1.py>`__, `png <../../users/project/history-1.png>`__, `pdf <../../users/project/history-1.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/project/history-1.py>`__, `png <../../users/project/history-1.png>`__, `pdf <../../users/project/history-1.pdf>`__)"
 
 #: ../../users/project/history.rst:131
 msgid "Matplotlib logo (2008 - 2015)."

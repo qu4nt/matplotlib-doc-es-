@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-05 23:39\n"
+"PO-Revision-Date: 2022-03-09 20:30\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Rendimiento"
 
 #: ../../users/explain/performance.rst:6
 msgid "Whether exploring data in interactive mode or programmatically saving lots of plots, rendering performance can be a challenging bottleneck in your pipeline. Matplotlib provides multiple ways to greatly reduce rendering time at the cost of a slight change (to a settable tolerance) in your plot's appearance. The methods available to reduce rendering time depend on the type of plot that is being created."
-msgstr "Tanto si se exploran los datos en modo interactivo, como si se guardan muchos gráficos de forma programada, el rendimiento de la renderización puede ser un desafiante cuello de botella en su pipeline. Matplotlib proporciona múltiples maneras de reducir significativamente el tiempo de renderizado mediante un ligero cambio (a una tolerancia ajustable) en la apariencia de su gráfico. Los métodos disponibles para reducir el tiempo de renderizado dependen del tipo de gráfico que se esté creando."
+msgstr "Tanto si se exploran los datos en modo interactivo, como si se guardan muchos gráficos de forma programada, el rendimiento de la renderización puede ser un desafiante cuello de botella en su pipeline. Matplotlib proporciona múltiples maneras de reducir significativamente el tiempo de renderizado mediante un ligero cambio (a una tolerancia ajustable) en la apariencia del gráfico. Los métodos disponibles para reducir el tiempo de renderizado dependen del tipo de gráfico que se esté creando."
 
 #: ../../users/explain/performance.rst:15
 msgid "Line segment simplification"
@@ -40,7 +40,7 @@ msgstr "El siguiente script mostrará primero los datos sin ninguna simplificaci
 
 #: ../../users/explain/performance.rst:49
 msgid "Matplotlib currently defaults to a conservative simplification threshold of ``1/9``. To change default settings to use a different value, change the :file:`matplotlibrc` file. Alternatively, users can create a new style for interactive plotting (with maximal simplification) and another style for publication quality plotting (with minimal simplification) and activate them as necessary. See :doc:`/tutorials/introductory/customizing` for instructions on how to perform these actions."
-msgstr "Matplotlib actualmente utiliza por defecto un umbral de simplificación conservador de ``1/9``. Para cambiar la configuración por defecto y utilizar un valor diferente, cambie el archivo :file:`matplotlibrc`. Como alternativa, los usuarios pueden crear un nuevo estilo para el trazado interactivo (con la máxima simplificación) y otro estilo para el trazado de calidad de publicación (con la mínima simplificación) y activarlos según sea necesario. Consultar :doc:`/tutorials/introductory/customizing` para ver instrucciones sobre cómo realizar estas acciones."
+msgstr "Matplotlib actualmente utiliza por defecto un umbral de simplificación conservador de ``1/9``. Para cambiar la configuración por defecto y utilizar un valor diferente, cambie el archivo :file:`matplotlibrc`. Como alternativa, los usuarios pueden crear un nuevo estilo para el trazado interactivo (con la máxima simplificación) y otro estilo para el trazado de calidad de publicación (con la mínima simplificación) y activarlos según sea necesario. Consulta :doc:`/tutorials/introductory/customizing` para ver instrucciones sobre cómo realizar estas acciones."
 
 #: ../../users/explain/performance.rst:59
 msgid "The simplification works by iteratively merging line segments into a single vector until the next line segment's perpendicular distance to the vector (measured in display-coordinate space) is greater than the ``path.simplify_threshold`` parameter."
@@ -80,7 +80,7 @@ msgstr "Leyendas"
 
 #: ../../users/explain/performance.rst:131
 msgid "The default legend behavior for axes attempts to find the location that covers the fewest data points (``loc='best'``). This can be a very expensive computation if there are lots of data points. In this case, you may want to provide a specific location."
-msgstr "El comportamiento por defecto de la leyenda para los ejes intenta encontrar la ubicación que cubra el menor número de puntos de datos (``loc='best'``). Esto puede ser un cálculo muy costoso si hay muchos puntos con datos. En este caso, es posible que desee suministrar una ubicación específica."
+msgstr "El comportamiento por defecto de la leyenda para los ejes intenta encontrar la ubicación que cubra el menor número de puntos de datos (``loc='best'``). Esto puede ser un cálculo muy costoso si hay muchos puntos con datos. En este caso, es posible que desees suministrar una ubicación específica."
 
 #: ../../users/explain/performance.rst:137
 msgid "Using the *fast* style"

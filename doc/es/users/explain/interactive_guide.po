@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-10 20:16\n"
+"PO-Revision-Date: 2022-03-10 21:51\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -24,11 +24,11 @@ msgstr "Figuras interactivas y programación asíncrona"
 
 #: ../../users/explain/interactive_guide.rst:12
 msgid "Matplotlib supports rich interactive figures by embedding figures into a GUI window.  The basic interactions of panning and zooming in an Axes to inspect your data is 'baked in' to Matplotlib.  This is supported by a full mouse and keyboard event handling system that you can use to build sophisticated interactive graphs."
-msgstr "Matplotlib soporta figuras interactivas enriquecidas mediante la incrustación de figuras en una ventana GUI.  Se han incorporado a Matplotlib las interacciones básicas de desplazamiento y zoom en un eje para inspeccionar los datos.  Esto es apoyado por un sistema completo de manejo de eventos del ratón y del teclado que puedes usar para construir sofisticados gráficos interactivos."
+msgstr "Matplotlib soporta figuras interactivas enriquecidas mediante la incrustación de figuras en una ventana IGU.  Se han incorporado a Matplotlib las interacciones básicas de desplazamiento y zoom en un eje para inspeccionar los datos.  Esto es apoyado por un sistema completo de manejo de eventos del ratón y del teclado que puedes usar para construir sofisticados gráficos interactivos."
 
 #: ../../users/explain/interactive_guide.rst:18
 msgid "This guide is meant to be an introduction to the low-level details of how Matplotlib integration with a GUI event loop works.  For a more practical introduction to the Matplotlib event API see :ref:`event handling system <event-handling-tutorial>`, `Interactive Tutorial <https://github.com/matplotlib/interactive_tutorial>`__, and `Interactive Applications using Matplotlib <http://www.amazon.com/Interactive-Applications-using-Matplotlib-Benjamin/dp/1783988843>`__."
-msgstr "Esta guía pretende ser una introducción a los detalles de bajo nivel de cómo funciona la integración de Matplotlib con un bucle de eventos de GUI.  Para una introducción más práctica a la API de eventos de Matplotlib consulta :ref:`sistema de manejo de eventos <event-handling-tutorial>`, `Tutorial Interactivo <https://github.com/matplotlib/interactive_tutorial>`__, y `Aplicaciones Interactivas usando Matplotlib <http://www.amazon.com/Interactive-Applications-using-Matplotlib-Benjamin/dp/1783988843>`__."
+msgstr "Esta guía pretende ser una introducción a los detalles de bajo nivel de cómo funciona la integración de Matplotlib con un bucle de eventos de IGU.  Para una introducción más práctica a la API de eventos de Matplotlib consulta :ref:`sistema de manejo de eventos <event-handling-tutorial>`, `Tutorial Interactivo <https://github.com/matplotlib/interactive_tutorial>`__, y `Aplicaciones Interactivas usando Matplotlib <http://www.amazon.com/Interactive-Applications-using-Matplotlib-Benjamin/dp/1783988843>`__."
 
 #: ../../users/explain/interactive_guide.rst:27
 msgid "Event loops"
@@ -40,7 +40,7 @@ msgstr "Fundamentalmente, toda la interacción con el usuario (y el trabajo en r
 
 #: ../../users/explain/interactive_guide.rst:42
 msgid "This is missing many niceties (for example, it exits on the first exception!), but is representative of the event loops that underlie all terminals, GUIs, and servers [#f1]_.  In general the *Read* step is waiting on some sort of I/O -- be it user input or the network -- while the *Evaluate* and *Print* are responsible for interpreting the input and then **doing** something about it."
-msgstr "A este bucle le faltan muchos detalles (¡por ejemplo, sale a la primera excepción!), pero es representativo de los bucles de eventos que subyacen en todos los terminales, GUIs y servidores [#f1]_.  En general, el paso *Read* está esperando algún tipo de entrada/salida (ya sea del usuario o de la red), mientras que *Evaluate* y *Print* son responsables de interpretar la entrada y luego **hacer** algo al respecto."
+msgstr "A este bucle le faltan muchos detalles (¡por ejemplo, sale a la primera excepción!), pero es representativo de los bucles de eventos que subyacen en todos los terminales, IGUs y servidores [#f1]_.  En general, el paso *Read* está esperando algún tipo de E/S (ya sea del usuario o de la red), mientras que *Evaluate* y *Print* son responsables de interpretar la entrada y luego **hacer** algo al respecto."
 
 #: ../../users/explain/interactive_guide.rst:49
 msgid "In practice we interact with a framework that provides a mechanism to register callbacks to be run in response to specific events rather than directly implement the I/O loop [#f2]_.  For example \"when the user clicks on this button, please run this function\" or \"when the user hits the 'z' key, please run this other function\".  This allows users to write reactive, event-driven, programs without having to delve into the nitty-gritty [#f3]_ details of I/O.  The core event loop is sometimes referred to as \"the main loop\" and is typically started, depending on the library, by methods with names like ``_exec``, ``run``, or ``start``."
@@ -48,7 +48,7 @@ msgstr "En la práctica interactuamos con un framework que proporciona un mecani
 
 #: ../../users/explain/interactive_guide.rst:61
 msgid "All GUI frameworks (Qt, Wx, Gtk, tk, OSX, or web) have some method of capturing user interactions and passing them back to the application (for example ``Signal`` / ``Slot`` framework in Qt) but the exact details depend on the toolkit.  Matplotlib has a :ref:`backend <what-is-a-backend>` for each GUI toolkit we support which uses the toolkit API to bridge the toolkit UI events into Matplotlib's :ref:`event handling system <event-handling-tutorial>`.  You can then use `.FigureCanvasBase.mpl_connect` to connect your function to Matplotlib's event handling system.  This allows you to directly interact with your data and write GUI toolkit agnostic user interfaces."
-msgstr ""
+msgstr "Todos los frameworks de IGU (Qt, Wx, Gtk, tk, OSX, o web) tienen algún método para capturar las interacciones del usuario y pasarlas de vuelta a la aplicación (por ejemplo ``Signal`` / ``Slot`` framework en Qt) pero los detalles exactos dependen del toolkit.  Matplotlib tiene un :ref:`backend <what-is-a-backend>` para cada kit de herramientas IGU que soportamos, que utiliza la API del toolkit para pasar los eventos IU del toolkit al sistema de manejo de eventos de Matplotlib :ref:`event handling system <event-handling-tutorial>`.  Entonces puedes usar `.FigureCanvasBase.mpl_connect` para conectar tu función con el sistema de manejo de eventos de Matplotlib.  Esto te permite interactuar directamente con tus datos y escribir interfaces de usuario independientes del kit de herramientas IGU."
 
 #: ../../users/explain/interactive_guide.rst:77
 msgid "Command prompt integration"
@@ -56,23 +56,23 @@ msgstr "Integración de la línea de comandos"
 
 #: ../../users/explain/interactive_guide.rst:79
 msgid "So far, so good.  We have the REPL (like the IPython terminal) that lets us interactively send code to the interpreter and get results back.  We also have the GUI toolkit that runs an event loop waiting for user input and lets us register functions to be run when that happens.  However, if we want to do both we have a problem: the prompt and the GUI event loop are both infinite loops that each think *they* are in charge!  In order for both the prompt and the GUI windows to be responsive we need a method to allow the loops to 'timeshare' :"
-msgstr ""
+msgstr "Hasta aquí, todo bien. Tenemos el REPL (como la terminal de IPython) que nos permite enviar código de forma interactiva al intérprete y obtener resultados. También tenemos el kit de herramientas de la IGU que ejecuta un bucle de eventos a la espera de la entrada del usuario y nos permite registrar funciones para que se ejecuten cuando eso suceda. Sin embargo, si queremos hacer ambas cosas tenemos un problema: tanto el prompt como el bucle de eventos de la IGU son bucles infinitos que piensan que *están* al mando.  Para que tanto el prompt como las ventanas de la IGU respondan necesitamos un método que permita a los bucles 'timeshare':"
 
 #: ../../users/explain/interactive_guide.rst:88
 msgid "let the GUI main loop block the python process when you want interactive windows"
-msgstr ""
+msgstr "dejar que el bucle principal de la IGU bloquee el proceso de python cuando quieras ventanas interactivas"
 
 #: ../../users/explain/interactive_guide.rst:90
 msgid "let the CLI main loop block the python process and intermittently run the GUI loop"
-msgstr ""
+msgstr "dejar que el bucle principal de la CLI bloquee el proceso de python y ejecute intermitentemente el bucle de la IGU"
 
 #: ../../users/explain/interactive_guide.rst:92
 msgid "fully embed python in the GUI (but this is basically writing a full application)"
-msgstr ""
+msgstr "incrustar completamente Python en la IGU (pero esto es básicamente escribir una aplicación completa)"
 
 #: ../../users/explain/interactive_guide.rst:98
 msgid "Blocking the prompt"
-msgstr ""
+msgstr "Bloquear el prompt"
 
 #: ../../users/explain/interactive_guide.rst:110:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
@@ -82,7 +82,7 @@ msgstr ":py:obj:`pyplot.show <matplotlib.pyplot.show>`"
 #: ../../users/explain/interactive_guide.rst:110:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 msgid "Display all open figures."
-msgstr ""
+msgstr "Mostrar todas las figuras abiertas."
 
 #: ../../users/explain/interactive_guide.rst:110:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
@@ -92,7 +92,7 @@ msgstr ":py:obj:`pyplot.pause <matplotlib.pyplot.pause>`"
 #: ../../users/explain/interactive_guide.rst:110:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 msgid "Run the GUI event loop for *interval* seconds."
-msgstr ""
+msgstr "Ejecutar el bucle de eventos de la IGU durante un *intervalo* de segundos."
 
 #: ../../users/explain/interactive_guide.rst:110:<autosummary>:1
 msgid ":py:obj:`backend_bases.FigureCanvasBase.start_event_loop <matplotlib.backend_bases.FigureCanvasBase.start_event_loop>`"
@@ -100,7 +100,7 @@ msgstr ":py:obj:`backend_bases.FigureCanvasBase.start_event_loop <matplotlib.bac
 
 #: ../../users/explain/interactive_guide.rst:110:<autosummary>:1
 msgid "Start a blocking event loop."
-msgstr ""
+msgstr "Iniciar un bucle de eventos de bloqueo."
 
 #: ../../users/explain/interactive_guide.rst:110:<autosummary>:1
 msgid ":py:obj:`backend_bases.FigureCanvasBase.stop_event_loop <matplotlib.backend_bases.FigureCanvasBase.stop_event_loop>`"
@@ -108,51 +108,51 @@ msgstr ":py:obj:`backend_bases.FigureCanvasBase.stop_event_loop <matplotlib.back
 
 #: ../../users/explain/interactive_guide.rst:110:<autosummary>:1
 msgid "Stop the current blocking event loop."
-msgstr ""
+msgstr "Detener el bucle de eventos de bloqueo actual."
 
 #: ../../users/explain/interactive_guide.rst:111
 msgid "The simplest \"integration\" is to start the GUI event loop in 'blocking' mode and take over the CLI.  While the GUI event loop is running you can not enter new commands into the prompt (your terminal may echo the characters typed into the terminal, but they will not be sent to the Python interpreter because it is busy running the GUI event loop), but the figure windows will be responsive.  Once the event loop is stopped (leaving any still open figure windows non-responsive) you will be able to use the prompt again.  Re-starting the event loop will make any open figure responsive again (and will process any queued up user interaction)."
-msgstr ""
+msgstr "La \"integración\" más sencilla consiste en iniciar el bucle de eventos de la IGU en modo de \"bloqueo\" y tomar el control de la CLI.  Mientras el bucle de eventos de la IGU se está ejecutando no puedes introducir nuevos comandos en el prompt (tu terminal puede mostrar los caracteres tecleados en la terminal, pero no serán enviados al intérprete de Python porque está ocupado ejecutando el bucle de eventos de la IGU), pero las ventanas de la figura responderán. Una vez que el bucle de eventos se detenga (dejando las ventanas de figuras aún abiertas sin respuesta) podrás usar el prompt de nuevo.  Al reiniciar el bucle de eventos, cualquier figura abierta volverá a responder (y procesará cualquier interacción del usuario en cola)."
 
 #: ../../users/explain/interactive_guide.rst:122
 msgid "To start the event loop until all open figures are closed, use `.pyplot.show` as ::"
-msgstr ""
+msgstr "Para iniciar el bucle de eventos hasta que se cierren todas las figuras abiertas, utilice `.pyplot.show` como ::"
 
 #: ../../users/explain/interactive_guide.rst:127
 msgid "To start the event loop for a fixed amount of time (in seconds) use `.pyplot.pause`."
-msgstr ""
+msgstr "Para iniciar el bucle de eventos durante un tiempo determinado (en segundos), utiliza `.pyplot.pause`."
 
 #: ../../users/explain/interactive_guide.rst:130
 msgid "If you are not using `.pyplot` you can start and stop the event loops via `.FigureCanvasBase.start_event_loop` and `.FigureCanvasBase.stop_event_loop`. However, in most contexts where you would not be using `.pyplot` you are embedding Matplotlib in a large GUI application and the GUI event loop should already be running for the application."
-msgstr ""
+msgstr "Si no utilizas `.pyplot` puedes iniciar y detener los bucles de eventos mediante `.FigureCanvasBase.start_event_loop` y `.FigureCanvasBase.stop_event_loop`. Sin embargo, en la mayoría de los contextos en los que no se utiliza `.pyplot` se está incrustando Matplotlib en una gran aplicación IGU y el bucle de eventos IGU ya debería estar ejecutándose para la aplicación."
 
 #: ../../users/explain/interactive_guide.rst:137
 msgid "Away from the prompt, this technique can be very useful if you want to write a script that pauses for user interaction, or displays a figure between polling for additional data.  See :ref:`interactive_scripts` for more details."
-msgstr ""
+msgstr "Lejos del prompt, esta técnica puede ser muy útil si quiere escribir un script que haga una pausa para la interacción del usuario, o que muestre una figura entre el sondeo de datos adicionales. Ver :ref:`interactive_scripts` para más detalles."
 
 #: ../../users/explain/interactive_guide.rst:144
 msgid "Input hook integration"
-msgstr ""
+msgstr "Integración del hook de entrada"
 
 #: ../../users/explain/interactive_guide.rst:146
 msgid "While running the GUI event loop in a blocking mode or explicitly handling UI events is useful, we can do better!  We really want to be able to have a usable prompt **and** interactive figure windows."
-msgstr ""
+msgstr "Aunque ejecutar el bucle de eventos de la IGU en modo de bloqueo o manejar explícitamente los eventos de la IU es útil, ¡podemos hacerlo mejor! Realmente queremos ser capaces de tener un prompt utilizable **y** ventanas de figuras interactivas."
 
 #: ../../users/explain/interactive_guide.rst:150
 msgid "We can do this using the 'input hook' feature of the interactive prompt.  This hook is called by the prompt as it waits for the user to type (even for a fast typist the prompt is mostly waiting for the human to think and move their fingers).  Although the details vary between prompts the logic is roughly"
-msgstr ""
+msgstr "Podemos hacer esto usando la característica 'input hook' del prompt interactivo.  Este hook es llamado por el prompt mientras espera que el usuario escriba (incluso para un mecanógrafo rápido el prompt está esperando principalmente que el humano piense y mueva sus dedos). Aunque los detalles varían entre los avisos, la lógica es más o menos la siguiente"
 
 #: ../../users/explain/interactive_guide.rst:156
 msgid "start to wait for keyboard input"
-msgstr ""
+msgstr "empezar a esperar la entrada del teclado"
 
 #: ../../users/explain/interactive_guide.rst:157
 msgid "start the GUI event loop"
-msgstr ""
+msgstr "iniciar el bucle de eventos de la IGU"
 
 #: ../../users/explain/interactive_guide.rst:158
 msgid "as soon as the user hits a key, exit the GUI event loop and handle the key"
-msgstr ""
+msgstr "tan pronto como el usuario pulse una tecla, salir del bucle de eventos de la IGU y manejar la tecla"
 
 #: ../../users/explain/interactive_guide.rst:159
 msgid "repeat"
@@ -160,11 +160,11 @@ msgstr "repite"
 
 #: ../../users/explain/interactive_guide.rst:161
 msgid "This gives us the illusion of simultaneously having interactive GUI windows and an interactive prompt.  Most of the time the GUI event loop is running, but as soon as the user starts typing the prompt takes over again."
-msgstr "Esto nos da la ilusión de tener simultáneamente ventanas GUI interactivas y un prompt interactivo. La mayor parte del tiempo el bucle de eventos de la GUI se está ejecutando, pero tan pronto como el usuario comienza a escribir el prompt toma el control de nuevo."
+msgstr "Esto nos da la ilusión de tener simultáneamente ventanas IGU interactivas y un prompt interactivo. La mayor parte del tiempo el bucle de eventos de la IGU se está ejecutando, pero tan pronto como el usuario comienza a escribir el prompt toma el control de nuevo."
 
 #: ../../users/explain/interactive_guide.rst:166
 msgid "This time-share technique only allows the event loop to run while python is otherwise idle and waiting for user input.  If you want the GUI to be responsive during long running code it is necessary to periodically flush the GUI event queue as described :ref:`above <spin_event_loop>`.  In this case it is your code, not the REPL, which is blocking the process so you need to handle the \"time-share\" manually. Conversely, a very slow figure draw will block the prompt until it finishes drawing."
-msgstr "Esta técnica de tiempo compartido sólo permite que el bucle de eventos se ejecute mientras python está inactivo y esperando la respuesta del usuario.  Si quieres que la interfaz gráfica de usuario responda durante la ejecución de un código largo es necesario vaciar periódicamente la cola de eventos de esa interfaz gráfica como se describe :ref:`above <spin_event_loop>`.  En este caso es su código, no el REPL, el que está bloqueando el proceso por lo que necesita manejar el \"tiempo compartido\" manualmente. A la inversa, el dibujo muy lento de una figura bloqueará el prompt hasta que termine de dibujarse."
+msgstr "Esta técnica de tiempo compartido sólo permite que el bucle de eventos se ejecute mientras python está inactivo y esperando la respuesta del usuario.  Si quieres que la IGU responda durante la ejecución de un código largo es necesario vaciar periódicamente la cola de eventos de esa IGU como se describe :ref:`above <spin_event_loop>`.  En este caso es su código, no el REPL, el que está bloqueando el proceso por lo que necesita manejar el \"tiempo compartido\" manualmente. A la inversa, el dibujo muy lento de una figura bloqueará el prompt hasta que termine de dibujarse."
 
 #: ../../users/explain/interactive_guide.rst:176
 msgid "Full embedding"
@@ -172,7 +172,7 @@ msgstr "Inserción completa"
 
 #: ../../users/explain/interactive_guide.rst:178
 msgid "It is also possible to go the other direction and fully embed figures (and a `Python interpreter <https://docs.python.org/3/extending/embedding.html>`__) in a rich native application.  Matplotlib provides classes for each toolkit which can be directly embedded in GUI applications (this is how the built-in windows are implemented!).  See :ref:`user_interfaces` for more details."
-msgstr "También es posible ir en la otra dirección e incrustar completamente las figuras (y un intérprete de  `Python interpreter <https://docs.python.org/3/extending/embedding.html>`__) en una aplicación nativa enrriquecida. Matplotlib proporciona clases para cada juego de herramientas que pueden ser incrustadas directamente en aplicaciones GUI (¡así es como se implementan las ventanas incorporadas!).  Ver :ref:`user_interfaces` para más detalles."
+msgstr "También es posible ir en la otra dirección e incrustar completamente las figuras (y un intérprete de `Python interpreter <https://docs.python.org/3/extending/embedding.html>`__) en una aplicación nativa enrriquecida. Matplotlib proporciona clases para cada juego de herramientas que pueden ser incrustadas directamente en aplicaciones IGU (¡así es como se implementan las ventanas incorporadas!).  Ver :ref:`user_interfaces` para más detalles."
 
 #: ../../users/explain/interactive_guide.rst:190
 msgid "Scripts and functions"
@@ -188,7 +188,7 @@ msgstr ":py:obj:`backend_bases.FigureCanvasBase.flush_events <matplotlib.backend
 #: ../../users/explain/interactive_guide.rst:252:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:361:<autosummary>:1
 msgid "Flush the GUI events for the figure."
-msgstr "Limpiar los eventos de la interfaz gráfica de usuario para la figura."
+msgstr "Limpiar los eventos de la IGU para la figura."
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:252:<autosummary>:1
@@ -200,7 +200,7 @@ msgstr ":py:obj:`backend_bases.FigureCanvasBase.draw_idle <matplotlib.backend_ba
 #: ../../users/explain/interactive_guide.rst:252:<autosummary>:1
 #: ../../users/explain/interactive_guide.rst:361:<autosummary>:1
 msgid "Request a widget redraw once control returns to the GUI event loop."
-msgstr "Solicitar el redibujo del widget una vez que el control vuelve al bucle de eventos de la GUI."
+msgstr "Solicitar el redibujo del widget una vez que el control vuelve al bucle de eventos de la IGU."
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 msgid ":py:obj:`figure.Figure.ginput <matplotlib.figure.Figure.ginput>`"
@@ -236,11 +236,11 @@ msgstr "Funciones de bloqueo"
 
 #: ../../users/explain/interactive_guide.rst:215
 msgid "If you only need to collect points in an Axes you can use `.figure.Figure.ginput` or more generally the tools from `.blocking_input` the tools will take care of starting and stopping the event loop for you.  However if you have written some custom event handling or are using `.widgets` you will need to manually run the GUI event loop using the methods described :ref:`above <cp_block_the_prompt>`."
-msgstr "Si sólo necesitas recoger puntos en un Eje, puedes utilizar `.figure.Figure.ginput` o, en general, las herramientas de `.blocking_input` las herramientas se encargarán de iniciar y detener el bucle de eventos por Ud.  Sin embargo, si has escrito algún manejo de eventos personalizado o está usando `.widgets` tendrás que ejecutar manualmente el bucle de eventos de la GUI usando los métodos descritos :ref:`above <cp_block_the_prompt>`."
+msgstr "Si sólo necesitas recoger puntos en un Eje, puedes utilizar `.figure.Figure.ginput` o, en general, las herramientas de `.blocking_input` las herramientas se encargarán de iniciar y detener el bucle de eventos por Ud.  Sin embargo, si has escrito algún manejo de eventos personalizado o está usando `.widgets` tendrás que ejecutar manualmente el bucle de eventos de la IGU usando los métodos descritos :ref:`above <cp_block_the_prompt>`."
 
 #: ../../users/explain/interactive_guide.rst:222
 msgid "You can also use the methods described in :ref:`cp_block_the_prompt` to suspend run the GUI event loop.  Once the loop exits your code will resume.  In general, any place you would use `time.sleep` you can use `.pyplot.pause` instead with the added benefit of interactive figures."
-msgstr "También puedes utilizar los métodos descritos en  :ref:`cp_block_the_prompt` para suspender la ejecución del bucle de eventos de la GUI.  Una vez que el bucle finalice, su código se reanudará.  En general, en cualquier lugar en el que se utilizaría `time.sleep` puedes utilizar `.pyplot.pause` en su lugar con el beneficio añadido de las figuras interactivas."
+msgstr "También puedes utilizar los métodos descritos en  :ref:`cp_block_the_prompt` para suspender la ejecución del bucle de eventos de la IGU.  Una vez que el bucle finalice, su código se reanudará.  En general, en cualquier lugar en el que se utilizaría `time.sleep` puedes utilizar `.pyplot.pause` en su lugar con el beneficio añadido de las figuras interactivas."
 
 #: ../../users/explain/interactive_guide.rst:227
 msgid "For example, if you want to poll for data you could use something like ::"
@@ -256,7 +256,7 @@ msgstr "Girar explícitamente el bucle de eventos"
 
 #: ../../users/explain/interactive_guide.rst:253
 msgid "If you have open windows that have pending UI events (mouse clicks, button presses, or draws) you can explicitly process those events by calling `.FigureCanvasBase.flush_events`. This will run the GUI event loop until all UI events currently waiting have been processed.  The exact behavior is backend-dependent but typically events on all figure are processed and only events waiting to be processed (not those added during processing) will be handled."
-msgstr "Si tiene ventanas abiertas con eventos pendientes en la interfaz del usuario (clics del ratón, pulsaciones de botones o gráficos), puede procesar explícitamente esos eventos llamando a `.FigureCanvasBase.flush_events`. Esto ejecutará el bucle de eventos de la interfaz gráfica de usuario hasta que se hayan procesado todos los eventos de interfaz de usuario que estén pendientes. El comportamiento exacto depende del backend, pero normalmente se procesan los eventos de todas las figuras y sólo se gestionan los eventos en espera de ser procesados (no los añadidos durante el procesamiento)."
+msgstr "Si tiene ventanas abiertas con eventos pendientes en la IU (clics del ratón, pulsaciones de botones o gráficos), puede procesar explícitamente esos eventos llamando a `.FigureCanvasBase.flush_events`. Esto ejecutará el bucle de eventos de la IGU hasta que se hayan procesado todos los eventos de IU que estén pendientes. El comportamiento exacto depende del backend, pero normalmente se procesan los eventos de todas las figuras y sólo se gestionan los eventos en espera de ser procesados (no los añadidos durante el procesamiento)."
 
 #: ../../users/explain/interactive_guide.rst:261
 msgid "For example ::"
@@ -312,7 +312,7 @@ msgstr "Renderiza la `.Figure`."
 
 #: ../../users/explain/interactive_guide.rst:362
 msgid "In almost all cases, we recommend using `backend_bases.FigureCanvasBase.draw_idle` over `backend_bases.FigureCanvasBase.draw`.  ``draw`` forces a rendering of the figure whereas ``draw_idle`` schedules a rendering the next time the GUI window is going to re-paint the screen.  This improves performance by only rendering pixels that will be shown on the screen.  If you want to be sure that the screen is updated as soon as possible do ::"
-msgstr "En casi todos los casos, recomendamos utilizar `backend_bases.FigureCanvasBase.draw_idle` en lugar de `backend_bases.FigureCanvasBase.draw`.  ``draw`` fuerza una renderización de la figura mientras que ``draw_idle`` programa una renderización la próxima vez que la ventana GUI vaya a repintar la pantalla.  Esto mejora el rendimiento al renderizar sólo los píxeles que se mostrarán en la pantalla. Si quiere asegurarse de que la pantalla se actualiza lo antes posible hágalo ::"
+msgstr "En casi todos los casos, recomendamos utilizar `backend_bases.FigureCanvasBase.draw_idle` en lugar de `backend_bases.FigureCanvasBase.draw`.  ``draw`` fuerza una renderización de la figura mientras que ``draw_idle`` programa una renderización la próxima vez que la ventana IGU vaya a repintar la pantalla.  Esto mejora el rendimiento al renderizar sólo los píxeles que se mostrarán en la pantalla. Si quiere asegurarse de que la pantalla se actualiza lo antes posible hágalo ::"
 
 #: ../../users/explain/interactive_guide.rst:376
 msgid "Threading"
@@ -320,7 +320,7 @@ msgstr "Subprocesos"
 
 #: ../../users/explain/interactive_guide.rst:378
 msgid "Most GUI frameworks require that all updates to the screen, and hence their main event loop, run on the main thread.  This makes pushing periodic updates of a plot to a background thread impossible. Although it seems backwards, it is typically easier to push your computations to a background thread and periodically update the figure on the main thread."
-msgstr "La mayoría de los frameworks de GUI requieren que todas las actualizaciones de la pantalla, y por tanto su bucle de eventos principal, se ejecuten en el subproceso principal. Esto hace que sea imposible enviar las actualizaciones periódicas de un gráfico a un segundo plano. Aunque parezca un retroceso, normalmente es más fácil pasar los cálculos a un subproceso en segundo plano y actualizar periódicamente la figura en el subproceso principal."
+msgstr "La mayoría de los frameworks de IGU requieren que todas las actualizaciones de la pantalla, y por tanto su bucle de eventos principal, se ejecuten en el subproceso principal. Esto hace que sea imposible enviar las actualizaciones periódicas de un gráfico a un segundo plano. Aunque parezca un retroceso, normalmente es más fácil pasar los cálculos a un subproceso en segundo plano y actualizar periódicamente la figura en el subproceso principal."
 
 #: ../../users/explain/interactive_guide.rst:385
 msgid "In general Matplotlib is not thread safe.  If you are going to update `.Artist` objects in one thread and draw from another you should make sure that you are locking in the critical sections."
@@ -336,7 +336,7 @@ msgstr "CPython / readline"
 
 #: ../../users/explain/interactive_guide.rst:397
 msgid "The Python C API provides a hook, :c:data:`PyOS_InputHook`, to register a function to be run (\"The function will be called when Python's interpreter prompt is about to become idle and wait for user input from the terminal.\").  This hook can be used to integrate a second event loop (the GUI event loop) with the python input prompt loop. The hook functions typically exhaust all pending events on the GUI event queue, run the main loop for a short fixed amount of time, or run the event loop until a key is pressed on stdin."
-msgstr "La API de Python C proporciona un hook, :c:data:`PyOS_InputHook`, para registrar una función que se ejecutará (\"La función será llamada cuando el intérprete de Python esté a punto de quedar inactivo y esperar la entrada del usuario desde el terminal\").  Este hook puede utilizarse para integrar un segundo bucle de eventos (el bucle de eventos de la GUI) con el bucle del prompt de entrada de Python. Las funciones hook normalmente agotan todos los eventos pendientes en la cola de eventos de la GUI, ejecutan el bucle principal durante un corto período de tiempo fijo, o ejecutan el bucle de eventos hasta que se pulsa una tecla en stdin."
+msgstr "La API de Python C proporciona un hook, :c:data:`PyOS_InputHook`, para registrar una función que se ejecutará (\"La función será llamada cuando el intérprete de Python esté a punto de quedar inactivo y esperar la entrada del usuario desde el terminal\").  Este hook puede utilizarse para integrar un segundo bucle de eventos (el bucle de eventos de la IGU) con el bucle del prompt de entrada de Python. Las funciones hook normalmente agotan todos los eventos pendientes en la cola de eventos de la IGU, ejecutan el bucle principal durante un corto período de tiempo fijo, o ejecutan el bucle de eventos hasta que se pulsa una tecla en stdin."
 
 #: ../../users/explain/interactive_guide.rst:406
 msgid "Matplotlib does not currently do any management of :c:data:`PyOS_InputHook` due to the wide range of ways that Matplotlib is used.  This management is left to downstream libraries -- either user code or the shell.  Interactive figures, even with Matplotlib in 'interactive mode', may not work in the vanilla python repl if an appropriate :c:data:`PyOS_InputHook` is not registered."
@@ -344,7 +344,7 @@ msgstr "Matplotlib no hace actualmente ninguna gestión de :c:data:`PyOS_InputHo
 
 #: ../../users/explain/interactive_guide.rst:412
 msgid "Input hooks, and helpers to install them, are usually included with the python bindings for GUI toolkits and may be registered on import. IPython also ships input hook functions for all of the GUI frameworks Matplotlib supports which can be installed via ``%matplotlib``.  This is the recommended method of integrating Matplotlib and a prompt."
-msgstr "Los hooks de entrada, y los ayudantes para instalarlos, suelen incluirse con los enlaces de python para los conjuntos de herramientas de interfaz gráfica de usuario y pueden registrarse al importarlos. IPython también incluye funciones hook de entrada para todos los marcos de trabajo GUI que Matplotlib soporta y que pueden ser instalados a través de ``%matplotlib``.  Este es el método recomendado para integrar Matplotlib y un prompt."
+msgstr "Los hooks de entrada, y los ayudantes para instalarlos, suelen incluirse con los enlaces de python para los conjuntos de herramientas de IGU y pueden registrarse al importarlos. IPython también incluye funciones hook de entrada para todos los frameworks para IGU que Matplotlib soporta y que pueden ser instalados a través de ``%matplotlib``.  Este es el método recomendado para integrar Matplotlib y un prompt."
 
 #: ../../users/explain/interactive_guide.rst:420
 msgid "IPython / prompt_toolkit"

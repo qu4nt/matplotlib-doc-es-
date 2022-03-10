@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-06 01:54\n"
+"PO-Revision-Date: 2022-03-10 01:47\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -164,7 +164,7 @@ msgstr "Esto nos da la ilusión de tener simultáneamente ventanas GUI interacti
 
 #: ../../users/explain/interactive_guide.rst:166
 msgid "This time-share technique only allows the event loop to run while python is otherwise idle and waiting for user input.  If you want the GUI to be responsive during long running code it is necessary to periodically flush the GUI event queue as described :ref:`above <spin_event_loop>`.  In this case it is your code, not the REPL, which is blocking the process so you need to handle the \"time-share\" manually. Conversely, a very slow figure draw will block the prompt until it finishes drawing."
-msgstr "Esta técnica de tiempo compartido sólo permite que el bucle de eventos se ejecute mientras python está inactivo y esperando la respuesta del usuario.  Si quiere que la interfaz gráfica de usuario responda durante la ejecución de un código largo es necesario vaciar periódicamente la cola de eventos de esa interfaz gráfica como se describe :ref:`above <spin_event_loop>`.  En este caso es su código, no el REPL, el que está bloqueando el proceso por lo que necesita manejar el \"tiempo compartido\" manualmente. A la inversa, el dibujo muy lento de una figura bloqueará el prompt hasta que termine de dibujarse."
+msgstr "Esta técnica de tiempo compartido sólo permite que el bucle de eventos se ejecute mientras python está inactivo y esperando la respuesta del usuario.  Si quieres que la interfaz gráfica de usuario responda durante la ejecución de un código largo es necesario vaciar periódicamente la cola de eventos de esa interfaz gráfica como se describe :ref:`above <spin_event_loop>`.  En este caso es su código, no el REPL, el que está bloqueando el proceso por lo que necesita manejar el \"tiempo compartido\" manualmente. A la inversa, el dibujo muy lento de una figura bloqueará el prompt hasta que termine de dibujarse."
 
 #: ../../users/explain/interactive_guide.rst:176
 msgid "Full embedding"
@@ -208,7 +208,7 @@ msgstr ":py:obj:`figure.Figure.ginput <matplotlib.figure.Figure.ginput>`"
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 msgid "Blocking call to interact with a figure."
-msgstr "Llamada de bloqueo para interactuar con una figura."
+msgstr "Bloquear llamada para interactuar con una figura."
 
 #: ../../users/explain/interactive_guide.rst:205:<autosummary>:1
 msgid ":py:obj:`pyplot.ginput <matplotlib.pyplot.ginput>`"
@@ -236,11 +236,11 @@ msgstr "Funciones de bloqueo"
 
 #: ../../users/explain/interactive_guide.rst:215
 msgid "If you only need to collect points in an Axes you can use `.figure.Figure.ginput` or more generally the tools from `.blocking_input` the tools will take care of starting and stopping the event loop for you.  However if you have written some custom event handling or are using `.widgets` you will need to manually run the GUI event loop using the methods described :ref:`above <cp_block_the_prompt>`."
-msgstr "Si sólo necesita recoger puntos en un Eje puedes utilizar `.figure.Figure.ginput` o, en general, las herramientas de `.blocking_input` las herramientas se encargarán de iniciar y detener el bucle de eventos por Ud.  Sin embargo, si ha escrito algún manejo de eventos personalizado o está usando `.widgets` tendrá que ejecutar manualmente el bucle de eventos de la GUI usando los métodos descritos :ref:`above <cp_block_the_prompt>`."
+msgstr "Si sólo necesitas recoger puntos en un Eje, puedes utilizar `.figure.Figure.ginput` o, en general, las herramientas de `.blocking_input` las herramientas se encargarán de iniciar y detener el bucle de eventos por Ud.  Sin embargo, si has escrito algún manejo de eventos personalizado o está usando `.widgets` tendrás que ejecutar manualmente el bucle de eventos de la GUI usando los métodos descritos :ref:`above <cp_block_the_prompt>`."
 
 #: ../../users/explain/interactive_guide.rst:222
 msgid "You can also use the methods described in :ref:`cp_block_the_prompt` to suspend run the GUI event loop.  Once the loop exits your code will resume.  In general, any place you would use `time.sleep` you can use `.pyplot.pause` instead with the added benefit of interactive figures."
-msgstr "También puede utilizar los métodos descritos en  :ref:`cp_block_the_prompt` para suspender la ejecución del bucle de eventos de la GUI.  Una vez que el bucle finalice, su código se reanudará.  En general, en cualquier lugar en el que se utilizaría `time.sleep` puede utilizar `.pyplot.pause` en su lugar con el beneficio añadido de las figuras interactivas."
+msgstr "También puedes utilizar los métodos descritos en  :ref:`cp_block_the_prompt` para suspender la ejecución del bucle de eventos de la GUI.  Una vez que el bucle finalice, su código se reanudará.  En general, en cualquier lugar en el que se utilizaría `time.sleep` puedes utilizar `.pyplot.pause` en su lugar con el beneficio añadido de las figuras interactivas."
 
 #: ../../users/explain/interactive_guide.rst:227
 msgid "For example, if you want to poll for data you could use something like ::"

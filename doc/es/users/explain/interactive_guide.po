@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-10 02:52\n"
+"PO-Revision-Date: 2022-03-10 20:16\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -36,15 +36,15 @@ msgstr "Bucles de eventos"
 
 #: ../../users/explain/interactive_guide.rst:29
 msgid "Fundamentally, all user interaction (and networking) is implemented as an infinite loop waiting for events from the user (via the OS) and then doing something about it.  For example, a minimal Read Evaluate Print Loop (REPL) is ::"
-msgstr ""
+msgstr "Fundamentalmente, toda la interacción con el usuario (y el trabajo en red) se implementa como un bucle infinito que espera eventos del usuario (a través del SO) y luego hace algo al respecto.  Por ejemplo, un bucle mínimo de lectura, evaluación e impresión (REPL) es ::"
 
 #: ../../users/explain/interactive_guide.rst:42
 msgid "This is missing many niceties (for example, it exits on the first exception!), but is representative of the event loops that underlie all terminals, GUIs, and servers [#f1]_.  In general the *Read* step is waiting on some sort of I/O -- be it user input or the network -- while the *Evaluate* and *Print* are responsible for interpreting the input and then **doing** something about it."
-msgstr ""
+msgstr "A este bucle le faltan muchos detalles (¡por ejemplo, sale a la primera excepción!), pero es representativo de los bucles de eventos que subyacen en todos los terminales, GUIs y servidores [#f1]_.  En general, el paso *Read* está esperando algún tipo de entrada/salida (ya sea del usuario o de la red), mientras que *Evaluate* y *Print* son responsables de interpretar la entrada y luego **hacer** algo al respecto."
 
 #: ../../users/explain/interactive_guide.rst:49
 msgid "In practice we interact with a framework that provides a mechanism to register callbacks to be run in response to specific events rather than directly implement the I/O loop [#f2]_.  For example \"when the user clicks on this button, please run this function\" or \"when the user hits the 'z' key, please run this other function\".  This allows users to write reactive, event-driven, programs without having to delve into the nitty-gritty [#f3]_ details of I/O.  The core event loop is sometimes referred to as \"the main loop\" and is typically started, depending on the library, by methods with names like ``_exec``, ``run``, or ``start``."
-msgstr ""
+msgstr "En la práctica interactuamos con un framework que proporciona un mecanismo para registrar callbacks que se ejecutan en respuesta a eventos específicos en lugar de implementar directamente el bucle de E/S [#f2]_.  Por ejemplo, \"cuando el usuario haga clic en este botón, ejecute esta función\" o \"cuando el usuario pulse la tecla 'z', ejecute esta otra función\".  Esto permite a los usuarios escribir programas reactivos, dirigidos por eventos, sin tener que profundizar en los detalles [#f3]_ de E/S.  El bucle de eventos del núcleo se conoce a veces como \"el bucle principal\" y suele iniciarse, dependiendo de la biblioteca, mediante métodos con nombres como ``_exec``, ``run`` o ``start``."
 
 #: ../../users/explain/interactive_guide.rst:61
 msgid "All GUI frameworks (Qt, Wx, Gtk, tk, OSX, or web) have some method of capturing user interactions and passing them back to the application (for example ``Signal`` / ``Slot`` framework in Qt) but the exact details depend on the toolkit.  Matplotlib has a :ref:`backend <what-is-a-backend>` for each GUI toolkit we support which uses the toolkit API to bridge the toolkit UI events into Matplotlib's :ref:`event handling system <event-handling-tutorial>`.  You can then use `.FigureCanvasBase.mpl_connect` to connect your function to Matplotlib's event handling system.  This allows you to directly interact with your data and write GUI toolkit agnostic user interfaces."
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../users/explain/interactive_guide.rst:77
 msgid "Command prompt integration"
-msgstr ""
+msgstr "Integración de la línea de comandos"
 
 #: ../../users/explain/interactive_guide.rst:79
 msgid "So far, so good.  We have the REPL (like the IPython terminal) that lets us interactively send code to the interpreter and get results back.  We also have the GUI toolkit that runs an event loop waiting for user input and lets us register functions to be run when that happens.  However, if we want to do both we have a problem: the prompt and the GUI event loop are both infinite loops that each think *they* are in charge!  In order for both the prompt and the GUI windows to be responsive we need a method to allow the loops to 'timeshare' :"

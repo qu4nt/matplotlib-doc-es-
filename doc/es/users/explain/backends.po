@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-11 21:27\n"
+"PO-Revision-Date: 2022-03-11 22:54\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -120,15 +120,15 @@ msgstr "Por defecto, Matplotlib debería seleccionar automáticamente un backend
 
 #: ../../users/explain/backends.rst:113
 msgid "If, however, you want to write graphical user interfaces, or a web application server (:doc:`/gallery/user_interfaces/web_application_server_sgskip`), or need a better understanding of what is going on, read on. To make things easily more customizable for graphical user interfaces, Matplotlib separates the concept of the renderer (the thing that actually does the drawing) from the canvas (the place where the drawing goes).  The canonical renderer for user interfaces is ``Agg`` which uses the `Anti-Grain Geometry`_ C++ library to make a raster (pixel) image of the figure; it is used by the ``QtAgg``, ``GTK4Agg``, ``GTK3Agg``, ``wxAgg``, ``TkAgg``, and ``macosx`` backends.  An alternative renderer is based on the Cairo library, used by ``QtCairo``, etc."
-msgstr ""
+msgstr "Sin embargo, si quieres escribir interfaces gráficas de usuario, o un servidor de aplicaciones web (:doc:`/gallery/user_interfaces/web_application_server_sgskip`), o necesitas entender mejor lo que ocurre, sigue leyendo. Para facilitar la personalización de las interfaces gráficas de usuario, Matplotlib separa el concepto de renderizador (la cosa que realmente hace el dibujo) del lienzo (el lugar donde va el dibujo).  El renderizador canónico para las interfaces de usuario es ``Agg`` que utiliza la librería C++ `Anti-Grain Geometry`_ para hacer una imagen ráster (píxel) de la figura; es utilizado por los backends ``QtAgg``, ``GTK4Agg``, ``GTK3Agg``, ``wxAgg``, ``TkAgg``, y ``macosx``.  Un renderizador alternativo se basa en la biblioteca Cairo, utilizada por ``QtCairo``, etc."
 
 #: ../../users/explain/backends.rst:126
 msgid "For the rendering engines, users can also distinguish between `vector <https://en.wikipedia.org/wiki/Vector_graphics>`_ or `raster <https://en.wikipedia.org/wiki/Raster_graphics>`_ renderers.  Vector graphics languages issue drawing commands like \"draw a line from this point to this point\" and hence are scale free. Raster backends generate a pixel representation of the line whose accuracy depends on a DPI setting."
-msgstr ""
+msgstr "Para los motores de renderizado, los usuarios también pueden distinguir entre los renderizadores `vectoriales <https://en.wikipedia.org/wiki/Vector_graphics>`_ o `raster <https://en.wikipedia.org/wiki/Raster_graphics>`_. Los lenguajes gráficos vectoriales emiten órdenes de dibujo como \"dibujar una línea desde este punto hasta este otro\" y, por tanto, no tienen escala. Los renderizadores ráster generan una representación en píxeles de la línea cuya precisión depende de la configuración de los DPI."
 
 #: ../../users/explain/backends.rst:134
 msgid "Here is a summary of the Matplotlib renderers (there is an eponymous backend for each; these are *non-interactive backends*, capable of writing to a file):"
-msgstr ""
+msgstr "Aquí hay un resumen de los renderizadores de Matplotlib (hay un backend homónimo para cada uno; estos son *backends no interactivos*, capaces de escribir en un archivo):"
 
 #: ../../users/explain/backends.rst:139
 msgid "Renderer"
@@ -152,7 +152,7 @@ msgstr "png"
 
 #: ../../users/explain/backends.rst:141
 msgid "raster_ graphics -- high quality images using the `Anti-Grain Geometry`_ engine"
-msgstr ""
+msgstr "raster_ graphics -- imágenes de alta calidad usando el motor `Anti-Grain Geometry`_"
 
 #: ../../users/explain/backends.rst:143
 msgid "PDF"
@@ -164,7 +164,7 @@ msgstr "pdf"
 
 #: ../../users/explain/backends.rst:143
 msgid "vector_ graphics -- `Portable Document Format`_"
-msgstr ""
+msgstr "vector_ graphics - `Formato de documento portátil`"
 
 #: ../../users/explain/backends.rst:144
 msgid "PS"
@@ -176,7 +176,7 @@ msgstr "ps, eps"
 
 #: ../../users/explain/backends.rst:144
 msgid "vector_ graphics -- Postscript_ output"
-msgstr ""
+msgstr "vector_ graphics -- Salida de postscript"
 
 #: ../../users/explain/backends.rst:145
 msgid "SVG"
@@ -188,7 +188,7 @@ msgstr "svg"
 
 #: ../../users/explain/backends.rst:145
 msgid "vector_ graphics -- `Scalable Vector Graphics`_"
-msgstr ""
+msgstr "vector_ graphics -- `Scalable Vector Graphics`"
 
 #: ../../users/explain/backends.rst:146
 msgid "PGF"
@@ -200,7 +200,7 @@ msgstr "pgf, pdf"
 
 #: ../../users/explain/backends.rst:146
 msgid "vector_ graphics -- using the pgf_ package"
-msgstr ""
+msgstr "vector_ graphics -- usando el paquete pgf"
 
 #: ../../users/explain/backends.rst:147
 msgid "Cairo"
@@ -212,11 +212,11 @@ msgstr "png, ps, pdf, svg"
 
 #: ../../users/explain/backends.rst:147
 msgid "raster_ or vector_ graphics -- using the Cairo_ library"
-msgstr ""
+msgstr "raster_ or vector_ graphics -- utilizando la librería Cairo"
 
 #: ../../users/explain/backends.rst:151
 msgid "To save plots using the non-interactive backends, use the ``matplotlib.pyplot.savefig('filename')`` method."
-msgstr ""
+msgstr "Para guardar los gráficos utilizando los backends no interactivos, utiliza el método ``matplotlib.pyplot.savefig('filename')``."
 
 #: ../../users/explain/backends.rst:154
 msgid "These are the user interfaces and renderer combinations supported; these are *interactive backends*, capable of displaying to the screen and using appropriate renderers from the table above to write to a file:"
@@ -224,11 +224,11 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:160
 msgid "Backend"
-msgstr ""
+msgstr "Backend"
 
 #: ../../users/explain/backends.rst:162
 msgid "QtAgg"
-msgstr ""
+msgstr "QtAgg"
 
 #: ../../users/explain/backends.rst:162
 msgid "Agg rendering in a Qt_ canvas (requires PyQt_ or `Qt for Python`_, a.k.a. PySide).  This backend can be activated in IPython with ``%matplotlib qt``."
@@ -236,7 +236,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:165 ../../users/explain/backends.rst:214
 msgid "ipympl"
-msgstr ""
+msgstr "ipympl"
 
 #: ../../users/explain/backends.rst:165
 msgid "Agg rendering embedded in a Jupyter widget.  (requires ipympl). This backend can be enabled in a Jupyter notebook with ``%matplotlib ipympl``."
@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:168
 msgid "GTK3Agg"
-msgstr ""
+msgstr "GTK3Agg"
 
 #: ../../users/explain/backends.rst:168
 msgid "Agg rendering to a GTK_ 3.x canvas (requires PyGObject_, and pycairo_ or cairocffi_).  This backend can be activated in IPython with ``%matplotlib gtk3``."
@@ -252,7 +252,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:171
 msgid "GTK4Agg"
-msgstr ""
+msgstr "GTK4Agg"
 
 #: ../../users/explain/backends.rst:171
 msgid "Agg rendering to a GTK_ 4.x canvas (requires PyGObject_, and pycairo_ or cairocffi_).  This backend can be activated in IPython with ``%matplotlib gtk4``."
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:174
 msgid "macosx"
-msgstr ""
+msgstr "macosx"
 
 #: ../../users/explain/backends.rst:174
 msgid "Agg rendering into a Cocoa canvas in OSX.  This backend can be activated in IPython with ``%matplotlib osx``."
@@ -268,7 +268,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:176
 msgid "TkAgg"
-msgstr ""
+msgstr "TkAgg"
 
 #: ../../users/explain/backends.rst:176
 msgid "Agg rendering to a Tk_ canvas (requires TkInter_). This backend can be activated in IPython with ``%matplotlib tk``."
@@ -276,7 +276,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:178
 msgid "nbAgg"
-msgstr ""
+msgstr "nbAgg"
 
 #: ../../users/explain/backends.rst:178
 msgid "Embed an interactive figure in a Jupyter classic notebook.  This backend can be enabled in Jupyter notebooks via ``%matplotlib notebook``."
@@ -284,7 +284,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:181
 msgid "WebAgg"
-msgstr ""
+msgstr "WebAgg"
 
 #: ../../users/explain/backends.rst:181
 msgid "On ``show()`` will start a tornado server with an interactive figure."
@@ -292,7 +292,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:183
 msgid "GTK3Cairo"
-msgstr ""
+msgstr "GTK3Cairo"
 
 #: ../../users/explain/backends.rst:183
 msgid "Cairo rendering to a GTK_ 3.x canvas (requires PyGObject_, and pycairo_ or cairocffi_)."
@@ -300,7 +300,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:185
 msgid "GTK4Cairo"
-msgstr ""
+msgstr "GTK4Cairo"
 
 #: ../../users/explain/backends.rst:185
 msgid "Cairo rendering to a GTK_ 4.x canvas (requires PyGObject_, and pycairo_ or cairocffi_)."
@@ -308,7 +308,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:187
 msgid "wxAgg"
-msgstr ""
+msgstr "wxAgg"
 
 #: ../../users/explain/backends.rst:187
 msgid "Agg rendering to a wxWidgets_ canvas (requires wxPython_ 4). This backend can be activated in IPython with ``%matplotlib wx``."
@@ -324,7 +324,7 @@ msgstr ""
 
 #: ../../users/explain/backends.rst:224
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #: ../../users/explain/backends.rst:230
 msgid "See `jupyter-matplotlib <https://github.com/matplotlib/jupyter-matplotlib>`__ for more details."

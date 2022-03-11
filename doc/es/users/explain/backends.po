@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-11 20:17\n"
+"PO-Revision-Date: 2022-03-11 21:27\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgstr "Si hay más de una configuración presente, la última de la lista tiene
 
 #: ../../users/explain/backends.rst:48
 msgid "Without a backend explicitly set, Matplotlib automatically detects a usable backend based on what is available on your system and on whether a GUI event loop is already running.  The first usable backend in the following list is selected: MacOSX, QtAgg, GTK4Agg, Gtk3Agg, TkAgg, WxAgg, Agg.  The last, Agg, is a non-interactive backend that can only write to files.  It is used on Linux, if Matplotlib cannot connect to either an X display or a Wayland display."
-msgstr ""
+msgstr "Si no se establece explícitamente un backend, Matplotlib detecta automáticamente un backend utilizable basándose en lo que está disponible en su sistema y en si ya se está ejecutando un bucle de eventos IGU.  Se selecciona el primer backend utilizable de la siguiente lista: MacOSX, QtAgg, GTK4Agg, Gtk3Agg, TkAgg, WxAgg, Agg.  El último, Agg, es un backend no interactivo que sólo puede escribir en archivos.  Se utiliza en Linux, en caso de que Matplotlib no pueda conectarse a una pantalla X o a una pantalla Wayland."
 
 #: ../../users/explain/backends.rst:56
 msgid "Here is a detailed description of the configuration methods:"
@@ -84,7 +84,7 @@ msgstr "Estableciendo la variable de entorno :envvar:`MPLBACKEND`:"
 
 #: ../../users/explain/backends.rst:66
 msgid "You can set the environment variable either for your current shell or for a single script."
-msgstr ""
+msgstr "Puedes establecer la variable de entorno tanto para el shell actual como para un único script."
 
 #: ../../users/explain/backends.rst:69
 msgid "On Unix::"
@@ -96,19 +96,19 @@ msgstr "En Windows, sólo la anterior es posible::"
 
 #: ../../users/explain/backends.rst:81
 msgid "Setting this environment variable will override the ``backend`` parameter in *any* :file:`matplotlibrc`, even if there is a :file:`matplotlibrc` in your current working directory. Therefore, setting :envvar:`MPLBACKEND` globally, e.g. in your :file:`.bashrc` or :file:`.profile`, is discouraged as it might lead to counter-intuitive behavior."
-msgstr ""
+msgstr "Al establecer esta variable de entorno, se anulará el parámetro ``backend`` en *cualquier* :file:`matplotlibrc`, incluso si hay un :file:`matplotlibrc` en tu directorio de trabajo actual. Por lo tanto, se desaconseja establecer :envvar:`MPLBACKEND` globalmente, por ejemplo, en el :file:`.bashrc` o :file:`.profile`, ya que podría conducir a un comportamiento contraintuitivo."
 
 #: ../../users/explain/backends.rst:87
 msgid "If your script depends on a specific backend you can use the function :func:`matplotlib.use`::"
-msgstr ""
+msgstr "Si tu script depende de un backend específico puedes utilizar la función :func:`matplotlib.use`::"
 
 #: ../../users/explain/backends.rst:93
 msgid "This should be done before any figure is created, otherwise Matplotlib may fail to switch the backend and raise an ImportError."
-msgstr ""
+msgstr "Esto debe hacerse antes de crear cualquier figura, de lo contrario Matplotlib puede fallar al cambiar el backend y lanzar un ImportError."
 
 #: ../../users/explain/backends.rst:96
 msgid "Using `~matplotlib.use` will require changes in your code if users want to use a different backend.  Therefore, you should avoid explicitly calling `~matplotlib.use` unless absolutely necessary."
-msgstr ""
+msgstr "El uso de `~matplotlib.use` requerirá cambios en tu código si los usuarios quieren utilizar un backend diferente.  Por lo tanto, debes evitar llamar explícitamente a `~matplotlib.use` a menos que sea absolutamente necesario."
 
 #: ../../users/explain/backends.rst:103
 msgid "The builtin backends"
@@ -116,7 +116,7 @@ msgstr "Los backends incorporados"
 
 #: ../../users/explain/backends.rst:105
 msgid "By default, Matplotlib should automatically select a default backend which allows both interactive work and plotting from scripts, with output to the screen and/or to a file, so at least initially, you will not need to worry about the backend.  The most common exception is if your Python distribution comes without :mod:`tkinter` and you have no other GUI toolkit installed. This happens on certain Linux distributions, where you need to install a Linux package named ``python-tk`` (or similar)."
-msgstr ""
+msgstr "Por defecto, Matplotlib debería seleccionar automáticamente un backend predeterminado que permite tanto el trabajo interactivo como el trazado desde scripts, con salida a la pantalla y/o a un archivo, así que al menos inicialmente, no tendrás que preocuparte por el backend.  La excepción más común es si su distribución de Python viene sin :mod:`tkinter` y no tiene ningún otro conjunto de herramientas de interfaz gráfica de usuario instalado. Esto sucede en ciertas distribuciones de Linux, donde necesitas instalar un paquete de Linux llamado ``python-tk`` (o similar)."
 
 #: ../../users/explain/backends.rst:113
 msgid "If, however, you want to write graphical user interfaces, or a web application server (:doc:`/gallery/user_interfaces/web_application_server_sgskip`), or need a better understanding of what is going on, read on. To make things easily more customizable for graphical user interfaces, Matplotlib separates the concept of the renderer (the thing that actually does the drawing) from the canvas (the place where the drawing goes).  The canonical renderer for user interfaces is ``Agg`` which uses the `Anti-Grain Geometry`_ C++ library to make a raster (pixel) image of the figure; it is used by the ``QtAgg``, ``GTK4Agg``, ``GTK3Agg``, ``wxAgg``, ``TkAgg``, and ``macosx`` backends.  An alternative renderer is based on the Cairo library, used by ``QtCairo``, etc."

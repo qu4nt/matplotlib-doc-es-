@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-11 19:07\n"
+"PO-Revision-Date: 2022-03-11 20:17\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -28,11 +28,11 @@ msgstr "¿Qué es un backend?"
 
 #: ../../users/explain/backends.rst:12
 msgid "A lot of documentation on the website and in the mailing lists refers to the \"backend\" and many new users are confused by this term. Matplotlib targets many different use cases and output formats.  Some people use Matplotlib interactively from the Python shell and have plotting windows pop up when they type commands.  Some people run `Jupyter <https://jupyter.org>`_ notebooks and draw inline plots for quick data analysis. Others embed Matplotlib into graphical user interfaces like PyQt or PyGObject to build rich applications.  Some people use Matplotlib in batch scripts to generate postscript images from numerical simulations, and still others run web application servers to dynamically serve up graphs."
-msgstr ""
+msgstr "Mucha de la documentación en la página web y en las listas de correo se refiere al \"backend\" y muchos usuarios nuevos se confunden con este término. Matplotlib se dirige a muchos casos de uso y formatos de salida diferentes. Algunas personas utilizan Matplotlib de forma interactiva desde el intérprete de comandos de Python y tienen ventanas de dibujo que aparecen cuando se escriben comandos. Algunas personas ejecutan cuadernos de `Jupyter <https://jupyter.org>`_ y dibujan gráficos integrados para un rápido análisis de datos. Otros incrustan Matplotlib en interfaces gráficas de usuario como PyQt o PyGObject para construir aplicaciones enriquecidas. Algunas personas utilizan Matplotlib en scripts por lotes para generar imágenes postscript a partir de simulaciones numéricas, y otras ejecutan servidores de aplicaciones web para servir dinámicamente los gráficos."
 
 #: ../../users/explain/backends.rst:24
 msgid "To support all of these use cases, Matplotlib can target different outputs, and each of these capabilities is called a backend; the \"frontend\" is the user facing code, i.e., the plotting code, whereas the \"backend\" does all the hard work behind-the-scenes to make the figure. There are two types of backends: user interface backends (for use in PyQt/PySide, PyGObject, Tkinter, wxPython, or macOS/Cocoa); also referred to as \"interactive backends\") and hardcopy backends to make image files (PNG, SVG, PDF, PS; also referred to as \"non-interactive backends\")."
-msgstr ""
+msgstr "Para dar soporte a todos estos casos de uso, Matplotlib puede apuntar a diferentes salidas, y cada una de estas funcionalidades se llama backend; el \"frontend\" es el código de cara al usuario, es decir, el código de dibujo, mientras que el \"backend\" hace todo el trabajo duro tras bambalinas para hacer la figura. Hay dos tipos de backends: backends de interfaz de usuario (para usar en PyQt/PySide, PyGObject, Tkinter, wxPython, o macOS/Cocoa; también denominados \"backends interactivos\") y backends de impresión para hacer archivos de imagen (PNG, SVG, PDF, PS; también denominados \"backends no interactivos\")."
 
 #: ../../users/explain/backends.rst:34
 msgid "Selecting a backend"
@@ -40,27 +40,27 @@ msgstr "Seleccionando un backend"
 
 #: ../../users/explain/backends.rst:36
 msgid "There are three ways to configure your backend:"
-msgstr ""
+msgstr "Hay tres maneras de configurar el backend:"
 
 #: ../../users/explain/backends.rst:38
 msgid "The :rc:`backend` parameter in your :file:`matplotlibrc` file"
-msgstr ""
+msgstr "El parámetro :rc:`backend` en su archivo :file:`matplotlibrc`"
 
 #: ../../users/explain/backends.rst:39
 msgid "The :envvar:`MPLBACKEND` environment variable"
-msgstr ""
+msgstr "La variable de entorno :envvar:`MPLBACKEND`"
 
 #: ../../users/explain/backends.rst:40
 msgid "The function :func:`matplotlib.use`"
-msgstr ""
+msgstr "La función :func:`matplotlib.use`"
 
 #: ../../users/explain/backends.rst:42
 msgid "Below is a more detailed description."
-msgstr ""
+msgstr "A continuación se muestra una descripción más detallada."
 
 #: ../../users/explain/backends.rst:44
 msgid "If there is more than one configuration present, the last one from the list takes precedence; e.g. calling :func:`matplotlib.use()` will override the setting in your :file:`matplotlibrc`."
-msgstr ""
+msgstr "Si hay más de una configuración presente, la última de la lista tiene prioridad; por ejemplo, llamar a :func:`matplotlib.use()` anulará la configuración de su archivo :file:`matplotlibrc`."
 
 #: ../../users/explain/backends.rst:48
 msgid "Without a backend explicitly set, Matplotlib automatically detects a usable backend based on what is available on your system and on whether a GUI event loop is already running.  The first usable backend in the following list is selected: MacOSX, QtAgg, GTK4Agg, Gtk3Agg, TkAgg, WxAgg, Agg.  The last, Agg, is a non-interactive backend that can only write to files.  It is used on Linux, if Matplotlib cannot connect to either an X display or a Wayland display."

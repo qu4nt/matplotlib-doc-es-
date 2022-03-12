@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-12 13:46\n"
+"PO-Revision-Date: 2022-03-12 21:52\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../users/explain/fonts.rst:46
 msgid "Special mentions"
-msgstr ""
+msgstr "Menciones especiales"
 
 #: ../../users/explain/fonts.rst:47
 msgid "Other font specifications which Matplotlib supports:"
@@ -132,7 +132,7 @@ msgstr ""
 
 #: ../../users/explain/fonts.rst:56
 msgid "OpenType fonts:"
-msgstr ""
+msgstr "Fuentes OpenType:"
 
 #: ../../users/explain/fonts.rst:58
 msgid "OpenType is a new standard for digital type fonts, developed jointly by Adobe and Microsoft"
@@ -152,57 +152,57 @@ msgstr ""
 
 #: ../../users/explain/fonts.rst:65
 msgid "Matplotlib is able to generate documents in multiple different formats. Some of those formats (for example, PDF, PS/EPS, SVG) allow embedding font data in such a way that when these documents are visually scaled, the text does not appear pixelated."
-msgstr ""
+msgstr "Matplotlib es capaz de generar documentos en múltiples formatos diferentes. Algunos de esos formatos (por ejemplo, PDF, PS/EPS, SVG) permiten incrustar los datos de las fuentes de tal manera que cuando estos documentos se escalan visualmente, el texto no aparece pixelado."
 
 #: ../../users/explain/fonts.rst:70
 msgid "This can be achieved by embedding the *whole* font file within the output document. However, this can lead to very large documents, as some fonts (for instance, CJK - Chinese/Japanese/Korean fonts) can contain a large number of glyphs, and thus their embedded size can be quite huge."
-msgstr ""
+msgstr "Esto puede lograrse incrustando el archivo de fuentes *entero* dentro del documento de salida. Sin embargo, esto puede dar lugar a documentos muy grandes, ya que algunas fuentes (por ejemplo, CJK - fuentes chinas/japonesas/coreanas) pueden contener un gran número de glifos, y por lo tanto su tamaño incrustado puede ser bastante enorme."
 
 #: ../../users/explain/fonts.rst:75
 msgid "Font Subsetting can be used before generating documents, to embed only the *required* glyphs within the documents. Fonts can be considered as a collection of glyphs, so ultimately the goal is to find out *which* glyphs are required for a certain array of characters, and embed only those within the output."
-msgstr ""
+msgstr "Se puede utilizar el subconjunto de fuentes antes de generar los documentos, para incrustar sólo los glifos *necesarios* en los documentos. Los tipos de letra pueden considerarse una colección de glifos, por lo que el objetivo es averiguar qué glifos son necesarios para un determinado conjunto de caracteres e incluir sólo esos en la salida."
 
 #: ../../users/explain/fonts.rst:81
 msgid "The role of subsetter really shines when we encounter characters like **ä** (composed by calling subprograms for **a** and **¨**); since the subsetter has to find out *all* such subprograms being called by every glyph included in the subset, this is a generally difficult problem!"
-msgstr ""
+msgstr "El papel del sub-conjuntador brilla realmente cuando nos encontramos con caracteres como **ä** (compuestos por llamadas a subprogramas para **a** y **¨**); como el sub-conjuntador tiene que averiguar *todos* los subprogramas de este tipo que son llamados por cada glifo incluido en el subconjunto, ¡este es un problema generalmente difícil!"
 
 #: ../../users/explain/fonts.rst:86
 msgid "Luckily, Matplotlib uses a fork of an external dependency called `ttconv <https://github.com/sandflow/ttconv>`_, which helps in embedding and subsetting font data. (however, recent versions have moved away from ttconv to pure Python for certain types: for more details visit `these <https://github.com/matplotlib/matplotlib/pull/18370>`_, `links <https://github.com/matplotlib/matplotlib/pull/18181>`_)"
-msgstr ""
+msgstr "Por suerte, Matplotlib utiliza un fork de una dependencia externa llamada `ttconv <https://github.com/sandflow/ttconv>`_, que ayuda a incrustar y subconjuntar datos de fuentes. (sin embargo, las versiones recientes se han alejado de ttconv y han pasado a usar Python puro para ciertos tipos: para más detalles visita `estos <https://github.com/matplotlib/matplotlib/pull/18370>`_, `enlaces <https://github.com/matplotlib/matplotlib/pull/18181>`_)"
 
 #: ../../users/explain/fonts.rst:92
 msgid "*Type 1 fonts are still non-subsetted* through Matplotlib. (though one will encounter these mostly via *usetex*/*dviread* in PDF backend)"
-msgstr ""
+msgstr "*Las fuentes Type 1 todavía no están subestablecidos* a través de Matplotlib. (Aunque se encontrarán principalmente a través de *usetex*/*dviread* en el backend de PDF)"
 
 #: ../../users/explain/fonts.rst:93
 msgid "**Type 3 and Type 42 fonts are subsetted**, with a fair amount of exceptions and bugs for the latter."
-msgstr ""
+msgstr "**Las fuentes Type 3 y Type 42 están subconjuntadas**, con una buena cantidad de excepciones y errores para estas últimas."
 
 #: ../../users/explain/fonts.rst:96
 msgid "What to use?"
-msgstr ""
+msgstr "¿Qué usar?"
 
 #: ../../users/explain/fonts.rst:97
 msgid "Practically, most fonts that are readily available on most operating systems or are readily available on the internet to download include *TrueType fonts* and its \"extensions\" such as MacOS-resource fork fonts and the newer OpenType fonts."
-msgstr ""
+msgstr "Prácticamente, la mayoría de las fuentes que están disponibles en la mayoría de los sistemas operativos o que están disponibles en Internet para su descarga incluyen fuentes *TrueType* y sus \"extensiones\", como las fuentes MacOS-resource fork y las fuentes OpenType más recientes."
 
 #: ../../users/explain/fonts.rst:102
 msgid "PS and PDF backends provide support for yet another type of fonts, which remove the need of subsetting altogether! These are called **Core Fonts**, and Matplotlib calls them via the keyword **AFM**; all that is supplied from Matplotlib to such documents are font metrics (specified in AFM format), and it is the job of the viewer applications to supply the glyph definitions."
-msgstr ""
+msgstr "Los backends de PS y PDF ofrecen soporte para otro tipo de fuentes, que eliminan por completo la necesidad de subconjuntos. Se denominan **Fuentes básicas**, y Matplotlib las llama a través de la palabra clave **AFM**; todo lo que se suministra desde Matplotlib a dichos documentos son métricas de fuentes (especificadas en formato AFM), y es tarea de las aplicaciones de visualización suministrar las definiciones de los glifos."
 
 #: ../../users/explain/fonts.rst:108
 msgid "This is especially helpful to generate *really lightweight* documents.::"
-msgstr ""
+msgstr "Esto es especialmente útil para generar documentos *realmente ligeros*.::"
 
 #: ../../users/explain/fonts.rst:123
 msgid "These core fonts are limited to PDF and PS backends only; they can not be rendered in other backends."
-msgstr ""
+msgstr "Estas fuentes principales están limitadas únicamente a los backends PDF y PS; no pueden representarse en otros backends."
 
 #: ../../users/explain/fonts.rst:126
 msgid "Another downside to this is that while the font metrics are standardized, different PDF viewer applications will have different fonts to render these metrics. In other words, the **output might look different on different viewers**, as well as (let's say) Windows and Linux, if Linux tools included free versions of the proprietary fonts."
-msgstr ""
+msgstr "Otra desventaja de esto es que, aunque las métricas de las fuentes están estandarizadas, diferentes aplicaciones de visualización de PDF tendrán diferentes fuentes para representar estas métricas. En otras palabras, el **resultado podría tener un aspecto diferente en diferentes visores**, así como (digamos) en Windows y Linux, si las herramientas de Linux incluyeran versiones libres de las fuentes propietarias."
 
 #: ../../users/explain/fonts.rst:132
 msgid "This also violates the *what-you-see-is-what-you-get* feature of Matplotlib."
-msgstr ""
+msgstr "Esto también viola la característica *lo que ves es lo que obtienes* de Matplotlib."
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-12 01:43\n"
+"PO-Revision-Date: 2022-03-12 02:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../users/explain/event_handling.rst:7
 msgid "Event handling and picking"
-msgstr ""
+msgstr "Manejo y selección de eventos"
 
 #: ../../users/explain/event_handling.rst:9
 msgid "Matplotlib works with a number of user interface toolkits (wxpython, tkinter, qt, gtk, and macosx) and in order to support features like interactive panning and zooming of figures, it is helpful to the developers to have an API for interacting with the figure via key presses and mouse movements that is \"GUI neutral\" so we don't have to repeat a lot of code across the different user interfaces.  Although the event handling API is GUI neutral, it is based on the GTK model, which was the first user interface Matplotlib supported.  The events that are triggered are also a bit richer vis-a-vis Matplotlib than standard GUI events, including information like which `~.axes.Axes` the event occurred in.  The events also understand the Matplotlib coordinate system, and report event locations in both pixel and data coordinates."
-msgstr ""
+msgstr "Matplotlib trabaja con varios kits de herramientas de interfaz de usuario (wxpython, tkinter, qt, gtk, y macosx) y para poder soportar características como la panorámica y el zoom interactivos de las figuras, a los desarrolladores les resulta útil tener una API para interactuar con la figura a través de la pulsación de teclas y los movimientos del ratón que sea \"neutral con respecto a la IGU\" para que no tengamos que repetir mucho código a través de las diferentes interfaces de usuario. Aunque la API de manejo de eventos es neutral con respecto a la IGU, está basada en el modelo GTK, que fue la primera interfaz de usuario que Matplotlib soportó. Los eventos que se desencadenan son también un poco más ricos con respecto a Matplotlib que los eventos estándar de la IGU, incluyendo información como en qué `~.axes.Axes` ocurrió el evento. Los eventos también entienden el sistema de coordenadas de Matplotlib, y reportan las ubicaciones de los eventos tanto en coordenadas de píxeles como de datos."
 
 #: ../../users/explain/event_handling.rst:26
 msgid "Event connections"
@@ -32,23 +32,23 @@ msgstr "Conexiones de eventos"
 
 #: ../../users/explain/event_handling.rst:28
 msgid "To receive events, you need to write a callback function and then connect your function to the event manager, which is part of the `~.FigureCanvasBase`.  Here is a simple example that prints the location of the mouse click and which button was pressed::"
-msgstr ""
+msgstr "Para recibir eventos, necesitas escribir una función de callback y luego conectar tu función al gestor de eventos, que es parte de `~.FigureCanvasBase`.  Aquí hay un ejemplo simple que imprime la ubicación del clic del ratón y qué botón fue presionado::"
 
 #: ../../users/explain/event_handling.rst:44
 msgid "The `.FigureCanvasBase.mpl_connect` method returns a connection id (an integer), which can be used to disconnect the callback via ::"
-msgstr ""
+msgstr "El método `.FigureCanvasBase.mpl_connect` devuelve un identificador de conexión (un entero), que puede utilizarse para desconectar la llamada de retorno mediante ::"
 
 #: ../../users/explain/event_handling.rst:50
 msgid "The canvas retains only weak references to instance methods used as callbacks.  Therefore, you need to retain a reference to instances owning such methods.  Otherwise the instance will be garbage-collected and the callback will vanish."
-msgstr ""
+msgstr "El lienzo retiene sólo referencias débiles a los métodos de instancia utilizados como callbacks. Por lo tanto, es necesario retener una referencia a las instancias que poseen dichos métodos. De lo contrario, la instancia será recogida por la papelera y la llamada de retorno desaparecerá."
 
 #: ../../users/explain/event_handling.rst:55
 msgid "This does not affect free functions used as callbacks."
-msgstr ""
+msgstr "Esto no afecta a las funciones libres utilizadas como callbacks."
 
 #: ../../users/explain/event_handling.rst:57
 msgid "Here are the events that you can connect to, the class instances that are sent back to you when the event occurs, and the event descriptions:"
-msgstr ""
+msgstr "Aquí están los eventos a los que te puedes conectar, las instancias de clase que se te devuelven cuando el evento ocurre, y las descripciones de los eventos:"
 
 #: ../../users/explain/event_handling.rst:61
 msgid "Event name"
@@ -75,7 +75,7 @@ msgstr "`.MouseEvent`"
 
 #: ../../users/explain/event_handling.rst:63
 msgid "mouse button is pressed"
-msgstr ""
+msgstr "se pulsa el botón del ratón"
 
 #: ../../users/explain/event_handling.rst:64
 msgid "'button_release_event'"
@@ -83,7 +83,7 @@ msgstr "'button_release_event'"
 
 #: ../../users/explain/event_handling.rst:64
 msgid "mouse button is released"
-msgstr ""
+msgstr "se pulsa el botón del ratón"
 
 #: ../../users/explain/event_handling.rst:65
 msgid "'close_event'"
@@ -107,7 +107,7 @@ msgstr "`.DrawEvent`"
 
 #: ../../users/explain/event_handling.rst:66
 msgid "canvas has been drawn (but screen widget not updated yet)"
-msgstr ""
+msgstr "el lienzo se ha dibujado (pero el widget de pantalla no se ha actualizado todavía)"
 
 #: ../../users/explain/event_handling.rst:68
 msgid "'key_press_event'"
@@ -432,7 +432,7 @@ msgstr ""
 
 #: ../../users/explain/event_handling.rst:139
 msgid "``xdata``, ``ydata``"
-msgstr ""
+msgstr "``xdata``, ``ydata``"
 
 #: ../../users/explain/event_handling.rst:138
 msgid "mouse x and y position in data coordinates, if the mouse is over an axes"
@@ -448,7 +448,7 @@ msgstr ""
 
 #: ../../users/explain/event_handling.rst:173
 msgid "``button``"
-msgstr ""
+msgstr "``button``"
 
 #: ../../users/explain/event_handling.rst:173
 msgid "the button pressed: None, `.MouseButton`, 'up', or 'down' (up and down are used for scroll events)"
@@ -456,7 +456,7 @@ msgstr ""
 
 #: ../../users/explain/event_handling.rst:176
 msgid "``key``"
-msgstr ""
+msgstr "``key``"
 
 #: ../../users/explain/event_handling.rst:176
 msgid "the key pressed: None, any character, 'shift', 'win', or 'control'"
@@ -472,7 +472,7 @@ msgstr ""
 
 #: ../../users/explain/event_handling.rst:194
 msgid "Here is the solution::"
-msgstr ""
+msgstr "Esta es la solución::"
 
 #: ../../users/explain/event_handling.rst:259
 msgid "**Extra credit**: Use blitting to make the animated drawing faster and smoother."

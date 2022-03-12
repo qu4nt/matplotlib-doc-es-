@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-12 20:36\n"
+"PO-Revision-Date: 2022-03-12 21:52\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -24,15 +24,15 @@ msgstr "Figuras interactivas"
 
 #: ../../users/explain/interactive.rst:14
 msgid "When working with data, interactivity can be invaluable. The pan/zoom and mouse-location tools built into the Matplotlib GUI windows are often sufficient, but you can also use the event system to build customized data exploration tools."
-msgstr ""
+msgstr "Cuando se trabaja con datos, la interactividad puede ser inestimable. Las herramientas de paneo/zoom y de localización del ratón integradas en las ventanas de la interfaz gráfica de Matplotlib suelen ser suficientes, pero también se puede utilizar el sistema de eventos para construir herramientas de exploración de datos personalizadas."
 
 #: ../../users/explain/interactive.rst:18
 msgid "Matplotlib ships with :ref:`backends <what-is-a-backend>` binding to several GUI toolkits (Qt, Tk, Wx, GTK, macOS, JavaScript) and third party packages provide bindings to `kivy <https://github.com/kivy-garden/garden.matplotlib>`__ and `Jupyter Lab <https://github.com/matplotlib/ipympl>`__.  For the figures to be responsive to mouse, keyboard, and paint events, the GUI event loop needs to be integrated with an interactive prompt. We recommend using IPython (see :ref:`below <ipython-pylab>`)."
-msgstr ""
+msgstr "Matplotlib viene con :ref:`backends <what-is-a-backend>` vinculado a varios conjuntos de herramientas IGU (Qt, Tk, Wx, GTK, macOS, JavaScript) y los paquetes de terceros proporcionan enlaces a `kivy <https://github.com/kivy-garden/garden.matplotlib>`__ y `Jupyter Lab <https://github.com/matplotlib/ipympl>`__.  Para que las figuras respondan a los eventos del ratón, el teclado y la pintura, el bucle de eventos de la IGU debe integrarse con un indicador interactivo. Recomendamos el uso de IPython (ver :ref:`abajo <ipython-pylab>`)."
 
 #: ../../users/explain/interactive.rst:26
 msgid "The `.pyplot` module provides functions for explicitly creating figures that include interactive tools, a toolbar, a tool-tip, and :ref:`key bindings <key-event-handling>`:"
-msgstr ""
+msgstr "El módulo `.pyplot` proporciona funciones para crear explícitamente figuras que incluyen herramientas interactivas, una barra de herramientas, un tool-tip y :ref:`key bindings <key-event-handling>`:"
 
 #: ../../users/explain/interactive.rst:31
 msgid "`.pyplot.figure`"
@@ -40,7 +40,7 @@ msgstr "`.pyplot.figure`"
 
 #: ../../users/explain/interactive.rst:31
 msgid "Creates a new empty `.figure.Figure` or selects an existing figure"
-msgstr ""
+msgstr "Crea una nueva figura vacía `.figure.Figure` o selecciona una figura existente"
 
 #: ../../users/explain/interactive.rst:34
 msgid "`.pyplot.subplots`"
@@ -48,19 +48,19 @@ msgstr "`.pyplot.subplots`"
 
 #: ../../users/explain/interactive.rst:34
 msgid "Creates a new `.figure.Figure` and fills it with a grid of `.axes.Axes`"
-msgstr ""
+msgstr "Crea una nueva `.figure.Figure` y la rellena con una cuadrícula de `.axes.Axes`"
 
 #: ../../users/explain/interactive.rst:36
 msgid "`.pyplot` has a notion of \"The Current Figure\" which can be accessed through `.pyplot.gcf` and a notion of \"The Current Axes\" accessed through `.pyplot.gca`.  Almost all of the functions in `.pyplot` pass through the current `.Figure` / `.axes.Axes` (or create one) as appropriate."
-msgstr ""
+msgstr "`.pyplot` tiene una noción de \"La figura actual\" a la que se puede acceder a través de `.pyplot.gcf` y una noción de \"Los ejes actuales\" a la que se accede a través de `.pyplot.gca`. Casi todas las funciones de `.pyplot` pasan a través de la figura actual `.Figure` / `.axes.Axes` (o crean una) según sea el caso."
 
 #: ../../users/explain/interactive.rst:42
 msgid "Matplotlib keeps a reference to all of the open figures created via `pyplot.figure` or `pyplot.subplots` so that the figures will not be garbage collected. `.Figure`\\s can be closed and deregistered from `.pyplot` individually via `.pyplot.close`; all open `.Figure`\\s can be closed via ``plt.close('all')``."
-msgstr ""
+msgstr "Matplotlib mantiene una referencia a todas las figuras abiertas creadas mediante `pyplot.figure` o `pyplot.subplots` para que las figuras no sean recolectadas por la basura. Las figuras pueden cerrarse y darse de baja de `.pyplot` individualmente mediante `.pyplot.close`; todas las figuras abiertas pueden cerrarse mediante ``plt.close('all')``."
 
 #: ../../users/explain/interactive.rst:48
 msgid "For more discussion of Matplotlib's event system and integrated event loops, please read:"
-msgstr ""
+msgstr "Para más información sobre el sistema de eventos de Matplotlib y los bucles de eventos integrados, por favor lee:"
 
 #: ../../users/explain/interactive.rst:60
 msgid "IPython integration"
@@ -68,35 +68,35 @@ msgstr "Integración con IPython"
 
 #: ../../users/explain/interactive.rst:62
 msgid "We recommend using IPython for an interactive shell.  In addition to all of its features (improved tab-completion, magics, multiline editing, etc), it also ensures that the GUI toolkit event loop is properly integrated with the command line (see :ref:`cp_integration`)."
-msgstr ""
+msgstr "Recomendamos el uso de IPython para un shell interactivo.  Además de todas sus características (mejora en el completamiento de tabulaciones, magias, edición multilínea, etc), también asegura que el bucle de eventos del kit de herramientas de la IGU está correctamente integrado con la línea de comandos (ver :ref:`cp_integration`)."
 
 #: ../../users/explain/interactive.rst:67
 msgid "In this example, we create and modify a figure via an IPython prompt. The figure displays in a QtAgg GUI window. To configure the integration and enable :ref:`interactive mode <controlling-interactive>` use the ``%matplotlib`` magic:"
-msgstr ""
+msgstr "En este ejemplo, creamos y modificamos una figura a través de un prompt de IPython. La figura se muestra en una ventana de QtAgg del IGU. Para configurar la integración y habilitar el :ref:`interactive mode <controlling-interactive>` utilice la magia ``%matplotlib``:"
 
 #: ../../users/explain/interactive.rst:81
 msgid "Create a new figure window:"
-msgstr ""
+msgstr "Crear una nueva ventana de figura:"
 
 #: ../../users/explain/interactive.rst:88
 msgid "Add a line plot of the data to the window:"
-msgstr ""
+msgstr "Añade un gráfico de líneas de los datos a la ventana:"
 
 #: ../../users/explain/interactive.rst:94
 msgid "Change the color of the line from blue to orange:"
-msgstr ""
+msgstr "Cambia el color de la línea de azul a naranja:"
 
 #: ../../users/explain/interactive.rst:100
 msgid "If you wish to disable automatic redrawing of the plot:"
-msgstr ""
+msgstr "Si desea desactivar el redibujado automático del gráfico:"
 
 #: ../../users/explain/interactive.rst:106
 msgid "If you wish to re-enable automatic redrawing of the plot:"
-msgstr ""
+msgstr "Si desea volver a activar el redibujado automático del gráfico:"
 
 #: ../../users/explain/interactive.rst:113
 msgid "In recent versions of ``Matplotlib`` and ``IPython``, it is sufficient to import `matplotlib.pyplot` and call `.pyplot.ion`. Using the ``%`` magic is guaranteed to work in all versions of Matplotlib and IPython."
-msgstr ""
+msgstr "En las versiones recientes de ``Matplotlib`` y ``IPython``, basta con importar `matplotlib.pyplot` y llamar a `.pyplot.ion``. El uso de la magia ``%`` está garantizado para funcionar en todas las versiones de Matplotlib e IPython."
 
 #: ../../users/explain/interactive.rst:123
 msgid "Interactive mode"

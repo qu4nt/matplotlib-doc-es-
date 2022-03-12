@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-12 16:33\n"
+"PO-Revision-Date: 2022-03-12 20:36\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../users/explain/interactive.rst:60
 msgid "IPython integration"
-msgstr ""
+msgstr "Integración con IPython"
 
 #: ../../users/explain/interactive.rst:62
 msgid "We recommend using IPython for an interactive shell.  In addition to all of its features (improved tab-completion, magics, multiline editing, etc), it also ensures that the GUI toolkit event loop is properly integrated with the command line (see :ref:`cp_integration`)."
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../users/explain/interactive.rst:123
 msgid "Interactive mode"
-msgstr ""
+msgstr "Modo interactivo"
 
 #: ../../users/explain/interactive.rst:134:<autosummary>:1
 msgid ":py:obj:`pyplot.ion <matplotlib.pyplot.ion>`"
@@ -108,7 +108,7 @@ msgstr ":py:obj:`pyplot.ion <matplotlib.pyplot.ion>`"
 
 #: ../../users/explain/interactive.rst:134:<autosummary>:1
 msgid "Enable interactive mode."
-msgstr ""
+msgstr "Activar modo interactivo."
 
 #: ../../users/explain/interactive.rst:134:<autosummary>:1
 msgid ":py:obj:`pyplot.ioff <matplotlib.pyplot.ioff>`"
@@ -116,7 +116,7 @@ msgstr ":py:obj:`pyplot.ioff <matplotlib.pyplot.ioff>`"
 
 #: ../../users/explain/interactive.rst:134:<autosummary>:1
 msgid "Disable interactive mode."
-msgstr ""
+msgstr "Desactivar modo interactivo."
 
 #: ../../users/explain/interactive.rst:134:<autosummary>:1
 msgid ":py:obj:`pyplot.isinteractive <matplotlib.pyplot.isinteractive>`"
@@ -124,7 +124,7 @@ msgstr ":py:obj:`pyplot.isinteractive <matplotlib.pyplot.isinteractive>`"
 
 #: ../../users/explain/interactive.rst:134:<autosummary>:1
 msgid "Return whether plots are updated after every plotting command."
-msgstr ""
+msgstr "Devuelve si los gráficos se actualizan después de cada comando de trazado."
 
 #: ../../users/explain/interactive.rst:142:<autosummary>:1
 msgid ":py:obj:`pyplot.show <matplotlib.pyplot.show>`"
@@ -132,7 +132,7 @@ msgstr ":py:obj:`pyplot.show <matplotlib.pyplot.show>`"
 
 #: ../../users/explain/interactive.rst:142:<autosummary>:1
 msgid "Display all open figures."
-msgstr ""
+msgstr "Mostrar todas las figuras abiertas."
 
 #: ../../users/explain/interactive.rst:142:<autosummary>:1
 msgid ":py:obj:`pyplot.pause <matplotlib.pyplot.pause>`"
@@ -140,71 +140,71 @@ msgstr ":py:obj:`pyplot.pause <matplotlib.pyplot.pause>`"
 
 #: ../../users/explain/interactive.rst:142:<autosummary>:1
 msgid "Run the GUI event loop for *interval* seconds."
-msgstr ""
+msgstr "Ejecute el bucle de eventos de la IGU durante *intervalo* de segundos."
 
 #: ../../users/explain/interactive.rst:143
 msgid "Interactive mode controls:"
-msgstr ""
+msgstr "Controles del modo interactivo:"
 
 #: ../../users/explain/interactive.rst:145
 msgid "whether created figures are automatically shown"
-msgstr ""
+msgstr "si las figuras creadas se muestran automáticamente"
 
 #: ../../users/explain/interactive.rst:146
 msgid "whether changes to artists automatically trigger re-drawing existing figures"
-msgstr ""
+msgstr "si los cambios en los artists desencadenan automáticamente el redibujado de las figuras existentes"
 
 #: ../../users/explain/interactive.rst:147
 msgid "when `.pyplot.show()` returns if given no arguments: immediately, or after all of the figures have been closed"
-msgstr ""
+msgstr "cuando `.pyplot.show()` devuelve si no se le dan argumentos: inmediatamente, o después de que se hayan cerrado todas las figuras"
 
 #: ../../users/explain/interactive.rst:149
 msgid "If in interactive mode:"
-msgstr ""
+msgstr "If in interactive mode:"
 
 #: ../../users/explain/interactive.rst:151
 msgid "newly created figures will be displayed immediately"
-msgstr ""
+msgstr "las figuras recién creadas se mostrarán inmediatamente"
 
 #: ../../users/explain/interactive.rst:152
 msgid "figures will automatically redraw when elements are changed"
-msgstr ""
+msgstr "las figuras se redibujan automáticamente cuando se cambian los elementos"
 
 #: ../../users/explain/interactive.rst:153
 msgid "`pyplot.show()` displays the figures and immediately returns"
-msgstr ""
+msgstr "`pyplot.show()` muestra las figuras y devuelve inmediatamente"
 
 #: ../../users/explain/interactive.rst:155
 msgid "If not in interactive mode:"
-msgstr ""
+msgstr "Si no está en modo interactivo:"
 
 #: ../../users/explain/interactive.rst:157
 msgid "newly created figures and changes to figures are not displayed until"
-msgstr ""
+msgstr "las figuras recién creadas y los cambios en las figuras no se muestran hasta"
 
 #: ../../users/explain/interactive.rst:159
 msgid "`.pyplot.show()` is called"
-msgstr ""
+msgstr "Se llama a `.pyplot.show()`"
 
 #: ../../users/explain/interactive.rst:160
 msgid "`.pyplot.pause()` is called"
-msgstr ""
+msgstr "Se llama a `.pyplot.pause()`"
 
 #: ../../users/explain/interactive.rst:161
 msgid "`.FigureCanvasBase.flush_events()` is called"
-msgstr ""
+msgstr "Se llama a `.FigureCanvasBase.flush_events()`"
 
 #: ../../users/explain/interactive.rst:163
 msgid "`pyplot.show()` runs the GUI event loop and does not return until all the plot windows are closed"
-msgstr ""
+msgstr "`pyplot.show()` ejecuta el bucle de eventos de la IGU y no regreso hasta que se cierran todas las ventanas del gráfico"
 
 #: ../../users/explain/interactive.rst:165
 msgid "If you are in non-interactive mode (or created figures while in non-interactive mode) you may need to explicitly call `.pyplot.show` to display the windows on your screen.  If you only want to run the GUI event loop for a fixed amount of time, you can use `.pyplot.pause`. This will block the progress of your code as if you had called `time.sleep`, ensure the current window is shown and re-drawn if needed, and run the GUI event loop for the specified period of time."
-msgstr ""
+msgstr "Si estás en modo no interactivo (o has creado figuras mientras estaba en modo no interactivo) puede que tengas que llamar explícitamente a `.pyplot.show` para mostrar las ventanas en su pantalla.  Si sólo quieres ejecutar el bucle de eventos de la IGU durante un tiempo determinado, puedes utilizar `.pyplot.pause`. Esto bloqueará el progreso de tu código como si hubieras llamado a `time.sleep`, asegurando que la ventana actual se muestre y se redibuje si es necesario, y ejecutando el bucle de eventos de la IGU durante el periodo de tiempo especificado."
 
 #: ../../users/explain/interactive.rst:173
 msgid "The GUI event loop being integrated with your command prompt and the figures being in interactive mode are independent of each other. If you use `pyplot.ion` but have not arranged for the event loop integration, your figures will appear but will not be interactive while the prompt is waiting for input. You will not be able to pan/zoom and the figure may not even render (the window might appear black, transparent, or as a snapshot of the desktop under it).  Conversely, if you configure the event loop integration, displayed figures will be responsive while waiting for input at the prompt, regardless of pyplot's \"interactive mode\"."
-msgstr ""
+msgstr "El bucle de eventos de la interfaz gráfica de usuario que se integra con el símbolo del sistema y las figuras que están en modo interactivo son independientes el uno del otro. Si utilizas `pyplot.ion` pero no has dispuesto la integración del bucle de eventos, tus figuras aparecerán pero no serán interactivas mientras el prompt esté esperando la entrada. No podrá hacer paneo/zoom y puede que la figura ni siquiera se renderice (la ventana puede aparecer en negro, transparente o como una instantánea del escritorio bajo ella).  Por el contrario, si se configura la integración del bucle de eventos, las figuras mostradas responderán mientras se espera la entrada en el prompt, independientemente del \"modo interactivo\" de pyplot."
 
 #: ../../users/explain/interactive.rst:183
 msgid "No matter what combination of interactive mode setting and event loop integration, figures will be responsive if you use ``pyplot.show(block=True)``, `.pyplot.pause`, or run the GUI main loop in some other way."

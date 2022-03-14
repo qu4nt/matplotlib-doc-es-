@@ -1,0 +1,412 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-12 21:52\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/users/explain/interactive.po\n"
+"X-Crowdin-File-ID: 3366\n"
+"Language: es_ES\n"
+
+#: ../../users/explain/interactive.rst:9
+msgid "Interactive figures"
+msgstr "Figuras interactivas"
+
+#: ../../users/explain/interactive.rst:14
+msgid "When working with data, interactivity can be invaluable. The pan/zoom and mouse-location tools built into the Matplotlib GUI windows are often sufficient, but you can also use the event system to build customized data exploration tools."
+msgstr "Cuando se trabaja con datos, la interactividad puede ser inestimable. Las herramientas de paneo/zoom y de localización del ratón integradas en las ventanas de la interfaz gráfica de Matplotlib suelen ser suficientes, pero también se puede utilizar el sistema de eventos para construir herramientas de exploración de datos personalizadas."
+
+#: ../../users/explain/interactive.rst:18
+msgid "Matplotlib ships with :ref:`backends <what-is-a-backend>` binding to several GUI toolkits (Qt, Tk, Wx, GTK, macOS, JavaScript) and third party packages provide bindings to `kivy <https://github.com/kivy-garden/garden.matplotlib>`__ and `Jupyter Lab <https://github.com/matplotlib/ipympl>`__.  For the figures to be responsive to mouse, keyboard, and paint events, the GUI event loop needs to be integrated with an interactive prompt. We recommend using IPython (see :ref:`below <ipython-pylab>`)."
+msgstr "Matplotlib viene con :ref:`backends <what-is-a-backend>` vinculado a varios conjuntos de herramientas IGU (Qt, Tk, Wx, GTK, macOS, JavaScript) y los paquetes de terceros proporcionan enlaces a `kivy <https://github.com/kivy-garden/garden.matplotlib>`__ y `Jupyter Lab <https://github.com/matplotlib/ipympl>`__.  Para que las figuras respondan a los eventos del ratón, el teclado y la pintura, el bucle de eventos de la IGU debe integrarse con un indicador interactivo. Recomendamos el uso de IPython (ver :ref:`abajo <ipython-pylab>`)."
+
+#: ../../users/explain/interactive.rst:26
+msgid "The `.pyplot` module provides functions for explicitly creating figures that include interactive tools, a toolbar, a tool-tip, and :ref:`key bindings <key-event-handling>`:"
+msgstr "El módulo `.pyplot` proporciona funciones para crear explícitamente figuras que incluyen herramientas interactivas, una barra de herramientas, un tool-tip y :ref:`key bindings <key-event-handling>`:"
+
+#: ../../users/explain/interactive.rst:31
+msgid "`.pyplot.figure`"
+msgstr "`.pyplot.figure`"
+
+#: ../../users/explain/interactive.rst:31
+msgid "Creates a new empty `.figure.Figure` or selects an existing figure"
+msgstr "Crea una nueva figura vacía `.figure.Figure` o selecciona una figura existente"
+
+#: ../../users/explain/interactive.rst:34
+msgid "`.pyplot.subplots`"
+msgstr "`.pyplot.subplots`"
+
+#: ../../users/explain/interactive.rst:34
+msgid "Creates a new `.figure.Figure` and fills it with a grid of `.axes.Axes`"
+msgstr "Crea una nueva `.figure.Figure` y la rellena con una cuadrícula de `.axes.Axes`"
+
+#: ../../users/explain/interactive.rst:36
+msgid "`.pyplot` has a notion of \"The Current Figure\" which can be accessed through `.pyplot.gcf` and a notion of \"The Current Axes\" accessed through `.pyplot.gca`.  Almost all of the functions in `.pyplot` pass through the current `.Figure` / `.axes.Axes` (or create one) as appropriate."
+msgstr "`.pyplot` tiene una noción de \"La figura actual\" a la que se puede acceder a través de `.pyplot.gcf` y una noción de \"Los ejes actuales\" a la que se accede a través de `.pyplot.gca`. Casi todas las funciones de `.pyplot` pasan a través de la figura actual `.Figure` / `.axes.Axes` (o crean una) según sea el caso."
+
+#: ../../users/explain/interactive.rst:42
+msgid "Matplotlib keeps a reference to all of the open figures created via `pyplot.figure` or `pyplot.subplots` so that the figures will not be garbage collected. `.Figure`\\s can be closed and deregistered from `.pyplot` individually via `.pyplot.close`; all open `.Figure`\\s can be closed via ``plt.close('all')``."
+msgstr "Matplotlib mantiene una referencia a todas las figuras abiertas creadas mediante `pyplot.figure` o `pyplot.subplots` para que las figuras no sean recolectadas por la basura. Las figuras pueden cerrarse y darse de baja de `.pyplot` individualmente mediante `.pyplot.close`; todas las figuras abiertas pueden cerrarse mediante ``plt.close('all')``."
+
+#: ../../users/explain/interactive.rst:48
+msgid "For more discussion of Matplotlib's event system and integrated event loops, please read:"
+msgstr "Para más información sobre el sistema de eventos de Matplotlib y los bucles de eventos integrados, por favor lee:"
+
+#: ../../users/explain/interactive.rst:60
+msgid "IPython integration"
+msgstr "Integración con IPython"
+
+#: ../../users/explain/interactive.rst:62
+msgid "We recommend using IPython for an interactive shell.  In addition to all of its features (improved tab-completion, magics, multiline editing, etc), it also ensures that the GUI toolkit event loop is properly integrated with the command line (see :ref:`cp_integration`)."
+msgstr "Recomendamos el uso de IPython para un shell interactivo.  Además de todas sus características (mejora en el completamiento de tabulaciones, magias, edición multilínea, etc), también asegura que el bucle de eventos del kit de herramientas de la IGU está correctamente integrado con la línea de comandos (ver :ref:`cp_integration`)."
+
+#: ../../users/explain/interactive.rst:67
+msgid "In this example, we create and modify a figure via an IPython prompt. The figure displays in a QtAgg GUI window. To configure the integration and enable :ref:`interactive mode <controlling-interactive>` use the ``%matplotlib`` magic:"
+msgstr "En este ejemplo, creamos y modificamos una figura a través de un prompt de IPython. La figura se muestra en una ventana de QtAgg del IGU. Para configurar la integración y habilitar el :ref:`interactive mode <controlling-interactive>` utilice la magia ``%matplotlib``:"
+
+#: ../../users/explain/interactive.rst:81
+msgid "Create a new figure window:"
+msgstr "Crear una nueva ventana de figura:"
+
+#: ../../users/explain/interactive.rst:88
+msgid "Add a line plot of the data to the window:"
+msgstr "Añade un gráfico de líneas de los datos a la ventana:"
+
+#: ../../users/explain/interactive.rst:94
+msgid "Change the color of the line from blue to orange:"
+msgstr "Cambia el color de la línea de azul a naranja:"
+
+#: ../../users/explain/interactive.rst:100
+msgid "If you wish to disable automatic redrawing of the plot:"
+msgstr "Si desea desactivar el redibujado automático del gráfico:"
+
+#: ../../users/explain/interactive.rst:106
+msgid "If you wish to re-enable automatic redrawing of the plot:"
+msgstr "Si desea volver a activar el redibujado automático del gráfico:"
+
+#: ../../users/explain/interactive.rst:113
+msgid "In recent versions of ``Matplotlib`` and ``IPython``, it is sufficient to import `matplotlib.pyplot` and call `.pyplot.ion`. Using the ``%`` magic is guaranteed to work in all versions of Matplotlib and IPython."
+msgstr "En las versiones recientes de ``Matplotlib`` y ``IPython``, basta con importar `matplotlib.pyplot` y llamar a `.pyplot.ion``. El uso de la magia ``%`` está garantizado para funcionar en todas las versiones de Matplotlib e IPython."
+
+#: ../../users/explain/interactive.rst:123
+msgid "Interactive mode"
+msgstr "Modo interactivo"
+
+#: ../../users/explain/interactive.rst:134:<autosummary>:1
+msgid ":py:obj:`pyplot.ion <matplotlib.pyplot.ion>`"
+msgstr ":py:obj:`pyplot.ion <matplotlib.pyplot.ion>`"
+
+#: ../../users/explain/interactive.rst:134:<autosummary>:1
+msgid "Enable interactive mode."
+msgstr "Activar modo interactivo."
+
+#: ../../users/explain/interactive.rst:134:<autosummary>:1
+msgid ":py:obj:`pyplot.ioff <matplotlib.pyplot.ioff>`"
+msgstr ":py:obj:`pyplot.ioff <matplotlib.pyplot.ioff>`"
+
+#: ../../users/explain/interactive.rst:134:<autosummary>:1
+msgid "Disable interactive mode."
+msgstr "Desactivar modo interactivo."
+
+#: ../../users/explain/interactive.rst:134:<autosummary>:1
+msgid ":py:obj:`pyplot.isinteractive <matplotlib.pyplot.isinteractive>`"
+msgstr ":py:obj:`pyplot.isinteractive <matplotlib.pyplot.isinteractive>`"
+
+#: ../../users/explain/interactive.rst:134:<autosummary>:1
+msgid "Return whether plots are updated after every plotting command."
+msgstr "Devuelve si los gráficos se actualizan después de cada comando de trazado."
+
+#: ../../users/explain/interactive.rst:142:<autosummary>:1
+msgid ":py:obj:`pyplot.show <matplotlib.pyplot.show>`"
+msgstr ":py:obj:`pyplot.show <matplotlib.pyplot.show>`"
+
+#: ../../users/explain/interactive.rst:142:<autosummary>:1
+msgid "Display all open figures."
+msgstr "Mostrar todas las figuras abiertas."
+
+#: ../../users/explain/interactive.rst:142:<autosummary>:1
+msgid ":py:obj:`pyplot.pause <matplotlib.pyplot.pause>`"
+msgstr ":py:obj:`pyplot.pause <matplotlib.pyplot.pause>`"
+
+#: ../../users/explain/interactive.rst:142:<autosummary>:1
+msgid "Run the GUI event loop for *interval* seconds."
+msgstr "Ejecute el bucle de eventos de la IGU durante *intervalo* de segundos."
+
+#: ../../users/explain/interactive.rst:143
+msgid "Interactive mode controls:"
+msgstr "Controles del modo interactivo:"
+
+#: ../../users/explain/interactive.rst:145
+msgid "whether created figures are automatically shown"
+msgstr "si las figuras creadas se muestran automáticamente"
+
+#: ../../users/explain/interactive.rst:146
+msgid "whether changes to artists automatically trigger re-drawing existing figures"
+msgstr "si los cambios en los artists desencadenan automáticamente el redibujado de las figuras existentes"
+
+#: ../../users/explain/interactive.rst:147
+msgid "when `.pyplot.show()` returns if given no arguments: immediately, or after all of the figures have been closed"
+msgstr "cuando `.pyplot.show()` devuelve si no se le dan argumentos: inmediatamente, o después de que se hayan cerrado todas las figuras"
+
+#: ../../users/explain/interactive.rst:149
+msgid "If in interactive mode:"
+msgstr "If in interactive mode:"
+
+#: ../../users/explain/interactive.rst:151
+msgid "newly created figures will be displayed immediately"
+msgstr "las figuras recién creadas se mostrarán inmediatamente"
+
+#: ../../users/explain/interactive.rst:152
+msgid "figures will automatically redraw when elements are changed"
+msgstr "las figuras se redibujan automáticamente cuando se cambian los elementos"
+
+#: ../../users/explain/interactive.rst:153
+msgid "`pyplot.show()` displays the figures and immediately returns"
+msgstr "`pyplot.show()` muestra las figuras y devuelve inmediatamente"
+
+#: ../../users/explain/interactive.rst:155
+msgid "If not in interactive mode:"
+msgstr "Si no está en modo interactivo:"
+
+#: ../../users/explain/interactive.rst:157
+msgid "newly created figures and changes to figures are not displayed until"
+msgstr "las figuras recién creadas y los cambios en las figuras no se muestran hasta"
+
+#: ../../users/explain/interactive.rst:159
+msgid "`.pyplot.show()` is called"
+msgstr "Se llama a `.pyplot.show()`"
+
+#: ../../users/explain/interactive.rst:160
+msgid "`.pyplot.pause()` is called"
+msgstr "Se llama a `.pyplot.pause()`"
+
+#: ../../users/explain/interactive.rst:161
+msgid "`.FigureCanvasBase.flush_events()` is called"
+msgstr "Se llama a `.FigureCanvasBase.flush_events()`"
+
+#: ../../users/explain/interactive.rst:163
+msgid "`pyplot.show()` runs the GUI event loop and does not return until all the plot windows are closed"
+msgstr "`pyplot.show()` ejecuta el bucle de eventos de la IGU y no regreso hasta que se cierran todas las ventanas del gráfico"
+
+#: ../../users/explain/interactive.rst:165
+msgid "If you are in non-interactive mode (or created figures while in non-interactive mode) you may need to explicitly call `.pyplot.show` to display the windows on your screen.  If you only want to run the GUI event loop for a fixed amount of time, you can use `.pyplot.pause`. This will block the progress of your code as if you had called `time.sleep`, ensure the current window is shown and re-drawn if needed, and run the GUI event loop for the specified period of time."
+msgstr "Si estás en modo no interactivo (o has creado figuras mientras estaba en modo no interactivo) puede que tengas que llamar explícitamente a `.pyplot.show` para mostrar las ventanas en su pantalla.  Si sólo quieres ejecutar el bucle de eventos de la IGU durante un tiempo determinado, puedes utilizar `.pyplot.pause`. Esto bloqueará el progreso de tu código como si hubieras llamado a `time.sleep`, asegurando que la ventana actual se muestre y se redibuje si es necesario, y ejecutando el bucle de eventos de la IGU durante el periodo de tiempo especificado."
+
+#: ../../users/explain/interactive.rst:173
+msgid "The GUI event loop being integrated with your command prompt and the figures being in interactive mode are independent of each other. If you use `pyplot.ion` but have not arranged for the event loop integration, your figures will appear but will not be interactive while the prompt is waiting for input. You will not be able to pan/zoom and the figure may not even render (the window might appear black, transparent, or as a snapshot of the desktop under it).  Conversely, if you configure the event loop integration, displayed figures will be responsive while waiting for input at the prompt, regardless of pyplot's \"interactive mode\"."
+msgstr "El bucle de eventos de la interfaz gráfica de usuario que se integra con el símbolo del sistema y las figuras que están en modo interactivo son independientes el uno del otro. Si utilizas `pyplot.ion` pero no has dispuesto la integración del bucle de eventos, tus figuras aparecerán pero no serán interactivas mientras el prompt esté esperando la entrada. No podrá hacer paneo/zoom y puede que la figura ni siquiera se renderice (la ventana puede aparecer en negro, transparente o como una instantánea del escritorio bajo ella).  Por el contrario, si se configura la integración del bucle de eventos, las figuras mostradas responderán mientras se espera la entrada en el prompt, independientemente del \"modo interactivo\" de pyplot."
+
+#: ../../users/explain/interactive.rst:183
+msgid "No matter what combination of interactive mode setting and event loop integration, figures will be responsive if you use ``pyplot.show(block=True)``, `.pyplot.pause`, or run the GUI main loop in some other way."
+msgstr "Independientemente de la combinación de la configuración del modo interactivo y la integración del bucle de eventos, las figuras serán responsibas si se utiliza ``pyplot.show(block=True)``, `.pyplot.pause`, o se ejecuta el bucle principal de la IGU de alguna otra manera."
+
+#: ../../users/explain/interactive.rst:190
+msgid "Using `.figure.Figure.show` it is possible to display a figure on the screen without starting the event loop and without being in interactive mode.  This may work (depending on the GUI toolkit) but will likely result in a non-responsive figure."
+msgstr "Usando `.figure.Figure.show` es posible mostrar una figura en la pantalla sin iniciar el bucle de eventos y sin estar en modo interactivo. Esto puede funcionar (dependiendo del kit de herramientas de la IGU), pero es probable que conduzca a una figura no responsiva."
+
+#: ../../users/explain/interactive.rst:198
+msgid "Default UI"
+msgstr "UI por defecto"
+
+#: ../../users/explain/interactive.rst:201
+msgid "The windows created by :mod:`~.pyplot` have an interactive toolbar with navigation buttons and a readout of the data values the cursor is pointing at.  A number of helpful keybindings are registered by default."
+msgstr "Las ventanas creadas por :mod:`~.pyplot` tienen una barra de herramientas interactiva con botones de navegación y una lectura de los valores de los datos a los que apunta el cursor. Por defecto, se registran una serie de útiles combinaciones de teclas."
+
+#: ../../users/explain/interactive.rst:209
+msgid "Navigation keyboard shortcuts"
+msgstr "Atajos de navegación del teclado"
+
+#: ../../users/explain/interactive.rst:211
+msgid "The following table holds all the default keys, which can be overwritten by use of your :doc:`matplotlibrc </tutorials/introductory/customizing>`."
+msgstr "La siguiente tabla contiene todas las teclas por defecto, que pueden ser sobrescritas mediante el uso de su :doc:`matplotlibrc </tutorials/introductory/customizing>`."
+
+#: ../../users/explain/interactive.rst:216
+msgid "Command"
+msgstr "Comando"
+
+#: ../../users/explain/interactive.rst:216
+msgid "Default key binding and rcParam"
+msgstr "Vinculación de teclas por defecto y rcParam"
+
+#: ../../users/explain/interactive.rst:218
+msgid "Home/Reset"
+msgstr "Inicio/Reiniciar"
+
+#: ../../users/explain/interactive.rst:218
+msgid ":rc:`keymap.home`"
+msgstr ":rc:`keymap.home`"
+
+#: ../../users/explain/interactive.rst:219
+msgid "Back"
+msgstr "Atrás"
+
+#: ../../users/explain/interactive.rst:219
+msgid ":rc:`keymap.back`"
+msgstr ":rc:`keymap.back`"
+
+#: ../../users/explain/interactive.rst:220
+msgid "Forward"
+msgstr "Adelante"
+
+#: ../../users/explain/interactive.rst:220
+msgid ":rc:`keymap.forward`"
+msgstr ":rc:`keymap.forward`"
+
+#: ../../users/explain/interactive.rst:221
+msgid "Pan/Zoom"
+msgstr "Paneo/Zoom"
+
+#: ../../users/explain/interactive.rst:221
+msgid ":rc:`keymap.pan`"
+msgstr ":rc:`keymap.pan`"
+
+#: ../../users/explain/interactive.rst:222
+msgid "Zoom-to-rect"
+msgstr "Zoom-to-rect"
+
+#: ../../users/explain/interactive.rst:222
+msgid ":rc:`keymap.zoom`"
+msgstr ":rc:`keymap.zoom`"
+
+#: ../../users/explain/interactive.rst:223
+msgid "Save"
+msgstr "Guardar"
+
+#: ../../users/explain/interactive.rst:223
+msgid ":rc:`keymap.save`"
+msgstr ":rc:`keymap.save`"
+
+#: ../../users/explain/interactive.rst:224
+msgid "Toggle fullscreen"
+msgstr "Cambiar a pantalla completa"
+
+#: ../../users/explain/interactive.rst:224
+msgid ":rc:`keymap.fullscreen`"
+msgstr ":rc:`keymap.fullscreen`"
+
+#: ../../users/explain/interactive.rst:225
+msgid "Toggle major grids"
+msgstr "Cambiar cuadrícula principal"
+
+#: ../../users/explain/interactive.rst:225
+msgid ":rc:`keymap.grid`"
+msgstr ":rc:`keymap.grid`"
+
+#: ../../users/explain/interactive.rst:226
+msgid "Toggle minor grids"
+msgstr "Cambiar cuadrículas menores"
+
+#: ../../users/explain/interactive.rst:226
+msgid ":rc:`keymap.grid_minor`"
+msgstr ":rc:`keymap.grid_minor`"
+
+#: ../../users/explain/interactive.rst:227
+msgid "Toggle x axis scale (log/linear)"
+msgstr "Cambiar la escala del eje x (log/lineal)"
+
+#: ../../users/explain/interactive.rst:227
+msgid ":rc:`keymap.xscale`"
+msgstr ":rc:`keymap.xscale`"
+
+#: ../../users/explain/interactive.rst:228
+msgid "Toggle y axis scale (log/linear)"
+msgstr "Cambiar la escala del eje y (log/lineal)"
+
+#: ../../users/explain/interactive.rst:228
+msgid ":rc:`keymap.yscale`"
+msgstr ":rc:`keymap.yscale`"
+
+#: ../../users/explain/interactive.rst:229
+msgid "Close Figure"
+msgstr "Cerrar Figura"
+
+#: ../../users/explain/interactive.rst:229
+msgid ":rc:`keymap.quit`"
+msgstr ":rc:`keymap.quit`"
+
+#: ../../users/explain/interactive.rst:230
+msgid "Constrain pan/zoom to x axis"
+msgstr "Restringir pan/zoom al eje x"
+
+#: ../../users/explain/interactive.rst:230
+msgid "hold **x** when panning/zooming with mouse"
+msgstr "mantén presionada **x** al hacer paneo/zoom con el ratón"
+
+#: ../../users/explain/interactive.rst:231
+msgid "Constrain pan/zoom to y axis"
+msgstr "Restringir pan/zoom al eje y"
+
+#: ../../users/explain/interactive.rst:231
+msgid "hold **y** when panning/zooming with mouse"
+msgstr "mantén presionada **y** al hacer paneo/zoom con el ratón"
+
+#: ../../users/explain/interactive.rst:232
+msgid "Preserve aspect ratio"
+msgstr "Conservar la relación de aspecto"
+
+#: ../../users/explain/interactive.rst:232
+msgid "hold **CONTROL** when panning/zooming with mouse"
+msgstr "mantén presionada **CONTROL** al hacer paneo/zoom con el ratón"
+
+#: ../../users/explain/interactive.rst:239
+msgid "Other Python prompts"
+msgstr "Otros prompts de Python"
+
+#: ../../users/explain/interactive.rst:241
+msgid "Interactive mode works in the default Python prompt:"
+msgstr "El modo interactivo funciona en el prompt de Python por defecto:"
+
+#: ../../users/explain/interactive.rst:250
+msgid "however this does not ensure that the event hook is properly installed and your figures may not be responsive.  Please consult the documentation of your GUI toolkit for details."
+msgstr "sin embargo, esto no asegura que el hook de eventos esté correctamente instalado y sus figuras pueden no responder.  Por favor, consulte la documentación de su kit de herramientas IGU para más detalles."
+
+#: ../../users/explain/interactive.rst:257
+msgid "Jupyter Notebooks / JupyterLab"
+msgstr "Jupyter Notebooks / JupyterLab"
+
+#: ../../users/explain/interactive.rst:261
+msgid "To get the interactive functionality described here, you must be using an interactive backend.  The default backend in notebooks, the inline backend, is not.  `~ipykernel.pylab.backend_inline` renders the figure once and inserts a static image into the notebook when the cell is executed.  Because the images are static, they can not be panned / zoomed, take user input, or be updated from other cells."
+msgstr "Para obtener la funcionalidad interactiva descrita aquí, debes utilizar un backend interactivo. El backend por defecto en los cuadernos, el backend inline, no es interactivo.  `~ipykernel.pylab.backend_inline` renderiza la figura una vez, e inserta una imagen estática en el cuaderno cuando se ejecuta la celda.  Debido a que las imágenes son estáticas, no pueden ser desplazadas/amplificadas, tomar la entrada del usuario, o ser actualizadas desde otras celdas."
+
+#: ../../users/explain/interactive.rst:269
+msgid "To get interactive figures in the 'classic' notebook or Jupyter lab, use the `ipympl <https://github.com/matplotlib/ipympl>`__ backend (must be installed separately) which uses the **ipywidget** framework. If ``ipympl`` is installed use the magic:"
+msgstr "Para obtener figuras interactivas en el cuaderno 'clásico' o en el laboratorio Jupyter, utiliza el backend `ipympl <https://github.com/matplotlib/ipympl>`__ (debe instalarse por separado) que utiliza el framework **ipywidget**. Si ``ipympl`` está instalado utiliza la magia:"
+
+#: ../../users/explain/interactive.rst:278
+msgid "to select and enable it."
+msgstr "para seleccionarlo y habilitarlo."
+
+#: ../../users/explain/interactive.rst:280
+msgid "If you only need to use the classic notebook, you can use"
+msgstr "Si sólo necesitas usar el cuaderno clásico, puedes usar"
+
+#: ../../users/explain/interactive.rst:286
+msgid "which uses the `.backend_nbagg` backend provided by Matplotlib; however, nbagg does not work in Jupyter Lab."
+msgstr "que utiliza el backend `.backend_nbagg` proporcionado por Matplotlib; sin embargo, nbagg no funciona en Jupyter Lab."
+
+#: ../../users/explain/interactive.rst:290
+msgid "GUIs + Jupyter"
+msgstr "IGUs + Jupyter"
+
+#: ../../users/explain/interactive.rst:292
+msgid "You can also use one of the non-``ipympl`` GUI backends in a Jupyter Notebook. If you are running your Jupyter kernel locally, the GUI window will spawn on your desktop adjacent to your web browser. If you run your notebook on a remote server, the kernel will try to open the GUI window on the remote computer. Unless you have arranged to forward the xserver back to your desktop, you will not be able to see or interact with the window. It may also raise an exception."
+msgstr "También puedes utilizar uno de los backends IGU no ``ipympl`` en un Jupyter Notebook. Si estás ejecutando tu cuaderno Jupyter localmente, la ventana de la IGU aparecerá en tu escritorio junto a tu navegador web. Si ejecutas tu cuaderno en un servidor remoto, el kernel intentará abrir la ventana de la IGU en el ordenador remoto. A menos que hayas dispuesto que el xserver se reenvíe a tu escritorio, no podrás ver ni interactuar con la ventana. También puede lanzar una excepción."
+
+#: ../../users/explain/interactive.rst:302
+msgid "PyCharm, Spyder, and VSCode"
+msgstr "PyCharm, Spyder, y VSCode"
+
+#: ../../users/explain/interactive.rst:304
+msgid "Many IDEs have built-in integration with Matplotlib, please consult their documentation for configuration details."
+msgstr "Muchos IDEs tienen integración incorporada con Matplotlib, por favor consulta su documentación para los detalles de configuración."
+

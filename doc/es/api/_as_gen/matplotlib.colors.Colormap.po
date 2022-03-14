@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:16\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.colors.Colormap.po\n"
+"X-Crowdin-File-ID: 942\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.rst:2
+msgid "matplotlib.colors.Colormap"
+msgstr ""
+
+#: matplotlib.colors.Colormap:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.colors.Colormap:2 of
+msgid "Baseclass for all scalar to RGBA mappings."
+msgstr ""
+
+#: matplotlib.colors.Colormap:4 of
+msgid "Typically, Colormap instances are used to convert data values (floats) from the interval ``[0, 1]`` to the RGBA color that the respective Colormap represents. For scaling of data into the ``[0, 1]`` interval see `matplotlib.colors.Normalize`. Subclasses of `matplotlib.cm.ScalarMappable` make heavy use of this ``data -> normalize -> map-to-color`` processing chain."
+msgstr ""
+
+#: matplotlib.colors.Colormap matplotlib.colors.Colormap.__call__
+#: matplotlib.colors.Colormap.reversed of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.colors.Colormap:35 matplotlib.colors.Colormap.reversed:17 of
+msgid "**name**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.colors.Colormap:35 of
+msgid "The name of the colormap."
+msgstr ""
+
+#: matplotlib.colors.Colormap:51 of
+msgid "**N**"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: matplotlib.colors.Colormap:38 of
+msgid "The number of rgb quantization levels."
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__:12 of
+msgid "**X**"
+msgstr ""
+
+#: of
+msgid "float or int, ndarray or scalar"
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__:8 of
+msgid "The data value(s) to convert to RGBA. For floats, X should be in the interval ``[0.0, 1.0]`` to return the RGBA values ``X*100`` percent along the Colormap line. For integers, X should be in the interval ``[0, Colormap.N)`` to return RGBA values *indexed* from the Colormap with index ``X``."
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__:16 of
+msgid "**alpha**"
+msgstr ""
+
+#: of
+msgid "float or array-like or None"
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__:15 of
+msgid "Alpha must be a scalar between 0 and 1, a sequence of such floats with shape matching X, or None."
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__:21 of
+msgid "**bytes**"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__:19 of
+msgid "If False (default), the returned RGBA values will be floats in the interval ``[0, 1]`` otherwise they will be uint8s in the interval ``[0, 255]``."
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__ of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__:26 of
+msgid "Tuple of RGBA values if X is scalar, otherwise an array of"
+msgstr ""
+
+#: matplotlib.colors.Colormap.__call__:41 of
+msgid "RGBA values with a shape of ``X.shape + (4, )``."
+msgstr ""
+
+#: ../../docstring matplotlib.colors.Colormap.colorbar_extend:2 of
+msgid "When this colormap exists on a scalar mappable and colorbar_extend is not False, colorbar creation will pick up ``colorbar_extend`` as the default value for the ``extend`` keyword in the `matplotlib.colorbar.Colorbar` constructor."
+msgstr ""
+
+#: matplotlib.colors.Colormap.copy:2 of
+msgid "Return a copy of the colormap."
+msgstr ""
+
+#: matplotlib.colors.Colormap.get_bad:2 of
+msgid "Get the color for masked values."
+msgstr ""
+
+#: matplotlib.colors.Colormap.get_over:2 of
+msgid "Get the color for high out-of-range values."
+msgstr ""
+
+#: matplotlib.colors.Colormap.get_under:2 of
+msgid "Get the color for low out-of-range values."
+msgstr ""
+
+#: matplotlib.colors.Colormap.is_gray:2 of
+msgid "Return whether the colormap is grayscale."
+msgstr ""
+
+#: matplotlib.colors.Colormap.reversed:2 of
+msgid "Return a reversed instance of the Colormap."
+msgstr ""
+
+#: matplotlib.colors.Colormap.reversed:4 of
+msgid "This function is not implemented for base class."
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.colors.Colormap.reversed:9 of
+msgid "The name for the reversed colormap. If it's None the name will be the name of the parent colormap + \"_r\"."
+msgstr ""
+
+#: matplotlib.colors.Colormap.reversed:22 of
+msgid ":obj:`LinearSegmentedColormap.reversed`"
+msgstr ""
+
+#: matplotlib.colors.Colormap.reversed:24 of
+msgid ":obj:`ListedColormap.reversed`"
+msgstr ""
+
+#: matplotlib.colors.Colormap.set_bad:2 of
+msgid "Set the color for masked values."
+msgstr ""
+
+#: matplotlib.colors.Colormap.set_extremes:2 of
+msgid "Set the colors for masked (*bad*) values and, when ``norm.clip = False``, low (*under*) and high (*over*) out-of-range values."
+msgstr ""
+
+#: matplotlib.colors.Colormap.set_over:2 of
+msgid "Set the color for high out-of-range values."
+msgstr ""
+
+#: matplotlib.colors.Colormap.set_under:2 of
+msgid "Set the color for low out-of-range values."
+msgstr ""
+
+#: matplotlib.colors.Colormap.with_extremes:2 of
+msgid "Return a copy of the colormap, for which the colors for masked (*bad*) values and, when ``norm.clip = False``, low (*under*) and high (*over*) out-of-range values, have been set accordingly."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.colors.Colormap.examples:2
+msgid "Examples using ``matplotlib.colors.Colormap``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:10
+msgid "Multicolored lines"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:10
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:18
+msgid ":ref:`sphx_glr_gallery_lines_bars_and_markers_multicolored_line.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:29
+msgid "Creating a colormap from a list of colors"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:29
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:37
+msgid ":ref:`sphx_glr_gallery_color_custom_cmap.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:48
+msgid "Left ventricle bullseye"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:48
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:56
+msgid ":ref:`sphx_glr_gallery_specialty_plots_leftventricle_bulleye.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:67
+msgid "Customized Colorbars Tutorial"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:67
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:75
+msgid ":ref:`sphx_glr_tutorials_colors_colorbar_only.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:86
+msgid "Creating Colormaps in Matplotlib"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:86
+#: ../../api/_as_gen/matplotlib.colors.Colormap.examples:94
+msgid ":ref:`sphx_glr_tutorials_colors_colormap-manipulation.py`"
+msgstr ""
+

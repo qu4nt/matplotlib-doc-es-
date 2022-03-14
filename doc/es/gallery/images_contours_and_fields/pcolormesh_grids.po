@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:26\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/gallery/images_contours_and_fields/pcolormesh_grids.po\n"
+"X-Crowdin-File-ID: 2334\n"
+"Language: es_ES\n"
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:13
+msgid "Click :ref:`here <sphx_glr_download_gallery_images_contours_and_fields_pcolormesh_grids.py>` to download the full example code"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:23
+msgid "pcolormesh grids and shading"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:25
+msgid "`.axes.Axes.pcolormesh` and `~.axes.Axes.pcolor` have a few options for how grids are laid out and the shading between the grid points."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:28
+msgid "Generally, if *Z* has shape *(M, N)* then the grid *X* and *Y* can be specified with either shape *(M+1, N+1)* or *(M, N)*, depending on the argument for the ``shading`` keyword argument.  Note that below we specify vectors *x* as either length N or N+1 and *y* as length M or M+1, and `~.axes.Axes.pcolormesh` internally makes the mesh matrices *X* and *Y* from the input vectors."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:53
+msgid "Flat Shading"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:55
+msgid "The grid specification with the least assumptions is ``shading='flat'`` and if the grid is one larger than the data in each dimension, i.e. has shape *(M+1, N+1)*.  In that case *X* and *Y* specify the corners of quadrilaterals that are colored with the values in *Z*. Here we specify the edges of the *(3, 5)* quadrilaterals with *X* and *Y* that are *(4, 6)*."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:102
+msgid "Flat Shading, same shape grid"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:104
+msgid "Often, however, data is provided where *X* and *Y* match the shape of *Z*. While this makes sense for other ``shading`` types, it is no longer permitted when ``shading='flat'`` (and will raise a MatplotlibDeprecationWarning as of Matplotlib v3.3). Historically, Matplotlib silently dropped the last row and column of *Z* in this case, to match Matlab's behavior. If this behavior is still desired, simply drop the last row and column manually:"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:137
+msgid "Nearest Shading, same shape grid"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:139
+msgid "Usually, dropping a row and column of data is not what the user means when they make *X*, *Y* and *Z* all the same shape.  For this case, Matplotlib allows ``shading='nearest'`` and centers the colored quadrilaterals on the grid points."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:144
+msgid "If a grid that is not the correct shape is passed with ``shading='nearest'`` an error is raised."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:171
+msgid "Auto Shading"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:173
+msgid "It's possible that the user would like the code to automatically choose which to use, in this case ``shading='auto'`` will decide whether to use 'flat' or 'nearest' shading based on the shapes of *X*, *Y* and *Z*."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:210
+msgid "Gouraud Shading"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:212
+msgid "`Gouraud shading <https://en.wikipedia.org/wiki/Gouraud_shading>`_ can also be specified, where the color in the quadrilaterals is linearly interpolated between the grid points.  The shapes of *X*, *Y*, *Z* must be the same."
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:242
+msgid "References"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:244
+msgid "The use of the following functions, methods, classes and modules is shown in this example:"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:247
+msgid "`matplotlib.axes.Axes.pcolormesh` / `matplotlib.pyplot.pcolormesh`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:252
+msgid "**Total running time of the script:** ( 0 minutes  2.067 seconds)"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:267
+msgid ":download:`Download Python source code: pcolormesh_grids.py <pcolormesh_grids.py>`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:273
+msgid ":download:`Download Jupyter notebook: pcolormesh_grids.ipynb <pcolormesh_grids.ipynb>`"
+msgstr ""
+
+#: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:280
+msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

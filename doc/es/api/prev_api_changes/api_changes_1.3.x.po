@@ -1,0 +1,276 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/prev_api_changes/api_changes_1.3.x.po\n"
+"X-Crowdin-File-ID: 1896\n"
+"Language: es_ES\n"
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:5
+msgid "API Changes in 1.3.x"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:8
+msgid "Changes in 1.3.1"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:10
+msgid "It is rare that we make an API change in a bugfix release, however, for 1.3.1 since 1.3.0 the following change was made:"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:13
+msgid "``text.Text.cached`` (used to cache font objects) has been made into a private variable.  Among the obvious encapsulation benefit, this removes this confusing-looking member from the documentation."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:17
+msgid "The method :meth:`~matplotlib.axes.Axes.hist` now always returns bin occupancies as an array of type `float`. Previously, it was sometimes an array of type `int`, depending on the call."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:22
+msgid "Code removal"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:24
+msgid "The following items that were deprecated in version 1.2 or earlier have now been removed completely."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:27
+msgid "The Qt 3.x backends (``qt`` and ``qtagg``) have been removed in favor of the Qt 4.x backends (``qt4`` and ``qt4agg``)."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:30
+msgid "The FltkAgg and Emf backends have been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:32
+msgid "The ``matplotlib.nxutils`` module has been removed.  Use the functionality on `matplotlib.path.Path.contains_point` and friends instead."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:36
+msgid "Instead of ``axes.Axes.get_frame``, use `.axes.Axes.patch`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:38
+msgid "The following keyword arguments to the `~.axes.Axes.legend` function have been renamed:"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:41
+msgid "*pad* -> *borderpad*"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:42
+msgid "*labelsep* -> *labelspacing*"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:43
+msgid "*handlelen* -> *handlelength*"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:44
+msgid "*handletextsep* -> *handletextpad*"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:45
+msgid "*axespad* -> *borderaxespad*"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:47
+msgid "Related to this, the following rcParams have been removed:"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:49
+msgid "``legend.pad``,"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:50
+msgid "``legend.labelsep``,"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:51
+msgid "``legend.handlelen``,"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:52
+msgid "``legend.handletextsep`` and"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:53
+msgid "``legend.axespad``"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:55
+msgid "For the `~.axes.Axes.hist` function, instead of *width*, use *rwidth* (relative width)."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:58
+msgid "On `.patches.Circle`, the *resolution* keyword argument has been removed. For a circle made up of line segments, use `.patches.CirclePolygon`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:62
+msgid "The printing functions in the Wx backend have been removed due to the burden of keeping them up-to-date."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:65
+msgid "``mlab.liaupunov`` has been removed."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:67
+msgid "``mlab.save``, ``mlab.load``, ``pylab.save`` and ``pylab.load`` have been removed.  We recommend using `numpy.savetxt` and `numpy.loadtxt` instead."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:71
+msgid "``widgets.HorizontalSpanSelector`` has been removed.  Use `.widgets.SpanSelector` instead."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:75
+msgid "Code deprecation"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:77
+msgid "The CocoaAgg backend has been deprecated, with the possibility for deletion or resurrection in a future release."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:80
+msgid "The top-level functions in `matplotlib.path` that are implemented in C++ were never meant to be public.  Instead, users should use the Pythonic wrappers for them in the `.path.Path` and `.collections.Collection` classes.  Use the following mapping to update your code:"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:86
+msgid "``point_in_path`` -> `.path.Path.contains_point`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:87
+msgid "``get_path_extents`` -> `.path.Path.get_extents`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:88
+msgid "``point_in_path_collection`` -> `.collections.Collection.contains`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:89
+msgid "``path_in_path`` -> `.path.Path.contains_path`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:90
+msgid "``path_intersects_path`` -> `.path.Path.intersects_path`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:91
+msgid "``convert_path_to_polygons`` -> `.path.Path.to_polygons`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:92
+msgid "``cleanup_path`` -> `.path.Path.cleaned`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:93
+msgid "``points_in_path`` -> `.path.Path.contains_points`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:94
+msgid "``clip_path_to_rect`` -> `.path.Path.clip_to_bbox`"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:96
+msgid "``matplotlib.colors.normalize`` and ``matplotlib.colors.no_norm`` have been deprecated in favour of `matplotlib.colors.Normalize` and `matplotlib.colors.NoNorm` respectively."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:100
+msgid "The `.ScalarMappable` class' ``set_colorbar`` method is now deprecated. Instead, the :attr:`matplotlib.cm.ScalarMappable.colorbar` attribute should be used.  In previous Matplotlib versions this attribute was an undocumented tuple of ``(colorbar_instance, colorbar_axes)`` but is now just ``colorbar_instance``.  To get the colorbar axes it is possible to just use the :attr:`~matplotlib.colorbar.ColorbarBase.ax` attribute on a colorbar instance."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:108
+msgid "The ``matplotlib.mpl`` module is now deprecated.  Those who relied on this module should transition to simply using ``import matplotlib as mpl``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:112
+msgid "Code changes"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:114
+msgid ":class:`~matplotlib.patches.Patch` now fully supports using RGBA values for its ``facecolor`` and ``edgecolor`` attributes, which enables faces and edges to have different alpha values. If the :class:`~matplotlib.patches.Patch` object's ``alpha`` attribute is set to anything other than ``None``, that value will override any alpha-channel value in both the face and edge colors. Previously, if :class:`~matplotlib.patches.Patch` had ``alpha=None``, the alpha component of ``edgecolor`` would be applied to both the edge and face."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:123
+msgid "The optional ``isRGB`` argument to :meth:`~matplotlib.backend_bases.GraphicsContextBase.set_foreground` (and the other GraphicsContext classes that descend from it) has been renamed to ``isRGBA``, and should now only be set to ``True`` if the ``fg`` color argument is known to be an RGBA tuple."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:129
+msgid "For :class:`~matplotlib.patches.Patch`, the ``capstyle`` used is now ``butt``, to be consistent with the default for most other objects, and to avoid problems with non-solid ``linestyle`` appearing solid when using a large ``linewidth``. Previously, :class:`~matplotlib.patches.Patch` used ``capstyle='projecting'``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:135
+msgid "`.Path` objects can now be marked as *readonly* by passing ``readonly=True`` to its constructor.  The built-in path singletons, obtained through ``Path.unit*`` class methods return readonly paths. If you have code that modified these, you will need to make a deepcopy first, using either::"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:148
+msgid "Deep copying a `.Path` always creates an editable (i.e. non-readonly) `.Path`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:151
+msgid "The list at ``Path.NUM_VERTICES`` was replaced by a dictionary mapping Path codes to the number of expected vertices at :attr:`~matplotlib.path.Path.NUM_VERTICES_FOR_CODE`."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:155
+msgid "To support XKCD style plots, the ``matplotlib.path.cleanup_path`` method's signature was updated to require a sketch argument. Users of ``matplotlib.path.cleanup_path`` are encouraged to use the new :meth:`~matplotlib.path.Path.cleaned` Path method."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:160
+msgid "Data limits on a plot now start from a state of having \"null\" limits, rather than limits in the range (0, 1).  This has an effect on artists that only control limits in one direction, such as `.axes.Axes.axvline` and `.axes.Axes.axhline`, since their limits will no longer also include the range (0, 1).  This fixes some problems where the computed limits would be dependent on the order in which artists were added to the axes."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:168
+msgid "Fixed a bug in setting the position for the right/top spine with data position type. Previously, it would draw the right or top spine at +1 data offset."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:172
+msgid "In :class:`~matplotlib.patches.FancyArrow`, the default arrow head width, ``head_width``, has been made larger to produce a visible arrow head. The new value of this kwarg is ``head_width = 20 * width``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:177
+msgid "It is now possible to provide ``number of levels + 1`` colors in the case of ``extend='both'`` for contourf (or just ``number of levels`` colors for an extend value ``min`` or ``max``) such that the resulting colormap's ``set_under`` and ``set_over`` are defined appropriately. Any other number of colors will continue to behave as before (if more colors are provided than levels, the colors will be unused). A similar change has been applied to contour, where ``extend='both'`` would expect ``number of levels + 2`` colors."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:186
+msgid "A new keyword *extendrect* in :meth:`~matplotlib.pyplot.colorbar` and :class:`~matplotlib.colorbar.ColorbarBase` allows one to control the shape of colorbar extensions."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:190
+msgid "The extension of :class:`~matplotlib.widgets.MultiCursor` to both vertical (default) and/or horizontal cursor implied that ``self.line`` is replaced by ``self.vline`` for vertical cursors lines and ``self.hline`` is added for the horizontal cursors lines."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:195
+msgid "On POSIX platforms, the :func:`~matplotlib.cbook.report_memory` function raises :class:`NotImplementedError` instead of :class:`OSError` if the :command:`ps` command cannot be run."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:199
+msgid "The ``matplotlib.cbook.check_output`` function has been moved to ``matplotlib.compat.subprocess``."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:203
+msgid "Configuration and rcParams"
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:205
+msgid "On Linux, the user-specific :file:`matplotlibrc` configuration file is now located in :file:`~/.config/matplotlib/matplotlibrc` to conform to the `XDG Base Directory Specification <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`_."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:210
+msgid "The ``font.*`` rcParams now affect only text objects created after the rcParam has been set, and will not retroactively affect already existing text objects.  This brings their behavior in line with most other rcParams."
+msgstr ""
+
+#: ../../api/prev_api_changes/api_changes_1.3.x.rst:215
+msgid "Removed call of :meth:`~matplotlib.axes.Axes.grid` in ``matplotlib.pyplot.plotfile``. To draw the axes grid, set the ``axes.grid`` rcParam to *True*, or explicitly call :meth:`~matplotlib.axes.Axes.grid`."
+msgstr ""
+

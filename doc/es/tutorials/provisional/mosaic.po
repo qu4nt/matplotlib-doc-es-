@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:33\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/tutorials/provisional/mosaic.po\n"
+"X-Crowdin-File-ID: 3332\n"
+"Language: es_ES\n"
+
+#: ../../tutorials/provisional/mosaic.rst:13
+msgid "Click :ref:`here <sphx_glr_download_tutorials_provisional_mosaic.py>` to download the full example code"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:23
+msgid "Complex and semantic figure composition"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:27
+msgid "This tutorial documents experimental / provisional API. We are releasing this in v3.3 to get user feedback.  We may make breaking changes in future versions with no warning."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:32
+msgid "Laying out Axes in a Figure in a non uniform grid can be both tedious and verbose.  For dense, even grids we have `.Figure.subplots` but for more complex layouts, such as Axes that span multiple columns / rows of the layout or leave some areas of the Figure blank, you can use `.gridspec.GridSpec` (see :doc:`/tutorials/intermediate/arranging_axes`) or manually place your axes.  `.Figure.subplot_mosaic` aims to provide an interface to visually lay out your axes (as either ASCII art or nested lists) to streamline this process."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:41
+msgid "This interface naturally supports naming your axes. `.Figure.subplot_mosaic` returns a dictionary keyed on the labels used to lay out the Figure.  By returning data structures with names, it is easier to write plotting code that is independent of the Figure layout."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:48
+msgid "This is inspired by a `proposed MEP <https://github.com/matplotlib/matplotlib/pull/4384>`__ and the `patchwork <https://github.com/thomasp85/patchwork>`__ library for R. While we do not implement the operator overloading style, we do provide a Pythonic API for specifying (nested) Axes layouts."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:90
+msgid "If we want a 2x2 grid we can use `.Figure.subplots` which returns a 2D array of `.axes.Axes` which we can index into to do our plotting."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:127
+msgid "Using `.Figure.subplot_mosaic` we can produce the same mosaic but give the axes semantic names"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:162
+msgid "A key difference between `.Figure.subplots` and `.Figure.subplot_mosaic` is the return value. While the former returns an array for index access, the latter returns a dictionary mapping the labels to the `.axes.Axes` instances created"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:181
+msgid "Out:"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:193
+msgid "String short-hand"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:195
+msgid "By restricting our axes labels to single characters we can use Using we can \"draw\" the Axes we want as \"ASCII art\".  The following"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:218
+msgid "will give us 4 Axes laid out in a 2x2 grid and generates the same figure mosaic as above (but now labeled with ``{\"A\", \"B\", \"C\", \"D\"}`` rather than ``{\"bar\", \"plot\", \"hist\", \"image\"}``)."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:246
+msgid "Something we can do with `.Figure.subplot_mosaic` that you can not do with `.Figure.subplots` is specify that an Axes should span several rows or columns."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:250
+msgid "If we want to re-arrange our four Axes to have C be a horizontal span on the bottom and D be a vertical span on the right we would do"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:280
+msgid "If we do not want to fill in all the spaces in the Figure with Axes, we can specify some spaces in the grid to be blank"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:313
+msgid "If we prefer to use another character (rather than a period ``\".\"``) to mark the empty space, we can use *empty_sentinel* to specify the character to use."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:346
+msgid "Internally there is no meaning attached to the letters we use, any Unicode code point is valid!"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:374
+msgid "It is not recommended to use white space as either a label or an empty sentinel with the string shorthand because it may be stripped while processing the input."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:379
+msgid "Controlling mosaic and subplot creation"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:381
+msgid "This feature is built on top of `.gridspec` and you can pass the keyword arguments through to the underlying `.gridspec.GridSpec` (the same as `.Figure.subplots`)."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:385
+msgid "In this case we want to use the input to specify the arrangement, but set the relative widths of the rows / columns via *gridspec_kw*."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:423
+msgid "Or use the {*left*, *right*, *bottom*, *top*} keyword arguments to position the overall mosaic to put multiple versions of the same mosaic in a figure"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:475
+msgid "Alternatively, you can use the sub-Figure functionality:"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:507
+msgid "We can also pass through arguments used to create the subplots (again, the same as `.Figure.subplots`)."
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:537
+msgid "Nested List input"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:539
+msgid "Everything we can do with the string short-hand we can also do when passing in a list (internally we convert the string shorthand to a nested list), for example using spans, blanks, and *gridspec_kw*:"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:573
+msgid "In addition, using the list input we can specify nested mosaics.  Any element of the inner list can be another set of nested lists:"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:610
+msgid "We can also pass in a 2D NumPy array to do things like"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:639
+msgid "**Total running time of the script:** ( 0 minutes  10.971 seconds)"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:654
+msgid ":download:`Download Python source code: mosaic.py <mosaic.py>`"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:660
+msgid ":download:`Download Jupyter notebook: mosaic.ipynb <mosaic.ipynb>`"
+msgstr ""
+
+#: ../../tutorials/provisional/mosaic.rst:667
+msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

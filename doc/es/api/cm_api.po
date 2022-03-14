@@ -1,0 +1,418 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/cm_api.po\n"
+"X-Crowdin-File-ID: 1764\n"
+"Language: es_ES\n"
+
+#: ../../api/cm_api.rst:3
+msgid "``matplotlib.cm``"
+msgstr ""
+
+#: matplotlib.cm:1 of
+msgid "Builtin colormaps, colormap handling utilities, and the `ScalarMappable` mixin."
+msgstr ""
+
+#: matplotlib.cm:5 of
+msgid ":doc:`/gallery/color/colormap_reference` for a list of builtin colormaps."
+msgstr ""
+
+#: matplotlib.cm:7 of
+msgid ":doc:`/tutorials/colors/colormap-manipulation` for examples of how to make colormaps."
+msgstr ""
+
+#: matplotlib.cm:10 of
+msgid ":doc:`/tutorials/colors/colormaps` an in-depth discussion of choosing colormaps."
+msgstr ""
+
+#: matplotlib.cm:13 of
+msgid ":doc:`/tutorials/colors/colormapnorms` for more details about data normalization."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry:1 of
+msgid "Bases: :py:class:`collections.abc.Mapping`"
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry:2 of
+msgid "Container for colormaps that are known to Matplotlib by name."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry:4 of
+msgid "Experimental"
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry:6 of
+msgid "While we expect the API to be final, we formally mark it as experimental for 3.5 because we want to keep the option to still adapt the API for 3.6 should the need arise."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry:10 of
+msgid "The universal registry instance is `matplotlib.colormaps`. There should be no need for users to instantiate `.ColormapRegistry` themselves."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry:13 of
+msgid "Read access uses a dict-like interface mapping names to `.Colormap`\\s::"
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry:18 of
+msgid "Returned `.Colormap`\\s are copies, so that their modification does not change the global definition of the colormap."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry:21 of
+msgid "Additional colormaps can be added via `.ColormapRegistry.register`::"
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:2 of
+msgid "Register a new colormap."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:4 of
+msgid "The colormap name can then be used as a string argument to any ``cmap`` parameter in Matplotlib. It is also available in ``pyplot.get_cmap``."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:7 of
+msgid "The colormap registry stores a copy of the given colormap, so that future changes to the original colormap instance do not affect the registered colormap. Think of this as the registry taking a snapshot of the colormap at registration."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register matplotlib.cm.ScalarMappable
+#: matplotlib.cm.ScalarMappable.set_array matplotlib.cm.ScalarMappable.set_clim
+#: matplotlib.cm.ScalarMappable.set_cmap matplotlib.cm.ScalarMappable.set_norm
+#: matplotlib.cm.get_cmap matplotlib.cm.register_cmap
+#: matplotlib.cm.unregister_cmap of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:15 matplotlib.cm.register_cmap:19 of
+msgid "**cmap**"
+msgstr ""
+
+#: of
+msgid "matplotlib.colors.Colormap"
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:15 of
+msgid "The colormap to register."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:18 matplotlib.cm.register_cmap:15
+#: matplotlib.cm.unregister_cmap:20 of
+msgid "**name**"
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:18 of
+msgid "The name for the colormap. If not given, ``cmap.name`` is used."
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:36 of
+msgid "**force: bool, default: False**"
+msgstr ""
+
+#: matplotlib.cm.ColormapRegistry.register:21 of
+msgid "If False, a ValueError is raised if trying to overwrite an already registered name. True supports overwriting registered colormaps other than the builtin colormaps."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable:2 of
+msgid "A mixin class to map scalar data to RGBA."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable:4 of
+msgid "The ScalarMappable applies data normalization before returning RGBA colors from the given colormap."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable:34 of
+msgid "**norm** : `matplotlib.colors.Normalize` (or subclass thereof)"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable:33 of
+msgid "matplotlib.colors.Normalize (or subclass thereof)"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable:31 of
+msgid "The normalizing object which scales data, typically into the interval ``[0, 1]``. If *None*, *norm* defaults to a *colors.Normalize* object which initializes its scaling based on the first data processed."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable:50 of
+msgid "**cmap** : str or `~matplotlib.colors.Colormap`"
+msgstr ""
+
+#: of
+msgid "str or"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable:37 of
+msgid "The colormap used to map normalized data values to RGBA colors."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.autoscale:2 of
+msgid "Autoscale the scalar limits on the norm instance using the current array"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.autoscale_None:2 of
+msgid "Autoscale the scalar limits on the norm instance using the current array, changing only limits that are None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.changed:2 of
+msgid "Call this whenever the mappable is changed to notify all the callbackSM listeners to the 'changed' signal."
+msgstr ""
+
+#: ../../docstring matplotlib.cm.ScalarMappable.colorbar:2 of
+msgid "The last colorbar associated with this ScalarMappable. May be None."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_alpha matplotlib.cm.unregister_cmap of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_alpha:21 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_alpha:9 of
+msgid "Always returns 1."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_array:2 of
+msgid "Return the array of values, that are mapped to colors."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_array:4 of
+msgid "The base class `.ScalarMappable` does not make any assumptions on the dimensionality and shape of the array."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_clim:2 of
+msgid "Return the values (min, max) that are mapped to the colormap limits."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_cmap:2 of
+msgid "Return the `.Colormap` instance."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_array:2 of
+msgid "Set the value array from array-like *A*."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_array:24 of
+msgid "**A**"
+msgstr ""
+
+#: of
+msgid "array-like or None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_array:8 of
+msgid "The values that are mapped to colors."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_array:10 of
+msgid "The base class `.ScalarMappable` does not make any assumptions on the dimensionality and shape of the value array *A*."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_clim:2 of
+msgid "Set the norm limits for image scaling."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_clim:26 of
+msgid "**vmin, vmax**"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_clim:8 of
+msgid "The limits."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_clim:10 of
+msgid "The limits may also be passed as a tuple (*vmin*, *vmax*) as a single positional argument."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_cmap:2 of
+msgid "Set the colormap for luminance data."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_cmap:21 of
+msgid "**cmap** : `.Colormap` or str or None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_cmap:20 of
+msgid "Colormap or str or None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:2 of
+msgid "Set the normalization instance."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:16 of
+msgid "**norm** : `.Normalize` or None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:15 of
+msgid "Normalize or None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:19 matplotlib.cm.get_cmap:27
+#: matplotlib.cm.register_cmap:36 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:20 of
+msgid "If there are any colorbars using the mappable for this norm, setting the norm of the mappable will reset the norm, locator, and formatters on the colorbar to default."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:2 of
+msgid "Return a normalized rgba array corresponding to *x*."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:4 of
+msgid "In the normal case, *x* is a 1D or 2D sequence of scalars, and the corresponding ndarray of rgba values will be returned, based on the norm and colormap set for this ScalarMappable."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:8 of
+msgid "There is one special case, for handling images that are already rgb or rgba, such as might have been read from an image file. If *x* is an ndarray with 3 dimensions, and the last dimension is either 3 or 4, then it will be treated as an rgb or rgba array, and no mapping will be done. The array can be uint8, or it can be floating point with values in the 0-1 range; otherwise a ValueError will be raised. If it is a masked array, the mask will be ignored. If the last dimension is 3, the *alpha* kwarg (defaulting to 1) will be used to fill in the transparency.  If the last dimension is 4, the *alpha* kwarg is ignored; it does not replace the pre-existing alpha.  A ValueError will be raised if the third dimension is other than 3 or 4."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:22 of
+msgid "In either case, if *bytes* is *False* (default), the rgba array will be floats in the 0-1 range; if it is *True*, the returned rgba array will be uint8 in the 0 to 255 range."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:26 of
+msgid "If norm is False, no normalization of the input data is performed, and it is assumed to be in the range (0-1)."
+msgstr ""
+
+#: matplotlib.cm.get_cmap:2 of
+msgid "Get a colormap instance, defaulting to rc values if *name* is None."
+msgstr ""
+
+#: matplotlib.cm.get_cmap:4 of
+msgid "Colormaps added with :func:`register_cmap` take precedence over built-in colormaps."
+msgstr ""
+
+#: matplotlib.cm.get_cmap:12 of
+msgid "**name** : `matplotlib.colors.Colormap` or str or None, default: None"
+msgstr ""
+
+#: matplotlib.cm.get_cmap:11 of
+msgid "matplotlib.colors.Colormap or str or None, default: None"
+msgstr ""
+
+#: matplotlib.cm.get_cmap:10 of
+msgid "If a `.Colormap` instance, it will be returned. Otherwise, the name of a colormap known to Matplotlib, which will be resampled by *lut*. The default, None, means :rc:`image.cmap`."
+msgstr ""
+
+#: matplotlib.cm.get_cmap:24 of
+msgid "**lut**"
+msgstr ""
+
+#: of
+msgid "int or None, default: None"
+msgstr ""
+
+#: matplotlib.cm.get_cmap:15 of
+msgid "If *name* is not already a Colormap instance and *lut* is not None, the colormap will be resampled to have *lut* entries in the lookup table."
+msgstr ""
+
+#: matplotlib.cm.get_cmap:28 of
+msgid "Currently, this returns the global colormap object, which is deprecated. In Matplotlib 3.5, you will no longer be able to modify the global colormaps in-place."
+msgstr ""
+
+#: matplotlib.cm.register_cmap:2 of
+msgid "Add a colormap to the set recognized by :func:`get_cmap`."
+msgstr ""
+
+#: matplotlib.cm.register_cmap:4 of
+msgid "Register a new colormap to be accessed by name ::"
+msgstr ""
+
+#: matplotlib.cm.register_cmap:12 of
+msgid "The name that can be used in :func:`get_cmap` or :rc:`image.cmap`"
+msgstr ""
+
+#: matplotlib.cm.register_cmap:14 of
+msgid "If absent, the name will be the :attr:`~matplotlib.colors.Colormap.name` attribute of the *cmap*."
+msgstr ""
+
+#: matplotlib.cm.register_cmap:18 of
+msgid "Despite being the second argument and having a default value, this is a required argument."
+msgstr ""
+
+#: matplotlib.cm.register_cmap:33 of
+msgid "**override_builtin**"
+msgstr ""
+
+#: of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.cm.register_cmap:22 of
+msgid "Allow built-in colormaps to be overridden by a user-supplied colormap."
+msgstr ""
+
+#: matplotlib.cm.register_cmap:25 of
+msgid "Please do not use this unless you are sure you need it."
+msgstr ""
+
+#: matplotlib.cm.register_cmap:37 of
+msgid "Registering a colormap stores a reference to the colormap object which can currently be modified and inadvertently change the global colormap state. This behavior is deprecated and in Matplotlib 3.5 the registered colormap will be immutable."
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:2 of
+msgid "Remove a colormap recognized by :func:`get_cmap`."
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:4 of
+msgid "You may not remove built-in colormaps."
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:6 of
+msgid "If the named colormap is not registered, returns with no error, raises if you try to de-register a default colormap."
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:11 of
+msgid "Colormap names are currently a shared namespace that may be used by multiple packages. Use `unregister_cmap` only if you know you have registered that name before. In particular, do not unregister just in case to clean the name before registering a new colormap."
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:20 of
+msgid "The name of the colormap to be un-registered"
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:28 of
+msgid "ColorMap or None"
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:25 of
+msgid "If the colormap was registered, return it if not return `None`"
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap of
+msgid "Raises"
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:41 of
+msgid "ValueError"
+msgstr ""
+
+#: matplotlib.cm.unregister_cmap:33 of
+msgid "If you try to de-register a default built-in colormap."
+msgstr ""
+

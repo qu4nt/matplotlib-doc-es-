@@ -1,0 +1,408 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:25\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/devel/release_guide.po\n"
+"X-Crowdin-File-ID: 2080\n"
+"Language: es_ES\n"
+
+#: ../../devel/release_guide.rst:7
+msgid "Release guide"
+msgstr ""
+
+#: ../../devel/release_guide.rst:10
+msgid "This document is only relevant for Matplotlib release managers."
+msgstr ""
+
+#: ../../devel/release_guide.rst:12
+msgid "A guide for developers who are doing a Matplotlib release."
+msgstr ""
+
+#: ../../devel/release_guide.rst:17
+msgid "This assumes that a read-only remote for the canonical repository is ``remote`` and a read/write remote is ``DANGER``"
+msgstr ""
+
+#: ../../devel/release_guide.rst:24
+msgid "Testing"
+msgstr ""
+
+#: ../../devel/release_guide.rst:26
+msgid "We use `GitHub Actions <https://github.com/matplotlib/matplotlib/actions>`__ for continuous integration.  When preparing for a release, the final tagged commit should be tested locally before it is uploaded::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:33
+msgid "In addition the following test should be run and manually inspected::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:38
+msgid "In addition the following should be run and manually inspected, but is currently broken::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:49
+msgid "GitHub statistics"
+msgstr ""
+
+#: ../../devel/release_guide.rst:52
+msgid "We automatically extract GitHub issue, PRs, and authors from GitHub via the API.  Copy the current :file:`doc/users/github_stats.rst` to :file:`doc/users/prev_whats_new/github_stats_X.Y.Z.rst`, changing the link target at the top of the file, and removing the \"Previous GitHub Stats\" section at the end."
+msgstr ""
+
+#: ../../devel/release_guide.rst:58
+msgid "For example, when updating from v3.2.0 to v3.2.1::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:65
+msgid "Then re-generate the updated stats::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:69
+msgid "Review and commit changes.  Some issue/PR titles may not be valid reST (the most common issue is ``*`` which is interpreted as unclosed markup)."
+msgstr ""
+
+#: ../../devel/release_guide.rst:74
+msgid "Make sure you authenticate against the GitHub API.  If you do not you will get blocked by GitHub for going over the API rate limits.  You can authenticate in one of two ways:"
+msgstr ""
+
+#: ../../devel/release_guide.rst:78
+msgid "using the ``keyring`` package; ``pip install keyring`` and then when running the stats script, you will be prompted for user name and password, that will be stored in your system keyring, or,"
+msgstr ""
+
+#: ../../devel/release_guide.rst:81
+msgid "using a personal access token; generate a new token `on this GitHub page <https://github.com/settings/tokens>`__ with the ``repo:public_repo`` scope and place the token in :file:`~/.ghoauth`."
+msgstr ""
+
+#: ../../devel/release_guide.rst:89
+msgid "Update and validate the docs"
+msgstr ""
+
+#: ../../devel/release_guide.rst:92
+msgid "Merge ``*-doc`` branch"
+msgstr ""
+
+#: ../../devel/release_guide.rst:94
+msgid "Merge the most recent 'doc' branch (e.g., ``v3.2.0-doc``) into the branch you are going to tag on and delete the doc branch on GitHub."
+msgstr ""
+
+#: ../../devel/release_guide.rst:98
+msgid "Update supported versions in Security Policy"
+msgstr ""
+
+#: ../../devel/release_guide.rst:100
+msgid "When making major or minor releases, update the supported versions in the Security Policy in :file:`SECURITY.md`.  Commonly, this may be one or two previous minor releases, but is dependent on release managers."
+msgstr ""
+
+#: ../../devel/release_guide.rst:105
+msgid "Update release notes"
+msgstr ""
+
+#: ../../devel/release_guide.rst:108
+msgid "What's new"
+msgstr ""
+
+#: ../../devel/release_guide.rst:110
+msgid "*Only needed for major and minor releases. Bugfix releases should not have new features.*"
+msgstr ""
+
+#: ../../devel/release_guide.rst:113
+msgid "Merge the contents of all the files in :file:`doc/users/next_whats_new/` into a single file :file:`doc/users/prev_whats_new/whats_new_X.Y.0.rst` and delete the individual files."
+msgstr ""
+
+#: ../../devel/release_guide.rst:118
+msgid "API changes"
+msgstr ""
+
+#: ../../devel/release_guide.rst:120
+msgid "*Primarily needed for major and minor releases. We may sometimes have API changes in bugfix releases.*"
+msgstr ""
+
+#: ../../devel/release_guide.rst:123
+msgid "Merge the contents of all the files in :file:`doc/api/next_api_changes/` into a single file :file:`doc/api/prev_api_changes/api_changes_X.Y.Z.rst` and delete the individual files."
+msgstr ""
+
+#: ../../devel/release_guide.rst:128
+msgid "Release notes TOC"
+msgstr ""
+
+#: ../../devel/release_guide.rst:130
+msgid "Update :file:`doc/users/release_notes.rst`:"
+msgstr ""
+
+#: ../../devel/release_guide.rst:132
+msgid "For major and minor releases add a new section"
+msgstr ""
+
+#: ../../devel/release_guide.rst:145
+msgid "For bugfix releases add the GitHub stats and (if present) the API changes to the existing X.Y section"
+msgstr ""
+
+#: ../../devel/release_guide.rst:154
+msgid "Verify that docs build"
+msgstr ""
+
+#: ../../devel/release_guide.rst:156
+msgid "Finally, make sure that the docs build cleanly ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:160
+msgid "After the docs are built, check that all of the links, internal and external, are still valid.  We use ``linkchecker`` for this, which has not been ported to Python3 yet.  You will need to create a Python2 environment with ``requests==2.9.0`` and linkchecker ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:172
+msgid "Address any issues which may arise.  The internal links are checked on Circle CI, this should only flag failed external links."
+msgstr ""
+
+#: ../../devel/release_guide.rst:177
+msgid "Update supported versions in SECURITY.md"
+msgstr ""
+
+#: ../../devel/release_guide.rst:179
+msgid "For minor version release update the table in :file:`SECURITY.md` to specify that the 2 most recent minor releases in the current major version series are supported."
+msgstr ""
+
+#: ../../devel/release_guide.rst:183
+msgid "For a major version release update the table in :file:`SECURITY.md` to specify that the last minor version in the previous major version series is still supported.  Dropping support for the last version of a major version series will be handled on an ad-hoc basis."
+msgstr ""
+
+#: ../../devel/release_guide.rst:191
+msgid "Create release commit and tag"
+msgstr ""
+
+#: ../../devel/release_guide.rst:193
+msgid "To create the tag, first create an empty commit with a very terse set of the release notes in the commit message ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:198
+msgid "and then create a signed, annotated tag with the same text in the body message ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:203
+msgid "which will prompt you for your GPG key password and an annotation.  For pre releases it is important to follow :pep:`440` so that the build artifacts will sort correctly in PyPI."
+msgstr ""
+
+#: ../../devel/release_guide.rst:207
+msgid "To prevent issues with any down-stream builders which download the tarball from GitHub it is important to move all branches away from the commit with the tag [#]_::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:213
+msgid "Finally, push the tag to GitHub::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:217
+msgid "Congratulations, the scariest part is done!"
+msgstr ""
+
+#: ../../devel/release_guide.rst:219
+msgid "The tarball that is provided by GitHub is produced using `git archive`_. We use setuptools_scm_ which uses a format string in :file:`lib/matplotlib/_version.py` to have ``git`` insert a list of references to exported commit (see :file:`.gitattributes` for the configuration).  This string is then used by ``setuptools_scm`` to produce the correct version, based on the git tag, when users install from the tarball. However, if there is a branch pointed at the tagged commit, then the branch name will also be included in the tarball. When the branch eventually moves, anyone how checked the hash of the tarball before the branch moved will have an incorrect hash."
+msgstr ""
+
+#: ../../devel/release_guide.rst:232
+msgid "To generate the file that GitHub does use ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:239
+msgid "If this is a final release, also create a 'doc' branch (this is not done for pre-releases)::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:245
+msgid "and if this is a major or minor release, also create a bug-fix branch (a micro release will be cut from this branch)::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:250
+msgid "On this branch un-comment the globs from :ref:`release_chkdocs`.  And then ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:260
+msgid "Release management / DOI"
+msgstr ""
+
+#: ../../devel/release_guide.rst:262
+msgid "Via the `GitHub UI <https://github.com/matplotlib/matplotlib/releases>`__, turn the newly pushed tag into a release.  If this is a pre-release remember to mark it as such."
+msgstr ""
+
+#: ../../devel/release_guide.rst:267
+msgid "For final releases, also get the DOI from `zenodo <https://zenodo.org/>`__ (which will automatically produce one once the tag is pushed).  Add the doi post-fix and version to the dictionary in :file:`tools/cache_zenodo_svg.py` and run the script."
+msgstr ""
+
+#: ../../devel/release_guide.rst:273
+msgid "This will download the new svg to the :file:`_static` directory in the docs and edit :file:`doc/citing.rst`.  Commit the new svg, the change to :file:`tools/cache_zenodo_svg.py`, and the changes to :file:`doc/citing.rst` to the VER-doc branch and push to GitHub. ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:288
+msgid "Building binaries"
+msgstr ""
+
+#: ../../devel/release_guide.rst:290
+msgid "We distribute macOS, Windows, and many Linux wheels as well as a source tarball via PyPI.  Most builders should trigger automatically once the tag is pushed to GitHub:"
+msgstr ""
+
+#: ../../devel/release_guide.rst:294
+msgid "Windows, macOS and manylinux wheels are built on GitHub Actions.  Builds are triggered by the GitHub Action defined in :file:`.github/workflows/cibuildwheel.yml`, and wheels will be available as artifacts of the build."
+msgstr ""
+
+#: ../../devel/release_guide.rst:298
+msgid "Alternative Windows wheels are built by Christoph Gohlke automatically and will be `available at his site <https://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib>`__ once built."
+msgstr ""
+
+#: ../../devel/release_guide.rst:301
+msgid "The auto-tick bot should open a pull request into the `conda-forge feedstock <https://github.com/conda-forge/matplotlib-feedstock>`__.  Review and merge (if you have the power to)."
+msgstr ""
+
+#: ../../devel/release_guide.rst:307
+msgid "Because this is automated, it is extremely important to bump all branches away from the tag as discussed in :ref:`release_tag`."
+msgstr ""
+
+#: ../../devel/release_guide.rst:310
+msgid "If this is a final release the following downstream packagers should be contacted:"
+msgstr ""
+
+#: ../../devel/release_guide.rst:312
+msgid "Debian"
+msgstr ""
+
+#: ../../devel/release_guide.rst:313
+msgid "Fedora"
+msgstr ""
+
+#: ../../devel/release_guide.rst:314
+msgid "Arch"
+msgstr ""
+
+#: ../../devel/release_guide.rst:315
+msgid "Gentoo"
+msgstr ""
+
+#: ../../devel/release_guide.rst:316
+msgid "Macports"
+msgstr ""
+
+#: ../../devel/release_guide.rst:317
+msgid "Homebrew"
+msgstr ""
+
+#: ../../devel/release_guide.rst:318
+msgid "Continuum"
+msgstr ""
+
+#: ../../devel/release_guide.rst:319
+msgid "Enthought"
+msgstr ""
+
+#: ../../devel/release_guide.rst:321
+msgid "This can be done ahead of collecting all of the binaries and uploading to pypi."
+msgstr ""
+
+#: ../../devel/release_guide.rst:327
+msgid "Make distribution and upload to PyPI"
+msgstr ""
+
+#: ../../devel/release_guide.rst:329
+msgid "Once you have collected all of the wheels (expect this to take about a day), generate the tarball ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:336
+msgid "and copy all of the wheels into :file:`dist` directory.  First, check that the dist files are OK ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:341
+msgid "and then use ``twine`` to upload all of the files to pypi ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:346
+msgid "Congratulations, you have now done the second scariest part!"
+msgstr ""
+
+#: ../../devel/release_guide.rst:352
+msgid "Build and deploy documentation"
+msgstr ""
+
+#: ../../devel/release_guide.rst:354
+msgid "To build the documentation you must have the tagged version installed, but build the docs from the ``ver-doc`` branch.  An easy way to arrange this is::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:363
+msgid "which will build both the html and pdf version of the documentation."
+msgstr ""
+
+#: ../../devel/release_guide.rst:366
+msgid "The built documentation exists in the `matplotlib.github.com <https://github.com/matplotlib/matplotlib.github.com/>`__ repository. Pushing changes to master automatically updates the website."
+msgstr ""
+
+#: ../../devel/release_guide.rst:370
+msgid "The documentation is organized by version.  At the root of the tree is always the documentation for the latest stable release.  Under that, there are directories containing the documentation for older versions.  The documentation for current master is built on Circle CI and pushed to the `devdocs <https://github.com/matplotlib/devdocs/>`__ repository.  These are available at `matplotlib.org/devdocs <https://matplotlib.org/devdocs/>`__."
+msgstr ""
+
+#: ../../devel/release_guide.rst:377
+msgid "Assuming you have this repository checked out in the same directory as matplotlib ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:385
+msgid "which will copy the built docs over.  If this is a final release, link the ``stable`` subdirectory to the newest version::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:392
+msgid "You will need to manually edit :file:`versions.html` to show the last 3 tagged versions.  You will also need to edit :file:`sitemap.xml` to include the newly released version.  Now commit and push everything to GitHub ::"
+msgstr ""
+
+#: ../../devel/release_guide.rst:400
+msgid "Congratulations you have now done the third scariest part!"
+msgstr ""
+
+#: ../../devel/release_guide.rst:402
+msgid "If you have access, clear the Cloudflare caches."
+msgstr ""
+
+#: ../../devel/release_guide.rst:404
+msgid "It typically takes about 5-10 minutes for GitHub to process the push and update the live web page (remember to clear your browser cache)."
+msgstr ""
+
+#: ../../devel/release_guide.rst:409
+msgid "Announcing"
+msgstr ""
+
+#: ../../devel/release_guide.rst:411
+msgid "The final step is to announce the release to the world.  A short version of the release notes along with acknowledgments should be sent to"
+msgstr ""
+
+#: ../../devel/release_guide.rst:414
+msgid "matplotlib-users@python.org"
+msgstr ""
+
+#: ../../devel/release_guide.rst:415
+msgid "matplotlib-devel@python.org"
+msgstr ""
+
+#: ../../devel/release_guide.rst:416
+msgid "matplotlib-announce@python.org"
+msgstr ""
+
+#: ../../devel/release_guide.rst:418
+msgid "For final releases announcements should also be sent to the numpy/scipy/scikit-image mailing lists."
+msgstr ""
+
+#: ../../devel/release_guide.rst:421
+msgid "In addition, announcements should be made on social networks (twitter via the ``@matplotlib`` account, any other via personal accounts). `NumFOCUS <https://numfocus.org/>`__ should be contacted for inclusion in their newsletter."
+msgstr ""
+
+#: ../../devel/release_guide.rst:428
+msgid "Conda packages"
+msgstr ""
+
+#: ../../devel/release_guide.rst:430
+msgid "The Matplotlib project itself does not release conda packages. In particular, the Matplotlib release manager is not responsible for conda packaging."
+msgstr ""
+
+#: ../../devel/release_guide.rst:433
+msgid "For information on the packaging of Matplotlib for conda-forge see https://github.com/conda-forge/matplotlib-feedstock."
+msgstr ""
+

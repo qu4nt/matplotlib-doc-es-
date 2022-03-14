@@ -1,0 +1,774 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:33\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/tutorials/intermediate/artists.po\n"
+"X-Crowdin-File-ID: 3302\n"
+"Language: es_ES\n"
+
+#: ../../tutorials/intermediate/artists.rst:13
+msgid "Click :ref:`here <sphx_glr_download_tutorials_intermediate_artists.py>` to download the full example code"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:23
+msgid "Artist tutorial"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:25
+msgid "Using Artist objects to render on the canvas."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:27
+msgid "There are three layers to the Matplotlib API."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:29
+msgid "the :class:`matplotlib.backend_bases.FigureCanvas` is the area onto which the figure is drawn"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:31
+msgid "the :class:`matplotlib.backend_bases.Renderer` is the object which knows how to draw on the :class:`~matplotlib.backend_bases.FigureCanvas`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:33
+msgid "and the :class:`matplotlib.artist.Artist` is the object that knows how to use a renderer to paint onto the canvas."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:36
+#, python-format
+msgid "The :class:`~matplotlib.backend_bases.FigureCanvas` and :class:`~matplotlib.backend_bases.Renderer` handle all the details of talking to user interface toolkits like `wxPython <https://www.wxpython.org>`_ or drawing languages like PostScript®, and the ``Artist`` handles all the high level constructs like representing and laying out the figure, text, and lines.  The typical user will spend 95% of their time working with the ``Artists``."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:44
+msgid "There are two types of ``Artists``: primitives and containers.  The primitives represent the standard graphical objects we want to paint onto our canvas: :class:`~matplotlib.lines.Line2D`, :class:`~matplotlib.patches.Rectangle`, :class:`~matplotlib.text.Text`, :class:`~matplotlib.image.AxesImage`, etc., and the containers are places to put them (:class:`~matplotlib.axis.Axis`, :class:`~matplotlib.axes.Axes` and :class:`~matplotlib.figure.Figure`).  The standard use is to create a :class:`~matplotlib.figure.Figure` instance, use the ``Figure`` to create one or more :class:`~matplotlib.axes.Axes` or :class:`~matplotlib.axes.Subplot` instances, and use the ``Axes`` instance helper methods to create the primitives.  In the example below, we create a ``Figure`` instance using :func:`matplotlib.pyplot.figure`, which is a convenience method for instantiating ``Figure`` instances and connecting them with your user interface or drawing toolkit ``FigureCanvas``.  As we will discuss below, this is not necessary -- you can work directly with PostScript, PDF Gtk+, or wxPython ``FigureCanvas`` instances, instantiate your ``Figures`` directly and connect them yourselves -- but since we are focusing here on the ``Artist`` API we'll let :mod:`~matplotlib.pyplot` handle some of those details for us::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:67
+msgid "The :class:`~matplotlib.axes.Axes` is probably the most important class in the Matplotlib API, and the one you will be working with most of the time.  This is because the ``Axes`` is the plotting area into which most of the objects go, and the ``Axes`` has many special helper methods (:meth:`~matplotlib.axes.Axes.plot`, :meth:`~matplotlib.axes.Axes.text`, :meth:`~matplotlib.axes.Axes.hist`, :meth:`~matplotlib.axes.Axes.imshow`) to create the most common graphics primitives (:class:`~matplotlib.lines.Line2D`, :class:`~matplotlib.text.Text`, :class:`~matplotlib.patches.Rectangle`, :class:`~matplotlib.image.AxesImage`, respectively).  These helper methods will take your data (e.g., ``numpy`` arrays and strings) and create primitive ``Artist`` instances as needed (e.g., ``Line2D``), add them to the relevant containers, and draw them when requested.  Most of you are probably familiar with the :class:`~matplotlib.axes.Subplot`, which is just a special case of an ``Axes`` that lives on a regular rows by columns grid of ``Subplot`` instances.  If you want to create an ``Axes`` at an arbitrary location, simply use the :meth:`~matplotlib.figure.Figure.add_axes` method which takes a list of ``[left, bottom, width, height]`` values in 0-1 relative figure coordinates::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:93
+msgid "Continuing with our example::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:100
+msgid "In this example, ``ax`` is the ``Axes`` instance created by the ``fig.add_subplot`` call above (remember ``Subplot`` is just a subclass of ``Axes``) and when you call ``ax.plot``, it creates a ``Line2D`` instance and adds it to the :attr:`Axes.lines <matplotlib.axes.Axes.lines>` list.  In the interactive `IPython <https://ipython.org/>`_ session below, you can see that the ``Axes.lines`` list is length one and contains the same line that was returned by the ``line, = ax.plot...`` call:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:117
+msgid "If you make subsequent calls to ``ax.plot`` (and the hold state is \"on\" which is the default) then additional lines will be added to the list. You can remove lines later simply by calling the list methods; either of these will work::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:125
+msgid "The Axes also has helper methods to configure and decorate the x-axis and y-axis tick, tick labels and axis labels::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:131
+msgid "When you call :meth:`ax.set_xlabel <matplotlib.axes.Axes.set_xlabel>`, it passes the information on the :class:`~matplotlib.text.Text` instance of the :class:`~matplotlib.axis.XAxis`.  Each ``Axes`` instance contains an :class:`~matplotlib.axis.XAxis` and a :class:`~matplotlib.axis.YAxis` instance, which handle the layout and drawing of the ticks, tick labels and axis labels."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:138
+msgid "Try creating the figure below."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:185
+msgid "Customizing your objects"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:187
+msgid "Every element in the figure is represented by a Matplotlib :class:`~matplotlib.artist.Artist`, and each has an extensive list of properties to configure its appearance.  The figure itself contains a :class:`~matplotlib.patches.Rectangle` exactly the size of the figure, which you can use to set the background color and transparency of the figures.  Likewise, each :class:`~matplotlib.axes.Axes` bounding box (the standard white box with black edges in the typical Matplotlib plot, has a ``Rectangle`` instance that determines the color, transparency, and other properties of the Axes.  These instances are stored as member variables :attr:`Figure.patch <matplotlib.figure.Figure.patch>` and :attr:`Axes.patch <matplotlib.axes.Axes.patch>` (\"Patch\" is a name inherited from MATLAB, and is a 2D \"patch\" of color on the figure, e.g., rectangles, circles and polygons).  Every Matplotlib ``Artist`` has the following properties"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:204
+msgid "Property"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:204
+#: ../../tutorials/intermediate/artists.rst:406
+#: ../../tutorials/intermediate/artists.rst:629
+#: ../../tutorials/intermediate/artists.rst:783
+#: ../../tutorials/intermediate/artists.rst:869
+msgid "Description"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:206
+msgid "alpha"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:206
+msgid "The transparency - a scalar from 0-1"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:207
+msgid "animated"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:207
+msgid "A boolean that is used to facilitate animated drawing"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:208
+#: ../../tutorials/intermediate/artists.rst:408
+msgid "axes"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:208
+msgid "The Axes that the Artist lives in, possibly None"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:209
+msgid "clip_box"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:209
+msgid "The bounding box that clips the Artist"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:210
+msgid "clip_on"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:210
+msgid "Whether clipping is enabled"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:211
+msgid "clip_path"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:211
+msgid "The path the artist is clipped to"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:212
+msgid "contains"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:212
+msgid "A picking function to test whether the artist contains the pick point"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:214
+msgid "figure"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:214
+msgid "The figure instance the artist lives in, possibly None"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:215
+msgid "label"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:215
+msgid "A text label (e.g., for auto-labeling)"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:216
+msgid "picker"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:216
+msgid "A python object that controls object picking"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:217
+msgid "transform"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:217
+msgid "The transformation"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:218
+msgid "visible"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:218
+msgid "A boolean whether the artist should be drawn"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:219
+msgid "zorder"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:219
+msgid "A number which determines the drawing order"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:220
+msgid "rasterized"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:220
+msgid "Boolean; Turns vectors into raster graphics (for compression & EPS transparency)"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:224
+msgid "Each of the properties is accessed with an old-fashioned setter or getter (yes we know this irritates Pythonistas and we plan to support direct access via properties or traits but it hasn't been done yet). For example, to multiply the current alpha by a half::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:232
+msgid "If you want to set a number of properties at once, you can also use the ``set`` method with keyword arguments.  For example::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:237
+msgid "If you are working interactively at the python shell, a handy way to inspect the ``Artist`` properties is to use the :func:`matplotlib.artist.getp` function (simply :func:`~matplotlib.pyplot.getp` in pyplot), which lists the properties and their values.  This works for classes derived from ``Artist`` as well, e.g., ``Figure`` and ``Rectangle``.  Here are the ``Figure`` rectangle properties mentioned above:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:292
+msgid "The docstrings for all of the classes also contain the ``Artist`` properties, so you can consult the interactive \"help\" or the :ref:`artist-api` for a listing of properties for a given object."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:299
+msgid "Object containers"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:302
+msgid "Now that we know how to inspect and set the properties of a given object we want to configure, we need to know how to get at that object. As mentioned in the introduction, there are two kinds of objects: primitives and containers.  The primitives are usually the things you want to configure (the font of a :class:`~matplotlib.text.Text` instance, the width of a :class:`~matplotlib.lines.Line2D`) although the containers also have some properties as well -- for example the :class:`~matplotlib.axes.Axes` :class:`~matplotlib.artist.Artist` is a container that contains many of the primitives in your plot, but it also has properties like the ``xscale`` to control whether the xaxis is 'linear' or 'log'.  In this section we'll review where the various container objects store the ``Artists`` that you want to get at."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:318
+msgid "Figure container"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:320
+msgid "The top level container ``Artist`` is the :class:`matplotlib.figure.Figure`, and it contains everything in the figure.  The background of the figure is a :class:`~matplotlib.patches.Rectangle` which is stored in :attr:`Figure.patch <matplotlib.figure.Figure.patch>`.  As you add subplots (:meth:`~matplotlib.figure.Figure.add_subplot`) and axes (:meth:`~matplotlib.figure.Figure.add_axes`) to the figure these will be appended to the :attr:`Figure.axes <matplotlib.figure.Figure.axes>`.  These are also returned by the methods that create them:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:345
+msgid "Because the figure maintains the concept of the \"current Axes\" (see :meth:`Figure.gca <matplotlib.figure.Figure.gca>` and :meth:`Figure.sca <matplotlib.figure.Figure.sca>`) to support the pylab/pyplot state machine, you should not insert or remove Axes directly from the Axes list, but rather use the :meth:`~matplotlib.figure.Figure.add_subplot` and :meth:`~matplotlib.figure.Figure.add_axes` methods to insert, and the `Axes.remove <matplotlib.artist.Artist.remove>` method to delete.  You are free however, to iterate over the list of Axes or index into it to get access to ``Axes`` instances you want to customize.  Here is an example which turns all the Axes grids on::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:361
+msgid "The figure also has its own ``images``, ``lines``, ``patches`` and ``text`` attributes, which you can use to add primitives directly. When doing so, the default coordinate system for the ``Figure`` will simply be in pixels (which is not usually what you want). If you instead use Figure-level methods to add Artists (e.g., using `.Figure.text` to add text), then the default coordinate system will be \"figure coordinates\" where (0, 0) is the bottom-left of the figure and (1, 1) is the top-right of the figure."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:369
+msgid "As with all ``Artist``\\s, you can control this coordinate system by setting the transform property. You can explicitly use \"figure coordinates\" by setting the ``Artist`` transform to :attr:`fig.transFigure <matplotlib.figure.Figure.transFigure>`:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:403
+msgid "Here is a summary of the Artists the Figure contains"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:406
+msgid "Figure attribute"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:408
+msgid "A list of `~.axes.Axes` instances (includes Subplot)"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:409
+#: ../../tutorials/intermediate/artists.rst:632
+msgid "patch"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:409
+msgid "The `.Rectangle` background"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:410
+#: ../../tutorials/intermediate/artists.rst:634
+msgid "images"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:410
+msgid "A list of `.FigureImage` patches - useful for raw pixel display"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:412
+#: ../../tutorials/intermediate/artists.rst:635
+msgid "legends"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:412
+msgid "A list of Figure `.Legend` instances (different from ``Axes.legends``)"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:414
+#: ../../tutorials/intermediate/artists.rst:636
+msgid "lines"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:414
+msgid "A list of Figure `.Line2D` instances (rarely used, see ``Axes.lines``)"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:416
+#: ../../tutorials/intermediate/artists.rst:637
+msgid "patches"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:416
+msgid "A list of Figure `.Patch`\\s (rarely used, see ``Axes.patches``)"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:418
+#: ../../tutorials/intermediate/artists.rst:638
+msgid "texts"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:418
+msgid "A list Figure `.Text` instances"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:424
+msgid "Axes container"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:426
+msgid "The :class:`matplotlib.axes.Axes` is the center of the Matplotlib universe -- it contains the vast majority of all the ``Artists`` used in a figure with many helper methods to create and add these ``Artists`` to itself, as well as helper methods to access and customize the ``Artists`` it contains.  Like the :class:`~matplotlib.figure.Figure`, it contains a :class:`~matplotlib.patches.Patch` :attr:`~matplotlib.axes.Axes.patch` which is a :class:`~matplotlib.patches.Rectangle` for Cartesian coordinates and a :class:`~matplotlib.patches.Circle` for polar coordinates; this patch determines the shape, background and border of the plotting region::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:442
+msgid "When you call a plotting method, e.g., the canonical :meth:`~matplotlib.axes.Axes.plot` and pass in arrays or lists of values, the method will create a :meth:`matplotlib.lines.Line2D` instance, update the line with all the ``Line2D`` properties passed as keyword arguments, add the line to the :attr:`Axes.lines <matplotlib.axes.Axes.lines>` container, and returns it to you:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:455
+msgid "``plot`` returns a list of lines because you can pass in multiple x, y pairs to plot, and we are unpacking the first element of the length one list into the line variable.  The line has been added to the ``Axes.lines`` list:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:465
+msgid "Similarly, methods that create patches, like :meth:`~matplotlib.axes.Axes.bar` creates a list of rectangles, will add the patches to the :attr:`Axes.patches <matplotlib.axes.Axes.patches>` list:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:480
+msgid "You should not add objects directly to the ``Axes.lines`` or ``Axes.patches`` lists unless you know exactly what you are doing, because the ``Axes`` needs to do a few things when it creates and adds an object.  It sets the figure and axes property of the ``Artist``, as well as the default ``Axes`` transformation (unless a transformation is set).  It also inspects the data contained in the ``Artist`` to update the data structures controlling auto-scaling, so that the view limits can be adjusted to contain the plotted data.  You can, nonetheless, create objects yourself and add them directly to the ``Axes`` using helper methods like :meth:`~matplotlib.axes.Axes.add_line` and :meth:`~matplotlib.axes.Axes.add_patch`.  Here is an annotated interactive session illustrating what is going on:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:588
+msgid "There are many, many ``Axes`` helper methods for creating primitive ``Artists`` and adding them to their respective containers.  The table below summarizes a small sampling of them, the kinds of ``Artist`` they create, and where they store them"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:594
+msgid "Axes helper method"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:594
+msgid "Artist"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:594
+msgid "Container"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:596
+msgid "`~.axes.Axes.annotate` - text annotations"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:596
+msgid "`.Annotation`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:596
+#: ../../tutorials/intermediate/artists.rst:606
+msgid "ax.texts"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:597
+msgid "`~.axes.Axes.bar` - bar charts"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:597
+#: ../../tutorials/intermediate/artists.rst:601
+msgid "`.Rectangle`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:597
+#: ../../tutorials/intermediate/artists.rst:600
+#: ../../tutorials/intermediate/artists.rst:601
+msgid "ax.patches"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:598
+msgid "`~.axes.Axes.errorbar` - error bar plots"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:598
+msgid "`.Line2D` and `.Rectangle`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:598
+msgid "ax.lines and ax.patches"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:600
+msgid "`~.axes.Axes.fill` - shared area"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:600
+msgid "`.Polygon`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:601
+msgid "`~.axes.Axes.hist` - histograms"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:602
+msgid "`~.axes.Axes.imshow` - image data"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:602
+msgid "`.AxesImage`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:602
+msgid "ax.images"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:603
+msgid "`~.axes.Axes.legend` - Axes legends"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:603
+msgid "`.Legend`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:603
+msgid "ax.legends"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:604
+msgid "`~.axes.Axes.plot` - xy plots"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:604
+msgid "`.Line2D`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:604
+msgid "ax.lines"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:605
+msgid "`~.axes.Axes.scatter` - scatter charts"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:605
+msgid "`.PolyCollection`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:605
+msgid "ax.collections"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:606
+msgid "`~.axes.Axes.text` - text"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:606
+msgid "`.Text`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:610
+msgid "In addition to all of these ``Artists``, the ``Axes`` contains two important ``Artist`` containers: the :class:`~matplotlib.axis.XAxis` and :class:`~matplotlib.axis.YAxis`, which handle the drawing of the ticks and labels.  These are stored as instance variables :attr:`~matplotlib.axes.Axes.xaxis` and :attr:`~matplotlib.axes.Axes.yaxis`.  The ``XAxis`` and ``YAxis`` containers will be detailed below, but note that the ``Axes`` contains many helper methods which forward calls on to the :class:`~matplotlib.axis.Axis` instances so you often do not need to work with them directly unless you want to.  For example, you can set the font color of the ``XAxis`` ticklabels using the ``Axes`` helper method::"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:626
+msgid "Below is a summary of the Artists that the Axes contains"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:629
+msgid "Axes attribute"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:631
+msgid "artists"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:631
+msgid "A list of `.Artist` instances"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:632
+msgid "`.Rectangle` instance for Axes background"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:633
+msgid "collections"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:633
+msgid "A list of `.Collection` instances"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:634
+msgid "A list of `.AxesImage`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:635
+msgid "A list of `.Legend` instances"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:636
+msgid "A list of `.Line2D` instances"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:637
+msgid "A list of `.Patch` instances"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:638
+msgid "A list of `.Text` instances"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:639
+msgid "xaxis"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:639
+msgid "A `matplotlib.axis.XAxis` instance"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:640
+msgid "yaxis"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:640
+msgid "A `matplotlib.axis.YAxis` instance"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:646
+msgid "Axis containers"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:648
+msgid "The :class:`matplotlib.axis.Axis` instances handle the drawing of the tick lines, the grid lines, the tick labels and the axis label.  You can configure the left and right ticks separately for the y-axis, and the upper and lower ticks separately for the x-axis.  The ``Axis`` also stores the data and view intervals used in auto-scaling, panning and zooming, as well as the :class:`~matplotlib.ticker.Locator` and :class:`~matplotlib.ticker.Formatter` instances which control where the ticks are placed and how they are represented as strings."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:657
+msgid "Each ``Axis`` object contains a :attr:`~matplotlib.axis.Axis.label` attribute (this is what :mod:`.pyplot` modifies in calls to `~.pyplot.xlabel` and `~.pyplot.ylabel`) as well as a list of major and minor ticks.  The ticks are `.axis.XTick` and `.axis.YTick` instances, which contain the actual line and text primitives that render the ticks and ticklabels.  Because the ticks are dynamically created as needed (e.g., when panning and zooming), you should access the lists of major and minor ticks through their accessor methods `.axis.Axis.get_major_ticks` and `.axis.Axis.get_minor_ticks`.  Although the ticks contain all the primitives and will be covered below, ``Axis`` instances have accessor methods that return the tick lines, tick labels, tick locations etc.:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:689
+#: ../../tutorials/intermediate/artists.rst:711
+#: ../../tutorials/intermediate/artists.rst:739
+#: ../../tutorials/intermediate/artists.rst:767
+msgid "Out:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:722
+msgid "note there are twice as many ticklines as labels because by default there are tick lines at the top and bottom but only tick labels below the xaxis; however, this can be customized."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:750
+msgid "And with the above methods, you only get lists of major ticks back by default, but you can also ask for the minor ticks:"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:778
+msgid "Here is a summary of some of the useful accessor methods of the ``Axis`` (these have corresponding setters where useful, such as :meth:`~matplotlib.axis.Axis.set_major_formatter`.)"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:783
+msgid "Axis accessor method"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:785
+msgid "`~.Axis.get_scale`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:785
+msgid "The scale of the Axis, e.g., 'log' or 'linear'"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:786
+msgid "`~.Axis.get_view_interval`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:786
+msgid "The interval instance of the Axis view limits"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:787
+msgid "`~.Axis.get_data_interval`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:787
+msgid "The interval instance of the Axis data limits"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:788
+msgid "`~.Axis.get_gridlines`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:788
+msgid "A list of grid lines for the Axis"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:789
+msgid "`~.Axis.get_label`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:789
+msgid "The Axis label - a `.Text` instance"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:790
+msgid "`~.Axis.get_offset_text`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:790
+msgid "The Axis offset text - a `.Text` instance"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:791
+msgid "`~.Axis.get_ticklabels`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:791
+msgid "A list of `.Text` instances - keyword minor=True|False"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:793
+msgid "`~.Axis.get_ticklines`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:793
+msgid "A list of `.Line2D` instances - keyword minor=True|False"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:795
+msgid "`~.Axis.get_ticklocs`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:795
+msgid "A list of Tick locations - keyword minor=True|False"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:797
+msgid "`~.Axis.get_major_locator`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:797
+msgid "The `.ticker.Locator` instance for major ticks"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:798
+msgid "`~.Axis.get_major_formatter`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:798
+msgid "The `.ticker.Formatter` instance for major ticks"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:800
+msgid "`~.Axis.get_minor_locator`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:800
+msgid "The `.ticker.Locator` instance for minor ticks"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:801
+msgid "`~.Axis.get_minor_formatter`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:801
+msgid "The `.ticker.Formatter` instance for minor ticks"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:803
+msgid "`~.axis.Axis.get_major_ticks`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:803
+msgid "A list of `.Tick` instances for major ticks"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:804
+msgid "`~.axis.Axis.get_minor_ticks`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:804
+msgid "A list of `.Tick` instances for minor ticks"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:805
+msgid "`~.Axis.grid`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:805
+msgid "Turn the grid on or off for the major or minor ticks"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:809
+msgid "Here is an example, not recommended for its beauty, which customizes the Axes and Tick properties."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:858
+msgid "Tick containers"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:860
+msgid "The :class:`matplotlib.axis.Tick` is the final container object in our descent from the :class:`~matplotlib.figure.Figure` to the :class:`~matplotlib.axes.Axes` to the :class:`~matplotlib.axis.Axis` to the :class:`~matplotlib.axis.Tick`.  The ``Tick`` contains the tick and grid line instances, as well as the label instances for the upper and lower ticks.  Each of these is accessible directly as an attribute of the ``Tick``."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:869
+msgid "Tick attribute"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:871
+msgid "tick1line"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:871
+#: ../../tutorials/intermediate/artists.rst:872
+#: ../../tutorials/intermediate/artists.rst:873
+msgid "A `.Line2D` instance"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:872
+msgid "tick2line"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:873
+msgid "gridline"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:874
+msgid "label1"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:874
+#: ../../tutorials/intermediate/artists.rst:875
+msgid "A `.Text` instance"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:875
+msgid "label2"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:878
+msgid "Here is an example which sets the formatter for the right side ticks with dollar signs and colors them green on the right side of the yaxis."
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:889
+msgid "**Total running time of the script:** ( 0 minutes  1.225 seconds)"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:904
+msgid ":download:`Download Python source code: artists.py <artists.py>`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:910
+msgid ":download:`Download Jupyter notebook: artists.ipynb <artists.ipynb>`"
+msgstr ""
+
+#: ../../tutorials/intermediate/artists.rst:917
+msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
+msgstr ""
+

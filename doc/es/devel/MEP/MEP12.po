@@ -1,0 +1,260 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/devel/MEP/MEP12.po\n"
+"X-Crowdin-File-ID: 2002\n"
+"Language: es_ES\n"
+
+#: ../../devel/MEP/MEP12.rst:3
+msgid "MEP12: Improve Gallery and Examples"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:9
+msgid "Status"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:11
+msgid "**Progress**"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:13
+msgid "Initial changes added in 1.3. Conversion of the gallery is on-going. 29 September 2015 - The last ``pylab_examples`` where ``pylab`` is imported has been converted over to use :mod:`matplotlib.pyplot` and `numpy`."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:18
+msgid "Branches and Pull requests"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:20
+msgid "#1623, #1924, #2181"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:22
+msgid "PR `#2474 <https://github.com/matplotlib/matplotlib/pull/2474>`_ demonstrates a single example being cleaned up and moved to the appropriate section."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:27
+msgid "Abstract"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:29
+msgid "Reorganizing the matplotlib plot gallery would greatly simplify navigation of the gallery. In addition, examples should be cleaned-up and simplified for clarity."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:35
+msgid "Detailed description"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:37
+msgid "The matplotlib gallery was recently set up to split examples up into sections.  As discussed in that PR [1]_, the current example sections (``api``, ``pylab_examples``) aren't terribly useful to users: New sections in the gallery would help users find relevant examples."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:42
+msgid "These sections would also guide a cleanup of the examples: Initially, all the current examples would remain and be listed under their current directories.  Over time, these examples could be cleaned up and moved into one of the new sections."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:47
+msgid "This process allows users to easily identify examples that need to be cleaned up; i.e. anything in the ``api`` and ``pylab_examples`` directories."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:53
+msgid "Implementation"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:55
+msgid "Create new gallery sections. [Done]"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:56
+msgid "Clean up examples and move them to the new gallery sections (over the course of many PRs and with the help of many users/developers). [In progress]"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:60
+msgid "Gallery sections"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:62
+msgid "The naming of sections is critical and will guide the clean-up effort. The current sections are:"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:65
+msgid "Lines, bars, and markers (more-or-less 1D data)"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:66
+msgid "Shapes and collections"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:67
+msgid "Statistical plots"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:68
+msgid "Images, contours, and fields"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:69
+msgid "Pie and polar charts: Round things"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:70
+msgid "Color"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:71
+msgid "Text, labels, and annotations"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:72
+msgid "Ticks and spines"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:73
+msgid "Subplots, axes, and figures"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:74
+msgid "Specialty plots (e.g., sankey, radar, tornado)"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:75
+msgid "Showcase (plots with tweaks to make them publication-quality)"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:76
+msgid "separate sections for toolboxes (already exists: 'mplot3d', 'axes_grid', 'units', 'widgets')"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:79
+msgid "These names are certainly up for debate. As these sections grow, we should reevaluate them and split them up as necessary."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:84
+msgid "Clean up guidelines"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:86
+msgid "The current examples in the ``api`` and ``pylab_examples`` sections of the gallery would remain in those directories until they are cleaned up. After clean-up, they would be moved to one of the new gallery sections described above. \"Clean-up\" should involve:"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:91
+msgid "`sphinx-gallery docstrings <https://sphinx-gallery.readthedocs.io/en/latest/>`_: a title and a description of the example formatted as follows, at the top of the example::"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:108
+msgid "PEP8_ clean-ups (running `flake8 <https://pypi.org/project/flake8/>`_, or a similar checker, is highly recommended)"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:111
+msgid "Commented-out code should be removed."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:112
+msgid "Replace uses of `pylab` interface with `.pyplot` (+ `numpy`, etc.). See `c25ef1e <https://github.com/tonysyu/matplotlib/commit/c25ef1e02b3a0ecb279492409dac0de9b3d2c0e2>`_"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:115
+msgid "Remove shebang line, e.g.:"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:117
+msgid "#!/usr/bin/env python"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:119
+msgid "Use consistent imports. In particular:"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:121
+msgid "import numpy as np"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:123
+msgid "import matplotlib.pyplot as plt"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:125
+msgid "Avoid importing specific functions from these modules (e.g. ``from numpy import sin``)"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:128
+msgid "Each example should focus on a specific feature (excluding ``showcase`` examples, which will show more \"polished\" plots). Tweaking unrelated to that feature should be removed. See `f7b2217 <https://github.com/tonysyu/matplotlib/commit/f7b2217a1f92343e8aca0684d19c9915cc2e8674>`_, `e57b5fc <https://github.com/tonysyu/matplotlib/commit/e57b5fc31fbad83ed9c43c77ef15368efdcb9ec1>`_, and `1458aa8 <https://github.com/tonysyu/matplotlib/commit/1458aa87c5eae9dd99e141956a6adf7a0f3c6707>`_"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:138
+msgid "Use of `pylab` should be demonstrated/discussed on a dedicated help page instead of the gallery examples."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:141
+msgid "**Note:** When moving an existing example, you should search for references to that example.  For example, the API documentation for :file:`axes.py` and :file:`pyplot.py` may use these examples to generate plots. Use your favorite search tool (e.g., grep, ack, `grin <https://pypi.org/project/grin/>`_, `pss <https://pypi.org/project/pss/>`_) to search the matplotlib package. See `2dc9a46 <https://github.com/tonysyu/matplotlib/commit/2dc9a4651e5e566afc0866c603aa8d06aaf32b71>`_ and `aa6b410 <https://github.com/tonysyu/matplotlib/commit/aa6b410f9fa085ccf5f4f962a6f26af5beeae7af>`_"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:154
+msgid "Additional suggestions"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:156
+msgid "Provide links (both ways) between examples and API docs for the methods/objects used. (issue `#2222 <https://github.com/matplotlib/matplotlib/issues/2222>`_)"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:159
+msgid "Use ``plt.subplots`` (note trailing \"s\") in preference over ``plt.subplot``."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:161
+msgid "Rename the example to clarify it's purpose. For example, the most basic demo of ``imshow`` might be ``imshow_demo.py``, and one demonstrating different interpolation settings would be ``imshow_demo_interpolation.py`` (*not* ``imshow_demo2.py``)."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:165
+msgid "Split up examples that try to do too much. See `5099675 <https://github.com/tonysyu/matplotlib/commit/509967518ce5ce5ba31edf12486ffaa344e748f2>`_ and `fc2ab07 <https://github.com/tonysyu/matplotlib/commit/fc2ab07cc586abba4c024d8c0d841c4357a3936f>`_"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:169
+msgid "Delete examples that don't show anything new."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:170
+msgid "Some examples exercise esoteric features for unit testing. These tweaks should be moved out of the gallery to an example in the ``unit`` directory located in the root directory of the package."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:173
+msgid "Add plot titles to clarify intent of the example. See `bd2b13c <https://github.com/tonysyu/matplotlib/commit/bd2b13c54bf4aa2058781b9a805d68f2feab5ba5>`_"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:178
+msgid "Backward compatibility"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:180
+msgid "The website for each Matplotlib version is readily accessible, so users who want to refer to old examples can still do so."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:185
+msgid "Alternatives"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:188
+msgid "Tags"
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:190
+msgid "Tagging examples will also help users search the example gallery. Although tags would be a big win for users with specific goals, the plot gallery will remain the entry point to these examples, and sections could really help users navigate the gallery. Thus, tags are complementary to this reorganization."
+msgstr ""
+
+#: ../../devel/MEP/MEP12.rst:198
+msgid "https://github.com/matplotlib/matplotlib/pull/714"
+msgstr ""
+

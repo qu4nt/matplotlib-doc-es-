@@ -1,0 +1,259 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:16\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.gridspec.GridSpec.po\n"
+"X-Crowdin-File-ID: 986\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.rst:2
+msgid "matplotlib.gridspec.GridSpec"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:1 of
+msgid "Bases: :py:class:`matplotlib.gridspec.GridSpecBase`"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:2 of
+msgid "A grid layout to place subplots within a figure."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:4 of
+msgid "The location of the grid cells is determined in a similar way to `~.figure.SubplotParams` using *left*, *right*, *top*, *bottom*, *wspace* and *hspace*."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec matplotlib.gridspec.GridSpec.tight_layout
+#: matplotlib.gridspec.GridSpec.update of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:32 of
+msgid "**nrows, ncols**"
+msgstr ""
+
+#: of
+msgid "int"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:32 of
+msgid "The number of rows and columns of the grid."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:35 of
+msgid "**figure** : `~.figure.Figure`, optional"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:34 of
+msgid "Figure, optional"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:35 of
+msgid "Only used for constrained layout to create a proper layoutgrid."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:41 matplotlib.gridspec.GridSpec.update:10 of
+msgid "**left, right, top, bottom**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:38 of
+msgid "Extent of the subplots as a fraction of figure width or height. Left cannot be larger than right, and bottom cannot be larger than top. If not given, the values will be inferred from a figure or rcParams at draw time. See also `GridSpec.get_subplot_params`."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:47 of
+msgid "**wspace**"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:44 of
+msgid "The amount of width reserved for space between subplots, expressed as a fraction of the average axis width. If not given, the values will be inferred from a figure or rcParams when necessary. See also `GridSpec.get_subplot_params`."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:53 of
+msgid "**hspace**"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:50 of
+msgid "The amount of height reserved for space between subplots, expressed as a fraction of the average axis height. If not given, the values will be inferred from a figure or rcParams when necessary. See also `GridSpec.get_subplot_params`."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:58 of
+msgid "**width_ratios** : array-like of length *ncols*, optional"
+msgstr ""
+
+#: of
+msgid "array-like of length"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:56 of
+msgid "Defines the relative widths of the columns. Each column gets a relative width of ``width_ratios[i] / sum(width_ratios)``. If not given, all columns will have the same width."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:76 of
+msgid "**height_ratios** : array-like of length *nrows*, optional"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec:61 of
+msgid "Defines the relative heights of the rows. Each row gets a relative height of ``height_ratios[i] / sum(height_ratios)``. If not given, all rows will have the same height."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.get_subplot_params:2 of
+msgid "Return the `.SubplotParams` for the GridSpec."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.get_subplot_params:4 of
+msgid "In order of precedence the values are taken from"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.get_subplot_params:6 of
+msgid "non-*None* attributes of the GridSpec"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.get_subplot_params:7 of
+msgid "the provided *figure*"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.get_subplot_params:8 of
+msgid ":rc:`figure.subplot.*`"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.locally_modified_subplot_params:2 of
+msgid "Return a list of the names of the subplot parameters explicitly set in the GridSpec."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.locally_modified_subplot_params:5 of
+msgid "This is a subset of the attributes of `.SubplotParams`."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.tight_layout:2 of
+msgid "Adjust subplot parameters to give specified padding."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.tight_layout:9 of
+msgid "**pad**"
+msgstr ""
+
+#: of
+msgid "float"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.tight_layout:8 of
+msgid "Padding between the figure edge and the edges of subplots, as a fraction of the font-size."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.tight_layout:13 of
+msgid "**h_pad, w_pad**"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.tight_layout:12 of
+msgid "Padding (height/width) between edges of adjacent subplots. Defaults to *pad*."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.tight_layout:31 of
+msgid "**rect**"
+msgstr ""
+
+#: of
+msgid "tuple of 4 floats, default: (0, 0, 1, 1), i.e. the whole figure"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.tight_layout:16 of
+msgid "(left, bottom, right, top) rectangle in normalized figure coordinates that the whole subplots area (including labels) will fit into."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.update:2 of
+msgid "Update the subplot parameters of the grid."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.update:4 of
+msgid "Parameters that are not explicitly given are not changed. Setting a parameter to *None* resets it to :rc:`figure.subplot.*`."
+msgstr ""
+
+#: of
+msgid "float or None, optional"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.update:10 of
+msgid "Extent of the subplots as a fraction of figure width or height."
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.update:27 of
+msgid "**wspace, hspace**"
+msgstr ""
+
+#: matplotlib.gridspec.GridSpec.update:13 of
+msgid "Spacing between the subplots as a fraction of the average subplot width / height."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:2
+msgid "Examples using ``matplotlib.gridspec.GridSpec``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:10
+msgid "Scatter plot with histograms"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:10
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:18
+msgid ":ref:`sphx_glr_gallery_lines_bars_and_markers_scatter_hist.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:29
+msgid "Resizing axes with tight layout"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:29
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:37
+msgid ":ref:`sphx_glr_gallery_subplots_axes_and_figures_demo_tight_layout.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:48
+msgid "Nested Gridspecs"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:48
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:56
+msgid ":ref:`sphx_glr_gallery_subplots_axes_and_figures_gridspec_nested.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:67
+msgid "Constrained Layout Guide"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:67
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:75
+msgid ":ref:`sphx_glr_tutorials_intermediate_constrainedlayout_guide.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:86
+msgid "Tight Layout guide"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:86
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:94
+msgid ":ref:`sphx_glr_tutorials_intermediate_tight_layout_guide.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:105
+msgid "Arranging multiple Axes in a Figure"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:105
+#: ../../api/_as_gen/matplotlib.gridspec.GridSpec.examples:113
+msgid ":ref:`sphx_glr_tutorials_intermediate_arranging_axes.py`"
+msgstr ""
+

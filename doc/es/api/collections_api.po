@@ -1,0 +1,3730 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:22\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/collections_api.po\n"
+"X-Crowdin-File-ID: 1766\n"
+"Language: es_ES\n"
+
+#: ../../api/collections_api.rst:3
+msgid "``matplotlib.collections``"
+msgstr ""
+
+#: matplotlib.collections:1 of
+msgid "Classes for the efficient drawing of large collections of objects that share most properties, e.g., a large number of line segments or polygons."
+msgstr ""
+
+#: matplotlib.collections:5 of
+msgid "The classes are not meant to be as flexible as their single element counterparts (e.g., you may not be able to select all line styles) but they are meant to be fast for common use cases (e.g., a large set of solid line segments)."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:1
+#: matplotlib.collections.StarPolygonCollection:1 of
+msgid "Bases: :py:class:`matplotlib.collections.RegularPolyCollection`"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:2 of
+msgid "Draw a collection of regular asterisks with *numsides* points."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback matplotlib.artist.Artist.findobj
+#: matplotlib.artist.Artist.get_cursor_data
+#: matplotlib.artist.Artist.get_tightbbox
+#: matplotlib.artist.Artist.set_agg_filter
+#: matplotlib.artist.Artist.set_animated matplotlib.artist.Artist.set_clip_box
+#: matplotlib.artist.Artist.set_clip_on matplotlib.artist.Artist.set_clip_path
+#: matplotlib.artist.Artist.set_figure matplotlib.artist.Artist.set_gid
+#: matplotlib.artist.Artist.set_in_layout matplotlib.artist.Artist.set_label
+#: matplotlib.artist.Artist.set_path_effects
+#: matplotlib.artist.Artist.set_picker matplotlib.artist.Artist.set_rasterized
+#: matplotlib.artist.Artist.set_sketch_params matplotlib.artist.Artist.set_snap
+#: matplotlib.artist.Artist.set_transform matplotlib.artist.Artist.set_url
+#: matplotlib.artist.Artist.set_visible matplotlib.artist.Artist.set_zorder
+#: matplotlib.artist.Artist.update matplotlib.cm.ScalarMappable.set_array
+#: matplotlib.cm.ScalarMappable.set_clim matplotlib.cm.ScalarMappable.set_cmap
+#: matplotlib.cm.ScalarMappable.set_norm
+#: matplotlib.collections.AsteriskPolygonCollection
+#: matplotlib.collections.BrokenBarHCollection
+#: matplotlib.collections.CircleCollection matplotlib.collections.Collection
+#: matplotlib.collections.Collection.draw
+#: matplotlib.collections.Collection.set_alpha
+#: matplotlib.collections.Collection.set_antialiased
+#: matplotlib.collections.Collection.set_capstyle
+#: matplotlib.collections.Collection.set_color
+#: matplotlib.collections.Collection.set_edgecolor
+#: matplotlib.collections.Collection.set_facecolor
+#: matplotlib.collections.Collection.set_hatch
+#: matplotlib.collections.Collection.set_joinstyle
+#: matplotlib.collections.Collection.set_linestyle
+#: matplotlib.collections.Collection.set_linewidth
+#: matplotlib.collections.Collection.set_offset_transform
+#: matplotlib.collections.Collection.set_offsets
+#: matplotlib.collections.Collection.set_pickradius
+#: matplotlib.collections.Collection.set_urls
+#: matplotlib.collections.EllipseCollection
+#: matplotlib.collections.EllipseCollection.draw
+#: matplotlib.collections.EventCollection
+#: matplotlib.collections.EventCollection.set_orientation
+#: matplotlib.collections.LineCollection
+#: matplotlib.collections.LineCollection.set_color
+#: matplotlib.collections.PathCollection
+#: matplotlib.collections.PathCollection.legend_elements
+#: matplotlib.collections.PolyCollection
+#: matplotlib.collections.PolyCollection.set_verts
+#: matplotlib.collections.QuadMesh matplotlib.collections.QuadMesh.draw
+#: matplotlib.collections.QuadMesh.get_cursor_data
+#: matplotlib.collections.QuadMesh.set_array
+#: matplotlib.collections.RegularPolyCollection
+#: matplotlib.collections.RegularPolyCollection.draw
+#: matplotlib.collections.StarPolygonCollection matplotlib.collections.TriMesh
+#: matplotlib.collections.TriMesh.draw
+#: matplotlib.collections._CollectionWithSizes.draw
+#: matplotlib.collections._CollectionWithSizes.set_sizes of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:29
+#: matplotlib.collections.RegularPolyCollection:29
+#: matplotlib.collections.StarPolygonCollection:29 of
+msgid "**numsides**"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:26 of
+msgid "int"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:29
+#: matplotlib.collections.RegularPolyCollection:29
+#: matplotlib.collections.StarPolygonCollection:29 of
+msgid "The number of sides of the polygon."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:32
+#: matplotlib.collections.RegularPolyCollection:32
+#: matplotlib.collections.StarPolygonCollection:32 of
+msgid "**rotation**"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:39
+#: matplotlib.artist.AsteriskPolygonCollection.set:48
+#: matplotlib.artist.BrokenBarHCollection.set:40
+#: matplotlib.artist.BrokenBarHCollection.set:51
+#: matplotlib.artist.CircleCollection.set:39
+#: matplotlib.artist.CircleCollection.set:48
+#: matplotlib.artist.Collection.set:39 matplotlib.artist.Collection.set:47
+#: matplotlib.artist.EllipseCollection.set:39
+#: matplotlib.artist.EllipseCollection.set:47
+#: matplotlib.artist.EventCollection.set:44
+#: matplotlib.artist.EventCollection.set:55
+#: matplotlib.artist.LineCollection.set:41
+#: matplotlib.artist.LineCollection.set:51
+#: matplotlib.artist.PatchCollection.set:40
+#: matplotlib.artist.PatchCollection.set:48
+#: matplotlib.artist.PathCollection.set:40
+#: matplotlib.artist.PathCollection.set:49
+#: matplotlib.artist.PolyCollection.set:40
+#: matplotlib.artist.PolyCollection.set:51 matplotlib.artist.QuadMesh.set:39
+#: matplotlib.artist.QuadMesh.set:47
+#: matplotlib.artist.RegularPolyCollection.set:39
+#: matplotlib.artist.RegularPolyCollection.set:48
+#: matplotlib.artist.StarPolygonCollection.set:39
+#: matplotlib.artist.StarPolygonCollection.set:48
+#: matplotlib.artist.TriMesh.set:39 matplotlib.artist.TriMesh.set:47 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:32
+#: matplotlib.collections.RegularPolyCollection:32
+#: matplotlib.collections.StarPolygonCollection:32 of
+msgid "The rotation of the polygon in radians."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:35
+#: matplotlib.collections.CircleCollection:29
+#: matplotlib.collections.PathCollection:34
+#: matplotlib.collections.PolyCollection:17
+#: matplotlib.collections.RegularPolyCollection:35
+#: matplotlib.collections.StarPolygonCollection:35
+#: matplotlib.collections._CollectionWithSizes.set_sizes:9 of
+msgid "**sizes**"
+msgstr ""
+
+#: of
+msgid "tuple of float"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:35
+#: matplotlib.collections.RegularPolyCollection:35
+#: matplotlib.collections.StarPolygonCollection:35 of
+msgid "The area of the circle circumscribing the polygon in points^2."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:48
+#: matplotlib.collections.BrokenBarHCollection:49
+#: matplotlib.collections.CircleCollection:45
+#: matplotlib.collections.EllipseCollection:60
+#: matplotlib.collections.EventCollection:75
+#: matplotlib.collections.LineCollection:84
+#: matplotlib.collections.PathCollection:50
+#: matplotlib.collections.PathCollection.legend_elements:57
+#: matplotlib.collections.PolyCollection:37
+#: matplotlib.collections.RegularPolyCollection:48
+#: matplotlib.collections.StarPolygonCollection:48 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:38
+#: matplotlib.collections.BrokenBarHCollection:36
+#: matplotlib.collections.CircleCollection:32
+#: matplotlib.collections.LineCollection:71
+#: matplotlib.collections.PathCollection:37
+#: matplotlib.collections.PolyCollection:24
+#: matplotlib.collections.RegularPolyCollection:38
+#: matplotlib.collections.StarPolygonCollection:38 of
+msgid "Forwarded to `.Collection`."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:51
+#: matplotlib.collections.AsteriskPolygonCollection.sticky_edges:30
+#: matplotlib.collections.BrokenBarHCollection.sticky_edges:30
+#: matplotlib.collections.CircleCollection.sticky_edges:30
+#: matplotlib.collections.Collection.sticky_edges:30
+#: matplotlib.collections.EllipseCollection.sticky_edges:30
+#: matplotlib.collections.EventCollection:78
+#: matplotlib.collections.EventCollection.sticky_edges:30
+#: matplotlib.collections.LineCollection.sticky_edges:30
+#: matplotlib.collections.PatchCollection.sticky_edges:30
+#: matplotlib.collections.PathCollection.sticky_edges:30
+#: matplotlib.collections.PolyCollection.sticky_edges:30
+#: matplotlib.collections.QuadMesh.sticky_edges:30
+#: matplotlib.collections.RegularPolyCollection:51
+#: matplotlib.collections.RegularPolyCollection.sticky_edges:30
+#: matplotlib.collections.StarPolygonCollection:51
+#: matplotlib.collections.StarPolygonCollection.sticky_edges:30
+#: matplotlib.collections.TriMesh.sticky_edges:30 of
+msgid "Examples"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection:52
+#: matplotlib.collections.RegularPolyCollection:52
+#: matplotlib.collections.StarPolygonCollection:52 of
+msgid "See :doc:`/gallery/event_handling/lasso_demo` for a complete example::"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:2 of
+msgid "Add a callback function that will be called whenever one of the `.Artist`'s properties changes."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:14 of
+msgid "**func**"
+msgstr ""
+
+#: of
+msgid "callable"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:9 of
+msgid "The callback function. It must have the signature::"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:13 of
+msgid "where *artist* is the calling `.Artist`. Return values may exist but are ignored."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback matplotlib.artist.Artist.findobj
+#: matplotlib.artist.Artist.get_sketch_params
+#: matplotlib.artist.Artist.get_tightbbox
+#: matplotlib.collections.LineCollection.get_segments
+#: matplotlib.collections.PathCollection.legend_elements
+#: matplotlib.collections._CollectionWithSizes.get_sizes of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:19 of
+msgid "The observer id associated with the callback. This id can be used for removing the callback with `.remove_callback` later."
+msgstr ""
+
+#: matplotlib.artist.Artist.add_callback:31
+#: matplotlib.artist.Artist.pchanged:19 of
+msgid ":obj:`remove_callback`"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.autoscale:2 of
+msgid "Autoscale the scalar limits on the norm instance using the current array"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.autoscale_None:2 of
+msgid "Autoscale the scalar limits on the norm instance using the current array, changing only limits that are None"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection.axes:2
+#: matplotlib.collections.BrokenBarHCollection.axes:2
+#: matplotlib.collections.CircleCollection.axes:2
+#: matplotlib.collections.Collection.axes:2
+#: matplotlib.collections.EllipseCollection.axes:2
+#: matplotlib.collections.EventCollection.axes:2
+#: matplotlib.collections.LineCollection.axes:2
+#: matplotlib.collections.PatchCollection.axes:2
+#: matplotlib.collections.PathCollection.axes:2
+#: matplotlib.collections.PolyCollection.axes:2
+#: matplotlib.collections.QuadMesh.axes:2
+#: matplotlib.collections.RegularPolyCollection.axes:2
+#: matplotlib.collections.StarPolygonCollection.axes:2
+#: matplotlib.collections.TriMesh.axes:2 of
+msgid "The `~.axes.Axes` instance the artist resides in, or *None*."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.changed:2 of
+msgid "Call this whenever the mappable is changed to notify all the callbackSM listeners to the 'changed' signal."
+msgstr ""
+
+#: ../../docstring matplotlib.collections.AsteriskPolygonCollection.colorbar:2
+#: matplotlib.collections.BrokenBarHCollection.colorbar:2
+#: matplotlib.collections.CircleCollection.colorbar:2
+#: matplotlib.collections.Collection.colorbar:2
+#: matplotlib.collections.EllipseCollection.colorbar:2
+#: matplotlib.collections.EventCollection.colorbar:2
+#: matplotlib.collections.LineCollection.colorbar:2
+#: matplotlib.collections.PatchCollection.colorbar:2
+#: matplotlib.collections.PathCollection.colorbar:2
+#: matplotlib.collections.PolyCollection.colorbar:2
+#: matplotlib.collections.QuadMesh.colorbar:2
+#: matplotlib.collections.RegularPolyCollection.colorbar:2
+#: matplotlib.collections.StarPolygonCollection.colorbar:2
+#: matplotlib.collections.TriMesh.colorbar:2 of
+msgid "The last colorbar associated with this ScalarMappable. May be None."
+msgstr ""
+
+#: matplotlib.collections.Collection.contains:2 of
+msgid "Test whether the mouse event occurred in the collection."
+msgstr ""
+
+#: matplotlib.collections.Collection.contains:4 of
+msgid "Returns ``bool, dict(ind=itemlist)``, where every item in itemlist contains the event."
+msgstr ""
+
+#: matplotlib.artist.Artist.convert_xunits:2 of
+msgid "Convert *x* using the unit type of the xaxis."
+msgstr ""
+
+#: matplotlib.artist.Artist.convert_xunits:4 of
+msgid "If the artist is not in contained in an Axes or if the xaxis does not have units, *x* itself is returned."
+msgstr ""
+
+#: matplotlib.artist.Artist.convert_yunits:2 of
+msgid "Convert *y* using the unit type of the yaxis."
+msgstr ""
+
+#: matplotlib.artist.Artist.convert_yunits:4 of
+msgid "If the artist is not in contained in an Axes or if the yaxis does not have units, *y* itself is returned."
+msgstr ""
+
+#: matplotlib.collections.Collection.draw:2
+#: matplotlib.collections.EllipseCollection.draw:2
+#: matplotlib.collections.QuadMesh.draw:2
+#: matplotlib.collections.RegularPolyCollection.draw:2
+#: matplotlib.collections.TriMesh.draw:2
+#: matplotlib.collections._CollectionWithSizes.draw:2 of
+msgid "Draw the Artist (and its children) using the given renderer."
+msgstr ""
+
+#: matplotlib.collections.Collection.draw:4
+#: matplotlib.collections.EllipseCollection.draw:4
+#: matplotlib.collections.QuadMesh.draw:4
+#: matplotlib.collections.RegularPolyCollection.draw:4
+#: matplotlib.collections.TriMesh.draw:4
+#: matplotlib.collections._CollectionWithSizes.draw:4 of
+msgid "This has no effect if the artist is not visible (`.Artist.get_visible` returns False)."
+msgstr ""
+
+#: matplotlib.collections.Collection.draw:18
+#: matplotlib.collections.EllipseCollection.draw:18
+#: matplotlib.collections.QuadMesh.draw:18
+#: matplotlib.collections.RegularPolyCollection.draw:18
+#: matplotlib.collections.TriMesh.draw:18
+#: matplotlib.collections._CollectionWithSizes.draw:18 of
+msgid "**renderer** : `.RendererBase` subclass."
+msgstr ""
+
+#: matplotlib.collections.Collection.draw:17
+#: matplotlib.collections.EllipseCollection.draw:17
+#: matplotlib.collections.QuadMesh.draw:17
+#: matplotlib.collections.RegularPolyCollection.draw:17
+#: matplotlib.collections.TriMesh.draw:17
+#: matplotlib.collections._CollectionWithSizes.draw:17 of
+msgid "RendererBase subclass."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:24
+#: matplotlib.cm.ScalarMappable.set_norm:19
+#: matplotlib.collections.Collection.draw:21
+#: matplotlib.collections.Collection.set_urls:19
+#: matplotlib.collections.EllipseCollection.draw:21
+#: matplotlib.collections.QuadMesh:37
+#: matplotlib.collections.QuadMesh.convert_mesh_to_paths:15
+#: matplotlib.collections.QuadMesh.convert_mesh_to_triangles:15
+#: matplotlib.collections.QuadMesh.draw:21
+#: matplotlib.collections.RegularPolyCollection.draw:21
+#: matplotlib.collections.TriMesh.draw:21
+#: matplotlib.collections._CollectionWithSizes.draw:21 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.collections.Collection.draw:22
+#: matplotlib.collections.EllipseCollection.draw:22
+#: matplotlib.collections.QuadMesh.draw:22
+#: matplotlib.collections.RegularPolyCollection.draw:22
+#: matplotlib.collections.TriMesh.draw:22
+#: matplotlib.collections._CollectionWithSizes.draw:22 of
+msgid "This method is overridden in the Artist subclasses."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:2 of
+msgid "Find artist objects."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:4 of
+msgid "Recursively find all `.Artist` instances contained in the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:16 of
+msgid "**match**"
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:9 of
+msgid "A filter criterion for the matches. This can be"
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:11 of
+msgid "*None*: Return all objects contained in artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:12 of
+msgid "A function with signature ``def match(artist: Artist) -> bool``. The result will only contain artists for which the function returns *True*."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:15 of
+msgid "A class instance: e.g., `.Line2D`. The result will only contain artists of this class or its subclasses (``isinstance`` check)."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:19 of
+msgid "**include_self**"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:14
+#: matplotlib.artist.AsteriskPolygonCollection.set:20
+#: matplotlib.artist.AsteriskPolygonCollection.set:29
+#: matplotlib.artist.AsteriskPolygonCollection.set:40
+#: matplotlib.artist.AsteriskPolygonCollection.set:47
+#: matplotlib.artist.BrokenBarHCollection.set:14
+#: matplotlib.artist.BrokenBarHCollection.set:20
+#: matplotlib.artist.BrokenBarHCollection.set:29
+#: matplotlib.artist.BrokenBarHCollection.set:41
+#: matplotlib.artist.BrokenBarHCollection.set:50
+#: matplotlib.artist.CircleCollection.set:14
+#: matplotlib.artist.CircleCollection.set:20
+#: matplotlib.artist.CircleCollection.set:29
+#: matplotlib.artist.CircleCollection.set:40
+#: matplotlib.artist.CircleCollection.set:47
+#: matplotlib.artist.Collection.set:14 matplotlib.artist.Collection.set:20
+#: matplotlib.artist.Collection.set:29 matplotlib.artist.Collection.set:40
+#: matplotlib.artist.Collection.set:46
+#: matplotlib.artist.EllipseCollection.set:14
+#: matplotlib.artist.EllipseCollection.set:20
+#: matplotlib.artist.EllipseCollection.set:29
+#: matplotlib.artist.EllipseCollection.set:40
+#: matplotlib.artist.EllipseCollection.set:46
+#: matplotlib.artist.EventCollection.set:14
+#: matplotlib.artist.EventCollection.set:20
+#: matplotlib.artist.EventCollection.set:30
+#: matplotlib.artist.EventCollection.set:46
+#: matplotlib.artist.EventCollection.set:54
+#: matplotlib.artist.LineCollection.set:14
+#: matplotlib.artist.LineCollection.set:20
+#: matplotlib.artist.LineCollection.set:30
+#: matplotlib.artist.LineCollection.set:42
+#: matplotlib.artist.LineCollection.set:50
+#: matplotlib.artist.PatchCollection.set:14
+#: matplotlib.artist.PatchCollection.set:20
+#: matplotlib.artist.PatchCollection.set:29
+#: matplotlib.artist.PatchCollection.set:41
+#: matplotlib.artist.PatchCollection.set:47
+#: matplotlib.artist.PathCollection.set:14
+#: matplotlib.artist.PathCollection.set:20
+#: matplotlib.artist.PathCollection.set:29
+#: matplotlib.artist.PathCollection.set:41
+#: matplotlib.artist.PathCollection.set:48
+#: matplotlib.artist.PolyCollection.set:14
+#: matplotlib.artist.PolyCollection.set:20
+#: matplotlib.artist.PolyCollection.set:29
+#: matplotlib.artist.PolyCollection.set:41
+#: matplotlib.artist.PolyCollection.set:50 matplotlib.artist.QuadMesh.set:14
+#: matplotlib.artist.QuadMesh.set:20 matplotlib.artist.QuadMesh.set:29
+#: matplotlib.artist.QuadMesh.set:40 matplotlib.artist.QuadMesh.set:46
+#: matplotlib.artist.RegularPolyCollection.set:14
+#: matplotlib.artist.RegularPolyCollection.set:20
+#: matplotlib.artist.RegularPolyCollection.set:29
+#: matplotlib.artist.RegularPolyCollection.set:40
+#: matplotlib.artist.RegularPolyCollection.set:47
+#: matplotlib.artist.StarPolygonCollection.set:14
+#: matplotlib.artist.StarPolygonCollection.set:20
+#: matplotlib.artist.StarPolygonCollection.set:29
+#: matplotlib.artist.StarPolygonCollection.set:40
+#: matplotlib.artist.StarPolygonCollection.set:47
+#: matplotlib.artist.TriMesh.set:14 matplotlib.artist.TriMesh.set:20
+#: matplotlib.artist.TriMesh.set:29 matplotlib.artist.TriMesh.set:40
+#: matplotlib.artist.TriMesh.set:46 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:19 of
+msgid "Include *self* in the list to be checked for a match."
+msgstr ""
+
+#: matplotlib.artist.Artist.findobj:36 of
+msgid "list of `.Artist`"
+msgstr ""
+
+#: matplotlib.artist.Artist.format_cursor_data:2 of
+msgid "Return a string representation of *data*."
+msgstr ""
+
+#: matplotlib.artist.Artist.format_cursor_data:5
+#: matplotlib.artist.Artist.get_cursor_data:5
+#: matplotlib.collections.QuadMesh.get_cursor_data:5 of
+msgid "This method is intended to be overridden by artist subclasses. As an end-user of Matplotlib you will most likely not call this method yourself."
+msgstr ""
+
+#: matplotlib.artist.Artist.format_cursor_data:9 of
+msgid "The default implementation converts ints and floats and arrays of ints and floats into a comma-separated string enclosed in square brackets, unless the artist has an associated colorbar, in which case scalar values are formatted using the colorbar's formatter."
+msgstr ""
+
+#: matplotlib.artist.Artist.format_cursor_data:25 of
+msgid ":obj:`get_cursor_data`"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_agg_filter:2 of
+msgid "Return filter function to be used for agg filter."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_alpha:2 of
+msgid "Return the alpha value used for blending - not supported on all backends."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_animated:2 of
+msgid "Return whether the artist is animated."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_array:2 of
+msgid "Return the array of values, that are mapped to colors."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_array:4 of
+msgid "The base class `.ScalarMappable` does not make any assumptions on the dimensionality and shape of the array."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_children:2 of
+msgid "Return a list of the child `.Artist`\\s of this `.Artist`."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_clim:2 of
+msgid "Return the values (min, max) that are mapped to the colormap limits."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_clip_box:2 of
+msgid "Return the clipbox."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_clip_on:2 of
+msgid "Return whether the artist uses clipping."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_clip_path:2 of
+msgid "Return the clip path."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.get_cmap:2 of
+msgid "Return the `.Colormap` instance."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:2
+#: matplotlib.collections.QuadMesh.get_cursor_data:2 of
+msgid "Return the cursor data for a given event."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:9
+#: matplotlib.collections.QuadMesh.get_cursor_data:9 of
+msgid "Cursor data can be used by Artists to provide additional context information for a given event. The default implementation just returns *None*."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:13
+#: matplotlib.collections.QuadMesh.get_cursor_data:13 of
+msgid "Subclasses can override the method and return arbitrary data. However, when doing so, they must ensure that `.format_cursor_data` can convert the data to a string representation."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:17
+#: matplotlib.collections.QuadMesh.get_cursor_data:17 of
+msgid "The only current use case is displaying the z-value of an `.AxesImage` in the status bar of a plot window, while moving the mouse."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:30
+#: matplotlib.collections.QuadMesh.get_cursor_data:30 of
+msgid "**event** : `matplotlib.backend_bases.MouseEvent`"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:29
+#: matplotlib.collections.QuadMesh.get_cursor_data:29 of
+msgid "matplotlib.backend_bases.MouseEvent"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_cursor_data:35
+#: matplotlib.collections.QuadMesh.get_cursor_data:35 of
+msgid ":obj:`format_cursor_data`"
+msgstr ""
+
+#: matplotlib.collections.Collection.get_linestyle:2 of
+msgid "Alias for `get_linestyle`."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_edgecolor:2 of
+msgid "Alias for `get_edgecolor`."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_facecolor:2 of
+msgid "Alias for `get_facecolor`."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_figure:2 of
+msgid "Return the `.Figure` instance the artist belongs to."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_fill:2 of
+msgid "Return whether face is colored."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_gid:2 of
+msgid "Return the group id."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_hatch:2 of
+msgid "Return the current hatching pattern."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_in_layout:2 of
+msgid "Return boolean flag, ``True`` if artist is included in layout calculations."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_in_layout:5 of
+msgid "E.g. :doc:`/tutorials/intermediate/constrainedlayout_guide`, `.Figure.tight_layout()`, and ``fig.savefig(fname, bbox_inches='tight')``."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_label:2 of
+msgid "Return the label used for this artist in the legend."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_linewidth:2
+#: matplotlib.collections.EventCollection.get_linewidths:2 of
+msgid "Alias for `get_linewidth`."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_offset_transform:2 of
+msgid "Return the `.Transform` instance used by this artist offset."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_offsets:2 of
+msgid "Return the offsets for the collection."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_picker:2 of
+msgid "Return the picking behavior of the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_picker:4 of
+msgid "The possible values are described in `.set_picker`."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_picker:17 of
+msgid ":obj:`set_picker`, :obj:`pickable`, :obj:`pick`"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_rasterized:2 of
+msgid "Return whether the artist is to be rasterized."
+msgstr ""
+
+#: matplotlib.collections._CollectionWithSizes.get_sizes:2 of
+msgid "Return the sizes ('areas') of the elements in the collection."
+msgstr ""
+
+#: matplotlib.collections._CollectionWithSizes.get_sizes:21 of
+msgid "array"
+msgstr ""
+
+#: matplotlib.collections._CollectionWithSizes.get_sizes:9 of
+msgid "The 'area' of each element."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:2 of
+msgid "Return the sketch parameters for the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:29 of
+msgid "tuple or None"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:9 of
+msgid "A 3-tuple with the following elements:"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:11 of
+msgid "*scale*: The amplitude of the wiggle perpendicular to the source line."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:13 of
+msgid "*length*: The length of the wiggle along the line."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:14 of
+msgid "*randomness*: The scale factor by which the length is shrunken or expanded."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_sketch_params:17 of
+msgid "Returns *None* if no sketch parameters were set."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_snap:2 of
+msgid "Return the snap setting."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_snap:4 of
+msgid "See `.set_snap` for details."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_tightbbox:2 of
+msgid "Like `.Artist.get_window_extent`, but includes any clipping."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_tightbbox:9 of
+msgid "**renderer** : `.RendererBase` subclass"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_tightbbox:8 of
+msgid "RendererBase subclass"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_tightbbox:8 of
+msgid "renderer that will be used to draw the figures (i.e. ``fig.canvas.get_renderer()``)"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_tightbbox:26
+#: matplotlib.artist.AsteriskPolygonCollection.set:19
+#: matplotlib.artist.BrokenBarHCollection.set:19
+#: matplotlib.artist.CircleCollection.set:19
+#: matplotlib.artist.Collection.set:19
+#: matplotlib.artist.EllipseCollection.set:19
+#: matplotlib.artist.EventCollection.set:19
+#: matplotlib.artist.LineCollection.set:19
+#: matplotlib.artist.PatchCollection.set:19
+#: matplotlib.artist.PathCollection.set:19
+#: matplotlib.artist.PolyCollection.set:19 matplotlib.artist.QuadMesh.set:19
+#: matplotlib.artist.RegularPolyCollection.set:19
+#: matplotlib.artist.StarPolygonCollection.set:19
+#: matplotlib.artist.TriMesh.set:19 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.artist.Artist.get_tightbbox:14 of
+msgid "The enclosing bounding box (in figure pixel coordinates)."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_transform:2 of
+msgid "Return the `.Transform` instance used by this artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_transformed_clip_path_and_affine:2 of
+msgid "Return the clip path with the non-affine part of its transformation applied, and the remaining affine part of its transformation."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_url:2 of
+msgid "Return the url."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_urls:2 of
+msgid "Return a list of URLs, one for each element of the collection."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_urls:4 of
+msgid "The list contains *None* for elements without a URL. See :doc:`/gallery/misc/hyperlinks_sgskip` for an example."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_visible:2 of
+msgid "Return the visibility."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_window_extent:2 of
+msgid "Get the artist's bounding box in display space."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_window_extent:4 of
+msgid "The bounding box' width and height are nonnegative."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_window_extent:6 of
+msgid "Subclasses should override for inclusion in the bounding box \"tight\" calculation. Default is to return an empty bounding box at 0, 0."
+msgstr ""
+
+#: matplotlib.collections.Collection.get_window_extent:10 of
+msgid "Be careful when using this function, the results will not update if the artist window extent of the artist changes.  The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure).  This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly."
+msgstr ""
+
+#: matplotlib.artist.Artist.get_zorder:2 of
+msgid "Return the artist's zorder."
+msgstr ""
+
+#: matplotlib.artist.Artist.have_units:2 of
+msgid "Return whether units are set on any axis."
+msgstr ""
+
+#: matplotlib.artist.Artist.is_transform_set:2 of
+msgid "Return whether the Artist has an explicitly set transform."
+msgstr ""
+
+#: matplotlib.artist.Artist.is_transform_set:4 of
+msgid "This is *True* after `.set_transform` has been called."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection.mouseover:2
+#: matplotlib.collections.BrokenBarHCollection.mouseover:2
+#: matplotlib.collections.CircleCollection.mouseover:2
+#: matplotlib.collections.Collection.mouseover:2
+#: matplotlib.collections.EllipseCollection.mouseover:2
+#: matplotlib.collections.EventCollection.mouseover:2
+#: matplotlib.collections.LineCollection.mouseover:2
+#: matplotlib.collections.PatchCollection.mouseover:2
+#: matplotlib.collections.PathCollection.mouseover:2
+#: matplotlib.collections.PolyCollection.mouseover:2
+#: matplotlib.collections.QuadMesh.mouseover:2
+#: matplotlib.collections.RegularPolyCollection.mouseover:2
+#: matplotlib.collections.StarPolygonCollection.mouseover:2
+#: matplotlib.collections.TriMesh.mouseover:2 of
+msgid "If this property is set to *True*, the artist will be queried for custom context information when the mouse cursor moves over it."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection.mouseover:5
+#: matplotlib.collections.BrokenBarHCollection.mouseover:5
+#: matplotlib.collections.CircleCollection.mouseover:5
+#: matplotlib.collections.Collection.mouseover:5
+#: matplotlib.collections.EllipseCollection.mouseover:5
+#: matplotlib.collections.EventCollection.mouseover:5
+#: matplotlib.collections.LineCollection.mouseover:5
+#: matplotlib.collections.PatchCollection.mouseover:5
+#: matplotlib.collections.PathCollection.mouseover:5
+#: matplotlib.collections.PolyCollection.mouseover:5
+#: matplotlib.collections.QuadMesh.mouseover:5
+#: matplotlib.collections.RegularPolyCollection.mouseover:5
+#: matplotlib.collections.StarPolygonCollection.mouseover:5
+#: matplotlib.collections.TriMesh.mouseover:5 of
+msgid "See also :meth:`get_cursor_data`, :class:`.ToolCursorPosition` and :class:`.NavigationToolbar2`."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:2 of
+msgid "Call all of the registered callbacks."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:4 of
+msgid "This function is triggered internally when a property is changed."
+msgstr ""
+
+#: matplotlib.artist.Artist.pchanged:17
+#: matplotlib.artist.Artist.remove_callback:16 of
+msgid ":obj:`add_callback`"
+msgstr ""
+
+#: matplotlib.artist.Artist.pick:2 of
+msgid "Process a pick event."
+msgstr ""
+
+#: matplotlib.artist.Artist.pick:4 of
+msgid "Each child artist will fire a pick event if *mouseevent* is over the artist and the artist has picker set."
+msgstr ""
+
+#: matplotlib.artist.Artist.pick:18 of
+msgid ":obj:`set_picker`, :obj:`get_picker`, :obj:`pickable`"
+msgstr ""
+
+#: matplotlib.artist.Artist.pickable:2 of
+msgid "Return whether the artist is pickable."
+msgstr ""
+
+#: matplotlib.artist.Artist.pickable:16 of
+msgid ":obj:`set_picker`, :obj:`get_picker`, :obj:`pick`"
+msgstr ""
+
+#: matplotlib.artist.Artist.properties:2 of
+msgid "Return a dictionary of all the properties of the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove:2 of
+msgid "Remove the artist from the figure if possible."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove:4 of
+msgid "The effect will not be visible until the figure is redrawn, e.g., with `.FigureCanvasBase.draw_idle`.  Call `~.axes.Axes.relim` to update the axes limits if desired."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove:8 of
+msgid "Note: `~.axes.Axes.relim` will not see collections even if the collection was added to the axes with *autolim* = True."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove:11 of
+msgid "Note: there is no support for removing the artist's legend entry."
+msgstr ""
+
+#: matplotlib.artist.Artist.remove_callback:2 of
+msgid "Remove a callback based on its observer id."
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:2
+#: matplotlib.artist.BrokenBarHCollection.set:2
+#: matplotlib.artist.CircleCollection.set:2 matplotlib.artist.Collection.set:2
+#: matplotlib.artist.EllipseCollection.set:2
+#: matplotlib.artist.EventCollection.set:2
+#: matplotlib.artist.LineCollection.set:2
+#: matplotlib.artist.PatchCollection.set:2
+#: matplotlib.artist.PathCollection.set:2
+#: matplotlib.artist.PolyCollection.set:2 matplotlib.artist.QuadMesh.set:2
+#: matplotlib.artist.RegularPolyCollection.set:2
+#: matplotlib.artist.StarPolygonCollection.set:2
+#: matplotlib.artist.TriMesh.set:2 of
+msgid "Set multiple properties at once."
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:4
+#: matplotlib.artist.BrokenBarHCollection.set:4
+#: matplotlib.artist.CircleCollection.set:4 matplotlib.artist.Collection.set:4
+#: matplotlib.artist.EllipseCollection.set:4
+#: matplotlib.artist.EventCollection.set:4
+#: matplotlib.artist.LineCollection.set:4
+#: matplotlib.artist.PatchCollection.set:4
+#: matplotlib.artist.PathCollection.set:4
+#: matplotlib.artist.PolyCollection.set:4 matplotlib.artist.QuadMesh.set:4
+#: matplotlib.artist.RegularPolyCollection.set:4
+#: matplotlib.artist.StarPolygonCollection.set:4
+#: matplotlib.artist.TriMesh.set:4 of
+msgid "Supported properties are"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:10
+#: matplotlib.artist.BrokenBarHCollection.set:10
+#: matplotlib.artist.CircleCollection.set:10
+#: matplotlib.artist.Collection.set:10
+#: matplotlib.artist.EllipseCollection.set:10
+#: matplotlib.artist.EventCollection.set:10
+#: matplotlib.artist.LineCollection.set:10
+#: matplotlib.artist.PatchCollection.set:10
+#: matplotlib.artist.PathCollection.set:10
+#: matplotlib.artist.PolyCollection.set:10 matplotlib.artist.QuadMesh.set:10
+#: matplotlib.artist.RegularPolyCollection.set:10
+#: matplotlib.artist.StarPolygonCollection.set:10
+#: matplotlib.artist.TriMesh.set:10 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:10
+#: matplotlib.artist.BrokenBarHCollection.set:10
+#: matplotlib.artist.CircleCollection.set:10
+#: matplotlib.artist.Collection.set:10
+#: matplotlib.artist.EllipseCollection.set:10
+#: matplotlib.artist.EventCollection.set:10
+#: matplotlib.artist.LineCollection.set:10
+#: matplotlib.artist.PatchCollection.set:10
+#: matplotlib.artist.PathCollection.set:10
+#: matplotlib.artist.PolyCollection.set:10 matplotlib.artist.QuadMesh.set:10
+#: matplotlib.artist.RegularPolyCollection.set:10
+#: matplotlib.artist.StarPolygonCollection.set:10
+#: matplotlib.artist.TriMesh.set:10 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:12
+#: matplotlib.artist.BrokenBarHCollection.set:12
+#: matplotlib.artist.CircleCollection.set:12
+#: matplotlib.artist.Collection.set:12
+#: matplotlib.artist.EllipseCollection.set:12
+#: matplotlib.artist.EventCollection.set:12
+#: matplotlib.artist.LineCollection.set:12
+#: matplotlib.artist.PatchCollection.set:12
+#: matplotlib.artist.PathCollection.set:12
+#: matplotlib.artist.PolyCollection.set:12 matplotlib.artist.QuadMesh.set:12
+#: matplotlib.artist.RegularPolyCollection.set:12
+#: matplotlib.artist.StarPolygonCollection.set:12
+#: matplotlib.artist.TriMesh.set:12 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:12
+#: matplotlib.artist.BrokenBarHCollection.set:12
+#: matplotlib.artist.CircleCollection.set:12
+#: matplotlib.artist.Collection.set:12
+#: matplotlib.artist.EllipseCollection.set:12
+#: matplotlib.artist.EventCollection.set:12
+#: matplotlib.artist.LineCollection.set:12
+#: matplotlib.artist.PatchCollection.set:12
+#: matplotlib.artist.PathCollection.set:12
+#: matplotlib.artist.PolyCollection.set:12 matplotlib.artist.QuadMesh.set:12
+#: matplotlib.artist.RegularPolyCollection.set:12
+#: matplotlib.artist.StarPolygonCollection.set:12
+#: matplotlib.artist.TriMesh.set:12 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:13
+#: matplotlib.artist.BrokenBarHCollection.set:13
+#: matplotlib.artist.CircleCollection.set:13
+#: matplotlib.artist.Collection.set:13
+#: matplotlib.artist.EllipseCollection.set:13
+#: matplotlib.artist.EventCollection.set:13
+#: matplotlib.artist.LineCollection.set:13
+#: matplotlib.artist.PatchCollection.set:13
+#: matplotlib.artist.PathCollection.set:13
+#: matplotlib.artist.PolyCollection.set:13 matplotlib.artist.QuadMesh.set:13
+#: matplotlib.artist.RegularPolyCollection.set:13
+#: matplotlib.artist.StarPolygonCollection.set:13
+#: matplotlib.artist.TriMesh.set:13 of
+msgid ":meth:`alpha <matplotlib.collections.Collection.set_alpha>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:13
+#: matplotlib.artist.BrokenBarHCollection.set:13
+#: matplotlib.artist.CircleCollection.set:13
+#: matplotlib.artist.Collection.set:13
+#: matplotlib.artist.EllipseCollection.set:13
+#: matplotlib.artist.EventCollection.set:13
+#: matplotlib.artist.LineCollection.set:13
+#: matplotlib.artist.PatchCollection.set:13
+#: matplotlib.artist.PathCollection.set:13
+#: matplotlib.artist.PolyCollection.set:13 matplotlib.artist.QuadMesh.set:13
+#: matplotlib.artist.RegularPolyCollection.set:13
+#: matplotlib.artist.StarPolygonCollection.set:13
+#: matplotlib.artist.TriMesh.set:13 of
+msgid "array-like or scalar or None"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:14
+#: matplotlib.artist.BrokenBarHCollection.set:14
+#: matplotlib.artist.CircleCollection.set:14
+#: matplotlib.artist.Collection.set:14
+#: matplotlib.artist.EllipseCollection.set:14
+#: matplotlib.artist.EventCollection.set:14
+#: matplotlib.artist.LineCollection.set:14
+#: matplotlib.artist.PatchCollection.set:14
+#: matplotlib.artist.PathCollection.set:14
+#: matplotlib.artist.PolyCollection.set:14 matplotlib.artist.QuadMesh.set:14
+#: matplotlib.artist.RegularPolyCollection.set:14
+#: matplotlib.artist.StarPolygonCollection.set:14
+#: matplotlib.artist.TriMesh.set:14 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:15
+#: matplotlib.artist.BrokenBarHCollection.set:15
+#: matplotlib.artist.CircleCollection.set:15
+#: matplotlib.artist.EllipseCollection.set:15
+#: matplotlib.artist.EventCollection.set:15
+#: matplotlib.artist.LineCollection.set:15
+#: matplotlib.artist.PatchCollection.set:15
+#: matplotlib.artist.PathCollection.set:15
+#: matplotlib.artist.PolyCollection.set:15 matplotlib.artist.QuadMesh.set:15
+#: matplotlib.artist.RegularPolyCollection.set:15
+#: matplotlib.artist.StarPolygonCollection.set:15
+#: matplotlib.artist.TriMesh.set:15 of
+msgid ":meth:`antialiased <matplotlib.collections.Collection.set_antialiased>` or aa or antialiaseds"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:15
+#: matplotlib.artist.BrokenBarHCollection.set:15
+#: matplotlib.artist.CircleCollection.set:15
+#: matplotlib.artist.Collection.set:15
+#: matplotlib.artist.EllipseCollection.set:15
+#: matplotlib.artist.EventCollection.set:15
+#: matplotlib.artist.LineCollection.set:15
+#: matplotlib.artist.PatchCollection.set:15
+#: matplotlib.artist.PathCollection.set:15
+#: matplotlib.artist.PolyCollection.set:15 matplotlib.artist.QuadMesh.set:15
+#: matplotlib.artist.RegularPolyCollection.set:15
+#: matplotlib.artist.StarPolygonCollection.set:15
+#: matplotlib.artist.TriMesh.set:15 of
+msgid "bool or list of bools"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:16
+#: matplotlib.artist.BrokenBarHCollection.set:16
+#: matplotlib.artist.CircleCollection.set:16
+#: matplotlib.artist.Collection.set:16
+#: matplotlib.artist.EllipseCollection.set:16
+#: matplotlib.artist.EventCollection.set:16
+#: matplotlib.artist.LineCollection.set:16
+#: matplotlib.artist.PatchCollection.set:16
+#: matplotlib.artist.PathCollection.set:16
+#: matplotlib.artist.PolyCollection.set:16
+#: matplotlib.artist.RegularPolyCollection.set:16
+#: matplotlib.artist.StarPolygonCollection.set:16
+#: matplotlib.artist.TriMesh.set:16 of
+msgid ":meth:`array <matplotlib.cm.ScalarMappable.set_array>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:16
+#: matplotlib.artist.BrokenBarHCollection.set:16
+#: matplotlib.artist.CircleCollection.set:16
+#: matplotlib.artist.Collection.set:16
+#: matplotlib.artist.EllipseCollection.set:16
+#: matplotlib.artist.EventCollection.set:16
+#: matplotlib.artist.LineCollection.set:16
+#: matplotlib.artist.PatchCollection.set:16
+#: matplotlib.artist.PathCollection.set:16
+#: matplotlib.artist.PolyCollection.set:16
+#: matplotlib.artist.RegularPolyCollection.set:16
+#: matplotlib.artist.StarPolygonCollection.set:16
+#: matplotlib.artist.TriMesh.set:16 of
+msgid "array-like or None"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:17
+#: matplotlib.artist.BrokenBarHCollection.set:17
+#: matplotlib.artist.CircleCollection.set:17
+#: matplotlib.artist.Collection.set:17
+#: matplotlib.artist.EllipseCollection.set:17
+#: matplotlib.artist.EventCollection.set:17
+#: matplotlib.artist.LineCollection.set:17
+#: matplotlib.artist.PatchCollection.set:17
+#: matplotlib.artist.PathCollection.set:17
+#: matplotlib.artist.PolyCollection.set:17 matplotlib.artist.QuadMesh.set:17
+#: matplotlib.artist.RegularPolyCollection.set:17
+#: matplotlib.artist.StarPolygonCollection.set:17
+#: matplotlib.artist.TriMesh.set:17 of
+msgid ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:17
+#: matplotlib.artist.BrokenBarHCollection.set:17
+#: matplotlib.artist.CircleCollection.set:17
+#: matplotlib.artist.Collection.set:17
+#: matplotlib.artist.EllipseCollection.set:17
+#: matplotlib.artist.EventCollection.set:17
+#: matplotlib.artist.LineCollection.set:17
+#: matplotlib.artist.PatchCollection.set:17
+#: matplotlib.artist.PathCollection.set:17
+#: matplotlib.artist.PolyCollection.set:17 matplotlib.artist.QuadMesh.set:17
+#: matplotlib.artist.RegularPolyCollection.set:17
+#: matplotlib.artist.StarPolygonCollection.set:17
+#: matplotlib.artist.TriMesh.set:17 of
+msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:18
+#: matplotlib.artist.BrokenBarHCollection.set:18
+#: matplotlib.artist.CircleCollection.set:18
+#: matplotlib.artist.Collection.set:18
+#: matplotlib.artist.EllipseCollection.set:18
+#: matplotlib.artist.EventCollection.set:18
+#: matplotlib.artist.LineCollection.set:18
+#: matplotlib.artist.PatchCollection.set:18
+#: matplotlib.artist.PathCollection.set:18
+#: matplotlib.artist.PolyCollection.set:18 matplotlib.artist.QuadMesh.set:18
+#: matplotlib.artist.RegularPolyCollection.set:18
+#: matplotlib.artist.StarPolygonCollection.set:18
+#: matplotlib.artist.TriMesh.set:18 of
+msgid ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:18
+#: matplotlib.artist.BrokenBarHCollection.set:18
+#: matplotlib.artist.CircleCollection.set:18
+#: matplotlib.artist.Collection.set:18
+#: matplotlib.artist.EllipseCollection.set:18
+#: matplotlib.artist.EventCollection.set:18
+#: matplotlib.artist.LineCollection.set:18
+#: matplotlib.artist.PatchCollection.set:18
+#: matplotlib.artist.PathCollection.set:18
+#: matplotlib.artist.PolyCollection.set:18 matplotlib.artist.QuadMesh.set:18
+#: matplotlib.artist.RegularPolyCollection.set:18
+#: matplotlib.artist.StarPolygonCollection.set:18
+#: matplotlib.artist.TriMesh.set:18 of
+msgid "(vmin: float, vmax: float)"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:19
+#: matplotlib.artist.BrokenBarHCollection.set:19
+#: matplotlib.artist.CircleCollection.set:19
+#: matplotlib.artist.Collection.set:19
+#: matplotlib.artist.EllipseCollection.set:19
+#: matplotlib.artist.EventCollection.set:19
+#: matplotlib.artist.LineCollection.set:19
+#: matplotlib.artist.PatchCollection.set:19
+#: matplotlib.artist.PathCollection.set:19
+#: matplotlib.artist.PolyCollection.set:19 matplotlib.artist.QuadMesh.set:19
+#: matplotlib.artist.RegularPolyCollection.set:19
+#: matplotlib.artist.StarPolygonCollection.set:19
+#: matplotlib.artist.TriMesh.set:19 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:20
+#: matplotlib.artist.BrokenBarHCollection.set:20
+#: matplotlib.artist.CircleCollection.set:20
+#: matplotlib.artist.Collection.set:20
+#: matplotlib.artist.EllipseCollection.set:20
+#: matplotlib.artist.EventCollection.set:20
+#: matplotlib.artist.LineCollection.set:20
+#: matplotlib.artist.PatchCollection.set:20
+#: matplotlib.artist.PathCollection.set:20
+#: matplotlib.artist.PolyCollection.set:20 matplotlib.artist.QuadMesh.set:20
+#: matplotlib.artist.RegularPolyCollection.set:20
+#: matplotlib.artist.StarPolygonCollection.set:20
+#: matplotlib.artist.TriMesh.set:20 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:21
+#: matplotlib.artist.BrokenBarHCollection.set:21
+#: matplotlib.artist.CircleCollection.set:21
+#: matplotlib.artist.Collection.set:21
+#: matplotlib.artist.EllipseCollection.set:21
+#: matplotlib.artist.EventCollection.set:21
+#: matplotlib.artist.LineCollection.set:21
+#: matplotlib.artist.PatchCollection.set:21
+#: matplotlib.artist.PathCollection.set:21
+#: matplotlib.artist.PolyCollection.set:21 matplotlib.artist.QuadMesh.set:21
+#: matplotlib.artist.RegularPolyCollection.set:21
+#: matplotlib.artist.StarPolygonCollection.set:21
+#: matplotlib.artist.TriMesh.set:21 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:21
+#: matplotlib.artist.BrokenBarHCollection.set:21
+#: matplotlib.artist.CircleCollection.set:21
+#: matplotlib.artist.Collection.set:21
+#: matplotlib.artist.EllipseCollection.set:21
+#: matplotlib.artist.EventCollection.set:21
+#: matplotlib.artist.LineCollection.set:21
+#: matplotlib.artist.PatchCollection.set:21
+#: matplotlib.artist.PathCollection.set:21
+#: matplotlib.artist.PolyCollection.set:21 matplotlib.artist.QuadMesh.set:21
+#: matplotlib.artist.RegularPolyCollection.set:21
+#: matplotlib.artist.StarPolygonCollection.set:21
+#: matplotlib.artist.TriMesh.set:21 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:22
+#: matplotlib.artist.BrokenBarHCollection.set:22
+#: matplotlib.artist.CircleCollection.set:22
+#: matplotlib.artist.Collection.set:22
+#: matplotlib.artist.EllipseCollection.set:22
+#: matplotlib.artist.EventCollection.set:22
+#: matplotlib.artist.LineCollection.set:22
+#: matplotlib.artist.PatchCollection.set:22
+#: matplotlib.artist.PathCollection.set:22
+#: matplotlib.artist.PolyCollection.set:22 matplotlib.artist.QuadMesh.set:22
+#: matplotlib.artist.RegularPolyCollection.set:22
+#: matplotlib.artist.StarPolygonCollection.set:22
+#: matplotlib.artist.TriMesh.set:22 of
+msgid ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:22
+#: matplotlib.artist.BrokenBarHCollection.set:22
+#: matplotlib.artist.CircleCollection.set:22
+#: matplotlib.artist.Collection.set:22
+#: matplotlib.artist.EllipseCollection.set:22
+#: matplotlib.artist.EventCollection.set:22
+#: matplotlib.artist.LineCollection.set:22
+#: matplotlib.artist.PatchCollection.set:22
+#: matplotlib.artist.PathCollection.set:22
+#: matplotlib.artist.PolyCollection.set:22 matplotlib.artist.QuadMesh.set:22
+#: matplotlib.artist.RegularPolyCollection.set:22
+#: matplotlib.artist.StarPolygonCollection.set:22
+#: matplotlib.artist.TriMesh.set:22 of
+msgid "`.Colormap` or str or None"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:23
+#: matplotlib.artist.BrokenBarHCollection.set:23
+#: matplotlib.artist.CircleCollection.set:23
+#: matplotlib.artist.Collection.set:23
+#: matplotlib.artist.EllipseCollection.set:23
+#: matplotlib.artist.PatchCollection.set:23
+#: matplotlib.artist.PathCollection.set:23
+#: matplotlib.artist.PolyCollection.set:23 matplotlib.artist.QuadMesh.set:23
+#: matplotlib.artist.RegularPolyCollection.set:23
+#: matplotlib.artist.StarPolygonCollection.set:23
+#: matplotlib.artist.TriMesh.set:23 of
+msgid ":meth:`color <matplotlib.collections.Collection.set_color>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:23
+#: matplotlib.artist.BrokenBarHCollection.set:23
+#: matplotlib.artist.CircleCollection.set:23
+#: matplotlib.artist.Collection.set:23
+#: matplotlib.artist.EllipseCollection.set:23
+#: matplotlib.artist.PatchCollection.set:23
+#: matplotlib.artist.PathCollection.set:23
+#: matplotlib.artist.PolyCollection.set:23 matplotlib.artist.QuadMesh.set:23
+#: matplotlib.artist.RegularPolyCollection.set:23
+#: matplotlib.artist.StarPolygonCollection.set:23
+#: matplotlib.artist.TriMesh.set:23 of
+msgid "color or list of rgba tuples"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:24
+#: matplotlib.artist.BrokenBarHCollection.set:24
+#: matplotlib.artist.CircleCollection.set:24
+#: matplotlib.artist.EllipseCollection.set:24
+#: matplotlib.artist.EventCollection.set:25
+#: matplotlib.artist.LineCollection.set:25
+#: matplotlib.artist.PatchCollection.set:24
+#: matplotlib.artist.PathCollection.set:24
+#: matplotlib.artist.PolyCollection.set:24 matplotlib.artist.QuadMesh.set:24
+#: matplotlib.artist.RegularPolyCollection.set:24
+#: matplotlib.artist.StarPolygonCollection.set:24
+#: matplotlib.artist.TriMesh.set:24 of
+msgid ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` or ec or edgecolors"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:24
+#: matplotlib.artist.BrokenBarHCollection.set:24
+#: matplotlib.artist.CircleCollection.set:24
+#: matplotlib.artist.Collection.set:24
+#: matplotlib.artist.EllipseCollection.set:24
+#: matplotlib.artist.EventCollection.set:25
+#: matplotlib.artist.LineCollection.set:25
+#: matplotlib.artist.PatchCollection.set:24
+#: matplotlib.artist.PathCollection.set:24
+#: matplotlib.artist.PolyCollection.set:24 matplotlib.artist.QuadMesh.set:24
+#: matplotlib.artist.RegularPolyCollection.set:24
+#: matplotlib.artist.StarPolygonCollection.set:24
+#: matplotlib.artist.TriMesh.set:24 of
+msgid "color or list of colors or 'face'"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:25
+#: matplotlib.artist.BrokenBarHCollection.set:25
+#: matplotlib.artist.CircleCollection.set:25
+#: matplotlib.artist.EllipseCollection.set:25
+#: matplotlib.artist.EventCollection.set:26
+#: matplotlib.artist.LineCollection.set:26
+#: matplotlib.artist.PatchCollection.set:25
+#: matplotlib.artist.PathCollection.set:25
+#: matplotlib.artist.PolyCollection.set:25 matplotlib.artist.QuadMesh.set:25
+#: matplotlib.artist.RegularPolyCollection.set:25
+#: matplotlib.artist.StarPolygonCollection.set:25
+#: matplotlib.artist.TriMesh.set:25 of
+msgid ":meth:`facecolor <matplotlib.collections.Collection.set_facecolor>` or facecolors or fc"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:25
+#: matplotlib.artist.BrokenBarHCollection.set:25
+#: matplotlib.artist.CircleCollection.set:25
+#: matplotlib.artist.Collection.set:25
+#: matplotlib.artist.EllipseCollection.set:25
+#: matplotlib.artist.EventCollection.set:23
+#: matplotlib.artist.EventCollection.set:24
+#: matplotlib.artist.EventCollection.set:26
+#: matplotlib.artist.LineCollection.set:23
+#: matplotlib.artist.LineCollection.set:24
+#: matplotlib.artist.LineCollection.set:26
+#: matplotlib.artist.PatchCollection.set:25
+#: matplotlib.artist.PathCollection.set:25
+#: matplotlib.artist.PolyCollection.set:25 matplotlib.artist.QuadMesh.set:25
+#: matplotlib.artist.RegularPolyCollection.set:25
+#: matplotlib.artist.StarPolygonCollection.set:25
+#: matplotlib.artist.TriMesh.set:25 of
+msgid "color or list of colors"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:26
+#: matplotlib.artist.BrokenBarHCollection.set:26
+#: matplotlib.artist.CircleCollection.set:26
+#: matplotlib.artist.Collection.set:26
+#: matplotlib.artist.EllipseCollection.set:26
+#: matplotlib.artist.EventCollection.set:27
+#: matplotlib.artist.LineCollection.set:27
+#: matplotlib.artist.PatchCollection.set:26
+#: matplotlib.artist.PathCollection.set:26
+#: matplotlib.artist.PolyCollection.set:26 matplotlib.artist.QuadMesh.set:26
+#: matplotlib.artist.RegularPolyCollection.set:26
+#: matplotlib.artist.StarPolygonCollection.set:26
+#: matplotlib.artist.TriMesh.set:26 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:26
+#: matplotlib.artist.BrokenBarHCollection.set:26
+#: matplotlib.artist.CircleCollection.set:26
+#: matplotlib.artist.Collection.set:26
+#: matplotlib.artist.EllipseCollection.set:26
+#: matplotlib.artist.EventCollection.set:27
+#: matplotlib.artist.LineCollection.set:27
+#: matplotlib.artist.PatchCollection.set:26
+#: matplotlib.artist.PathCollection.set:26
+#: matplotlib.artist.PolyCollection.set:26 matplotlib.artist.QuadMesh.set:26
+#: matplotlib.artist.RegularPolyCollection.set:26
+#: matplotlib.artist.StarPolygonCollection.set:26
+#: matplotlib.artist.TriMesh.set:26 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:27
+#: matplotlib.artist.BrokenBarHCollection.set:27
+#: matplotlib.artist.CircleCollection.set:27
+#: matplotlib.artist.Collection.set:27
+#: matplotlib.artist.EllipseCollection.set:27
+#: matplotlib.artist.EventCollection.set:28
+#: matplotlib.artist.LineCollection.set:28
+#: matplotlib.artist.PatchCollection.set:27
+#: matplotlib.artist.PathCollection.set:27
+#: matplotlib.artist.PolyCollection.set:27 matplotlib.artist.QuadMesh.set:27
+#: matplotlib.artist.RegularPolyCollection.set:27
+#: matplotlib.artist.StarPolygonCollection.set:27
+#: matplotlib.artist.TriMesh.set:27 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:27
+#: matplotlib.artist.AsteriskPolygonCollection.set:45
+#: matplotlib.artist.BrokenBarHCollection.set:27
+#: matplotlib.artist.BrokenBarHCollection.set:46
+#: matplotlib.artist.CircleCollection.set:27
+#: matplotlib.artist.CircleCollection.set:45
+#: matplotlib.artist.Collection.set:27 matplotlib.artist.Collection.set:44
+#: matplotlib.artist.EllipseCollection.set:27
+#: matplotlib.artist.EllipseCollection.set:44
+#: matplotlib.artist.EventCollection.set:28
+#: matplotlib.artist.EventCollection.set:51
+#: matplotlib.artist.LineCollection.set:28
+#: matplotlib.artist.LineCollection.set:47
+#: matplotlib.artist.PatchCollection.set:27
+#: matplotlib.artist.PatchCollection.set:45
+#: matplotlib.artist.PathCollection.set:27
+#: matplotlib.artist.PathCollection.set:46
+#: matplotlib.artist.PolyCollection.set:27
+#: matplotlib.artist.PolyCollection.set:46 matplotlib.artist.QuadMesh.set:27
+#: matplotlib.artist.QuadMesh.set:44
+#: matplotlib.artist.RegularPolyCollection.set:27
+#: matplotlib.artist.RegularPolyCollection.set:45
+#: matplotlib.artist.StarPolygonCollection.set:27
+#: matplotlib.artist.StarPolygonCollection.set:45
+#: matplotlib.artist.TriMesh.set:27 matplotlib.artist.TriMesh.set:44 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:28
+#: matplotlib.artist.BrokenBarHCollection.set:28
+#: matplotlib.artist.CircleCollection.set:28
+#: matplotlib.artist.Collection.set:28
+#: matplotlib.artist.EllipseCollection.set:28
+#: matplotlib.artist.EventCollection.set:29
+#: matplotlib.artist.LineCollection.set:29
+#: matplotlib.artist.PatchCollection.set:28
+#: matplotlib.artist.PathCollection.set:28
+#: matplotlib.artist.PolyCollection.set:28 matplotlib.artist.QuadMesh.set:28
+#: matplotlib.artist.RegularPolyCollection.set:28
+#: matplotlib.artist.StarPolygonCollection.set:28
+#: matplotlib.artist.TriMesh.set:28 of
+msgid ":meth:`hatch <matplotlib.collections.Collection.set_hatch>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:28
+#: matplotlib.artist.BrokenBarHCollection.set:28
+#: matplotlib.artist.CircleCollection.set:28
+#: matplotlib.artist.Collection.set:28
+#: matplotlib.artist.EllipseCollection.set:28
+#: matplotlib.artist.EventCollection.set:29
+#: matplotlib.artist.LineCollection.set:29
+#: matplotlib.artist.PatchCollection.set:28
+#: matplotlib.artist.PathCollection.set:28
+#: matplotlib.artist.PolyCollection.set:28 matplotlib.artist.QuadMesh.set:28
+#: matplotlib.artist.RegularPolyCollection.set:28
+#: matplotlib.artist.StarPolygonCollection.set:28
+#: matplotlib.artist.TriMesh.set:28 of
+msgid "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:29
+#: matplotlib.artist.BrokenBarHCollection.set:29
+#: matplotlib.artist.CircleCollection.set:29
+#: matplotlib.artist.Collection.set:29
+#: matplotlib.artist.EllipseCollection.set:29
+#: matplotlib.artist.EventCollection.set:30
+#: matplotlib.artist.LineCollection.set:30
+#: matplotlib.artist.PatchCollection.set:29
+#: matplotlib.artist.PathCollection.set:29
+#: matplotlib.artist.PolyCollection.set:29 matplotlib.artist.QuadMesh.set:29
+#: matplotlib.artist.RegularPolyCollection.set:29
+#: matplotlib.artist.StarPolygonCollection.set:29
+#: matplotlib.artist.TriMesh.set:29 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:30
+#: matplotlib.artist.BrokenBarHCollection.set:30
+#: matplotlib.artist.CircleCollection.set:30
+#: matplotlib.artist.Collection.set:30
+#: matplotlib.artist.EllipseCollection.set:30
+#: matplotlib.artist.EventCollection.set:31
+#: matplotlib.artist.LineCollection.set:31
+#: matplotlib.artist.PatchCollection.set:30
+#: matplotlib.artist.PathCollection.set:30
+#: matplotlib.artist.PolyCollection.set:30 matplotlib.artist.QuadMesh.set:30
+#: matplotlib.artist.RegularPolyCollection.set:30
+#: matplotlib.artist.StarPolygonCollection.set:30
+#: matplotlib.artist.TriMesh.set:30 of
+msgid ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:30
+#: matplotlib.artist.BrokenBarHCollection.set:30
+#: matplotlib.artist.CircleCollection.set:30
+#: matplotlib.artist.Collection.set:30
+#: matplotlib.artist.EllipseCollection.set:30
+#: matplotlib.artist.EventCollection.set:31
+#: matplotlib.artist.LineCollection.set:31
+#: matplotlib.artist.PatchCollection.set:30
+#: matplotlib.artist.PathCollection.set:30
+#: matplotlib.artist.PolyCollection.set:30 matplotlib.artist.QuadMesh.set:30
+#: matplotlib.artist.RegularPolyCollection.set:30
+#: matplotlib.artist.StarPolygonCollection.set:30
+#: matplotlib.artist.TriMesh.set:30 of
+msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:31
+#: matplotlib.artist.BrokenBarHCollection.set:31
+#: matplotlib.artist.CircleCollection.set:31
+#: matplotlib.artist.Collection.set:31
+#: matplotlib.artist.EllipseCollection.set:31
+#: matplotlib.artist.EventCollection.set:32
+#: matplotlib.artist.LineCollection.set:32
+#: matplotlib.artist.PatchCollection.set:31
+#: matplotlib.artist.PathCollection.set:31
+#: matplotlib.artist.PolyCollection.set:31 matplotlib.artist.QuadMesh.set:31
+#: matplotlib.artist.RegularPolyCollection.set:31
+#: matplotlib.artist.StarPolygonCollection.set:31
+#: matplotlib.artist.TriMesh.set:31 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:31
+#: matplotlib.artist.BrokenBarHCollection.set:31
+#: matplotlib.artist.CircleCollection.set:31
+#: matplotlib.artist.Collection.set:31
+#: matplotlib.artist.EllipseCollection.set:31
+#: matplotlib.artist.EventCollection.set:32
+#: matplotlib.artist.LineCollection.set:32
+#: matplotlib.artist.PatchCollection.set:31
+#: matplotlib.artist.PathCollection.set:31
+#: matplotlib.artist.PolyCollection.set:31 matplotlib.artist.QuadMesh.set:31
+#: matplotlib.artist.RegularPolyCollection.set:31
+#: matplotlib.artist.StarPolygonCollection.set:31
+#: matplotlib.artist.TriMesh.set:31 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:32
+#: matplotlib.artist.BrokenBarHCollection.set:32
+#: matplotlib.artist.CircleCollection.set:32
+#: matplotlib.artist.EllipseCollection.set:32
+#: matplotlib.artist.EventCollection.set:35
+#: matplotlib.artist.LineCollection.set:33
+#: matplotlib.artist.PatchCollection.set:32
+#: matplotlib.artist.PathCollection.set:32
+#: matplotlib.artist.PolyCollection.set:32 matplotlib.artist.QuadMesh.set:32
+#: matplotlib.artist.RegularPolyCollection.set:32
+#: matplotlib.artist.StarPolygonCollection.set:32
+#: matplotlib.artist.TriMesh.set:32 of
+msgid ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` or dashes or linestyles or ls"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:32
+#: matplotlib.artist.BrokenBarHCollection.set:32
+#: matplotlib.artist.CircleCollection.set:32
+#: matplotlib.artist.Collection.set:32
+#: matplotlib.artist.EllipseCollection.set:32
+#: matplotlib.artist.EventCollection.set:35
+#: matplotlib.artist.LineCollection.set:33
+#: matplotlib.artist.PatchCollection.set:32
+#: matplotlib.artist.PathCollection.set:32
+#: matplotlib.artist.PolyCollection.set:32 matplotlib.artist.QuadMesh.set:32
+#: matplotlib.artist.RegularPolyCollection.set:32
+#: matplotlib.artist.StarPolygonCollection.set:32
+#: matplotlib.artist.TriMesh.set:32 of
+msgid "str or tuple or list thereof"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:33
+#: matplotlib.artist.BrokenBarHCollection.set:33
+#: matplotlib.artist.CircleCollection.set:33
+#: matplotlib.artist.EllipseCollection.set:33
+#: matplotlib.artist.EventCollection.set:36
+#: matplotlib.artist.LineCollection.set:34
+#: matplotlib.artist.PatchCollection.set:33
+#: matplotlib.artist.PathCollection.set:33
+#: matplotlib.artist.PolyCollection.set:33 matplotlib.artist.QuadMesh.set:33
+#: matplotlib.artist.RegularPolyCollection.set:33
+#: matplotlib.artist.StarPolygonCollection.set:33
+#: matplotlib.artist.TriMesh.set:33 of
+msgid ":meth:`linewidth <matplotlib.collections.Collection.set_linewidth>` or linewidths or lw"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:33
+#: matplotlib.artist.BrokenBarHCollection.set:33
+#: matplotlib.artist.CircleCollection.set:33
+#: matplotlib.artist.Collection.set:33
+#: matplotlib.artist.EllipseCollection.set:33
+#: matplotlib.artist.EventCollection.set:36
+#: matplotlib.artist.LineCollection.set:34
+#: matplotlib.artist.PatchCollection.set:33
+#: matplotlib.artist.PathCollection.set:33
+#: matplotlib.artist.PolyCollection.set:33 matplotlib.artist.QuadMesh.set:33
+#: matplotlib.artist.RegularPolyCollection.set:33
+#: matplotlib.artist.StarPolygonCollection.set:33
+#: matplotlib.artist.TriMesh.set:33 of
+msgid "float or list of floats"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:34
+#: matplotlib.artist.BrokenBarHCollection.set:34
+#: matplotlib.artist.CircleCollection.set:34
+#: matplotlib.artist.Collection.set:34
+#: matplotlib.artist.EllipseCollection.set:34
+#: matplotlib.artist.EventCollection.set:37
+#: matplotlib.artist.LineCollection.set:35
+#: matplotlib.artist.PatchCollection.set:34
+#: matplotlib.artist.PathCollection.set:34
+#: matplotlib.artist.PolyCollection.set:34 matplotlib.artist.QuadMesh.set:34
+#: matplotlib.artist.RegularPolyCollection.set:34
+#: matplotlib.artist.StarPolygonCollection.set:34
+#: matplotlib.artist.TriMesh.set:34 of
+msgid ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:34
+#: matplotlib.artist.BrokenBarHCollection.set:34
+#: matplotlib.artist.CircleCollection.set:34
+#: matplotlib.artist.Collection.set:34
+#: matplotlib.artist.EllipseCollection.set:34
+#: matplotlib.artist.EventCollection.set:37
+#: matplotlib.artist.LineCollection.set:35
+#: matplotlib.artist.PatchCollection.set:34
+#: matplotlib.artist.PathCollection.set:34
+#: matplotlib.artist.PolyCollection.set:34 matplotlib.artist.QuadMesh.set:34
+#: matplotlib.artist.RegularPolyCollection.set:34
+#: matplotlib.artist.StarPolygonCollection.set:34
+#: matplotlib.artist.TriMesh.set:34 of
+msgid "`.Normalize` or None"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:35
+#: matplotlib.artist.BrokenBarHCollection.set:35
+#: matplotlib.artist.CircleCollection.set:35
+#: matplotlib.artist.Collection.set:35
+#: matplotlib.artist.EllipseCollection.set:35
+#: matplotlib.artist.EventCollection.set:38
+#: matplotlib.artist.LineCollection.set:36
+#: matplotlib.artist.PatchCollection.set:35
+#: matplotlib.artist.PathCollection.set:35
+#: matplotlib.artist.PolyCollection.set:35 matplotlib.artist.QuadMesh.set:35
+#: matplotlib.artist.RegularPolyCollection.set:35
+#: matplotlib.artist.StarPolygonCollection.set:35
+#: matplotlib.artist.TriMesh.set:35 of
+msgid ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:35
+#: matplotlib.artist.AsteriskPolygonCollection.set:44
+#: matplotlib.artist.BrokenBarHCollection.set:35
+#: matplotlib.artist.BrokenBarHCollection.set:45
+#: matplotlib.artist.CircleCollection.set:35
+#: matplotlib.artist.CircleCollection.set:44
+#: matplotlib.artist.Collection.set:35 matplotlib.artist.Collection.set:43
+#: matplotlib.artist.EllipseCollection.set:35
+#: matplotlib.artist.EllipseCollection.set:43
+#: matplotlib.artist.EventCollection.set:38
+#: matplotlib.artist.EventCollection.set:50
+#: matplotlib.artist.LineCollection.set:36
+#: matplotlib.artist.LineCollection.set:46
+#: matplotlib.artist.PatchCollection.set:35
+#: matplotlib.artist.PatchCollection.set:44
+#: matplotlib.artist.PathCollection.set:35
+#: matplotlib.artist.PathCollection.set:45
+#: matplotlib.artist.PolyCollection.set:35
+#: matplotlib.artist.PolyCollection.set:45 matplotlib.artist.QuadMesh.set:35
+#: matplotlib.artist.QuadMesh.set:43
+#: matplotlib.artist.RegularPolyCollection.set:35
+#: matplotlib.artist.RegularPolyCollection.set:44
+#: matplotlib.artist.StarPolygonCollection.set:35
+#: matplotlib.artist.StarPolygonCollection.set:44
+#: matplotlib.artist.TriMesh.set:35 matplotlib.artist.TriMesh.set:43 of
+msgid "`.Transform`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:36
+#: matplotlib.artist.BrokenBarHCollection.set:36
+#: matplotlib.artist.CircleCollection.set:36
+#: matplotlib.artist.Collection.set:36
+#: matplotlib.artist.EllipseCollection.set:36
+#: matplotlib.artist.EventCollection.set:39
+#: matplotlib.artist.LineCollection.set:37
+#: matplotlib.artist.PatchCollection.set:36
+#: matplotlib.artist.PathCollection.set:36
+#: matplotlib.artist.PolyCollection.set:36 matplotlib.artist.QuadMesh.set:36
+#: matplotlib.artist.RegularPolyCollection.set:36
+#: matplotlib.artist.StarPolygonCollection.set:36
+#: matplotlib.artist.TriMesh.set:36 of
+msgid ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:36
+#: matplotlib.artist.BrokenBarHCollection.set:36
+#: matplotlib.artist.CircleCollection.set:36
+#: matplotlib.artist.Collection.set:36
+#: matplotlib.artist.EllipseCollection.set:36
+#: matplotlib.artist.EventCollection.set:39
+#: matplotlib.artist.LineCollection.set:37
+#: matplotlib.artist.PatchCollection.set:36
+#: matplotlib.artist.PathCollection.set:36
+#: matplotlib.artist.PolyCollection.set:36 matplotlib.artist.QuadMesh.set:36
+#: matplotlib.artist.RegularPolyCollection.set:36
+#: matplotlib.artist.StarPolygonCollection.set:36
+#: matplotlib.artist.TriMesh.set:36 of
+msgid "(N, 2) or (2,) array-like"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:37
+#: matplotlib.artist.BrokenBarHCollection.set:37
+#: matplotlib.artist.CircleCollection.set:37
+#: matplotlib.artist.Collection.set:37
+#: matplotlib.artist.EllipseCollection.set:37
+#: matplotlib.artist.EventCollection.set:41
+#: matplotlib.artist.LineCollection.set:38
+#: matplotlib.artist.PatchCollection.set:37
+#: matplotlib.artist.PathCollection.set:37
+#: matplotlib.artist.PolyCollection.set:37 matplotlib.artist.QuadMesh.set:37
+#: matplotlib.artist.RegularPolyCollection.set:37
+#: matplotlib.artist.StarPolygonCollection.set:37
+#: matplotlib.artist.TriMesh.set:37 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:37
+#: matplotlib.artist.BrokenBarHCollection.set:37
+#: matplotlib.artist.CircleCollection.set:37
+#: matplotlib.artist.Collection.set:37
+#: matplotlib.artist.EllipseCollection.set:37
+#: matplotlib.artist.EventCollection.set:41
+#: matplotlib.artist.LineCollection.set:38
+#: matplotlib.artist.PatchCollection.set:37
+#: matplotlib.artist.PathCollection.set:37
+#: matplotlib.artist.PolyCollection.set:37 matplotlib.artist.QuadMesh.set:37
+#: matplotlib.artist.RegularPolyCollection.set:37
+#: matplotlib.artist.StarPolygonCollection.set:37
+#: matplotlib.artist.TriMesh.set:37 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:38
+#: matplotlib.artist.BrokenBarHCollection.set:39
+#: matplotlib.artist.CircleCollection.set:38
+#: matplotlib.artist.Collection.set:38
+#: matplotlib.artist.EllipseCollection.set:38
+#: matplotlib.artist.EventCollection.set:43
+#: matplotlib.artist.LineCollection.set:40
+#: matplotlib.artist.PatchCollection.set:39
+#: matplotlib.artist.PathCollection.set:39
+#: matplotlib.artist.PolyCollection.set:39 matplotlib.artist.QuadMesh.set:38
+#: matplotlib.artist.RegularPolyCollection.set:38
+#: matplotlib.artist.StarPolygonCollection.set:38
+#: matplotlib.artist.TriMesh.set:38 of
+msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:38
+#: matplotlib.artist.BrokenBarHCollection.set:39
+#: matplotlib.artist.CircleCollection.set:38
+#: matplotlib.artist.Collection.set:38
+#: matplotlib.artist.EllipseCollection.set:38
+#: matplotlib.artist.EventCollection.set:43
+#: matplotlib.artist.LineCollection.set:40
+#: matplotlib.artist.PatchCollection.set:39
+#: matplotlib.artist.PathCollection.set:39
+#: matplotlib.artist.PolyCollection.set:39 matplotlib.artist.QuadMesh.set:38
+#: matplotlib.artist.RegularPolyCollection.set:38
+#: matplotlib.artist.StarPolygonCollection.set:38
+#: matplotlib.artist.TriMesh.set:38 of
+msgid "None or bool or float or callable"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:39
+#: matplotlib.artist.BrokenBarHCollection.set:40
+#: matplotlib.artist.CircleCollection.set:39
+#: matplotlib.artist.Collection.set:39
+#: matplotlib.artist.EllipseCollection.set:39
+#: matplotlib.artist.EventCollection.set:44
+#: matplotlib.artist.LineCollection.set:41
+#: matplotlib.artist.PatchCollection.set:40
+#: matplotlib.artist.PathCollection.set:40
+#: matplotlib.artist.PolyCollection.set:40 matplotlib.artist.QuadMesh.set:39
+#: matplotlib.artist.RegularPolyCollection.set:39
+#: matplotlib.artist.StarPolygonCollection.set:39
+#: matplotlib.artist.TriMesh.set:39 of
+msgid ":meth:`pickradius <matplotlib.collections.Collection.set_pickradius>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:40
+#: matplotlib.artist.BrokenBarHCollection.set:41
+#: matplotlib.artist.CircleCollection.set:40
+#: matplotlib.artist.Collection.set:40
+#: matplotlib.artist.EllipseCollection.set:40
+#: matplotlib.artist.EventCollection.set:46
+#: matplotlib.artist.LineCollection.set:42
+#: matplotlib.artist.PatchCollection.set:41
+#: matplotlib.artist.PathCollection.set:41
+#: matplotlib.artist.PolyCollection.set:41 matplotlib.artist.QuadMesh.set:40
+#: matplotlib.artist.RegularPolyCollection.set:40
+#: matplotlib.artist.StarPolygonCollection.set:40
+#: matplotlib.artist.TriMesh.set:40 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:41
+#: matplotlib.artist.BrokenBarHCollection.set:42
+#: matplotlib.artist.CircleCollection.set:41
+#: matplotlib.artist.PathCollection.set:42
+#: matplotlib.artist.PolyCollection.set:42
+#: matplotlib.artist.RegularPolyCollection.set:41
+#: matplotlib.artist.StarPolygonCollection.set:41 of
+msgid ":meth:`sizes <matplotlib.collections._CollectionWithSizes.set_sizes>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:41
+#: matplotlib.artist.BrokenBarHCollection.set:42
+#: matplotlib.artist.CircleCollection.set:41
+#: matplotlib.artist.PathCollection.set:42
+#: matplotlib.artist.PolyCollection.set:42
+#: matplotlib.artist.RegularPolyCollection.set:41
+#: matplotlib.artist.StarPolygonCollection.set:41 of
+msgid "ndarray or None"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:42
+#: matplotlib.artist.BrokenBarHCollection.set:43
+#: matplotlib.artist.CircleCollection.set:42
+#: matplotlib.artist.Collection.set:41
+#: matplotlib.artist.EllipseCollection.set:41
+#: matplotlib.artist.EventCollection.set:48
+#: matplotlib.artist.LineCollection.set:44
+#: matplotlib.artist.PatchCollection.set:42
+#: matplotlib.artist.PathCollection.set:43
+#: matplotlib.artist.PolyCollection.set:43 matplotlib.artist.QuadMesh.set:41
+#: matplotlib.artist.RegularPolyCollection.set:42
+#: matplotlib.artist.StarPolygonCollection.set:42
+#: matplotlib.artist.TriMesh.set:41 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:42
+#: matplotlib.artist.BrokenBarHCollection.set:43
+#: matplotlib.artist.CircleCollection.set:42
+#: matplotlib.artist.Collection.set:41
+#: matplotlib.artist.EllipseCollection.set:41
+#: matplotlib.artist.EventCollection.set:48
+#: matplotlib.artist.LineCollection.set:44
+#: matplotlib.artist.PatchCollection.set:42
+#: matplotlib.artist.PathCollection.set:43
+#: matplotlib.artist.PolyCollection.set:43 matplotlib.artist.QuadMesh.set:41
+#: matplotlib.artist.RegularPolyCollection.set:42
+#: matplotlib.artist.StarPolygonCollection.set:42
+#: matplotlib.artist.TriMesh.set:41 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:43
+#: matplotlib.artist.BrokenBarHCollection.set:44
+#: matplotlib.artist.CircleCollection.set:43
+#: matplotlib.artist.Collection.set:42
+#: matplotlib.artist.EllipseCollection.set:42
+#: matplotlib.artist.EventCollection.set:49
+#: matplotlib.artist.LineCollection.set:45
+#: matplotlib.artist.PatchCollection.set:43
+#: matplotlib.artist.PathCollection.set:44
+#: matplotlib.artist.PolyCollection.set:44 matplotlib.artist.QuadMesh.set:42
+#: matplotlib.artist.RegularPolyCollection.set:43
+#: matplotlib.artist.StarPolygonCollection.set:43
+#: matplotlib.artist.TriMesh.set:42 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:43
+#: matplotlib.artist.BrokenBarHCollection.set:44
+#: matplotlib.artist.CircleCollection.set:43
+#: matplotlib.artist.Collection.set:42
+#: matplotlib.artist.EllipseCollection.set:42
+#: matplotlib.artist.EventCollection.set:49
+#: matplotlib.artist.LineCollection.set:45
+#: matplotlib.artist.PatchCollection.set:43
+#: matplotlib.artist.PathCollection.set:44
+#: matplotlib.artist.PolyCollection.set:44 matplotlib.artist.QuadMesh.set:42
+#: matplotlib.artist.RegularPolyCollection.set:43
+#: matplotlib.artist.StarPolygonCollection.set:43
+#: matplotlib.artist.TriMesh.set:42 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:44
+#: matplotlib.artist.BrokenBarHCollection.set:45
+#: matplotlib.artist.CircleCollection.set:44
+#: matplotlib.artist.Collection.set:43
+#: matplotlib.artist.EllipseCollection.set:43
+#: matplotlib.artist.EventCollection.set:50
+#: matplotlib.artist.LineCollection.set:46
+#: matplotlib.artist.PatchCollection.set:44
+#: matplotlib.artist.PathCollection.set:45
+#: matplotlib.artist.PolyCollection.set:45 matplotlib.artist.QuadMesh.set:43
+#: matplotlib.artist.RegularPolyCollection.set:44
+#: matplotlib.artist.StarPolygonCollection.set:44
+#: matplotlib.artist.TriMesh.set:43 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:45
+#: matplotlib.artist.BrokenBarHCollection.set:46
+#: matplotlib.artist.CircleCollection.set:45
+#: matplotlib.artist.Collection.set:44
+#: matplotlib.artist.EllipseCollection.set:44
+#: matplotlib.artist.EventCollection.set:51
+#: matplotlib.artist.LineCollection.set:47
+#: matplotlib.artist.PatchCollection.set:45
+#: matplotlib.artist.PathCollection.set:46
+#: matplotlib.artist.PolyCollection.set:46 matplotlib.artist.QuadMesh.set:44
+#: matplotlib.artist.RegularPolyCollection.set:45
+#: matplotlib.artist.StarPolygonCollection.set:45
+#: matplotlib.artist.TriMesh.set:44 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:46
+#: matplotlib.artist.BrokenBarHCollection.set:47
+#: matplotlib.artist.CircleCollection.set:46
+#: matplotlib.artist.Collection.set:45
+#: matplotlib.artist.EllipseCollection.set:45
+#: matplotlib.artist.EventCollection.set:52
+#: matplotlib.artist.LineCollection.set:48
+#: matplotlib.artist.PatchCollection.set:46
+#: matplotlib.artist.PathCollection.set:47
+#: matplotlib.artist.PolyCollection.set:47 matplotlib.artist.QuadMesh.set:45
+#: matplotlib.artist.RegularPolyCollection.set:46
+#: matplotlib.artist.StarPolygonCollection.set:46
+#: matplotlib.artist.TriMesh.set:45 of
+msgid ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:46
+#: matplotlib.artist.BrokenBarHCollection.set:47
+#: matplotlib.artist.CircleCollection.set:46
+#: matplotlib.artist.Collection.set:45
+#: matplotlib.artist.EllipseCollection.set:45
+#: matplotlib.artist.EventCollection.set:52
+#: matplotlib.artist.LineCollection.set:48
+#: matplotlib.artist.PatchCollection.set:46
+#: matplotlib.artist.PathCollection.set:47
+#: matplotlib.artist.PolyCollection.set:47 matplotlib.artist.QuadMesh.set:45
+#: matplotlib.artist.RegularPolyCollection.set:46
+#: matplotlib.artist.StarPolygonCollection.set:46
+#: matplotlib.artist.TriMesh.set:45 of
+msgid "list of str or None"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:47
+#: matplotlib.artist.BrokenBarHCollection.set:50
+#: matplotlib.artist.CircleCollection.set:47
+#: matplotlib.artist.Collection.set:46
+#: matplotlib.artist.EllipseCollection.set:46
+#: matplotlib.artist.EventCollection.set:54
+#: matplotlib.artist.LineCollection.set:50
+#: matplotlib.artist.PatchCollection.set:47
+#: matplotlib.artist.PathCollection.set:48
+#: matplotlib.artist.PolyCollection.set:50 matplotlib.artist.QuadMesh.set:46
+#: matplotlib.artist.RegularPolyCollection.set:47
+#: matplotlib.artist.StarPolygonCollection.set:47
+#: matplotlib.artist.TriMesh.set:46 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.artist.AsteriskPolygonCollection.set:48
+#: matplotlib.artist.BrokenBarHCollection.set:51
+#: matplotlib.artist.CircleCollection.set:48
+#: matplotlib.artist.Collection.set:47
+#: matplotlib.artist.EllipseCollection.set:47
+#: matplotlib.artist.EventCollection.set:55
+#: matplotlib.artist.LineCollection.set:51
+#: matplotlib.artist.PatchCollection.set:48
+#: matplotlib.artist.PathCollection.set:49
+#: matplotlib.artist.PolyCollection.set:51 matplotlib.artist.QuadMesh.set:47
+#: matplotlib.artist.RegularPolyCollection.set:48
+#: matplotlib.artist.StarPolygonCollection.set:48
+#: matplotlib.artist.TriMesh.set:47 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_antialiased:2 of
+msgid "Alias for `set_antialiased`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_agg_filter:2 of
+msgid "Set the agg filter."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_agg_filter:25 of
+msgid "**filter_func**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_agg_filter:8 of
+msgid "A filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_alpha:2 of
+msgid "Set the alpha value used for blending - not supported on all backends."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_alpha:22 of
+msgid "**alpha**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_alpha:8 of
+msgid "All values must be within the 0-1 range, inclusive. Masked values and nans are not supported."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_animated:2 of
+msgid "Set whether the artist is intended to be used in an animation."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_animated:4 of
+msgid "If True, the artist is excluded from regular drawing of the figure. You have to call `.Figure.draw_artist` / `.Axes.draw_artist` explicitly on the artist. This appoach is used to speed up animations using blitting."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_animated:9 of
+msgid "See also `matplotlib.animation` and :doc:`/tutorials/advanced/blitting`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_animated:28
+#: matplotlib.artist.Artist.set_clip_on:23
+#: matplotlib.artist.Artist.set_visible:21 of
+msgid "**b**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_antialiased:2 of
+msgid "Set the antialiasing state for rendering."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_antialiased:21 of
+msgid "**aa**"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_array:2 of
+msgid "Set the value array from array-like *A*."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_array:24
+#: matplotlib.collections.QuadMesh.set_array:25 of
+msgid "**A**"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_array:8 of
+msgid "The values that are mapped to colors."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_array:10 of
+msgid "The base class `.ScalarMappable` does not make any assumptions on the dimensionality and shape of the value array *A*."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_capstyle:2 of
+msgid "Set the `.CapStyle` for the collection (for all its elements)."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_capstyle:21 of
+msgid "**cs** : `.CapStyle` or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_capstyle:20 of
+msgid "CapStyle or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_clim:2 of
+msgid "Set the norm limits for image scaling."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_clim:26 of
+msgid "**vmin, vmax**"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_clim:8 of
+msgid "The limits."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_clim:10 of
+msgid "The limits may also be passed as a tuple (*vmin*, *vmax*) as a single positional argument."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_box:2 of
+msgid "Set the artist's clip `.Bbox`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_box:21 of
+msgid "**clipbox** : `.Bbox`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_box:20 of
+msgid "Bbox"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_on:2 of
+msgid "Set whether the artist uses clipping."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_on:4 of
+msgid "When False artists will be visible outside of the axes which can lead to unexpected results."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:2 of
+msgid "Set the artist's clip path."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:9 of
+msgid "**path** : `.Patch` or `.Path` or `.TransformedPath` or None"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:8 of
+msgid "Patch or Path or TransformedPath or None"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:8 of
+msgid "The clip path. If given a `.Path`, *transform* must be provided as well. If *None*, a previously set clip path is removed."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:21 of
+msgid "**transform** : `~matplotlib.transforms.Transform`, optional"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:20 of
+msgid "Transform, optional"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:12 of
+msgid "Only used if *path* is a `.Path`, in which case the given `.Path` is converted to a `.TransformedPath` using *transform*."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:25 of
+msgid "For efficiency, if *path* is a `.Rectangle` this method will set the clipping box to the corresponding rectangle and set the clipping path to ``None``."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_clip_path:29 of
+msgid "For technical reasons (support of `~.Artist.set`), a tuple (*path*, *transform*) is also accepted as a single positional parameter."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_cmap:2 of
+msgid "Set the colormap for luminance data."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_cmap:21 of
+msgid "**cmap** : `.Colormap` or str or None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_cmap:20 of
+msgid "Colormap or str or None"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_color:2 of
+msgid "Set both the edgecolor and the facecolor."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_color:15
+#: matplotlib.collections.Collection.set_edgecolor:22
+#: matplotlib.collections.Collection.set_facecolor:24
+#: matplotlib.collections.LineCollection.set_color:23 of
+msgid "**c**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_color:20 of
+msgid ":obj:`Collection.set_facecolor`, :obj:`Collection.set_edgecolor`"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_color:21 of
+msgid "For setting the edge or face color individually."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:2 of
+msgid "Alias for `set_linestyle`."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_edgecolor:2 of
+msgid "Alias for `set_edgecolor`."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_edgecolor:2 of
+msgid "Set the edgecolor(s) of the collection."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_edgecolor:8 of
+msgid "The collection edgecolor(s).  If a sequence, the patches cycle through it.  If 'face', match the facecolor."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_facecolor:2 of
+msgid "Set the facecolor(s) of the collection. *c* can be a color (all patches have same color), or a sequence of colors; if it is a sequence the patches will cycle through the sequence."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_facecolor:6 of
+msgid "If *c* is 'none', the patch will not be filled."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_facecolor:2 of
+msgid "Alias for `set_facecolor`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_figure:2 of
+msgid "Set the `.Figure` instance the artist belongs to."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_figure:21 of
+msgid "**fig** : `.Figure`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_figure:20 of
+msgid "Figure"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_gid:2 of
+msgid "Set the (group) id for the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_gid:21 of
+msgid "**gid**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_hatch:2 of
+msgid "Set the hatching pattern"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_hatch:4 of
+msgid "*hatch* can be one of::"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_hatch:17 of
+msgid "Letters can be combined, in which case all the specified hatchings are done.  If same letter repeats, it increases the density of hatching of that pattern."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_hatch:21 of
+msgid "Hatching is supported in the PostScript, PDF, SVG and Agg backends only."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_hatch:24 of
+msgid "Unlike other properties such as linewidth and colors, hatching can only be specified for the collection as a whole, not separately for each member."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_hatch:44 of
+msgid "**hatch** : {'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_in_layout:2 of
+msgid "Set if artist is to be included in layout calculations, E.g. :doc:`/tutorials/intermediate/constrainedlayout_guide`, `.Figure.tight_layout()`, and ``fig.savefig(fname, bbox_inches='tight')``."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_in_layout:24 of
+msgid "**in_layout**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_joinstyle:2 of
+msgid "Set the `.JoinStyle` for the collection (for all its elements)."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_joinstyle:21 of
+msgid "**js** : `.JoinStyle` or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_joinstyle:20 of
+msgid "JoinStyle or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:2 of
+msgid "Set a label that will be displayed in the legend."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:21 of
+msgid "**s**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_label:8 of
+msgid "*s* will be converted to a string by calling `str`."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:2 of
+msgid "Set the linestyle(s) for the collection."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:5 of
+msgid "linestyle"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:5 of
+msgid "description"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:7 of
+msgid "``'-'`` or ``'solid'``"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:7 of
+msgid "solid line"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:8 of
+msgid "``'--'`` or  ``'dashed'``"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:8 of
+msgid "dashed line"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:9 of
+msgid "``'-.'`` or  ``'dashdot'``"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:9 of
+msgid "dash-dotted line"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:10 of
+msgid "``':'`` or ``'dotted'``"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:10 of
+msgid "dotted line"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:13 of
+msgid "Alternatively a dash tuple of the following form can be provided::"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:17 of
+msgid "where ``onoffseq`` is an even length tuple of on and off ink in points."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:37 of
+msgid "**ls**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linestyle:22 of
+msgid "Valid values for individual linestyles include {'-', '--', '-.', ':', '', (offset, on-off-seq)}. See `.Line2D.set_linestyle` for a complete description."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linewidth:2 of
+msgid "Set the linewidth(s) for the collection.  *lw* can be a scalar or a sequence; if it is a sequence the patches will cycle through the sequence"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linewidth:23 of
+msgid "**lw**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_linewidth:2 of
+msgid "Alias for `set_linewidth`."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:2 of
+msgid "Set the normalization instance."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:16 of
+msgid "**norm** : `.Normalize` or None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:15 of
+msgid "Normalize or None"
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.set_norm:20 of
+msgid "If there are any colorbars using the mappable for this norm, setting the norm of the mappable will reset the norm, locator, and formatters on the colorbar to default."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_offset_transform:2 of
+msgid "Set the artist offset transform."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_offset_transform:21 of
+msgid "**transOffset** : `.Transform`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_transform:20
+#: matplotlib.collections.Collection.set_offset_transform:20 of
+msgid "Transform"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_offsets:2 of
+msgid "Set the offsets for the collection."
+msgstr ""
+
+#: matplotlib.collections.Collection:89
+#: matplotlib.collections.Collection.set_offsets:21
+#: matplotlib.collections.QuadMesh:119 matplotlib.collections.TriMesh:65 of
+msgid "**offsets**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_path_effects:2 of
+msgid "Set the path effects."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_path_effects:21 of
+msgid "**path_effects** : `.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_path_effects:20 of
+msgid "AbstractPathEffect"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:2 of
+msgid "Define the picking behavior of the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:45 of
+msgid "**picker**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:8 of
+msgid "This can be one of the following:"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:10 of
+msgid "*None*: Picking is disabled for this artist (default)."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:12 of
+msgid "A boolean: If *True* then picking will be enabled and the artist will fire a pick event if the mouse event is over the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:16 of
+msgid "A float: If picker is a number it is interpreted as an epsilon tolerance in points and the artist will fire off an event if its data is within epsilon of the mouse event.  For some artists like lines and patch collections, the artist may provide additional data to the pick event that is generated, e.g., the indices of the data within epsilon of the pick event"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:24 of
+msgid "A function: If picker is callable, it is a user supplied function which determines whether the artist is hit by the mouse event::"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_picker:30 of
+msgid "to determine the hit test.  if the mouse event is over the artist, return *hit=True* and props is a dictionary of properties you want added to the PickEvent attributes."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_pickradius:2 of
+msgid "Set the pick radius used for containment tests."
+msgstr ""
+
+#: matplotlib.collections.Collection.set_pickradius:21 of
+msgid "**pr**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_pickradius:8 of
+msgid "Pick radius, in points."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:2 of
+msgid "Force rasterized (bitmap) drawing for vector graphics output."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:4 of
+msgid "Rasterized drawing is not supported by all artists. If you try to enable this on an artist that does not support it, the command has no effect and a warning will be issued."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:8 of
+msgid "This setting is ignored for pixel-based output."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:10 of
+msgid "See also :doc:`/gallery/misc/rasterization_demo`."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_rasterized:28 of
+msgid "**rasterized**"
+msgstr ""
+
+#: matplotlib.collections._CollectionWithSizes.set_sizes:2 of
+msgid "Set the sizes of each member of the collection."
+msgstr ""
+
+#: matplotlib.collections._CollectionWithSizes.set_sizes:8 of
+msgid "The size to set for each element of the collection.  The value is the 'area' of the element."
+msgstr ""
+
+#: matplotlib.collections._CollectionWithSizes.set_sizes:25 of
+msgid "**dpi**"
+msgstr ""
+
+#: of
+msgid "float, default: 72"
+msgstr ""
+
+#: matplotlib.collections._CollectionWithSizes.set_sizes:12 of
+msgid "The dpi of the canvas."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:2 of
+msgid "Set the sketch parameters."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:10 of
+msgid "**scale**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:8 of
+msgid "The amplitude of the wiggle perpendicular to the source line, in pixels.  If scale is `None`, or not provided, no sketch filter will be provided."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:14 of
+msgid "**length**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:13 of
+msgid "The length of the wiggle along the line, in pixels (default 128.0)"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:36 of
+msgid "**randomness**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:17 of
+msgid "The scale factor by which the length is shrunken or expanded (default 16.0)"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_sketch_params:20 of
+msgid "The PGF backend uses this argument as an RNG seed and not as described above. Using the same seed yields the same random shape."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:2 of
+msgid "Set the snapping behavior."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:4 of
+msgid "Snapping aligns positions with the pixel grid, which results in clearer images. For example, if a black line of 1px width was defined at a position in between two pixels, the resulting image would contain the interpolated value of that line in the pixel grid, which would be a grey value on both adjacent pixel positions. In contrast, snapping will move the line to the nearest integer pixel value, so that the resulting image will really contain a 1px wide black line."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:13 of
+msgid "Snapping is currently only supported by the Agg and MacOSX backends."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:36 of
+msgid "**snap**"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:18 of
+msgid "Possible values:"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:20 of
+msgid "*True*: Snap vertices to the nearest pixel center."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:21 of
+msgid "*False*: Do not modify vertex positions."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_snap:22 of
+msgid "*None*: (auto) If the path contains only rectilinear line segments, round to the nearest pixel center."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_transform:2 of
+msgid "Set the artist transform."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_transform:21 of
+msgid "**t** : `.Transform`"
+msgstr ""
+
+#: matplotlib.artist.Artist.set_url:2 of
+msgid "Set the url for the artist."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_url:21 of
+msgid "**url**"
+msgstr ""
+
+#: matplotlib.collections.Collection:121
+#: matplotlib.collections.Collection.set_urls:16
+#: matplotlib.collections.QuadMesh:151 matplotlib.collections.TriMesh:97 of
+msgid "**urls**"
+msgstr ""
+
+#: matplotlib.collections.Collection.set_urls:20 of
+msgid "URLs are currently only implemented by the SVG backend. They are ignored by all other backends."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_visible:2 of
+msgid "Set the artist's visibility."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_zorder:2 of
+msgid "Set the zorder for the artist.  Artists with lower zorder values are drawn first."
+msgstr ""
+
+#: matplotlib.artist.Artist.set_zorder:22 of
+msgid "**level**"
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection.stale:2
+#: matplotlib.collections.BrokenBarHCollection.stale:2
+#: matplotlib.collections.CircleCollection.stale:2
+#: matplotlib.collections.Collection.stale:2
+#: matplotlib.collections.EllipseCollection.stale:2
+#: matplotlib.collections.EventCollection.stale:2
+#: matplotlib.collections.LineCollection.stale:2
+#: matplotlib.collections.PatchCollection.stale:2
+#: matplotlib.collections.PathCollection.stale:2
+#: matplotlib.collections.PolyCollection.stale:2
+#: matplotlib.collections.QuadMesh.stale:2
+#: matplotlib.collections.RegularPolyCollection.stale:2
+#: matplotlib.collections.StarPolygonCollection.stale:2
+#: matplotlib.collections.TriMesh.stale:2 of
+msgid "Whether the artist is 'stale' and needs to be re-drawn for the output to match the internal state of the artist."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection.sticky_edges:2
+#: matplotlib.collections.BrokenBarHCollection.sticky_edges:2
+#: matplotlib.collections.CircleCollection.sticky_edges:2
+#: matplotlib.collections.Collection.sticky_edges:2
+#: matplotlib.collections.EllipseCollection.sticky_edges:2
+#: matplotlib.collections.EventCollection.sticky_edges:2
+#: matplotlib.collections.LineCollection.sticky_edges:2
+#: matplotlib.collections.PatchCollection.sticky_edges:2
+#: matplotlib.collections.PathCollection.sticky_edges:2
+#: matplotlib.collections.PolyCollection.sticky_edges:2
+#: matplotlib.collections.QuadMesh.sticky_edges:2
+#: matplotlib.collections.RegularPolyCollection.sticky_edges:2
+#: matplotlib.collections.StarPolygonCollection.sticky_edges:2
+#: matplotlib.collections.TriMesh.sticky_edges:2 of
+msgid "``x`` and ``y`` sticky edge lists for autoscaling."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection.sticky_edges:4
+#: matplotlib.collections.BrokenBarHCollection.sticky_edges:4
+#: matplotlib.collections.CircleCollection.sticky_edges:4
+#: matplotlib.collections.Collection.sticky_edges:4
+#: matplotlib.collections.EllipseCollection.sticky_edges:4
+#: matplotlib.collections.EventCollection.sticky_edges:4
+#: matplotlib.collections.LineCollection.sticky_edges:4
+#: matplotlib.collections.PatchCollection.sticky_edges:4
+#: matplotlib.collections.PathCollection.sticky_edges:4
+#: matplotlib.collections.PolyCollection.sticky_edges:4
+#: matplotlib.collections.QuadMesh.sticky_edges:4
+#: matplotlib.collections.RegularPolyCollection.sticky_edges:4
+#: matplotlib.collections.StarPolygonCollection.sticky_edges:4
+#: matplotlib.collections.TriMesh.sticky_edges:4 of
+msgid "When performing autoscaling, if a data limit coincides with a value in the corresponding sticky_edges list, then no margin will be added--the view limit \"sticks\" to the edge. A typical use case is histograms, where one usually expects no margin on the bottom edge (0) of the histogram."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection.sticky_edges:10
+#: matplotlib.collections.BrokenBarHCollection.sticky_edges:10
+#: matplotlib.collections.CircleCollection.sticky_edges:10
+#: matplotlib.collections.Collection.sticky_edges:10
+#: matplotlib.collections.EllipseCollection.sticky_edges:10
+#: matplotlib.collections.EventCollection.sticky_edges:10
+#: matplotlib.collections.LineCollection.sticky_edges:10
+#: matplotlib.collections.PatchCollection.sticky_edges:10
+#: matplotlib.collections.PathCollection.sticky_edges:10
+#: matplotlib.collections.PolyCollection.sticky_edges:10
+#: matplotlib.collections.QuadMesh.sticky_edges:10
+#: matplotlib.collections.RegularPolyCollection.sticky_edges:10
+#: matplotlib.collections.StarPolygonCollection.sticky_edges:10
+#: matplotlib.collections.TriMesh.sticky_edges:10 of
+msgid "Moreover, margin expansion \"bumps\" against sticky edges and cannot cross them.  For example, if the upper data limit is 1.0, the upper view limit computed by simple margin application is 1.2, but there is a sticky edge at 1.1, then the actual upper view limit will be 1.1."
+msgstr ""
+
+#: matplotlib.collections.AsteriskPolygonCollection.sticky_edges:15
+#: matplotlib.collections.BrokenBarHCollection.sticky_edges:15
+#: matplotlib.collections.CircleCollection.sticky_edges:15
+#: matplotlib.collections.Collection.sticky_edges:15
+#: matplotlib.collections.EllipseCollection.sticky_edges:15
+#: matplotlib.collections.EventCollection.sticky_edges:15
+#: matplotlib.collections.LineCollection.sticky_edges:15
+#: matplotlib.collections.PatchCollection.sticky_edges:15
+#: matplotlib.collections.PathCollection.sticky_edges:15
+#: matplotlib.collections.PolyCollection.sticky_edges:15
+#: matplotlib.collections.QuadMesh.sticky_edges:15
+#: matplotlib.collections.RegularPolyCollection.sticky_edges:15
+#: matplotlib.collections.StarPolygonCollection.sticky_edges:15
+#: matplotlib.collections.TriMesh.sticky_edges:15 of
+msgid "This attribute cannot be assigned to; however, the ``x`` and ``y`` lists can be modified in place as needed."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:2 of
+msgid "Return a normalized rgba array corresponding to *x*."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:4 of
+msgid "In the normal case, *x* is a 1D or 2D sequence of scalars, and the corresponding ndarray of rgba values will be returned, based on the norm and colormap set for this ScalarMappable."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:8 of
+msgid "There is one special case, for handling images that are already rgb or rgba, such as might have been read from an image file. If *x* is an ndarray with 3 dimensions, and the last dimension is either 3 or 4, then it will be treated as an rgb or rgba array, and no mapping will be done. The array can be uint8, or it can be floating point with values in the 0-1 range; otherwise a ValueError will be raised. If it is a masked array, the mask will be ignored. If the last dimension is 3, the *alpha* kwarg (defaulting to 1) will be used to fill in the transparency.  If the last dimension is 4, the *alpha* kwarg is ignored; it does not replace the pre-existing alpha.  A ValueError will be raised if the third dimension is other than 3 or 4."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:22 of
+msgid "In either case, if *bytes* is *False* (default), the rgba array will be floats in the 0-1 range; if it is *True*, the returned rgba array will be uint8 in the 0 to 255 range."
+msgstr ""
+
+#: matplotlib.cm.ScalarMappable.to_rgba:26 of
+msgid "If norm is False, no normalization of the input data is performed, and it is assumed to be in the range (0-1)."
+msgstr ""
+
+#: matplotlib.artist.Artist.update:2 of
+msgid "Update this artist's properties from the dict *props*."
+msgstr ""
+
+#: matplotlib.artist.Artist.update:21 of
+msgid "**props**"
+msgstr ""
+
+#: of
+msgid "dict"
+msgstr ""
+
+#: matplotlib.collections.Collection.update_from:2 of
+msgid "Copy properties from other to self."
+msgstr ""
+
+#: matplotlib.collections.Collection.update_scalarmappable:2 of
+msgid "Update colors from the scalar mappable array, if any."
+msgstr ""
+
+#: matplotlib.collections.Collection.update_scalarmappable:4 of
+msgid "Assign colors to edges and faces based on the array and/or colors that were directly set, as appropriate."
+msgstr ""
+
+#: matplotlib.collections.BrokenBarHCollection:1 of
+msgid "Bases: :py:class:`matplotlib.collections.PolyCollection`"
+msgstr ""
+
+#: matplotlib.collections.BrokenBarHCollection:2 of
+msgid "A collection of horizontal bars spanning *yrange* with a sequence of *xranges*."
+msgstr ""
+
+#: matplotlib.collections.BrokenBarHCollection:30 of
+msgid "**xranges**"
+msgstr ""
+
+#: of
+msgid "list of (float, float)"
+msgstr ""
+
+#: matplotlib.collections.BrokenBarHCollection:30 of
+msgid "The sequence of (left-edge-position, width) pairs for each bar."
+msgstr ""
+
+#: matplotlib.collections.BrokenBarHCollection:33 of
+msgid "**yrange**"
+msgstr ""
+
+#: of
+msgid "(float, float)"
+msgstr ""
+
+#: matplotlib.collections.BrokenBarHCollection:33 of
+msgid "The (lower-edge, height) common to all bars."
+msgstr ""
+
+#: matplotlib.artist.BrokenBarHCollection.set:38
+#: matplotlib.artist.PolyCollection.set:38 of
+msgid ":meth:`paths <matplotlib.collections.PolyCollection.set_verts>`"
+msgstr ""
+
+#: matplotlib.artist.BrokenBarHCollection.set:38
+#: matplotlib.artist.BrokenBarHCollection.set:48
+#: matplotlib.artist.PolyCollection.set:38
+#: matplotlib.artist.PolyCollection.set:48 of
+msgid "list of array-like"
+msgstr ""
+
+#: matplotlib.artist.BrokenBarHCollection.set:48
+#: matplotlib.artist.PolyCollection.set:48 of
+msgid ":meth:`verts <matplotlib.collections.PolyCollection.set_verts>`"
+msgstr ""
+
+#: matplotlib.artist.BrokenBarHCollection.set:49
+#: matplotlib.artist.PolyCollection.set:49 of
+msgid ":meth:`verts_and_codes <matplotlib.collections.PolyCollection.set_verts_and_codes>`"
+msgstr ""
+
+#: matplotlib.artist.BrokenBarHCollection.set:49
+#: matplotlib.artist.EventCollection.set:33
+#: matplotlib.artist.EventCollection.set:34
+#: matplotlib.artist.EventCollection.set:42
+#: matplotlib.artist.EventCollection.set:45
+#: matplotlib.artist.EventCollection.set:47
+#: matplotlib.artist.EventCollection.set:53
+#: matplotlib.artist.LineCollection.set:39
+#: matplotlib.artist.LineCollection.set:43
+#: matplotlib.artist.LineCollection.set:49
+#: matplotlib.artist.PatchCollection.set:38
+#: matplotlib.artist.PathCollection.set:38
+#: matplotlib.artist.PolyCollection.set:49 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.collections.PolyCollection.set_verts:2 of
+msgid "Set the vertices of the polygons."
+msgstr ""
+
+#: matplotlib.collections.PolyCollection:10
+#: matplotlib.collections.PolyCollection.set_verts:10 of
+msgid "**verts**"
+msgstr ""
+
+#: matplotlib.collections.PolyCollection:8
+#: matplotlib.collections.PolyCollection.set_verts:8 of
+msgid "The sequence of polygons [*verts0*, *verts1*, ...] where each element *verts_i* defines the vertices of polygon *i* as a 2D array-like of shape (M, 2)."
+msgstr ""
+
+#: matplotlib.collections.PolyCollection:21
+#: matplotlib.collections.PolyCollection.set_verts:27 of
+msgid "**closed**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.collections.PolyCollection:20
+#: matplotlib.collections.PolyCollection.set_verts:13 of
+msgid "Whether the polygon should be closed by adding a CLOSEPOLY connection at the end."
+msgstr ""
+
+#: matplotlib.collections.PolyCollection.set_verts_and_codes:2 of
+msgid "Initialize vertices with path codes."
+msgstr ""
+
+#: matplotlib.collections.BrokenBarHCollection.span_where:2 of
+msgid "Return a `.BrokenBarHCollection` that plots horizontal bars from over the regions in *x* where *where* is True.  The bars range on the y-axis from *ymin* to *ymax*"
+msgstr ""
+
+#: matplotlib.collections.BrokenBarHCollection.span_where:6 of
+msgid "*kwargs* are passed on to the collection."
+msgstr ""
+
+#: matplotlib.collections.CircleCollection:1
+#: matplotlib.collections.PathCollection:1
+#: matplotlib.collections.PolyCollection:1
+#: matplotlib.collections.RegularPolyCollection:1 of
+msgid "Bases: :py:class:`matplotlib.collections._CollectionWithSizes`"
+msgstr ""
+
+#: matplotlib.collections.CircleCollection:2 of
+msgid "A collection of circles, drawn using splines."
+msgstr ""
+
+#: of
+msgid "float or array-like"
+msgstr ""
+
+#: matplotlib.collections.CircleCollection:29 of
+msgid "The area of each circle in points^2."
+msgstr ""
+
+#: matplotlib.collections.Collection:1 of
+msgid "Bases: :py:class:`matplotlib.artist.Artist`, :py:class:`matplotlib.cm.ScalarMappable`"
+msgstr ""
+
+#: matplotlib.collections.Collection:2 of
+msgid "Base class for Collections. Must be subclassed to be usable."
+msgstr ""
+
+#: matplotlib.collections.Collection:4 of
+msgid "A Collection represents a sequence of `.Patch`\\es that can be drawn more efficiently together than individually. For example, when a single path is being drawn repeatedly at different offsets, the renderer can typically execute a ``draw_marker()`` call much more efficiently than a series of repeated calls to ``draw_path()`` with the offsets put in one-by-one."
+msgstr ""
+
+#: matplotlib.collections.Collection:11 of
+msgid "Most properties of a collection can be configured per-element. Therefore, Collections have \"plural\" versions of many of the properties of a `.Patch` (e.g. `.Collection.get_paths` instead of `.Patch.get_path`). Exceptions are the *zorder*, *hatch*, *pickradius*, *capstyle* and *joinstyle* properties, which can only be set globally for the whole collection."
+msgstr ""
+
+#: matplotlib.collections.Collection:17 of
+msgid "Besides these exceptions, all properties can be specified as single values (applying to all elements) or sequences of values. The property of the ``i``\\th element of the collection is::"
+msgstr ""
+
+#: matplotlib.collections.Collection:23 of
+msgid "Each Collection can optionally be used as its own `.ScalarMappable` by passing the *norm* and *cmap* parameters to its constructor. If the Collection's `.ScalarMappable` matrix ``_A`` has been set (via a call to `.Collection.set_array`), then at draw time this internal scalar mappable will be used to set the ``facecolors`` and ``edgecolors``, ignoring those that were manually passed in."
+msgstr ""
+
+#: matplotlib.collections.Collection:56 matplotlib.collections.QuadMesh:86
+#: matplotlib.collections.TriMesh:32 of
+msgid "**edgecolors** : color or list of colors, default: :rc:`patch.edgecolor`"
+msgstr ""
+
+#: of
+msgid "color or list of colors, default:"
+msgstr ""
+
+#: matplotlib.collections.Collection:54 matplotlib.collections.QuadMesh:84
+#: matplotlib.collections.TriMesh:30 of
+msgid "Edge color for each patch making up the collection. The special value 'face' can be passed to make the edgecolor match the facecolor."
+msgstr ""
+
+#: matplotlib.collections.Collection:59 matplotlib.collections.QuadMesh:89
+#: matplotlib.collections.TriMesh:35 of
+msgid "**facecolors** : color or list of colors, default: :rc:`patch.facecolor`"
+msgstr ""
+
+#: matplotlib.collections.Collection:59 matplotlib.collections.QuadMesh:89
+#: matplotlib.collections.TriMesh:35 of
+msgid "Face color for each patch making up the collection."
+msgstr ""
+
+#: matplotlib.collections.Collection:62 matplotlib.collections.QuadMesh:92
+#: matplotlib.collections.TriMesh:38 of
+msgid "**linewidths** : float or list of floats, default: :rc:`patch.linewidth`"
+msgstr ""
+
+#: of
+msgid "float or list of floats, default:"
+msgstr ""
+
+#: matplotlib.collections.Collection:62 matplotlib.collections.QuadMesh:92
+#: matplotlib.collections.TriMesh:38 of
+msgid "Line width for each patch making up the collection."
+msgstr ""
+
+#: matplotlib.collections.Collection:72 matplotlib.collections.QuadMesh:102
+#: matplotlib.collections.TriMesh:48 of
+msgid "**linestyles**"
+msgstr ""
+
+#: of
+msgid "str or tuple or list thereof, default: 'solid'"
+msgstr ""
+
+#: matplotlib.collections.Collection:65
+#: matplotlib.collections.EventCollection:53 matplotlib.collections.QuadMesh:95
+#: matplotlib.collections.TriMesh:41 of
+msgid "Valid strings are ['solid', 'dashed', 'dashdot', 'dotted', '-', '--', '-.', ':']. Dash tuples should be of the form::"
+msgstr ""
+
+#: matplotlib.collections.Collection:70 matplotlib.collections.QuadMesh:100
+#: matplotlib.collections.TriMesh:46 of
+msgid "where *onoffseq* is an even length tuple of on and off ink lengths in points. For examples, see :doc:`/gallery/lines_bars_and_markers/linestyles`."
+msgstr ""
+
+#: matplotlib.collections.Collection:76 matplotlib.collections.QuadMesh:106
+#: matplotlib.collections.TriMesh:52 of
+msgid "**capstyle** : `.CapStyle`-like, default: :rc:`patch.capstyle`"
+msgstr ""
+
+#: matplotlib.collections.Collection:75 matplotlib.collections.QuadMesh:105
+#: matplotlib.collections.TriMesh:51 of
+msgid "CapStyle-like, default: rcParams[\"patch.capstyle\"]"
+msgstr ""
+
+#: matplotlib.collections.Collection:75 matplotlib.collections.QuadMesh:105
+#: matplotlib.collections.TriMesh:51 of
+msgid "Style to use for capping lines for all paths in the collection. Allowed values are {'butt', 'projecting', 'round'}."
+msgstr ""
+
+#: matplotlib.collections.Collection:80 matplotlib.collections.QuadMesh:110
+#: matplotlib.collections.TriMesh:56 of
+msgid "**joinstyle** : `.JoinStyle`-like, default: :rc:`patch.joinstyle`"
+msgstr ""
+
+#: matplotlib.collections.Collection:79 matplotlib.collections.QuadMesh:109
+#: matplotlib.collections.TriMesh:55 of
+msgid "JoinStyle-like, default: rcParams[\"patch.joinstyle\"]"
+msgstr ""
+
+#: matplotlib.collections.Collection:79 matplotlib.collections.QuadMesh:109
+#: matplotlib.collections.TriMesh:55 of
+msgid "Style to use for joining lines for all paths in the collection. Allowed values are {'miter', 'round', 'bevel'}."
+msgstr ""
+
+#: matplotlib.collections.Collection:84 matplotlib.collections.QuadMesh:114
+#: matplotlib.collections.TriMesh:60 of
+msgid "**antialiaseds** : bool or list of bool, default: :rc:`patch.antialiased`"
+msgstr ""
+
+#: of
+msgid "bool or list of bool, default:"
+msgstr ""
+
+#: matplotlib.collections.Collection:83 matplotlib.collections.QuadMesh:113
+#: matplotlib.collections.TriMesh:59 of
+msgid "Whether each patch in the collection should be drawn with antialiasing."
+msgstr ""
+
+#: of
+msgid "(float, float) or list thereof, default: (0, 0)"
+msgstr ""
+
+#: matplotlib.collections.Collection:87 matplotlib.collections.QuadMesh:117
+#: matplotlib.collections.TriMesh:63 of
+msgid "A vector by which to translate each patch after rendering (default is no translation). The translation is performed in screen (pixel) coordinates (i.e. after the Artist's transform is applied)."
+msgstr ""
+
+#: matplotlib.collections.Collection:93 matplotlib.collections.QuadMesh:123
+#: matplotlib.collections.TriMesh:69 of
+msgid "**transOffset** : `~.transforms.Transform`, default: `.IdentityTransform`"
+msgstr ""
+
+#: matplotlib.collections.Collection:92 matplotlib.collections.QuadMesh:122
+#: matplotlib.collections.TriMesh:68 of
+msgid "Transform, default: IdentityTransform"
+msgstr ""
+
+#: matplotlib.collections.Collection:92 matplotlib.collections.QuadMesh:122
+#: matplotlib.collections.TriMesh:68 of
+msgid "A single transform which will be applied to each *offsets* vector before it is used."
+msgstr ""
+
+#: matplotlib.collections.Collection:98 matplotlib.collections.QuadMesh:128
+#: matplotlib.collections.TriMesh:74 of
+msgid "**norm** : `~.colors.Normalize`, optional"
+msgstr ""
+
+#: matplotlib.collections.Collection:97 matplotlib.collections.QuadMesh:127
+#: matplotlib.collections.TriMesh:73 of
+msgid "Normalize, optional"
+msgstr ""
+
+#: matplotlib.collections.Collection:96 matplotlib.collections.QuadMesh:126
+#: matplotlib.collections.TriMesh:72 of
+msgid "Forwarded to `.ScalarMappable`. The default of ``None`` means that the first draw call will set ``vmin`` and ``vmax`` using the minimum and maximum values of the data."
+msgstr ""
+
+#: matplotlib.collections.Collection:102 matplotlib.collections.QuadMesh:132
+#: matplotlib.collections.TriMesh:78 of
+msgid "**cmap** : `~.colors.Colormap`, optional"
+msgstr ""
+
+#: matplotlib.collections.Collection:101 matplotlib.collections.QuadMesh:131
+#: matplotlib.collections.TriMesh:77 of
+msgid "Colormap, optional"
+msgstr ""
+
+#: matplotlib.collections.Collection:101 matplotlib.collections.QuadMesh:131
+#: matplotlib.collections.TriMesh:77 of
+msgid "Forwarded to `.ScalarMappable`. The default of ``None`` will result in :rc:`image.cmap` being used."
+msgstr ""
+
+#: matplotlib.collections.Collection:108 matplotlib.collections.QuadMesh:138
+#: matplotlib.collections.TriMesh:84 of
+msgid "**hatch**"
+msgstr ""
+
+#: of
+msgid "str, optional"
+msgstr ""
+
+#: matplotlib.collections.Collection:105 matplotlib.collections.QuadMesh:135
+#: matplotlib.collections.TriMesh:81 of
+msgid "Hatching pattern to use in filled paths, if any. Valid strings are ['/', '\\', '|', '-', '+', 'x', 'o', 'O', '.', '*']. See :doc:`/gallery/shapes_and_collections/hatch_style_reference` for the meaning of each hatch type."
+msgstr ""
+
+#: matplotlib.collections.Collection:116 matplotlib.collections.QuadMesh:146
+#: matplotlib.collections.TriMesh:92 of
+msgid "**pickradius**"
+msgstr ""
+
+#: of
+msgid "float, default: 5.0"
+msgstr ""
+
+#: matplotlib.collections.Collection:111 matplotlib.collections.QuadMesh:141
+#: matplotlib.collections.TriMesh:87 of
+msgid "If ``pickradius <= 0``, then `.Collection.contains` will return ``True`` whenever the test point is inside of one of the polygons formed by the control points of a Path in the Collection. On the other hand, if it is greater than 0, then we instead check if the test point is contained in a stroke of width ``2*pickradius`` following any of the Paths in the Collection."
+msgstr ""
+
+#: of
+msgid "list of str, default: None"
+msgstr ""
+
+#: matplotlib.collections.Collection:119 matplotlib.collections.QuadMesh:149
+#: matplotlib.collections.TriMesh:95 of
+msgid "A URL for each patch to link to once drawn. Currently only works for the SVG backend. See :doc:`/gallery/misc/hyperlinks_sgskip` for examples."
+msgstr ""
+
+#: matplotlib.collections.Collection:138
+#: matplotlib.collections.LineCollection:59 matplotlib.collections.QuadMesh:168
+#: matplotlib.collections.TriMesh:114 of
+msgid "**zorder**"
+msgstr ""
+
+#: of
+msgid "float, default: 1"
+msgstr ""
+
+#: matplotlib.collections.Collection:124 matplotlib.collections.QuadMesh:154
+#: matplotlib.collections.TriMesh:100 of
+msgid "The drawing order, shared by all Patches in the Collection. See :doc:`/gallery/misc/zorder_demo` for all defaults and examples."
+msgstr ""
+
+#: matplotlib.artist.Collection.set:15 of
+msgid ":meth:`antialiased <matplotlib.collections.Collection.set_antialiased>`"
+msgstr ""
+
+#: matplotlib.artist.Collection.set:24 of
+msgid ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>`"
+msgstr ""
+
+#: matplotlib.artist.Collection.set:25 of
+msgid ":meth:`facecolor <matplotlib.collections.Collection.set_facecolor>`"
+msgstr ""
+
+#: matplotlib.artist.Collection.set:32 of
+msgid ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>`"
+msgstr ""
+
+#: matplotlib.artist.Collection.set:33 of
+msgid ":meth:`linewidth <matplotlib.collections.Collection.set_linewidth>`"
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:1
+#: matplotlib.collections.LineCollection:1
+#: matplotlib.collections.PatchCollection:1 matplotlib.collections.QuadMesh:1
+#: matplotlib.collections.TriMesh:1 of
+msgid "Bases: :py:class:`matplotlib.collections.Collection`"
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:2 of
+msgid "A collection of ellipses, drawn using splines."
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:29 of
+msgid "**widths**"
+msgstr ""
+
+#: of
+msgid "array-like"
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:29 of
+msgid "The lengths of the first axes (e.g., major axis lengths)."
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:32 of
+msgid "**heights**"
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:32 of
+msgid "The lengths of second axes."
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:35 of
+msgid "**angles**"
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:35 of
+msgid "The angles of the first axes, degrees CCW from the x-axis."
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:44 of
+msgid "**units**"
+msgstr ""
+
+#: of
+msgid "{'points', 'inches', 'dots', 'width', 'height', 'x', 'y', 'xy'}"
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:38 of
+msgid "The units in which majors and minors are given; 'width' and 'height' refer to the dimensions of the axes, while 'x' and 'y' refer to the *offsets* data units. 'xy' differs from all others in that the angle as plotted varies with the aspect ratio, and equals the specified angle only when the aspect ratio is unity.  Hence it behaves the same as the `~.patches.Ellipse` with ``axes.transData`` as its transform."
+msgstr ""
+
+#: matplotlib.collections.EllipseCollection:47 of
+msgid "Forwarded to `Collection`."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:1 of
+msgid "Bases: :py:class:`matplotlib.collections.LineCollection`"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:2 of
+msgid "A collection of locations along a single axis at which an \"event\" occurred."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:4 of
+msgid "The events are given by a 1-dimensional array. They do not have an amplitude and are displayed as parallel lines."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:31 of
+msgid "**positions**"
+msgstr ""
+
+#: of
+msgid "1D array-like"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:31 of
+msgid "Each value is an event."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:36
+#: matplotlib.collections.EventCollection.set_orientation:21 of
+msgid "**orientation**"
+msgstr ""
+
+#: of
+msgid "{'horizontal', 'vertical'}, default: 'horizontal'"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:34 of
+msgid "The sequence of events is plotted along this direction. The marker lines of the single events are along the orthogonal direction."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:40 of
+msgid "**lineoffset**"
+msgstr ""
+
+#: of
+msgid "float, default: 0"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:39 of
+msgid "The offset of the center of the markers from the origin, in the direction orthogonal to *orientation*."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:44 of
+msgid "**linelength**"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:43 of
+msgid "The total height of the marker (i.e. the marker stretches from ``lineoffset - linelength/2`` to ``lineoffset + linelength/2``)."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:47 of
+msgid "**linewidth** : float or list thereof, default: :rc:`lines.linewidth`"
+msgstr ""
+
+#: of
+msgid "float or list thereof, default:"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:47 of
+msgid "The line width of the event lines, in points."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:50 of
+msgid "**color** : color or list of colors, default: :rc:`lines.color`"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:50 of
+msgid "The color of the event lines."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:59 of
+msgid "**linestyle**"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:58 of
+msgid "where *onoffseq* is an even length tuple of on and off ink in points."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:62 of
+msgid "**antialiased** : bool or list thereof, default: :rc:`lines.antialiased`"
+msgstr ""
+
+#: of
+msgid "bool or list thereof, default:"
+msgstr ""
+
+#: matplotlib.collections.EventCollection:62 of
+msgid "Whether to use antialiasing for drawing the lines."
+msgstr ""
+
+#: matplotlib.collections.EventCollection:65 of
+msgid "Forwarded to `.LineCollection`."
+msgstr ""
+
+#: ../../gallery/lines_bars_and_markers/eventcollection_demo.py:7
+msgid "(`Source code <../gallery/lines_bars_and_markers/eventcollection_demo.py>`__, `png <../gallery/lines_bars_and_markers/eventcollection_demo.png>`__, `pdf <../gallery/lines_bars_and_markers/eventcollection_demo.pdf>`__)"
+msgstr ""
+
+#: matplotlib.collections.EventCollection.add_positions:2 of
+msgid "Add one or more events at the specified positions."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.get_color:2 of
+msgid "Return the color of the lines used to mark each event."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.get_linelength:2 of
+msgid "Return the length of the lines used to mark each event."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.get_lineoffset:2 of
+msgid "Return the offset of the lines used to mark each event."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.get_linewidth:2 of
+msgid "Get the width of the lines used to mark each event."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.get_orientation:2 of
+msgid "Return the orientation of the event line ('horizontal' or 'vertical')."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.get_positions:2 of
+msgid "Return an array containing the floating-point values of the positions."
+msgstr ""
+
+#: matplotlib.collections.LineCollection.get_segments:22 of
+msgid "list"
+msgstr ""
+
+#: matplotlib.collections.LineCollection.get_segments:9 of
+msgid "List of segments in the LineCollection. Each list item contains an array of vertices."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.is_horizontal:2 of
+msgid "True if the eventcollection is horizontal, False if vertical."
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:23
+#: matplotlib.artist.LineCollection.set:23 of
+msgid ":meth:`color <matplotlib.collections.LineCollection.set_color>`"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:24
+#: matplotlib.artist.LineCollection.set:24 of
+msgid ":meth:`colors <matplotlib.collections.LineCollection.set_color>`"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:33 of
+msgid ":meth:`linelength <matplotlib.collections.EventCollection.set_linelength>`"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:34 of
+msgid ":meth:`lineoffset <matplotlib.collections.EventCollection.set_lineoffset>`"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:40 of
+msgid ":meth:`orientation <matplotlib.collections.EventCollection.set_orientation>`"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:40 of
+msgid "{'horizontal', 'vertical'}"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:42
+#: matplotlib.artist.LineCollection.set:39 of
+msgid ":meth:`paths <matplotlib.collections.LineCollection.set_segments>`"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:45 of
+msgid ":meth:`positions <matplotlib.collections.EventCollection.set_positions>`"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:47
+#: matplotlib.artist.LineCollection.set:43 of
+msgid ":meth:`segments <matplotlib.collections.LineCollection.set_segments>`"
+msgstr ""
+
+#: matplotlib.artist.EventCollection.set:53
+#: matplotlib.artist.LineCollection.set:49 of
+msgid ":meth:`verts <matplotlib.collections.LineCollection.set_segments>`"
+msgstr ""
+
+#: matplotlib.collections.LineCollection.set_color:2 of
+msgid "Set the edgecolor(s) of the LineCollection."
+msgstr ""
+
+#: matplotlib.collections.LineCollection.set_color:8 of
+msgid "Single color (all lines have same color), or a sequence of rgba tuples; if it is a sequence the lines will cycle through the sequence."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.set_linelength:2 of
+msgid "Set the length of the lines used to mark each event."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.set_lineoffset:2 of
+msgid "Set the offset of the lines used to mark each event."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.set_orientation:2 of
+msgid "Set the orientation of the event line."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.set_positions:2 of
+msgid "Set the positions of the events."
+msgstr ""
+
+#: matplotlib.collections.EventCollection.switch_orientation:2 of
+msgid "Switch the orientation of the event line, either from vertical to horizontal or vice versus."
+msgstr ""
+
+#: matplotlib.collections.LineCollection:2 of
+msgid "Represents a sequence of `.Line2D`\\s that should be drawn together."
+msgstr ""
+
+#: matplotlib.collections.LineCollection:4 of
+msgid "This class extends `.Collection` to represent a sequence of `.Line2D`\\s instead of just a sequence of `.Patch`\\s. Just as in `.Collection`, each property of a *LineCollection* may be either a single value or a list of values. This list is then used cyclically for each element of the LineCollection, so the property of the ``i``\\th element of the collection is::"
+msgstr ""
+
+#: matplotlib.collections.LineCollection:13 of
+msgid "The properties of each member of a *LineCollection* default to their values in :rc:`lines.*` instead of :rc:`patch.*`, and the property *colors* is added in place of *edgecolors*."
+msgstr ""
+
+#: matplotlib.collections.LineCollection:46 of
+msgid "**segments**"
+msgstr ""
+
+#: matplotlib.collections.LineCollection:41 of
+msgid "A sequence of (*line0*, *line1*, *line2*), where::"
+msgstr ""
+
+#: matplotlib.collections.LineCollection:45 of
+msgid "or the equivalent numpy array with two columns. Each line can have a different number of segments."
+msgstr ""
+
+#: matplotlib.collections.LineCollection:49 of
+msgid "**linewidths** : float or list of float, default: :rc:`lines.linewidth`"
+msgstr ""
+
+#: of
+msgid "float or list of float, default:"
+msgstr ""
+
+#: matplotlib.collections.LineCollection:49 of
+msgid "The width of each line in points."
+msgstr ""
+
+#: matplotlib.collections.LineCollection:53 of
+msgid "**colors** : color or list of color, default: :rc:`lines.color`"
+msgstr ""
+
+#: of
+msgid "color or list of color, default:"
+msgstr ""
+
+#: matplotlib.collections.LineCollection:52 of
+msgid "A sequence of RGBA tuples (e.g., arbitrary color strings, etc, not allowed)."
+msgstr ""
+
+#: matplotlib.collections.LineCollection:56 of
+msgid "**antialiaseds** : bool or list of bool, default: :rc:`lines.antialiased`"
+msgstr ""
+
+#: matplotlib.collections.LineCollection:56 of
+msgid "Whether to use antialiasing for each line."
+msgstr ""
+
+#: of
+msgid "int, default: 2"
+msgstr ""
+
+#: matplotlib.collections.LineCollection:59 of
+msgid "zorder of the lines once drawn."
+msgstr ""
+
+#: matplotlib.collections.LineCollection:68 of
+msgid "**facecolors**"
+msgstr ""
+
+#: of
+msgid "color or list of color, default: 'none'"
+msgstr ""
+
+#: matplotlib.collections.LineCollection:62 of
+msgid "When setting *facecolors*, each line is interpreted as a boundary for an area, implicitly closing the path from the last point to the first point. The enclosed area is filled with *facecolor*. In order to manually specify what should count as the \"interior\" of each line, please use `.PathCollection` instead, where the \"interior\" can be specified by appropriate usage of `~.path.Path.CLOSEPOLY`."
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:2 of
+msgid "A generic collection of patches."
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:4 of
+msgid "This makes it easier to assign a colormap to a heterogeneous collection of patches."
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:7 of
+msgid "This also may improve plotting speed, since PatchCollection will draw faster than a large number of patches."
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:30 of
+msgid "*patches*"
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:29 of
+msgid "a sequence of Patch objects.  This list may include a heterogeneous assortment of different patch types."
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:36 of
+msgid "*match_original*"
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:33 of
+msgid "If True, use the colors and linewidths of the original patches.  If False, new colors may be assigned by providing the standard collection arguments, facecolor, edgecolor, linewidths, norm or cmap."
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:38 of
+msgid "If any of *edgecolors*, *facecolors*, *linewidths*, *antialiaseds* are None, they default to their `.rcParams` patch setting, in sequence form."
+msgstr ""
+
+#: matplotlib.collections.PatchCollection:42 of
+msgid "The use of `~matplotlib.cm.ScalarMappable` functionality is optional. If the `~matplotlib.cm.ScalarMappable` matrix ``_A`` has been set (via a call to `~.ScalarMappable.set_array`), at draw time a call to scalar mappable will be made to set the face colors."
+msgstr ""
+
+#: matplotlib.artist.PatchCollection.set:38 of
+msgid ":meth:`paths <matplotlib.collections.PatchCollection.set_paths>`"
+msgstr ""
+
+#: matplotlib.collections.PathCollection:2 of
+msgid "A collection of `~.path.Path`\\s, as created by e.g. `~.Axes.scatter`."
+msgstr ""
+
+#: matplotlib.collections.PathCollection:29 of
+msgid "**paths** : list of `.path.Path`"
+msgstr ""
+
+#: of
+msgid "list of"
+msgstr ""
+
+#: matplotlib.collections.PathCollection:29 of
+msgid "The paths that will make up the `.Collection`."
+msgstr ""
+
+#: matplotlib.collections.PathCollection:32 of
+msgid "The factor by which to scale each drawn `~.path.Path`. One unit squared in the Path's data space is scaled to be ``sizes**2`` points when rendered."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:2 of
+msgid "Create legend handles and labels for a PathCollection."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:4 of
+msgid "Each legend handle is a `.Line2D` representing the Path that was drawn, and each label is a string what each Path represents."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:7 of
+msgid "This is useful for obtaining a legend for a `~.Axes.scatter` plot; e.g.::"
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:13 of
+msgid "creates three legend elements, one for each color with the numerical values passed to *c* as the labels."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:16 of
+msgid "Also see the :ref:`automatedlegendcreation` example."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:24 of
+msgid "**prop**"
+msgstr ""
+
+#: of
+msgid "{\"colors\", \"sizes\"}, default: \"colors\""
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:21 of
+msgid "If \"colors\", the legend handles will show the different colors of the collection. If \"sizes\", the legend will show the different sizes. To set both, use *kwargs* to directly edit the `.Line2D` properties."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:35 of
+msgid "**num** : int, None, \"auto\" (default), array-like, or `~.ticker.Locator`"
+msgstr ""
+
+#: of
+msgid "int, None, \"auto\" (default), array-like, or"
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:27 of
+msgid "Target number of elements to create. If None, use all unique elements of the mappable array. If an integer, target to use *num* elements in the normed range. If *\"auto\"*, try to determine which option better suits the nature of the data. The number of created elements may slightly deviate from *num* due to a `~.ticker.Locator` being used to find useful locations. If a list or array, use exactly those elements for the legend. Finally, a `~.ticker.Locator` can be provided."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:40 of
+msgid "**fmt** : str, `~matplotlib.ticker.Formatter`, or None (default)"
+msgstr ""
+
+#: of
+msgid "str,"
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:38 of
+msgid "The format or formatter to use for the labels. If a string must be a valid input for a `.StrMethodFormatter`. If None (the default), use a `.ScalarFormatter`."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:49 of
+msgid "**func** : function, default: ``lambda x: x``"
+msgstr ""
+
+#: of
+msgid "function, default:"
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:43 of
+msgid "Function to calculate the labels.  Often the size (or color) argument to `~.Axes.scatter` will have been pre-processed by the user using a function ``s = f(x)`` to make the markers visible; e.g. ``size = np.log10(x)``.  Providing the inverse of this function here allows that pre-processing to be inverted, so that the legend labels have the correct values; e.g. ``func = lambda x: 10**x``."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:52 of
+msgid "Allowed keyword arguments are *color* and *size*. E.g. it may be useful to set the color of the markers if *prop=\"sizes\"* is used; similarly to set the size of the markers if *prop=\"colors\"* is used. Any further parameters are passed onto the `.Line2D` instance. This may be useful to e.g. specify a different *markeredgecolor* or *alpha* for the legend handles."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:62 of
+msgid "**handles** : list of `.Line2D`"
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:62 of
+msgid "Visual representation of each element of the legend."
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:77 of
+msgid "**labels**"
+msgstr ""
+
+#: of
+msgid "list of str"
+msgstr ""
+
+#: matplotlib.collections.PathCollection.legend_elements:65 of
+msgid "The string labels for elements of the legend."
+msgstr ""
+
+#: matplotlib.artist.PathCollection.set:38 of
+msgid ":meth:`paths <matplotlib.collections.PathCollection.set_paths>`"
+msgstr ""
+
+#: of
+msgid "array-like, default: None"
+msgstr ""
+
+#: matplotlib.collections.PolyCollection:13 of
+msgid "Squared scaling factors for the polygons. The coordinates of each polygon *verts_i* are multiplied by the square-root of the corresponding entry in *sizes* (i.e., *sizes* specify the scaling of areas). The scaling is applied before the Artist master transform."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:2 of
+msgid "Class for the efficient drawing of a quadrilateral mesh."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:4 of
+msgid "A quadrilateral mesh is a grid of M by N adjacent qudrilaterals that are defined via a (M+1, N+1) grid of vertices. The quadrilateral (m, n) is defined by the vertices ::"
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:14 of
+msgid "The mesh need not be regular and the polygons need not be convex."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:20 of
+msgid "**coordinates**"
+msgstr ""
+
+#: of
+msgid "(M+1, N+1, 2) array-like"
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:19 of
+msgid "The vertices. ``coordinates[m, n]`` specifies the (x, y) coordinates of vertex (m, n)."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:23 of
+msgid "**antialiased**"
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:34 of
+msgid "**shading**"
+msgstr ""
+
+#: of
+msgid "{'flat', 'gouraud'}, default: 'flat'"
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:38 of
+msgid "Unlike other `.Collection`\\s, the default *pickradius* of `.QuadMesh` is 0, i.e. `~.Artist.contains` checks whether the test point is within any of the mesh quadrilaterals."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:42 of
+msgid "There exists a deprecated API version ``QuadMesh(M, N, coords)``, where the dimensions are given explicitly and ``coords`` is a (M*N, 2) array-like. This has been deprecated in Matplotlib 3.5. The following describes the semantics of this deprecated API."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:47 of
+msgid "A quadrilateral mesh consists of a grid of vertices. The dimensions of this array are (*meshWidth* + 1, *meshHeight* + 1). Each vertex in the mesh has a different set of \"mesh coordinates\" representing its position in the topology of the mesh. For any values (*m*, *n*) such that 0 <= *m* <= *meshWidth* and 0 <= *n* <= *meshHeight*, the vertices at mesh coordinates (*m*, *n*), (*m*, *n* + 1), (*m* + 1, *n* + 1), and (*m* + 1, *n*) form one of the quadrilaterals in the mesh. There are thus (*meshWidth* * *meshHeight*) quadrilaterals in the mesh.  The mesh need not be regular and the polygons need not be convex."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:58 of
+msgid "A quadrilateral mesh is represented by a (2 x ((*meshWidth* + 1) * (*meshHeight* + 1))) numpy array *coordinates*, where each row is the *x* and *y* coordinates of one of the vertices.  To define the function that maps from a data point to its corresponding color, use the :meth:`set_cmap` method.  Each of these arrays is indexed in row-major order by the mesh coordinates of the vertex (or the mesh coordinates of the lower left vertex, in the case of the colors)."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh:66 of
+msgid "For example, the first entry in *coordinates* is the coordinates of the vertex at mesh coordinates (0, 0), then the one at (0, 1), then at (0, 2) .. (0, meshWidth), (1, 0), (1, 1), and so on."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh.convert_mesh_to_paths:2
+#: matplotlib.collections.QuadMesh.convert_mesh_to_triangles:2 of
+msgid "[*Deprecated*]"
+msgstr ""
+
+#: matplotlib.collections.QuadMesh.convert_mesh_to_paths:16
+#: matplotlib.collections.QuadMesh.convert_mesh_to_triangles:16 of
+msgid "\\"
+msgstr ""
+
+#: matplotlib.collections.QuadMesh.get_coordinates:2 of
+msgid "Return the vertices of the mesh as an (M+1, N+1, 2) array."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh.get_coordinates:4 of
+msgid "M, N are the number of quadrilaterals in the rows / columns of the mesh, corresponding to (M+1, N+1) vertices. The last dimension specifies the components (x, y)."
+msgstr ""
+
+#: matplotlib.artist.QuadMesh.set:16 of
+msgid ":meth:`array <matplotlib.collections.QuadMesh.set_array>`"
+msgstr ""
+
+#: matplotlib.artist.QuadMesh.set:16 of
+msgid "(M, N) array-like or M*N array-like"
+msgstr ""
+
+#: matplotlib.collections.QuadMesh.set_array:2 of
+msgid "Set the data values."
+msgstr ""
+
+#: matplotlib.collections.QuadMesh.set_array:8 of
+msgid "If the values are provided as a 2D grid, the shape must match the coordinates grid. If the values are 1D, they are reshaped to 2D. M, N follow from the coordinates grid, where the coordinates grid shape is (M, N) for 'gouraud' *shading* and (M+1, N+1) for 'flat' shading."
+msgstr ""
+
+#: matplotlib.collections.RegularPolyCollection:2 of
+msgid "A collection of n-sided regular polygons."
+msgstr ""
+
+#: matplotlib.collections.StarPolygonCollection:2 of
+msgid "Draw a collection of regular stars with *numsides* points."
+msgstr ""
+
+#: matplotlib.collections.TriMesh:2 of
+msgid "Class for the efficient drawing of a triangular mesh using Gouraud shading."
+msgstr ""
+
+#: matplotlib.collections.TriMesh:4 of
+msgid "A triangular mesh is a `~matplotlib.tri.Triangulation` object."
+msgstr ""
+
+#: matplotlib.collections.TriMesh.convert_mesh_to_paths:2 of
+msgid "Convert a given mesh into a sequence of `.Path` objects."
+msgstr ""
+
+#: matplotlib.collections.TriMesh.convert_mesh_to_paths:4 of
+msgid "This function is primarily of use to implementers of backends that do not directly support meshes."
+msgstr ""
+

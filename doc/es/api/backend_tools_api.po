@@ -1,0 +1,690 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/backend_tools_api.po\n"
+"X-Crowdin-File-ID: 1750\n"
+"Language: es_ES\n"
+
+#: ../../api/backend_tools_api.rst:3
+msgid ":mod:`matplotlib.backend_tools`"
+msgstr ""
+
+#: matplotlib.backend_tools:1 of
+msgid "Abstract base classes define the primitives for Tools. These tools are used by `matplotlib.backend_managers.ToolManager`"
+msgstr ""
+
+#: matplotlib.backend_tools:5 of
+msgid ":class:`ToolBase`"
+msgstr ""
+
+#: matplotlib.backend_tools:5 of
+msgid "Simple stateless tool"
+msgstr ""
+
+#: matplotlib.backend_tools:10 of
+msgid ":class:`ToolToggleBase`"
+msgstr ""
+
+#: matplotlib.backend_tools:8 of
+msgid "Tool that has two states, only one Toggle tool can be active at any given time for the same `matplotlib.backend_managers.ToolManager`"
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase:1
+#: matplotlib.backend_tools.ToolFullScreen:1
+#: matplotlib.backend_tools.ZoomPanBase:1 of
+msgid "Bases: :py:class:`matplotlib.backend_tools.ToolToggleBase`"
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase:2 of
+msgid "Base Tool to toggle between linear and logarithmic."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.disable:2
+#: matplotlib.backend_tools.ToolFullScreen.disable:2
+#: matplotlib.backend_tools.ToolToggleBase.disable:2 of
+msgid "Disable the toggle tool."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.disable:4
+#: matplotlib.backend_tools.ToolFullScreen.disable:4
+#: matplotlib.backend_tools.ToolToggleBase.disable:4 of
+msgid "`trigger` call this method when `toggled` is True."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.disable:6
+#: matplotlib.backend_tools.ToolFullScreen.disable:6
+#: matplotlib.backend_tools.ToolToggleBase.disable:6 of
+msgid "This can happen in different circumstances."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.disable:8
+#: matplotlib.backend_tools.ToolFullScreen.disable:8
+#: matplotlib.backend_tools.ToolToggleBase.disable:8 of
+msgid "Click on the toolbar tool button."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.disable:9
+#: matplotlib.backend_tools.ToolFullScreen.disable:9
+#: matplotlib.backend_tools.ToolToggleBase.disable:9 of
+msgid "Call to `matplotlib.backend_managers.ToolManager.trigger_tool`."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.disable:10
+#: matplotlib.backend_tools.ToolFullScreen.disable:10
+#: matplotlib.backend_tools.ToolToggleBase.disable:10 of
+msgid "Another `ToolToggleBase` derived tool is triggered (from the same `.ToolManager`)."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.enable:2
+#: matplotlib.backend_tools.ToolFullScreen.enable:2
+#: matplotlib.backend_tools.ToolToggleBase.enable:2 of
+msgid "Enable the toggle tool."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.enable:4
+#: matplotlib.backend_tools.ToolFullScreen.enable:4
+#: matplotlib.backend_tools.ToolToggleBase.enable:4 of
+msgid "`trigger` calls this method when `toggled` is False."
+msgstr ""
+
+#: matplotlib.backend_tools.AxisScaleBase.trigger:2
+#: matplotlib.backend_tools.ToolToggleBase.trigger:2
+#: matplotlib.backend_tools.ZoomPanBase.trigger:2 of
+msgid "Calls `enable` or `disable` based on `toggled` value."
+msgstr ""
+
+#: matplotlib.backend_tools.ConfigureSubplotsBase:1
+#: matplotlib.backend_tools.RubberbandBase:1
+#: matplotlib.backend_tools.SaveFigureBase:1
+#: matplotlib.backend_tools.SetCursorBase:1
+#: matplotlib.backend_tools.ToolCopyToClipboardBase:1
+#: matplotlib.backend_tools.ToolCursorPosition:1
+#: matplotlib.backend_tools.ToolGrid:1 matplotlib.backend_tools.ToolHelpBase:1
+#: matplotlib.backend_tools.ToolMinorGrid:1 matplotlib.backend_tools.ToolQuit:1
+#: matplotlib.backend_tools.ToolQuitAll:1
+#: matplotlib.backend_tools.ToolToggleBase:1
+#: matplotlib.backend_tools.ToolViewsPositions:1
+#: matplotlib.backend_tools.ViewsPositionsBase:1 of
+msgid "Bases: :py:class:`matplotlib.backend_tools.ToolBase`"
+msgstr ""
+
+#: matplotlib.backend_tools.ConfigureSubplotsBase:2 of
+msgid "Base tool for the configuration of subplots."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.ConfigureSubplotsBase.description:2
+#: matplotlib.backend_tools.SaveFigureBase.description:2
+#: matplotlib.backend_tools.ToolBack.description:2
+#: matplotlib.backend_tools.ToolBase.description:2
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.description:2
+#: matplotlib.backend_tools.ToolForward.description:2
+#: matplotlib.backend_tools.ToolFullScreen.description:2
+#: matplotlib.backend_tools.ToolGrid.description:2
+#: matplotlib.backend_tools.ToolHelpBase.description:2
+#: matplotlib.backend_tools.ToolHome.description:2
+#: matplotlib.backend_tools.ToolMinorGrid.description:2
+#: matplotlib.backend_tools.ToolPan.description:2
+#: matplotlib.backend_tools.ToolQuit.description:2
+#: matplotlib.backend_tools.ToolQuitAll.description:2
+#: matplotlib.backend_tools.ToolXScale.description:2
+#: matplotlib.backend_tools.ToolYScale.description:2
+#: matplotlib.backend_tools.ToolZoom.description:2 of
+msgid "Description of the Tool."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.ConfigureSubplotsBase.description:4
+#: matplotlib.backend_tools.SaveFigureBase.description:4
+#: matplotlib.backend_tools.ToolBack.description:4
+#: matplotlib.backend_tools.ToolBase.description:4
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.description:4
+#: matplotlib.backend_tools.ToolForward.description:4
+#: matplotlib.backend_tools.ToolFullScreen.description:4
+#: matplotlib.backend_tools.ToolGrid.description:4
+#: matplotlib.backend_tools.ToolHelpBase.description:4
+#: matplotlib.backend_tools.ToolHome.description:4
+#: matplotlib.backend_tools.ToolMinorGrid.description:4
+#: matplotlib.backend_tools.ToolPan.description:4
+#: matplotlib.backend_tools.ToolQuit.description:4
+#: matplotlib.backend_tools.ToolQuitAll.description:4
+#: matplotlib.backend_tools.ToolXScale.description:4
+#: matplotlib.backend_tools.ToolYScale.description:4
+#: matplotlib.backend_tools.ToolZoom.description:4 of
+msgid "`str`: Tooltip used if the Tool is included in a Toolbar."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.ConfigureSubplotsBase.image:2
+#: matplotlib.backend_tools.SaveFigureBase.image:2
+#: matplotlib.backend_tools.ToolBack.image:2
+#: matplotlib.backend_tools.ToolBase.image:2
+#: matplotlib.backend_tools.ToolForward.image:2
+#: matplotlib.backend_tools.ToolHelpBase.image:2
+#: matplotlib.backend_tools.ToolHome.image:2
+#: matplotlib.backend_tools.ToolPan.image:2
+#: matplotlib.backend_tools.ToolZoom.image:2 of
+msgid "Filename of the image."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.ConfigureSubplotsBase.image:4
+#: matplotlib.backend_tools.SaveFigureBase.image:4
+#: matplotlib.backend_tools.ToolBack.image:4
+#: matplotlib.backend_tools.ToolBase.image:4
+#: matplotlib.backend_tools.ToolForward.image:4
+#: matplotlib.backend_tools.ToolHelpBase.image:4
+#: matplotlib.backend_tools.ToolHome.image:4
+#: matplotlib.backend_tools.ToolPan.image:4
+#: matplotlib.backend_tools.ToolZoom.image:4 of
+msgid "`str`: Filename of the image to use in a Toolbar.  If None, the *name* is used as a label in the toolbar button."
+msgstr ""
+
+#: matplotlib.backend_tools.Cursors:1 of
+msgid "Bases: :py:class:`enum.IntEnum`"
+msgstr ""
+
+#: matplotlib.backend_tools.Cursors:2 of
+msgid "Backend-independent cursor types."
+msgstr ""
+
+#: matplotlib.backend_tools.RubberbandBase:2 of
+msgid "Draw and remove a rubberband."
+msgstr ""
+
+#: matplotlib.backend_tools.RubberbandBase.draw_rubberband:2 of
+msgid "Draw rubberband."
+msgstr ""
+
+#: matplotlib.backend_tools.RubberbandBase.draw_rubberband:4 of
+msgid "This method must get implemented per backend."
+msgstr ""
+
+#: matplotlib.backend_tools.RubberbandBase.remove_rubberband:2 of
+msgid "Remove rubberband."
+msgstr ""
+
+#: matplotlib.backend_tools.RubberbandBase.remove_rubberband:4 of
+msgid "This method should get implemented per backend."
+msgstr ""
+
+#: matplotlib.backend_tools.RubberbandBase.trigger:2 of
+msgid "Call `draw_rubberband` or `remove_rubberband` based on data."
+msgstr ""
+
+#: matplotlib.backend_tools.SaveFigureBase:2 of
+msgid "Base tool for figure saving."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.SaveFigureBase.default_keymap:2
+#: matplotlib.backend_tools.ToolBack.default_keymap:2
+#: matplotlib.backend_tools.ToolBase.default_keymap:2
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.default_keymap:2
+#: matplotlib.backend_tools.ToolForward.default_keymap:2
+#: matplotlib.backend_tools.ToolFullScreen.default_keymap:2
+#: matplotlib.backend_tools.ToolGrid.default_keymap:2
+#: matplotlib.backend_tools.ToolHelpBase.default_keymap:2
+#: matplotlib.backend_tools.ToolHome.default_keymap:2
+#: matplotlib.backend_tools.ToolMinorGrid.default_keymap:2
+#: matplotlib.backend_tools.ToolPan.default_keymap:2
+#: matplotlib.backend_tools.ToolQuit.default_keymap:2
+#: matplotlib.backend_tools.ToolQuitAll.default_keymap:2
+#: matplotlib.backend_tools.ToolXScale.default_keymap:2
+#: matplotlib.backend_tools.ToolYScale.default_keymap:2
+#: matplotlib.backend_tools.ToolZoom.default_keymap:2 of
+msgid "Keymap to associate with this tool."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.SaveFigureBase.default_keymap:4
+#: matplotlib.backend_tools.ToolBack.default_keymap:4
+#: matplotlib.backend_tools.ToolBase.default_keymap:4
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.default_keymap:4
+#: matplotlib.backend_tools.ToolForward.default_keymap:4
+#: matplotlib.backend_tools.ToolFullScreen.default_keymap:4
+#: matplotlib.backend_tools.ToolGrid.default_keymap:4
+#: matplotlib.backend_tools.ToolHelpBase.default_keymap:4
+#: matplotlib.backend_tools.ToolHome.default_keymap:4
+#: matplotlib.backend_tools.ToolMinorGrid.default_keymap:4
+#: matplotlib.backend_tools.ToolPan.default_keymap:4
+#: matplotlib.backend_tools.ToolQuit.default_keymap:4
+#: matplotlib.backend_tools.ToolQuitAll.default_keymap:4
+#: matplotlib.backend_tools.ToolXScale.default_keymap:4
+#: matplotlib.backend_tools.ToolYScale.default_keymap:4
+#: matplotlib.backend_tools.ToolZoom.default_keymap:4 of
+msgid "``list[str]``: List of keys that will trigger this tool when a keypress event is emitted on ``self.figure.canvas``."
+msgstr ""
+
+#: matplotlib.backend_tools.SetCursorBase:2 of
+msgid "Change to the current cursor while inaxes."
+msgstr ""
+
+#: matplotlib.backend_tools.SetCursorBase:4 of
+msgid "This tool, keeps track of all `ToolToggleBase` derived tools, and calls `set_cursor` when a tool gets triggered."
+msgstr ""
+
+#: matplotlib.backend_tools.SetCursorBase.set_cursor:2 of
+msgid "[*Deprecated*] Set the cursor."
+msgstr ""
+
+#: matplotlib.backend_tools.SetCursorBase.set_cursor:15 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBack:1 matplotlib.backend_tools.ToolForward:1
+#: matplotlib.backend_tools.ToolHome:1 of
+msgid "Bases: :py:class:`matplotlib.backend_tools.ViewsPositionsBase`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBack:2 of
+msgid "Move back up the view limits stack."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase:2 of
+msgid "Base tool class."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase:4 of
+msgid "A base tool, only implements `trigger` method or no method at all. The tool is instantiated by `matplotlib.backend_managers.ToolManager`."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.canvas:2 of
+msgid "The canvas of the figure affected by this tool, or None."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.destroy:2 of
+msgid "Destroy the tool."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.destroy:4 of
+msgid "This method is called by `.ToolManager.remove_tool`."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.figure:2 of
+msgid "The Figure affected by this tool, or None."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.name:2 of
+msgid "The tool id (str, must be unique among tools of a tool manager)."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.toolmanager:2 of
+msgid "The `.ToolManager` that controls this tool."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:2
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:2
+#: matplotlib.backend_tools.ToolGrid.trigger:2
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:2
+#: matplotlib.backend_tools.ToolQuit.trigger:2
+#: matplotlib.backend_tools.ToolQuitAll.trigger:2
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:2 of
+msgid "Called when this tool gets used."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:4
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:4
+#: matplotlib.backend_tools.ToolGrid.trigger:4
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:4
+#: matplotlib.backend_tools.ToolQuit.trigger:4
+#: matplotlib.backend_tools.ToolQuitAll.trigger:4
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:4 of
+msgid "This method is called by `.ToolManager.trigger_tool`."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger
+#: matplotlib.backend_tools.ToolGrid.trigger
+#: matplotlib.backend_tools.ToolMinorGrid.trigger
+#: matplotlib.backend_tools.ToolQuit.trigger
+#: matplotlib.backend_tools.ToolQuitAll.trigger
+#: matplotlib.backend_tools.ToolToggleBase
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger
+#: matplotlib.backend_tools.add_tools_to_container
+#: matplotlib.backend_tools.add_tools_to_manager of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:9
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:9
+#: matplotlib.backend_tools.ToolGrid.trigger:9
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:9
+#: matplotlib.backend_tools.ToolQuit.trigger:9
+#: matplotlib.backend_tools.ToolQuitAll.trigger:9
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:9 of
+msgid "**event** : `.Event`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:8
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:8
+#: matplotlib.backend_tools.ToolGrid.trigger:8
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:8
+#: matplotlib.backend_tools.ToolQuit.trigger:8
+#: matplotlib.backend_tools.ToolQuitAll.trigger:8
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:8 of
+msgid "Event"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:9
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:9
+#: matplotlib.backend_tools.ToolGrid.trigger:9
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:9
+#: matplotlib.backend_tools.ToolQuit.trigger:9
+#: matplotlib.backend_tools.ToolQuitAll.trigger:9
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:9 of
+msgid "The canvas event that caused this tool to be called."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:12
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:12
+#: matplotlib.backend_tools.ToolGrid.trigger:12
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:12
+#: matplotlib.backend_tools.ToolQuit.trigger:12
+#: matplotlib.backend_tools.ToolQuitAll.trigger:12
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:12 of
+msgid "**sender**"
+msgstr ""
+
+#: of
+msgid "object"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:12
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:12
+#: matplotlib.backend_tools.ToolGrid.trigger:12
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:12
+#: matplotlib.backend_tools.ToolQuit.trigger:12
+#: matplotlib.backend_tools.ToolQuitAll.trigger:12
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:12 of
+msgid "Object that requested the tool to be triggered."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:28
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:28
+#: matplotlib.backend_tools.ToolGrid.trigger:28
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:28
+#: matplotlib.backend_tools.ToolQuit.trigger:28
+#: matplotlib.backend_tools.ToolQuitAll.trigger:28
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:28 of
+msgid "**data**"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolBase.trigger:15
+#: matplotlib.backend_tools.ToolCopyToClipboardBase.trigger:15
+#: matplotlib.backend_tools.ToolGrid.trigger:15
+#: matplotlib.backend_tools.ToolMinorGrid.trigger:15
+#: matplotlib.backend_tools.ToolQuit.trigger:15
+#: matplotlib.backend_tools.ToolQuitAll.trigger:15
+#: matplotlib.backend_tools.ViewsPositionsBase.trigger:15 of
+msgid "Extra data."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolCopyToClipboardBase:2 of
+msgid "Tool to copy the figure to the clipboard."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolCursorPosition:2 of
+msgid "Send message with the current pointer position."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolCursorPosition:4 of
+msgid "This tool runs in the background reporting the position of the cursor."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolCursorPosition.send_message:2 of
+msgid "Call `matplotlib.backend_managers.ToolManager.message_event`."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolForward:2 of
+msgid "Move forward in the view lim stack."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolFullScreen:2 of
+msgid "Tool to toggle full screen."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolGrid:2 of
+msgid "Tool to toggle the major grids of the figure."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolHelpBase.format_shortcut:2 of
+msgid "Convert a shortcut string from the notation used in rc config to the standard notation for displaying shortcuts, e.g. 'ctrl+a' -> 'Ctrl+A'."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolHome:2 of
+msgid "Restore the original view limits."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolMinorGrid:2 of
+msgid "Tool to toggle the major and minor grids of the figure."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolPan:1 matplotlib.backend_tools.ToolZoom:1 of
+msgid "Bases: :py:class:`matplotlib.backend_tools.ZoomPanBase`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolPan:2 of
+msgid "Pan axes with left mouse, zoom with right."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.ToolPan.cursor:2
+#: matplotlib.backend_tools.ToolToggleBase.cursor:2
+#: matplotlib.backend_tools.ToolZoom.cursor:2 of
+msgid "Cursor to use when the tool is active."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.ToolPan.radio_group:2
+#: matplotlib.backend_tools.ToolToggleBase.radio_group:2
+#: matplotlib.backend_tools.ToolZoom.radio_group:2 of
+msgid "Attribute to group 'radio' like tools (mutually exclusive)."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.ToolPan.radio_group:4
+#: matplotlib.backend_tools.ToolToggleBase.radio_group:4
+#: matplotlib.backend_tools.ToolZoom.radio_group:4 of
+msgid "`str` that identifies the group or **None** if not belonging to a group."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolQuit:2 matplotlib.backend_tools.ToolQuitAll:2
+#: of
+msgid "Tool to call the figure manager destroy method."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolToggleBase:2 of
+msgid "Toggleable tool."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolToggleBase:4 of
+msgid "Every time it is triggered, it switches between enable and disable."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolToggleBase:9 of
+msgid "**``*args``**"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolToggleBase:9 of
+msgid "Variable length argument to be used by the Tool."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolToggleBase:26 of
+msgid "**``**kwargs``**"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolToggleBase:12 of
+msgid "`toggled` if present and True, sets the initial state of the Tool Arbitrary keyword arguments to be consumed by the Tool"
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.ToolToggleBase.default_toggled:2 of
+msgid "Default of toggled state."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolToggleBase.toggled:2 of
+msgid "State of the toggled tool."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions:2 of
+msgid "Auxiliary Tool to handle changes in views and positions."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions:4 of
+msgid "Runs in the background and should get used by all the tools that need to access the figure's history of views and positions, e.g."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions:7 of
+msgid "`ToolZoom`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions:8 of
+msgid "`ToolPan`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions:9 of
+msgid "`ToolHome`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions:10 of
+msgid "`ToolBack`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions:11 of
+msgid "`ToolForward`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions.add_figure:2 of
+msgid "Add the current figure to the stack of views and positions."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions.back:2 of
+msgid "Back one step in the stack of views and positions."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions.clear:2 of
+msgid "Reset the axes stack."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions.forward:2 of
+msgid "Forward one step in the stack of views and positions."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions.home:2 of
+msgid "Recall the first view and position from the stack."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions.push_current:2 of
+msgid "Push the current view limits and position onto their respective stacks."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions.update_home_views:2 of
+msgid "Make sure that ``self.home_views`` has an entry for all axes present in the figure."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolViewsPositions.update_view:2 of
+msgid "Update the view limits and position for each axes from the current stack position. If any axes are present in the figure that aren't in the current stack position, use the home view limits for those axes and don't update *any* positions."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolXScale:1 matplotlib.backend_tools.ToolYScale:1
+#: of
+msgid "Bases: :py:class:`matplotlib.backend_tools.AxisScaleBase`"
+msgstr ""
+
+#: matplotlib.backend_tools.ToolXScale:2 of
+msgid "Tool to toggle between linear and logarithmic scales on the X axis."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolYScale:2 of
+msgid "Tool to toggle between linear and logarithmic scales on the Y axis."
+msgstr ""
+
+#: matplotlib.backend_tools.ToolZoom:2 of
+msgid "A Tool for zooming using a rectangle selector."
+msgstr ""
+
+#: matplotlib.backend_tools.ViewsPositionsBase:2 of
+msgid "Base class for `ToolHome`, `ToolBack` and `ToolForward`."
+msgstr ""
+
+#: matplotlib.backend_tools.ZoomPanBase:2 of
+msgid "Base class for `ToolZoom` and `ToolPan`."
+msgstr ""
+
+#: matplotlib.backend_tools.ZoomPanBase.disable:2 of
+msgid "Release the canvas and disconnect press/release events."
+msgstr ""
+
+#: matplotlib.backend_tools.ZoomPanBase.enable:2 of
+msgid "Connect press/release events and lock the canvas."
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_container:2 of
+msgid "Add multiple tools to the container."
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_container:8 of
+msgid "**container**"
+msgstr ""
+
+#: of
+msgid "Container"
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_container:8 of
+msgid "`backend_bases.ToolContainerBase` object that will get the tools added."
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_container:26
+#: matplotlib.backend_tools.add_tools_to_manager:25 of
+msgid "**tools**"
+msgstr ""
+
+#: of
+msgid "list, optional"
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_container:11 of
+msgid "List in the form ``[[group1, [tool1, tool2 ...]], [group2, [...]]]`` where the tools ``[tool1, tool2, ...]`` will display in group1. See `add_tool` for details."
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_manager:2 of
+msgid "Add multiple tools to a `.ToolManager`."
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_manager:8 of
+msgid "**toolmanager** : `.backend_managers.ToolManager`"
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_manager:7 of
+msgid "backend_managers.ToolManager"
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_manager:8 of
+msgid "Manager to which the tools are added."
+msgstr ""
+
+#: of
+msgid "{str: class_like}, optional"
+msgstr ""
+
+#: matplotlib.backend_tools.add_tools_to_manager:11 of
+msgid "The tools to add in a {name: tool} dict, see `add_tool` for more info."
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.default_toolbar_tools:2 of
+msgid "Default tools in the toolbar"
+msgstr ""
+
+#: ../../docstring matplotlib.backend_tools.default_tools:2 of
+msgid "Default tools"
+msgstr ""
+

@@ -1,0 +1,591 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:24\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/scale_api.po\n"
+"X-Crowdin-File-ID: 1948\n"
+"Language: es_ES\n"
+
+#: ../../api/scale_api.rst:3
+msgid "``matplotlib.scale``"
+msgstr ""
+
+#: matplotlib.scale:1 of
+msgid "Scales define the distribution of data values on an axis, e.g. a log scaling. They are defined as subclasses of `ScaleBase`."
+msgstr ""
+
+#: matplotlib.scale:4 of
+msgid "See also `.axes.Axes.set_xscale` and the scales examples in the documentation."
+msgstr ""
+
+#: matplotlib.scale:6 of
+msgid "See :doc:`/gallery/scales/custom_scale` for a full example of defining a custom scale."
+msgstr ""
+
+#: matplotlib.scale:9 of
+msgid "Matplotlib also supports non-separable transformations that operate on both `~.axis.Axis` at the same time.  They are known as projections, and defined in `matplotlib.projections`."
+msgstr ""
+
+#: matplotlib.scale.FuncScale:1 matplotlib.scale.LinearScale:1
+#: matplotlib.scale.LogScale:1 matplotlib.scale.LogitScale:1
+#: matplotlib.scale.SymmetricalLogScale:1 of
+msgid "Bases: :py:class:`matplotlib.scale.ScaleBase`"
+msgstr ""
+
+#: matplotlib.scale.FuncScale:2 of
+msgid "Provide an arbitrary scale with user-supplied function for the axis."
+msgstr ""
+
+#: matplotlib.scale.FuncScale matplotlib.scale.FuncScaleLog
+#: matplotlib.scale.FuncTransform
+#: matplotlib.scale.FuncTransform.transform_non_affine
+#: matplotlib.scale.InvertedLogTransform
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine
+#: matplotlib.scale.InvertedSymmetricalLogTransform
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine
+#: matplotlib.scale.LogScale matplotlib.scale.LogTransform
+#: matplotlib.scale.LogTransform.transform_non_affine
+#: matplotlib.scale.LogisticTransform matplotlib.scale.LogitScale
+#: matplotlib.scale.LogitTransform matplotlib.scale.SymmetricalLogScale
+#: matplotlib.scale.SymmetricalLogTransform
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine
+#: matplotlib.scale.register_scale matplotlib.scale.scale_factory of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.scale.FuncScale:29 matplotlib.scale.LogScale:29 of
+msgid "**axis** : `~matplotlib.axis.Axis`"
+msgstr ""
+
+#: matplotlib.scale.FuncScale:28 matplotlib.scale.LogScale:28 of
+msgid "Axis"
+msgstr ""
+
+#: matplotlib.scale.FuncScale:29 matplotlib.scale.FuncScaleLog:30
+#: matplotlib.scale.LogScale:29 of
+msgid "The axis for the scale."
+msgstr ""
+
+#: matplotlib.scale.FuncScale:50 matplotlib.scale.FuncScaleLog:38 of
+msgid "**functions**"
+msgstr ""
+
+#: of
+msgid "(callable, callable)"
+msgstr ""
+
+#: matplotlib.scale.FuncScale:32 matplotlib.scale.FuncScaleLog:33 of
+msgid "two-tuple of the forward and inverse functions for the scale. The forward function must be monotonic."
+msgstr ""
+
+#: matplotlib.scale.FuncScale:35 matplotlib.scale.FuncScaleLog:36 of
+msgid "Both functions must have the signature::"
+msgstr ""
+
+#: matplotlib.scale.FuncScale.get_transform:2 of
+msgid "Return the `.FuncTransform` associated with this scale."
+msgstr ""
+
+#: matplotlib.scale.FuncScale.set_default_locators_and_formatters:2
+#: matplotlib.scale.LinearScale.set_default_locators_and_formatters:2
+#: matplotlib.scale.LogScale.set_default_locators_and_formatters:2
+#: matplotlib.scale.LogitScale.set_default_locators_and_formatters:2
+#: matplotlib.scale.ScaleBase.set_default_locators_and_formatters:2
+#: matplotlib.scale.SymmetricalLogScale.set_default_locators_and_formatters:2
+#: of
+msgid "Set the locators and formatters of *axis* to instances suitable for this scale."
+msgstr ""
+
+#: matplotlib.scale.FuncScaleLog:1 of
+msgid "Bases: :py:class:`matplotlib.scale.LogScale`"
+msgstr ""
+
+#: matplotlib.scale.FuncScaleLog:2 of
+msgid "Provide an arbitrary scale with user-supplied function for the axis and then put on a logarithmic axes."
+msgstr ""
+
+#: matplotlib.scale.FuncScaleLog:30 matplotlib.scale.LogitScale:31
+#: matplotlib.scale.scale_factory:24 of
+msgid "**axis** : `matplotlib.axis.Axis`"
+msgstr ""
+
+#: matplotlib.scale.FuncScaleLog:29 matplotlib.scale.LogitScale:30
+#: matplotlib.scale.scale_factory:23 of
+msgid "matplotlib.axis.Axis"
+msgstr ""
+
+#: matplotlib.scale.FuncScaleLog:54 matplotlib.scale.LogScale:32
+#: matplotlib.scale.SymmetricalLogScale:13 of
+msgid "**base**"
+msgstr ""
+
+#: of
+msgid "float, default: 10"
+msgstr ""
+
+#: matplotlib.scale.FuncScaleLog:41 of
+msgid "Logarithmic base of the scale."
+msgstr ""
+
+#: matplotlib.scale.FuncScaleLog.get_transform:2 of
+msgid "Return the `.Transform` associated with this scale."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform:1 matplotlib.scale.InvertedLogTransform:1
+#: matplotlib.scale.InvertedSymmetricalLogTransform:1
+#: matplotlib.scale.LogTransform:1 matplotlib.scale.LogisticTransform:1
+#: matplotlib.scale.LogitTransform:1 matplotlib.scale.SymmetricalLogTransform:1
+#: of
+msgid "Bases: :py:class:`matplotlib.transforms.Transform`"
+msgstr ""
+
+#: matplotlib.scale.FuncTransform:2 of
+msgid "A simple transform that takes and arbitrary function for the forward and inverse transform."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform:34 of
+msgid "**forward**"
+msgstr ""
+
+#: of
+msgid "callable"
+msgstr ""
+
+#: matplotlib.scale.FuncTransform:30 of
+msgid "The forward function for the transform.  This function must have an inverse and, for best behavior, be monotonic. It must have the signature::"
+msgstr ""
+
+#: matplotlib.scale.FuncTransform:50 of
+msgid "**inverse**"
+msgstr ""
+
+#: matplotlib.scale.FuncTransform:37 of
+msgid "The inverse of the forward function.  Signature as ``forward``."
+msgstr ""
+
+#: ../../docstring matplotlib.scale.FuncTransform.has_inverse:2
+#: matplotlib.scale.InvertedLogTransform.has_inverse:2
+#: matplotlib.scale.InvertedSymmetricalLogTransform.has_inverse:2
+#: matplotlib.scale.LogTransform.has_inverse:2
+#: matplotlib.scale.LogisticTransform.has_inverse:2
+#: matplotlib.scale.LogitTransform.has_inverse:2
+#: matplotlib.scale.SymmetricalLogTransform.has_inverse:2 of
+msgid "True if this transform has a corresponding inverse transform."
+msgstr ""
+
+#: ../../docstring matplotlib.scale.FuncTransform.input_dims:2
+#: matplotlib.scale.InvertedLogTransform.input_dims:2
+#: matplotlib.scale.InvertedSymmetricalLogTransform.input_dims:2
+#: matplotlib.scale.LogTransform.input_dims:2
+#: matplotlib.scale.LogisticTransform.input_dims:2
+#: matplotlib.scale.LogitTransform.input_dims:2
+#: matplotlib.scale.SymmetricalLogTransform.input_dims:2 of
+msgid "The number of input dimensions of this transform. Must be overridden (with integers) in the subclass."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.inverted:2
+#: matplotlib.scale.InvertedLogTransform.inverted:2
+#: matplotlib.scale.InvertedSymmetricalLogTransform.inverted:2
+#: matplotlib.scale.LogTransform.inverted:2
+#: matplotlib.scale.LogisticTransform.inverted:2
+#: matplotlib.scale.LogitTransform.inverted:2
+#: matplotlib.scale.SymmetricalLogTransform.inverted:2 of
+msgid "Return the corresponding inverse transformation."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.inverted:4
+#: matplotlib.scale.InvertedLogTransform.inverted:4
+#: matplotlib.scale.InvertedSymmetricalLogTransform.inverted:4
+#: matplotlib.scale.LogTransform.inverted:4
+#: matplotlib.scale.LogisticTransform.inverted:4
+#: matplotlib.scale.LogitTransform.inverted:4
+#: matplotlib.scale.SymmetricalLogTransform.inverted:4 of
+msgid "It holds ``x == self.inverted().transform(self.transform(x))``."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.inverted:6
+#: matplotlib.scale.InvertedLogTransform.inverted:6
+#: matplotlib.scale.InvertedSymmetricalLogTransform.inverted:6
+#: matplotlib.scale.LogTransform.inverted:6
+#: matplotlib.scale.LogisticTransform.inverted:6
+#: matplotlib.scale.LogitTransform.inverted:6
+#: matplotlib.scale.SymmetricalLogTransform.inverted:6 of
+msgid "The return value of this method should be treated as temporary.  An update to *self* does not cause a corresponding update to its inverted copy."
+msgstr ""
+
+#: ../../docstring matplotlib.scale.FuncTransform.is_separable:2
+#: matplotlib.scale.InvertedLogTransform.is_separable:2
+#: matplotlib.scale.InvertedSymmetricalLogTransform.is_separable:2
+#: matplotlib.scale.LogTransform.is_separable:2
+#: matplotlib.scale.LogisticTransform.is_separable:2
+#: matplotlib.scale.LogitTransform.is_separable:2
+#: matplotlib.scale.SymmetricalLogTransform.is_separable:2 of
+msgid "True if this transform is separable in the x- and y- dimensions."
+msgstr ""
+
+#: ../../docstring matplotlib.scale.FuncTransform.output_dims:2
+#: matplotlib.scale.InvertedLogTransform.output_dims:2
+#: matplotlib.scale.InvertedSymmetricalLogTransform.output_dims:2
+#: matplotlib.scale.LogTransform.output_dims:2
+#: matplotlib.scale.LogisticTransform.output_dims:2
+#: matplotlib.scale.LogitTransform.output_dims:2
+#: matplotlib.scale.SymmetricalLogTransform.output_dims:2 of
+msgid "The number of output dimensions of this transform. Must be overridden (with integers) in the subclass."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.transform_non_affine:2
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine:2
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine:2
+#: matplotlib.scale.LogTransform.transform_non_affine:2
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine:2 of
+msgid "Apply only the non-affine part of this transformation."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.transform_non_affine:4
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine:4
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine:4
+#: matplotlib.scale.LogTransform.transform_non_affine:4
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine:4 of
+msgid "``transform(values)`` is always equivalent to ``transform_affine(transform_non_affine(values))``."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.transform_non_affine:7
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine:7
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine:7
+#: matplotlib.scale.LogTransform.transform_non_affine:7
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine:7 of
+msgid "In non-affine transformations, this is generally equivalent to ``transform(values)``.  In affine transformations, this is always a no-op."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.transform_non_affine:15
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine:15
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine:15
+#: matplotlib.scale.LogTransform.transform_non_affine:15
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine:15 of
+msgid "**values**"
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.transform_non_affine:33
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine:33
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine:33
+#: matplotlib.scale.LogTransform.transform_non_affine:33
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine:33 of
+msgid "array"
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.transform_non_affine:14
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine:14
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine:14
+#: matplotlib.scale.LogTransform.transform_non_affine:14
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine:14 of
+msgid "The input values as NumPy array of length :attr:`input_dims` or shape (N x :attr:`input_dims`)."
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.transform_non_affine
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine
+#: matplotlib.scale.LogTransform.transform_non_affine
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.scale.FuncTransform.transform_non_affine:20
+#: matplotlib.scale.InvertedLogTransform.transform_non_affine:20
+#: matplotlib.scale.InvertedSymmetricalLogTransform.transform_non_affine:20
+#: matplotlib.scale.LogTransform.transform_non_affine:20
+#: matplotlib.scale.SymmetricalLogTransform.transform_non_affine:20 of
+msgid "The output values as NumPy array of length :attr:`input_dims` or shape (N x :attr:`output_dims`), depending on the input."
+msgstr ""
+
+#: matplotlib.scale.InvertedLogTransform:23
+#: matplotlib.scale.InvertedSymmetricalLogTransform:23
+#: matplotlib.scale.LogTransform:23 matplotlib.scale.LogisticTransform:23
+#: matplotlib.scale.LogitTransform:23
+#: matplotlib.scale.SymmetricalLogTransform:23 of
+msgid "**shorthand_name**"
+msgstr ""
+
+#: of
+msgid "str"
+msgstr ""
+
+#: matplotlib.scale.InvertedLogTransform:8
+#: matplotlib.scale.InvertedSymmetricalLogTransform:8
+#: matplotlib.scale.LogTransform:8 matplotlib.scale.LogisticTransform:8
+#: matplotlib.scale.LogitTransform:8 matplotlib.scale.SymmetricalLogTransform:8
+#: of
+msgid "A string representing the \"name\" of the transform. The name carries no significance other than to improve the readability of ``str(transform)`` when DEBUG=True."
+msgstr ""
+
+#: matplotlib.scale.LinearScale:2 of
+msgid "The default linear scale."
+msgstr ""
+
+#: matplotlib.scale.LinearScale.get_transform:2 of
+msgid "Return the transform for linear scaling, which is just the `~matplotlib.transforms.IdentityTransform`."
+msgstr ""
+
+#: matplotlib.scale.LogScale:2 of
+msgid "A standard logarithmic scale.  Care is taken to only plot positive values."
+msgstr ""
+
+#: matplotlib.scale.LogScale:32 matplotlib.scale.SymmetricalLogScale:13 of
+msgid "The base of the logarithm."
+msgstr ""
+
+#: matplotlib.scale.LogScale:36 matplotlib.scale.LogitScale:36 of
+msgid "**nonpositive**"
+msgstr ""
+
+#: of
+msgid "{'clip', 'mask'}, default: 'clip'"
+msgstr ""
+
+#: matplotlib.scale.LogScale:35 of
+msgid "Determines the behavior for non-positive values. They can either be masked as invalid, or clipped to a very small positive number."
+msgstr ""
+
+#: matplotlib.scale.LogScale:54 matplotlib.scale.SymmetricalLogScale:22 of
+msgid "**subs**"
+msgstr ""
+
+#: of
+msgid "sequence of int, default: None"
+msgstr ""
+
+#: matplotlib.scale.LogScale:39 of
+msgid "Where to place the subticks between each major tick.  For example, in a log10 scale, ``[2, 3, 4, 5, 6, 7, 8, 9]`` will place 8 logarithmically spaced minor ticks between each major tick."
+msgstr ""
+
+#: matplotlib.scale.LogScale.get_transform:2 of
+msgid "Return the `.LogTransform` associated with this scale."
+msgstr ""
+
+#: matplotlib.scale.LogScale.limit_range_for_scale:2 of
+msgid "Limit the domain to positive values."
+msgstr ""
+
+#: matplotlib.scale.LogisticTransform.transform_non_affine:2 of
+msgid "logistic transform (base 10)"
+msgstr ""
+
+#: matplotlib.scale.LogitScale:2 of
+msgid "Logit scale for data between zero and one, both excluded."
+msgstr ""
+
+#: matplotlib.scale.LogitScale:4 of
+msgid "This scale is similar to a log scale close to zero and to one, and almost linear around 0.5. It maps the interval ]0, 1[ onto ]-infty, +infty[."
+msgstr ""
+
+#: matplotlib.scale.LogitScale:31 of
+msgid "Currently unused."
+msgstr ""
+
+#: of
+msgid "{'mask', 'clip'}"
+msgstr ""
+
+#: matplotlib.scale.LogitScale:34 of
+msgid "Determines the behavior for values beyond the open interval ]0, 1[. They can either be masked as invalid, or clipped to a number very close to 0 or 1."
+msgstr ""
+
+#: matplotlib.scale.LogitScale:40 of
+msgid "**use_overline**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.scale.LogitScale:39 of
+msgid "Indicate the usage of survival notation (\\overline{x}) in place of standard notation (1-x) for probability close to one."
+msgstr ""
+
+#: matplotlib.scale.LogitScale:56 of
+msgid "**one_half** : str, default: r\"\\frac{1}{2}\""
+msgstr ""
+
+#: of
+msgid "str, default: r\"\\frac{1}{2}\""
+msgstr ""
+
+#: matplotlib.scale.LogitScale:43 of
+msgid "The string used for ticks formatter to represent 1/2."
+msgstr ""
+
+#: matplotlib.scale.LogitScale.get_transform:2 of
+msgid "Return the `.LogitTransform` associated with this scale."
+msgstr ""
+
+#: matplotlib.scale.LogitScale.limit_range_for_scale:2 of
+msgid "Limit the domain to values between 0 and 1 (excluded)."
+msgstr ""
+
+#: matplotlib.scale.LogitTransform.transform_non_affine:2 of
+msgid "logit transform (base 10), masked or clipped"
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:2 of
+msgid "The base class for all scales."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:4 of
+msgid "Scales are separable transformations, working on a single dimension."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:6 of
+msgid "Subclasses should override"
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:8 of
+msgid ":attr:`name`"
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:9 of
+msgid "The scale's name."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:12 of
+msgid ":meth:`get_transform`"
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:11 of
+msgid "A method returning a `.Transform`, which converts data coordinates to scaled coordinates.  This transform should be invertible, so that e.g. mouse positions can be converted back to data coordinates."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:15 of
+msgid ":meth:`set_default_locators_and_formatters`"
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:15 of
+msgid "A method that sets default locators and formatters for an `~.axis.Axis` that uses this scale."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:33 of
+msgid ":meth:`limit_range_for_scale`"
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:18 of
+msgid "An optional method that \"fixes\" the axis range to acceptable values, e.g. restricting log-scaled axes to positive values."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:39 matplotlib.scale.SymmetricalLogScale:49 of
+msgid "Construct a new scale."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:52 matplotlib.scale.SymmetricalLogScale:62 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:53 matplotlib.scale.SymmetricalLogScale:63 of
+msgid "The following note is for scale implementors."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase:55 matplotlib.scale.SymmetricalLogScale:65 of
+msgid "For back-compatibility reasons, scales take an `~matplotlib.axis.Axis` object as first argument.  However, this argument should not be used: a single scale object should be usable by multiple `~matplotlib.axis.Axis`\\es at the same time."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase.get_transform:2 of
+msgid "Return the `.Transform` object associated with this scale."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase.limit_range_for_scale:2 of
+msgid "Return the range *vmin*, *vmax*, restricted to the domain supported by this scale (if any)."
+msgstr ""
+
+#: matplotlib.scale.ScaleBase.limit_range_for_scale:5 of
+msgid "*minpos* should be the minimum positive value in the data. This is used by log scales to determine a minimum value."
+msgstr ""
+
+#: matplotlib.scale.SymmetricalLogScale:2 of
+msgid "The symmetrical logarithmic scale is logarithmic in both the positive and negative directions from the origin."
+msgstr ""
+
+#: matplotlib.scale.SymmetricalLogScale:5 of
+msgid "Since the values close to zero tend toward infinity, there is a need to have a range around zero that is linear.  The parameter *linthresh* allows the user to specify the size of this range (-*linthresh*, *linthresh*)."
+msgstr ""
+
+#: matplotlib.scale.SymmetricalLogScale:17 of
+msgid "**linthresh**"
+msgstr ""
+
+#: of
+msgid "float, default: 2"
+msgstr ""
+
+#: matplotlib.scale.SymmetricalLogScale:16 of
+msgid "Defines the range ``(-x, x)``, within which the plot is linear. This avoids having the plot go to infinity around zero."
+msgstr ""
+
+#: of
+msgid "sequence of int"
+msgstr ""
+
+#: matplotlib.scale.SymmetricalLogScale:20 of
+msgid "Where to place the subticks between each major tick. For example, in a log10 scale: ``[2, 3, 4, 5, 6, 7, 8, 9]`` will place 8 logarithmically spaced minor ticks between each major tick."
+msgstr ""
+
+#: matplotlib.scale.SymmetricalLogScale:43 of
+msgid "**linscale**"
+msgstr ""
+
+#: of
+msgid "float, optional"
+msgstr ""
+
+#: matplotlib.scale.SymmetricalLogScale:25 of
+msgid "This allows the linear range ``(-linthresh, linthresh)`` to be stretched relative to the logarithmic range. Its value is the number of decades to use for each half of the linear range. For example, when *linscale* == 1.0 (the default), the space used for the positive and negative halves of the linear range will be equal to one decade in the logarithmic range."
+msgstr ""
+
+#: matplotlib.scale.SymmetricalLogScale.get_transform:2 of
+msgid "Return the `.SymmetricalLogTransform` associated with this scale."
+msgstr ""
+
+#: matplotlib.scale.get_scale_names:2 of
+msgid "Return the names of the available scales."
+msgstr ""
+
+#: matplotlib.scale.register_scale:2 of
+msgid "Register a new kind of scale."
+msgstr ""
+
+#: matplotlib.scale.register_scale:21 of
+msgid "**scale_class** : subclass of `ScaleBase`"
+msgstr ""
+
+#: of
+msgid "subclass of"
+msgstr ""
+
+#: matplotlib.scale.register_scale:8 of
+msgid "The scale to register."
+msgstr ""
+
+#: matplotlib.scale.scale_factory:2 of
+msgid "Return a scale class by name."
+msgstr ""
+
+#: matplotlib.scale.scale_factory:8 of
+msgid "**scale**"
+msgstr ""
+
+#: of
+msgid "{'function', 'functionlog', 'linear', 'log', 'logit', 'symlog'}"
+msgstr ""
+

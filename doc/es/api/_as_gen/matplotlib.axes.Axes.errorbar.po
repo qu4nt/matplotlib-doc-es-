@@ -1,0 +1,618 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-02 01:11\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.axes.Axes.errorbar.po\n"
+"X-Crowdin-File-ID: 404\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.rst:2
+msgid "matplotlib.axes.Axes.errorbar"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:2 of
+msgid "Plot y versus x as lines and/or markers with attached errorbars."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:4 of
+msgid "*x*, *y* define the data locations, *xerr*, *yerr* define the errorbar sizes. By default, this draws the data markers/lines as well the errorbars. Use fmt='none' to draw errorbars without any data markers."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:11 of
+msgid "**x, y**"
+msgstr ""
+
+#: of
+msgid "float or array-like"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:11 of
+msgid "The data positions."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:26 of
+msgid "**xerr, yerr**"
+msgstr ""
+
+#: of
+msgid "float or array-like, shape(N,) or shape(2, N), optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:14 of
+msgid "The errorbar sizes:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:16 of
+msgid "scalar: Symmetric +/- values for all data points."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:17 of
+msgid "shape(N,): Symmetric +/-values for each data point."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:18 of
+msgid "shape(2, N): Separate - and + values for each bar. First row contains the lower errors, the second row contains the upper errors."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:21 of
+msgid "*None*: No errorbar."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:23 of
+msgid "Note that all error arrays should have *positive* values."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:25 of
+msgid "See :doc:`/gallery/statistics/errorbar_features` for an example on the usage of ``xerr`` and ``yerr``."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:33 of
+msgid "**fmt**"
+msgstr ""
+
+#: of
+msgid "str, default: ''"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:29 of
+msgid "The format for the data points / data lines. See `.plot` for details."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:32 of
+msgid "Use 'none' (case insensitive) to plot errorbars without any data markers."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:37 of
+msgid "**ecolor**"
+msgstr ""
+
+#: of
+msgid "color, default: None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:36 of
+msgid "The color of the errorbar lines.  If None, use the color of the line connecting the markers."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:41 of
+msgid "**elinewidth**"
+msgstr ""
+
+#: of
+msgid "float, default: None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:40 of
+msgid "The linewidth of the errorbar lines. If None, the linewidth of the current style is used."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:44 of
+msgid "**capsize** : float, default: :rc:`errorbar.capsize`"
+msgstr ""
+
+#: of
+msgid "float, default:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:44 of
+msgid "The length of the error bar caps in points."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:52 of
+msgid "**capthick**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:47 of
+msgid "An alias to the keyword argument *markeredgewidth* (a.k.a. *mew*). This setting is a more sensible name for the property that controls the thickness of the error bar cap in points. For backwards compatibility, if *mew* or *markeredgewidth* are given, then they will over-ride *capthick*. This may change in future releases."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:56 of
+msgid "**barsabove**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:55 of
+msgid "If True, will plot the errorbars above the plot symbols. Default is below."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:66 of
+msgid "**lolims, uplims, xlolims, xuplims**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:59 of
+msgid "These arguments can be used to indicate that a value gives only upper/lower limits.  In that case a caret symbol is used to indicate this. *lims*-arguments may be scalars, or array-likes of the same length as *xerr* and *yerr*.  To use limits with inverted axes, `~.Axes.set_xlim` or `~.Axes.set_ylim` must be called before :meth:`errorbar`.  Note the tricky parameter names: setting e.g. *lolims* to True means that the y-value is a *lower* limit of the True value, so, only an *upward*-pointing arrow will be drawn!"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:75 of
+msgid "**errorevery**"
+msgstr ""
+
+#: of
+msgid "int or (int, int), default: 1"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:69 of
+msgid "draws error bars on a subset of the data. *errorevery* =N draws error bars on the points (x[::N], y[::N]). *errorevery* =(start, N) draws error bars on the points (x[start::N], y[start::N]). e.g. errorevery=(6, 3) adds error bars to the data at (x[6], x[9], x[12], x[15], ...). Used to avoid overlapping error bars when two series share x-axis values."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:87 of
+msgid "`.ErrorbarContainer`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:80 of
+msgid "The container contains:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:82 of
+msgid "plotline: `.Line2D` instance of x, y plot markers and/or line."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:83 of
+msgid "caplines: A tuple of `.Line2D` instances of the error bar caps."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:84 of
+msgid "barlinecols: A tuple of `.LineCollection` with the horizontal and vertical error ranges."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar of
+msgid "Other Parameters"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:95 of
+msgid "**data**"
+msgstr ""
+
+#: of
+msgid "indexable object, optional"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:92 of
+msgid "If given, the following parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception):"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:95 of
+msgid "*x*, *y*, *xerr*, *yerr*"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:168 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:98 of
+msgid "All other keyword arguments are passed on to the `~.Axes.plot` call drawing the markers. For example, this code makes big red squares with thick green edges::"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:106 of
+msgid "where *mfc*, *mec*, *ms* and *mew* are aliases for the longer property names, *markerfacecolor*, *markeredgecolor*, *markersize* and *markeredgewidth*."
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:110 of
+msgid "Valid kwargs for the marker properties are `.Line2D` properties:"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:116 of
+msgid "Property"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:116 of
+msgid "Description"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:118 of
+msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:118 of
+msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:119 of
+msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:119 of
+msgid "scalar or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:120 of
+msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:120
+#: matplotlib.axes._axes.Axes.errorbar:121
+#: matplotlib.axes._axes.Axes.errorbar:123
+#: matplotlib.axes._axes.Axes.errorbar:134
+#: matplotlib.axes._axes.Axes.errorbar:148
+#: matplotlib.axes._axes.Axes.errorbar:155 of
+msgid "bool"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:121 of
+msgid ":meth:`antialiased <matplotlib.lines.Line2D.set_antialiased>` or aa"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:122 of
+msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:122 of
+msgid "`.Bbox`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:123 of
+msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:124 of
+msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:124 of
+msgid "Patch or (Path, Transform) or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:125 of
+msgid ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:125
+#: matplotlib.axes._axes.Axes.errorbar:139
+#: matplotlib.axes._axes.Axes.errorbar:141
+#: matplotlib.axes._axes.Axes.errorbar:142 of
+msgid "color"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:126 of
+msgid ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:126
+#: matplotlib.axes._axes.Axes.errorbar:151 of
+msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:127 of
+msgid ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:127
+#: matplotlib.axes._axes.Axes.errorbar:152 of
+msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:128 of
+msgid ":meth:`dashes <matplotlib.lines.Line2D.set_dashes>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:128 of
+msgid "sequence of floats (on/off ink in points) or (None, None)"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:129 of
+msgid ":meth:`data <matplotlib.lines.Line2D.set_data>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:129 of
+msgid "(2, N) array or two 1D arrays"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:130 of
+msgid ":meth:`drawstyle <matplotlib.lines.Line2D.set_drawstyle>` or ds"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:130 of
+msgid "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:131 of
+msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:131 of
+msgid "`.Figure`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:132 of
+msgid ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:132 of
+msgid "{'full', 'left', 'right', 'bottom', 'top', 'none'}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:133 of
+msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:133
+#: matplotlib.axes._axes.Axes.errorbar:154 of
+msgid "str"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:134 of
+msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:135 of
+msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:135 of
+msgid "object"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:136 of
+msgid ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` or ls"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:136 of
+msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:137 of
+msgid ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:137
+#: matplotlib.axes._axes.Axes.errorbar:140
+#: matplotlib.axes._axes.Axes.errorbar:143
+#: matplotlib.axes._axes.Axes.errorbar:147
+#: matplotlib.axes._axes.Axes.errorbar:158 of
+msgid "float"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:138 of
+msgid ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:138 of
+msgid "marker style string, `~.path.Path` or `~.markers.MarkerStyle`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:139 of
+msgid ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` or mec"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:140 of
+msgid ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` or mew"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:141 of
+msgid ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` or mfc"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:142 of
+msgid ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` or mfcalt"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:143 of
+msgid ":meth:`markersize <matplotlib.lines.Line2D.set_markersize>` or ms"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:144 of
+msgid ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:144 of
+msgid "None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:145 of
+msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:145 of
+msgid "`.AbstractPathEffect`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:146 of
+msgid ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:146 of
+msgid "float or callable[[Artist, Event], tuple[bool, dict]]"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:147 of
+msgid ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:148 of
+msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:149 of
+msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:149 of
+msgid "(scale: float, length: float, randomness: float)"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:150 of
+msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:150 of
+msgid "bool or None"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:151 of
+msgid ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:152 of
+msgid ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:153 of
+msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:153 of
+msgid "unknown"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:154 of
+msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:155 of
+msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:156 of
+msgid ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:156
+#: matplotlib.axes._axes.Axes.errorbar:157 of
+msgid "1D array"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:157 of
+msgid ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
+msgstr ""
+
+#: matplotlib.axes._axes.Axes.errorbar:158 of
+msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:2
+msgid "Examples using ``matplotlib.axes.Axes.errorbar``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:10
+msgid "Errorbar subsampling"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:10
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:18
+msgid ":ref:`sphx_glr_gallery_lines_bars_and_markers_errorbar_subsample.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:29
+msgid "Errorbar function"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:29
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:37
+msgid ":ref:`sphx_glr_gallery_statistics_errorbar.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:48
+msgid "Different ways of specifying error bars"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:48
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:56
+msgid ":ref:`sphx_glr_gallery_statistics_errorbar_features.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:67
+msgid "Including upper and lower limits in error bars"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:67
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:75
+msgid ":ref:`sphx_glr_gallery_statistics_errorbar_limits.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:86
+msgid "Creating boxes from error bars using PatchCollection"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:86
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:94
+msgid ":ref:`sphx_glr_gallery_statistics_errorbars_and_boxes.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:105
+msgid "Legend Demo"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:105
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:113
+msgid ":ref:`sphx_glr_gallery_text_labels_and_annotations_legend_demo.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:124
+msgid "Parasite Simple2"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:124
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:132
+msgid ":ref:`sphx_glr_gallery_axes_grid1_parasite_simple2.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:143
+msgid "3D errorbars"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:143
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:151
+msgid ":ref:`sphx_glr_gallery_mplot3d_errorbar3d.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:162
+msgid "Log Demo"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:162
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:170
+msgid ":ref:`sphx_glr_gallery_scales_log_demo.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:181
+msgid "errorbar(x, y, yerr, xerr)"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:181
+#: ../../api/_as_gen/matplotlib.axes.Axes.errorbar.examples:189
+msgid ":ref:`sphx_glr_plot_types_stats_errorbar_plot.py`"
+msgstr ""
+

@@ -1,0 +1,259 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 18:04-0400\n"
+"PO-Revision-Date: 2022-03-02 01:17\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/api/_as_gen/matplotlib.pyplot.figure.po\n"
+"X-Crowdin-File-ID: 1136\n"
+"Language: es_ES\n"
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.rst:2
+msgid "matplotlib.pyplot.figure"
+msgstr ""
+
+#: matplotlib.pyplot.figure:2 of
+msgid "Create a new figure, or activate an existing figure."
+msgstr ""
+
+#: matplotlib.pyplot.figure of
+msgid "Parameters"
+msgstr ""
+
+#: matplotlib.pyplot.figure:19 of
+msgid "**num** : int or str or `.Figure`, optional"
+msgstr ""
+
+#: of
+msgid "int or str or"
+msgstr ""
+
+#: matplotlib.pyplot.figure:8 of
+msgid "A unique identifier for the figure."
+msgstr ""
+
+#: matplotlib.pyplot.figure:10 of
+msgid "If a figure with that identifier already exists, this figure is made active and returned. An integer refers to the ``Figure.number`` attribute, a string refers to the figure label."
+msgstr ""
+
+#: matplotlib.pyplot.figure:14 of
+msgid "If there is no figure with the identifier or *num* is not given, a new figure is created, made active and returned.  If *num* is an int, it will be used for the ``Figure.number`` attribute, otherwise, an auto-generated integer value is used (starting at 1 and incremented for each new figure). If *num* is a string, the figure label and the window title is set to this value."
+msgstr ""
+
+#: matplotlib.pyplot.figure:22 of
+msgid "**figsize** : (float, float), default: :rc:`figure.figsize`"
+msgstr ""
+
+#: of
+msgid "(float, float), default:"
+msgstr ""
+
+#: matplotlib.pyplot.figure:22 of
+msgid "Width, height in inches."
+msgstr ""
+
+#: matplotlib.pyplot.figure:25 of
+msgid "**dpi** : float, default: :rc:`figure.dpi`"
+msgstr ""
+
+#: of
+msgid "float, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figure:25 of
+msgid "The resolution of the figure in dots-per-inch."
+msgstr ""
+
+#: matplotlib.pyplot.figure:28 of
+msgid "**facecolor** : color, default: :rc:`figure.facecolor`"
+msgstr ""
+
+#: of
+msgid "color, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figure:28 of
+msgid "The background color."
+msgstr ""
+
+#: matplotlib.pyplot.figure:31 of
+msgid "**edgecolor** : color, default: :rc:`figure.edgecolor`"
+msgstr ""
+
+#: matplotlib.pyplot.figure:31 of
+msgid "The border color."
+msgstr ""
+
+#: matplotlib.pyplot.figure:34 of
+msgid "**frameon**"
+msgstr ""
+
+#: of
+msgid "bool, default: True"
+msgstr ""
+
+#: matplotlib.pyplot.figure:34 of
+msgid "If False, suppress drawing the figure frame."
+msgstr ""
+
+#: matplotlib.pyplot.figure:37 of
+msgid "**FigureClass** : subclass of `~matplotlib.figure.Figure`"
+msgstr ""
+
+#: of
+msgid "subclass of"
+msgstr ""
+
+#: matplotlib.pyplot.figure:37 of
+msgid "Optionally use a custom `.Figure` instance."
+msgstr ""
+
+#: matplotlib.pyplot.figure:40 of
+msgid "**clear**"
+msgstr ""
+
+#: of
+msgid "bool, default: False"
+msgstr ""
+
+#: matplotlib.pyplot.figure:40 of
+msgid "If True and the figure already exists, then it is cleared."
+msgstr ""
+
+#: matplotlib.pyplot.figure:47 of
+msgid "**tight_layout** : bool or dict, default: :rc:`figure.autolayout`"
+msgstr ""
+
+#: of
+msgid "bool or dict, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figure:43 of
+msgid "If ``False`` use *subplotpars*. If ``True`` adjust subplot parameters using `.tight_layout` with default padding. When providing a dict containing the keys ``pad``, ``w_pad``, ``h_pad``, and ``rect``, the default `.tight_layout` paddings will be overridden."
+msgstr ""
+
+#: matplotlib.pyplot.figure:55 of
+msgid "**constrained_layout** : bool, default: :rc:`figure.constrained_layout.use`"
+msgstr ""
+
+#: of
+msgid "bool, default:"
+msgstr ""
+
+#: matplotlib.pyplot.figure:50 of
+msgid "If ``True`` use constrained layout to adjust positioning of plot elements.  Like ``tight_layout``, but designed to be more flexible.  See :doc:`/tutorials/intermediate/constrainedlayout_guide` for examples.  (Note: does not work with `add_subplot` or `~.pyplot.subplot2grid`.)"
+msgstr ""
+
+#: matplotlib.pyplot.figure:58 of
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: of
+msgid "optional"
+msgstr ""
+
+#: matplotlib.pyplot.figure:58 of
+msgid "See `~.matplotlib.figure.Figure` for other possible arguments."
+msgstr ""
+
+#: matplotlib.pyplot.figure of
+msgid "Returns"
+msgstr ""
+
+#: matplotlib.pyplot.figure:73 of
+msgid "`~matplotlib.figure.Figure`"
+msgstr ""
+
+#: matplotlib.pyplot.figure:63 of
+msgid "The `.Figure` instance returned will also be passed to new_figure_manager in the backends, which allows to hook custom `.Figure` classes into the pyplot interface. Additional kwargs will be passed to the `.Figure` init function."
+msgstr ""
+
+#: matplotlib.pyplot.figure:76 of
+msgid "Notes"
+msgstr ""
+
+#: matplotlib.pyplot.figure:77 of
+msgid "If you are creating many figures, make sure you explicitly call `.pyplot.close` on the figures you are not using, because this will enable pyplot to properly clean up the memory."
+msgstr ""
+
+#: matplotlib.pyplot.figure:81 of
+msgid "`~matplotlib.rcParams` defines the default values, which can be modified in the matplotlibrc file."
+msgstr ""
+
+#: ../../../../../../../../api/_as_gen/matplotlib.pyplot.figure.examples:2
+msgid "Examples using ``matplotlib.pyplot.figure``"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:10
+msgid "Frame grabbing"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:10
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:18
+msgid ":ref:`sphx_glr_gallery_animation_frame_grabbing_sgskip.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:29
+msgid "Interactive functions"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:29
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:37
+msgid ":ref:`sphx_glr_gallery_event_handling_ginput_manual_clabel_sgskip.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:48
+msgid "Hyperlinks"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:48
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:56
+msgid ":ref:`sphx_glr_gallery_misc_hyperlinks_sgskip.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:67
+msgid "Rotating a 3D plot"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:67
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:75
+msgid ":ref:`sphx_glr_gallery_mplot3d_rotate_axes3d_sgskip.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:86
+msgid "Rotating 3D wireframe plot"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:86
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:94
+msgid ":ref:`sphx_glr_gallery_mplot3d_wire3d_animation_sgskip.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:105
+msgid "SVG Histogram"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:105
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:113
+msgid ":ref:`sphx_glr_gallery_user_interfaces_svg_histogram_sgskip.py`"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:124
+msgid "Tool Manager"
+msgstr ""
+
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:124
+#: ../../api/_as_gen/matplotlib.pyplot.figure.examples:132
+msgid ":ref:`sphx_glr_gallery_user_interfaces_toolmanager_sgskip.py`"
+msgstr ""
+

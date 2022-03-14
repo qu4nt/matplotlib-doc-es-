@@ -1,0 +1,580 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: matplotlib\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-01 17:05-0400\n"
+"PO-Revision-Date: 2022-03-12 13:46\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: matplotlib\n"
+"X-Crowdin-Project-ID: 502106\n"
+"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-File: /[qu4nt.matplotlib-doc-es] main/doc/en/users/explain/event_handling.po\n"
+"X-Crowdin-File-ID: 3360\n"
+"Language: es_ES\n"
+
+#: ../../users/explain/event_handling.rst:7
+msgid "Event handling and picking"
+msgstr "Manejo y selección de eventos"
+
+#: ../../users/explain/event_handling.rst:9
+msgid "Matplotlib works with a number of user interface toolkits (wxpython, tkinter, qt, gtk, and macosx) and in order to support features like interactive panning and zooming of figures, it is helpful to the developers to have an API for interacting with the figure via key presses and mouse movements that is \"GUI neutral\" so we don't have to repeat a lot of code across the different user interfaces.  Although the event handling API is GUI neutral, it is based on the GTK model, which was the first user interface Matplotlib supported.  The events that are triggered are also a bit richer vis-a-vis Matplotlib than standard GUI events, including information like which `~.axes.Axes` the event occurred in.  The events also understand the Matplotlib coordinate system, and report event locations in both pixel and data coordinates."
+msgstr "Matplotlib trabaja con varios kits de herramientas de interfaz de usuario (wxpython, tkinter, qt, gtk, y macosx) y para poder soportar características como la panorámica y el zoom interactivos de las figuras, a los desarrolladores les resulta útil tener una API para interactuar con la figura a través de la pulsación de teclas y los movimientos del ratón que sea \"neutral con respecto a la IGU\" para que no tengamos que repetir mucho código a través de las diferentes interfaces de usuario. Aunque la API de manejo de eventos es neutral con respecto a la IGU, está basada en el modelo GTK, que fue la primera interfaz de usuario que Matplotlib soportó. Los eventos que se desencadenan son también un poco más ricos con respecto a Matplotlib que los eventos estándar de la IGU, incluyendo información como en qué `~.axes.Axes` ocurrió el evento. Los eventos también entienden el sistema de coordenadas de Matplotlib, y reportan las ubicaciones de los eventos tanto en coordenadas de píxeles como de datos."
+
+#: ../../users/explain/event_handling.rst:26
+msgid "Event connections"
+msgstr "Conexiones de eventos"
+
+#: ../../users/explain/event_handling.rst:28
+msgid "To receive events, you need to write a callback function and then connect your function to the event manager, which is part of the `~.FigureCanvasBase`.  Here is a simple example that prints the location of the mouse click and which button was pressed::"
+msgstr "Para recibir eventos, necesitas escribir una función de callback y luego conectar tu función al gestor de eventos, que es parte de `~.FigureCanvasBase`.  Aquí hay un ejemplo simple que imprime la ubicación del clic del ratón y qué botón fue presionado::"
+
+#: ../../users/explain/event_handling.rst:44
+msgid "The `.FigureCanvasBase.mpl_connect` method returns a connection id (an integer), which can be used to disconnect the callback via ::"
+msgstr "El método `.FigureCanvasBase.mpl_connect` devuelve un identificador de conexión (un entero), que puede utilizarse para desconectar la llamada de retorno mediante ::"
+
+#: ../../users/explain/event_handling.rst:50
+msgid "The canvas retains only weak references to instance methods used as callbacks.  Therefore, you need to retain a reference to instances owning such methods.  Otherwise the instance will be garbage-collected and the callback will vanish."
+msgstr "El lienzo retiene sólo referencias débiles a los métodos de instancia utilizados como callbacks. Por lo tanto, es necesario retener una referencia a las instancias que poseen dichos métodos. De lo contrario, la instancia será recogida por la papelera y la llamada de retorno desaparecerá."
+
+#: ../../users/explain/event_handling.rst:55
+msgid "This does not affect free functions used as callbacks."
+msgstr "Esto no afecta a las funciones libres utilizadas como callbacks."
+
+#: ../../users/explain/event_handling.rst:57
+msgid "Here are the events that you can connect to, the class instances that are sent back to you when the event occurs, and the event descriptions:"
+msgstr "Aquí están los eventos a los que te puedes conectar, las instancias de clase que se te devuelven cuando el evento ocurre, y las descripciones de los eventos:"
+
+#: ../../users/explain/event_handling.rst:61
+msgid "Event name"
+msgstr "Nombre del evento"
+
+#: ../../users/explain/event_handling.rst:61
+msgid "Class"
+msgstr "Clase"
+
+#: ../../users/explain/event_handling.rst:61
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../users/explain/event_handling.rst:63
+msgid "'button_press_event'"
+msgstr "'button_press_event'"
+
+#: ../../users/explain/event_handling.rst:63
+#: ../../users/explain/event_handling.rst:64
+#: ../../users/explain/event_handling.rst:70
+#: ../../users/explain/event_handling.rst:73
+msgid "`.MouseEvent`"
+msgstr "`.MouseEvent`"
+
+#: ../../users/explain/event_handling.rst:63
+msgid "mouse button is pressed"
+msgstr "se pulsa el botón del ratón"
+
+#: ../../users/explain/event_handling.rst:64
+msgid "'button_release_event'"
+msgstr "'button_release_event'"
+
+#: ../../users/explain/event_handling.rst:64
+msgid "mouse button is released"
+msgstr "se pulsa el botón del ratón"
+
+#: ../../users/explain/event_handling.rst:65
+msgid "'close_event'"
+msgstr "'close_event'"
+
+#: ../../users/explain/event_handling.rst:65
+msgid "`.CloseEvent`"
+msgstr "`.CloseEvent`"
+
+#: ../../users/explain/event_handling.rst:65
+msgid "figure is closed"
+msgstr "la figura está cerrada"
+
+#: ../../users/explain/event_handling.rst:66
+msgid "'draw_event'"
+msgstr "'draw_event'"
+
+#: ../../users/explain/event_handling.rst:66
+msgid "`.DrawEvent`"
+msgstr "`.DrawEvent`"
+
+#: ../../users/explain/event_handling.rst:66
+msgid "canvas has been drawn (but screen widget not updated yet)"
+msgstr "el lienzo se ha dibujado (pero el widget de pantalla no se ha actualizado todavía)"
+
+#: ../../users/explain/event_handling.rst:68
+msgid "'key_press_event'"
+msgstr "'key_press_event'"
+
+#: ../../users/explain/event_handling.rst:68
+#: ../../users/explain/event_handling.rst:69
+msgid "`.KeyEvent`"
+msgstr "`.KeyEvent`"
+
+#: ../../users/explain/event_handling.rst:68
+msgid "key is pressed"
+msgstr "se ha presionado la tecla"
+
+#: ../../users/explain/event_handling.rst:69
+msgid "'key_release_event'"
+msgstr "'key_release_event'"
+
+#: ../../users/explain/event_handling.rst:69
+msgid "key is released"
+msgstr "se dejó de presionar la tecla"
+
+#: ../../users/explain/event_handling.rst:70
+msgid "'motion_notify_event'"
+msgstr "'motion_notify_event'"
+
+#: ../../users/explain/event_handling.rst:70
+msgid "mouse moves"
+msgstr "el ratón se mueve"
+
+#: ../../users/explain/event_handling.rst:71
+msgid "'pick_event'"
+msgstr "'pick_event'"
+
+#: ../../users/explain/event_handling.rst:71
+msgid "`.PickEvent`"
+msgstr "`.PickEvent`"
+
+#: ../../users/explain/event_handling.rst:71
+msgid "artist in the canvas is selected"
+msgstr "se ha seleccionado el artist en el lienzo"
+
+#: ../../users/explain/event_handling.rst:72
+msgid "'resize_event'"
+msgstr "'resize_event'"
+
+#: ../../users/explain/event_handling.rst:72
+msgid "`.ResizeEvent`"
+msgstr "`.ResizeEvent`"
+
+#: ../../users/explain/event_handling.rst:72
+msgid "figure canvas is resized"
+msgstr "se redimensiona el lienzo de la figura"
+
+#: ../../users/explain/event_handling.rst:73
+msgid "'scroll_event'"
+msgstr "'scroll_event'"
+
+#: ../../users/explain/event_handling.rst:73
+msgid "mouse scroll wheel is rolled"
+msgstr "se gira la rueda del ratón"
+
+#: ../../users/explain/event_handling.rst:74
+msgid "'figure_enter_event'"
+msgstr "'figure_enter_event'"
+
+#: ../../users/explain/event_handling.rst:74
+#: ../../users/explain/event_handling.rst:75
+#: ../../users/explain/event_handling.rst:76
+#: ../../users/explain/event_handling.rst:77
+msgid "`.LocationEvent`"
+msgstr "`.LocationEvent`"
+
+#: ../../users/explain/event_handling.rst:74
+msgid "mouse enters a new figure"
+msgstr "el ratón introduce una nueva figura"
+
+#: ../../users/explain/event_handling.rst:75
+msgid "'figure_leave_event'"
+msgstr "'figure_leave_event'"
+
+#: ../../users/explain/event_handling.rst:75
+msgid "mouse leaves a figure"
+msgstr "el ratón sale de una figura"
+
+#: ../../users/explain/event_handling.rst:76
+msgid "'axes_enter_event'"
+msgstr "'axes_enter_event'"
+
+#: ../../users/explain/event_handling.rst:76
+msgid "mouse enters a new axes"
+msgstr "el ratón entra en un nuevo eje"
+
+#: ../../users/explain/event_handling.rst:77
+msgid "'axes_leave_event'"
+msgstr "'axes_leave_event'"
+
+#: ../../users/explain/event_handling.rst:77
+msgid "mouse leaves an axes"
+msgstr "el ratón deja un eje"
+
+#: ../../users/explain/event_handling.rst:81
+msgid "When connecting to 'key_press_event' and 'key_release_event' events, you may encounter inconsistencies between the different user interface toolkits that Matplotlib works with. This is due to inconsistencies/limitations of the user interface toolkit. The following table shows some basic examples of what you may expect to receive as key(s) from the different user interface toolkits, where a comma separates different keys:"
+msgstr "Cuando se conecta a los eventos 'key_press_event' y 'key_release_event', se pueden encontrar inconsistencias entre los diferentes kit de herramientas de interfaz de usuario con los que trabaja Matplotlib. Esto se debe a las inconsistencias/limitaciones del kit de herramientas de la interfaz de usuario. La siguiente tabla muestra algunos ejemplos básicos de lo que puede esperar recibir como clave(s) de los diferentes kits de herramientas de interfaz de usuario, donde una coma separa las diferentes claves:"
+
+#: ../../users/explain/event_handling.rst:89
+msgid "Key(s) Pressed"
+msgstr "Tecla(s) pulsada(s)"
+
+#: ../../users/explain/event_handling.rst:89
+msgid "WxPython"
+msgstr "WxPython"
+
+#: ../../users/explain/event_handling.rst:89
+msgid "Qt"
+msgstr "Qt"
+
+#: ../../users/explain/event_handling.rst:89
+msgid "WebAgg"
+msgstr "WebAgg"
+
+#: ../../users/explain/event_handling.rst:89
+msgid "Gtk"
+msgstr "Gtk"
+
+#: ../../users/explain/event_handling.rst:89
+msgid "Tkinter"
+msgstr "Tkinter"
+
+#: ../../users/explain/event_handling.rst:91
+msgid "Shift+2"
+msgstr "Shift+2"
+
+#: ../../users/explain/event_handling.rst:91
+msgid "shift, shift+2"
+msgstr "shift, shift+2"
+
+#: ../../users/explain/event_handling.rst:91
+msgid "shift, \""
+msgstr "shift, \""
+
+#: ../../users/explain/event_handling.rst:92
+msgid "Shift+F1"
+msgstr "Shift+F1"
+
+#: ../../users/explain/event_handling.rst:92
+msgid "shift, shift+f1"
+msgstr "shift, shift+f1"
+
+#: ../../users/explain/event_handling.rst:93
+msgid "Shift"
+msgstr "Shift"
+
+#: ../../users/explain/event_handling.rst:93
+msgid "shift"
+msgstr "shift"
+
+#: ../../users/explain/event_handling.rst:94
+msgid "Control"
+msgstr "Control"
+
+#: ../../users/explain/event_handling.rst:94
+msgid "control"
+msgstr "control"
+
+#: ../../users/explain/event_handling.rst:95
+msgid "Alt"
+msgstr "Alt"
+
+#: ../../users/explain/event_handling.rst:95
+#: ../../users/explain/event_handling.rst:96
+msgid "alt"
+msgstr "alt"
+
+#: ../../users/explain/event_handling.rst:96
+msgid "AltGr"
+msgstr "AltGr"
+
+#: ../../users/explain/event_handling.rst:96
+msgid "Nothing"
+msgstr "Nada"
+
+#: ../../users/explain/event_handling.rst:96
+msgid "iso_level3_shift"
+msgstr "iso_level3_shift"
+
+#: ../../users/explain/event_handling.rst:97
+msgid "CapsLock"
+msgstr "CapsLock"
+
+#: ../../users/explain/event_handling.rst:97
+msgid "caps_lock"
+msgstr "caps_lock"
+
+#: ../../users/explain/event_handling.rst:98
+msgid "A"
+msgstr "A"
+
+#: ../../users/explain/event_handling.rst:98
+#: ../../users/explain/event_handling.rst:99
+msgid "a"
+msgstr "a"
+
+#: ../../users/explain/event_handling.rst:100
+msgid "Shift+a"
+msgstr "Shift+a"
+
+#: ../../users/explain/event_handling.rst:100
+#: ../../users/explain/event_handling.rst:101
+msgid "shift, A"
+msgstr "shift, A"
+
+#: ../../users/explain/event_handling.rst:101
+msgid "Shift+A"
+msgstr "Shift+A"
+
+#: ../../users/explain/event_handling.rst:101
+msgid "shift, a"
+msgstr "shift, a"
+
+#: ../../users/explain/event_handling.rst:102
+msgid "Ctrl+Shift+Alt"
+msgstr "Ctrl+Shift+Alt"
+
+#: ../../users/explain/event_handling.rst:102
+msgid "control, ctrl+shift, ctrl+alt"
+msgstr "control, ctrl+shift, ctrl+alt"
+
+#: ../../users/explain/event_handling.rst:102
+msgid "control, ctrl+shift, ctrl+meta"
+msgstr "control, ctrl+shift, ctrl+meta"
+
+#: ../../users/explain/event_handling.rst:103
+msgid "Ctrl+Shift+a"
+msgstr "Ctrl+Shift+a"
+
+#: ../../users/explain/event_handling.rst:103
+#: ../../users/explain/event_handling.rst:104
+msgid "control, ctrl+shift, ctrl+A"
+msgstr "control, ctrl+shift, ctrl+A"
+
+#: ../../users/explain/event_handling.rst:103
+#: ../../users/explain/event_handling.rst:104
+msgid "control, ctrl+shift, ctrl+a"
+msgstr "control, ctrl+shift, ctrl+a"
+
+#: ../../users/explain/event_handling.rst:104
+msgid "Ctrl+Shift+A"
+msgstr "Ctrl+Shift+A"
+
+#: ../../users/explain/event_handling.rst:105
+msgid "F1"
+msgstr "F1"
+
+#: ../../users/explain/event_handling.rst:105
+msgid "f1"
+msgstr "f1"
+
+#: ../../users/explain/event_handling.rst:106
+msgid "Ctrl+F1"
+msgstr "Ctrl+F1"
+
+#: ../../users/explain/event_handling.rst:106
+msgid "control, ctrl+f1"
+msgstr "control, ctrl+f1"
+
+#: ../../users/explain/event_handling.rst:109
+msgid "Matplotlib attaches some keypress callbacks by default for interactivity; they are documented in the :ref:`key-event-handling` section."
+msgstr "Matplotlib adjunta algunas devoluciones de llamada de pulsación de teclas por defecto para la interactividad; están documentadas en la sección :ref:`key-event-handling`."
+
+#: ../../users/explain/event_handling.rst:115
+msgid "Event attributes"
+msgstr "Atributos del evento"
+
+#: ../../users/explain/event_handling.rst:117
+msgid "All Matplotlib events inherit from the base class `matplotlib.backend_bases.Event`, which stores the attributes:"
+msgstr "Todos los eventos de Matplotlib heredan de la clase base `matplotlib.backend_bases.Event`, que almacena los atributos:"
+
+#: ../../users/explain/event_handling.rst:120
+msgid "``name``"
+msgstr "``name``"
+
+#: ../../users/explain/event_handling.rst:121
+msgid "the event name"
+msgstr "nombre del evento"
+
+#: ../../users/explain/event_handling.rst:122
+msgid "``canvas``"
+msgstr "``canvas``"
+
+#: ../../users/explain/event_handling.rst:123
+msgid "the FigureCanvas instance generating the event"
+msgstr "la instancia de FigureCanvas que genera el evento"
+
+#: ../../users/explain/event_handling.rst:125
+msgid "``guiEvent``"
+msgstr "``guiEvent``"
+
+#: ../../users/explain/event_handling.rst:125
+msgid "the GUI event that triggered the Matplotlib event"
+msgstr "el evento de la IGU que desencadenó el evento de Matplotlib"
+
+#: ../../users/explain/event_handling.rst:127
+msgid "The most common events that are the bread and butter of event handling are key press/release events and mouse press/release and movement events.  The `.KeyEvent` and `.MouseEvent` classes that handle these events are both derived from the LocationEvent, which has the following attributes"
+msgstr "Los eventos más comunes que son los más comunes en la gestión de eventos son los eventos de pulsación/liberación de teclas y los eventos de pulsación/liberación y movimiento del ratón.  Las clases `.KeyEvent` y `.MouseEvent` que manejan estos eventos derivan de LocationEvent, que tiene los siguientes atributos"
+
+#: ../../users/explain/event_handling.rst:133
+msgid "``x``, ``y``"
+msgstr "``x``, ``y``"
+
+#: ../../users/explain/event_handling.rst:134
+msgid "mouse x and y position in pixels from left and bottom of canvas"
+msgstr "la posición x e y del ratón en píxeles desde la izquierda y la parte inferior del lienzo"
+
+#: ../../users/explain/event_handling.rst:135
+msgid "``inaxes``"
+msgstr "``inaxes``"
+
+#: ../../users/explain/event_handling.rst:136
+msgid "the `~.axes.Axes` instance over which the mouse is, if any; else None"
+msgstr "la instancia `~.axes.Axes` sobre la que se encuentra el ratón, si la hay; si no, ninguna"
+
+#: ../../users/explain/event_handling.rst:139
+msgid "``xdata``, ``ydata``"
+msgstr "``xdata``, ``ydata``"
+
+#: ../../users/explain/event_handling.rst:138
+msgid "mouse x and y position in data coordinates, if the mouse is over an axes"
+msgstr "posición x e y del ratón en coordenadas de datos, si el ratón está sobre un eje"
+
+#: ../../users/explain/event_handling.rst:141
+msgid "Let's look a simple example of a canvas, where a simple line segment is created every time a mouse is pressed::"
+msgstr "Veamos un ejemplo sencillo de un lienzo, donde se crea un simple segmento de línea cada vez que se pulsa el ratón::"
+
+#: ../../users/explain/event_handling.rst:168
+msgid "The `.MouseEvent` that we just used is a `.LocationEvent`, so we have access to the data and pixel coordinates via ``(event.x, event.y)`` and ``(event.xdata, event.ydata)``.  In addition to the ``LocationEvent`` attributes, it also has"
+msgstr "El `.MouseEvent` que acabamos de utilizar es un `.LocationEvent`, por lo que tenemos acceso a los datos y coordenadas de los píxeles mediante ``(event.x, event.y)`` y ``(event.xdata, event.ydata)``.  Además de los atributos ``LocationEvent``, también tiene"
+
+#: ../../users/explain/event_handling.rst:173
+msgid "``button``"
+msgstr "``button``"
+
+#: ../../users/explain/event_handling.rst:173
+msgid "the button pressed: None, `.MouseButton`, 'up', or 'down' (up and down are used for scroll events)"
+msgstr "el botón pulsado: Ninguno, `.MouseButton`, 'arriba', o 'abajo' (arriba y abajo se utilizan para los eventos de desplazamiento)"
+
+#: ../../users/explain/event_handling.rst:176
+msgid "``key``"
+msgstr "``key``"
+
+#: ../../users/explain/event_handling.rst:176
+msgid "the key pressed: None, any character, 'shift', 'win', or 'control'"
+msgstr "la tecla pulsada: None, cualquier carácter, 'shift', 'win', o 'control'"
+
+#: ../../users/explain/event_handling.rst:179
+msgid "Draggable rectangle exercise"
+msgstr "Ejercicio de rectángulo arrastrable"
+
+#: ../../users/explain/event_handling.rst:181
+msgid "Write draggable rectangle class that is initialized with a `.Rectangle` instance but will move its ``xy`` location when dragged.  Hint: you will need to store the original ``xy`` location of the rectangle which is stored as rect.xy and connect to the press, motion and release mouse events.  When the mouse is pressed, check to see if the click occurs over your rectangle (see `.Rectangle.contains`) and if it does, store the rectangle xy and the location of the mouse click in data coords. In the motion event callback, compute the deltax and deltay of the mouse movement, and add those deltas to the origin of the rectangle you stored.  The redraw the figure.  On the button release event, just reset all the button press data you stored as None."
+msgstr "Escribe una clase de rectángulo arrastrable que se inicialice con una instancia de `.Rectangle` pero que mueva su ubicación ``xy`` cuando se arrastre.  Sugerencia: tendrás que almacenar la ubicación original ``xy`` del rectángulo que se almacena como rect.xy y conectar con los eventos de pulsación, movimiento y liberación del ratón.  Cuando se presiona el ratón, comprueba si el clic se produce sobre tu rectángulo (ver `.Rectangle.contains`) y si lo hace, almacena el rectángulo xy y la ubicación del clic del ratón en coordenadas de datos. En el callback del evento de movimiento, calcula el deltax y el deltay del movimiento del ratón, y añade esos deltas al origen del rectángulo que almacenaste.  Luego redibuja la figura.  En el evento de liberación del botón, simplemente restablece todos los datos de la pulsación del botón que almacenaste como None."
+
+#: ../../users/explain/event_handling.rst:194
+msgid "Here is the solution::"
+msgstr "Esta es la solución::"
+
+#: ../../users/explain/event_handling.rst:259
+msgid "**Extra credit**: Use blitting to make the animated drawing faster and smoother."
+msgstr "**Crédito extra**: Utiliza el blitting para que el dibujo animado sea más rápido y suave."
+
+#: ../../users/explain/event_handling.rst:262
+msgid "Extra credit solution::"
+msgstr "Solución de crédito extra::"
+
+#: ../../users/explain/event_handling.rst:366
+msgid "Mouse enter and leave"
+msgstr "Entrar y salir con el ratón"
+
+#: ../../users/explain/event_handling.rst:368
+msgid "If you want to be notified when the mouse enters or leaves a figure or axes, you can connect to the figure/axes enter/leave events.  Here is a simple example that changes the colors of the axes and figure background that the mouse is over::"
+msgstr "Si quieres recibir notificaciones cuando el ratón entre o salga de una figura o eje, puedes conectarte a los eventos de entrada/salida de la figura/eje.  Aquí hay un ejemplo sencillo que cambia los colores de los ejes y del fondo de la figura sobre la que pasa el ratón::"
+
+#: ../../users/explain/event_handling.rst:420
+msgid "Object picking"
+msgstr "Selección de objetos"
+
+#: ../../users/explain/event_handling.rst:422
+msgid "You can enable picking by setting the ``picker`` property of an `.Artist` (such as `.Line2D`, `.Text`, `.Patch`, `.Polygon`, `.AxesImage`, etc.)"
+msgstr "Puedes habilitar la selección estableciendo la propiedad ``picker`` de un `.Artist` (como `.Line2D`, `.Text`, `.Patch`, `.Polygon`, `.AxesImage`, etc.)"
+
+#: ../../users/explain/event_handling.rst:425
+msgid "The ``picker`` property can be set using various types:"
+msgstr "La propiedad ``picker`` puede establecerse utilizando varios tipos:"
+
+#: ../../users/explain/event_handling.rst:427
+msgid "``None``"
+msgstr "``None``"
+
+#: ../../users/explain/event_handling.rst:428
+msgid "Picking is disabled for this artist (default)."
+msgstr "La selección está desactivada para este artist (por defecto)."
+
+#: ../../users/explain/event_handling.rst:430
+msgid "``boolean``"
+msgstr "``boolean``"
+
+#: ../../users/explain/event_handling.rst:430
+msgid "If True, then picking will be enabled and the artist will fire a pick event if the mouse event is over the artist."
+msgstr "Si es True, entonces la selección estará habilitada y el artist provocará un evento de selección si el evento del ratón está sobre el artist."
+
+#: ../../users/explain/event_handling.rst:438
+msgid "``callable``"
+msgstr "``callable``"
+
+#: ../../users/explain/event_handling.rst:433
+msgid "If picker is a callable, it is a user supplied function which determines whether the artist is hit by the mouse event.  The signature is ``hit, props = picker(artist, mouseevent)`` to determine the hit test.  If the mouse event is over the artist, return ``hit = True``; ``props`` is a dictionary of properties that become additional attributes on the `.PickEvent`."
+msgstr "Si el picker es un invocable, es una función suministrada por el usuario que determina si el artist es impactado por el evento del ratón.  La función es ``hit, props = picker(artist, mouseevent)`` para determinar la prueba de impacto.  Si el evento del ratón está sobre el artist, devuelve ``hit = True``; ``props`` que es un diccionario de propiedades que se convierten en atributos adicionales en el `.PickEvent`."
+
+#: ../../users/explain/event_handling.rst:440
+msgid "The artist's ``pickradius`` property can additionally be set to a tolerance value in points (there are 72 points per inch) that determines how far the mouse can be and still trigger a mouse event."
+msgstr "La propiedad ``pickradius`` del artist puede establecerse adicionalmente con un valor de tolerancia en puntos (hay 72 puntos por pulgada) que determina la distancia a la que puede estar el ratón y seguir provocando un evento de ratón."
+
+#: ../../users/explain/event_handling.rst:444
+msgid "After you have enabled an artist for picking by setting the ``picker`` property, you need to connect a handler to the figure canvas pick_event to get pick callbacks on mouse press events.  The handler typically looks like ::"
+msgstr "Después de haber habilitado un artist para la selección mediante la configuración de la propiedad ``picker``, es necesario conectar un controlador al lienzo de la figura pick_event para obtener callbacks de selección en los eventos de pulsación del ratón.  El manejador típicamente se parece a ::"
+
+#: ../../users/explain/event_handling.rst:453
+msgid "The `.PickEvent` passed to your callback always has the following attributes:"
+msgstr "El `.PickEvent` pasado a su callback siempre tiene los siguientes atributos:"
+
+#: ../../users/explain/event_handling.rst:456
+msgid "``mouseevent``"
+msgstr "``mouseevent``"
+
+#: ../../users/explain/event_handling.rst:456
+msgid "The `.MouseEvent` that generate the pick event.  See event-attributes_ for a list of useful attributes on the mouse event."
+msgstr "El `.MouseEvent` que genera el evento de pick.  Ver event-attributes_ para una lista de atributos útiles en el evento del ratón."
+
+#: ../../users/explain/event_handling.rst:459
+msgid "``artist``"
+msgstr "``artist``"
+
+#: ../../users/explain/event_handling.rst:459
+msgid "The `.Artist` that generated the pick event."
+msgstr "El `.Artist` que generó el evento de selección."
+
+#: ../../users/explain/event_handling.rst:461
+msgid "Additionally, certain artists like `.Line2D` and `.PatchCollection` may attach additional metadata, like the indices of the data that meet the picker criteria (e.g., all the points in the line that are within the specified ``pickradius`` tolerance)."
+msgstr "Además, ciertos artists como `.Line2D` y `.PatchCollection` pueden adjuntar metadatos adicionales, como los índices de los datos que cumplen con los criterios del picker (por ejemplo, todos los puntos de la línea que están dentro de la tolerancia especificada ``pickradius``)."
+
+#: ../../users/explain/event_handling.rst:467
+msgid "Simple picking example"
+msgstr "Ejemplo de selección simple"
+
+#: ../../users/explain/event_handling.rst:469
+msgid "In the example below, we enable picking on the line and set a pick radius tolerance in points.  The ``onpick`` callback function will be called when the pick event it within the tolerance distance from the line, and has the indices of the data vertices that are within the pick distance tolerance.  Our ``onpick`` callback function simply prints the data that are under the pick location.  Different Matplotlib Artists can attach different data to the PickEvent.  For example, ``Line2D`` attaches the ind property, which are the indices into the line data under the pick point.  See `.Line2D.pick` for details on the ``PickEvent`` properties of the line.  ::"
+msgstr "En el ejemplo siguiente, activamos la selección en la línea y establecemos una tolerancia de radio de selección en puntos.  La función de callback ``onpick`` será llamada cuando el evento de picking esté dentro de la distancia de tolerancia de la línea, y tiene los índices de los vértices de los datos que están dentro de la tolerancia de la distancia de picking. Nuestra función de callback ``onpick`` simplemente imprime los datos que están bajo la ubicación del pick. Diferentes artistas de Matplotlib pueden adjuntar diferentes datos al PickEvent.  Por ejemplo, ``Line2D`` adjunta la propiedad ind, que son los índices en los datos de la línea bajo el punto de pick.  Ver `.Line2D.pick` para más detalles sobre las propiedades ``PickEvent`` de la línea ::"
+
+#: ../../users/explain/event_handling.rst:502
+msgid "Picking exercise"
+msgstr "Ejercicio de selección"
+
+#: ../../users/explain/event_handling.rst:504
+msgid "Create a data set of 100 arrays of 1000 Gaussian random numbers and compute the sample mean and standard deviation of each of them (hint: NumPy arrays have a mean and std method) and make a xy marker plot of the 100 means vs. the 100 standard deviations.  Connect the line created by the plot command to the pick event, and plot the original time series of the data that generated the clicked on points.  If more than one point is within the tolerance of the clicked on point, you can use multiple subplots to plot the multiple time series."
+msgstr "Crea un conjunto de datos de 100 matrices de 1000 números aleatorios gaussianos y calcula la media de la muestra y la desviación estándar de cada uno de ellos (pista: las matrices de NumPy tienen un método de media y std) y has un gráfico de marcador xy de las 100 medias frente a las 100 desviaciones estándar. Conecta la línea creada por el comando plot con el evento pick, y grafica la serie de tiempo original de los datos que generaron los puntos clicados.  Si más de un punto está dentro de la tolerancia del punto seleccionado, puedes utilizar múltiples subplots para trazar las múltiples series de tiempo."
+
+#: ../../users/explain/event_handling.rst:513
+msgid "Exercise solution::"
+msgstr "Solución del ejercicio::"
+

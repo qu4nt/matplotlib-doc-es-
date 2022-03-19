@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-19 18:58\n"
+"PO-Revision-Date: 2022-03-19 20:29\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -48,212 +48,212 @@ msgstr "Los nuevos métodos `.figure.Figure.add_subfigure` y `.figure.Figure.sub
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:33
 msgid "See :doc:`/gallery/subplots_axes_and_figures/subfigures` for further details."
-msgstr ""
+msgstr "Ver :doc:`/gallery/subplots_axes_and_figures/subfigures` para más detalles."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:37
 msgid "The subfigure functionality is experimental API as of v3.4."
-msgstr ""
+msgstr "La funcionalidad de las subfiguras es una API experimental a partir de la versión 3.4."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-1.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:75
 msgid "Single-line string notation for ``subplot_mosaic``"
-msgstr ""
+msgstr "Notación de cadena de una sola línea para ``subplot_mosaic``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:77
 msgid "`.Figure.subplot_mosaic` and `.pyplot.subplot_mosaic` now accept a single-line string, using semicolons to delimit rows. Namely, ::"
-msgstr ""
+msgstr "`.Figure.subplot_mosaic` y `.pyplot.subplot_mosaic` aceptan ahora una cadena de una sola línea, utilizando punto y coma para delimitar las filas. A saber, ::"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:86
 msgid "may be written as the shorter:"
-msgstr ""
+msgstr "puede escribirse como el más corto:"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:9
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-2.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:94
 msgid "Changes to behavior of Axes creation methods (``gca``, ``add_axes``, ``add_subplot``)"
-msgstr ""
+msgstr "Cambios en el comportamiento de los métodos de creación de ejes (``gca``, ``add_axes``, ``add_subplot``)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:96
 msgid "The behavior of the functions to create new Axes (`.pyplot.axes`, `.pyplot.subplot`, `.figure.Figure.add_axes`, `.figure.Figure.add_subplot`) has changed. In the past, these functions would detect if you were attempting to create Axes with the same keyword arguments as already-existing Axes in the current Figure, and if so, they would return the existing Axes. Now, `.pyplot.axes`, `.figure.Figure.add_axes`, and `.figure.Figure.add_subplot` will always create new Axes. `.pyplot.subplot` will continue to reuse an existing Axes with a matching subplot spec and equal *kwargs*."
-msgstr ""
+msgstr "El comportamiento de las funciones para crear nuevos Ejes (`.pyplot.axes`, `.pyplot.subplot`, `.figure.Figure.add_axes`, `.figure.Figure.add_subplot`) ha cambiado. Antes, estas funciones detectaban si se intentaba crear ejes con los mismos argumentos de palabra clave que los ejes ya existentes en la figura actual y, en ese caso, devolvían los ejes existentes. Ahora, `.pyplot.axes`, `.figure.Figure.add_axes`, y `.figure.Figure.add_subplot` siempre crearán nuevos Ejes. El programa `.pyplot.subplot` seguirá reutilizando los ejes existentes con una especificación de subplot que corresponda y con los mismos *kwargs*."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:105
 msgid "Correspondingly, the behavior of the functions to get the current Axes (`.pyplot.gca`, `.figure.Figure.gca`) has changed. In the past, these functions accepted keyword arguments. If the keyword arguments matched an already-existing Axes, then that Axes would be returned, otherwise new Axes would be created with those keyword arguments. Now, the keyword arguments are only considered if there are no Axes at all in the current figure. In a future release, these functions will not accept keyword arguments at all."
-msgstr ""
+msgstr "En consecuencia, el comportamiento de las funciones para obtener los Ejes actuales (`.pyplot.gca`, `.figure.Figure.gca`) ha cambiado. Antes, estas funciones aceptaban argumentos de palabras clave. Si los argumentos de las palabras clave corresponden con un Eje ya existente, se devolvía ese Eje, de lo contrario se creaban nuevos Ejes con esos argumentos de las palabras clave. Ahora, los argumentos de la palabra clave sólo se consideran si no hay ningún Eje en la figura actual. En una futura versión, estas funciones no aceptarán ningún argumento de palabra clave."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:114
 msgid "``add_subplot``/``add_axes`` gained an *axes_class* parameter"
-msgstr ""
+msgstr "``add_subplot``/`add_axes`` ha ganado un parámetro *axes_class*"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:116
 msgid "In particular, ``mpl_toolkits`` Axes subclasses can now be idiomatically used using, e.g., ``fig.add_subplot(axes_class=mpl_toolkits.axislines.Axes)``"
-msgstr ""
+msgstr "En particular, las subclases de ejes de ``mpl_toolkits`` pueden utilizarse ahora de forma idiomática utilizando, por ejemplo, ``fig.add_subplot(axes_class=mpl_toolkits.axislines.Axes)``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:120
 msgid "Subplot and subplot2grid can now work with constrained layout"
-msgstr ""
+msgstr "Subplot y subplot2grid ahora pueden trabajar con diseño restringido"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:122
 msgid "``constrained_layout`` depends on a single `.GridSpec` for each logical layout on a figure. Previously, `.pyplot.subplot` and `.pyplot.subplot2grid` added a new ``GridSpec`` each time they were called and were therefore incompatible with ``constrained_layout``."
-msgstr ""
+msgstr "``constrained_layout`` depende de un único `.GridSpec` para cada diseño lógico de una figura. Anteriormente, `.pyplot.subplot` y `.pyplot.subplot2grid` añadían una nueva ``GridSpec`` cada vez que se invocaban y, por tanto, eran incompatibles con ``constrained_layout``."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:127
 msgid "Now ``subplot`` attempts to reuse the ``GridSpec`` if the number of rows and columns is the same as the top level GridSpec already in the figure, i.e., ``plt.subplot(2, 1, 2)`` will use the same GridSpec as ``plt.subplot(2, 1, 1)`` and the ``constrained_layout=True`` option to `~.figure.Figure` will work."
-msgstr ""
+msgstr "Ahora ``subplot`` intenta reutilizar el ``GridSpec`` si el número de filas y columnas es el mismo que el GridSpec de nivel superior que ya está en la figura, es decir, ``plt.subplot(2, 1, 2)`` utilizará el mismo GridSpec que ``plt.subplot(2, 1, 1)`` y la opción ``constrained_layout=True`` de `~.figure.Figure` funcionará."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:132
 msgid "In contrast, mixing *nrows* and *ncols* will *not* work with ``constrained_layout``: ``plt.subplot(2, 2, 1)`` followed by ``plt.subplots(2, 1, 2)`` will still produce two GridSpecs, and ``constrained_layout=True`` will give bad results. In order to get the desired effect, the second call can specify the cells the second Axes is meant to cover:  ``plt.subplots(2, 2, (2, 4))``, or the more Pythonic ``plt.subplot2grid((2, 2), (0, 1), rowspan=2)`` can be used."
-msgstr ""
+msgstr "Por el contrario, mezclar *nrows* y *ncols* *no* funcionará con ``constrained_layout``: ``plt.subplot(2, 2, 1)`` seguido de ``plt.subplots(2, 1, 2)`` seguirá produciendo dos GridSpecs, y ``constrained_layout=True`` dará malos resultados. Para obtener el efecto deseado, la segunda vez a invocar puede especificar las celdas que el segundo eje debe cubrir:  ``plt.subplots(2, 2, (2, 4))``, o se puede utilizar el más pitónico ``plt.subplot2grid((2, 2), (0, 1), rowspan=2)``."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:142
 msgid "Plotting methods"
-msgstr ""
+msgstr "Métodos de graficación"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:145
 msgid "``axline`` supports *transform* parameter"
-msgstr ""
+msgstr "``axline`` soporta el parámetro *transform*"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:147
 msgid "`~.Axes.axline` now supports the *transform* parameter, which applies to the points *xy1*, *xy2*. The *slope* (if given) is always in data coordinates."
-msgstr ""
+msgstr "`~.Axes.axline` soporta ahora el parámetro *transform*, que se aplica a los puntos *xy1*, *xy2*. La *slope* (si se da) está siempre en coordenadas de datos."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:150
 msgid "For example, this can be used with ``ax.transAxes`` for drawing lines with a fixed slope. In the following plot, the line appears through the same point on both Axes, even though they show different data limits."
-msgstr ""
+msgstr "Por ejemplo, esto se puede utilizar con ``ax.transAxes`` para dibujar líneas con una pendiente fija. En el siguiente gráfico, la línea aparece a través del mismo punto en ambos ejes, aunque muestren diferentes límites de datos."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:13
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-3.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-3.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:164
 msgid "New automatic labeling for bar charts"
-msgstr ""
+msgstr "Nuevo etiquetado automático para los gráficos de barras"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:166
 msgid "A new `.Axes.bar_label` method has been added for auto-labeling bar charts."
-msgstr ""
+msgstr "Se ha añadido un nuevo método `.Axes.bar_label` para etiquetar automáticamente los gráficos de barras."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:171
 msgid "Example of the new automatic labeling."
-msgstr ""
+msgstr "Ejemplo del nuevo etiquetado automático."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:174
 msgid "A list of hatches can be specified to `~.axes.Axes.bar` and `~.axes.Axes.barh`"
-msgstr ""
+msgstr "Se puede especificar una lista de escotillas a `~.axes.Axes.bar` y `~.axes.Axes.barh`"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:176
 msgid "Similar to some other rectangle properties, it is now possible to hand a list of hatch styles to `~.axes.Axes.bar` and `~.axes.Axes.barh` in order to create bars with different hatch styles, e.g."
-msgstr ""
+msgstr "Al igual que otras propiedades de los rectángulos, ahora es posible entregar una lista de estilos de sombreado a `~.axes.Axes.bar` y `~.axes.Axes.barh` para crear barras con diferentes estilos de sombreado, por ejemplo."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-4.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-4.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-4.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-4.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:187
 msgid "Setting ``BarContainer`` orientation"
-msgstr ""
+msgstr "Fijar la orientación de ``BarContainer``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:189
 msgid "`.BarContainer` now accepts a new string argument *orientation*. It can be either ``'vertical'`` or ``'horizontal'``, default is ``None``."
-msgstr ""
+msgstr "`.BarContainer` acepta ahora un nuevo argumento de cadena *orientation*. Puede ser ``'vertical'`` u ``'horizontal'``, por defecto es ``None``."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:193
 msgid "Contour plots now default to using ScalarFormatter"
-msgstr ""
+msgstr "Los gráficos de contorno ahora utilizan por defecto ScalarFormatter"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:195
 #, python-format
 msgid "Pass ``fmt=\"%1.3f\"`` to the contouring call to restore the old default label format."
-msgstr ""
+msgstr "Pase ``fmt=\"%1.3f\"`` a la invocación del contorno para restaurar el antiguo formato de etiqueta por defecto."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:199
 msgid "``Axes.errorbar`` cycles non-color properties correctly"
-msgstr ""
+msgstr "``Axes.errorbar`` cicla correctamente las propiedades que no son de color"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:201
 msgid "Formerly, `.Axes.errorbar` incorrectly skipped the Axes property cycle if a color was explicitly specified, even if the property cycler was for other properties (such as line style). Now, `.Axes.errorbar` will advance the Axes property cycle as done for `.Axes.plot`, i.e., as long as all properties in the cycler are not explicitly passed."
-msgstr ""
+msgstr "Anteriormente, `.Axes.errorbar` se saltaba incorrectamente el ciclo de propiedades de los ejes si se especificaba explícitamente un color, incluso si el ciclador de propiedades era para otras propiedades (como el estilo de línea). Ahora, `.Axes.errorbar` avanzará el ciclo de propiedades de los ejes como se hace con `.Axes.plot`, es decir, siempre que no se pasen explícitamente todas las propiedades del ciclador."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:207
 msgid "For example, the following will cycle through the line styles:"
-msgstr ""
+msgstr "Por ejemplo, lo siguiente hará un ciclo a través de los estilos de línea:"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:17
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-5.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-5.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-5.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-5.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-5.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-5.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:223
 msgid "``errorbar`` *errorevery* parameter matches *markevery*"
-msgstr ""
+msgstr "El parámetro ``errorbar`` *errorevery* corresponde con *markevery*"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:225
 msgid "Similar to the *markevery* parameter to `~.Axes.plot`, the *errorevery* parameter of `~.Axes.errorbar` now accept slices and NumPy fancy indexes (which must match the size of *x*)."
-msgstr ""
+msgstr "De forma similar al parámetro *markevery* de `~.Axes.plot`, el parámetro *errorevery* de `~.Axes.errorbar` ahora acepta cortes e índices de fantasía NumPy (que deben corresponder con el tamaño de *x*)."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-6.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-6.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-6.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-6.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-6.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-6.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:244
 msgid "``hexbin`` supports data reference for *C* parameter"
-msgstr ""
+msgstr "``hexbin`` soporta la referencia de datos para el parámetro *C"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:246
 msgid "As with the *x* and *y* parameters, `.Axes.hexbin` now supports passing the *C* parameter using a data reference."
-msgstr ""
+msgstr "Al igual que con los parámetros *x* e *y*, `.Axes.hexbin` ahora permite pasar el parámetro *C* utilizando una referencia de datos."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:16
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-7.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-7.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-7.pdf>`__)"
-msgstr ""
+msgstr "(`código fuente <../../users/prev_whats_new/whats_new_3-4-0-7.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-7.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-7.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:262
 msgid "Support callable for formatting of Sankey labels"
-msgstr ""
+msgstr "Apoyo a la invocación del formato de las etiquetas Sankey"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:264
 msgid "The `format` parameter of `matplotlib.sankey.Sankey` can now accept callables."
-msgstr ""
+msgstr "El parámetro `format` de `matplotlib.sankey.Sankey` ahora puede aceptar invocables."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:266
 msgid "This allows the use of an arbitrary function to label flows, for example allowing the mapping of numbers to emoji."
-msgstr ""
+msgstr "Esto permite el uso de una función arbitraria para etiquetar flujos, por ejemplo, permitiendo el mapeo de números a emoji."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-8.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-8.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-8.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-8.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-8.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-8.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:308
 msgid "``Axes.spines`` access shortcuts"
-msgstr ""
+msgstr "Atajos de acceso a ``Axes.spines``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:310
 msgid "``Axes.spines`` is now a dedicated container class `.Spines` for a set of `.Spine`\\s instead of an ``OrderedDict``. On top of dict-like access, ``Axes.spines`` now also supports some ``pandas.Series``-like features."
-msgstr ""
+msgstr "``Axes.spines`` es ahora una clase contenedora dedicada `.Spines` para un conjunto de `.Spine`` en lugar de un ``OrderedDict``. Además del acceso tipo dict, ``Axes.spines`` ahora también soporta algunas características tipo ``pandas.Series``."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:314
 msgid "Accessing single elements by item or by attribute::"
-msgstr ""
+msgstr "Acceso a elementos individuales por elemento o por atributo::"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:319
 msgid "Accessing a subset of items::"
-msgstr ""
+msgstr "Acceder a un subconjunto de elementos::"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:323
 msgid "Accessing all items simultaneously::"
-msgstr ""
+msgstr "Acceder a todos los elementos simultáneamente::"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:328
 msgid "New ``stairs`` method and ``StepPatch`` artist"
-msgstr ""
+msgstr "Nuevo método ``stairs`` y artist ``StepPatch``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:330
 msgid "`.pyplot.stairs` and the underlying artist `~.matplotlib.patches.StepPatch` provide a cleaner interface for plotting stepwise constant functions for the common case that you know the step edges. This supersedes many use cases of `.pyplot.step`, for instance when plotting the output of `numpy.histogram`."
-msgstr ""
+msgstr "`.pyplot.stairs` y el artist subyacente `~.matplotlib.patches.StepPatch` proporcionan una interfaz más limpia para graficar funciones constantes escalonadas para el caso común de que se conozcan los bordes de las aristas. Esto sustituye a muchos casos de uso de `.pyplot.step`, por ejemplo al trazar la salida de `numpy.histogram`."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:335
 msgid "For both the artist and the function, the x-like edges input is one element longer than the y-like values input"

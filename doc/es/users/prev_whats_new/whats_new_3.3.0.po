@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-19 16:29\n"
+"PO-Revision-Date: 2022-03-19 18:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -480,81 +480,81 @@ msgstr "Se han añadido varias funciones a `~.bezier.BezierSegment` y `~.path.Pa
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:640
 msgid "In addition to the fixes below, `~.bezier.BezierSegment` has gained more documentation and usability improvements, including properties that contain its dimension, degree, control_points, and more."
-msgstr ""
+msgstr "Además de las correcciones que se indican a continuación, `~.bezier.BezierSegment` ha ganado más documentación y mejoras de usabilidad, incluyendo propiedades que contienen su dimensión, grado, puntos de control, y más."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:645
 msgid "Better interface for Path segment iteration"
-msgstr ""
+msgstr "Mejora de la interfaz para la iteración de segmentos de ruta"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:647
 msgid "`~.path.Path.iter_bezier` iterates through the `~.bezier.BezierSegment`'s that make up the Path. This is much more useful typically than the existing `~.path.Path.iter_segments` function, which returns the absolute minimum amount of information possible to reconstruct the Path."
-msgstr ""
+msgstr "La función `~.path.Path.iter_bezier` itera a través de los `~.bezier.BezierSegment` que componen la ruta. Esto es mucho más útil que la función existente `~.path.Path.iter_segments`, que devuelve la cantidad mínima de información posible para reconstruir la ruta."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:653
 msgid "Fixed bug that computed a Path's Bbox incorrectly"
-msgstr ""
+msgstr "Se ha corregido un error que calculaba incorrectamente la caja B de una ruta"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:655
 msgid "Historically, `~.path.Path.get_extents` has always simply returned the Bbox of a curve's control points, instead of the Bbox of the curve itself. While this is a correct upper bound for the path's extents, it can differ dramatically from the Path's actual extents for non-linear Bezier curves."
-msgstr ""
+msgstr "Históricamente, `~.path.Path.get_extents` siempre ha devuelto simplemente la caja B de los puntos de control de una curva, en lugar de la caja B de la propia curva. Aunque esto es un límite superior correcto para las extensiones de la ruta, puede diferir dramáticamente de las extensiones reales de la trayectoria para las curvas Bezier no lineales."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:662
 msgid "Backend-specific improvements"
-msgstr ""
+msgstr "Mejoras específicas para el backend"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:665
 msgid "``savefig()`` gained a *backend* keyword argument"
-msgstr ""
+msgstr "``savefig()`` ganó un argumento de palabra clave *backend*"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:667
 msgid "The *backend* keyword argument to ``savefig`` can now be used to pick the rendering backend without having to globally set the backend; e.g., one can save PDFs using the pgf backend with ``savefig(\"file.pdf\", backend=\"pgf\")``."
-msgstr ""
+msgstr "El argumento de la palabra clave *backend* de ``savefig`` puede utilizarse ahora para elegir el backend de renderizado sin tener que establecerlo globalmente; por ejemplo, se pueden guardar PDFs utilizando el backend pgf con ``savefig(\"file.pdf\", backend=\"pgf\")``."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:672
 msgid "The SVG backend can now render hatches with transparency"
-msgstr ""
+msgstr "El backend SVG ahora puede renderizar escotillas con transparencia"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:674
 msgid "The SVG backend now respects the hatch stroke alpha. Useful applications are, among others, semi-transparent hatches as a subtle way to differentiate columns in bar plots."
-msgstr ""
+msgstr "El backend SVG ahora respeta el alfa del trazo de la escotilla. Las aplicaciones útiles son, entre otras, las tramas semitransparentes como forma sutil de diferenciar las columnas en los gráficos de barras."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:679
 msgid "SVG supports URLs on more artists"
-msgstr ""
+msgstr "SVG admite URLs en más artists"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:681
 msgid "URLs on more artists (i.e., from `.Artist.set_url`) will now be saved in SVG files, namely, ``Tick``\\s and ``Line2D``\\s are now supported."
-msgstr ""
+msgstr "Las URLs de más artists (es decir, de `.Artist.set_url`) se guardarán ahora en archivos SVG, es decir, ahora se admiten ``Tick``\\s y `Line2D``\\s."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:685
 msgid "Images in SVG will no longer be blurred in some viewers"
-msgstr ""
+msgstr "Las imágenes en SVG ya no se verán borrosas en algunos dispositivos de visualización"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:687
 msgid "A style is now supplied to images without interpolation (``imshow(..., interpolation='none'``) so that SVG image viewers will no longer perform interpolation when rendering themselves."
-msgstr ""
+msgstr "Ahora se suministra un estilo a las imágenes sin interpolación (``imshow(..., interpolation='none'``) para que los dispositivos de visualización de imágenes SVG ya no realicen la interpolación al renderizarse."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:692
 msgid "Saving SVG now supports adding metadata"
-msgstr ""
+msgstr "Guardar SVG ahora permite añadir metadatos"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:694
 msgid "When saving SVG files, metadata can now be passed which will be saved in the file using `Dublin Core`_ and `RDF`_. A list of valid metadata can be found in the documentation for `.FigureCanvasSVG.print_svg`."
-msgstr ""
+msgstr "Al guardar archivos SVG, ahora se pueden pasar metadatos que se guardarán en el archivo utilizando `Dublin Core`_ y `RDF`_. Puede encontrar una lista de metadatos válidos en la documentación de `.FigureCanvasSVG.print_svg`."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:702
 msgid "Saving PDF metadata via PGF now consistent with PDF backend"
-msgstr ""
+msgstr "Guardar los metadatos del PDF a través del PGF ahora es coherente con el backend del PDF"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:704
 msgid "When saving PDF files using the PGF backend, passed metadata will be interpreted in the same way as with the PDF backend.  Previously, this metadata was only accepted by the PGF backend when saving a multi-page PDF with `.backend_pgf.PdfPages`, but is now allowed when saving a single figure, as well."
-msgstr ""
+msgstr "Al guardar archivos PDF utilizando el backend PGF, los metadatos pasados se interpretarán de la misma manera que con el backend PDF.  Anteriormente, estos metadatos sólo eran aceptados por el backend PGF cuando se guardaba un PDF de varias páginas con `.backend_pgf.PdfPages`, pero ahora también se permite cuando se guarda una sola figura."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:711
 msgid "NbAgg and WebAgg no longer use jQuery & jQuery UI"
-msgstr ""
+msgstr "NbAgg y WebAgg ya no utilizan jQuery y jQuery UI"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:713
 msgid "Instead, they are implemented using vanilla JavaScript. Please report any issues with browsers."
-msgstr ""
+msgstr "En su lugar, se implementan utilizando JavaScript de vainilla. Por favor, informa de cualquier incidencia con los navegadores."
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-19 14:52\n"
+"PO-Revision-Date: 2022-03-19 16:29\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -392,91 +392,91 @@ msgstr "Añade ``contour.linewidth`` a rcParams"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:537
 msgid "The new config option :rc:`contour.linewidth` allows to control the default line width of contours as a float. When set to ``None``, the line widths fall back to :rc:`lines.linewidth`. The config value is overridden as usual by the *linewidths* argument passed to `~.axes.Axes.contour` when it is not set to ``None``."
-msgstr ""
+msgstr "La nueva opción de configuración :rc:`contour.linewidth` permite controlar el ancho de línea por defecto de los contornos como un punto flotante. Cuando se establece como ``None``, el ancho de línea vuelve a ser el de :rc:`lines.linewidth`. El valor de la configuración es sobreescrito por el argumento *linewidths* que se pasa a `~.axes.Axes.contour` cuando no se establece como ``None``."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:545
 msgid "3D Axes improvements"
-msgstr ""
+msgstr "Mejoras en los ejes 3D"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:548
 msgid "``Axes3D`` no longer distorts the 3D plot to match the 2D aspect ratio"
-msgstr ""
+msgstr "``Axes3D`` ya no distorsiona el gráfico 3D para que correponda con la relación de aspecto 2D"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:550
 msgid "Plots made with :class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` were previously stretched to fit a square bounding box. As this stretching was done after the projection from 3D to 2D, it resulted in distorted images if non-square bounding boxes were used. As of 3.3, this no longer occurs."
-msgstr ""
+msgstr "Los gráficos realizados con :class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` se estiraban anteriormente para ajustarse a una caja delimitadora cuadrada. Como este estiramiento se realizaba después de la proyección de 3D a 2D, daba lugar a imágenes distorsionadas si se utilizaban cajas delimitadoras no cuadradas. A partir de la versión 3.3, esto ya no ocurre."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:555
 msgid "Currently, modes of setting the aspect (via `~mpl_toolkits.mplot3d.axes3d.Axes3D.set_aspect`) in data space are not supported for Axes3D but may be in the future. If you want to simulate having equal aspect in data space, set the ratio of your data limits to match the value of `~.get_box_aspect`. To control these ratios use the `~mpl_toolkits.mplot3d.axes3d.Axes3D.set_box_aspect` method which accepts the ratios as a 3-tuple of X:Y:Z. The default aspect ratio is 4:4:3."
-msgstr ""
+msgstr "Actualmente, los modos de establecer el aspecto (a través de `~mpl_toolkits.mplot3d.axes3d.Axes3D.set_aspect`) en el espacio de datos no están soportados para Axes3D, pero podrían estarlo en el futuro. Si deseas simular que tiene un aspecto igual en el espacio de datos, establece la relación de sus límites de datos para que coincida con el valor de `~.get_box_aspect`. Para controlar estos ratios utiliza el método `~mpl_toolkits.mplot3d.axes3d.Axes3D.set_box_aspect`, que acepta los ratios como una tripleta de X:Y:Z. La relación de aspecto por defecto es 4:4:3."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:564
 msgid "3D axes now support minor ticks"
-msgstr ""
+msgstr "Los ejes 3D ahora soportan ticks menores"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:24
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-3-0-14.py>`__, `png <../../users/prev_whats_new/whats_new_3-3-0-14.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-3-0-14.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-3-0-14.py>`__, `png <../../users/prev_whats_new/whats_new_3-3-0-14.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-3-0-14.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:587
 msgid "Home/Forward/Backward buttons now work with 3D axes"
-msgstr ""
+msgstr "Los botones Inicio/Adelante/Atrás ahora funcionan con los ejes 3D"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:591
 msgid "Interactive tool improvements"
-msgstr ""
+msgstr "Mejoras en las herramientas interactivas"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:594
 msgid "More consistent toolbar behavior across backends"
-msgstr ""
+msgstr "Comportamiento más coherente de la barra de herramientas en todos los backends"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:596
 msgid "Toolbar features are now more consistent across backends. The history buttons will auto-disable when there is no further action in a direction. The pan and zoom buttons will be marked active when they are in use."
-msgstr ""
+msgstr "Las características de la barra de herramientas son ahora más consistentes en todos los backends. Los botones del historial se desactivarán automáticamente cuando no haya más acciones en una dirección. Los botones de desplazamiento y zoom se marcarán como activos cuando estén en uso."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:600
 msgid "In NbAgg and WebAgg, the toolbar buttons are now grouped similarly to other backends. The WebAgg toolbar now uses the same icons as other backends."
-msgstr ""
+msgstr "En NbAgg y WebAgg, los botones de la barra de herramientas están ahora agrupados de forma similar a otros backends. La barra de herramientas de WebAgg ahora utiliza los mismos iconos que otros backends."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:604
 msgid "Toolbar icons are now styled for dark themes"
-msgstr ""
+msgstr "Los iconos de la barra de herramientas están ahora adaptados a los temas oscuros"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:606
 msgid "On dark themes, toolbar icons will now be inverted. When using the GTK3Agg backend, toolbar icons are now symbolic, and both foreground and background colors will follow the theme. Tooltips should also behave correctly."
-msgstr ""
+msgstr "En los temas oscuros, los iconos de la barra de herramientas estarán ahora invertidos. Cuando se utiliza el backend GTK3Agg, los iconos de la barra de herramientas son ahora simbólicos, y tanto el color de primer plano como el de fondo seguirán el tema. La información sobre herramientas también debería comportarse correctamente."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:611
 msgid "Cursor text now uses a number of significant digits matching pointing precision"
-msgstr ""
+msgstr "El texto del cursor utiliza ahora una serie de dígitos significativos que corresponde con la precisión del puntero"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:613
 msgid "Previously, the x/y position displayed by the cursor text would usually include far more significant digits than the mouse pointing precision (typically one pixel). This is now fixed for linear scales."
-msgstr ""
+msgstr "Anteriormente, la posición x/y mostrada por el texto del cursor solía incluir muchos más dígitos significativos que la precisión del puntero del ratón (normalmente un píxel). Esto se ha solucionado para las escalas lineales."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:618
 msgid "GTK / Qt zoom rectangle now black and white"
-msgstr ""
+msgstr "Rectángulo de zoom GTK / Qt ahora en blanco y negro"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:620
 msgid "This makes it visible even over a dark background."
-msgstr ""
+msgstr "Esto hace que sea visible incluso sobre un fondo oscuro."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:623
 msgid "Event handler simplifications"
-msgstr ""
+msgstr "Simplificación de los manejadores de eventos"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:625
 msgid "The `.backend_bases.key_press_handler` and `.backend_bases.button_press_handler` event handlers can now be directly connected to a canvas with ``canvas.mpl_connect(\"key_press_event\", key_press_handler)`` and ``canvas.mpl_connect(\"button_press_event\", button_press_handler)``, rather than having to write wrapper functions that fill in the (now optional) *canvas* and *toolbar* parameters."
-msgstr ""
+msgstr "Los manejadores de eventos `.backend_bases.key_press_handler` y `.backend_bases.button_press_handler` pueden ahora conectarse directamente a un lienzo con ``canvas.mpl_connect(\"key_press_event\", key_press_handler)`` y ``canvas.mpl_connect(\"button_press_event\", button_press_handler)``, en lugar de tener que escribir funciones envolventes que rellenen los parámetros (ahora opcionales) *canvas* y *toolbar*."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:634
 msgid "Functions to compute a Path's size"
-msgstr ""
+msgstr "Funciones para calcular el tamaño de una ruta"
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:636
 msgid "Various functions were added to `~.bezier.BezierSegment` and `~.path.Path` to allow computation of the shape/size of a `~.path.Path` and its composite Bezier curves."
-msgstr ""
+msgstr "Se han añadido varias funciones a `~.bezier.BezierSegment` y `~.path.Path` para permitir el cálculo de la forma/tamaño de un `~.path.Path` y sus curvas Bezier compuestas."
 
 #: ../../users/prev_whats_new/whats_new_3.3.0.rst:640
 msgid "In addition to the fixes below, `~.bezier.BezierSegment` has gained more documentation and usability improvements, including properties that contain its dimension, degree, control_points, and more."

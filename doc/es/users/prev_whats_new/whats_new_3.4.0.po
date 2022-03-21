@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-21 22:43\n"
+"PO-Revision-Date: 2022-03-21 23:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -690,93 +690,93 @@ msgstr "Anteriormente se admitían los subtítulos cuando se utilizaba la instru
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:952
 msgid "The ``:caption:`` option allows specifying the caption for both external::"
-msgstr ""
+msgstr "La opción ``:caption:`` permite especificar el pie de foto para ambos externos::"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:957
 msgid "and inline plots::"
-msgstr ""
+msgstr "y los gráficos en línea::"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:966
 msgid "Backend-specific improvements"
-msgstr ""
+msgstr "Mejoras específicas para el backend"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:969
 msgid "Consecutive rasterized draws now merged"
-msgstr ""
+msgstr "Los dibujos rasterizados consecutivos ahora se fusionan"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:971
 msgid "Elements of a vector output can be individually set to rasterized, using the *rasterized* keyword argument, or `~.artist.Artist.set_rasterized()`. This can be useful to reduce file sizes. For figures with multiple raster elements they are now automatically merged into a smaller number of bitmaps where this will not effect the visual output. For cases with many elements this can result in significantly smaller file sizes."
-msgstr ""
+msgstr "Los elementos de una salida vectorial pueden establecerse individualmente como rasterizados, utilizando el argumento de la palabra clave *rasterized*, o `~.artist.Artist.set_rasterized()`. Esto puede ser útil para reducir el tamaño de los archivos. En el caso de las figuras con múltiples elementos rasterizados, ahora se fusionan automáticamente en un número menor de mapas de bits cuando esto no afecte a la salida visual. Para casos con muchos elementos, esto puede resultar en tamaños de archivo significativamente menores."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:978
 msgid "To ensure this happens do not place vector elements between raster ones."
-msgstr ""
+msgstr "Para que esto ocurra, no coloque elementos vectoriales entre los rasterizados."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:980
 msgid "To inhibit this merging set ``Figure.suppressComposite`` to True."
-msgstr ""
+msgstr "Para inhibir esta fusión establezca ``Figure.suppressComposite`` a True."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:983
 msgid "Support raw/rgba frame format in ``FFMpegFileWriter``"
-msgstr ""
+msgstr "Soporta el formato de fotogramas raw/rgba en ``FFMpegFileWriter``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:985
 msgid "When using `.FFMpegFileWriter`, the  *frame_format* may now be set to ``\"raw\"`` or ``\"rgba\"``, which may be slightly faster than an image format, as no encoding/decoding need take place between Matplotlib and FFmpeg."
-msgstr ""
+msgstr "Cuando se utiliza `.FFMpegFileWriter`, el *frame_format* puede ahora establecerse como ``\"raw\"`` o ``\"rgba\"``, lo que puede ser ligeramente más rápido que un formato de imagen, ya que no es necesario codificar/decodificar entre Matplotlib y FFmpeg."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:990
 msgid "nbAgg/WebAgg support middle-click and double-click"
-msgstr ""
+msgstr "nbAgg/WebAgg soportan el clic del medio y el doble clic"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:992
 msgid "Double click events are now supported by the nbAgg and WebAgg backends. Formerly, WebAgg would report middle-click events as right clicks, but now reports the correct button type."
-msgstr ""
+msgstr "Los eventos de doble clic son ahora soportados por los backends nbAgg y WebAgg. Anteriormente, WebAgg informaba de los eventos de clic en el medio como clics derechos, pero ahora informa del tipo de botón correcto."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:997
 msgid "nbAgg support binary communication"
-msgstr ""
+msgstr "nbAgg soporta la comunicación binaria"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:999
 msgid "If the web browser and notebook support binary websockets, nbAgg will now use them for slightly improved transfer of figure display."
-msgstr ""
+msgstr "Si el navegador web y el portátil soportan websockets binarios, nbAgg los utilizará ahora para una transferencia ligeramente mejorada de la visualización de figuras."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1003
 msgid "Indexed color for PNG images in PDF files when possible"
-msgstr ""
+msgstr "Color indexado para imágenes PNG en archivos PDF cuando sea posible"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1005
 msgid "When PNG images have 256 colors or fewer, they are converted to indexed color before saving them in a PDF. This can result in a significant reduction in file size in some cases. This is particularly true for raster data that uses a colormap but no interpolation, such as Healpy mollview plots. Currently, this is only done for RGB images."
-msgstr ""
+msgstr "Cuando las imágenes PNG tienen 256 colores o menos, se convierten a color indexado antes de guardarlas en un PDF. En algunos casos, esto puede suponer una reducción significativa del tamaño del archivo. Esto es especialmente cierto en el caso de los datos rasterizados que utilizan un mapa de colores pero sin interpolación, como los gráficos de Healpy mollview. Actualmente, esto sólo se hace para las imágenes RGB."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1012
 msgid "Improved font subsettings in PDF/PS"
-msgstr ""
+msgstr "Mejora de los subconjuntos de fuentes en PDF/PS"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1014
 msgid "Font subsetting in PDF and PostScript has been re-written from the embedded ``ttconv`` C code to Python. Some composite characters and outlines may have changed slightly. This fixes ttc subsetting in PDF, and adds support for subsetting of type 3 OTF fonts, resulting in smaller files (much smaller when using CJK fonts), and avoids running into issues with type 42 embedding and certain PDF readers such as Acrobat Reader."
-msgstr ""
+msgstr "El subconjunto de fuentes en PDF y PostScript ha sido reescrito desde el código C ``ttconv`` incrustado a Python. Algunos caracteres compuestos y contornos pueden haber cambiado ligeramente. Esto corrige el subconjunto de ttc en PDF, y añade soporte para el subconjunto de fuentes OTF de tipo 3, lo que resulta en archivos más pequeños (mucho más pequeños cuando se utilizan fuentes CJK), y evita los problemas con embedding de tipo 42 y ciertos lectores de PDF como Acrobat Reader."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1022
 msgid "Kerning added to strings in PDFs"
-msgstr ""
+msgstr "Se añade el kerning a las cadenas en los PDF"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1024
 msgid "As with text produced in the Agg backend (see :ref:`the previous what's new entry <whats-new-3-2-0-kerning>` for examples), PDFs now include kerning in text strings."
-msgstr ""
+msgstr "Al igual que con el texto producido en el backend Agg ( ver :ref:`the previous what's new entry <whats-new-3-2-0-kerning>` para ejemplos), los PDFs ahora incluyen kerning en las cadenas de texto."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1029
 msgid "Fully-fractional HiDPI in QtAgg"
-msgstr ""
+msgstr "HiDPI totalmente fraccionado en QtAgg"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1031
 msgid "Fully-fractional HiDPI (that is, HiDPI ratios that are not whole integers) was added in Qt 5.14, and is now supported by the QtAgg backend when using this version of Qt or newer."
-msgstr ""
+msgstr "El HiDPI completamente fraccionario (es decir, los ratios HiDPI que no son enteros) fue añadido en Qt 5.14, y ahora es soportado por el backend QtAgg cuando se utiliza esta versión de Qt o más reciente."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1036
 msgid "wxAgg supports fullscreen toggle"
-msgstr ""
+msgstr "wxAgg soporta la alternancia de pantalla completa"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:1038
 msgid "The wxAgg backend supports toggling fullscreen using the :kbd:`f` shortcut, or the manager function `.FigureManagerBase.full_screen_toggle`."
-msgstr ""
+msgstr "El backend de wxAgg soporta la conmutación de pantalla completa usando el atajo de teclado :kbd:`f`, o la función del gestor `.FigureManagerBase.full_screen_toggle`."
 

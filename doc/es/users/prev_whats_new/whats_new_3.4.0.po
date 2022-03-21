@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-21 14:31\n"
+"PO-Revision-Date: 2022-03-21 15:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -333,240 +333,240 @@ msgstr "Anteriormente, el valor alfa que controla la transparencia en las colecc
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:428
 msgid "Now it is possible to supply alpha as an array with one value for each element (marker, quadrilateral, etc.) in a collection."
-msgstr ""
+msgstr "Ahora es posible suministrar alfa como un arreglo con un valor para cada elemento (marcador, cuadrilátero, etc.) en una colección."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-12.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-12.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-12.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-12.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-12.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-12.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:454
 msgid "pcolormesh has improved transparency handling by enabling snapping"
-msgstr ""
+msgstr "pcolormesh ha mejorado el manejo de la transparencia al permitir el ajuste"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:456
 msgid "Due to how the snapping keyword argument was getting passed to the Agg backend, previous versions of Matplotlib would appear to show lines between the grid edges of a mesh with transparency. This version now applies snapping by default. To restore the old behavior (e.g., for test images), you may set :rc:`pcolormesh.snap` to `False`."
-msgstr ""
+msgstr "Debido a la forma en que el argumento de la palabra clave snapping se pasaba al backend de Agg, las versiones anteriores de Matplotlib mostraban líneas entre las aristas de la cuadrícula. Esta versión ahora aplica el snapping por defecto. Para restaurar el comportamiento anterior (por ejemplo, para las imágenes de prueba), puede establecer :rc:`pcolormesh.snap` a `False`."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-13.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-13.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-13.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-13.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-13.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-13.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:473
 msgid "Note that there are lines between the grid boundaries of the main plot which are not the same transparency. The colorbar also shows these lines when a transparency is added to the colormap because internally it uses pcolormesh to draw the colorbar. With snapping on by default (below), the lines at the grid boundaries disappear."
-msgstr ""
+msgstr "Tenga en cuenta que hay líneas entre los límites de la cuadrícula de la gráfica principal que no tienen la misma transparencia. La barra de colores también muestra estas líneas cuando se añade una transparencia al mapa de colores porque internamente utiliza pcolormesh para dibujar la barra de colores. Con el ajuste activado por defecto (abajo), las líneas en los límites de la cuadrícula desaparecen."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-14.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-14.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-14.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-14.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-14.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-14.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:489
 msgid "IPython representations for Colormap objects"
-msgstr ""
+msgstr "Representaciones de IPython para objetos Colormap"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:491
 msgid "The `matplotlib.colors.Colormap` object now has image representations for IPython / Jupyter backends. Cells returning a colormap on the last line will display an image of the colormap."
-msgstr ""
+msgstr "El objeto `matplotlib.colors.Colormap` tiene ahora representaciones de imagen para los backends de IPython / Jupyter. Las celdas que devuelven un mapa de colores en la última línea mostrarán una imagen del mapa de colores."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:527
 msgid "``Colormap.set_extremes`` and ``Colormap.with_extremes``"
-msgstr ""
+msgstr "``Colormap.set_extremes`` y ``Colormap.with_extremes``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:529
 msgid "Because the `.Colormap.set_bad`, `.Colormap.set_under` and `.Colormap.set_over` methods modify the colormap in place, the user must be careful to first make a copy of the colormap if setting the extreme colors e.g. for a builtin colormap."
-msgstr ""
+msgstr "Debido a que los métodos `.Colormap.set_bad`, `.Colormap.set_under` y `.Colormap.set_over` modifican el mapa de colores en su lugar, el usuario debe tener cuidado de hacer primero una copia del mapa de colores si establece los colores extremos, por ejemplo, para un mapa de colores incorporado."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:533
 msgid "The new ``Colormap.with_extremes(bad=..., under=..., over=...)`` can be used to first copy the colormap and set the extreme colors on that copy."
-msgstr ""
+msgstr "El nuevo ``Colormap.with_extremes(bad=..., under=..., over=...)`` puede utilizarse para copiar primero el mapa de colores y establecer los colores extremos en esa copia."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:536
 msgid "The new `.Colormap.set_extremes` method is provided for API symmetry with `.Colormap.with_extremes`, but note that it suffers from the same issue as the earlier individual setters."
-msgstr ""
+msgstr "El nuevo método `.Colormap.set_extremes` se proporciona para la simetría de la API con `.Colormap.with_extremes`, pero tenga en cuenta que sufre el mismo problema que los anteriores setters individuales."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:541
 msgid "Get under/over/bad colors of Colormap objects"
-msgstr ""
+msgstr "Obtener los colores inferiores/exteriores/malos de los objetos de Colormap"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:543
 msgid "`matplotlib.colors.Colormap` now has methods `~.colors.Colormap.get_under`, `~.colors.Colormap.get_over`, `~.colors.Colormap.get_bad` for the colors used for out-of-range and masked values."
-msgstr ""
+msgstr "`matplotlib.colors.Colormap` tiene ahora métodos `~.colors.Colormap.get_under`, `~.colors.Colormap.get_over`, `~.colors.Colormap.get_bad` para los colores utilizados para los valores fuera de rango y enmascarados."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:548
 msgid "New ``cm.unregister_cmap`` function"
-msgstr ""
+msgstr "Nueva función ``cm.unregister_cmap``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:550
 msgid "`.cm.unregister_cmap` allows users to remove a colormap that they have previously registered."
-msgstr ""
+msgstr "`.cm.unregister_cmap` permite a los usuarios eliminar un mapa de colores que hayan registrado previamente."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:554
 msgid "New ``CenteredNorm`` for symmetrical data around a center"
-msgstr ""
+msgstr "Nueva ``CenteredNorm`` para datos simétricos alrededor de un centro"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:556
 msgid "In cases where data is symmetrical around a center, for example, positive and negative anomalies around a center zero, `~.matplotlib.colors.CenteredNorm` is a new norm that automatically creates a symmetrical mapping around the center. This norm is well suited to be combined with a divergent colormap which uses an unsaturated color in its center."
-msgstr ""
+msgstr "En los casos en que los datos son simétricos alrededor de un centro, por ejemplo, anomalías positivas y negativas alrededor de un centro cero, `~.matplotlib.colors.CenteredNorm` es una nueva norma que crea automáticamente un mapeo simétrico alrededor del centro. Esta norma es muy adecuada para ser combinada con un mapa de color divergente que utiliza un color no saturado en su centro."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-15.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-15.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-15.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-15.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-15.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-15.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:581
 msgid "If the center of symmetry is different from 0, it can be set with the *vcenter* argument. To manually set the range of `~.matplotlib.colors.CenteredNorm`, use the *halfrange* argument."
-msgstr ""
+msgstr "Si el centro de simetría es diferente de 0, se puede establecer con el argumento *vcenter*. Para establecer manualmente el rango de `~.matplotlib.colors.CenteredNorm`, utilice el argumento *halfrange*."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:585
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:620
 msgid "See :doc:`/tutorials/colors/colormapnorms` for an example and more details about data normalization."
-msgstr ""
+msgstr "Ver :doc:`/tutorials/colors/colormapnorms` para un ejemplo y más detalles sobre la normalización de datos."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:589
 msgid "New ``FuncNorm`` for arbitrary normalizations"
-msgstr ""
+msgstr "Nuevo ``FuncNorm`` para normalizaciones arbitrarias"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:591
 msgid "The `.FuncNorm` allows for arbitrary normalization using functions for the forward and inverse."
-msgstr ""
+msgstr "El `.FuncNorm` permite una normalización arbitraria utilizando funciones para el avance y la inversión."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-16.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-16.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-16.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-16.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-16.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-16.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:624
 msgid "GridSpec-based colorbars can now be positioned above or to the left of the main axes"
-msgstr ""
+msgstr "Las barras de color basadas en GridSpec ahora pueden colocarse encima o a la izquierda de los ejes principales"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:626
 msgid "... by passing ``location=\"top\"`` or ``location=\"left\"`` to the ``colorbar()`` call."
-msgstr ""
+msgstr "... pasando ``location=\"top\"`` o ``location=\"left\"`` al invocar ``colorbar()``."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:631
 msgid "Titles, ticks, and labels"
-msgstr ""
+msgstr "Títulos, ticks y etiquetas"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:634
 msgid "supxlabel and supylabel"
-msgstr ""
+msgstr "supxlabel y supylabel"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:636
 msgid "It is possible to add x- and y-labels to a whole figure, analogous to `.FigureBase.suptitle` using the new `.FigureBase.supxlabel` and `.FigureBase.supylabel` methods."
-msgstr ""
+msgstr "Es posible añadir etiquetas x e y a toda una figura, de forma análoga a `.FigureBase.suptitle` utilizando los nuevos métodos `.FigureBase.supxlabel` y `.FigureBase.supylabel`."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-17.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-17.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-17.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-17.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-17.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-17.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:654
 msgid "Shared-axes ``subplots`` tick label visibility is now correct for top or left labels"
-msgstr ""
+msgstr "La visibilidad de etiqueta de la marca del eje ``subplots`` es ahora correcta para las etiquetas superiores o izquierdas"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:656
 msgid "When calling ``subplots(..., sharex=True, sharey=True)``, Matplotlib automatically hides x tick labels for Axes not in the first column and y tick labels for Axes not in the last row. This behavior is incorrect if rcParams specify that Axes should be labeled on the top (``rcParams[\"xtick.labeltop\"] = True``) or on the right (``rcParams[\"ytick.labelright\"] = True``)."
-msgstr ""
+msgstr "Cuando se invoca a ``subplots(..., sharex=True, sharey=True)``, Matplotlib oculta automáticamente las etiquetas de las marcas x para los ejes que no están en la primera columna y las etiquetas de las marcas y para los ejes que no están en la última fila. Este comportamiento es incorrecto si rcParams especifica que los Ejes deben ser etiquetados en la parte superior (``rcParams[\"xtick.labeltop\"] = True``) o en la derecha (``rcParams[\"ytick.labelright\"] = True``)."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:662
 msgid "Cases such as the following are now handled correctly (adjusting visibility as needed on the first row and last column of Axes):"
-msgstr ""
+msgstr "Los casos como los siguientes se manejan ahora correctamente (ajustando la visibilidad según sea necesario en la primera fila y la última columna de los Ejes):"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:14
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-18.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-18.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-18.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-18.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-18.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-18.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:676
 msgid "An iterable object with labels can be passed to `.Axes.plot`"
-msgstr ""
+msgstr "Se puede pasar un objeto iterable con etiquetas a `.Axes.plot`"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:678
 msgid "When plotting multiple datasets by passing 2D data as *y* value to `~.Axes.plot`, labels for the datasets can be passed as a list, the length matching the number of columns in *y*."
-msgstr ""
+msgstr "Al graficar múltiples conjuntos de datos pasando datos 2D como valor *y* a `~.Axes.plot`, las etiquetas de los conjuntos de datos pueden pasarse como una lista, cuya longitud coincide con el número de columnas en *y*."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:16
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-19.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-19.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-19.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-19.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-19.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-19.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:696
 msgid "Fonts and Text"
-msgstr ""
+msgstr "Fuentes y texto"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:699
 msgid "Text transform can rotate text direction"
-msgstr ""
+msgstr "La transformación del texto puede girar la dirección del texto"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:701
 msgid "The new `.Text` parameter ``transform_rotates_text`` now sets whether rotations of the transform affect the text direction."
-msgstr ""
+msgstr "El nuevo parámetro `.Text` ``transform_rotates_text`` establece ahora si las rotaciones de la transformación afectan a la dirección del texto."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:707
 msgid "Example of the new *transform_rotates_text* parameter"
-msgstr ""
+msgstr "Ejemplo del nuevo parámetro *transform_rotates_text*"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:710
 msgid "``matplotlib.mathtext`` now supports *overset* and *underset* LaTeX symbols"
-msgstr ""
+msgstr "``matplotlib.mathtext`` soporta ahora los símbolos *overset* y *underset* de LaTeX"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:712
 msgid "`.mathtext` now supports *overset* and *underset*, called as ``\\overset{annotation}{body}`` or ``\\underset{annotation}{body}``, where *annotation* is the text \"above\" or \"below\" the *body*."
-msgstr ""
+msgstr "`.mathtext` ahora soporta *overset* y *underset*, llamado como ``\\overset{annotation}{body}`` o ``\\underset{annotation}{body}``, donde *anotación* es el texto \"arriba\" o \"abajo\" el *cuerpo*."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-20.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-20.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-20.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-20.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-20.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-20.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:722
 msgid "*math_fontfamily* parameter to change ``Text`` font family"
-msgstr ""
+msgstr "Parámetro *math_fontfamily* para cambiar la familia de fuentes de ``Text``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:724
 msgid "The new *math_fontfamily* parameter may be used to change the family of fonts for each individual text element in a plot. If no parameter is set, the global value :rc:`mathtext.fontset` will be used."
-msgstr ""
+msgstr "El nuevo parámetro *math_fontfamily* puede utilizarse para cambiar la familia de fuentes de cada elemento de texto individual en un gráfico. Si no se establece ningún parámetro, se utilizará el valor global :rc:`mathtext.fontset`."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:732
 msgid "``TextArea``/``AnchoredText`` support *horizontalalignment*"
-msgstr ""
+msgstr "``TextArea``/``AnchoredText`` soporta *horizontalalignment*"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:734
 msgid "The horizontal alignment of text in a `.TextArea` or `.AnchoredText` may now be specified, which is mostly effective for multiline text:"
-msgstr ""
+msgstr "Ahora se puede especificar la alineación horizontal del texto en un `.TextArea` o `.AnchoredText`, lo que es más efectivo para el texto multilínea:"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-21.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-21.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-21.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-21.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-21.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-21.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:756
 msgid "PDF supports URLs on ``Text`` artists"
-msgstr ""
+msgstr "El PDF es compatible con las URL de los artists de ``Text``"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:758
 msgid "URLs on `.text.Text` artists (i.e., from `.Artist.set_url`) will now be saved in PDF files."
-msgstr ""
+msgstr "Las URLs de los artists `.text.Text` (es decir, de `.Artist.set_url`) se guardarán ahora en archivos PDF."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:763
 msgid "rcParams improvements"
-msgstr ""
+msgstr "mejoras en rcParams"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:766
 msgid "New rcParams for dates: set converter and whether to use interval_multiples"
-msgstr ""
+msgstr "Nuevos rcParams para las fechas: establecer el convertidor y si usar interval_multiples"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:768
 msgid "The new :rc:`date.converter` allows toggling between `matplotlib.dates.DateConverter` and `matplotlib.dates.ConciseDateConverter` using the strings 'auto' and 'concise' respectively."
-msgstr ""
+msgstr "El nuevo :rc:`date.converter` permite alternar entre `matplotlib.dates.DateConverter` y `matplotlib.dates.ConciseDateConverter` utilizando las cadenas 'auto' y 'concise' respectivamente."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:772
 msgid "The new :rc:`date.interval_multiples` allows toggling between the dates locator trying to pick ticks at set intervals (i.e., day 1 and 15 of the month), versus evenly spaced ticks that start wherever the timeseries starts:"
-msgstr ""
+msgstr "El nuevo :rc:`date.interval_multiples` permite alternar entre el localizador de fechas que trata de elegir ticks en intervalos establecidos (por ejemplo, el día 1 y el 15 del mes), frente a ticks uniformemente espaciados que comienzan dondequiera que comience la serie temporal:"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:19
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-22.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-22.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-22.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-22.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-22.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-22.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:792
 msgid "Date formatters now respect *usetex* rcParam"
-msgstr ""
+msgstr "Los formateadores de fechas ahora respetan *usetex* rcParam"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:794
 msgid "The `.AutoDateFormatter` and `.ConciseDateFormatter` now respect :rc:`text.usetex`, and will thus use fonts consistent with TeX rendering of the default (non-date) formatter. TeX rendering may also be enabled/disabled by passing the *usetex* parameter when creating the formatter instance."
-msgstr ""
+msgstr "Los formateadores `.AutoDateFormatter` y `.ConciseDateFormatter` respetan ahora :rc:`text.usetex`, por lo que utilizarán fuentes consistentes con la representación TeX del formateador por defecto (sin fecha). La representación de TeX también puede activado/desactivado pasando el parámetro *usetex* al crear la instancia del formateador."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:799
 msgid "In the following plot, both the x-axis (dates) and y-axis (numbers) now use the same (TeX) font:"

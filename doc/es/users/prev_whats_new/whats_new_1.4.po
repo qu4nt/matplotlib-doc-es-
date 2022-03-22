@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-22 14:31\n"
+"PO-Revision-Date: 2022-03-22 16:27\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -76,87 +76,87 @@ msgstr "Gráficos de caja totalmente personalizables"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:66
 msgid "Paul Hobson overhauled the :func:`~matplotlib.pyplot.boxplot` method such that it is now completely customizable in terms of the styles and positions of the individual artists. Under the hood, :func:`~matplotlib.pyplot.boxplot` relies on a new function (:func:`~matplotlib.cbook.boxplot_stats`), which accepts any data structure currently compatible with :func:`~matplotlib.pyplot.boxplot`, and returns a list of dictionaries containing the positions for each element of the boxplots. Then a second method, `~.Axes.bxp` is called to draw the boxplots based on the stats."
-msgstr "Paul Hobson ha revisado el método :func:`~matplotlib.pyplot.boxplot` de forma que ahora es completamente personalizable en cuanto a los estilos y posiciones de los artists individuales. Bajo el aspecto, :func:`~matplotlib.pyplot.boxplot` se basa en una nueva función (:func:`~matplotlib.cbook.boxplot_stats`), que acepta cualquier estructura de datos actualmente compatible con :func:`~matplotlib.pyplot.boxplot`, y devuelve una lista de diccionarios que contienen las posiciones de cada elemento de los gráfico de caja. Luego se llama a un segundo método, `~.Axes.bxp` para dibujar los gráfico de caja en base a las estadísticas."
+msgstr "Paul Hobson ha revisado el método :func:`~matplotlib.pyplot.boxplot` de forma que ahora es completamente personalizable en cuanto a los estilos y posiciones de los artists individuales. Bajo el aspecto, :func:`~matplotlib.pyplot.boxplot` se basa en una nueva función (:func:`~matplotlib.cbook.boxplot_stats`), que acepta cualquier estructura de datos actualmente compatible con :func:`~matplotlib.pyplot.boxplot`, y devuelve una lista de diccionarios que contienen las posiciones de cada elemento de los gráficos de caja. Luego se llama a un segundo método, `~.Axes.bxp` para dibujar los gráficos de caja en base a las estadísticas."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:76
 msgid "The :func:`~matplotlib.pyplot.boxplot` function can be used as before to generate boxplots from data in one step. But now the user has the flexibility to generate the statistics independently, or to modify the output of :func:`~matplotlib.cbook.boxplot_stats` prior to plotting with `~.Axes.bxp`."
-msgstr ""
+msgstr "La función :func:`~matplotlib.pyplot.boxplot` puede utilizarse como antes para generar gráficos de caja a partir de los datos en un solo paso. Pero ahora el usuario tiene la flexibilidad de generar las estadísticas de forma independiente, o de modificar la salida de :func:`~matplotlib.cbook.boxplot_stats` antes de graficar con `~.Axes.bxp`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:82
 msgid "Lastly, each artist (e.g., the box, outliers, cap, notches) can now be toggled on or off and their styles can be passed in through individual kwargs. See the examples: :doc:`/gallery/statistics/boxplot` and :doc:`/gallery/statistics/bxp`"
-msgstr ""
+msgstr "Por último, cada artist (por ejemplo, la caja, los valores atípicos, la tapa, las muescas) puede ahora activarse o desactivarse y sus estilos pueden pasarse a través de kwargs individuales. Vea los ejemplos: :doc:`/gallery/statistics/boxplot` y :doc:`/gallery/statistics/bxp`"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:88
 msgid "Added a bool kwarg, :code:`manage_xticks`, which if False disables the management of the ticks and limits on the x-axis by :func:`~matplotlib.axes.Axes.bxp`."
-msgstr ""
+msgstr "Se ha añadido un kwarg bool, :code:`manage_xticks`, que si es False desactiva la gestión de los ticks y límites en el eje x por :func:`~matplotlib.axes.Axes.bxp`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:92
 msgid "Support for datetime axes in 2d plots"
-msgstr ""
+msgstr "Soporte para los ejes de fecha en los gráficos 2d"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:93
 msgid "Andrew Dawson added support for datetime axes to :func:`~matplotlib.pyplot.contour`, :func:`~matplotlib.pyplot.contourf`, :func:`~matplotlib.pyplot.pcolormesh` and :func:`~matplotlib.pyplot.pcolor`."
-msgstr ""
+msgstr "Andrew Dawson ha añadido soporte para ejes de fecha a :func:`~matplotlib.pyplot.contour`, :func:`~matplotlib.pyplot.contourf`, :func:`~matplotlib.pyplot.pcolormesh` y :func:`~matplotlib.pyplot.pcolor`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:98
 msgid "Support for additional spectrum types"
-msgstr ""
+msgstr "Soporte para tipos de espectro adicionales"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:99
 msgid "Todd Jennings added support for new types of frequency spectrum plots: :func:`~matplotlib.pyplot.magnitude_spectrum`, :func:`~matplotlib.pyplot.phase_spectrum`, and :func:`~matplotlib.pyplot.angle_spectrum`, as well as corresponding functions in mlab."
-msgstr ""
+msgstr "Todd Jennings ha añadido soporte para nuevos tipos de gráficos de espectro de frecuencias: :func:`~matplotlib.pyplot.magnitude_spectrum`, :func:`~matplotlib.pyplot.phase_spectrum`, y :func:`~matplotlib.pyplot.angle_spectrum`, así como las funciones correspondientes en mlab."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:105
 msgid "He also added these spectrum types to :func:`~matplotlib.pyplot.specgram`, as well as adding support for linear scaling there (in addition to the existing dB scaling). Support for additional spectrum types was also added to :func:`~matplotlib.mlab.specgram`."
-msgstr ""
+msgstr "También añadió estos tipos de espectro a :func:`~matplotlib.pyplot.specgram`, además de añadir soporte para el escalado lineal allí (además del escalado en dB existente). También se añadió soporte para tipos de espectro adicionales a :func:`~matplotlib.mlab.specgram`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:110
 msgid "He also increased the performance for all of these functions and plot types."
-msgstr ""
+msgstr "También ha aumentado el rendimiento de todas estas funciones y tipos de graficación."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:113
 msgid "Support for detrending and windowing 2D arrays in mlab"
-msgstr ""
+msgstr "Soporte para la eliminación de la tendencia y las ventanas de los arreglos 2D en mlab"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:114
 msgid "Todd Jennings added support for 2D arrays in the :func:`~matplotlib.mlab.detrend_mean`, :func:`~matplotlib.mlab.detrend_none`, and :func:`~matplotlib.mlab.detrend`, as well as adding ``matplotlib.mlab.apply_window`` which support windowing 2D arrays."
-msgstr ""
+msgstr "Todd Jennings ha añadido soporte para arreglos 2D en las funciones :func:`~matplotlib.mlab.detrend_mean`, :func:`~matplotlib.mlab.detrend_none`, y :func:`~matplotlib.mlab.detrend`, así como la adición de ``matplotlib.mlab.apply_window`` que soporta la ventana de arreglos 2D."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:120
 msgid "Support for strides in mlab"
-msgstr ""
+msgstr "Apoyo a los avances en mlab"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:121
 msgid "Todd Jennings added some functions to mlab to make it easier to use NumPy strides to create memory-efficient 2D arrays.  This includes ``matplotlib.mlab.stride_repeat``, which repeats an array to create a 2D array, and :func:`~matplotlib.mlab.stride_windows`, which uses a moving window to create a 2D array from a 1D array."
-msgstr ""
+msgstr "Todd Jennings ha añadido algunas funciones a mlab para facilitar el uso de strides de NumPy para crear arreglos 2D eficientes en memoria.  Esto incluye ``matplotlib.mlab.stride_repeat``, que repite un arreglo para crear un arrelo 2D, y :func:`~matplotlib.mlab.stride_windows`, que utiliza una ventana móvil para crear un arreglo 2D a partir de un arreglo 1D."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:128
 msgid "Formatter for new-style formatting strings"
-msgstr ""
+msgstr "Formateador para cadenas de formato de nuevo estilo"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:129
 msgid "Added `.StrMethodFormatter` which does the same job as `.FormatStrFormatter`, but accepts new-style formatting strings instead of printf-style formatting strings"
-msgstr ""
+msgstr "Se ha añadido `.StrMethodFormatter` que hace el mismo trabajo que `.FormatStrFormatter`, pero acepta cadenas de formato de estilo nuevo en lugar de cadenas de formato de estilo printf"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:134
 msgid "Consistent grid sizes in streamplots"
-msgstr ""
+msgstr "Tamaños de malla coherentes en los gráficos de flujo"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:135
 msgid ":func:`~matplotlib.pyplot.streamplot` uses a base grid size of 30x30 for both ``density=1`` and ``density=(1, 1)``. Previously a grid size of 30x30 was used for ``density=1``, but a grid size of 25x25 was used for ``density=(1, 1)``."
-msgstr ""
+msgstr ":func:`~matplotlib.pyplot.streamplot` utiliza un tamaño de malla base de 30x30 tanto para ``densidad=1`` como para ``densidad=(1, 1)``. Anteriormente se utilizaba un tamaño de malla de 30x30 para ``densidad=1``, pero se utilizaba un tamaño de malla de 25x25 para ``densidad=(1, 1)``."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:140
 msgid "Get a list of all tick labels (major and minor)"
-msgstr ""
+msgstr "Obtenga una lista de todas las etiquetas de marcas del eje (mayores y menores)"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:141
 msgid "Added the kwarg 'which' to `.Axes.get_xticklabels`, `.Axes.get_yticklabels` and `.Axis.get_ticklabels`.  'which' can be 'major', 'minor', or 'both' select which ticks to return, like `~.XAxis.set_ticks_position`.  If 'which' is `None` then the old behaviour (controlled by the bool *minor*)."
-msgstr ""
+msgstr "Se ha añadido el kwarg 'which' a `.Axes.get_xticklabels`, `.Axes.get_yticklabels` y `.Axis.get_ticklabels`.  'which' puede ser 'mayor', 'menor', o 'ambos' seleccionar qué marcas devolver, como `~.XAxis.set_ticks_position`.  Si 'which' es `None` entonces el comportamiento antiguo (controlado por el bool *minor*)."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:149
 msgid "Separate horizontal/vertical axes padding support in ImageGrid"
-msgstr ""
+msgstr "Soporte de relleno de ejes horizontales/verticales separados en ImageGrid"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:150
 msgid "The kwarg 'axes_pad' to :class:`mpl_toolkits.axes_grid1.axes_grid.ImageGrid` can now be a tuple if separate horizontal/vertical padding is needed. This is supposed to be very helpful when you have a labelled legend next to every subplot and you need to make some space for legend's labels."

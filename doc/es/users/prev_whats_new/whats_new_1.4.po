@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-22 14:31\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,63 +20,63 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:5
 msgid "What's new in Matplotlib 1.4 (Aug 25, 2014)"
-msgstr ""
+msgstr "Novedades en Matplotlib 1.4 (25 de agosto de 2014)"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:7
 msgid "Thomas A. Caswell served as the release manager for the 1.4 release."
-msgstr ""
+msgstr "Thomas A. Caswell sirvió como gestor de lanzamientos para la versión 1.4."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:12
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de Contenidos"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:16
 msgid "matplotlib 1.4 supports Python 2.6, 2.7, 3.3, and 3.4"
-msgstr ""
+msgstr "matplotlib 1.4 soporta Python 2.6, 2.7, 3.3 y 3.4"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:20
 msgid "New colormap"
-msgstr ""
+msgstr "Nuevo mapa de colores"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:21
 msgid "In heatmaps, a green-to-red spectrum is often used to indicate intensity of activity, but this can be problematic for the red/green colorblind. A new, colorblind-friendly colormap is now available at ``matplotlib.cm.Wistia``. This colormap maintains the red/green symbolism while achieving deuteranopic legibility through brightness variations. See `here <https://github.com/wistia/heatmap-palette>`__ for more information."
-msgstr ""
+msgstr "En los mapas de calor, a menudo se utiliza un espectro de verde a rojo para indicar la intensidad de la actividad, pero esto puede ser problemático para los daltónicos rojos/verdes. En ``matplotlib.cm.Wistia`` está disponible un nuevo mapa de colores para daltónicos. Este mapa de colores mantiene el simbolismo rojo/verde al mismo tiempo que logra la legibilidad deuteranópica a través de variaciones de brillo. Consulta ``aquí <https://github.com/wistia/heatmap-palette>`__ para más información."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:30
 msgid "The nbagg backend"
-msgstr ""
+msgstr "El backend de nbagg"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:31
 msgid "Phil Elson added a new backend, named \"nbagg\", which enables interactive figures in a live IPython notebook session. The backend makes use of the infrastructure developed for the webagg backend, which itself gives standalone server backed interactive figures in the browser, however nbagg does not require a dedicated matplotlib server as all communications are handled through the IPython Comm machinery."
-msgstr ""
+msgstr "Phil Elson ha añadido un nuevo backend, llamado \"nbagg\", que permite activar figuras interactivas en una sesión de cuaderno IPython en vivo. El backend hace uso de la infraestructura desarrollada para el backend webagg, que a su vez da figuras interactivas independientes respaldadas por el servidor en el navegador, sin embargo nbagg no requiere un servidor matplotlib dedicado ya que todas las comunicaciones se manejan a través de la maquinaria IPython Comm."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:38
 msgid "As with other backends nbagg can be enabled inside the IPython notebook with::"
-msgstr ""
+msgstr "Al igual que con otros backends nbagg puede ser activado dentro del cuaderno IPython con::"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:43
 msgid "Once figures are created and then subsequently shown, they will placed in an interactive widget inside the notebook allowing panning and zooming in the same way as any other matplotlib backend. Because figures require a connection to the IPython notebook server for their interactivity, once the notebook is saved, each figure will be rendered as a static image - thus allowing non-interactive viewing of figures on services such as `nbviewer <https://nbviewer.ipython.org/>`__."
-msgstr ""
+msgstr "Una vez que las figuras son creadas y posteriormente mostradas, se colocarán en un widget interactivo dentro del cuaderno permitiendo el paneo y el zoom de la misma manera que cualquier otro backend de matplotlib. Dado que las figuras requieren una conexión con el servidor del cuaderno IPython para su interactividad, una vez que se guarda el cuaderno, cada figura se representará como una imagen estática - permitiendo así la visualización no interactiva de las figuras en servicios como `nbviewer <https://nbviewer.ipython.org/>`__."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:54
 msgid "New plotting features"
-msgstr ""
+msgstr "Nuevas funciones de graficado"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:57
 msgid "Power-law normalization"
-msgstr ""
+msgstr "Normalización de la ley de potencia"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:58
 msgid "Ben Gamari added a power-law normalization method, :class:`~matplotlib.colors.PowerNorm`. This class maps a range of values to the interval [0,1] with power-law scaling with the exponent provided by the constructor's *gamma* argument. Power law normalization can be useful for, e.g., emphasizing small populations in a histogram."
-msgstr ""
+msgstr "Ben Gamari ha añadido un método de normalización de ley de potencia, :class:`~matplotlib.colors.PowerNorm`. Esta clase asigna un rango de valores al intervalo [0,1] con un escalado de ley de potencia con el exponente proporcionado por el argumento *gamma* del constructor. La normalización de la ley de potencia puede ser útil para, por ejemplo, enfatizar las poblaciones pequeñas en un histograma."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:65
 msgid "Fully customizable boxplots"
-msgstr ""
+msgstr "Gráficos de caja totalmente personalizables"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:66
 msgid "Paul Hobson overhauled the :func:`~matplotlib.pyplot.boxplot` method such that it is now completely customizable in terms of the styles and positions of the individual artists. Under the hood, :func:`~matplotlib.pyplot.boxplot` relies on a new function (:func:`~matplotlib.cbook.boxplot_stats`), which accepts any data structure currently compatible with :func:`~matplotlib.pyplot.boxplot`, and returns a list of dictionaries containing the positions for each element of the boxplots. Then a second method, `~.Axes.bxp` is called to draw the boxplots based on the stats."
-msgstr ""
+msgstr "Paul Hobson ha revisado el método :func:`~matplotlib.pyplot.boxplot` de forma que ahora es completamente personalizable en cuanto a los estilos y posiciones de los artists individuales. Bajo el aspecto, :func:`~matplotlib.pyplot.boxplot` se basa en una nueva función (:func:`~matplotlib.cbook.boxplot_stats`), que acepta cualquier estructura de datos actualmente compatible con :func:`~matplotlib.pyplot.boxplot`, y devuelve una lista de diccionarios que contienen las posiciones de cada elemento de los gráfico de caja. Luego se llama a un segundo método, `~.Axes.bxp` para dibujar los gráfico de caja en base a las estadísticas."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:76
 msgid "The :func:`~matplotlib.pyplot.boxplot` function can be used as before to generate boxplots from data in one step. But now the user has the flexibility to generate the statistics independently, or to modify the output of :func:`~matplotlib.cbook.boxplot_stats` prior to plotting with `~.Axes.bxp`."

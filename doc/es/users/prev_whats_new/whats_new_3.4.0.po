@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-22 13:06\n"
+"PO-Revision-Date: 2022-03-22 14:31\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -96,11 +96,11 @@ msgstr "En particular, las subclases de ejes de ``mpl_toolkits`` pueden utilizar
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:120
 msgid "Subplot and subplot2grid can now work with constrained layout"
-msgstr "Subplot y subplot2grid ahora pueden trabajar con diseño restringido"
+msgstr "Subplot y subplot2grid ahora pueden trabajar con layout restringido"
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:122
 msgid "``constrained_layout`` depends on a single `.GridSpec` for each logical layout on a figure. Previously, `.pyplot.subplot` and `.pyplot.subplot2grid` added a new ``GridSpec`` each time they were called and were therefore incompatible with ``constrained_layout``."
-msgstr "``constrained_layout`` depende de un único `.GridSpec` para cada diseño lógico de una figura. Anteriormente, `.pyplot.subplot` y `.pyplot.subplot2grid` añadían una nueva ``GridSpec`` cada vez que se invocaban y, por tanto, eran incompatibles con ``constrained_layout``."
+msgstr "``constrained_layout`` depende de un único `.GridSpec` para cada layout lógico de una figura. Anteriormente, `.pyplot.subplot` y `.pyplot.subplot2grid` añadían una nueva ``GridSpec`` cada vez que se invocaban y, por tanto, eran incompatibles con ``constrained_layout``."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:127
 msgid "Now ``subplot`` attempts to reuse the ``GridSpec`` if the number of rows and columns is the same as the top level GridSpec already in the figure, i.e., ``plt.subplot(2, 1, 2)`` will use the same GridSpec as ``plt.subplot(2, 1, 1)`` and the ``constrained_layout=True`` option to `~.figure.Figure` will work."
@@ -345,7 +345,7 @@ msgstr "pcolormesh ha mejorado el manejo de la transparencia al permitir el ajus
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:456
 msgid "Due to how the snapping keyword argument was getting passed to the Agg backend, previous versions of Matplotlib would appear to show lines between the grid edges of a mesh with transparency. This version now applies snapping by default. To restore the old behavior (e.g., for test images), you may set :rc:`pcolormesh.snap` to `False`."
-msgstr "Debido a la forma en que el argumento de la palabra clave snapping se pasaba al backend de Agg, las versiones anteriores de Matplotlib mostraban líneas entre las aristas de la cuadrícula. Esta versión ahora aplica el snapping por defecto. Para restaurar el comportamiento anterior (por ejemplo, para las imágenes de prueba), puede establecer :rc:`pcolormesh.snap` a `False`."
+msgstr "Debido a la forma en que el argumento de la palabra clave snapping se pasaba al backend de Agg, las versiones anteriores de Matplotlib mostraban líneas entre las aristas de la malla. Esta versión ahora aplica el snapping por defecto. Para restaurar el comportamiento anterior (por ejemplo, para las imágenes de prueba), puede establecer :rc:`pcolormesh.snap` a `False`."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-13.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-13.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-13.pdf>`__)"
@@ -353,7 +353,7 @@ msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_3-4-0-13.py>`__, 
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:473
 msgid "Note that there are lines between the grid boundaries of the main plot which are not the same transparency. The colorbar also shows these lines when a transparency is added to the colormap because internally it uses pcolormesh to draw the colorbar. With snapping on by default (below), the lines at the grid boundaries disappear."
-msgstr "Tenga en cuenta que hay líneas entre los límites de la cuadrícula de la gráfica principal que no tienen la misma transparencia. La barra de colores también muestra estas líneas cuando se añade una transparencia al mapa de colores porque internamente utiliza pcolormesh para dibujar la barra de colores. Con el ajuste activado por defecto (abajo), las líneas en los límites de la cuadrícula desaparecen."
+msgstr "Tenga en cuenta que hay líneas entre los límites de la malla de la gráfica principal que no tienen la misma transparencia. La barra de colores también muestra estas líneas cuando se añade una transparencia al mapa de colores porque internamente utiliza pcolormesh para dibujar la barra de colores. Con el ajuste activado por defecto (abajo), las líneas en los límites de la malla desaparecen."
 
 #: ../../users/prev_whats_new/whats_new_3.4.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-4-0-14.py>`__, `png <../../users/prev_whats_new/whats_new_3-4-0-14.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-4-0-14.pdf>`__)"

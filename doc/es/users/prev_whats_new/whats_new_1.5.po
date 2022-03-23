@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-23 14:38\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,39 +20,39 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:4
 msgid "What's new in Matplotlib 1.5 (Oct 29, 2015)"
-msgstr ""
+msgstr "Novedades en Matplotlib 1.5 (29 de octubre de 2015)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:8
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de Contenidos"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:12
 msgid "matplotlib 1.5 supports Python 2.7, 3.4, and 3.5"
-msgstr ""
+msgstr "matplotlib 1.5 soporta Python 2.7, 3.4 y 3.5"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:20
 msgid "Interactive OO usage"
-msgstr ""
+msgstr "Uso interactivo de OO"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:22
 msgid "All `.Artist`\\s now keep track of if their internal state has been changed but not reflected in the display ('stale') by a call to ``draw``.  It is thus possible to pragmatically determine if a given `.Figure` needs to be re-drawn in an interactive session."
-msgstr ""
+msgstr "Todos los `.Artist`s ahora llevan la cuenta de si su estado interno ha sido cambiado pero no se ha reflejado en la pantalla ('stale') por una invocación a ``draw``.  De este modo es posible determinar de forma pragmática si una determinada `.Figura` necesita ser redibujada en una sesión interactiva."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:27
 msgid "To facilitate interactive usage a ``draw_all`` method has been added to ``pyplot`` which will redraw all of the figures which are 'stale'."
-msgstr ""
+msgstr "Para facilitar el uso interactivo, se ha añadido un método ``draw_all`` a ``pyplot`` que redibujará todas las figuras que sean 'stale'."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:30
 msgid "To make this convenient for interactive use matplotlib now registers a function either with IPython's 'post_execute' event or with the displayhook in the standard python REPL to automatically call ``plt.draw_all`` just before control is returned to the REPL.  This ensures that the draw command is deferred and only called once."
-msgstr ""
+msgstr "Para hacer esto conveniente para el uso interactivo matplotlib ahora registra una función ya sea con el evento 'post_execute' de IPython o con el displayhook en el REPL estándar de python para invocar automáticamente ``plt.draw_all`` justo antes de que el control sea devuelto al REPL.  Esto asegura que el comando de dibujo es diferido y sólo invocado una vez."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:36
 msgid "The upshot of this is that for interactive backends (including ``%matplotlib notebook``) in interactive mode (with ``plt.ion()``)"
-msgstr ""
+msgstr "El resultado de esto es que para los backends interactivos (incluyendo ``%matplotlib notebook``) en modo interactivo (con ``plt.ion()``)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:48
 msgid "will automatically update the plot to be green.  Any subsequent modifications to the ``Artist`` objects will do likewise."
-msgstr ""
+msgstr "actualizará automáticamente el gráfico para que sea verde.  Cualquier modificación posterior de los objetos ``Artist`` hará lo mismo."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:51
 msgid "This is the first step of a larger consolidation and simplification of the pyplot internals."

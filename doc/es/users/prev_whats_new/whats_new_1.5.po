@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-23 14:38\n"
+"PO-Revision-Date: 2022-03-23 15:44\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -56,112 +56,112 @@ msgstr "actualizará automáticamente el gráfico para que sea verde.  Cualquier
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:51
 msgid "This is the first step of a larger consolidation and simplification of the pyplot internals."
-msgstr ""
+msgstr "Este es el primer paso de una mayor consolidación y simplificación de los internos de pyplot."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:56
 msgid "Working with labeled data like pandas DataFrames"
-msgstr ""
+msgstr "Trabajar con datos etiquetados como pandas DataFrames"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:57
 msgid "Plot methods which take arrays as inputs can now also work with labeled data and unpack such data."
-msgstr ""
+msgstr "Los métodos de gráfico que toman arreglos como entradas ahora también pueden trabajar con datos etiquetados y desempaquetar dichos datos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:60
 msgid "This means that the following two examples produce the same plot:"
-msgstr ""
+msgstr "Esto significa que los dos ejemplos siguientes producen el mismo gráfico:"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:62
 #: ../../users/prev_whats_new/whats_new_1.5.rst:68
 msgid "Example ::"
-msgstr ""
+msgstr "Ejemplo ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:72
 msgid "This works for most plotting methods, which expect arrays/sequences as inputs.  ``data`` can be anything which supports ``__getitem__`` (``dict``, ``pandas.DataFrame``, ``h5py``, ...) to access ``array`` like values with string keys."
-msgstr ""
+msgstr "Esto funciona para la mayoría de los métodos de gráfico, que esperan arreglos como entradas.  ``data`` puede ser cualquier cosa que soporte ``__getitem__`` (``dict``, ``pandas.DataFrame``, ``h5py``, ...) para acceder a valores tipo ``array`` con claves de cadena."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:77
 msgid "In addition to this, some other changes were made, which makes working with labeled data (ex ``pandas.Series``) easier:"
-msgstr ""
+msgstr "Además de esto, se han realizado algunos otros cambios que facilitan el trabajo con datos etiquetados (por ejemplo, ``pandas.Series``):"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:80
 msgid "For plotting methods with ``label`` keyword argument, one of the data inputs is designated as the label source.  If the user does not supply a ``label`` that value object will be introspected for a label, currently by looking for a ``name`` attribute.  If the value object does not have a ``name`` attribute but was specified by as a key into the ``data`` kwarg, then the key is used.  In the above examples, this results in an implicit ``label=\"var2\"`` for both cases."
-msgstr ""
+msgstr "Para los métodos de graficado con el argumento de la palabra clave ``label``, una de las entradas de datos se designa como la fuente de la etiqueta.  Si el usuario no proporciona una ``etiqueta``, el objeto de valor será introspeccionado en busca de una etiqueta, actualmente buscando un atributo ``name``.  Si el objeto de valor no tiene un atributo ``name`` pero fue especificado como una clave en el kwarg ``data``, entonces se utiliza la clave.  En los ejemplos anteriores, esto resulta en una ``label=\"var2\"`` implícita para ambos casos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:89
 msgid "``plot()`` now uses the index of a ``Series`` instead of ``np.arange(len(y))``, if no ``x`` argument is supplied."
-msgstr ""
+msgstr "``plot()`` ahora utiliza el índice de una ``Serie`` en lugar de ``np.arange(len(y))``, si no se suministra el argumento ``x``."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:94
 msgid "Added ``axes.prop_cycle`` key to rcParams"
-msgstr ""
+msgstr "Añadida la clave ``axes.prop_cycle`` a rcParams"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:96
 msgid "This is a more generic form of the now-deprecated ``axes.color_cycle`` param. Now, we can cycle more than just colors, but also linestyles, hatches, and just about any other artist property. Cycler notation is used for defining property cycles. Adding cyclers together will be like you are `zip`-ing together two or more property cycles together::"
-msgstr ""
+msgstr "Esta es una forma más genérica del ahora obsoleto parámetro ``axes.color_cycle``. Ahora, podemos ciclar no sólo los colores, sino también los estilos de línea, los sombreados, y casi cualquier otra propiedad del artista. La notación cíclica se utiliza para definir los ciclos de las propiedades. Añadir cicladores juntos será como si estuvieras `zip`-ing juntos dos o más ciclos de propiedades juntos::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:104
 msgid "You can even multiply cyclers, which is like using `itertools.product` on two or more property cycles."
-msgstr ""
+msgstr "Incluso puede multiplicar los ciclos, que es como usar `itertools.product` en dos o más ciclos de propiedades."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:113
 msgid "New Colormaps"
-msgstr ""
+msgstr "Nuevos mapas de colores"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:115
 msgid "All four of the colormaps proposed as the new default are available as ``'viridis'`` (the new default in 2.0), ``'magma'``, ``'plasma'``, and ``'inferno'``"
-msgstr ""
+msgstr "Los cuatro mapas de colores propuestos por defecto están disponibles como ``'viridis'`` (el nuevo valor por defecto en la versión 2.0), ``'magma'``, ``'plasma'``, e ``'inferno'``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_1-5-1.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-1.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_1-5-1.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:143
 msgid "Styles"
-msgstr ""
+msgstr "Estilos"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:145
 msgid "Several new styles have been added, including many styles from the Seaborn project.  Additionally, in order to prep for the upcoming 2.0 style-change release, a 'classic' and 'default' style has been added. For this release, the 'default' and 'classic' styles are identical. By using them now in your scripts, you can help ensure a smooth transition during future upgrades of matplotlib, so that you can upgrade to the snazzy new defaults when you are ready! ::"
-msgstr ""
+msgstr "Se han añadido varios estilos nuevos, incluyendo muchos estilos del proyecto Seaborn.  Además, con el fin de preparar la próxima versión de cambio de estilo 2.0, se ha añadido un estilo 'clásico' y 'por defecto'. Para esta versión, los estilos 'por defecto' y 'clásico' son idénticos. Usándolos ahora en tus scripts, puedes ayudar a asegurar una transición sin problemas durante futuras actualizaciones de matplotlib, ¡para que puedas actualizar a los nuevos y elegantes valores por defecto cuando estés listo! ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:156
 msgid "The 'default' style will give you matplotlib's latest plotting styles::"
-msgstr ""
+msgstr "El estilo 'por defecto' te dará los últimos estilos de trazado de matplotlib::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:161
 msgid "Backends"
-msgstr ""
+msgstr "Backends"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:164
 msgid "New backend selection"
-msgstr ""
+msgstr "Nueva selección de backend"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:166
 msgid "The environment variable :envvar:`MPLBACKEND` can now be used to set the matplotlib backend."
-msgstr ""
+msgstr "La variable de entorno :envvar:`MPLBACKEND` puede utilizarse ahora para establecer el backend de matplotlib."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:171
 msgid "wx backend has been updated"
-msgstr ""
+msgstr "el backend de wx ha sido actualizado"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:173
 msgid "The wx backend can now be used with both wxPython classic and `Phoenix <https://wxpython.org/Phoenix/docs/html/main.html>`__."
-msgstr ""
+msgstr "El backend de wx ahora puede ser utilizado tanto con wxPython classic como con `Phoenix <https://wxpython.org/Phoenix/docs/html/main.html>`__."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:176
 msgid "wxPython classic has to be at least version 2.8.12 and works on Python 2.x. As of May 2015 no official release of wxPython Phoenix is available but a current snapshot will work on Python 2.7+ and 3.4+."
-msgstr ""
+msgstr "wxPython classic tiene que ser al menos la versión 2.8.12 y funciona en Python 2.x. En mayo de 2015 no hay ninguna versión oficial de wxPython Phoenix, pero una instantánea actual funciona en Python 2.7+ y 3.4+."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:180
 msgid "If you have multiple versions of wxPython installed, then the user code is responsible setting the wxPython version.  How to do this is explained in the comment at the beginning of the example :doc:`/gallery/user_interfaces/embedding_in_wx2_sgskip`."
-msgstr ""
+msgstr "Si tienes varias versiones de wxPython instaladas, entonces el código de usuario es responsable de establecer la versión de wxPython.  Cómo hacer esto se explica en el comentario al principio del ejemplo :doc:`/gallery/user_interfaces/embedding_in_wx2_sgskip`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:186
 msgid "Configuration (rcParams)"
-msgstr ""
+msgstr "Configuración (rcParams)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:188
 msgid "Some parameters have been added, others have been improved."
-msgstr ""
+msgstr "Se han añadido algunos parámetros y se han mejorado otros."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:191
 msgid "Parameter"

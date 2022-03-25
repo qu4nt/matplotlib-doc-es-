@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-25 13:11\n"
+"PO-Revision-Date: 2022-03-25 14:30\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -506,147 +506,147 @@ msgstr "Las barras de color densas se rasterizan"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:476
 msgid "Vector file formats (pdf, ps, svg) are efficient for many types of plot element, but for some they can yield excessive file size and even rendering artifacts, depending on the renderer used for screen display.  This is a problem for colorbars that show a large number of shades, as is most commonly the case.  Now, if a colorbar is showing 50 or more colors, it will be rasterized in vector backends."
-msgstr ""
+msgstr "Los formatos de archivo vectoriales (pdf, ps, svg) son eficientes para muchos tipos de elementos de graficado, pero para algunos pueden producir un tamaño de archivo excesivo e incluso artefactos de renderizado, dependiendo del renderizador utilizado para la visualización en pantalla.  Esto es un problema para las barras de color que muestran un gran número de matices, como es el caso más común.  Ahora, si una barra de color muestra 50 o más colores, se rasterizará en los backends vectoriales."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:487
 msgid "DateFormatter strftime"
-msgstr ""
+msgstr "DateFormatter strftime"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:488
 msgid ":class:`~matplotlib.dates.DateFormatter`\\ 's ``__call__`` method will format a :class:`datetime.datetime` object with the format string passed to the formatter's constructor. This method accepts datetimes with years before 1900, unlike :meth:`datetime.datetime.strftime`."
-msgstr ""
+msgstr "El método ``__call__`` de :class:`~matplotlib.dates.DateFormatter`\\ 's formateará un objeto :class:`datetime.datetime` con la cadena de formato pasada al constructor del formateador. Este método acepta fechas anteriores a 1900, a diferencia de :meth:`datetime.datetime.strftime`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:495
 msgid "Artist-level {get,set}_usetex for text"
-msgstr ""
+msgstr "Nivel de artist {get,set}_usetex para texto"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:497
 msgid "Add ``{get,set}_usetex`` methods to :class:`~matplotlib.text.Text` objects which allow artist-level control of LaTeX rendering vs. the internal mathtex rendering."
-msgstr ""
+msgstr "Añade métodos ``{get,set}_usetex`` a los objetos :class:`~matplotlib.text.Text` que permiten el control a nivel de artist del renderizado de LaTeX frente al renderizado interno de mathtex."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:503
 msgid "``Axes.remove()`` works as expected"
-msgstr ""
+msgstr "``Axes.remove()`` funciona como se esperaba"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:505
 msgid "As with artists added to an :class:`~matplotlib.axes.Axes`, `~.axes.Axes` objects can be removed from their figure via `~.Artist.remove()`."
-msgstr ""
+msgstr "Al igual que los artistas añadidos a una :class:`~matplotlib.axes.Axes`, los objetos `~.axes.Axes` pueden ser eliminados de su figura mediante `~.Artist.remove()`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:511
 msgid "API Consistency fix within Locators set_params() function"
-msgstr ""
+msgstr "Corrección de la coherencia de la API en la función set_params() de los localizadores"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:513
 msgid ":meth:`~matplotlib.ticker.Locator.set_params` function, which sets parameters within a :class:`~matplotlib.ticker.Locator` type instance, is now available to all `.Locator` types. The implementation also prevents unsafe usage by strictly defining the parameters that a user can set."
-msgstr ""
+msgstr "La función :meth:`~matplotlib.ticker.Locator.set_params`, que establece parámetros dentro de una instancia de tipo :class:`~matplotlib.ticker.Locator`, está ahora disponible para todos los tipos `.Locator`. La implementación también evita el uso inseguro al definir estrictamente los parámetros que un usuario puede establecer."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:519
 msgid "To use, call ``set_params()`` on a `.Locator` instance with desired arguments: ::"
-msgstr ""
+msgstr "Para utilizarlo, invoca ``set_params()`` en una instancia de `.Locator` con los argumentos deseados: ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:531
 msgid "Date Locators"
-msgstr ""
+msgstr "Localizadores de fechas"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:533
 msgid "Date Locators (derived from :class:`~matplotlib.dates.DateLocator`) now implement the `~matplotlib.ticker.Locator.tick_values` method. This is expected of all Locators derived from `~matplotlib.ticker.Locator`."
-msgstr ""
+msgstr "Los localizadores de fechas (derivados de :class:`~matplotlib.dates.DateLocator`) ahora implementan el método `~matplotlib.ticker.Locator.tick_values`. Esto se espera de todos los localizadores derivados de `~matplotlib.ticker.Locator`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:537
 msgid "The Date Locators can now be used easily without creating axes ::"
-msgstr ""
+msgstr "Los localizadores de fechas pueden utilizarse ahora fácilmente sin necesidad de crear ejes ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:547
 msgid "OffsetBoxes now support clipping"
-msgstr ""
+msgstr "Los OffsetBoxes ahora soportan el recorte"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:549
 msgid "`.Artist`\\s draw onto objects of type `.OffsetBox` through `~.offsetbox.DrawingArea` and `~.offsetbox.TextArea`. The `.TextArea` calculates the required space for the text and so the text is always within the bounds, for this nothing has changed."
-msgstr ""
+msgstr "Los `.Artist` dibujados sobre objetos de tipo `.OffsetBox` a través de `~.offsetbox.DrawingArea` y `~.offsetbox.TextArea`. El `.TextArea` calcula el espacio necesario para el texto y así el texto está siempre dentro de los límites, para esto nada ha cambiado."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:554
 msgid "However, `.DrawingArea` acts as a parent for zero or more `.Artist`\\s that draw on it and may do so beyond the bounds. Now child `.Artist`\\s can be clipped to the bounds of the `.DrawingArea`."
-msgstr ""
+msgstr "Sin embargo, `.DrawingArea` actúa como padre para cero o más `.Artist` que dibujan en él y pueden hacerlo más allá de los límites. Ahora los `.Artist` hijos pueden ser recortados a los límites del `.DrawingArea`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:560
 msgid "OffsetBoxes now considered by tight_layout"
-msgstr ""
+msgstr "OffsetBoxes ahora considerado por tight_layout"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:562
 msgid "When `~matplotlib.pyplot.tight_layout()` or `.Figure.tight_layout` or `.GridSpec.tight_layout()` is called, `.OffsetBox`\\es that are anchored outside the axes will not get chopped out. The `.OffsetBox`\\es will also not get overlapped by other axes in case of multiple subplots."
-msgstr ""
+msgstr "Cuando se invoca `~matplotlib.pyplot.tight_layout()` o `.Figure.tight_layout` o `.GridSpec.tight_layout()`, los `.OffsetBox` que están anclados fuera de los ejes no serán cortados. Los `.OffsetBox` tampoco se superpondrán a otros ejes en caso de múltiples subgráficos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:568
 msgid "Per-page pdf notes in multi-page pdfs (PdfPages)"
-msgstr ""
+msgstr "Notas por página en pdfs de varias páginas (PdfPages)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:570
 msgid "Add a new method :meth:`~matplotlib.backends.backend_pdf.PdfPages.attach_note` to the PdfPages class, allowing the attachment of simple text notes to pages in a multi-page pdf of figures. The new note is visible in the list of pdf annotations in a viewer that has this facility (Adobe Reader, OSX Preview, Skim, etc.). Per default the note itself is kept off-page to prevent it to appear in print-outs."
-msgstr ""
+msgstr "Añade un nuevo método :meth:`~matplotlib.backends.backend_pdf.PdfPages.attach_note` a la clase PdfPages, que permite adjuntar notas de texto simples a las páginas de un pdf de figuras de varias páginas. La nueva nota es visible en la lista de anotaciones del pdf en un visor que tenga esta facilidad (Adobe Reader, OSX Preview, Skim, etc.). Por defecto, la nota se mantiene fuera de la página para evitar que aparezca en las impresiones."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:578
 msgid "`.PdfPages.attach_note` needs to be called before `~.Figure.savefig` in order to be added to the correct figure."
-msgstr ""
+msgstr "`.PdfPages.attach_note` debe ser invocado antes de `~.Figure.savefig` para que se añada a la figura correcta."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:582
 msgid "Updated fignum_exists to take figure name"
-msgstr ""
+msgstr "Actualizado fignum_exists para tomar el nombre de la figura"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:584
 msgid "Added the ability to check the existence of a figure using its name instead of just the figure number. Example::"
-msgstr ""
+msgstr "Se ha añadido la posibilidad de comprobar la existencia de una figura utilizando su nombre en lugar de sólo el número de figura. Ejemplo::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:593
 msgid "ToolManager"
-msgstr ""
+msgstr "Gestor de herramientas"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:595
 msgid "Federico Ariza wrote the new `~matplotlib.backend_managers.ToolManager` that comes as replacement for `.NavigationToolbar2`"
-msgstr ""
+msgstr "Federico Ariza escribió el nuevo `~matplotlib.backend_managers.ToolManager` que viene a sustituir a `.NavigationToolbar2`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:598
 msgid "`.ToolManager` offers a new way of looking at the user interactions with the figures.  Before we had the `.NavigationToolbar2` with its own tools like ``zoom/pan/home/save/...`` and also we had the shortcuts like ``yscale/grid/quit/....``. `.ToolManager` relocate all those actions as Tools (located in `~matplotlib.backend_tools`), and defines a way to access/trigger/reconfigure them."
-msgstr ""
+msgstr "El `.ToolManager` ofrece una nueva forma de ver las interacciones del usuario con las figuras.  Antes teníamos la `.NavigationToolbar2` con sus propias herramientas como ``zoom/pan/home/save/...`` y también teníamos los atajos como ``yscale/grid/quit/....``. El gestor de herramientas `.ToolManager` reubica todas esas acciones como herramientas (ubicadas en `~matplotlib.backend_tools`), y define una forma de acceder/desencadenar/reconfigurarlas."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:605
 msgid "The Toolbars are replaced by `.ToolContainerBase`\\s that are just GUI interfaces to trigger the tools. But don't worry the default backends include a `.ToolContainerBase` called ``toolbar``"
-msgstr ""
+msgstr "Las barras de herramientas son reemplazadas por `.ToolContainerBase` que son sólo interfaces IGU para activar las herramientas. Pero no te preocupes, los backends por defecto incluyen un `.ToolContainerBase` llamado ``toolbar``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:611
 msgid "At the moment, we release this primarily for feedback purposes and should be treated as experimental until further notice as API changes will occur. For the moment the `.ToolManager` works only with the GTK3 and Tk backends. Make sure you use one of those. Port for the rest of the backends is coming soon."
-msgstr ""
+msgstr "Por el momento, publicamos esto principalmente con fines de retroalimentación y debe ser tratado como experimental hasta nuevo aviso, ya que se producirán cambios en la API. Por el momento el `.ToolManager` sólo funciona con los backends GTK3 y Tk. Asegúrate de utilizar uno de ellos. El puerto para el resto de los backends está por llegar."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:617
 msgid "To activate the `.ToolManager` include the following at the top of your file ::"
-msgstr ""
+msgstr "Para activar el `.ToolManager` incluya lo siguiente en la parte superior de su archivo ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:623
 msgid "Interact with the ToolContainer"
-msgstr ""
+msgstr "Interactuar con el ToolContainer"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:625
 msgid "The most important feature is the ability to easily reconfigure the ToolContainer (aka toolbar). For example, if we want to remove the \"forward\" button we would just do. ::"
-msgstr ""
+msgstr "La característica más importante es la posibilidad de reconfigurar fácilmente el ToolContainer (también conocido como barra de herramientas). Por ejemplo, si deseamos eliminar el botón de \"forward\" sólo tendríamos que hacer. ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:630
 msgid "Now if you want to programmatically trigger the \"home\" button ::"
-msgstr ""
+msgstr "Ahora bien, si desea activar mediante programación el botón \"home\" ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:636
 msgid "New Tools for ToolManager"
-msgstr ""
+msgstr "Nuevas herramientas para ToolManager"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:638
 msgid "It is possible to add new tools to the ToolManager"
-msgstr ""
+msgstr "Es posible añadir nuevas herramientas al ToolManager"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:640
 msgid "A very simple tool that prints \"You're awesome\" would be::"
-msgstr ""
+msgstr "Una herramienta muy sencilla que imprime \"You're awesome\" sería::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:648
 msgid "To add this tool to `.ToolManager`"
-msgstr ""
+msgstr "Para añadir esta herramienta a `.ToolManager`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:652
 msgid "If we want to add a shortcut (\"d\") for the tool"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-25 14:30\n"
+"PO-Revision-Date: 2022-03-25 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -650,69 +650,69 @@ msgstr "Para añadir esta herramienta a `.ToolManager`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:652
 msgid "If we want to add a shortcut (\"d\") for the tool"
-msgstr ""
+msgstr "Si deseamos añadir un acceso directo (\"d\") para la herramienta"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:657
 msgid "To add it to the toolbar inside the group 'foo'"
-msgstr ""
+msgstr "Para añadirlo a la barra de herramientas dentro del grupo 'foo'"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:662
 msgid "There is a second class of tools, \"Toggleable Tools\", this are almost the same as our basic tools, just that belong to a group, and are mutually exclusive inside that group.  For tools derived from `.ToolToggleBase` there are two basic methods `~.ToolToggleBase.enable` and `~.ToolToggleBase.disable` that are called automatically whenever it is toggled."
-msgstr ""
+msgstr "Hay una segunda clase de herramientas, \"Toggleable Tools\", estas son casi las mismas que nuestras herramientas básicas, solo que pertenecen a un grupo, y son mutuamente excluyentes dentro de ese grupo.  Para las herramientas derivadas de `.ToolToggleBase` hay dos métodos básicos `~.ToolToggleBase.enable` y `~.ToolToggleBase.disable` que son invocados automáticamente cada vez que se conmuta."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:669
 msgid "A full example is located in :doc:`/gallery/user_interfaces/toolmanager_sgskip`"
-msgstr ""
+msgstr "Un ejemplo completo se encuentra en :doc:`/gallery/user_interfaces/toolmanager_sgskip`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:673
 msgid "cbook.is_sequence_of_strings recognizes string objects"
-msgstr ""
+msgstr "cbook.is_sequence_of_strings reconoce objetos de cadena"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:675
 msgid "This is primarily how pandas stores a sequence of strings ::"
-msgstr ""
+msgstr "Así es principalmente como pandas almacena una secuencia de cadenas ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:689
 msgid "Previously, the last two prints returned false."
-msgstr ""
+msgstr "Anteriormente, las dos últimas impresiones devolvían falso."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:693
 msgid "New ``close-figs`` argument for plot directive"
-msgstr ""
+msgstr "Nuevo argumento ``close-figs`` para la directiva de graficado"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:695
 msgid "Matplotlib has a sphinx extension ``plot_directive`` that creates plots for inclusion in sphinx documents.  Matplotlib 1.5 adds a new option to the plot directive - ``close-figs`` - that closes any previous figure windows before creating the plots.  This can help avoid some surprising duplicates of plots when using ``plot_directive``."
-msgstr ""
+msgstr "Matplotlib tiene una extensión de sphinx ``plot_directive`` que crea gráficos para incluirlos en documentos de sphinx.  Matplotlib 1.5 añade una nueva opción a la directiva de graficado - ``close-figs`` - que cierra cualquier ventana de figura anterior antes de crear los gráfico.  Esto puede ayudar a evitar algunos duplicados sorprendentes de gráficos cuando se utiliza ``plot_directive``."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:702
 msgid "Support for URL string arguments to ``imread``"
-msgstr ""
+msgstr "Soporte para argumentos de cadena URL para ``imread``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:704
 msgid "The :func:`~matplotlib.pyplot.imread` function now accepts URL strings that point to remote PNG files. This circumvents the generation of a HTTPResponse object directly."
-msgstr ""
+msgstr "La función :func:`~matplotlib.pyplot.imread` ahora acepta cadenas de URL que apuntan a archivos PNG remotos. Esto evita la generación de un objeto HTTPResponse directamente."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:709
 msgid "Display hook for animations in the IPython notebook"
-msgstr ""
+msgstr "Hook de visualización para animaciones en el cuaderno IPython"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:711
 msgid "`~matplotlib.animation.Animation` instances gained a ``_repr_html_`` method to support inline display of animations in the notebook. The method used to display is controlled by the ``animation.html`` rc parameter, which currently supports values of ``none`` and ``html5``. ``none`` is the default, performing no display. ``html5`` converts the animation to an h264 encoded video, which is embedded directly in the notebook."
-msgstr ""
+msgstr "Las instancias de `~matplotlib.animation.Animation` ganaron un método ``_repr_html_`` para soportar la visualización en línea de las animaciones en el cuaderno. El método utilizado para mostrar es controlado por el parámetro rc ``animation.html``, que actualmente admite valores de ``none`` y ``html5``. ``none`` es el valor por defecto, que no realiza ninguna visualización. ``html5`` convierte la animación en un vídeo codificado en h264, que se incrusta directamente en el cuaderno."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:718
 msgid "Users not wishing to use the ``_repr_html_`` display hook can also manually call the `.to_html5_video` method to get the HTML and display using IPython's ``HTML`` display class::"
-msgstr ""
+msgstr "Los usuarios que no deseen utilizar el hook de visualización ``_repr_html_`` también pueden invocar manualmente el método `.to_html5_video` para obtener el HTML y visualizarlo utilizando la clase de visualización ``HTML`` de IPython::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:726
 msgid "Prefixed pkg-config for building"
-msgstr ""
+msgstr "Pkg-config prefijado para la construcción"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:728
 msgid "Handling of pkg-config has been fixed in so far as it is now possible to set it using the environment variable ``PKG_CONFIG``. This is important if your toolchain is prefixed. This is done in a simpilar way as setting ``CC`` or ``CXX`` before building. An example follows."
-msgstr ""
+msgstr "Se ha corregido el manejo de pkg-config en la medida en que ahora es posible establecerlo utilizando la variable de entorno ``PKG_CONFIG``. Esto es importante si su cadena de herramientas está prefijada. Esto se hace de manera similar a la configuración de ``CC`` o ``CXX`` antes de la construcción. Un ejemplo es el siguiente."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:733
 msgid "export PKG_CONFIG=x86_64-pc-linux-gnu-pkg-config"
-msgstr ""
+msgstr "exportar PKG_CONFIG=x86_64-pc-linux-gnu-pkg-config"
 

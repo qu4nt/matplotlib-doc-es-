@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-23 22:59\n"
+"PO-Revision-Date: 2022-03-25 11:51\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -345,63 +345,63 @@ msgstr "Se ha añadido el argumento de palabra clave \"wrap\" (envolver) a Texto
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_1-5-2.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-2.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_1-5-2.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:298
 msgid "Contour plot corner masking"
-msgstr ""
+msgstr "Contorno del gráfico de enmascaramiento de las esquinas"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:300
 msgid "Ian Thomas rewrote the C++ code that calculates contours to add support for corner masking.  This is controlled by a new keyword argument ``corner_mask`` in the functions :func:`~matplotlib.pyplot.contour` and :func:`~matplotlib.pyplot.contourf`.  The previous behaviour, which is now obtained using ``corner_mask=False``, was for a single masked point to completely mask out all four quads touching that point.  The new behaviour, obtained using ``corner_mask=True``, only masks the corners of those quads touching the point; any triangular corners comprising three unmasked points are contoured as usual.  If the ``corner_mask`` keyword argument is not specified, the default value is taken from rcParams."
-msgstr ""
+msgstr "Ian Thomas reescribió el código C++ que calcula los contornos para añadir soporte para el enmascaramiento de esquinas.  Esto se controla con un nuevo argumento de palabra clave ``corner_mask`` en las funciones :func:`~matplotlib.pyplot.contour` y :func:`~matplotlib.pyplot.contourf`.  El comportamiento anterior, que ahora se obtiene utilizando ``corner_mask=False``, consistía en que un único punto enmascarado enmascaraba completamente los cuatro cuadrantes que tocaban ese punto.  El nuevo comportamiento, que se obtiene utilizando ``corner_mask=True``, sólo enmascara las esquinas de los quads que tocan el punto; cualquier esquina triangular que comprenda tres puntos no enmascarados se contornea como siempre.  Si no se especifica el argumento de la palabra clave ``corner_mask``, se toma el valor por defecto de rcParams."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:317
 msgid "Mostly unified linestyles for `.Line2D`, `.Patch` and `.Collection`"
-msgstr ""
+msgstr "Estilos de línea más unificados para `.Line2D`, `.Patch` y `.Collection`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:319
 msgid "The handling of linestyles for Lines, Patches and Collections has been unified.  Now they all support defining linestyles with short symbols, like \"--\", as well as with full names, like \"dashed\". Also the definition using a dash pattern (``(0., [3., 3.])``) is supported for all methods using `.Line2D`, `.Patch` or `.Collection`."
-msgstr ""
+msgstr "Se ha unificado el manejo de los estilos de línea para Líneas, Parches y Colecciones.  Ahora todos soportan la definición de estilos de línea con símbolos cortos, como \"--\", así como con nombres completos, como \"guiones\". También se admite la definición mediante un patrón de guiones (``(0., [3., 3.])``) para todos los métodos que utilizan `.Line2D`, `.Patch` o `.Collection`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:327
 msgid "Legend marker order"
-msgstr ""
+msgstr "Orden del marcador de leyenda"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:329
 msgid "Added ability to place the label before the marker in a legend box with ``markerfirst`` keyword"
-msgstr ""
+msgstr "Se ha añadido la posibilidad de colocar la etiqueta antes del marcador en un cuadro de leyenda con la palabra clave ``markerfirst``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:334
 msgid "Support for legend for PolyCollection and stackplot"
-msgstr ""
+msgstr "Soporte para la leyenda de PolyCollection y stackplot"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:336
 msgid "Added a :mod:`.legend_handler` for :class:`~matplotlib.collections.PolyCollection` as well as a *labels* argument to :func:`~matplotlib.axes.Axes.stackplot`."
-msgstr ""
+msgstr "Se ha añadido un :mod:`.legend_handler` para :class:`~matplotlib.collections.PolyCollection` así como un argumento *labels* a :func:`~matplotlib.axes.Axes.stackplot`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:341
 msgid "Support for alternate pivots in mplot3d quiver plot"
-msgstr ""
+msgstr "Soporte para pivotes alternativos en mplot3d quiver plot"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:343
 msgid "Added a :code:`pivot` kwarg to :func:`~mpl_toolkits.mplot3d.Axes3D.quiver` that controls the pivot point around which the quiver line rotates. This also determines the placement of the arrow head along the quiver line."
-msgstr ""
+msgstr "Se ha añadido un kwarg :code:`pivot` a :func:`~mpl_toolkits.mplot3d.Axes3D.quiver` que controla el punto de pivote alrededor del cual gira la línea del quiver. Esto también determina la ubicación de la punta de la flecha a lo largo de la línea de quiver."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:349
 msgid "Logit Scale"
-msgstr ""
+msgstr "Escala Logit"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:351
 msgid "Added support for the 'logit' axis scale, a nonlinear transformation"
-msgstr ""
+msgstr "Se ha añadido soporte para la escala del eje 'logit', una transformación no lineal"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:353
 msgid "x -> \\log10(x / (1-x))"
-msgstr ""
+msgstr "x -> \\log10(x / (1-x))"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:357
 msgid "for data between 0 and 1 excluded."
-msgstr ""
+msgstr "para datos entre 0 y 1 excluidos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:361
 msgid "Add step kwargs to fill_between"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-26 21:43\n"
+"PO-Revision-Date: 2022-03-26 22:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -380,89 +380,89 @@ msgstr "Se ha añadido un nuevo argumento de palabra clave ``sep`` a :class:`~ma
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:509
 msgid "Extend ``MATPLOTLIBRC`` behavior"
-msgstr ""
+msgstr "Ampliar el comportamiento de ``MATPLOTLIBRC``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:511
 msgid "The environmental variable can now specify the full file path or the path to a directory containing a :file:`matplotlibrc` file."
-msgstr ""
+msgstr "La variable de entorno puede ahora especificar la ruta completa del archivo o la ruta de un directorio que contenga un archivo :file:`matplotlibrc`."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:516
 msgid "``density`` kwarg to hist"
-msgstr ""
+msgstr "``density`` kwarg a hist"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:518
 msgid "The :meth:`~matplotlib.axes.Axes.hist` method now prefers ``density`` to ``normed`` to control if the histogram should be normalized, following a change upstream to NumPy.  This will reduce confusion as the behavior has always been that the integral of the histogram is 1 (rather than sum or maximum value)."
-msgstr ""
+msgstr "El método :meth:`~matplotlib.axes.Axes.hist` ahora prefiere ``density`` a ``normed`` para controlar si el histograma debe ser normalizado, siguiendo un cambio en NumPy.  Esto reducirá la confusión, ya que el comportamiento siempre ha sido que la integral del histograma es 1 (en lugar de la suma o el valor máximo)."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:527
 msgid "Internals"
-msgstr ""
+msgstr "Interiores"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:530
 msgid "New TransformedPatchPath caching object"
-msgstr ""
+msgstr "Nuevo objeto de caché TransformedPatchPath"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:532
 msgid "A newly added :class:`~matplotlib.transforms.TransformedPatchPath` provides a means to transform a :class:`~matplotlib.patches.Patch` into a :class:`~matplotlib.path.Path` via a :class:`~matplotlib.transforms.Transform` while caching the resulting path. If neither the patch nor the transform have changed, a cached copy of the path is returned."
-msgstr ""
+msgstr "La nueva clase :class:`~matplotlib.transforms.TransformedPatchPath` proporciona un medio para transformar un :class:`~matplotlib.patches.Patch` en un :class:`~matplotlib.path.Path` a través de un :class:`~matplotlib.transforms.Transform` mientras se almacena en caché la ruta resultante. Si ni el parche ni la transformación han cambiado, se devuelve una copia en caché de la ruta."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:538
 msgid "This class differs from the older :class:`~matplotlib.transforms.TransformedPath` in that it is able to refresh itself based on the underlying patch while the older class uses an immutable path."
-msgstr ""
+msgstr "Esta clase difiere de la anterior :class:`~matplotlib.transforms.TransformedPath` en que es capaz de refrescarse a sí misma basándose en el parche subyacente mientras que la clase anterior utiliza una ruta inmutable."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:545
 msgid "Abstract base class for movie writers"
-msgstr ""
+msgstr "Clase base abstracta para escritores de películas"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:547
 msgid "The new :class:`~matplotlib.animation.AbstractMovieWriter` class defines the API required by a class that is to be used as the ``writer`` in the :meth:`matplotlib.animation.Animation.save` method. The existing :class:`~matplotlib.animation.MovieWriter` class now derives from the new abstract base class."
-msgstr ""
+msgstr "La nueva clase :class:`~matplotlib.animation.AbstractMovieWriter` define la API requerida por una clase que va a ser utilizada como ``writer`` en el método :meth:`matplotlib.animation.Animation.save`. La clase :class:`~matplotlib.animation.MovieWriter` existente deriva ahora de la nueva clase base abstracta."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:555
 msgid "Stricter validation of line style rcParams"
-msgstr ""
+msgstr "Validación más estricta del estilo de línea rcParams"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:557
 msgid "The validation of rcParams that are related to line styles (``lines.linestyle``, ``boxplot.*.linestyle``, ``grid.linestyle`` and ``contour.negative_linestyle``) now effectively checks that the values are valid line styles. Strings like ``'dashed'`` or ``'--'`` are accepted, as well as even-length sequences of on-off ink like ``[1, 1.65]``. In this latter case, the offset value is handled internally and should *not* be provided by the user."
-msgstr ""
+msgstr "La validación de los rcParams relacionados con los estilos de línea (``lines.linestyle``, ``boxplot.*.linestyle``, ``grid.linestyle`` y ``contour.negative_linestyle``) ahora comprueba efectivamente que los valores son estilos de línea válidos. Se aceptan cadenas como ``'dashed'`` o ``'--'``, así como secuencias de longitud par de tinta on-off como ``[1, 1.65]``. En este último caso, el valor del desplazamiento se maneja internamente y *no* debe ser proporcionado por el usuario."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:566
 msgid "The new validation scheme replaces the former one used for the ``contour.negative_linestyle`` rcParams, that was limited to ``'solid'`` and ``'dashed'`` line styles."
-msgstr ""
+msgstr "El nuevo esquema de validación sustituye al anterior utilizado para los rcParams ``contour.negative_linestyle``, que se limitaba a los estilos de línea ``'solid'`` y ``'dashed'``."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:570
 msgid "The validation is case-insensitive.  The following are now valid:"
-msgstr ""
+msgstr "La validación no distingue entre mayúsculas y minúsculas.  Ahora son válidos los siguientes:"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:579
 msgid "pytest"
-msgstr ""
+msgstr "pytest"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:581
 msgid "The automated tests have been switched from nose_ to pytest_."
-msgstr ""
+msgstr "Las pruebas automatizadas se han cambiado de nose_ a pytest_."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:587
 msgid "Performance"
-msgstr ""
+msgstr "Rendimiento"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:590
 msgid "Path simplification updates"
-msgstr ""
+msgstr "Actualizaciones de la simplificación de rutas"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:592
 msgid "Line simplification controlled by the ``path.simplify`` and ``path.simplify_threshold`` parameters has been improved. You should notice better rendering performance when plotting large amounts of data (as long as the above parameters are set accordingly). Only the line segment portion of paths will be simplified -- if you are also drawing markers and experiencing problems with rendering speed, you should consider using the ``markevery`` option to `~matplotlib.axes.Axes.plot`. See the :ref:`performance` section in the usage tutorial for more information."
-msgstr ""
+msgstr "Se ha mejorado la simplificación de líneas controlada por los parámetros ``path.simplify`` y ``path.simplify_threshold``. Deberías notar un mejor rendimiento de renderizado al graficar grandes cantidades de datos (siempre y cuando los parámetros anteriores estén configurados adecuadamente). Sólo se simplificará la parte de los segmentos de línea de los trazados -- si también se dibujan marcadores y se experimentan problemas con la velocidad de renderizado, se debe considerar el uso de la opción ``markevery`` de `~matplotlib.axes.Axes.plot`. Ver la sección :ref:`performance` en el tutorial de uso para más información."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:602
 msgid "The simplification works by iteratively merging line segments into a single vector until the next line segment's perpendicular distance to the vector (measured in display-coordinate space) is greater than the ``path.simplify_threshold`` parameter. Thus, higher values of ``path.simplify_threshold`` result in quicker rendering times. If you are plotting just to explore data and not for publication quality, pixel perfect plots, then a value of ``1.0`` can be safely used. If you want to make sure your plot reflects your data *exactly*, then you should set ``path.simplify`` to false and/or ``path.simplify_threshold`` to ``0``. Matplotlib currently defaults to a conservative value of ``1/9``, smaller values are unlikely to cause any visible differences in your plots."
-msgstr ""
+msgstr "La simplificación funciona fusionando iterativamente los segmentos de línea en un único vector hasta que la distancia perpendicular del siguiente segmento de línea al vector (medida en el espacio de coordenadas de la pantalla) sea mayor que el parámetro ``path.simplify_threshold``. Por lo tanto, los valores más altos de ``path.simplify_threshold`` dan lugar a tiempos de renderizado más rápidos. Si usted está trazando sólo para explorar los datos y no para la calidad de la publicación, gráficos perfectos de píxeles, entonces un valor de ``1.0`` puede ser utilizado con seguridad. Si deseas asegurarte de que tu gráfico refleja tus datos *exactamente*, entonces debes establecer ``path.simplify`` a false y/o ``path.simplify_threshold`` a ``0``. Matplotlib actualmente tiene por defecto un valor conservador de ``1/9``, valores más pequeños es poco probable que causen diferencias visibles en sus gráficos."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:615
 msgid "Implement intersects_bbox in c++"
-msgstr ""
+msgstr "Implementar intersects_bbox en c++"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:617
 msgid ":meth:`~matplotlib.path.Path.intersects_bbox` has been implemented in c++ which improves the performance of automatically placing the legend."
-msgstr ""
+msgstr ":meth:`~matplotlib.path.Path.intersects_bbox` ha sido implementado en c++ lo que mejora el rendimiento de la colocación automática de la leyenda."
 

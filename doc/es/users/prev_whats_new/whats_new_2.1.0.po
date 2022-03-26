@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-25 21:22\n"
+"PO-Revision-Date: 2022-03-26 20:38\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -164,75 +164,75 @@ msgstr "Alternativamente, invocar ``savefig`` con ``metadata={'CreationDate': No
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:164
 msgid "The reproducibility of the output from the PS and PDF backends has so far been tested using various plot elements but only default values of options such as ``{ps,pdf}.fonttype`` that can affect the output at a low level, and not with the mathtext or usetex features. When Matplotlib calls external tools (such as PS distillers or LaTeX) their versions need to be kept constant for reproducibility, and they may add sources of nondeterminism outside the control of Matplotlib."
-msgstr ""
+msgstr "La reproducibilidad de la salida de los backends PS y PDF ha sido probada hasta ahora usando varios elementos de gráficos pero sólo los valores por defecto de opciones como ``{ps,pdf}.fonttype`` que pueden afectar a la salida a bajo nivel, y no con las características mathtext o usetex. Cuando Matplotlib invoca herramientas externas (como destiladores PS o LaTeX) sus versiones deben mantenerse constantes para la reproducibilidad, y pueden añadir fuentes de no determinación fuera del control de Matplotlib."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:172
 msgid "For SVG output, the ``svg.hashsalt`` rc parameter has been added in an earlier release. This parameter changes some random identifiers in the SVG file to be deterministic. The downside of this setting is that if more than one file is generated using deterministic identifiers and they end up as parts of one larger document, the identifiers can collide and cause the different parts to affect each other."
-msgstr ""
+msgstr "Para la salida de SVG, se ha añadido el parámetro rc ``svg.hashsalt`` en una versión anterior. Este parámetro cambia algunos identificadores aleatorios en el archivo SVG para que sean deterministas. La desventaja de este parámetro es que si se genera más de un archivo utilizando identificadores deterministas y terminan como partes de un documento más grande, los identificadores pueden colisionar y hacer que las diferentes partes se afecten entre sí."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:179
 msgid "These features are now enabled in the tests for the PDF and SVG backends, so most test output files (but not all of them) are now deterministic."
-msgstr ""
+msgstr "Estas características están ahora activadas en las pruebas para los backends PDF y SVG, por lo que la mayoría de los archivos de salida de las pruebas (pero no todos) son ahora deterministas."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:184
 msgid "Orthographic projection for mplot3d"
-msgstr ""
+msgstr "Proyección ortográfica para mplot3d"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:185
 msgid ":class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` now accepts ``proj_type`` keyword argument and has a method :meth:`~mpl_toolkits.mplot3d.axes3d.Axes3D.set_proj_type`. The default option is ``'persp'`` as before, and supplying ``'ortho'`` enables orthographic view."
-msgstr ""
+msgstr ":class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` ahora acepta el argumento de palabra clave ``proj_type`` y tiene un método :meth:`~mpl_toolkits.mplot3d.axes3d.Axes3D.set_proj_type`. La opción por defecto es ``'persp'`` como antes, y suministrando ``'ortho'`` se activa la vista ortográfica."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:190
 msgid "Compare the z-axis which is vertical in orthographic view, but slightly skewed in the perspective view."
-msgstr ""
+msgstr "Compara el eje z, que es vertical en la vista ortográfica, pero ligeramente sesgado en la vista en perspectiva."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:22
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-1-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-2.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_2-1-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:214
 msgid "``voxels`` function for mplot3d"
-msgstr ""
+msgstr "Función ``voxels`` para mplot3d"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:215
 msgid ":class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` now has a `~mpl_toolkits.mplot3d.axes3d.Axes3D.voxels` method, for visualizing boolean 3D data. Uses could include plotting a sparse 3D heat map, or visualizing a volumetric model."
-msgstr ""
+msgstr ":class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` tiene ahora un método `~mpl_toolkits.mplot3d.axes3d.Axes3D.voxels`, para visualizar datos booleanos en 3D. Los usos podrían incluir el trazado de un mapa de calor 3D disperso, o la visualización de un modelo volumétrico."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:225
 msgid "Voxel Demo"
-msgstr ""
+msgstr "Demo de Voxel"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:229
 msgid "Improvements"
-msgstr ""
+msgstr "Mejoras"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:232
 msgid "CheckButtons widget ``get_status`` function"
-msgstr ""
+msgstr "Función ``get_status`` del widget CheckButtons"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:234
 msgid "A :func:`~matplotlib.widgets.CheckButtons.get_status` method has been added to the :class:`matplotlib.widgets.CheckButtons` class. This ``get_status`` method allows user to query the status (True/False) of all of the buttons in the ``CheckButtons`` object."
-msgstr ""
+msgstr "Se ha añadido un método :func:`~matplotlib.widgets.CheckButtons.get_status` a la clase :class:`matplotlib.widgets.CheckButtons`. Este método ``get_status`` permite al usuario consultar el estado (Verdadero/Falso) de todos los botones del objeto ``CheckButtons``."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:241
 msgid "Add ``fill_bar`` argument to ``AnchoredSizeBar``"
-msgstr ""
+msgstr "Añadir el argumento ``fill_bar`` a ``AnchoredSizeBar``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:243
 msgid "The ``mpl_toolkits`` class :class:`~mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar` now has an additional ``fill_bar`` argument, which makes the size bar a solid rectangle instead of just drawing the border of the rectangle. The default is ``None``, and whether or not the bar will be filled by default depends on the value of ``size_vertical``. If ``size_vertical`` is nonzero, ``fill_bar`` will be set to ``True``. If ``size_vertical`` is zero then ``fill_bar`` will be set to ``False``. If you wish to override this default behavior, set ``fill_bar`` to ``True`` or ``False`` to unconditionally always or never use a filled patch rectangle for the size bar."
-msgstr ""
+msgstr "La clase ``mpl_toolkits`` :class:`~mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar` ahora tiene un argumento adicional ``fill_bar``, que hace que la barra de tamaño sea un rectángulo sólido en lugar de dibujar sólo el borde del rectángulo. El valor por defecto es ``None``, y si la barra se rellena o no por defecto depende del valor de ``size_vertical``. Si ``size_vertical`` es distinto de cero, ``fill_bar`` se establecerá como ``True``. Si ``size_vertical`` es cero, ``fill_bar`` se establecerá en ``False``. Si deseas anular este comportamiento por defecto, establece ``fill_bar`` como ``True`` o ``False`` para utilizar incondicionalmente siempre o nunca un rectángulo de parche relleno para la barra de tamaño."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:21
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-1-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-3.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_2-1-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-3.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:274
 msgid "Annotation can use a default arrow style"
-msgstr ""
+msgstr "La anotación puede utilizar un estilo de flecha por defecto"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:276
 msgid "Annotations now use the default arrow style when setting ``arrowprops={}``, rather than no arrow (the new behavior actually matches the documentation)."
-msgstr ""
+msgstr "Las anotaciones ahora utilizan el estilo de flecha por defecto cuando se establece ``arrowprops={}``, en lugar de ninguna flecha (el nuevo comportamiento corresponde con la documentación)."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:280
 msgid "Barbs and Quiver Support Dates"

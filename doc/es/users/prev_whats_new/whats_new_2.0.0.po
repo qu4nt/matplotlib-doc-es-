@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-27 22:21\n"
+"PO-Revision-Date: 2022-03-28 01:16\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -241,27 +241,27 @@ msgstr "Mejoras para el editor de opciones de figura Qt"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:173
 msgid "Various usability improvements were implemented for the Qt figure options editor, among which:"
-msgstr ""
+msgstr "Se han implementado varias mejoras de usabilidad para el editor de opciones de figuras de Qt, entre ellas:"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:176
 msgid "Line style entries are now sorted without duplicates."
-msgstr ""
+msgstr "Las entradas de estilo de línea se ordenan ahora sin duplicados."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:177
 msgid "The colormap and normalization limits can now be set for images."
-msgstr ""
+msgstr "El mapa de colores y los límites de normalización pueden ahora establecerse para las imágenes."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:178
 msgid "Line edits for floating values now display only as many digits as necessary to avoid precision loss.  An important bug was also fixed regarding input validation using Qt5 and a locale where the decimal separator is \",\"."
-msgstr ""
+msgstr "Las ediciones de líneas para valores flotantes ahora muestran sólo los dígitos necesarios para evitar la pérdida de precisión.  También se ha corregido un error importante relacionado con la validación de entradas utilizando Qt5 y una configuración regional en la que el separador decimal es \",\"."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:181
 msgid "The axes selector now uses shorter, more user-friendly names for axes, and does not crash if there are no axes."
-msgstr ""
+msgstr "El selector de ejes ahora utiliza nombres más cortos y fáciles de usar para los ejes, y no se bloquea si no hay ejes."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:183
 msgid "Line and image entries using the default labels (\"_lineX\", \"_imageX\") are now sorted numerically even when there are more than 10 entries."
-msgstr ""
+msgstr "Las entradas de líneas e imágenes que utilizan las etiquetas por defecto (\"_lineX\", \"_imageX\") se ordenan ahora numéricamente incluso cuando hay más de 10 entradas."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:188
 msgid "Improved image support"
@@ -269,27 +269,27 @@ msgstr "Soporte de imagen mejorado"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:190
 msgid "Prior to version 2.0, matplotlib resampled images by first applying the colormap and then resizing the result.  Since the resampling was performed on the colored image, this introduced colors in the output image that didn't actually exist in the colormap.  Now, images are resampled first (and entirely in floating-point, if the input image is floating-point), and then the colormap is applied."
-msgstr ""
+msgstr "Antes de la versión 2.0, matplotlib remuestreaba las imágenes aplicando primero el mapa de colores y luego redimensionando el resultado. Como el remuestreo se realizaba sobre la imagen coloreada, esto introducía colores en la imagen de salida que no existían en el mapa de colores. Ahora, las imágenes se remuestrean primero (y completamente en punto flotante, si la imagen de entrada es de punto flotante), y luego se aplica el mapa de colores."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:197
 msgid "In order to make this important change, the image handling code was almost entirely rewritten.  As a side effect, image resampling uses less memory and fewer datatype conversions than before."
-msgstr ""
+msgstr "Para realizar este importante cambio, se ha reescrito casi por completo el código de gestión de imágenes.  Como efecto secundario, el remuestreo de imágenes utiliza menos memoria y menos conversiones de tipos de datos que antes."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:201
 msgid "The experimental private feature where one could \"skew\" an image by setting the private member ``_image_skew_coordinate`` has been removed.  Instead, images will obey the transform of the axes on which they are drawn."
-msgstr ""
+msgstr "Se ha eliminado la función privada experimental que permitía \"sesgar\" una imagen estableciendo la coordenada privada ``image_skew_coordinate``. En su lugar, las imágenes obedecerán a la transformación de los ejes sobre los que se dibujan."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:207
 msgid "Non-linear scales on image plots"
-msgstr ""
+msgstr "Escalas no lineales en los trazados de imágenes"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:209
 msgid "`~.Axes.imshow` now draws data at the requested points in data space after the application of non-linear scales."
-msgstr ""
+msgstr "`~.Axes.imshow` ahora dibuja los datos en los puntos solicitados en el espacio de datos después de la aplicación de escalas no lineales."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:212
 msgid "The image on the left demonstrates the new, correct behavior. The old behavior can be recreated using `~.Axes.pcolormesh` as demonstrated on the right."
-msgstr ""
+msgstr "La imagen de la izquierda muestra el nuevo comportamiento correcto. El antiguo comportamiento puede recrearse utilizando `~.Axes.pcolormesh` como se demuestra en la derecha."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-0-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_2-0-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-0-0-1.pdf>`__)"
@@ -297,59 +297,59 @@ msgstr "(`Source code <../../users/prev_whats_new/whats_new_2-0-0-1.py>`__, `png
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:241
 msgid "This can be understood by analogy to plotting a histogram with linearly spaced bins with a logarithmic x-axis.  Equal sized bins will be displayed as wider for small *x* and narrower for large *x*."
-msgstr ""
+msgstr "Esto puede entenderse por analogía con el trazado de un histograma con intervalos lineales con un eje x logarítmico.  Los intervalos de igual tamaño se mostrarán como más anchos para *x* pequeños y más estrechos para *x* grandes."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:248
 msgid "Support for HiDPI (Retina) displays in the NbAgg and WebAgg backends"
-msgstr ""
+msgstr "Soporte para pantallas HiDPI (Retina) en los backends NbAgg y WebAgg"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:250
 msgid "The NbAgg and WebAgg backends will now use the full resolution of your high-pixel-density display."
-msgstr ""
+msgstr "Los backends NbAgg y WebAgg utilizarán ahora la resolución completa de su pantalla de alta densidad de píxeles."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:254
 msgid "Change in the default animation codec"
-msgstr ""
+msgstr "Cambio en el códec de animación por defecto"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:256
 msgid "The default animation codec has been changed from ``mpeg4`` to ``h264``, which is more efficient. It can be set via the ``animation.codec`` rcParam."
-msgstr ""
+msgstr "El códec de animación por defecto ha sido cambiado de ``mpeg4`` a ``h264``, que es más eficiente. Se puede establecer a través del rcParam ``animation.codec``."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:260
 msgid "Deprecated support for mencoder in animation"
-msgstr ""
+msgstr "Soporte obsoleto para mencoder en la animación"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:262
 msgid "The use of mencoder for writing video files with mpl is problematic; switching to ffmpeg is strongly advised.  All support for mencoder will be removed in version 2.2."
-msgstr ""
+msgstr "El uso de mencoder para escribir archivos de vídeo con mpl es problemático; se recomienda encarecidamente cambiar a ffmpeg.  Todo el soporte para mencoder será eliminado en la versión 2.2."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:267
 msgid "Boxplot Zorder Keyword Argument"
-msgstr ""
+msgstr "Argumento de la palabra clave Boxplot Zorder"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:269
 msgid "The *zorder* parameter now exists for `~.Axes.boxplot`. This allows the zorder of a boxplot to be set in the plotting function call. ::"
-msgstr ""
+msgstr "El parámetro *zorder* existe ahora para `~.Axes.boxplot`. Esto permite establecer el zorder de un boxplot en la llamada a la función de trazado. ::"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:275
 msgid "Filled ``+`` and ``x`` markers"
-msgstr ""
+msgstr "Marcadores rellenables ``+`` y ``x``"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:277
 msgid "New fillable *plus* and *x* markers have been added. See the :mod:`~matplotlib.markers` module and :doc:`marker reference </gallery/lines_bars_and_markers/marker_reference>` examples."
-msgstr ""
+msgstr "Se han añadido nuevos marcadores rellenables *plus* y *x*. Consulte el módulo :mod:`~matplotlib.markers` y los ejemplos :doc:`marker reference </gallery/lines_bars_and_markers/marker_reference>`."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:283
 msgid "*rcount* and *ccount* for `~.axes3d.Axes3D.plot_surface`"
-msgstr ""
+msgstr "*rcount* y *ccount* para `~.axes3d.Axes3D.plot_surface`"
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:285
 msgid "As of v2.0, mplot3d's `~.axes3d.Axes3D.plot_surface` now accepts *rcount* and *ccount* arguments for controlling the sampling of the input data for plotting. These arguments specify the maximum number of evenly spaced samples to take from the input data. These arguments are also the new default sampling method for the function, and is considered a style change."
-msgstr ""
+msgstr "A partir de la versión 2.0, mplot3d's `~.axes3d.Axes3D.plot_surface` acepta ahora los argumentos *rcount* y *ccount* para controlar el muestreo de los datos de entrada para el trazado. Estos argumentos especifican el número máximo de muestras espaciadas uniformemente que se tomarán de los datos de entrada. Estos argumentos son también el nuevo método de muestreo por defecto para la función, y se considera un cambio de estilo."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:292
 msgid "The old *rstride* and *cstride* arguments, which specified the size of the evenly spaced samples, become the default when 'classic' mode is invoked, and are still available for use. There are no plans for deprecating these arguments."
-msgstr ""
+msgstr "Los antiguos argumentos *rstride* y *cstride*, que especificaban el tamaño de las muestras espaciadas uniformemente, se convierten en el valor por defecto cuando se invoca el modo \"clásico\", y siguen estando disponibles para su uso. No hay planes para eliminar estos argumentos."
 
 #: ../../users/prev_whats_new/whats_new_2.0.0.rst:298
 msgid "Streamplot Zorder Keyword Argument Changes"

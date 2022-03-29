@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-29 10:39\n"
+"PO-Revision-Date: 2022-03-29 21:43\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -152,55 +152,55 @@ msgstr "Sin embargo, a menudo es deseable que la interpolación anti-aliasing oc
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:170
 msgid "A new keyword argument *interpolation_stage* is provided for `~.axes.Axes.imshow` to set the stage at which the anti-aliasing interpolation happens. The default is the current behaviour of \"data\", with the alternative being \"rgba\" for the newly-available behavior."
-msgstr ""
+msgstr "Se proporciona un nuevo argumento de palabra clave *interpolation_stage* para `~.axes.Axes.imshow` para establecer la etapa en la que se produce la interpolación antialiasing. El valor por defecto es el comportamiento actual de \"data\", siendo la alternativa \"rgba\" para el nuevo comportamiento disponible."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:178
 msgid "Example of the interpolation stage options."
-msgstr ""
+msgstr "Ejemplo de las opciones de la etapa de interpolación."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:180
 msgid "For more details see the discussion of the new keyword argument in :doc:`/gallery/images_contours_and_fields/image_antialiasing`."
-msgstr ""
+msgstr "Para más detalles, véase la discusión del argumento de la nueva palabra clave en :doc:`/gallery/images_contours_and_fields/image_antialiasing`."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:184
 msgid "``imshow`` supports half-float arrays"
-msgstr ""
+msgstr "``imshow`` admite matrices de medios flotantes"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:186
 msgid "The `~.axes.Axes.imshow` method now supports half-float arrays, i.e., NumPy arrays with dtype ``np.float16``."
-msgstr ""
+msgstr "El método `~.axes.Axes.imshow` soporta ahora arreglos half-float, es decir, arrays NumPy con dtype ``np.float16``."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:190
 msgid "A callback registry has been added to Normalize objects"
-msgstr ""
+msgstr "Se ha añadido un registro de callback a los objetos Normalize"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:192
 msgid "`.colors.Normalize` objects now have a callback registry, ``callbacks``, that can be connected to by other objects to be notified when the norm is updated. The callback emits the key ``changed`` when the norm is modified. `.cm.ScalarMappable` is now a listener and will register a change when the norm's vmin, vmax or other attributes are changed."
-msgstr ""
+msgstr "Los objetos `.colors.Normalize` tienen ahora un registro de llamadas de retorno, ``callbacks``, al que pueden conectarse otros objetos para ser notificados cuando se actualiza la norma. El callback emite la clave ``changed`` cuando se modifica la norma. La norma `.cm.ScalarMappable` es ahora un oyente y registrará un cambio cuando el vmin, vmax u otros atributos de la norma sean modificados."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:199
 msgid "Titles, ticks, and labels"
-msgstr ""
+msgstr "Títulos, ticks y etiquetas"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:202
 msgid "Settings tick positions and labels simultaneously in ``set_ticks``"
-msgstr ""
+msgstr "Configuración de las posiciones de los ticks y las etiquetas simultáneamente en ``set_ticks``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:204
 msgid "`.Axis.set_ticks` (and the corresponding `.Axes.set_xticks` / `.Axes.set_yticks`) has a new parameter *labels* allowing to set tick positions and labels simultaneously."
-msgstr ""
+msgstr "`.Axis.set_ticks` (y los correspondientes `.Axes.set_xticks` / `.Axes.set_yticks`) tiene un nuevo parámetro *labels* que permite establecer posiciones de ticks y etiquetas simultáneamente."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:208
 msgid "Previously, setting tick labels was done using `.Axis.set_ticklabels` (or the corresponding `.Axes.set_xticklabels` / `.Axes.set_yticklabels`); this usually only makes sense if tick positions were previously fixed with `~.Axis.set_ticks`::"
-msgstr ""
+msgstr "Anteriormente, la fijación de las etiquetas de los ticks se realizaba mediante `.Axis.set_ticklabels` (o los correspondientes `.Axes.set_xticklabels` / `.Axes.set_yticklabels`); esto normalmente sólo tiene sentido si las posiciones de los ticks se fijaron previamente con `~.Axis.set_ticks`::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:216
 msgid "The combined functionality is now available in `~.Axis.set_ticks`::"
-msgstr ""
+msgstr "La funcionalidad combinada está ahora disponible en `~.Axis.set_ticks`::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:220
 msgid "The use of `.Axis.set_ticklabels` is discouraged, but it will stay available for backward compatibility."
-msgstr ""
+msgstr "Se desaconseja el uso de `.Axis.set_ticklabels`, pero seguirá estando disponible por compatibilidad con versiones anteriores."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:223
 msgid "Note: This addition makes the API of `~.Axis.set_ticks` also more similar to `.pyplot.xticks` / `.pyplot.yticks`, which already had the additional *labels* parameter."

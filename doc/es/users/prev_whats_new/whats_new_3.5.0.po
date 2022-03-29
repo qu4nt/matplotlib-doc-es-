@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-29 01:39\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,107 +20,107 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:3
 msgid "What's new in Matplotlib 3.5.0 (Nov 15, 2021)"
-msgstr ""
+msgstr "Novedades en Matplotlib 3.5.0 (15 de Noviembre de 2021)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:5
 msgid "For a list of all of the issues and pull requests since the last revision, see the :ref:`github-stats`."
-msgstr ""
+msgstr "Para obtener una lista de todas las incidencias y pull requests desde la última revisión, ver la :ref:`github-stats`."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:9
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de Contenidos"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:15
 msgid "Figure and Axes creation / management"
-msgstr ""
+msgstr "Creación / gestión de figuras y ejes"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:18
 msgid "``subplot_mosaic`` supports simple Axes sharing"
-msgstr ""
+msgstr "``subplot_mosaic`` permite compartir ejes de forma sencilla"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:20
 msgid "`.Figure.subplot_mosaic`, `.pyplot.subplot_mosaic` support *simple* Axes sharing (i.e., only `True`/`False` may be passed to *sharex*/*sharey*). When `True`, tick label visibility and Axis units will be shared."
-msgstr ""
+msgstr "`.Figure.subplot_mosaic`, `.pyplot.subplot_mosaic` soportan la compartición *simple* de ejes (es decir, sólo se puede pasar `True`/`False` a *sharex*/*sharey*). Cuando es `Verdadero`, la visibilidad de las etiquetas de los ticks y las unidades de los Ejes serán compartidas."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:17
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-1.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:38
 msgid "Figure now has ``draw_without_rendering`` method"
-msgstr ""
+msgstr "La figura tiene ahora el método ``draw_without_rendering``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:40
 msgid "Some aspects of a figure are only determined at draw-time, such as the exact position of text artists or deferred computation like automatic data limits. If you need these values, you can use ``figure.canvas.draw()`` to force a full draw. However, this has side effects, sometimes requires an open file, and is doing more work than is needed."
-msgstr ""
+msgstr "Algunos aspectos de una figura sólo se determinan en el momento de dibujar, como la posición exacta de los artists de texto o el cálculo diferido, como los límites de datos automáticos. Si necesita estos valores, puede utilizar ``figure.canvas.draw()`` para forzar un dibujo completo. Sin embargo, esto tiene efectos secundarios, a veces requiere un archivo abierto, y está haciendo más trabajo del necesario."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:46
 msgid "The new `.Figure.draw_without_rendering` method runs all the updates that ``draw()`` does, but skips rendering the figure. It's thus more efficient if you need the updated values to configure further aspects of the figure."
-msgstr ""
+msgstr "El nuevo método `.Figure.draw_without_rendering` ejecuta todas las actualizaciones que hace ``draw()``, pero se salta el renderizado de la figura. Por lo tanto, es más eficiente si necesitas los valores actualizados para configurar otros aspectos de la figura."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:51
 msgid "Figure ``__init__`` passes keyword arguments through to set"
-msgstr ""
+msgstr "La figura ``__init__`` pasa los argumentos de las palabras clave a set"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:53
 msgid "Similar to many other sub-classes of `~.Artist`, the `~.FigureBase`, `~.SubFigure`, and `~.Figure` classes will now pass any additional keyword arguments to `~.Artist.set` to allow properties of the newly created object to be set at initialization time. For example::"
-msgstr ""
+msgstr "Al igual que muchas otras subclases de `~.Artist`, las clases `~.FigureBase`, `~.SubFigure` y `~.Figure` pasarán ahora cualquier argumento de palabra clave adicional a `~.Artist.set` para permitir que las propiedades del objeto recién creado se establezcan en el momento de la inicialización. Por ejemplo::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:62
 msgid "Plotting methods"
-msgstr ""
+msgstr "Métodos de graficación"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:65
 msgid "Add ``Annulus`` patch"
-msgstr ""
+msgstr "Añadir el parche ``Annulus``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:67
 msgid "`.Annulus` is a new class for drawing elliptical annuli."
-msgstr ""
+msgstr "`.Annulus` es una nueva clase para dibujar anillos elípticos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-2.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:83
 msgid "``set_data`` method for ``FancyArrow`` patch"
-msgstr ""
+msgstr "Método ``set_data`` para el parche ``FancyArrow``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:85
 msgid "`.FancyArrow`, the patch returned by ``ax.arrow``, now has a ``set_data`` method that allows modifying the arrow after creation, e.g., for animation."
-msgstr ""
+msgstr "`.FancyArrow`, el parche devuelto por ``ax.arrow``, tiene ahora un método ``set_data`` que permite modificar la flecha después de su creación, por ejemplo, para su animación."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:89
 msgid "New arrow styles in ``ArrowStyle`` and ``ConnectionPatch``"
-msgstr ""
+msgstr "Nuevos estilos de flecha en ``ArrowStyle`` y ``ConnectionPatch``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:91
 msgid "The new *arrow* parameter to `.ArrowStyle` substitutes the use of the *beginarrow* and *endarrow* parameters in the creation of arrows. It receives arrows strings like ``'<-'``, ``']-[``' and ``']->``' instead of individual booleans."
-msgstr ""
+msgstr "El nuevo parámetro *arrow* de `.ArrowStyle` sustituye el uso de los parámetros *beginarrow* y *endarrow* en la creación de flechas. Recibe cadenas de flechas como ``'<-'``, ``']-[``' y ``']->``' en lugar de booleanas individuales."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:96
 msgid "Two new styles ``']->'`` and ``'<-['`` are also added via this mechanism. `.ConnectionPatch`, which accepts arrow styles though its *arrowstyle* parameter, also accepts these new styles."
-msgstr ""
+msgstr "Dos nuevos estilos ``']->'`` y ``'<-['`` también se añaden a través de este mecanismo. El parche `.ConnectionPatch`, que acepta estilos de flecha a través de su parámetro *arrowstyle*, también acepta estos nuevos estilos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-3.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-3.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:124
 msgid "Setting collection offset transform after initialization"
-msgstr ""
+msgstr "Ajuste de la transformación del desplazamiento de la colección después de la inicialización"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:126
 msgid "The added `.collections.Collection.set_offset_transform` may be used to set the offset transform after initialization. This can be helpful when creating a `.collections.Collection` outside an Axes object, and later adding it with `.Axes.add_collection()` and setting the offset transform to `.Axes.transData`."
-msgstr ""
+msgstr "La función añadida `.collections.Collection.set_offset_transform` puede utilizarse para establecer la transformación de desplazamiento después de la inicialización. Esto puede ser útil cuando se crea una `.collections.Collection` fuera de un objeto Axes, y posteriormente se añade con `.Axes.add_collection()` y se establece la transformación de desplazamiento a `.Axes.transData`."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:132
 msgid "Colors and colormaps"
-msgstr ""
+msgstr "Colores y mapas de colores"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:135
 msgid "Colormap registry (experimental)"
-msgstr ""
+msgstr "Registro de mapas de colores (experimental)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:137
 msgid "Colormaps are now managed via `matplotlib.colormaps` (or `.pyplot.colormaps`), which is a `.ColormapRegistry`. While we are confident that the API is final, we formally mark it as experimental for 3.5 because we want to keep the option to still modify the API for 3.6 should the need arise."
@@ -324,91 +324,91 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:417
 msgid "`.axes3d.Axes3D.plot_surface` supports masked arrays and NaNs, and will now hide quads that contain masked or NaN points. The behaviour is similar to `.Axes.contour` with ``corner_mask=True``."
-msgstr ""
+msgstr "`.axes3d.Axes3D.plot_surface` soporta arrays enmascarados y NaNs, y ahora ocultará los quads que contengan puntos enmascarados o NaN. El comportamiento es similar al de `.Axes.contour` con ``corner_mask=True``."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-10.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-10.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-10.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-10.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-10.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-10.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:438
 msgid "3D plotting methods support *data* keyword argument"
-msgstr ""
+msgstr "Los métodos de trazado 3D soportan el argumento de la palabra clave *data*"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:440
 msgid "To match all 2D plotting methods, the 3D Axes now support the *data* keyword argument. This allows passing arguments indirectly from a DataFrame-like structure. ::"
-msgstr ""
+msgstr "Para coincidir con todos los métodos de trazado en 2D, los Ejes 3D soportan ahora el argumento de la palabra clave *data*. Esto permite pasar argumentos indirectamente desde una estructura tipo DataFrame::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:457
 msgid "Interactive tool improvements"
-msgstr ""
+msgstr "Mejoras en la herramienta interactiva"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:460
 msgid "Colorbars now have pan and zoom functionality"
-msgstr ""
+msgstr "Las barras de colores tienen ahora la función de desplazamiento y zoom"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:462
 msgid "Interactive plots with colorbars can now be zoomed and panned on the colorbar axis. This adjusts the *vmin* and *vmax* of the ``ScalarMappable`` associated with the colorbar. This is currently only enabled for continuous norms. Norms used with contourf and categoricals, such as ``BoundaryNorm`` and ``NoNorm``, have the interactive capability disabled by default. ``cb.ax.set_navigate()`` can be used to set whether a colorbar axes is interactive or not."
-msgstr ""
+msgstr "Los gráficos interactivos con barras de colores ahora pueden ser ampliados y desplazados en el eje de la barra de colores. Esto ajusta los valores *vmin* y *vmax* del ``ScalarMappable`` asociado a la barra de colores. Actualmente sólo está habilitado para las normas continuas. Las normas utilizadas con contourf y categóricas, como ``BoundaryNorm`` y ``NoNorm``, tienen la capacidad interactiva desactivada por defecto. Se puede utilizar ``cb.ax.set_navigate()`` para establecer si un eje de barra de colores es interactivo o no."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:470
 msgid "Updated the appearance of Slider widgets"
-msgstr ""
+msgstr "Actualizada la apariencia de los widgets Slider"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:472
 msgid "The appearance of `~.Slider` and `~.RangeSlider` widgets were updated and given new styling parameters for the added handles."
-msgstr ""
+msgstr "Se ha actualizado la apariencia de los widgets `~.Slider` y `~.RangeSlider` y se les ha dotado de nuevos parámetros de estilo para los tiradores añadidos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-11.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-11.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-11.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-11.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-11.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-11.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:512
 msgid "Removing points on a PolygonSelector"
-msgstr ""
+msgstr "Eliminación de puntos en un PolygonSelector"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:514
 msgid "After completing a `~matplotlib.widgets.PolygonSelector`, individual points can now be removed by right-clicking on them."
-msgstr ""
+msgstr "Después de completar un `~matplotlib.widgets.PolygonSelector`, ahora se pueden eliminar puntos individuales haciendo clic con el botón derecho sobre ellos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:518
 msgid "Dragging selectors"
-msgstr ""
+msgstr "Arrastrando selectores"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:520
 msgid "The `~matplotlib.widgets.SpanSelector`, `~matplotlib.widgets.RectangleSelector` and `~matplotlib.widgets.EllipseSelector` have a new keyword argument, *drag_from_anywhere*, which when set to `True` allows you to click and drag from anywhere inside the selector to move it. Previously it was only possible to move it by either activating the move modifier button, or clicking on the central handle."
-msgstr ""
+msgstr "Los selectores `~matplotlib.widgets.SpanSelector`, `~matplotlib.widgets.RectangleSelector` y `~matplotlib.widgets.EllipseSelector` tienen un nuevo argumento de palabra clave, *drag_from_anywhere*, que cuando se establece en `True` permite hacer click y arrastrar desde cualquier lugar dentro del selector para moverlo. Anteriormente sólo era posible moverlo activando el botón modificador de movimiento, o haciendo click en el asa central."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:527
 msgid "The size of the `~matplotlib.widgets.SpanSelector` can now be changed using the edge handles."
-msgstr ""
+msgstr "El tamaño del `~matplotlib.widgets.SpanSelector` puede ahora cambiarse utilizando los tiradores de los bordes."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:531
 msgid "Clearing selectors"
-msgstr ""
+msgstr "Limpiando selectores"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:533
 msgid "The selectors (`~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, `~.widgets.RectangleSelector`, and `~.widgets.SpanSelector`) have a new method *clear*, which will clear the current selection and get the selector ready to make a new selection. This is equivalent to pressing the *escape* key."
-msgstr ""
+msgstr "Los selectores (`~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, `~.widgets.RectangleSelector`, y `~.widgets.SpanSelector`) tienen un nuevo método *clear*, que borrará la selección actual y preparará el selector para hacer una nueva selección. Esto es equivalente a pulsar la tecla *escape*."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:540
 msgid "Setting artist properties of selectors"
-msgstr ""
+msgstr "Configuración de las propiedades de artist de los selectores"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:542
 msgid "The artist properties of the `~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, `~.widgets.RectangleSelector` and `~.widgets.SpanSelector` selectors can be changed using the ``set_props`` and ``set_handle_props`` methods."
-msgstr ""
+msgstr "Las propiedades artist de los selectores `~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, `~.widgets.RectangleSelector` y `~.widgets.SpanSelector` pueden modificarse mediante los métodos ``set_props`` y ``set_handle_props``."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:548
 msgid "Ignore events outside selection"
-msgstr ""
+msgstr "Ignorar eventos fuera de la selección"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:550
 msgid "The `~.widgets.EllipseSelector`, `~.widgets.RectangleSelector` and `~.widgets.SpanSelector` selectors have a new keyword argument, *ignore_event_outside*, which when set to `True` will ignore events outside of the current selection. The handles or the new dragging functionality can instead be used to change the selection."
-msgstr ""
+msgstr "Los selectores `~.widgets.EllipseSelector`, `~.widgets.RectangleSelector` y `~.widgets.SpanSelector` tienen un nuevo argumento de palabra clave, *ignore_event_outside*, que cuando se establece como `True` ignorará los eventos fuera de la selección actual. En su lugar se pueden utilizar los tiradores o la nueva funcionalidad de arrastre para cambiar la selección."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:557
 msgid "``CallbackRegistry`` objects gain a method to temporarily block signals"
-msgstr ""
+msgstr "Los objetos ``CallbackRegistry`` ganan un método para bloquear temporalmente las señales"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:559
 msgid "The context manager `~matplotlib.cbook.CallbackRegistry.blocked` can be used to block callback signals from being processed by the ``CallbackRegistry``. The optional keyword, *signal*, can be used to block a specific signal from being processed and let all other signals pass."
@@ -424,7 +424,7 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:591
 msgid "Sphinx extensions"
-msgstr ""
+msgstr "Extensiones de Sphinx"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:594
 msgid "More configuration of ``mathmpl`` sphinx extension"
@@ -504,7 +504,7 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:667
 msgid "Version information"
-msgstr ""
+msgstr "Información de la versión"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:669
 msgid "We switched to the `release-branch-semver`_ version scheme of setuptools-scm. This only affects the version information for development builds. Their version number now describes the targeted release, i.e. 3.5.0.dev820+g6768ef8c4c is 820 commits after the previous release and is scheduled to be officially released as 3.5.0 later."

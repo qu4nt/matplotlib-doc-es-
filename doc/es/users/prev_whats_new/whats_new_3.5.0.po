@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-29 03:00\n"
+"PO-Revision-Date: 2022-03-29 10:39\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -124,31 +124,31 @@ msgstr "Registro de mapas de colores (experimental)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:137
 msgid "Colormaps are now managed via `matplotlib.colormaps` (or `.pyplot.colormaps`), which is a `.ColormapRegistry`. While we are confident that the API is final, we formally mark it as experimental for 3.5 because we want to keep the option to still modify the API for 3.6 should the need arise."
-msgstr ""
+msgstr "Los mapas de colores se gestionan ahora mediante `matplotlib.colormaps` (o `.pyplot.colormaps`), que es un `.ColormapRegistry`. Aunque estamos seguros de que la API es definitiva, la marcamos formalmente como experimental para la 3.5 porque queremos mantener la opción de seguir modificando la API para la 3.6 si surge la necesidad."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:142
 msgid "Colormaps can be obtained using item access::"
-msgstr ""
+msgstr "Los mapas de colores pueden obtenerse mediante el acceso a los elementos::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:147
 msgid "To register new colormaps use::"
-msgstr ""
+msgstr "Para registrar nuevos mapas de colores utilice::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:151
 msgid "We recommend to use the new API instead of the `~.cm.get_cmap` and `~.cm.register_cmap` functions for new code. `matplotlib.cm.get_cmap` and `matplotlib.cm.register_cmap` will eventually be deprecated and removed. Within `.pyplot`, ``plt.get_cmap()`` and ``plt.register_cmap()`` will continue to be supported for backward compatibility."
-msgstr ""
+msgstr "Recomendamos utilizar la nueva API en lugar de las funciones `~.cm.get_cmap` y `~.cm.register_cmap` para el código nuevo. Las funciones `matplotlib.cm.get_cmap` y `matplotlib.cm.register_cmap` serán eventualmente obsoletas y eliminadas. Dentro de `.pyplot`, ``plt.get_cmap()`` y ``plt.register_cmap()`` seguirán siendo soportados por compatibilidad con el pasado."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:158
 msgid "Image interpolation now possible at RGBA stage"
-msgstr ""
+msgstr "La interpolación de imágenes ahora es posible en la etapa RGBA"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:160
 msgid "Images in Matplotlib created via `~.axes.Axes.imshow` are resampled to match the resolution of the current canvas. It is useful to apply an auto-aliasing filter when downsampling to reduce Moiré effects. By default, interpolation is done on the data, a norm applied, and then the colormapping performed."
-msgstr ""
+msgstr "Las imágenes en Matplotlib creadas a través de `~.axes.Axes.imshow` son remuestreadas para ajustarse a la resolución del lienzo actual. Es útil aplicar un filtro de auto-aliasing cuando se remuestrea para reducir los efectos Moiré. Por defecto, la interpolación se realiza sobre los datos, se aplica una norma y luego se realiza el mapeo de color."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:165
 msgid "However, it is often desirable for the anti-aliasing interpolation to happen in RGBA space, where the colors are interpolated rather than the data. This usually leads to colors outside the colormap, but visually blends adjacent colors, and is what browsers and other image processing software do."
-msgstr ""
+msgstr "Sin embargo, a menudo es deseable que la interpolación anti-aliasing ocurra en el espacio RGBA, donde se interpolan los colores en lugar de los datos. Esto suele dar lugar a colores fuera del mapa de colores, pero mezcla visualmente los colores adyacentes, y es lo que hacen los navegadores y otros programas de procesamiento de imágenes."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:170
 msgid "A new keyword argument *interpolation_stage* is provided for `~.axes.Axes.imshow` to set the stage at which the anti-aliasing interpolation happens. The default is the current behaviour of \"data\", with the alternative being \"rgba\" for the newly-available behavior."

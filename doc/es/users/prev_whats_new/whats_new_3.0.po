@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-28 23:24\n"
+"PO-Revision-Date: 2022-03-29 00:35\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -116,57 +116,57 @@ msgstr "Los gráficos de torta son ahora circulares por defecto"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:138
 msgid "We acknowledge that the majority of people do not like egg-shaped pies. Therefore, an axes to which a pie chart is plotted will be set to have equal aspect ratio by default. This ensures that the pie appears circular independent on the axes size or units. To revert to the previous behaviour set the axes' aspect ratio to automatic by using ``ax.set_aspect(\"auto\")`` or ``plt.axis(\"auto\")``."
-msgstr ""
+msgstr "Reconocemos que a la mayoría de la gente no le gustan las tartas en forma de huevo. Por lo tanto, los ejes en los que se traza un gráfico de tartas se configurarán para que tengan la misma relación de aspecto por defecto. Esto garantiza que la tarta sea circular independientemente del tamaño de los ejes o de las unidades. Para volver al comportamiento anterior, establezca la relación de aspecto de los ejes como automática utilizando ``ax.set_aspect(\"auto\")`` o ``plt.axis(\"auto\")``."
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:146
 msgid "Add ``ax.get_gridspec`` to `.SubplotBase`"
-msgstr ""
+msgstr "Añadir ``ax.get_gridspec`` a `.SubplotBase`"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:148
 msgid "New method `.SubplotBase.get_gridspec` is added so that users can easily get the gridspec that went into making an axes:"
-msgstr ""
+msgstr "Se añade el nuevo método `.SubplotBase.get_gridspec` para que los usuarios puedan obtener fácilmente la especificación de la rejilla que se utilizó para crear un eje:"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:168
 msgid "Axes titles will no longer overlap xaxis"
-msgstr ""
+msgstr "Los títulos de los ejes ya no se superponen al eje x"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:170
 msgid "Previously an axes title had to be moved manually if an xaxis overlapped (usually when the xaxis was put on the top of the axes).  Now, the title will be automatically moved above the xaxis and its decorators (including the xlabel) if they are at the top."
-msgstr ""
+msgstr "Anteriormente, el título de un eje tenía que ser movido manualmente si un eje x se superponía (normalmente cuando el eje x se ponía en la parte superior de los ejes). Ahora, el título se moverá automáticamente por encima del eje x y sus decoradores (incluyendo la etiqueta x) si están en la parte superior."
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:175
 msgid "If desired, the title can still be placed manually.  There is a slight kludge; the algorithm checks if the y-position of the title is 1.0 (the default), and moves if it is.  If the user places the title in the default location (i.e. ``ax.title.set_position(0.5, 1.0)``), the title will still be moved above the xaxis.  If the user wants to avoid this, they can specify a number that is close (i.e. ``ax.title.set_position(0.5, 1.01)``) and the title will not be moved via this algorithm."
-msgstr ""
+msgstr "Si se desea, el título puede seguir colocándose manualmente. Hay un pequeño error; el algoritmo comprueba si la posición y del título es 1.0 (el valor por defecto), y se mueve si lo es. Si el usuario coloca el título en la posición por defecto (es decir, ``ax.title.set_position(0.5, 1.0)``), el título se seguirá moviendo por encima del eje x. Si el usuario quiere evitar esto, puede especificar un número cercano (por ejemplo, ``ax.title.set_position(0.5, 1.01)``) y el título no se moverá mediante este algoritmo."
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:186
 msgid "New convenience methods for GridSpec"
-msgstr ""
+msgstr "Nuevos métodos de conveniencia para GridSpec"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:188
 msgid "There are new convenience methods for `.gridspec.GridSpec` and `.gridspec.GridSpecFromSubplotSpec`.  Instead of the former we can now call `.Figure.add_gridspec` and for the latter `.SubplotSpec.subgridspec`."
-msgstr ""
+msgstr "Hay nuevos métodos de conveniencia para `.gridspec.GridSpec` y `.gridspec.GridSpecFromSubplotSpec`.  En lugar del primero, ahora podemos llamar a `.Figure.add_gridspec` y para el segundo a `.SubplotSpec.subgridspec`."
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:206
 msgid "Figure has an `~.figure.Figure.add_artist` method"
-msgstr ""
+msgstr "Figure tiene un método `~.figure.Figure.add_artist`"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:208
 msgid "A method `~.figure.Figure.add_artist` has been added to the :class:`~.figure.Figure` class, which allows artists to be added directly to a figure. E.g. ::"
-msgstr ""
+msgstr "Se ha añadido un método `~.figure.Figure.add_artist` a la clase :class:`~.figure.Figure`, que permite añadir artists directamente a una figura. Por ejemplo ::"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:215
 msgid "In case the added artist has no transform set previously, it will be set to the figure transform (``fig.transFigure``). This new method may be useful for adding artists to figures without axes or to easily position static elements in figure coordinates."
-msgstr ""
+msgstr "En caso de que el artist añadido no tenga ninguna transformación establecida previamente, se establecerá la transformación de la figura (``fig.transFigure``). Este nuevo método puede ser útil para añadir artists a figuras sin ejes o para posicionar fácilmente elementos estáticos en coordenadas de la figura."
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:222
 msgid "``:math:`` directive renamed to ``:mathmpl:``"
-msgstr ""
+msgstr "La directiva ``:math:`` ha sido renombrada a ``:mathmpl:``"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:224
 msgid "The ``:math:`` rst role provided by `matplotlib.sphinxext.mathmpl` has been renamed to ``:mathmpl:`` to avoid conflicting with the ``:math:`` role that Sphinx 1.8 provides by default.  (``:mathmpl:`` uses Matplotlib to render math expressions to images embedded in html, whereas Sphinx uses MathJax.)"
-msgstr ""
+msgstr "El rol ``:math:`` proporcionado por `matplotlib.sphinxext.mathmpl` ha sido renombrado a ``:mathmpl:`` para evitar conflictos con el rol ``:math:`` que Sphinx 1.8 proporciona por defecto.  (``:mathmpl:`` utiliza Matplotlib para renderizar expresiones matemáticas en imágenes incrustadas en html, mientras que Sphinx utiliza MathJax)"
 
 #: ../../users/prev_whats_new/whats_new_3.0.rst:229
 msgid "When using Sphinx<1.8, both names (``:math:`` and ``:mathmpl:``) remain available for backwards-compatibility."
-msgstr ""
+msgstr "Cuando se utiliza Sphinx<1.8, ambos nombres (``:math:`` y ``:mathmpl:``) siguen estando disponibles por compatibilidad con versiones anteriores."
 

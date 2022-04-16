@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-04-16 02:48\n"
+"PO-Revision-Date: 2022-04-16 03:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -200,11 +200,11 @@ msgstr "Paul Hobson ha arreglado el método :func:`~matplotlib.pyplot.boxplot` p
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:167
 msgid "Calling subplot() without arguments"
-msgstr ""
+msgstr "Llamada a subplot() sin argumentos"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:168
 msgid "A call to :func:`~matplotlib.pyplot.subplot` without any arguments now acts the same as ``subplot(111)`` or ``subplot(1, 1, 1)`` -- it creates one axes for the whole figure. This was already the behavior for both :func:`~matplotlib.pyplot.axes` and :func:`~matplotlib.pyplot.subplots`, and now this consistency is shared with :func:`~matplotlib.pyplot.subplot`."
-msgstr ""
+msgstr "Una llamada a :func:`~matplotlib.pyplot.subplot` sin argumentos actúa ahora igual que ``subplot(111)`` o ``subplot(1, 1, 1)`` -- crea un eje para toda la figura. Este era ya el comportamiento de :func:`~matplotlib.pyplot.axes` y :func:`~matplotlib.pyplot.subplots`, y ahora esta consistencia se comparte con :func:`~matplotlib.pyplot.subplot`."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:176
 msgid "Drawing"
@@ -212,51 +212,51 @@ msgstr "Diseño"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:179
 msgid "Independent alpha values for face and edge colors"
-msgstr ""
+msgstr "AlfaValores alfa independientes para los colores de las caras y los bordes"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:180
 msgid "Wes Campaigne modified how :class:`~matplotlib.patches.Patch` objects are drawn such that (for backends supporting transparency) you can set different alpha values for faces and edges, by specifying their colors in RGBA format. Note that if you set the alpha attribute for the patch object (e.g. using :meth:`~matplotlib.patches.Patch.set_alpha` or the ``alpha`` keyword argument), that value will override the alpha components set in both the face and edge colors."
-msgstr ""
+msgstr "Wes Campaigne ha modificado la forma en que se dibujan los objetos :class:`~matplotlib.patches.Patch` de forma que (para los backends que soportan transparencia) se pueden establecer valores alfa diferentes para las caras y los bordes, especificando sus colores en formato RGBA. Tenga en cuenta que si establece el atributo alfa para el objeto parche (por ejemplo, utilizando :meth:`~matplotlib.patches.Patch.set_alpha` o el argumento de la palabra clave ``alpha``), ese valor anulará los componentes alfa establecidos en los colores de las caras y los bordes."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:189
 msgid "Path effects on lines"
-msgstr ""
+msgstr "Efectos de trayectoria en las líneas"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:190
 msgid "Thanks to Jae-Joon Lee, path effects now also work on plot lines."
-msgstr ""
+msgstr "Gracias a Jae-Joon Lee, los efectos de trayectoria ahora también funcionan en las líneas de trazado."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:198
 msgid "Easier creation of colormap and normalizer for levels with colors"
-msgstr ""
+msgstr "Creación más fácil del mapa de colores y del normalizador para los niveles con colores"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:199
 msgid "Phil Elson added the :func:`matplotlib.colors.from_levels_and_colors` function to easily create a colormap and normalizer for representation of discrete colors for plot types such as :func:`matplotlib.pyplot.pcolormesh`, with a similar interface to that of `matplotlib.pyplot.contourf`."
-msgstr ""
+msgstr "Phil Elson ha añadido la función :func:`matplotlib.colors.from_levels_and_colors` para crear fácilmente un mapa de colores y un normalizador para la representación de colores discretos para tipos de gráficos como :func:`matplotlib.pyplot.pcolormesh`, con una interfaz similar a la de `matplotlib.pyplot.contourf`."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:206
 msgid "Full control of the background color"
-msgstr ""
+msgstr "Control total del color de fondo"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:207
 msgid "Wes Campaigne and Phil Elson fixed the Agg backend such that PNGs are now saved with the correct background color when ``fig.patch.get_alpha()`` is not 1."
-msgstr ""
+msgstr "Wes Campaigne y Phil Elson han arreglado el backend de Agg para que los PNG se guarden con el color de fondo correcto cuando ``fig.patch.get_alpha()`` no es 1."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:212
 msgid "Improved ``bbox_inches=\"tight\"`` functionality"
-msgstr ""
+msgstr "Se ha mejorado la funcionalidad de ``bbox_inches=\"tight\"``"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:213
 msgid "Passing ``bbox_inches=\"tight\"`` through to `.pyplot.savefig` now takes into account *all* artists on a figure - this was previously not the case and led to several corner cases which did not function as expected."
-msgstr ""
+msgstr "Al pasar ``bbox_inches=\"tight\"`` a `.pyplot.savefig` ahora se tienen en cuenta *todos* los artistas de una figura - antes no era así y daba lugar a varios casos de esquina que no funcionaban como se esperaba."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:219
 msgid "Initialize a rotated rectangle"
-msgstr ""
+msgstr "Inicializar un rectángulo girado"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:220
 msgid "Damon McDougall extended the :class:`~matplotlib.patches.Rectangle` constructor to accept an *angle* kwarg, specifying the rotation of a rectangle in degrees."
-msgstr ""
+msgstr "Damon McDougall extendió el constructor :class:`~matplotlib.patches.Rectangle` para aceptar un kwarg de *ángulo*, especificando la rotación de un rectángulo en grados."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:225
 msgid "Text"
@@ -264,63 +264,63 @@ msgstr "Texto"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:228
 msgid "Anchored text support"
-msgstr ""
+msgstr "Soporte de texto anclado"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:229
 msgid "The SVG and pgf backends are now able to save text alignment information to their output formats. This allows to edit text elements in saved figures, using Inkscape for example, while preserving their intended position. For SVG please note that you'll have to disable the default text-to-path conversion (``mpl.rc('svg', fonttype='none')``)."
-msgstr ""
+msgstr "Los backends SVG y pgf son ahora capaces de guardar la información de alineación del texto en sus formatos de salida. Esto permite editar los elementos de texto en las figuras guardadas, usando Inkscape por ejemplo, preservando su posición prevista. Para SVG, tenga en cuenta que tendrá que desactivar la conversión por defecto de texto a ruta (``mpl.rc('svg', fonttype='none')``)."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:237
 msgid "Better vertical text alignment and multi-line text"
-msgstr ""
+msgstr "Mejor alineación vertical del texto y texto de varias líneas"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:238
 msgid "The vertical alignment of text is now consistent across backends.  You may see small differences in text placement, particularly with rotated text."
-msgstr ""
+msgstr "La alineación vertical del texto es ahora consistente en todos los backends.  Es posible que se observen pequeñas diferencias en la colocación del texto, en particular con el texto girado."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:242
 msgid "If you are using a custom backend, note that the `~.RendererBase.draw_text` renderer method is now passed the location of the baseline, not the location of the bottom of the text bounding box."
-msgstr ""
+msgstr "Si estás utilizando un backend personalizado, ten en cuenta que al método del renderizador `~.RendererBase.draw_text` se le pasa ahora la ubicación de la línea de base, no la ubicación de la parte inferior de la caja delimitadora del texto."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:246
 msgid "Multi-line text will now leave enough room for the height of very tall or very low text, such as superscripts and subscripts."
-msgstr ""
+msgstr "El texto de varias líneas ahora dejará suficiente espacio para la altura del texto muy alto o muy bajo, como los superíndices y subíndices."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:250
 msgid "Left and right side axes titles"
-msgstr ""
+msgstr "Títulos de los ejes laterales izquierdo y derecho"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:251
 msgid "Andrew Dawson added the ability to add axes titles flush with the left and right sides of the top of the axes using a new keyword argument *loc* to :func:`~matplotlib.pyplot.title`."
-msgstr ""
+msgstr "Andrew Dawson ha añadido la posibilidad de añadir títulos de ejes a ras de los lados izquierdo y derecho de la parte superior de los ejes utilizando un nuevo argumento de palabra clave *loc* a :func:`~matplotlib.pyplot.title`."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:256
 msgid "Improved manual contour plot label positioning"
-msgstr ""
+msgstr "Mejora del posicionamiento de las etiquetas de los trazados de contorno manuales"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:257
 msgid "Brian Mattern modified the manual contour plot label positioning code to interpolate along line segments and find the actual closest point on a contour to the requested position. Previously, the closest path vertex was used, which, in the case of straight contours was sometimes quite distant from the requested location. Much more precise label positioning is now possible."
-msgstr ""
+msgstr "Brian Mattern ha modificado el código de posicionamiento manual de etiquetas de contorno para interpolar a lo largo de segmentos de línea y encontrar el punto más cercano en un contorno a la posición solicitada. Anteriormente, se utilizaba el vértice de la trayectoria más cercana, que, en el caso de los contornos rectos, a veces estaba bastante alejado de la ubicación solicitada. Ahora es posible un posicionamiento de etiquetas mucho más preciso."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:265
 msgid "Configuration (rcParams)"
-msgstr ""
+msgstr "Configuración (rcParams)"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:268
 msgid "Quickly find rcParams"
-msgstr ""
+msgstr "Encontrar rápidamente rcParams"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:269
 msgid "Phil Elson made it easier to search for rcParameters by passing a valid regular expression to :func:`matplotlib.RcParams.find_all`. :class:`matplotlib.RcParams` now also has a pretty repr and str representation so that search results are printed prettily:"
-msgstr ""
+msgstr "Phil Elson ha facilitado la búsqueda de rcParameters pasando una expresión regular válida a :func:`matplotlib.RcParams.find_all`. :class:`matplotlib.RcParams` ahora también tiene una bonita representación repr y str para que los resultados de la búsqueda se impriman de forma bonita:"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:283
 msgid "``axes.xmargin`` and ``axes.ymargin`` added to rcParams"
-msgstr ""
+msgstr "``axes.xmargin`` y ``axes.ymargin`` añadidos a rcParams"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:284
 msgid ":rc:`axes.xmargin` and :rc:`axes.ymargin` were added to configure the default margins used.  Previously they were hard-coded to default to 0, default value of both rcParam values is 0."
-msgstr ""
+msgstr "Se ha añadido :rc:`axes.xmargin` y :rc:`axes.ymargin` para configurar los márgenes por defecto.  Anteriormente estaban codificados por defecto a 0, el valor por defecto de ambos valores rcParam es 0."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:289
 msgid "Changes to font rcParams"
@@ -328,15 +328,15 @@ msgstr "Cambios a la fuente rcParams"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:290
 msgid "The ``font.*`` rcParams now affect only text objects created after the rcParam has been set, and will not retroactively affect already existing text objects.  This brings their behavior in line with most other rcParams."
-msgstr ""
+msgstr "Los rcParam ``font.*`` afectan ahora sólo a los objetos de texto creados después de que el rcParam haya sido establecido, y no afectarán retroactivamente a los objetos de texto ya existentes.  Esto hace que su comportamiento esté en línea con la mayoría de los otros rcParam."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:296
 msgid "Added :rc:`savefig.jpeg_quality`"
-msgstr ""
+msgstr "Se ha añadido :rc:`savefig.jpeg_quality`"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:297
 msgid "rcParam value :rc:`savefig.jpeg_quality` was added so that the user can configure the default quality used when a figure is written as a JPEG. The default quality is 95; previously, the default quality was 75. This change minimizes the artifacting inherent in JPEG images, particularly with images that have sharp changes in color as plots often do."
-msgstr ""
+msgstr "se ha añadido el valor de rcParam :rc:`savefig.jpeg_quality` para que el usuario pueda configurar la calidad por defecto utilizada cuando una figura se escribe como JPEG. La calidad por defecto es 95; anteriormente, la calidad por defecto era 75. Este cambio minimiza los artefactos inherentes a las imágenes JPEG, en particular con las imágenes que tienen cambios bruscos de color, como ocurre a menudo con los gráficos."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:305
 msgid "Backends"
@@ -348,47 +348,47 @@ msgstr "Backend WebAgg"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:309
 msgid "Michael Droettboom, Phil Elson and others have developed a new backend, WebAgg, to display figures in a web browser.  It works with animations as well as being fully interactive."
-msgstr ""
+msgstr "Michael Droettboom, Phil Elson y otros han desarrollado un nuevo backend, WebAgg, para mostrar figuras en un navegador web.  Funciona con animaciones, además de ser totalmente interactivo."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:315
 msgid "Future versions of matplotlib will integrate this backend with the IPython notebook for a fully web browser based plotting frontend."
-msgstr ""
+msgstr "Las futuras versiones de matplotlib integrarán este backend con el cuaderno IPython para un frontend de ploteo totalmente basado en el navegador web."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:319
 msgid "Remember save directory"
-msgstr ""
+msgstr "Recordar el directorio de guardado"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:320
 msgid "Martin Spacek made the save figure dialog remember the last directory saved to. The default is configurable with the new :rc:`savefig.directory` rcParam in :file:`matplotlibrc`."
-msgstr ""
+msgstr "Martin Spacek ha hecho que el diálogo de guardar figura recuerde el último directorio en el que se guardó. El valor por defecto es configurable con el nuevo rcParam :rc:`savefig.directory` en :file:`matplotlibrc`."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:325
 msgid "Documentation and examples"
-msgstr ""
+msgstr "Documentación y ejemplos"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:328
 msgid "Numpydoc docstrings"
-msgstr ""
+msgstr "Documentación de Numpydoc"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:329
 msgid "Nelle Varoquaux has started an ongoing project to convert matplotlib's docstrings to numpydoc format.  See `MEP10 <https://github.com/matplotlib/matplotlib/wiki/Mep10>`__ for more information."
-msgstr ""
+msgstr "Nelle Varoquaux ha iniciado un proyecto para convertir los docstrings de matplotlib al formato numpydoc.  Ver `MEP10 <https://github.com/matplotlib/matplotlib/wiki/Mep10>`__ para más información."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:335
 msgid "Example reorganization"
-msgstr ""
+msgstr "Reorganización de ejemplos"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:336
 msgid "Tony Yu has begun work reorganizing the examples into more meaningful categories.  The new gallery page is the fruit of this ongoing work. See `MEP12 <https://github.com/matplotlib/matplotlib/wiki/MEP12>`__ for more information."
-msgstr ""
+msgstr "Tony Yu ha comenzado a trabajar en la reorganización de los ejemplos en categorías más significativas.  La nueva página de la galería es el fruto de este trabajo en curso. Ver `MEP12 <https://github.com/matplotlib/matplotlib/wiki/MEP12>`__ para más información."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:342
 msgid "Examples now use subplots()"
-msgstr ""
+msgstr "Los ejemplos ahora utilizan subplots()"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:343
 msgid "For the sake of brevity and clarity, most of the :ref:`examples <examples-index>` now use the newer :func:`~matplotlib.pyplot.subplots`, which creates a figure and one (or multiple) axes object(s) in one call. The old way involved a call to :func:`~matplotlib.pyplot.figure`, followed by one (or multiple) :func:`~matplotlib.pyplot.subplot` calls."
-msgstr ""
+msgstr "En aras de la brevedad y la claridad, la mayoría de los :ref:`ejemplos <ejemplos-index>` utilizan ahora la nueva :func:`~matplotlib.pyplot.subplots`, que crea una figura y uno (o varios) objetos eje en una sola llamada. La forma antigua implicaba una llamada a :func:`~matplotlib.pyplot.figure`, seguida de una (o varias) llamadas a :func:`~matplotlib.pyplot.subplot`."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:351
 msgid "Infrastructure"
@@ -396,11 +396,11 @@ msgstr "Infraestructura"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:354
 msgid "Housecleaning"
-msgstr ""
+msgstr "Limpieza de la casa"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:355
 msgid "A number of features that were deprecated in 1.2 or earlier, or have not been in a working state for a long time have been removed. Highlights include removing the Qt version 3 backends, and the FltkAgg and Emf backends.  See :ref:`changes_in_1_3` for a complete list."
-msgstr ""
+msgstr "Se han eliminado una serie de características que estaban obsoletas en la versión 1.2 o anterior, o que no han estado funcionando durante mucho tiempo. Lo más destacado es la eliminación de los backends de la versión 3 de Qt, y de los backends FltkAgg y Emf.  Ver :ref:`changes_in_1_3` para una lista completa."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:361
 msgid "New setup script"
@@ -408,7 +408,7 @@ msgstr "Nuevo script de configuración"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:362
 msgid "matplotlib 1.3 includes an entirely rewritten setup script.  We now ship fewer dependencies with the tarballs and installers themselves. Notably, pytz_, dateutil_, pyparsing_ and six_ are no longer included with matplotlib.  You can either install them manually first, or let pip_ install them as dependencies along with matplotlib.  It is now possible to not include certain subcomponents, such as the unit test data, in the install.  See :file:`setup.cfg.template` for more information."
-msgstr ""
+msgstr "matplotlib 1.3 incluye un script de instalación completamente reescrito.  Ahora enviamos menos dependencias con los tarballs y los propios instaladores. En particular, pytz_, dateutil_, pyparsing_ y six_ ya no se incluyen con matplotlib.  Puede instalarlos manualmente primero, o dejar que pip_ los instale como dependencias junto con matplotlib.  Ahora es posible no incluir ciertos subcomponentes, como los datos de pruebas unitarias, en la instalación.  Ver :file:`setup.cfg.template` para más información."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:378
 msgid "XDG base directory support"
@@ -416,7 +416,7 @@ msgstr "Soporte para directorio base XDG"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:379
 msgid "On Linux, matplotlib now uses the `XDG base directory specification <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`_ to find the :file:`matplotlibrc` configuration file. :file:`matplotlibrc` should now be kept in :file:`~/.config/matplotlib`, rather than :file:`~/.matplotlib`. If your configuration is found in the old location, it will still be used, but a warning will be displayed."
-msgstr ""
+msgstr "En Linux, matplotlib ahora utiliza la especificación del directorio base `XDG <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`_ para encontrar el archivo de configuración :file:`matplotlibrc`. :file:`matplotlibrc` ahora debe mantenerse en :file:`~/.config/matplotlib`, en lugar de :file:`~/.matplotlib`. Si su configuración se encuentra en la antigua ubicación, se seguirá utilizando, pero se mostrará una advertencia."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:387
 msgid "Catch opening too many figures using pyplot"
@@ -424,9 +424,9 @@ msgstr "Captura abriendo demasiadas figuras usando pyplot"
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:388
 msgid "Figures created through `.pyplot.figure` are retained until they are explicitly closed.  It is therefore common for new users of matplotlib to run out of memory when creating a large series of figures in a loop without closing them."
-msgstr ""
+msgstr "Las figuras creadas a través de `.pyplot.figure` se conservan hasta que se cierran explícitamente.  Por lo tanto, es común que los nuevos usuarios de matplotlib se queden sin memoria al crear una gran serie de figuras en un bucle sin cerrarlas."
 
 #: ../../users/prev_whats_new/whats_new_1.3.rst:393
 msgid "matplotlib will now display a `RuntimeWarning` when too many figures have been opened at once.  By default, this is displayed for 20 or more figures, but the exact number may be controlled using the ``figure.max_open_warning`` rcParam."
-msgstr ""
+msgstr "matplotlib mostrará ahora un `RuntimeWarning` cuando se hayan abierto demasiadas figuras a la vez.  Por defecto, esto se muestra para 20 o más figuras, pero el número exacto puede ser controlado usando el ``figure.max_open_warning`` rcParam."
 

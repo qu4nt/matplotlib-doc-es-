@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-04-25 21:18\n"
+"PO-Revision-Date: 2022-04-25 22:25\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -156,67 +156,67 @@ msgstr "Se puede restablecer el valor predeterminado anterior mediante::"
 #: ../../users/prev_whats_new/dflt_style_changes.rst:592
 #: ../../users/prev_whats_new/dflt_style_changes.rst:830
 msgid "or by setting::"
-msgstr ""
+msgstr "o mediante el ajuste::"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:224
 msgid "Figure size, font size, and screen dpi"
-msgstr ""
+msgstr "Tamaño de la figura, tamaño de la fuente y ppp de la pantalla"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:226
 msgid "The default dpi used for on-screen display was changed from 80 dpi to 100 dpi, the same as the default dpi for saving files.  Due to this change, the on-screen display is now more what-you-see-is-what-you-get for saved files.  To keep the figure the same size in terms of pixels, in order to maintain approximately the same size on the screen, the default figure size was reduced from 8x6 inches to 6.4x4.8 inches.  As a consequence of this the default font sizes used for the title, tick labels, and axes labels were reduced to maintain their size relative to the overall size of the figure.  By default the dpi of the saved image is now the dpi of the `~matplotlib.figure.Figure` instance being saved."
-msgstr ""
+msgstr "Los ppp por defecto utilizados para la visualización en pantalla se han cambiado de 80 ppp a 100 ppp, igual que los ppp por defecto para guardar archivos.  Debido a este cambio, la visualización en pantalla es ahora más lo que se ve es lo que se obtiene para los archivos guardados.  Para mantener el mismo tamaño de la figura en términos de píxeles, con el fin de mantener aproximadamente el mismo tamaño en la pantalla, el tamaño de la figura por defecto se redujo de 8x6 pulgadas a 6,4x4,8 pulgadas.  Como consecuencia de esto, se redujeron los tamaños de fuente por defecto utilizados para el título, las etiquetas de las marcas y las etiquetas de los ejes para mantener su tamaño en relación con el tamaño total de la figura.  Por defecto, los ppp de la imagen guardada son ahora los ppp de la instancia `~matplotlib.figure.Figure` que se guarda."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:238
 msgid "This will have consequences if you are trying to match text in a figure directly with external text."
-msgstr ""
+msgstr "Esto tendrá consecuencias si intentas hacer coincidir el texto de una figura directamente con un texto externo."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:262
 msgid "In your :file:`matplotlibrc` file."
-msgstr ""
+msgstr "En su archivo :file:`matplotlibrc`."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:264
 msgid "In addition, the ``forward`` kwarg to `~.Figure.set_size_inches` now defaults to `True` to improve the interactive experience.  Backend canvases that adjust the size of their bound `matplotlib.figure.Figure` must pass ``forward=False`` to avoid circular behavior.  This default is not configurable."
-msgstr ""
+msgstr "Además, el kwarg ``forward`` para `~.Figure.set_size_inches` ahora es por defecto `True` para mejorar la experiencia interactiva.  Los lienzos del backend que ajustan el tamaño de su `matplotlib.figure.Figure` deben pasar ``forward=False`` para evitar un comportamiento circular.  Este valor por defecto no es configurable."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:272
 msgid "Plotting functions"
-msgstr ""
+msgstr "Funciones de graficación"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:275
 msgid "``scatter``"
-msgstr ""
+msgstr "``scatter``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:277
 msgid "The following changes were made to the default behavior of `~matplotlib.axes.Axes.scatter`"
-msgstr ""
+msgstr "Se han realizado los siguientes cambios en el comportamiento por defecto de `~matplotlib.axes.Axes.scatter`"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:280
 msgid "The default size of the elements in a scatter plot is now based on :rc:`lines.markersize` so it is consistent with ``plot(X, Y, 'o')``.  The old value was 20, and the new value is 36 (6^2)."
-msgstr ""
+msgstr "El tamaño por defecto de los elementos en un gráfico de dispersión se basa ahora en :rc:`lines.markersize` para que sea consistente con ``plot(X, Y, 'o')``.  El valor anterior era 20, y el nuevo es 36 (6^2)."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:283
 msgid "Scatter markers no longer have a black edge."
-msgstr ""
+msgstr "Los marcadores de dispersión ya no tienen un borde negro."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:284
 msgid "If the color of the markers is not specified it will follow the property cycle, pulling from the 'patches' cycle on the ``Axes``."
-msgstr ""
+msgstr "Si no se especifica el color de los marcadores seguirá el ciclo de la propiedad, tirando del ciclo de \"parches\" en el ``Axes``."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:7
 msgid "(`Source code <../../users/prev_whats_new/dflt_style_changes-4.py>`__, `png <../../users/prev_whats_new/dflt_style_changes-4.png>`__, `pdf <../../users/prev_whats_new/dflt_style_changes-4.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/dflt_style_changes-4.py>`__, `png <../../users/prev_whats_new/dflt_style_changes-4.png>`__, `pdf <../../users/prev_whats_new/dflt_style_changes-4.pdf>`__)"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:310
 msgid "The classic default behavior of `~matplotlib.axes.Axes.scatter` can only be recovered through ``mpl.style.use('classic')``.  The marker size can be recovered via ::"
-msgstr ""
+msgstr "El comportamiento clásico por defecto de `~matplotlib.axes.Axes.scatter` sólo puede recuperarse a través de ``mpl.style.use('classic')``.  El tamaño del marcador se puede recuperar a través de ::"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:316
 msgid "however, this will also affect the default marker size of `~matplotlib.axes.Axes.plot`.  To recover the classic behavior on a per-call basis pass the following kwargs::"
-msgstr ""
+msgstr "sin embargo, esto también afectará al tamaño del marcador por defecto de `~matplotlib.axes.Axes.plot`.  Para recuperar el comportamiento clásico en una base por llamada pase los siguientes kwargs::"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:323
 msgid "``plot``"
-msgstr ""
+msgstr "``plot``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:325
 msgid "The following changes were made to the default behavior of `~matplotlib.axes.Axes.plot`"

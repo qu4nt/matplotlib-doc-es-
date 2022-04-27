@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-04-27 16:04\n"
+"PO-Revision-Date: 2022-04-27 19:34\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -571,154 +571,154 @@ msgstr "o crea un nuevo `~matplotlib.ticker.MaxNLocator`::"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1080
 msgid "The algorithm used by `~matplotlib.ticker.MaxNLocator` has been improved, and this may change the choice of tick locations in some cases.  This also affects `~matplotlib.ticker.AutoLocator`, which uses ``MaxNLocator`` internally."
-msgstr ""
+msgstr "El algoritmo utilizado por `~matplotlib.ticker.MaxNLocator` ha sido mejorado, y esto puede cambiar la elección de las ubicaciones de los ticks en algunos casos.  Esto también afecta a `~matplotlib.ticker.AutoLocator`, que utiliza ``MaxNLocator`` internamente."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1085
 msgid "For a log-scaled axis the default locator is the `~matplotlib.ticker.LogLocator`.  Previously the maximum number of ticks was set to 15, and could not be changed. Now there is a *numticks* kwarg for setting the maximum to any integer value, to the string 'auto', or to its default value of None which is equivalent to 'auto'.  With the 'auto' setting the maximum number will be no larger than 9, and will be reduced depending on the length of the axis in units of the tick font size.  As in the case of the AutoLocator, the heuristic algorithm reduces the incidence of overlapping tick labels but does not prevent it."
-msgstr ""
+msgstr "Para un eje de escala logarítmica el localizador por defecto es el `~matplotlib.ticker.LogLocator`.  Anteriormente el número máximo de ticks se fijaba en 15, y no podía cambiarse. Ahora hay un kwarg *numticks* para establecer el máximo a cualquier valor entero, a la cadena 'auto', o a su valor por defecto de None que es equivalente a 'auto'.  Con el ajuste 'auto' el número máximo no será mayor de 9, y se reducirá dependiendo de la longitud del eje en unidades del tamaño de la fuente de ticks.  Al igual que en el caso del AutoLocalizador, el algoritmo heurístico reduce la incidencia de las etiquetas de garrapatas superpuestas, pero no la evita."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1098
 msgid "Tick label formatting"
-msgstr ""
+msgstr "Formato de la etiqueta de la marca del eje"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1101
 msgid "``LogFormatter`` labeling of minor ticks"
-msgstr ""
+msgstr "``LogFormatter`` etiquetado de ticks menores"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1103
 msgid "Minor ticks on a log axis are now labeled when the axis view limits span a range less than or equal to the interval between two major ticks.  See `~matplotlib.ticker.LogFormatter` for details. The minor tick labeling is turned off when using ``mpl.style.use('classic')``, but cannot be controlled independently via `.rcParams`."
-msgstr ""
+msgstr "Las marcas menores en un eje de registro se etiquetan ahora cuando los límites de la vista del eje abarcan un rango menor o igual al intervalo entre dos marcas mayores.  Ver `~matplotlib.ticker.LogFormatter` para más detalles. El etiquetado de ticks menores se desactiva cuando se utiliza ``mpl.style.use('classic')``, pero no puede controlarse de forma independiente mediante `.rcParams`."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:7
 msgid "(`Source code <../../users/prev_whats_new/dflt_style_changes-19.py>`__, `png <../../users/prev_whats_new/dflt_style_changes-19.png>`__, `pdf <../../users/prev_whats_new/dflt_style_changes-19.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/dflt_style_changes-19.py>`__, `png <../../users/prev_whats_new/dflt_style_changes-19.png>`__, `pdf <../../users/prev_whats_new/dflt_style_changes-19.pdf>`__)"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1133
 msgid "``ScalarFormatter`` tick label formatting with offsets"
-msgstr ""
+msgstr "``ScalarFormatter`` formato de etiqueta de marca del eje con desplazamientos"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1135
 msgid "With the default :rc:`axes.formatter.useoffset`, an offset will be used when it will save 4 or more digits.  This can be controlled with the new :rc:`axes.formatter.offset_threshold`. To restore the previous behavior of using an offset to save 2 or more digits, use ``rcParams['axes.formatter.offset_threshold'] = 2``."
-msgstr ""
+msgstr "Con el valor predeterminado :rc:`axes.formatter.useoffset`, se utilizará un desplazamiento cuando se guarden 4 o más dígitos.  Esto puede controlarse con el nuevo :rc:`axes.formatter.offset_threshold`. Para restaurar el comportamiento anterior de utilizar un offset para guardar 2 o más dígitos, utiliza ``rcParams['axes.formatter.offset_threshold'] = 2``."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:7
 msgid "(`Source code <../../users/prev_whats_new/dflt_style_changes-20.py>`__, `png <../../users/prev_whats_new/dflt_style_changes-20.png>`__, `pdf <../../users/prev_whats_new/dflt_style_changes-20.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/dflt_style_changes-20.py>`__, `png <../../users/prev_whats_new/dflt_style_changes-20.png>`__, `pdf <../../users/prev_whats_new/dflt_style_changes-20.pdf>`__)"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1165
 msgid "``AutoDateFormatter`` format strings"
-msgstr ""
+msgstr "Cadenas de formato ``AutoDateFormatter``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1167
 msgid "The default date formats are now all based on ISO format, i.e., with the slowest-moving value first.  The date formatters are configurable through the ``date.autoformatter.*`` rcParams."
-msgstr ""
+msgstr "Los formatos de fecha por defecto se basan ahora en el formato ISO, es decir, con el valor más lento primero.  Los formateadores de fecha son configurables a través de los ``date.autoformatter.*` rcParams."
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1173
 msgid "Threshold (tick interval >= than)"
-msgstr ""
+msgstr "Umbral (tick interval >= than)"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1173
 msgid "rcParam"
-msgstr ""
+msgstr "rcParam"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1173
 msgid "classic"
-msgstr ""
+msgstr "clásico"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1173
 msgid "v2.0"
-msgstr ""
+msgstr "v2.0"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1175
 msgid "365 days"
-msgstr ""
+msgstr "365 días"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1175
 msgid "``'date.autoformatter.year'``"
-msgstr ""
+msgstr "``'date.autoformatter.year'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1175
 msgid "``'%Y'``"
-msgstr ""
+msgstr "``'%Y'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1177
 msgid "30 days"
-msgstr ""
+msgstr "30 días"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1177
 msgid "``'date.autoformatter.month'``"
-msgstr ""
+msgstr "``'date.autoformatter.month'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1177
 msgid "``'%b %Y'``"
-msgstr ""
+msgstr "``'%b %Y'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1177
 msgid "``'%Y-%m'``"
-msgstr ""
+msgstr "``'%Y-%m'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1179
 msgid "1 day"
-msgstr ""
+msgstr "1 día"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1179
 msgid "``'date.autoformatter.day'``"
-msgstr ""
+msgstr "``'date.autoformatter.day'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1179
 #, python-format
 msgid "``'%b %d %Y'``"
-msgstr ""
+msgstr "``'%b %d %Y'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1179
 #, python-format
 msgid "``'%Y-%m-%d'``"
-msgstr ""
+msgstr "``'%Y-%m-%d'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1181
 msgid "1 hour"
-msgstr ""
+msgstr "1 hora"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1181
 msgid "``'date.autoformatter.hour'``"
-msgstr ""
+msgstr "``'date.autoformatter.hour'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1181
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1183
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1185
 msgid "``'%H:%M:%S'``"
-msgstr ""
+msgstr "``'%H:%M:%S'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1181
 msgid "``'%H:%M'``"
-msgstr ""
+msgstr "``'%H:%M'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1183
 msgid "1 minute"
-msgstr ""
+msgstr "1 minuto"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1183
 msgid "``'date.autoformatter.minute'``"
-msgstr ""
+msgstr "``'date.autoformatter.minute'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1183
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1185
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1187
 #, python-format
 msgid "``'%H:%M:%S.%f'``"
-msgstr ""
+msgstr "``'%H:%M:%S.%f'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1185
 msgid "1 second"
-msgstr ""
+msgstr "1 segundo"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1185
 msgid "``'date.autoformatter.second'``"
-msgstr ""
+msgstr "``'date.autoformatter.second'``"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1187
 msgid "1  microsecond"
-msgstr ""
+msgstr "1 microsegundo"
 
 #: ../../users/prev_whats_new/dflt_style_changes.rst:1187
 msgid "``'date.autoformatter.microsecond'``"

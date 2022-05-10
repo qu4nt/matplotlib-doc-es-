@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-09 23:49\n"
+"PO-Revision-Date: 2022-05-10 14:47\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -24,58 +24,58 @@ msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_colors_colormap-man
 
 #: ../../tutorials/colors/colormap-manipulation.rst:23
 msgid "Creating Colormaps in Matplotlib"
-msgstr ""
+msgstr "Creación de mapas de colores en Matplotlib"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:25
 msgid "Matplotlib has a number of built-in colormaps accessible via `.matplotlib.cm.get_cmap`.  There are also external libraries like palettable_ that have many extra colormaps."
-msgstr ""
+msgstr "Matplotlib tiene un número de mapas de colores incorporados accesibles a través de `.matplotlib.cm.get_cmap`.  También hay bibliotecas externas como palettable_ que tienen muchos mapas de colores adicionales."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:31
 msgid "However, we often want to create or manipulate colormaps in Matplotlib. This can be done using the class `.ListedColormap` or `.LinearSegmentedColormap`. Seen from the outside, both colormap classes map values between 0 and 1 to a bunch of colors. There are, however, slight differences, some of which are shown in the following."
-msgstr ""
+msgstr "Sin embargo, a menudo queremos crear o manipular mapas de colores en Matplotlib. Esto se puede hacer utilizando la clase `.ListedColormap` o `.LinearSegmentedColormap`. Visto desde fuera, ambas clases de mapas de colores asignan valores entre 0 y 1 a un montón de colores. Sin embargo, existen ligeras diferencias, algunas de las cuales se muestran a continuación."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:38
 msgid "Before manually creating or manipulating colormaps, let us first see how we can obtain colormaps and their colors from existing colormap classes."
-msgstr ""
+msgstr "Antes de crear o manipular manualmente los mapas de colores, veamos primero cómo podemos obtener los mapas de colores y sus colores a partir de las clases de mapas de colores existentes."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:43
 msgid "Getting colormaps and accessing their values"
-msgstr ""
+msgstr "Obtener mapas de colores y acceder a sus valores"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:45
 msgid "First, getting a named colormap, most of which are listed in :doc:`/tutorials/colors/colormaps`, may be done using `.matplotlib.cm.get_cmap`, which returns a colormap object. The second argument gives the size of the list of colors used to define the colormap, and below we use a modest value of 8 so there are not a lot of values to look at."
-msgstr ""
+msgstr "En primer lugar, la obtención de un mapa de colores con nombre, la mayoría de los cuales están listados en :doc:`/tutorials/colors/colormaps`, puede hacerse utilizando `.matplotlib.cm.get_cmap`, que devuelve un objeto colormap. El segundo argumento da el tamaño de la lista de colores utilizada para definir el mapa de colores, y a continuación utilizamos un valor modesto de 8 para que no haya muchos valores que mirar."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:73
 msgid "The object ``viridis`` is a callable, that when passed a float between 0 and 1 returns an RGBA value from the colormap:"
-msgstr ""
+msgstr "El objeto ``viridis`` es un invocable, que cuando se le pasa un punto flotante entre 0 y 1 devuelve un valor RGBA del mapa de colores:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:89
 #: ../../tutorials/colors/colormap-manipulation.rst:125
 #: ../../tutorials/colors/colormap-manipulation.rst:175
 #: ../../tutorials/colors/colormap-manipulation.rst:219
 msgid "Out:"
-msgstr ""
+msgstr "Out:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:101
 msgid "ListedColormap"
-msgstr ""
+msgstr "ListedColormap"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:103
 msgid "`.ListedColormap`\\s store their color values in a ``.colors`` attribute. The list of colors that comprise the colormap can be directly accessed using the ``colors`` property, or it can be accessed indirectly by calling  ``viridis`` with an array of values matching the length of the colormap.  Note that the returned list is in the form of an RGBA Nx4 array, where N is the length of the colormap."
-msgstr ""
+msgstr "`.ListedColormap` almacenan sus valores de color en un atributo ``.colors``. Se puede acceder directamente a la lista de colores que componen el mapa de colores utilizando la propiedad ``colors``, o se puede acceder indirectamente invocando ``viridis`` con un arreglo de valores que coincida con la longitud del mapa de colores.  Toma en cuenta que la lista devuelta está en la forma de un arreglo RGBA Nx4, donde N es la longitud del mapa de colores."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:159
 msgid "The colormap is a lookup table, so \"oversampling\" the colormap returns nearest-neighbor interpolation (note the repeated colors in the list below)"
-msgstr ""
+msgstr "El mapa de colores es una tabla de búsqueda, por lo que el \"sobremuestreo\" del mapa de colores devuelve la interpolación del vecino más cercano (observe los colores repetidos en la lista de abajo)"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:198
 msgid "LinearSegmentedColormap"
-msgstr ""
+msgstr "LinearSegmentedColormap"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:199
 msgid "`.LinearSegmentedColormap`\\s do not have a ``.colors`` attribute. However, one may still call the colormap with an integer array, or with a float array between 0 and 1."
-msgstr ""
+msgstr "`.LinearSegmentedColormap` no tienen un atributo ``.colors``. Sin embargo, se puede llamar al mapa de colores con un arreglo de enteros, o con un arreglo de puntos flotantes entre 0 y 1."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:246
 msgid "Creating listed colormaps"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-11 15:30\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,71 +20,71 @@ msgstr ""
 
 #: ../../tutorials/colors/colormaps.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_colors_colormaps.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_colors_colormaps.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/colors/colormaps.rst:23
 msgid "Choosing Colormaps in Matplotlib"
-msgstr ""
+msgstr "Elección de mapas de colores en Matplotlib"
 
 #: ../../tutorials/colors/colormaps.rst:25
 msgid "Matplotlib has a number of built-in colormaps accessible via `.matplotlib.cm.get_cmap`.  There are also external libraries that have many extra colormaps, which can be viewed in the `Third-party colormaps`_ section of the Matplotlib documentation. Here we briefly discuss how to choose between the many options.  For help on creating your own colormaps, see :doc:`/tutorials/colors/colormap-manipulation`."
-msgstr ""
+msgstr "Matplotlib tiene un número de mapas de colores incorporados accesibles a través de `.matplotlib.cm.get_cmap`.  También hay bibliotecas externas que tienen muchos mapas de colores adicionales, que se pueden ver en la sección `Third-party colormaps`_ de la documentación de Matplotlib. Aquí discutimos brevemente cómo elegir entre las muchas opciones.  Para obtener ayuda en la creación de sus propios mapas de colores, consulta :doc:`/tutorials/colors/colormap-manipulation`."
 
 #: ../../tutorials/colors/colormaps.rst:34
 msgid "Overview"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../tutorials/colors/colormaps.rst:36
 msgid "The idea behind choosing a good colormap is to find a good representation in 3D colorspace for your data set. The best colormap for any given data set depends on many things including:"
-msgstr ""
+msgstr "La idea de elegir un buen mapa de color es encontrar una buena representación en el espacio de color 3D para su conjunto de datos. El mejor mapa de colores para cualquier conjunto de datos depende de muchas cosas, entre ellas:"
 
 #: ../../tutorials/colors/colormaps.rst:40
 msgid "Whether representing form or metric data ([Ware]_)"
-msgstr ""
+msgstr "Si representa datos de forma o métricos ([Ware]_)"
 
 #: ../../tutorials/colors/colormaps.rst:42
 msgid "Your knowledge of the data set (*e.g.*, is there a critical value from which the other values deviate?)"
-msgstr ""
+msgstr "Su conocimiento del conjunto de datos (*por ejemplo*, ¿hay un valor crítico del que se desvían los demás valores?)"
 
 #: ../../tutorials/colors/colormaps.rst:45
 msgid "If there is an intuitive color scheme for the parameter you are plotting"
-msgstr ""
+msgstr "Si existe un esquema de colores intuitivo para el parámetro que está trazando"
 
 #: ../../tutorials/colors/colormaps.rst:47
 msgid "If there is a standard in the field the audience may be expecting"
-msgstr ""
+msgstr "Si existe una norma en la materia, el público puede esperar"
 
 #: ../../tutorials/colors/colormaps.rst:49
 msgid "For many applications, a perceptually uniform colormap is the best choice; i.e. a colormap in which equal steps in data are perceived as equal steps in the color space. Researchers have found that the human brain perceives changes in the lightness parameter as changes in the data much better than, for example, changes in hue. Therefore, colormaps which have monotonically increasing lightness through the colormap will be better interpreted by the viewer. Wonderful examples of perceptually uniform colormaps can be found in the `Third-party colormaps`_ section as well."
-msgstr ""
+msgstr "Para muchas aplicaciones, un mapa de colores perceptualmente uniforme es la mejor opción; es decir, un mapa de colores en el que pasos iguales en los datos se perciben como pasos iguales en el espacio de color. Los investigadores han descubierto que el cerebro humano percibe los cambios en el parámetro de luminosidad como cambios en los datos mucho mejor que, por ejemplo, los cambios en el tono. Por lo tanto, los mapas de color que tienen una luminosidad monótonamente creciente a través del mapa de color serán mejor interpretados por el espectador. En la sección `Third-party colormaps`_ también se pueden encontrar magníficos ejemplos de mapas de color perceptualmente uniformes."
 
 #: ../../tutorials/colors/colormaps.rst:59
 msgid "Color can be represented in 3D space in various ways. One way to represent color is using CIELAB. In CIELAB, color space is represented by lightness, :math:`L^*`; red-green, :math:`a^*`; and yellow-blue, :math:`b^*`. The lightness parameter :math:`L^*` can then be used to learn more about how the matplotlib colormaps will be perceived by viewers."
-msgstr ""
+msgstr "El color puede representarse en el espacio 3D de varias maneras. Una forma de representar el color es utilizando CIELAB. En CIELAB, el espacio de color se representa por la luminosidad, :math:`L^*`; rojo-verde, :math:`a^*`; y amarillo-azul, :math:`b^*`. El parámetro de luminosidad :math:`L^*` puede utilizarse para saber más sobre cómo percibirán los espectadores los mapas de color de matplotlib."
 
 #: ../../tutorials/colors/colormaps.rst:65
 msgid "An excellent starting resource for learning about human perception of colormaps is from [IBM]_."
-msgstr ""
+msgstr "Un excelente recurso de partida para aprender sobre la percepción humana de los mapas de colores es el de [IBM]_."
 
 #: ../../tutorials/colors/colormaps.rst:72
 msgid "Classes of colormaps"
-msgstr ""
+msgstr "Clases de mapas de colores"
 
 #: ../../tutorials/colors/colormaps.rst:74
 msgid "Colormaps are often split into several categories based on their function (see, *e.g.*, [Moreland]_):"
-msgstr ""
+msgstr "Los mapas de colores suelen dividirse en varias categorías según su función ( ver, *por ejemplo*, [Moreland]_):"
 
 #: ../../tutorials/colors/colormaps.rst:77
 msgid "Sequential: change in lightness and often saturation of color incrementally, often using a single hue; should be used for representing information that has ordering."
-msgstr ""
+msgstr "Secuencial: cambio en la luminosidad y, a menudo, en la saturación del color de forma incremental, a menudo utilizando un único tono; debe utilizarse para representar información que tenga orden."
 
 #: ../../tutorials/colors/colormaps.rst:81
 msgid "Diverging: change in lightness and possibly saturation of two different colors that meet in the middle at an unsaturated color; should be used when the information being plotted has a critical middle value, such as topography or when the data deviates around zero."
-msgstr ""
+msgstr "Divergente: cambio en la luminosidad y posiblemente en la saturación de dos colores diferentes que se encuentran en el medio en un color no saturado; debe utilizarse cuando la información que se grafica tiene un valor medio crítico, como la topografía o cuando los datos se desvían alrededor de cero."
 
 #: ../../tutorials/colors/colormaps.rst:87
 msgid "Cyclic: change in lightness of two different colors that meet in the middle and beginning/end at an unsaturated color; should be used for values that wrap around at the endpoints, such as phase angle, wind direction, or time of day."
-msgstr ""
+msgstr "Cíclico: cambio en la luminosidad de dos colores diferentes que se encuentran en el medio y comienzan/terminan en un color no saturado; debe utilizarse para valores que se envuelven en los puntos finales, como el ángulo de fase, la dirección del viento o la hora del día."
 
 #: ../../tutorials/colors/colormaps.rst:92
 msgid "Qualitative: often are miscellaneous colors; should be used to represent information which does not have ordering or relationships."

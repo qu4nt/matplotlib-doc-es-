@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-10 16:03\n"
+"PO-Revision-Date: 2022-05-11 14:21\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -107,101 +107,101 @@ msgstr "Podemos reducir el rango dinámico de un mapa de colores; aquí elegimos
 
 #: ../../tutorials/colors/colormap-manipulation.rst:377
 msgid "and we can easily concatenate two colormaps:"
-msgstr ""
+msgstr "y podemos concatenar fácilmente dos mapas de color:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:406
 msgid "Of course we need not start from a named colormap, we just need to create the Nx4 array to pass to `.ListedColormap`. Here we create a colormap that goes from brown (RGB: 90, 40, 40) to white (RGB: 255, 255, 255)."
-msgstr ""
+msgstr "Por supuesto que no necesitamos comenzar desde un mapa de colores con nombre, sólo necesitamos crear un arreglo Nx4 para pasar a `. istedColormap`. Aquí creamos un mapa de colores que va desde el marrón (RGB: 90, 40, 40) hasta blanco (RGB: 255, 255, 255)."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:438
 msgid "Creating linear segmented colormaps"
-msgstr ""
+msgstr "Creación de mapas de colores segmentados lineales"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:440
 msgid "The `.LinearSegmentedColormap` class specifies colormaps using anchor points between which RGB(A) values are interpolated."
-msgstr ""
+msgstr "La clase `.LinearSegmentedColormap` especifica mapas de color utilizando puntos de anclaje entre los que se interpolan los valores RGB(A)."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:443
 msgid "The format to specify these colormaps allows discontinuities at the anchor points. Each anchor point is specified as a row in a matrix of the form ``[x[i] yleft[i] yright[i]]``, where ``x[i]`` is the anchor, and ``yleft[i]`` and ``yright[i]`` are the values of the color on either side of the anchor point."
-msgstr ""
+msgstr "El formato para especificar estos mapas de colores permite discontinuidades en los puntos de anclaje. Cada punto de anclaje se especifica como una fila en una matriz de la forma ``[x[i] yleft[i] yright[i]]``, donde ``x[i]`` es el ancla, y ``yleft[i]`` y ``yright[i]`` son los valores del color a cada lado del punto de anclaje."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:449
 msgid "If there are no discontinuities, then ``yleft[i] == yright[i]``:"
-msgstr ""
+msgstr "Si no hay discontinuidades, entonces ``yleft[i] == yright[i]``:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:497
 msgid "In order to make a discontinuity at an anchor point, the third column is different than the second.  The matrix for each of \"red\", \"green\", \"blue\", and optionally \"alpha\" is set up as::"
-msgstr ""
+msgstr "Para hacer una discontinuidad en un punto de anclaje, la tercera columna es diferente a la segunda.  La matriz para cada uno de los colores \"rojo\", \"verde\", \"azul\" y, opcionalmente, \"alfa\" se configura como::"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:506
 msgid "and for values passed to the colormap between ``x[i]`` and ``x[i+1]``, the interpolation is between ``yright[i]`` and ``yleft[i+1]``."
-msgstr ""
+msgstr "y para los valores pasados al mapa de colores entre ``x[i]`` y ``x[i+1]``, la interpolación es entre ``yright[i]`` y ``yleft[i+1]``."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:509
 msgid "In the example below there is a discontinuity in red at 0.5.  The interpolation between 0 and 0.5 goes from 0.3 to 1, and between 0.5 and 1 it goes from 0.9 to 1.  Note that ``red[0, 1]``, and ``red[2, 2]`` are both superfluous to the interpolation because ``red[0, 1]`` (i.e., ``yleft[0]``) is the value to the left of 0, and ``red[2, 2]`` (i.e., ``yright[2]``) is the value to the right of 1, which are outside the color mapping domain."
-msgstr ""
+msgstr "En el ejemplo siguiente hay una discontinuidad en rojo en 0,5.  La interpolación entre 0 y 0,5 va de 0,3 a 1, y entre 0,5 y 1 va de 0,9 a 1.  Observe que ``rojo[0, 1]``, y ``rojo[2, 2]`` son superfluos para la interpolación porque ``rojo[0, 1]`` (es decir, ``left[0]``) es el valor a la izquierda de 0, y ``rojo[2, 2]`` (es decir, ``yright[2]``) es el valor a la derecha de 1, que están fuera del dominio de mapeo de color."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:541
 msgid "Directly creating a segmented colormap from a list"
-msgstr ""
+msgstr "Crear directamente un mapa de colores segmentado desde una lista"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:543
 msgid "The approach described above is very versatile, but admittedly a bit cumbersome to implement. For some basic cases, the use of `.LinearSegmentedColormap.from_list` may be easier. This creates a segmented colormap with equal spacings from a supplied list of colors."
-msgstr ""
+msgstr "El enfoque descrito anteriormente es muy versátil, pero hay que reconocer que es un poco engorroso de implementar. Para algunos casos básicos, el uso de `.LinearSegmentedColormap.from_list` puede ser más fácil. Esto crea un mapa de colores segmentado con espacios iguales a partir de una lista de colores suministrada."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:565
 msgid "If desired, the nodes of the colormap can be given as numbers between 0 and 1. For example, one could have the reddish part take more space in the colormap."
-msgstr ""
+msgstr "Si se desea, los nodos del mapa de colores se pueden dar como números entre 0 y 1. Por ejemplo, se puede hacer que la parte rojiza ocupe más espacio en el mapa de colores."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:593
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:595
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:598
 msgid "`matplotlib.axes.Axes.pcolormesh`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.pcolormesh`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:599
 msgid "`matplotlib.figure.Figure.colorbar`"
-msgstr ""
+msgstr "`matplotlib.figure.Figure.colorbar`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:600
 msgid "`matplotlib.colors`"
-msgstr ""
+msgstr "`matplotlib.colors`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:601
 msgid "`matplotlib.colors.LinearSegmentedColormap`"
-msgstr ""
+msgstr "`matplotlib.colors.LinearSegmentedColormap`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:602
 msgid "`matplotlib.colors.ListedColormap`"
-msgstr ""
+msgstr "`matplotlib.colors.ListedColormap`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:603
 msgid "`matplotlib.cm`"
-msgstr ""
+msgstr "`matplotlib.cm`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:604
 msgid "`matplotlib.cm.get_cmap`"
-msgstr ""
+msgstr "`matplotlib.cm.get_cmap`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:609
 msgid "**Total running time of the script:** ( 0 minutes  4.607 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** (0 minutos 4.607 segundos)"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:624
 msgid ":download:`Download Python source code: colormap-manipulation.py <colormap-manipulation.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: colormap-manipulation.py <colormap-manipulation.py>`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:630
 msgid ":download:`Download Jupyter notebook: colormap-manipulation.ipynb <colormap-manipulation.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: colormap-manipulation.ipynb <colormap-manipulation.ipynb>`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:637
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-05-13 19:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,95 +20,95 @@ msgstr ""
 
 #: ../../tutorials/toolkits/axes_grid.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_toolkits_axes_grid.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_toolkits_axes_grid.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/toolkits/axes_grid.rst:25
 msgid "Overview of :mod:`mpl_toolkits.axes_grid1`"
-msgstr ""
+msgstr "Descripción general de :mod:`mpl_toolkits.axes_grid1`"
 
 #: ../../tutorials/toolkits/axes_grid.rst:27
 msgid ":mod:`.axes_grid1` provides the following features:"
-msgstr ""
+msgstr ":mod:`.axes_grid1` proporciona las siguientes características:"
 
 #: ../../tutorials/toolkits/axes_grid.rst:29
 msgid "Helper classes (ImageGrid_, RGBAxes_, AxesDivider_) to ease the layout of axes displaying images with a fixed aspect ratio while satisfying additional constraints (matching the heights of a colorbar and an image, or fixing the padding between images);"
-msgstr ""
+msgstr "Clases de ayuda (ImageGrid_, RGBAxes_, AxesDivider_) para facilitar la disposición de los ejes que muestran imágenes con una relación de aspecto fija mientras se satisfacen las restricciones adicionales (coincidiendo con las alturas de una barra de color y una imagen, o fijando el relleno entre imágenes);"
 
 #: ../../tutorials/toolkits/axes_grid.rst:33
 msgid "ParasiteAxes_ (twinx/twiny-like features so that you can plot different data (e.g., different y-scale) in a same Axes);"
-msgstr ""
+msgstr "ParasiteAxes_ (características tipo twinx/twiny para que pueda graficar diferentes datos (por ejemplo, diferente escala y) en un mismo eje);"
 
 #: ../../tutorials/toolkits/axes_grid.rst:35
 msgid "AnchoredArtists_ (custom artists which are placed at an anchored position, similarly to legends)."
-msgstr ""
+msgstr "AnchoredArtists_ (artists personalizados que se colocan en una posición anclada, de forma similar a las leyendas)."
 
 #: ../../tutorials/toolkits/axes_grid.rst:43
 msgid "axes_grid1"
-msgstr ""
+msgstr "axes_grid1"
 
 #: ../../tutorials/toolkits/axes_grid.rst:46
 msgid "ImageGrid"
-msgstr ""
+msgstr "ImageGrid"
 
 #: ../../tutorials/toolkits/axes_grid.rst:48
 msgid "In Matplotlib, axes location and size are usually specified in normalized figure coordinates (0 = bottom left, 1 = top right), which makes it difficult to achieve a fixed (absolute) padding between images. `~.axes_grid1.axes_grid.ImageGrid` can be used to achieve such a padding; see its docs for detailed API information."
-msgstr ""
+msgstr "En Matplotlib, la ubicación y el tamaño de los ejes se especifican normalmente en coordenadas normalizadas de la figura (0 = abajo a la izquierda, 1 = arriba a la derecha), lo que hace difícil conseguir un relleno fijo (absoluto) entre las imágenes. Se puede utilizar `~.axes_grid1.axes_grid.ImageGrid` para conseguir dicho relleno; consulta su documentación para obtener información detallada de la API."
 
 #: ../../tutorials/toolkits/axes_grid.rst:58
 msgid "The position of each axes is determined at the drawing time (see AxesDivider_), so that the size of the entire grid fits in the given rectangle (like the aspect of axes). Note that in this example, the paddings between axes are fixed even if you changes the figure size."
-msgstr ""
+msgstr "La posición de cada eje se determina en el momento de dibujar (ver AxesDivider_), de forma que el tamaño de toda la retícula encaje en el rectángulo dado (como el aspecto de los ejes). Tenga en cuenta que en este ejemplo, los rellenos entre ejes son fijos incluso si se cambia el tamaño de la figura."
 
 #: ../../tutorials/toolkits/axes_grid.rst:64
 msgid "Axes in the same column share their x-axis, and axes in the same row share their y-axis (in the sense of `~.Axes.sharex`, `~.Axes.sharey`). Additionally, Axes in the same column all have the same width, and axes in the same row all have the same height.  These widths and heights are scaled in proportion to the axes' view limits (xlim or ylim)."
-msgstr ""
+msgstr "Los ejes en la misma columna comparten su eje x, y los ejes en la misma fila comparten su eje y (en el sentido de `~.Axes.sharex`, `~.Axes.sharey`). Además, los ejes de la misma columna tienen todos la misma anchura, y los ejes de la misma fila tienen todos la misma altura.  Estas anchuras y alturas se escalan en proporción a los límites de vista de los ejes (xlim o ylim)."
 
 #: ../../tutorials/toolkits/axes_grid.rst:74
 msgid "The examples below show what you can do with ImageGrid."
-msgstr ""
+msgstr "Los ejemplos a continuación muestran lo que se puede hacer con ImageGrid."
 
 #: ../../tutorials/toolkits/axes_grid.rst:81
 msgid "AxesDivider Class"
-msgstr ""
+msgstr "Clase AxesDivider"
 
 #: ../../tutorials/toolkits/axes_grid.rst:83
 msgid "Behind the scenes, ImageGrid (and RGBAxes, described below) rely on `~.axes_grid1.axes_divider.AxesDivider`, whose role is to calculate the location of the axes at drawing time."
-msgstr ""
+msgstr "Entre bastidores, ImageGrid (y RGBAxes, descrito más adelante) dependen de `~.axes_grid1.axes_divider.AxesDivider`, cuya función es calcular la ubicación de los ejes en el momento del dibujo."
 
 #: ../../tutorials/toolkits/axes_grid.rst:87
 msgid "Users typically do not need to directly instantiate dividers by calling `~.axes_grid1.axes_divider.AxesDivider`; instead, `~.axes_grid1.axes_divider.make_axes_locatable` can be used to create a divider for an axes::"
-msgstr ""
+msgstr "Los usuarios normalmente no necesitan instanciar directamente los divisores invocando `~.axes_grid1.axes_divider.AxesDivider`; en su lugar, se puede utilizar `~.axes_grid1.axes_divider.make_axes_locatable` para crear un divisor para un eje::"
 
 #: ../../tutorials/toolkits/axes_grid.rst:95
 msgid "`.AxesDivider.append_axes` can then be used to create a new axes on a given side (\"left\", \"right\", \"top\", \"bottom\") of the original axes."
-msgstr ""
+msgstr "Entonces se puede utilizar `.AxesDivider.append_axes` para crear un nuevo eje en un lado determinado (\"izquierda\", \"derecha\", \"arriba\", \"abajo\") de los ejes originales."
 
 #: ../../tutorials/toolkits/axes_grid.rst:99
 msgid "colorbar whose height (or width) in sync with the master axes"
-msgstr ""
+msgstr "barra de color cuya altura (o anchura) está sincronizada con los ejes maestros"
 
 #: ../../tutorials/toolkits/axes_grid.rst:106
 msgid "scatter_hist.py with AxesDivider"
-msgstr ""
+msgstr "scatter_delet.py con AxesDivider"
 
 #: ../../tutorials/toolkits/axes_grid.rst:108
 msgid "The :doc:`/gallery/lines_bars_and_markers/scatter_hist` example can be rewritten using `~.axes_grid1.axes_divider.make_axes_locatable`::"
-msgstr ""
+msgstr "El ejemplo :doc:`/gallery/lines_bars_and_markers/scatter_hist` puede reescribirse utilizando `~.axes_grid1.axes_divider.make_axes_locatable`::"
 
 #: ../../tutorials/toolkits/axes_grid.rst:126
 msgid "See the full source code below."
-msgstr ""
+msgstr "Ver el código fuente completo a continuación."
 
 #: ../../tutorials/toolkits/axes_grid.rst:132
 msgid "The :doc:`/gallery/axes_grid1/scatter_hist_locatable_axes` using the AxesDivider has some advantages over the original :doc:`/gallery/lines_bars_and_markers/scatter_hist` in Matplotlib. For example, you can set the aspect ratio of the scatter plot, even with the x-axis or y-axis is shared accordingly."
-msgstr ""
+msgstr "El :doc:`/gallery/axes_grid1/scatter_hist_locatable_axes` que utiliza el AxesDivider tiene algunas ventajas sobre el original :doc:`/gallery/lines_bars_and_markers/scatter_hist` de Matplotlib. Por ejemplo, puede establecer la relación de aspecto del gráfico de dispersión, incluso con el eje x o el eje y se comparte en consecuencia."
 
 #: ../../tutorials/toolkits/axes_grid.rst:139
 msgid "ParasiteAxes"
-msgstr ""
+msgstr "ParasiteAxes"
 
 #: ../../tutorials/toolkits/axes_grid.rst:141
 msgid "The ParasiteAxes is an axes whose location is identical to its host axes. The location is adjusted in the drawing time, thus it works even if the host change its location (e.g., images)."
-msgstr ""
+msgstr "El ParasiteAxes es un eje cuya ubicación es idéntica a la de sus ejes anfitriones. La ubicación se ajusta en el tiempo de dibujo, por lo que funciona incluso si el anfitrión cambia su ubicación (por ejemplo, imágenes)."
 
 #: ../../tutorials/toolkits/axes_grid.rst:145
 msgid "In most cases, you first create a host axes, which provides a few method that can be used to create parasite axes. They are *twinx*, *twiny* (which are similar to twinx and twiny in the matplotlib) and *twin*. *twin* takes an arbitrary transformation that maps between the data coordinates of the host axes and the parasite axes.  *draw* method of the parasite axes are never called. Instead, host axes collects artists in parasite axes and draw them as if they belong to the host axes, i.e., artists in parasite axes are merged to those of the host axes and then drawn according to their zorder.  The host and parasite axes modifies some of the axes behavior. For example, color cycle for plot lines are shared between host and parasites. Also, the legend command in host, creates a legend that includes lines in the parasite axes.  To create a host axes, you may use *host_subplot* or *host_axes* command."

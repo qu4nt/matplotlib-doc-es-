@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-16 21:20\n"
+"PO-Revision-Date: 2022-05-16 22:25\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -140,60 +140,60 @@ msgstr "La clase *mpl_toolkits.axisartist.Axes* define un atributo *axis*, que e
 
 #: ../../tutorials/toolkits/axisartist.rst:177
 msgid "xaxis and yaxis attributes are still available, however they are set to not visible. As separate artists are used for rendering axis, some axis-related method in Matplotlib may have no effect. In addition to AxisArtist instances, the mpl_toolkits.axisartist.Axes will have *gridlines* attribute (Gridlines), which obviously draws grid lines."
-msgstr ""
+msgstr "los atributos xaxis y yaxis siguen estando disponibles, sin embargo están configurados como no visibles. Como se utilizan artists separados para renderizar los ejes, algunos métodos relacionados con los ejes en Matplotlib pueden no tener efecto. Además de las instancias AxisArtist, el mpl_toolkits.axisartist.Axes tendrá el atributo *gridlines* (Líneas de malla), que obviamente dibuja líneas de malla."
 
 #: ../../tutorials/toolkits/axisartist.rst:184
 msgid "In both AxisArtist and Gridlines, the calculation of tick and grid location is delegated to an instance of GridHelper class. mpl_toolkits.axisartist.Axes class uses GridHelperRectlinear as a grid helper. The GridHelperRectlinear class is a wrapper around the *xaxis* and *yaxis* of Matplotlib's original Axes, and it was meant to work as the way how Matplotlib's original axes works. For example, tick location changes using set_ticks method and etc. should work as expected. But change in artist properties (e.g., color) will not work in general, although some effort has been made so that some often-change attributes (color, etc.) are respected."
-msgstr ""
+msgstr "Tanto en AxisArtist como en Gridlines, el cálculo de la ubicación del tick y de la cuadrícula se delega en una instancia de la clase GridHelper. La clase mpl_toolkits.axisartist.Axes utiliza GridHelperRectlinear como ayudante de la malla. La clase GridHelperRectlinear es una envoltura alrededor del *xaxis* y el *yaxis* de los ejes originales de Matplotlib, y fue pensada para trabajar como la forma en que los ejes originales de Matplotlib funcionan. Por ejemplo, los cambios en la ubicación de los ticks utilizando el método set_ticks, etc., deberían funcionar como se espera. Pero el cambio en las propiedades del artist (por ejemplo, el color) no funcionará en general, aunque se ha hecho un esfuerzo para que algunos atributos que cambian a menudo (color, etc.) sean respetados."
 
 #: ../../tutorials/toolkits/axisartist.rst:196
 msgid "AxisArtist"
-msgstr ""
+msgstr "AxisArtist"
 
 #: ../../tutorials/toolkits/axisartist.rst:198
 msgid "AxisArtist can be considered as a container artist with following attributes which will draw ticks, labels, etc."
-msgstr ""
+msgstr "AxisArtist puede ser considerado como un artist contenedor con los siguientes atributos que dibujarán ticks, etiquetas, etc."
 
 #: ../../tutorials/toolkits/axisartist.rst:201
 #: ../../tutorials/toolkits/axisartist.rst:208
 msgid "line"
-msgstr ""
+msgstr "línea"
 
 #: ../../tutorials/toolkits/axisartist.rst:202
 msgid "major_ticks, major_ticklabels"
-msgstr ""
+msgstr "major_ticks, major_ticklabels"
 
 #: ../../tutorials/toolkits/axisartist.rst:203
 msgid "minor_ticks, minor_ticklabels"
-msgstr ""
+msgstr "minor_ticks, minor_ticklabels"
 
 #: ../../tutorials/toolkits/axisartist.rst:204
 msgid "offsetText"
-msgstr ""
+msgstr "offsetText"
 
 #: ../../tutorials/toolkits/axisartist.rst:205
 msgid "label"
-msgstr ""
+msgstr "etiqueta"
 
 #: ../../tutorials/toolkits/axisartist.rst:210
 msgid "Derived from Line2D class. Responsible for drawing a spinal(?) line."
-msgstr ""
+msgstr "Derivado de la clase Line2D. Responsable de dibujar una línea de espinal(?)."
 
 #: ../../tutorials/toolkits/axisartist.rst:213
 msgid "major_ticks, minor_ticks"
-msgstr ""
+msgstr "major_ticks, minor_ticks"
 
 #: ../../tutorials/toolkits/axisartist.rst:215
 msgid "Derived from Line2D class. Note that ticks are markers."
-msgstr ""
+msgstr "Derivado de la clase Line2D. Tenga en cuenta que los ticks son marcadores."
 
 #: ../../tutorials/toolkits/axisartist.rst:218
 msgid "major_ticklabels, minor_ticklabels"
-msgstr ""
+msgstr "major_ticklabels, minor_ticklabels"
 
 #: ../../tutorials/toolkits/axisartist.rst:220
 msgid "Derived from Text. Note that it is not a list of Text artist, but a single artist (similar to a collection)."
-msgstr ""
+msgstr "Derivado de Text. Tenga en cuenta que no es una lista de artistas de Texto, sino un solo artist (similar a una colección)."
 
 #: ../../tutorials/toolkits/axisartist.rst:224
 #: ../../tutorials/toolkits/axisartist.rst:365
@@ -201,95 +201,95 @@ msgstr ""
 #: ../../tutorials/toolkits/axisartist.rst:367
 #: ../../tutorials/toolkits/axisartist.rst:368
 msgid "axislabel"
-msgstr ""
+msgstr "axislabel"
 
 #: ../../tutorials/toolkits/axisartist.rst:226
 msgid "Derived from Text."
-msgstr ""
+msgstr "Derivado del texto."
 
 #: ../../tutorials/toolkits/axisartist.rst:229
 msgid "Default AxisArtists"
-msgstr ""
+msgstr "AxisArtists por defecto"
 
 #: ../../tutorials/toolkits/axisartist.rst:231
 msgid "By default, following for axis artists are defined.::"
-msgstr ""
+msgstr "Por defecto, se define lo siguiente para los artists del eje.::"
 
 #: ../../tutorials/toolkits/axisartist.rst:235
 msgid "The ticklabels and axislabel of the top and the right axis are set to not visible."
-msgstr ""
+msgstr "Las etiquetas de verificación y las etiquetas de eje del eje superior y del eje derecho están configuradas como no visibles."
 
 #: ../../tutorials/toolkits/axisartist.rst:238
 msgid "For example, if you want to change the color attributes of major_ticklabels of the bottom x-axis ::"
-msgstr ""
+msgstr "Por ejemplo, si quieres cambiar los atributos de color de major_ticklabels del eje x inferior ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:243
 msgid "Similarly, to make ticklabels invisible ::"
-msgstr ""
+msgstr "Del mismo modo, para hacer invisibles las etiquetas ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:247
 msgid "AxisArtist provides a helper method to control the visibility of ticks, ticklabels, and label. To make ticklabel invisible, ::"
-msgstr ""
+msgstr "AxisArtist proporciona un método de ayuda para controlar la visibilidad de los ticks, ticklabel y label. Para hacer invisibles las etiquetas de puntos, ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:252
 msgid "To make all of ticks, ticklabels, and (axis) label invisible ::"
-msgstr ""
+msgstr "Para hacer invisibles todos los ticks, ticklabels y etiquetas (de los ejes) ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:256
 msgid "To turn all off but ticks on ::"
-msgstr ""
+msgstr "Para desactivar todo, excepto los ticks ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:260
 msgid "To turn all on but (axis) label off ::"
-msgstr ""
+msgstr "Para activar todo menos la etiqueta (del eje) ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:264
 msgid "ax.axis's __getitem__ method can take multiple axis names. For example, to turn ticklabels of \"top\" and \"right\" axis on, ::"
-msgstr ""
+msgstr "el método __getitem__ de ax.axis puede tomar múltiples nombres de ejes. Por ejemplo, para activar las etiquetas de los ejes \"superior\" y \"derecho\", ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:269
 msgid "Note that ``ax.axis[\"top\", \"right\"]`` returns a simple proxy object that translate above code to something like below. ::"
-msgstr ""
+msgstr "Observa que ``ax.axis[\"top\", \"right\"]`` devuelve un simple objeto proxy que traduce el código anterior a algo como lo siguiente. ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:275
 msgid "So, any return values in the for loop are ignored. And you should not use it anything more than a simple method."
-msgstr ""
+msgstr "Por lo tanto, cualquier valor de retorno en el bucle for es ignorado. Y no debes utilizarlo más que como un simple método."
 
 #: ../../tutorials/toolkits/axisartist.rst:278
 msgid "Like the list indexing \":\" means all items, i.e., ::"
-msgstr ""
+msgstr "Al igual que la indexación de listas, \":\" significa todos los elementos, es decir, ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:282
 msgid "changes tick color in all axis."
-msgstr ""
+msgstr "cambia el color de los ticks en todos los ejes."
 
 #: ../../tutorials/toolkits/axisartist.rst:285
 msgid "HowTo"
-msgstr ""
+msgstr "HowTo"
 
 #: ../../tutorials/toolkits/axisartist.rst:287
 msgid "Changing tick locations and label."
-msgstr ""
+msgstr "Cambiar la ubicación del tick y la etiqueta."
 
 #: ../../tutorials/toolkits/axisartist.rst:289
 msgid "Same as the original Matplotlib's axes::"
-msgstr ""
+msgstr "Igual que los ejes originales de Matplotlib::"
 
 #: ../../tutorials/toolkits/axisartist.rst:293
 msgid "Changing axis properties like color, etc."
-msgstr ""
+msgstr "Cambiar las propiedades de los ejes, como el color, etc."
 
 #: ../../tutorials/toolkits/axisartist.rst:295
 msgid "Change the properties of appropriate artists. For example, to change the color of the ticklabels::"
-msgstr ""
+msgstr "Cambia las propiedades de los artists apropiados. Por ejemplo, para cambiar el color de las etiquetas de verificación::"
 
 #: ../../tutorials/toolkits/axisartist.rst:300
 msgid "To change the attributes of multiple axis::"
-msgstr ""
+msgstr "Para cambiar los atributos de varios ejes::"
 
 #: ../../tutorials/toolkits/axisartist.rst:304
 msgid "or to change the attributes of all axis::"
-msgstr ""
+msgstr "o para cambiar los atributos de todos los ejes::"
 
 #: ../../tutorials/toolkits/axisartist.rst:308
 msgid "To change the tick size (length), you need to use axis.major_ticks.set_ticksize method. To change the direction of the ticks (ticks are in opposite direction of ticklabels by default), use axis.major_ticks.set_tick_out method."

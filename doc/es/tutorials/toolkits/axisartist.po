@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-17 12:58\n"
+"PO-Revision-Date: 2022-05-17 14:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -521,81 +521,81 @@ msgstr "set_ha y set_va"
 
 #: ../../tutorials/toolkits/axisartist.rst:441
 msgid "Adjusting ticklabels alignment"
-msgstr ""
+msgstr "Ajuste de la alineación de las etiquetas"
 
 #: ../../tutorials/toolkits/axisartist.rst:443
 msgid "Alignment of TickLabels are treated specially. See below"
-msgstr ""
+msgstr "La alineación de los TickLabels se trata de forma especial. Ver más abajo"
 
 #: ../../tutorials/toolkits/axisartist.rst:450
 msgid "Adjusting pad"
-msgstr ""
+msgstr "Ajuste del pad"
 
 #: ../../tutorials/toolkits/axisartist.rst:452
 msgid "To change the pad between ticks and ticklabels ::"
-msgstr ""
+msgstr "Para cambiar el pad entre ticks y ticklabels ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:456
 msgid "Or ticklabels and axis-label ::"
-msgstr ""
+msgstr "O ticklabels y axis-label ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:465
 msgid "GridHelper"
-msgstr ""
+msgstr "GridHelper"
 
 #: ../../tutorials/toolkits/axisartist.rst:467
 msgid "To actually define a curvilinear coordinate, you have to use your own grid helper. A generalised version of grid helper class is supplied and this class should suffice in most of cases. A user may provide two functions which defines a transformation (and its inverse pair) from the curved coordinate to (rectilinear) image coordinate. Note that while ticks and grids are drawn for curved coordinate, the data transform of the axes itself (ax.transData) is still rectilinear (image) coordinate. ::"
-msgstr ""
+msgstr "Para definir realmente una coordenada curvilínea, tiene que utilizar su propio ayudante de malla. Se suministra una versión generalizada de la clase grid helper, que debería ser suficiente en la mayoría de los casos. Un usuario puede proporcionar dos funciones que definen una transformación (y su par inverso) de la coordenada curva a la coordenada (rectilínea) de la imagen. Tenga en cuenta que mientras las marcas y las cuadrículas se dibujan para la coordenada curva, la transformación de datos de los ejes en sí (ax.transData) sigue siendo la coordenada rectilínea (imagen). ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:494
 msgid "You may use Matplotlib's Transform instance instead (but a inverse transformation must be defined). Often, coordinate range in a curved coordinate system may have a limited range, or may have cycles. In those cases, a more customized version of grid helper is required. ::"
-msgstr ""
+msgstr "Puede utilizar la instancia Transform de Matplotlib en su lugar (pero debe definirse una transformación inversa). A menudo, el rango de coordenadas en un sistema de coordenadas curvas puede tener un rango limitado, o puede tener ciclos. En esos casos, se requiere una versión más personalizada del ayudante de malla. ::"
 
 #: ../../tutorials/toolkits/axisartist.rst:534
 msgid "Again, the *transData* of the axes is still a rectilinear coordinate (image coordinate). You may manually do conversion between two coordinates, or you may use Parasite Axes for convenience.::"
-msgstr ""
+msgstr "De nuevo, el *transData* de los ejes sigue siendo una coordenada rectilínea (coordenada de la imagen). Usted puede hacer manualmente la conversión entre dos coordenadas, o puede utilizar Parasite Axes por conveniencia.::"
 
 #: ../../tutorials/toolkits/axisartist.rst:551
 msgid "FloatingAxis"
-msgstr ""
+msgstr "FloatingAxis"
 
 #: ../../tutorials/toolkits/axisartist.rst:553
 msgid "A floating axis is an axis one of whose data coordinate is fixed, i.e, its location is not fixed in Axes coordinate but changes as axes data limits changes. A floating axis can be created using *new_floating_axis* method. However, it is your responsibility that the resulting AxisArtist is properly added to the axes. A recommended way is to add it as an item of Axes's axis attribute.::"
-msgstr ""
+msgstr "Un eje flotante es un eje cuya coordenada de datos es fija, es decir, su ubicación no es fija en la coordenada de los ejes, sino que cambia según los límites de los datos de los ejes. Se puede crear un eje flotante utilizando el método *new_floating_axis*. Sin embargo, es su responsabilidad que el AxisArtist resultante se añada correctamente a los ejes. Una forma recomendada es añadirlo como un elemento del atributo eje de los ejes.::"
 
 #: ../../tutorials/toolkits/axisartist.rst:567
 msgid "See the first example of this page."
-msgstr ""
+msgstr "Ver el primer ejemplo de esta página."
 
 #: ../../tutorials/toolkits/axisartist.rst:570
 msgid "Current Limitations and TODO's"
-msgstr ""
+msgstr "Limitaciones actuales y tareas pendientes"
 
 #: ../../tutorials/toolkits/axisartist.rst:572
 msgid "The code need more refinement. Here is a incomplete list of issues and TODO's"
-msgstr ""
+msgstr "El código necesita más refinamiento. Esta es una lista incompleta de problemas y tareas pendientes"
 
 #: ../../tutorials/toolkits/axisartist.rst:574
 msgid "No easy way to support a user customized tick location (for curvilinear grid). A new Locator class needs to be created."
-msgstr ""
+msgstr "No hay una manera fácil de soportar una ubicación de tick personalizada por el usuario (para la malla curvilínea). Es necesario crear una nueva clase de localizador."
 
 #: ../../tutorials/toolkits/axisartist.rst:577
 msgid "FloatingAxis may have coordinate limits, e.g., a floating axis of x = 0, but y only spans from 0 to 1."
-msgstr ""
+msgstr "FloatingAxis puede tener límites de coordenadas, por ejemplo, un eje flotante de x = 0, pero y sólo abarca de 0 a 1."
 
 #: ../../tutorials/toolkits/axisartist.rst:580
 msgid "The location of axislabel of FloatingAxis needs to be optionally given as a coordinate value. ex, a floating axis of x=0 with label at y=1"
-msgstr ""
+msgstr "La ubicación de la etiqueta del eje de FloatingAxis necesita ser dada opcionalmente como un valor de coordenadas. ej., un eje flotante de x=0 con etiqueta en y=1"
 
 #: ../../tutorials/toolkits/axisartist.rst:596
 msgid ":download:`Download Python source code: axisartist.py <axisartist.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: axisartist.py <axisartist.py>`"
 
 #: ../../tutorials/toolkits/axisartist.rst:602
 msgid ":download:`Download Jupyter notebook: axisartist.ipynb <axisartist.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: axisartist.ipynb <axisartist.ipynb>`"
 
 #: ../../tutorials/toolkits/axisartist.rst:609
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

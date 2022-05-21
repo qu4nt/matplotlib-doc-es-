@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-21 15:02\n"
+"PO-Revision-Date: 2022-05-21 16:18\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -28,63 +28,63 @@ msgstr "Tutorial Pyplot"
 
 #: ../../tutorials/introductory/pyplot.rst:25
 msgid "An introduction to the pyplot interface."
-msgstr ""
+msgstr "Una introducción a la interfaz de pyplot."
 
 #: ../../tutorials/introductory/pyplot.rst:30
 msgid "Intro to pyplot"
-msgstr ""
+msgstr "Introducción a pyplot"
 
 #: ../../tutorials/introductory/pyplot.rst:32
 msgid ":mod:`matplotlib.pyplot` is a collection of functions that make matplotlib work like MATLAB. Each ``pyplot`` function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc."
-msgstr ""
+msgstr ":mod:`matplotlib.pyplot` es una colección de funciones que hacen que matplotlib funcione como MATLAB. Cada función ``pyplot`` realiza algún cambio en una figura: por ejemplo, crea una figura, crea un área de graficado en una figura, grafica algunas líneas en un área de trazado, decora el trazado con etiquetas, etc."
 
 #: ../../tutorials/introductory/pyplot.rst:39
 msgid "In :mod:`matplotlib.pyplot` various states are preserved across function calls, so that it keeps track of things like the current figure and plotting area, and the plotting functions are directed to the current axes (please note that \"axes\" here and in most places in the documentation refers to the *axes* :ref:`part of a figure <figure_parts>` and not the strict mathematical term for more than one axis)."
-msgstr ""
+msgstr "En :mod:`matplotlib.pyplot` se conservan varios estados a través de las llamadas a las funciones, de modo que se mantiene un registro de cosas como la figura actual y el área de trazado, y las funciones de trazado se dirigen a los ejes actuales (por favor, tenga en cuenta que \"ejes\" aquí y en la mayoría de los lugares de la documentación se refiere a los *axes* :ref:`parte de una figura <figure_parts>` y no el término matemático estricto para más de un eje)."
 
 #: ../../tutorials/introductory/pyplot.rst:49
 msgid "the pyplot API is generally less-flexible than the object-oriented API. Most of the function calls you see here can also be called as methods from an ``Axes`` object. We recommend browsing the tutorials and examples to see how this works."
-msgstr ""
+msgstr "la API de pyplot es generalmente menos flexible que la API orientada a objetos. La mayoría de las convocatorias de funciones que se ven aquí también se pueden llamar como métodos desde un objeto ``Axes``. Te recomendamos que consultes los tutoriales y ejemplos para ver cómo funciona esto."
 
 #: ../../tutorials/introductory/pyplot.rst:54
 msgid "Generating visualizations with pyplot is very quick:"
-msgstr ""
+msgstr "La generación de visualizaciones con pyplot es muy rápida:"
 
 #: ../../tutorials/introductory/pyplot.rst:80
 msgid "You may be wondering why the x-axis ranges from 0-3 and the y-axis from 1-4.  If you provide a single list or array to `~.pyplot.plot`, matplotlib assumes it is a sequence of y values, and automatically generates the x values for you.  Since python ranges start with 0, the default x vector has the same length as y but starts with 0.  Hence the x data are ``[0, 1, 2, 3]``."
-msgstr ""
+msgstr "Puede que te preguntes por qué el eje x va de 0 a 3 y el eje y de 1 a 4.  Si proporcionas una sola lista o arreglo a `~.pyplot.plot`, matplotlib asume que es una secuencia de valores de y, y genera automáticamente los valores de x para ti.  Como los rangos de python empiezan por 0, el vector x por defecto tiene la misma longitud que y pero empieza por 0. Por lo tanto los datos x son ``[0, 1, 2, 3]``."
 
 #: ../../tutorials/introductory/pyplot.rst:88
 msgid "`~.pyplot.plot` is a versatile function, and will take an arbitrary number of arguments.  For example, to plot x versus y, you can write:"
-msgstr ""
+msgstr "`~.pyplot.plot` es una función versátil, y tomará un número arbitrario de argumentos.  Por ejemplo, para graficar x frente a y, puede escribir:"
 
 #: ../../tutorials/introductory/pyplot.rst:109
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/introductory/pyplot.rst:121
 msgid "Formatting the style of your plot"
-msgstr ""
+msgstr "Formatear el estilo de tu gráfico"
 
 #: ../../tutorials/introductory/pyplot.rst:123
 msgid "For every x, y pair of arguments, there is an optional third argument which is the format string that indicates the color and line type of the plot.  The letters and symbols of the format string are from MATLAB, and you concatenate a color string with a line style string. The default format string is 'b-', which is a solid blue line.  For example, to plot the above with red circles, you would issue"
-msgstr ""
+msgstr "Por cada par de argumentos x, y, hay un tercer argumento opcional que es la cadena de formato que indica el color y el tipo de línea del gráfico.  Las letras y símbolos de la cadena de formato son de MATLAB, y se concatenan una cadena de color con una cadena de estilo de línea. La cadena de formato por defecto es 'b-', que es una línea azul sólida.  Por ejemplo, para trazar lo anterior con círculos rojos, deberías emitir"
 
 #: ../../tutorials/introductory/pyplot.rst:153
 msgid "See the `~.pyplot.plot` documentation for a complete list of line styles and format strings.  The `~.pyplot.axis` function in the example above takes a list of ``[xmin, xmax, ymin, ymax]`` and specifies the viewport of the axes."
-msgstr ""
+msgstr "Consulta la documentación de `~.pyplot.plot` para ver una lista completa de estilos de línea y cadenas de formato.  La función `~.pyplot.axis` del ejemplo anterior toma una lista de ``[xmin, xmax, ymin, ymax]`` y especifica la ventana gráfica de los ejes."
 
 #: ../../tutorials/introductory/pyplot.rst:159
 msgid "If matplotlib were limited to working with lists, it would be fairly useless for numeric processing.  Generally, you will use `numpy <https://numpy.org/>`_ arrays.  In fact, all sequences are converted to numpy arrays internally.  The example below illustrates plotting several lines with different format styles in one function call using arrays."
-msgstr ""
+msgstr "Si matplotlib se limitara a trabajar con listas, sería bastante inútil para el procesamiento numérico.  Por lo general, se utilizan arrays de `numpy <https://numpy.org/>`_.  De hecho, todas las secuencias se convierten internamente en arreglos de numpy.  El ejemplo siguiente ilustra el graficado de varias líneas con diferentes estilos de formato en una sola incovación a la función utilizando arreglos."
 
 #: ../../tutorials/introductory/pyplot.rst:197
 msgid "Plotting with keyword strings"
-msgstr ""
+msgstr "Graficar con cadenas de palabras clave"
 
 #: ../../tutorials/introductory/pyplot.rst:199
 msgid "There are some instances where you have data in a format that lets you access particular variables with strings. For example, with `numpy.recarray` or `pandas.DataFrame`."
-msgstr ""
+msgstr "Hay algunos casos en los que tienes datos en un formato que te permite acceder a determinadas variables con cadenas. Por ejemplo, con `numpy.recarray` o `pandas.DataFrame`."
 
 #: ../../tutorials/introductory/pyplot.rst:203
 msgid "Matplotlib allows you provide such an object with the ``data`` keyword argument. If provided, then you may generate plots with the strings corresponding to these variables."

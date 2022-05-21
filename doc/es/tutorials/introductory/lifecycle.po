@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-21 15:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,75 +20,75 @@ msgstr ""
 
 #: ../../tutorials/introductory/lifecycle.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_introductory_lifecycle.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_introductory_lifecycle.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/introductory/lifecycle.rst:23
 msgid "The Lifecycle of a Plot"
-msgstr ""
+msgstr "El ciclo de vida de un gráfico"
 
 #: ../../tutorials/introductory/lifecycle.rst:25
 msgid "This tutorial aims to show the beginning, middle, and end of a single visualization using Matplotlib. We'll begin with some raw data and end by saving a figure of a customized visualization. Along the way we try to highlight some neat features and best-practices using Matplotlib."
-msgstr ""
+msgstr "Este tutorial tiene como objetivo mostrar el principio, el medio y el final de una única visualización utilizando Matplotlib. Comenzaremos con algunos datos en bruto y terminaremos guardando una figura de una visualización personalizada. A lo largo del camino tratamos de resaltar algunas características y mejores prácticas usando Matplotlib."
 
 #: ../../tutorials/introductory/lifecycle.rst:34
 msgid "This tutorial is based on `this excellent blog post <https://pbpython.com/effective-matplotlib.html>`_ by Chris Moffitt. It was transformed into this tutorial by Chris Holdgraf."
-msgstr ""
+msgstr "Este tutorial está basado en `este excelente artículo del blog <https://pbpython.com/effective-matplotlib.html>`_ de Chris Moffitt. Fue transformado en este tutorial por Chris Holdgraf."
 
 #: ../../tutorials/introductory/lifecycle.rst:40
 msgid "A note on the Object-Oriented API vs. Pyplot"
-msgstr ""
+msgstr "Una nota sobre la API orientada a objetos frente a Pyplot"
 
 #: ../../tutorials/introductory/lifecycle.rst:42
 msgid "Matplotlib has two interfaces. The first is an object-oriented (OO) interface. In this case, we utilize an instance of :class:`axes.Axes` in order to render visualizations on an instance of :class:`figure.Figure`."
-msgstr ""
+msgstr "Matplotlib tiene dos interfaces. La primera es una interfaz orientada a objetos (OO). En este caso, utilizamos una instancia de :class:`axes.Axes` para representar las visualizaciones en una instancia de :class:`figure.Figure`."
 
 #: ../../tutorials/introductory/lifecycle.rst:46
 msgid "The second is based on MATLAB and uses a state-based interface. This is encapsulated in the :mod:`.pyplot` module. See the :doc:`pyplot tutorials </tutorials/introductory/pyplot>` for a more in-depth look at the pyplot interface."
-msgstr ""
+msgstr "El segundo está basado en MATLAB y utiliza una interfaz basada en estados. Esto está encapsulado en el módulo :mod:`.pyplot`. Consulte el :doc:`pyplot tutorials </tutorials/introductory/pyplot>` para conocer más a fondo la interfaz de pyplot."
 
 #: ../../tutorials/introductory/lifecycle.rst:51
 msgid "Most of the terms are straightforward but the main thing to remember is that:"
-msgstr ""
+msgstr "La mayoría de los términos son sencillos, pero lo principal es recordar que:"
 
 #: ../../tutorials/introductory/lifecycle.rst:54
 msgid "The Figure is the final image that may contain 1 or more Axes."
-msgstr ""
+msgstr "La Figura es la imagen final que puede contener 1 o más Ejes."
 
 #: ../../tutorials/introductory/lifecycle.rst:55
 msgid "The Axes represent an individual plot (don't confuse this with the word \"axis\", which refers to the x/y axis of a plot)."
-msgstr ""
+msgstr "Los ejes representan una parcela individual (no hay que confundirlo con la palabra \"axis\", que se refiere al eje x/y de un gráfico)."
 
 #: ../../tutorials/introductory/lifecycle.rst:58
 msgid "We call methods that do the plotting directly from the Axes, which gives us much more flexibility and power in customizing our plot."
-msgstr ""
+msgstr "Llamamos a los métodos que hacen el graficado directamente desde los Ejes, lo que nos da mucha más flexibilidad y poder en la personalización de nuestro gráfico."
 
 #: ../../tutorials/introductory/lifecycle.rst:63
 msgid "In general, try to use the object-oriented interface over the pyplot interface."
-msgstr ""
+msgstr "En general, trate de utilizar la interfaz orientada a objetos sobre la interfaz de pyplot."
 
 #: ../../tutorials/introductory/lifecycle.rst:67
 msgid "Our data"
-msgstr ""
+msgstr "Nuestros datos"
 
 #: ../../tutorials/introductory/lifecycle.rst:69
 msgid "We'll use the data from the post from which this tutorial was derived. It contains sales information for a number of companies."
-msgstr ""
+msgstr "Utilizaremos los datos del post del que se deriva este tutorial. Contiene información sobre las ventas de una serie de empresas."
 
 #: ../../tutorials/introductory/lifecycle.rst:105
 msgid "Getting started"
-msgstr ""
+msgstr "Cómo empezar"
 
 #: ../../tutorials/introductory/lifecycle.rst:107
 msgid "This data is naturally visualized as a barplot, with one bar per group. To do this with the object-oriented approach, we first generate an instance of :class:`figure.Figure` and :class:`axes.Axes`. The Figure is like a canvas, and the Axes is a part of that canvas on which we will make a particular visualization."
-msgstr ""
+msgstr "Estos datos se visualizan naturalmente como un gráfico de barras, con una barra por grupo. Para hacer esto con el enfoque orientado a objetos, primero generamos una instancia de :class:`figure.Figure` y :class:`axes.Axes`. La Figura es como un lienzo, y los Ejes son una parte de ese lienzo sobre el que haremos una visualización concreta."
 
 #: ../../tutorials/introductory/lifecycle.rst:115
 msgid "Figures can have multiple axes on them. For information on how to do this, see the :doc:`Tight Layout tutorial </tutorials/intermediate/tight_layout_guide>`."
-msgstr ""
+msgstr "Las figuras pueden tener varios ejes en ellas. Para obtener información sobre cómo hacerlo, consulta el :doc:`Tutorial de diseño ajustado </tutorials/intermediate/tight_layout_guide>`."
 
 #: ../../tutorials/introductory/lifecycle.rst:140
 msgid "Now that we have an Axes instance, we can plot on top of it."
-msgstr ""
+msgstr "Ahora que tenemos una instancia de Axes, podemos graficar sobre ella."
 
 #: ../../tutorials/introductory/lifecycle.rst:161
 #: ../../tutorials/introductory/lifecycle.rst:192
@@ -99,113 +99,113 @@ msgstr ""
 #: ../../tutorials/introductory/lifecycle.rst:435
 #: ../../tutorials/introductory/lifecycle.rst:581
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/introductory/lifecycle.rst:173
 msgid "Controlling the style"
-msgstr ""
+msgstr "Controlar el estilo"
 
 #: ../../tutorials/introductory/lifecycle.rst:175
 msgid "There are many styles available in Matplotlib in order to let you tailor your visualization to your needs. To see a list of styles, we can use :mod:`.style`."
-msgstr ""
+msgstr "Hay muchos estilos disponibles en Matplotlib para que puedas adaptar tu visualización a tus necesidades. Para ver una lista de estilos, podemos utilizar :mod:`.style`."
 
 #: ../../tutorials/introductory/lifecycle.rst:203
 msgid "You can activate a style with the following:"
-msgstr ""
+msgstr "Puedes activar un estilo con lo siguiente:"
 
 #: ../../tutorials/introductory/lifecycle.rst:221
 msgid "Now let's remake the above plot to see how it looks:"
-msgstr ""
+msgstr "Ahora vamos a rehacer el gráfico anterior para ver cómo queda:"
 
 #: ../../tutorials/introductory/lifecycle.rst:253
 msgid "The style controls many things, such as color, linewidths, backgrounds, etc."
-msgstr ""
+msgstr "El estilo controla muchas cosas, como el color, los anchos de línea, los fondos, etc."
 
 #: ../../tutorials/introductory/lifecycle.rst:257
 msgid "Customizing the plot"
-msgstr ""
+msgstr "Personalización del gráfico"
 
 #: ../../tutorials/introductory/lifecycle.rst:259
 msgid "Now we've got a plot with the general look that we want, so let's fine-tune it so that it's ready for print. First let's rotate the labels on the x-axis so that they show up more clearly. We can gain access to these labels with the :meth:`axes.Axes.get_xticklabels` method:"
-msgstr ""
+msgstr "Ahora tenemos un gráfico con el aspecto general que queremos, así que vamos a ajustarlo para que esté listo para imprimir. Primero vamos a rotar las etiquetas del eje x para que se vean más claramente. Podemos acceder a estas etiquetas con el método :meth:`axes.Axes.get_xticklabels`:"
 
 #: ../../tutorials/introductory/lifecycle.rst:287
 msgid "If we'd like to set the property of many items at once, it's useful to use the :func:`pyplot.setp` function. This will take a list (or many lists) of Matplotlib objects, and attempt to set some style element of each one."
-msgstr ""
+msgstr "Si queremos establecer la propiedad de muchos elementos a la vez, es útil utilizar la función :func:`pyplot.setp`. Ésta tomará una lista (o muchas listas) de objetos Matplotlib, e intentará establecer algún elemento de estilo de cada uno."
 
 #: ../../tutorials/introductory/lifecycle.rst:323
 msgid "It looks like this cut off some of the labels on the bottom. We can tell Matplotlib to automatically make room for elements in the figures that we create. To do this we set the ``autolayout`` value of our rcParams. For more information on controlling the style, layout, and other features of plots with rcParams, see :doc:`/tutorials/introductory/customizing`."
-msgstr ""
+msgstr "Parece que esto cortó algunas de las etiquetas en la parte inferior. Podemos decirle a Matplotlib que haga automáticamente espacio para los elementos en las figuras que creamos. Para ello establecemos el valor ``autolayout`` de nuestro rcParams. Para más información sobre cómo controlar el estilo, el diseño y otras características de los gráficos con rcParams, ver :doc:`/tutorials/introductory/customizing`."
 
 #: ../../tutorials/introductory/lifecycle.rst:364
 msgid "Next, we add labels to the plot. To do this with the OO interface, we can use the :meth:`.Artist.set` method to set properties of this Axes object."
-msgstr ""
+msgstr "A continuación, añadimos etiquetas al gráfico. Para hacer esto con la interfaz OO, podemos utilizar el método :meth:`.Artist.set` para establecer las propiedades de este objeto Axes."
 
 #: ../../tutorials/introductory/lifecycle.rst:402
 msgid "We can also adjust the size of this plot using the :func:`pyplot.subplots` function. We can do this with the *figsize* keyword argument."
-msgstr ""
+msgstr "También podemos ajustar el tamaño de este gráfico utilizando la función :func:`pyplot.subplots`. Podemos hacerlo con el argumento de la palabra clave *figsize*."
 
 #: ../../tutorials/introductory/lifecycle.rst:407
 msgid "While indexing in NumPy follows the form (row, column), the *figsize* keyword argument follows the form (width, height). This follows conventions in visualization, which unfortunately are different from those of linear algebra."
-msgstr ""
+msgstr "Mientras que la indexación en NumPy sigue la forma (fila, columna), el argumento de la palabra clave *figsize* sigue la forma (ancho, alto). Esto sigue las convenciones de la visualización, que desafortunadamente son diferentes de las del álgebra lineal."
 
 #: ../../tutorials/introductory/lifecycle.rst:446
 msgid "For labels, we can specify custom formatting guidelines in the form of functions. Below we define a function that takes an integer as input, and returns a string as an output. When used with `.Axis.set_major_formatter` or `.Axis.set_minor_formatter`, they will automatically create and use a :class:`ticker.FuncFormatter` class."
-msgstr ""
+msgstr "Para las etiquetas, podemos especificar pautas de formato personalizadas en forma de funciones. A continuación definimos una función que toma un entero como entrada, y devuelve una cadena como salida. Cuando se utiliza con `.Axis.set_major_formatter` o `.Axis.set_minor_formatter`, crearán y utilizarán automáticamente una clase :class:`ticker.FuncFormatter`."
 
 #: ../../tutorials/introductory/lifecycle.rst:452
 msgid "For this function, the ``x`` argument is the original tick label and ``pos`` is the tick position.  We will only use ``x`` here but both arguments are needed."
-msgstr ""
+msgstr "Para esta función, el argumento ``x`` es la etiqueta original del tick y ``pos`` es la posición del tick.  Aquí sólo usaremos ``x`` pero ambos argumentos son necesarios."
 
 #: ../../tutorials/introductory/lifecycle.rst:479
 msgid "We can then apply this function to the labels on our plot. To do this, we use the ``xaxis`` attribute of our axes. This lets you perform actions on a specific axis on our plot."
-msgstr ""
+msgstr "A continuación, podemos aplicar esta función a las etiquetas de nuestro gráfico. Para ello, utilizamos el atributo ``xaxis`` de nuestros ejes. Esto permite realizar acciones en un eje específico de nuestro gráfico."
 
 #: ../../tutorials/introductory/lifecycle.rst:512
 msgid "Combining multiple visualizations"
-msgstr ""
+msgstr "Combinar varias visualizaciones"
 
 #: ../../tutorials/introductory/lifecycle.rst:514
 msgid "It is possible to draw multiple plot elements on the same instance of :class:`axes.Axes`. To do this we simply need to call another one of the plot methods on that axes object."
-msgstr ""
+msgstr "Es posible dibujar múltiples elementos de gráfico en la misma instancia de :class:`axes.Axes`. Para ello, simplemente tenemos que llamar a otro de los métodos de trazado en ese objeto ejes."
 
 #: ../../tutorials/introductory/lifecycle.rst:562
 msgid "Saving our plot"
-msgstr ""
+msgstr "Guardar nuestro gráfico"
 
 #: ../../tutorials/introductory/lifecycle.rst:564
 msgid "Now that we're happy with the outcome of our plot, we want to save it to disk. There are many file formats we can save to in Matplotlib. To see a list of available options, use:"
-msgstr ""
+msgstr "Ahora que estamos contentos con el resultado de nuestro gráfico, queremos guardarlo en el disco. Hay muchos formatos de archivo que podemos guardar en Matplotlib. Para ver una lista de opciones disponibles, utiliza:"
 
 #: ../../tutorials/introductory/lifecycle.rst:592
 msgid "We can then use the :meth:`figure.Figure.savefig` in order to save the figure to disk. Note that there are several useful flags we show below:"
-msgstr ""
+msgstr "A continuación, podemos utilizar el método :meth:`figure.Figure.savefig` para guardar la figura en el disco. Ten en cuenta que hay varios indicadores útiles que mostramos a continuación:"
 
 #: ../../tutorials/introductory/lifecycle.rst:595
 msgid "``transparent=True`` makes the background of the saved figure transparent if the format supports it."
-msgstr ""
+msgstr "``transparent=True`` hace que el fondo de la figura guardada sea transparente si el formato lo soporta."
 
 #: ../../tutorials/introductory/lifecycle.rst:597
 msgid "``dpi=80`` controls the resolution (dots per square inch) of the output."
-msgstr ""
+msgstr "``dpi=80`` controla la resolución (puntos por pulgada cuadrada) de la salida."
 
 #: ../../tutorials/introductory/lifecycle.rst:598
 msgid "``bbox_inches=\"tight\"`` fits the bounds of the figure to our plot."
-msgstr ""
+msgstr "``bbox_inches=\"tight\"`` ajusta los límites de la figura a nuestro gráfico."
 
 #: ../../tutorials/introductory/lifecycle.rst:617
 msgid "**Total running time of the script:** ( 0 minutes  3.851 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** (0 minutos 3.851 segundos)"
 
 #: ../../tutorials/introductory/lifecycle.rst:632
 msgid ":download:`Download Python source code: lifecycle.py <lifecycle.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: lifecycle.py <lifecycle.py>`"
 
 #: ../../tutorials/introductory/lifecycle.rst:638
 msgid ":download:`Download Jupyter notebook: lifecycle.ipynb <lifecycle.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: lifecycle.ipynb <lifecycle.ipynb>`"
 
 #: ../../tutorials/introductory/lifecycle.rst:645
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

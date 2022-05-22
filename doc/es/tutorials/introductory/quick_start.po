@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-22 14:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,23 +20,23 @@ msgstr ""
 
 #: ../../tutorials/introductory/quick_start.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_introductory_quick_start.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_introductory_quick_start.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/introductory/quick_start.rst:23
 msgid "Quick start guide"
-msgstr ""
+msgstr "Guía de inicio rápido"
 
 #: ../../tutorials/introductory/quick_start.rst:25
 msgid "This tutorial covers some basic usage patterns and best practices to help you get started with Matplotlib."
-msgstr ""
+msgstr "Este tutorial cubre algunos patrones básicos de uso y las mejores prácticas para ayudarte a empezar con Matplotlib."
 
 #: ../../tutorials/introductory/quick_start.rst:49
 msgid "A simple example"
-msgstr ""
+msgstr "Un ejemplo simple"
 
 #: ../../tutorials/introductory/quick_start.rst:51
 msgid "Matplotlib graphs your data on `.Figure`\\s (e.g., windows, Jupyter widgets, etc.), each of which can contain one or more `~.axes.Axes`, an area where points can be specified in terms of x-y coordinates (or theta-r in a polar plot, x-y-z in a 3D plot, etc).  The simplest way of creating a Figure with an Axes is using `.pyplot.subplots`. We can then use `.Axes.plot` to draw some data on the Axes:"
-msgstr ""
+msgstr "Matplotlib grafica sus datos en `.Figure` (por ejemplo, ventanas, widgets de Jupyter, etc.), cada uno de los cuales puede contener uno o más `~.axes.Axes`, un área donde los puntos pueden ser especificados en términos de coordenadas x-y (o theta-r en un gráfico polar, x-y-z en un gráfico 3D, etc).  La forma más sencilla de crear una Figura con Ejes es utilizando `.pyplot.subplots`. Luego podemos utilizar `.Axes.plot` para dibujar algunos datos en los Ejes:"
 
 #: ../../tutorials/introductory/quick_start.rst:77
 #: ../../tutorials/introductory/quick_start.rst:201
@@ -54,55 +54,55 @@ msgstr ""
 #: ../../tutorials/introductory/quick_start.rst:958
 #: ../../tutorials/introductory/quick_start.rst:1037
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/introductory/quick_start.rst:91
 msgid "Parts of a Figure"
-msgstr ""
+msgstr "Partes de una Figura"
 
 #: ../../tutorials/introductory/quick_start.rst:93
 msgid "Here are the components of a Matplotlib Figure."
-msgstr ""
+msgstr "Aquí están los componentes de una figura de Matplotlib."
 
 #: ../../tutorials/introductory/quick_start.rst:98
 msgid ":class:`~matplotlib.figure.Figure`"
-msgstr ""
+msgstr ":class:`~matplotlib.figure.Figure`"
 
 #: ../../tutorials/introductory/quick_start.rst:100
 msgid "The **whole** figure.  The Figure keeps track of all the child :class:`~matplotlib.axes.Axes`, a group of 'special' Artists (titles, figure legends, colorbars, etc), and even nested subfigures."
-msgstr ""
+msgstr "La **figura completa**.  La Figura mantiene un registro de todos los hijos :class:`~matplotlib.axes.Axes`, un grupo de Artists 'especiales' (títulos, leyendas de figuras, barras de color, etc), e incluso subfiguras anidadas."
 
 #: ../../tutorials/introductory/quick_start.rst:105
 msgid "The easiest way to create a new Figure is with pyplot::"
-msgstr ""
+msgstr "La forma más sencilla de crear una nueva Figura es con pyplot::"
 
 #: ../../tutorials/introductory/quick_start.rst:111
 msgid "It is often convenient to create the Axes together with the Figure, but you can also manually add Axes later on.  Note that many :doc:`Matplotlib backends </users/explain/backends>` support zooming and panning on figure windows."
-msgstr ""
+msgstr "A menudo es conveniente crear los Ejes junto con la Figura, pero también se pueden añadir manualmente los Ejes más tarde.  Ten en cuenta que muchos backends de :doc:`Matplotlib </users/explain/backends>` soportan el zoom y la panorámica en las ventanas de las figuras."
 
 #: ../../tutorials/introductory/quick_start.rst:117
 msgid ":class:`~matplotlib.axes.Axes`"
-msgstr ""
+msgstr ":class:`~matplotlib.axes.Axes`"
 
 #: ../../tutorials/introductory/quick_start.rst:119
 msgid "An Axes is an Artist attached to a Figure that contains a region for plotting data, and usually includes two (or three in the case of 3D) :class:`~matplotlib.axis.Axis` objects (be aware of the difference between **Axes** and **Axis**) that provide ticks and tick labels to provide scales for the data in the Axes. Each :class:`~.axes.Axes` also has a title (set via :meth:`~matplotlib.axes.Axes.set_title`), an x-label (set via :meth:`~matplotlib.axes.Axes.set_xlabel`), and a y-label set via :meth:`~matplotlib.axes.Axes.set_ylabel`)."
-msgstr ""
+msgstr "Un Eje es un Artist adjunto a una Figura que contiene una región para trazar datos, y normalmente incluye dos (o tres en el caso de 3D) objetos :class:`~matplotlib.axis.Axis` (ten en cuenta la diferencia entre **Axes** y **Axis**) que proporcionan ticks y etiquetas de marca para proporcionar escalas para los datos en los Ejes. Cada :class:`~.axes.Axes` también tiene un título (establecido mediante :meth:`~matplotlib.axes.Axes.set_title`), una etiqueta x (establecida mediante :meth:`~matplotlib.axes.Axes.set_xlabel`), y una etiqueta y establecida mediante :meth:`~matplotlib.axes.Axes.set_ylabel`)."
 
 #: ../../tutorials/introductory/quick_start.rst:129
 msgid "The :class:`~.axes.Axes` class and its member functions are the primary entry point to working with the OOP interface, and have most of the plotting methods defined on them (e.g. ``ax.plot()``, shown above, uses the `~.Axes.plot` method)"
-msgstr ""
+msgstr "La clase :class:`~.axes.Axes` y sus funciones miembro son el principal punto de entrada para trabajar con la interfaz OOP, y tienen la mayoría de los métodos de trazado definidos en ellos (por ejemplo, ``ax.plot()``, mostrado arriba, utiliza el método `~.Axes.plot`)"
 
 #: ../../tutorials/introductory/quick_start.rst:135
 msgid ":class:`~matplotlib.axis.Axis`"
-msgstr ""
+msgstr ":class:`~matplotlib.axis.Axis`"
 
 #: ../../tutorials/introductory/quick_start.rst:137
 msgid "These objects set the scale and limits and generate ticks (the marks on the Axis) and ticklabels (strings labeling the ticks).  The location of the ticks is determined by a `~matplotlib.ticker.Locator` object and the ticklabel strings are formatted by a `~matplotlib.ticker.Formatter`.  The combination of the correct `.Locator` and `.Formatter` gives very fine control over the tick locations and labels."
-msgstr ""
+msgstr "Estos objetos establecen la escala y los límites y generan ticks (las marcas en el Eje) y ticklabel (cadenas que etiquetan los ticks).  La ubicación de los ticks se determina mediante un objeto `~matplotlib.ticker.Locator` y las cadenas de ticklabel son formateadas por un `~matplotlib.ticker.Formatter`.  La combinación de los objetos `.Locator` y `.Formatter` correctos proporciona un control muy fino sobre las ubicaciones y etiquetas de los ticks."
 
 #: ../../tutorials/introductory/quick_start.rst:145
 msgid ":class:`~matplotlib.artist.Artist`"
-msgstr ""
+msgstr ":class:`~matplotlib.artist.Artist`"
 
 #: ../../tutorials/introductory/quick_start.rst:147
 msgid "Basically, everything visible on the Figure is an Artist (even `.Figure`, `Axes <.axes.Axes>`, and `~.axis.Axis` objects).  This includes `.Text` objects, `.Line2D` objects, :mod:`.collections` objects, `.Patch` objects, etc. When the Figure is rendered, all of the Artists are drawn to the **canvas**.  Most Artists are tied to an Axes; such an Artist cannot be shared by multiple Axes, or moved from one to another."

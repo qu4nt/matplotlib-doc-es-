@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-22 14:49\n"
+"PO-Revision-Date: 2022-05-22 15:57\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -106,95 +106,95 @@ msgstr ":class:`~matplotlib.artist.Artist`"
 
 #: ../../tutorials/introductory/quick_start.rst:147
 msgid "Basically, everything visible on the Figure is an Artist (even `.Figure`, `Axes <.axes.Axes>`, and `~.axis.Axis` objects).  This includes `.Text` objects, `.Line2D` objects, :mod:`.collections` objects, `.Patch` objects, etc. When the Figure is rendered, all of the Artists are drawn to the **canvas**.  Most Artists are tied to an Axes; such an Artist cannot be shared by multiple Axes, or moved from one to another."
-msgstr ""
+msgstr "Básicamente, todo lo visible en la Figura es un Artist (incluso los objetos `.Figure`, `Axes <.axes.Axes>`, y `~.axis.Axis`).  Esto incluye objetos `.Text`, objetos `.Line2D`, objetos :mod:`.collections`, objetos `.Patch`, etc. Cuando se renderiza la Figura, todos los Artists se dibujan en el **lienzo**.  La mayoría de los Artists están ligados a un Eje; un Artist no puede ser compartido por varios Ejes, ni moverse de uno a otro."
 
 #: ../../tutorials/introductory/quick_start.rst:157
 msgid "Types of inputs to plotting functions"
-msgstr ""
+msgstr "Tipos de entradas a las funciones de gráfico"
 
 #: ../../tutorials/introductory/quick_start.rst:159
 msgid "Plotting functions expect `numpy.array` or `numpy.ma.masked_array` as input, or objects that can be passed to `numpy.asarray`. Classes that are similar to arrays ('array-like') such as `pandas` data objects and `numpy.matrix` may not work as intended.  Common convention is to convert these to `numpy.array` objects prior to plotting. For example, to convert a `numpy.matrix` ::"
-msgstr ""
+msgstr "Las funciones de ploteo esperan `numpy.array` o `numpy.ma.masked_array` como entrada, u objetos que puedan pasarse a `numpy.asarray`. Las clases que son similares a los arreglos ('array-like') como los objetos de datos `pandas` y `numpy.matrix` pueden no funcionar como se pretende.  La convención común es convertirlos en objetos `numpy.array` antes de graficarlos. Por ejemplo, para convertir un `numpy.matrix` ::"
 
 #: ../../tutorials/introductory/quick_start.rst:169
 msgid "Most methods will also parse an addressable object like a *dict*, a `numpy.recarray`, or a `pandas.DataFrame`.  Matplotlib allows you provide the ``data`` keyword argument and generate plots passing the strings corresponding to the *x* and *y* variables."
-msgstr ""
+msgstr "La mayoría de los métodos también analizarán un objeto direccionable como un *dict*, un `numpy.recarray`, o un `pandas.DataFrame`.  Matplotlib permite proporcionar el argumento de la palabra clave ``data`` y generar gráficos pasando las cadenas correspondientes a las variables *x* e *y*."
 
 #: ../../tutorials/introductory/quick_start.rst:215
 msgid "Coding styles"
-msgstr ""
+msgstr "Estilos de código"
 
 #: ../../tutorials/introductory/quick_start.rst:218
 msgid "The object-oriented and the pyplot interfaces"
-msgstr ""
+msgstr "Las interfaces orientada a objetos y pyplot"
 
 #: ../../tutorials/introductory/quick_start.rst:220
 msgid "As noted above, there are essentially two ways to use Matplotlib:"
-msgstr ""
+msgstr "Como se ha señalado anteriormente, hay esencialmente dos maneras de utilizar Matplotlib:"
 
 #: ../../tutorials/introductory/quick_start.rst:222
 msgid "Explicitly create Figures and Axes, and call methods on them (the \"object-oriented (OO) style\")."
-msgstr ""
+msgstr "Crear explícitamente Figuras y Ejes, e invocar métodos sobre ellos (el \"estilo orientado a objetos (OO)\")."
 
 #: ../../tutorials/introductory/quick_start.rst:224
 msgid "Rely on pyplot to automatically create and manage the Figures and Axes, and use pyplot functions for plotting."
-msgstr ""
+msgstr "Confía en pyplot para crear y gestionar automáticamente las figuras y los ejes, y utiliza las funciones de pyplot para graficar."
 
 #: ../../tutorials/introductory/quick_start.rst:227
 msgid "So one can use the OO-style"
-msgstr ""
+msgstr "Así que uno puede usar el estilo OO"
 
 #: ../../tutorials/introductory/quick_start.rst:268
 msgid "or the pyplot-style:"
-msgstr ""
+msgstr "o el estilo pyplot:"
 
 #: ../../tutorials/introductory/quick_start.rst:308
 msgid "(In addition, there is a third approach, for the case when embedding Matplotlib in a GUI application, which completely drops pyplot, even for figure creation. See the corresponding section in the gallery for more info: :ref:`user_interfaces`.)"
-msgstr ""
+msgstr "(Además, hay un tercer enfoque, para el caso de incrustar Matplotlib en una aplicación IGU, que deja de lado completamente a pyplot, incluso para la creación de figuras. Ver la sección correspondiente en la galería para más información: :ref:`user_interfaces`)"
 
 #: ../../tutorials/introductory/quick_start.rst:313
 msgid "Matplotlib's documentation and examples use both the OO and the pyplot styles. In general, we suggest using the OO style, particularly for complicated plots, and functions and scripts that are intended to be reused as part of a larger project. However, the pyplot style can be very convenient for quick interactive work."
-msgstr ""
+msgstr "La documentación y los ejemplos de Matplotlib utilizan los estilos OO y pyplot. En general, sugerimos que se utilice el estilo OO, sobre todo para los gráficos complicados, y las funciones y scripts que están destinados a ser reutilizados como parte de un proyecto más grande. Sin embargo, el estilo pyplot puede ser muy conveniente para el trabajo interactivo rápido."
 
 #: ../../tutorials/introductory/quick_start.rst:321
 msgid "You may find older examples that use the ``pylab`` interface, via ``from pylab import *``. This approach is strongly deprecated."
-msgstr ""
+msgstr "Puedes encontrar ejemplos antiguos que utilizan la interfaz ``pylab``, a través de ``from pylab import *``. Este enfoque está fuertemente obsoleto."
 
 #: ../../tutorials/introductory/quick_start.rst:325
 msgid "Making a helper functions"
-msgstr ""
+msgstr "Realización de funciones de ayuda"
 
 #: ../../tutorials/introductory/quick_start.rst:327
 msgid "If you need to make the same plots over and over again with different data sets, or want to easily wrap Matplotlib methods, use the recommended signature function below."
-msgstr ""
+msgstr "Si necesitas hacer los mismos gráficos una y otra vez con diferentes conjuntos de datos, o quieres envolver fácilmente los métodos de Matplotlib, utiliza la función de firma recomendada a continuación."
 
 #: ../../tutorials/introductory/quick_start.rst:353
 msgid "which you would then use twice to populate two subplots:"
-msgstr ""
+msgstr "que luego se utilizaría dos veces para rellenar dos subgráficos:"
 
 #: ../../tutorials/introductory/quick_start.rst:387
 msgid "Note that if you want to install these as a python package, or any other customizations you could use one of the many templates on the web; Matplotlib has one at `mpl-cookiecutter <https://github.com/matplotlib/matplotlib-extension-cookiecutter>`_"
-msgstr ""
+msgstr "Ten en cuenta que si quieres instalar esto como un paquete de python, o cualquier otra personalización podrías usar una de las muchas plantillas que hay en la web; Matplotlib tiene una en `mpl-cookiecutter <https://github.com/matplotlib/matplotlib-extension-cookiecutter>`_"
 
 #: ../../tutorials/introductory/quick_start.rst:394
 msgid "Styling Artists"
-msgstr ""
+msgstr "Estilo de Artists"
 
 #: ../../tutorials/introductory/quick_start.rst:396
 msgid "Most plotting methods have styling options for the Artists, accessible either when a plotting method is called, or from a \"setter\" on the Artist.  In the plot below we manually set the *color*, *linewidth*, and *linestyle* of the Artists created by `~.Axes.plot`, and we set the linestyle of the second line after the fact with `~.Line2D.set_linestyle`."
-msgstr ""
+msgstr "La mayoría de los métodos de gráfico tienen opciones de estilo para los Artists, accesibles cuando se llama a un método de graficar, o desde un \"setter\" en el Artist.  En el gráfico que se muestra a continuación, establecemos manualmente el *color*, el *ancho de línea* y el *estilo de línea* de los Artistas creados por `~.Axes.plot`, y establecemos el estilo de línea de la segunda línea después del hecho con `~.Line2D.set_linestyle`."
 
 #: ../../tutorials/introductory/quick_start.rst:428
 msgid "Colors"
-msgstr ""
+msgstr "Colores"
 
 #: ../../tutorials/introductory/quick_start.rst:430
 msgid "Matplotlib has a very flexible array of colors that are accepted for most Artists; see the :doc:`colors tutorial </tutorials/colors/colors>` for a list of specifications. Some Artists will take multiple colors.  i.e. for a `~.Axes.scatter` plot, the edge of the markers can be different colors from the interior:"
-msgstr ""
+msgstr "Matplotlib tiene una gama muy flexible de colores que se aceptan para la mayoría de los Artists; ver el :doc:`tutorial de colores </tutorials/colors/colors>` para una lista de especificaciones. Algunos Artistas tomarán múltiples colores. Por ejemplo, para un gráfico `~.Axes.scatter`, el borde de los marcadores puede ser de diferentes colores que el interior:"
 
 #: ../../tutorials/introductory/quick_start.rst:467
 msgid "Linewidths, linestyles, and markersizes"
-msgstr ""
+msgstr "Anchos de línea, estilos de línea y tamaños de marcadores"
 
 #: ../../tutorials/introductory/quick_start.rst:469
 msgid "Line widths are typically in typographic points (1 pt = 1/72 inch) and available for Artists that have stroked lines.  Similarly, stroked lines can have a linestyle.  See the :doc:`linestyles example </gallery/lines_bars_and_markers/linestyles>`."

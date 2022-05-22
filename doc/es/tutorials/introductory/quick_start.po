@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-22 18:46\n"
+"PO-Revision-Date: 2022-05-22 19:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -114,7 +114,7 @@ msgstr "Tipos de entradas a las funciones de gráfico"
 
 #: ../../tutorials/introductory/quick_start.rst:159
 msgid "Plotting functions expect `numpy.array` or `numpy.ma.masked_array` as input, or objects that can be passed to `numpy.asarray`. Classes that are similar to arrays ('array-like') such as `pandas` data objects and `numpy.matrix` may not work as intended.  Common convention is to convert these to `numpy.array` objects prior to plotting. For example, to convert a `numpy.matrix` ::"
-msgstr "Las funciones de ploteo esperan `numpy.array` o `numpy.ma.masked_array` como entrada, u objetos que puedan pasarse a `numpy.asarray`. Las clases que son similares a los arreglos ('array-like') como los objetos de datos `pandas` y `numpy.matrix` pueden no funcionar como se pretende.  La convención común es convertirlos en objetos `numpy.array` antes de graficarlos. Por ejemplo, para convertir un `numpy.matrix` ::"
+msgstr "Las funciones de gráfico esperan `numpy.array` o `numpy.ma.masked_array` como entrada, u objetos que puedan pasarse a `numpy.asarray`. Las clases que son similares a los arreglos ('array-like') como los objetos de datos `pandas` y `numpy.matrix` pueden no funcionar como se pretende.  La convención común es convertirlos en objetos `numpy.array` antes de graficarlos. Por ejemplo, para convertir un `numpy.matrix` ::"
 
 #: ../../tutorials/introductory/quick_start.rst:169
 msgid "Most methods will also parse an addressable object like a *dict*, a `numpy.recarray`, or a `pandas.DataFrame`.  Matplotlib allows you provide the ``data`` keyword argument and generate plots passing the strings corresponding to the *x* and *y* variables."
@@ -150,7 +150,7 @@ msgstr "o el estilo pyplot:"
 
 #: ../../tutorials/introductory/quick_start.rst:308
 msgid "(In addition, there is a third approach, for the case when embedding Matplotlib in a GUI application, which completely drops pyplot, even for figure creation. See the corresponding section in the gallery for more info: :ref:`user_interfaces`.)"
-msgstr "(Además, hay un tercer enfoque, para el caso de incrustar Matplotlib en una aplicación IGU, que deja de lado completamente a pyplot, incluso para la creación de figuras. Ver la sección correspondiente en la galería para más información: :ref:`user_interfaces`)"
+msgstr "(Además, hay un tercer enfoque, para el caso de incrustar Matplotlib en una aplicación IGU, que deja de lado completamente a pyplot, incluso para la creación de figuras. Ver la sección correspondiente en la galería para más información: :ref:`user_interfaces`.)"
 
 #: ../../tutorials/introductory/quick_start.rst:313
 msgid "Matplotlib's documentation and examples use both the OO and the pyplot styles. In general, we suggest using the OO style, particularly for complicated plots, and functions and scripts that are intended to be reused as part of a larger project. However, the pyplot style can be very convenient for quick interactive work."
@@ -286,113 +286,113 @@ msgstr "Localizadores y formateadores de tick"
 
 #: ../../tutorials/introductory/quick_start.rst:738
 msgid "Each Axis has a tick *locator* and *formatter* that choose where along the Axis objects to put tick marks.  A simple interface to this is `~.Axes.set_xticks`:"
-msgstr ""
+msgstr "Cada Eje tiene un *localizador* de tick y un *formateador* que eligen en qué lugar de los objetos del Eje se colocan las marcas de ticks.  Una interfaz sencilla para esto es `~.Axes.set_xticks`:"
 
 #: ../../tutorials/introductory/quick_start.rst:778
 msgid "Different scales can have different locators and formatters; for instance the log-scale above uses `~.LogLocator` and `~.LogFormatter`. See :doc:`/gallery/ticks/tick-locators` and :doc:`/gallery/ticks/tick-formatters` for other formatters and locators and information for writing your own."
-msgstr ""
+msgstr "Diferentes escalas pueden tener diferentes localizadores y formateadores; por ejemplo, la escala de registro anterior utiliza `~.LogLocator` y `~.LogFormatter`. Ver :doc:`/gallery/ticks/tick-locators` y :doc:`/gallery/ticks/tick-formatters` para otros formateadores y localizadores e información para escribir los suyos propios."
 
 #: ../../tutorials/introductory/quick_start.rst:785
 msgid "Plotting dates and strings"
-msgstr ""
+msgstr "Graficar fechas y cadenas"
 
 #: ../../tutorials/introductory/quick_start.rst:787
 msgid "Matplotlib can handle plotting arrays of dates and arrays of strings, as well as floating point numbers.  These get special locators and formatters as appropriate.  For dates:"
-msgstr ""
+msgstr "Matplotlib puede manejar arreglos de fechas y arreglos de cadenas, así como números de punto flotante.  Estos obtienen localizadores y formateadores especiales, según corresponda.  Para las fechas:"
 
 #: ../../tutorials/introductory/quick_start.rst:818
 msgid "For more information see the date examples (e.g. :doc:`/gallery/text_labels_and_annotations/date`)"
-msgstr ""
+msgstr "Para más información, consulta los ejemplos de fechas (por ejemplo, :doc:`/gallery/text_labels_and_annotations/date`)"
 
 #: ../../tutorials/introductory/quick_start.rst:821
 msgid "For strings, we get categorical plotting (see: :doc:`/gallery/lines_bars_and_markers/categorical_variables`)."
-msgstr ""
+msgstr "En el caso de las cadenas, obtenemos un gráfico categórico (ver: :doc:`/gallery/lines_bars_and_markers/categorical_variables`)."
 
 #: ../../tutorials/introductory/quick_start.rst:856
 msgid "One caveat about categorical plotting is that some methods of parsing text files return a list of strings, even if the strings all represent numbers or dates.  If you pass 1000 strings, Matplotlib will think you meant 1000 categories and will add 1000 ticks to your plot!"
-msgstr ""
+msgstr "Una advertencia sobre el graficado categórico es que algunos métodos de análisis de archivos de texto devuelven una lista de cadenas, incluso si todas las cadenas representan números o fechas.  Si pasas 1000 cadenas, Matplotlib pensará que quiere decir 1000 categorías y añadirá 1000 marcas a su gráfico."
 
 #: ../../tutorials/introductory/quick_start.rst:863
 msgid "Additional Axis objects"
-msgstr ""
+msgstr "Objetos adicionales del eje"
 
 #: ../../tutorials/introductory/quick_start.rst:865
 msgid "Plotting data of different magnitude in one chart may require an additional y-axis. Such an Axis can be created by using `~.Axes.twinx` to add a new Axes with an invisible x-axis and a y-axis positioned at the right (analogously for `~.Axes.twiny`). See :doc:`/gallery/subplots_axes_and_figures/two_scales` for another example."
-msgstr ""
+msgstr "El trazado de datos de diferente magnitud en un gráfico puede requerir un eje y adicional. Dicho eje puede crearse utilizando `~.Axes.twinx` para añadir un nuevo eje con un eje x invisible y un eje y posicionado a la derecha (análogamente para `~.Axes.twiny`). Ver :doc:`/gallery/subplots_axes_and_figures/two_scales` para otro ejemplo."
 
 #: ../../tutorials/introductory/quick_start.rst:871
 msgid "Similarly, you can add a `~.Axes.secondary_xaxis` or `~.Axes.secondary_yaxis` having a different scale than the main Axis to represent the data in different scales or units. See :doc:`/gallery/subplots_axes_and_figures/secondary_axis` for further examples."
-msgstr ""
+msgstr "Del mismo modo, puede añadir un `~.Axes.secondary_xaxis` o `~.Axes.secondary_yaxis` con una escala diferente a la del eje principal para representar los datos en diferentes escalas o unidades. Consulta :doc:`/gallery/subplots_axes_and_figures/secondary_axis` para ver más ejemplos."
 
 #: ../../tutorials/introductory/quick_start.rst:916
 msgid "Color mapped data"
-msgstr ""
+msgstr "Datos mapeados en color"
 
 #: ../../tutorials/introductory/quick_start.rst:918
 msgid "Often we want to have a third dimension in a plot represented by a colors in a colormap. Matplotlib has a number of plot types that do this:"
-msgstr ""
+msgstr "A menudo queremos tener una tercera dimensión en un gráfico representada por colores en un mapa de colores. Matplotlib tiene una serie de tipos de gráficos que hacen esto:"
 
 #: ../../tutorials/introductory/quick_start.rst:970
 msgid "Colormaps"
-msgstr ""
+msgstr "Mapas de colores"
 
 #: ../../tutorials/introductory/quick_start.rst:972
 msgid "These are all examples of Artists that derive from  `~.ScalarMappable` objects.  They all can set a linear mapping between *vmin* and *vmax* into the colormap specified by *cmap*.  Matplotlib has many colormaps to choose from (:doc:`/tutorials/colors/colormaps`) you can make your own (:doc:`/tutorials/colors/colormap-manipulation`) or download as `third-party packages <https://matplotlib.org/mpl-third-party/#colormaps-and-styles>`_."
-msgstr ""
+msgstr "Todos estos son ejemplos de Artists que derivan de objetos `~.ScalarMappable`.  Todos ellos pueden establecer un mapeo lineal entre *vmin* y *vmax* en el mapa de colores especificado por *cmap*.  Matplotlib tiene muchos mapas de colores entre los que elegir (:doc:`/tutorials/colors/colormaps`), puedes hacer los tuyos propios (:doc:`/tutorials/colors/colormap-manipulation`) o descargarlos como `paquetes de terceros <https://matplotlib.org/mpl-third-party/#colormaps-and-styles>`_."
 
 #: ../../tutorials/introductory/quick_start.rst:981
 msgid "Normalizations"
-msgstr ""
+msgstr "Normalizaciones"
 
 #: ../../tutorials/introductory/quick_start.rst:983
 msgid "Sometimes we want a non-linear mapping of the data to the colormap, as in the ``LogNorm`` example above.  We do this by supplying the ScalarMappable with the *norm* argument instead of *vmin* and *vmax*. More normalizations are shown at :doc:`/tutorials/colors/colormapnorms`."
-msgstr ""
+msgstr "A veces queremos un mapeo no lineal de los datos al mapa de colores, como en el ejemplo ``LogNorm`` de arriba.  Esto se hace suministrando el ScalarMappable con el argumento *norm* en lugar de *vmin* y *vmax*. Se muestran más normalizaciones en :doc:`/tutorials/colors/colormnorms`."
 
 #: ../../tutorials/introductory/quick_start.rst:989
 msgid "Colorbars"
-msgstr ""
+msgstr "Barras de colores"
 
 #: ../../tutorials/introductory/quick_start.rst:991
 msgid "Adding a `~.Figure.colorbar` gives a key to relate the color back to the underlying data. Colorbars are figure-level Artists, and are attached to a ScalarMappable (where they get their information about the norm and colormap) and usually steal space from a parent Axes.  Placement of colorbars can be complex: see :doc:`/gallery/subplots_axes_and_figures/colorbar_placement` for details.  You can also change the appearance of colorbars with the *extend* keyword to add arrows to the ends, and *shrink* and *aspect* to control the size.  Finally, the colorbar will have default locators and formatters appropriate to the norm.  These can be changed as for other Axis objects."
-msgstr ""
+msgstr "Añadir un `~.Figure.colorbar` da una clave para relacionar el color con los datos subyacentes. Las barras de color son Artists a nivel de figura, y se adjuntan a un ScalarMappable (de donde obtienen su información sobre la norma y el mapa de color) y normalmente roban espacio de un Eje padre.  La colocación de las barras de color puede ser compleja: ver :doc:`/gallery/subplots_axes_and_figures/colorbar_placement` para más detalles.  También puede cambiar la apariencia de las barras de color con la palabra clave *extend* para añadir flechas a los extremos, y *shrink* y *aspect* para controlar el tamaño.  Por último, la barra de colores tendrá localizadores y formateadores por defecto adecuados a la norma.  Estos pueden ser cambiados como para otros objetos Eje."
 
 #: ../../tutorials/introductory/quick_start.rst:1005
 msgid "Working with multiple Figures and Axes"
-msgstr ""
+msgstr "Trabajar con múltiples figuras y ejes"
 
 #: ../../tutorials/introductory/quick_start.rst:1007
 msgid "You can open multiple Figures with multiple calls to ``fig = plt.figure()`` or ``fig2, ax = plt.subplots()``.  By keeping the object references you can add Artists to either Figure."
-msgstr ""
+msgstr "Puedes abrir múltiples Figuras con múltiples invocaciones a ``fig = plt.figure()`` o ``fig2, ax = plt.subplots()``.  Manteniendo las referencias a los objetos puedes añadir Artists a cualquiera de las Figuras."
 
 #: ../../tutorials/introductory/quick_start.rst:1011
 msgid "Multiple Axes can be added a number of ways, but the most basic is ``plt.subplots()`` as used above.  One can achieve more complex layouts, with Axes objects spanning columns or rows, using `~.pyplot.subplot_mosaic`."
-msgstr ""
+msgstr "Se pueden añadir múltiples ejes de varias maneras, pero la más básica es ``plt.subplots()`` como se ha utilizado anteriormente.  Se pueden conseguir diseños más complejos, con objetos Axes que abarquen columnas o filas, utilizando `~.pyplot.subplot_mosaic`."
 
 #: ../../tutorials/introductory/quick_start.rst:1048
 msgid "Matplotlib has quite sophisticated tools for arranging Axes: See :doc:`/tutorials/intermediate/arranging_axes` and :doc:`/tutorials/provisional/mosaic`."
-msgstr ""
+msgstr "Matplotlib tiene herramientas bastante sofisticadas para organizar los ejes: Ver :doc:`/tutorials/intermediate/arranging_axes` y :doc:`/tutorials/provisional/mosaic`."
 
 #: ../../tutorials/introductory/quick_start.rst:1054
 msgid "More reading"
-msgstr ""
+msgstr "Más lectura"
 
 #: ../../tutorials/introductory/quick_start.rst:1056
 msgid "For more plot types see :doc:`Plot types </plot_types/index>` and the :doc:`API reference </api/index>`, in particlar the :doc:`Axes API </api/axes_api>`."
-msgstr ""
+msgstr "Para ver más tipos de gráficos, consulta :doc:`Tipos de gráficos </plot_types/index>` y el :doc:`Referencia a la API </api/index>`, en particular el :doc:`Axes API </api/axes_api>`."
 
 #: ../../tutorials/introductory/quick_start.rst:1063
 msgid "**Total running time of the script:** ( 0 minutes  8.342 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** (0 minutos 8.342 segundos)"
 
 #: ../../tutorials/introductory/quick_start.rst:1078
 msgid ":download:`Download Python source code: quick_start.py <quick_start.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: quick_start.py <quick_start.py>`"
 
 #: ../../tutorials/introductory/quick_start.rst:1084
 msgid ":download:`Download Jupyter notebook: quick_start.ipynb <quick_start.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: quick_start.ipynb <quick_start.ipynb>`"
 
 #: ../../tutorials/introductory/quick_start.rst:1091
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

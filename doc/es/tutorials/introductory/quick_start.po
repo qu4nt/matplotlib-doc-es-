@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-22 19:55\n"
+"PO-Revision-Date: 2022-05-22 21:01\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -190,7 +190,7 @@ msgstr "Colores"
 
 #: ../../tutorials/introductory/quick_start.rst:430
 msgid "Matplotlib has a very flexible array of colors that are accepted for most Artists; see the :doc:`colors tutorial </tutorials/colors/colors>` for a list of specifications. Some Artists will take multiple colors.  i.e. for a `~.Axes.scatter` plot, the edge of the markers can be different colors from the interior:"
-msgstr "Matplotlib tiene una gama muy flexible de colores que se aceptan para la mayoría de los Artists; ver el :doc:`tutorial de colores </tutorials/colors/colors>` para una lista de especificaciones. Algunos Artistas tomarán múltiples colores. Por ejemplo, para un gráfico `~.Axes.scatter`, el borde de los marcadores puede ser de diferentes colores que el interior:"
+msgstr "Matplotlib tiene un arreglo muy flexible de colores que se aceptan para la mayoría de los Artists; ver el :doc:`tutorial de colores </tutorials/colors/colors>` para una lista de especificaciones. Algunos Artists tomarán múltiples colores. Por ejemplo, para un gráfico `~.Axes.scatter`, el borde de los marcadores puede ser de diferentes colores que el interior:"
 
 #: ../../tutorials/introductory/quick_start.rst:467
 msgid "Linewidths, linestyles, and markersizes"
@@ -202,7 +202,7 @@ msgstr "Los anchos de línea suelen estar en puntos tipográficos (1 pt = 1/72 p
 
 #: ../../tutorials/introductory/quick_start.rst:474
 msgid "Marker size depends on the method being used.  `~.Axes.plot` specifies markersize in points, and is generally the \"diameter\" or width of the marker.  `~.Axes.scatter` specifies markersize as approximately proportional to the visual area of the marker.  There is an array of markerstyles available as string codes (see :mod:`~.matplotlib.markers`), or users can define their own `~.MarkerStyle` (see :doc:`/gallery/lines_bars_and_markers/marker_reference`):"
-msgstr "El tamaño del marcador depende del método que se utilice.  `~.Axes.plot` especifica el tamaño del marcador en puntos, y es generalmente el \"diámetro\" o la anchura del marcador. `~.Axes.scatter` especifica el tamaño del marcador como aproximadamente proporcional al área visual del marcador.  Hay una serie de estilos de marcador disponibles como códigos de cadena (véase :mod:`~.matplotlib.markers`), o los usuarios pueden definir su propio `~.MarkerStyle` (ver :doc:`/gallery/lines_bars_and_markers/marker_reference`):"
+msgstr "El tamaño del marcador depende del método que se utilice.  `~.Axes.plot` especifica el tamaño del marcador en puntos, y es generalmente el \"diámetro\" o la anchura del marcador. `~.Axes.scatter` especifica el tamaño del marcador como aproximadamente proporcional al área visual del marcador.  Hay una serie de estilos de marcador disponibles como códigos de cadena (ver :mod:`~.matplotlib.markers`), o los usuarios pueden definir su propio `~.MarkerStyle` (ver :doc:`/gallery/lines_bars_and_markers/marker_reference`):"
 
 #: ../../tutorials/introductory/quick_start.rst:517
 msgid "Labelling plots"
@@ -234,7 +234,7 @@ msgstr "Matplotlib acepta expresiones de ecuaciones TeX en cualquier expresión 
 
 #: ../../tutorials/introductory/quick_start.rst:577
 msgid "where the ``r`` preceding the title string signifies that the string is a *raw* string and not to treat backslashes as python escapes. Matplotlib has a built-in TeX expression parser and layout engine, and ships its own math fonts – for details see :doc:`/tutorials/text/mathtext`.  You can also use LaTeX directly to format your text and incorporate the output directly into your display figures or saved postscript – see :doc:`/tutorials/text/usetex`."
-msgstr "donde la ``r`` que precede a la cadena del título significa que la cadena es una cadena *raw* y que no debe tratar las barras invertidas como escapes de python. Matplotlib tiene un analizador de expresiones TeX y un motor de diseño incorporados, y envía sus propias fuentes matemáticas - para más detalles vea :doc:`/tutorials/text/mathtext`.  También puede utilizar LaTeX directamente para formatear su texto e incorporar la salida directamente en sus figuras de visualización o postscript guardado - ver :doc:`/tutorials/text/usetex`."
+msgstr "donde la ``r`` que precede a la cadena del título significa que la cadena es una cadena *raw* y que no debe tratar las barras invertidas como escapes de python. Matplotlib tiene un analizador de expresiones TeX y un motor de diseño incorporados, y envía sus propias fuentes matemáticas - para más detalles ver :doc:`/tutorials/text/mathtext`.  También puedes utilizar LaTeX directamente para formatear su texto e incorporar la salida directamente en sus figuras de visualización o postscript guardado - ver :doc:`/tutorials/text/usetex`."
 
 #: ../../tutorials/introductory/quick_start.rst:586
 msgid "Annotations"
@@ -266,7 +266,7 @@ msgstr "Escalas y ticks de los ejes"
 
 #: ../../tutorials/introductory/quick_start.rst:680
 msgid "Each Axes has two (or three) `~.axis.Axis` objects representing the x- and y-axis. These control the *scale* of the Axis, the tick *locators* and the tick *formatters*. Additional Axes can be attached to display further Axis objects."
-msgstr "Cada Eje tiene dos (o tres) objetos `~.axis.Axis` que representan los ejes x e y. Éstos controlan la *escala* del Eje, los *localizadores* de ticks y los *formatos* de ticks. Se pueden adjuntar ejes adicionales para mostrar más objetos Axis."
+msgstr "Cada Eje tiene dos (o tres) objetos `~.axis.Axis` que representan los ejes x e y. Éstos controlan la *escala* del Eje, los *localizadores* de ticks y los *formateadores* de ticks. Se pueden adjuntar ejes adicionales para mostrar más objetos Axis."
 
 #: ../../tutorials/introductory/quick_start.rst:686
 msgid "Scales"
@@ -318,7 +318,7 @@ msgstr "Objetos adicionales del eje"
 
 #: ../../tutorials/introductory/quick_start.rst:865
 msgid "Plotting data of different magnitude in one chart may require an additional y-axis. Such an Axis can be created by using `~.Axes.twinx` to add a new Axes with an invisible x-axis and a y-axis positioned at the right (analogously for `~.Axes.twiny`). See :doc:`/gallery/subplots_axes_and_figures/two_scales` for another example."
-msgstr "El trazado de datos de diferente magnitud en un gráfico puede requerir un eje y adicional. Dicho eje puede crearse utilizando `~.Axes.twinx` para añadir un nuevo eje con un eje x invisible y un eje y posicionado a la derecha (análogamente para `~.Axes.twiny`). Ver :doc:`/gallery/subplots_axes_and_figures/two_scales` para otro ejemplo."
+msgstr "El graficado de datos de diferente magnitud en un gráfico puede requerir un eje y adicional. Dicho eje puede crearse utilizando `~.Axes.twinx` para añadir un nuevo eje con un eje x invisible y un eje y posicionado a la derecha (análogamente para `~.Axes.twiny`). Ver :doc:`/gallery/subplots_axes_and_figures/two_scales` para otro ejemplo."
 
 #: ../../tutorials/introductory/quick_start.rst:871
 msgid "Similarly, you can add a `~.Axes.secondary_xaxis` or `~.Axes.secondary_yaxis` having a different scale than the main Axis to represent the data in different scales or units. See :doc:`/gallery/subplots_axes_and_figures/secondary_axis` for further examples."
@@ -354,7 +354,7 @@ msgstr "Barras de colores"
 
 #: ../../tutorials/introductory/quick_start.rst:991
 msgid "Adding a `~.Figure.colorbar` gives a key to relate the color back to the underlying data. Colorbars are figure-level Artists, and are attached to a ScalarMappable (where they get their information about the norm and colormap) and usually steal space from a parent Axes.  Placement of colorbars can be complex: see :doc:`/gallery/subplots_axes_and_figures/colorbar_placement` for details.  You can also change the appearance of colorbars with the *extend* keyword to add arrows to the ends, and *shrink* and *aspect* to control the size.  Finally, the colorbar will have default locators and formatters appropriate to the norm.  These can be changed as for other Axis objects."
-msgstr "Añadir un `~.Figure.colorbar` da una clave para relacionar el color con los datos subyacentes. Las barras de color son Artists a nivel de figura, y se adjuntan a un ScalarMappable (de donde obtienen su información sobre la norma y el mapa de color) y normalmente roban espacio de un Eje padre.  La colocación de las barras de color puede ser compleja: ver :doc:`/gallery/subplots_axes_and_figures/colorbar_placement` para más detalles.  También puede cambiar la apariencia de las barras de color con la palabra clave *extend* para añadir flechas a los extremos, y *shrink* y *aspect* para controlar el tamaño.  Por último, la barra de colores tendrá localizadores y formateadores por defecto adecuados a la norma.  Estos pueden ser cambiados como para otros objetos Eje."
+msgstr "Añadir un `~.Figure.colorbar` da una clave para relacionar el color con los datos subyacentes. Las barras de color son Artists a nivel de figura, y se adjuntan a un ScalarMappable (de donde obtienen su información sobre la norma y el mapa de color) y normalmente roban espacio de un Eje padre.  La colocación de las barras de color puede ser compleja: ver :doc:`/gallery/subplots_axes_and_figures/colorbar_placement` para más detalles.  También puedes cambiar la apariencia de las barras de color con la palabra clave *extend* para añadir flechas a los extremos, y *shrink* y *aspect* para controlar el tamaño.  Por último, la barra de colores tendrá localizadores y formateadores por defecto adecuados a la norma.  Estos pueden ser cambiados como para otros objetos Eje."
 
 #: ../../tutorials/introductory/quick_start.rst:1005
 msgid "Working with multiple Figures and Axes"

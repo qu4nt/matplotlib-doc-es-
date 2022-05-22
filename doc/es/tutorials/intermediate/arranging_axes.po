@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-22 01:06\n"
+"PO-Revision-Date: 2022-05-22 11:01\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -197,67 +197,67 @@ msgstr "También es posible anidar ejes usando `~.pyplot.subplot_mosaic` utiliza
 
 #: ../../tutorials/intermediate/arranging_axes.rst:396
 msgid "Low-level and advanced grid methods"
-msgstr ""
+msgstr "Métodos de cuadrícula de bajo nivel y avanzados"
 
 #: ../../tutorials/intermediate/arranging_axes.rst:398
 msgid "Internally, the arrangement of a grid of Axes is controlled by creating instances of `~.GridSpec` and `~.SubplotSpec`. *GridSpec* defines a (possibly non-uniform) grid of cells. Indexing into the *GridSpec* returns a SubplotSpec that covers one or more grid cells, and can be used to specify the location of an Axes."
-msgstr ""
+msgstr "Internamente, la disposición de una cuadrícula de Ejes se controla creando instancias de `~.GridSpec` y `~.SubplotSpec`. *GridSpec* define una cuadrícula (posiblemente no uniforme) de celdas. La indexación en el *GridSpec* devuelve un SubplotSpec que cubre una o más celdas de la cuadrícula, y puede utilizarse para especificar la ubicación de un Eje."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:404
 msgid "The following examples show how to use low-level methods to arrange Axes using *GridSpec* objects."
-msgstr ""
+msgstr "Los siguientes ejemplos muestran cómo utilizar métodos de bajo nivel para ordenar los Ejes utilizando objetos *GridSpec*."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:410
 msgid "We can accopmplish a 2x2 grid in the same manner as ``plt.subplots(2, 2)``:"
-msgstr ""
+msgstr "Podemos acceder a una Cuadrícula de 2x2 de la misma manera que ``plt.subplots(2, 2)``:"
 
 #: ../../tutorials/intermediate/arranging_axes.rst:458
 msgid "Axes spanning rows or grids in a grid"
-msgstr ""
+msgstr "Ejes que abarcan filas o cuadrículas en una cuadrícula"
 
 #: ../../tutorials/intermediate/arranging_axes.rst:460
 msgid "We can index the *spec* array using `NumPy slice syntax <https://numpy.org/doc/stable/reference/arrays.indexing.html>`_ and the new Axes will span the slice.  This would be the same as ``fig, axd = plt.subplot_mosaic([['ax0', 'ax0'], ['ax1', 'ax2']], ...)``:"
-msgstr ""
+msgstr "Podemos indexar el arreglo *spec* usando `NumPy slice syntax <https://numpy.org/doc/stable/reference/arrays.indexing.html>`_ y los nuevos Axes abarcarán el slice.  Esto sería lo mismo que ``fig, axd = plt.subplot_mosaic(['ax0', 'ax0'], ['ax1', 'ax2'], ...)``:"
 
 #: ../../tutorials/intermediate/arranging_axes.rst:507
 msgid "Manual adjustments to a *GridSpec* layout"
-msgstr ""
+msgstr "Ajustes manuales a un diseño *GridSpec*"
 
 #: ../../tutorials/intermediate/arranging_axes.rst:509
 msgid "When a  *GridSpec* is explicitly used, you can adjust the layout parameters of subplots that are created from the  *GridSpec*.  Note this option is not compatible with ``constrained_layout`` or `.Figure.tight_layout` which both ignore *left* and *right* and adjust subplot sizes to fill the figure.  Usually such manual placement requires iterations to make the Axes tick labels not overlap the Axes."
-msgstr ""
+msgstr "Cuando se utiliza explícitamente un *GridSpec*, puede ajustar los parámetros de disposición de los subplots que se crean a partir del *GridSpec*.  Ten en cuenta que esta opción no es compatible con ``constrained_layout`` o `.Figure.tight_layout` que ignoran *left* y *right* y ajustan el tamaño de las subtramas para llenar la figura.  Normalmente esta colocación manual requiere iteraciones para que las etiquetas de los ejes no se superpongan a los ejes."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:516
 msgid "These spacing parameters can also be passed to `~.pyplot.subplots` and `~.pyplot.subplot_mosaic` as the *gridspec_kw* argument."
-msgstr ""
+msgstr "Estos parámetros de espaciado también pueden pasarse a `~.pyplot.subplots` y `~.pyplot.subplot_mosaic` como argumento *gridspec_kw*."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:558
 msgid "Nested layouts with SubplotSpec"
-msgstr ""
+msgstr "Diseños anidados con SubplotSpec"
 
 #: ../../tutorials/intermediate/arranging_axes.rst:560
 msgid "You can create nested layout similar to `~.Figure.subfigures` using `~.gridspec.SubplotSpec.subgridspec`.  Here the Axes spines *are* aligned."
-msgstr ""
+msgstr "Puedes crear un diseño anidado similar a `~.Figure.subfigures` usando `~.gridspec.SubplotSpec.subgridspec`.  Aquí las espinas de los ejes *están* alineadas."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:564
 msgid "Note this is also available from the more verbose `.gridspec.GridSpecFromSubplotSpec`."
-msgstr ""
+msgstr "Ten en cuenta que esto también está disponible en forma más detallada desde el `.gridspec.GridSpecFromSubplotSpec`."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:614
 msgid "Here's a more sophisticated example of nested *GridSpec*: We create an outer 4x4 grid with each cell containing an inner 3x3 grid of Axes. We outline the outer 4x4 grid by hiding appropriate spines in each of the inner 3x3 grids."
-msgstr ""
+msgstr "Aquí tenemos un ejemplo más sofisticado de *GridSpec* anidado: Creamos una Cuadrícula exterior de 4x4 con cada celda que contiene una cuadrícula interior de 3x3 de Ejes. Contorneamos la Cuadrícula 4x4 exterior ocultando las espinas apropiadas en cada una de las cuadrículas 3x3 interiores."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:665
 msgid "More reading"
-msgstr ""
+msgstr "Más lectura"
 
 #: ../../tutorials/intermediate/arranging_axes.rst:667
 msgid "More details about :doc:`subplot mosaic </tutorials/provisional/mosaic>`."
-msgstr ""
+msgstr "Más detalles sobre :doc:`subplot mosaico </tutorials/provisional/mosaic>`."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:668
 msgid "More details about :doc:`constrained layout </tutorials/intermediate/constrainedlayout_guide>`, used to align spacing in most of these examples."
-msgstr ""
+msgstr "Más detalles sobre :doc:`disposición restringida </tutorials/intermediate/constrainedlayout_guide>`, utilizada para alinear el espaciado en la mayoría de estos ejemplos."
 
 #: ../../tutorials/intermediate/arranging_axes.rst:672
 msgid "References"

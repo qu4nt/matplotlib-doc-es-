@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-22 00:03\n"
+"PO-Revision-Date: 2022-05-22 12:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,72 +20,72 @@ msgstr ""
 
 #: ../../tutorials/intermediate/artists.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_intermediate_artists.py>` to download the full example code"
-msgstr ""
+msgstr "Has clic en :ref:`aquí <sphx_glr_download_tutorials_intermediate_artists.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/intermediate/artists.rst:23
 msgid "Artist tutorial"
-msgstr ""
+msgstr "Tutorial de artistas"
 
 #: ../../tutorials/intermediate/artists.rst:25
 msgid "Using Artist objects to render on the canvas."
-msgstr ""
+msgstr "Usando objetos Artist para renderizar en el lienzo."
 
 #: ../../tutorials/intermediate/artists.rst:27
 msgid "There are three layers to the Matplotlib API."
-msgstr ""
+msgstr "Hay tres capas en la API de Matplotlib."
 
 #: ../../tutorials/intermediate/artists.rst:29
 msgid "the :class:`matplotlib.backend_bases.FigureCanvas` is the area onto which the figure is drawn"
-msgstr ""
+msgstr "la :clase:`matplotlib.backend_bases.FigureCanvas` es el área sobre la que se dibuja la figura"
 
 #: ../../tutorials/intermediate/artists.rst:31
 msgid "the :class:`matplotlib.backend_bases.Renderer` is the object which knows how to draw on the :class:`~matplotlib.backend_bases.FigureCanvas`"
-msgstr ""
+msgstr "la :class:`matplotlib.backend_bases.Renderer` es el objeto que sabe cómo dibujar en el :class:`~matplotlib.backend_bases.FigureCanvas`"
 
 #: ../../tutorials/intermediate/artists.rst:33
 msgid "and the :class:`matplotlib.artist.Artist` is the object that knows how to use a renderer to paint onto the canvas."
-msgstr ""
+msgstr "y el :class:`matplotlib.artist.Artist` es el objeto que sabe utilizar un renderizador para pintar en el lienzo."
 
 #: ../../tutorials/intermediate/artists.rst:36
 #, python-format
 msgid "The :class:`~matplotlib.backend_bases.FigureCanvas` and :class:`~matplotlib.backend_bases.Renderer` handle all the details of talking to user interface toolkits like `wxPython <https://www.wxpython.org>`_ or drawing languages like PostScript®, and the ``Artist`` handles all the high level constructs like representing and laying out the figure, text, and lines.  The typical user will spend 95% of their time working with the ``Artists``."
-msgstr ""
+msgstr "La :class:`~matplotlib.backend_bases.FigureCanvas` y la :class:`~matplotlib.backend_bases.Renderer` se encargan de todos los detalles de comunicarse con kits de herramientas de interfaz de usuario como `wxPython <https://www.wxpython.org>`_ o lenguajes de dibujo como PostScript®, y el ``Artist`` se encarga de todas las construcciones de alto nivel como la representación y la disposición de la figura, el texto y las líneas.  El usuario típico pasará el 95% de su tiempo trabajando con los ``Artists``."
 
 #: ../../tutorials/intermediate/artists.rst:44
 msgid "There are two types of ``Artists``: primitives and containers.  The primitives represent the standard graphical objects we want to paint onto our canvas: :class:`~matplotlib.lines.Line2D`, :class:`~matplotlib.patches.Rectangle`, :class:`~matplotlib.text.Text`, :class:`~matplotlib.image.AxesImage`, etc., and the containers are places to put them (:class:`~matplotlib.axis.Axis`, :class:`~matplotlib.axes.Axes` and :class:`~matplotlib.figure.Figure`).  The standard use is to create a :class:`~matplotlib.figure.Figure` instance, use the ``Figure`` to create one or more :class:`~matplotlib.axes.Axes` or :class:`~matplotlib.axes.Subplot` instances, and use the ``Axes`` instance helper methods to create the primitives.  In the example below, we create a ``Figure`` instance using :func:`matplotlib.pyplot.figure`, which is a convenience method for instantiating ``Figure`` instances and connecting them with your user interface or drawing toolkit ``FigureCanvas``.  As we will discuss below, this is not necessary -- you can work directly with PostScript, PDF Gtk+, or wxPython ``FigureCanvas`` instances, instantiate your ``Figures`` directly and connect them yourselves -- but since we are focusing here on the ``Artist`` API we'll let :mod:`~matplotlib.pyplot` handle some of those details for us::"
-msgstr ""
+msgstr "Hay dos tipos de ``Artists``: las primitivas y los contenedores.  Las primitivas representan los objetos gráficos estándar que queremos pintar en nuestro lienzo: :class:`~matplotlib.lines.Line2D`, :class:`~matplotlib.patches.Rectangle`, :class:`~matplotlib.text.Text`, :class:`~matplotlib.image.AxesImage`, etc., y los contenedores son lugares para ponerlos (:class:`~matplotlib.axis.Axis`, :class:`~matplotlib.axes.Axes` y :class:`~matplotlib.figure.Figure`).  El modo estándar de utilizarlos es creando una instancia de :class:`~matplotlib.figure.Figure`, usando la ``Figure`` para crear una o más instancias de :class:`~matplotlib.axes.Axes` o :class:`~matplotlib.axes.Subplot`, y usar los métodos de ayuda de la instancia ``Axes`` para crear las primitivas.  En el siguiente ejemplo, creamos una instancia de ``Figure`` utilizando :func:`matplotlib.pyplot.figure`, que es un método conveniente para crear instancias de ``Figure`` y conectarlas con tu interfaz de usuario o con el ``FigureCanvas`` del kit de herramientas de dibujo.  Como discutiremos más adelante, esto no es necesario -- puedes trabajar directamente con instancias PostScript, PDF Gtk+, o wxPython ``FigureCanvas``, instanciar tus ``Figuras`` directamente y conectarlas tú mismo -- pero como nos estamos centrando aquí en la API ``Artist`` dejaremos que :mod:`~matplotlib.pyplot` se encargue de algunos de esos detalles por nosotros::"
 
 #: ../../tutorials/intermediate/artists.rst:67
 msgid "The :class:`~matplotlib.axes.Axes` is probably the most important class in the Matplotlib API, and the one you will be working with most of the time.  This is because the ``Axes`` is the plotting area into which most of the objects go, and the ``Axes`` has many special helper methods (:meth:`~matplotlib.axes.Axes.plot`, :meth:`~matplotlib.axes.Axes.text`, :meth:`~matplotlib.axes.Axes.hist`, :meth:`~matplotlib.axes.Axes.imshow`) to create the most common graphics primitives (:class:`~matplotlib.lines.Line2D`, :class:`~matplotlib.text.Text`, :class:`~matplotlib.patches.Rectangle`, :class:`~matplotlib.image.AxesImage`, respectively).  These helper methods will take your data (e.g., ``numpy`` arrays and strings) and create primitive ``Artist`` instances as needed (e.g., ``Line2D``), add them to the relevant containers, and draw them when requested.  Most of you are probably familiar with the :class:`~matplotlib.axes.Subplot`, which is just a special case of an ``Axes`` that lives on a regular rows by columns grid of ``Subplot`` instances.  If you want to create an ``Axes`` at an arbitrary location, simply use the :meth:`~matplotlib.figure.Figure.add_axes` method which takes a list of ``[left, bottom, width, height]`` values in 0-1 relative figure coordinates::"
-msgstr ""
+msgstr "La clase :`~matplotlib.axes.Axes` es probablemente la clase más importante de la API de Matplotlib, y con la que trabajarás la mayor parte del tiempo.  Esto se debe a que el ``Axes`` es el área de trazado en la que van la mayoría de los objetos, y el ``Axes`` tiene muchos métodos especiales de ayuda (:meth:`~matplotlib.axes.Axes.plot`, :meth:`~matplotlib.axes.Axes.text`, :meth:`~matplotlib.axes.Axes. hist`, :meth:`~matplotlib.axes.Axes.imshow`) para crear las primitivas gráficas más comunes (:class:`~matplotlib.lines.Line2D`, :class:`~matplotlib.text.Text`, :class:`~matplotlib.patches.Rectangle`, :class:`~matplotlib.image.AxesImage`, respectivamente).  Estos métodos de ayuda tomarán tus datos (por ejemplo, arreglos ``numpy`` y cadenas) y crearán instancias primitivas de ``Artista`` según sea necesario (por ejemplo, ``Line2D``), las añadirán a los contenedores pertinentes y las dibujarán cuando se les solicite.  La mayoría de ustedes probablemente estén familiarizados con la :clase:`~matplotlib.axes.Subplot``, que no es más que un caso especial de un ``Axes`` que vive en una Cuadrícula regular de filas por columnas de instancias ``Subplot``.  Si quieres crear un ``Axes`` en una ubicación arbitraria, simplemente utiliza el método :meth:`~matplotlib.figure.Figure.add_axes` que toma una lista de valores ``[izquierda, fondo, ancho, alto]`` en coordenadas relativas de la figura 0-1::"
 
 #: ../../tutorials/intermediate/artists.rst:93
 msgid "Continuing with our example::"
-msgstr ""
+msgstr "Continuando con nuestro ejemplo::"
 
 #: ../../tutorials/intermediate/artists.rst:100
 msgid "In this example, ``ax`` is the ``Axes`` instance created by the ``fig.add_subplot`` call above (remember ``Subplot`` is just a subclass of ``Axes``) and when you call ``ax.plot``, it creates a ``Line2D`` instance and adds it to the :attr:`Axes.lines <matplotlib.axes.Axes.lines>` list.  In the interactive `IPython <https://ipython.org/>`_ session below, you can see that the ``Axes.lines`` list is length one and contains the same line that was returned by the ``line, = ax.plot...`` call:"
-msgstr ""
+msgstr "En este ejemplo, ``ax`` es la instancia de ``Axes`` creada por la llamada ``fig.add_subplot`` de arriba (recuerda que ``Subplot`` es sólo una subclase de ``Axes``) y cuando llamas a ``ax.plot``, crea una instancia de ``Line2D`` y la añade a la lista :attr:`Axes.lines <matplotlib.axes.Axes.lines>`.  En la sesión interactiva `IPython <https://ipython.org/>`_ que se muestra a continuación, se puede ver que la lista ``Axes.lines`` es de longitud uno y contiene la misma línea que fue devuelta por la llamada ``line, = ax.plot...``:"
 
 #: ../../tutorials/intermediate/artists.rst:117
 msgid "If you make subsequent calls to ``ax.plot`` (and the hold state is \"on\" which is the default) then additional lines will be added to the list. You can remove lines later simply by calling the list methods; either of these will work::"
-msgstr ""
+msgstr "Si haces llamadas posteriores a ``ax.plot`` (y el estado de hold es \"on\" que es el predeterminado) entonces se añadirán líneas adicionales a la lista. Puedes eliminar líneas más tarde simplemente llamando a los métodos de la lista; cualquiera de estos funcionará::"
 
 #: ../../tutorials/intermediate/artists.rst:125
 msgid "The Axes also has helper methods to configure and decorate the x-axis and y-axis tick, tick labels and axis labels::"
-msgstr ""
+msgstr "Los ejes también tienen métodos de ayuda para configurar y decorar el tick del eje x y del eje y, las etiquetas del tick y las etiquetas del eje::"
 
 #: ../../tutorials/intermediate/artists.rst:131
 msgid "When you call :meth:`ax.set_xlabel <matplotlib.axes.Axes.set_xlabel>`, it passes the information on the :class:`~matplotlib.text.Text` instance of the :class:`~matplotlib.axis.XAxis`.  Each ``Axes`` instance contains an :class:`~matplotlib.axis.XAxis` and a :class:`~matplotlib.axis.YAxis` instance, which handle the layout and drawing of the ticks, tick labels and axis labels."
-msgstr ""
+msgstr "Cuando llamas a :meth:`ax.set_xlabel <matplotlib.axes.Axes.set_xlabel>`, pasa la información de la instancia :class:`~matplotlib.text.Text` del :class:`~matplotlib.axis.XAxis`. Cada instancia de ``Axes`` contiene una instancia :class:`~matplotlib.axis.XAxis` y una instancia :class:`~matplotlib.axis.YAxis`, que se encargan de la disposición y el dibujo de los ticks, las etiquetas de los ticks y las etiquetas de los ejes."
 
 #: ../../tutorials/intermediate/artists.rst:138
 msgid "Try creating the figure below."
-msgstr ""
+msgstr "Intenta crear la siguiente figura."
 
 #: ../../tutorials/intermediate/artists.rst:185
 msgid "Customizing your objects"
-msgstr ""
+msgstr "Personalizar sus objetos"
 
 #: ../../tutorials/intermediate/artists.rst:187
 msgid "Every element in the figure is represented by a Matplotlib :class:`~matplotlib.artist.Artist`, and each has an extensive list of properties to configure its appearance.  The figure itself contains a :class:`~matplotlib.patches.Rectangle` exactly the size of the figure, which you can use to set the background color and transparency of the figures.  Likewise, each :class:`~matplotlib.axes.Axes` bounding box (the standard white box with black edges in the typical Matplotlib plot, has a ``Rectangle`` instance that determines the color, transparency, and other properties of the Axes.  These instances are stored as member variables :attr:`Figure.patch <matplotlib.figure.Figure.patch>` and :attr:`Axes.patch <matplotlib.axes.Axes.patch>` (\"Patch\" is a name inherited from MATLAB, and is a 2D \"patch\" of color on the figure, e.g., rectangles, circles and polygons).  Every Matplotlib ``Artist`` has the following properties"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-22 00:03\n"
+"PO-Revision-Date: 2022-05-23 03:41\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,71 +20,71 @@ msgstr ""
 
 #: ../../tutorials/intermediate/legend_guide.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_intermediate_legend_guide.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_intermediate_legend_guide.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/intermediate/legend_guide.rst:23
 msgid "Legend guide"
-msgstr ""
+msgstr "Guía de leyendas"
 
 #: ../../tutorials/intermediate/legend_guide.rst:25
 msgid "Generating legends flexibly in Matplotlib."
-msgstr ""
+msgstr "Generación de leyendas de forma flexible en Matplotlib."
 
 #: ../../tutorials/intermediate/legend_guide.rst:29
 msgid "This legend guide is an extension of the documentation available at :func:`~matplotlib.pyplot.legend` - please ensure you are familiar with contents of that documentation before proceeding with this guide."
-msgstr ""
+msgstr "Esta guía de leyendas es una extensión de la documentación disponible en :func:`~matplotlib.pyplot.legend` - por favor, asegúrate de que te es familiar el contenido de esa documentación antes de continuar con esta guía."
 
 #: ../../tutorials/intermediate/legend_guide.rst:34
 msgid "This guide makes use of some common terms, which are documented here for clarity:"
-msgstr ""
+msgstr "Esta guía hace uso de algunos términos comunes, que se documentan aquí para mayor claridad:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:38
 msgid "legend entry"
-msgstr ""
+msgstr "entrada de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:40
 msgid "A legend is made up of one or more legend entries. An entry is made up of exactly one key and one label."
-msgstr ""
+msgstr "Una leyenda se compone de una o más entradas de leyenda. Una entrada se compone exactamente de una clave y una etiqueta."
 
 #: ../../tutorials/intermediate/legend_guide.rst:42
 msgid "legend key"
-msgstr ""
+msgstr "clave de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:44
 msgid "The colored/patterned marker to the left of each legend label."
-msgstr ""
+msgstr "El marcador de color/patrón a la izquierda de cada etiqueta de leyenda."
 
 #: ../../tutorials/intermediate/legend_guide.rst:45
 msgid "legend label"
-msgstr ""
+msgstr "etiqueta de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:47
 msgid "The text which describes the handle represented by the key."
-msgstr ""
+msgstr "El texto que describe el mango representado por la llave."
 
 #: ../../tutorials/intermediate/legend_guide.rst:48
 msgid "legend handle"
-msgstr ""
+msgstr "manejo de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:50
 msgid "The original object which is used to generate an appropriate entry in the legend."
-msgstr ""
+msgstr "El objeto original que se utiliza para generar una entrada apropiada en la leyenda."
 
 #: ../../tutorials/intermediate/legend_guide.rst:55
 msgid "Controlling the legend entries"
-msgstr ""
+msgstr "Control de las entradas de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:57
 msgid "Calling :func:`legend` with no arguments automatically fetches the legend handles and their associated labels. This functionality is equivalent to::"
-msgstr ""
+msgstr "Al llamar a :func:`legend` sin argumentos se obtienen automáticamente los manejadores de la leyenda y sus etiquetas asociadas. Esta funcionalidad es equivalente a::"
 
 #: ../../tutorials/intermediate/legend_guide.rst:63
 msgid "The :meth:`~matplotlib.axes.Axes.get_legend_handles_labels` function returns a list of handles/artists which exist on the Axes which can be used to generate entries for the resulting legend - it is worth noting however that not all artists can be added to a legend, at which point a \"proxy\" will have to be created (see :ref:`proxy_legend_handles` for further details)."
-msgstr ""
+msgstr "La función :meth:`~matplotlib.axes.Axes.get_legend_handles_labels` devuelve una lista de handles/artistas que existen en los Ejes y que pueden ser utilizados para generar entradas para la leyenda resultante - vale la pena señalar, sin embargo, que no todos los artists pueden ser añadidos a una leyenda, en cuyo caso habrá que crear un \"proxy\" (ver :ref:`proxy_legend_handles` para más detalles)."
 
 #: ../../tutorials/intermediate/legend_guide.rst:69
 msgid "Those artists with an empty string as label or with a label starting with \"_\" will be ignored."
-msgstr ""
+msgstr "Aquellos artistas con una cadena vacía como etiqueta o con una etiqueta que empiece por \"_\" serán ignorados."
 
 #: ../../tutorials/intermediate/legend_guide.rst:72
 msgid "For full control of what is being added to the legend, it is common to pass the appropriate handles directly to :func:`legend`::"
@@ -175,7 +175,7 @@ msgstr ""
 #: ../../tutorials/intermediate/legend_guide.rst:445
 #: ../../tutorials/intermediate/legend_guide.rst:506
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:319
 msgid "As you can see, \"Line 1\" now has 4 marker points, where \"Line 2\" has 2 (the default). Try the above code, only change the map's key from ``line1`` to ``type(line1)``. Notice how now both `.Line2D` instances get 4 markers."
@@ -195,19 +195,19 @@ msgstr ""
 
 #: ../../tutorials/intermediate/legend_guide.rst:401
 msgid "A custom handler can be implemented to turn any handle into a legend key (handles don't necessarily need to be matplotlib artists).  The handler must implement a ``legend_artist`` method which returns a single artist for the legend to use. The required signature for ``legend_artist`` is documented at `~.legend_handler.HandlerBase.legend_artist`."
-msgstr ""
+msgstr "Se puede implementar un manejador personalizado para convertir cualquier manejador en una clave de leyenda (los manejadores no tienen que ser necesariamente artistas de matplotlib).  El manejador debe implementar un método ``legend_artist`` que devuelva un único artista para que la leyenda lo utilice. La firma requerida para ``legend_artist`` está documentada en `~.legend_handler.HandlerBase.legend_artist`."
 
 #: ../../tutorials/intermediate/legend_guide.rst:456
 msgid "Alternatively, had we wanted to globally accept ``AnyObject`` instances without needing to manually set the *handler_map* keyword all the time, we could have registered the new handler with::"
-msgstr ""
+msgstr "Alternativamente, si hubiéramos querido aceptar globalmente instancias de ``AnyObject`` sin necesidad de establecer manualmente la palabra clave *handler_map* todo el tiempo, podríamos haber registrado el nuevo manejador con::"
 
 #: ../../tutorials/intermediate/legend_guide.rst:463
 msgid "Whilst the power here is clear, remember that there are already many handlers implemented and what you want to achieve may already be easily possible with existing classes. For example, to produce elliptical legend keys, rather than rectangular ones:"
-msgstr ""
+msgstr "Aunque el poder aquí es claro, recuerda que ya hay muchos manejadores implementados y lo que quieres lograr ya puede ser fácilmente posible con las clases existentes. Por ejemplo, para producir claves de leyenda elípticas, en lugar de rectangulares:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:518
 msgid "**Total running time of the script:** ( 0 minutes  3.237 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 3.237 segundos)"
 
 #: ../../tutorials/intermediate/legend_guide.rst:533
 msgid ":download:`Download Python source code: legend_guide.py <legend_guide.py>`"
@@ -219,5 +219,5 @@ msgstr ":download:`Descargar Jupyter notebook: legend_guide.ipynb <legend_guide.
 
 #: ../../tutorials/intermediate/legend_guide.rst:546
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-22 00:04\n"
+"PO-Revision-Date: 2022-05-24 23:35\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,24 +20,24 @@ msgstr ""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_advanced_transforms_tutorial.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_advanced_transforms_tutorial.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:23
 msgid "Transformations Tutorial"
-msgstr ""
+msgstr "Tutorial de transformaciones"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:25
 #, python-format
 msgid "Like any graphics packages, Matplotlib is built on top of a transformation framework to easily move between coordinate systems, the userland *data* coordinate system, the *axes* coordinate system, the *figure* coordinate system, and the *display* coordinate system. In 95% of your plotting, you won't need to think about this, as it happens under the hood, but as you push the limits of custom figure generation, it helps to have an understanding of these objects so you can reuse the existing transformations Matplotlib makes available to you, or create your own (see :mod:`matplotlib.transforms`).  The table below summarizes the some useful coordinate systems, the transformation object you should use to work in that coordinate system, and the description of that system. In the ``Transformation Object`` column, ``ax`` is a :class:`~matplotlib.axes.Axes` instance, and ``fig`` is a :class:`~matplotlib.figure.Figure` instance."
-msgstr ""
+msgstr "Como cualquier paquete gráfico, Matplotlib está construido sobre un framework de transformación para moverse fácilmente entre sistemas de coordenadas, el sistema de coordenadas de *datos* del usuario, el sistema de coordenadas de *ejes*, el sistema de coordenadas de *figura* y el sistema de coordenadas de *visualización*. En el 95% de tus trazados, no necesitarás pensar en esto, ya que sucede tras bastidores, pero a medida que vas ampliando los límites de la generación de figuras personalizadas, ayuda a tener una comprensión de estos objetos para que puedas reutilizar las transformaciones existentes que Matplotlib pone a tu disposición, o crear las tuyas propias (ver :mod:`matplotlib.transforms`).  La siguiente tabla resume algunos sistemas de coordenadas útiles, el objeto de transformación que debes utilizar para trabajar en ese sistema de coordenadas, y la descripción de ese sistema. En la columna ``Objeto de transformación``, ``ax`` es una instancia de :class:`~matplotlib.axes.Axes`, y ``fig`` es una instancia de :class:`~matplotlib.figure.Figure`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:41
 msgid "Coordinates"
-msgstr ""
+msgstr "Coordenadas"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:41
 msgid "Transformation object"
-msgstr ""
+msgstr "Objeto de transformación"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:41
 msgid "Description"
@@ -53,7 +53,7 @@ msgstr "``ax.transData``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:43
 msgid "The coordinate system for the data, controlled by xlim and ylim."
-msgstr ""
+msgstr "El sistema de coordenadas para los datos, controlado por xlim e ylim."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:46
 msgid "\"axes\""
@@ -61,63 +61,63 @@ msgstr "\"ejes\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:46
 msgid "``ax.transAxes``"
-msgstr ""
+msgstr "``ax.transAxes``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:46
 msgid "The coordinate system of the `~matplotlib.axes.Axes`; (0, 0) is bottom left of the axes, and (1, 1) is top right of the axes."
-msgstr ""
+msgstr "El sistema de coordenadas del `~matplotlib.axes.Axes`; (0, 0) es la parte inferior izquierda de los ejes, y (1, 1) es la parte superior derecha de los ejes."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:51
 msgid "\"subfigure\""
-msgstr ""
+msgstr "\"subfigura\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:51
 msgid "``subfigure.transSubfigure``"
-msgstr ""
+msgstr "``subfigure.transSubfigure``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:51
 msgid "The coordinate system of the `.SubFigure`; (0, 0) is bottom left of the subfigure, and (1, 1) is top right of the subfigure.  If a figure has no subfigures, this is the same as ``transFigure``."
-msgstr ""
+msgstr "El sistema de coordenadas de la `.SubFigure`; (0, 0) es la parte inferior izquierda de la subfigura, y (1, 1) es la parte superior derecha de la subfigura. Si una figura no tiene subfiguras, es lo mismo que ``transFigure``."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:58
 msgid "\"figure\""
-msgstr ""
+msgstr "\"figura\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:58
 msgid "``fig.transFigure``"
-msgstr ""
+msgstr "``fig.transFigure``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:58
 msgid "The coordinate system of the `.Figure`; (0, 0) is bottom left of the figure, and (1, 1) is top right of the figure."
-msgstr ""
+msgstr "El sistema de coordenadas de la `.Figure`; (0, 0) es la parte inferior izquierda de la figura, y (1, 1) es la parte superior derecha de la figura."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:63
 msgid "\"figure-inches\""
-msgstr ""
+msgstr "\"figure-inches\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:63
 msgid "``fig.dpi_scale_trans``"
-msgstr ""
+msgstr "``fig.dpi_scale_trans``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:63
 msgid "The coordinate system of the `.Figure` in inches; (0, 0) is bottom left of the figure, and (width, height) is the top right of the figure in inches."
-msgstr ""
+msgstr "El sistema de coordenadas de la `.Figure` en pulgadas; (0, 0) es la parte inferior izquierda de la figura, y (ancho, alto) es la parte superior derecha de la figura en pulgadas."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:69
 msgid "\"display\""
-msgstr ""
+msgstr "\"display\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:69
 msgid "``None``, or ``IdentityTransform()``"
-msgstr ""
+msgstr "``None``, o ``IdentityTransform()``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:69
 msgid "The pixel coordinate system of the display window; (0, 0) is bottom left of the window, and (width, height) is top right of the display window in pixels."
-msgstr ""
+msgstr "El sistema de coordenadas de píxeles de la ventana de visualización; (0, 0) es la parte inferior izquierda de la ventana, y (ancho, alto) es la parte superior derecha de la ventana de visualización en píxeles."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:75
 msgid "\"xaxis\", \"yaxis\""
-msgstr ""
+msgstr "\"xaxis\", \"yaxis\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:75
 msgid "``ax.get_xaxis_transform()``, ``ax.get_yaxis_transform()``"
@@ -125,35 +125,35 @@ msgstr "``ax.get_xaxis_transform()``, ``ax.get_yaxis_transform()``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:75
 msgid "Blended coordinate systems; use data coordinates on one of the axis and axes coordinates on the other."
-msgstr ""
+msgstr "Sistemas de coordenadas combinados; utiliza coordenadas de datos en uno de los ejes y coordenadas de ejes en el otro."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:80
 msgid "All of the transformation objects in the table above take inputs in their coordinate system, and transform the input to the *display* coordinate system.  That is why the *display* coordinate system has ``None`` for the ``Transformation Object`` column -- it already is in *display* coordinates.  The transformations also know how to invert themselves, to go from *display* back to the native coordinate system. This is particularly useful when processing events from the user interface, which typically occur in display space, and you want to know where the mouse click or key-press occurred in your *data* coordinate system."
-msgstr ""
+msgstr "Todos los objetos de transformación de la tabla anterior toman entradas en su sistema de coordenadas, y transforman la entrada en el sistema de coordenadas *display*.  Por eso el sistema de coordenadas de *display* tiene ``None`` para la columna ``Transformation Object`` -- ya está en coordenadas de *display*.  Las transformaciones también saben cómo invertirse a sí mismas, para pasar de *display* al sistema de coordenadas nativo. Esto es particularmente útil cuando se procesan eventos de la interfaz de usuario, que típicamente ocurren en el espacio de visualización, y se quiere saber dónde ocurrió el clic del ratón o la pulsación de una tecla en el sistema de coordenadas de *datos*."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:91
 msgid "Note that specifying objects in *display* coordinates will change their location if the ``dpi`` of the figure changes.  This can cause confusion when printing or changing screen resolution, because the object can change location and size.  Therefore it is most common for artists placed in an axes or figure to have their transform set to something *other* than the `~.transforms.IdentityTransform()`; the default when an artist is placed on an axes using `~.axes.Axes.add_artist` is for the transform to be ``ax.transData``."
-msgstr ""
+msgstr "Tenga en cuenta que al especificar los objetos en coordenadas de *display* cambiará su ubicación si cambia el ``dpi`` de la figura.  Esto puede causar confusión al imprimir o cambiar la resolución de la pantalla, ya que el objeto puede cambiar de ubicación y tamaño.  Por lo tanto, es más común que los artistas colocados en un eje o figura tengan su transformación establecida a algo *distinto* de la `~.transforms.IdentityTransform()`; el valor por defecto cuando un artista se coloca en un eje usando `~.axes.Axes.add_artist` es que la transformación sea ``ax.transData``."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:103
 msgid "Data coordinates"
-msgstr ""
+msgstr "Coordenadas de datos"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:105
 msgid "Let's start with the most commonly used coordinate, the *data* coordinate system.  Whenever you add data to the axes, Matplotlib updates the datalimits, most commonly updated with the :meth:`~matplotlib.axes.Axes.set_xlim` and :meth:`~matplotlib.axes.Axes.set_ylim` methods.  For example, in the figure below, the data limits stretch from 0 to 10 on the x-axis, and -1 to 1 on the y-axis."
-msgstr ""
+msgstr "Empecemos por la coordenada más utilizada, el sistema de coordenadas *data*.  Cada vez que se añaden datos a los ejes, Matplotlib actualiza los límites de los datos, más comúnmente actualizados con los métodos :meth:`~matplotlib.axes.Axes.set_xlim` y :meth:`~matplotlib.axes.Axes.set_ylim`. Por ejemplo, en la figura siguiente, los límites de los datos se extienden de 0 a 10 en el eje x, y de -1 a 1 en el eje y."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:145
 msgid "You can use the ``ax.transData`` instance to transform from your *data* to your *display* coordinate system, either a single point or a sequence of points as shown below:"
-msgstr ""
+msgstr "Puedes usar la instancia ``ax.transData`` para transformar desde tus *datos* a tu sistema de coordenadas de *display*, ya sea un solo punto o una secuencia de puntos como se muestra a continuación:"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:162
 msgid "You can use the :meth:`~matplotlib.transforms.Transform.inverted` method to create a transform which will take you from *display* to *data* coordinates:"
-msgstr ""
+msgstr "Puedes utilizar el método :meth:`~matplotlib.transforms.Transform.inverted` para crear una transformación que te lleve de las coordenadas de *display* a las de *datos*:"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:176
 msgid "If your are typing along with this tutorial, the exact values of the *display* coordinates may differ if you have a different window size or dpi setting.  Likewise, in the figure below, the display labeled points are probably not the same as in the ipython session because the documentation figure size defaults are different."
-msgstr ""
+msgstr "Si está escribiendo a lo largo de este tutorial, los valores exactos de las coordenadas de *display* pueden diferir si tiene un tamaño de ventana o una configuración de dpi diferente.  Igualmente, en la figura de abajo, los puntos etiquetados de la pantalla probablemente no son los mismos que en la sesión de ipython porque los valores por defecto del tamaño de la figura de la documentación son diferentes."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:235
 msgid "If you run the source code in the example above in a GUI backend, you may also find that the two arrows for the *data* and *display* annotations do not point to exactly the same point.  This is because the display point was computed before the figure was displayed, and the GUI backend may slightly resize the figure when it is created. The effect is more pronounced if you resize the figure yourself. This is one good reason why you rarely want to work in *display* space, but you can connect to the ``'on_draw'`` :class:`~matplotlib.backend_bases.Event` to update *figure* coordinates on figure draws; see :ref:`event-handling-tutorial`."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-25 01:59\n"
+"PO-Revision-Date: 2022-05-25 03:07\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -193,91 +193,91 @@ msgstr "Trazado en coordenadas físicas"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:431
 msgid "Sometimes we want an object to be a certain physical size on the plot. Here we draw the same circle as above, but in physical coordinates.  If done interactively, you can see that changing the size of the figure does not change the offset of the circle from the lower-left corner, does not change its size, and the circle remains a circle regardless of the aspect ratio of the axes."
-msgstr ""
+msgstr "A veces queremos que un objeto tenga un determinado tamaño físico en el gráfico. Aquí dibujamos el mismo círculo que antes, pero en coordenadas físicas.  Si se hace de forma interactiva, se puede ver que al cambiar el tamaño de la figura no cambia el desplazamiento del círculo desde la esquina inferior izquierda, no cambia su tamaño, y el círculo sigue siendo un círculo independientemente de la relación de aspecto de los ejes."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:466
 msgid "If we change the figure size, the circle does not change its absolute position and is cropped."
-msgstr ""
+msgstr "Si cambiamos el tamaño de la figura, el círculo no cambia su posición absoluta y se recorta."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:497
 msgid "Another use is putting a patch with a set physical dimension around a data point on the axes.  Here we add together two transforms.  The first sets the scaling of how large the ellipse should be and the second sets its position.  The ellipse is then placed at the origin, and then we use the helper transform :class:`~matplotlib.transforms.ScaledTranslation` to move it to the right place in the ``ax.transData`` coordinate system. This helper is instantiated with::"
-msgstr ""
+msgstr "Otro uso es poner un parche con una dimensión física establecida alrededor de un punto de datos en los ejes. Aquí sumamos dos transformaciones. La primera establece la escala de lo grande que debe ser la elipse y la segunda establece su posición. La elipse se coloca entonces en el origen, y luego utilizamos el helper transform :class:`~matplotlib.transforms.ScaledTranslation` para moverla al lugar correcto en el sistema de coordenadas ``ax.transData``. Este helper se instanciará con::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:508
 msgid "where *xt* and *yt* are the translation offsets, and *scale_trans* is a transformation which scales *xt* and *yt* at transformation time before applying the offsets."
-msgstr ""
+msgstr "donde *xt* y *yt* son los desplazamientos de traslación, y *scale_trans* es una transformación que escala *xt* y *yt* en tiempo de transformación antes de aplicar los desplazamientos."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:512
 msgid "Note the use of the plus operator on the transforms below. This code says: first apply the scale transformation ``fig.dpi_scale_trans`` to make the ellipse the proper size, but still centered at (0, 0), and then translate the data to ``xdata[0]`` and ``ydata[0]`` in data space."
-msgstr ""
+msgstr "Fíjate en el uso del operador plus en las transformaciones de abajo. Este código dice: primero aplica la transformación de escala ``fig.dpi_scale_trans`` para hacer que la elipse tenga el tamaño adecuado, pero aún centrada en (0, 0), y luego traduce los datos a ``xdata[0]`` y ``ydata[0]`` en el espacio de datos."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:517
 msgid "In interactive use, the ellipse stays the same size even if the axes limits are changed via zoom."
-msgstr ""
+msgstr "En el uso interactivo, la elipse se mantiene del mismo tamaño aunque se cambien los límites de los ejes mediante el zoom."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:556
 msgid "The order of transformation matters.  Here the ellipse is given the right dimensions in display space *first* and then moved in data space to the correct spot. If we had done the ``ScaledTranslation`` first, then ``xdata[0]`` and ``ydata[0]`` would first be transformed to *display* coordinates (``[ 358.4  475.2]`` on a 200-dpi monitor) and then those coordinates would be scaled by ``fig.dpi_scale_trans`` pushing the center of the ellipse well off the screen (i.e. ``[ 71680.  95040.]``)."
-msgstr ""
+msgstr "El orden de la transformación es importante. Aquí la elipse recibe las dimensiones correctas en el espacio de visualización *primero* y luego se mueve en el espacio de datos al lugar correcto. Si hubiéramos hecho primero la ``ScaledTranslation``, entonces ``xdata[0]`` y ``ydata[0]`` se transformarían primero a coordenadas de *pantalla* (``[ 358,4 475,2]`` en un monitor de 200 ppp) y luego esas coordenadas se escalarían con ``fig.dpi_scale_trans`` empujando el centro de la elipse bien lejos de la pantalla (es decir, ``[ 71680. 95040.]``)."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:569
 msgid "Using offset transforms to create a shadow effect"
-msgstr ""
+msgstr "Uso de transformaciones de desplazamiento para crear un efecto de sombra"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:571
 msgid "Another use of :class:`~matplotlib.transforms.ScaledTranslation` is to create a new transformation that is offset from another transformation, e.g., to place one object shifted a bit relative to another object.  Typically you want the shift to be in some physical dimension, like points or inches rather than in *data* coordinates, so that the shift effect is constant at different zoom levels and dpi settings."
-msgstr ""
+msgstr "Otro uso de :class:`~matplotlib.transforms.ScaledTranslation` es crear una nueva transformación desplazada respecto a otra transformación, por ejemplo, para colocar un objeto desplazado un poco respecto a otro objeto. Normalmente se quiere que el desplazamiento sea en alguna dimensión física, como puntos o pulgadas, en lugar de en coordenadas de *datos*, para que el efecto de desplazamiento sea constante en diferentes niveles de zoom y configuraciones de dpi."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:579
 msgid "One use for an offset is to create a shadow effect, where you draw one object identical to the first just to the right of it, and just below it, adjusting the zorder to make sure the shadow is drawn first and then the object it is shadowing above it."
-msgstr ""
+msgstr "Un uso de un desplazamiento es para crear un efecto de sombra, donde se dibuja un objeto idéntico al primero justo a la derecha de éste, y justo debajo de él, ajustando el zorder para asegurarse de que la sombra se dibuja primero y luego el objeto que está sombreando por encima."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:584
 msgid "Here we apply the transforms in the *opposite* order to the use of :class:`~matplotlib.transforms.ScaledTranslation` above. The plot is first made in data coordinates (``ax.transData``) and then shifted by ``dx`` and ``dy`` points using ``fig.dpi_scale_trans``.  (In typography, a `point <https://en.wikipedia.org/wiki/Point_%28typography%29>`_ is 1/72 inches, and by specifying your offsets in points, your figure will look the same regardless of the dpi resolution it is saved in.)"
-msgstr ""
+msgstr "Aquí aplicamos las transformaciones en el orden *opuesto* al uso de :class:`~matplotlib.transforms.ScaledTranslation` anterior. El gráfico se hace primero en coordenadas de datos (``ax.transData``) y luego se desplaza por puntos ``dx`` y ``dy`` utilizando ``fig.dpi_scale_trans``.  (En tipografía, un `punto <https://en.wikipedia.org/wiki/Point_%28typography%29>`_ es 1/72 pulgadas, y al especificar sus desplazamientos en puntos, su figura tendrá el mismo aspecto independientemente de la resolución de dpi en la que se guarde)"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:635
 msgid "The dpi and inches offset is a common-enough use case that we have a special helper function to create it in :func:`matplotlib.transforms.offset_copy`, which returns a new transform with an added offset. So above we could have done::"
-msgstr ""
+msgstr "El desplazamiento de dpi y pulgadas es un caso de uso tan común que tenemos una función especial de ayuda para crearlo en :func:`matplotlib.transforms.offset_copy`, que devuelve una nueva transformación con un desplazamiento añadido. Así que arriba podríamos haber hecho::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:647
 msgid "The transformation pipeline"
-msgstr ""
+msgstr "El proceso de transformación"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:649
 msgid "The ``ax.transData`` transform we have been working with in this tutorial is a composite of three different transformations that comprise the transformation pipeline from *data* -> *display* coordinates.  Michael Droettboom implemented the transformations framework, taking care to provide a clean API that segregated the nonlinear projections and scales that happen in polar and logarithmic plots, from the linear affine transformations that happen when you pan and zoom.  There is an efficiency here, because you can pan and zoom in your axes which affects the affine transformation, but you may not need to compute the potentially expensive nonlinear scales or projections on simple navigation events.  It is also possible to multiply affine transformation matrices together, and then apply them to coordinates in one step.  This is not true of all possible transformations."
-msgstr ""
+msgstr "La transformación ``ax.transData`` con la que hemos estado trabajando en este tutorial es un compuesto de tres transformaciones diferentes que comprenden la tubería de transformación de coordenadas *data* -> *display*.  Michael Droettboom implementó el framework de transformaciones, cuidando de proporcionar una API limpia que segregara las proyecciones no lineales y las escalas que ocurren en los gráficos polares y logarítmicos, de las transformaciones lineales afines que ocurren cuando se hace paneo y zoom. Hay una eficiencia aquí, porque usted puede panear y hacer zoom en sus ejes que afecta a la transformación afín, pero puede que no necesite calcular las escalas o proyecciones no lineales potencialmente costosas en eventos de navegación simples. También es posible multiplicar las matrices de transformación afín juntas, y luego aplicarlas a las coordenadas en un solo paso. Esto no es cierto para todas las transformaciones posibles."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:665
 msgid "Here is how the ``ax.transData`` instance is defined in the basic separable axis :class:`~matplotlib.axes.Axes` class::"
-msgstr ""
+msgstr "Así es como se define la instancia ``ax.transData`` en el eje básico separable :class:`~matplotlib.axes.Axes` class::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:670
 msgid "We've been introduced to the ``transAxes`` instance above in :ref:`axes-coords`, which maps the (0, 0), (1, 1) corners of the axes or subplot bounding box to *display* space, so let's look at these other two pieces."
-msgstr ""
+msgstr "Ya hemos conocido la instancia ``transAxes`` en :ref:`axes-coords`, que mapea las esquinas (0, 0), (1, 1) de la caja delimitadora de los ejes o de la subparcela al espacio de *display*, así que veamos estas otras dos piezas."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:675
 msgid "``self.transLimits`` is the transformation that takes you from *data* to *axes* coordinates; i.e., it maps your view xlim and ylim to the unit space of the axes (and ``transAxes`` then takes that unit space to display space).  We can see this in action here"
-msgstr ""
+msgstr "``self.transLimits`` es la transformación que te lleva de las coordenadas de los *datos* a las coordenadas de los *ejes*; es decir, mapea tu vista xlim e ylim al espacio unitario de los ejes (y ``transAxes`` luego lleva ese espacio unitario al espacio de visualización).  Podemos ver esto en acción aquí"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:702
 msgid "and we can use this same inverted transformation to go from the unit *axes* coordinates back to *data* coordinates."
-msgstr ""
+msgstr "y podemos utilizar esta misma transformación invertida para pasar de las coordenadas de los *ejes* unitarios a las coordenadas de los *datos*."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:710
 msgid "The final piece is the ``self.transScale`` attribute, which is responsible for the optional non-linear scaling of the data, e.g., for logarithmic axes.  When an Axes is initially setup, this is just set to the identity transform, since the basic Matplotlib axes has linear scale, but when you call a logarithmic scaling function like :meth:`~matplotlib.axes.Axes.semilogx` or explicitly set the scale to logarithmic with :meth:`~matplotlib.axes.Axes.set_xscale`, then the ``ax.transScale`` attribute is set to handle the nonlinear projection. The scales transforms are properties of the respective ``xaxis`` and ``yaxis`` :class:`~matplotlib.axis.Axis` instances.  For example, when you call ``ax.set_xscale('log')``, the xaxis updates its scale to a :class:`matplotlib.scale.LogScale` instance."
-msgstr ""
+msgstr "La última pieza es el atributo ``self.transScale``, que es responsable del escalado no lineal opcional de los datos, por ejemplo, para los ejes logarítmicos.  Cuando un eje se configura inicialmente, se establece la transformación de identidad, ya que los ejes básicos de Matplotlib tienen una escala lineal, pero cuando se llama a una función de escala logarítmica como :meth:`~matplotlib.axes.Axes.semilogx` o se establece explícitamente la escala logarítmica con :meth:`~matplotlib.axes.Axes.set_xscale`, entonces el atributo ``ax.transScale`` se establece para manejar la proyección no lineal. Las escalas de transformación son propiedades de las respectivas instancias del ``xaxis`` y del ``yaxis`` :class:`~matplotlib.axis.Axis`.  Por ejemplo, cuando se llama a ``ax.set_xscale('log')``, el eje x actualiza su escala a una instancia :class:`matplotlib.scale.LogScale`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:723
 msgid "For non-separable axes the PolarAxes, there is one more piece to consider, the projection transformation.  The ``transData`` :class:`matplotlib.projections.polar.PolarAxes` is similar to that for the typical separable matplotlib Axes, with one additional piece ``transProjection``::"
-msgstr ""
+msgstr "Para los ejes no separables, los PolarAxes, hay una pieza más a considerar, la transformación de la proyección.  La transformación ``transData`` :class:`matplotlib.projections.polar.PolarAxes` es similar a la de los típicos ejes separables de matplotlib, con una pieza adicional ``transProjection``::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:732
 msgid "``transProjection`` handles the projection from the space, e.g., latitude and longitude for map data, or radius and theta for polar data, to a separable Cartesian coordinate system.  There are several projection examples in the :mod:`matplotlib.projections` package, and the best way to learn more is to open the source for those packages and see how to make your own, since Matplotlib supports extensible axes and projections.  Michael Droettboom has provided a nice tutorial example of creating a Hammer projection axes; see :doc:`/gallery/misc/custom_projection`."
-msgstr ""
+msgstr "``transProjection`` maneja la proyección desde el espacio, por ejemplo, latitud y longitud para datos cartográficos, o radio y theta para datos polares, a un sistema de coordenadas cartesianas separable. Hay varios ejemplos de proyecciones en el paquete :mod:`matplotlib.projections`, y la mejor manera de aprender más es abrir el código fuente de esos paquetes y ver cómo hacer el tuyo propio, ya que Matplotlib soporta ejes y proyecciones extensibles.  Michael Droettboom ha proporcionado un buen ejemplo de tutorial para crear un eje de proyección Hammer; ver :doc:`/gallery/misc/custom_projection`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:745
 msgid "**Total running time of the script:** ( 0 minutes  2.926 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 2.926 segundos)"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:760
 msgid ":download:`Download Python source code: transforms_tutorial.py <transforms_tutorial.py>`"
@@ -289,5 +289,5 @@ msgstr ":download:`Descargar Jupyter notebook: transforms_tutorial.ipynb <transf
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:773
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

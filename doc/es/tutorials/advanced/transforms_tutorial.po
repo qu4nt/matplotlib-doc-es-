@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-25 00:46\n"
+"PO-Revision-Date: 2022-05-25 01:59\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -161,35 +161,35 @@ msgstr "Si ejecuta el código fuente del ejemplo anterior en un backend de IGU, 
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:246
 msgid "When you change the x or y limits of your axes, the data limits are updated so the transformation yields a new display point.  Note that when we just change the ylim, only the y-display coordinate is altered, and when we change the xlim too, both are altered.  More on this later when we talk about the :class:`~matplotlib.transforms.Bbox`."
-msgstr ""
+msgstr "Al cambiar los límites x o y de los ejes, los límites de los datos se actualizan para que la transformación produzca un nuevo punto de visualización. Ten en cuenta que cuando sólo cambiamos el ylim, sólo se altera la coordenada de visualización y, cuando cambiamos el xlim también, se alteran ambos.  Hablaremos de esto más adelante, cuando tratemos la :clase:`~matplotlib.transforms.Bbox`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:274
 msgid "Axes coordinates"
-msgstr ""
+msgstr "Coordenadas de los ejes"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:276
 msgid "After the *data* coordinate system, *axes* is probably the second most useful coordinate system.  Here the point (0, 0) is the bottom left of your axes or subplot, (0.5, 0.5) is the center, and (1.0, 1.0) is the top right.  You can also refer to points outside the range, so (-0.1, 1.1) is to the left and above your axes.  This coordinate system is extremely useful when placing text in your axes, because you often want a text bubble in a fixed, location, e.g., the upper left of the axes pane, and have that location remain fixed when you pan or zoom.  Here is a simple example that creates four panels and labels them 'A', 'B', 'C', 'D' as you often see in journals."
-msgstr ""
+msgstr "Después del sistema de coordenadas *datos*, *ejes* es probablemente el segundo sistema de coordenadas más útil.  Aquí el punto (0, 0) es la parte inferior izquierda de tus ejes o subplot, (0.5, 0.5) es el centro, y (1.0, 1.0) es la parte superior derecha.  También puedes referirte a puntos fuera del rango, por lo que (-0,1, 1,1) está a la izquierda y por encima de tus ejes.  Este sistema de coordenadas es extremadamente útil cuando se coloca texto en los ejes, porque a menudo se quiere una burbuja de texto en una ubicación fija, por ejemplo, la parte superior izquierda del panel de los ejes, y que esa ubicación permanezca fija cuando se desplaza o hace zoom.  Aquí hay un ejemplo simple que crea cuatro paneles y los etiqueta 'A', 'B', 'C', 'D' como se ve a menudo en los diarios."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:314
 msgid "You can also make lines or patches in the *axes* coordinate system, but this is less useful in my experience than using ``ax.transAxes`` for placing text.  Nonetheless, here is a silly example which plots some random dots in data space, and overlays a semi-transparent :class:`~matplotlib.patches.Circle` centered in the middle of the axes with a radius one quarter of the axes -- if your axes does not preserve aspect ratio (see :meth:`~matplotlib.axes.Axes.set_aspect`), this will look like an ellipse.  Use the pan/zoom tool to move around, or manually change the data xlim and ylim, and you will see the data move, but the circle will remain fixed because it is not in *data* coordinates and will always remain at the center of the axes."
-msgstr ""
+msgstr "También puedes hacer líneas o parches en el sistema de coordenadas de los *ejes*, pero esto es menos útil en mi experiencia que usar ``ax.transAxes`` para colocar el texto.  No obstante, aquí hay un ejemplo tonto que traza algunos puntos aleatorios en el espacio de datos, y superpone un :class:`~matplotlib.patches.Circle` semitransparente centrado en el centro de los ejes con un radio de un cuarto de los ejes -- si tus ejes no preservan la relación de aspecto (ver :meth:`~matplotlib.axes.Axes.set_aspect`), esto se verá como una elipse. Usa la herramienta pan/zoom para moverte, o cambia manualmente los datos xlim e ylim, y verás que los datos se mueven, pero el círculo permanecerá fijo porque no está en coordenadas de *datos* y siempre permanecerá en el centro de los ejes."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:357
 msgid "Blended transformations"
-msgstr ""
+msgstr "Transformaciones combinadas"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:359
 msgid "Drawing in *blended* coordinate spaces which mix *axes* with *data* coordinates is extremely useful, for example to create a horizontal span which highlights some region of the y-data but spans across the x-axis regardless of the data limits, pan or zoom level, etc.  In fact these blended lines and spans are so useful, we have built in functions to make them easy to plot (see :meth:`~matplotlib.axes.Axes.axhline`, :meth:`~matplotlib.axes.Axes.axvline`, :meth:`~matplotlib.axes.Axes.axhspan`, :meth:`~matplotlib.axes.Axes.axvspan`) but for didactic purposes we will implement the horizontal span here using a blended transformation.  This trick only works for separable transformations, like you see in normal Cartesian coordinate systems, but not on inseparable transformations like the :class:`~matplotlib.projections.polar.PolarAxes.PolarTransform`."
-msgstr ""
+msgstr "Dibujar en espacios de coordenadas *mezcladas* que combinan coordenadas de *ejes* con coordenadas de *datos* es extremadamente útil, por ejemplo para crear un tramo horizontal que resalte alguna región de los datos y pero que se extienda por el eje x independientemente de los límites de los datos, el nivel de paneo o zoom, etc. De hecho, estas líneas y tramos mezclados son tan útiles que hemos incorporado funciones para facilitar su trazado (ver :meth:`~matplotlib.axes.Axes.axhline`, :meth:`~matplotlib.axes.Axes. axvline`, :meth:`~matplotlib.axes.Axes.axhspan`, :meth:`~matplotlib.axes.Axes.axvspan`) pero por motivos didácticos implementaremos aquí el tramo horizontal utilizando una transformación combinada. Este truco sólo funciona para transformaciones separables, como las que se ven en los sistemas de coordenadas cartesianas normales, pero no en transformaciones inseparables como la :class:`~matplotlib.projections.polar.PolarAxes.PolarTransform`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:415
 msgid "The blended transformations where x is in *data* coords and y in *axes* coordinates is so useful that we have helper methods to return the versions Matplotlib uses internally for drawing ticks, ticklabels, etc. The methods are :meth:`matplotlib.axes.Axes.get_xaxis_transform` and :meth:`matplotlib.axes.Axes.get_yaxis_transform`.  So in the example above, the call to :meth:`~matplotlib.transforms.blended_transform_factory` can be replaced by ``get_xaxis_transform``::"
-msgstr ""
+msgstr "Las transformaciones mixtas en las que x está en coordenadas *datos* e y en coordenadas *ejes* son tan útiles que tenemos métodos de ayuda para devolver las versiones que Matplotlib utiliza internamente para dibujar marcadores, etiquetas de puntos, etc. Los métodos son :meth:`matplotlib.axes.Axes.get_xaxis_transform` y :meth:`matplotlib.axes.Axes.get_yaxis_transform`. Así, en el ejemplo anterior, la llamada a :meth:`~matplotlib.transforms.blended_transform_factory` puede ser sustituida por ``get_xaxis_transform``::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:429
 msgid "Plotting in physical coordinates"
-msgstr ""
+msgstr "Trazado en coordenadas físicas"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:431
 msgid "Sometimes we want an object to be a certain physical size on the plot. Here we draw the same circle as above, but in physical coordinates.  If done interactively, you can see that changing the size of the figure does not change the offset of the circle from the lower-left corner, does not change its size, and the circle remains a circle regardless of the aspect ratio of the axes."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-24 23:35\n"
+"PO-Revision-Date: 2022-05-25 00:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -157,7 +157,7 @@ msgstr "Si está escribiendo a lo largo de este tutorial, los valores exactos de
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:235
 msgid "If you run the source code in the example above in a GUI backend, you may also find that the two arrows for the *data* and *display* annotations do not point to exactly the same point.  This is because the display point was computed before the figure was displayed, and the GUI backend may slightly resize the figure when it is created. The effect is more pronounced if you resize the figure yourself. This is one good reason why you rarely want to work in *display* space, but you can connect to the ``'on_draw'`` :class:`~matplotlib.backend_bases.Event` to update *figure* coordinates on figure draws; see :ref:`event-handling-tutorial`."
-msgstr ""
+msgstr "Si ejecuta el código fuente del ejemplo anterior en un backend de IGU, también puede encontrar que las dos flechas de las anotaciones *data* y *display* no apuntan exactamente al mismo punto.  Esto se debe a que el punto de visualización se calculó antes de que se mostrara la figura, y el backend de la IGU puede cambiar ligeramente el tamaño de la figura cuando se crea. El efecto es más pronunciado si cambias el tamaño de la figura. Esta es una buena razón por la que rara vez se quiere trabajar en el espacio de *visualización*, pero se puede conectar a la clase :``'on_draw'`` :class:`~matplotlib.backend_bases.Event` para actualizar las coordenadas de la *figura* en los dibujos de la figura; ver :ref:`event-handling-tutorial`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:246
 msgid "When you change the x or y limits of your axes, the data limits are updated so the transformation yields a new display point.  Note that when we just change the ylim, only the y-display coordinate is altered, and when we change the xlim too, both are altered.  More on this later when we talk about the :class:`~matplotlib.transforms.Bbox`."

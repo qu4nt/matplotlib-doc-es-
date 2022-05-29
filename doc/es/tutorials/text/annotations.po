@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-29 14:02\n"
+"PO-Revision-Date: 2022-05-29 15:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -557,95 +557,95 @@ msgstr "Uso de Coordenadas Complejas con Anotaciones"
 
 #: ../../tutorials/text/annotations.rst:474
 msgid "The Annotation in matplotlib supports several types of coordinates as described in :ref:`annotations-tutorial`. For an advanced user who wants more control, it supports a few other options."
-msgstr ""
+msgstr "La anotación en Matplotlib soporta varios tipos de coordenadas como se describe en :ref:`annotations-tutorial`. Para un usuario avanzado que quiera más control, soporta algunas otras opciones."
 
 #: ../../tutorials/text/annotations.rst:478
 msgid "A `.Transform` instance.  For example, ::"
-msgstr ""
+msgstr "Una instancia de `.Transform`.  Por ejemplo, ::"
 
 #: ../../tutorials/text/annotations.rst:482
 msgid "is identical to ::"
-msgstr ""
+msgstr "es idéntico a ::"
 
 #: ../../tutorials/text/annotations.rst:486
 msgid "This allows annotating a point in another axes::"
-msgstr ""
+msgstr "Esto permite anotar un punto en otro eje::"
 
 #: ../../tutorials/text/annotations.rst:493
 msgid "An `.Artist` instance. The *xy* value (or *xytext*) is interpreted as a fractional coordinate of the bbox (return value of *get_window_extent*) of the artist::"
-msgstr ""
+msgstr "Una instancia de `.Artist`. El valor *xy* (o *xytext*) se interpreta como una coordenada fraccionaria de la bbox (valor de retorno de *get_window_extent*) del artista::"
 
 #: ../../tutorials/text/annotations.rst:510
 msgid "Note that you must ensure that the extent of the coordinate artist (*an1* in above example) is determined before *an2* gets drawn. Usually, this means that *an2* needs to be drawn after *an1*."
-msgstr ""
+msgstr "Ten en cuenta que debes asegurarte de que la extensión del artista de coordenadas (*an1* en el ejemplo anterior) se determine antes de que se dibuje *an2*. Normalmente, esto significa que *an2* debe dibujarse después de *an1*."
 
 #: ../../tutorials/text/annotations.rst:514
 msgid "A callable object that takes the renderer instance as single argument, and returns either a `.Transform` or a `.BboxBase`.  The return value is then handled as in (1), for transforms, or in (2), for bboxes.  For example, ::"
-msgstr ""
+msgstr "Un objeto invocable que toma la instancia del renderizador como único argumento, y devuelve un `.Transform` o un `.BboxBase`.  El valor devuelto se maneja como en (1), para transformadores, o en (2), para bboxes.  Por ejemplo, ::"
 
 #: ../../tutorials/text/annotations.rst:521
 msgid "is identical to::"
-msgstr ""
+msgstr "es idéntico a::"
 
 #: ../../tutorials/text/annotations.rst:526
 msgid "A pair of coordinate specifications -- the first for the x-coordinate, and the second is for the y-coordinate; e.g. ::"
-msgstr ""
+msgstr "Un par de especificaciones de coordenadas -- la primera para la coordenada x, y la segunda es para la coordenada y; p. ej. ::"
 
 #: ../../tutorials/text/annotations.rst:531
 msgid "Here, 0.5 is in data coordinates, and 1 is in normalized axes coordinates. Each of the coordinate specifications can also be an artist or a transform. For example,"
-msgstr ""
+msgstr "Aquí, 0.5 está en coordenadas de datos, y 1 está en coordenadas de ejes normalizados. Cada una de las especificaciones de coordenadas también puede ser un artist o una transformación. Por ejemplo,"
 
 #: ../../tutorials/text/annotations.rst:539
 msgid "Sometimes, you want your annotation with some \"offset points\", not from the annotated point but from some other point.  `.text.OffsetFrom` is a helper for such cases."
-msgstr ""
+msgstr "A veces, quieres que tu anotación tenga algunos \"puntos de desplazamiento\", no desde el punto anotado sino desde algún otro punto. `.text.OffsetFrom` es una ayuda para estos casos."
 
 #: ../../tutorials/text/annotations.rst:547
 msgid "You may take a look at this example :doc:`/gallery/text_labels_and_annotations/annotation_demo`."
-msgstr ""
+msgstr "Puedes echar un vistazo a este ejemplo :doc:`/gallery/text_labels_and_annotations/annotation_demo`."
 
 #: ../../tutorials/text/annotations.rst:551
 msgid "Using ConnectionPatch"
-msgstr ""
+msgstr "Uso de ConnectionPatch"
 
 #: ../../tutorials/text/annotations.rst:553
 msgid "ConnectionPatch is like an annotation without text. While `~.Axes.annotate` is sufficient in most situations, ConnectionPatch is useful when you want to connect points in different axes. ::"
-msgstr ""
+msgstr "ConnectionPatch es como una anotación sin texto. Mientras que `~.Axes.annotate` es suficiente en la mayoría de las situaciones, ConnectionPatch es útil cuando se quiere conectar puntos en diferentes ejes. ::"
 
 #: ../../tutorials/text/annotations.rst:563
 msgid "The above code connects point *xy* in the data coordinates of ``ax1`` to point *xy* in the data coordinates of ``ax2``. Here is a simple example."
-msgstr ""
+msgstr "El código anterior conecta el punto *xy* en las coordenadas de datos de ``ax1`` con el punto *xy* en las coordenadas de datos de ``ax2``. He aquí un ejemplo sencillo."
 
 #: ../../tutorials/text/annotations.rst:570
 msgid "Here, we added the ConnectionPatch to the *figure* (with `~.Figure.add_artist`) rather than to either axes: this ensures that it is drawn on top of both axes, and is also necessary if using :doc:`constrained_layout </tutorials/intermediate/constrainedlayout_guide>` for positioning the axes."
-msgstr ""
+msgstr "Aquí, añadimos el ConnectionPatch a la *figura* (con `~.Figure.add_artist`), en lugar de a cualquiera de los ejes: esto asegura que se dibuje encima de ambos ejes, y también es necesario si se utiliza :doc:`constrained_layout </tutorials/intermediate/constrainedlayout_guide>` para posicionar los ejes."
 
 #: ../../tutorials/text/annotations.rst:576
 msgid "Advanced Topics"
-msgstr ""
+msgstr "Temas avanzados"
 
 #: ../../tutorials/text/annotations.rst:579
 msgid "Zoom effect between Axes"
-msgstr ""
+msgstr "Efecto de zoom entre ejes"
 
 #: ../../tutorials/text/annotations.rst:581
 msgid "``mpl_toolkits.axes_grid1.inset_locator`` defines some patch classes useful for interconnecting two axes. Understanding the code requires some knowledge of Matplotlib's transform system."
-msgstr ""
+msgstr "``mpl_toolkits.axes_grid1.inset_locator`` define algunas clases de parche útiles para interconectar dos ejes. La comprensión del código requiere algunos conocimientos del sistema de transformación de Matplotlib."
 
 #: ../../tutorials/text/annotations.rst:590
 msgid "Define Custom BoxStyle"
-msgstr ""
+msgstr "Definir BoxStyle personalizado"
 
 #: ../../tutorials/text/annotations.rst:592
 msgid "You can use a custom box style. The value for the ``boxstyle`` can be a callable object in the following forms.::"
-msgstr ""
+msgstr "Puedes utilizar un estilo de caja personalizado. El valor para el ``boxstyle`` puede ser un objeto llamable de las siguientes formas.::"
 
 #: ../../tutorials/text/annotations.rst:608
 msgid "Here is a complete example."
-msgstr ""
+msgstr "Aquí tienes un ejemplo completo."
 
 #: ../../tutorials/text/annotations.rst:614
 msgid "Similarly, you can define a custom ConnectionStyle and a custom ArrowStyle. See the source code of ``lib/matplotlib/patches.py`` and check how each style class is defined."
-msgstr ""
+msgstr "Del mismo modo, puedes definir un ConnectionStyle personalizado y un ArrowStyle personalizado. Consulta el código fuente de ``lib/matplotlib/patches.py`` y comprueba cómo se define cada clase de estilo."
 
 #: ../../tutorials/text/annotations.rst:631
 msgid ":download:`Download Python source code: annotations.py <annotations.py>`"
@@ -657,5 +657,5 @@ msgstr ":download:`Descargar Jupyter notebook: annotations.ipynb <annotations.ip
 
 #: ../../tutorials/text/annotations.rst:644
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código Matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

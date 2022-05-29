@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-29 19:49\n"
+"PO-Revision-Date: 2022-05-29 21:25\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -156,27 +156,27 @@ msgstr "Etiquetas para los ejes x e y"
 
 #: ../../tutorials/text/text_intro.rst:143
 msgid "Specifying the labels for the x- and y-axis is straightforward, via the `~matplotlib.axes.Axes.set_xlabel` and `~matplotlib.axes.Axes.set_ylabel` methods."
-msgstr ""
+msgstr "La especificación de las etiquetas para los ejes X e Y es sencilla, mediante los métodos `~matplotlib.axes.Axes.set_xlabel` y `~matplotlib.axes.Axes.set_ylabel`."
 
 #: ../../tutorials/text/text_intro.rst:180
 msgid "The x- and y-labels are automatically placed so that they clear the x- and y-ticklabels.  Compare the plot below with that above, and note the y-label is to the left of the one above."
-msgstr ""
+msgstr "Las etiquetas x e y se colocan automáticamente de forma que se despejen las etiquetas x e y.  Compara el gráfico de abajo con el de arriba, y observa que la etiqueta y está a la izquierda de la de arriba."
 
 #: ../../tutorials/text/text_intro.rst:211
 msgid "If you want to move the labels, you can specify the *labelpad* keyword argument, where the value is points (1/72\", the same unit used to specify fontsizes)."
-msgstr ""
+msgstr "Si quieres mover las etiquetas, puedes especificar el argumento de la palabra clave *labelpad*, donde el valor es puntos (1/72\", la misma unidad que se utiliza para especificar los tamaños de las fuentes)."
 
 #: ../../tutorials/text/text_intro.rst:242
 msgid "Or, the labels accept all the `.Text` keyword arguments, including *position*, via which we can manually specify the label positions.  Here we put the xlabel to the far left of the axis.  Note, that the y-coordinate of this position has no effect - to adjust the y-position we need to use the *labelpad* keyword argument."
-msgstr ""
+msgstr "O bien, las etiquetas aceptan todos los argumentos de la palabra clave `.Text`, incluyendo *posición*, a través de la cual podemos especificar manualmente las posiciones de las etiquetas.  Aquí ponemos la etiqueta x en el extremo izquierdo del eje.  Ten en cuenta que la coordenada y de esta posición no tiene ningún efecto - para ajustar la posición y necesitamos utilizar el argumento de la palabra clave *labelpad*."
 
 #: ../../tutorials/text/text_intro.rst:275
 msgid "All the labelling in this tutorial can be changed by manipulating the `matplotlib.font_manager.FontProperties` method, or by named keyword arguments to `~matplotlib.axes.Axes.set_xlabel`"
-msgstr ""
+msgstr "Todo el etiquetado de este tutorial se puede cambiar manipulando el método `matplotlib.font_manager.FontProperties`, o mediante argumentos de palabras clave con nombre a `~matplotlib.axes.Axes.set_xlabel`"
 
 #: ../../tutorials/text/text_intro.rst:313
 msgid "Finally, we can use native TeX rendering in all text objects and have multiple lines:"
-msgstr ""
+msgstr "Por último, podemos utilizar el renderizado nativo de TeX en todos los objetos de texto y tener varias líneas:"
 
 #: ../../tutorials/text/text_intro.rst:344
 msgid "Titles"
@@ -184,19 +184,19 @@ msgstr "Titulos"
 
 #: ../../tutorials/text/text_intro.rst:346
 msgid "Subplot titles are set in much the same way as labels, but there is the *loc* keyword arguments that can change the position and justification from the default value of ``loc=center``."
-msgstr ""
+msgstr "Los títulos de las subtramas se establecen de forma muy similar a las etiquetas, pero existe la palabra clave *loc* como argumento que puede cambiar la posición y la justificación del valor por defecto de ``loc=center``."
 
 #: ../../tutorials/text/text_intro.rst:376
 msgid "Vertical spacing for titles is controlled via :rc:`axes.titlepad`, which defaults to 5 points.  Setting to a different value moves the title."
-msgstr ""
+msgstr "El espaciado vertical de los títulos se controla mediante :rc:`axes.titlepad`, que por defecto es de 5 puntos.  Si se ajusta a un valor diferente, el título se desplaza."
 
 #: ../../tutorials/text/text_intro.rst:406
 msgid "Ticks and ticklabels"
-msgstr ""
+msgstr "Marcadores y etiquetas"
 
 #: ../../tutorials/text/text_intro.rst:408
 msgid "Placing ticks and ticklabels is a very tricky aspect of making a figure. Matplotlib does its best to accomplish the task automatically, but it also offers a very flexible framework for determining the choices for tick locations, and how they are labelled."
-msgstr ""
+msgstr "La colocación de los marcadores y las etiquetas es un aspecto muy complicado de hacer una figura. Matplotlib hace todo lo posible para llevar a cabo la tarea de forma automática, pero también ofrece un framework muy flexible para determinar las opciones de ubicación de los marcadores, y cómo se etiquetan."
 
 #: ../../tutorials/text/text_intro.rst:414
 msgid "Terminology"
@@ -204,19 +204,19 @@ msgstr "Terminologia"
 
 #: ../../tutorials/text/text_intro.rst:416
 msgid "*Axes* have an `matplotlib.axis.Axis` object for the ``ax.xaxis`` and ``ax.yaxis`` that contain the information about how the labels in the axis are laid out."
-msgstr ""
+msgstr "*Los ejes* tienen un objeto `matplotlib.axis.Axis` para el ``ax.xaxis`` y ``ax.yaxis`` que contienen la información sobre cómo se colocan las etiquetas en el eje."
 
 #: ../../tutorials/text/text_intro.rst:420
 msgid "The axis API is explained in detail in the documentation to `~matplotlib.axis`."
-msgstr ""
+msgstr "La API de ejes se explica en detalle en la documentación de `~matplotlib.axis`."
 
 #: ../../tutorials/text/text_intro.rst:423
 msgid "An Axis object has major and minor ticks.  The Axis has `.Axis.set_major_locator` and `.Axis.set_minor_locator` methods that use the data being plotted to determine the location of major and minor ticks.  There are also `.Axis.set_major_formatter` and `.Axis.set_minor_formatter` methods that format the tick labels."
-msgstr ""
+msgstr "Un objeto Eje tiene marcadores mayores y menores.  El Eje tiene los métodos `.Axis.set_major_locator` y `.Axis.set_minor_locator` que utilizan los datos que se trazan para determinar la ubicación de los marcadores mayores y menores.  También hay métodos `.Axis.set_major_formatter` y `.Axis.set_minor_formatter` que formatean las etiquetas de los marcadores."
 
 #: ../../tutorials/text/text_intro.rst:430
 msgid "Simple ticks"
-msgstr ""
+msgstr "Marcadores simples"
 
 #: ../../tutorials/text/text_intro.rst:432
 msgid "It often is convenient to simply define the tick values, and sometimes the tick labels, overriding the default locators and formatters.  This is discouraged because it breaks interactive navigation of the plot.  It also can reset the axis limits: note that the second plot has the ticks we asked for, including ones that are well outside the automatic view limits."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-29 18:41\n"
+"PO-Revision-Date: 2022-05-29 23:34\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -88,67 +88,67 @@ msgstr "\\alpha^{ic} > \\beta_{ic}"
 
 #: ../../tutorials/text/mathtext.rst:93
 msgid "Some symbols automatically put their sub/superscripts under and over the operator.  For example, to write the sum of :mathmpl:`x_i` from :mathmpl:`0` to :mathmpl:`\\infty`, you could do::"
-msgstr ""
+msgstr "Algunos símbolos ponen automáticamente sus sub/superíndices debajo y encima del operador.  Por ejemplo, para escribir la suma de :mathmpl:`x_i` de :mathmpl:`0` a :mathmpl:`infty`, podría hacer::"
 
 #: ../../tutorials/text/mathtext.rst:99
 msgid "\\sum_{i=0}^\\infty x_i"
-msgstr ""
+msgstr "\\sum_{i=0}^\\infty x_i"
 
 #: ../../tutorials/text/mathtext.rst:104
 msgid "Fractions, binomials, and stacked numbers"
-msgstr ""
+msgstr "Fracciones, binomios y números apilados"
 
 #: ../../tutorials/text/mathtext.rst:105
 msgid "Fractions, binomials, and stacked numbers can be created with the ``\\frac{}{}``, ``\\binom{}{}`` and ``\\genfrac{}{}{}{}{}{}`` commands, respectively::"
-msgstr ""
+msgstr "Las fracciones, los binomios y los números apilados se pueden crear con los comandos ``frac{}{}``, ``binom{}{}`` y ``genfrac{}{}{}```, respectivamente::"
 
 #: ../../tutorials/text/mathtext.rst:111 ../../tutorials/text/mathtext.rst:121
 msgid "produces"
-msgstr ""
+msgstr "genera"
 
 #: ../../tutorials/text/mathtext.rst:113
 msgid "\\frac{3}{4} \\binom{3}{4} \\genfrac{}{}{0pt}{}{3}{4}"
-msgstr ""
+msgstr "\\frac{3}{4} \\binom{3}{4} \\genfrac{}{}{0pt}{}{3}{4}"
 
 #: ../../tutorials/text/mathtext.rst:117
 msgid "Fractions can be arbitrarily nested::"
-msgstr ""
+msgstr "Las fracciones se pueden anidar arbitrariamente::"
 
 #: ../../tutorials/text/mathtext.rst:123
 msgid "\\frac{5 - \\frac{1}{x}}{4}"
-msgstr ""
+msgstr "\\frac{5 - \\frac{1}{x}}{4}"
 
 #: ../../tutorials/text/mathtext.rst:127
 msgid "Note that special care needs to be taken to place parentheses and brackets around fractions.  Doing things the obvious way produces brackets that are too small::"
-msgstr ""
+msgstr "Ten en cuenta que hay que tener especial cuidado al colocar paréntesis y corchetes alrededor de las fracciones.  Hacer las cosas de la manera obvia genera paréntesis demasiado pequeños::"
 
 #: ../../tutorials/text/mathtext.rst:133
 msgid "(\\frac{5 - \\frac{1}{x}}{4})"
-msgstr ""
+msgstr "(\\frac{5 - \\frac{1}{x}}{4})"
 
 #: ../../tutorials/text/mathtext.rst:137
 msgid "The solution is to precede the bracket with ``\\left`` and ``\\right`` to inform the parser that those brackets encompass the entire object.::"
-msgstr ""
+msgstr "La solución es preceder el paréntesis con ``izquierda`` y ``derecha`` para informar al analizador que esos paréntesis abarcan todo el objeto::"
 
 #: ../../tutorials/text/mathtext.rst:142
 msgid "\\left(\\frac{5 - \\frac{1}{x}}{4}\\right)"
-msgstr ""
+msgstr "\\left(\\frac{5 - \\frac{1}{x}}{4}\\right)"
 
 #: ../../tutorials/text/mathtext.rst:147
 msgid "Radicals"
-msgstr ""
+msgstr "Radicales"
 
 #: ../../tutorials/text/mathtext.rst:148
 msgid "Radicals can be produced with the ``\\sqrt[]{}`` command.  For example::"
-msgstr ""
+msgstr "Los radicales se pueden generar con el comando ``sqrt[]{}``.  Por ejemplo::"
 
 #: ../../tutorials/text/mathtext.rst:152
 msgid "\\sqrt{2}"
-msgstr ""
+msgstr "\\sqrt{2}"
 
 #: ../../tutorials/text/mathtext.rst:156
 msgid "Any base can (optionally) be provided inside square brackets.  Note that the base must be a simple expression, and can not contain layout commands such as fractions or sub/superscripts::"
-msgstr ""
+msgstr "Se puede proporcionar (opcionalmente) cualquier base dentro de los corchetes. Ten en cuenta que la base debe ser una expresión simple, y no puede contener comandos de diseño como fracciones o sub/superíndices::"
 
 #: ../../tutorials/text/mathtext.rst:162
 msgid "\\sqrt[3]{x}"
@@ -156,141 +156,141 @@ msgstr "\\sqrt[3]{x}"
 
 #: ../../tutorials/text/mathtext.rst:169
 msgid "Fonts"
-msgstr ""
+msgstr "Fuentes"
 
 #: ../../tutorials/text/mathtext.rst:170
 msgid "The default font is *italics* for mathematical symbols."
-msgstr ""
+msgstr "El tipo de letra por defecto es la *cursiva* para los símbolos matemáticos."
 
 #: ../../tutorials/text/mathtext.rst:174
 msgid "This default can be changed using :rc:`mathtext.default`.  This is useful, for example, to use the same font as regular non-math text for math text, by setting it to ``regular``."
-msgstr ""
+msgstr "Este valor por defecto puede cambiarse utilizando :rc:`mathtext.default`.  Esto es útil, por ejemplo, para utilizar el mismo tipo de letra que el texto normal no matemático para el texto matemático, estableciéndolo como ``regular``."
 
 #: ../../tutorials/text/mathtext.rst:178
 msgid "To change fonts, e.g., to write \"sin\" in a Roman font, enclose the text in a font command::"
-msgstr ""
+msgstr "Para cambiar los tipos de letra, por ejemplo, para escribir \"sin\" en un tipo de letra romano, encierre el texto en un comando de fuente::"
 
 #: ../../tutorials/text/mathtext.rst:183
 msgid "s(t) = \\mathcal{A}\\mathrm{sin}(2 \\omega t)"
-msgstr ""
+msgstr "s(t) = \\mathcal{A}\\mathrm{sin}(2 \\omega t)"
 
 #: ../../tutorials/text/mathtext.rst:187
 msgid "More conveniently, many commonly used function names that are typeset in a Roman font have shortcuts.  So the expression above could be written as follows::"
-msgstr ""
+msgstr "Más práctico es que muchos nombres de funciones de uso común que se escriben en fuente romana tienen atajos.  Así, la expresión anterior podría escribirse de la siguiente manera::"
 
 #: ../../tutorials/text/mathtext.rst:193
 msgid "s(t) = \\mathcal{A}\\sin(2 \\omega t)"
-msgstr ""
+msgstr "s(t) = \\mathcal{A}\\sin(2 \\omega t)"
 
 #: ../../tutorials/text/mathtext.rst:197
 msgid "Here \"s\" and \"t\" are variable in italics font (default), \"sin\" is in Roman font, and the amplitude \"A\" is in calligraphy font.  Note in the example above the calligraphy ``A`` is squished into the ``sin``.  You can use a spacing command to add a little whitespace between them::"
-msgstr ""
+msgstr "Aquí \"s\" y \"t\" son variables en letra cursiva (por defecto), \"sin\" está en letra romana, y la amplitud \"A\" está en letra caligráfica.  Observa que en el ejemplo anterior la caligrafía ``A`` está aplastada en el ``sin``.  Puedes usar un comando de espaciado para añadir un pequeño espacio en blanco entre ellos::"
 
 #: ../../tutorials/text/mathtext.rst:208
 msgid "s(t) = \\mathcal{A}\\,\\sin(2 \\omega t)"
-msgstr ""
+msgstr "s(t) = \\mathcal{A}\\,\\sin(2 \\omega t)"
 
 #: ../../tutorials/text/mathtext.rst:212
 msgid "The choices available with all fonts are:"
-msgstr ""
+msgstr "Las opciones disponibles con todas las fuentes son:"
 
 #: ../../tutorials/text/mathtext.rst:215 ../../tutorials/text/mathtext.rst:230
 #: ../../tutorials/text/mathtext.rst:325 ../../tutorials/text/mathtext.rst:345
 msgid "Command"
-msgstr ""
+msgstr "Comando"
 
 #: ../../tutorials/text/mathtext.rst:215 ../../tutorials/text/mathtext.rst:230
 #: ../../tutorials/text/mathtext.rst:325 ../../tutorials/text/mathtext.rst:345
 msgid "Result"
-msgstr ""
+msgstr "Resultado"
 
 #: ../../tutorials/text/mathtext.rst:217
 msgid "``\\mathrm{Roman}``"
-msgstr ""
+msgstr "``\\mathrm{Roman}``"
 
 #: ../../tutorials/text/mathtext.rst:217
 msgid ":mathmpl:`\\mathrm{Roman}`"
-msgstr ""
+msgstr ":mathmpl:`\\mathrm{Roman}`"
 
 #: ../../tutorials/text/mathtext.rst:218
 msgid "``\\mathit{Italic}``"
-msgstr ""
+msgstr "``\\mathit{Italic}``"
 
 #: ../../tutorials/text/mathtext.rst:218
 msgid ":mathmpl:`\\mathit{Italic}`"
-msgstr ""
+msgstr ":mathmpl:`\\mathit{Italic}`"
 
 #: ../../tutorials/text/mathtext.rst:219
 msgid "``\\mathtt{Typewriter}``"
-msgstr ""
+msgstr "``\\mathtt{Typewriter}``"
 
 #: ../../tutorials/text/mathtext.rst:219
 msgid ":mathmpl:`\\mathtt{Typewriter}`"
-msgstr ""
+msgstr ":mathmpl:`\\mathtt{Typewriter}`"
 
 #: ../../tutorials/text/mathtext.rst:220
 msgid "``\\mathcal{CALLIGRAPHY}``"
-msgstr ""
+msgstr "``\\mathcal{CALLIGRAPHY}``"
 
 #: ../../tutorials/text/mathtext.rst:220
 msgid ":mathmpl:`\\mathcal{CALLIGRAPHY}`"
-msgstr ""
+msgstr ":mathmpl:`\\mathcal{CALLIGRAPHY}`"
 
 #: ../../tutorials/text/mathtext.rst:226
 msgid "When using the `STIX <http://www.stixfonts.org/>`_ fonts, you also have the choice of:"
-msgstr ""
+msgstr "Cuando se utilizan las fuentes `STIX <http://www.stixfonts.org/>`_, también se puede elegir:"
 
 #: ../../tutorials/text/mathtext.rst:232
 msgid "``\\mathbb{blackboard}``"
-msgstr ""
+msgstr "``\\mathbb{blackboard}``"
 
 #: ../../tutorials/text/mathtext.rst:232
 msgid ":math-stix:`\\mathbb{blackboard}`"
-msgstr ""
+msgstr ":math-stix:`\\mathbb{blackboard}`"
 
 #: ../../tutorials/text/mathtext.rst:233
 msgid "``\\mathrm{\\mathbb{blackboard}}``"
-msgstr ""
+msgstr "``\\mathrm{\\mathbb{blackboard}}``"
 
 #: ../../tutorials/text/mathtext.rst:233
 msgid ":math-stix:`\\mathrm{\\mathbb{blackboard}}`"
-msgstr ""
+msgstr ":math-stix:`\\mathrm{\\mathbb{blackboard}}`"
 
 #: ../../tutorials/text/mathtext.rst:234
 msgid "``\\mathfrak{Fraktur}``"
-msgstr ""
+msgstr "``\\mathfrak{Fraktur}``"
 
 #: ../../tutorials/text/mathtext.rst:234
 msgid ":math-stix:`\\mathfrak{Fraktur}`"
-msgstr ""
+msgstr ":math-stix:`\\mathfrak{Fraktur}`"
 
 #: ../../tutorials/text/mathtext.rst:235
 msgid "``\\mathsf{sansserif}``"
-msgstr ""
+msgstr "``\\mathsf{sansserif}``"
 
 #: ../../tutorials/text/mathtext.rst:235
 msgid ":math-stix:`\\mathsf{sansserif}`"
-msgstr ""
+msgstr ":math-stix:`\\mathsf{sansserif}`"
 
 #: ../../tutorials/text/mathtext.rst:236
 msgid "``\\mathrm{\\mathsf{sansserif}}``"
-msgstr ""
+msgstr "``\\mathrm{\\mathsf{sansserif}}``"
 
 #: ../../tutorials/text/mathtext.rst:236
 msgid ":math-stix:`\\mathrm{\\mathsf{sansserif}}`"
-msgstr ""
+msgstr ":math-stix:`\\mathrm{\\mathsf{sansserif}}`"
 
 #: ../../tutorials/text/mathtext.rst:239
 msgid "There are also five global \"font sets\" to choose from, which are selected using the ``mathtext.fontset`` parameter in :ref:`matplotlibrc <matplotlibrc-sample>`."
-msgstr ""
+msgstr "También hay cinco \"conjuntos de fuentes\" globales para elegir, que se seleccionan utilizando el parámetro ``mathtext.fontset`` en :ref:`matplotlibrc <matplotlibrc-sample>`."
 
 #: ../../tutorials/text/mathtext.rst:243
 msgid "``dejavusans``: DejaVu Sans"
-msgstr ""
+msgstr "``dejavusans``: DejaVu Sans"
 
 #: ../../tutorials/text/mathtext.rst:250
 msgid "``dejavuserif``: DejaVu Serif"
-msgstr ""
+msgstr "``dejavuserif``: DejaVu Serif"
 
 #: ../../tutorials/text/mathtext.rst:257
 msgid "``cm``: Computer Modern (TeX)"
@@ -898,203 +898,203 @@ msgstr "arccos ``\\arccos``"
 
 #: ../../Symbol table:45
 msgid "arcsin ``\\arcsin``"
-msgstr ""
+msgstr "arcsin ``\\arcsin``"
 
 #: ../../Symbol table:45
 msgid "arctan ``\\arctan``"
-msgstr ""
+msgstr "arctan ``\\arctan``"
 
 #: ../../Symbol table:45
 msgid "arg ``\\arg``"
-msgstr ""
+msgstr "arg ``\\arg``"
 
 #: ../../Symbol table:45
 msgid "cos ``\\cos``"
-msgstr ""
+msgstr "cos ``\\cos``"
 
 #: ../../Symbol table:46
 msgid "cosh ``\\cosh``"
-msgstr ""
+msgstr "cosh ``\\cosh``"
 
 #: ../../Symbol table:46
 msgid "cot ``\\cot``"
-msgstr ""
+msgstr "cot ``\\cot``"
 
 #: ../../Symbol table:46
 msgid "coth ``\\coth``"
-msgstr ""
+msgstr "coth ``\\coth``"
 
 #: ../../Symbol table:46
 msgid "csc ``\\csc``"
-msgstr ""
+msgstr "csc ``\\csc``"
 
 #: ../../Symbol table:46
 msgid "deg ``\\deg``"
-msgstr ""
+msgstr "deg ``\\deg``"
 
 #: ../../Symbol table:46
 msgid "det ``\\det``"
-msgstr ""
+msgstr "det ``\\det``"
 
 #: ../../Symbol table:47
 msgid "dim ``\\dim``"
-msgstr ""
+msgstr "dim ``\\dim``"
 
 #: ../../Symbol table:47
 msgid "exp ``\\exp``"
-msgstr ""
+msgstr "exp ``\\exp``"
 
 #: ../../Symbol table:47
 msgid "gcd ``\\gcd``"
-msgstr ""
+msgstr "gcd ``\\gcd``"
 
 #: ../../Symbol table:47
 msgid "hom ``\\hom``"
-msgstr ""
+msgstr "hom ``\\hom``"
 
 #: ../../Symbol table:47
 msgid "inf ``\\inf``"
-msgstr ""
+msgstr "inf ``\\inf``"
 
 #: ../../Symbol table:47
 msgid "ker ``\\ker``"
-msgstr ""
+msgstr "ker ``\\ker``"
 
 #: ../../Symbol table:48
 msgid "lg ``\\lg``"
-msgstr ""
+msgstr "lg ``\\lg``"
 
 #: ../../Symbol table:48
 msgid "lim ``\\lim``"
-msgstr ""
+msgstr "lim ``\\lim``"
 
 #: ../../Symbol table:48
 msgid "liminf ``\\liminf``"
-msgstr ""
+msgstr "liminf ``\\liminf``"
 
 #: ../../Symbol table:48
 msgid "limsup ``\\limsup``"
-msgstr ""
+msgstr "limsup ``\\limsup``"
 
 #: ../../Symbol table:48
 msgid "ln ``\\ln``"
-msgstr ""
+msgstr "ln ``\\ln``"
 
 #: ../../Symbol table:48
 msgid "log ``\\log``"
-msgstr ""
+msgstr "log ``\\log``"
 
 #: ../../Symbol table:49
 msgid "max ``\\max``"
-msgstr ""
+msgstr "max ``\\max``"
 
 #: ../../Symbol table:49
 msgid "min ``\\min``"
-msgstr ""
+msgstr "min ``\\min``"
 
 #: ../../Symbol table:49
 msgid "sec ``\\sec``"
-msgstr ""
+msgstr "sec ``\\sec``"
 
 #: ../../Symbol table:49
 msgid "sin ``\\sin``"
-msgstr ""
+msgstr "sin ``\\sin``"
 
 #: ../../Symbol table:49
 msgid "sinh ``\\sinh``"
-msgstr ""
+msgstr "sinh ``\\sinh``"
 
 #: ../../Symbol table:49
 msgid "sup ``\\sup``"
-msgstr ""
+msgstr "sup ``\\sup``"
 
 #: ../../Symbol table:50
 msgid "tan ``\\tan``"
-msgstr ""
+msgstr "tan ``\\tan``"
 
 #: ../../Symbol table:50
 msgid "tanh ``\\tanh``"
-msgstr ""
+msgstr "tanh ``\\tanh``"
 
 #: ../../Symbol table:53
 msgid "**Binary operation and relation symbols**"
-msgstr ""
+msgstr "**Símbolos de operaciones y relaciones binarias**"
 
 #: ../../Symbol table:56
 msgid "≎ ``\\Bumpeq``"
-msgstr ""
+msgstr "≎ ``\\Bumpeq``"
 
 #: ../../Symbol table:56
 msgid "⋒ ``\\Cap``"
-msgstr ""
+msgstr "⋒ ``\\Cap``"
 
 #: ../../Symbol table:56
 msgid "⋓ ``\\Cup``"
-msgstr ""
+msgstr "⋓ ``\\Cup``"
 
 #: ../../Symbol table:56
 msgid "≑ ``\\Doteq``"
-msgstr ""
+msgstr "≑ ``\\Doteq``"
 
 #: ../../Symbol table:57
 msgid "⨝ ``\\Join``"
-msgstr ""
+msgstr "⨝ ``\\Join``"
 
 #: ../../Symbol table:57
 msgid "⋐ ``\\Subset``"
-msgstr ""
+msgstr "⋐ ``\\Subset``"
 
 #: ../../Symbol table:57
 msgid "⋑ ``\\Supset``"
-msgstr ""
+msgstr "⋑ ``\\Supset``"
 
 #: ../../Symbol table:57
 msgid "⊩ ``\\Vdash``"
-msgstr ""
+msgstr "⊩ ``\\Vdash``"
 
 #: ../../Symbol table:58
 msgid "⊪ ``\\Vvdash``"
-msgstr ""
+msgstr "⊪ ``\\Vvdash``"
 
 #: ../../Symbol table:58
 msgid "≈ ``\\approx``"
-msgstr ""
+msgstr "≈ ``\\approx``"
 
 #: ../../Symbol table:58
 msgid "≊ ``\\approxeq``"
-msgstr ""
+msgstr "≊ ``\\approxeq``"
 
 #: ../../Symbol table:58
 msgid "∗ ``\\ast``"
-msgstr ""
+msgstr "∗ ``\\ast``"
 
 #: ../../Symbol table:59
 msgid "≍ ``\\asymp``"
-msgstr ""
+msgstr "≍ ``\\asymp``"
 
 #: ../../Symbol table:59
 msgid "϶ ``\\backepsilon``"
-msgstr ""
+msgstr "϶ ``\\backepsilon``"
 
 #: ../../Symbol table:59
 msgid "∽ ``\\backsim``"
-msgstr ""
+msgstr "∽ ``\\backsim``"
 
 #: ../../Symbol table:59
 msgid "⋍ ``\\backsimeq``"
-msgstr ""
+msgstr "⋍ ``\\backsimeq``"
 
 #: ../../Symbol table:60
 msgid "⊼ ``\\barwedge``"
-msgstr ""
+msgstr "⊼ ``\\barwedge``"
 
 #: ../../Symbol table:60
 msgid "∵ ``\\because``"
-msgstr ""
+msgstr "∵ ``\\because``"
 
 #: ../../Symbol table:60
 msgid "≬ ``\\between``"
-msgstr ""
+msgstr "≬ ``\\between``"
 
 #: ../../Symbol table:60
 msgid "○ ``\\bigcirc``"
@@ -1698,203 +1698,203 @@ msgstr "⊇ ``\\supseteq``"
 
 #: ../../Symbol table:99
 msgid "⫆ ``\\supseteqq``"
-msgstr ""
+msgstr "⫆ ``\\supseteqq``"
 
 #: ../../Symbol table:99
 msgid "⊋ ``\\supsetneq``"
-msgstr ""
+msgstr "⊋ ``\\supsetneq``"
 
 #: ../../Symbol table:99
 msgid "⫌ ``\\supsetneqq``"
-msgstr ""
+msgstr "⫌ ``\\supsetneqq``"
 
 #: ../../Symbol table:99
 msgid "∴ ``\\therefore``"
-msgstr ""
+msgstr "∴ ``\\therefore``"
 
 #: ../../Symbol table:100
 msgid "× ``\\times``"
-msgstr ""
+msgstr "× ``\\times``"
 
 #: ../../Symbol table:100
 msgid "⊤ ``\\top``"
-msgstr ""
+msgstr "⊤ ``\\top``"
 
 #: ../../Symbol table:100
 msgid "◁ ``\\triangleleft``"
-msgstr ""
+msgstr "◁ ``\\triangleleft``"
 
 #: ../../Symbol table:100
 msgid "⊴ ``\\trianglelefteq``"
-msgstr ""
+msgstr "⊴ ``\\trianglelefteq``"
 
 #: ../../Symbol table:101
 msgid "≜ ``\\triangleq``"
-msgstr ""
+msgstr "≜ ``\\triangleq``"
 
 #: ../../Symbol table:101
 msgid "▷ ``\\triangleright``"
-msgstr ""
+msgstr "▷ ``\\triangleright``"
 
 #: ../../Symbol table:101
 msgid "⊵ ``\\trianglerighteq``"
-msgstr ""
+msgstr "⊵ ``\\trianglerighteq``"
 
 #: ../../Symbol table:101
 msgid "⊎ ``\\uplus``"
-msgstr ""
+msgstr "⊎ ``\\uplus``"
 
 #: ../../Symbol table:102
 msgid "⊨ ``\\vDash``"
-msgstr ""
+msgstr "⊨ ``\\vDash``"
 
 #: ../../Symbol table:102
 msgid "∝ ``\\varpropto``"
-msgstr ""
+msgstr "∝ ``\\varpropto``"
 
 #: ../../Symbol table:102
 msgid "⊲ ``\\vartriangleleft``"
-msgstr ""
+msgstr "⊲ ``\\vartriangleleft``"
 
 #: ../../Symbol table:102
 msgid "⊳ ``\\vartriangleright``"
-msgstr ""
+msgstr "⊳ ``\\vartriangleright``"
 
 #: ../../Symbol table:103
 msgid "⊢ ``\\vdash``"
-msgstr ""
+msgstr "⊢ ``\\vdash``"
 
 #: ../../Symbol table:103
 msgid "∨ ``\\vee``"
-msgstr ""
+msgstr "∨ ``\\vee``"
 
 #: ../../Symbol table:103
 msgid "⊻ ``\\veebar``"
-msgstr ""
+msgstr "⊻ ``\\veebar``"
 
 #: ../../Symbol table:103
 msgid "∧ ``\\wedge``"
-msgstr ""
+msgstr "∧ ``\\wedge``"
 
 #: ../../Symbol table:104
 msgid "≀ ``\\wr``"
-msgstr ""
+msgstr "≀ ``\\wr``"
 
 #: ../../Symbol table:107
 msgid "**Arrow symbols**"
-msgstr ""
+msgstr "**Arrow symbols**"
 
 #: ../../Symbol table:110
 msgid "⇐ ``\\Leftarrow``"
-msgstr ""
+msgstr "⇐ ``\\Leftarrow``"
 
 #: ../../Symbol table:110
 msgid "⇔ ``\\Leftrightarrow``"
-msgstr ""
+msgstr "⇔ ``\\Leftrightarrow``"
 
 #: ../../Symbol table:110
 msgid "⇚ ``\\Lleftarrow``"
-msgstr ""
+msgstr "⇚ ``\\Lleftarrow``"
 
 #: ../../Symbol table:111
 msgid "⟸ ``\\Longleftarrow``"
-msgstr ""
+msgstr "⟸ ``\\Longleftarrow``"
 
 #: ../../Symbol table:111
 msgid "⟺ ``\\Longleftrightarrow``"
-msgstr ""
+msgstr "⟺ ``\\Longleftrightarrow``"
 
 #: ../../Symbol table:111
 msgid "⟹ ``\\Longrightarrow``"
-msgstr ""
+msgstr "⟹ ``\\Longrightarrow``"
 
 #: ../../Symbol table:111
 msgid "↰ ``\\Lsh``"
-msgstr ""
+msgstr "↰ ``\\Lsh``"
 
 #: ../../Symbol table:112
 msgid "⇗ ``\\Nearrow``"
-msgstr ""
+msgstr "⇗ ``\\Nearrow``"
 
 #: ../../Symbol table:112
 msgid "⇖ ``\\Nwarrow``"
-msgstr ""
+msgstr "⇖ ``\\Nwarrow``"
 
 #: ../../Symbol table:112
 msgid "⇒ ``\\Rightarrow``"
-msgstr ""
+msgstr "⇒ ``\\Rightarrow``"
 
 #: ../../Symbol table:112
 msgid "⇛ ``\\Rrightarrow``"
-msgstr ""
+msgstr "⇛ ``\\Rrightarrow``"
 
 #: ../../Symbol table:113
 msgid "↱ ``\\Rsh``"
-msgstr ""
+msgstr "↱ ``\\Rsh``"
 
 #: ../../Symbol table:113
 msgid "⇘ ``\\Searrow``"
-msgstr ""
+msgstr "⇘ ``\\Searrow``"
 
 #: ../../Symbol table:113
 msgid "⇙ ``\\Swarrow``"
-msgstr ""
+msgstr "⇙ ``\\Swarrow``"
 
 #: ../../Symbol table:114
 msgid "⇕ ``\\Updownarrow``"
-msgstr ""
+msgstr "⇕ ``\\Updownarrow``"
 
 #: ../../Symbol table:114
 msgid "↺ ``\\circlearrowleft``"
-msgstr ""
+msgstr "↺ ``\\circlearrowleft``"
 
 #: ../../Symbol table:114
 msgid "↻ ``\\circlearrowright``"
-msgstr ""
+msgstr "↻ ``\\circlearrowright``"
 
 #: ../../Symbol table:114
 msgid "↶ ``\\curvearrowleft``"
-msgstr ""
+msgstr "↶ ``\\curvearrowleft``"
 
 #: ../../Symbol table:115
 msgid "↷ ``\\curvearrowright``"
-msgstr ""
+msgstr "↷ ``\\curvearrowright``"
 
 #: ../../Symbol table:115
 msgid "⤎ ``\\dashleftarrow``"
-msgstr ""
+msgstr "⤎ ``\\dashleftarrow``"
 
 #: ../../Symbol table:115
 msgid "⤏ ``\\dashrightarrow``"
-msgstr ""
+msgstr "⤏ ``\\dashrightarrow``"
 
 #: ../../Symbol table:116
 msgid "⇊ ``\\downdownarrows``"
-msgstr ""
+msgstr "⇊ ``\\downdownarrows``"
 
 #: ../../Symbol table:116
 msgid "⇃ ``\\downharpoonleft``"
-msgstr ""
+msgstr "⇃ ``\\downharpoonleft``"
 
 #: ../../Symbol table:116
 msgid "⇂ ``\\downharpoonright``"
-msgstr ""
+msgstr "⇂ ``\\downharpoonright``"
 
 #: ../../Symbol table:116
 msgid "↩ ``\\hookleftarrow``"
-msgstr ""
+msgstr "↩ ``\\hookleftarrow``"
 
 #: ../../Symbol table:117
 msgid "↪ ``\\hookrightarrow``"
-msgstr ""
+msgstr "↪ ``\\hookrightarrow``"
 
 #: ../../Symbol table:117
 msgid "⇝ ``\\leadsto``"
-msgstr ""
+msgstr "⇝ ``\\leadsto``"
 
 #: ../../Symbol table:117
 msgid "← ``\\leftarrow``"
-msgstr ""
+msgstr "← ``\\leftarrow``"
 
 #: ../../Symbol table:117
 msgid "↢ ``\\leftarrowtail``"

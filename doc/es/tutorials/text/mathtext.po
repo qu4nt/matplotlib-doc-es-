@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-05-22 00:03\n"
+"PO-Revision-Date: 2022-05-29 15:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,71 +20,71 @@ msgstr ""
 
 #: ../../tutorials/text/mathtext.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_text_mathtext.py>` to download the full example code"
-msgstr ""
+msgstr "Haga clic en :ref:`aquí <sphx_glr_download_tutorials_text_mathtext.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/text/mathtext.rst:22
 msgid "Writing mathematical expressions"
-msgstr ""
+msgstr "Escribir expresiones matemáticas"
 
 #: ../../tutorials/text/mathtext.rst:24
 msgid "You can use a subset of TeX markup in any Matplotlib text string by placing it inside a pair of dollar signs ($)."
-msgstr ""
+msgstr "Puedes utilizar un subconjunto de marcas TeX en cualquier cadena de texto de Matplotlib colocándolo dentro de un par de signos de dólar ($)."
 
 #: ../../tutorials/text/mathtext.rst:27
 msgid "Note that you do not need to have TeX installed, since Matplotlib ships its own TeX expression parser, layout engine, and fonts.  The layout engine is a fairly direct adaptation of the layout algorithms in Donald Knuth's TeX, so the quality is quite good (Matplotlib also provides a ``usetex`` option for those who do want to call out to TeX to generate their text (see :doc:`/tutorials/text/usetex`)."
-msgstr ""
+msgstr "Ten en cuenta que no necesitas tener instalado TeX, ya que Matplotlib incluye su propio analizador de expresiones TeX, motor de diseño y fuentes.  El motor de diseño es una adaptación bastante directa de los algoritmos de diseño en TeX de Donald Knuth, por lo que la calidad es bastante buena (Matplotlib también proporciona una opción ``usetex`` para aquellos que quieren llamar a TeX para generar su texto (ver :doc:`/tutorials/text/usetex`)."
 
 #: ../../tutorials/text/mathtext.rst:34
 msgid "Any text element can use math text.  You should use raw strings (precede the quotes with an ``'r'``), and surround the math text with dollar signs ($), as in TeX. Regular text and mathtext can be interleaved within the same string. Mathtext can use DejaVu Sans (default), DejaVu Serif, the Computer Modern fonts (from (La)TeX), `STIX <http://www.stixfonts.org/>`_ fonts (with are designed to blend well with Times), or a Unicode font that you provide.  The mathtext font can be selected with the customization variable ``mathtext.fontset`` (see :doc:`/tutorials/introductory/customizing`)"
-msgstr ""
+msgstr "Cualquier elemento de texto puede utilizar texto matemático.  Debe utilizar cadenas de texto sin procesar (preceder las comillas con una ``'r'``), y rodear el texto matemático con signos de dólar ($), como en TeX. El texto regular y el texto matemático pueden intercalarse dentro de la misma cadena. El texto matemático puede utilizar DejaVu Sans (por defecto), DejaVu Serif, las fuentes Computer Modern (de (La)TeX), las fuentes `STIX <http://www.stixfonts.org/>`_ (con están diseñadas para mezclarse bien con Times), o una fuente Unicode que usted proporcione. La fuente mathtext puede seleccionarse con la variable de personalización ``mathtext.fontset`` (ver :doc:`/tutorials/introductory/customizing`)"
 
 #: ../../tutorials/text/mathtext.rst:43
 msgid "Here is a simple example::"
-msgstr ""
+msgstr "He aquí un ejemplo sencillo::"
 
 #: ../../tutorials/text/mathtext.rst:48
 msgid "produces \"alpha > beta\"."
-msgstr ""
+msgstr "genera \"alfa > beta\"."
 
 #: ../../tutorials/text/mathtext.rst:50
 msgid "Whereas this::"
-msgstr ""
+msgstr "Mientras que esto::"
 
 #: ../../tutorials/text/mathtext.rst:55
 msgid "produces \":mathmpl:`\\alpha > \\beta`\"."
-msgstr ""
+msgstr "genera \":mathmpl:`\\alpha > \\beta`\"."
 
 #: ../../tutorials/text/mathtext.rst:58
 msgid "Mathtext should be placed between a pair of dollar signs ($). To make it easy to display monetary values, e.g., \"$100.00\", if a single dollar sign is present in the entire string, it will be displayed verbatim as a dollar sign.  This is a small change from regular TeX, where the dollar sign in non-math text would have to be escaped ('\\\\\\$')."
-msgstr ""
+msgstr "El texto matemático debe colocarse entre un par de signos de dólar ($). Para facilitar la visualización de los valores monetarios, por ejemplo, \"100,00 dólares\", si un solo signo de dólar está presente en toda la cadena, se mostrará textualmente como un signo de dólar. Se trata de un pequeño cambio con respecto al TeX normal, en el que el signo de dólar en el texto no matemático tendría que ser evitado ('\\\\\\$')."
 
 #: ../../tutorials/text/mathtext.rst:65
 msgid "While the syntax inside the pair of dollar signs ($) aims to be TeX-like, the text outside does not.  In particular, characters such as::"
-msgstr ""
+msgstr "Mientras que la sintaxis dentro del par de signos de dólar ($) pretende ser similar a la de TeX, el texto de fuera no lo es.  En particular, caracteres como::"
 
 #: ../../tutorials/text/mathtext.rst:70
 msgid "have special meaning outside of math mode in TeX.  Therefore, these characters will behave differently depending on :rc:`text.usetex`.  See the :doc:`usetex tutorial </tutorials/text/usetex>` for more information."
-msgstr ""
+msgstr "tienen un significado especial fuera del modo matemático en TeX.  Por lo tanto, estos caracteres se comportarán de forma diferente dependiendo de :rc:`text.usetex`.  Consulte el tutorial :doc:`usetex </tutoriales/text/usetex>` para obtener más información."
 
 #: ../../tutorials/text/mathtext.rst:75
 msgid "Subscripts and superscripts"
-msgstr ""
+msgstr "Subíndices y superíndices"
 
 #: ../../tutorials/text/mathtext.rst:76
 msgid "To make subscripts and superscripts, use the ``'_'`` and ``'^'`` symbols::"
-msgstr ""
+msgstr "Para hacer subíndices y superíndices, utiliza los símbolos ``'_'`` y ``'^'``::"
 
 #: ../../tutorials/text/mathtext.rst:80
 msgid "\\alpha_i > \\beta_i"
-msgstr ""
+msgstr "\\alpha_i > \\beta_i"
 
 #: ../../tutorials/text/mathtext.rst:84
 msgid "To display multi-letter subscripts or superscripts correctly, you should put them in curly braces ``{...}``::"
-msgstr ""
+msgstr "Para mostrar correctamente los subíndices o superíndices de varias letras, debe ponerlos entre llaves ``{...}`::"
 
 #: ../../tutorials/text/mathtext.rst:89
 msgid "\\alpha^{ic} > \\beta_{ic}"
-msgstr ""
+msgstr "\\alpha^{ic} > \\beta_{ic}"
 
 #: ../../tutorials/text/mathtext.rst:93
 msgid "Some symbols automatically put their sub/superscripts under and over the operator.  For example, to write the sum of :mathmpl:`x_i` from :mathmpl:`0` to :mathmpl:`\\infty`, you could do::"
@@ -294,23 +294,23 @@ msgstr ""
 
 #: ../../tutorials/text/mathtext.rst:257
 msgid "``cm``: Computer Modern (TeX)"
-msgstr ""
+msgstr "``cm``: Computer Modern (TeX)"
 
 #: ../../tutorials/text/mathtext.rst:264
 msgid "``stix``: STIX (designed to blend well with Times)"
-msgstr ""
+msgstr "``stix``: STIX (diseñado para combinarse bien con Times)"
 
 #: ../../tutorials/text/mathtext.rst:271
 msgid "``stixsans``: STIX sans-serif"
-msgstr ""
+msgstr "``stixsans``: STIX sans-serif"
 
 #: ../../tutorials/text/mathtext.rst:278
 msgid "Additionally, you can use ``\\mathdefault{...}`` or its alias ``\\mathregular{...}`` to use the font used for regular text outside of mathtext.  There are a number of limitations to this approach, most notably that far fewer symbols will be available, but it can be useful to make math expressions blend well with other text in the plot."
-msgstr ""
+msgstr "Además, puede emplear ``mathdefault{...}` o su alias ``mathregular{...}`` para aplicar la fuente utilizada para el texto regular fuera de mathtext.  Hay una serie de limitaciones a este enfoque, sobre todo que muchos menos símbolos estarán disponibles, pero puede ser útil para hacer que las expresiones matemáticas se mezclen bien con otro texto en el gráfico."
 
 #: ../../tutorials/text/mathtext.rst:285
 msgid "Custom fonts"
-msgstr ""
+msgstr "Fuentes personalizadas"
 
 #: ../../tutorials/text/mathtext.rst:286
 msgid "mathtext also provides a way to use custom fonts for math.  This method is fairly tricky to use, and should be considered an experimental feature for patient users only.  By setting :rc:`mathtext.fontset` to ``custom``, you can then set the following parameters, which control which font file to use for a particular set of math characters."

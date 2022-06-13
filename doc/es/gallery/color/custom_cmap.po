@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:25\n"
+"PO-Revision-Date: 2022-06-13 21:24\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,125 +20,125 @@ msgstr ""
 
 #: ../../gallery/color/custom_cmap.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_color_custom_cmap.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_color_custom_cmap.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/color/custom_cmap.rst:23
 msgid "Creating a colormap from a list of colors"
-msgstr ""
+msgstr "Crear un mapa de colores a partir de una lista de colores"
 
 #: ../../gallery/color/custom_cmap.rst:25
 msgid "For more detail on creating and manipulating colormaps see :doc:`/tutorials/colors/colormap-manipulation`."
-msgstr ""
+msgstr "Para más detalles sobre la creación y manipulación de mapas de colores, véase :doc:`/tutorials/colors/colormap-manipulation`."
 
 #: ../../gallery/color/custom_cmap.rst:28
 msgid "Creating a :doc:`colormap </tutorials/colors/colormaps>` from a list of colors can be done with the `.LinearSegmentedColormap.from_list` method.  You must pass a list of RGB tuples that define the mixture of colors from 0 to 1."
-msgstr ""
+msgstr "La creación de un :doc:`colormap </tutorials/colors/colormaps>` a partir de una lista de colores puede hacerse con el método `.LinearSegmentedColormap.from_list`.  Debes pasar una lista de tuplas RGB que definan la mezcla de colores de 0 a 1."
 
 #: ../../gallery/color/custom_cmap.rst:34
 msgid "Creating custom colormaps"
-msgstr ""
+msgstr "Creación de mapas de colores personalizados"
 
 #: ../../gallery/color/custom_cmap.rst:35
 msgid "It is also possible to create a custom mapping for a colormap. This is accomplished by creating dictionary that specifies how the RGB channels change from one end of the cmap to the other."
-msgstr ""
+msgstr "También es posible crear un mapeo personalizado para un mapa de colores. Esto se consigue creando un diccionario que especifica cómo cambian los canales RGB de un extremo a otro del cmap."
 
 #: ../../gallery/color/custom_cmap.rst:39
 msgid "Example: suppose you want red to increase from 0 to 1 over the bottom half, green to do the same over the middle half, and blue over the top half.  Then you would use::"
-msgstr ""
+msgstr "Ejemplo: supongamos que queremos que el rojo aumente de 0 a 1 en la mitad inferior, el verde haga lo mismo en la mitad central y el azul en la mitad superior.  Entonces utilizarías::"
 
 #: ../../gallery/color/custom_cmap.rst:56
 msgid "If, as in this example, there are no discontinuities in the r, g, and b components, then it is quite simple: the second and third element of each tuple, above, is the same--call it \"y\".  The first element (\"x\") defines interpolation intervals over the full range of 0 to 1, and it must span that whole range.  In other words, the values of x divide the 0-to-1 range into a set of segments, and y gives the end-point color values for each segment."
-msgstr ""
+msgstr "Si, como en este ejemplo, no hay discontinuidades en los componentes r, g y b, entonces es bastante sencillo: el segundo y tercer elemento de cada tupla, arriba, es el mismo -llámalo \"y\".  El primer elemento (\"x\") define los intervalos de interpolación en todo el rango de 0 a 1, y debe abarcar todo ese rango.  En otras palabras, los valores de x dividen el rango de 0 a 1 en un conjunto de segmentos, e y da los valores de color del punto final de cada segmento."
 
 #: ../../gallery/color/custom_cmap.rst:64
 msgid "Now consider the green. cdict['green'] is saying that for 0 <= x <= 0.25, y is zero; no green. 0.25 < x <= 0.75, y varies linearly from 0 to 1. x > 0.75, y remains at 1, full green."
-msgstr ""
+msgstr "Ahora considere el verde. cdict['green'] está diciendo que para 0 <= x <= 0.25, y es cero; no hay verde. 0.25 < x <= 0.75, y varía linealmente de 0 a 1. x > 0.75, y permanece en 1, verde completo."
 
 #: ../../gallery/color/custom_cmap.rst:69
 msgid "If there are discontinuities, then it is a little more complicated. Label the 3 elements in each row in the cdict entry for a given color as (x, y0, y1).  Then for values of x between x[i] and x[i+1] the color value is interpolated between y1[i] and y0[i+1]."
-msgstr ""
+msgstr "Si hay discontinuidades, entonces es un poco más complicado. Etiquete los 3 elementos de cada fila en la entrada cdict para un color determinado como (x, y0, y1).  Entonces, para los valores de x entre x[i] y x[i+1] el valor del color se interpola entre y1[i] y y0[i+1]."
 
 #: ../../gallery/color/custom_cmap.rst:74
 msgid "Going back to the cookbook example, look at cdict['red']; because y0 != y1, it is saying that for x from 0 to 0.5, red increases from 0 to 1, but then it jumps down, so that for x from 0.5 to 1, red increases from 0.7 to 1.  Green ramps from 0 to 1 as x goes from 0 to 0.5, then jumps back to 0, and ramps back to 1 as x goes from 0.5 to 1.::"
-msgstr ""
+msgstr "Volviendo al ejemplo del libro de cocina, mira el cdict['red']; porque y0 != y1, está diciendo que para x de 0 a 0,5, el rojo aumenta de 0 a 1, pero luego salta hacia abajo, de modo que para x de 0,5 a 1, el rojo aumenta de 0,7 a 1.  El verde salta de 0 a 1 cuando x va de 0 a 0,5, luego salta de nuevo a 0, y vuelve a saltar a 1 cuando x va de 0,5 a 1.::"
 
 #: ../../gallery/color/custom_cmap.rst:85
 msgid "Above is an attempt to show that for x in the range x[i] to x[i+1], the interpolation is between y1[i] and y0[i+1].  So, y0[0] and y1[-1] are never used."
-msgstr ""
+msgstr "Lo anterior es un intento de mostrar que para x en el rango x[i] a x[i+1], la interpolación es entre y1[i] e y0[i+1].  Por lo tanto, y0[0] e y1[-1] nunca se utilizan."
 
 #: ../../gallery/color/custom_cmap.rst:115
 msgid "--- Colormaps from a list ---"
-msgstr ""
+msgstr "--- Mapas de colores de una lista ---"
 
 #: ../../gallery/color/custom_cmap.rst:150
 msgid "--- Custom colormaps ---"
-msgstr ""
+msgstr "--- Mapas de colores personalizados ---"
 
 #: ../../gallery/color/custom_cmap.rst:220
 msgid "Now we will use this example to illustrate 2 ways of handling custom colormaps. First, the most direct and explicit:"
-msgstr ""
+msgstr "Ahora utilizaremos este ejemplo para ilustrar dos formas de manejar los mapas de colores personalizados. Primero, la más directa y explícita:"
 
 #: ../../gallery/color/custom_cmap.rst:240
 msgid "Second, create the map explicitly and register it. Like the first method, this method works with any kind of Colormap, not just a LinearSegmentedColormap:"
-msgstr ""
+msgstr "En segundo lugar, crear el mapa explícitamente y registrarlo. Al igual que el primer método, este método funciona con cualquier tipo de Colormap, no sólo con un LinearSegmentedColormap:"
 
 #: ../../gallery/color/custom_cmap.rst:263
 msgid "Make the figure:"
-msgstr ""
+msgstr "Hacer la figura:"
 
 #: ../../gallery/color/custom_cmap.rst:329
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/color/custom_cmap.rst:331
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/color/custom_cmap.rst:334
 msgid "`matplotlib.axes.Axes.imshow` / `matplotlib.pyplot.imshow`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.imshow` / `matplotlib.pyplot.imshow`"
 
 #: ../../gallery/color/custom_cmap.rst:335
 msgid "`matplotlib.figure.Figure.colorbar` / `matplotlib.pyplot.colorbar`"
-msgstr ""
+msgstr "`matplotlib.figure.Figure.colorbar` / `matplotlib.pyplot.colorbar`"
 
 #: ../../gallery/color/custom_cmap.rst:336
 msgid "`matplotlib.colors`"
-msgstr ""
+msgstr "`matplotlib.colors`"
 
 #: ../../gallery/color/custom_cmap.rst:337
 msgid "`matplotlib.colors.LinearSegmentedColormap`"
-msgstr ""
+msgstr "`matplotlib.colors.LinearSegmentedColormap`"
 
 #: ../../gallery/color/custom_cmap.rst:338
 msgid "`matplotlib.colors.LinearSegmentedColormap.from_list`"
-msgstr ""
+msgstr "`matplotlib.colors.LinearSegmentedColormap.from_list`"
 
 #: ../../gallery/color/custom_cmap.rst:339
 msgid "`matplotlib.cm`"
-msgstr ""
+msgstr "`matplotlib.cm`"
 
 #: ../../gallery/color/custom_cmap.rst:340
 msgid "`matplotlib.cm.ScalarMappable.set_cmap`"
-msgstr ""
+msgstr "`matplotlib.cm.ScalarMappable.set_cmap`"
 
 #: ../../gallery/color/custom_cmap.rst:341
 msgid "`matplotlib.cm.register_cmap`"
-msgstr ""
+msgstr "`matplotlib.cm.register_cmap`"
 
 #: ../../gallery/color/custom_cmap.rst:346
 msgid "**Total running time of the script:** ( 0 minutes  1.807 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 1.807 segundos)"
 
 #: ../../gallery/color/custom_cmap.rst:361
 msgid ":download:`Download Python source code: custom_cmap.py <custom_cmap.py>`"
-msgstr ""
+msgstr ":download:`Descargar código fuente de Python: custom_cmap.py <custom_cmap.py>`"
 
 #: ../../gallery/color/custom_cmap.rst:367
 msgid ":download:`Download Jupyter notebook: custom_cmap.ipynb <custom_cmap.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar cuaderno de Jupyter: custom_cmap.ipynb <custom_cmap.ipynb>`"
 
 #: ../../gallery/color/custom_cmap.rst:374
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:26\n"
+"PO-Revision-Date: 2022-06-14 21:37\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,56 +20,56 @@ msgstr ""
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_lines_bars_and_markers_fill_between_demo.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_lines_bars_and_markers_fill_between_demo.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:23
 msgid "Filling the area between lines"
-msgstr ""
+msgstr "Rellenar el área entre líneas"
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:25
 msgid "This example shows how to use `~.axes.Axes.fill_between` to color the area between two lines."
-msgstr ""
+msgstr "Este ejemplo muestra cómo utilizar `~.axes.Axes.fill_between` para colorear el área entre dos líneas."
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:46
 msgid "Basic usage"
-msgstr ""
+msgstr "Uso básico"
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:47
 msgid "The parameters *y1* and *y2* can be scalars, indicating a horizontal boundary at the given y-values. If only *y1* is given, *y2* defaults to 0."
-msgstr ""
+msgstr "Los parámetros *y1* y *y2* pueden ser escalares, indicando un límite horizontal en los valores y dados. Si sólo se da *y1*, *y2* es por defecto 0."
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:87
 msgid "Example: Confidence bands"
-msgstr ""
+msgstr "Ejemplo: Bandas de confianza"
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:88
 msgid "A common application for `~.axes.Axes.fill_between` is the indication of confidence bands."
-msgstr ""
+msgstr "Una aplicación común para `~.axes.Axes.fill_between` es la indicación de bandas de confianza."
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:91
 msgid "`~.axes.Axes.fill_between` uses the colors of the color cycle as the fill color. These may be a bit strong when applied to fill areas. It is therefore often a good practice to lighten the color by making the area semi-transparent using *alpha*."
-msgstr ""
+msgstr "`~.axes.Axes.fill_between` utiliza los colores del ciclo de color como color de relleno. Estos pueden ser un poco fuertes cuando se aplican a las áreas de relleno. Por lo tanto, suele ser una buena práctica aligerar el color haciendo que el área sea semitransparente utilizando *alfa*."
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:128
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:237
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:140
 msgid "Selectively filling horizontal regions"
-msgstr ""
+msgstr "Relleno selectivo de regiones horizontales"
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:141
 msgid "The parameter *where* allows to specify the x-ranges to fill. It's a boolean array with the same size as *x*."
-msgstr ""
+msgstr "El parámetro *where* permite especificar los rangos x a rellenar. Es un arreglo booleano con el mismo tamaño que *x*."
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:144
 msgid "Only x-ranges of contiguous *True* sequences are filled. As a result the range between neighboring *True* and *False* values is never filled. This often undesired when the data points should represent a contiguous quantity. It is therefore recommended to set ``interpolate=True`` unless the x-distance of the data points is fine enough so that the above effect is not noticeable. Interpolation approximates the actual x position at which the *where* condition will change and extends the filling up to there."
-msgstr ""
+msgstr "Sólo se rellenan los rangos x de secuencias contiguas *True*. Como resultado, el rango entre valores *True* y *False* vecinos nunca se rellena. Esto no suele ser deseable cuando los puntos de datos deben representar una cantidad contigua. Por lo tanto, se recomienda establecer ``interpolar=True`` a menos que la distancia x de los puntos de datos sea lo suficientemente fina como para que el efecto anterior no se note. La interpolación aproxima la posición x real en la que cambiará la condición *donde* y extiende el relleno hasta allí."
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:194
 msgid "Similar gaps will occur if *y1* or *y2* are masked arrays. Since missing values cannot be approximated, *interpolate* has no effect in this case. The gaps around masked values can only be reduced by adding more data points close to the masked values."
-msgstr ""
+msgstr "Se producirán vacíos similares si *y1* o *y2* son arreglos enmascarados. Como los valores que faltan no pueden aproximarse, *interpolate* no tiene efecto en este caso. Los huecos alrededor de los valores enmascarados sólo pueden reducirse añadiendo más puntos de datos cerca de los valores enmascarados."
 
 #: ../../gallery/lines_bars_and_markers/fill_between_demo.rst:202
 msgid "Selectively marking horizontal regions across the whole Axes"

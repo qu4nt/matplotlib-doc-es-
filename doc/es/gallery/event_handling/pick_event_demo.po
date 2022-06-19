@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:26\n"
+"PO-Revision-Date: 2022-06-19 16:56\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,93 +20,93 @@ msgstr ""
 
 #: ../../gallery/event_handling/pick_event_demo.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_event_handling_pick_event_demo.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_event_handling_pick_event_demo.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:23
 msgid "Pick Event Demo"
-msgstr ""
+msgstr "Demostración de selección de eventos"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:26
 msgid "You can enable picking by setting the \"picker\" property of an artist (for example, a matplotlib Line2D, Text, Patch, Polygon, AxesImage, etc...)"
-msgstr ""
+msgstr "Puedes habilitar la selección estableciendo la propiedad \"picker\" de un artista (por ejemplo, un matplotlib Line2D, Text, Patch, Polygon, AxesImage, etc...)"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:30
 msgid "There are a variety of meanings of the picker property:"
-msgstr ""
+msgstr "Hay una variedad de significados de la propiedad picker:"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:32
 msgid "*None* - picking is disabled for this artist (default)"
-msgstr ""
+msgstr "*None* - la selección está desactivada para este artista (por defecto)"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:34
 msgid "bool - if *True* then picking will be enabled and the artist will fire a pick event if the mouse event is over the artist."
-msgstr ""
+msgstr "bool - si *True* entonces la selección estará habilitada y el artista disparará un evento de selección si el evento del ratón está sobre el artista."
 
 #: ../../gallery/event_handling/pick_event_demo.rst:37
 msgid "Setting ``pickradius`` will add an epsilon tolerance in points and the artist will fire off an event if its data is within epsilon of the mouse event.  For some artists like lines and patch collections, the artist may provide additional data to the pick event that is generated, for example, the indices of the data within epsilon of the pick event"
-msgstr ""
+msgstr "Al establecer ``pickradius`` se añadirá una tolerancia epsilon en puntos y el artista disparará un evento si sus datos están dentro de epsilon del evento del ratón.  Para algunos artistas como las líneas y las colecciones de parches, el artista puede proporcionar datos adicionales al evento de selección que se genera, por ejemplo, los índices de los datos dentro de epsilon del evento de selección"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:43
 msgid "function - if picker is callable, it is a user supplied function which determines whether the artist is hit by the mouse event."
-msgstr ""
+msgstr "function - si el picker es invocable, es una función suministrada por el usuario que determina si el artista es golpeado por el evento del ratón."
 
 #: ../../gallery/event_handling/pick_event_demo.rst:46
 msgid "hit, props = picker(artist, mouseevent)"
-msgstr ""
+msgstr "hit, props = picker(artist, mouseevent)"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:48
 msgid "to determine the hit test.  If the mouse event is over the artist, return hit=True and props is a dictionary of properties you want added to the PickEvent attributes."
-msgstr ""
+msgstr "para determinar la prueba de acierto.  Si el evento del ratón está sobre el artista, devuelve hit=True y props es un diccionario de propiedades que quiere añadir a los atributos de PickEvent."
 
 #: ../../gallery/event_handling/pick_event_demo.rst:52
 msgid "After you have enabled an artist for picking by setting the \"picker\" property, you need to connect to the figure canvas pick_event to get pick callbacks on mouse press events.  For example,"
-msgstr ""
+msgstr "Una vez que hayas habilitado un artist para la selección estableciendo la propiedad \"picker\", necesitas conectarlo al lienzo de la figura pick_event para obtener las devoluciones de llamada de la selección en los eventos de pulsación del ratón.  Por ejemplo,"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:60
 msgid "def pick_handler(event):"
-msgstr ""
+msgstr "def pick_handler(event):"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:57
 msgid "mouseevent = event.mouseevent artist = event.artist # now do something with this..."
-msgstr ""
+msgstr "mouseevent = event.mouseevent artist = event.artist # ahora haz algo con esto..."
 
 #: ../../gallery/event_handling/pick_event_demo.rst:62
 msgid "The pick event (matplotlib.backend_bases.PickEvent) which is passed to your callback is always fired with two attributes:"
-msgstr ""
+msgstr "El evento pick (matplotlib.backend_bases.PickEvent) que se pasa a su callback, se dispara siempre con dos atributos:"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:71
 msgid "mouseevent - the mouse event that generate the pick event.  The"
-msgstr ""
+msgstr "mouseevent - el evento del ratón que genera el evento de selección.  El"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:66
 msgid "mouse event in turn has attributes like x and y (the coordinates in display space, such as pixels from left, bottom) and xdata, ydata (the coords in data space).  Additionally, you can get information about which buttons were pressed, which keys were pressed, which Axes the mouse is over, etc.  See matplotlib.backend_bases.MouseEvent for details."
-msgstr ""
+msgstr "evento del ratón tiene, a su vez, atributos como x e y (las coordenadas en el espacio de visualización, como píxeles desde la izquierda, abajo) y xdata, ydata (las coordenadas en el espacio de datos).  Además, se puede obtener información sobre qué botones se han pulsado, qué teclas se han pulsado, sobre qué ejes está el ratón, etc.  Ver matplotlib.backend_bases.MouseEvent para más detalles."
 
 #: ../../gallery/event_handling/pick_event_demo.rst:73
 msgid "artist - the matplotlib.artist that generated the pick event."
-msgstr ""
+msgstr "artist - el matplotlib.artist que generó el evento de selección."
 
 #: ../../gallery/event_handling/pick_event_demo.rst:75
 msgid "Additionally, certain artists like Line2D and PatchCollection may attach additional meta data like the indices into the data that meet the picker criteria (for example, all the points in the line that are within the specified epsilon tolerance)"
-msgstr ""
+msgstr "Además, algunos artistas como Line2D y PatchCollection pueden adjuntar metadatos adicionales como los índices en los datos que cumplen los criterios del picker (por ejemplo, todos los puntos de la línea que están dentro de la tolerancia epsilon especificada)"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:80
 msgid "The examples below illustrate each of these methods."
-msgstr ""
+msgstr "Los ejemplos siguientes ilustran cada uno de estos métodos."
 
 #: ../../gallery/event_handling/pick_event_demo.rst:252
 msgid "**Total running time of the script:** ( 0 minutes  1.082 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 1.082 segundos)"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:267
 msgid ":download:`Download Python source code: pick_event_demo.py <pick_event_demo.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: pick_event_demo.py <pick_event_demo.py>`"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:273
 msgid ":download:`Download Jupyter notebook: pick_event_demo.ipynb <pick_event_demo.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: pick_event_demo.ipynb <pick_event_demo.ipynb>`"
 
 #: ../../gallery/event_handling/pick_event_demo.rst:280
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

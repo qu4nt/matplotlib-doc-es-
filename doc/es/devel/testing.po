@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-06-22 14:52\n"
+"PO-Revision-Date: 2022-06-22 16:04\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -172,81 +172,81 @@ msgstr "Uso de tox"
 
 #: ../../devel/testing.rst:170
 msgid "`Tox <https://tox.readthedocs.io/en/latest/>`_ is a tool for running tests against multiple Python environments, including multiple versions of Python (e.g., 3.6, 3.7) and even different Python implementations altogether (e.g., CPython, PyPy, Jython, etc.), as long as all these versions are available on your system's $PATH (consider using your system package manager, e.g. apt-get, yum, or Homebrew, to install them)."
-msgstr ""
+msgstr "`Tox <https://tox.readthedocs.io/en/latest/>`_ es una herramienta para ejecutar pruebas contra múltiples entornos de Python, incluyendo múltiples versiones de Python (por ejemplo, 3.6, 3.7) e incluso diferentes implementaciones de Python en conjunto (por ejemplo, CPython, PyPy, Jython, etc.), siempre y cuando todas estas versiones estén disponibles en el $PATH de su sistema (considere el uso de su gestor de paquetes del sistema, por ejemplo, apt-get, yum, o Homebrew, para instalarlos)."
 
 #: ../../devel/testing.rst:177
 msgid "tox makes it easy to determine if your working copy introduced any regressions before submitting a pull request. Here's how to use it:"
-msgstr ""
+msgstr "tox hace que sea fácil determinar si su copia de trabajo introdujo alguna regresión antes de enviar un pull request. Así es como se usa:"
 
 #: ../../devel/testing.rst:185
 msgid "You can also run tox on a subset of environments:"
-msgstr ""
+msgstr "También puede ejecutar tox en un subconjunto de entornos:"
 
 #: ../../devel/testing.rst:191
 msgid "Tox processes everything serially so it can take a long time to test several environments. To speed it up, you might try using a new, parallelized version of tox called ``detox``. Give this a try:"
-msgstr ""
+msgstr "Tox procesa todo en serie, por lo que puede llevar mucho tiempo probar varios entornos. Para acelerarlo, puedes intentar usar una nueva versión paralela de tox llamada ``detox``. Pruébalo:"
 
 #: ../../devel/testing.rst:200
 msgid "Tox is configured using a file called ``tox.ini``. You may need to edit this file if you want to add new environments to test (e.g., ``py33``) or if you want to tweak the dependencies or the way the tests are run. For more info on the ``tox.ini`` file, see the `Tox Configuration Specification <https://tox.readthedocs.io/en/latest/config.html>`_."
-msgstr ""
+msgstr "Tox se configura mediante un archivo llamado ``tox.ini``. Es posible que tengas que editar este archivo si quieres añadir nuevos entornos para probar (por ejemplo, ``py33``) o si quieres modificar las dependencias o la forma de ejecutar las pruebas. Para más información sobre el archivo ``tox.ini``, consulta la `Especificación de configuración de Tox <https://tox.readthedocs.io/en/latest/config.html>`_."
 
 #: ../../devel/testing.rst:208
 msgid "Building old versions of Matplotlib"
-msgstr ""
+msgstr "Construir versiones antiguas de Matplotlib"
 
 #: ../../devel/testing.rst:210
 msgid "When running a ``git bisect`` to see which commit introduced a certain bug, you may (rarely) need to build very old versions of Matplotlib.  The following constraints need to be taken into account:"
-msgstr ""
+msgstr "Cuando se ejecuta un ``git bisect`` para ver qué commit introdujo un determinado error, es posible que (raramente) se necesite construir versiones muy antiguas de Matplotlib.  Hay que tener en cuenta las siguientes limitaciones:"
 
 #: ../../devel/testing.rst:214
 msgid "Matplotlib 1.3 (or earlier) requires numpy 1.8 (or earlier)."
-msgstr ""
+msgstr "Matplotlib 1.3 (o anterior) requiere numpy 1.8 (o anterior)."
 
 #: ../../devel/testing.rst:217
 msgid "Testing released versions of Matplotlib"
-msgstr ""
+msgstr "Prueba de las versiones liberadas de Matplotlib"
 
 #: ../../devel/testing.rst:218
 msgid "Running the tests on an installation of a released version (e.g. PyPI package or conda package) also requires additional setup."
-msgstr ""
+msgstr "Ejecutar las pruebas en una instalación de una versión liberada (por ejemplo, el paquete PyPI o el paquete conda) también requiere una configuración adicional."
 
 #: ../../devel/testing.rst:223
 msgid "For an end-user, there is usually no need to run the tests on released versions of Matplotlib. Official releases are tested before publishing."
-msgstr ""
+msgstr "Para un usuario final, normalmente no hay necesidad de ejecutar las pruebas en las versiones liberadas de Matplotlib. Las versiones oficiales se prueban antes de su publicación."
 
 #: ../../devel/testing.rst:227
 msgid "Install additional dependencies"
-msgstr ""
+msgstr "Instalar dependencias adicionales"
 
 #: ../../devel/testing.rst:228
 msgid "Install the :ref:`additional dependencies for testing <test-dependencies>`."
-msgstr ""
+msgstr "Instala las :ref:`dependencias adicionales para probar <test-dependencies>`."
 
 #: ../../devel/testing.rst:231
 msgid "Obtain the reference images"
-msgstr ""
+msgstr "Obtener las imágenes de referencia"
 
 #: ../../devel/testing.rst:232
 msgid "Many tests compare the plot result against reference images. The reference images are not part of the regular packaged versions (pip wheels or conda packages). If you want to run tests with reference images, you need to obtain the reference images matching the version of Matplotlib you want to test."
-msgstr ""
+msgstr "Muchas pruebas comparan el resultado del gráfico con imágenes de referencia. Las imágenes de referencia no forman parte de las versiones regulares empaquetadas (wheels pip o paquetes conda). Si quieres ejecutar pruebas con imágenes de referencia, necesitas obtener las imágenes de referencia que correspondan con la versión de Matplotlib que quieres probar."
 
 #: ../../devel/testing.rst:237
 msgid "To do so, either download the matching source distribution ``matplotlib-X.Y.Z.tar.gz`` from `PyPI <https://pypi.org/project/matplotlib/>`_ or alternatively, clone the git repository and ``git checkout vX.Y.Z``. Copy the folder :file:`lib/matplotlib/tests/baseline_images` to the folder :file:`matplotlib/tests` of your the matplotlib installation to test. The correct target folder can be found using::"
-msgstr ""
+msgstr "Para ello, descarga la distribución fuente correspondiente ``matplotlib-X.Y.Z.tar.gz`` de `PyPI <https://pypi.org/project/matplotlib/>`_ o bien clona el repositorio git y ``git checkout vX.Y.Z``. Copia la carpeta :file:`lib/matplotlib/tests/baseline_images` a la carpeta :file:`matplotlib/tests` de su instalación de matplotlib a probar. La carpeta de destino correcta se puede encontrar utilizando::"
 
 #: ../../devel/testing.rst:246
 msgid "An analogous copying of :file:`lib/mpl_toolkits/tests/baseline_images` is necessary for testing ``mpl_toolkits``."
-msgstr ""
+msgstr "Una copia análoga de :file:`lib/mpl_toolkits/tests/baseline_images` es necesaria para probar ``mpl_toolkits``."
 
 #: ../../devel/testing.rst:250
 msgid "Run the tests"
-msgstr ""
+msgstr "Ejecutar las pruebas"
 
 #: ../../devel/testing.rst:251
 msgid "To run the all the tests on your installed version of Matplotlib::"
-msgstr ""
+msgstr "Para ejecutar todas las pruebas en su versión instalada de Matplotlib::"
 
 #: ../../devel/testing.rst:255
 msgid "The test discovery scope can be narrowed to single test modules or even single functions::"
-msgstr ""
+msgstr "El alcance de la detección de pruebas puede limitarse a módulos de prueba individuales o incluso a funciones individuales::"
 

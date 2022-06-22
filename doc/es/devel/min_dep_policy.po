@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:25\n"
+"PO-Revision-Date: 2022-06-22 12:30\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,75 +20,75 @@ msgstr ""
 
 #: ../../devel/min_dep_policy.rst:5
 msgid "Minimum version of dependencies policy"
-msgstr ""
+msgstr "Política de versión mínima de las dependencias"
 
 #: ../../devel/min_dep_policy.rst:7
 msgid "For the purpose of this document, 'minor version' is in the sense of SemVer (major, minor, patch) and includes both major and minor releases. For projects that use date-based versioning, every release is a 'minor version'."
-msgstr ""
+msgstr "A efectos de este documento, 'versión menor' se entiende en el sentido de SemVer (mayor, menor, parche) e incluye tanto las versiones mayores como las menores. Para los proyectos que utilizan el versionado basado en la fecha, cada versión es una 'versión menor'."
 
 #: ../../devel/min_dep_policy.rst:12
 msgid "Matplotlib follows `NEP 29 <https://numpy.org/neps/nep-0029-deprecation_policy.html>`__."
-msgstr ""
+msgstr "Matplotlib sigue `NEP 29 <https://numpy.org/neps/nep-0029-deprecation_policy.html>`__."
 
 #: ../../devel/min_dep_policy.rst:16
 msgid "Python and NumPy"
-msgstr ""
+msgstr "Python y NumPy"
 
 #: ../../devel/min_dep_policy.rst:18
 msgid "Matplotlib supports:"
-msgstr ""
+msgstr "Soporte de Matplotlib:"
 
 #: ../../devel/min_dep_policy.rst:20
 msgid "All minor versions of Python released 42 months prior to the project, and at minimum the two latest minor versions."
-msgstr ""
+msgstr "Todas las versiones menores de Python publicadas 42 meses antes del proyecto, y como mínimo las dos últimas versiones menores."
 
 #: ../../devel/min_dep_policy.rst:22
 msgid "All minor versions of ``numpy`` released in the 24 months prior to the project, and at minimum the last three minor versions."
-msgstr ""
+msgstr "Todas las versiones menores de ``numpy`` publicadas en los 24 meses anteriores al proyecto, y como mínimo las tres últimas versiones menores."
 
 #: ../../devel/min_dep_policy.rst:25
 msgid "In ``setup.py``, the ``python_requires`` variable should be set to the minimum supported version of Python.  All supported minor versions of Python should be in the test matrix and have binary artifacts built for the release."
-msgstr ""
+msgstr "En ``setup.py``, la variable ``python_requires`` debe establecerse en la versión mínima soportada de Python.  Todas las versiones menores de Python soportadas deben estar en la matriz de pruebas y tener artefactos binarios construidos para la versión."
 
 #: ../../devel/min_dep_policy.rst:30
 msgid "Minimum Python and NumPy version support should be adjusted upward on every major and minor release, but never on a patch release."
-msgstr ""
+msgstr "El soporte mínimo de las versiones de Python y NumPy debe ajustarse al alza en cada versión mayor y menor, pero nunca en una versión de parche."
 
 #: ../../devel/min_dep_policy.rst:33
 msgid "See also the :ref:`list-of-dependency-min-versions`."
-msgstr ""
+msgstr "Ver también la :ref:`list-of-dependency-min-versions`."
 
 #: ../../devel/min_dep_policy.rst:36
 msgid "Python dependencies"
-msgstr ""
+msgstr "Dependencias de Python"
 
 #: ../../devel/min_dep_policy.rst:38
 msgid "For Python dependencies we should support at least:"
-msgstr ""
+msgstr "Para las dependencias de Python deberíamos apoyar al menos:"
 
 #: ../../devel/min_dep_policy.rst:42
 msgid "with compiled extensions"
-msgstr ""
+msgstr "con extensiones compiladas"
 
 #: ../../devel/min_dep_policy.rst:41
 msgid "minor versions initially released in the 24 months prior to our planned release date or the oldest that support our minimum Python + NumPy"
-msgstr ""
+msgstr "las versiones menores publicadas inicialmente en los 24 meses anteriores a nuestra fecha de lanzamiento prevista o las más antiguas que soportan nuestro Python + NumPy mínimo"
 
 #: ../../devel/min_dep_policy.rst:46
 msgid "without compiled extensions"
-msgstr ""
+msgstr "sin extensiones compiladas"
 
 #: ../../devel/min_dep_policy.rst:45
 msgid "minor versions initially released in the 12 months prior to our planned release date or the oldest that supports our minimum Python."
-msgstr ""
+msgstr "versiones menores publicadas inicialmente en los 12 meses anteriores a la fecha de lanzamiento prevista o la más antigua que soporte nuestro Python mínimo."
 
 #: ../../devel/min_dep_policy.rst:48
 msgid "We will only bump these dependencies as we need new features or the old versions no longer support our minimum NumPy or Python."
-msgstr ""
+msgstr "Sólo eliminaremos estas dependencias cuando necesitemos nuevas características o las versiones antiguas ya no soporten nuestro NumPy o Python mínimo."
 
 #: ../../devel/min_dep_policy.rst:52
 msgid "Test and documentation dependencies"
-msgstr ""
+msgstr "Dependencias de pruebas y documentación"
 
 #: ../../devel/min_dep_policy.rst:54
 msgid "As these packages are only needed for testing or building the docs and not needed by end-users, we can be more aggressive about dropping support for old versions.  However, we need to be careful to not over-run what down-stream packagers support (as most of the run the tests and build the documentation as part of the packaging process)."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:25\n"
+"PO-Revision-Date: 2022-06-22 14:52\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -128,47 +128,47 @@ msgstr ""
 
 #: ../../devel/testing.rst:123
 msgid "Baseline images take a lot of space in the Matplotlib repository. An alternative approach for image comparison tests is to use the `~matplotlib.testing.decorators.check_figures_equal` decorator, which should be used to decorate a function taking two `.Figure` parameters and draws the same images on the figures using two different methods (the tested method and the baseline method).  The decorator will arrange for setting up the figures and then collect the drawn results and compare them."
-msgstr ""
+msgstr "Las imágenes de referencia ocupan mucho espacio en el repositorio de Matplotlib. Un enfoque alternativo para las pruebas de comparación de imágenes es utilizar el decorador `~matplotlib.testing.decorators.check_figures_equal`, que debe utilizarse para decorar una función que toma dos parámetros `.Figure` y dibuja las mismas imágenes en las figuras utilizando dos métodos diferentes (el método probado y el método de línea de base).  El decorador se encargará de configurar las figuras y luego recogerá los resultados dibujados y los comparará."
 
 #: ../../devel/testing.rst:131
 msgid "See the documentation of `~matplotlib.testing.decorators.image_comparison` and `~matplotlib.testing.decorators.check_figures_equal` for additional information about their use."
-msgstr ""
+msgstr "Consulte la documentación de `~matplotlib.testing.decorators.image_comparison` y `~matplotlib.testing.decorators.check_figures_equal` para obtener información adicional sobre su uso."
 
 #: ../../devel/testing.rst:136
 msgid "Creating a new module in matplotlib.tests"
-msgstr ""
+msgstr "Creación de un nuevo módulo en matplotlib.tests"
 
 #: ../../devel/testing.rst:138
 msgid "We try to keep the tests categorized by the primary module they are testing.  For example, the tests related to the ``mathtext.py`` module are in ``test_mathtext.py``."
-msgstr ""
+msgstr "Intentamos mantener las pruebas clasificadas por el módulo principal que están probando.  Por ejemplo, las pruebas relacionadas con el módulo ``mathtext.py`` están en ``test_mathtext.py``."
 
 #: ../../devel/testing.rst:143
 msgid "Using GitHub Actions for CI"
-msgstr ""
+msgstr "Uso de las acciones de GitHub para el CI"
 
 #: ../../devel/testing.rst:145
 msgid "`GitHub Actions <https://docs.github.com/en/actions>`_ is a hosted CI system \"in the cloud\"."
-msgstr ""
+msgstr "`GitHub Actions <https://docs.github.com/en/actions>`_ es un sistema de CI alojado \"en la nube\"."
 
 #: ../../devel/testing.rst:148
 msgid "GitHub Actions is configured to receive notifications of new commits to GitHub repos and to run builds or tests when it sees these new commits. It looks for a YAML files in ``.github/workflows`` to see how to test the project."
-msgstr ""
+msgstr "GitHub Actions está configurado para recibir notificaciones de nuevos commits en los repos de GitHub y para ejecutar builds o tests cuando vea estos nuevos commits. Busca un archivo YAML en ``.github/workflows`` para ver cómo probar el proyecto."
 
 #: ../../devel/testing.rst:152
 msgid "GitHub Actions is already enabled for the `main Matplotlib GitHub repository <https://github.com/matplotlib/matplotlib/>`_ -- for example, see `the Tests workflows <https://github.com/matplotlib/matplotlib/actions?query=workflow%3ATests>`_."
-msgstr ""
+msgstr "Las Acciones de GitHub ya están activadas para el `repositorio principal de Matplotlib en GitHub <https://github.com/matplotlib/matplotlib/>`_ -- por ejemplo, ver `los flujos de trabajo de Pruebas <https://github.com/matplotlib/matplotlib/actions?query=workflow%3ATests>`_."
 
 #: ../../devel/testing.rst:157
 msgid "GitHub Actions should be automatically enabled for your personal Matplotlib fork once the YAML workflow files are in it. It generally isn't necessary to look at these workflows, since any pull request submitted against the main Matplotlib repository will be tested."
-msgstr ""
+msgstr "Las acciones de GitHub deberían activarse automáticamente para su fork personal de Matplotlib una vez que los archivos de flujo de trabajo YAML estén en él. Generalmente no es necesario mirar estos flujos de trabajo, ya que cualquier pull request enviado contra el repositorio principal de Matplotlib será probado."
 
 #: ../../devel/testing.rst:162
 msgid "You can see the GitHub Actions results at https://github.com/your_GitHub_user_name/matplotlib/actions -- here's `an example <https://github.com/QuLogic/matplotlib/actions>`_."
-msgstr ""
+msgstr "Puedes ver los resultados de las acciones de GitHub en https://github.com/your_GitHub_user_name/matplotlib/actions -- aquí tienes `un ejemplo <https://github.com/QuLogic/matplotlib/actions>`_."
 
 #: ../../devel/testing.rst:168
 msgid "Using tox"
-msgstr ""
+msgstr "Uso de tox"
 
 #: ../../devel/testing.rst:170
 msgid "`Tox <https://tox.readthedocs.io/en/latest/>`_ is a tool for running tests against multiple Python environments, including multiple versions of Python (e.g., 3.6, 3.7) and even different Python implementations altogether (e.g., CPython, PyPy, Jython, etc.), as long as all these versions are available on your system's $PATH (consider using your system package manager, e.g. apt-get, yum, or Homebrew, to install them)."

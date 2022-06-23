@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-06-22 14:52\n"
+"PO-Revision-Date: 2022-06-23 13:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,163 +20,163 @@ msgstr ""
 
 #: ../../devel/release_guide.rst:7
 msgid "Release guide"
-msgstr ""
+msgstr "Guía de publicación"
 
 #: ../../devel/release_guide.rst:10
 msgid "This document is only relevant for Matplotlib release managers."
-msgstr ""
+msgstr "Este documento sólo es relevante para los gestores de la versión de Matplotlib."
 
 #: ../../devel/release_guide.rst:12
 msgid "A guide for developers who are doing a Matplotlib release."
-msgstr ""
+msgstr "Una guía para los desarrolladores que están haciendo un lanzamiento de Matplotlib."
 
 #: ../../devel/release_guide.rst:17
 msgid "This assumes that a read-only remote for the canonical repository is ``remote`` and a read/write remote is ``DANGER``"
-msgstr ""
+msgstr "Esto supone que un remoto de sólo lectura para el repositorio canónico es ``remote`` y un remoto de lectura/escritura es ``DANGER``"
 
 #: ../../devel/release_guide.rst:24
 msgid "Testing"
-msgstr ""
+msgstr "Prueba"
 
 #: ../../devel/release_guide.rst:26
 msgid "We use `GitHub Actions <https://github.com/matplotlib/matplotlib/actions>`__ for continuous integration.  When preparing for a release, the final tagged commit should be tested locally before it is uploaded::"
-msgstr ""
+msgstr "Utilizamos `GitHub Actions <https://github.com/matplotlib/matplotlib/actions>`__ para la integración continua.  Cuando se prepara un lanzamiento, el commit final etiquetado debe ser probado localmente antes de ser subido::"
 
 #: ../../devel/release_guide.rst:33
 msgid "In addition the following test should be run and manually inspected::"
-msgstr ""
+msgstr "Además, debe ejecutarse la siguiente prueba e inspeccionarse manualmente::"
 
 #: ../../devel/release_guide.rst:38
 msgid "In addition the following should be run and manually inspected, but is currently broken::"
-msgstr ""
+msgstr "Además, se debe ejecutar e inspeccionar manualmente lo siguiente, pero actualmente está roto::"
 
 #: ../../devel/release_guide.rst:49
 msgid "GitHub statistics"
-msgstr ""
+msgstr "Estadísticas de GitHub"
 
 #: ../../devel/release_guide.rst:52
 msgid "We automatically extract GitHub issue, PRs, and authors from GitHub via the API.  Copy the current :file:`doc/users/github_stats.rst` to :file:`doc/users/prev_whats_new/github_stats_X.Y.Z.rst`, changing the link target at the top of the file, and removing the \"Previous GitHub Stats\" section at the end."
-msgstr ""
+msgstr "Extraemos automáticamente de GitHub lss incidencias, PRs y autores a través de la API.  Copia el actual :file:`doc/users/github_stats.rst` a :file:`doc/users/prev_whats_new/github_stats_X.Y.Z.rst`, cambiando el objetivo del enlace en la parte superior del archivo, y eliminando la sección \"Previous GitHub Stats\" al final."
 
 #: ../../devel/release_guide.rst:58
 msgid "For example, when updating from v3.2.0 to v3.2.1::"
-msgstr ""
+msgstr "Por ejemplo, al actualizar de v3.2.0 a v3.2.1::"
 
 #: ../../devel/release_guide.rst:65
 msgid "Then re-generate the updated stats::"
-msgstr ""
+msgstr "A continuación, vuelva a generar las estadísticas actualizadas::"
 
 #: ../../devel/release_guide.rst:69
 msgid "Review and commit changes.  Some issue/PR titles may not be valid reST (the most common issue is ``*`` which is interpreted as unclosed markup)."
-msgstr ""
+msgstr "Revisa y confirma los cambios.  Algunos títulos de incidencias/PR pueden no ser reST válidos (la cuestión más común es ``*`` que se interpreta como marca no cerrada)."
 
 #: ../../devel/release_guide.rst:74
 msgid "Make sure you authenticate against the GitHub API.  If you do not you will get blocked by GitHub for going over the API rate limits.  You can authenticate in one of two ways:"
-msgstr ""
+msgstr "Asegúrate de autenticarte en la API de GitHub.  Si no lo haces, GitHub te bloqueará por superar los límites de velocidad de la API.  Puedes autenticarte de dos maneras:"
 
 #: ../../devel/release_guide.rst:78
 msgid "using the ``keyring`` package; ``pip install keyring`` and then when running the stats script, you will be prompted for user name and password, that will be stored in your system keyring, or,"
-msgstr ""
+msgstr "utilizar el paquete ``keyring``; ``pip install keyring`` y luego al ejecutar el script de estadísticas, se le pedirá el nombre de usuario y la contraseña, que se almacenará en su llavero del sistema, o,"
 
 #: ../../devel/release_guide.rst:81
 msgid "using a personal access token; generate a new token `on this GitHub page <https://github.com/settings/tokens>`__ with the ``repo:public_repo`` scope and place the token in :file:`~/.ghoauth`."
-msgstr ""
+msgstr "utilizando un token de acceso personal; genera un nuevo token `en esta página de GitHub <https://github.com/settings/tokens>`__ con el ámbito ``repo:public_repo`` y coloca el token en :file:`~/.ghoauth`."
 
 #: ../../devel/release_guide.rst:89
 msgid "Update and validate the docs"
-msgstr ""
+msgstr "Actualizar y validar los documentos"
 
 #: ../../devel/release_guide.rst:92
 msgid "Merge ``*-doc`` branch"
-msgstr ""
+msgstr "Fusionar la rama ``*-doc``"
 
 #: ../../devel/release_guide.rst:94
 msgid "Merge the most recent 'doc' branch (e.g., ``v3.2.0-doc``) into the branch you are going to tag on and delete the doc branch on GitHub."
-msgstr ""
+msgstr "Fusiona la rama 'doc' más reciente (por ejemplo, ``v3.2.0-doc``) en la rama en la que vas a etiquetar y elimina la rama doc en GitHub."
 
 #: ../../devel/release_guide.rst:98
 msgid "Update supported versions in Security Policy"
-msgstr ""
+msgstr "Actualizar las versiones admitidas en la política de seguridad"
 
 #: ../../devel/release_guide.rst:100
 msgid "When making major or minor releases, update the supported versions in the Security Policy in :file:`SECURITY.md`.  Commonly, this may be one or two previous minor releases, but is dependent on release managers."
-msgstr ""
+msgstr "Cuando se realicen versiones mayores o menores, actualice las versiones soportadas en la Política de Seguridad en :file:`SECURITY.md`.  Normalmente, esto puede ser una o dos versiones menores anteriores, pero depende de los gestores de versiones."
 
 #: ../../devel/release_guide.rst:105
 msgid "Update release notes"
-msgstr ""
+msgstr "Actualizar las notas de publicación"
 
 #: ../../devel/release_guide.rst:108
 msgid "What's new"
-msgstr ""
+msgstr "Novedades"
 
 #: ../../devel/release_guide.rst:110
 msgid "*Only needed for major and minor releases. Bugfix releases should not have new features.*"
-msgstr ""
+msgstr "*Sólo es necesario para las versiones mayores y menores. Las versiones de corrección de errores no deben tener nuevas características.*"
 
 #: ../../devel/release_guide.rst:113
 msgid "Merge the contents of all the files in :file:`doc/users/next_whats_new/` into a single file :file:`doc/users/prev_whats_new/whats_new_X.Y.0.rst` and delete the individual files."
-msgstr ""
+msgstr "Fusiona el contenido de todos los archivos en :file:`doc/users/next_whats_new/` en un único archivo :file:`doc/users/prev_whats_new/whats_new_X.Y.0.rst` y elimina los archivos individuales."
 
 #: ../../devel/release_guide.rst:118
 msgid "API changes"
-msgstr ""
+msgstr "Cambios del API"
 
 #: ../../devel/release_guide.rst:120
 msgid "*Primarily needed for major and minor releases. We may sometimes have API changes in bugfix releases.*"
-msgstr ""
+msgstr "*Se necesita principalmente para las versiones mayores y menores. A veces podemos tener cambios en la API en las versiones de corrección de errores.*"
 
 #: ../../devel/release_guide.rst:123
 msgid "Merge the contents of all the files in :file:`doc/api/next_api_changes/` into a single file :file:`doc/api/prev_api_changes/api_changes_X.Y.Z.rst` and delete the individual files."
-msgstr ""
+msgstr "Fusiona el contenido de todos los archivos de :file:`doc/api/next_api_changes/` en un único archivo :file:`doc/api/prev_api_changes/api_changes_X.Y.Z.rst` y elimina los archivos individuales."
 
 #: ../../devel/release_guide.rst:128
 msgid "Release notes TOC"
-msgstr ""
+msgstr "Notas de publicación TOC"
 
 #: ../../devel/release_guide.rst:130
 msgid "Update :file:`doc/users/release_notes.rst`:"
-msgstr ""
+msgstr "Actualizar :file:`doc/users/release_notes.rst`:"
 
 #: ../../devel/release_guide.rst:132
 msgid "For major and minor releases add a new section"
-msgstr ""
+msgstr "Para las versiones mayores y menores añade una nueva sección"
 
 #: ../../devel/release_guide.rst:145
 msgid "For bugfix releases add the GitHub stats and (if present) the API changes to the existing X.Y section"
-msgstr ""
+msgstr "Para las versiones de corrección de errores, añada las estadísticas de GitHub y (si están presentes) los cambios de la API a la sección X.Y existente"
 
 #: ../../devel/release_guide.rst:154
 msgid "Verify that docs build"
-msgstr ""
+msgstr "Verificar que los documentos se construyan"
 
 #: ../../devel/release_guide.rst:156
 msgid "Finally, make sure that the docs build cleanly ::"
-msgstr ""
+msgstr "Por último, asegúrese de que los documentos se construyan limpiamente ::"
 
 #: ../../devel/release_guide.rst:160
 msgid "After the docs are built, check that all of the links, internal and external, are still valid.  We use ``linkchecker`` for this, which has not been ported to Python3 yet.  You will need to create a Python2 environment with ``requests==2.9.0`` and linkchecker ::"
-msgstr ""
+msgstr "Después de construir los documentos, comprueba que todos los enlaces, internos y externos, siguen siendo válidos.  Para ello utilizamos ``linkchecker``, que aún no ha sido portado a Python3.  Necesitarás crear un entorno Python2 con ``requests==2.9.0`` y linkchecker ::"
 
 #: ../../devel/release_guide.rst:172
 msgid "Address any issues which may arise.  The internal links are checked on Circle CI, this should only flag failed external links."
-msgstr ""
+msgstr "Abordar cualquier incidencia que pueda surgir.  Los enlaces internos se comprueban en Circle CI, esto sólo debería indicar los enlaces externos fallidos."
 
 #: ../../devel/release_guide.rst:177
 msgid "Update supported versions in SECURITY.md"
-msgstr ""
+msgstr "Actualice las versiones compatibles en SECURITY.md"
 
 #: ../../devel/release_guide.rst:179
 msgid "For minor version release update the table in :file:`SECURITY.md` to specify that the 2 most recent minor releases in the current major version series are supported."
-msgstr ""
+msgstr "Para las versiones menores actualice la tabla en :file:`SECURITY.md` para especificar que se soportan las 2 versiones menores más recientes de la serie de versiones mayores actual."
 
 #: ../../devel/release_guide.rst:183
 msgid "For a major version release update the table in :file:`SECURITY.md` to specify that the last minor version in the previous major version series is still supported.  Dropping support for the last version of a major version series will be handled on an ad-hoc basis."
-msgstr ""
+msgstr "Para una versión mayor, actualice la tabla en :file:`SECURITY.md` para especificar que la última versión menor de la serie de versiones mayores anterior sigue siendo soportada.  El abandono del soporte de la última versión de una serie de versiones mayores se gestionará de forma ad-hoc."
 
 #: ../../devel/release_guide.rst:191
 msgid "Create release commit and tag"
-msgstr ""
+msgstr "Crear la confirmación de commit y la etiqueta"
 
 #: ../../devel/release_guide.rst:193
 msgid "To create the tag, first create an empty commit with a very terse set of the release notes in the commit message ::"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-06-30 20:57\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,87 +20,87 @@ msgstr ""
 
 #: ../../devel/MEP/MEP09.rst:3
 msgid "MEP9: Global interaction manager"
-msgstr ""
+msgstr "MEP9: Gestor global de interacciones"
 
 #: ../../devel/MEP/MEP09.rst:8
 msgid "Add a global manager for all user interactivity with artists; make any artist resizeable, moveable, highlightable, and selectable as desired by the user."
-msgstr ""
+msgstr "Añade un gestor global para toda la interactividad del usuario con los artists; haz que cualquier artista sea redimensionable, movible, destacable y seleccionable a gusto del usuario."
 
 #: ../../devel/MEP/MEP09.rst:13
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP09.rst:15
 msgid "**Discussion**"
-msgstr ""
+msgstr "**Discusión**"
 
 #: ../../devel/MEP/MEP09.rst:18
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP09.rst:19
 msgid "https://github.com/dhyams/matplotlib/tree/MEP9"
-msgstr ""
+msgstr "https://github.com/dhyams/matplotlib/tree/MEP9"
 
 #: ../../devel/MEP/MEP09.rst:22
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP09.rst:24
 msgid "The goal is to be able to interact with matplotlib artists in a very similar way as drawing programs do.  When appropriate, the user should be able to move, resize, or select an artist that is already on the canvas.  Of course, the script writer is ultimately in control of whether an artist is able to be interacted with, or whether it is static."
-msgstr ""
+msgstr "El objetivo es poder interactuar con los artists de matplotlib de forma muy similar a como lo hacen los programas de dibujo.  Cuando sea apropiado, el usuario debería ser capaz de mover, redimensionar o seleccionar un artist que ya está en el lienzo.  Por supuesto, el script es quien controla en última instancia si se puede interactuar con un artist o si es estático."
 
 #: ../../devel/MEP/MEP09.rst:31
 msgid "This code to do this has already been privately implemented and tested, and would need to be migrated from its current \"mixin\" implementation, to a bona-fide part of matplotlib."
-msgstr ""
+msgstr "Este código para hacer esto ya ha sido implementado y probado de forma privada, y necesitaría ser migrado desde su actual implementación \"mixin\", a una parte bona-fide de matplotlib."
 
 #: ../../devel/MEP/MEP09.rst:35
 msgid "The end result would be to have four new keywords available to matplotlib.artist.Artist: _moveable_, _resizeable_, _selectable_, and _highlightable_.  Setting any one of these keywords to True would activate interactivity for that artist."
-msgstr ""
+msgstr "El resultado final sería tener cuatro nuevas palabras clave disponibles para matplotlib.artist.Artist: _moveable_, _resizeable_, _selectable_ y _highlightable_.  Al establecer cualquiera de estas palabras clave como True se activaría la interactividad para ese artist."
 
 #: ../../devel/MEP/MEP09.rst:40
 msgid "In effect, this MEP is a logical extension of event handling in matplotlib; matplotlib already supports \"low level\" interactions like left mouse presses, a key press, or similar.  The MEP extends the support to the logical level, where callbacks are performed on the artists when certain interactive gestures from the user are detected."
-msgstr ""
+msgstr "En efecto, este MEP es una extensión lógica del manejo de eventos en matplotlib; matplotlib ya soporta interacciones de \"bajo nivel\" como la pulsación del botón izquierdo del ratón, la pulsación de una tecla o similares.  El MEP extiende el soporte al nivel lógico, donde se realizan callbacks en los artists cuando se detectan ciertos gestos interactivos del usuario."
 
 #: ../../devel/MEP/MEP09.rst:47
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP09.rst:49
 msgid "This new functionality would be used to allow the end-user to better interact with the graph.  Many times, a graph is almost what the user wants, but a small repositioning and/or resizing of components is necessary.  Rather than force the user to go back to the script to trial-and-error the location, and simple drag and drop would be appropriate."
-msgstr ""
+msgstr "Esta nueva funcionalidad serviría para que el usuario final pudiera interactuar mejor con el grafo.  Muchas veces, un grafo es casi lo que el usuario quiere, pero es necesario un pequeño reposicionamiento y/o cambio de tamaño de los componentes.  En lugar de obligar al usuario a volver al script para probar y equivocarse en la ubicación, un simple arrastrar y soltar sería lo adecuado."
 
 #: ../../devel/MEP/MEP09.rst:56
 msgid "Also, this would better support applications that use matplotlib; here, the end-user has no reasonable access or desire to edit the underlying source in order to fine-tune a plot.  Here, if matplotlib offered the capability, one could move or resize artists on the canvas to suit their needs.  Also, the user should be able to highlight (with a mouse over) an artist, and select it with a double-click, if the application supports that sort of thing.  In this MEP, we also want to support the highlighting and selection natively; it is up to application to handle what happens when the artist is selected.  A typical handling would be to display a dialog to edit the properties of the artist."
-msgstr ""
+msgstr "Además, esto soportaría mejor las aplicaciones que utilizan matplotlib; aquí, el usuario final no tiene un acceso razonable o el deseo de editar la fuente subyacente con el fin de ajustar un gráfico.  Aquí, si matplotlib ofreciera la capacidad, uno podría mover o cambiar el tamaño de los artists en el lienzo para adaptarse a sus necesidades.  Además, el usuario debería poder resaltar (con el ratón encima) un artist, y seleccionarlo con un doble clic, si la aplicación soporta ese tipo de cosas.  En este MEP, también queremos soportar el resaltado y la selección de forma nativa; depende de la aplicación manejar lo que sucede cuando el artist es seleccionado.  Un manejo típico sería mostrar un diálogo para editar las propiedades del artist."
 
 #: ../../devel/MEP/MEP09.rst:68
 msgid "In the future, as well (this is not part of this MEP), matplotlib could offer backend-specific property dialogs for each artist, which are raised on artist selection.  This MEP would be a necessary stepping stone for that sort of capability."
-msgstr ""
+msgstr "En el futuro, también (esto no es parte de este MEP), matplotlib podría ofrecer diálogos de propiedades específicas para cada artist, que se plantea en la selección del artist.  Este MEP sería un paso necesario para ese tipo de capacidad."
 
 #: ../../devel/MEP/MEP09.rst:73
 msgid "There are currently a few interactive capabilities in matplotlib (e.g. legend.draggable()), but they tend to be scattered and are not available for all artists.  This MEP seeks to unify the interactive interface and make it work for all artists."
-msgstr ""
+msgstr "Actualmente hay algunas capacidades interactivas en matplotlib (por ejemplo, legend.draggable()), pero tienden a estar dispersas y no están disponibles para todos los artistas.  Este MEP pretende unificar la interfaz interactiva y hacerla funcionar para todos los artists."
 
 #: ../../devel/MEP/MEP09.rst:78
 msgid "The current MEP also includes grab handles for resizing artists, and appropriate boxes drawn when artists are moved or resized."
-msgstr ""
+msgstr "El MEP actual también incluye asas de agarre para cambiar el tamaño de los artists, y cajas apropiadas que se dibujan cuando los artists se mueven o cambian de tamaño."
 
 #: ../../devel/MEP/MEP09.rst:82
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP09.rst:83
 msgid "Add appropriate methods to the \"tree\" of artists so that the interactivity manager has a consistent interface for the interactivity manager to deal with.  The proposed methods to add to the artists, if they are to support interactivity, are:"
-msgstr ""
+msgstr "Añadir métodos apropiados al \"árbol\" de artists para que el gestor de la interactividad tenga una interfaz coherente con la que tratar.  Los métodos propuestos para añadir a los artists, si van a soportar la interactividad, son:"
 
 #: ../../devel/MEP/MEP09.rst:88
 msgid "get_pixel_position_ll(self): get the pixel position of the lower left corner of the artist's bounding box"
-msgstr ""
+msgstr "get_pixel_position_ll(self): obtiene la posición del píxel de la esquina inferior izquierda de la caja delimitadora del artista"
 
 #: ../../devel/MEP/MEP09.rst:90
 msgid "get_pixel_size(self): get the size of the artist's bounding box, in pixels"
-msgstr ""
+msgstr "get_pixel_size(self): obtiene el tamaño de la caja delimitadora del artist, en píxeles"
 
 #: ../../devel/MEP/MEP09.rst:92
 msgid "set_pixel_position_and_size(self,x,y,dx,dy): set the new size of the artist, such that it fits within the specified bounding box."

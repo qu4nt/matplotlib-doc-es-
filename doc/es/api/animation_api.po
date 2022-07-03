@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-03 17:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,110 +20,110 @@ msgstr ""
 
 #: ../../api/animation_api.rst:3
 msgid "``matplotlib.animation``"
-msgstr ""
+msgstr "``matplotlib.animation``"
 
 #: ../../api/animation_api.rst:13
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de contenidos"
 
 #: ../../api/animation_api.rst:16
 msgid "Inheritance Diagrams"
-msgstr ""
+msgstr "Diagramas de herencia"
 
 #: ../../api/animation_api.rst:27
 msgid "Animation"
-msgstr ""
+msgstr "Animación"
 
 #: ../../api/animation_api.rst:29
 msgid "The easiest way to make a live animation in Matplotlib is to use one of the `Animation` classes."
-msgstr ""
+msgstr "La forma más fácil de hacer una animación en vivo en Matplotlib es utilizar una de las clases `Animation`."
 
 #: ../../api/animation_api.rst:264:<autosummary>:1
 #: ../../api/animation_api.rst:39:<autosummary>:1
 msgid ":py:obj:`Animation <matplotlib.animation.Animation>`"
-msgstr ""
+msgstr ":py:obj:`Animación <matplotlib.animation.Animation>`"
 
 #: ../../api/animation_api.rst:264:<autosummary>:1
 #: ../../api/animation_api.rst:39:<autosummary>:1
 msgid "A base class for Animations."
-msgstr ""
+msgstr "Una clase base para las animaciones."
 
 #: ../../api/animation_api.rst:39:<autosummary>:1
 msgid ":py:obj:`FuncAnimation <matplotlib.animation.FuncAnimation>`"
-msgstr ""
+msgstr ":py:obj:`FuncAnimation <matplotlib.animation.FuncAnimation>`"
 
 #: ../../api/animation_api.rst:39:<autosummary>:1
 msgid "Makes an animation by repeatedly calling a function *func*."
-msgstr ""
+msgstr "Hace una animación llamando repetidamente a una función *func*."
 
 #: ../../api/animation_api.rst:39:<autosummary>:1
 msgid ":py:obj:`ArtistAnimation <matplotlib.animation.ArtistAnimation>`"
-msgstr ""
+msgstr ":py:obj:`ArtistAnimation <matplotlib.animation.ArtistAnimation>`"
 
 #: ../../api/animation_api.rst:39:<autosummary>:1
 msgid "Animation using a fixed set of `.Artist` objects."
-msgstr ""
+msgstr "Animación que utiliza un conjunto fijo de objetos `.Artist`."
 
 #: ../../api/animation_api.rst:40
 msgid "In both cases it is critical to keep a reference to the instance object.  The animation is advanced by a timer (typically from the host GUI framework) which the `Animation` object holds the only reference to.  If you do not hold a reference to the `Animation` object, it (and hence the timers) will be garbage collected which will stop the animation."
-msgstr ""
+msgstr "En ambos casos es crítico mantener una referencia al objeto instancia.  La animación es adelantada por un temporizador (típicamente del framework de la GUI anfitriona) del cual el objeto `Animation` mantiene la única referencia.  Si no mantienes una referencia al objeto `Animation`, éste (y por lo tanto los temporizadores) serán recolectados por la basura, lo que detendrá la animación."
 
 #: ../../api/animation_api.rst:47
 msgid "To save an animation use `Animation.save`, `Animation.to_html5_video`, or `Animation.to_jshtml`."
-msgstr ""
+msgstr "Para guardar una animación utiliza `Animation.save`, `Animation.to_html5_video`, o `Animation.to_jshtml`."
 
 #: ../../api/animation_api.rst:50
 msgid "See :ref:`ani_writer_classes` below for details about what movie formats are supported."
-msgstr ""
+msgstr "Ver :ref:`ani_writer_classes` más abajo para conocer los formatos de película soportados."
 
 #: ../../api/animation_api.rst:57
 msgid "``FuncAnimation``"
-msgstr ""
+msgstr "``FuncAnimation``"
 
 #: ../../api/animation_api.rst:59
 msgid "The inner workings of `FuncAnimation` is more-or-less::"
-msgstr ""
+msgstr "El funcionamiento interno de `FuncAnimation` es más o menos::"
 
 #: ../../api/animation_api.rst:66
 msgid "with details to handle 'blitting' (to dramatically improve the live performance), to be non-blocking, not repeatedly start/stop the GUI event loop, handle repeats, multiple animated axes, and easily save the animation to a movie file."
-msgstr ""
+msgstr "con detalles para manejar el 'blitting' (para mejorar drásticamente el rendimiento en vivo), ser no bloqueante, no iniciar/detener repetidamente el bucle de eventos de la GUI, manejar repeticiones, múltiples ejes animados, y guardar fácilmente la animación en un archivo de película."
 
 #: ../../api/animation_api.rst:71
 msgid "'Blitting' is a `standard technique <https://en.wikipedia.org/wiki/Bit_blit>`__ in computer graphics.  The general gist is to take an existing bit map (in our case a mostly rasterized figure) and then 'blit' one more artist on top.  Thus, by managing a saved 'clean' bitmap, we can only re-draw the few artists that are changing at each frame and possibly save significant amounts of time.  When we use blitting (by passing ``blit=True``), the core loop of `FuncAnimation` gets a bit more complicated::"
-msgstr ""
+msgstr "El 'Blitting' es una técnica estándar <https://en.wikipedia.org/wiki/Bit_blit>`__ en gráficos por ordenador. La esencia general es tomar un mapa de bits existente (en nuestro caso una figura mayormente rasterizada) y luego 'blit' un artista más en la parte superior.  Así, al manejar un mapa de bits 'limpio' guardado, sólo podemos volver a dibujar los pocos artistas que cambian en cada fotograma y, posiblemente, ahorrar cantidades significativas de tiempo.  Cuando usamos el blitting (pasando ``blit=True``), el bucle central de `FuncAnimation` se complica un poco::"
 
 #: ../../api/animation_api.rst:102
 msgid "This is of course leaving out many details (such as updating the background when the figure is resized or fully re-drawn).  However, this hopefully minimalist example gives a sense of how ``init_func`` and ``func`` are used inside of `FuncAnimation` and the theory of how 'blitting' works."
-msgstr ""
+msgstr "Por supuesto, esto deja fuera muchos detalles (como la actualización del fondo cuando la figura se redimensiona o se redibuja completamente).  Sin embargo, este ejemplo, que espero sea minimalista, da una idea de cómo se usan ``init_func`` y ``func`` dentro de `FuncAnimation` y la teoría de cómo funciona el 'blitting'."
 
 #: ../../api/animation_api.rst:108
 msgid "The expected signature on ``func`` and ``init_func`` is very simple to keep `FuncAnimation` out of your book keeping and plotting logic, but this means that the callable objects you pass in must know what artists they should be working on.  There are several approaches to handling this, of varying complexity and encapsulation.  The simplest approach, which works quite well in the case of a script, is to define the artist at a global scope and let Python sort things out.  For example ::"
-msgstr ""
+msgstr "La firma esperada en ``func`` y ``init_func`` es muy simple para mantener `FuncAnimation` fuera de su lógica de contabilidad y trazado, pero esto significa que los objetos llamables que se pasan deben saber en qué artistas deben trabajar. Hay varios enfoques para manejar esto, de diversa complejidad y encapsulación. El enfoque más simple, que funciona bastante bien en el caso de un script, es definir el artista en un ámbito global y dejar que Python lo resuelva. Por ejemplo ::"
 
 #: ../../api/animation_api.rst:139
 msgid "The second method is to use `functools.partial` to 'bind' artists to function.  A third method is to use closures to build up the required artists and functions.  A fourth method is to create a class."
-msgstr ""
+msgstr "El segundo método consiste en utilizar `functools.partial` para \"enlazar\" artists a la función.  Un tercer método es utilizar cierres para construir los artistas y funciones necesarios.  Un cuarto método es crear una clase."
 
 #: ../../api/animation_api.rst:144 ../../api/animation_api.rst:163
 #: ../../api/animation_api.rst:243
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
 #: ../../api/animation_api.rst:160
 msgid "``ArtistAnimation``"
-msgstr ""
+msgstr "``ArtistAnimation``"
 
 #: ../../api/animation_api.rst:171
 msgid "Writer Classes"
-msgstr ""
+msgstr "Clases de escritores"
 
 #: ../../api/animation_api.rst:173
 msgid "The provided writers fall into a few broad categories."
-msgstr ""
+msgstr "Los escritores proporcionados se dividen en algunas categorías generales."
 
 #: ../../api/animation_api.rst:175
 msgid "The Pillow writer relies on the Pillow library to write the animation, keeping all data in memory."
-msgstr ""
+msgstr "El escritor Pillow depende de la biblioteca Pillow para escribir la animación, manteniendo todos los datos en memoria."
 
 #: ../../api/animation_api.rst:183:<autosummary>:1
 msgid ":py:obj:`PillowWriter <matplotlib.animation.PillowWriter>`"

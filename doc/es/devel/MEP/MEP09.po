@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-06-30 20:57\n"
+"PO-Revision-Date: 2022-07-05 15:14\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -104,87 +104,87 @@ msgstr "get_pixel_size(self): obtiene el tamaño de la caja delimitadora del art
 
 #: ../../devel/MEP/MEP09.rst:92
 msgid "set_pixel_position_and_size(self,x,y,dx,dy): set the new size of the artist, such that it fits within the specified bounding box."
-msgstr ""
+msgstr "set_pixel_position_and_size(self,x,y,dx,dy): establece el nuevo tamaño del artist, de forma que se ajuste a la caja delimitadora especificada."
 
 #: ../../devel/MEP/MEP09.rst:95
 msgid "add capability to the backends to 1) provide cursors, since these are needed for visual indication of moving/resizing, and 2) provide a function that gets the current mouse position"
-msgstr ""
+msgstr "añadir capacidad a los backends para 1) proporcionar cursores, ya que estos son necesarios para la indicación visual de movimiento/redimensionamiento, y 2) proporcionar una función que obtenga la posición actual del ratón"
 
 #: ../../devel/MEP/MEP09.rst:98
 msgid "Implement the manager.  This has already been done privately (by dhyams) as a mixin, and has been tested quite a bit.  The goal would be to move the functionality of the manager into the artists so that it is in matplotlib properly, and not as a \"monkey patch\" as I currently have it coded."
-msgstr ""
+msgstr "Implementar el gestor.  Esto ya se ha hecho de forma privada (por dhyams) como un mixin, y se ha probado bastante.  El objetivo sería trasladar la funcionalidad del gestor a los artists para que esté en matplotlib correctamente, y no como un \"parche mono\" como lo tengo codificado actualmente."
 
 #: ../../devel/MEP/MEP09.rst:107
 msgid "Current summary of the mixin"
-msgstr ""
+msgstr "Resumen actual del mixin"
 
 #: ../../devel/MEP/MEP09.rst:109
 msgid "(Note that this mixin is for now just private code, but can be added to a branch obviously)"
-msgstr ""
+msgstr "(Ten en cuenta que este mixin es por ahora sólo código privado, pero puede ser añadido a una rama obviamente)"
 
 #: ../../devel/MEP/MEP09.rst:112
 msgid "InteractiveArtistMixin:"
-msgstr ""
+msgstr "InteractiveArtistMixin:"
 
 #: ../../devel/MEP/MEP09.rst:114
 msgid "Mixin class to make any generic object that is drawn on a matplotlib canvas moveable and possibly resizeable.  The Powerpoint model is followed as closely as possible; not because I'm enamoured with Powerpoint, but because that's what most people understand.  An artist can also be selectable, which means that the artist will receive the on_activated() callback when double clicked.  Finally, an artist can be highlightable, which means that a highlight is drawn on the artist whenever the mouse passes over.  Typically, highlightable artists will also be selectable, but that is left up to the user.  So, basically there are four attributes that can be set by the user on a per-artist basis:"
-msgstr ""
+msgstr "Clase Mixin para hacer que cualquier objeto genérico que se dibuje en un lienzo de matplotlib sea movible y posiblemente redimensionable.  Se sigue el modelo de Powerpoint lo más fielmente posible; no porque esté encantado con Powerpoint, sino porque es lo que la mayoría de la gente entiende.  Un artist también puede ser seleccionable, lo que significa que el artist recibirá la llamada de retorno on_activated() cuando se haga doble clic.  Por último, un artist puede ser resaltante, lo que significa que un resaltante se dibuja en el artist cada vez que el ratón pasa por encima.  Normalmente, los artists resaltados también son seleccionables, pero eso se deja a criterio del usuario.  Así que, básicamente, hay cuatro atributos que el usuario puede establecer para cada artist:"
 
 #: ../../devel/MEP/MEP09.rst:126
 msgid "highlightable"
-msgstr ""
+msgstr "destacable"
 
 #: ../../devel/MEP/MEP09.rst:127
 msgid "selectable"
-msgstr ""
+msgstr "seleccionable"
 
 #: ../../devel/MEP/MEP09.rst:128
 msgid "moveable"
-msgstr ""
+msgstr "movible"
 
 #: ../../devel/MEP/MEP09.rst:129
 msgid "resizeable"
-msgstr ""
+msgstr "redimensionable"
 
 #: ../../devel/MEP/MEP09.rst:131
 msgid "To be moveable (draggable) or resizeable, the object that is the target of the mixin must support the following protocols:"
-msgstr ""
+msgstr "Para ser movible (arrastrable) o redimensionable, el objeto que es el objetivo del mixin debe soportar los siguientes protocolos:"
 
 #: ../../devel/MEP/MEP09.rst:134
 msgid "get_pixel_position_ll(self)"
-msgstr ""
+msgstr "get_pixel_position_ll(self)"
 
 #: ../../devel/MEP/MEP09.rst:135
 msgid "get_pixel_size(self)"
-msgstr ""
+msgstr "get_pixel_size(self)"
 
 #: ../../devel/MEP/MEP09.rst:136
 msgid "set_pixel_position_and_size(self,x,y,sx,sy)"
-msgstr ""
+msgstr "set_pixel_position_and_size(self,x,y,sx,sy)"
 
 #: ../../devel/MEP/MEP09.rst:138
 msgid "Note that nonresizeable objects are free to ignore the sx and sy parameters. To be highlightable, the object that is the target of the mixin must also support the following protocol:"
-msgstr ""
+msgstr "Ten en cuenta que los objetos no redimensionables son libres de ignorar los parámetros sx y sy. Para ser destacable, el objeto que es el objetivo del mixin también debe soportar el siguiente protocolo:"
 
 #: ../../devel/MEP/MEP09.rst:142
 msgid "get_highlight(self)"
-msgstr ""
+msgstr "get_highlight(self)"
 
 #: ../../devel/MEP/MEP09.rst:144
 msgid "Which returns a list of artists that will be used to draw the highlight."
-msgstr ""
+msgstr "Que devuelve una lista de artists que se utilizarán para dibujar el resalte."
 
 #: ../../devel/MEP/MEP09.rst:146
 msgid "If the object that is the target of the mixin is not an matplotlib artist, the following protocols must also be implemented.  Doing so is usually fairly trivial, as there has to be an artist *somewhere* that is being drawn.  Typically your object would just route these calls to that artist."
-msgstr ""
+msgstr "Si el objeto que es el objetivo del mixin no es un artist de matplotlib, los siguientes protocolos también deben ser implementados.  Hacerlo es normalmente bastante trivial, ya que tiene que haber un artist *en algún lugar* que se esté dibujando.  Típicamente, su objeto sólo dirigirá estas llamadas a ese artist."
 
 #: ../../devel/MEP/MEP09.rst:152
 msgid "get_figure(self)"
-msgstr ""
+msgstr "get_figure(self)"
 
 #: ../../devel/MEP/MEP09.rst:153
 msgid "get_axes(self)"
-msgstr ""
+msgstr "get_axes(self)"
 
 #: ../../devel/MEP/MEP09.rst:154
 msgid "contains(self,event)"

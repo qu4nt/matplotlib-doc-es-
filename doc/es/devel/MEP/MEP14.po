@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-07 21:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -88,43 +88,43 @@ msgstr ""
 
 #: ../../devel/MEP/MEP14.rst:62
 msgid "It only handles right-to-left languages, and doesn't handle many special features of Unicode, such as combining diacriticals."
-msgstr ""
+msgstr "Sólo maneja idiomas de derecha a izquierda, y no maneja muchas características especiales de Unicode, como la combinación de diacríticos."
 
 #: ../../devel/MEP/MEP14.rst:64
 msgid "The multiline support is imperfect and only supports manual line-breaking -- it can not break up a paragraph into lines of a certain length."
-msgstr ""
+msgstr "El soporte multilínea es imperfecto y sólo admite el salto de línea manual -- no puede dividir un párrafo en líneas de cierta longitud."
 
 #: ../../devel/MEP/MEP14.rst:67
 msgid "It also does not handle inline formatting changes in order to support something like Markdown, reStructuredText or HTML.  (Though rich-text formatting is contemplated in this MEP, since we want to make sure this design allows it, the specifics of a rich-text formatting implementation is outside of the scope of this MEP.)"
-msgstr ""
+msgstr "Tampoco maneja los cambios de formato en línea para soportar algo como Markdown, reStructuredText o HTML.  (Aunque el formato de texto enriquecido se contempla en este MEP, ya que queremos asegurarnos de que este diseño lo permite, los detalles de una implementación de formato de texto enriquecido están fuera del alcance de este MEP.)"
 
 #: ../../devel/MEP/MEP14.rst:73
 msgid "Supporting these things is difficult, and is the \"full-time job\" of a number of other projects:"
-msgstr ""
+msgstr "Apoyar estas cosas es difícil, y es el \"trabajo a tiempo completo\" de una serie de otros proyectos:"
 
 #: ../../devel/MEP/MEP14.rst:76
 msgid "pango_/harfbuzz_"
-msgstr ""
+msgstr "pango_/harfbuzz_"
 
 #: ../../devel/MEP/MEP14.rst:77
 msgid "QtTextLayout_"
-msgstr ""
+msgstr "QtTextLayout_"
 
 #: ../../devel/MEP/MEP14.rst:78
 msgid "`Microsoft DirectWrite`_"
-msgstr ""
+msgstr "`Microsoft DirectWrite`_"
 
 #: ../../devel/MEP/MEP14.rst:79
 msgid "`Apple Core Text`_"
-msgstr ""
+msgstr "`Apple Core Text`_"
 
 #: ../../devel/MEP/MEP14.rst:87
 msgid "Of the above options, it should be noted that harfbuzz_ is designed from the start as a cross platform option with minimal dependencies, so therefore is a good candidate for a single option to support."
-msgstr ""
+msgstr "De las opciones anteriores, cabe destacar que harfbuzz_ está diseñado desde el principio como una opción multiplataforma con dependencias mínimas, por lo que es un buen candidato para una única opción de apoyo."
 
 #: ../../devel/MEP/MEP14.rst:91
 msgid "Additionally, for supporting rich text, we could consider using `WebKit <https://webkit.org/>`_, and possibly whether than represents a good single cross-platform option.  Again, however, rich text formatting is outside of the scope of this project."
-msgstr ""
+msgstr "Además, para el soporte de texto enriquecido, podríamos considerar el uso de `WebKit <https://webkit.org/>`_, y posiblemente si eso representa una buena opción única multiplataforma.  De nuevo, sin embargo, el formato de texto enriquecido está fuera del alcance de este proyecto."
 
 #: ../../devel/MEP/MEP14.rst:96
 msgid "Rather than trying to reinvent the wheel and add these features to matplotlib's \"built-in\" text renderer, we should provide a way to leverage these projects to get more powerful text layout.  The \"built-in\" renderer will still need to exist for reasons of ease of installation, but its feature set will be more limited compared to the others.  [TODO: This MEP should clearly decide what those limited features are, and fix any bugs to bring the implementation into a state of working correctly in all cases that we want it to work.  I know @leejjoon has some thoughts on this.]"

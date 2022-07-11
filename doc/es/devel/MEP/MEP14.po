@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-11 17:18\n"
+"PO-Revision-Date: 2022-07-11 19:50\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -208,15 +208,15 @@ msgstr "La rotación del texto debería ser siempre alrededor del punto de ancla
 
 #: ../../devel/MEP/MEP14.rst:244
 msgid "There are other problems with text alignment and anchoring that should be resolved as part of this work.  [TODO: enumerate these]."
-msgstr ""
+msgstr "Hay otros problemas con la alineación y el anclaje del texto que deberían resolverse como parte de este trabajo.  [TODO: enumerarlas]."
 
 #: ../../devel/MEP/MEP14.rst:247
 msgid "**Other minor problems to fix**"
-msgstr ""
+msgstr "**Otros problemas menores a arreglar**"
 
 #: ../../devel/MEP/MEP14.rst:249
 msgid "The mathtext code has backend-specific code -- it should instead provide its output as just another text engine.  However, it's still desirable to have mathtext layout inserted as part of a larger layout performed by another text engine, so it should be possible to do this. It's an open question whether embedding the text layout of an arbitrary text engine in another should be possible."
-msgstr ""
+msgstr "El código de mathtext tiene un código específico de backend -- en su lugar debería proporcionar su salida como otro motor de texto.  Sin embargo, sigue siendo deseable que el diseño de mathtext se inserte como parte de un diseño mayor realizado por otro motor de texto, por lo que debería ser posible hacerlo. Es una cuestión abierta si el embedding del layout de texto de un motor de texto arbitrario en otro debería ser posible."
 
 #: ../../devel/MEP/MEP14.rst:256
 msgid "The text mode is currently set by a global rcParam (\"text.usetex\") so it's either all on or all off.  We should continue to have a global rcParam to choose the text engine (\"text.layout_engine\"), but it should under the hood be an overridable property on the `.Text` object, so the same figure can combine the results of multiple text layout engines if necessary."

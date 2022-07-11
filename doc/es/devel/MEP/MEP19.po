@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-11 21:23\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -124,99 +124,99 @@ msgstr ""
 
 #: ../../devel/MEP/MEP19.rst:78
 msgid "matplotlib has complex requirements that make testing and building more taxing than many other Python projects."
-msgstr ""
+msgstr "matplotlib tiene requisitos complejos que hacen que las pruebas y la construcción sean más exigentes que muchos otros proyectos de Python."
 
 #: ../../devel/MEP/MEP19.rst:81
 msgid "The CPU time to run the tests is quite high.  It puts us beyond the free accounts of many CI services (e.g. ShiningPanda)"
-msgstr ""
+msgstr "El tiempo de CPU para ejecutar las pruebas es bastante alto.  Nos sitúa por encima de las cuentas gratuitas de muchos servicios de CI (por ejemplo, ShiningPanda)"
 
 #: ../../devel/MEP/MEP19.rst:84
 msgid "It has a large number of dependencies, and testing the full matrix of all combinations is impractical.  We need to be clever about what space we test and guarantee to support."
-msgstr ""
+msgstr "Tiene un gran número de dependencias, y probar la matriz completa de todas las combinaciones es poco práctico.  Tenemos que ser inteligentes en cuanto al espacio que probamos y garantizar el soporte."
 
 #: ../../devel/MEP/MEP19.rst:89
 msgid "Requirements"
-msgstr ""
+msgstr "Requisitos"
 
 #: ../../devel/MEP/MEP19.rst:91
 msgid "This section outlines the requirements that we would like to have."
-msgstr ""
+msgstr "En esta sección se exponen los requisitos que nos gustaría tener."
 
 #: ../../devel/MEP/MEP19.rst:93
 msgid "Testing all pull requests by hooking into the GitHub API, as Travis-CI does"
-msgstr ""
+msgstr "Comprobación de todas los pull requests conectándose a la API de GitHub, como hace Travis-CI"
 
 #: ../../devel/MEP/MEP19.rst:96
 msgid "Testing on all major platforms: Linux, Mac OS-X, MS Windows (in that order of priority, based on user survey)"
-msgstr ""
+msgstr "Pruebas en las principales plataformas: Linux, Mac OS-X, MS Windows (en ese orden de prioridad, según la encuesta de usuarios)"
 
 #: ../../devel/MEP/MEP19.rst:99
 msgid "Retain the last n days worth of build and test products, to aid in post-mortem debugging."
-msgstr ""
+msgstr "Conserve los productos de construcción y prueba de los últimos n días, para ayudar a la depuración post-mortem."
 
 #: ../../devel/MEP/MEP19.rst:102
 msgid "Automated nightly binary builds, so that users can test the bleeding edge without installing a complete compilation environment."
-msgstr ""
+msgstr "Construcciones binarias nocturnas automatizadas, para que los usuarios puedan probar el arista sin necesidad de instalar un entorno de compilación completo."
 
 #: ../../devel/MEP/MEP19.rst:106
 msgid "Automated benchmarking.  It would be nice to have a standard benchmark suite (separate from the tests) whose performance could be tracked over time, in different backends and platforms.  While this is separate from building and testing, ideally it would run on the same infrastructure."
-msgstr ""
+msgstr "Análisis comparativo automatizado.  Estaría bien disponer de un conjunto de pruebas estándar (independiente de las pruebas) cuyo rendimiento pudiera seguirse a lo largo del tiempo, en diferentes backends y plataformas.  Aunque esto es independiente de la construcción y las pruebas, lo ideal sería que se ejecutara en la misma infraestructura."
 
 #: ../../devel/MEP/MEP19.rst:112
 msgid "Automated nightly building and publishing of documentation (or as part of testing, to ensure PRs don't introduce documentation bugs). (This would not replace the static documentation for stable releases as a default)."
-msgstr ""
+msgstr "Construcción y publicación nocturna automatizada de la documentación (o como parte de las pruebas, para asegurar que los PRs no introduzcan errores en la documentación). (Esto no sustituiría a la documentación estática de las versiones estables por defecto)."
 
 #: ../../devel/MEP/MEP19.rst:117
 msgid "The test systems should be manageable by multiple developers, so that no single person becomes a bottleneck.  (Travis-CI's design does this well -- storing build configuration in the git repository, rather than elsewhere, is a very good design.)"
-msgstr ""
+msgstr "Los sistemas de prueba deben ser manejados por múltiples desarrolladores, de manera que ninguna persona se convierta en un cuello de botella. (El diseño de Travis-CI hace esto bien - almacenar la configuración de la construcción en el repositorio git, en lugar de en otro lugar, es un muy buen diseño.)"
 
 #: ../../devel/MEP/MEP19.rst:122
 msgid "Make it easy to test a large but sparse matrix of different versions of matplotlib's dependencies.  The matplotlib user survey provides some good data as to where to focus our efforts: https://docs.google.com/spreadsheets/d/1jbK0J4cIkyBNncnS-gP7pINSliNy9lI-N4JHwxlNSXE/edit"
-msgstr ""
+msgstr "Facilitar la prueba de una matriz grande pero dispersa de diferentes versiones de las dependencias de matplotlib.  La encuesta de usuarios de matplotlib proporciona algunos buenos datos sobre dónde centrar nuestros esfuerzos: https://docs.google.com/spreadsheets/d/1jbK0J4cIkyBNncnS-gP7pINSliNy9lI-N4JHwxlNSXE/edit"
 
 #: ../../devel/MEP/MEP19.rst:127
 msgid "Nice to have: A decentralized design so that those with more obscure platforms can publish build results to a central dashboard."
-msgstr ""
+msgstr "Es bueno tenerlo: Un diseño descentralizado para que aquellos con plataformas más oscuras puedan publicar los resultados de la construcción en un tablero central."
 
 #: ../../devel/MEP/MEP19.rst:131
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP19.rst:133
 msgid "This part is yet-to-be-written."
-msgstr ""
+msgstr "Esta parte todavía está por escribir."
 
 #: ../../devel/MEP/MEP19.rst:135
 msgid "However, ideally, the implementation would be a third-party service, to avoid adding system administration to our already stretched time. As we have some donated funds, this service may be a paid one if it offers significant time-saving advantages over free offerings."
-msgstr ""
+msgstr "Sin embargo, lo ideal sería que la implementación fuera un servicio de terceros, para evitar añadir la administración del sistema a nuestro ya escaso tiempo. Como tenemos algunos fondos donados, este servicio puede ser de pago si ofrece ventajas significativas de ahorro de tiempo respecto a las ofertas gratuitas."
 
 #: ../../devel/MEP/MEP19.rst:141
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con el pasado"
 
 #: ../../devel/MEP/MEP19.rst:143
 msgid "Backward compatibility is not a major concern for this MEP.  We will replace current tools and procedures with something better and throw out the old."
-msgstr ""
+msgstr "La compatibilidad con las versiones anteriores no es una preocupación importante para este MEP.  Sustituiremos las herramientas y procedimientos actuales por algo mejor y desecharemos lo antiguo."
 
 #: ../../devel/MEP/MEP19.rst:148
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP19.rst:152
 msgid "Hangout Notes"
-msgstr ""
+msgstr "Notas del Hangout"
 
 #: ../../devel/MEP/MEP19.rst:155
 msgid "CI Infrastructure"
-msgstr ""
+msgstr "Infraestructura CI"
 
 #: ../../devel/MEP/MEP19.rst:157
 msgid "We like Travis and it will probably remain part of our arsenal in any event.  The reliability issues are being looked into."
-msgstr ""
+msgstr "Nos gusta Travis y probablemente seguirá formando parte de nuestro arsenal en cualquier caso.  Las incidencias de fiabilidad se están estudiando."
 
 #: ../../devel/MEP/MEP19.rst:160
 msgid "Enable Amazon S3 uploads of testing products on Travis.  This will help with post-mortem of failures (@mdboom is looking into this now)."
-msgstr ""
+msgstr "Habilitar las subidas a Amazon S3 de los productos de prueba en Travis.  Esto ayudará con el post-mortem de los fracasos (@mdboom está investigando esto ahora)."
 
 #: ../../devel/MEP/MEP19.rst:164
 msgid "We want Mac coverage.  The best bet is probably to push Travis to enable it for our project by paying them for a Pro account (since they don't otherwise allow testing on both Linux and Mac)."

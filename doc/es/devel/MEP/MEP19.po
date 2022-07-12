@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-11 23:04\n"
+"PO-Revision-Date: 2022-07-12 13:37\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,107 +20,107 @@ msgstr ""
 
 #: ../../devel/MEP/MEP19.rst:3
 msgid "MEP19: Continuous Integration"
-msgstr ""
+msgstr "MEP19: Integración continua"
 
 #: ../../devel/MEP/MEP19.rst:6
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP19.rst:8
 msgid "**Completed**"
-msgstr ""
+msgstr "**Completado**"
 
 #: ../../devel/MEP/MEP19.rst:11
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP19.rst:14
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP19.rst:16
 msgid "matplotlib could benefit from better and more reliable continuous integration, both for testing and building installers and documentation."
-msgstr ""
+msgstr "matplotlib podría beneficiarse de una integración continua mejor y más fiable, tanto para las pruebas como para la construcción de instaladores y documentación."
 
 #: ../../devel/MEP/MEP19.rst:21
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP19.rst:24
 msgid "Current state-of-the-art"
-msgstr ""
+msgstr "Estado actual de la técnica"
 
 #: ../../devel/MEP/MEP19.rst:26
 msgid "**Testing**"
-msgstr ""
+msgstr "**Prueba**"
 
 #: ../../devel/MEP/MEP19.rst:28
 msgid "matplotlib currently uses Travis-CI for automated tests.  While Travis-CI should be praised for how much it does as a free service, it has a number of shortcomings:"
-msgstr ""
+msgstr "matplotlib utiliza actualmente Travis-CI para las pruebas automatizadas.  Aunque hay que alabar a Travis-CI por lo mucho que hace como servicio gratuito, tiene una serie de deficiencias:"
 
 #: ../../devel/MEP/MEP19.rst:32
 msgid "It often fails due to network timeouts when installing dependencies."
-msgstr ""
+msgstr "A menudo falla debido a los tiempos de espera de la red al instalar las dependencias."
 
 #: ../../devel/MEP/MEP19.rst:34
 msgid "It often fails for inexplicable reasons."
-msgstr ""
+msgstr "A menudo fracasa por razones inexplicables."
 
 #: ../../devel/MEP/MEP19.rst:36
 msgid "build or test products can only be saved from build off of branches on the main repo, not pull requests, so it is often difficult to \"post mortem\" analyse what went wrong.  This is particularly frustrating when the failure can not be subsequently reproduced locally."
-msgstr ""
+msgstr "los productos de construcción o de prueba sólo pueden guardarse a partir de las ramas del repositorio principal, no de los pull requests, por lo que a menudo es difícil analizar \"post mortem\" lo que ha ido mal.  Esto es especialmente frustrante cuando el fallo no puede reproducirse posteriormente a nivel local."
 
 #: ../../devel/MEP/MEP19.rst:42
 msgid "It is not extremely fast.  matplotlib's cpu and memory requirements for testing are much higher than the average Python project."
-msgstr ""
+msgstr "No es extremadamente rápido. Los requisitos de cpu y memoria de matplotlib para las pruebas son mucho más altos que los del proyecto promedio de Python."
 
 #: ../../devel/MEP/MEP19.rst:45
 msgid "It only tests on Ubuntu Linux, and we have only minimal control over the specifics of the platform.  It can be upgraded at any time outside of our control, causing unexpected delays at times that may not be convenient in our release schedule."
-msgstr ""
+msgstr "Sólo se prueba en Ubuntu Linux, y sólo tenemos un control mínimo sobre los detalles de la plataforma.  Puede actualizarse en cualquier momento fuera de nuestro control, causando retrasos inesperados en momentos que pueden no ser convenientes en nuestro calendario de lanzamientos."
 
 #: ../../devel/MEP/MEP19.rst:50
 msgid "On the plus side, Travis-CI's integration with github -- automatically testing all pending pull requests -- is exceptional."
-msgstr ""
+msgstr "En el lado positivo, la integración de Travis-CI con github - que prueba automáticamente todos los pull request pendientes - es excepcional."
 
 #: ../../devel/MEP/MEP19.rst:53
 msgid "**Builds**"
-msgstr ""
+msgstr "**Construcción**"
 
 #: ../../devel/MEP/MEP19.rst:55
 msgid "There is no centralized effort for automated binary builds for matplotlib.  However, the following disparate things are being done [If the authors mentioned here could fill in detail, that would be great!]:"
-msgstr ""
+msgstr "No existe un esfuerzo centralizado para la construcción binaria automatizada de matplotlib.  Sin embargo, se están haciendo las siguientes cosas dispares [Si los autores mencionados aquí pueden dar detalles, ¡sería genial!]:"
 
 #: ../../devel/MEP/MEP19.rst:60
 msgid "@sandrotosi: builds Debian packages"
-msgstr ""
+msgstr "@sandrotosi: construye paquetes de Debian"
 
 #: ../../devel/MEP/MEP19.rst:62
 msgid "@takluyver: Has automated Ubuntu builds on Launchpad"
-msgstr ""
+msgstr "@takluyver: Ha automatizado las construcciones de Ubuntu en Launchpad"
 
 #: ../../devel/MEP/MEP19.rst:64
 msgid "@cgohlke: Makes Windows builds (don't know how automated that is)"
-msgstr ""
+msgstr "@cgohlke: Hace compilaciones de Windows (no sé qué tan automatizado está)"
 
 #: ../../devel/MEP/MEP19.rst:66
 msgid "@r-owen: Makes OS-X builds (don't know how automated that is)"
-msgstr ""
+msgstr "@r-owen: Hace compilaciones para OS-X (no sé cómo está automatizado)"
 
 #: ../../devel/MEP/MEP19.rst:68
 msgid "**Documentation**"
-msgstr ""
+msgstr "**Documentación**"
 
 #: ../../devel/MEP/MEP19.rst:70
 msgid "Documentation of master is now built by travis and uploaded to https://matplotlib.org/devdocs/index.html"
-msgstr ""
+msgstr "La documentación del master está ahora construida por travis y subida a https://matplotlib.org/devdocs/index.html"
 
 #: ../../devel/MEP/MEP19.rst:72
 msgid "@NelleV, I believe, generates the docs automatically and posts them on the web to chart MEP10 progress."
-msgstr ""
+msgstr "Creo que @NelleV genera los documentos automáticamente y los cuelga en la web para registrar el progreso de MEP10."
 
 #: ../../devel/MEP/MEP19.rst:76
 msgid "Peculiarities of matplotlib"
-msgstr ""
+msgstr "Peculiedades de matplotlib"
 
 #: ../../devel/MEP/MEP19.rst:78
 msgid "matplotlib has complex requirements that make testing and building more taxing than many other Python projects."

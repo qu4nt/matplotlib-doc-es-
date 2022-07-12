@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-12 14:57\n"
+"PO-Revision-Date: 2022-07-12 16:06\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -180,65 +180,65 @@ msgstr "Analizar"
 
 #: ../../devel/MEP/MEP26.rst:172
 msgid "Parsing would consist of breaking the stylesheet into tokens (the python cookbook gives a nice tokenizing recipe on page 66), applying the syntax rules and constructing a ``Tree``. This requires defining the grammar of the stylesheet (again, we can borrow from CSS) and writing a parser. Happily, there is a recipe for this in the python cookbook as well."
-msgstr ""
+msgstr "El análisis consistiría en dividir la hoja de estilo en tokens (el libro de cocina de python ofrece una buena receta de tokenización en la página 66), aplicando las reglas de sintaxis y construyendo un ``Árbol``. Esto requiere definir la gramática de la hoja de estilos (de nuevo, podemos tomar prestado de CSS) y escribir un analizador sintáctico. Felizmente, hay una receta para esto en el libro de cocina de python también."
 
 #: ../../devel/MEP/MEP26.rst:181
 msgid "Visitor pattern for matplotlib figure"
-msgstr ""
+msgstr "Patrón de visitantes para la figura de matplotlib"
 
 #: ../../devel/MEP/MEP26.rst:183
 msgid "In order to apply the stylesheet rules to the relevant artists, we need to 'visit' each artist in a figure and apply the relevant rule. Here is a visitor class (again, thanks to python cookbook), where each ``node`` would be an artist in the figure. A ``visit_`` method would need to be implemented for each mpl artist, to handle the different properties for each ::"
-msgstr ""
+msgstr "Para aplicar las reglas de la hoja de estilo a los artists relevantes, necesitamos 'visitar' cada artista en una figura y aplicar la regla relevante. Aquí hay una clase visitante (de nuevo, gracias al libro de cocina de python), donde cada ``nodo`` sería un artist en la figura. Habría que implementar un método ``visit_`` para cada artist mpl, para manejar las diferentes propiedades de cada uno ::"
 
 #: ../../devel/MEP/MEP26.rst:198
 msgid "An ``evaluator`` class would then take the stylesheet rules and implement the visitor on each one of them."
-msgstr ""
+msgstr "Una clase ``evaluadora`` tomaría entonces las reglas de la hoja de estilo e implementaría el visitante en cada una de ellas."
 
 #: ../../devel/MEP/MEP26.rst:204
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con el pasado"
 
 #: ../../devel/MEP/MEP26.rst:206
 msgid "Implementing a separate ``Style`` class would break backward compatibility as many get/set methods on an artist would become redundant.  While it would be possible to alter these methods to hook into the ``Style`` class (stored as a property against the artist), I would be in favor of simply removing them to both neaten/simplify the codebase and to provide a simple, uncluttered API..."
-msgstr ""
+msgstr "Implementar una clase ``Style`` separada rompería la compatibilidad con el pasado, ya que muchos métodos get/set de un artist serían redundantes.  Aunque sería posible alterar estos métodos para engancharlos a la clase ``Style`` (almacenada como una propiedad contra el artist), yo estaría a favor de eliminarlos simplemente para ordenar/simplificar el código base y proporcionar una API sencilla y despejada..."
 
 #: ../../devel/MEP/MEP26.rst:214
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP26.rst:216
 msgid "No alternatives, but some of the ground covered here overlaps with MEP25, which may assist in this development"
-msgstr ""
+msgstr "No hay alternativas, pero algunas de las cuestiones tratadas aquí se solapan con el PEM25, que puede ayudar a este desarrollo"
 
 #: ../../devel/MEP/MEP26.rst:220
 msgid "Appendix"
-msgstr ""
+msgstr "Apéndice"
 
 #: ../../devel/MEP/MEP26.rst:223
 msgid "Matplotlib primitives"
-msgstr ""
+msgstr "Primitivas de Matplotlib"
 
 #: ../../devel/MEP/MEP26.rst:225
 msgid "This will form the initial selectors which stylesheets can use."
-msgstr ""
+msgstr "Esto formará los selectores iniciales que las hojas de estilo pueden utilizar."
 
 #: ../../devel/MEP/MEP26.rst:227
 msgid "Line2D"
-msgstr ""
+msgstr "Line2D"
 
 #: ../../devel/MEP/MEP26.rst:228
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: ../../devel/MEP/MEP26.rst:229
 msgid "AxesImage"
-msgstr ""
+msgstr "AxesImage"
 
 #: ../../devel/MEP/MEP26.rst:230
 msgid "FigureImage"
-msgstr ""
+msgstr "FigureImage"
 
 #: ../../devel/MEP/MEP26.rst:231
 msgid "Patch"
-msgstr ""
+msgstr "Parche"
 

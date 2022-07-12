@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-12 19:32\n"
+"PO-Revision-Date: 2022-07-12 20:43\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -109,15 +109,15 @@ msgstr "La descripción de este MEP nos da la mayor parte de la solución:"
 
 #: ../../devel/MEP/MEP27.rst:79
 msgid "To remove the windowing aspect out of ``FigureManagerBase`` letting it simply wrap this new class along with the other backend classes. Create a new ``WindowBase`` class that can handle this functionality, with pass-through methods (:arrow_right:) to ``WindowBase``.  Classes that subclass ``WindowBase`` should also subclass the GUI specific window class to ensure backward compatibility (``manager.window == manager.window``)."
-msgstr ""
+msgstr "Para eliminar el aspecto de las ventanas de ``FigureManagerBase`` dejando que simplemente envuelva esta nueva clase junto con las otras clases de backend. Crear una nueva clase ``WindowBase`` que pueda manejar esta funcionalidad, con métodos de paso (:arrow_right:) a ``WindowBase``.  Las clases que subclasifiquen ``WindowBase`` deben subclasificar también la clase de ventana específica de la IGU para asegurar la compatibilidad con el pasado (``manager.window == manager.window``)."
 
 #: ../../devel/MEP/MEP27.rst:86
 msgid "Refactor the mainloop of ``ShowBase`` into ``MainLoopBase``, which encapsulates the end of the loop as well.  We give an instance of ``MainLoop`` to ``FigureManager`` as a key unlock the exit method (requiring all keys returned before the loop can die).  Note this opens the possibility for multiple backends to run concurrently."
-msgstr ""
+msgstr "Refactorizar el bucle principal de ``ShowBase`` en ``MainLoopBase``, que encapsula el final del bucle también.  Damos una instancia de ``MainLoop`` a ``FigureManager`` como clave para desbloquear el método de salida (requiriendo que se devuelvan todas las claves antes de que el bucle pueda acabar).  Ten en cuenta que esto abre la posibilidad de que se ejecuten múltiples backends de forma concurrente."
 
 #: ../../devel/MEP/MEP27.rst:91
 msgid "Now that ``FigureManagerBase`` has no backend specifics in it, to rename it to ``FigureManager``, and move to a new file ``backend_managers.py`` noting that:"
-msgstr ""
+msgstr "Ahora que ``FigureManagerBase`` no tiene detalles de backend en él, para cambiar el nombre a ``FigureManager``, y pasar a un nuevo archivo ``backend_managers.py`` señalando que:"
 
 #: ../../devel/MEP/MEP27.rst:95
 msgid "This allows us to break up the conversion of backends into separate PRs as we can keep the existing ``FigureManagerBase`` class and its dependencies intact."

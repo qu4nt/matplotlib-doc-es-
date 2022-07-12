@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-12 16:06\n"
+"PO-Revision-Date: 2022-07-12 19:32\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -52,60 +52,60 @@ msgstr "Este MEP refactoriza los backends para dar una API más estructurada y c
 
 #: ../../devel/MEP/MEP27.rst:30
 msgid "``FigureManagerBase`` and its derived classes into the core functionality class ``FigureManager`` and a backend specific class ``WindowBase`` and"
-msgstr ""
+msgstr "``FigureManagerBase`` y sus clases derivadas en la clase de funcionalidad principal ``FigureManager`` y una clase específica de backend ``WindowBase`` y"
 
 #: ../../devel/MEP/MEP27.rst:33
 msgid "``ShowBase`` and its derived classes into ``Gcf.show_all`` and ``MainLoopBase``."
-msgstr ""
+msgstr "``ShowBase`` y sus clases derivadas en ``Gcf.show_all`` y ``MainLoopBase``."
 
 #: ../../devel/MEP/MEP27.rst:36
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP27.rst:38
 msgid "This MEP aims to consolidate the backends API into one single uniform API, removing generic code out of the backend (which includes ``_pylab_helpers`` and ``Gcf``), and push code to a more appropriate level in matplotlib.  With this we automatically remove inconsistencies that appear in the backends, such as ``FigureManagerBase.resize(w, h)`` which sometimes sets the canvas, and other times set the entire window to the dimensions given, depending on the backend."
-msgstr ""
+msgstr "Este MEP pretende consolidar la API de los backends en una sola API uniforme, eliminando el código genérico del backend (que incluye ``_pylab_helpers`` y ``Gcf``), y empujando el código a un nivel más apropiado en matplotlib.  Con esto eliminamos automáticamente las inconsistencias que aparecen en los backends, como ``FigureManagerBase.resize(w, h)`` que a veces establece el lienzo, y otras veces establece toda la ventana a las dimensiones dadas, dependiendo del backend."
 
 #: ../../devel/MEP/MEP27.rst:47
 msgid "Two main places for generic code appear in the classes derived from ``FigureManagerBase`` and ``ShowBase``."
-msgstr ""
+msgstr "Dos lugares principales para el código genérico aparecen en las clases derivadas de ``FigureManagerBase`` y ``ShowBase``."
 
 #: ../../devel/MEP/MEP27.rst:50
 msgid "``FigureManagerBase`` has **three** jobs at the moment:"
-msgstr ""
+msgstr "``FigureManagerBase`` tiene **tres** trabajos en este momento:"
 
 #: ../../devel/MEP/MEP27.rst:52
 msgid "The documentation describes it as a *``Helper class for pyplot mode, wraps everything up into a neat bundle''*"
-msgstr ""
+msgstr "La documentación la describe como una *``clase de ayuda para el modo pyplot, que lo envuelve todo en un paquete ordenado''*"
 
 #: ../../devel/MEP/MEP27.rst:54
 #, python-format
 msgid "But it doesn't just wrap the canvas and toolbar, it also does all of the windowing tasks itself.  The conflation of these two tasks gets seen the best in the following line: ```python self.set_window_title(\"Figure %d\" % num) ``` This combines backend specific code ``self.set_window_title(title)`` with matplotlib generic code ``title = \"Figure %d\" % num``."
-msgstr ""
+msgstr "Pero no sólo envuelve el lienzo y la barra de herramientas, sino que también hace todas las tareas de ventana por sí mismo.  La combinación de estas dos tareas se ve mejor en la siguiente línea: ``python self.set_window_title(\"Figure %d\" % num) ``` Esto combina el código específico del backend ``self.set_window_title(title)`` con el código genérico de matplotlib ``title = \"Figure %d\" % num``."
 
 #: ../../devel/MEP/MEP27.rst:61
 msgid "Currently the backend specific subclass of ``FigureManager`` decides when to end the mainloop.  This also seems very wrong as the figure should have no control over the other figures."
-msgstr ""
+msgstr "Actualmente la subclase específica del backend de ``FigureManager`` decide cuándo terminar el mainloop.  Esto también parece muy incorrecto ya que la figura no debería tener control sobre las otras figuras."
 
 #: ../../devel/MEP/MEP27.rst:66
 msgid "``ShowBase`` has two jobs:"
-msgstr ""
+msgstr "``ShowBase`` tiene dos trabajos:"
 
 #: ../../devel/MEP/MEP27.rst:68
 msgid "It has the job of going through all figure managers registered in ``_pylab_helpers.Gcf`` and telling them to show themselves."
-msgstr ""
+msgstr "Tiene el trabajo de recorrer todos los gestores de figuras registrados en ``_pylab_helpers.Gcf`` y decirles que se muestren."
 
 #: ../../devel/MEP/MEP27.rst:70
 msgid "And secondly it has the job of performing the backend specific ``mainloop`` to block the main programme and thus keep the figures from dying."
-msgstr ""
+msgstr "Y en segundo lugar tiene el trabajo de realizar el ``mainloop`` específico del backend para bloquear el programa principal y así evitar que las cifras desaparezcan."
 
 #: ../../devel/MEP/MEP27.rst:75
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP27.rst:77
 msgid "The description of this MEP gives us most of the solution:"
-msgstr ""
+msgstr "La descripción de este MEP nos da la mayor parte de la solución:"
 
 #: ../../devel/MEP/MEP27.rst:79
 msgid "To remove the windowing aspect out of ``FigureManagerBase`` letting it simply wrap this new class along with the other backend classes. Create a new ``WindowBase`` class that can handle this functionality, with pass-through methods (:arrow_right:) to ``WindowBase``.  Classes that subclass ``WindowBase`` should also subclass the GUI specific window class to ensure backward compatibility (``manager.window == manager.window``)."

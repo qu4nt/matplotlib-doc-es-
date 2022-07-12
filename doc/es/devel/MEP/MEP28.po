@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-12 20:43\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,71 +20,71 @@ msgstr ""
 
 #: ../../devel/MEP/MEP28.rst:3
 msgid "MEP28: Remove Complexity from Axes.boxplot"
-msgstr ""
+msgstr "MEP28: Eliminar la complejidad de Axes.boxplot"
 
 #: ../../devel/MEP/MEP28.rst:10
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP28.rst:11
 msgid "**Discussion**"
-msgstr ""
+msgstr "**Discusión**"
 
 #: ../../devel/MEP/MEP28.rst:14
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP28.rst:16
 msgid "The following lists any open PRs or branches related to this MEP:"
-msgstr ""
+msgstr "A continuación se enumeran los PRs o ramas abiertas relacionadas con este MEP:"
 
 #: ../../devel/MEP/MEP28.rst:18
 msgid "Deprecate redundant statistical kwargs in ``Axes.boxplot``: https://github.com/phobson/matplotlib/tree/MEP28-initial-deprecations"
-msgstr ""
+msgstr "Se han suprimido los kwargs estadísticos redundantes en ``Axes.boxplot``: https://github.com/phobson/matplotlib/tree/MEP28-initial-deprecations"
 
 #: ../../devel/MEP/MEP28.rst:19
 msgid "Deprecate redundant style options in ``Axes.boxplot``: https://github.com/phobson/matplotlib/tree/MEP28-initial-deprecations"
-msgstr ""
+msgstr "Se eliminan las opciones de estilo redundantes en ``Axes.boxplot``: https://github.com/phobson/matplotlib/tree/MEP28-initial-deprecations"
 
 #: ../../devel/MEP/MEP28.rst:20
 msgid "Deprecate passings 2D NumPy arrays as input: None"
-msgstr ""
+msgstr "Desaparece el paso de matrices 2D NumPy como entrada: Ninguno"
 
 #: ../../devel/MEP/MEP28.rst:21
 msgid "Add pre- & post-processing options to ``cbook.boxplot_stats``: https://github.com/phobson/matplotlib/tree/boxplot-stat-transforms"
-msgstr ""
+msgstr "Añadir opciones de pre y post-procesamiento a ``cbook.boxplot_stats``: https://github.com/phobson/matplotlib/tree/boxplot-stat-transforms"
 
 #: ../../devel/MEP/MEP28.rst:22
 msgid "Exposing ``cbook.boxplot_stats`` through ``Axes.boxplot`` kwargs: None"
-msgstr ""
+msgstr "Exponiendo ``cbook.boxplot_stats`` a través de ``Axes.boxplot`` kwargs: Ninguna"
 
 #: ../../devel/MEP/MEP28.rst:23
 msgid "Remove redundant statistical kwargs in ``Axes.boxplot``: None"
-msgstr ""
+msgstr "Eliminar los kwargs estadísticos redundantes en ``Axes.boxplot``: Ninguno"
 
 #: ../../devel/MEP/MEP28.rst:24
 msgid "Remove redundant style options in ``Axes.boxplot``: None"
-msgstr ""
+msgstr "Elimina las opciones de estilo redundantes en ``Axes.boxplot``: Ninguno"
 
 #: ../../devel/MEP/MEP28.rst:25
 msgid "Remaining items that arise through discussion: None"
-msgstr ""
+msgstr "Otros puntos que surgen en el debate: Ninguno"
 
 #: ../../devel/MEP/MEP28.rst:28
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP28.rst:30
 msgid "Over the past few releases, the ``Axes.boxplot`` method has grown in complexity to support fully customizable artist styling and statistical computation. This lead to ``Axes.boxplot`` being split off into multiple parts. The statistics needed to draw a boxplot are computed in ``cbook.boxplot_stats``, while the actual artists are drawn by ``Axes.bxp``. The original method, ``Axes.boxplot`` remains as the most public API that handles passing the user-supplied data to ``cbook.boxplot_stats``, feeding the results to ``Axes.bxp``, and pre-processing style information for each facet of the boxplot plots."
-msgstr ""
+msgstr "En las últimas versiones, el método ``Axes.boxplot`` ha crecido en complejidad para soportar un estilo de artist totalmente personalizable y un cálculo estadístico. Esto ha llevado a dividir ``Axes.boxplot`` en varias partes. Las estadísticas necesarias para dibujar un boxplot se calculan en ``cbook.boxplot_stats``, mientras que los artists reales son dibujados por ``Axes.bxp``. El método original, ``Axes.boxplot`` sigue siendo la API más pública que se encarga de pasar los datos suministrados por el usuario a ``cbook.boxplot_stats``, de alimentar los resultados a ``Axes.bxp``, y de preprocesar la información de estilo para cada faceta de los gráficos de caja."
 
 #: ../../devel/MEP/MEP28.rst:40
 msgid "This MEP will outline a path forward to rollback the added complexity and simplify the API while maintaining reasonable backwards compatibility."
-msgstr ""
+msgstr "Este MEP esbozará un camino a seguir para revertir la complejidad añadida y simplificar la API manteniendo una razonable Compatibilidad con versiones anteriores."
 
 #: ../../devel/MEP/MEP28.rst:45
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP28.rst:47
 msgid "Currently, the ``Axes.boxplot`` method accepts parameters that allow the users to specify medians and confidence intervals for each box that will be drawn in the plot. These were provided so that avdanced users could provide statistics computed in a different fashion that the simple method provided by matplotlib. However, handling this input requires complex logic to make sure that the forms of the data structure match what needs to be drawn. At the moment, that logic contains 9 separate if/else statements nested up to 5 levels deep with a for loop, and may raise up to 2 errors. These parameters were added prior to the creation of the ``Axes.bxp`` method, which draws boxplots from a list of dictionaries containing the relevant statistics. Matplotlib also provides a function that computes these statistics via ``cbook.boxplot_stats``. Note that advanced users can now either a) write their own function to compute the stats required by ``Axes.bxp``, or b) modify the output returned by ``cbook.boxplots_stats`` to fully customize the position of the artists of the plots. With this flexibility, the parameters to manually specify only the medians and their confidences intervals remain for backwards compatibility."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-12 20:43\n"
+"PO-Revision-Date: 2022-07-12 21:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -88,63 +88,63 @@ msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP28.rst:47
 msgid "Currently, the ``Axes.boxplot`` method accepts parameters that allow the users to specify medians and confidence intervals for each box that will be drawn in the plot. These were provided so that avdanced users could provide statistics computed in a different fashion that the simple method provided by matplotlib. However, handling this input requires complex logic to make sure that the forms of the data structure match what needs to be drawn. At the moment, that logic contains 9 separate if/else statements nested up to 5 levels deep with a for loop, and may raise up to 2 errors. These parameters were added prior to the creation of the ``Axes.bxp`` method, which draws boxplots from a list of dictionaries containing the relevant statistics. Matplotlib also provides a function that computes these statistics via ``cbook.boxplot_stats``. Note that advanced users can now either a) write their own function to compute the stats required by ``Axes.bxp``, or b) modify the output returned by ``cbook.boxplots_stats`` to fully customize the position of the artists of the plots. With this flexibility, the parameters to manually specify only the medians and their confidences intervals remain for backwards compatibility."
-msgstr ""
+msgstr "Actualmente, el método ``Axes.boxplot`` acepta parámetros que permiten a los usuarios especificar medianas e intervalos de confianza para cada caja que se dibujará en el gráfico. Estos se proporcionaron para que los usuarios de avdanced pudieran proporcionar estadísticas calculadas de una manera diferente al método simple proporcionado por matplotlib. Sin embargo, el manejo de esta entrada requiere una lógica compleja para asegurarse de que las formas de la estructura de datos coinciden con lo que se necesita dibujar. Por el momento, esa lógica contiene 9 declaraciones if/else separadas anidadas hasta 5 niveles de profundidad con un bucle for, y puede generar hasta 2 errores. Estos parámetros se añadieron antes de la creación del método ``Axes.bxp``, que dibuja gráficos de caja a partir de una lista de diccionarios que contienen las estadísticas relevantes. Matplotlib también proporciona una función que calcula estas estadísticas a través de ``cbook.boxplot_stats``. Ten en cuenta que los usuarios avanzados pueden ahora a) escribir su propia función para calcular las estadísticas requeridas por ``Axes.bxp``, o b) modificar la salida devuelta por ``cbook.boxplots_stats`` para personalizar completamente la posición de los artists de los gráficos. Con esta flexibilidad, los parámetros para especificar manualmente sólo las medianas y sus intervalos de confianza permanecen para la compatibilidad con versiones anteriores."
 
 #: ../../devel/MEP/MEP28.rst:65
 msgid "Around the same time that the two roles of ``Axes.boxplot`` were split into ``cbook.boxplot_stats`` for computation and ``Axes.bxp`` for drawing, both ``Axes.boxplot`` and ``Axes.bxp`` were written to accept parameters that individually toggle the drawing of all components of the boxplots, and parameters that individually configure the style of those artists. However, to maintain backwards compatibility, the ``sym`` parameter (previously used to specify the symbol of the fliers) was retained. This parameter itself requires fairly complex logic to reconcile the ``sym`` parameters with the newer ``flierprops`` parameter at the default style specified by ``matplotlibrc``."
-msgstr ""
+msgstr "Más o menos al mismo tiempo que las dos funciones de ``Axes.boxplot`` se dividieron en ``cbook.boxplot_stats`` para el cálculo y ``Axes.bxp`` para el dibujo, tanto ``Axes.boxplot`` como ``Axes.bxp`` se escribieron para aceptar parámetros que conmutan individualmente el dibujo de todos los componentes de los gráficos de caja, y parámetros que configuran individualmente el estilo de esos artists. Sin embargo, para mantener la compatibilidad con versiones anteriores, se mantuvo el parámetro ``sym`` (que antes se utilizaba para especificar el símbolo de los volantes). Este parámetro en sí mismo requiere una lógica bastante compleja para reconciliar los parámetros ``sym`` con el parámetro más nuevo ``flierprops`` en el estilo por defecto especificado por ``matplotlibrc``."
 
 #: ../../devel/MEP/MEP28.rst:75
 msgid "This MEP seeks to dramatically simplify the creation of boxplots for novice and advanced users alike. Importantly, the changes proposed here will also be available to downstream packages like seaborn, as seaborn smartly allows users to pass arbitrary dictionaries of parameters through the seaborn API to the underlying matplotlib functions."
-msgstr ""
+msgstr "Este MEP busca simplificar drásticamente la creación degráfico de caja para usuarios principiantes y avanzados por igual. Es importante destacar que los cambios propuestos aquí también estarán disponibles para los paquetes posteriores como seaborn, ya que seaborn permite inteligentemente a los usuarios pasar diccionarios arbitrarios de parámetros a través de la API de seaborn a las funciones subyacentes de matplotlib."
 
 #: ../../devel/MEP/MEP28.rst:81
 msgid "This will be achieved in the following way:"
-msgstr ""
+msgstr "Esto se logrará de la siguiente manera:"
 
 #: ../../devel/MEP/MEP28.rst:83
 msgid "``cbook.boxplot_stats`` will be modified to allow pre- and post- computation transformation functions to be passed in (e.g., ``np.log`` and ``np.exp`` for lognormally distributed data)"
-msgstr ""
+msgstr "``cbook.boxplot_stats`` se modificará para permitir que se pasen funciones de transformación antes y después del cálculo (por ejemplo, ``np.log`` y ``np.exp`` para datos distribuidos de forma lognormal)"
 
 #: ../../devel/MEP/MEP28.rst:86
 msgid "``Axes.boxplot`` will be modified to also accept and naïvely pass them to ``cbook.boxplots_stats`` (Alt: pass the stat function and a dict of its optional parameters)."
-msgstr ""
+msgstr "``Axes.boxplot`` será modificado para que también acepte y pase ingenuamente a ``cbook.boxplots_stats`` (Alt: pasar la función stat y un dict de sus parámetros opcionales)."
 
 #: ../../devel/MEP/MEP28.rst:89
 msgid "Outdated parameters from ``Axes.boxplot`` will be deprecated and later removed."
-msgstr ""
+msgstr "Los parámetros obsoletos de ``Axes.boxplot`` serán obsoletos y posteriormente eliminados."
 
 #: ../../devel/MEP/MEP28.rst:93
 msgid "Importance"
-msgstr ""
+msgstr "Importancia"
 
 #: ../../devel/MEP/MEP28.rst:95
 msgid "Since the limits of the whiskers are computed arithmetically, there is an implicit assumption of normality in box and whisker plots. This primarily affects which data points are classified as outliers."
-msgstr ""
+msgstr "Dado que los límites de los bigotes se calculan aritméticamente, existe una suposición implícita de normalidad en los gráficos de caja y bigotes. Esto afecta principalmente a los puntos de datos que se clasifican como valores atípicos."
 
 #: ../../devel/MEP/MEP28.rst:99
 msgid "Allowing transformations to the data and the results used to draw boxplots will allow users to opt-out of that assumption if the data are known to not fit a normal distribution."
-msgstr ""
+msgstr "Permitir las transformaciones de los datos y los resultados utilizados para dibujar los gráficos de caja permitirá a los usuarios optar por no hacer esa suposición si se sabe que los datos no se ajustan a una distribución normal."
 
 #: ../../devel/MEP/MEP28.rst:103
 msgid "Below is an example of how ``Axes.boxplot`` classifies outliers of lognormal data differently depending one these types of transforms."
-msgstr ""
+msgstr "A continuación se muestra un ejemplo de cómo ``Axes.boxplot`` clasifica los valores atípicos de los datos lognormales de forma diferente dependiendo de estos tipos de transformaciones."
 
 #: ../../devel/MEP/MEP28.rst:28
 msgid "(`Source code <../../devel/MEP/MEP28-1.py>`__, `png <../../devel/MEP/MEP28-1.png>`__, `pdf <../../devel/MEP/MEP28-1.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../devel/MEP/MEP28-1.py>`__, `png <../../devel/MEP/MEP28-1.png>`__, `pdf <../../devel/MEP/MEP28-1.pdf>`__)"
 
 #: ../../devel/MEP/MEP28.rst:131
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP28.rst:134
 msgid "Passing transform functions to ``cbook.boxplots_stats``"
-msgstr ""
+msgstr "Pasar funciones de transformación a ``cbook.boxplots_stats``"
 
 #: ../../devel/MEP/MEP28.rst:136
 msgid "This MEP proposes that two parameters (e.g., ``transform_in`` and ``transform_out`` be added to the cookbook function that computes the statistics for the boxplot function. These will be optional keyword-only arguments and can easily be set to ``lambda x: x`` as a no-op when omitted by the user. The ``transform_in`` function will be applied to the data as the ``boxplot_stats`` function loops through each subset of the data passed to it. After the list of statistics dictionaries are computed the ``transform_out`` function is applied to each value in the dictionaries."
-msgstr ""
+msgstr "Este MEP propone que se añadan dos parámetros (por ejemplo, ``transform_in`` y ``transform_out`` a la función del libro de cocina que calcula las estadísticas para la función gráfico de caja. Estos serán argumentos opcionales de palabra clave y pueden ser fácilmente establecidos a ``lambda x: x`` como un no-op cuando es omitido por el usuario. La función ``transform_in`` se aplicará a los datos mientras la función ``boxplot_stats`` recorre cada subconjunto de datos que se le pasa. Después de la lista de diccionarios de estadísticas se calcula la función ``transform_out`` se aplica a cada valor en los diccionarios."
 
 #: ../../devel/MEP/MEP28.rst:145
 msgid "These transformations can then be added to the call signature of ``Axes.boxplot`` with little impact to that method's complexity. This is because they can be directly passed to ``cbook.boxplot_stats``. Alternatively, ``Axes.boxplot`` could be modified to accept an optional statistical function kwarg and a dictionary of parameters to be directly passed to it."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-13 13:03\n"
+"PO-Revision-Date: 2022-07-15 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -136,59 +136,59 @@ msgstr "Comentarios:"
 
 #: ../../devel/MEP/MEP25.rst:118
 msgid "initialization should happen via unpacking ``**``, so we need a copy of call signature parameter for the ``Artist`` we're ultimately trying to control. Unfortunate hard-coded repetition..."
-msgstr ""
+msgstr "la inicialización debe ocurrir a través de la descomposición de ``**``, por lo que necesitamos una copia del parámetro de la firma de la llamada para el ``Artist`` que en última instancia estamos tratando de controlar. Desafortunada repetición de código duro..."
 
 #: ../../devel/MEP/MEP25.rst:122
 msgid "should the additional ``**kwargs`` accepted by each ``Artist`` be tracked at the ``Controller``"
-msgstr ""
+msgstr "¿los ``kwargs`` adicionales aceptados por cada ``Artist`` deben ser rastreados en el ``Controlador``?"
 
 #: ../../devel/MEP/MEP25.rst:124
 msgid "how does a ``Controller`` know which artist belongs where? E.g., do we need to pass ``axes`` references?"
-msgstr ""
+msgstr "¿Cómo sabe un ``Controlador`` qué artist pertenece a qué lugar? Por ejemplo, ¿hay que pasar referencias a los ``ejes``?"
 
 #: ../../devel/MEP/MEP25.rst:127
 msgid "Progress:"
-msgstr ""
+msgstr "Progreso:"
 
 #: ../../devel/MEP/MEP25.rst:129
 msgid "A simple NB demonstrating some functionality for ``Line2DController`` objects: https://nbviewer.jupyter.org/gist/theengineear/f0aa8d79f64325e767c0"
-msgstr ""
+msgstr "Un simple NB que demuestra algunas funcionalidades de los objetos ``Line2DController``: https://nbviewer.jupyter.org/gist/theengineear/f0aa8d79f64325e767c0"
 
 #: ../../devel/MEP/MEP25.rst:133
 msgid "Write in protocols for the ``Controller`` to *update* the model."
-msgstr ""
+msgstr "Escribir en protocolos para el ``Controlador`` para *actualizar* el modelo."
 
 #: ../../devel/MEP/MEP25.rst:137
 msgid "how should containers be dealt with? E.g., what happens to old patches when we re-bin a histogram?"
-msgstr ""
+msgstr "¿Cómo deben tratarse los contenedores? Por ejemplo, ¿qué ocurre con los parches antiguos cuando volvemos a incluir un histograma?"
 
 #: ../../devel/MEP/MEP25.rst:139
 msgid "in the link from (1), the old line is completely destroyed and redrawn, what if something is referencing it?"
-msgstr ""
+msgstr "en el enlace de (1), la línea antigua está completamente destruida y redibujada, ¿qué pasa si algo hace referencia a ella?"
 
 #: ../../devel/MEP/MEP25.rst:142
 msgid "Create method by which a json object can be assembled from the ``Controllers``"
-msgstr ""
+msgstr "Método de creación mediante el cual se puede ensamblar un objeto json a partir de los ``Controladores``"
 
 #: ../../devel/MEP/MEP25.rst:144
 msgid "Deal with serializing the unserializable aspects of a figure (e.g., non-affine transforms?)"
-msgstr ""
+msgstr "Tratar la serialización de los aspectos no serializables de una figura (por ejemplo, las transformaciones no afines...)"
 
 #: ../../devel/MEP/MEP25.rst:146
 msgid "Be able to instantiate from a serialized representation"
-msgstr ""
+msgstr "Ser capaz de instanciar desde una representación serializada"
 
 #: ../../devel/MEP/MEP25.rst:147
 msgid "Reimplement the existing pyplot and Axes method, e.g. ``pyplot.hist`` and ``Axes.hist`` in terms of the new controller class."
-msgstr ""
+msgstr "Reimplementar el método pyplot y Axes existente, por ejemplo ``pyplot.hist`` y ``Axes.hist`` en términos de la nueva clase de controlador."
 
 #: ../../devel/MEP/MEP25.rst:151
 msgid "> @theengineer: in #2 above, what do you mean by *get updates* from each ``Artist``?"
-msgstr ""
+msgstr "> @theengineer: en el #2 anterior, ¿qué quieres decir con *obtener actualizaciones* de cada ``Artist``?"
 
 #: ../../devel/MEP/MEP25.rst:154
 msgid "^ Yup. The ``Controller`` *shouldn't* need to get updated. This just happens in #3. Delete comments when you see this."
-msgstr ""
+msgstr "Sí. El ``Controlador`` *no debería* tener que actualizarse. Esto sólo ocurre en el #3. Borra los comentarios cuando veas esto."
 
 #: ../../devel/MEP/MEP25.rst:158
 msgid "Backward compatibility"
@@ -196,17 +196,17 @@ msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP25.rst:160
 msgid "pickling will change"
-msgstr ""
+msgstr "la serialización cambiará"
 
 #: ../../devel/MEP/MEP25.rst:161
 msgid "non-affine transformations will require a defined pickling method"
-msgstr ""
+msgstr "las transformaciones no afines requerirán un método de serialización definido"
 
 #: ../../devel/MEP/MEP25.rst:164
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP25.rst:166
 msgid "PR #3150 suggested adding semantics by parasitically attaching extra containers to axes objects. This is a more complete solution with what should be a more developed/flexible/powerful framework."
-msgstr ""
+msgstr "El PR #3150 sugirió añadir semántica adjuntando parásitamente contenedores extra a los objetos de los ejes. Esta es una solución más completa con lo que debería ser un framework más desarrollado/flexible/potente."
 

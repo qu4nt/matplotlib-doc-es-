@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-12 11:10\n"
+"PO-Revision-Date: 2022-07-15 03:08\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -131,7 +131,7 @@ msgstr ":py:obj:`PillowWriter <matplotlib.animation.PillowWriter>`"
 
 #: ../../api/animation_api.rst:184
 msgid "The HTML writer generates JavaScript-based animations."
-msgstr ""
+msgstr "El escritor de HTML genera animaciones basadas en JavaScript."
 
 #: ../../api/animation_api.rst:191:<autosummary>:1
 msgid ":py:obj:`HTMLWriter <matplotlib.animation.HTMLWriter>`"
@@ -139,11 +139,11 @@ msgstr ":py:obj:`HTMLWriter <matplotlib.animation.HTMLWriter>`"
 
 #: ../../api/animation_api.rst:191:<autosummary>:1
 msgid "Writer for JavaScript-based HTML movies."
-msgstr ""
+msgstr "Escritor para películas HTML basadas en JavaScript."
 
 #: ../../api/animation_api.rst:192
 msgid "The pipe-based writers stream the captured frames over a pipe to an external process.  The pipe-based variants tend to be more performant, but may not work on all systems."
-msgstr ""
+msgstr "Los escritores basados en tuberías transmiten los fotogramas capturados a través de una tubería a un proceso externo.  Las variantes basadas en tuberías tienden a ser más performantes, pero pueden no funcionar en todos los sistemas."
 
 #: ../../api/animation_api.rst:202:<autosummary>:1
 msgid ":py:obj:`FFMpegWriter <matplotlib.animation.FFMpegWriter>`"
@@ -151,7 +151,7 @@ msgstr ":py:obj:`FFMpegWriter <matplotlib.animation.FFMpegWriter>`"
 
 #: ../../api/animation_api.rst:202:<autosummary>:1
 msgid "Pipe-based ffmpeg writer."
-msgstr ""
+msgstr "Escritor ffmpeg basado en tuberías."
 
 #: ../../api/animation_api.rst:202:<autosummary>:1
 msgid ":py:obj:`ImageMagickWriter <matplotlib.animation.ImageMagickWriter>`"
@@ -159,11 +159,11 @@ msgstr ":py:obj:`ImageMagickWriter <matplotlib.animation.ImageMagickWriter>`"
 
 #: ../../api/animation_api.rst:202:<autosummary>:1
 msgid "Pipe-based animated gif."
-msgstr ""
+msgstr "Gif animado basado en tuberías."
 
 #: ../../api/animation_api.rst:203
 msgid "The file-based writers save temporary files for each frame which are stitched into a single file at the end.  Although slower, these writers can be easier to debug."
-msgstr ""
+msgstr "Los escritores basados en archivos guardan archivos temporales para cada fotograma que se cosen en un solo archivo al final.  Aunque son más lentos, estos escritores pueden ser más fáciles de depurar."
 
 #: ../../api/animation_api.rst:213:<autosummary>:1
 msgid ":py:obj:`FFMpegFileWriter <matplotlib.animation.FFMpegFileWriter>`"
@@ -171,7 +171,7 @@ msgstr ":py:obj:`FFMpegFileWriter <matplotlib.animation.FFMpegFileWriter>`"
 
 #: ../../api/animation_api.rst:213:<autosummary>:1
 msgid "File-based ffmpeg writer."
-msgstr ""
+msgstr "Escritor de ffmpeg basado en archivos."
 
 #: ../../api/animation_api.rst:213:<autosummary>:1
 msgid ":py:obj:`ImageMagickFileWriter <matplotlib.animation.ImageMagickFileWriter>`"
@@ -179,31 +179,31 @@ msgstr ":py:obj:`ImageMagickFileWriter <matplotlib.animation.ImageMagickFileWrit
 
 #: ../../api/animation_api.rst:213:<autosummary>:1
 msgid "File-based animated gif writer."
-msgstr ""
+msgstr "Escritor de gifs animados basado en archivos."
 
 #: ../../api/animation_api.rst:214
 msgid "Fundamentally, a `MovieWriter` provides a way to grab sequential frames from the same underlying `~matplotlib.figure.Figure` object.  The base class `MovieWriter` implements 3 methods and a context manager.  The only difference between the pipe-based and file-based writers is in the arguments to their respective ``setup`` methods."
-msgstr ""
+msgstr "Fundamentalmente, un `MovieWriter` proporciona una forma de coger fotogramas secuenciales del mismo objeto subyacente `~matplotlib.figure.Figure`.  La clase base `MovieWriter` implementa 3 métodos y un gestor de contexto.  La única diferencia entre los escritores basados en tuberías y los basados en archivos está en los argumentos de sus respectivos métodos de ``setup``."
 
 #: ../../api/animation_api.rst:220
 msgid "The ``setup()`` method is used to prepare the writer (possibly opening a pipe), successive calls to ``grab_frame()`` capture a single frame at a time and ``finish()`` finalizes the movie and writes the output file to disk.  For example ::"
-msgstr ""
+msgstr "El método ``setup()`` se utiliza para preparar al escritor (posiblemente abriendo una tubería), las sucesivas llamadas a ``grab_frame()`` capturan solo un fotograma a la vez y ``finish()`` finaliza la película y escribe el archivo de salida en el disco.  Por ejemplo ::"
 
 #: ../../api/animation_api.rst:232
 msgid "If using the writer classes directly (not through `Animation.save`), it is strongly encouraged to use the `~MovieWriter.saving` context manager ::"
-msgstr ""
+msgstr "Si se utilizan las clases de escritor directamente (no a través de `Animation.save`), se recomienda encarecidamente utilizar el gestor de contexto `~MovieWriter.saving` ::"
 
 #: ../../api/animation_api.rst:240
 msgid "to ensures that setup and cleanup are performed as necessary."
-msgstr ""
+msgstr "para asegurar que la configuración y la limpieza se realicen según sea necesario."
 
 #: ../../api/animation_api.rst:253
 msgid "Helper Classes"
-msgstr ""
+msgstr "Clases de ayuda"
 
 #: ../../api/animation_api.rst:256
 msgid "Animation Base Classes"
-msgstr ""
+msgstr "Clases base de animación"
 
 #: ../../api/animation_api.rst:264:<autosummary>:1
 msgid ":py:obj:`TimedAnimation <matplotlib.animation.TimedAnimation>`"
@@ -211,15 +211,15 @@ msgstr ":py:obj:`TimedAnimation <matplotlib.animation.TimedAnimation>`"
 
 #: ../../api/animation_api.rst:264:<autosummary>:1
 msgid "`Animation` subclass for time-based animation."
-msgstr ""
+msgstr "Subclase `Animation` para la animación basada en el tiempo."
 
 #: ../../api/animation_api.rst:266
 msgid "Writer Registry"
-msgstr ""
+msgstr "Registro del escritor"
 
 #: ../../api/animation_api.rst:268
 msgid "A module-level registry is provided to map between the name of the writer and the class to allow a string to be passed to `Animation.save` instead of a writer instance."
-msgstr ""
+msgstr "Se proporciona un registro a nivel de módulo para mapear entre el nombre del escritor y la clase para permitir que se pase una cadena a `Animation.save` en lugar de una instancia del escritor."
 
 #: ../../api/animation_api.rst:277:<autosummary>:1
 msgid ":py:obj:`MovieWriterRegistry <matplotlib.animation.MovieWriterRegistry>`"
@@ -227,15 +227,15 @@ msgstr ":py:obj:`MovieWriterRegistry <matplotlib.animation.MovieWriterRegistry>`
 
 #: ../../api/animation_api.rst:277:<autosummary>:1
 msgid "Registry of available writer classes by human readable name."
-msgstr ""
+msgstr "Registro de clases de escritores disponibles por nombre legible para humanos."
 
 #: ../../api/animation_api.rst:279
 msgid "Writer Base Classes"
-msgstr ""
+msgstr "Clases base del escritor"
 
 #: ../../api/animation_api.rst:281
 msgid "To reduce code duplication base classes"
-msgstr ""
+msgstr "Para reducir la duplicación de código las clases base"
 
 #: ../../api/animation_api.rst:290:<autosummary>:1
 msgid ":py:obj:`AbstractMovieWriter <matplotlib.animation.AbstractMovieWriter>`"
@@ -243,7 +243,7 @@ msgstr ":py:obj:`AbstractMovieWriter <matplotlib.animation.AbstractMovieWriter>`
 
 #: ../../api/animation_api.rst:290:<autosummary>:1
 msgid "Abstract base class for writing movies."
-msgstr ""
+msgstr "Clase base abstracta para escribir películas."
 
 #: ../../api/animation_api.rst:290:<autosummary>:1
 msgid ":py:obj:`MovieWriter <matplotlib.animation.MovieWriter>`"
@@ -251,7 +251,7 @@ msgstr ":py:obj:`MovieWriter <matplotlib.animation.MovieWriter>`"
 
 #: ../../api/animation_api.rst:290:<autosummary>:1
 msgid "Base class for writing movies."
-msgstr ""
+msgstr "Clase base para escribir películas."
 
 #: ../../api/animation_api.rst:290:<autosummary>:1
 msgid ":py:obj:`FileMovieWriter <matplotlib.animation.FileMovieWriter>`"
@@ -259,11 +259,11 @@ msgstr ":py:obj:`FileMovieWriter <matplotlib.animation.FileMovieWriter>`"
 
 #: ../../api/animation_api.rst:290:<autosummary>:1
 msgid "`MovieWriter` for writing to individual files and stitching at the end."
-msgstr ""
+msgstr "`MovieWriter` para escribir en archivos individuales y coser al final."
 
 #: ../../api/animation_api.rst:291
 msgid "and mixins"
-msgstr ""
+msgstr "y los mixins"
 
 #: ../../api/animation_api.rst:299:<autosummary>:1
 msgid ":py:obj:`FFMpegBase <matplotlib.animation.FFMpegBase>`"
@@ -271,7 +271,7 @@ msgstr ":py:obj:`FFMpegBase <matplotlib.animation.FFMpegBase>`"
 
 #: ../../api/animation_api.rst:299:<autosummary>:1
 msgid "Mixin class for FFMpeg output."
-msgstr ""
+msgstr "Clase mixin para la salida de FFMpeg."
 
 #: ../../api/animation_api.rst:299:<autosummary>:1
 msgid ":py:obj:`ImageMagickBase <matplotlib.animation.ImageMagickBase>`"
@@ -279,13 +279,13 @@ msgstr ":py:obj:`ImageMagickBase <matplotlib.animation.ImageMagickBase>`"
 
 #: ../../api/animation_api.rst:299:<autosummary>:1
 msgid "Mixin class for ImageMagick output."
-msgstr ""
+msgstr "Clase mixin para la salida de ImageMagick."
 
 #: ../../api/animation_api.rst:300
 msgid "are provided."
-msgstr ""
+msgstr "se proporcionan."
 
 #: ../../api/animation_api.rst:302
 msgid "See the source code for how to easily implement new `MovieWriter` classes."
-msgstr ""
+msgstr "Vea el código fuente para saber cómo implementar fácilmente las nuevas clases `MovieWriter`."
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-18 14:38\n"
+"PO-Revision-Date: 2022-07-18 16:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -292,63 +292,63 @@ msgstr "Exponer esa transformación en la API ``Axes.boxplot``"
 
 #: ../../devel/MEP/MEP28.rst:251
 msgid "Removing redundant statistical options in ``Axes.boxplot``"
-msgstr ""
+msgstr "Eliminación de opciones estadísticas redundantes en ``Axes.boxplot``"
 
 #: ../../devel/MEP/MEP28.rst:252
 msgid "Shifting all styling parameter processing from ``Axes.boxplot`` to ``Axes.bxp``."
-msgstr ""
+msgstr "Cambio de todo el procesamiento de parámetros de estilo de ``Axes.boxplot`` a ``Axes.bxp``."
 
 #: ../../devel/MEP/MEP28.rst:254
 msgid "With this approach, #2 depends and #1, and #4 depends on #3."
-msgstr ""
+msgstr "Con este enfoque, #2 depende y #1, y #4 depende de #3."
 
 #: ../../devel/MEP/MEP28.rst:256
 msgid "There are two possible approaches to #2. The first and most direct would be to mirror the new ``transform_in`` and ``transform_out`` parameters of ``cbook.boxplot_stats`` in ``Axes.boxplot`` and pass them directly."
-msgstr ""
+msgstr "Hay dos enfoques posibles para el número #2. La primera y más directa sería reflejar los nuevos parámetros ``transform_in`` y ``transform_out`` de ``cbook.boxplot_stats`` en ``Axes.boxplot`` y pasarlos directamente."
 
 #: ../../devel/MEP/MEP28.rst:260
 msgid "The second approach would be to add ``statfxn`` and ``statfxn_args`` parameters to ``Axes.boxplot``. Under this implementation, the default value of ``statfxn`` would be ``cbook.boxplot_stats``, but users could pass their own function. Then ``transform_in`` and ``transform_out`` would then be passed as elements of the ``statfxn_args`` parameter."
-msgstr ""
+msgstr "El segundo enfoque sería añadir los parámetros ``statfxn`` y ``statfxn_args`` a ``Axes.boxplot``. Bajo esta implementación, el valor por defecto de ``statfxn`` sería ``cbook.boxplot_stats``, pero los usuarios podrían pasar su propia función. Entonces, ``transform_in`` y ``transform_out`` se pasarían como elementos del parámetro ``statfxn_args``."
 
 #: ../../devel/MEP/MEP28.rst:299
 msgid "Both cases would allow users to do the following:"
-msgstr ""
+msgstr "Ambos casos permitirían a los usuarios hacer lo siguiente:"
 
 #: ../../devel/MEP/MEP28.rst:308
 msgid "But Option Two lets a user write a completely custom stat function (e.g., ``my_box_stats``) with fancy BCA confidence intervals and the whiskers set differently depending on some attribute of the data."
-msgstr ""
+msgstr "Pero la Opción Dos permite al usuario escribir una función de estadísticas completamente personalizada (por ejemplo, ``my_box_stats``) con extravagantes intervalos de confianza BCA y los bigotes establecidos de forma diferente dependiendo de algún atributo de los datos."
 
 #: ../../devel/MEP/MEP28.rst:312
 msgid "This is available under the current API:"
-msgstr ""
+msgstr "Esto está disponible en la actual API:"
 
 #: ../../devel/MEP/MEP28.rst:321
 msgid "And would be more concise with Option Two"
-msgstr ""
+msgstr "Y sería más conciso con la opción dos"
 
 #: ../../devel/MEP/MEP28.rst:329
 msgid "Users could also pass their own function to compute the stats:"
-msgstr ""
+msgstr "Los usuarios también pueden pasar su propia función para calcular las estadísticas:"
 
 #: ../../devel/MEP/MEP28.rst:337
 msgid "From the examples above, Option Two seems to have only marginal benefit, but in the context of downstream libraries like seaborn, its advantage is more apparent as the following would be possible without any patches to seaborn:"
-msgstr ""
+msgstr "A partir de los ejemplos anteriores, la opción dos parece tener sólo un beneficio marginal, pero en el contexto de las bibliotecas descendentes como seaborn, su ventaja es más evidente, ya que lo siguiente sería posible sin ningún parche para seaborn:"
 
 #: ../../devel/MEP/MEP28.rst:351
 msgid "This type of flexibility was the intention behind splitting the overall boxplot API in the current three functions. In practice however, downstream libraries like seaborn support versions of matplotlib dating back well before the split. Thus, adding just a bit more flexibility to the ``Axes.boxplot`` could expose all the functionality to users of the downstream libraries with modern matplotlib installation without intervention from the downstream library maintainers."
-msgstr ""
+msgstr "Este tipo de flexibilidad fue la intención detrás de la división de la API gráfico de caja general en las tres funciones actuales. Sin embargo, en la práctica, bibliotecas como seaborn soportan versiones de matplotlib que se remontan a mucho antes de la división. Por lo tanto, añadir un poco más de flexibilidad a ``Axes.boxplot`` podría exponer toda la funcionalidad a los usuarios de las bibliotecas posteriores con una instalación moderna de matplotlib sin la intervención de los mantenedores de las bibliotecas posteriores."
 
 #: ../../devel/MEP/MEP28.rst:360
 msgid "Doing less"
-msgstr ""
+msgstr "Hacer menos"
 
 #: ../../devel/MEP/MEP28.rst:362
 msgid "Another obvious alternative would be to omit the added pre- and post- computation transform functionality in ``cbook.boxplot_stats`` and ``Axes.boxplot``, and simply remove the redundant statistical and style parameters as described above."
-msgstr ""
+msgstr "Otra alternativa obvia sería omitir la funcionalidad añadida de transformación antes y después del cálculo en ``cbook.boxplot_stats`` y ``Axes.boxplot``, y simplemente eliminar los parámetros estadísticos y de estilo redundantes como se ha descrito anteriormente."
 
 #: ../../devel/MEP/MEP28.rst:368
 msgid "Doing nothing"
-msgstr ""
+msgstr "No hacer nada"
 
 #: ../../devel/MEP/MEP28.rst:370
 msgid "As with many things in life, doing nothing is an option here. This means we simply advocate for users and downstream libraries to take advantage of the split between ``cbook.boxplot_stats`` and ``Axes.bxp`` and let them decide how to provide an interface to that."

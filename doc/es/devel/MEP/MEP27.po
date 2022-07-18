@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-18 12:25\n"
+"PO-Revision-Date: 2022-07-18 13:29\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -293,29 +293,29 @@ msgstr "Wx"
 
 #: ../../devel/MEP/MEP27.rst:186
 msgid "FigureManagerWx had ``frame`` as an alias to window, so this also breaks BC."
-msgstr ""
+msgstr "FigureManagerWx had ``frame`` as an alias to window, so this also breaks BC."
 
 #: ../../devel/MEP/MEP27.rst:194
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP27.rst:196
 msgid "If there were any alternative solutions to solving the same problem, they should be discussed here, along with a justification for the chosen approach."
-msgstr ""
+msgstr "Si existieran soluciones alternativas para resolver el mismo problema, deberían discutirse aquí, junto con una justificación del enfoque elegido."
 
 #: ../../devel/MEP/MEP27.rst:201
 msgid "Questions"
-msgstr ""
+msgstr "Preguntas"
 
 #: ../../devel/MEP/MEP27.rst:203
 msgid "Mdehoon: Can you elaborate on how to run multiple backends concurrently?"
-msgstr ""
+msgstr "Mdehoon: ¿Puedes explicar cómo ejecutar varios backends simultáneamente?"
 
 #: ../../devel/MEP/MEP27.rst:206
 msgid "OceanWolf: @mdehoon, as I say, not for this MEP, but I see this MEP opens it up as a future possibility.  Basically the ``MainLoopBase`` class acts a per backend Gcf, in this MEP it tracks the number of figures open per backend, and manages the mainloops for those backends.  It closes the backend specific mainloop when it detects that no figures remain open for that backend.  Because of this I imagine that with only a small amount of tweaking that we can do full-multi-backend matplotlib.  No idea yet why one would want to, but I leave the possibility there in MainLoopBase.  With all the backend-code specifics refactored out of ``FigureManager`` also aids in this, one manager to rule them (the backends) all."
-msgstr ""
+msgstr "OceanWolf: @mdehoon, como digo, no para este MEP, pero veo que este MEP lo abre como una posibilidad futura.  Básicamente la clase ``MainLoopBase`` actúa como un Gcf por backend, en este MEP hace un seguimiento del número de figuras abiertas por backend, y gestiona los mainloops para esos backends. Cierra el mainloop específico del backend cuando detecta que no quedan figuras abiertas para ese backend.  Debido a esto me imagino que con sólo una pequeña cantidad de ajustes que podemos hacer matplotlib full-multi-backend.  Ni idea todavía de por qué uno querría hacerlo, pero dejo la posibilidad ahí en MainLoopBase. La refactorización de todo el código del backend de ``FigureManager`` también ayuda a esto, un gestor para gobernar (los backends) todos."
 
 #: ../../devel/MEP/MEP27.rst:218
 msgid "Mdehoon: @OceanWolf, OK, thanks for the explanation. Having a uniform API for the backends is very important for the maintainability of matplotlib. I think this MEP is a step in the right direction."
-msgstr ""
+msgstr "Mdehoon: @OceanWolf, OK, gracias por la explicación. Tener una API uniforme para los backends es muy importante para la mantenibilidad de matplotlib. Creo que este MEP es un paso en la dirección correcta."
 

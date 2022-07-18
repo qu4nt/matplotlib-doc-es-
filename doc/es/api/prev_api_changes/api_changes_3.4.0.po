@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:22\n"
+"PO-Revision-Date: 2022-07-18 16:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,99 +20,99 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.4.0.rst:2
 msgid "API Changes for 3.4.0"
-msgstr ""
+msgstr "Cambios en la API para la versión 3.4.0"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:2
 msgid "Behaviour changes"
-msgstr ""
+msgstr "Cambios de comportamiento"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:5
 msgid "Constrained layout rewrite"
-msgstr ""
+msgstr "Reescritura restringida de layout"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:7
 msgid "The layout manager ``constrained_layout`` was re-written with different outer constraints that should be more robust to complicated subplot layouts. User-facing changes are:"
-msgstr ""
+msgstr "El gestor de layout ``constrained_layout`` ha sido reescrito con diferentes restricciones externas que deberían ser más robustas para los layouts complicados de los subgráficos. Los cambios orientados al usuario son:"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:11
 msgid "some poorly constrained layouts will have different width/height plots than before."
-msgstr ""
+msgstr "algunos layouts mal restringidos tendrán gráficos de anchura/altura diferentes a los de antes."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:13
 msgid "colorbars now respect the ``anchor`` keyword argument of `matplotlib.colorbar.make_axes`"
-msgstr ""
+msgstr "las barras de color ahora respetan el argumento de la palabra clave ``anchor`` de `matplotlib.colorbar.make_axes`"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:15
 msgid "colorbars are wider."
-msgstr ""
+msgstr "las barras de color son más anchas."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:16
 msgid "colorbars in different rows or columns line up more robustly."
-msgstr ""
+msgstr "las barras de color en diferentes filas o columnas se alinean con mayor solidez."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:17
 msgid "*hspace* and *wspace* options to  `.Figure.set_constrained_layout_pads` were twice as wide as the docs said they should be. So these now follow the docs."
-msgstr ""
+msgstr "Las opciones *hspace* y *wspace* de `.Figure.set_constrained_layout_pads` eran el doble de anchas de lo que indicaban los documentos. Así que ahora siguen los documentos."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:20
 msgid "This feature will remain \"experimental\" until the new changes have been used enough by users, so we anticipate version 3.5 or 3.6. On the other hand, ``constrained_layout`` is extensively tested and used in examples in the library, so using it should be safe, but layouts may not be exactly the same as more development takes place."
-msgstr ""
+msgstr "Esta característica seguirá siendo \"experimental\" hasta que los nuevos cambios hayan sido suficientemente utilizados por los usuarios, por lo que anticipamos la versión 3.5 o 3.6. Por otro lado, ``constrained_layout`` está ampliamente probado y se utiliza en los ejemplos de la biblioteca, por lo que su uso debería ser seguro, pero los layouts pueden no ser exactamente los mismos a medida que se desarrolla más."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:26
 msgid "Details of using ``constrained_layout``, and its algorithm are available at :doc:`/tutorials/intermediate/constrainedlayout_guide`"
-msgstr ""
+msgstr "Los detalles del uso de ``constrained_layout``, y su algoritmo están disponibles en :doc:`/tutorials/intermediate/constrainedlayout_guide`"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:30
 msgid "``plt.subplot`` re-selection without keyword arguments"
-msgstr ""
+msgstr "``plt.subplot`` re-selección sin argumentos de palabras clave"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:32
 msgid "The purpose of `.pyplot.subplot` is to facilitate creating and re-selecting Axes in a Figure when working strictly in the implicit pyplot API. When creating new Axes it is possible to select the projection (e.g. polar, 3D, or various cartographic projections) as well as to pass additional keyword arguments through to the Axes-subclass that is created."
-msgstr ""
+msgstr "El propósito de `.pyplot.subplot` es facilitar la creación y re-selección de Ejes en una Figura cuando se trabaja estrictamente en la API implícita de pyplot. Al crear nuevos Ejes es posible seleccionar la proyección (por ejemplo, polar, 3D, o varias proyecciones cartográficas), así como pasar argumentos de palabras clave adicionales a través de la subclase Axes que se crea."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:38
 msgid "The first time `.pyplot.subplot` is called for a given position in the Axes grid it always creates and returns a new Axes with the passed arguments and projection (defaulting to rectilinear). On subsequent calls to `.pyplot.subplot` we have to determine if an existing Axes has a) equivalent parameters, in which case it should be selected as the current Axes and returned, or b) different parameters, in which case a new Axes is created and the existing Axes is removed. This leaves the question of what is \"equivalent parameters\"."
-msgstr ""
+msgstr "La primera vez que se invoca `.pyplot.subplot` para una posición dada en la malla de Ejes siempre crea y devuelve un nuevo Eje con los argumentos pasados y la proyección (por defecto rectilínea). En posteriores llamadas a `.pyplot.subplot` tenemos que determinar si un Eje existente tiene a) parámetros equivalentes, en cuyo caso debe ser seleccionado como el Eje actual y devuelto, o b) parámetros diferentes, en cuyo caso se crea un nuevo Eje y se elimina el Eje existente. Esto deja la cuestión de qué son \"parámetros equivalentes\"."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:47
 msgid "Previously it was the case that an existing Axes subclass, except for Axes3D, would be considered equivalent to a 2D rectilinear Axes, despite having different projections, if the keyword arguments (other than *projection*) matched. Thus::"
-msgstr ""
+msgstr "Anteriormente se daba el caso de que una subclase de Ejes existente, excepto Ejes3D, se consideraba equivalente a un Eje rectilíneo 2D, a pesar de tener diferentes proyecciones, si los argumentos de la palabra clave (aparte de *proyección*) correspondían. Así::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:56
 msgid "We are embracing this long standing behavior to ensure that in the case when no keyword arguments (of any sort) are passed to `.pyplot.subplot` any existing Axes is returned, without consideration for keywords or projection used to initially create it. This will cause a change in behavior when additional keywords were passed to the original Axes::"
-msgstr ""
+msgstr "Estamos adoptando este comportamiento de larga data para garantizar que en el caso de que no se pasen argumentos de palabras clave (de ningún tipo) a `.pyplot.subplot` se devuelva cualquier Axes existente, sin tener en cuenta las palabras clave o la proyección utilizadas para crearlo inicialmente. Esto provocará un cambio en el comportamiento cuando se pasen palabras clave adicionales al Axes: original::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:72
 msgid "For the same reason, if there was an existing Axes that was not rectilinear, passing ``projection='rectilinear'`` would reuse the existing Axes ::"
-msgstr ""
+msgstr "Por la misma razón, si hubiera un Eje existente que no fuera rectilíneo, pasar ``projection='rectilinear'`` reutilizaría el Eje existente ::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:80
 msgid "contrary to the user's request."
-msgstr ""
+msgstr "contrario a la solicitud del usuario."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:82
 msgid "Previously Axes3D could not be re-selected with `.pyplot.subplot` due to an unrelated bug (also fixed in Matplotlib 3.4). While Axes3D are now consistent with all other projections there is a change in behavior for ::"
-msgstr ""
+msgstr "Anteriormente los Axes3D no podían ser re-seleccionados con `.pyplot.subplot` debido a un error no relacionado (también arregla en Matplotlib 3.4). Aunque los Axes3D son ahora consistentes con todas las demás proyecciones, hay un cambio en el comportamiento de ::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:94
 msgid "``ioff`` and ``ion`` can be used as context managers"
-msgstr ""
+msgstr "``ioff`` y ``ion`` pueden utilizarse como gestores de contexto"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:96
 msgid "`.pyplot.ion` and `.pyplot.ioff` may now be used as context managers to create a context with interactive mode on or off, respectively. The old behavior of calling these functions is maintained. To use the new functionality call as::"
-msgstr ""
+msgstr "`.pyplot.ion` y `.pyplot.ioff` pueden utilizarse ahora como gestores de contexto para crear un contexto con el modo interactivo activado o desactivado, respectivamente. Se mantiene el antiguo comportamiento de llamar a estas funciones. Para utilizar la nueva funcionalidad llame como::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:104
 msgid "Locators and formatters must be in the class hierarchy"
-msgstr ""
+msgstr "Los localizadores y formateadores deben estar en la jerarquía de clases"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:106
 msgid "Axis locators and formatters must now be subclasses of `~matplotlib.ticker.Locator` and `~matplotlib.ticker.Formatter` respectively."
-msgstr ""
+msgstr "Los localizadores y formateadores de ejes deben ser ahora subclases de `~matplotlib.ticker.Locator` y `~matplotlib.ticker.Formatter` respectivamente."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:110
 msgid "Date locator for DAILY interval now returns middle of month"
-msgstr ""
+msgstr "El localizador de fechas para el intervalo DIARIO ahora devuelve la mitad del mes"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:112
 msgid "The `matplotlib.dates.AutoDateLocator` has a default of ``interval_multiples=True`` that attempts to align ticks with the start of meaningful intervals like the start of the month, or start of the day, etc. That lead to approximately 140-day intervals being mapped to the first and 22nd of the month. This has now been changed so that it chooses the first and 15th of the month, which is probably what most people want."

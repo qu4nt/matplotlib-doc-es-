@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-18 13:29\n"
+"PO-Revision-Date: 2022-07-18 14:38\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -148,43 +148,43 @@ msgstr "Este MEP propone que se añadan dos parámetros (por ejemplo, ``transfor
 
 #: ../../devel/MEP/MEP28.rst:145
 msgid "These transformations can then be added to the call signature of ``Axes.boxplot`` with little impact to that method's complexity. This is because they can be directly passed to ``cbook.boxplot_stats``. Alternatively, ``Axes.boxplot`` could be modified to accept an optional statistical function kwarg and a dictionary of parameters to be directly passed to it."
-msgstr ""
+msgstr "Estas transformaciones pueden añadirse a la firma de la llamada de ``Axes.boxplot`` con poco impacto en la complejidad de ese método. Esto se debe a que se pueden pasar directamente a ``cbook.boxplot_stats``. Como alternativa, ``Axes.boxplot`` podría modificarse para aceptar una función estadística opcional kwarg y un diccionario de parámetros que se le pasen directamente."
 
 #: ../../devel/MEP/MEP28.rst:152
 msgid "At this point in the implementation users and external libraries like seaborn would have complete control via the ``Axes.boxplot`` method. More importantly, at the very least, seaborn would require no changes to its API to allow users to take advantage of these new options."
-msgstr ""
+msgstr "En este punto de la implementación, los usuarios y las bibliotecas externas como seaborn tendrían un control completo a través del método ``Axes.boxplot``. Y lo que es más importante, al menos seaborn no necesitaría cambios en su API para permitir a los usuarios aprovechar estas nuevas opciones."
 
 #: ../../devel/MEP/MEP28.rst:158
 msgid "Simplifications to the ``Axes.boxplot`` API and other functions"
-msgstr ""
+msgstr "Simplificación de la API ``Axes.boxplot`` y otras funciones"
 
 #: ../../devel/MEP/MEP28.rst:160
 msgid "Simplifying the boxplot method consists primarily of deprecating and then removing the redundant parameters. Optionally, a next step would include rectifying minor terminological inconsistencies between ``Axes.boxplot`` and ``Axes.bxp``."
-msgstr ""
+msgstr "La simplificación del método boxplot consiste principalmente en desaprobar y luego eliminar los parámetros redundantes. Opcionalmente, un siguiente paso incluiría la rectificación de incoherencias terminológicas menores entre ``Axes.boxplot`` y ``Axes.bxp``."
 
 #: ../../devel/MEP/MEP28.rst:165
 msgid "The parameters to be deprecated and removed include:"
-msgstr ""
+msgstr "Los parámetros que se van a obsoleto son los siguientes:"
 
 #: ../../devel/MEP/MEP28.rst:167
 msgid "``usermedians`` - processed by 10 SLOC, 3 ``if`` blocks, a ``for`` loop"
-msgstr ""
+msgstr "``usermedians`` - procesado por 10 SLOC, 3 bloques ``if``, un bucle ``for``"
 
 #: ../../devel/MEP/MEP28.rst:168
 msgid "``conf_intervals`` - handled by 15 SLOC, 6 ``if`` blocks, a ``for`` loop"
-msgstr ""
+msgstr "``conf_intervals`` - manejado por 15 SLOC, 6 bloques ``if``, un bucle ``for``"
 
 #: ../../devel/MEP/MEP28.rst:169
 msgid "``sym`` - processed by 12 SLOC, 4 ``if`` blocks"
-msgstr ""
+msgstr "``sym`` - procesado por 12 SLOC, 4 bloques ``if``"
 
 #: ../../devel/MEP/MEP28.rst:171
 msgid "Removing the ``sym`` option allows all code in handling the remaining styling parameters to be moved to ``Axes.bxp``. This doesn't remove any complexity, but does reinforce the single responsibility principle among ``Axes.bxp``, ``cbook.boxplot_stats``, and ``Axes.boxplot``."
-msgstr ""
+msgstr "La eliminación de la opción ``sym`` permite que todo el código para el manejo de los restantes parámetros de estilo se traslade a ``Axes.bxp``. Esto no elimina ninguna complejidad, pero refuerza el principio de responsabilidad única entre ``Axes.bxp``, ``cbook.boxplot_stats`` y ``Axes.boxplot``."
 
 #: ../../devel/MEP/MEP28.rst:176
 msgid "Additionally, the ``notch`` parameter could be renamed ``shownotches`` to be consistent with ``Axes.bxp``. This kind of cleanup could be taken a step further and the ``whis``, ``bootstrap``, ``autorange`` could be rolled into the kwargs passed to the new ``statfxn`` parameter."
-msgstr ""
+msgstr "Además, el parámetro ``notch`` podría ser renombrado como ``shownotches`` para ser consistente con ``Axes.bxp``. Este tipo de limpieza podría llevarse a cabo un paso más allá y los parámetros ``whis``, ``bootstrap``, ``autorange`` podrían incluirse en los kwargs pasados al nuevo parámetro ``statfxn``."
 
 #: ../../devel/MEP/MEP28.rst:182
 msgid "Backward compatibility"
@@ -192,103 +192,103 @@ msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP28.rst:184
 msgid "Implementation of this MEP would eventually result in the backwards incompatible deprecation and then removal of the keyword parameters ``usermedians``, ``conf_intervals``, and ``sym``. Cursory searches on GitHub indicated that ``usermedians``, ``conf_intervals`` are used by few users, who all seem to have a very strong knowledge of matplotlib. A robust deprecation cycle should provide sufficient time for these users to migrate to a new API."
-msgstr ""
+msgstr "La implementación de este MEP resultaría eventualmente en la obsolescencia y posterior eliminación de los parámetros de palabra clave ``usermedians``, ``conf_intervals``, y ``sym``. Búsquedas rápidas en GitHub indican que ``usermedians``, ``conf_intervals`` son utilizados por pocos usuarios, que parecen tener un gran conocimiento de matplotlib. Un ciclo de obsolescencia robusta debería proporcionar suficiente tiempo para que estos usuarios migren a una nueva API."
 
 #: ../../devel/MEP/MEP28.rst:192
 msgid "Deprecation of ``sym`` however, may have a much broader reach into the matplotlib userbase."
-msgstr ""
+msgstr "Sin embargo, la obsolescencia de ``sym`` puede tener un alcance mucho más amplio en la base de usuarios de matplotlib."
 
 #: ../../devel/MEP/MEP28.rst:196
 msgid "Schedule"
-msgstr ""
+msgstr "Planificación"
 
 #: ../../devel/MEP/MEP28.rst:197
 msgid "An accelerated timeline could look like the following:"
-msgstr ""
+msgstr "Un cronograma acelerado podría ser el siguiente:"
 
 #: ../../devel/MEP/MEP28.rst:199
 msgid "v2.0.1 add transforms to ``cbook.boxplots_stats``, expose in ``Axes.boxplot``"
-msgstr ""
+msgstr "v2.0.1 añade transformaciones a ``cbook.boxplots_stats``, expone en ``Axes.boxplot``"
 
 #: ../../devel/MEP/MEP28.rst:200
 msgid "v2.1.0 Initial Deprecations , and using 2D NumPy arrays as input"
-msgstr ""
+msgstr "v2.1.0 Obsolencias iniciales , y uso de arreglos 2D NumPy como entrada"
 
 #: ../../devel/MEP/MEP28.rst:202
 msgid "Using 2D NumPy arrays as input. The semantics around 2D arrays are generally confusing."
-msgstr ""
+msgstr "Uso de arreglos 2D de NumPy como entrada. La semántica en torno a los arreglos 2D es generalmente confusa."
 
 #: ../../devel/MEP/MEP28.rst:203
 msgid "``usermedians``, ``conf_intervals``, ``sym`` parameters"
-msgstr ""
+msgstr "parámetros ``usermedians``, ``conf_intervals``, ``sym``"
 
 #: ../../devel/MEP/MEP28.rst:205
 msgid "v2.2.0"
-msgstr ""
+msgstr "v2.2.0"
 
 #: ../../devel/MEP/MEP28.rst:207
 msgid "remove ``usermedians``, ``conf_intervals``, ``sym`` parameters"
-msgstr ""
+msgstr "eliminar los parámetros ``usermedians``, ``conf_intervals``, ``sym``"
 
 #: ../../devel/MEP/MEP28.rst:208
 msgid "deprecate ``notch`` in favor of ``shownotches`` to be consistent with other parameters and ``Axes.bxp``"
-msgstr ""
+msgstr "dejar de lado ``notch`` en favor de ``shownotches`` para ser coherente con otros parámetros y ``Axes.bxp``"
 
 #: ../../devel/MEP/MEP28.rst:215
 msgid "v2.3.0"
-msgstr ""
+msgstr "v2.3.0"
 
 #: ../../devel/MEP/MEP28.rst:212
 msgid "remove ``notch`` parameter"
-msgstr ""
+msgstr "eliminar el parámetro ``notch``"
 
 #: ../../devel/MEP/MEP28.rst:213
 msgid "move all style and artist toggling logic to ``Axes.bxp`` such ``Axes.boxplot`` is little more than a broker between ``Axes.bxp`` and ``cbook.boxplots_stats``"
-msgstr ""
+msgstr "mover toda la lógica de estilo y de alternancia de artists a ``Axes.bxp`` tal ``Axes.boxplot`` es poco más que un intermediario entre ``Axes.bxp`` y ``cbook.boxplots_stats``"
 
 #: ../../devel/MEP/MEP28.rst:218
 msgid "Anticipated Impacts to Users"
-msgstr ""
+msgstr "Efectos previstos para los usuarios"
 
 #: ../../devel/MEP/MEP28.rst:220
 msgid "As described above deprecating ``usermedians`` and ``conf_intervals`` will likely impact few users. Those who will be impacted are almost certainly advanced users who will be able to adapt to the change."
-msgstr ""
+msgstr "Tal y como se ha descrito anteriormente, la obsolencia de \"usermedians\" y \"conf_intervals\" probablemente afectará a pocos usuarios. Los que se verán afectados son, casi con toda seguridad, usuarios avanzados que podrán adaptarse al cambio."
 
 #: ../../devel/MEP/MEP28.rst:224
 msgid "Deprecating the ``sym`` option may import more users and effort should be taken to collect community feedback on this."
-msgstr ""
+msgstr "La eliminación de la opción ``sym`` podría importar a más usuarios y se debería hacer un esfuerzo para recoger la opinión de la comunidad al respecto."
 
 #: ../../devel/MEP/MEP28.rst:228
 msgid "Anticipated Impacts to Downstream Libraries"
-msgstr ""
+msgstr "Impactos anticipados para bajar las bibliotecas"
 
 #: ../../devel/MEP/MEP28.rst:230
 msgid "The source code (GitHub master as of 2016-10-17) was inspected for seaborn and python-ggplot to see if these changes would impact their use. None of the parameters nominated for removal in this MEP are used by seaborn. The seaborn APIs that use matplotlib's boxplot function allow user's to pass arbitrary ``**kwargs`` through to matplotlib's API. Thus seaborn users with modern matplotlib installations will be able to take full advantage of any new features added as a result of this MEP."
-msgstr ""
+msgstr "Se inspeccionó el código fuente (GitHub master a partir de 2016-10-17) de seaborn y python-ggplot para ver si estos cambios afectarían a su uso. Ninguno de los parámetros nominados para ser eliminados en este MEP son utilizados por seaborn. Las APIs de seaborn que utilizan la función gráfico de caja de matplotlib permiten al usuario pasar ``**kwargs`` arbitrarios a través de la API de matplotlib. Por lo tanto, los usuarios de seaborn con instalaciones modernas de matplotlib podrán aprovechar al máximo las nuevas características añadidas como resultado de este MEP."
 
 #: ../../devel/MEP/MEP28.rst:238
 msgid "Python-ggplot has implemented its own function to draw boxplots. Therefore, no impact can come to it as a result of implementing this MEP."
-msgstr ""
+msgstr "Python-ggplot ha implementado su propia función para dibujar gráficos de caja. Por lo tanto, la implementación de este MEP no puede tener ningún impacto."
 
 #: ../../devel/MEP/MEP28.rst:242
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP28.rst:245
 msgid "Variations on the theme"
-msgstr ""
+msgstr "Variaciones sobre el tema"
 
 #: ../../devel/MEP/MEP28.rst:247
 msgid "This MEP can be divided into a few loosely coupled components:"
-msgstr ""
+msgstr "Este MEP puede dividirse en algunos componentes poco acoplados:"
 
 #: ../../devel/MEP/MEP28.rst:249
 msgid "Allowing pre- and post-computation transformation function in ``cbook.boxplot_stats``"
-msgstr ""
+msgstr "Permitir la función de transformación antes y después del cálculo en ``cbook.boxplot_stats``"
 
 #: ../../devel/MEP/MEP28.rst:250
 msgid "Exposing that transformation in the ``Axes.boxplot`` API"
-msgstr ""
+msgstr "Exponer esa transformación en la API ``Axes.boxplot``"
 
 #: ../../devel/MEP/MEP28.rst:251
 msgid "Removing redundant statistical options in ``Axes.boxplot``"

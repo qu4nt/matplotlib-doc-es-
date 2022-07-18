@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-13 15:16\n"
+"PO-Revision-Date: 2022-07-18 12:25\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -129,167 +129,167 @@ msgstr "y esto también se anticipa a MEP22 donde la nueva ``NavigationBase`` se
 
 #: ../../devel/MEP/MEP27.rst:103
 msgid "FigureManagerBase(canvas, num)"
-msgstr ""
+msgstr "FigureManagerBase(canvas, num)"
 
 #: ../../devel/MEP/MEP27.rst:103
 msgid "FigureManager(figure, num)"
-msgstr ""
+msgstr "FigureManager(figure, num)"
 
 #: ../../devel/MEP/MEP27.rst:103
 msgid "``WindowBase(title)``"
-msgstr ""
+msgstr "``WindowBase(title)``"
 
 #: ../../devel/MEP/MEP27.rst:103 ../../devel/MEP/MEP27.rst:131
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: ../../devel/MEP/MEP27.rst:106
 msgid "show"
-msgstr ""
+msgstr "show"
 
 #: ../../devel/MEP/MEP27.rst:108
 msgid "destroy"
-msgstr ""
+msgstr "destroy"
 
 #: ../../devel/MEP/MEP27.rst:108
 msgid "calls destroy on all components"
-msgstr ""
+msgstr "calls destroy on all components"
 
 #: ../../devel/MEP/MEP27.rst:111
 msgid "full_screen_toggle"
-msgstr ""
+msgstr "full_screen_toggle"
 
 #: ../../devel/MEP/MEP27.rst:111
 msgid "handles logic"
-msgstr ""
+msgstr "handles logic"
 
 #: ../../devel/MEP/MEP27.rst:111
 msgid "set_fullscreen"
-msgstr ""
+msgstr "set_fullscreen"
 
 #: ../../devel/MEP/MEP27.rst:113
 msgid "resize"
-msgstr ""
+msgstr "resize"
 
 #: ../../devel/MEP/MEP27.rst:115
 msgid "key_press"
-msgstr ""
+msgstr "key_press"
 
 #: ../../devel/MEP/MEP27.rst:117
 msgid "get_window_title"
-msgstr ""
+msgstr "get_window_title"
 
 #: ../../devel/MEP/MEP27.rst:119
 msgid "set_window_title"
-msgstr ""
+msgstr "set_window_title"
 
 #: ../../devel/MEP/MEP27.rst:121
 msgid "_get_toolbar"
-msgstr ""
+msgstr "_get_toolbar"
 
 #: ../../devel/MEP/MEP27.rst:121
 msgid "A common method to all subclasses of FigureManagerBase"
-msgstr ""
+msgstr "A common method to all subclasses of FigureManagerBase"
 
 #: ../../devel/MEP/MEP27.rst:124
 msgid "set_default_size"
-msgstr ""
+msgstr "set_default_size"
 
 #: ../../devel/MEP/MEP27.rst:126
 msgid "add_element_to_window"
-msgstr ""
+msgstr "add_element_to_window"
 
 #: ../../devel/MEP/MEP27.rst:131
 msgid "ShowBase"
-msgstr ""
+msgstr "ShowBase"
 
 #: ../../devel/MEP/MEP27.rst:131
 msgid "MainLoopBase"
-msgstr ""
+msgstr "MainLoopBase"
 
 #: ../../devel/MEP/MEP27.rst:133
 msgid "mainloop"
-msgstr ""
+msgstr "mainloop"
 
 #: ../../devel/MEP/MEP27.rst:133
 msgid "begin"
-msgstr ""
+msgstr "begin"
 
 #: ../../devel/MEP/MEP27.rst:135
 msgid "end"
-msgstr ""
+msgstr "end"
 
 #: ../../devel/MEP/MEP27.rst:135
 msgid "Gets called automagically when no more instances of the subclass exist"
-msgstr ""
+msgstr "Gets called automagically when no more instances of the subclass exist"
 
 #: ../../devel/MEP/MEP27.rst:142
 msgid "__call__"
-msgstr ""
+msgstr "__call__"
 
 #: ../../devel/MEP/MEP27.rst:142
 msgid "Method moved to Gcf.show_all"
-msgstr ""
+msgstr "Method moved to Gcf.show_all"
 
 #: ../../devel/MEP/MEP27.rst:148
 msgid "Future compatibility"
-msgstr ""
+msgstr "Compatibilidad futura"
 
 #: ../../devel/MEP/MEP27.rst:150
 msgid "As eluded to above when discussing MEP 22, this refactor makes it easy to add in new generic features.  At the moment, MEP 22 has to make ugly hacks to each class extending from ``FigureManagerBase``.  With this code, this only needs to get made in the single ``FigureManager`` class.  This also makes the later deprecation of ``NavigationToolbar2`` very straightforward, only needing to touch the single ``FigureManager`` class"
-msgstr ""
+msgstr "Como se mencionó anteriormente al hablar de MEP 22, esta refactorización facilita la incorporación de nuevas características genéricas.  Por el momento, MEP 22 tiene que hacer feos hacks a cada clase que extiende de ``FigureManagerBase``.  Con este código, esto sólo tiene que hacerse en la única clase ``FigureManager``.  Esto también hace que la posterior obsolescencia de ``NavigationToolbar2`` sea muy sencilla, ya que sólo hay que tocar la clase ``FigureManager``"
 
 #: ../../devel/MEP/MEP27.rst:158
 msgid "MEP 23 makes for another use case where this refactored code will come in very handy."
-msgstr ""
+msgstr "MEP 23 es otro caso de uso en el que este código refactorizado será muy útil."
 
 #: ../../devel/MEP/MEP27.rst:162
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP27.rst:164
 msgid "As we leave all backend code intact, only adding missing methods to existing classes, this should work seamlessly for all use cases.  The only difference will lie for backends that used ``FigureManager.resize`` to resize the canvas and not the window, due to the standardisation of the API."
-msgstr ""
+msgstr "Como dejamos todo el código del backend intacto, sólo añadiendo los métodos que faltan a las clases existentes, esto debería funcionar sin problemas para todos los casos de uso.  La única diferencia radicará en los backends que utilizaban ``FigureManager.resize`` para redimensionar el lienzo y no la ventana, debido a la estandarización de la API."
 
 #: ../../devel/MEP/MEP27.rst:170
 msgid "I would envision that the classes made obsolete by this refactor get deprecated and removed on the same timetable as ``NavigationToolbar2``, also note that the change in call signature to the ``FigureCanvasWx`` constructor, while backward compatible, I think the old (imho ugly style) signature should get deprecated and removed in the same manner as everything else."
-msgstr ""
+msgstr "Yo preveo que las clases que se han vuelto obsoletas por este refactor se deprecien y se eliminen al mismo tiempo que ``NavigationToolbar2``, también hay que tener en cuenta que el cambio en la firma de la llamada al constructor ``FigureCanvasWx``, aunque es compatible con el pasado, creo que la firma antigua (imho ugly style) debería desaprovecharse y eliminarse de la misma manera que todo lo demás."
 
 #: ../../devel/MEP/MEP27.rst:178
 msgid "backend"
-msgstr ""
+msgstr "backend"
 
 #: ../../devel/MEP/MEP27.rst:178
 msgid "manager.resize(w,h)"
-msgstr ""
+msgstr "manager.resize(w,h)"
 
 #: ../../devel/MEP/MEP27.rst:178
 msgid "Extra"
-msgstr ""
+msgstr "Extra"
 
 #: ../../devel/MEP/MEP27.rst:180
 msgid "gtk3"
-msgstr ""
+msgstr "gtk3"
 
 #: ../../devel/MEP/MEP27.rst:180 ../../devel/MEP/MEP27.rst:184
 msgid "window"
-msgstr ""
+msgstr "window"
 
 #: ../../devel/MEP/MEP27.rst:182
 msgid "Tk"
-msgstr ""
+msgstr "Tk"
 
 #: ../../devel/MEP/MEP27.rst:182 ../../devel/MEP/MEP27.rst:186
 msgid "canvas"
-msgstr ""
+msgstr "canvas"
 
 #: ../../devel/MEP/MEP27.rst:184
 msgid "Qt"
-msgstr ""
+msgstr "Qt"
 
 #: ../../devel/MEP/MEP27.rst:186
 msgid "Wx"
-msgstr ""
+msgstr "Wx"
 
 #: ../../devel/MEP/MEP27.rst:186
 msgid "FigureManagerWx had ``frame`` as an alias to window, so this also breaks BC."

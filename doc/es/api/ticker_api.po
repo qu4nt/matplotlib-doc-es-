@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:24\n"
+"PO-Revision-Date: 2022-07-19 02:44\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,284 +20,284 @@ msgstr ""
 
 #: ../../api/ticker_api.rst:3
 msgid "``matplotlib.ticker``"
-msgstr ""
+msgstr "``matplotlib.ticker``"
 
 #: matplotlib.ticker:2 of
 msgid "Tick locating and formatting"
-msgstr ""
+msgstr "Localización y formato de los marcadores"
 
 #: matplotlib.ticker:4 of
 msgid "This module contains classes for configuring tick locating and formatting. Generic tick locators and formatters are provided, as well as domain specific custom ones."
-msgstr ""
+msgstr "Este módulo contiene clases para configurar la localización y el formato de los marcadores. Se proporcionan localizadores y formateadores de marcadores genéricos, así como los personalizados específicos del dominio."
 
 #: matplotlib.ticker:8 of
 msgid "Although the locators know nothing about major or minor ticks, they are used by the Axis class to support major and minor tick locating and formatting."
-msgstr ""
+msgstr "Aunque los localizadores no saben nada de los marcadores mayores o menores, son utilizados por la clase Axis para soportar la localización y el formato de los marcadores mayores y menores."
 
 #: matplotlib.ticker:12 of
 msgid "Tick locating"
-msgstr ""
+msgstr "Localización de marcadores"
 
 #: matplotlib.ticker:14 of
 msgid "The Locator class is the base class for all tick locators. The locators handle autoscaling of the view limits based on the data limits, and the choosing of tick locations. A useful semi-automatic tick locator is `MultipleLocator`. It is initialized with a base, e.g., 10, and it picks axis limits and ticks that are multiples of that base."
-msgstr ""
+msgstr "La clase Locator es la clase base para todos los localizadores de marcadores. Los localizadores manejan el autoescalado de los límites de la vista basado en los límites de los datos, y la elección de las ubicaciones de los marcadores. Un útil localizador de marcadores semiautomático es `MultipleLocator`. Se inicializa con una base, por ejemplo, 10, y selecciona los límites del eje y los marcadores que son múltiplos de esa base."
 
 #: matplotlib.ticker:20 of
 msgid "The Locator subclasses defined here are:"
-msgstr ""
+msgstr "Las subclases de localizadores definidas aquí son:"
 
 #: matplotlib.ticker:23 of
 msgid "`AutoLocator`"
-msgstr ""
+msgstr "`AutoLocator`"
 
 #: matplotlib.ticker:23 of
 msgid "`MaxNLocator` with simple defaults. This is the default tick locator for most plotting."
-msgstr ""
+msgstr "`MaxNLocator` con valores predeterminados simples. Este es el localizador de marcadores por defecto para la mayoría de los trazados."
 
 #: matplotlib.ticker:25 of
 msgid "`MaxNLocator`"
-msgstr ""
+msgstr "`MaxNLocator`"
 
 #: matplotlib.ticker:25 of
 msgid "Finds up to a max number of intervals with ticks at nice locations."
-msgstr ""
+msgstr "Encuentra hasta un número máximo de intervalos con marcadores en buenas ubicaciones."
 
 #: matplotlib.ticker:27 of
 msgid "`LinearLocator`"
-msgstr ""
+msgstr "`LinearLocator`"
 
 #: matplotlib.ticker:27 of
 msgid "Space ticks evenly from min to max."
-msgstr ""
+msgstr "Espaciar los marcadores uniformemente desde el mínimo hasta el máximo."
 
 #: matplotlib.ticker:28 of
 msgid "`LogLocator`"
-msgstr ""
+msgstr "`LogLocator`"
 
 #: matplotlib.ticker:28 of
 msgid "Space ticks logarithmically from min to max."
-msgstr ""
+msgstr "Espaciar los marcadores logarítmicamente desde el mínimo al máximo."
 
 #: matplotlib.ticker:29 of
 msgid "`MultipleLocator`"
-msgstr ""
+msgstr "`MultipleLocator`"
 
 #: matplotlib.ticker:29 of
 msgid "Ticks and range are a multiple of base; either integer or float."
-msgstr ""
+msgstr "Los marcadores y el rango son un múltiplo de la base; ya sea entero o flotante."
 
 #: matplotlib.ticker:31 of
 msgid "`FixedLocator`"
-msgstr ""
+msgstr "`FixedLocator`"
 
 #: matplotlib.ticker:31 of
 msgid "Tick locations are fixed."
-msgstr ""
+msgstr "Las ubicaciones de los marcadores están arregladas."
 
 #: matplotlib.ticker:32 of
 msgid "`IndexLocator`"
-msgstr ""
+msgstr "`IndexLocator`"
 
 #: matplotlib.ticker:32 of
 msgid "Locator for index plots (e.g., where ``x = range(len(y))``)."
-msgstr ""
+msgstr "Localizador para gráficos de índice (por ejemplo, donde ``x = range(len(y))``)."
 
 #: matplotlib.ticker:34 of
 msgid "`NullLocator`"
-msgstr ""
+msgstr "`NullLocator`"
 
 #: matplotlib.ticker:34 of
 msgid "No ticks."
-msgstr ""
+msgstr "No hay marcadores."
 
 #: matplotlib.ticker:35 of
 msgid "`SymmetricalLogLocator`"
-msgstr ""
+msgstr "`SymmetricalLogLocator`"
 
 #: matplotlib.ticker:35 of
 msgid "Locator for use with with the symlog norm; works like `LogLocator` for the part outside of the threshold and adds 0 if inside the limits."
-msgstr ""
+msgstr "Localizador para usar con la norma symlog; funciona como `LogLocator` para la parte fuera del umbral y añade 0 si está dentro de los límites."
 
 #: matplotlib.ticker:38 of
 msgid "`LogitLocator`"
-msgstr ""
+msgstr "`LogitLocator`"
 
 #: matplotlib.ticker:38 of
 msgid "Locator for logit scaling."
-msgstr ""
+msgstr "Localizador para el escalado logit."
 
 #: matplotlib.ticker:39 of
 msgid "`AutoMinorLocator`"
-msgstr ""
+msgstr "`AutoMinorLocator`"
 
 #: matplotlib.ticker:39 of
 msgid "Locator for minor ticks when the axis is linear and the major ticks are uniformly spaced. Subdivides the major tick interval into a specified number of minor intervals, defaulting to 4 or 5 depending on the major interval."
-msgstr ""
+msgstr "Localizador para los marcadores menores cuando el eje es lineal y los marcadores mayores están uniformemente espaciados. Subdivide el intervalo de ticks mayores en un número especificado de intervalos menores, por defecto 4 o 5 dependiendo del intervalo mayor."
 
 #: matplotlib.ticker:46 of
 msgid "There are a number of locators specialized for date locations - see the :mod:`.dates` module."
-msgstr ""
+msgstr "Hay una serie de localizadores especializados en ubicaciones de fechas - véase el módulo :mod:`.dates`."
 
 #: matplotlib.ticker:49 of
 msgid "You can define your own locator by deriving from Locator. You must override the ``__call__`` method, which returns a sequence of locations, and you will probably want to override the autoscale method to set the view limits from the data limits."
-msgstr ""
+msgstr "Puedes definir tu propio localizador derivando de Locator. Debes anular el método ``__call__``, que devuelve una secuencia de localizaciones, y probablemente querrás anular el método autoscale para establecer los límites de la vista a partir de los límites de los datos."
 
 #: matplotlib.ticker:54 of
 msgid "If you want to override the default locator, use one of the above or a custom locator and pass it to the x or y axis instance. The relevant methods are::"
-msgstr ""
+msgstr "Si quieres anular el localizador por defecto, utiliza uno de los anteriores o un localizador personalizado y pásalo a la instancia del eje x o y. Los métodos relevantes son::"
 
 #: matplotlib.ticker:62 of
 msgid "The default minor locator is `NullLocator`, i.e., no minor ticks on by default."
-msgstr ""
+msgstr "El localizador menor por defecto es `NullLocator`, es decir, no hay marcadores menores por defecto."
 
 #: matplotlib.ticker:65 of
 msgid "`Locator` instances should not be used with more than one `~matplotlib.axis.Axis` or `~matplotlib.axes.Axes`. So instead of::"
-msgstr ""
+msgstr "Las instancias de `Locator` no deben utilizarse con más de un `~matplotlib.axis.Axis` o `~matplotlib.axes.Axes`. Así que en lugar de::"
 
 #: matplotlib.ticker:72 of
 msgid "do the following instead::"
-msgstr ""
+msgstr "haz lo siguiente en su lugar::"
 
 #: matplotlib.ticker:78 of
 msgid "Tick formatting"
-msgstr ""
+msgstr "Formato de los marcadores"
 
 #: matplotlib.ticker:80 of
 msgid "Tick formatting is controlled by classes derived from Formatter. The formatter operates on a single tick value and returns a string to the axis."
-msgstr ""
+msgstr "El formato de los marcadores se controla mediante clases derivadas de Formatter. El formateador opera sobre un único valor de marcador y devuelve una cadena al eje."
 
 #: matplotlib.ticker:84 of
 msgid "`NullFormatter`"
-msgstr ""
+msgstr "`NullFormatter`"
 
 #: matplotlib.ticker:84 of
 msgid "No labels on the ticks."
-msgstr ""
+msgstr "No hay etiquetas en los marcadores."
 
 #: matplotlib.ticker:85 of
 msgid "`FixedFormatter`"
-msgstr ""
+msgstr "`FixedFormatter`"
 
 #: matplotlib.ticker:85 of
 msgid "Set the strings manually for the labels."
-msgstr ""
+msgstr "Establecer las cadenas manualmente para las etiquetas."
 
 #: matplotlib.ticker:86 of
 msgid "`FuncFormatter`"
-msgstr ""
+msgstr "`FuncFormatter`"
 
 #: matplotlib.ticker:86 of
 msgid "User defined function sets the labels."
-msgstr ""
+msgstr "La función definida por el usuario establece las etiquetas."
 
 #: matplotlib.ticker:87 of
 msgid "`StrMethodFormatter`"
-msgstr ""
+msgstr "`StrMethodFormatter`"
 
 #: matplotlib.ticker:87 of
 msgid "Use string `format` method."
-msgstr ""
+msgstr "Utiliza el método de cadena `format`."
 
 #: matplotlib.ticker:88 of
 msgid "`FormatStrFormatter`"
-msgstr ""
+msgstr "`FormatStrFormatter`"
 
 #: matplotlib.ticker:88 of
 msgid "Use an old-style sprintf format string."
-msgstr ""
+msgstr "Utilizar una cadena de formato sprintf de estilo antiguo."
 
 #: matplotlib.ticker:89 of
 msgid "`ScalarFormatter`"
-msgstr ""
+msgstr "`ScalarFormatter`"
 
 #: matplotlib.ticker:89 of
 msgid "Default formatter for scalars: autopick the format string."
-msgstr ""
+msgstr "Formateador por defecto para escalares: autoescoge la cadena de formato."
 
 #: matplotlib.ticker:91 of
 msgid "`LogFormatter`"
-msgstr ""
+msgstr "`LogFormatter`"
 
 #: matplotlib.ticker:91 of
 msgid "Formatter for log axes."
-msgstr ""
+msgstr "Formateador para los ejes de registro."
 
 #: matplotlib.ticker:92 of
 msgid "`LogFormatterExponent`"
-msgstr ""
+msgstr "`LogFormatterExponent`"
 
 #: matplotlib.ticker:92 matplotlib.ticker.LogFormatterExponent:2
 #: matplotlib.ticker.LogFormatterMathtext:2 of
 msgid "Format values for log axis using ``exponent = log_base(value)``."
-msgstr ""
+msgstr "Formatea los valores para el eje log usando ``exponente = log_base(valor)``."
 
 #: matplotlib.ticker:94 of
 msgid "`LogFormatterMathtext`"
-msgstr ""
+msgstr "`LogFormatterMathtext`"
 
 #: matplotlib.ticker:94 of
 msgid "Format values for log axis using ``exponent = log_base(value)`` using Math text."
-msgstr ""
+msgstr "Formatear los valores para el eje logarítmico usando ``exponente = log_base(valor)`` usando Math text."
 
 #: matplotlib.ticker:96 of
 msgid "`LogFormatterSciNotation`"
-msgstr ""
+msgstr "`LogFormatterSciNotation`"
 
 #: matplotlib.ticker:96 of
 msgid "Format values for log axis using scientific notation."
-msgstr ""
+msgstr "Formatear los valores para el eje logarítmico utilizando la notación científica."
 
 #: matplotlib.ticker:97 of
 msgid "`LogitFormatter`"
-msgstr ""
+msgstr "`LogitFormatter`"
 
 #: matplotlib.ticker:97 of
 msgid "Probability formatter."
-msgstr ""
+msgstr "Formateador de probabilidad."
 
 #: matplotlib.ticker:98 of
 msgid "`EngFormatter`"
-msgstr ""
+msgstr "`EngFormatter`"
 
 #: matplotlib.ticker:98 of
 msgid "Format labels in engineering notation."
-msgstr ""
+msgstr "Formatear las etiquetas en notación de ingeniería."
 
 #: matplotlib.ticker:99 of
 msgid "`PercentFormatter`"
-msgstr ""
+msgstr "`PercentFormatter`"
 
 #: matplotlib.ticker:99 of
 msgid "Format labels as a percentage."
-msgstr ""
+msgstr "Formatear las etiquetas como un porcentaje."
 
 #: matplotlib.ticker:102 of
 msgid "You can derive your own formatter from the Formatter base class by simply overriding the ``__call__`` method. The formatter class has access to the axis view and data limits."
-msgstr ""
+msgstr "Puedes derivar tu propio formateador de la clase base Formatter simplemente anulando el método ``__call__``. La clase formatter tiene acceso a la vista de los ejes y a los límites de los datos."
 
 #: matplotlib.ticker:106 of
 msgid "To control the major and minor tick label formats, use one of the following methods::"
-msgstr ""
+msgstr "Para controlar los formatos de las etiquetas de los marcadores mayores y menores, utilice uno de los siguientes métodos::"
 
 #: matplotlib.ticker:114 of
 msgid "In addition to a `.Formatter` instance, `~.Axis.set_major_formatter` and `~.Axis.set_minor_formatter` also accept a ``str`` or function.  ``str`` input will be internally replaced with an autogenerated `.StrMethodFormatter` with the input ``str``. For function input, a `.FuncFormatter` with the input function will be generated and used."
-msgstr ""
+msgstr "Además de una instancia `.Formatter`, `~.Axis.set_major_formatter` y `~.Axis.set_minor_formatter` también aceptan una ``str`` o función.  La entrada ``str`` será reemplazada internamente por un `.StrMethodFormatter` autogenerado con la entrada ``str``. Para la entrada de funciones, se generará y utilizará un `.FuncFormatter` con la función de entrada."
 
 #: matplotlib.ticker:120 of
 msgid "See :doc:`/gallery/ticks/major_minor_demo` for an example of setting major and minor ticks. See the :mod:`matplotlib.dates` module for more information and examples of using date locators and formatters."
-msgstr ""
+msgstr "Ver :doc:`/gallery/ticks/major_minor_demo` para un ejemplo de configuración de marcadores mayores y menores. Consulta el módulo :mod:`matplotlib.dates` para obtener más información y ejemplos de uso de localizadores y formateadores de fechas."
 
 #: matplotlib.ticker.AutoLocator:1 matplotlib.ticker.LogitLocator:1 of
 msgid "Bases: :py:class:`matplotlib.ticker.MaxNLocator`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.ticker.MaxNLocator`"
 
 #: matplotlib.ticker.AutoLocator:2 of
 msgid "Dynamically find major tick positions. This is actually a subclass of `~matplotlib.ticker.MaxNLocator`, with parameters *nbins = 'auto'* and *steps = [1, 2, 2.5, 5, 10]*."
-msgstr ""
+msgstr "Encuentra dinámicamente las principales posiciones de los marcadores. En realidad es una subclase de `~matplotlib.ticker.MaxNLocator`, con los parámetros *nbins = 'auto'* y *steps = [1, 2, 2.5, 5, 10]*."
 
 #: matplotlib.ticker.AutoLocator:25 of
 msgid "To know the values of the non-public parameters, please have a look to the defaults of `~matplotlib.ticker.MaxNLocator`."
-msgstr ""
+msgstr "Para conocer los valores de los parámetros no públicos, por favor, echa un vistazo a los valores por defecto de `~matplotlib.ticker.MaxNLocator`."
 
 #: matplotlib.ticker.AutoMinorLocator:1 matplotlib.ticker.FixedLocator:1
 #: matplotlib.ticker.IndexLocator:1 matplotlib.ticker.LinearLocator:1
@@ -305,19 +305,19 @@ msgstr ""
 #: matplotlib.ticker.MultipleLocator:1 matplotlib.ticker.NullLocator:1
 #: matplotlib.ticker.SymmetricalLogLocator:1 of
 msgid "Bases: :py:class:`matplotlib.ticker.Locator`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.ticker.Locator`"
 
 #: matplotlib.ticker.AutoMinorLocator:2 of
 msgid "Dynamically find minor tick positions based on the positions of major ticks. The scale must be linear with major ticks evenly spaced."
-msgstr ""
+msgstr "Encuentra dinámicamente las posiciones de los marcadores menores basándose en las posiciones de los marcadores mayores. La escala debe ser lineal con los marcadores mayores espaciados uniformemente."
 
 #: matplotlib.ticker.AutoMinorLocator:24 of
 msgid "*n* is the number of subdivisions of the interval between major ticks; e.g., n=2 will place a single minor tick midway between major ticks."
-msgstr ""
+msgstr "*n* es el número de subdivisiones del intervalo entre los marcadores mayores; por ejemplo, n=2 colocará un único marcador menor a medio camino entre los marcadores mayores."
 
 #: matplotlib.ticker.AutoMinorLocator:28 of
 msgid "If *n* is omitted or None, it will be set to 5 or 4."
-msgstr ""
+msgstr "Si *n* se omite o es None, se establecerá en 5 o 4."
 
 #: matplotlib.ticker.AutoMinorLocator.tick_values:2
 #: matplotlib.ticker.IndexLocator.tick_values:2
@@ -329,7 +329,7 @@ msgstr ""
 #: matplotlib.ticker.MultipleLocator.tick_values:2
 #: matplotlib.ticker.SymmetricalLogLocator.tick_values:2 of
 msgid "Return the values of the located ticks given **vmin** and **vmax**."
-msgstr ""
+msgstr "Devuelve los valores de los marcadores localizados dados **vmin** y **vmax**."
 
 #: matplotlib.ticker.AutoMinorLocator.tick_values:5
 #: matplotlib.ticker.IndexLocator.tick_values:5
@@ -341,7 +341,7 @@ msgstr ""
 #: matplotlib.ticker.MultipleLocator.tick_values:5
 #: matplotlib.ticker.SymmetricalLogLocator.tick_values:5 of
 msgid "To get tick locations with the vmin and vmax values defined automatically for the associated :attr:`axis` simply call the Locator instance::"
-msgstr ""
+msgstr "Para obtener las ubicaciones de los marcadores con los valores vmin y vmax definidos automáticamente para el :attr:`eje` asociado, simplemente llame a la instancia Locator::"
 
 #: matplotlib.ticker.EngFormatter:1 matplotlib.ticker.FixedFormatter:1
 #: matplotlib.ticker.FormatStrFormatter:1 matplotlib.ticker.FuncFormatter:1
@@ -350,11 +350,11 @@ msgstr ""
 #: matplotlib.ticker.ScalarFormatter:1 matplotlib.ticker.StrMethodFormatter:1
 #: of
 msgid "Bases: :py:class:`matplotlib.ticker.Formatter`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.ticker.Formatter`"
 
 #: matplotlib.ticker.EngFormatter:2 of
 msgid "Format axis values using engineering prefixes to represent powers of 1000, plus a specified unit, e.g., 10 MHz instead of 1e7."
-msgstr ""
+msgstr "Formatea los valores del eje utilizando prefijos de ingeniería para representar potencias de 1000, más una unidad especificada, por ejemplo, 10 MHz en lugar de 1e7."
 
 #: matplotlib.ticker.EngFormatter matplotlib.ticker.LogFormatter
 #: matplotlib.ticker.LogFormatter.label_minor matplotlib.ticker.LogLocator
@@ -370,68 +370,68 @@ msgstr ""
 #: matplotlib.ticker.ScalarFormatter.set_useOffset
 #: matplotlib.ticker.SymmetricalLogLocator of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.ticker.EngFormatter:31 of
 msgid "**unit**"
-msgstr ""
+msgstr "**unit**"
 
 #: of
 msgid "str, default: \"\""
-msgstr ""
+msgstr "str, default: \"\""
 
 #: matplotlib.ticker.EngFormatter:30 of
 msgid "Unit symbol to use, suitable for use with single-letter representations of powers of 1000. For example, 'Hz' or 'm'."
-msgstr ""
+msgstr "Símbolo de la unidad a utilizar, adecuado para usar con representaciones de una sola letra de potencias de 1000. Por ejemplo, 'Hz' o 'm'."
 
 #: matplotlib.ticker.EngFormatter:39 of
 msgid "**places**"
-msgstr ""
+msgstr "**places**"
 
 #: of
 msgid "int, default: None"
-msgstr ""
+msgstr "int, default: None"
 
 #: matplotlib.ticker.EngFormatter:34 of
 #, python-format
 msgid "Precision with which to display the number, specified in digits after the decimal point (there will be between one and three digits before the decimal point). If it is None, the formatting falls back to the floating point format '%g', which displays up to 6 *significant* digits, i.e. the equivalent value for *places* varies between 0 and 5 (inclusive)."
-msgstr ""
+msgstr "Precisión con la que se muestra el número, especificada en dígitos después del punto decimal (habrá entre uno y tres dígitos antes del punto decimal). Si es None, el formato vuelve al formato de punto flotante '%g', que muestra hasta 6 dígitos *significativos*, es decir, el valor equivalente para *lugares* varía entre 0 y 5 (inclusive)."
 
 #: matplotlib.ticker.EngFormatter:50 of
 msgid "**sep**"
-msgstr ""
+msgstr "**sep**"
 
 #: of
 msgid "str, default: \" \""
-msgstr ""
+msgstr "str, default: \" \""
 
 #: matplotlib.ticker.EngFormatter:42 of
 msgid "Separator used between the value and the prefix/unit. For example, one get '3.14 mV' if ``sep`` is \" \" (default) and '3.14mV' if ``sep`` is \"\". Besides the default behavior, some other useful options may be:"
-msgstr ""
+msgstr "Separador utilizado entre el valor y el prefijo/unidad. Por ejemplo, se obtiene '3.14 mV' si ``sep`` es \" \" (por defecto) y '3.14mV' si ``sep`` es \"\". Además del comportamiento por defecto, algunas otras opciones útiles pueden ser:"
 
 #: matplotlib.ticker.EngFormatter:47 of
 msgid "``sep=\"\"`` to append directly the prefix/unit to the value;"
-msgstr ""
+msgstr "``sep=\"\"`` para añadir directamente el prefijo/unidad al valor;"
 
 #: matplotlib.ticker.EngFormatter:48 of
 msgid "``sep=\"\\N{THIN SPACE}\"`` (``U+2009``);"
-msgstr ""
+msgstr "``sep=\"\\N{THIN SPACE}\"`` (``U+2009``);"
 
 #: matplotlib.ticker.EngFormatter:49 of
 msgid "``sep=\"\\N{NARROW NO-BREAK SPACE}\"`` (``U+202F``);"
-msgstr ""
+msgstr "``sep=\"\\N{NARROW NO-BREAK SPACE}\"`` (``U+202F``);"
 
 #: matplotlib.ticker.EngFormatter:50 of
 msgid "``sep=\"\\N{NO-BREAK SPACE}\"`` (``U+00A0``)."
-msgstr ""
+msgstr "``sep=\"\\N{NO-BREAK SPACE}\"`` (``U+00A0``)."
 
 #: matplotlib.ticker.EngFormatter:54 of
 msgid "**usetex** : bool, default: :rc:`text.usetex`"
-msgstr ""
+msgstr "**usetex** : bool, por defecto: :rc:`text.usetex`"
 
 #: of
 msgid "bool, default:"
-msgstr ""
+msgstr "bool, default:"
 
 #: matplotlib.ticker.EngFormatter:53 of
 msgid "To enable/disable the use of TeX's math mode for rendering the numbers in the formatter."
@@ -669,39 +669,39 @@ msgstr ""
 #: matplotlib.ticker.LogFormatter:14
 #: matplotlib.ticker.LogFormatter.label_minor:21 of
 msgid "**labelOnlyBase**"
-msgstr ""
+msgstr "**labelOnlyBase**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.ticker.LogFormatter:12 of
 msgid "If True, label ticks only at integer powers of base. This is normally True for major ticks and False for minor ticks."
-msgstr ""
+msgstr "Si es True, etiqueta los marcadores sólo en potencias enteras de la base. Normalmente es True para los marcadores mayores y False para los menores."
 
 #: matplotlib.ticker.LogFormatter:26 of
 msgid "**minor_thresholds**"
-msgstr ""
+msgstr "**minor_thresholds**"
 
 #: of
 msgid "(subset, all), default: (1, 0.4)"
-msgstr ""
+msgstr "(subset, all), por defecto: (1, 0.4)"
 
 #: matplotlib.ticker.LogFormatter:17 of
 msgid "If labelOnlyBase is False, these two numbers control the labeling of ticks that are not at integer powers of base; normally these are the minor ticks. The controlling parameter is the log of the axis data range.  In the typical case where base is 10 it is the number of decades spanned by the axis, so we can call it 'numdec'. If ``numdec <= all``, all minor ticks will be labeled.  If ``all < numdec <= subset``, then only a subset of minor ticks will be labeled, so as to avoid crowding. If ``numdec > subset`` then no minor ticks will be labeled."
-msgstr ""
+msgstr "Si labelOnlyBase es False, estos dos números controlan el etiquetado de los marcadores que no están a potencias enteras de la base; normalmente son los marcadores menores. El parámetro de control es el logaritmo del rango de datos del eje.  En el caso típico en el que la base es 10, es el número de décadas que abarca el eje, por lo que podemos llamarlo ``numdec''. Si ``numdec <= all``, se etiquetarán todos los marcadores menores.  Si ``todos < numdec <= subconjunto``, sólo se etiquetará un subconjunto de los marcadores menores, para evitar la aglomeración. Si ``numdec > subset``, entonces no se etiquetará ningún marcador menor."
 
 #: matplotlib.ticker.LogFormatter:38 of
 msgid "**linthresh**"
-msgstr ""
+msgstr "**linthresh**"
 
 #: of
 msgid "None or float, default: None"
-msgstr ""
+msgstr "Ninguno o float, por defecto: None"
 
 #: matplotlib.ticker.LogFormatter:29 of
 msgid "If a symmetric log scale is in use, its ``linthresh`` parameter must be supplied here."
-msgstr ""
+msgstr "Si se utiliza una escala logarítmica simétrica, su parámetro ``linthresh`` debe ser suministrado aquí."
 
 #: matplotlib.ticker.LogFormatter:41 matplotlib.ticker.ScalarFormatter:26
 #: matplotlib.ticker.SymmetricalLogLocator:50
@@ -709,175 +709,175 @@ msgstr ""
 #: matplotlib.ticker.TickHelper.set_data_interval:15
 #: matplotlib.ticker.TickHelper.set_view_interval:15 of
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 #: matplotlib.ticker.LogFormatter:42 of
 msgid "The `set_locs` method must be called to enable the subsetting logic controlled by the ``minor_thresholds`` parameter."
-msgstr ""
+msgstr "El método `set_locs` debe ser llamado para habilitar la lógica de subconjunto controlada por el parámetro ``minor_thresholds``."
 
 #: matplotlib.ticker.LogFormatter:45 of
 msgid "In some cases such as the colorbar, there is no distinction between major and minor ticks; the tick locations might be set manually, or by a locator that puts ticks at integer powers of base and at intermediate locations.  For this situation, disable the minor_thresholds logic by using ``minor_thresholds=(np.inf, np.inf)``, so that all ticks will be labeled."
-msgstr ""
+msgstr "En algunos casos, como la barra de colores, no hay distinción entre los marcadores mayores y menores; las ubicaciones de los marcadores podrían establecerse manualmente, o mediante un localizador que pone los marcadores en potencias enteras de la base y en ubicaciones intermedias.  Para esta situación, desactive la lógica de minor_thresholds usando ``minor_thresholds=(np.inf, np.inf)``, para que todos los marcadores sean etiquetados."
 
 #: matplotlib.ticker.LogFormatter:52 of
 msgid "To disable labeling of minor ticks when 'labelOnlyBase' is False, use ``minor_thresholds=(0, 0)``.  This is the default for the \"classic\" style."
-msgstr ""
+msgstr "Para desactivar el etiquetado de los marcadores menores cuando 'labelOnlyBase' es False, utilice ``minor_thresholds=(0, 0)``.  Este es el valor por defecto para el estilo \"clásico\"."
 
 #: matplotlib.ticker.LogFormatter:58
 #: matplotlib.ticker.ScalarFormatter.set_useOffset:29 of
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
 #: matplotlib.ticker.LogFormatter:59 of
 msgid "To label a subset of minor ticks when the view limits span up to 2 decades, and all of the ticks when zoomed in to 0.5 decades or less, use ``minor_thresholds=(2, 0.5)``."
-msgstr ""
+msgstr "Para etiquetar un subconjunto de marcadores menores cuando los límites de la vista abarcan hasta 2 décadas, y todos los marcadores cuando se amplía a 0,5 décadas o menos, utilice ``minor_thresholds=(2, 0,5)``."
 
 #: matplotlib.ticker.LogFormatter:63 of
 msgid "To label all minor ticks when the view limits span up to 1.5 decades, use ``minor_thresholds=(1.5, 1.5)``."
-msgstr ""
+msgstr "Para etiquetar todos los marcadores menores cuando los límites de la vista abarcan hasta 1,5 décadas, utilice ``minor_thresholds=(1,5, 1,5)``."
 
 #: matplotlib.ticker.LogFormatter.base:2 of
 msgid "Change the *base* for labeling."
-msgstr ""
+msgstr "Cambiar la *base* para el etiquetado."
 
 #: matplotlib.ticker.LogFormatter.base:5 of
 msgid "Should always match the base used for :class:`LogLocator`"
-msgstr ""
+msgstr "Debería coincidir siempre con la base utilizada para :class:`LogLocator`"
 
 #: matplotlib.ticker.LogFormatter.label_minor:2 of
 msgid "Switch minor tick labeling on or off."
-msgstr ""
+msgstr "Activar o desactivar el etiquetado de los marcadores menores."
 
 #: of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.ticker.LogFormatter.label_minor:8 of
 msgid "If True, label ticks only at integer powers of base."
-msgstr ""
+msgstr "Si es True, la etiqueta marca sólo en potencias enteras de la base."
 
 #: matplotlib.ticker.LogFormatter.set_locs:2 of
 msgid "Use axis view limits to control which ticks are labeled."
-msgstr ""
+msgstr "Utilizar los límites de la vista del eje para controlar qué marcadores se etiquetan."
 
 #: matplotlib.ticker.LogFormatter.set_locs:4 of
 msgid "The *locs* parameter is ignored in the present algorithm."
-msgstr ""
+msgstr "El parámetro *locs* se ignora en el presente algoritmo."
 
 #: matplotlib.ticker.LogFormatterExponent:1
 #: matplotlib.ticker.LogFormatterMathtext:1 of
 msgid "Bases: :py:class:`matplotlib.ticker.LogFormatter`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.ticker.LogFormatter`"
 
 #: matplotlib.ticker.LogFormatterSciNotation:1 of
 msgid "Bases: :py:class:`matplotlib.ticker.LogFormatterMathtext`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.ticker.LogFormatterMathtext`"
 
 #: matplotlib.ticker.LogFormatterSciNotation:2 of
 msgid "Format values following scientific notation in a logarithmic axis."
-msgstr ""
+msgstr "Formatea los valores siguiendo la notación científica en un eje logarítmico."
 
 #: matplotlib.ticker.LogLocator:2 of
 msgid "Determine the tick locations for log axes"
-msgstr ""
+msgstr "Determinar las ubicaciones de los marcadores para los ejes de registro"
 
 #: matplotlib.ticker.LogLocator:23 of
 msgid "Place ticks on the locations : subs[j] * base**i"
-msgstr ""
+msgstr "Colocar los marcadores en las ubicaciones : subs[j] * base**i"
 
 #: of
 msgid "float, default: 10.0"
-msgstr ""
+msgstr "float, default: 10.0"
 
 #: matplotlib.ticker.LogLocator:29 of
 msgid "The base of the log used, so ticks are placed at ``base**n``."
-msgstr ""
+msgstr "La base del registro utilizado, por lo que los marcadores se colocan en ``base**n``."
 
 #: matplotlib.ticker.LogLocator:41 matplotlib.ticker.SymmetricalLogLocator:47
 #: of
 msgid "**subs**"
-msgstr ""
+msgstr "**subs**"
 
 #: of
 msgid "None or str or sequence of float, default: (1.0,)"
-msgstr ""
+msgstr "Ninguno o str o secuencia de float, por defecto: (1.0,)"
 
 #: matplotlib.ticker.LogLocator:32 of
 msgid "Gives the multiples of integer powers of the base at which to place ticks.  The default places ticks only at integer powers of the base. The permitted string values are ``'auto'`` and ``'all'``, both of which use an algorithm based on the axis view limits to determine whether and how to put ticks between integer powers of the base.  With ``'auto'``, ticks are placed only between integer powers; with ``'all'``, the integer powers are included.  A value of None is equivalent to ``'auto'``."
-msgstr ""
+msgstr "Da los múltiplos de potencias enteras de la base en los que colocar los marcadores.  El valor por defecto coloca los marcadores sólo en potencias enteras de la base. Los valores de cadena permitidos son ``'auto'`` y ``'all'``, los cuales utilizan un algoritmo basado en los límites de la vista del eje para determinar si se colocan los marcadores entre potencias enteras de la base y cómo hacerlo.  Con ``'auto'``, los marcadores se colocan sólo entre potencias enteras; con ``'all'``, se incluyen las potencias enteras.  Un valor de None es equivalente a ``'auto'``."
 
 #: matplotlib.ticker.LogLocator:60 of
 msgid "**numticks**"
-msgstr ""
+msgstr "**numticks**"
 
 #: of
 msgid "None or int, default: None"
-msgstr ""
+msgstr "None o int, por defecto: None"
 
 #: matplotlib.ticker.LogLocator:44 of
 msgid "The maximum number of ticks to allow on a given axis. The default of ``None`` will try to choose intelligently as long as this Locator has already been assigned to an axis using `~.axis.Axis.get_tick_space`, but otherwise falls back to 9."
-msgstr ""
+msgstr "El número máximo de marcadores a permitir en un eje dado. El valor por defecto de ``None`` intentará elegir de forma inteligente siempre y cuando este localizador ya haya sido asignado a un eje utilizando `~.axis.Axis.get_tick_space`, pero en caso contrario vuelve a 9."
 
 #: matplotlib.ticker.LogLocator.base:2 of
 msgid "Set the log base (major tick every ``base**i``, i integer)."
-msgstr ""
+msgstr "Establecer la base del registro (mayor marcador cada ``base**i``, i entero)."
 
 #: matplotlib.ticker.LogLocator.subs:2 of
 msgid "Set the minor ticks for the log scaling every ``base**i*subs[j]``."
-msgstr ""
+msgstr "Establecer los marcadores menores para el escalado del registro cada ``base**i*subs[j]``."
 
 #: matplotlib.ticker.LogitFormatter:2 of
 msgid "Probability formatter (using Math text)."
-msgstr ""
+msgstr "Formateador de probabilidades (usando texto de Math)."
 
 #: matplotlib.ticker.LogitFormatter:30
 #: matplotlib.ticker.LogitFormatter.use_overline:22 of
 msgid "**use_overline**"
-msgstr ""
+msgstr "**use_overline**"
 
 #: matplotlib.ticker.LogitFormatter:29
 #: matplotlib.ticker.LogitFormatter.use_overline:8 of
 msgid "If x > 1/2, with x = 1-v, indicate if x should be displayed as $\\overline{v}$. The default is to display $1-v$."
-msgstr ""
+msgstr "Si x > 1/2, con x = 1-v, indica si x debe mostrarse como $\\overline{v}$. El valor por defecto es mostrar $1-v$."
 
 #: matplotlib.ticker.LogitFormatter:33 of
 msgid "**one_half** : str, default: r\"\\frac{1}{2}\""
-msgstr ""
+msgstr "**one_half** : str, por defecto: r\"\\frac{1}{2}\""
 
 #: of
 msgid "str, default: r\"\\frac{1}{2}\""
-msgstr ""
+msgstr "str, por defecto: r\"\\frac{1}{2}\""
 
 #: matplotlib.ticker.LogitFormatter:33
 #: matplotlib.ticker.LogitFormatter.set_one_half:5 of
 msgid "The string used to represent 1/2."
-msgstr ""
+msgstr "La cadena utilizada para representar 1/2."
 
 #: matplotlib.ticker.LogitFormatter:39 matplotlib.ticker.LogitLocator:45 of
 msgid "**minor**"
-msgstr ""
+msgstr "**minor**"
 
 #: matplotlib.ticker.LogitFormatter:36 of
 msgid "Indicate if the formatter is formatting minor ticks or not. Basically minor ticks are not labelled, except when only few ticks are provided, ticks with most space with neighbor ticks are labelled. See other parameters to change the default behavior."
-msgstr ""
+msgstr "Indica si el formateador está formateando los marcadores menores o no. Básicamente los marcadores menores no se etiquetan, excepto cuando se proporcionan pocos marcadores, se etiquetan los marcadores con más espacio con los marcadores vecinos. Vea otros parámetros para cambiar el comportamiento por defecto."
 
 #: matplotlib.ticker.LogitFormatter:43
 #: matplotlib.ticker.LogitFormatter.set_minor_threshold:22 of
 msgid "**minor_threshold**"
-msgstr ""
+msgstr "**minor_threshold**"
 
 #: of
 msgid "int, default: 25"
-msgstr ""
+msgstr "int, default: 25"
 
 #: matplotlib.ticker.LogitFormatter:42 of
 msgid "Maximum number of locs for labelling some minor ticks. This parameter have no effect if minor is False."
-msgstr ""
+msgstr "Número máximo de locs para etiquetar algunos marcadores menores. Este parámetro no tiene efecto si minor es False."
 
 #: matplotlib.ticker.LogitFormatter:60
 #: matplotlib.ticker.LogitFormatter.set_minor_number:23 of
 msgid "**minor_number**"
-msgstr ""
+msgstr "**minor_number**"
 
 #: of
 msgid "int, default: 6"

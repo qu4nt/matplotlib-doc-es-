@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-18 23:51\n"
+"PO-Revision-Date: 2022-07-19 05:15\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,27 +20,27 @@ msgstr ""
 
 #: ../../api/transformations.rst:3
 msgid "``matplotlib.transforms``"
-msgstr ""
+msgstr "``matplotlib.transforms``"
 
 #: matplotlib.transforms:1 of
 msgid "Matplotlib includes a framework for arbitrary geometric transformations that is used determine the final position of all elements drawn on the canvas."
-msgstr ""
+msgstr "Matplotlib incluye un framework para transformaciones geométricas arbitrarias que se utiliza para determinar la posición final de todos los elementos dibujados en el lienzo."
 
 #: matplotlib.transforms:5 of
 msgid "Transforms are composed into trees of `TransformNode` objects whose actual value depends on their children.  When the contents of children change, their parents are automatically invalidated.  The next time an invalidated transform is accessed, it is recomputed to reflect those changes.  This invalidation/caching approach prevents unnecessary recomputations of transforms, and contributes to better interactive performance."
-msgstr ""
+msgstr "Las transformaciones se componen en árboles de objetos `TransformNode` cuyo valor real depende de sus hijos.  Cuando el contenido de los hijos cambia, sus padres se invalidan automáticamente.  La siguiente vez que se accede a una transformación invalidada, se vuelve a calcular para reflejar esos cambios.  Este enfoque de invalidación/almacenamiento evita recálculos innecesarios de las transformaciones, y contribuye a un mejor rendimiento interactivo."
 
 #: matplotlib.transforms:13 of
 msgid "For example, here is a graph of the transform tree used to plot data to the graph:"
-msgstr ""
+msgstr "Por ejemplo, aquí hay un gráfico del árbol de transformaciones utilizado para trazar los datos a la gráfica:"
 
 #: matplotlib.transforms:18 of
 msgid "The framework can be used for both affine and non-affine transformations.  However, for speed, we want use the backend renderers to perform affine transformations whenever possible. Therefore, it is possible to perform just the affine or non-affine part of a transformation on a set of data.  The affine is always assumed to occur after the non-affine.  For any transform::"
-msgstr ""
+msgstr "El framework puede ser utilizado tanto para transformaciones afines como no afines.  Sin embargo, para la velocidad, queremos usar los renderizadores del backend para realizar transformaciones afines siempre que sea posible. Por lo tanto, es posible realizar sólo la parte afín o no afín de una transformación en un conjunto de datos.  Se supone que la parte afín siempre ocurre después de la parte no afín.  Para cualquier transformación::"
 
 #: matplotlib.transforms:27 of
 msgid "The backends are not expected to handle non-affine transformations themselves."
-msgstr ""
+msgstr "No se espera que los backends manejen por sí mismos las transformaciones no afines."
 
 #: matplotlib.transforms.Affine2D:1
 #: matplotlib.transforms.AffineDeltaTransform:1
@@ -51,57 +51,57 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform:1
 #: matplotlib.transforms.ScaledTranslation:1 of
 msgid "Bases: :py:class:`matplotlib.transforms.Affine2DBase`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms.Affine2DBase`"
 
 #: matplotlib.transforms.Affine2D:2 of
 msgid "A mutable 2D affine transformation."
-msgstr ""
+msgstr "Una transformación afín 2D mutable."
 
 #: matplotlib.transforms.Affine2D:23 matplotlib.transforms.Affine2D.__init__:2
 #: of
 msgid "Initialize an Affine transform from a 3x3 numpy float array::"
-msgstr ""
+msgstr "Inicializar una transformación Affine a partir de un arreglo de 3x3 flotadores de numpy::"
 
 #: matplotlib.transforms.Affine2D:29 matplotlib.transforms.Affine2D.__init__:8
 #: of
 msgid "If *matrix* is None, initialize with the identity transform."
-msgstr ""
+msgstr "Si *matriz* es None, se inicializa con la transformada de identidad."
 
 #: matplotlib.transforms.Affine2D.__str__:2
 #: matplotlib.transforms.Bbox.__str__:2
 #: matplotlib.transforms._make_str_method.<locals>.<lambda>:2 of
 msgid "Return str(self)."
-msgstr ""
+msgstr "Devuelve str(self)."
 
 #: matplotlib.transforms.Affine2D.clear:2 of
 msgid "Reset the underlying matrix to the identity transform."
-msgstr ""
+msgstr "Restablecer la matriz subyacente a la transformada de identidad."
 
 #: matplotlib.transforms.Affine2D.from_values:2 of
 msgid "Create a new Affine2D instance from the given values::"
-msgstr ""
+msgstr "Crea una nueva instancia de Affine2D a partir de los valores dados::"
 
 #: matplotlib.transforms.Affine2D.from_values:8
 #: matplotlib.transforms.Affine2D.get_matrix:8
 #: matplotlib.transforms.Affine2D.set_matrix:8 of
 msgid "."
-msgstr ""
+msgstr "."
 
 #: matplotlib.transforms.Affine2D.get_matrix:2 of
 msgid "Get the underlying transformation matrix as a 3x3 numpy array::"
-msgstr ""
+msgstr "Obtener la matriz de transformación subyacente como un arreglo numpy de 3x3::"
 
 #: matplotlib.transforms.Affine2D.identity:2 of
 msgid "Return a new `Affine2D` object that is the identity transform."
-msgstr ""
+msgstr "Devuelve un nuevo objeto `Affine2D` que es la transformada de identidad."
 
 #: matplotlib.transforms.Affine2D.identity:4 of
 msgid "Unless this transform will be mutated later on, consider using the faster `IdentityTransform` class instead."
-msgstr ""
+msgstr "A menos que esta transformación vaya a ser mutada más adelante, considera usar la clase más rápida `IdentityTransform` en su lugar."
 
 #: matplotlib.transforms.Affine2D.rotate:2 of
 msgid "Add a rotation (in radians) to this transform in place."
-msgstr ""
+msgstr "Añade una rotación (en radianes) a esta transformación en su lugar."
 
 #: matplotlib.transforms.Affine2D.rotate:4
 #: matplotlib.transforms.Affine2D.rotate_around:4

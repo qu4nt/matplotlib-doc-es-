@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-18 16:05\n"
+"PO-Revision-Date: 2022-07-19 13:10\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -116,51 +116,51 @@ msgstr "El localizador de fechas para el intervalo DIARIO ahora devuelve la mita
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:112
 msgid "The `matplotlib.dates.AutoDateLocator` has a default of ``interval_multiples=True`` that attempts to align ticks with the start of meaningful intervals like the start of the month, or start of the day, etc. That lead to approximately 140-day intervals being mapped to the first and 22nd of the month. This has now been changed so that it chooses the first and 15th of the month, which is probably what most people want."
-msgstr ""
+msgstr "El `matplotlib.dates.AutoDateLocator` tiene un valor por defecto de ``interval_multiples=True`` que intenta alinear los ticks con el inicio de intervalos significativos como el inicio del mes, o el inicio del día, etc. Eso llevaba a que los intervalos de aproximadamente 140 días se asignaran al primero y al 22 del mes. Ahora se ha cambiado para que elija el primero y el 15 del mes, que es probablemente lo que la mayoría de la gente quiere."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:120
 msgid "``ScalarFormatter`` *useLocale* option obeys grouping"
-msgstr ""
+msgstr "La opción ``ScalarFormatter`` *useLocale* obedece a la agrupación"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:122
 msgid "When the `~.ScalarFormatter` option *useLocale* is enabled (or :rc:`axes.formatter.use_locale` is *True*) and the configured locale uses grouping, a separator will be added as described in `locale.format_string`."
-msgstr ""
+msgstr "Cuando la opción de `~.ScalarFormatter` *useLocale* está activada (o :rc:`axes.formatter.use_locale` es *True*) y la localización configurada utiliza agrupación, se añadirá un separador como se describe en `locale.format_string`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:127
 msgid "``Axes.errorbar`` cycles non-color properties correctly"
-msgstr ""
+msgstr "``Axes.errorbar`` cicla correctamente las propiedades que no son de color"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:129
 msgid "Formerly, `.Axes.errorbar` incorrectly skipped the Axes property cycle if a color was explicitly specified, even if the property cycler was for other properties (such as line style). Now, `.Axes.errorbar` will advance the Axes property cycle as done for `.Axes.plot`, i.e., as long as all properties in the cycler are not explicitly passed."
-msgstr ""
+msgstr "Anteriormente, `.Axes.errorbar` se saltaba incorrectamente el ciclo de propiedades de los ejes si se especificaba explícitamente un color, incluso si el ciclador de propiedades era para otras propiedades (como el estilo de línea). Ahora, `.Axes.errorbar` avanzará el ciclo de propiedades de los ejes como se hace con `.Axes.plot`, es decir, siempre que no se pasen explícitamente todas las propiedades del ciclador."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:136
 msgid "pyplot.specgram always uses origin='upper'"
-msgstr ""
+msgstr "pyplot.specgram utiliza siempre origin='upper'"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:138
 msgid "Previously if :rc:`image.origin` was set to something other than ``'upper'`` or if the *origin* keyword argument was passed with a value other than ``'upper'``, the spectrogram itself would flip, but the Axes would remain oriented for an origin value of ``'upper'``, so that the resulting plot was incorrectly labelled."
-msgstr ""
+msgstr "Anteriormente, si :rc:`image.origin` se establecía en un valor distinto de ``'upper'`` o si el argumento de la palabra clave *origin* se pasaba con un valor distinto de ``'upper'``, el espectrograma en sí mismo se volteaba, pero los ejes permanecían orientados para un valor de origen de ``'upper'``, por lo que el gráfico resultante se etiquetaba incorrectamente."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:144
 msgid "Now, the *origin* keyword argument is not supported and the ``image.origin`` rcParam is ignored. The function `matplotlib.pyplot.specgram` is forced to use ``origin='upper'``, so that the Axes are correct for the plotted spectrogram."
-msgstr ""
+msgstr "Ahora, el argumento de la palabra clave *origin* no es soportado y el rcParam ``image.origin`` es ignorado. La función `matplotlib.pyplot.specgram` es forzada a usar ``origin='upper'``, para que los Ejes sean correctos para el espectrograma graficado."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:149
 msgid "xunits=None and yunits=None passed as keyword arguments are treated as \"no action\""
-msgstr ""
+msgstr "xunits=None y yunits=None pasado como argumentos de palabra clave son tratados como \"sin acción\""
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:151
 msgid "Many (but not all) of the methods on `~.axes.Axes` take the (undocumented) keyword arguments *xunits* and *yunits* that will update the units on the given Axis by calling `.Axis.set_units` and `.Axis.update_units`."
-msgstr ""
+msgstr "Muchos (pero no todos) de los métodos de `~.axes.Axes` toman los argumentos de palabra clave (no documentados) *xunits* y *yunits* que actualizarán las unidades en el Eje dado llamando a `.Axis.set_units` y `.Axis.update_units`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:155
 msgid "Previously if *None* was passed it would clear the value stored in ``.Axis.units`` which will in turn break converters which rely on the value in ``.Axis.units`` to work properly (notably `.StrCategoryConverter`)."
-msgstr ""
+msgstr "Anteriormente, si se pasaba *None* se borraba el valor almacenado en ``.Axis.units``, lo que a su vez rompería los convertidores que dependen del valor en ``.Axis.units`` para funcionar correctamente (especialmente `.StrCategoryConverter`)."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:159
 msgid "This changes the semantics of ``ax.meth(..., xunits=None, yunits=None)`` from \"please clear the units\" to \"do the default thing as if they had not been passed\" which is consistent with the standard behavior of Matplotlib keyword arguments."
-msgstr ""
+msgstr "Esto cambia la semántica de ``ax.meth(..., xunits=None, yunits=None)`` de \"por favor, borre las unidades\" a \"haga lo predeterminado como si no se hubieran pasado\", lo cual es consistente con el comportamiento estándar de los argumentos de palabras clave de Matplotlib."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:164
 msgid "If you were relying on passing ``xunits=None`` to plotting methods to clear the ``.Axes.units`` attribute, directly call `.Axis.set_units` (and `.Axis.update_units` if you also require the converter to be updated)."

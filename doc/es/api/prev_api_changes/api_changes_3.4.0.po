@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-19 13:10\n"
+"PO-Revision-Date: 2022-07-19 14:39\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -164,103 +164,103 @@ msgstr "Esto cambia la semántica de ``ax.meth(..., xunits=None, yunits=None)`` 
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:164
 msgid "If you were relying on passing ``xunits=None`` to plotting methods to clear the ``.Axes.units`` attribute, directly call `.Axis.set_units` (and `.Axis.update_units` if you also require the converter to be updated)."
-msgstr ""
+msgstr "Si confías en pasar ``xunits=None`` a los métodos de graficado para borrar el atributo ``.Axes.units``, llama directamente a `.Axis.set_units` (y a `.Axis.update_units` si también necesitas que se actualice el convertidor)."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:169
 msgid "Annotations with ``annotation_clip`` no longer affect ``tight_layout``"
-msgstr ""
+msgstr "Las anotaciones con ``annotation_clip`` ya no afectan a ``tight_layout``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:171
 msgid "Previously, `.text.Annotation.get_tightbbox` always returned the full `.text.Annotation.get_window_extent` of the object, independent of the value of ``annotation_clip``. `.text.Annotation.get_tightbbox` now correctly takes this extra clipping box into account, meaning that `~.text.Annotation`\\s that are not drawn because of ``annotation_clip`` will not count towards the Axes bounding box calculations, such as those done by `~.pyplot.tight_layout`."
-msgstr ""
+msgstr "Anteriormente, `.text.Annotation.get_tightbbox` siempre devolvía la extensión completa de `.text.Annotation.get_window_extent` del objeto, independientemente del valor de ``annotation_clip``. Ahora, `.text.Annotation.get_tightbbox` tiene en cuenta correctamente esta caja de recorte adicional, lo que significa que las `~.text.Annotation` que no se dibujan debido a ``annotation_clip`` no contarán para los cálculos de la caja de delimitación de los ejes, como los realizados por `~.pyplot.tight_layout``."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:178
 msgid "This is now consistent with the API described in `~.artist.Artist`, which specifies that ``get_window_extent`` should return the full extents and ``get_tightbbox`` should \"account for any clipping\"."
-msgstr ""
+msgstr "Esto es ahora consistente con la API descrita en `~.artist.Artist`, que especifica que ``get_window_extent`` debe devolver la extensión completa y ``get_tightbbox`` debe \"tener en cuenta cualquier recorte\"."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:183
 msgid "Parasite Axes pcolor and pcolormesh now defaults to placing grid edges at integers, not half-integers"
-msgstr ""
+msgstr "Los ejes parásitos pcolor y pcolormesh ahora colocan por defecto los bordes de la malla en aristas, no en medios enteros"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:185
 msgid "This is consistent with `~.Axes.pcolor` and `~.Axes.pcolormesh`."
-msgstr ""
+msgstr "Esto es consistente con `~.Axes.pcolor` y `~.Axes.pcolormesh`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:188
 msgid "``Colorbar`` outline is now a ``Spine``"
-msgstr ""
+msgstr "El contorno de la ``Colorbar`` es ahora ``Spine``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:190
 msgid "The outline of `~matplotlib.colorbar.Colorbar` is now a `.Spine` and drawn as one, instead of a `.Polygon` drawn as an artist. This ensures it will always be drawn after (i.e., on top of) all artists, consistent with Spines on normal Axes."
-msgstr ""
+msgstr "El contorno de `~matplotlib.colorbar.Colorbar` es ahora un `.Spine` y se dibuja como uno, en lugar de un `.Polygon` dibujado como un artist. Esto asegura que siempre se dibujará después (es decir, encima) de todos los artists, en consonancia con los Spines en los ejes normales."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:196
 msgid "``Colorbar.dividers`` changes"
-msgstr ""
+msgstr "Cambios de ``Colorbar.dividers``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:198
 msgid "This attribute is now always a `.LineCollection` -- an empty one if ``drawedges`` is *False*. Its default colors and linewidth (:rc:`axes.edgecolor`, :rc:`axes.linewidth`) are now resolved at instantiation time, not at draw time."
-msgstr ""
+msgstr "Este atributo es ahora siempre una `.LineCollection` -- una vacía si ``drawedges`` es *False*. Sus colores y anchura de línea por defecto (:rc:`axes.edgecolor`, :rc:`axes.linewidth`) se resuelven ahora en tiempo de instanciación, no en tiempo de dibujo."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:204
 msgid "Raise or warn on registering a colormap twice"
-msgstr ""
+msgstr "Plantea o avisar al registrar un mapa de colores dos veces"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:206
 msgid "When using `matplotlib.cm.register_cmap` to register a user provided or third-party colormap it will now raise a `ValueError` if trying to over-write one of the built in colormaps and warn if trying to over write a user registered colormap. This may raise for user-registered colormaps in the future."
-msgstr ""
+msgstr "Cuando se utiliza `matplotlib.cm.register_cmap` para registrar un mapa de colores proporcionado por el usuario o por terceros, ahora se produce un `ValueError` si se intenta sobrescribir uno de los mapas de colores incorporados y se advierte si se intenta sobrescribir un mapa de colores registrado por el usuario. En el futuro, esto puede aumentar los mapas de colores registrados por el usuario."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:213
 msgid "Consecutive rasterized draws now merged"
-msgstr ""
+msgstr "Los dibujos rasterizados consecutivos ahora se fusionan"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:215
 msgid "Tracking of depth of raster draws has moved from `.backend_mixed.MixedModeRenderer.start_rasterizing` and `.backend_mixed.MixedModeRenderer.stop_rasterizing` into `.artist.allow_rasterization`. This means the start and stop functions are only called when the rasterization actually needs to be started and stopped."
-msgstr ""
+msgstr "El seguimiento de la profundidad de los dibujos rasterizados se ha trasladado de `.backend_mixed.MixedModeRenderer.start_rasterizing` y `.backend_mixed.MixedModeRenderer.stop_rasterizing` a `.artist.allow_rasterization`. Esto significa que las funciones de inicio y parada sólo son invocadas cuando la rasterización realmente necesita ser iniciada y detenida."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:221
 msgid "The output of vector backends will change in the case that rasterized elements are merged. This should not change the appearance of outputs."
-msgstr ""
+msgstr "La salida de los backends vectoriales cambiará en el caso de que se fusionen elementos rasterizados. Esto no debería cambiar la apariencia de las salidas."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:224
 msgid "The renders in 3rd party backends are now expected to have ``self._raster_depth`` and ``self._rasterizing`` initialized to ``0`` and *False* respectively."
-msgstr ""
+msgstr "Ahora se espera que los renders en backends de terceros tengan ``self._raster_depth`` y ``self._rasterizing`` inicializados a ``0`` y *False* respectivamente."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:229
 msgid "Consistent behavior of ``draw_if_interactive()`` across backends"
-msgstr ""
+msgstr "Comportamiento coherente de ``draw_if_interactive()`` en todos los backends"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:231
 msgid "`.pyplot.draw_if_interactive` no longer shows the window (if it was previously unshown) on the Tk and nbAgg backends, consistently with all other backends."
-msgstr ""
+msgstr "`.pyplot.draw_if_interactive` ya no muestra la ventana (si antes no se mostraba) en los backends Tk y nbAgg, de forma consistente con el resto de backends."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:235
 msgid "The Artist property *rasterized* cannot be *None* anymore"
-msgstr ""
+msgstr "La propiedad Artist *rasterized* ya no puede ser *None*"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:237
 msgid "It is now a boolean only. Before the default was *None* and `.Artist.set_rasterized` was documented to accept *None*. However, *None* did not have a special meaning and was treated as *False*."
-msgstr ""
+msgstr "Ahora es sólo un booleano. Antes el valor por defecto era *None* y `.Artist.set_rasterized` estaba documentado para aceptar *None*. Sin embargo, *None* no tenía un significado especial y se trataba como *False*."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:242
 msgid "Canvas's callback registry now stored on Figure"
-msgstr ""
+msgstr "El registro de invocación de Canvas ahora se almacena en la Figura"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:244
 msgid "The canonical location of the `~.cbook.CallbackRegistry` used to handle Figure/Canvas events has been moved from the Canvas to the Figure. This change should be transparent to almost all users, however if you are swapping switching the Figure out from on top of a Canvas or visa versa you may see a change in behavior."
-msgstr ""
+msgstr "La ubicación canónica del `~.cbook.CallbackRegistry` utilizado para manejar los eventos de la Figura/Canvas se ha movido del Canvas a la Figura. Este cambio debería ser transparente para casi todos los usuarios, sin embargo, si usted está cambiando el cambio de la Figura de la parte superior de un Canvas o visa versa puede ver un cambio en el comportamiento."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:251
 msgid "Harmonized key event data across backends"
-msgstr ""
+msgstr "Datos de eventos clave armonizados en todos los backends"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:253
 msgid "The different backends with key translation support, now handle \"Shift\" as a sometimes modifier, where the ``'shift+'`` prefix won't be added if a key translation was made."
-msgstr ""
+msgstr "Los diferentes backends con soporte de traducción de teclas, ahora manejan \"Shift\" como un modificador a veces, donde el prefijo ``'shift+'`` no será añadido si se hizo una traducción de teclas."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:257
 msgid "In the Qt5 backend, the ``matplotlib.backends.backend_qt5.SPECIAL_KEYS`` dictionary contains keys that do *not* return their unicode name instead they have manually specified names. The name for ``QtCore.Qt.Key_Meta`` has changed to ``'meta'`` to be consistent with the other GUI backends."
-msgstr ""
+msgstr "En el backend Qt5, el diccionario ``matplotlib.backends.backend_qt5.SPECIAL_KEYS`` contiene claves que *no* devuelven su nombre unicode sino que tienen nombres especificados manualmente. El nombre de ``QtCore.Qt.Key_Meta`` ha cambiado a ``'meta'`` para ser consistente con los otros backends de IGU."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:262
 msgid "The WebAgg backend now handles key translations correctly on non-US keyboard layouts."

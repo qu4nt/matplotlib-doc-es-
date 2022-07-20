@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-19 14:39\n"
+"PO-Revision-Date: 2022-07-20 13:51\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -264,27 +264,27 @@ msgstr "En el backend Qt5, el diccionario ``matplotlib.backends.backend_qt5.SPEC
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:262
 msgid "The WebAgg backend now handles key translations correctly on non-US keyboard layouts."
-msgstr ""
+msgstr "El backend de WebAgg ahora maneja correctamente las traducciones de las teclas en los layouts de teclado no estadounidenses."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:265
 msgid "In the GTK and Tk backends, the handling of non-ASCII keypresses (as reported in the KeyEvent passed to ``key_press_event``-handlers) now correctly reports Unicode characters (e.g., €), and better respects NumLock on the numpad."
-msgstr ""
+msgstr "En los backends GTK y Tk, el manejo de las pulsaciones de teclas no ASCII (como se informa en el KeyEvent pasado a los manejadores ``key_press_event``) ahora informa correctamente de los caracteres Unicode (por ejemplo, €), y respeta mejor NumLock en el teclado numérico."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:269
 msgid "In the GTK and Tk backends, the following key names have changed; the new names are consistent with those reported by the Qt backends:"
-msgstr ""
+msgstr "En los backends GTK y Tk, los siguientes nombres de teclas han cambiado; los nuevos nombres son consistentes con los reportados por los backends Qt:"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:272
 msgid "The \"Break/Pause\" key (keysym 0xff13) is now reported as ``\"pause\"`` instead of ``\"break\"`` (this is also consistent with the X key name)."
-msgstr ""
+msgstr "La tecla \"Break/Pause\" (keysym 0xff13) se reporta ahora como ``\"pause\"`` en lugar de ``\"break\"`` (esto también es consistente con el nombre de la tecla X)."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:274
 msgid "The numpad \"delete\" key is now reported as ``\"delete\"`` instead of ``\"dec\"``."
-msgstr ""
+msgstr "La tecla \"delete\" del teclado numérico se reporta ahora como ``\"delete\"`` en lugar de ``\"dec\"``."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:277
 msgid "WebAgg backend no longer reports a middle click as a right click"
-msgstr ""
+msgstr "El backend de WebAgg ya no reporta un clic central como un clic derecho"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:279
 msgid "Previously when using the WebAgg backend the event passed to a callback by ``fig.canvas.mpl_connect('mouse_button_event', callback)`` on a middle click would report `.MouseButton.RIGHT` instead of `.MouseButton.MIDDLE`."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-20 13:51\n"
+"PO-Revision-Date: 2022-07-20 15:39\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -288,179 +288,179 @@ msgstr "El backend de WebAgg ya no reporta un clic central como un clic derecho"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:279
 msgid "Previously when using the WebAgg backend the event passed to a callback by ``fig.canvas.mpl_connect('mouse_button_event', callback)`` on a middle click would report `.MouseButton.RIGHT` instead of `.MouseButton.MIDDLE`."
-msgstr ""
+msgstr "Anteriormente, cuando se utilizaba el backend de WebAgg, el evento pasado a una llamada de retorno por ``fig.canvas.mpl_connect('mouse_button_event', callback)`` en un clic central informaba de `.MouseButton.RIGHT` en lugar de `.MouseButton.MIDDLE`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:284
 msgid "ID attribute of XML tags in SVG files now based on SHA256 rather than MD5"
-msgstr ""
+msgstr "El atributo ID de las etiquetas XML en los archivos SVG se basa ahora en SHA256 en lugar de MD5"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:286
 msgid "Matplotlib generates unique ID attributes for various tags in SVG files. Matplotlib previously generated these unique IDs using the first 10 characters of an MD5 hash. The MD5 hashing algorithm is not available in Python on systems with Federal Information Processing Standards (FIPS) enabled. Matplotlib now uses the first 10 characters of an SHA256 hash instead. SVG files that would otherwise match those saved with earlier versions of matplotlib, will have different ID attributes."
-msgstr ""
+msgstr "Matplotlib genera atributos de ID únicos para varias etiquetas en archivos SVG. Matplotlib generaba anteriormente estos ID únicos utilizando los 10 primeros caracteres de un hash MD5. El algoritmo de hash MD5 no está disponible en Python en sistemas con los Estándares Federales de Procesamiento de Información (FIPS) habilitados. Ahora Matplotlib utiliza los 10 primeros caracteres de un hash SHA256. Los archivos SVG que, de otro modo, coincidirían con los guardados con versiones anteriores de matplotlib, tendrán atributos de identificación diferentes."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:295
 msgid "``RendererPS.set_font`` is no longer a no-op in AFM mode"
-msgstr ""
+msgstr "``RendererPS.set_font`` ya no es un no-op Moda AFM"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:297
 msgid "`.RendererPS.set_font` now sets the current PostScript font in all cases."
-msgstr ""
+msgstr "`.RendererPS.set_font` ahora establece la fuente PostScript actual en todos los casos."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:300
 msgid "Autoscaling in Axes3D"
-msgstr ""
+msgstr "Autoescalado en Axes3D"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:302
 msgid "In Matplotlib 3.2.0, autoscaling was made lazier for 2D Axes, i.e., limits would only be recomputed when actually rendering the canvas, or when the user queries the Axes limits. This performance improvement is now extended to `.Axes3D`. This also fixes some issues with autoscaling being triggered unexpectedly in Axes3D."
-msgstr ""
+msgstr "En Matplotlib 3.2.0, el autoescalado se hizo más perezoso para los Ejes 2D, es decir, los límites sólo se volverían a calcular cuando se renderizara el lienzo, o cuando el usuario consultara los límites de los Ejes. Esta mejora de rendimiento se extiende ahora a `.Axes3D`. También se han arreglado algunas incidencias con el autoescalado que se activaba inesperadamente en Axes3D."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:308
 msgid "Please see :ref:`the API change for 2D Axes <api-changes-3-2-0-autoscaling>` for further details."
-msgstr ""
+msgstr "Por favor, consulta :ref:`el cambio de la API para los ejes 2D <api-changes-3-2-0-autoscaling>` para más detalles."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:312
 msgid "Axes3D automatically adding itself to Figure is deprecated"
-msgstr ""
+msgstr "Axes3D se agrega automáticamente a la Figura es obsoleto"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:314
 msgid "New `.Axes3D` objects previously added themselves to figures when they were created, unlike all other Axes classes, which lead to them being added twice if ``fig.add_subplot(111, projection='3d')`` was called."
-msgstr ""
+msgstr "Los nuevos objetos `.Axes3D` se añadían previamente a las figuras cuando se creaban, a diferencia de las demás clases de Ejes, lo que hacía que se añadieran dos veces si se invocaba ``fig.add_subplot(111, projection='3d')``."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:318
 msgid "This behavior is now deprecated and will warn. The new keyword argument *auto_add_to_figure* controls the behavior and can be used to suppress the warning. The default value will change to *False* in Matplotlib 3.5, and any non-*False* value will be an error in Matplotlib 3.6."
-msgstr ""
+msgstr "Este comportamiento está ahora obsoleto y avisará. El nuevo argumento de palabra clave *auto_add_to_figure* controla el comportamiento y puede utilizarse para suprimir la advertencia. El valor por defecto cambiará a *False* en Matplotlib 3.5, y cualquier valor que no sea *False* será un error en Matplotlib 3.6."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:323
 msgid "In the future, `.Axes3D` will need to be explicitly added to the figure ::"
-msgstr ""
+msgstr "En el futuro, habrá que añadir explícitamente `.Axes3D` a la figura ::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:331
 msgid "as needs to be done for other `.axes.Axes` sub-classes. Or, a 3D projection can be made via::"
-msgstr ""
+msgstr "como hay que hacer para otras subclases `.axes.Axes`. O bien, se puede hacer una proyección 3D a través de::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:337
 msgid "``mplot3d.art3d.get_dir_vector`` always returns NumPy arrays"
-msgstr ""
+msgstr "``mplot3d.art3d.get_dir_vector`` siempre devuelve arreglos NumPy"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:339
 msgid "For consistency, `~.mplot3d.art3d.get_dir_vector` now always returns NumPy arrays, even if the input is a 3-element iterable."
-msgstr ""
+msgstr "Por consistencia, `~.mplot3d.art3d.get_dir_vector` ahora siempre devuelve arreglos NumPy, incluso si la entrada es un iterable de 3 elementos."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:343
 msgid "Changed cursive and fantasy font definitions"
-msgstr ""
+msgstr "Modificación de las definiciones de las fuentes cursivas y de fantasía"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:345
 msgid "The Comic Sans and Comic Neue fonts were moved from the default :rc:`font.fantasy` list to the default :rc:`font.cursive` setting, in accordance with the CSS font families example_ and in order to provide a cursive font present in Microsoft's Core Fonts set."
-msgstr ""
+msgstr "Las fuentes Comic Sans y Comic Neue se han movido de la lista por defecto :rc:`font.fantasy` a la configuración por defecto :rc:`font.cursive`, de acuerdo con el ejemplo de familias de fuentes CSS_ y con el fin de proporcionar una fuente cursiva presente en el conjunto de fuentes básicas de Microsoft."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/behaviour.rst:353
 msgid "docstring.Substitution now always dedents docstrings before string interpolation"
-msgstr ""
+msgstr "docstring.Substitution ahora siempre deduce los docstrings antes de la interpolación de cadenas"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:2
 msgid "Deprecations"
-msgstr ""
+msgstr "Obsolescencias"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:5
 msgid "Extra parameters to Axes constructor"
-msgstr ""
+msgstr "Parámetros adicionales para el constructor de ejes"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:7
 msgid "Parameters of the Axes constructor other than *fig* and *rect* will become keyword-only in a future version."
-msgstr ""
+msgstr "Los parámetros del constructor Axes que no sean *fig* y *rect* se convertirán en palabras clave en una futura versión."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:11
 msgid "``pyplot.gca`` and ``Figure.gca`` keyword arguments"
-msgstr ""
+msgstr "Argumentos de la palabra clave ``pyplot.gca`` y ``Figure.gca``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:13
 msgid "Passing keyword arguments to `.pyplot.gca` or `.figure.Figure.gca` will not be supported in a future release."
-msgstr ""
+msgstr "Pasar argumentos de palabras clave a `.pyplot.gca` o `.figure.Figure.gca` no será soportado en una futura versión."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:17
 msgid "``Axis.cla``, ``RadialAxis.cla``, ``ThetaAxis.cla`` and ``Spine.cla``"
-msgstr ""
+msgstr "``Axis.cla``, ``RadialAxis.cla``, ``ThetaAxis.cla`` y ``Spine.cla``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:19
 msgid "These methods are deprecated in favor of the respective ``clear()`` methods."
-msgstr ""
+msgstr "Estos métodos están obsoletos en favor de los respectivos métodos ``clear()``."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:22
 msgid "Invalid hatch pattern characters are no longer ignored"
-msgstr ""
+msgstr "Ya no se ignoran los caracteres inválidos del patrón de sombreado"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:24
 msgid "When specifying hatching patterns, characters that are not recognized will raise a deprecation warning. In the future, this will become a hard error."
-msgstr ""
+msgstr "Cuando se especifican patrones de sombreado, los caracteres que no se reconocen generan una advertencia de obsolescencia. En el futuro, esto se convertirá en un error grave."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:28
 msgid "``imread`` reading from URLs"
-msgstr ""
+msgstr "``imread`` lectura de URLs"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:30
 msgid "Passing a URL to `~.pyplot.imread()` is deprecated. Please open the URL for reading and directly use the Pillow API (``PIL.Image.open(urllib.request.urlopen(url))``, or ``PIL.Image.open(io.BytesIO(requests.get(url).content))``) instead."
-msgstr ""
+msgstr "Pasar una URL a `~.pyplot.imread()` está obsoleto. Por favor, abra la URL para su lectura y utilice directamente la API de Pillow (``PIL.Image.open(urllib.request.urlopen(url))``, o ``PIL.Image.open(io.BytesIO(requests.get(url).content))``) en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:36
 msgid "Subplot-related attributes and methods"
-msgstr ""
+msgstr "Atributos y métodos relacionados con los subgráficos"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:38
 msgid "Some ``SubplotBase`` methods and attributes have been deprecated and/or moved to `.SubplotSpec`:"
-msgstr ""
+msgstr "Algunos métodos y atributos de ``SubplotBase`` han quedado obsoletos y/o se han trasladado a `.SubplotSpec`:"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:41
 msgid "``get_geometry`` (use `.SubplotBase.get_subplotspec` instead),"
-msgstr ""
+msgstr "``get_geometry`` (usa `.SubplotBase.get_subplotspec` en su lugar),"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:42
 msgid "``change_geometry`` (use `.SubplotBase.set_subplotspec` instead),"
-msgstr ""
+msgstr "``change_geometry`` (usa `.SubplotBase.set_subplotspec` en su lugar),"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:43
 msgid "``is_first_row``, ``is_last_row``, ``is_first_col``, ``is_last_col`` (use the corresponding methods on the `.SubplotSpec` instance instead),"
-msgstr ""
+msgstr "``is_first_row``, ``is_last_row``, ``is_first_col``, ``is_last_col`` (utiliza los métodos correspondientes en la instancia `.SubplotSpec`),"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:45
 msgid "``update_params`` (now a no-op),"
-msgstr ""
+msgstr "``update_params`` (ahora un no-op),"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:46
 msgid "``figbox`` (use ``ax.get_subplotspec().get_geometry(ax.figure)`` instead to recompute the geometry, or ``ax.get_position()`` to read its current value),"
-msgstr ""
+msgstr "``figbox`` (utiliza ``ax.get_subplotspec().get_geometry(ax.figure)`` para recalcular la geometría, o ``ax.get_position()`` para leer su valor actual),"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:48
 msgid "``numRows``, ``numCols`` (use the ``nrows`` and ``ncols`` attribute on the `.GridSpec` instead)."
-msgstr ""
+msgstr "``numRows``, ``numCols`` (utiliza el atributo ``nrows`` y ``ncols`` en el `.GridSpec`)."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:51
 msgid "Likewise, the ``get_geometry``, ``change_geometry``, ``update_params``, and ``figbox`` methods/attributes of `.SubplotDivider` have been deprecated, with similar replacements."
-msgstr ""
+msgstr "Asimismo, los métodos/atributos ``get_geometry``, ``change_geometry``, ``update_params`` y ``figbox`` de `.SubplotDivider` han quedado obsoletos, con sustituciones similares."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:56
 msgid "``is_url`` and ``URL_REGEX``"
-msgstr ""
+msgstr "``is_url`` y ``URL_REGEX``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:58
 msgid "... are deprecated. (They were previously defined in the toplevel :mod:`matplotlib` module.)"
-msgstr ""
+msgstr "... están obsoletos. (Anteriormente se definían en el módulo toplevel :mod:`matplotlib`.)"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:62
 msgid "``matplotlib.style.core`` deprecations"
-msgstr ""
+msgstr "``matplotlib.style.core`` obsolescencias"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:63
 msgid "``STYLE_FILE_PATTERN``, ``load_base_library``, and ``iter_user_libraries`` are deprecated."
-msgstr ""
+msgstr "``STYLE_FILE_PATTERN``, ``load_base_library`` y ``iter_user_libraries`` están obsoletos."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:67
 msgid "``dpi_cor`` property of `.FancyArrowPatch`"
-msgstr ""
+msgstr "propiedad ``dpi_cor`` de `.FancyArrowPatch`"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:69
 msgid "This parameter is considered internal and deprecated."
-msgstr ""
+msgstr "Este parámetro se considera interno y está obsoleto."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:72
 msgid "Passing ``boxstyle=\"custom\", bbox_transmuter=...`` to ``FancyBboxPatch``"
@@ -664,119 +664,119 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:236
 msgid "``Ship``, ``ship``,"
-msgstr ""
+msgstr "``Ship``, ``ship``,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:237
 msgid "``Error``,"
-msgstr ""
+msgstr "``Error``,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:238
 msgid "``Parser``,"
-msgstr ""
+msgstr "``Parser``,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:239
 msgid "``SHRINK_FACTOR``, ``GROW_FACTOR``,"
-msgstr ""
+msgstr "``SHRINK_FACTOR``, ``GROW_FACTOR``,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:240
 msgid "``NUM_SIZE_LEVELS``,"
-msgstr ""
+msgstr "``NUM_SIZE_LEVELS``,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:241
 msgid "``latex_to_bakoma``, ``latex_to_cmex``, ``latex_to_standard``,"
-msgstr ""
+msgstr "``latex_to_bakoma``, ``latex_to_cmex``, ``latex_to_standard``,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:242
 msgid "``stix_virtual_fonts``,"
-msgstr ""
+msgstr "``stix_virtual_fonts``,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:243
 msgid "``tex2uni``."
-msgstr ""
+msgstr "``tex2uni``."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:246
 msgid "Deprecation of various mathtext helpers"
-msgstr ""
+msgstr "Obsolescencia de varios ayudantes de mathtext"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:248
 msgid "The ``MathtextBackendPdf``, ``MathtextBackendPs``, ``MathtextBackendSvg``, and ``MathtextBackendCairo`` classes from the :mod:`.mathtext` module, as well as the corresponding ``.mathtext_parser`` attributes on ``RendererPdf``, ``RendererPS``, ``RendererSVG``, and ``RendererCairo``, are deprecated. The ``MathtextBackendPath`` class can be used to obtain a list of glyphs and rectangles in a mathtext expression, and renderer-specific logic should be directly implemented in the renderer."
-msgstr ""
+msgstr "Las clases ``MathtextBackendPdf``, ``MathtextBackendPs``, ``MathtextBackendSvg``, y ``MathtextBackendCairo`` del módulo :mod:`.mathtext`, así como los correspondientes atributos ``.mathtext_parser`` en ``RendererPdf``, ``RendererPS``, ``RendererSVG``, y ``RendererCairo``, están obsoletos. La clase ``MathtextBackendPath`` puede utilizarse para obtener una lista de glifos y rectángulos en una expresión de texto matemático, y la lógica específica del renderizador debería implementarse directamente en el renderizador."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:256
 msgid "``StandardPsFonts.pswriter`` is unused and deprecated."
-msgstr ""
+msgstr "``StandardPsFonts.pswriter`` no se utiliza y está obsoleto."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:259
 msgid "Widget class internals"
-msgstr ""
+msgstr "Clases internas de Widget"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:261
 msgid "Several `.widgets.Widget` class internals have been privatized and deprecated:"
-msgstr ""
+msgstr "Varios elementos internos de la clase `.widgets.Widget` han sido privatizados y obsoletos:"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:263
 msgid "``AxesWidget.cids``"
-msgstr ""
+msgstr "``AxesWidget.cids``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:264
 msgid "``Button.cnt`` and ``Button.observers``"
-msgstr ""
+msgstr "``Button.cnt`` y ``Button.observers``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:265
 msgid "``CheckButtons.cnt`` and ``CheckButtons.observers``"
-msgstr ""
+msgstr "``CheckButtons.cnt`` y ``CheckButtons.observers``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:266
 msgid "``RadioButtons.cnt`` and ``RadioButtons.observers``"
-msgstr ""
+msgstr "``RadioButtons.cnt`` y ``RadioButtons.observers``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:267
 msgid "``Slider.cnt`` and ``Slider.observers``"
-msgstr ""
+msgstr "``Slider.cnt`` y ``Slider.observers``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:268
 msgid "``TextBox.cnt``, ``TextBox.change_observers`` and ``TextBox.submit_observers``"
-msgstr ""
+msgstr "``TextBox.cnt``, ``TextBox.change_observers`` y ``TextBox.submit_observers``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:272
 msgid "3D properties on renderers"
-msgstr ""
+msgstr "Propiedades 3D en los renderizadores"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:274
 msgid "The properties of the 3D Axes that were placed on the Renderer during draw are now deprecated:"
-msgstr ""
+msgstr "Las propiedades de los Ejes 3D que se colocaban en el Renderizador durante el dibujo están ahora obsoletas:"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:277
 msgid "``renderer.M``"
-msgstr ""
+msgstr "``renderer.M``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:278
 msgid "``renderer.eye``"
-msgstr ""
+msgstr "``renderer.eye``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:279
 msgid "``renderer.vvec``"
-msgstr ""
+msgstr "``renderer.vvec``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:280
 msgid "``renderer.get_axis_position``"
-msgstr ""
+msgstr "``renderer.get_axis_position``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:282
 msgid "These attributes are all available via `.Axes3D`, which can be accessed via ``self.axes`` on all `.Artist`\\s."
-msgstr ""
+msgstr "Estos atributos están disponibles a través de `.Axes3D`, al que se puede acceder a través de ``self.axes`` en todos los `.Artist`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:286
 msgid "*renderer* argument of ``do_3d_projection`` method for ``Collection3D``/``Patch3D``"
-msgstr ""
+msgstr "Argumento *renderer* del método ``do_3d_projection`` para ``Collection3D``/`Patch3D``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:288
 msgid "The *renderer* argument for the ``do_3d_projection`` method on ``Collection3D`` and ``Patch3D`` is no longer necessary, and passing it during draw is deprecated."
-msgstr ""
+msgstr "El argumento *renderer* para el método ``do_3d_projection`` en ``Collection3D`` y ``Patch3D`` ya no es necesario, y pasarlo durante el dibujo está obsoleto."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:293
 msgid "*project* argument of ``draw`` method for ``Line3DCollection``"
-msgstr ""
+msgstr "Argumento *project* del método ``draw`` para ``Line3DCollection``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:295
 msgid "The *project* argument for the ``draw`` method on ``Line3DCollection`` is deprecated. Call `.Line3DCollection.do_3d_projection` explicitly instead."

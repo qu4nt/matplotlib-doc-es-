@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-23 19:55\n"
+"PO-Revision-Date: 2022-07-23 21:24\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -524,143 +524,143 @@ msgstr "parámetro/propiedad *minimumdescent* de ``TextArea``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:118
 msgid "`.offsetbox.TextArea` has behaved as if *minimumdescent* was always True (regardless of the value to which it was set) since Matplotlib 1.3, so the parameter/property is deprecated."
-msgstr ""
+msgstr "`.offsetbox.TextArea` se ha comportado como si el *descenso mínimo* fuera siempre Verdadero (independientemente del valor al que se establezca) desde Matplotlib 1.3, por lo que el parámetro/propiedad está obsoleto."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:123
 msgid "``colorbar`` now warns when the mappable's Axes is different from the current Axes"
-msgstr ""
+msgstr "``colorbar`` ahora avisa cuando los Ejes del mapeable son diferentes de los Ejes actuales"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:125
 msgid "Currently, `.Figure.colorbar` and `.pyplot.colorbar` steal space by default from the current Axes to place the colorbar. In a future version, they will steal space from the mappable's Axes instead. In preparation for this change, `.Figure.colorbar` and `.pyplot.colorbar` now emits a warning when the current Axes is not the same as the mappable's Axes."
-msgstr ""
+msgstr "Actualmente, `.Figure.colorbar` y `.pyplot.colorbar` roban espacio por defecto de los Ejes actuales para colocar la barra de colores. En una versión futura, robarán espacio de los ejes del mapeable. En preparación para este cambio, `.Figure.colorbar` y `.pyplot.colorbar` emiten ahora una advertencia cuando los Ejes actuales no son los mismos que los del mappable."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:132
 msgid "Colorbar docstrings"
-msgstr ""
+msgstr "Cadena de documentación de la barra de colores"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:134
 msgid "The following globals in :mod:`matplotlib.colorbar` are deprecated: ``colorbar_doc``, ``colormap_kw_doc``, ``make_axes_kw_doc``."
-msgstr ""
+msgstr "Los siguientes globales en :mod:`matplotlib.colorbar` son obsoletos: ``colorbar_doc``, ``colormap_kw_doc``, ``make_axes_kw_doc``."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:138
 msgid "``ColorbarPatch`` and ``colorbar_factory`` are deprecated"
-msgstr ""
+msgstr "``ColorbarPatch`` y ``colorbar_factory`` están obsoletos"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:139
 msgid "All the relevant functionality has been moved to the `~matplotlib.colorbar.Colorbar` class."
-msgstr ""
+msgstr "Toda la funcionalidad relevante ha sido trasladada a la clase `~matplotlib.colorbar.Colorbar`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:143
 msgid "Backend deprecations"
-msgstr ""
+msgstr "Obsolescencia del backend"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:145
 msgid "``FigureCanvasBase.get_window_title`` and ``FigureCanvasBase.set_window_title`` are deprecated. Use the corresponding methods on the FigureManager if using pyplot, or GUI-specific methods if embedding."
-msgstr ""
+msgstr "Los métodos ``FigureCanvasBase.get_window_title`` y ``FigureCanvasBase.set_window_title`` están obsoletos. Utiliza los métodos correspondientes en el FigureManager si usas pyplot, o los métodos específicos de la IGU si usas embedding."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:149
 msgid "The *resize_callback* parameter to ``FigureCanvasTk`` was never used internally and is deprecated. Tk-level custom event handlers for resize events can be added to a ``FigureCanvasTk`` using e.g. ``get_tk_widget().bind('<Configure>', ..., True)``."
-msgstr ""
+msgstr "El parámetro *resize_callback* de ``FigureCanvasTk`` nunca se ha utilizado internamente y está obsoleto. Se pueden añadir manejadores de eventos personalizados a nivel Tk para eventos de redimensionamiento a un ``FigureCanvasTk`` utilizando, por ejemplo, ``get_tk_widget().bind('<Configure>', ..., True)``."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:153
 msgid "The ``key_press`` and ``button_press`` methods of `.FigureManagerBase`, which incorrectly did nothing when using ``toolmanager``, are deprecated in favor of directly passing the event to the `.CallbackRegistry` via ``self.canvas.callbacks.process(event.name, event)``."
-msgstr ""
+msgstr "Los métodos ``key_press`` y ``button_press`` de `.FigureManagerBase`, que incorrectamente no hacían nada cuando se usaba ``toolmanager``, están obsoletos en favor de pasar directamente el evento a `.CallbackRegistry` vía ``self.canvas.callbacks.process(event.name, event)``."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:157
 msgid "``RendererAgg.get_content_extents`` and ``RendererAgg.tostring_rgba_minimized`` are deprecated."
-msgstr ""
+msgstr "``RendererAgg.get_content_extents`` y ``RendererAgg.tostring_rgba_minimized`` están obsoletos."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:159
 msgid "``backend_pgf.TmpDirCleaner`` is deprecated, with no replacement."
-msgstr ""
+msgstr "``backend_pgf.TmpDirCleaner`` está obsoleto, sin reemplazo."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:160
 msgid "``GraphicsContextPS`` is deprecated. The PostScript backend now uses `.GraphicsContextBase`."
-msgstr ""
+msgstr "``GraphicsContextPS`` está obsoleto. El backend PostScript utiliza ahora `.GraphicsContextBase`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:164
 msgid "wx backend cleanups"
-msgstr ""
+msgstr "limpieza del backend de wx"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:166
 msgid "The *origin* parameter to ``_FigureCanvasWxBase.gui_repaint`` is deprecated with no replacement; ``gui_repaint`` now automatically detects the case where it is used with the wx renderer."
-msgstr ""
+msgstr "El parámetro *origin* de ``_FigureCanvasWxBase.gui_repaint`` está obsoleto y no tiene reemplazo; ``gui_repaint`` ahora detecta automáticamente el caso en que se usa con el renderizador wx."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:170
 msgid "The ``NavigationToolbar2Wx.get_canvas`` method is deprecated; directly instantiate a canvas (``FigureCanvasWxAgg(frame, -1, figure)``) if needed."
-msgstr ""
+msgstr "El método ``NavigationToolbar2Wx.get_canvas`` está obsoleto; instancie directamente un lienzo (``FigureCanvasWxAgg(frame, -1, figure)``) si lo necesita."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:174
 msgid "Unused positional parameters to ``print_<fmt>`` methods are deprecated"
-msgstr ""
+msgstr "Los parámetros posicionales no utilizados en los métodos ``print_<fmt>`` están obsoletos"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:176
 msgid "None of the ``print_<fmt>`` methods implemented by canvas subclasses used positional arguments other that the first (the output filename or file-like), so these extra parameters are deprecated."
-msgstr ""
+msgstr "Ninguno de los métodos ``print_<fmt>`` implementados por las subclases de canvas utilizaba argumentos posicionales distintos del primero (el filename de salida o file-like), por lo que estos parámetros extra están obsoletos."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:181
 msgid "The *dpi* parameter of ``FigureCanvas.print_foo`` printers is deprecated"
-msgstr ""
+msgstr "El parámetro *dpi* de la impresora ``FigureCanvas.print_foo`` está obsoleto"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:183
 msgid "The `~.Figure.savefig` machinery already took care of setting the figure DPI to the desired value, so ``print_foo`` can directly read it from there. Not passing *dpi* to ``print_foo`` allows clearer detection of unused parameters passed to `~.Figure.savefig`."
-msgstr ""
+msgstr "La maquinaria de `~.Figure.savefig` ya se encargó de establecer el DPI de la figura al valor deseado, por lo que ``print_foo`` puede leerlo directamente desde allí. No pasar *dpi* a ``print_foo`` permite una detección más clara de los parámetros no utilizados pasados a `~.Figure.savefig`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:189
 msgid "Passing `bytes` to ``FT2Font.set_text``"
-msgstr ""
+msgstr "Pasando `bytes` a ``FT2Font.set_text``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:191
 msgid "... is deprecated, pass `str` instead."
-msgstr ""
+msgstr "... está obsoleto, pasa `str` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:194
 msgid "``ps.useafm`` deprecated for mathtext"
-msgstr ""
+msgstr "``ps.useafm`` obsoleto para mathtext"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:196
 msgid "Outputting mathtext using only standard PostScript fonts has likely been broken for a while (issue `#18722 <https://github.com/matplotlib/matplotlib/issues/18722>`_). In Matplotlib 3.5, the setting :rc:`ps.useafm` will have no effect on mathtext."
-msgstr ""
+msgstr "La salida de mathtext usando sólo fuentes PostScript estándar probablemente ha estado rota durante un tiempo (incidencia `#18722 <https://github.com/matplotlib/matplotlib/issues/18722>`_). En Matplotlib 3.5, el ajuste :rc:`ps.useafm` no tendrá efecto en mathtext."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:202
 msgid "``MathTextParser(\"bitmap\")`` is deprecated"
-msgstr ""
+msgstr "``MathTextParser(\"bitmap\")`` está obsoleto"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:204
 msgid "The associated APIs ``MathtextBackendBitmap``, ``MathTextParser.to_mask``, ``MathTextParser.to_rgba``, ``MathTextParser.to_png``, and ``MathTextParser.get_depth`` are likewise deprecated."
-msgstr ""
+msgstr "Las APIs asociadas ``MathtextBackendBitmap``, ``MathTextParser.to_mask``, ``MathTextParser.to_rgba``, ``MathTextParser.to_png``, y ``MathTextParser.get_depth`` son igualmente obsoletas."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:208
 msgid "To convert a text string to an image, either directly draw the text to an empty `.Figure` and save the figure using a tight bbox, as demonstrated in :doc:`/gallery/text_labels_and_annotations/mathtext_asarray`, or use `.mathtext.math_to_image`."
-msgstr ""
+msgstr "Para convertir una cadena de texto en una imagen, dibuje directamente el texto en un `.Figure` vacío y guarde la figura utilizando un bbox ajustado, como se demuestra en :doc:`/gallery/text_labels_and_annotations/mathtext_asarray`, o utilice `.mathtext.math_to_image`."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:213
 msgid "When using `.math_to_image`, text color can be set with e.g.::"
-msgstr ""
+msgstr "Cuando se utiliza `.math_to_image`, el color del texto se puede establecer, por ejemplo, con.::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:218
 msgid "and an RGBA array can be obtained with e.g.::"
-msgstr ""
+msgstr "y un arreglo RGBA puede obtenerse, por ejemplo, con.::"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:227
 msgid "Deprecation of mathtext internals"
-msgstr ""
+msgstr "Obsolescencia de las funciones internas de mathtext"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:229
 msgid "The following API elements previously exposed by the :mod:`.mathtext` module are considered to be implementation details and public access to them is deprecated:"
-msgstr ""
+msgstr "Los siguientes elementos de la API expuestos anteriormente por el módulo :mod:`.mathtext` se consideran detalles de implementación y el acceso público a ellos queda obsoleto:"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:233
 msgid "``Fonts`` and all its subclasses,"
-msgstr ""
+msgstr "``Fonts`` y todas sus subclases,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:234
 msgid "``FontConstantsBase`` and all its subclasses,"
-msgstr ""
+msgstr "``FontConstantsBase`` y todas sus subclases,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:235
 msgid "``Node`` and all its subclasses,"
-msgstr ""
+msgstr "``Nodo`` y todas sus subclases,"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:236
 msgid "``Ship``, ``ship``,"
@@ -780,51 +780,51 @@ msgstr "Argumento *project* del método ``draw`` para ``Line3DCollection``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:295
 msgid "The *project* argument for the ``draw`` method on ``Line3DCollection`` is deprecated. Call `.Line3DCollection.do_3d_projection` explicitly instead."
-msgstr ""
+msgstr "El argumento *project* para el método ``draw`` en ``Line3DCollection`` está obsoleto. invoca a `.Line3DCollection.do_3d_projection` explícitamente en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:299
 msgid "Extra positional parameters to ``plot_surface`` and ``plot_wireframe``"
-msgstr ""
+msgstr "Parámetros de posición adicionales para ``plot_surface`` y ``plot_wireframe``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:301
 msgid "Positional parameters to `~.axes3d.Axes3D.plot_surface` and `~.axes3d.Axes3D.plot_wireframe` other than ``X``, ``Y``, and ``Z`` are deprecated. Pass additional artist properties as keyword arguments instead."
-msgstr ""
+msgstr "Los parámetros de posición para `~.axes3d.Axes3D.plot_surface` y `~.axes3d.Axes3D.plot_wireframe` que no sean ``X``, ``Y`` y ``Z`` están obsoletos. En su lugar, pase las propiedades adicionales del artist como argumentos de palabra clave."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:306
 msgid "``ParasiteAxesAuxTransBase`` class"
-msgstr ""
+msgstr "Clase ``ParasiteAxesAuxTransBase``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:308
 msgid "The functionality of that mixin class has been moved to the base ``ParasiteAxesBase`` class. Thus, ``ParasiteAxesAuxTransBase``, ``ParasiteAxesAuxTrans``, and ``parasite_axes_auxtrans_class_factory`` are deprecated."
-msgstr ""
+msgstr "La funcionalidad de esa clase mixin se ha trasladado a la clase base ``ParasiteAxesBase``. Por lo tanto, ``ParasiteAxesAuxTransBase``, ``ParasiteAxesAuxTrans``, y ``parasite_axes_auxtrans_class_factory`` están obsoletos."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:313
 msgid "In general, it is suggested to use ``HostAxes.get_aux_axes`` to create parasite Axes, as this saves the need of manually appending the parasite to ``host.parasites`` and makes sure that their ``remove()`` method works properly."
-msgstr ""
+msgstr "En general, se sugiere utilizar ``HostAxes.get_aux_axes`` para crear ejes parásitos, ya que esto ahorra la necesidad de añadir manualmente el parásito a ``host.parasites`` y asegura que su método ``remove()`` funciona correctamente."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:319
 msgid "``AxisArtist.ZORDER`` attribute"
-msgstr ""
+msgstr "Atributo ``AxisArtist.ZORDER``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:321
 msgid "Use ``AxisArtist.zorder`` instead."
-msgstr ""
+msgstr "Utiliza ``AxisArtist.zorder`` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:324
 msgid "``GridHelperBase`` invalidation"
-msgstr ""
+msgstr "``GridHelperBase`` invalidación"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:326
 msgid "The ``GridHelperBase.invalidate``, ``GridHelperBase.valid``, and ``axislines.Axes.invalidate_grid_helper`` methods are considered internal and deprecated."
-msgstr ""
+msgstr "Los métodos ``GridHelperBase.invalidate``, ``GridHelperBase.valid`` y ``axislines.Axes.invalidate_grid_helper`` se consideran internos y obsoletos."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:331
 msgid "``sphinext.plot_directive.align``"
-msgstr ""
+msgstr "``sphinext.plot_directive.align``"
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:333
 msgid "... is deprecated. Use ``docutils.parsers.rst.directives.images.Image.align`` instead."
-msgstr ""
+msgstr "... está obsoleto. Utiliza ``docutils.parsers.rst.directives.images.Image.align`` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.4.0/deprecations.rst:337
 msgid "Deprecation-related functionality is considered internal"

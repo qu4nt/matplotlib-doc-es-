@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-25 19:47\n"
+"PO-Revision-Date: 2022-07-25 21:09\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -52,111 +52,111 @@ msgstr "Ahora, los hijos ya no están separados por tipo, y las propiedades de l
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:33
 msgid "Modification of the following sublists is still accepted, but deprecated:"
-msgstr ""
+msgstr "La modificación de las siguientes sublistas sigue siendo aceptada, pero está obsoleta:"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:35
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:24
 msgid "``Axes.artists``"
-msgstr ""
+msgstr "``Axes.artists``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:36
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:25
 msgid "``Axes.collections``"
-msgstr ""
+msgstr "``Axes.collections``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:37
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:26
 msgid "``Axes.images``"
-msgstr ""
+msgstr "``Axes.images``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:38
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:27
 msgid "``Axes.lines``"
-msgstr ""
+msgstr "``Axes.lines``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:39
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:28
 msgid "``Axes.patches``"
-msgstr ""
+msgstr "``Axes.patches``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:40
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:29
 msgid "``Axes.tables``"
-msgstr ""
+msgstr "``Axes.tables``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:41
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:30
 msgid "``Axes.texts``"
-msgstr ""
+msgstr "``Axes.texts``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:43
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:32
 msgid "To remove an Artist, use its `.Artist.remove` method. To add an Artist, use the corresponding ``Axes.add_*`` method."
-msgstr ""
+msgstr "Para eliminar un artist, utiliza su método `.Artist.remove`. Para añadir un Artist, utiliza el método correspondiente ``Axes.add_*``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:47
 msgid "``MatplotlibDeprecationWarning`` now subclasses ``DeprecationWarning``"
-msgstr ""
+msgstr "``MatplotlibDeprecationWarning`` ahora subclase ``DeprecationWarning``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:49
 msgid "Historically, it has not been possible to filter `.MatplotlibDeprecationWarning`\\s by checking for `DeprecationWarning`, since we subclass `UserWarning` directly."
-msgstr ""
+msgstr "Históricamente, no ha sido posible filtrar `.MatplotlibDeprecationWarning` comprobando `DeprecationWarning`, ya que subclasificamos `UserWarning` directamente."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:53
 msgid "The decision to not subclass `DeprecationWarning` has to do with a decision from core Python in the 2.x days to not show `DeprecationWarning`\\s to users. However, there is now a more sophisticated filter in place (see https://www.python.org/dev/peps/pep-0565/)."
-msgstr ""
+msgstr "La decisión de no subclasificar `DeprecationWarning` tiene que ver con una decisión del núcleo de Python en los días de la 2.x de no mostrar `DeprecationWarning` a los usuarios. Sin embargo, ahora hay un filtro más sofisticado (ver https://www.python.org/dev/peps/pep-0565/)."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:58
 msgid "Users will now see `.MatplotlibDeprecationWarning` only during interactive sessions, and these can be silenced by the standard mechanism:"
-msgstr ""
+msgstr "Los usuarios verán ahora `.MatplotlibDeprecationWarning` sólo durante las sesiones interactivas, y éstas pueden ser silenciadas por el mecanismo estándar:"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:65
 msgid "Library authors must now enable `DeprecationWarning`\\s explicitly in order for (non-interactive) CI/CD pipelines to report back these warnings, as is standard for the rest of the Python ecosystem:"
-msgstr ""
+msgstr "Los autores de las librerías deben ahora habilitar explícitamente los `DeprecationWarning` para que los pipelines CI/CD (no interactivos) informen de estas advertencias, como es habitual en el resto del ecosistema Python:"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:74
 msgid "``Artist.set`` applies artist properties in the order in which they are given"
-msgstr ""
+msgstr "``Artist.set`` aplica las propiedades del artist en el orden en que se dan"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:76
 msgid "The change only affects the interaction between the *color*, *edgecolor*, *facecolor*, and (for `.Collection`\\s) *alpha* properties: the *color* property now needs to be passed first in order not to override the other properties. This is consistent with e.g. `.Artist.update`, which did not reorder the properties passed to it."
-msgstr ""
+msgstr "El cambio sólo afecta a la interacción entre las propiedades *color*, *edgecolor*, *facecolor* y (para `.Collection`s) *alpha*: la propiedad *color* debe pasarse primero para no sobreescribir las demás propiedades. Esto es coherente con, por ejemplo, `.Artist.update`, que no reordena las propiedades que se le pasan."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:83
 msgid "``pcolor(mesh)`` shading defaults to auto"
-msgstr ""
+msgstr "``pcolor(mesh)`` sombreado por defecto en auto"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:85
 msgid "The *shading* keyword argument for `.Axes.pcolormesh` and `.Axes.pcolor` default has been changed to 'auto'."
-msgstr ""
+msgstr "El argumento de la palabra clave *shading* para `.Axes.pcolormesh` y `.Axes.pcolor` por defecto ha sido cambiado a 'auto'."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:88
 msgid "Passing ``Z(M, N)``, ``x(N)``, ``y(M)`` to ``pcolormesh`` with ``shading='flat'`` will now raise a `TypeError`. Use ``shading='auto'`` or ``shading='nearest'`` for ``x`` and ``y`` to be treated as cell centers, or drop the last column and row of ``Z`` to get the old behaviour with ``shading='flat'``."
-msgstr ""
+msgstr "Al pasar ``Z(M, N)``, ``x(N)``, ``y(M)`` a ``pcolormesh`` con ``shading='flat'`` se producirá un `TypeError`. Utiliza ``shading='auto'`` o ``shading='nearest'`` para que ``x`` y ``y`` sean tratados como centros de celdas, o elimina la última columna y fila de ``Z`` para obtener el antiguo comportamiento con ``shading='flat'``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:95
 msgid "Colorbars now have pan and zoom functionality"
-msgstr ""
+msgstr "Las barras de color tienen ahora la función de desplazamiento y zoom"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:97
 msgid "Interactive plots with colorbars can now be zoomed and panned on the colorbar axis. This adjusts the *vmin* and *vmax* of the `.ScalarMappable` associated with the colorbar. This is currently only enabled for continuous norms. Norms used with ``contourf`` and categoricals, such as `.BoundaryNorm` and `.NoNorm`, have the interactive capability disabled by default. `cb.ax.set_navigate() <.Axes.set_navigate>` can be used to set whether a colorbar axes is interactive or not."
-msgstr ""
+msgstr "Los gráficos interactivos con barras de color pueden ahora ser ampliados y desplazados en el eje de la barra de color. Esto ajusta el *vmin* y *vmax* del `.ScalarMappable` asociado con la barra de colores. Actualmente, esto sólo está habilitado para las normas continuas. Las normas utilizadas con ``contourf`` y categóricas, como `.BoundaryNorm` y `.NoNorm`, tienen la capacidad interactiva desactivada por defecto. Se puede utilizar `cb.ax.set_navigate() <.Axes.set_navigate>` para establecer si un eje de la barra de color es interactivo o no."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:106
 msgid "Colorbar lines no longer clipped"
-msgstr ""
+msgstr "Las líneas de la barra de color ya no se recortan"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:108
 msgid "If a colorbar has lines added to it (e.g. for contour lines), these will no longer be clipped. This is an improvement for lines on the edge of the colorbar, but could lead to lines off the colorbar if the limits of the colorbar are changed."
-msgstr ""
+msgstr "Si una barra de color tiene líneas añadidas (por ejemplo, para las líneas de contorno), éstas ya no se recortarán. Esto es una mejora para las líneas en el borde de la barra de colores, pero podría dar lugar a líneas fuera de la barra de colores si se modifican los límites de la misma."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:114
 msgid "``Figure.suppressComposite`` now also controls compositing of Axes images"
-msgstr ""
+msgstr "``Figure.suppressComposite`` ahora también controla la composición de las imágenes de los ejes"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:117
 msgid "The output of ``NonUniformImage`` and ``PcolorImage`` has changed"
-msgstr ""
+msgstr "La salida de ``NonUniformImage`` y ``PcolorImage`` ha cambiado"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:119
 msgid "Pixel-level differences may be observed in images generated using `.NonUniformImage` or `.PcolorImage`, typically for pixels exactly at the boundary between two data cells (no user-facing axes method currently generates `.NonUniformImage`\\s, and only `.pcolorfast` can generate `.PcolorImage`\\s). These artists are also now slower, normally by ~1.5x but sometimes more (in particular for ``NonUniformImage(interpolation=\"bilinear\")``. This slowdown arises from fixing occasional floating point inaccuracies."

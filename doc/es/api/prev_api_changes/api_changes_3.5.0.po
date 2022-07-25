@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-24 21:32\n"
+"PO-Revision-Date: 2022-07-25 15:38\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -244,123 +244,123 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:217
 msgid "``Text`` and ``TextBox`` added *parse_math* option"
-msgstr ""
+msgstr "``Text`` y ``TextBox`` han añadido la opción *parse_math*"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:219
 msgid "`.Text` and `.TextBox` objects now allow a *parse_math* keyword-only argument which controls whether math should be parsed from the displayed string. If *True*, the string will be parsed as a math text object. If *False*, the string will be considered a literal and no parsing will occur."
-msgstr ""
+msgstr "Los objetos `.Text` y `.TextBox` permiten ahora un argumento de palabra clave *parse_math* que controla si las matemáticas deben ser analizadas desde la cadena mostrada. Si es *True*, la cadena será analizada como un objeto de texto matemático. Si es *False*, la cadena se considerará un literal y no se realizará ningún análisis."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:224
 msgid "For `.Text`, this argument defaults to *True*. For `.TextBox` this argument defaults to *False*."
-msgstr ""
+msgstr "Para `.Text`, este argumento por defecto es *True*. Para `.TextBox` este argumento por defecto es *False*."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:228
 msgid "``Type1Font`` objects now decrypt the encrypted part"
-msgstr ""
+msgstr "Los objetos ``Type1Font`` ahora descifran la parte cifrada"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:230
 msgid "Type 1 fonts have a large part of their code encrypted as an obsolete copy-protection measure. This part is now available decrypted as the ``decrypted`` attribute of `~.type1font.Type1Font`. This decrypted data is not yet parsed, but this is a prerequisite for implementing subsetting."
-msgstr ""
+msgstr "Las fuentes Type 1 tienen una gran parte de su código encriptado como una medida obsoleta de protección anticopia. Esta parte está ahora disponible descifrada como el atributo ``descifrado`` de `~.type1font.Type1Font`. Estos datos descifrados aún no se analizan, pero es un requisito previo para implementar el subconjunto."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:236
 msgid "3D contourf polygons placed between levels"
-msgstr ""
+msgstr "Polígonos de contorno 3D colocados entre niveles"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:238
 msgid "The polygons used in a 3D `~mpl_toolkits.mplot3d.Axes3D.contourf` plot are now placed halfway between the contour levels, as each polygon represents the location of values that lie between two levels."
-msgstr ""
+msgstr "Los polígonos utilizados en un gráfico 3D `~mpl_toolkits.mplot3d.Axes3D.contourf` se colocan ahora a mitad de camino entre los niveles de contorno, ya que cada polígono representa la ubicación de los valores que se encuentran entre dos niveles."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:243
 msgid "``AxesDivider`` now defaults to rcParams-specified pads"
-msgstr ""
+msgstr "``AxesDivider`` ahora por defecto a los pads especificados en rcParams"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:245
 msgid "`.AxesDivider.append_axes`, `.AxesDivider.new_horizontal`, and `.AxesDivider.new_vertical` now default to paddings specified by :rc:`figure.subplot.wspace` and :rc:`figure.subplot.hspace` rather than zero."
-msgstr ""
+msgstr "`.AxesDivider.append_axes`, `.AxesDivider.new_horizontal`, y `.AxesDivider.new_vertical` ahora se ajustan por defecto a los paddings especificados por :rc:`figure.subplot.wspace` y :rc:`figure.subplot.hspace` en lugar de cero."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:2
 msgid "Deprecations"
-msgstr ""
+msgstr "Obsolescencias"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:5
 msgid "Discouraged: ``Figure`` parameters *tight_layout* and *constrained_layout*"
-msgstr ""
+msgstr "Desaconsejados: parámetros ``Figure`` *tight_layout* y *constrained_layout*"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:7
 msgid "The ``Figure`` parameters *tight_layout* and *constrained_layout* are triggering competing layout mechanisms and thus should not be used together."
-msgstr ""
+msgstr "Los parámetros ``Figure`` *tight_layout* y *constrained_layout* activan mecanismos de diseño que compiten entre sí y, por tanto, no deben utilizarse juntos."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:10
 msgid "To make the API clearer, we've merged them under the new parameter *layout* with values 'constrained' (equal to ``constrained_layout=True``), 'tight' (equal to ``tight_layout=True``). If given, *layout* takes precedence."
-msgstr ""
+msgstr "Para que la API sea más clara, los hemos fusionado bajo el nuevo parámetro *layout* con los valores 'constrained' (igual a ``constrained_layout=True``), 'tight' (igual a ``tight_layout=True``). Si se da, *layout* tiene prioridad."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:14
 msgid "The use of *tight_layout* and *constrained_layout* is discouraged in favor of *layout*. However, these parameters will stay available for backward compatibility."
-msgstr ""
+msgstr "Se desaconseja el uso de *tight_layout* y *constrained_layout* en favor de *layout*. Sin embargo, estos parámetros seguirán estando disponibles por compatibilidad con versiones anteriores."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:19
 msgid "Modification of ``Axes`` children sublists"
-msgstr ""
+msgstr "Modificación de las sublistas de hijos de ``Axes``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:21
 msgid "See :ref:`Behavioural API Changes 3.5 - Axes children combined` for more information; modification of the following sublists is deprecated:"
-msgstr ""
+msgstr "Ver :ref:`Cambios en la API de comportamiento 3.5 - Ejes hijos combinados` para más información; la modificación de las siguientes sublistas está obsoleta:"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:36
 msgid "Passing incorrect types to ``Axes.add_*`` methods"
-msgstr ""
+msgstr "Pasar tipos incorrectos a los métodos ``Axes.add_*``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:38
 msgid "The following ``Axes.add_*`` methods will now warn if passed an unexpected type. See their documentation for the types they expect."
-msgstr ""
+msgstr "Los siguientes métodos ``Axes.add_*`` ahora avisarán si se les pasa un tipo inesperado. Consulta su documentación para conocer los tipos que esperan."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:41
 msgid "`.Axes.add_collection`"
-msgstr ""
+msgstr "`.Axes.add_collection`"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:42
 msgid "`.Axes.add_image`"
-msgstr ""
+msgstr "`.Axes.add_image`"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:43
 msgid "`.Axes.add_line`"
-msgstr ""
+msgstr "`.Axes.add_line`"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:44
 msgid "`.Axes.add_patch`"
-msgstr ""
+msgstr "`.Axes.add_patch`"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:45
 msgid "`.Axes.add_table`"
-msgstr ""
+msgstr "`.Axes.add_table`"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:48
 msgid "Discouraged: ``plot_date``"
-msgstr ""
+msgstr "Descartado: ``plot_date``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:50
 msgid "The use of `~.Axes.plot_date` is discouraged. This method exists for historic reasons and may be deprecated in the future."
-msgstr ""
+msgstr "Se desaconseja el uso de `~.Axes.plot_date`. Este método existe por razones históricas y puede quedar obsoleto en el futuro."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:53
 msgid "``datetime``-like data should directly be plotted using `~.Axes.plot`."
-msgstr ""
+msgstr "Los datos de tipo ``datetime`` deben representarse directamente con `~.Axes.plot`."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:54
 msgid "If you need to plot plain numeric data as :ref:`date-format` or need to set a timezone, call ``ax.xaxis.axis_date`` / ``ax.yaxis.axis_date`` before `~.Axes.plot`. See `.Axis.axis_date`."
-msgstr ""
+msgstr "Si necesita trazar datos numéricos planos como :ref:`date-format` o necesita establecer una zona horaria, invoca ``ax.xaxis.axis_date`` / ``ax.yaxis.axis_date`` antes de `~.Axes.plot`. Ver `.Axis.axis_date`."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:59
 msgid "``epoch2num`` and ``num2epoch`` are deprecated"
-msgstr ""
+msgstr "``epoch2num`` y ``num2epoch`` están obsoletos"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:61
 msgid "These methods convert from unix timestamps to matplotlib floats, but are not used internally to matplotlib, and should not be needed by end users. To convert a unix timestamp to datetime, simply use `datetime.datetime.utcfromtimestamp`, or to use NumPy `~numpy.datetime64` ``dt = np.datetim64(e*1e6, 'us')``."
-msgstr ""
+msgstr "Estos métodos convierten las marcas de tiempo unix en flotantes de matplotlib, pero no se utilizan internamente en matplotlib, y no deberían ser necesarios para los usuarios finales. Para convertir una marca de tiempo unix a datetime, simplemente use `datetime.datetime.utcfromtimestamp`, o para usar NumPy `~numpy.datetime64` ``dt = np.datetim64(e*1e6, 'us')``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:68
 msgid "Auto-removal of grids by `~.Axes.pcolor` and `~.Axes.pcolormesh`"
-msgstr ""
+msgstr "Eliminación automática de mallas por `~.Axes.pcolor` y `~.Axes.pcolormesh`"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:70
 msgid "`~.Axes.pcolor` and `~.Axes.pcolormesh` currently remove any visible axes major grid. This behavior is deprecated; please explicitly call ``ax.grid(False)`` to remove the grid."

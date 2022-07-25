@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-25 21:09\n"
+"PO-Revision-Date: 2022-07-25 22:18\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -160,87 +160,87 @@ msgstr "La salida de ``NonUniformImage`` y ``PcolorImage`` ha cambiado"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:119
 msgid "Pixel-level differences may be observed in images generated using `.NonUniformImage` or `.PcolorImage`, typically for pixels exactly at the boundary between two data cells (no user-facing axes method currently generates `.NonUniformImage`\\s, and only `.pcolorfast` can generate `.PcolorImage`\\s). These artists are also now slower, normally by ~1.5x but sometimes more (in particular for ``NonUniformImage(interpolation=\"bilinear\")``. This slowdown arises from fixing occasional floating point inaccuracies."
-msgstr ""
+msgstr "Pueden observarse diferencias a nivel de píxel en las imágenes generadas con `.NonUniformImage` o `.PcolorImage`, normalmente para los píxeles que se encuentran exactamente en el límite entre dos celdas de datos (ningún método de ejes orientados al usuario genera actualmente `.NonUniformImage`, y sólo `.pcolorfast` puede generar `.PcolorImage`). Estos artistas también son ahora más lentos, normalmente por ~1,5x pero a veces más (en particular para ``NonUniformImage(interpolation=\"bilinear\")``. Esta ralentización se debe a la corrección de imprecisiones ocasionales en el punto flotante."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:128
 msgid "Change of the (default) legend handler for ``Line2D`` instances"
-msgstr ""
+msgstr "Cambio del manejador de leyendas (por defecto) para las instancias de ``Line2D``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:130
 msgid "The default legend handler for Line2D instances (`.HandlerLine2D`) now consistently exposes all the attributes and methods related to the line marker (:ghissue:`11358`). This makes it easy to change the marker features after instantiating a legend."
-msgstr ""
+msgstr "El manejador de leyendas por defecto para las instancias de Line2D (`.HandlerLine2D`) expone ahora de forma consistente todos los atributos y métodos relacionados con el marcador de línea (:ghissue:`11358`). Esto facilita el cambio de las características del marcador después de instanciar una leyenda."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:147
 msgid "The former legend handler for Line2D objects has been renamed `.HandlerLine2DCompound`. To revert to the previous behaviour, one can use"
-msgstr ""
+msgstr "El antiguo manejador de leyendas para objetos Line2D ha sido renombrado como `.HandlerLine2DCompound`. Para volver al comportamiento anterior, se puede utilizar"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:159
 msgid "Setting ``Line2D`` marker edge/face color to *None* use rcParams"
-msgstr ""
+msgstr "Establecer el color de arista/cara del marcador ``Line2D`` a *None* use rcParams"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:161
 msgid "``Line2D.set_markeredgecolor(None)`` and ``Line2D.set_markerfacecolor(None)`` now set the line property using the corresponding rcParam (:rc:`lines.markeredgecolor` and :rc:`lines.markerfacecolor`). This is consistent with other `.Line2D` property setters."
-msgstr ""
+msgstr "``Line2D.set_markeredgecolor(None)`` y ``Line2D.set_markerfacecolor(None)`` ahora establecen la propiedad de la línea utilizando el correspondiente rcParam (:rc:`lines.markeredgecolor` y :rc:`lines.markerfacecolor`). Esto es coherente con otros definidores de propiedades `.Line2D`."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:167
 msgid "Default theta tick locations for wedge polar plots have changed"
-msgstr ""
+msgstr "Se han modificado las ubicaciones predeterminadas del tick de theta para los gráficos polares de cuña"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:169
 msgid "For polar plots that don't cover a full circle, the default theta tick locations are now at multiples of 10°, 15°, 30°, 45°, 90°, rather than using values that mostly make sense for linear plots (20°, 25°, etc.)."
-msgstr ""
+msgstr "Para los gráficos polares que no cubren un círculo completo, las ubicaciones de las marcas theta por defecto están ahora en múltiplos de 10°, 15°, 30°, 45°, 90°, en lugar de utilizar valores que en su mayoría tienen sentido para los gráficos lineales (20°, 25°, etc.)."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:174
 msgid "``axvspan`` now plots full wedges in polar plots"
-msgstr ""
+msgstr "``axvspan`` ahora grafica cuñas completas en los gráficos polares"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:176
 msgid "... rather than triangles."
-msgstr ""
+msgstr "... en lugar de triángulos."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:179
 msgid "Convenience converter from ``Scale`` to ``Normalize`` now public"
-msgstr ""
+msgstr "Convertidor de conveniencia de ``Escala`` a ``Normalizar`` ahora público"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:181
 msgid "Downstream libraries can take advantage of `.colors.make_norm_from_scale` to create a `~.colors.Normalize` subclass directly from an existing scale. Usually norms have a scale, and the advantage of having a  `~.scale.ScaleBase` attached to a norm is to provide a scale, and associated tick locators and formatters, for the colorbar."
-msgstr ""
+msgstr "Las bibliotecas posteriores pueden aprovechar `.colors.make_norm_from_scale` para crear una subclase `~.colors.Normalize` directamente a partir de una escala existente. Normalmente las normas tienen una escala, y la ventaja de tener una `~.scale.ScaleBase` adjunta a una norma es proporcionar una escala, y los localizadores de tick y formateadores asociados, para la barra de colores."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:188
 msgid "``ContourSet`` always use ``PathCollection``"
-msgstr ""
+msgstr "``ContourSet`` siempre utiliza ``PathCollection``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:190
 msgid "In order to correct rendering issues with closed loops, the `.ContourSet` now creates a `.PathCollection` instead of a `.LineCollection` for line contours. This type matches the artist used for filled contours."
-msgstr ""
+msgstr "Para corregir las incidencias de renderizado con bucles cerrados, el `.ContourSet` crea ahora una `.PathCollection` en lugar de una `.LineCollection` para los contornos de línea. Este tipo corresponde con el artist utilizado para los contornos rellenos."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:194
 msgid "This affects `.ContourSet` itself and its subclasses, `.QuadContourSet` (returned by `.Axes.contour`), and `.TriContourSet` (returned by `.Axes.tricontour`)."
-msgstr ""
+msgstr "Esto afecta al propio `.ContourSet` y a sus subclases, `.QuadContourSet` (devuelto por `.Axes.contour`), y `.TriContourSet` (devuelto por `.Axes.tricontour`)."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:199
 msgid "``hatch.SmallFilledCircles`` inherits from ``hatch.Circles``"
-msgstr ""
+msgstr "``hatch.SmallFilledCircles`` hereda de ``hatch.Circles``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:201
 msgid "The ``hatch.SmallFilledCircles`` class now inherits from ``hatch.Circles`` rather than from ``hatch.SmallCircles``."
-msgstr ""
+msgstr "La clase ``hatch.SmallFilledCircles`` ahora hereda de ``hatch.Circles`` en lugar de ``hatch.SmallCircles``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:205
 msgid "hexbin with a log norm"
-msgstr ""
+msgstr "hexbin con norma logarítmica"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:207
 msgid "`~.axes.Axes.hexbin` no longer (incorrectly) adds 1 to every bin value if a log norm is being used."
-msgstr ""
+msgstr "`~.axes.Axes.hexbin` ya no añade (de forma incorrecta) 1 a cada valor de intervalo si se utiliza una norma logarítmica."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:211
 msgid "Setting invalid ``rcParams[\"date.converter\"]`` now raises ValueError"
-msgstr ""
+msgstr "Establecer un valor inválido ``rcParams[\"date.converter\"]`` ahora plantea ValueError"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:213
 msgid "Previously, invalid values passed to :rc:`date.converter` would be ignored with a `UserWarning`, but now raise `ValueError`."
-msgstr ""
+msgstr "Antes, los valores no válidos pasados a :rc:`date.converter` se ignoraban con un `UserWarning`, pero ahora plantea `ValueError`."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/behaviour.rst:217
 msgid "``Text`` and ``TextBox`` added *parse_math* option"
@@ -604,79 +604,79 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:227
 msgid "``NavigationToolbar2.set_cursor`` and ``backend_tools.SetCursorBase.set_cursor``"
-msgstr ""
+msgstr "``NavigationToolbar2.set_cursor`` y ``backend_tools.SetCursorBase.set_cursor``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:229
 msgid "Instead, use the `.FigureCanvasBase.set_cursor` method on the canvas (available as the ``canvas`` attribute on the toolbar or the Figure.)"
-msgstr ""
+msgstr "En su lugar, utiliza el método `.FigureCanvasBase.set_cursor` en el canvas (disponible como el atributo ``canvas`` en la barra de herramientas o la figura.)"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:233
 msgid "``backend_tools.SetCursorBase`` and subclasses"
-msgstr ""
+msgstr "``backend_tools.SetCursorBase`` y subclases"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:235
 msgid "``backend_tools.SetCursorBase`` was subclassed to provide backend-specific implementations of ``set_cursor``. As that is now deprecated, the subclassing is no longer necessary. Consequently, the following subclasses are also deprecated:"
-msgstr ""
+msgstr "``backend_tools.SetCursorBase`` fue subclasificado para proporcionar implementaciones específicas del backend de ``set_cursor``. Como esto ya está obsoleto, la subclase ya no es necesaria. En consecuencia, las siguientes subclases también están obsoletas:"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:240
 msgid "``matplotlib.backends.backend_gtk3.SetCursorGTK3``"
-msgstr ""
+msgstr "``matplotlib.backends.backend_gtk3.SetCursorGTK3``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:241
 msgid "``matplotlib.backends.backend_qt5.SetCursorQt``"
-msgstr ""
+msgstr "``matplotlib.backends.backend_qt5.SetCursorQt``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:242
 msgid "``matplotlib.backends._backend_tk.SetCursorTk``"
-msgstr ""
+msgstr "``matplotlib.backends._backend_tk.SetCursorTk``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:243
 msgid "``matplotlib.backends.backend_wx.SetCursorWx``"
-msgstr ""
+msgstr "``matplotlib.backends.backend_wx.SetCursorWx``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:245
 msgid "Instead, use the `.backend_tools.ToolSetCursor` class."
-msgstr ""
+msgstr "En su lugar, utiliza la clase `.backend_tools.ToolSetCursor`."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:248
 msgid "``cursord`` in GTK, Qt, and wx backends"
-msgstr ""
+msgstr "``cursord`` en backends de GTK, Qt y wx"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:250
 msgid "The ``backend_gtk3.cursord``, ``backend_qt.cursord``, and ``backend_wx.cursord`` dictionaries are deprecated. This makes the GTK module importable on headless environments."
-msgstr ""
+msgstr "Los diccionarios ``backend_gtk3.cursord``, ``backend_qt.cursord``, y ``backend_wx.cursord`` están obsoletos. Esto hace que el módulo GTK sea importable en entornos headless."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:255
 msgid "Miscellaneous deprecations"
-msgstr ""
+msgstr "Varias obsoletas"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:257
 msgid "``is_url`` and ``URL_REGEX`` are deprecated. (They were previously defined in the toplevel :mod:`matplotlib` module.)"
-msgstr ""
+msgstr "``is_url`` y ``URL_REGEX`` están obsoletos. (Anteriormente se definían en el módulo toplevel :mod:`matplotlib`)"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:259
 msgid "The ``ArrowStyle.beginarrow`` and ``ArrowStyle.endarrow`` attributes are deprecated; use the ``arrow`` attribute to define the desired heads and tails of the arrow."
-msgstr ""
+msgstr "Los atributos ``ArrowStyle.beginarrow`` y ``ArrowStyle.endarrow`` están obsoletos; utiliza el atributo ``arrow`` para definir las cabezas y colas de la flecha."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:262
 msgid "``backend_pgf.LatexManager.str_cache`` is deprecated."
-msgstr ""
+msgstr "``backend_pgf.LatexManager.str_cache`` está obsoleto."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:263
 msgid "``backends.qt_compat.ETS`` and ``backends.qt_compat.QT_RC_MAJOR_VERSION`` are deprecated, with no replacement."
-msgstr ""
+msgstr "``backends.qt_compat.ETS`` y ``backends.qt_compat.QT_RC_MAJOR_VERSION`` están obsoletos, sin reemplazo."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:265
 msgid "The ``blocking_input`` module has been deprecated. Instead, use ``canvas.start_event_loop()`` and ``canvas.stop_event_loop()`` while connecting event callbacks as needed."
-msgstr ""
+msgstr "El módulo ``blocking_input`` ha quedado obsoleto. En su lugar, utiliza ``canvas.start_event_loop()`` y ``canvas.stop_event_loop()`` mientras conectas las devoluciones de eventos según sea necesario."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:268
 msgid "``cbook.report_memory`` is deprecated; use ``psutil.virtual_memory`` instead."
-msgstr ""
+msgstr "``cbook.report_memory`` está obsoleto; usa ``psutil.virtual_memory`` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:269
 msgid "``cm.LUTSIZE`` is deprecated. Use :rc:`image.lut` instead. This value only affects colormap quantization levels for default colormaps generated at module import time."
-msgstr ""
+msgstr "``cm.LUTSIZE`` está obsoleto. Utiliza :rc:`image.lut` en su lugar. Este valor sólo afecta a los niveles de cuantificación de los mapas de color por defecto generados al importar el módulo."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:272
 msgid "``Collection.__init__`` previously ignored *transOffset* without *offsets* also being specified. In the future, *transOffset* will begin having an effect regardless of *offsets*. In the meantime, if you wish to set *transOffset*, call `.Collection.set_offset_transform` explicitly."

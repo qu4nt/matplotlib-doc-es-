@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-26 20:36\n"
+"PO-Revision-Date: 2022-07-26 22:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -952,35 +952,35 @@ msgstr "No hay inicialización implícita de los atributos ``Tick``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:80
 msgid "The `.Tick` constructor no longer initializes the attributes ``tick1line``, ``tick2line``, ``gridline``, ``label1``, and ``label2`` via ``_get_tick1line``, ``_get_tick2line``, ``_get_gridline``, ``_get_text1``, and ``_get_text2``. Please directly set the attribute in the subclass' ``__init__`` instead."
-msgstr ""
+msgstr "El constructor `.Tick` ya no inicializa los atributos ``tick1line``, ``tick2line``, ``gridline``, ``label1``, y ``label2`` mediante ``_get_tick1line``, ``_get_tick2line``, ``_get_gridline``, ``_get_text1``, y ``_get_text2``. Por favor, establece directamente el atributo en el ``__init__`` de la subclase."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:86
 msgid "``NavigationToolbar2`` subclass changes"
-msgstr ""
+msgstr "Cambios en la subclase ``NavigationToolbar2``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:88
 msgid "Overriding the ``_init_toolbar`` method of `.NavigationToolbar2` to initialize third-party toolbars is no longer supported. Instead, the toolbar should be initialized in the ``__init__`` method of the subclass (which should call the base-class' ``__init__`` as appropriate)."
-msgstr ""
+msgstr "Ya no es posible sobrescribir el método ``_init_toolbar`` de `.NavigationToolbar2` para inicializar barras de herramientas de terceros. En su lugar, la barra de herramientas debe ser inicializada en el método ``__init__`` de la subclase (que debe llamar al método ``__init__`` de la clase base, según corresponda)."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:93
 msgid "The ``press`` and ``release`` methods of `.NavigationToolbar2` were called when pressing or releasing a mouse button, but *only* when an interactive pan or zoom was occurring (contrary to what the docs stated). They are no longer called; if you write a backend which needs to customize such events, please directly override ``press_pan``/``press_zoom``/``release_pan``/``release_zoom`` instead."
-msgstr ""
+msgstr "Los métodos ``press`` y ``release`` de `.NavigationToolbar2` eran llamados cuando se pulsaba o se soltaba un botón del ratón, pero *sólo* cuando se producía una panorámica o un zoom interactivo (al contrario de lo que indicaban los documentos). Ya no se llaman; si escribes un backend que necesita personalizar estos eventos, por favor anula directamente ``press_pan``/`press_zoom``/`release_pan``/`release_zoom``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:101
 msgid "Removal of old file mode flag"
-msgstr ""
+msgstr "Eliminación del flag de modo de archivo antiguo"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:103
 msgid "Flags containing \"U\" passed to `.cbook.to_filehandle` and `.cbook.open_file_cm` are no longer accepted. This is consistent with their removal from `open` in Python 3.9."
-msgstr ""
+msgstr "Los flags que contienen \"U\" pasados a `.cbook.to_filehandle` y `.cbook.open_file_cm` ya no se aceptan. Esto es coherente con su eliminación de `open` en Python 3.9."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:108
 msgid "Keymaps toggling ``Axes.get_navigate`` have been removed"
-msgstr ""
+msgstr "Se han eliminado los mapas de teclas que activan ``Axes.get_navigate``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:110
 msgid "This includes numeric key events and rcParams."
-msgstr ""
+msgstr "Esto incluye eventos de teclas numéricas y rcParams."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:113
 msgid "The ``TTFPATH`` and ``AFMPATH`` environment variables"

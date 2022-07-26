@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-26 15:58\n"
+"PO-Revision-Date: 2022-07-26 20:36\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -804,151 +804,151 @@ msgstr "Los siguientes ayudantes en `matplotlib.sphinxext.plot_directive` son ob
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:339
 msgid "``unescape_doctest`` (use `doctest.script_from_examples` instead),"
-msgstr ""
+msgstr "``unescape_doctest`` (usa `doctest.script_from_examples` en su lugar),"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:340
 msgid "``split_code_at_show``,"
-msgstr ""
+msgstr "``split_code_at_show``,"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:341
 msgid "``run_code``."
-msgstr ""
+msgstr "``run_code``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:344
 msgid "Testing support"
-msgstr ""
+msgstr "Pruebas de soporte"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:347
 msgid "``matplotlib.test()`` is deprecated"
-msgstr ""
+msgstr "``matplotlib.test()`` está obsoleto"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:349
 msgid "Run tests using ``pytest`` from the commandline instead. The variable ``matplotlib.default_test_modules`` is only used for ``matplotlib.test()`` and is thus deprecated as well."
-msgstr ""
+msgstr "Ejecuta las pruebas utilizando ``pytest`` desde la línea de comandos. La variable ``matplotlib.default_test_modules`` sólo se utiliza para ``matplotlib.test()`` y, por tanto, también está obsoleta."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:353
 msgid "To test an installed copy, be sure to specify both ``matplotlib`` and ``mpl_toolkits`` with ``--pyargs``::"
-msgstr ""
+msgstr "Para probar una copia instalada, asegúrate de especificar tanto ``matplotlib`` como ``mpl_toolkits`` con ``--pyargs``::"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:358
 msgid "See :ref:`testing` for more details."
-msgstr ""
+msgstr "Ver :ref:`testing` for more details."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:361
 msgid "Unused pytest fixtures and markers"
-msgstr ""
+msgstr "Índices y marcadores no usados de pytest"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:363
 msgid "The fixture ``matplotlib.testing.conftest.mpl_image_comparison_parameters`` is not used internally by Matplotlib. If you use this please copy it into your code base."
-msgstr ""
+msgstr "El fixture ``matplotlib.testing.conftest.mpl_image_comparison_parameters`` no es utilizado internamente por Matplotlib. Si lo utiliza, por favor, cópialo en su código base."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:367
 msgid "The ``@pytest.mark.style`` marker is deprecated; use ``@mpl.style.context``, which has the same effect."
-msgstr ""
+msgstr "El marcador ``@pytest.mark.style`` está obsoleto; utilice ``@mpl.style.context``, que tiene el mismo efecto."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:371
 msgid "Support for ``nx1 = None`` or ``ny1 = None`` in ``AxesLocator`` and ``Divider.locate``"
-msgstr ""
+msgstr "Soporte para ``nx1 = None`` o ``ny1 = None`` en ``AxesLocator`` y ``Divider.locate``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/deprecations.rst:373
 msgid "In `.axes_grid1.axes_divider`, various internal APIs will stop supporting passing ``nx1 = None`` or ``ny1 = None`` to mean ``nx + 1`` or ``ny + 1``, in preparation for a possible future API which allows indexing and slicing of dividers (possibly ``divider[a:b] == divider.new_locator(a, b)``, but also ``divider[a:] == divider.new_locator(a, <end>)``). The user-facing `.Divider.new_locator` API is unaffected -- it correctly normalizes ``nx1 = None`` and ``ny1 = None`` as needed."
-msgstr ""
+msgstr "En `.axes_grid1.axes_divider`, varias APIs internas dejarán de soportar el paso de ``nx1 = None`` o ``ny1 = None`` para significar ``nx + 1`` o ``ny + 1``, en preparación para una posible API futura que permita la indexación y el corte de divisores (posiblemente ``divider[a:b] == divider.new_locator(a, b)``, pero también ``divider[a:] == divider.new_locator(a, <end>)``). La API `.Divider.new_locator` no se ve afectada - normaliza correctamente ``nx1 = None`` y ``ny1 = None`` según sea necesario."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:2
 msgid "Removals"
-msgstr ""
+msgstr "Eliminar"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:4
 msgid "The following deprecated APIs have been removed:"
-msgstr ""
+msgstr "Se han eliminado las siguientes APIs obsoletas:"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:7
 msgid "Removed behaviour"
-msgstr ""
+msgstr "Comportamiento eliminado"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:10
 msgid "Stricter validation of function parameters"
-msgstr ""
+msgstr "Validación más estricta de los parámetros de las funciones"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:12
 msgid "Calling `.Figure.add_axes` with no arguments will raise an error. Adding a free-floating axes needs a position rectangle. If you want a figure-filling single axes, use `.Figure.add_subplot` instead."
-msgstr ""
+msgstr "Llamar a `.Figure.add_axes` sin argumentos generará un error. Añadir un eje libre necesita un rectángulo de posición. Si deseas un eje único que llene la figura, utiliza `.Figure.add_subplot` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:15
 msgid "`.Figure.add_subplot` validates its inputs; in particular, for ``add_subplot(rows, cols, index)``, all parameters must be integral. Previously strings and floats were accepted and converted to int."
-msgstr ""
+msgstr "`.Figure.add_subplot` valida sus entradas; en particular, para ``add_subplot(rows, cols, index)``, todos los parámetros deben ser integrales. Anteriormente se aceptaban cadenas y de punto flotante (float) y se convertían a int."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:18
 msgid "Passing *None* as the *which* argument to ``autofmt_xdate`` is no longer supported; use its more explicit synonym, ``which=\"major\"``, instead."
-msgstr ""
+msgstr "Ya no se admite pasar *None* como argumento *which* a ``autofmt_xdate``; utiliza en su lugar su sinónimo más explícito, ``which=\"major\"``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:20
 msgid "Setting the *orientation* of an ``eventplot()`` or `.EventCollection` to \"none\" or *None* is no longer supported; set it to \"horizontal\" instead. Moreover, the two orientations (\"horizontal\" and \"vertical\") are now case-sensitive."
-msgstr ""
+msgstr "Ya no se admite establecer la *orientación* de un ``eventplot()`` o `.EventCollection` a \"none\" o *None*; en su lugar, establézcala a \"horizontal\". Además, las dos orientaciones (\"horizontal\" y \"vertical\") distinguen ahora entre mayúsculas y minúsculas."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:24
 msgid "Passing parameters *norm* and *vmin*/*vmax* simultaneously to functions using colormapping such as ``scatter()`` and ``imshow()`` is no longer supported. Instead of ``norm=LogNorm(), vmin=min_val, vmax=max_val`` pass ``norm=LogNorm(min_val, max_val)``. *vmin* and *vmax* should only be used without setting *norm*."
-msgstr ""
+msgstr "Ya no es posible pasar los parámetros *norm* y *vmin*/*vmax* simultáneamente a las funciones que utilizan el mapeo de colores, como ``scatter()`` y ``imshow()``. En lugar de ``norm=LogNorm(), vmin=min_val, vmax=max_val`` pase ``norm=LogNorm(min_val, max_val)``. *vmin* y *vmax* sólo deben utilizarse sin establecer *norm*."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:29
 msgid "Passing *None* as either the *radius* or *startangle* arguments of an `.Axes.pie` is no longer accepted; use the explicit defaults of 1 and 0, respectively, instead."
-msgstr ""
+msgstr "Ya no se acepta pasar *None* como argumentos de *radio* o *ángulo inicial* de un `.Axes.pie`; en su lugar, utiliza los valores predeterminados explícitos de 1 y 0, respectivamente."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:32
 msgid "Passing *None* as the *normalize* argument of `.Axes.pie` (the former default) is no longer accepted, and the pie will always be normalized by default. If you wish to plot an incomplete pie, explicitly pass ``normalize=False``."
-msgstr ""
+msgstr "Ya no se acepta pasar *None* como argumento *normalize* de `.Axes.pie` (el anterior valor por defecto), y el pastel siempre se normalizará por defecto. Si desea graficar un círculo incompleto, pase explícitamente ``normalize=False``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:36
 msgid "Support for passing *None* to ``subplot_class_factory`` has been removed. Explicitly pass in the base `~matplotlib.axes.Axes` class instead."
-msgstr ""
+msgstr "Se ha eliminado el soporte para pasar *None* a ``subplot_class_factory``. Pase explícitamente la clase base `~matplotlib.axes.Axes` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:38
 msgid "Passing multiple keys as a single comma-separated string or multiple arguments to `.ToolManager.update_keymap` is no longer supported; pass keys as a list of strings instead."
-msgstr ""
+msgstr "Ya no es posible pasar múltiples claves como una sola cadena separada por comas o múltiples argumentos a `.ToolManager.update_keymap`; pase las claves como una lista de cadenas."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:41
 msgid "Passing the dash offset as *None* is no longer accepted, as this was never universally implemented, e.g. for vector output. Set the offset to 0 instead."
-msgstr ""
+msgstr "Ya no se acepta pasar el desplazamiento de la raya como *None*, ya que esto nunca se implementó universalmente, por ejemplo, para la salida de vectores. En su lugar, establezca el desplazamiento a 0."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:43
 msgid "Setting a custom method overriding `.Artist.contains` using ``Artist.set_contains`` has been removed, as has ``Artist.get_contains``. There is no replacement, but you may still customize pick events using `.Artist.set_picker`."
-msgstr ""
+msgstr "Se ha eliminado la configuración de un método personalizado que sobrescribe `.Artist.contains` mediante ``Artist.set_contains``, así como ``Artist.get_contains``. No hay ningún reemplazo, pero todavía puede personalizar los eventos de selección utilizando `.Artist.set_picker`."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:47
 msgid "`~.Axes.semilogx`, `~.Axes.semilogy`, `~.Axes.loglog`, `.LogScale`, and `.SymmetricalLogScale` used to take keyword arguments that depends on the axis orientation (\"basex\" vs \"basey\", \"subsx\" vs \"subsy\", \"nonposx\" vs \"nonposy\"); these parameter names have been removed in favor of \"base\", \"subs\", \"nonpositive\". This removal also affects e.g. ``ax.set_yscale(\"log\", basey=...)`` which must now be spelled ``ax.set_yscale(\"log\", base=...)``."
-msgstr ""
+msgstr "`~.Axes.semilogx`, `~.Axes.semilogy`, `~.Axes.loglog`, `.LogScale`, y `.SymmetricalLogScale` solían tomar argumentos de palabras clave que dependían de la orientación del eje (\"basex\" vs \"basey\", \"subsx\" vs \"subsy\", \"nonposx\" vs \"nonposy\"); estos nombres de parámetros se han eliminado en favor de \"base\", \"subs\", \"nonpositive\". Esta eliminación también afecta, por ejemplo, a ``ax.set_yscale(\"log\", basey=...)`` que ahora debe escribirse ``ax.set_yscale(\"log\", base=...)``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:54
 msgid "The change from \"nonpos\" to \"nonpositive\" also affects `~.scale.LogTransform`, `~.scale.InvertedLogTransform`, `~.scale.SymmetricalLogTransform`, etc."
-msgstr ""
+msgstr "El cambio de \"nonpos\" a \"nonpositive\" también afecta a `~.scale.LogTransform`, `~.scale.InvertedLogTransform`, `~.scale.SymmetricalLogTransform`, etc."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:58
 msgid "To use *different* bases for the x-axis and y-axis of a `~.Axes.loglog` plot, use e.g. ``ax.set_xscale(\"log\", base=10); ax.set_yscale(\"log\", base=2)``."
-msgstr ""
+msgstr "Para utilizar bases *diferentes* para los ejes X e Y de un gráfico `~.Axes.loglog`, utiliza, por ejemplo, ``ax.set_xscale(\"log\", base=10); ax.set_yscale(\"log\", base=2)``."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:60
 msgid "Passing *None*, or no argument, to ``parasite_axes_class_factory``, ``parasite_axes_auxtrans_class_factory``, ``host_axes_class_factory`` is no longer accepted; pass an explicit base class instead."
-msgstr ""
+msgstr "Ya no se acepta pasar *None*, o ningún argumento, a ``parasite_axes_class_factory``, ``parasite_axes_auxtrans_class_factory``, ``host_axes_class_factory``; pasa una clase base explícita en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:65
 msgid "Case-sensitivity is now enforced more"
-msgstr ""
+msgstr "La distinción entre mayúsculas y minúsculas se aplica ahora más"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:67
 msgid "Upper or mixed-case property names are no longer normalized to lowercase in `.Artist.set` and `.Artist.update`. This allows one to pass names such as *patchA* or *UVC*."
-msgstr ""
+msgstr "Los nombres de propiedades en mayúsculas o mixtos ya no se normalizan a minúsculas en `.Artist.set` y `.Artist.update`. Esto permite pasar nombres como *patchA* o *UVC*."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:70
 msgid "Case-insensitive capstyles and joinstyles are no longer lower-cased; please pass capstyles (\"miter\", \"round\", \"bevel\") and joinstyles (\"butt\", \"round\", \"projecting\") as lowercase."
-msgstr ""
+msgstr "Las mayúsculas y minúsculas de los estilos de unión ya no se escriben en minúsculas; pase los estilos de unión (\"miter\", \"round\", \"bevel\") y los estilos de unión (\"butt\", \"round\", \"projecting\") en minúsculas."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:73
 msgid "Saving metadata in PDF with the PGF backend no longer changes keys to lowercase. Only the canonically cased keys listed in the PDF specification (and the `~.backend_pgf.PdfPages` documentation) are accepted."
-msgstr ""
+msgstr "Guardar metadatos en PDF con el backend PGF ya no cambia las claves a minúsculas. Sólo se aceptan las claves con mayúsculas canónicas enumeradas en la especificación PDF (y en la documentación `~.backend_pgf.PdfPages`)."
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:78
 msgid "No implicit initialization of ``Tick`` attributes"
-msgstr ""
+msgstr "No hay inicialización implícita de los atributos ``Tick``"
 
 #: ../../api/prev_api_changes/api_changes_3.5.0/removals.rst:80
 msgid "The `.Tick` constructor no longer initializes the attributes ``tick1line``, ``tick2line``, ``gridline``, ``label1``, and ``label2`` via ``_get_tick1line``, ``_get_tick2line``, ``_get_gridline``, ``_get_text1``, and ``_get_text2``. Please directly set the attribute in the subclass' ``__init__`` instead."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-07-28 14:11\n"
+"PO-Revision-Date: 2022-07-28 15:52\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -206,23 +206,23 @@ msgstr "**num_dp**"
 
 #: matplotlib.mlab.GaussianKDE:38 of
 msgid "Number of datapoints."
-msgstr ""
+msgstr "Número de puntos de datos."
 
 #: matplotlib.mlab.GaussianKDE:42 of
 msgid "**factor**"
-msgstr ""
+msgstr "**factor**"
 
 #: of
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: matplotlib.mlab.GaussianKDE:41 of
 msgid "The bandwidth factor, obtained from `kde.covariance_factor`, with which the covariance matrix is multiplied."
-msgstr ""
+msgstr "El factor de ancho de banda, obtenido de `kde.covariance_factor`, con el que se multiplica la matriz de covarianza."
 
 #: matplotlib.mlab.GaussianKDE:46 of
 msgid "**covariance**"
-msgstr ""
+msgstr "**covariance**"
 
 #: matplotlib.mlab.GaussianKDE:45 of
 msgid "The covariance matrix of *dataset*, scaled by the calculated bandwidth (`kde.factor`)."
@@ -483,116 +483,116 @@ msgstr ""
 #: matplotlib.mlab.magnitude_spectrum:63 matplotlib.mlab.phase_spectrum:63
 #: matplotlib.mlab.psd:83 of
 msgid ":obj:`specgram`"
-msgstr ""
+msgstr ":obj:`specgram`"
 
 #: matplotlib.mlab.angle_spectrum:64 matplotlib.mlab.complex_spectrum:64
 #: matplotlib.mlab.magnitude_spectrum:64 matplotlib.mlab.phase_spectrum:64 of
 msgid "Can return the complex spectrum of segments within the signal."
-msgstr ""
+msgstr "Puede devolver el espectro complejo de segmentos dentro de la señal."
 
 #: matplotlib.mlab.cohere:2 of
 msgid "The coherence between *x* and *y*.  Coherence is the normalized cross spectral density:"
-msgstr ""
+msgstr "La coherencia entre *x* y *y*.  La coherencia es la densidad espectral cruzada normalizada:"
 
 #: matplotlib.mlab.cohere:5 of
 msgid "C_{xy} = \\frac{|P_{xy}|^2}{P_{xx}P_{yy}}"
-msgstr ""
+msgstr "C_{xy} = \\frac{|P_{xy}|^2}{P_{xx}P_{yy}}"
 
 #: matplotlib.mlab.cohere:12 matplotlib.mlab.csd:19 of
 msgid "**x, y**"
-msgstr ""
+msgstr "**x, y**"
 
 #: matplotlib.mlab.cohere:31 matplotlib.mlab.csd:38 matplotlib.mlab.psd:35
 #: matplotlib.mlab.specgram:32 of
 msgid "The number of points to which the data segment is padded when performing the FFT.  This can be different from *NFFT*, which specifies the number of data points used.  While not increasing the actual resolution of the spectrum (the minimum distance between resolvable peaks), this can give more points in the plot, allowing for more detail. This corresponds to the *n* parameter in the call to fft(). The default is None, which sets *pad_to* equal to *NFFT*"
-msgstr ""
+msgstr "El número de puntos a los que se rellena el segmento de datos al realizar la FFT.  Esto puede ser diferente de *NFFT*, que especifica el número de puntos de datos utilizados.  Aunque no aumenta la resolución real del espectro (la distancia mínima entre los picos resolubles), esto puede dar más puntos en el gráfico, permitiendo más detalles. Esto corresponde al parámetro *n* en la llamada a fft(). El valor por defecto es None, que establece *pad_to* igual a *NFFT*"
 
 #: matplotlib.mlab.cohere:42 matplotlib.mlab.csd:49 matplotlib.mlab.psd:46
 #: matplotlib.mlab.specgram:43 of
 msgid "**NFFT**"
-msgstr ""
+msgstr "**NFFT**"
 
 #: of
 msgid "int, default: 256"
-msgstr ""
+msgstr "int, default: 256"
 
 #: matplotlib.mlab.cohere:40 matplotlib.mlab.csd:47 matplotlib.mlab.psd:44
 #: matplotlib.mlab.specgram:41 of
 msgid "The number of data points used in each block for the FFT.  A power 2 is most efficient.  This should *NOT* be used to get zero padding, or the scaling of the result will be incorrect; use *pad_to* for this instead."
-msgstr ""
+msgstr "El número de puntos de datos utilizados en cada bloque para la FFT.  Una potencia 2 es lo más eficiente.  Esto debe *NO* usarse para obtener el relleno de cero, o el escalado del resultado será incorrecto; use *pad_to* para esto en su lugar."
 
 #: matplotlib.mlab.cohere:51 matplotlib.mlab.csd:58 matplotlib.mlab.psd:55
 #: matplotlib.mlab.specgram:52 of
 msgid "**detrend**"
-msgstr ""
+msgstr "**detrend**"
 
 #: of
 msgid "{'none', 'mean', 'linear'} or callable, default: 'none'"
-msgstr ""
+msgstr "{'none', 'mean', 'linear'} or callable, default: 'none'"
 
 #: matplotlib.mlab.cohere:45 matplotlib.mlab.csd:52 matplotlib.mlab.psd:49
 #: matplotlib.mlab.specgram:46 of
 msgid "The function applied to each segment before fft-ing, designed to remove the mean or linear trend.  Unlike in MATLAB, where the *detrend* parameter is a vector, in Matplotlib it is a function.  The :mod:`~matplotlib.mlab` module defines `.detrend_none`, `.detrend_mean`, and `.detrend_linear`, but you can use a custom function as well.  You can also use a string to choose one of the functions: 'none' calls `.detrend_none`. 'mean' calls `.detrend_mean`. 'linear' calls `.detrend_linear`."
-msgstr ""
+msgstr "La función aplicada a cada segmento antes de fft-ing, diseñada para eliminar la media o la tendencia lineal.  A diferencia de MATLAB, donde el parámetro *detrend* es un vector, en Matplotlib es una función.  El módulo :mod:`~matplotlib.mlab` define `.detrend_none`, `.detrend_mean` y `.detrend_linear`, pero también se puede utilizar una función personalizada.  También puede utilizar una cadena para elegir una de las funciones: \"none\" llama a `.detrend_none`. 'mean' invoca a `.detrend_mean`. 'linear' llama a `.detrend_linear`."
 
 #: matplotlib.mlab.cohere:57 matplotlib.mlab.csd:64 matplotlib.mlab.psd:61
 #: matplotlib.mlab.specgram:58 of
 msgid "**scale_by_freq**"
-msgstr ""
+msgstr "**scale_by_freq**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, default: True"
 
 #: matplotlib.mlab.cohere:54 matplotlib.mlab.csd:61 matplotlib.mlab.psd:58
 #: matplotlib.mlab.specgram:55 of
 msgid "Whether the resulting density values should be scaled by the scaling frequency, which gives density in units of Hz^-1.  This allows for integration over the returned frequency values.  The default is True for MATLAB compatibility."
-msgstr ""
+msgstr "Si los valores de densidad resultantes deben ser escalados por la frecuencia de escalado, que da la densidad en unidades de Hz^-1.  Esto permite la integración sobre los valores de frecuencia devueltos.  El valor por defecto es True para la compatibilidad con MATLAB."
 
 #: matplotlib.mlab.cohere:60 matplotlib.mlab.csd:67 matplotlib.mlab.psd:64
 #: matplotlib.mlab.specgram:61 matplotlib.mlab.stride_windows:20 of
 msgid "**noverlap**"
-msgstr ""
+msgstr "**noverlap**"
 
 #: of
 msgid "int, default: 0 (no overlap)"
-msgstr ""
+msgstr "int, default: 0 (no overlap)"
 
 #: matplotlib.mlab.cohere:60 matplotlib.mlab.csd:67 matplotlib.mlab.psd:64 of
 msgid "The number of points of overlap between segments."
-msgstr ""
+msgstr "El número de puntos de solapamiento entre segmentos."
 
 #: matplotlib.mlab.cohere:65 of
 msgid "**Cxy**"
-msgstr ""
+msgstr "**Cxy**"
 
 #: matplotlib.mlab.cohere:65 of
 msgid "The coherence vector."
-msgstr ""
+msgstr "El vector de coherencia."
 
 #: matplotlib.mlab.cohere:68 of
 msgid "The frequencies for the elements in *Cxy*."
-msgstr ""
+msgstr "Las frecuencias de los elementos en *Cxy*."
 
 #: matplotlib.mlab.cohere:79 of
 msgid ":func:`psd`, :func:`csd`"
-msgstr ""
+msgstr ":func:`psd`, :func:`csd`"
 
 #: matplotlib.mlab.cohere:80 of
 msgid "For information about the methods used to compute :math:`P_{xy}`, :math:`P_{xx}` and :math:`P_{yy}`."
-msgstr ""
+msgstr "Para obtener información sobre los métodos utilizados para calcular :math:`P_{xy}`, :math:`P_{xx}` y :math:`P_{yy}`."
 
 #: matplotlib.mlab.complex_spectrum:2 of
 msgid "Compute the complex-valued frequency spectrum of *x*. Data is padded to a length of *pad_to* and the windowing function *window* is applied to the signal."
-msgstr ""
+msgstr "Calcula el espectro de frecuencia de valor complejo de *x*. Los datos se rellenan con una longitud de *pad_to* y se aplica la función de ventana *window* a la señal."
 
 #: matplotlib.mlab.complex_spectrum:39 of
 msgid "The complex-valued frequency spectrum."
-msgstr ""
+msgstr "El espectro de frecuencias de valor complejo."
 
 #: matplotlib.mlab.csd:2 of
 msgid "Compute the cross-spectral density."
-msgstr ""
+msgstr "Calcula la densidad espectral cruzada."
 
 #: matplotlib.mlab.csd:4 of
 msgid "The cross spectral density :math:`P_{xy}` by Welch's average periodogram method.  The vectors *x* and *y* are divided into *NFFT* length segments.  Each segment is detrended by function *detrend* and windowed by function *window*.  *noverlap* gives the length of the overlap between segments.  The product of the direct FFTs of *x* and *y* are averaged over each segment to compute :math:`P_{xy}`, with a scaling to correct for power loss due to windowing."

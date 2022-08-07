@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-08-07 03:18\n"
+"PO-Revision-Date: 2022-08-07 04:41\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -591,363 +591,363 @@ msgstr "El constructor por defecto toma los \"puntos\" de los límites ``[[xmin,
 
 #: matplotlib.transforms.Bbox:26 of
 msgid "Alternatively, a Bbox can be created from the flattened points array, the so-called \"extents\" ``(xmin, ymin, xmax, ymax)``"
-msgstr ""
+msgstr "Alternativamente, se puede crear una Bbox a partir de la matriz de puntos aplanada, los llamados \"extents\" ``(xmin, ymin, xmax, ymax)``"
 
 #: matplotlib.transforms.Bbox:32 of
 msgid "or from the \"bounds\" ``(xmin, ymin, width, height)``."
-msgstr ""
+msgstr "o de los \"bounds\" ``(xmin, ymin, width, height)``."
 
 #: matplotlib.transforms.Bbox:37 of
 msgid "**Create from collections of points**"
-msgstr ""
+msgstr "**Crear a partir de colecciones de puntos**"
 
 #: matplotlib.transforms.Bbox:39 of
 msgid "The \"empty\" object for accumulating Bboxs is the null bbox, which is a stand-in for the empty set."
-msgstr ""
+msgstr "El objeto \"vacío\" para acumular Bboxs es el bbox nulo, que es un sustituto del conjunto vacío."
 
 #: matplotlib.transforms.Bbox:45 of
 msgid "Adding points to the null bbox will give you the bbox of those points."
-msgstr ""
+msgstr "Añadiendo puntos a la bbox nula se obtiene la bbox de esos puntos."
 
 #: matplotlib.transforms.Bbox:55 of
 msgid "Setting ``ignore=True`` is equivalent to starting over from a null bbox."
-msgstr ""
+msgstr "Establecer ``ignore=True`` es equivalente a empezar de nuevo desde una bbox nula."
 
 #: matplotlib.transforms.Bbox:63 of
 msgid "It is recommended to always specify ``ignore`` explicitly.  If not, the default value of ``ignore`` can be changed at any time by code with access to your Bbox, for example using the method `~.Bbox.ignore`."
-msgstr ""
+msgstr "Se recomienda especificar siempre ``ignore`` explícitamente.  De lo contrario, el valor por defecto de ``ignore`` puede ser cambiado en cualquier momento por código con acceso a su Bbox, por ejemplo usando el método."
 
 #: matplotlib.transforms.Bbox:67 of
 msgid "**Properties of the ``null`` bbox**"
-msgstr ""
+msgstr "**Propiedades de la bbox ``nula`` **"
 
 #: matplotlib.transforms.Bbox:71 of
 msgid "The current behavior of `Bbox.null()` may be surprising as it does not have all of the properties of the \"empty set\", and as such does not behave like a \"zero\" object in the mathematical sense. We may change that in the future (with a deprecation period)."
-msgstr ""
+msgstr "El comportamiento actual de `Bbox.null()` puede ser sorprendente ya que no tiene todas las propiedades del \"conjunto vacío\", y como tal no se comporta como un objeto \"cero\" en el sentido matemático. Puede que cambiemos esto en el futuro (con un periodo de depreciación)."
 
 #: matplotlib.transforms.Bbox:76 of
 msgid "The null bbox is the identity for intersections"
-msgstr ""
+msgstr "La bbox nula es la identidad para las intersecciones"
 
 #: matplotlib.transforms.Bbox:81 of
 msgid "except with itself, where it returns the full space."
-msgstr ""
+msgstr "excepto consigo mismo, donde devuelve el espacio completo."
 
 #: matplotlib.transforms.Bbox:86 of
 msgid "A union containing null will always return the full space (not the other set!)"
-msgstr ""
+msgstr "Una unión que contenga null siempre devolverá el espacio completo (¡no el otro conjunto!)"
 
 #: matplotlib.transforms.Bbox:117 matplotlib.transforms.Bbox.__init__:21 of
 msgid "**points**"
-msgstr ""
+msgstr "**puntos**"
 
 #: of
 msgid "ndarray"
-msgstr ""
+msgstr "ndarray"
 
 #: matplotlib.transforms.Bbox:104 matplotlib.transforms.Bbox.__init__:8 of
 msgid "A 2x2 numpy array of the form ``[[x0, y0], [x1, y1]]``."
-msgstr ""
+msgstr "Una matriz numpy 2x2 de la forma ``[[x0, y0], [x1, y1]]``."
 
 #: matplotlib.transforms.Bbox.__format__:2 of
 msgid "Default object formatter."
-msgstr ""
+msgstr "Formateador de objetos por defecto."
 
 #: matplotlib.transforms.Bbox.__repr__:2 of
 msgid "Return repr(self)."
-msgstr ""
+msgstr "Devuelve repr(self)."
 
 #: matplotlib.transforms.Bbox.bounds:2 matplotlib.transforms.BboxBase.bounds:2
 #: of
 msgid "Return (:attr:`x0`, :attr:`y0`, :attr:`width`, :attr:`height`)."
-msgstr ""
+msgstr "Devuelve (:attr:`x0`, :attr:`y0`, :attr:`width`, :attr:`height`)."
 
 #: matplotlib.transforms.Bbox.from_bounds:2 of
 msgid "Create a new `Bbox` from *x0*, *y0*, *width* and *height*."
-msgstr ""
+msgstr "Crea una nueva `Bbox` a partir de *x0*, *y0*, *width* y *height*."
 
 #: matplotlib.transforms.Bbox.from_bounds:4 of
 msgid "*width* and *height* may be negative."
-msgstr ""
+msgstr "*width* y *height* pueden ser negativos."
 
 #: matplotlib.transforms.Bbox.from_extents:2 of
 msgid "Create a new Bbox from *left*, *bottom*, *right* and *top*."
-msgstr ""
+msgstr "Crea una nueva Bbox a partir de *izquierda*, *inferior*, *derecha* y *superior*."
 
 #: matplotlib.transforms.Bbox.from_extents:4 of
 msgid "The *y*-axis increases upwards."
-msgstr ""
+msgstr "El eje *y* aumenta hacia arriba."
 
 #: matplotlib.transforms.Bbox.from_extents:9 of
 msgid "**left, bottom, right, top**"
-msgstr ""
+msgstr "**izquierda, abajo, derecha, arriba**"
 
 #: of
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: matplotlib.transforms.Bbox.from_extents:9 of
 msgid "The four extents of the bounding box."
-msgstr ""
+msgstr "Las cuatro extensiones de la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.from_extents:27 of
 msgid "**minpos**"
-msgstr ""
+msgstr "**minpos**"
 
 #: of
 msgid "float or None"
-msgstr ""
+msgstr "float o None"
 
 #: matplotlib.transforms.Bbox.from_extents:12 of
 msgid "If this is supplied, the Bbox will have a minimum positive value set. This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors."
-msgstr ""
+msgstr "Si se suministra esto, la Bbox tendrá un valor mínimo positivo establecido. Esto es útil cuando se trata de escalas logarítmicas y otras escalas donde los límites negativos resultan en errores de punto flotante."
 
 #: matplotlib.transforms.Bbox.frozen:2 matplotlib.transforms.BboxBase.frozen:2
 #: matplotlib.transforms.TransformNode:2 of
 msgid "The base class for anything that participates in the transform tree and needs to invalidate its parents or be invalidated.  This includes classes that are not really transforms, such as bounding boxes, since some transforms depend on bounding boxes to compute their values."
-msgstr ""
+msgstr "La clase base para cualquier cosa que participe en el árbol de transformaciones y necesite invalidar a sus padres o ser invalidado.  Esto incluye clases que no son realmente transformaciones, como las cajas delimitadoras, ya que algunas transformaciones dependen de las cajas delimitadoras para calcular sus valores."
 
 #: matplotlib.transforms.Bbox.get_points:2 of
 msgid "Get the points of the bounding box directly as a numpy array of the form: ``[[x0, y0], [x1, y1]]``."
-msgstr ""
+msgstr "Obtener los puntos de la caja delimitadora directamente como un array numpy de la forma ``[[x0, y0], [x1, y1]]``."
 
 #: matplotlib.transforms.Bbox.ignore:2 of
 msgid "Set whether the existing bounds of the box should be ignored by subsequent calls to :meth:`update_from_data_xy`."
-msgstr ""
+msgstr "Establece si los límites existentes de la caja deben ser ignorados por posteriores llamadas a :meth:`update_from_data_xy`."
 
 #: matplotlib.transforms.Bbox.ignore:24 of
 msgid "value"
-msgstr ""
+msgstr "valor"
 
 #: matplotlib.transforms.interval_contains:28
 #: matplotlib.transforms.interval_contains_open:28 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.transforms.Bbox.ignore:6 of
 msgid "When ``True``, subsequent calls to :meth:`update_from_data_xy` will ignore the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "Cuando ``True``, las llamadas posteriores a :meth:`update_from_data_xy` ignorarán los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.ignore:9 of
 msgid "When ``False``, subsequent calls to :meth:`update_from_data_xy` will include the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "Cuando ``False``, las siguientes llamadas a :meth:`update_from_data_xy` incluirán los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.intervalx:2
 #: matplotlib.transforms.BboxBase.intervalx:2 of
 msgid "The pair of *x* coordinates that define the bounding box."
-msgstr ""
+msgstr "El par de coordenadas *x* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.intervalx:4
 #: matplotlib.transforms.BboxBase.intervalx:4 of
 msgid "This is not guaranteed to be sorted from left to right."
-msgstr ""
+msgstr "No se garantiza la ordenación de izquierda a derecha."
 
 #: matplotlib.transforms.Bbox.intervaly:2
 #: matplotlib.transforms.BboxBase.intervaly:2 of
 msgid "The pair of *y* coordinates that define the bounding box."
-msgstr ""
+msgstr "El par de coordenadas *y* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.intervaly:4
 #: matplotlib.transforms.BboxBase.intervaly:4 of
 msgid "This is not guaranteed to be sorted from bottom to top."
-msgstr ""
+msgstr "No se garantiza la ordenación de abajo a arriba."
 
 #: matplotlib.transforms.Bbox.minpos:2 of
 msgid "The minimum positive value in both directions within the Bbox."
-msgstr ""
+msgstr "El mínimo valor positivo en ambas direcciones dentro de la Bbox."
 
 #: matplotlib.transforms.Bbox.minpos:4 of
 msgid "This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum extent instead of *p0*."
-msgstr ""
+msgstr "Esto es útil cuando se trata de escalas logarítmicas y otras escalas donde los límites negativos dan lugar a errores de punto flotante, y se utilizará como la extensión mínima en lugar de *p0*."
 
 #: matplotlib.transforms.Bbox.minposx:2 of
 msgid "The minimum positive value in the *x*-direction within the Bbox."
-msgstr ""
+msgstr "El valor positivo mínimo en la dirección *x* dentro de la Bbox."
 
 #: matplotlib.transforms.Bbox.minposx:4 of
 msgid "This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum *x*-extent instead of *x0*."
-msgstr ""
+msgstr "Esto es útil cuando se trata de escalas logarítmicas y otras escalas donde los límites negativos dan lugar a errores de punto flotante, y se utilizará como el mínimo *x*-extensión en lugar de *x0*."
 
 #: matplotlib.transforms.Bbox.minposy:2 of
 msgid "The minimum positive value in the *y*-direction within the Bbox."
-msgstr ""
+msgstr "El valor positivo mínimo en la dirección *y* dentro de la Bbox."
 
 #: matplotlib.transforms.Bbox.minposy:4 of
 msgid "This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum *y*-extent instead of *y0*."
-msgstr ""
+msgstr "Esto es útil cuando se trata de escalas logarítmicas y otras escalas donde los límites negativos dan lugar a errores de punto flotante, y se utilizará como el mínimo *y*-extensión en lugar de *y0*."
 
 #: matplotlib.transforms.Bbox.mutated:2 of
 msgid "Return whether the bbox has changed since init."
-msgstr ""
+msgstr "Devuelve si la bbox ha cambiado desde init."
 
 #: matplotlib.transforms.Bbox.mutatedx:2 of
 msgid "Return whether the x-limits have changed since init."
-msgstr ""
+msgstr "Devuelve si los límites x han cambiado desde init."
 
 #: matplotlib.transforms.Bbox.mutatedy:2 of
 msgid "Return whether the y-limits have changed since init."
-msgstr ""
+msgstr "Devuelve si los límites Y han cambiado desde init."
 
 #: matplotlib.transforms.Bbox.null:2 of
 msgid "Create a new null `Bbox` from (inf, inf) to (-inf, -inf)."
-msgstr ""
+msgstr "Crea una nueva `Bbox` nula desde (inf, inf) hasta (-inf, -inf)."
 
 #: matplotlib.transforms.Bbox.p0:2 matplotlib.transforms.BboxBase.p0:2 of
 msgid "The first pair of (*x*, *y*) coordinates that define the bounding box."
-msgstr ""
+msgstr "El primer par de coordenadas (*x*, *y*) que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.p0:4 matplotlib.transforms.BboxBase.p0:4 of
 msgid "This is not guaranteed to be the bottom-left corner (for that, use :attr:`min`)."
-msgstr ""
+msgstr "No se garantiza que sea la esquina inferior izquierda (para ello, utilice :attr:`min`)."
 
 #: matplotlib.transforms.Bbox.p1:2 matplotlib.transforms.BboxBase.p1:2 of
 msgid "The second pair of (*x*, *y*) coordinates that define the bounding box."
-msgstr ""
+msgstr "El segundo par de coordenadas (*x*, *y*) que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.p1:4 matplotlib.transforms.BboxBase.p1:4 of
 msgid "This is not guaranteed to be the top-right corner (for that, use :attr:`max`)."
-msgstr ""
+msgstr "No se garantiza que sea la esquina superior derecha (para ello, utilice :attr:`max`)."
 
 #: matplotlib.transforms.Bbox.set:2 of
 msgid "Set this bounding box from the \"frozen\" bounds of another `Bbox`."
-msgstr ""
+msgstr "Establece esta caja delimitadora a partir de los límites \"congelados\" de otra `Bbox`."
 
 #: matplotlib.transforms.Bbox.set_points:2 of
 msgid "Set the points of the bounding box directly from a numpy array of the form: ``[[x0, y0], [x1, y1]]``.  No error checking is performed, as this method is mainly for internal use."
-msgstr ""
+msgstr "Establece los puntos de la caja delimitadora directamente desde un array de numpy de la forma ``[[x0, y0], [x1, y1]]``.  No se realiza ninguna comprobación de errores, ya que este método es principalmente de uso interno."
 
 #: matplotlib.transforms.Bbox.unit:2 of
 msgid "Create a new unit `Bbox` from (0, 0) to (1, 1)."
-msgstr ""
+msgstr "Crea una nueva `Bbox` unitaria desde (0, 0) hasta (1, 1)."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:2 of
 msgid "Update the x-bounds of the `Bbox` based on the passed in data. After updating, the bounds will have positive *width*, and *x0* will be the minimal value."
-msgstr ""
+msgstr "Actualiza los límites x de la `Bbox` basándose en los datos pasados. Después de la actualización, los límites tendrán *ancho* positivo, y *x0* será el valor mínimo."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:10 of
 msgid "**x**"
-msgstr ""
+msgstr "**x**"
 
 #: matplotlib.transforms.Bbox.update_from_data_x:10 of
 msgid "Array of x-values."
-msgstr ""
+msgstr "Matriz de valores x."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:28
 #: matplotlib.transforms.Bbox.update_from_data_xy:15
 #: matplotlib.transforms.Bbox.update_from_data_y:28
 #: matplotlib.transforms.Bbox.update_from_path:15 of
 msgid "**ignore**"
-msgstr ""
+msgstr "**ignorar**"
 
 #: of
 msgid "bool, optional"
-msgstr ""
+msgstr "bool, opcional"
 
 #: matplotlib.transforms.Bbox.update_from_data_x:13
 #: matplotlib.transforms.Bbox.update_from_data_xy:13
 #: matplotlib.transforms.Bbox.update_from_data_y:13 of
 msgid "When ``True``, ignore the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "Cuando ``False``, incluye los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:14
 #: matplotlib.transforms.Bbox.update_from_data_xy:14
 #: matplotlib.transforms.Bbox.update_from_data_y:14 of
 msgid "When ``False``, include the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "Cuando ``False``, incluye los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:15
 #: matplotlib.transforms.Bbox.update_from_data_xy:15
 #: matplotlib.transforms.Bbox.update_from_data_y:15 of
 msgid "When ``None``, use the last value passed to :meth:`ignore`."
-msgstr ""
+msgstr "Cuando ``None``, utiliza el último valor pasado a :meth:`ignore`."
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:2 of
 msgid "Update the bounds of the `Bbox` based on the passed in data. After updating, the bounds will have positive *width* and *height*; *x0* and *y0* will be the minimal values."
-msgstr ""
+msgstr "Actualiza los límites de la `Bbox` basándose en los datos pasados. Después de la actualización, los límites tendrán *ancho* y *altura* positivos; *x0* e *y0* serán los valores mínimos."
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:10 of
 msgid "**xy**"
-msgstr ""
+msgstr "**xy**"
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:10 of
 msgid "A numpy array of 2D points."
-msgstr ""
+msgstr "Una matriz numpy de puntos 2D."
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:31
 #: matplotlib.transforms.Bbox.update_from_path:31 of
 msgid "**updatex, updatey**"
-msgstr ""
+msgstr "**updatex, updatey**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:18
 #: matplotlib.transforms.Bbox.update_from_path:18 of
 msgid "When ``True``, update the x/y values."
-msgstr ""
+msgstr "Cuando ``True``, actualiza los valores x/y."
 
 #: matplotlib.transforms.Bbox.update_from_data_y:2 of
 msgid "Update the y-bounds of the `Bbox` based on the passed in data. After updating, the bounds will have positive *height*, and *y0* will be the minimal value."
-msgstr ""
+msgstr "Actualiza los límites Y de la `Bbox` basándose en los datos pasados. Después de la actualización, los límites tendrán *altura* positiva, y *y0* será el valor mínimo."
 
 #: matplotlib.transforms.Bbox.update_from_data_y:10 of
 msgid "**y**"
-msgstr ""
+msgstr "**y**"
 
 #: matplotlib.transforms.Bbox.update_from_data_y:10 of
 msgid "Array of y-values."
-msgstr ""
+msgstr "Matriz de valores y."
 
 #: matplotlib.transforms.Bbox.update_from_path:2 of
 msgid "Update the bounds of the `Bbox` to contain the vertices of the provided path. After updating, the bounds will have positive *width* and *height*; *x0* and *y0* will be the minimal values."
-msgstr ""
+msgstr "Actualiza los límites de la `Bbox` para que contenga los vértices del camino proporcionado. Tras la actualización, los límites tendrán *ancho* y *alto* positivos; *x0* e *y0* serán los valores mínimos."
 
 #: matplotlib.transforms.Bbox.update_from_path:10 of
 msgid "**path** : `~matplotlib.path.Path`"
-msgstr ""
+msgstr "**path** : `~matplotlib.path.Path`"
 
 #: matplotlib.transforms.Bbox.update_from_path:9
 #: matplotlib.transforms.TransformedPath:34
 #: matplotlib.transforms.TransformedPath.__init__:7 of
 msgid "Path"
-msgstr ""
+msgstr "Ruta"
 
 #: matplotlib.transforms.Bbox.update_from_path:13 of
 msgid "when ``True``, ignore the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "cuando es ``True``, ignorar los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.update_from_path:14 of
 msgid "when ``False``, include the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "cuando es ``False``, incluir los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.update_from_path:15 of
 msgid "when ``None``, use the last value passed to :meth:`ignore`."
-msgstr ""
+msgstr "cuando ``None``, usar el último valor pasado a :meth:`ignore`."
 
 #: matplotlib.transforms.Bbox.x0:2 matplotlib.transforms.BboxBase.x0:2 of
 msgid "The first of the pair of *x* coordinates that define the bounding box."
-msgstr ""
+msgstr "La primera del par de coordenadas *x* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.x0:4 matplotlib.transforms.BboxBase.x0:4 of
 msgid "This is not guaranteed to be less than :attr:`x1` (for that, use :attr:`xmin`)."
-msgstr ""
+msgstr "No se garantiza que sea menor que :attr:`x1` (para ello, utilice :attr:`xmin`)."
 
 #: matplotlib.transforms.Bbox.x1:2 matplotlib.transforms.BboxBase.x1:2 of
 msgid "The second of the pair of *x* coordinates that define the bounding box."
-msgstr ""
+msgstr "La segunda del par de coordenadas *x* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.x1:4 matplotlib.transforms.BboxBase.x1:4 of
 msgid "This is not guaranteed to be greater than :attr:`x0` (for that, use :attr:`xmax`)."
-msgstr ""
+msgstr "No se garantiza que sea mayor que :attr:`x0` (para ello, utilice :attr:`xmax`)."
 
 #: matplotlib.transforms.Bbox.y0:2 matplotlib.transforms.BboxBase.y0:2 of
 msgid "The first of the pair of *y* coordinates that define the bounding box."
-msgstr ""
+msgstr "La primera del par de coordenadas *y* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.y0:4 matplotlib.transforms.BboxBase.y0:4 of
 msgid "This is not guaranteed to be less than :attr:`y1` (for that, use :attr:`ymin`)."
-msgstr ""
+msgstr "No se garantiza que sea menor que :attr:`y1` (para ello, utilice :attr:`ymin`)."
 
 #: matplotlib.transforms.Bbox.y1:2 matplotlib.transforms.BboxBase.y1:2 of
 msgid "The second of the pair of *y* coordinates that define the bounding box."

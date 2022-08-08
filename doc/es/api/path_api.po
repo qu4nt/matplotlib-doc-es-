@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-08-04 14:53\n"
+"PO-Revision-Date: 2022-08-08 18:40\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -28,79 +28,79 @@ msgstr "Un módulo para tratar las polilíneas utilizadas en Matplotlib."
 
 #: matplotlib.path:3 of
 msgid "The primary class for polyline handling in Matplotlib is `Path`.  Almost all vector drawing makes use of `Path`\\s somewhere in the drawing pipeline."
-msgstr ""
+msgstr "La clase principal para el manejo de polilíneas en Matplotlib es `Path`.  Casi todo el dibujo vectorial hace uso de `Path` en alguna parte del pipeline de dibujo."
 
 #: matplotlib.path:6 of
 msgid "Whilst a `Path` instance itself cannot be drawn, some `.Artist` subclasses, such as `.PathPatch` and `.PathCollection`, can be used for convenient `Path` visualisation."
-msgstr ""
+msgstr "Aunque no se puede dibujar una instancia de `Path` en sí misma, algunas subclases de `.Artist`, como `.PathPatch` y `.PathCollection`, pueden utilizarse para una cómoda visualización de `Path`."
 
 #: matplotlib.path.Path:1 of
 msgid "Bases: :py:class:`object`"
-msgstr ""
+msgstr "Bases: :py:class:`object`"
 
 #: matplotlib.path.Path:2 of
 msgid "A series of possibly disconnected, possibly closed, line and curve segments."
-msgstr ""
+msgstr "Una serie de segmentos de líneas y curvas posiblemente desconectados y cerrados."
 
 #: matplotlib.path.Path:5 of
 msgid "The underlying storage is made up of two parallel numpy arrays:"
-msgstr ""
+msgstr "El almacenamiento subyacente está formado por dos arreglos paralelos de numpy:"
 
 #: matplotlib.path.Path:7 of
 msgid "*vertices*: an Nx2 float array of vertices"
-msgstr ""
+msgstr "*vertices*: un arreglo Nx2 de punto flotante (float) de vértices"
 
 #: matplotlib.path.Path:8 of
 msgid "*codes*: an N-length uint8 array of path codes, or None"
-msgstr ""
+msgstr "*codes*: un arreglo uint8 de longitud N de códigos de ruta, o None"
 
 #: matplotlib.path.Path:10 of
 msgid "These two arrays always have the same length in the first dimension.  For example, to represent a cubic curve, you must provide three vertices and three ``CURVE4`` codes."
-msgstr ""
+msgstr "Estos dos arreglos siempre tienen la misma longitud en la primera dimensión.  Por ejemplo, para representar una curva cúbica, debes proporcionar tres vértices y tres códigos ``CURVE4``."
 
 #: matplotlib.path.Path:14 of
 msgid "The code types are:"
-msgstr ""
+msgstr "Los tipos de código son:"
 
 #: matplotlib.path.Path:18 of
 msgid "``STOP``"
-msgstr ""
+msgstr "``STOP``"
 
 #: of
 msgid "1 vertex (ignored)"
-msgstr ""
+msgstr "1 vértice (ignorado)"
 
 #: matplotlib.path.Path:17 of
 msgid "A marker for the end of the entire path (currently not required and ignored)"
-msgstr ""
+msgstr "Un marcador para el final de la ruta completa (actualmente no es necesario y se ignora)"
 
 #: matplotlib.path.Path:21 of
 msgid "``MOVETO``"
-msgstr ""
+msgstr "``MOVETO``"
 
 #: of
 msgid "1 vertex"
-msgstr ""
+msgstr "1 vértice"
 
 #: matplotlib.path.Path:21 of
 msgid "Pick up the pen and move to the given vertex."
-msgstr ""
+msgstr "Toma la pluma y se mueve al vértice dado."
 
 #: matplotlib.path.Path:24 of
 msgid "``LINETO``"
-msgstr ""
+msgstr "``LINETO``"
 
 #: matplotlib.path.Path:24 of
 msgid "Draw a line from the current position to the given vertex."
-msgstr ""
+msgstr "Dibuja una línea desde la posición actual hasta el vértice dado."
 
 #: matplotlib.path.Path:28 of
 msgid "``CURVE3``"
-msgstr ""
+msgstr "``CURVE3``"
 
 #: of
 msgid "1 control point, 1 endpoint"
-msgstr ""
+msgstr "1 punto de control, 1 punto final"
 
 #: matplotlib.path.Path:27 of
 msgid "Draw a quadratic Bezier curve from the current position, with the given control point, to the given end point."

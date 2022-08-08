@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:24\n"
+"PO-Revision-Date: 2022-08-08 00:21\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../api/tri_api.rst:3
 msgid "``matplotlib.tri``"
-msgstr ""
+msgstr "``matplotlib.tri``"
 
 #: matplotlib.tri:1 of
 msgid "Unstructured triangular grid functions."
-msgstr ""
+msgstr "Funciones de rejilla triangular no estructuradas."
 
 #: matplotlib.tri.triangulation.Triangulation:2 of
 msgid "An unstructured triangular grid consisting of npoints points and ntri triangles.  The triangles can either be specified by the user or automatically generated using a Delaunay triangulation."
-msgstr ""
+msgstr "Una rejilla triangular no estructurada que consta de n puntos y ntri triángulos.  Los triángulos pueden ser especificados por el usuario o generados automáticamente utilizando una triangulación de Delaunay."
 
 #: matplotlib.tri.triangulation.Triangulation
 #: matplotlib.tri.triangulation.Triangulation.set_mask
@@ -43,204 +43,204 @@ msgstr ""
 #: matplotlib.tri.tritools.TriAnalyzer.circle_ratios
 #: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.tri.triangulation.Triangulation:10
 #: matplotlib.tri.triinterpolate.CubicTriInterpolator.gradient:10
 #: matplotlib.tri.triinterpolate.LinearTriInterpolator.gradient:10 of
 msgid "**x, y**"
-msgstr ""
+msgstr "**x, y**"
 
 #: of
 msgid "(npoints,) array-like"
-msgstr ""
+msgstr "(npoints,) tipo array"
 
 #: matplotlib.tri.triangulation.Triangulation:10 of
 msgid "Coordinates of grid points."
-msgstr ""
+msgstr "Coordenadas de los puntos de la cuadrícula."
 
 #: matplotlib.tri.triangulation.Triangulation:15
 #: matplotlib.tri.triangulation.Triangulation:40 of
 msgid "**triangles**"
-msgstr ""
+msgstr "**Triángulos**"
 
 #: of
 msgid "(ntri, 3) array-like of int, optional"
-msgstr ""
+msgstr "(ntri, 3) tipo array de int, opcional"
 
 #: matplotlib.tri.triangulation.Triangulation:13 of
 msgid "For each triangle, the indices of the three points that make up the triangle, ordered in an anticlockwise manner.  If not specified, the Delaunay triangulation is calculated."
-msgstr ""
+msgstr "Para cada triángulo, los índices de los tres puntos que lo componen, ordenados en sentido contrario a las agujas del reloj.  Si no se especifica, se calcula la triangulación de Delaunay."
 
 #: matplotlib.tri.triangulation.Triangulation:26
 #: matplotlib.tri.triangulation.Triangulation:43
 #: matplotlib.tri.triangulation.Triangulation.set_mask:21 of
 msgid "**mask**"
-msgstr ""
+msgstr "**Máscara**"
 
 #: of
 msgid "(ntri,) array-like of bool, optional"
-msgstr ""
+msgstr "(ntri,) array-like of bool, opcional"
 
 #: matplotlib.tri.triangulation.Triangulation:18 of
 msgid "Which triangles are masked out."
-msgstr ""
+msgstr "Qué triángulos se enmascaran."
 
 #: matplotlib.tri.triangulation.Triangulation:29
 #: matplotlib.tri.triinterpolate.CubicTriInterpolator:55
 #: matplotlib.tri.tritools.TriAnalyzer.get_flat_tri_mask:43 of
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 #: matplotlib.tri.triangulation.Triangulation:30 of
 msgid "For a Triangulation to be valid it must not have duplicate points, triangles formed from colinear points, or overlapping triangles."
-msgstr ""
+msgstr "Para que una triangulación sea válida no debe tener puntos duplicados, triángulos formados a partir de puntos colineales o triángulos superpuestos."
 
 #: matplotlib.tri.triangulation.Triangulation
 #: matplotlib.tri.tricontour.TriContourSet matplotlib.tri.tritools.TriAnalyzer
 #: of
 msgid "Attributes"
-msgstr ""
+msgstr "Atributos"
 
 #: of
 msgid "(ntri, 3) array of int"
-msgstr ""
+msgstr "(ntri, 3) array de int"
 
 #: matplotlib.tri.triangulation.Triangulation:38 of
 msgid "For each triangle, the indices of the three points that make up the triangle, ordered in an anticlockwise manner. If you want to take the *mask* into account, use `get_masked_triangles` instead."
-msgstr ""
+msgstr "Para cada triángulo, los índices de los tres puntos que lo componen, ordenados en sentido contrario a las agujas del reloj. Si quieres tener en cuenta la *máscara*, utiliza `get_masked_triangles` en su lugar."
 
 #: of
 msgid "(ntri, 3) array of bool"
-msgstr ""
+msgstr "(ntri, 3) array of bool"
 
 #: matplotlib.tri.triangulation.Triangulation:43 of
 msgid "Masked out triangles."
-msgstr ""
+msgstr "Triángulos enmascarados."
 
 #: matplotlib.tri.triangulation.Triangulation:48 of
 msgid "**is_delaunay**"
-msgstr ""
+msgstr "**is_delaunay**"
 
 #: of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.tri.triangulation.Triangulation:46 of
 msgid "Whether the Triangulation is a calculated Delaunay triangulation (where *triangles* was not specified) or not."
-msgstr ""
+msgstr "Si la triangulación es una triangulación de Delaunay calculada (donde no se especificó *triangles*) o no."
 
 #: matplotlib.tri.triangulation.Triangulation.calculate_plane_coefficients:2 of
 msgid "Calculate plane equation coefficients for all unmasked triangles from the point (x, y) coordinates and specified z-array of shape (npoints). The returned array has shape (npoints, 3) and allows z-value at (x, y) position in triangle tri to be calculated using ``z = array[tri, 0] * x  + array[tri, 1] * y + array[tri, 2]``."
-msgstr ""
+msgstr "Calcula los coeficientes de la ecuación del plano para todos los triángulos no enmascarados a partir de las coordenadas de los puntos (x, y) y el array de forma (npuntos) especificado. El array devuelto tiene forma (npoints, 3) y permite calcular el valor z en la posición (x, y) del triángulo usando ``z = array[tri, 0] * x + array[tri, 1] * y + array[tri, 2]``."
 
 #: matplotlib.tri.Triangulation.edges:2 of
 msgid "Return integer array of shape (nedges, 2) containing all edges of non-masked triangles."
-msgstr ""
+msgstr "Devuelve un array de enteros de forma (nedges, 2) que contiene todas las aristas de los triángulos no enmascarados."
 
 #: matplotlib.tri.Triangulation.edges:5 of
 msgid "Each row defines an edge by it's start point index and end point index.  Each edge appears only once, i.e. for an edge between points *i*  and *j*, there will only be either *(i, j)* or *(j, i)*."
-msgstr ""
+msgstr "Cada fila define un arist por su índice de punto inicial y su índice de punto final.  Cada arist aparece sólo una vez, es decir, para una arista entre los puntos *i* y *j*, sólo habrá *(i, j)* o *(j, i)*."
 
 #: matplotlib.tri.triangulation.Triangulation.get_cpp_triangulation:2 of
 msgid "Return the underlying C++ Triangulation object, creating it if necessary."
-msgstr ""
+msgstr "Devuelve el objeto de triangulación C++ subyacente, creándolo si es necesario."
 
 #: matplotlib.tri.triangulation.Triangulation.get_from_args_and_kwargs:2 of
 msgid "Return a Triangulation object from the args and kwargs, and the remaining args and kwargs with the consumed values removed."
-msgstr ""
+msgstr "Devuelve un objeto Triangulación a partir de los args y kwargs, y el resto de args y kwargs con los valores consumidos eliminados."
 
 #: matplotlib.tri.triangulation.Triangulation.get_from_args_and_kwargs:5 of
 msgid "There are two alternatives: either the first argument is a Triangulation object, in which case it is returned, or the args and kwargs are sufficient to create a new Triangulation to return.  In the latter case, see Triangulation.__init__ for the possible args and kwargs."
-msgstr ""
+msgstr "Hay dos alternativas: o bien el primer argumento es un objeto Triangulación, en cuyo caso se devuelve, o bien los args y kwargs son suficientes para crear una nueva Triangulación a devolver.  En este último caso, ver Triangulation.__init__ para los posibles args y kwargs."
 
 #: matplotlib.tri.triangulation.Triangulation.get_masked_triangles:2 of
 msgid "Return an array of triangles that are not masked."
-msgstr ""
+msgstr "Devuelve un array de triángulos que no están enmascarados."
 
 #: matplotlib.tri.triangulation.Triangulation.get_trifinder:2 of
 msgid "Return the default `matplotlib.tri.TriFinder` of this triangulation, creating it if necessary.  This allows the same TriFinder object to be easily shared."
-msgstr ""
+msgstr "Devuelve el `matplotlib.tri.TriFinder` por defecto de esta triangulación, creándolo si es necesario.  Esto permite compartir fácilmente el mismo objeto TriFinder."
 
 #: matplotlib.tri.Triangulation.neighbors:2 of
 msgid "Return integer array of shape (ntri, 3) containing neighbor triangles."
-msgstr ""
+msgstr "Devuelve un array de enteros de forma (ntri, 3) que contiene los triángulos vecinos."
 
 #: matplotlib.tri.Triangulation.neighbors:4 of
 msgid "For each triangle, the indices of the three triangles that share the same edges, or -1 if there is no such neighboring triangle.  ``neighbors[i, j]`` is the triangle that is the neighbor to the edge from point index ``triangles[i, j]`` to point index ``triangles[i, (j+1)%3]``."
-msgstr ""
+msgstr "Para cada triángulo, los índices de los tres triángulos que comparten las mismas aristas, o -1 si no hay ningún triángulo vecino.  ``neighbors[i, j]`` es el triángulo que es vecino de la arista desde el índice del punto ``triangles[i, j]`` hasta el índice del punto ``triangles[i, (j+1)%3]``."
 
 #: matplotlib.tri.triangulation.Triangulation.set_mask:2 of
 msgid "Set or clear the mask array."
-msgstr ""
+msgstr "Establecer o borrar el array de máscaras."
 
 #: of
 msgid "None or bool array of length ntri"
-msgstr ""
+msgstr "None o bool array de longitud ntri"
 
 #: matplotlib.tri.tricontour.TriContourSet:1 of
 msgid "Bases: :py:class:`matplotlib.contour.ContourSet`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.contour.ContourSet`"
 
 #: matplotlib.tri.tricontour.TriContourSet:2 of
 msgid "Create and store a set of contour lines or filled regions for a triangular grid."
-msgstr ""
+msgstr "Crea y almacena un conjunto de líneas de contorno o regiones rellenas para una malla triangular."
 
 #: matplotlib.tri.tricontour.TriContourSet:5 of
 msgid "This class is typically not instantiated directly by the user but by `~.Axes.tricontour` and `~.Axes.tricontourf`."
-msgstr ""
+msgstr "Esta clase normalmente no es instanciada directamente por el usuario sino por `~.Axes.tricontour` y `~.Axes.tricontourf`."
 
 #: matplotlib.tri.tricontour.TriContourSet:23 of
 msgid "**ax** : `~matplotlib.axes.Axes`"
-msgstr ""
+msgstr "**ax** : `~matplotlib.axes.Axes`"
 
 #: matplotlib.tri.tricontour.TriContourSet:22 of
 msgid "Axes"
-msgstr ""
+msgstr "Ejes"
 
 #: matplotlib.tri.tricontour.TriContourSet:23 of
 msgid "The Axes object in which the contours are drawn."
-msgstr ""
+msgstr "El objeto Axes en el que se dibujan los contornos."
 
 #: matplotlib.tri.tricontour.TriContourSet:27 of
 msgid "**collections** : `.silent_list` of `.PathCollection`\\s"
-msgstr ""
+msgstr "**colecciones** : `.silent_list` of `.PathCollection`s"
 
 #: matplotlib.tri.tricontour.TriContourSet:26 of
 msgid "silent_list of PathCollections"
-msgstr ""
+msgstr "silent_list de PathCollections"
 
 #: matplotlib.tri.tricontour.TriContourSet:26 of
 msgid "The `.Artist`\\s representing the contour. This is a list of `.PathCollection`\\s for both line and filled contours."
-msgstr ""
+msgstr "Los `.Artist`s que representan el contorno. Se trata de una lista de `.PathCollection`s para los contornos de línea y de relleno."
 
 #: matplotlib.tri.tricontour.TriContourSet:30 of
 msgid "**levels**"
-msgstr ""
+msgstr "**Niveles**"
 
 #: of
 msgid "array"
-msgstr ""
+msgstr "array"
 
 #: matplotlib.tri.tricontour.TriContourSet:30 of
 msgid "The values of the contour levels."
-msgstr ""
+msgstr "Los valores de los niveles de contorno."
 
 #: matplotlib.tri.tricontour.TriContourSet:35 of
 msgid "**layers**"
-msgstr ""
+msgstr "**Los niveles**"
 
 #: matplotlib.tri.tricontour.TriContourSet:33 of
 msgid "Same as levels for line contours; half-way between levels for filled contours.  See ``ContourSet._process_colors``."
-msgstr ""
+msgstr "Igual que los niveles para los contornos lineales; la mitad de los niveles para los contornos rellenos.  Ver ``ContourSet._process_colors``."
 
 #: matplotlib.tri.tricontour.TriContourSet:41 of
 msgid "Draw triangular grid contour lines or filled regions, depending on whether keyword arg 'filled' is False (default) or True."
-msgstr ""
+msgstr "Dibuja líneas de contorno de rejilla triangular o regiones rellenas, dependiendo de si la palabra clave arg 'filled' es False (por defecto) o True."
 
 #: matplotlib.tri.tricontour.TriContourSet:45 of
 msgid "The first argument of the initializer must be an axes object.  The remaining arguments and keyword arguments are described in the docstring of `~.Axes.tricontour`."
-msgstr ""
+msgstr "El primer argumento del inicializador debe ser un objeto eje.  Los argumentos restantes y los argumentos de palabra clave se describen en el docstring de `~.Axes.tricontour`."
 
 #: matplotlib.tri.trifinder.TriFinder:2 of
 msgid "Abstract base class for classes used to find the triangles of a Triangulation in which (x, y) points lie."

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-08-08 18:40\n"
+"PO-Revision-Date: 2022-08-08 19:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -104,47 +104,47 @@ msgstr "1 punto de control, 1 punto final"
 
 #: matplotlib.path.Path:27 of
 msgid "Draw a quadratic Bezier curve from the current position, with the given control point, to the given end point."
-msgstr ""
+msgstr "Dibuja una curva cuadrática de Bézier desde la posición actual, con el punto de control dado, hasta el punto final dado."
 
 #: matplotlib.path.Path:32 of
 msgid "``CURVE4``"
-msgstr ""
+msgstr "``CURVE4``"
 
 #: of
 msgid "2 control points, 1 endpoint"
-msgstr ""
+msgstr "2 puntos de control, 1 punto final"
 
 #: matplotlib.path.Path:31 of
 msgid "Draw a cubic Bezier curve from the current position, with the given control points, to the given end point."
-msgstr ""
+msgstr "Dibuja una curva cúbica Bézier desde la posición actual, con los puntos de control dados, hasta el punto final especificado."
 
 #: matplotlib.path.Path:35 of
 msgid "``CLOSEPOLY``"
-msgstr ""
+msgstr "``CLOSEPOLY``"
 
 #: matplotlib.path.Path:35 of
 msgid "Draw a line segment to the start point of the current polyline."
-msgstr ""
+msgstr "Dibuja un segmento de línea hasta el punto de inicio de la polilínea actual."
 
 #: matplotlib.path.Path:37 of
 msgid "If *codes* is None, it is interpreted as a ``MOVETO`` followed by a series of ``LINETO``."
-msgstr ""
+msgstr "Si *codes* no es None, se interpreta como un ``MOVETO`` seguido por una serie de ``LINETO``."
 
 #: matplotlib.path.Path:40 of
 msgid "Users of Path objects should not access the vertices and codes arrays directly.  Instead, they should use `iter_segments` or `cleaned` to get the vertex/code pairs.  This helps, in particular, to consistently handle the case of *codes* being None."
-msgstr ""
+msgstr "Los usuarios de los objetos Path no deberían acceder a los arreglos de vértices y códigos directamente.  En su lugar, deberían utilizar `iter_segments` o `cleaned` para obtener los pares vértice/código.  Esto ayuda, en particular, a manejar consistentemente el caso de que los *códigos* sean None."
 
 #: matplotlib.path.Path:45 of
 msgid "Some behavior of Path objects can be controlled by rcParams. See the rcParams whose keys start with 'path.'."
-msgstr ""
+msgstr "Algunos comportamientos de los objetos Path pueden ser controlados por rcParams. Ver los rcParams cuyas claves empiezan por 'path.'."
 
 #: matplotlib.path.Path:50 of
 msgid "The vertices and codes arrays should be treated as immutable -- there are a number of optimizations and assumptions made up front in the constructor that will not change when the data changes."
-msgstr ""
+msgstr "Los arreglos de vértices y códigos deben ser tratadas como inmutables -- hay un número de optimizaciones y suposiciones hechas por adelantado en el constructor que no cambiarán cuando los datos cambien."
 
 #: matplotlib.path.Path:73 of
 msgid "Create a new path with the given vertices and codes."
-msgstr ""
+msgstr "Crea una nueva ruta con los vértices y códigos dados."
 
 #: matplotlib.path.Path matplotlib.path.Path.circle
 #: matplotlib.path.Path.contains_point matplotlib.path.Path.contains_points
@@ -152,47 +152,47 @@ msgstr ""
 #: matplotlib.path.Path.iter_segments
 #: matplotlib.path.get_path_collection_extents of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.path.Path:82 of
 msgid "**vertices**"
-msgstr ""
+msgstr "**vertices**"
 
 #: of
 msgid "(N, 2) array-like"
-msgstr ""
+msgstr "(N, 2) array-like"
 
 #: matplotlib.path.Path:79 of
 msgid "The path vertices, as an array, masked array or sequence of pairs. Masked values, if any, will be converted to NaNs, which are then handled correctly by the Agg PathIterator and other consumers of path data, such as :meth:`iter_segments`."
-msgstr ""
+msgstr "Los vértices de la ruta, como un arreglo, un arreglo enmascarado o secuencia de pares. Los valores enmascarados, si los hay, se convertirán en NaNs, que luego serán manejados correctamente por el Agg PathIterator y otros consumidores de datos de rutas, como :meth:`iter_segments`."
 
 #: matplotlib.path.Path:87 of
 msgid "**codes**"
-msgstr ""
+msgstr "**codes**"
 
 #: of
 msgid "array-like or None, optional"
-msgstr ""
+msgstr "array-like o None, opcional"
 
 #: matplotlib.path.Path:85 of
 msgid "N-length array of integers representing the codes of the path. If not None, codes must be the same length as vertices. If None, *vertices* will be treated as a series of line segments."
-msgstr ""
+msgstr "Arreglo de longitud N de enteros que representan los códigos de la ruta. Si no es None, los códigos deben tener la misma longitud que los vértices. Si es None, los *vértices* serán tratados como una serie de segmentos de línea."
 
 #: matplotlib.path.Path:93 of
 msgid "**_interpolation_steps**"
-msgstr ""
+msgstr "**_interpolation_steps**"
 
 #: of
 msgid "int, optional"
-msgstr ""
+msgstr "int, opcional"
 
 #: matplotlib.path.Path:90 of
 msgid "Used as a hint to certain projections, such as Polar, that this path should be linearly interpolated immediately before drawing. This attribute is primarily an implementation detail and is not intended for public use."
-msgstr ""
+msgstr "Se utiliza como una pista para ciertas proyecciones, como la Polar, de que esta ruta debe ser interpolada linealmente inmediatamente antes de ser dibujada. Este atributo es principalmente un detalle de implementación y no está destinado al uso público."
 
 #: matplotlib.path.Path:99 of
 msgid "**closed**"
-msgstr ""
+msgstr "**closed**"
 
 #: of
 msgid "bool, optional"

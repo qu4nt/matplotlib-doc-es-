@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:22\n"
+"PO-Revision-Date: 2022-11-01 21:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0.rst:2
 msgid "API Changes for 3.2.0"
-msgstr ""
+msgstr "Cambios en la API para la versión 3.2.0"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:3
 msgid "Behavior changes"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:60
 msgid "Autoscaling"
-msgstr ""
+msgstr "Autoescalado"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:62
 msgid "Matplotlib used to recompute autoscaled limits after every plotting (``plot()``, ``bar()``, etc.) call.  It now only does so when actually rendering the canvas, or when the user queries the Axes limits.  This is a major performance improvement for plots with a large number of artists."
@@ -215,7 +215,7 @@ msgstr ""
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:199
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:218
 msgid "Fonts"
-msgstr ""
+msgstr "Fuentes"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:200
 msgid "Font weight guessing now first checks for the presence of the FT_STYLE_BOLD_FLAG before trying to match substrings in the font name.  In particular, this means that Times New Roman Bold is now correctly detected as bold, not normal weight."
@@ -256,7 +256,7 @@ msgstr ""
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:234
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:156
 msgid "rcParams"
-msgstr ""
+msgstr "rcParams"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:235
 msgid "When using `.RendererSVG` with ``rcParams[\"svg.image_inline\"] == True``, externally written images now use a single counter even if the ``renderer.basename`` attribute is overwritten, rather than a counter per basename."
@@ -309,7 +309,7 @@ msgstr ""
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:282
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:247
 msgid "Testing"
-msgstr ""
+msgstr "Prueba"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/behavior.rst:283
 msgid "The test suite no longer turns on the Python fault handler by default. Set the standard ``PYTHONFAULTHANDLER`` environment variable to do so."
@@ -357,7 +357,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:3
 msgid "Deprecations"
-msgstr ""
+msgstr "Obsolescencias"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:6
 msgid "`matplotlib.use`"
@@ -449,7 +449,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:83
 msgid "`matplotlib.cm`"
-msgstr ""
+msgstr "`matplotlib.cm`"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:84
 msgid "``cm.revcmap`` is deprecated.  Use `.Colormap.reversed` to reverse a colormap."
@@ -461,7 +461,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:90
 msgid "axisartist"
-msgstr ""
+msgstr "axisartist"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:91
 msgid "``mpl_toolkits.axisartist.grid_finder.GridFinderBase`` is deprecated (its only use is to be inherited by the `.GridFinder` class which just provides more defaults in the constructor and directly sets the transforms, so ``GridFinderBase``'s methods were just moved to `.GridFinder`)."
@@ -493,7 +493,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:120
 msgid "Animation"
-msgstr ""
+msgstr "Animación"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:121
 msgid "The following methods and attributes of the `MovieWriterRegistry` class are deprecated: ``set_dirty``, ``ensure_not_dirty``, ``reset_available_writers``, ``avail``."
@@ -593,7 +593,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:190
 msgid "PGF"
-msgstr ""
+msgstr "PGF"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:191
 msgid "``backend_pgf.repl_escapetext`` and ``backend_pgf.repl_mathdefault`` are deprecated."
@@ -649,7 +649,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:230
 msgid "Colors"
-msgstr ""
+msgstr "Colores"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:231
 msgid "The function ``matplotlib.colors.makeMappingArray`` is not considered part of the public API any longer. Thus, it's deprecated."
@@ -661,7 +661,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:238
 msgid "Scales"
-msgstr ""
+msgstr "Escalas"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/deprecations.rst:239
 msgid "Passing unsupported keyword arguments to `.ScaleBase`, and its subclasses `.LinearScale` and `.SymmetricalLogScale`, is deprecated and will raise a `TypeError` in 3.3."
@@ -745,7 +745,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/removals.rst:2
 msgid "Removals"
-msgstr ""
+msgstr "Eliminar"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/removals.rst:3
 msgid "The ``matplotlib.testing.determinism`` module, which exposes no public API, has been deleted."
@@ -881,7 +881,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/removals.rst:64
 msgid ":rc:`examples.directory`"
-msgstr ""
+msgstr ":rc:`examples.directory`"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/removals.rst:66
 msgid "The following members of ``matplotlib.backends.backend_pdf.PdfFile`` were removed:"
@@ -921,7 +921,7 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/development.rst:2
 msgid "Development changes"
-msgstr ""
+msgstr "Cambios en el desarrollo"
 
 #: ../../api/prev_api_changes/api_changes_3.2.0/development.rst:5
 msgid "Windows build"

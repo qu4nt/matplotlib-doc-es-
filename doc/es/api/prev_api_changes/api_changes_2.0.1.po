@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:22\n"
+"PO-Revision-Date: 2022-11-02 14:11\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,57 +20,57 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:3
 msgid "API Changes in 2.0.1"
-msgstr ""
+msgstr "Cambios de API en 2.0.1"
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:6
 msgid "Extensions to `matplotlib.backend_bases.GraphicsContextBase`"
-msgstr ""
+msgstr "Extensiones a `matplotlib.backend_bases.GraphicsContextBase`"
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:8
 msgid "To better support controlling the color of hatches, the method `matplotlib.backend_bases.GraphicsContextBase.set_hatch_color` was added to the expected API of ``GraphicsContext`` classes.  Calls to this method are currently wrapped with a ``try:...except Attribute:`` block to preserve back-compatibility with any third-party backends which do not extend `~matplotlib.backend_bases.GraphicsContextBase`."
-msgstr ""
+msgstr "Para soportar mejor el control del color de las eclosiones, el método `matplotlib.backend_bases.GraphicsContextBase.set_hatch_color` fue añadido a la API esperada de las clases ``GraphicsContext``. Las llamadas a este método están actualmente envueltas con un bloque ``try:...except Attribute:`` para preservar la compatibilidad con cualquier backend de terceros que no extienda `~matplotlib.backend_bases.GraphicsContextBase`."
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:15
 msgid "This value can be accessed in the backends via `matplotlib.backend_bases.GraphicsContextBase.get_hatch_color` (which was added in 2.0 see :ref:`gc_get_hatch_color_wn`) and should be used to color the hatches."
-msgstr ""
+msgstr "Este valor puede ser accedido en los backends a través de `matplotlib.backend_bases.GraphicsContextBase. et_hatch_color` (que fue añadido en 2.0 vea :ref:`gc_get_hatch_color_wn`) y debe ser usado para colorear las sombras."
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:20
 msgid "In the future there may also be ``hatch_linewidth`` and ``hatch_density`` related methods added.  It is encouraged, but not required that third-party backends extend `~matplotlib.backend_bases.GraphicsContextBase` to make adapting to these changes easier."
-msgstr ""
+msgstr "En el futuro puede haber también ``hatch_linewidth`` y métodos relacionados con ``hatch_density``. Se alienta, pero no es necesario que los backends de terceros extiendan `~matplotlib.backend_bases.GraphicsContextBase` para facilitar la adaptación a estos cambios."
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:28
 msgid "``afm.get_fontconfig_fonts`` returns a list of paths and does not check for existence"
-msgstr ""
+msgstr "``afm.get_fontconfig_fonts`` devuelve una lista de rutas y no verifica la existencia"
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:30
 msgid "``afm.get_fontconfig_fonts`` used to return a set of paths encoded as a ``{key: 1, ...}`` dict, and checked for the existence of the paths.  It now returns a list and dropped the existence check, as the same check is performed by the caller (``afm.findSystemFonts``) as well."
-msgstr ""
+msgstr "``afm.get_fontconfig_fonts`` usado para devolver un conjunto de rutas codificadas como un dictado ``{key: 1, ...}`` y comprobado la existencia de las rutas. Ahora devuelve una lista y eliminó la comprobación de existencia, ya que la misma comprobación la realiza el llamador (``afm.findSystemFonts``)."
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:37
 msgid "``bar`` now returns rectangles of negative height or width if the corresponding input is negative"
-msgstr ""
+msgstr "``bar`` ahora devuelve rectángulos de altura o ancho negativo si la entrada correspondiente es negativa"
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:39
 msgid "`.pyplot.bar` used to normalize the coordinates of the rectangles that it created, to keep their height and width positives, even if the corresponding input was negative.  This normalization has been removed to permit a simpler computation of the correct `.Artist.sticky_edges` to use."
-msgstr ""
+msgstr "`.pyplot. ar` usado para normalizar las coordenadas de los rectángulos que creó, para mantener su altura y anchura positivos, incluso si la entrada correspondiente era negativa. Esta normalización ha sido eliminada para permitir un cálculo más simple de los `.Artist.sticky_edges` correctos."
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:46
 msgid "Do not clip line width when scaling dashes"
-msgstr ""
+msgstr "No recortar el ancho de la línea al escalar guiones"
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:48
 msgid "The algorithm to scale dashes was changed to no longer clip the scaling factor: the dash patterns now continue to shrink at thin line widths. If the line width is smaller than the effective pixel size, this may result in dashed lines turning into solid gray-ish lines.  This also required slightly tweaking the default patterns for '--', ':', and '.-' so that with the default line width the final patterns would not change."
-msgstr ""
+msgstr "El algoritmo para escalar guiones se cambió para que dejara de recortar el factor de escalado: los patrones de guión ahora continúan reduciéndose a anchos de líneas finos. Si el ancho de la línea es menor que el tamaño efectivo de los píxeles, esto puede dar como resultado que las líneas discontinuas se conviertan en líneas de gris sólido. Esto también requirió ajustar ligeramente los patrones por defecto para '--', ':' y '. ' para que con el ancho de línea por defecto los patrones finales no cambiaran."
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:55
 msgid "There is no way to restore the old behavior."
-msgstr ""
+msgstr "No hay forma de restaurar el viejo comportamiento."
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:59
 msgid "Deprecate 'Vega' colormaps"
-msgstr ""
+msgstr "Desaprobar mapas de colores 'Vega'"
 
 #: ../../api/prev_api_changes/api_changes_2.0.1.rst:61
 msgid "The \"Vega\" colormaps are deprecated in Matplotlib 2.0.1 and will be removed in Matplotlib 2.2. Use the \"tab\" colormaps instead: \"tab10\", \"tab20\", \"tab20b\", \"tab20c\"."
-msgstr ""
+msgstr "Los mapas de colores \"Vega\" están obsoletos en Matplotlib 2.0.1 y se eliminarán en Matplotlib 2.2. Utilice los mapas de colores \"tab\" en su lugar: \"tab10\", \"tab20\", \"tab20b\", \"tab20c\"."
 

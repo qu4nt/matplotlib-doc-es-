@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:46\n"
+"PO-Revision-Date: 2022-11-02 14:10\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,195 +20,195 @@ msgstr ""
 
 #: ../../api/dates_api.rst:3
 msgid "``matplotlib.dates``"
-msgstr ""
+msgstr "``matplotlib.dates``"
 
 #: matplotlib.dates:1 of
 msgid "Matplotlib provides sophisticated date plotting capabilities, standing on the shoulders of python :mod:`datetime` and the add-on module :mod:`dateutil`."
-msgstr ""
+msgstr "Matplotlib proporciona sofisticadas capacidades de trazado de fechas, de pie en los hombros de python :mod:`datetime` y el módulo de complemento :mod:`dateutil`."
 
 #: matplotlib.dates:4 of
 msgid "By default, Matplotlib uses the units machinery described in `~matplotlib.units` to convert `datetime.datetime`, and `numpy.datetime64` objects when plotted on an x- or y-axis. The user does not need to do anything for dates to be formatted, but dates often have strict formatting needs, so this module provides many axis locators and formatters. A basic example using `numpy.datetime64` is::"
-msgstr ""
+msgstr "Por defecto, Matplotlib utiliza la maquinaria de unidades descrita en `~matplotlib.units` para convertir `datetime.datetime`, y los objetos `numpy.datetime64` cuando se grafica en un eje x o y-. El usuario no necesita hacer nada para las fechas a formatear, pero las fechas a menudo tienen necesidades de formato estrictas, por lo que este módulo proporciona muchos localizadores y formateadores de ejes. Un ejemplo básico usando `numpy.datetime64` es::"
 
 #: matplotlib.dates:22 of
 msgid ":doc:`/gallery/text_labels_and_annotations/date`"
-msgstr ""
+msgstr ":doc:`/gallery/text_labels_and_annotations/date`"
 
 #: matplotlib.dates:23 of
 msgid ":doc:`/gallery/ticks/date_concise_formatter`"
-msgstr ""
+msgstr ":doc:`/gallery/ticks/date_concise_formatter`"
 
 #: matplotlib.dates:24 of
 msgid ":doc:`/gallery/ticks/date_demo_convert`"
-msgstr ""
+msgstr ":doc:`/gallery/ticks/date_demo_convert`"
 
 #: matplotlib.dates:29 of
 msgid "Matplotlib date format"
-msgstr ""
+msgstr "Matplotlib date format"
 
 #: matplotlib.dates:31 of
 msgid "Matplotlib represents dates using floating point numbers specifying the number of days since a default epoch of 1970-01-01 UTC; for example, 1970-01-01, 06:00 is the floating point number 0.25. The formatters and locators require the use of `datetime.datetime` objects, so only dates between year 0001 and 9999 can be represented.  Microsecond precision is achievable for (approximately) 70 years on either side of the epoch, and 20 microseconds for the rest of the allowable range of dates (year 0001 to 9999). The epoch can be changed at import time via `.dates.set_epoch` or :rc:`dates.epoch` to other dates if necessary; see :doc:`/gallery/ticks/date_precision_and_epochs` for a discussion."
-msgstr ""
+msgstr "Matplotlib representa fechas usando números de punto flotante que especifican el número de días desde un epoch predeterminado de 1970-01-01 UTC; por ejemplo, 1970-01-01, 06:00 es el número de punto flotante 0. 5. Los formateadores y localizadores requieren el uso de objetos `datetime.datetime`, así que solo las fechas entre el año 0001 y 9999 pueden ser representadas. La precisión microsegunda es alcanzable durante (aproximadamente) 70 años a ambos lados del époco, y 20 microsegundos para el resto de las fechas permitidas (año 0001 a 9999). El epoch puede cambiarse en hora de importación a través de `.dates.set_epoch` o :rc:`dates. poch` a otras fechas si es necesario; vea :doc:`/gallery/ticks/date_precision_and_epochs` para una discusión."
 
 #: matplotlib.dates:44 of
 msgid "Before Matplotlib 3.3, the epoch was 0000-12-31 which lost modern microsecond precision and also made the default axis limit of 0 an invalid datetime.  In 3.3 the epoch was changed as above.  To convert old ordinal floats to the new epoch, users can do::"
-msgstr ""
+msgstr "Antes de Matplotlib 3.3, el epoch era 0000-12-31 que perdió la moderna precisión de microsegundos y también hizo del eje predeterminado el límite de 0 una fecha no válida. En 3.3 el epoch se cambió como arriba. Para convertir viejos floats ordinales al nuevo epoch, los usuarios pueden hacer::"
 
 #: matplotlib.dates:52 of
 msgid "There are a number of helper functions to convert between :mod:`datetime` objects and Matplotlib dates:"
-msgstr ""
+msgstr "Hay un número de funciones de ayuda para convertir entre los objetos :mod:`datetime` y las fechas de Matplotlib:"
 
 #: matplotlib.dates:67:<autosummary>:1 of
 msgid ":py:obj:`datestr2num <matplotlib.dates.datestr2num>`"
-msgstr ""
+msgstr ":py:obj:`datestr2num <matplotlib.dates.datestr2num>`"
 
 #: matplotlib.dates.datestr2num:2 matplotlib.dates:67:<autosummary>:1 of
 msgid "Convert a date string to a datenum using `dateutil.parser.parse`."
-msgstr ""
+msgstr "Convierte una cadena de fecha a un datenum usando `dateutil.parser.parse`."
 
 #: matplotlib.dates:67:<autosummary>:1 of
 msgid ":py:obj:`date2num <matplotlib.dates.date2num>`"
-msgstr ""
+msgstr ":py:obj:`date2num <matplotlib.dates.date2num>`"
 
 #: matplotlib.dates.date2num:2 matplotlib.dates:67:<autosummary>:1 of
 msgid "Convert datetime objects to Matplotlib dates."
-msgstr ""
+msgstr "Convierte objetos de fecha a fechas de Matplotlib."
 
 #: matplotlib.dates:67:<autosummary>:1 of
 msgid ":py:obj:`num2date <matplotlib.dates.num2date>`"
-msgstr ""
+msgstr ":py:obj:`num2date <matplotlib.dates.num2date>`"
 
 #: matplotlib.dates.num2date:2 matplotlib.dates:67:<autosummary>:1 of
 msgid "Convert Matplotlib dates to `~datetime.datetime` objects."
-msgstr ""
+msgstr "Convierte las fechas de Matplotlib a objetos `~datetime.datetime`."
 
 #: matplotlib.dates:67:<autosummary>:1 of
 msgid ":py:obj:`num2timedelta <matplotlib.dates.num2timedelta>`"
-msgstr ""
+msgstr ":py:obj:`num2timedelta <matplotlib.dates.num2timedelta>`"
 
 #: matplotlib.dates.num2timedelta:2 matplotlib.dates:67:<autosummary>:1 of
 msgid "Convert number of days to a `~datetime.timedelta` object."
-msgstr ""
+msgstr "Convierte el número de días a un objeto `~datetime.timedelta`."
 
 #: matplotlib.dates:67:<autosummary>:1 of
 msgid ":py:obj:`drange <matplotlib.dates.drange>`"
-msgstr ""
+msgstr ":py:obj:`drange <matplotlib.dates.drange>`"
 
 #: matplotlib.dates.drange:2 matplotlib.dates:67:<autosummary>:1 of
 msgid "Return a sequence of equally spaced Matplotlib dates."
-msgstr ""
+msgstr "Devuelve una secuencia de fechas de Matplotlib igualmente espaciadas."
 
 #: matplotlib.dates:67:<autosummary>:1 of
 msgid ":py:obj:`set_epoch <matplotlib.dates.set_epoch>`"
-msgstr ""
+msgstr ":py:obj:`set_epoch <matplotlib.dates.set_epoch>`"
 
 #: matplotlib.dates.set_epoch:2 matplotlib.dates:67:<autosummary>:1 of
 msgid "Set the epoch (origin for dates) for datetime calculations."
-msgstr ""
+msgstr "Establece el epoco (origen para las fechas) para los cálculos de la fecha/hora."
 
 #: matplotlib.dates:67:<autosummary>:1 of
 msgid ":py:obj:`get_epoch <matplotlib.dates.get_epoch>`"
-msgstr ""
+msgstr ":py:obj:`get_epoch <matplotlib.dates.get_epoch>`"
 
 #: matplotlib.dates.get_epoch:2 matplotlib.dates:67:<autosummary>:1 of
 msgid "Get the epoch used by `.dates`."
-msgstr ""
+msgstr "Obtener el epoch usado por `.dates`."
 
 #: matplotlib.dates:70 of
 msgid "Like Python's `datetime.datetime`, Matplotlib uses the Gregorian calendar for all conversions between dates and floating point numbers. This practice is not universal, and calendar differences can cause confusing differences between what Python and Matplotlib give as the number of days since 0001-01-01 and what other software and databases yield.  For example, the US Naval Observatory uses a calendar that switches from Julian to Gregorian in October, 1582.  Hence, using their calculator, the number of days between 0001-01-01 and 2006-04-01 is 732403, whereas using the Gregorian calendar via the datetime module we find::"
-msgstr ""
+msgstr "Al igual que el `datetime.datetime` de Python, Matplotlib utiliza el calendario Gregorio para todas las conversiones entre fechas y números de coma flotante. Esta práctica no es universal, y las diferencias de calendario pueden causar diferencias confusas entre lo que Python y Matplotlib dan como el número de días desde el 0001-01-01 y lo que otros programas y bases de datos nos proporcionan. Por ejemplo, el Observatorio Naval de los Estados Unidos utiliza un calendario que cambia de Julian a Gregoriano en octubre de 1582. Por lo tanto, utilizando su calculadora, el número de días entre 0001-01-01 y 2006-04-01 es 732403, mientras que usamos el calendario Gregoriano a través del módulo datetime que encontramos::"
 
 #: matplotlib.dates:84 of
 msgid "All the Matplotlib date converters, tickers and formatters are timezone aware. If no explicit timezone is provided, :rc:`timezone` is assumed.  If you want to use a custom time zone, pass a `datetime.tzinfo` instance with the tz keyword argument to `num2date`, `.Axis.axis_date`, and any custom date tickers or locators you create."
-msgstr ""
+msgstr "Todos los convertidores de fecha, etiquetas y formateadores de Matplotlib son conscientes de la zona horaria. Si no se proporciona una zona horaria explícita, se asume :rc:'zona horaria'. Si quieres usar una zona horaria personalizada, pasa una instancia `datetime.tzinfo` con el argumento de la palabra clave tz a `num2date`, `. xis.axis_date`, y cualquier dato o localizador personalizado que cree."
 
 #: matplotlib.dates:90 of
 msgid "A wide range of specific and general purpose date tick locators and formatters are provided in this module.  See :mod:`matplotlib.ticker` for general information on tick locators and formatters.  These are described below."
-msgstr ""
+msgstr "En este módulo se proporciona una amplia gama de localizadores y formatos de fecha de uso general específicos. Vea :mod:`matplotlib.ticker` para obtener información general sobre los localizadores de ticks y formatters. Estos se describen a continuación."
 
 #: matplotlib.dates:95 of
 msgid "The dateutil_ module provides additional code to handle date ticking, making it easy to place ticks on any kinds of dates.  See examples below."
-msgstr ""
+msgstr "El módulo dateutil_ proporciona código adicional para manejar la marca de fecha, haciendo fácil colocar ticks en cualquier tipo de fecha. Ver ejemplos a continuación."
 
 #: matplotlib.dates:101 of
 msgid "Date tickers"
-msgstr ""
+msgstr "Marcadores de fecha"
 
 #: matplotlib.dates:103 of
 msgid "Most of the date tickers can locate single or multiple values.  For example::"
-msgstr ""
+msgstr "La mayoría de los tickers de fecha pueden encontrar valores individuales o múltiples. Por ejemplo::"
 
 #: matplotlib.dates:114 of
 msgid "In addition, most of the constructors take an interval argument::"
-msgstr ""
+msgstr "Además, la mayoría de los constructores toman un argumento intervalo::"
 
 #: matplotlib.dates:119 of
 msgid "The rrule locator allows completely general date ticking::"
-msgstr ""
+msgstr "El localizador de reglas permite marcar fecha completamente general::"
 
 #: matplotlib.dates:125 of
 msgid "The available date tickers are:"
-msgstr ""
+msgstr "Los tickers de fecha disponibles son:"
 
 #: matplotlib.dates:127 of
 msgid "`MicrosecondLocator`: Locate microseconds."
-msgstr ""
+msgstr "`MicrosecondLocator`: Localiza microsegundos."
 
 #: matplotlib.dates:129 of
 msgid "`SecondLocator`: Locate seconds."
-msgstr ""
+msgstr "`SegundoLocator`: Localiza segundos."
 
 #: matplotlib.dates:131 of
 msgid "`MinuteLocator`: Locate minutes."
-msgstr ""
+msgstr "`MinuteLocator`: Locate minutes."
 
 #: matplotlib.dates:133 of
 msgid "`HourLocator`: Locate hours."
-msgstr ""
+msgstr "`HourLocator`: Localiza horas."
 
 #: matplotlib.dates:135 of
 msgid "`DayLocator`: Locate specified days of the month."
-msgstr ""
+msgstr "`DayLocator`: Localiza los días especificados del mes."
 
 #: matplotlib.dates:137 of
 msgid "`WeekdayLocator`: Locate days of the week, e.g., MO, TU."
-msgstr ""
+msgstr "`WeekdayLocator`: Localice los días de la semana, por ejemplo, MO, UT."
 
 #: matplotlib.dates:139 of
 msgid "`MonthLocator`: Locate months, e.g., 7 for July."
-msgstr ""
+msgstr "`MonthLocator`: Localice meses, por ejemplo, el 7 de julio."
 
 #: matplotlib.dates:141 of
 msgid "`YearLocator`: Locate years that are multiples of base."
-msgstr ""
+msgstr "`AñoLocator`: Localice años que son múltiplos de base."
 
 #: matplotlib.dates:143 of
 msgid "`RRuleLocator`: Locate using a `matplotlib.dates.rrulewrapper`. `.rrulewrapper` is a simple wrapper around dateutil_'s `dateutil.rrule` which allow almost arbitrary date tick specifications.  See :doc:`rrule example </gallery/ticks/date_demo_rrule>`."
-msgstr ""
+msgstr "`RuleLocator`: Localiza usando un `matplotlib.dates.rrulewrapper`. `.rrulewrapper` es un envoltorio simple alrededor de dateutil_'s `dateutil. rule` que permite especificaciones de tick de fecha casi arbitrarias. Vea :doc:`rrule example </gallery/ticks/date_demo_rrule>`."
 
 #: matplotlib.dates:148 of
 msgid "`AutoDateLocator`: On autoscale, this class picks the best `DateLocator` (e.g., `RRuleLocator`) to set the view limits and the tick locations.  If called with ``interval_multiples=True`` it will make ticks line up with sensible multiples of the tick intervals.  E.g. if the interval is 4 hours, it will pick hours 0, 4, 8, etc as ticks.  This behaviour is not guaranteed by default."
-msgstr ""
+msgstr "`AutoDateLocator`: En autoescala, esta clase elige la mejor `DateLocator` (por ejemplo, `RuleLocator`) para establecer los límites de la vista y las ubicaciones de tick. Si se llama con ``interval_multiples=True`` hará que los ticks alineen con múltiplos sensatos de los intervalos de tick. E. . Si el intervalo es de 4 horas, recogerá horas 0, 4, 8, etc como ticks. Este comportamiento no está garantizado por defecto."
 
 #: matplotlib.dates:156 of
 msgid "Date formatters"
-msgstr ""
+msgstr "Formateadores de fecha"
 
 #: matplotlib.dates:158 of
 msgid "The available date formatters are:"
-msgstr ""
+msgstr "Los formatos de fecha disponibles son:"
 
 #: matplotlib.dates:160 of
 msgid "`AutoDateFormatter`: attempts to figure out the best format to use.  This is most useful when used with the `AutoDateLocator`."
-msgstr ""
+msgstr "`AutoDateFormatter`: intenta averiguar el mejor formato a utilizar. Esto es más útil cuando se utiliza con el `AutoDateLocator`."
 
 #: matplotlib.dates:163 of
 msgid "`ConciseDateFormatter`: also attempts to figure out the best format to use, and to make the format as compact as possible while still having complete date information.  This is most useful when used with the `AutoDateLocator`."
-msgstr ""
+msgstr "`ConciseDateFormatter`: también intenta averiguar el mejor formato a usar y hacer que el formato sea lo más compacto posible mientras todavía tiene información completa de la fecha. Esto es más útil cuando se utiliza con el `AutoDateLocator`."
 
 #: matplotlib.dates:167 of
 msgid "`DateFormatter`: use `~datetime.datetime.strftime` format strings."
-msgstr ""
+msgstr "`DateFormatter`: usa las cadenas de formato `~datetime.datetime.strftime`."
 
 #: matplotlib.dates.AutoDateFormatter:1 matplotlib.dates.ConciseDateFormatter:1
 #: matplotlib.dates.DateFormatter:1 of
@@ -217,23 +217,23 @@ msgstr "Bases: :py:class:`matplotlib.ticker.Formatter`"
 
 #: matplotlib.dates.AutoDateFormatter:2 of
 msgid "A `.Formatter` which attempts to figure out the best format to use.  This is most useful when used with the `AutoDateLocator`."
-msgstr ""
+msgstr "Un `.Formatter` que intenta averiguar el mejor formato a utilizar. Esto es más útil cuando se utiliza con el `AutoDateLocator`."
 
 #: matplotlib.dates.AutoDateFormatter:5 of
 msgid "`.AutoDateFormatter` has a ``.scale`` dictionary that maps tick scales (the interval in days between one major tick) to format strings; this dictionary defaults to ::"
-msgstr ""
+msgstr "`.AutoDateFormatter` tiene un diccionario ``.scale`` que mapea escalas (el intervalo en días entre un tick) para formatear cadenas; este diccionario por defecto a ::"
 
 #: matplotlib.dates.AutoDateFormatter:19 of
 msgid "The formatter uses the format string corresponding to the lowest key in the dictionary that is greater or equal to the current scale.  Dictionary entries can be customized::"
-msgstr ""
+msgstr "El formateador utiliza la cadena de formato correspondiente a la clave más baja del diccionario que es mayor o igual a la escala actual. Las entradas del diccionario pueden ser personalizadas::"
 
 #: matplotlib.dates.AutoDateFormatter:27 of
 msgid "Custom callables can also be used instead of format strings.  The following example shows how to use a custom format function to strip trailing zeros from decimal seconds and adds the date to the first ticklabel::"
-msgstr ""
+msgstr "Las llamadas personalizadas también se pueden utilizar en lugar de cadenas de formato. El siguiente ejemplo muestra cómo utilizar una función de formato personalizado para eliminar ceros finales de segundos decimales y añadir la fecha a la primera etiqueta::"
 
 #: matplotlib.dates.AutoDateFormatter:62 of
 msgid "Autoformat the date labels."
-msgstr ""
+msgstr "Autoformatear las etiquetas de fecha."
 
 #: dateutil.rrule.rrule matplotlib.dates.AutoDateFormatter
 #: matplotlib.dates.AutoDateLocator matplotlib.dates.ConciseDateFormatter
@@ -249,35 +249,35 @@ msgstr "Parámetros"
 #: matplotlib.dates.AutoDateFormatter:68
 #: matplotlib.dates.ConciseDateFormatter:12 of
 msgid "**locator** : `.ticker.Locator`"
-msgstr ""
+msgstr "**localizador** : `.ticker.Locator`"
 
 #: matplotlib.dates.AutoDateFormatter:67
 #: matplotlib.dates.ConciseDateFormatter:11 of
 msgid "ticker.Locator"
-msgstr ""
+msgstr "ticker.Locator"
 
 #: matplotlib.dates.AutoDateFormatter:68
 #: matplotlib.dates.ConciseDateFormatter:12 of
 msgid "Locator that this axis is using."
-msgstr ""
+msgstr "Localizador que está utilizando este eje."
 
 #: matplotlib.dates.AutoDateFormatter:71
 #: matplotlib.dates.ConciseDateFormatter:15 of
 msgid "**tz**"
-msgstr ""
+msgstr "**tz**"
 
 #: of
 msgid "str, optional"
-msgstr ""
+msgstr "str, opcional"
 
 #: matplotlib.dates.AutoDateFormatter:71
 #: matplotlib.dates.ConciseDateFormatter:15 of
 msgid "Passed to `.dates.date2num`."
-msgstr ""
+msgstr "Pasado a `.dates.date2num`."
 
 #: matplotlib.dates.AutoDateFormatter:75 of
 msgid "**defaultfmt**"
-msgstr ""
+msgstr "**por defecto**"
 
 #: of
 msgid "str"
@@ -285,7 +285,7 @@ msgstr "str"
 
 #: matplotlib.dates.AutoDateFormatter:74 of
 msgid "The default format to use if none of the values in ``self.scaled`` are greater than the unit returned by ``locator._get_unit()``."
-msgstr ""
+msgstr "El formato predeterminado a usar si ninguno de los valores en ``self.scaled`` son mayores que la unidad devuelta por ``locator._get_unit()``."
 
 #: matplotlib.dates.AutoDateFormatter:94
 #: matplotlib.dates.ConciseDateFormatter:52 matplotlib.dates.DateFormatter:50
@@ -299,16 +299,16 @@ msgstr "bool, default:"
 
 #: matplotlib.dates.AutoDateFormatter:78 of
 msgid "To enable/disable the use of TeX's math mode for rendering the results of the formatter. If any entries in ``self.scaled`` are set as functions, then it is up to the customized function to enable or disable TeX's math mode itself."
-msgstr ""
+msgstr "Para activar/desactivar el uso del modo matemático de TeX para renderizar los resultados del formateador. Si hay entradas en ``self'. caled`` se configuran como funciones, entonces depende de la función personalizada para activar o desactivar el modo matemático de TeX en sí."
 
 #: matplotlib.dates.AutoDateLocator:1 matplotlib.dates.MicrosecondLocator:1
 #: matplotlib.dates.RRuleLocator:1 of
 msgid "Bases: :py:class:`matplotlib.dates.DateLocator`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.dates.DateLocator`"
 
 #: matplotlib.dates.AutoDateLocator:2 of
 msgid "On autoscale, this class picks the best `DateLocator` to set the view limits and the tick locations."
-msgstr ""
+msgstr "En la escala automática, esta clase elige el mejor `DateLocator` para establecer los límites de la vista y las ubicaciones del tick."
 
 #: matplotlib.dates.AutoDateLocator of
 msgid "Attributes"
@@ -316,7 +316,7 @@ msgstr "Atributos"
 
 #: matplotlib.dates.AutoDateLocator:50 of
 msgid "**intervald**"
-msgstr ""
+msgstr "**intervalo**"
 
 #: of
 msgid "dict"
@@ -324,41 +324,41 @@ msgstr "dict"
 
 #: matplotlib.dates.AutoDateLocator:21 of
 msgid "Mapping of tick frequencies to multiples allowed for that ticking. The default is ::"
-msgstr ""
+msgstr "Mapeo de frecuencias de ticks a múltiplos permitidos para ese ticking. El valor predeterminado es ::"
 
 #: matplotlib.dates.AutoDateLocator:37 of
 msgid "where the keys are defined in `dateutil.rrule`."
-msgstr ""
+msgstr "donde las claves se definen en `dateutil.rrule`."
 
 #: matplotlib.dates.AutoDateLocator:39 of
 msgid "The interval is used to specify multiples that are appropriate for the frequency of ticking. For instance, every 7 days is sensible for daily ticks, but for minutes/seconds, 15 or 30 make sense."
-msgstr ""
+msgstr "El intervalo se utiliza para especificar múltiplos que son apropiados para la frecuencia de tick. Por ejemplo, cada 7 días es sensible para los ticks diarios, pero por minutos, 15 o 30 tienen sentido."
 
 #: matplotlib.dates.AutoDateLocator:43 of
 msgid "When customizing, you should only modify the values for the existing keys. You should not add or delete entries."
-msgstr ""
+msgstr "Al personalizar, sólo debe modificar los valores de las claves existentes. No debe añadir o eliminar entradas."
 
 #: matplotlib.dates.AutoDateLocator:46 of
 msgid "Example for forcing ticks every 3 hours::"
-msgstr ""
+msgstr "Ejemplo para forzar ticks cada 3 horas::"
 
 #: matplotlib.dates.AutoDateLocator:62 matplotlib.dates.DateLocator:44
 #: matplotlib.dates.RRuleLocator:21 of
 msgid "**tz** : `datetime.tzinfo`"
-msgstr ""
+msgstr "**tz** : `datetime.tzinfo`"
 
 #: matplotlib.dates.AutoDateLocator:61 matplotlib.dates.DateLocator:43
 #: matplotlib.dates.RRuleLocator:20 of
 msgid "datetime.tzinfo"
-msgstr ""
+msgstr "datetime.tzinfo"
 
 #: matplotlib.dates.AutoDateLocator:62 matplotlib.dates.DateFormatter:33 of
 msgid "Ticks timezone."
-msgstr ""
+msgstr "Marca zona horaria."
 
 #: matplotlib.dates.AutoDateLocator:66 of
 msgid "**minticks**"
-msgstr ""
+msgstr "**minticks**"
 
 #: of
 msgid "int"
@@ -366,19 +366,19 @@ msgstr "int"
 
 #: matplotlib.dates.AutoDateLocator:65 of
 msgid "The minimum number of ticks desired; controls whether ticks occur yearly, monthly, etc."
-msgstr ""
+msgstr "El número mínimo de ticks deseado; controla si los ticks ocurren anualmente, mensualmente, etc."
 
 #: matplotlib.dates.AutoDateLocator:76 of
 msgid "**maxticks**"
-msgstr ""
+msgstr "**maxticas**"
 
 #: matplotlib.dates.AutoDateLocator:69 of
 msgid "The maximum number of ticks desired; controls the interval between ticks (ticking every other, every 3, etc.).  For fine-grained control, this can be a dictionary mapping individual rrule frequency constants (YEARLY, MONTHLY, etc.) to their own maximum number of ticks.  This can be used to keep the number of ticks appropriate to the format chosen in `AutoDateFormatter`. Any frequency not specified in this dictionary is given a default value."
-msgstr ""
+msgstr "El número máximo de ticks deseado; controla el intervalo entre ticks (marcando cada 3, etc.). Para un control fino, esto puede ser un diccionario que mapea constantes individuales de frecuencia de las reglas (ANUALMENTE MONTHLY, etc.). a su propio número máximo de ticks. Esto puede utilizarse para mantener el número de ticks apropiados para el formato elegido en `AutoDateFormatter`. Cualquier frecuencia no especificada en este diccionario tiene un valor predeterminado."
 
 #: matplotlib.dates.AutoDateLocator:95 of
 msgid "**interval_multiples**"
-msgstr ""
+msgstr "**intervalo_múltiples**"
 
 #: of
 msgid "bool, default: True"
@@ -386,16 +386,16 @@ msgstr "bool, por defecto: True"
 
 #: matplotlib.dates.AutoDateLocator:79 of
 msgid "Whether ticks should be chosen to be multiple of the interval, locking them to 'nicer' locations.  For example, this will force the ticks to be at hours 0, 6, 12, 18 when hourly ticking is done at 6 hour intervals."
-msgstr ""
+msgstr "Si los ticks deben ser seleccionados para ser múltiples del intervalo, bloqueándolos a ubicaciones 'más agradables'. Por ejemplo, esto obligará a los ticks a estar en horas 0, 6, 12, 18 cuando la hora de la marca se realice a intervalos de 6 horas."
 
 #: matplotlib.dates.AutoDateLocator.get_locator:2 of
 msgid "Pick the best locator based on a distance."
-msgstr ""
+msgstr "Elija el mejor localizador basado en una distancia."
 
 #: matplotlib.dates.AutoDateLocator.nonsingular:2
 #: matplotlib.dates.DateLocator.nonsingular:2 of
 msgid "Given the proposed upper and lower extent, adjust the range if it is too close to being singular (i.e. a range of ~0)."
-msgstr ""
+msgstr "Dado el alcance superior y inferior propuesto, ajuste el rango si está demasiado cerca de ser singular (es decir, un rango de ~0)."
 
 #: matplotlib.dates.AutoDateLocator.tick_values:2
 #: matplotlib.dates.MicrosecondLocator.tick_values:2
@@ -411,64 +411,64 @@ msgstr "Para obtener las ubicaciones de los marcadores con los valores vmin y vm
 
 #: matplotlib.dates.ConciseDateConverter:1 of
 msgid "Bases: :py:class:`matplotlib.dates.DateConverter`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.dates.DateConverter`"
 
 #: matplotlib.dates.ConciseDateConverter.axisinfo:2
 #: matplotlib.dates.DateConverter.axisinfo:2 of
 msgid "Return the `~matplotlib.units.AxisInfo` for *unit*."
-msgstr ""
+msgstr "Devuelve el `~matplotlib.units.AxisInfo` para *unit*."
 
 #: matplotlib.dates.ConciseDateConverter.axisinfo:4
 #: matplotlib.dates.DateConverter.axisinfo:4 of
 msgid "*unit* is a tzinfo instance or None. The *axis* argument is required but not used."
-msgstr ""
+msgstr "*unit* es una instancia tzinfo o ninguna. El argumento *axis* es necesario pero no se utiliza."
 
 #: matplotlib.dates.ConciseDateFormatter:2 of
 msgid "A `.Formatter` which attempts to figure out the best format to use for the date, and to make it as compact as possible, but still be complete. This is most useful when used with the `AutoDateLocator`::"
-msgstr ""
+msgstr "Un `.Formatter` que intenta averiguar el mejor formato para la fecha, y para hacerlo lo más compacto posible, pero aún así estar completo. Esto es más útil cuando se utiliza con el `AutoDateLocator`::"
 
 #: matplotlib.dates.ConciseDateFormatter:21 of
 msgid "**formats**"
-msgstr ""
+msgstr "**formatos**"
 
 #: of
 msgid "list of 6 strings, optional"
-msgstr ""
+msgstr "lista de 6 cadenas, opcional"
 
 #: matplotlib.dates.ConciseDateFormatter:18 of
 #, python-format
 msgid "Format strings for 6 levels of tick labelling: mostly years, months, days, hours, minutes, and seconds.  Strings use the same format codes as `~datetime.datetime.strftime`.  Default is ``['%Y', '%b', '%d', '%H:%M', '%H:%M', '%S.%f']``"
-msgstr ""
+msgstr "Formatear cadenas para 6 niveles de etiquetado de tick: principalmente años, meses, días, horas, minutos y segundos. Las cadenas utilizan los códigos del mismo formato que `~datetime. atetime.strftime`. Por defecto es ``['%Y', '%b', '%d', '%H:%M', '%H:%M', '%S.%f']``"
 
 #: matplotlib.dates.ConciseDateFormatter:27 of
 msgid "**zero_formats**"
-msgstr ""
+msgstr "**cero formatos**"
 
 #: matplotlib.dates.ConciseDateFormatter:24 of
 #, python-format
 msgid "Format strings for tick labels that are \"zeros\" for a given tick level.  For instance, if most ticks are months, ticks around 1 Jan 2005 will be labeled \"Dec\", \"2005\", \"Feb\".  The default is ``['', '%Y', '%b', '%b-%d', '%H:%M', '%H:%M']``"
-msgstr ""
+msgstr "Formatear cadenas para etiquetas de marcas que son \"ceros\" para un determinado nivel de tick. Por ejemplo, si la mayoría de ticks son meses, los ticks alrededor del 1 de enero de 2005 serán etiquetados como \"Dec\", \"2005\", \"Feb\". Por defecto es ``['', '%Y', '%b', '%b-%d', '%H:%M', '%H:%M']``"
 
 #: matplotlib.dates.ConciseDateFormatter:35 of
 msgid "**offset_formats**"
-msgstr ""
+msgstr "**offset_formats**"
 
 #: matplotlib.dates.ConciseDateFormatter:30 of
 msgid "Format strings for the 6 levels that is applied to the \"offset\" string found on the right side of an x-axis, or top of a y-axis. Combined with the tick labels this should completely specify the date.  The default is::"
-msgstr ""
+msgstr "Formatear cadenas para los 6 niveles que se aplican a la cadena \"offset\" encontrada en el lado derecho de un eje x, o superior de un eje y. Combinado con las etiquetas de marca, esto debe especificar completamente la fecha. Por defecto es::"
 
 #: matplotlib.dates.ConciseDateFormatter:38 of
 msgid "**show_offset**"
-msgstr ""
+msgstr "**mostrar_desplazamiento**"
 
 #: matplotlib.dates.ConciseDateFormatter:38 of
 msgid "Whether to show the offset or not."
-msgstr ""
+msgstr "Si mostrar el desplazamiento o no."
 
 #: matplotlib.dates.ConciseDateFormatter:41 matplotlib.dates.DateFormatter:36
 #: of
 msgid "To enable/disable the use of TeX's math mode for rendering the results of the formatter."
-msgstr ""
+msgstr "Para activar/desactivar el uso del modo matemático de TeX para renderizar los resultados del formateador."
 
 #: matplotlib.dates.ConciseDateFormatter:55 of
 msgid "Examples"
@@ -476,15 +476,15 @@ msgstr "Ejemplos"
 
 #: matplotlib.dates.ConciseDateFormatter:56 of
 msgid "See :doc:`/gallery/ticks/date_concise_formatter`"
-msgstr ""
+msgstr "Ver :doc:`/gallery/ticks/date_concise_formatter`"
 
 #: ../../api/dates_api.rst:7
 msgid "(`Source code <../api/dates_api-1.py>`__, `png <../api/dates_api-1.png>`__, `pdf <../api/dates_api-1.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../api/dates_api-1.py>`__, `png <../api/dates_api-1.png>`__, `pdf <../api/dates_api-1.pdf>`__)"
 
 #: matplotlib.dates.ConciseDateFormatter:85 of
 msgid "Autoformat the date labels.  The default format is used to form an initial string, and then redundant elements are removed."
-msgstr ""
+msgstr "Autoformatear las etiquetas de fecha. El formato por defecto se utiliza para formar una cadena inicial, y luego los elementos redundantes se eliminan."
 
 #: matplotlib.dates.ConciseDateFormatter.format_data_short:2 of
 msgid "Return a short string version of the tick value."
@@ -500,31 +500,31 @@ msgstr "Devuelve las etiquetas de los marcadores de todos los ticks a la vez."
 
 #: matplotlib.dates.DateConverter:1 of
 msgid "Bases: :py:class:`matplotlib.units.ConversionInterface`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.units.ConversionInterface`"
 
 #: matplotlib.dates.DateConverter:2 of
 msgid "Converter for `datetime.date` and `datetime.datetime` data, or for date/time data represented as it would be converted by `date2num`."
-msgstr ""
+msgstr "Convierte los datos `datetime.date` y `datetime.datetime`, o los datos de fecha/hora representados ya que serían convertidos por `date2num`."
 
 #: matplotlib.dates.DateConverter:5 of
 msgid "The 'unit' tag for such data is None or a tzinfo instance."
-msgstr ""
+msgstr "La etiqueta 'unit' para estos datos es Ninguno o una instancia tzinfo."
 
 #: matplotlib.dates.DateConverter.convert:2 of
 msgid "If *value* is not already a number or sequence of numbers, convert it with `date2num`."
-msgstr ""
+msgstr "Si *valor* no es ya un número o secuencia de números, conviértalo con `date2num`."
 
 #: matplotlib.dates.DateConverter.convert:5 of
 msgid "The *unit* and *axis* arguments are not used."
-msgstr ""
+msgstr "Los argumentos *unidad* y *eje* no se utilizan."
 
 #: matplotlib.dates.DateConverter.default_units:2 of
 msgid "Return the tzinfo instance of *x* or of its first element, or None"
-msgstr ""
+msgstr "Devuelve la instancia tzinfo de *x* o de su primer elemento, o Ninguno"
 
 #: matplotlib.dates.DateFormatter:2 of
 msgid "Format a tick (in days since the epoch) with a `~datetime.datetime.strftime` format string."
-msgstr ""
+msgstr "Formar un tick (en días desde el epoch) con una cadena de formato `~datetime.datetime.strftime`."
 
 #: matplotlib.dates.DateFormatter:30 of
 msgid "**fmt**"
@@ -532,15 +532,15 @@ msgstr "**fmt**"
 
 #: matplotlib.dates.DateFormatter:30 of
 msgid "`~datetime.datetime.strftime` format string"
-msgstr ""
+msgstr "`~datetime.datetime.strftime` formato cadena"
 
 #: matplotlib.dates.DateFormatter:33 of
 msgid "**tz** : `datetime.tzinfo`, default: :rc:`timezone`"
-msgstr ""
+msgstr "**tz** : `datetime.tzinfo`, por defecto: :rc:`timezone`"
 
 #: matplotlib.dates.DateFormatter:32 of
 msgid "datetime.tzinfo, default: rcParams[\"timezone\"] (default: 'UTC')"
-msgstr ""
+msgstr "datetime.tzinfo, por defecto: rcParams[\"timezone\"] (por defecto: 'UTC')"
 
 #: matplotlib.dates.DateLocator:1 of
 msgid "Bases: :py:class:`matplotlib.ticker.Locator`"
@@ -548,75 +548,75 @@ msgstr "Bases: :py:class:`matplotlib.ticker.Locator`"
 
 #: matplotlib.dates.DateLocator:2 of
 msgid "Determines the tick locations when plotting dates."
-msgstr ""
+msgstr "Determina las ubicaciones de ticks al trazar fechas."
 
 #: matplotlib.dates.DateLocator:4 of
 msgid "This class is subclassed by other Locators and is not meant to be used on its own."
-msgstr ""
+msgstr "Esta clase está subclasificada por otros Localizadores y no está pensada para ser utilizada por sí sola."
 
 #: matplotlib.dates.DateLocator.datalim_to_dt:2 of
 msgid "Convert axis data interval to datetime objects."
-msgstr ""
+msgstr "Convierte el intervalo de datos del eje a objetos de fecha/hora."
 
 #: matplotlib.dates.DateLocator.set_tzinfo:2 of
 msgid "Set time zone info."
-msgstr ""
+msgstr "Establecer información de zona horaria."
 
 #: matplotlib.dates.DateLocator.viewlim_to_dt:2 of
 msgid "Convert the view interval to datetime objects."
-msgstr ""
+msgstr "Convierte el intervalo de la vista a objetos de fecha/hora."
 
 #: matplotlib.dates.DayLocator:1 matplotlib.dates.HourLocator:1
 #: matplotlib.dates.MinuteLocator:1 matplotlib.dates.MonthLocator:1
 #: matplotlib.dates.SecondLocator:1 matplotlib.dates.WeekdayLocator:1
 #: matplotlib.dates.YearLocator:1 of
 msgid "Bases: :py:class:`matplotlib.dates.RRuleLocator`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.dates.RuleLocator`"
 
 #: matplotlib.dates.DayLocator:2 of
 msgid "Make ticks on occurrences of each day of the month.  For example, 1, 15, 30."
-msgstr ""
+msgstr "Haga ticks en las ocurrencias de cada día del mes. Por ejemplo, 1, 15, 30."
 
 #: matplotlib.dates.DayLocator:24 of
 msgid "Mark every day in *bymonthday*; *bymonthday* can be an int or sequence."
-msgstr ""
+msgstr "Marcar todos los días en *por mes*; *por mes* puede ser un int o secuencia."
 
 #: matplotlib.dates.DayLocator:26 of
 msgid "Default is to tick every day of the month: ``bymonthday=range(1, 32)``."
-msgstr ""
+msgstr "Por defecto es marcar todos los días del mes: ``bymonthday=range(1, 32)``."
 
 #: matplotlib.dates.HourLocator:2 of
 msgid "Make ticks on occurrences of each hour."
-msgstr ""
+msgstr "Crea ticks en ocurrencias de cada hora."
 
 #: matplotlib.dates.HourLocator:23 of
 msgid "Mark every hour in *byhour*; *byhour* can be an int or sequence. Default is to tick every hour: ``byhour=range(24)``"
-msgstr ""
+msgstr "Marcar cada hora en *por hora*; *por hora* puede ser una señal o secuencia. Por defecto marca cada hora: ``byhour=range(24)``"
 
 #: matplotlib.dates.HourLocator:26 matplotlib.dates.MinuteLocator:26
 #: matplotlib.dates.MonthLocator:26 matplotlib.dates.SecondLocator:26 of
 msgid "*interval* is the interval between each iteration.  For example, if ``interval=2``, mark every second occurrence."
-msgstr ""
+msgstr "*interval* es el intervalo entre cada iteración. Por ejemplo, si es ``interval=2``, marque cada segundo acontecimiento."
 
 #: matplotlib.dates.MicrosecondLocator:2 of
 msgid "Make ticks on regular intervals of one or more microsecond(s)."
-msgstr ""
+msgstr "Hacer ticks en intervalos regulares de uno o más micro(s)."
 
 #: matplotlib.dates.MicrosecondLocator:6 of
 msgid "By default, Matplotlib uses a floating point representation of time in days since the epoch, so plotting data with microsecond time resolution does not work well for dates that are far (about 70 years) from the epoch (check with `~.dates.get_epoch`)."
-msgstr ""
+msgstr "Por defecto, Matplotlib utiliza una representación de punto flotante del tiempo en días desde el époco, por lo que trazar datos con resolución microsegunda vez no funciona bien para fechas que están lejos (alrededor de 70 años) de la epoch (consulte con `~. ates.get_epoch`)."
 
 #: matplotlib.dates.MicrosecondLocator:12 of
 msgid "If you want sub-microsecond resolution time plots, it is strongly recommended to use floating point seconds, not datetime-like time representation."
-msgstr ""
+msgstr "Si desea gráficos de tiempo de resolución sub-microsegundos, se recomienda usar segundos de punto flotante, no de fecha como la representación."
 
 #: matplotlib.dates.MicrosecondLocator:16 of
 msgid "If you really must use datetime.datetime() or similar and still need microsecond precision, change the time origin via `.dates.set_epoch` to something closer to the dates being plotted. See :doc:`/gallery/ticks/date_precision_and_epochs`."
-msgstr ""
+msgstr "Si realmente debe usar datetime.datetime() o similar y todavía necesita precisión de microsegundo, cambie el origen de la hora a través de `. ates.set_epoch` a algo más cercano a las fechas que se están trazando. Mira :doc:`/gallery/ticks/date_precision_and_epochs`."
 
 #: matplotlib.dates.MicrosecondLocator:39 of
 msgid "*interval* is the interval between each iteration.  For example, if ``interval=2``, mark every second microsecond."
-msgstr ""
+msgstr "*interval* es el intervalo entre cada iteración. Por ejemplo, si es ``interval=2``, marque cada segundo microsegundo."
 
 #: matplotlib.dates.MicrosecondLocator.set_data_interval:2
 #: matplotlib.dates.MicrosecondLocator.set_view_interval:2 of
@@ -637,63 +637,63 @@ msgstr "\\"
 
 #: matplotlib.dates.MinuteLocator:2 of
 msgid "Make ticks on occurrences of each minute."
-msgstr ""
+msgstr "Hacer ticks en las ocurrencias de cada minuto."
 
 #: matplotlib.dates.MinuteLocator:23 of
 msgid "Mark every minute in *byminute*; *byminute* can be an int or sequence.  Default is to tick every minute: ``byminute=range(60)``"
-msgstr ""
+msgstr "Marca cada minuto en *byminute*; *byminute* puede ser una int o secuencia. Por defecto marca cada minuto: ``byminute=range(60)``"
 
 #: matplotlib.dates.MonthLocator:2 of
 msgid "Make ticks on occurrences of each month, e.g., 1, 3, 12."
-msgstr ""
+msgstr "Hacer ticks en las ocurrencias de cada mes, por ejemplo, 1, 3, 12."
 
 #: matplotlib.dates.MonthLocator:23 of
 msgid "Mark every month in *bymonth*; *bymonth* can be an int or sequence.  Default is ``range(1, 13)``, i.e. every month."
-msgstr ""
+msgstr "Marcar cada mes en *por mes*; *por mes* puede ser una señal o secuencia. Por defecto es ``range(1, 13)``, es decir, cada mes."
 
 #: matplotlib.dates.SecondLocator:2 of
 msgid "Make ticks on occurrences of each second."
-msgstr ""
+msgstr "Crea ticks en las ocurrencias de cada segundo."
 
 #: matplotlib.dates.SecondLocator:23 of
 msgid "Mark every second in *bysecond*; *bysecond* can be an int or sequence.  Default is to tick every second: ``bysecond = range(60)``"
-msgstr ""
+msgstr "Marcar cada segundo en *bysecond*; *bysecond* puede ser una int o secuencia. Por defecto marca cada segundo: ``bysecond = range(60)``"
 
 #: matplotlib.dates.WeekdayLocator:2 of
 msgid "Make ticks on occurrences of each weekday."
-msgstr ""
+msgstr "Hacer ticks en las ocurrencias de cada día de la semana."
 
 #: matplotlib.dates.WeekdayLocator:23 of
 msgid "Mark every weekday in *byweekday*; *byweekday* can be a number or sequence."
-msgstr ""
+msgstr "Marcar todos los días de la semana en *por semana*; *por semana* puede ser un número o secuencia."
 
 #: matplotlib.dates.WeekdayLocator:26 of
 msgid "Elements of *byweekday* must be one of MO, TU, WE, TH, FR, SA, SU, the constants from :mod:`dateutil.rrule`, which have been imported into the :mod:`matplotlib.dates` namespace."
-msgstr ""
+msgstr "Los elementos de *por semana* deben ser uno de MO, TU, WE, TH, FR, SA, SU, las constantes de :mod:`dateutil. rule`, que han sido importados en el namespace `matplotlib.dates` de :mod:."
 
 #: matplotlib.dates.WeekdayLocator:30 of
 msgid "*interval* specifies the number of weeks to skip.  For example, ``interval=2`` plots every second week."
-msgstr ""
+msgstr "*interval* especifica el número de semanas a saltar. Por ejemplo, las gráficas ``interval=2`` cada segunda semana."
 
 #: matplotlib.dates.YearLocator:2 of
 msgid "Make ticks on a given day of each year that is a multiple of base."
-msgstr ""
+msgstr "Hacer garrapatos en un día determinado de cada año que es un múltiplo de base."
 
 #: matplotlib.dates.YearLocator:4 of
 msgid "Examples::"
-msgstr ""
+msgstr "Ejemplos::"
 
 #: matplotlib.dates.YearLocator:30 of
 msgid "Mark years that are multiple of base on a given month and day (default jan 1)."
-msgstr ""
+msgstr "Marque años que son múltiples de base en un mes y día determinado (por defecto jan 1)."
 
 #: matplotlib.dates.date2num:8 of
 msgid "**d** : `datetime.datetime` or `numpy.datetime64` or sequences of these"
-msgstr ""
+msgstr "**d** : `datetime.datetime` o `numpy.datetime64` o secuencias de estas"
 
 #: matplotlib.dates.date2num:7 of
 msgid "datetime.datetime or numpy.datetime64 or sequences of these"
-msgstr ""
+msgstr "datetime.datetime o numpy.datetime64 o secuencias de estos"
 
 #: dateutil.relativedelta.relativedelta.normalized matplotlib.dates.date2num
 #: matplotlib.dates.drange matplotlib.dates.epoch2num
@@ -704,84 +704,84 @@ msgstr "Devuelve"
 
 #: matplotlib.dates.date2num:23 of
 msgid "float or sequence of floats"
-msgstr ""
+msgstr "flotante o secuencia de flotantes"
 
 #: matplotlib.dates.date2num:13 of
 msgid "Number of days since the epoch.  See `.get_epoch` for the epoch, which can be changed by :rc:`date.epoch` or `.set_epoch`.  If the epoch is \"1970-01-01T00:00:00\" (default) then noon Jan 1 1970 (\"1970-01-01T12:00:00\") returns 0.5."
-msgstr ""
+msgstr "Número de días desde el epoch. Vea `.get_epoch` para el epoch, que puede ser cambiado por :rc:`date.epoch` o `. Si el epoch es \"1970-01-01-01T00:00:00\" (predeterminado), entonces al mediodía Enan 1 1970 (\"1970-01-01T12:00:00\") devuelve 0.5."
 
 #: matplotlib.dates.date2num:27 of
 msgid "The Gregorian calendar is assumed; this is not universal practice. For details see the module docstring."
-msgstr ""
+msgstr "El calendario gregoriano está asumido; esto no es práctica universal. Para más detalles vea el módulo docstring."
 
 #: matplotlib.dates.datestr2num:8 matplotlib.dates.num2epoch:8 of
 msgid "**d**"
-msgstr ""
+msgstr "**d**"
 
 #: of
 msgid "str or sequence of str"
-msgstr ""
+msgstr "str o secuencia de str"
 
 #: matplotlib.dates.datestr2num:8 of
 msgid "The dates to convert."
-msgstr ""
+msgstr "Las fechas a convertir."
 
 #: matplotlib.dates.datestr2num:24 of
 msgid "**default**"
-msgstr ""
+msgstr "**por defecto**"
 
 #: of
 msgid "datetime.datetime, optional"
-msgstr ""
+msgstr "datetime.datetime, opcional"
 
 #: matplotlib.dates.datestr2num:11 of
 msgid "The default date to use when fields are missing in *d*."
-msgstr ""
+msgstr "La fecha por defecto a usar cuando los campos no están en *d*."
 
 #: matplotlib.dates.drange:4 of
 msgid "The dates start at *dstart* and reach up to, but not including *dend*. They are spaced by *delta*."
-msgstr ""
+msgstr "Las fechas comienzan en *dstart* y alcanzan para, pero no incluyen *dend*, están espaciadas por *delta*."
 
 #: matplotlib.dates.drange:10 of
 msgid "**dstart, dend** : `~datetime.datetime`"
-msgstr ""
+msgstr "**dstart, dend** : `~datetime.datetime`"
 
 #: matplotlib.dates.drange:9 of
 msgid "datetime"
-msgstr ""
+msgstr "fecha"
 
 #: matplotlib.dates.drange:10 of
 msgid "The date limits."
-msgstr ""
+msgstr "Los límites de fecha."
 
 #: matplotlib.dates.drange:13 of
 msgid "**delta** : `datetime.timedelta`"
-msgstr ""
+msgstr "**delta** : `datetime.timedelta`"
 
 #: matplotlib.dates.drange:12 of
 msgid "datetime.timedelta"
-msgstr ""
+msgstr "datetime.timedelta"
 
 #: matplotlib.dates.drange:13 of
 msgid "Spacing of the dates."
-msgstr ""
+msgstr "Espaciado de las fechas."
 
 #: matplotlib.dates.drange:30 matplotlib.dates.epoch2num:20
 #: matplotlib.dates.num2epoch:20 of
 msgid "`numpy.array`"
-msgstr ""
+msgstr "`numpy.array`"
 
 #: matplotlib.dates.drange:18 of
 msgid "A list floats representing Matplotlib dates."
-msgstr ""
+msgstr "Una lista de flotantes que representan las fechas de Matplotlib."
 
 #: matplotlib.dates.epoch2num:2 of
 msgid "[*Deprecated*] Convert UNIX time to days since Matplotlib epoch."
-msgstr ""
+msgstr "[*Deprecado*] Convierte UNIX vez a días desde Matplotlib epoch."
 
 #: matplotlib.dates.epoch2num:8 of
 msgid "**e**"
-msgstr ""
+msgstr "**e**"
 
 #: of
 msgid "list of floats"
@@ -789,19 +789,19 @@ msgstr "lista de flotantes"
 
 #: matplotlib.dates.epoch2num:8 matplotlib.dates.num2epoch:13 of
 msgid "Time in seconds since 1970-01-01."
-msgstr ""
+msgstr "Tiempo en segundos desde 1970-01-01."
 
 #: matplotlib.dates.epoch2num:13 matplotlib.dates.num2epoch:8 of
 msgid "Time in days since Matplotlib epoch (see `~.dates.get_epoch()`)."
-msgstr ""
+msgstr "Tiempo en días desde que Matplotlib epoch (ver `~.dates.get_epoch()`)."
 
 #: matplotlib.dates.get_epoch:21 matplotlib.dates.set_epoch:33 of
 msgid "**epoch**"
-msgstr ""
+msgstr "**epoch**"
 
 #: matplotlib.dates.get_epoch:9 of
 msgid "String for the epoch (parsable by `numpy.datetime64`)."
-msgstr ""
+msgstr "String for the epoch (parsable by `numpy.datetime64`)."
 
 #: matplotlib.dates.num2date:10 matplotlib.dates.num2timedelta:10 of
 msgid "**x**"
@@ -809,55 +809,55 @@ msgstr "**x**"
 
 #: matplotlib.dates.num2date:8 of
 msgid "Number of days (fraction part represents hours, minutes, seconds) since the epoch.  See `.get_epoch` for the epoch, which can be changed by :rc:`date.epoch` or `.set_epoch`."
-msgstr ""
+msgstr "Número de días (parte de la fracción representa horas, minutos, segundos) desde el époco. Ver `. et_epoch` para el epoch, que puede ser cambiado por :rc:`date.epoch` o `.set_epoch`."
 
 #: matplotlib.dates.num2date:13 of
 msgid "**tz** : str, default: :rc:`timezone`"
-msgstr ""
+msgstr "**tz** : str, por defecto: :rc:`timezone`"
 
 #: of
 msgid "str, default:"
-msgstr ""
+msgstr "str, por defecto:"
 
 #: matplotlib.dates.num2date:13 of
 msgid "Timezone of *x*."
-msgstr ""
+msgstr "Zona horaria de *x*."
 
 #: matplotlib.dates.num2date:28 of
 msgid "`~datetime.datetime` or sequence of `~datetime.datetime`"
-msgstr ""
+msgstr "`~datetime.datetime` o secuencia de `~datetime.datetime`"
 
 #: matplotlib.dates.num2date:18 of
 msgid "Dates are returned in timezone *tz*."
-msgstr ""
+msgstr "Las fechas son devueltas en la zona horaria *tz*."
 
 #: matplotlib.dates.num2date:20 of
 msgid "If *x* is a sequence, a sequence of `~datetime.datetime` objects will be returned."
-msgstr ""
+msgstr "Si *x* es una secuencia, se retornará una secuencia de objetos `~datetime.datetime`."
 
 #: matplotlib.dates.num2date:32 of
 msgid "The addition of one here is a historical artifact. Also, note that the Gregorian calendar is assumed; this is not universal practice. For details, see the module docstring."
-msgstr ""
+msgstr "La adición de uno aquí es un artefacto histórico. Además, tenga en cuenta que el calendario Gregoriano está asumido; esto no es práctica universal. Para más detalles, consulte la cadena de documentación del módulo."
 
 #: matplotlib.dates.num2epoch:2 of
 msgid "[*Deprecated*] Convert days since Matplotlib epoch to UNIX time."
-msgstr ""
+msgstr "[*Deprecado*] Convierte días desde la época de Matplotlib a la de UNIX."
 
 #: matplotlib.dates.num2timedelta:4 of
 msgid "If *x* is a sequence, a sequence of `~datetime.timedelta` objects will be returned."
-msgstr ""
+msgstr "Si *x* es una secuencia, se retornará una secuencia de objetos `~datetime.timedelta`."
 
 #: of
 msgid "float, sequence of floats"
-msgstr ""
+msgstr "flotante, secuencia de flotantes"
 
 #: matplotlib.dates.num2timedelta:10 of
 msgid "Number of days. The fraction part represents hours, minutes, seconds."
-msgstr ""
+msgstr "Número de días. La parte de la fracción representa horas, minutos, segundos."
 
 #: matplotlib.dates.num2timedelta:27 of
 msgid "`datetime.timedelta` or list[`datetime.timedelta`]"
-msgstr ""
+msgstr "`datetime.timedelta` o lista[`datetime.timedelta`]"
 
 #: dateutil.relativedelta.relativedelta:1 of
 msgid "Bases: :py:class:`object`"
@@ -865,75 +865,75 @@ msgstr "Bases: :py:class:`object`"
 
 #: dateutil.relativedelta.relativedelta:2 of
 msgid "The relativedelta type is designed to be applied to an existing datetime and can replace specific components of that datetime, or represents an interval of time."
-msgstr ""
+msgstr "El tipo relativedelta está diseñado para ser aplicado a una fecha actual y puede reemplazar componentes específicos de esa fecha, o representa un intervalo de tiempo."
 
 #: dateutil.relativedelta.relativedelta:6 of
 msgid "It is based on the specification of the excellent work done by M.-A. Lemburg in his `mx.DateTime <https://www.egenix.com/products/python/mxBase/mxDateTime/>`_ extension. However, notice that this type does *NOT* implement the same algorithm as his work. Do *NOT* expect it to behave like mx.DateTime's counterpart."
-msgstr ""
+msgstr "Se basa en la especificación del excelente trabajo realizado por M.-A. Lemburg en su extensión `mx.DateTime <https://www.egenix.com/products/python/mxBase/mxDateTime/>`_. Sin embargo, ten en cuenta que este tipo *NOT* implementa el mismo algoritmo que su trabajo. *NOT* espera que se comporte como la contraparte de mx.DateTime."
 
 #: dateutil.relativedelta.relativedelta:12 of
 msgid "There are two different ways to build a relativedelta instance. The first one is passing it two date/datetime classes::"
-msgstr ""
+msgstr "Hay dos maneras diferentes de construir una instancia relativedelta. La primera es pasar dos clases fecha/fecha::"
 
 #: dateutil.relativedelta.relativedelta:17 of
 msgid "The second one is passing it any number of the following keyword arguments::"
-msgstr ""
+msgstr "La segunda es pasar cualquier número de los siguientes argumentos de palabra clave::"
 
 #: dateutil.relativedelta.relativedelta:52 of
 msgid "There are relative and absolute forms of the keyword arguments. The plural is relative, and the singular is absolute. For each argument in the order below, the absolute form is applied first (by setting each attribute to that value) and then the relative form (by adding the value to the attribute)."
-msgstr ""
+msgstr "Hay formas relativas y absolutas de los argumentos de palabras clave, el plural es relativo, y el singular es absoluto. Para cada argumento en el orden de abajo, el formulario absoluto se aplica primero (estableciendo cada atributo a ese valor) y luego el formulario relativo (añadiendo el valor al atributo)."
 
 #: dateutil.relativedelta.relativedelta:58 of
 msgid "The order of attributes considered when this relativedelta is added to a datetime is:"
-msgstr ""
+msgstr "El orden de los atributos considerados cuando se agrega este relativedelta a una fecha es:"
 
 #: dateutil.relativedelta.relativedelta:61 of
 msgid "Year"
-msgstr ""
+msgstr "Año"
 
 #: dateutil.relativedelta.relativedelta:62 of
 msgid "Month"
-msgstr ""
+msgstr "Mes"
 
 #: dateutil.relativedelta.relativedelta:63 of
 msgid "Day"
-msgstr ""
+msgstr "Día"
 
 #: dateutil.relativedelta.relativedelta:64 of
 msgid "Hours"
-msgstr ""
+msgstr "Horas"
 
 #: dateutil.relativedelta.relativedelta:65 of
 msgid "Minutes"
-msgstr ""
+msgstr "Minutos"
 
 #: dateutil.relativedelta.relativedelta:66 of
 msgid "Seconds"
-msgstr ""
+msgstr "Segundos"
 
 #: dateutil.relativedelta.relativedelta:67 of
 msgid "Microseconds"
-msgstr ""
+msgstr "Microsegundos"
 
 #: dateutil.relativedelta.relativedelta:69 of
 msgid "Finally, weekday is applied, using the rule described above."
-msgstr ""
+msgstr "Finalmente, el día de la semana se aplica, utilizando la regla descrita anteriormente."
 
 #: dateutil.relativedelta.relativedelta:71 of
 msgid "For example"
-msgstr ""
+msgstr "Por ejemplo"
 
 #: dateutil.relativedelta.relativedelta:80 of
 msgid "First, the day is set to 1 (the first of the month), then 25 hours are added, to get to the 2nd day and 14th hour, finally the weekday is applied, but since the 2nd is already a Monday there is no effect."
-msgstr ""
+msgstr "Primero, el día está fijado en 1 (el primero del mes), entonces se añaden 25 horas para llegar al segundo día y a la 14ª hora, finalmente el día de la semana se aplica, pero dado que el segundo es ya un lunes no hay ningún efecto."
 
 #: dateutil.relativedelta.relativedelta.normalized:2 of
 msgid "Return a version of this object represented entirely using integer values for the relative attributes."
-msgstr ""
+msgstr "Devuelve una versión de este objeto representada enteramente usando valores enteros para los atributos relativos."
 
 #: dateutil.relativedelta.relativedelta.normalized:8 of
 msgid "Returns a :class:`dateutil.relativedelta.relativedelta` object."
-msgstr ""
+msgstr "Devuelve un objeto :class:`dateutil.relativedelta.relativedelta`."
 
 #: dateutil.rrule.rrule:1 of
 msgid "Bases: :py:class:`dateutil.rrule.rrulebase`"
@@ -941,125 +941,125 @@ msgstr "Bases: :py:class:`dateutil.rrule.rrulebase`"
 
 #: dateutil.rrule.rrule:2 of
 msgid "That's the base of the rrule operation. It accepts all the keywords defined in the RFC as its constructor parameters (except byday, which was renamed to byweekday) and more. The constructor prototype is::"
-msgstr ""
+msgstr "Esa es la base de la operación de reglas. Acepta todas las palabras clave definidas en el RFC como sus parámetros de constructor (excepto por día, que fue renombrado por semana) y más. El prototipo del constructor es::"
 
 #: dateutil.rrule.rrule:8 of
 msgid "Where freq must be one of YEARLY, MONTHLY, WEEKLY, DAILY, HOURLY, MINUTELY, or SECONDLY."
-msgstr ""
+msgstr "Donde freq debe ser uno de AÑO, MONTHLY, WEEKLY, DAILY, HOURLY, MINUTELY, or SECONDLY."
 
 #: dateutil.rrule.rrule:12 of
 msgid "Per RFC section 3.3.10, recurrence instances falling on invalid dates and times are ignored rather than coerced:"
-msgstr ""
+msgstr "Por sección 3.3.10 RFC, las instancias de repetición que caen en fechas y horas no válidas son ignoradas en lugar de ser forzadas:"
 
 #: dateutil.rrule.rrule:15 of
 msgid "Recurrence rules may generate recurrence instances with an invalid date (e.g., February 30) or nonexistent local time (e.g., 1:30 AM on a day where the local time is moved forward by an hour at 1:00 AM).  Such recurrence instances MUST be ignored and MUST NOT be counted as part of the recurrence set."
-msgstr ""
+msgstr "Las reglas de recurrencia pueden generar instancias de repetición con una fecha no válida (por ejemplo, el 30 de febrero) o una hora local no existente (p. ej. 1:30 AM en un día en el que la hora local se mueve hacia adelante una hora a las 1:00 AM). Tales instancias de repetición DEBEN ser ignoradas y NO DEBE ser contadas como parte del conjunto de repeticiones."
 
 #: dateutil.rrule.rrule:21 of
 msgid "This can lead to possibly surprising behavior when, for example, the start date occurs at the end of the month:"
-msgstr ""
+msgstr "Esto puede llevar a un comportamiento posiblemente sorprendente cuando, por ejemplo, la fecha de inicio ocurre al final del mes:"
 
 #: dateutil.rrule.rrule:34 of
 msgid "Additionally, it supports the following keyword arguments:"
-msgstr ""
+msgstr "Además, soporta los siguientes argumentos de palabra clave:"
 
 #: dateutil.rrule.rrule:36 of
 msgid "The recurrence start. Besides being the base for the recurrence, missing parameters in the final recurrence instances will also be extracted from this date. If not given, datetime.now() will be used instead."
-msgstr ""
+msgstr "Además de ser la base de la recurrencia, los parámetros faltantes en las instancias finales de recurrencia también se extraerán de esta fecha. Si no se proporciona, datetime.now() se usará en su lugar."
 
 #: dateutil.rrule.rrule:41 of
 msgid "The interval between each freq iteration. For example, when using YEARLY, an interval of 2 means once every two years, but with HOURLY, it means once every two hours. The default interval is 1."
-msgstr ""
+msgstr "El intervalo entre cada iteración freq. Por ejemplo, al usar AÑO, un intervalo de 2 significa una vez cada dos años, pero con HORLY, significa una vez cada dos horas. El intervalo por defecto es 1."
 
 #: dateutil.rrule.rrule:45 of
 msgid "The week start day. Must be one of the MO, TU, WE constants, or an integer, specifying the first day of the week. This will affect recurrences based on weekly periods. The default week start is got from calendar.firstweekday(), and may be modified by calendar.setfirstweekday()."
-msgstr ""
+msgstr "El día de inicio de la semana. Debe ser una de las constantes de MO, UT, WE o un entero, especificando el primer día de la semana. Esto afectará a las recurrencias basadas en periodos semanales. El inicio por defecto de la semana se obtiene de calendar.firstweekday(), y puede ser modificado por calendar.setfirstweekday()."
 
 #: dateutil.rrule.rrule:51 of
 msgid "If given, this determines how many occurrences will be generated.  .. note::     As of version 2.5.0, the use of the keyword ``until`` in conjunction     with ``count`` is deprecated, to make sure ``dateutil`` is fully     compliant with `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/     html/rfc5545#section-3.3.10>`_. Therefore, ``until`` and ``count``     **must not** occur in the same call to ``rrule``."
-msgstr ""
+msgstr "Si se proporciona, esto determina cuántas ocurrencias se generarán. .. nota:: A partir de la versión 2.5. , el uso de la palabra clave ``until`` junto con ``count`` está obsoleto, para asegurarse de que ``dateutil`` es totalmente compatible con `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/     html/rfc5545#section-3.3.10>`_. Por lo tanto, ``until`` y ``count`` **no** deben ocurrir en la misma llamada a ``rrule``."
 
 #: dateutil.rrule.rrule:52 of
 msgid "If given, this determines how many occurrences will be generated."
-msgstr ""
+msgstr "Si se proporciona, esto determina cuántas ocurrencias se generarán."
 
 #: dateutil.rrule.rrule:55 dateutil.rrule.rrule:67 of
 msgid "As of version 2.5.0, the use of the keyword ``until`` in conjunction with ``count`` is deprecated, to make sure ``dateutil`` is fully compliant with `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/ html/rfc5545#section-3.3.10>`_. Therefore, ``until`` and ``count`` **must not** occur in the same call to ``rrule``."
-msgstr ""
+msgstr "A partir de la versión 2.5. , el uso de la palabra clave ``until`` junto con ``count`` está obsoleto, para asegurarse de que ``dateutil`` es totalmente compatible con `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/ html/rfc5545#section-3.3.10>`_. Por lo tanto, ``until`` y ``count`` **no** deben ocurrir en la misma llamada a ``rrule``."
 
 #: dateutil.rrule.rrule:60 of
 msgid "If given, this must be a datetime instance specifying the upper-bound limit of the recurrence. The last recurrence in the rule is the greatest datetime that is less than or equal to the value specified in the ``until`` parameter.  .. note::     As of version 2.5.0, the use of the keyword ``until`` in conjunction     with ``count`` is deprecated, to make sure ``dateutil`` is fully     compliant with `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/     html/rfc5545#section-3.3.10>`_. Therefore, ``until`` and ``count``     **must not** occur in the same call to ``rrule``."
-msgstr ""
+msgstr "Si se proporciona, debe ser una instancia de fecha que especifique el límite máximo de la recurrencia. La última repetición en la regla es la fecha más grande que es menor o igual al valor especificado en el parámetro ``hasta``. .. nota:: A partir de la versión 2.5. , el uso de la palabra clave ``until`` junto con ``count`` está obsoleto, para asegurarse de que ``dateutil`` es totalmente compatible con `RFC-5545 Sec. 3.3.10 <https://tools.ietf.org/     html/rfc5545#section-3.3.10>`_. Por lo tanto, ``until`` y ``count`` **no** deben ocurrir en la misma llamada a ``rrule``."
 
 #: dateutil.rrule.rrule:61 of
 msgid "If given, this must be a datetime instance specifying the upper-bound limit of the recurrence. The last recurrence in the rule is the greatest datetime that is less than or equal to the value specified in the ``until`` parameter."
-msgstr ""
+msgstr "Si se proporciona, debe ser una instancia de fecha que especifique el límite máximo de la recurrencia. La última repetición en la regla es la fecha más grande que es menor o igual al valor especificado en el parámetro ``hasta``."
 
 #: dateutil.rrule.rrule:72 of
 msgid "If given, it must be either an integer, or a sequence of integers, positive or negative. Each given integer will specify an occurrence number, corresponding to the nth occurrence of the rule inside the frequency period. For example, a bysetpos of -1 if combined with a MONTHLY frequency, and a byweekday of (MO, TU, WE, TH, FR), will result in the last work day of every month."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, positivo o negativo. Cada entero especificado especificará un número de ocurrencia, correspondiente a la novena ocurrencia de la regla dentro del período de frecuencia. Por ejemplo, un bysetpos de -1 si se combina con una frecuencia MONTHLY, y un día por semana de (MO, UT, WE, TH, FR), resultará en el último día laboral de cada mes."
 
 #: dateutil.rrule.rrule:79 of
 msgid "If given, it must be either an integer, or a sequence of integers, meaning the months to apply the recurrence to."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, lo que significa que los meses a los que aplicar la recurrencia a."
 
 #: dateutil.rrule.rrule:82 of
 msgid "If given, it must be either an integer, or a sequence of integers, meaning the month days to apply the recurrence to."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, lo que significa que los días de mes a los que aplicar la recurrencia."
 
 #: dateutil.rrule.rrule:85 of
 msgid "If given, it must be either an integer, or a sequence of integers, meaning the year days to apply the recurrence to."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, lo que significa que los días de año a los que aplicar la recurrencia."
 
 #: dateutil.rrule.rrule:88 of
 msgid "If given, it must be either an integer, or a sequence of integers, positive or negative. Each integer will define an offset from the Easter Sunday. Passing the offset 0 to byeaster will yield the Easter Sunday itself. This is an extension to the RFC specification."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, positivo o negativo. Cada entero definirá un desplazamiento del domingo de Pascua. Pasar el offset 0 a byeaster producirá el propio domingo de Pascua. Esta es una extensión de la especificación RFC."
 
 #: dateutil.rrule.rrule:93 of
 msgid "If given, it must be either an integer, or a sequence of integers, meaning the week numbers to apply the recurrence to. Week numbers have the meaning described in ISO8601, that is, the first week of the year is that containing at least four days of the new year."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, lo que significa que los números de semana a los que aplicar la recurrencia. Los números de semana tienen el significado descrito en ISO8601, es decir, la primera semana del año es la que contiene al menos cuatro días del año nuevo."
 
 #: dateutil.rrule.rrule:98 of
 msgid "If given, it must be either an integer (0 == MO), a sequence of integers, one of the weekday constants (MO, TU, etc), or a sequence of these constants. When given, these variables will define the weekdays where the recurrence will be applied. It's also possible to use an argument n for the weekday instances, which will mean the nth occurrence of this weekday in the period. For example, with MONTHLY, or with YEARLY and BYMONTH, using FR(+1) in byweekday will specify the first friday of the month where the recurrence happens. Notice that in the RFC documentation, this is specified as BYDAY, but was renamed to avoid the ambiguity of that keyword."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero (0 == MO), una secuencia de enteros, una de las constantes del día de la semana (MO, UT, etc), o una secuencia de estas constantes. Cuando se proporciona, estas variables definirán los días de semana donde se aplicará la recurrencia. También es posible usar un argumento n para las instancias del día de semana, lo que significará la novena ocurrencia de este día de semana en el período. Por ejemplo, con MONTHLY, o con AÑO y MONTE, usando FR(+1) en el día de la semana especificará el primer viernes del mes en que ocurra la recurrencia. Tenga en cuenta que en la documentación RFC, esto se especifica como BYDAY, pero fue renombrado para evitar la ambigüedad de esa palabra clave."
 
 #: dateutil.rrule.rrule:109 of
 msgid "If given, it must be either an integer, or a sequence of integers, meaning the hours to apply the recurrence to."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, lo que significa las horas a las que aplicar la recurrencia."
 
 #: dateutil.rrule.rrule:112 of
 msgid "If given, it must be either an integer, or a sequence of integers, meaning the minutes to apply the recurrence to."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, lo que significa que los minutos a los que aplicar la recurrencia a."
 
 #: dateutil.rrule.rrule:115 of
 msgid "If given, it must be either an integer, or a sequence of integers, meaning the seconds to apply the recurrence to."
-msgstr ""
+msgstr "Si se proporciona, debe ser un entero, o una secuencia de enteros, lo que significa los segundos a los que aplicar la recurrencia."
 
 #: dateutil.rrule.rrule:118 of
 msgid "If given, it must be a boolean value specifying to enable or disable caching of results. If you will use the same rrule instance multiple times, enabling caching will improve the performance considerably."
-msgstr ""
+msgstr "Si se proporciona, debe ser un valor booleano que especifique para activar o desactivar la caché de resultados. Si usará la misma instancia de rrule varias veces, habilitar la caché mejorará el rendimiento considerablemente."
 
 #: dateutil.rrule.rrule.replace:2 of
 msgid "Return new rrule with same attributes except for those attributes given new values by whichever keyword arguments are specified."
-msgstr ""
+msgstr "Devuelve una nueva regla con los mismos atributos, excepto aquellos atributos dados nuevos valores por los que se especifiquen los argumentos de palabras clave."
 
 #: matplotlib.dates.set_epoch:4 of
 msgid "The default epoch is :rc:`dates.epoch` (by default 1970-01-01T00:00)."
-msgstr ""
+msgstr "El epoch por defecto es :rc:`dates.epoch` (por defecto 1970-01-01T00:00)."
 
 #: matplotlib.dates.set_epoch:6 of
 msgid "If microsecond accuracy is desired, the date being plotted needs to be within approximately 70 years of the epoch. Matplotlib internally represents dates as days since the epoch, so floating point dynamic range needs to be within a factor of 2^52."
-msgstr ""
+msgstr "Si se desea una precisión de microsegundos, la fecha que se está trazando debe estar dentro de aproximadamente 70 años a partir de la epoque. Matplotlib representa internamente las fechas como días desde el epoch, por lo que el rango dinámico de punto flotante tiene que estar dentro de un factor de 2^52."
 
 #: matplotlib.dates.set_epoch:11 of
 msgid "`~.dates.set_epoch` must be called before any dates are converted (i.e. near the import section) or a RuntimeError will be raised."
-msgstr ""
+msgstr "`~.dates.set_epoch` debe ser llamado antes de que cualquier fecha sea convertida (es decir, cerca de la sección de importación) o se levantará un RuntimeError."
 
 #: matplotlib.dates.set_epoch:14 of
 msgid "See also :doc:`/gallery/ticks/date_precision_and_epochs`."
-msgstr ""
+msgstr "Vea también :doc:`/gallery/ticks/date_precision_and_epochs`."
 
 #: matplotlib.dates.set_epoch:19 of
 msgid "valid UTC date parsable by `numpy.datetime64` (do not include timezone)."
-msgstr ""
+msgstr "fecha UTC válida analizable por `numpy.datetime64` (no incluya zona horaria)."
 

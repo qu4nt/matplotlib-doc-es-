@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:46\n"
+"PO-Revision-Date: 2022-11-02 14:10\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -24,283 +24,283 @@ msgstr "Cambios en la API para la versión 3.0.0"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:5
 msgid "Drop support for python 2"
-msgstr ""
+msgstr "Soporte para soltar python 2"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:7
 msgid "Matplotlib 3 only supports python 3.5 and higher."
-msgstr ""
+msgstr "Matplotlib 3 sólo soporta python 3.5 y superior."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:11
 msgid "Changes to backend loading"
-msgstr ""
+msgstr "Cambios a la carga del backend"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:13
 msgid "Failure to load backend modules (``macosx`` on non-framework builds and ``gtk3`` when running headless) now raises `ImportError` (instead of `RuntimeError` and `TypeError`, respectively)."
-msgstr ""
+msgstr "No se pudo cargar los módulos del backend (``macosx`` en compilaciones que no son de framework y ``gtk3`` cuando se ejecuta sin cabezas) ahora aumenta `ImportError` (en lugar de `RuntimeError` y `TypeError`, respectivamente)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:17
 msgid "Third-party backends that integrate with an interactive framework are now encouraged to define the ``required_interactive_framework`` global value to one of the following values: \"qt5\", \"qt4\", \"gtk3\", \"wx\", \"tk\", or \"macosx\". This information will be used to determine whether it is possible to switch from a backend to another (specifically, whether they use the same interactive framework)."
-msgstr ""
+msgstr "Los backends de terceros que se integran con un framework interactivo ahora son animados a definir el valor global ``required_interactive_framework`` a uno de los siguientes valores: \"qt5\", \"qt4\", \"gtk3\", \"wx\", \"tk\", o \"macosx\". Esta información se utilizará para determinar si es posible cambiar de un backend a otro (específicamente, si utilizan el mismo marco interactivo)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:27
 msgid "`.Axes.hist2d` now uses `~.Axes.pcolormesh` instead of `~.Axes.pcolorfast`"
-msgstr ""
+msgstr "`.Axes.medium2d` ahora usa `~.Axes.pcolormesh` en lugar de `~.Axes.pcolorfast`"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:29
 msgid "`.Axes.hist2d` now uses `~.Axes.pcolormesh` instead of `~.Axes.pcolorfast`, which will improve the handling of log-axes.  Note that the returned *image* now is of type `~.matplotlib.collections.QuadMesh` instead of `~.matplotlib.image.AxesImage`."
-msgstr ""
+msgstr "`.Axes.medium2d` ahora usa `~.Axes.pcolormesh` en lugar de `~.Axes.pcolorfast`, lo que mejorará el manejo de los ejes del log. Ten en cuenta que la *image* devuelta ahora es del tipo `~.matplotlib.collections.QuadMesh` en lugar de `~.matplotlib.image.AxesImage`."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:35
 msgid "`.matplotlib.axes.Axes.get_tightbbox` now includes all artists"
-msgstr ""
+msgstr "`.matplotlib.axes.Axes.get_tightbbox` ahora incluye a todos los artistas"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:37
 msgid "For Matplotlib 3.0, *all* artists are now included in the bounding box returned by `.matplotlib.axes.Axes.get_tightbbox`."
-msgstr ""
+msgstr "Para Matplotlib 3.0, *todos* los artistas están ahora incluidos en el cuadro de límites devuelto por `.matplotlib.axes.Axes.get_tightbbox`."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:40
 msgid "`.matplotlib.axes.Axes.get_tightbbox` adds a new kwarg ``bbox_extra_artists`` to manually specify the list of artists on the axes to include in the tight bounding box calculation."
-msgstr ""
+msgstr "`.matplotlib.axes.Axes.get_tightbbox` añade un nuevo kwarg ``bbox_extra_artists`` para especificar manualmente la lista de artistas en los ejes a incluir en el estricto cálculo de la caja límite."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:44
 msgid "Layout tools like `.Figure.tight_layout`, ``constrained_layout``, and ``fig.savefig('fname.png', bbox_inches=\"tight\")`` use `.matplotlib.axes.Axes.get_tightbbox` to determine the bounds of each axes on a figure and adjust spacing between axes."
-msgstr ""
+msgstr "Herramientas de diseño como `.Figure.tight_layout`, ``constrained_layout``, y ``fig.savefig('fname.png', bbox_inches=\"tight\")`` usan `.matplotlib.axes.Axes.get_tightbbox` para determinar los límites de cada eje en una figura y ajustar el espacio entre ejes."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:49
 msgid "In Matplotlib 2.2 ``get_tightbbox`` started to include legends made on the axes, but still excluded some other artists, like text that may overspill an axes.  This has been expanded to include *all* artists."
-msgstr ""
+msgstr "En Matplotlib 2.2 ``get_tightbbox`` comenzó a incluir leyendas hechas en los ejes, pero todavía excluyó a algunos otros artistas, como el texto que puede sobrecargar un eje. Esto se ha ampliado para incluir a *todos* los artistas."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:53
 msgid "This new default may be overridden in either of three ways:"
-msgstr ""
+msgstr "Este nuevo valor por defecto puede ser anulado de tres maneras:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:55
 msgid "Make the artist to be excluded a child of the figure, not the axes. E.g., call ``fig.legend()`` instead of ``ax.legend()`` (perhaps using `~.matplotlib.axes.Axes.get_legend_handles_labels` to gather handles and labels from the parent axes)."
-msgstr ""
+msgstr "Haz que el artista sea excluido un hijo de la figura, no de los ejes. Por ejemplo, llama a ``fig.legend()`` en lugar de ``ax. egend()`` (tal vez usando `~.matplotlib.axes.Axes.get_legend_handles_labels` para recoger asas y etiquetas de los ejes principales)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:59
 msgid "If the artist is a child of the axes, set the artist property ``artist.set_in_layout(False)``."
-msgstr ""
+msgstr "Si el artista es un hijo de los ejes, establezca la propiedad del artista ``artist.set_in_layout(False)``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:61
 msgid "Manually specify a list of artists in the new kwarg ``bbox_extra_artists``."
-msgstr ""
+msgstr "Especifique manualmente una lista de artistas en el nuevo kwarg ``bbox_extra_artists``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:65
 msgid "`.Text.set_text` with string argument ``None`` sets string to empty"
-msgstr ""
+msgstr "`.Text.set_text` con el argumento de cadena ``None `` establece que la cadena esté vacía"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:67
 msgid "`.Text.set_text` when passed a string value of ``None`` would set the string to ``\"None\"``, so subsequent calls to `.Text.get_text` would return the ambiguous ``\"None\"`` string."
-msgstr ""
+msgstr "`.Text.set_text` cuando se le pasa un valor de cadena de ``Ninguno`` establecería la cadena a ``\"Ninguno\"``, así que las llamadas subsiguientes a `.Text.get_text` devolverían la ambigua cadena ``\"Ninguno\"``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:71
 msgid "This change sets text objects passed ``None`` to have empty strings, so that `.Text.get_text` returns an empty string."
-msgstr ""
+msgstr "Este cambio establece que los objetos de texto pasados ``nunca`` tengan cadenas vacías, así que `.Text.get_text` devuelve una cadena vacía."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:78
 msgid "``Axes3D.get_xlim``, ``get_ylim`` and ``get_zlim`` now return a tuple"
-msgstr ""
+msgstr "``Axes3D.get_xlim``, ``get_ylim`` y ``get_zlim`` ahora devuelven una tupla"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:80
 msgid "They previously returned an array.  Returning a tuple is consistent with the behavior for 2D axes."
-msgstr ""
+msgstr "Previamente devolvieron una matriz. Devolver una tupla es consistente con el comportamiento de los ejes 2D."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:87
 msgid "``font_manager.list_fonts`` now follows the platform's casefolding semantics"
-msgstr ""
+msgstr "``font_manager.list_fonts`` ahora sigue la semántica de casefolding de la plataforma"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:89
 msgid "i.e., it behaves case-insensitively on Windows only."
-msgstr ""
+msgstr "es decir, se comporta sólo en Windows con insensibilidad a mayúsculas."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:93
 msgid "``bar`` / ``barh`` no longer accepts ``left`` / ``bottom`` as first named argument"
-msgstr ""
+msgstr "``bar`` / ``barh`` ya no acepta ``left`` / ``bottom`` como primer argumento nombrado"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:95
 msgid "These arguments were renamed in 2.0 to ``x`` / ``y`` following the change of the default alignment from ``edge`` to ``center``."
-msgstr ""
+msgstr "Estos argumentos fueron renombrados en 2.0 a ``x`` / ``y`` después del cambio de alineamiento predeterminado de ``edge`` a ``center``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:100
 msgid "Different exception types for undocumented options"
-msgstr ""
+msgstr "Diferentes tipos de excepción para opciones indocumentadas"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:102
 msgid "Passing ``style='comma'`` to :meth:`~matplotlib.axes.Axes.ticklabel_format` was never supported.  It now raises ``ValueError`` like all other unsupported styles, rather than ``NotImplementedError``."
-msgstr ""
+msgstr "Pasar ``style='comma'`` a :meth:`~matplotlib.axes.Axes.ticklabel_format` nunca fue soportado. Ahora aumenta ``ValueError`` como todos los demás estilos no soportados, en lugar de ``NotImplementedError``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:106
 msgid "Passing the undocumented ``xmin`` or ``xmax`` arguments to :meth:`~matplotlib.axes.Axes.set_xlim` would silently override the ``left`` and ``right`` arguments.  :meth:`~matplotlib.axes.Axes.set_ylim` and the 3D equivalents (e.g. `~.Axes3D.set_zlim3d`) had a corresponding problem. A ``TypeError`` will be raised if they would override the earlier limit arguments.  In 3.0 these were kwargs were deprecated, but in 3.1 the deprecation was undone."
-msgstr ""
+msgstr "Pasando los argumentos ``xmin`` o ``xmax`` indocumentados a :meth:`~matplotlib.axes.Axes. et_xlim` anularía silenciosamente los argumentos ``left`` y ``right``.  :meth:`~matplotlib.axes.Axes.set_ylim` y los equivalentes 3D (e. . `~.Axes3D.set_zlim3d`) tuvo un problema correspondiente. Se planteará un ``TypeError`` si anulan los argumentos límite anteriores. En 3.0 estos eran kwargs estaban obsoletos, pero en 3.1 se deshizo la desaprobación."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:117
 msgid "Improved call signature for ``Axes.margins``"
-msgstr ""
+msgstr "Firma de llamada mejorada para ``Ejes.margins``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:119
 msgid "`.Axes.margins` and `.Axes3D.margins` no longer accept arbitrary keywords. ``TypeError`` will therefore be raised if unknown kwargs are passed; previously they would be silently ignored."
-msgstr ""
+msgstr "`.Axes.margins` y `.Axes3D.margins` ya no aceptan palabras clave arbitrarias. ``TypeError`` se levantará si se pasan kwargs desconocidos; anteriormente serían ignorados silenciosamente."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:123
 msgid "If too many positional arguments are passed, ``TypeError`` will be raised instead of ``ValueError``, for consistency with other call-signature violations."
-msgstr ""
+msgstr "Si se pasan demasiados argumentos posicionales, ``TypeError`` se levantará en lugar de ``ValueError``, para que sea consistente con otras violaciones de la firma de llamada."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:126
 msgid "`.Axes3D.margins` now raises ``TypeError`` instead of emitting a deprecation warning if only two positional arguments are passed.  To supply only ``x`` and ``y`` margins, use keyword arguments."
-msgstr ""
+msgstr "`.Axes3D.margins` ahora aumenta ``TypeError`` en lugar de emitir una advertencia de desaprobación si sólo se pasan dos argumentos posicionales. Para proporcionar sólo los márgenes ``x`` y ``y``, utilice argumentos de palabra clave."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:133
 msgid "Explicit arguments instead of \\*args, \\*\\*kwargs"
-msgstr ""
+msgstr "Argumentos explícitos en lugar de \\*args, \\*\\*kwargs"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:135
 msgid ":PEP:`3102` describes keyword-only arguments, which allow Matplotlib to provide explicit call signatures - where we previously used ``*args, **kwargs`` and ``kwargs.pop``, we can now expose named arguments.  In some places, unknown kwargs were previously ignored but now raise ``TypeError`` because ``**kwargs`` has been removed."
-msgstr ""
+msgstr ":PEP:`3102` describe argumentos de palabra clave, que permiten a Matplotlib proporcionar firmas de llamada explícitas - donde previamente usamos ``*args, **kwargs`` y ``kwargs. op``, ahora podemos exponer los argumentos nombrados. En algunos lugares, kwargs desconocidos fueron previamente ignorados, pero ahora elevar ``TypeError`` porque ``**kwargs`` ha sido eliminado."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:141
 msgid ":meth:`matplotlib.axes.Axes.stem` no longer accepts unknown keywords, and raises ``TypeError`` instead of emitting a deprecation."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.stem` ya no acepta palabras clave desconocidas, y aumenta ``TypeError`` en lugar de emitir una desaprobación."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:143
 msgid ":meth:`matplotlib.axes.Axes.stem` now raises TypeError when passed unhandled positional arguments.  If two or more arguments are passed (ie X, Y, [linefmt], ...) and Y cannot be cast to an array, an error will be raised instead of treating X as Y and Y as linefmt."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.stem` ahora levanta TypeError cuando se pasan argumentos posicionales no controlados. Si se pasan dos o más argumentos (es decir, X, Y, [linefmt], . .) y Y no se puede convertir en una matriz, se generará un error en lugar de tratar X como Y e como linefmt."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:147
 msgid "`mpl_toolkits.axes_grid1.axes_divider.SubplotDivider` raises ``TypeError`` instead of ``Exception`` when passed unknown kwargs."
-msgstr ""
+msgstr "`mpl_toolkits.axes_grid1.axes_divider.SubplotDivider` aumenta ``TypeError`` en lugar de ``Exception`` cuando se pasan kwargs desconocidos."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:153
 msgid "Cleanup decorators and test classes no longer destroy warnings filter on exit"
-msgstr ""
+msgstr "Los decoradores de limpieza y las clases de prueba ya no destruyen el filtro de advertencias al salir"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:155
 msgid "The decorators and classes in matplotlib.testing.decorators no longer destroy the warnings filter on exit. Instead, they restore the warnings filter that existed before the test started using ``warnings.catch_warnings``."
-msgstr ""
+msgstr "Los decoradores y las clases en matplotlib.testing.decorators ya no destruyen el filtro de advertencias al salir. En cambio, restauran el filtro de advertencias que existía antes de que la prueba comenzara a usar ``warnings.catch_warnings``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:161
 msgid "Non-interactive FigureManager classes are now aliases of FigureManagerBase"
-msgstr ""
+msgstr "Las clases FigureManager no interactivas son ahora alias de FigureManagerBase"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:163
 msgid "The ``FigureManagerPdf``, ``FigureManagerPS``, and ``FigureManagerSVG`` classes, which were previously empty subclasses of `.FigureManagerBase` (i.e., not adding or overriding any attribute or method), are now direct aliases for `.FigureManagerBase`."
-msgstr ""
+msgstr "Las clases ``FigureManagerPdf``, ``FigureManagerPS``, y ``FigureManagerSVG``, que eran subclases previamente vacías de `. igureManagerBase` (es decir, no añadir o reemplazar ningún atributo o método), ahora son alias directos para `.FigureManagerBase`."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:170
 msgid "Change to the output of `.image.thumbnail`"
-msgstr ""
+msgstr "Cambia a la salida de `.image.thumbnail nail`"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:172
 msgid "When called with ``preview=False``, `.image.thumbnail` previously returned an figure whose canvas class was set according to the output file extension.  It now returns a figure whose canvas class is the base `.FigureCanvasBase` (and relies on `.FigureCanvasBase.print_figure`) to handle the canvas switching properly)."
-msgstr ""
+msgstr "Cuando se llama con ``preview=False``, `.image.thumbnail nail` devolvió previamente una figura cuya clase canvas fue establecida de acuerdo a la extensión del archivo de salida. Ahora devuelve una figura cuya clase de lienzo es la base `.FigureCanvasBase` (y se basa en `.FigureCanvasBase.print_figure`) para manejar el cambio de lienzo adecuadamente)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:178
 msgid "As a side effect of this change, `.image.thumbnail` now also supports .ps, .eps, and .svgz output."
-msgstr ""
+msgstr "Como efecto secundario de este cambio, `.image.thumbnail nail` ahora también soporta salida .ps, .eps y .svgz."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:184
 msgid "`.FuncAnimation` now draws artists according to their zorder when blitting"
-msgstr ""
+msgstr "`.FuncAnimation` ahora dibuja artistas de acuerdo a su zorder cuando explota"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:186
 msgid "`.FuncAnimation` now draws artists returned by the user- function according to their zorder when using blitting, instead of using the order in which they are being passed. However, note that only zorder of passed artists will be respected, as they are drawn on top of any existing artists (see `#11369 <https://github.com/matplotlib/matplotlib/issues/11369>`_)."
-msgstr ""
+msgstr "`.FuncAnimation` ahora dibuja artistas devueltos por la función de usuario de acuerdo a su zorder al usar blitting, en lugar de utilizar el orden en el que se pasan. Sin embargo, tenga en cuenta que sólo se respetará el zorder de los artistas pasados, ya que se dibujan sobre cualquier artista existente (ver `#11369 <https://github.com/matplotlib/matplotlib/issues/11369>`_)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:195
 msgid "Contour color autoscaling improvements"
-msgstr ""
+msgstr "Mejoras de autoescalado de color de contorno"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:197
 msgid "Selection of contour levels is now the same for contour and contourf; previously, for contour, levels outside the data range were deleted.  (Exception: if no contour levels are found within the data range, the `levels` attribute is replaced with a list holding only the minimum of the data range.)"
-msgstr ""
+msgstr "La selección de niveles de contorno es ahora la misma para contorno y contorno; anteriormente, para contorno, se eliminaron niveles fuera del rango de datos. (Excepción: si no se encuentran niveles de contorno dentro del rango de datos, el atributo `levels` es reemplazado por una lista que contiene sólo el mínimo del rango de datos.)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:203
 msgid "When contour is called with levels specified as a target number rather than a list, and the 'extend' kwarg is used, the levels are now chosen such that some data typically will fall in the extended range."
-msgstr ""
+msgstr "Cuando se llama al contorno con niveles especificados como un número objetivo en lugar de una lista, y se utiliza el enano 'extendido' los niveles ahora se eligen de tal manera que algunos datos típicamente caerán en el rango ampliado."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:207
 msgid "When contour is called with a `.LogNorm` or a `.LogLocator`, it will now select colors using the geometric mean rather than the arithmetic mean of the contour levels."
-msgstr ""
+msgstr "Cuando el contorno es llamado con un `.LogNorm` o un `. ogLocator`, ahora seleccionará los colores utilizando la media geométrica en lugar de la media aritmética de los niveles de contorno."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:213
 msgid "Streamplot last row and column fixed"
-msgstr ""
+msgstr "Última fila y columna de Streamplot arreglada"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:215
 msgid "A bug was fixed where the last row and column of data in `~.Axes.streamplot` were being dropped."
-msgstr ""
+msgstr "Se corrigió un error donde se soltaba la última fila y columna de datos en `~.Axes.streamplot`."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:220
 msgid "Changed default `.AutoDateLocator` kwarg *interval_multiples* to ``True``"
-msgstr ""
+msgstr "Cambió el valor predeterminado `.AutoDateLocator` kwarg *interval_multiples* a ``True``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:222
 msgid "The default value of the tick locator for dates, `.dates.AutoDateLocator` kwarg *interval_multiples* was set to ``False`` which leads to not-nice looking automatic ticks in many instances.  The much nicer ``interval_multiples=True`` is the new default.  See below to get the old behavior back:"
-msgstr ""
+msgstr "El valor por defecto del localizador de tick para las fechas, `.dates. utoDateLocator` kwarg *interval_multiples* fue establecido en ``False`` lo que lleva a ticks automáticos no bonitos en muchas instancias. El ``interval_multiples=True`` mucho más atractivo es el nuevo valor por defecto. Ve abajo para recuperar el comportamiento antiguo:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:7
 msgid "(`Source code <../../api/prev_api_changes/api_changes_3-0-0-1.py>`__, `png <../../api/prev_api_changes/api_changes_3-0-0-1.png>`__, `pdf <../../api/prev_api_changes/api_changes_3-0-0-1.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../api/prev_api_changes/api_changes_3-0-0-1.py>`__, `png <../../api/prev_api_changes/api_changes_3-0-0-1.png>`__, `pdf <../../api/prev_api_changes/api_changes_3-0-1.pdf>`__)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:259
 msgid "`.Axes.get_position` now returns actual position if aspect changed"
-msgstr ""
+msgstr "`.Axes.get_position` ahora devuelve la posición real si el aspecto ha cambiado"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:261
 msgid "`.Axes.get_position` used to return the original position unless a draw had been triggered or `.Axes.apply_aspect` had been called, even if the kwarg *original* was set to ``False``.   Now `.Axes.apply_aspect` is called so ``ax.get_position()`` will return the new modified position. To get the old behavior use ``ax.get_position(original=True)``."
-msgstr ""
+msgstr "`.Axes.get_position` usado para devolver la posición original a menos que se haya activado un sorteo o `. xes.apply_aspect` había sido llamado, incluso si el kwarg *original* se estableció en ``False``. Ahora `.Axes.apply_aspect` es llamado así que ``ax.get_position()`` devolverá la nueva posición modificada. Para obtener el comportamiento antiguo use ``ax.get_position(original=True)``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:269
 msgid "The ticks for colorbar now adjust for the size of the colorbar"
-msgstr ""
+msgstr "Los ticks de la barra de color ahora se ajustan para el tamaño de la barra de colores"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:271
 msgid "Colorbar ticks now adjust for the size of the colorbar if the colorbar is made from a mappable that is not a contour or doesn't have a BoundaryNorm, or boundaries are not specified. If boundaries, etc are specified, the colorbar maintains the original behavior."
-msgstr ""
+msgstr "Las marcas de la barra de colores ahora se ajustan para el tamaño de la barra de colores si la barra de colores está hecha de un mapeable que no es un contorno o no tiene una norma límite, o los límites no están especificados. Si se especifican límites, etc , la barra de colores mantiene el comportamiento original."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:279
 msgid "Colorbar for log-scaled hexbin"
-msgstr ""
+msgstr "Barra de color para hexbin escala de registro"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:281
 msgid "When using `~.Axes.hexbin` and plotting with a logarithmic color scale, the colorbar ticks are now correctly log scaled. Previously the tick values were linear scaled log(number of counts)."
-msgstr ""
+msgstr "Al usar `~.Axes.hexbin` y trazar con una escala de color logarítmica, los ticks de la barra de colores ahora están correctamente escalados en el registro. Anteriormente, los valores de tick eran registros escalados lineales (número de cuentas)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:286
 msgid "PGF backend now explicitly makes black text black"
-msgstr ""
+msgstr "El backend PGF ahora explícitamente hace negro texto negro"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:288
 msgid "Previous behavior with the pgf backend was for text specified as black to actually be the default color of whatever was rendering the pgf file (which was of course usually black). The new behavior is that black text is black, regardless of the default color. However, this means that there is no way to fall back on the default color of the renderer."
-msgstr ""
+msgstr "El comportamiento anterior con el backend pgf era para que el texto especificado como negro fuera realmente el color predeterminado de lo que estuviera renderizando el archivo pgf (que por supuesto era normalmente negro). El nuevo comportamiento es que el texto negro es negro, independientemente del color predeterminado. Sin embargo, esto significa que no hay manera de volver al color predeterminado del renderizador."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:296
 msgid "Blacklisted rcparams no longer updated by `~matplotlib.rcdefaults`, `~matplotlib.rc_file_defaults`, `~matplotlib.rc_file`"
-msgstr ""
+msgstr "Rcparams en lista negra ya no actualizado por `~matplotlib.rcdefaults`, `~matplotlib.rc_file_defaults`, `~matplotlib.rc_file`"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:298
 msgid "The rc modifier functions `~matplotlib.rcdefaults`, `~matplotlib.rc_file_defaults` and `~matplotlib.rc_file` now ignore rcParams in the `matplotlib.style.core.STYLE_BLACKLIST` set.  In particular, this prevents the ``backend`` and ``interactive`` rcParams from being incorrectly modified by these functions."
-msgstr ""
+msgstr "Las funciones del modificador rc `~matplotlib.rcdefaults`, `~matplotlib.rc_file_defaults` y `~matplotlib.rc_file` ahora ignoran rcParams en `matplotlib.style. ore.STYLE_BLACKLIST`. En particular, esto evita que los rcParams ``backend`` y ``interactive`` sean modificados incorrectamente por estas funciones."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:307
 msgid "`.CallbackRegistry` now stores callbacks using stdlib's `weakref.WeakMethod`\\s"
-msgstr ""
+msgstr "`.CallbackRegistry` ahora almacena callbacks usando stdlib's `weakref.WeakMethod`\\s"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:309
 msgid "In particular, this implies that ``CallbackRegistry.callbacks[signal]`` is now a mapping of callback ids to `weakref.WeakMethod`\\s (i.e., they need to be first called with no arguments to retrieve the method itself)."
-msgstr ""
+msgstr "En particular, esto implica que ``CallbackRegistry.callbacks[signal]`` es ahora un mapeo de id de devolución de llamada a `weakref. eakMethod`\\s (es decir, primero necesitan ser llamados sin argumentos para recuperar el método en sí)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:315
 msgid "Changes regarding the text.latex.unicode rcParam"
-msgstr ""
+msgstr "Cambios relacionados con text.latex.unicode rcParam"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:317
 msgid "The rcParam now defaults to True and is deprecated (i.e., in future versions of Matplotlib, unicode input will always be supported)."
-msgstr ""
+msgstr "Ahora rcParam por defecto es True y está obsoleto (es decir, en futuras versiones de Matplotlib, la entrada unicode siempre será soportada)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:320
 msgid "Moreover, the underlying implementation now uses ``\\usepackage[utf8]{inputenc}`` instead of ``\\usepackage{ucs}\\usepackage[utf8x]{inputenc}``."
-msgstr ""
+msgstr "Además, la implementación subyacente ahora usa ``\\usepackage[utf8]{inputenc}`` en lugar de ``\\usepackage{ucs}\\usepackage[utf8x]{inputenc}``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:325
 msgid "Return type of ArtistInspector.get_aliases changed"
@@ -308,19 +308,19 @@ msgstr "Se ha cambiado el tipo de retorno de ArtistInspector.get_aliases"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:327
 msgid "`ArtistInspector.get_aliases` previously returned the set of aliases as ``{fullname: {alias1: None, alias2: None, ...}}``.  The dict-to-None mapping was used to simulate a set in earlier versions of Python.  It has now been replaced by a set, i.e. ``{fullname: {alias1, alias2, ...}}``."
-msgstr ""
+msgstr "`ArtistInspector.get_aliases` devolvió previamente el conjunto de alias como ``{fullname: {alias1: None, alias2: None, ...}}``. El mapeo dictado a Ninguno se utilizó para simular un conjunto en versiones anteriores de Python. Ahora ha sido reemplazado por un conjunto, es decir, ``{fullname: {alias1, alias2, ...}}``."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:332
 msgid "This value is also stored in `.ArtistInspector.aliasd`, which has likewise changed."
-msgstr ""
+msgstr "Este valor también se almacena en `.ArtistInspector.aliasd`, que también ha cambiado."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:337
 msgid "Removed ``pytz`` as a dependency"
-msgstr ""
+msgstr "Se ha eliminado ``pytz`` como una dependencia"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:339
 msgid "Since ``dateutil`` and ``pytz`` both provide time zones, and matplotlib already depends on ``dateutil``, matplotlib will now use ``dateutil`` time zones internally and drop the redundant dependency on ``pytz``. While ``dateutil`` time zones are preferred (and currently recommended in the Python documentation), the explicit use of ``pytz`` zones is still supported."
-msgstr ""
+msgstr "Como ``dateutil`` y ``pytz`` proporcionan zonas horarias, y matplotlib ya depende de ``dateutil``, matplotlib ahora usará internamente las zonas horarias ``dateutil`` y eliminará la dependencia redundante de ``pytz``. Mientras que las zonas horarias ``dateutil`` son preferidas (y actualmente recomendadas en la documentación de Python), el uso explícito de las zonas ``pytz`` sigue siendo soportado."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:347
 msgid "Deprecations"
@@ -332,172 +332,172 @@ msgstr "Módulos"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:351
 msgid "The following modules are deprecated:"
-msgstr ""
+msgstr "Los siguientes módulos están obsoletos:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:353
 msgid "``matplotlib.compat.subprocess``. This was a python 2 workaround, but all the functionality can now be found in the python 3 standard library :mod:`subprocess`."
-msgstr ""
+msgstr "``matplotlib.compat.subprocess``. Esto era una solución python 2, pero ahora se puede encontrar toda la funcionalidad en la librería estándar python 3 :mod:`subprocess`."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:356
 msgid "``matplotlib.backends.wx_compat``. Python 3 is only compatible with wxPython 4, so support for wxPython 3 or earlier can be dropped."
-msgstr ""
+msgstr "``matplotlib.backends.wx_compat``. Python 3 sólo es compatible con wxPython 4, así que el soporte para wxPython 3 o anterior puede ser eliminado."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:360
 msgid "Classes, methods, functions, and attributes"
-msgstr ""
+msgstr "Clases, métodos, funciones y atributos"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:362
 msgid "The following classes, methods, functions, and attributes are deprecated:"
-msgstr ""
+msgstr "Las siguientes clases, métodos, funciones y atributos están obsoletos:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:364
 msgid "``RcParams.msg_depr``, ``RcParams.msg_depr_ignore``, ``RcParams.msg_depr_set``, ``RcParams.msg_obsolete``, ``RcParams.msg_backend_obsolete``"
-msgstr ""
+msgstr "``RcParams.msg_depr``, ``RcParams.msg_depr_ignore``, ``RcParams.msg_depr_set``, ``RcParams.msg_obsolete``, ``RcParams.msg_backend_obsolete``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:367
 msgid "``afm.parse_afm``"
-msgstr ""
+msgstr "``afm.parse_afm``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:368
 msgid "``backend_pdf.PdfFile.texFontMap``"
-msgstr ""
+msgstr "``backend_pdf.PdfFile.texFontMap``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:369
 msgid "``backend_pgf.get_texcommand``"
-msgstr ""
+msgstr "``backend_pgf.get_texcommand``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:370
 msgid "``backend_ps.get_bbox``"
-msgstr ""
+msgstr "``backend_ps.get_bbox``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:371
 msgid "``backend_qt5.FigureCanvasQT.keyAutoRepeat`` (directly check ``event.guiEvent.isAutoRepeat()`` in the event handler to decide whether to handle autorepeated key presses)."
-msgstr ""
+msgstr "``backend_qt5.FigureCanvasQT.keyAutoRepeat`` (comprobar directamente ``event.guiEvent.isAutoRepeat()`` en el controlador de eventos para decidir si manejar o no las teclas automáticas)."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:374
 msgid "``backend_qt5.error_msg_qt``, ``backend_qt5.exception_handler``"
-msgstr ""
+msgstr "``backend_qt5.error_msg_qt``, ``backend_qt5.exception_handler``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:375
 msgid "``backend_wx.FigureCanvasWx.macros``"
-msgstr ""
+msgstr "``backend_wx.FigureCanvasWx.macros``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:376
 msgid "``backends.pylab_setup``"
-msgstr ""
+msgstr "``backends.pylab_setup``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:377
 msgid "``cbook.GetRealpathAndStat``, ``cbook.Locked``"
-msgstr ""
+msgstr "``cbook.GetRealpathAndStat``, ``cbook.Locked``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:378
 msgid "``cbook.is_numlike`` (use ``isinstance(..., numbers.Number)`` instead), ``cbook.listFiles``, ``cbook.unicode_safe``"
-msgstr ""
+msgstr "``cbook.is_numlike`` (use ``isinstance(..., numbers.Number)`` en su lugar), ``cbook.listFiles``, ``cbook.unicode_safe``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:380
 msgid "``container.Container.set_remove_method``,"
-msgstr ""
+msgstr "``container.Container.set_remove_method``,"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:381
 msgid "``contour.ContourLabeler.cl``, ``.cl_xy``, and ``.cl_cvalues``"
-msgstr ""
+msgstr "``contour.ContourLabeler.cl``, ``.cl_xy``, y ``.cl_cvalues``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:382
 msgid "``dates.DateFormatter.strftime_pre_1900``, ``dates.DateFormatter.strftime``"
-msgstr ""
+msgstr "``dates.DateFormatter.strftime_pre_1900``, ``dates.DateFormatter.strftime``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:383
 msgid "``font_manager.TempCache``"
-msgstr ""
+msgstr "``font_manager.TempCache``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:384
 msgid "``image._ImageBase.iterpnames``, use the ``interpolation_names`` property instead. (this affects classes that inherit from ``_ImageBase`` including `.FigureImage`, `.BboxImage`, and `.AxesImage`)"
-msgstr ""
+msgstr "``image._ImageBase.iterpnames``, utilice la propiedad ``interpolation_names`` en su lugar. (esto afecta a las clases que heredan de ``_ImageBase`` incluyendo `.FigureImage`, `.BboxImage`, y `.AxesImage`)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:387
 msgid "``mathtext.unichr_safe`` (use ``chr`` instead)"
-msgstr ""
+msgstr "``mathtext.unichr_safe`` (use ``chr`` en su lugar)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:388
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:400
 msgid "``patches.Polygon.xy``"
-msgstr ""
+msgstr "``parches.Polygon.xy``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:389
 msgid "``table.Table.get_child_artists`` (use ``get_children`` instead)"
-msgstr ""
+msgstr "``table.Table.get_child_artists`` (use ``get_children`` en su lugar)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:390
 msgid "``testing.compare.ImageComparisonTest``, ``testing.compare.compare_float``"
-msgstr ""
+msgstr "``testing.compare.ImageComparisonTest``, ``testing.compare.compare_float``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:391
 msgid "``testing.decorators.CleanupTest``, ``testing.decorators.skip_if_command_unavailable``"
-msgstr ""
+msgstr "``testing.decorators.CleanupTest``, ``testing.decorators.skip_if_command_unavailable``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:393
 msgid "``FigureCanvasQT.keyAutoRepeat`` (directly check ``event.guiEvent.isAutoRepeat()`` in the event handler to decide whether to handle autorepeated key presses)"
-msgstr ""
+msgstr "``FigureCanvasQT.keyAutoRepeat`` (comprueba directamente ``event.guiEvent.isAutoRepeat()`` en el controlador de eventos para decidir si manejar o no pulsaciones de teclas automáticas)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:396
 msgid "``FigureCanvasWx.macros``"
-msgstr ""
+msgstr "``FigureCanvasWx.macros``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:397
 msgid "``_ImageBase.iterpnames``, use the ``interpolation_names`` property instead. (this affects classes that inherit from ``_ImageBase`` including `.FigureImage`, `.BboxImage`, and `.AxesImage`)"
-msgstr ""
+msgstr "``_ImageBase.iterpnames``, utilice la propiedad ``interpolation_names`` en su lugar. (esto afecta a las clases que heredan de ``_ImageBase`` incluyendo `.FigureImage`, `.BboxImage`, y `.AxesImage`)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:401
 msgid "``texmanager.dvipng_hack_alpha``"
-msgstr ""
+msgstr "``texmanager.dvipng_hack_alpha``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:402
 msgid "``text.Annotation.arrow``"
-msgstr ""
+msgstr "``text.Annotation.arrow``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:403
 msgid "``Legend.draggable()``, in favor of `.Legend.set_draggable()`"
-msgstr ""
+msgstr "``Legend.draggable()``, a favor de `.Legend.set_draggable()`"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:404
 msgid "(``Legend.draggable`` may be reintroduced as a property in future releases)"
-msgstr ""
+msgstr "(``Legend.draggable`` puede ser reintroducido como una propiedad en futuras versiones)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:405
 msgid "``textpath.TextToPath.tex_font_map``"
-msgstr ""
+msgstr "``textpath.TextToPath.tex_font_map``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:406
 msgid "``matplotlib.cbook.deprecation.mplDeprecation`` will be removed in future versions. It is just an alias for ``matplotlib.cbook.deprecation.MatplotlibDeprecationWarning``.  Please use ``matplotlib.cbook.MatplotlibDeprecationWarning`` directly if necessary."
-msgstr ""
+msgstr "``matplotlib.cbook.deprecation.mplDeprecation`` se eliminará en versiones futuras. Es sólo un alias para ``matplotlib.cbook.deprecation.MatplotlibDeprecationWarning``. Por favor, utilice ``matplotlib.cbook.MatplotlibDeprecationWarning`` directamente si es necesario."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:410
 msgid "The ``matplotlib.cbook.Bunch`` class has been deprecated. Instead, use `types.SimpleNamespace` from the standard library which provides the same functionality."
-msgstr ""
+msgstr "La clase ``matplotlib.cbook.Bunch`` ha sido obsoleta. En su lugar, use `types.SimpleNamespace` de la biblioteca estándar que proporciona la misma funcionalidad."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:413
 msgid "``Axes.mouseover_set`` is now a frozenset, and deprecated.  Directly manipulate the artist's ``.mouseover`` attribute to change their mouseover status."
-msgstr ""
+msgstr "``Axes.mouseover_set`` es ahora un frozenset, y está obsoleto. Maneje directamente el atributo ``.mouseover`` del artista para cambiar el estado de su mouseover."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:417
 msgid "The following keyword arguments are deprecated:"
-msgstr ""
+msgstr "Los siguientes argumentos de palabra clave están obsoletos:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:419
 msgid "passing ``verts`` to ``Axes.scatter`` (use ``marker`` instead)"
-msgstr ""
+msgstr "pasando ``verts`` a ``Axes.scatter`` (use ``marker`` en su lugar)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:420
 msgid "passing ``obj_type`` to ``cbook.deprecated``"
-msgstr ""
+msgstr "pasando ``obj_type`` a ``cbook.deprecated``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:422
 msgid "The following call signatures are deprecated:"
-msgstr ""
+msgstr "Las siguientes firmas de llamada están obsoletas:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:424
 msgid "passing a ``wx.EvtHandler`` as first argument to ``backend_wx.TimerWx``"
-msgstr ""
+msgstr "pasando un ``wx.EvtHandler`` como primer argumento a ``backend_wx.TimerWx``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:428
 msgid "rcParams"
@@ -505,63 +505,63 @@ msgstr "rcParams"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:430
 msgid "The following rcParams are deprecated:"
-msgstr ""
+msgstr "Los siguientes rcParams están obsoletos:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:432
 msgid "``examples.directory`` (use ``datapath`` instead)"
-msgstr ""
+msgstr "``examples.directory`` (use ``datapath`` en su lugar)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:433
 msgid "``pgf.debug`` (the pgf backend relies on logging)"
-msgstr ""
+msgstr "``pgf.debug`` (el backend de pgf depende del registro)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:434
 msgid "``text.latex.unicode`` (always True now)"
-msgstr ""
+msgstr "``text.latex.unicode`` (siempre Verdadero ahora)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:438
 msgid "marker styles"
-msgstr ""
+msgstr "marker styles"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:439
 msgid "Using ``(n, 3)`` as marker style to specify a circle marker is deprecated.  Use ``\"o\"`` instead."
-msgstr ""
+msgstr "Usando ``(n, 3)`` como estilo de marcador para especificar un marcador de círculo está obsoleto. Use ``\"o\"`` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:441
 msgid "Using ``([(x0, y0), (x1, y1), ...], 0)`` as marker style to specify a custom marker path is deprecated.  Use ``[(x0, y0), (x1, y1), ...]`` instead."
-msgstr ""
+msgstr "Usando ``([(x0, y0), (x1, y1), ...], 0)`` como estilo marcador para especificar una ruta de marcador personalizada es obsoleta. Use ``[(x0, y0), (x1, y1), ...]`` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:446
 msgid "Deprecation of ``LocatableAxes`` in toolkits"
-msgstr ""
+msgstr "Deprecación de ``LocatableAxes`` en los kits de herramientas"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:448
 msgid "The ``LocatableAxes`` classes in toolkits have been deprecated. The base `~.axes.Axes` classes provide the same functionality to all subclasses, thus these mixins are no longer necessary. Related functions have also been deprecated. Specifically:"
-msgstr ""
+msgstr "Las clases ``LocatableAxes`` en los kits de herramientas han sido obsoletas. El archivo base `~.axes. Las clases xes` proporcionan la misma funcionalidad a todas las subclases, por lo que estas mezclas ya no son necesarias. Las funciones relacionadas también han sido obsoletas. Específicamente:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:452
 msgid "``mpl_toolkits.axes_grid1.axes_divider.LocatableAxesBase``: no specific replacement; use any other ``Axes``-derived class directly instead."
-msgstr ""
+msgstr "``mpl_toolkits.axes_grid1.axes_divider.LocatableAxesBase``: no hay reemplazo específico; use cualquier otra clase derivada de ``ejes``directamente en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:454
 msgid "``mpl_toolkits.axes_grid1.axes_divider.locatable_axes_factory``: no specific replacement; use any other ``Axes``-derived class directly instead."
-msgstr ""
+msgstr "``mpl_toolkits.axes_grid1.axes_divider.locatable_axes_factory``: ninguna sustitución específica; use cualquier otra clase derivada de ``ejes``directamente en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:456
 msgid "``mpl_toolkits.axes_grid1.axes_divider.Axes``: use `mpl_toolkits.axes_grid1.mpl_axes.Axes` directly."
-msgstr ""
+msgstr "``mpl_toolkits.axes_grid1.axes_divider.Axes``: use `mpl_toolkits.axes_grid1.mpl_axes.Axes` directamente."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:458
 msgid "``mpl_toolkits.axes_grid1.axes_divider.LocatableAxes``: use `mpl_toolkits.axes_grid1.mpl_axes.Axes` directly."
-msgstr ""
+msgstr "``mpl_toolkits.axes_grid1.axes_divider.LocatableAxes``: use `mpl_toolkits.axes_grid1.mpl_axes.Axes` directamente."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:460
 msgid "``mpl_toolkits.axisartist.axes_divider.Axes``: use `mpl_toolkits.axisartist.axislines.Axes` directly."
-msgstr ""
+msgstr "``mpl_toolkits.axisartist.axes_divider.Axes``: use `mpl_toolkits.axisartist.axislines.Axes` directamente."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:462
 msgid "``mpl_toolkits.axisartist.axes_divider.LocatableAxes``: use `mpl_toolkits.axisartist.axislines.Axes` directly."
-msgstr ""
+msgstr "``mpl_toolkits.axisartist.axes_divider.LocatableAxes``: use `mpl_toolkits.axisartist.axislines.Axes` directamente."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:466
 msgid "Removals"
@@ -569,181 +569,181 @@ msgstr "Eliminar"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:469
 msgid "Hold machinery"
-msgstr ""
+msgstr "Mantener maquinaria"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:471
 msgid "Setting or unsetting ``hold`` (:ref:`deprecated in version 2.0<v200_deprecate_hold>`) has now been completely removed. Matplotlib now always behaves as if ``hold=True``. To clear an axes you can manually use :meth:`~.axes.Axes.cla()`, or to clear an entire figure use :meth:`~.figure.Figure.clf()`."
-msgstr ""
+msgstr "Establecer o desestablecer ``hold`` (:ref:`desaprobado en la versión 2.0<v200_deprecate_hold>`) ha sido eliminado por completo. Matplotlib ahora siempre se comporta como si ``hold=True``. Para limpiar un eje, puedes usar manualmente :meth:`~.axes.Axes.cla()`, o para limpiar una figura completa usa :meth:`~.figure.Figure.clf()`."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:478
 msgid "Removal of deprecated backends"
-msgstr ""
+msgstr "Eliminación de backends obsoletos"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:480
 msgid "Deprecated backends have been removed:"
-msgstr ""
+msgstr "Los backends obsoletos han sido eliminados:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:482
 msgid "GTKAgg"
-msgstr ""
+msgstr "GTKagg"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:483
 msgid "GTKCairo"
-msgstr ""
+msgstr "GTKCairo"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:484
 msgid "GTK"
-msgstr ""
+msgstr "GTK"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:485
 msgid "GDK"
-msgstr ""
+msgstr "GDK"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:489
 msgid "Deprecated APIs"
-msgstr ""
+msgstr "APIs obsoletas"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:491
 msgid "The following deprecated API elements have been removed:"
-msgstr ""
+msgstr "Se han eliminado los siguientes elementos de API obsoletos:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:493
 msgid "The deprecated methods ``knownfailureif`` and ``remove_text`` have been removed from :mod:`matplotlib.testing.decorators`."
-msgstr ""
+msgstr "Los métodos obsoletos ``knownfailureif`` y ``remove_text`` han sido eliminados de :mod:`matplotlib.testing.decorators`."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:495
 msgid "The entire contents of ``testing.noseclasses`` have also been removed."
-msgstr ""
+msgstr "El contenido completo de ``testing.noseclasses`` también ha sido eliminado."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:496
 msgid "``matplotlib.checkdep_tex``, ``matplotlib.checkdep_xmllint``"
-msgstr ""
+msgstr "``matplotlib.checkdep_tex``, ``matplotlib.checkdep_xmllint``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:497
 msgid "``backend_bases.IdleEvent``"
-msgstr ""
+msgstr "``backend_bases.IdleEvent``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:498
 msgid "``cbook.converter``, ``cbook.tostr``, ``cbook.todatetime``, ``cbook.todate``, ``cbook.tofloat``, ``cbook.toint``, ``cbook.unique``, ``cbook.is_string_like``, ``cbook.is_sequence_of_strings``, ``cbook.is_scalar``, ``cbook.soundex``, ``cbook.dict_delall``, ``cbook.get_split_ind``, ``cbook.wrap``, ``cbook.get_recursive_filelist``, ``cbook.pieces``, ``cbook.exception_to_str``, ``cbook.allequal``, ``cbook.alltrue``, ``cbook.onetrue``, ``cbook.allpairs``, ``cbook.finddir``, ``cbook.reverse_dict``, ``cbook.restrict_dict``, ``cbook.issubclass_safe``, ``cbook.recursive_remove``, ``cbook.unmasked_index_ranges``, ``cbook.Null``, ``cbook.RingBuffer``, ``cbook.Sorter``, ``cbook.Xlator``,"
-msgstr ""
+msgstr "``cbook.converter``, ``cbook.tostr``, ``cbook.todatetime``, ``cbook.todate``, ``cbook.tofloat``, ``cbook.toint``, ``cbook.unique``, ``cbook.is_string_like``, ``cbook.is_sequence_of_strings``, ``cbook.is_scalar``, ``cbook.soundex``, ``cbook.dict_delall``, ``cbook.get_split_ind``, ``cbook.wrap``, ``cbook.get_recursive_filelist``, ``cbook.get_recursive_filelist``, ``cbook. ieces``, ``cbook.exception_to_str``, ``cbook.allequal``, ``cbook.alltrue``, ``cbook.onetrue``, ``cbook.allpairs``, ``cbook.finddir``, ``cbook.reverse_dict``, ``cbook.restrict_dict``, ``cbook.issubclass_safe``, ``cbook.recursive_remove``, ``cbook.unmasked_index_ranges``, ``cbook.Null``, ``cbook.RingBuffer``, ``cbook.Sorter``, ``cbook.Xlator``, ``cbook.Xlator``,"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:508
 msgid "``font_manager.weight_as_number``, ``font_manager.ttfdict_to_fnames``"
-msgstr ""
+msgstr "``font_manager.weight_as_number``, ``font_manager.ttfdict_to_fnames``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:509
 msgid "``pyplot.colors``, ``pyplot.spectral``"
-msgstr ""
+msgstr "``pyplot.colors``, ``pyplot.spectral``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:510
 msgid "``rcsetup.validate_negative_linestyle``, ``rcsetup.validate_negative_linestyle_legacy``,"
-msgstr ""
+msgstr "``rcsetup.validate_negative_linestyle``, ``rcsetup.validate_negative_linestyle_legacy``,"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:512
 msgid "``testing.compare.verifiers``, ``testing.compare.verify``"
-msgstr ""
+msgstr "``testing.compare.verifiers``, ``testing.compare.verify``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:513
 msgid "``testing.decorators.knownfailureif``, ``testing.decorators.ImageComparisonTest.remove_text``"
-msgstr ""
+msgstr "``testing.decorators.knownfailureif``, ``testing.decorators.ImageComparisonTest.remove_text``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:515
 msgid "``tests.assert_str_equal``, ``tests.test_tinypages.file_same``"
-msgstr ""
+msgstr "``tests.assert_str_equal``, ``tests.test_tinypages.file_same``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:516
 msgid "``texmanager.dvipng_hack_alpha``,"
-msgstr ""
+msgstr "``texmanager.dvipng_hack_alpha``,"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:517
 msgid "``_AxesBase.axesPatch``, ``_AxesBase.set_color_cycle``, ``_AxesBase.get_cursor_props``, ``_AxesBase.set_cursor_props``"
-msgstr ""
+msgstr "``_AxesBase.axesPatch``, ``_AxesBase.set_color_cycle``, ``_AxesBase.get_cursor_props``, ``_AxesBase.set_cursor_props``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:519
 msgid "``_ImageBase.iterpnames``"
-msgstr ""
+msgstr "``_ImageBase.iterpnames``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:520
 msgid "``FigureCanvasBase.start_event_loop_default``;"
-msgstr ""
+msgstr "``FigureCanvasBase.start_event_loop_default``;"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:521
 msgid "``FigureCanvasBase.stop_event_loop_default``;"
-msgstr ""
+msgstr "``FigureCanvasBase.stop_event_loop_default``;"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:522
 msgid "``Figure.figurePatch``,"
-msgstr ""
+msgstr "``Figure.figurePatch``,"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:523
 msgid "``FigureCanvasBase.dynamic_update``, ``FigureCanvasBase.idle_event``, ``FigureCanvasBase.get_linestyle``, ``FigureCanvasBase.set_linestyle``"
-msgstr ""
+msgstr "``FigureCanvasBase.dynamic_update``, ``FigureCanvasBase.idle_event``, ``FigureCanvasBase.get_linestyle``, ``FigureCanvasBase.set_linestyle``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:525
 msgid "``FigureCanvasQTAggBase``"
-msgstr ""
+msgstr "``FigureCanvasQTAggBase``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:526
 msgid "``FigureCanvasQTAgg.blitbox``"
-msgstr ""
+msgstr "``FigureCanvasQTAgg.blitbox``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:527
 msgid "``FigureCanvasTk.show`` (alternative: ``FigureCanvasTk.draw``)"
-msgstr ""
+msgstr "``FigureCanvasTk.show`` (alternativa: ``FigureCanvasTk.draw``)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:528
 msgid "``FigureManagerTkAgg`` (alternative: ``FigureManagerTk``)"
-msgstr ""
+msgstr "``FigureManagerTkAgg`` (alternativa: ``FigureManagerTk``)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:529
 msgid "``NavigationToolbar2TkAgg`` (alternative: ``NavigationToolbar2Tk``)"
-msgstr ""
+msgstr "``NavigationToolbar2TkAgg`` (alternativa: ``NavigationToolbar2Tk``)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:530
 msgid "``backend_wxagg.Toolbar`` (alternative: ``backend_wxagg.NavigationToolbar2WxAgg``)"
-msgstr ""
+msgstr "``backend_wxagg.Toolbar`` (alternativa: ``backend_wxagg.NavigationToolbar2WxAgg``)"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:531
 msgid "``RendererAgg.debug()``"
-msgstr ""
+msgstr "``RendererAgg.debug()`"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:532
 msgid "passing non-numbers to ``EngFormatter.format_eng``"
-msgstr ""
+msgstr "pasando los no-números a ``EngFormatter.format_eng``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:533
 msgid "passing ``frac`` to ``PolarAxes.set_theta_grids``"
-msgstr ""
+msgstr "pasando ``frac`` a ``PolarAxes.set_theta_grids``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:534
 msgid "any mention of idle events"
-msgstr ""
+msgstr "cualquier mención de eventos inactivos"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:536
 msgid "The following API elements have been removed:"
-msgstr ""
+msgstr "Se han eliminado los siguientes elementos API:"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:538
 msgid "``backend_cairo.HAS_CAIRO_CFFI``"
-msgstr ""
+msgstr "``backend_cairo.HAS_CAIRO_CFI``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:539
 msgid "``sphinxext.sphinx_version``"
-msgstr ""
+msgstr "``sphinxext.sphinx_version``"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:543
 msgid "Proprietary sphinx directives"
-msgstr ""
+msgstr "Directivas de esfinge patentadas"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:545
 msgid "The matplotlib documentation used the proprietary sphinx directives ``.. htmlonly::``, and ``.. latexonly::``. These have been replaced with the standard sphinx directives ``.. only:: html`` and ``.. only:: latex``. This change will not affect any users. Only downstream package maintainers, who have used the proprietary directives in their docs, will have to switch to the sphinx directives."
-msgstr ""
+msgstr "La documentación de matplotlib utilizó las directivas sphinx propietarias ``.. htmlonly::``, y ``.. latexonly::``. Estos han sido reemplazados por las directivas de esfinge estándar ``.. solamente:: html`` y ``. only:: latex``. Este cambio no afectará a ningún usuario. Sólo los mantenedores de paquetes downstream que han utilizado las directivas propietarias en sus documentos, tendrán que cambiar a las directivas sphinx."
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:554
 msgid "lib/mpl_examples symlink"
-msgstr ""
+msgstr "lib/mpl_examples symlink"
 
 #: ../../api/prev_api_changes/api_changes_3.0.0.rst:556
 msgid "The symlink from lib/mpl_examples to ../examples has been removed. This is not installed as an importable package and should not affect end users, however this may require down-stream packagers to adjust. The content is still available top-level examples directory."
-msgstr ""
+msgstr "El enlace simbólico de lib/mpl_examples a ../examples ha sido eliminado. Esto no se instala como un paquete importable y no debería afectar a los usuarios finales, sin embargo esto puede requerir que los empaquetadores down-stream se ajusten. El contenido todavía está disponible en el directorio de ejemplos de nivel superior."
 

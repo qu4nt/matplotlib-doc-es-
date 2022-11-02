@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:22\n"
+"PO-Revision-Date: 2022-11-02 14:11\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,21 +20,21 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_2.1.2.rst:3
 msgid "API Changes in 2.1.2"
-msgstr ""
+msgstr "Cambios de API en 2.1.2"
 
 #: ../../api/prev_api_changes/api_changes_2.1.2.rst:6
 msgid "`.Figure.legend` no longer checks for repeated lines to ignore"
-msgstr ""
+msgstr "`.Figure.legend` ya no comprueba para que las líneas repetidas ignoren"
 
 #: ../../api/prev_api_changes/api_changes_2.1.2.rst:8
 msgid "`matplotlib.figure.Figure.legend` used to check if a line had the same label as an existing legend entry. If it also had the same line color or marker color legend didn't add a new entry for that line. However, the list of conditions was incomplete, didn't handle RGB tuples, didn't handle linewidths or linestyles etc."
-msgstr ""
+msgstr "`matplotlib.figure.Figure.legend` se usa para comprobar si una línea tenía la misma etiqueta que una entrada de leyenda existente. Si también tenía el mismo color de línea o la leyenda del color del marcador no agregó una nueva entrada para esa línea. Sin embargo, la lista de condiciones estaba incompleta, no manejaba las tuberías RGB, no manejaba los anchos de líneas o los estilos de linea, etc."
 
 #: ../../api/prev_api_changes/api_changes_2.1.2.rst:14
 msgid "This logic did not exist in `.axes.Axes.legend`.  It was included (erroneously) in Matplotlib 2.1.1 when the legend argument parsing was unified [#9324](https://github.com/matplotlib/matplotlib/pull/9324).  This change removes that check in `.axes.Axes.legend` again to restore the old behavior."
-msgstr ""
+msgstr "Esta lógica no existía en `.axes.Axes.legend`. Fue incluida (erroneamente) en Matplotlib 2.1.1 cuando el análisis de argumentos de la leyenda fue unificado [#9324](https://github. om/matplotlib/matplotlib/pull/9324). Este cambio elimina esa comprobación en `.axes.Axes.legend` de nuevo para restaurar el comportamiento antiguo."
 
 #: ../../api/prev_api_changes/api_changes_2.1.2.rst:19
 msgid "This logic has also been dropped from `.Figure.legend`, where it was previously undocumented. Repeated lines with the same label will now each have an entry in the legend.  If you do not want the duplicate entries, don't add a label to the line, or prepend the label with an underscore."
-msgstr ""
+msgstr "Esta lógica también ha sido eliminada de `.Figure.legend`, donde estaba previamente indocumentado. Las líneas repetidas con la misma etiqueta ahora tendrán una entrada en la leyenda. Si no desea que las entradas duplicadas, no añada una etiqueta a la línea, o anteponga la etiqueta con un guión bajo."
 

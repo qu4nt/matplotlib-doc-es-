@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:46\n"
+"PO-Revision-Date: 2022-11-02 14:11\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,71 +20,71 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:2
 msgid "Changes beyond 0.99.x"
-msgstr ""
+msgstr "Cambios más allá de 0.99.x"
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:4
 msgid "The default behavior of :meth:`matplotlib.axes.Axes.set_xlim`, :meth:`matplotlib.axes.Axes.set_ylim`, and :meth:`matplotlib.axes.Axes.axis`, and their corresponding pyplot functions, has been changed: when view limits are set explicitly with one of these methods, autoscaling is turned off for the matching axis. A new *auto* kwarg is available to control this behavior. The limit kwargs have been renamed to *left* and *right* instead of *xmin* and *xmax*, and *bottom* and *top* instead of *ymin* and *ymax*.  The old names may still be used, however."
-msgstr ""
+msgstr "El comportamiento predeterminado de :meth:`matplotlib.axes.Axes.set_xlim`, :meth:`matplotlib.axes.Axes.set_ylim`, y :meth:`matplotlib.axes.Ejes. xis`, y sus correspondientes funciones de pyplot, han sido cambiados: cuando los límites de vista se establecen explícitamente con uno de estos métodos, El autoescalado está desactivado para el eje correspondiente. Un nuevo kwarg *auto* está disponible para controlar este comportamiento. Los kwargs de límite han sido renombrados a *izquierda* y *derecha* en lugar de *xmin* y *xmax*, y *abajo* y *arriba* en lugar de *ymin* y *ymax*. Sin embargo, los viejos nombres pueden seguir utilizándose."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:15
 msgid "There are five new Axes methods with corresponding pyplot functions to facilitate autoscaling, tick location, and tick label formatting, and the general appearance of ticks and tick labels:"
-msgstr ""
+msgstr "Hay cinco nuevos métodos de ejes con las correspondientes funciones de pyplot para facilitar la auto-escalado, ubicación de tick, formato de etiqueta y apariencia general de ticks y etiquetas tick:"
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:20
 msgid ":meth:`matplotlib.axes.Axes.autoscale` turns autoscaling on or off, and applies it."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.autoscale` activa o desactiva la autoescalada y la aplica."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:23
 msgid ":meth:`matplotlib.axes.Axes.margins` sets margins used to autoscale the :attr:`matplotlib.axes.Axes.viewLim` based on the :attr:`matplotlib.axes.Axes.dataLim`."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.margins` establece los márgenes usados para autoescalar el :attr:`matplotlib.axes.Axes.viewLim` basado en el :attr:`matplotlib.axes.Axes.dataLim`."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:27
 msgid ":meth:`matplotlib.axes.Axes.locator_params` allows one to adjust axes locator parameters such as *nbins*."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.locator_params` permite ajustar parámetros de localización de ejes, como *nighins*."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:30
 msgid ":meth:`matplotlib.axes.Axes.ticklabel_format` is a convenience method for controlling the :class:`matplotlib.ticker.ScalarFormatter` that is used by default with linear axes."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.ticklabel_format` es un método de conveniencia para controlar el :class:`matplotlib.ticker.ScalarFormatter` que se utiliza por defecto con ejes lineales."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:34
 msgid ":meth:`matplotlib.axes.Axes.tick_params` controls direction, size, visibility, and color of ticks and their labels."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.tick_params` controla la dirección, tamaño, visibilidad y color de ticks y sus etiquetas."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:37
 msgid "The :meth:`matplotlib.axes.Axes.bar` method accepts a *error_kw* kwarg; it is a dictionary of kwargs to be passed to the errorbar function."
-msgstr ""
+msgstr "El método :meth:`matplotlib.axes.Axes.bar` acepta un kwarg* *error_kw*; es un diccionario de kwargs que debe ser pasado a la función errorbar."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:41
 msgid "The :meth:`matplotlib.axes.Axes.hist` *color* kwarg now accepts a sequence of color specs to match a sequence of datasets."
-msgstr ""
+msgstr "El :meth:`matplotlib.axes.Axes.ml` *color* kwarg ahora acepta una secuencia de especificaciones de color para que coincida con una secuencia de conjuntos de datos."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:44
 msgid "The :class:`~matplotlib.collections.EllipseCollection` has been changed in two ways:"
-msgstr ""
+msgstr "El :class:`~matplotlib.collections.EllipseCollection` ha sido cambiado de dos maneras:"
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:47
 msgid "There is a new *units* option, 'xy', that scales the ellipse with the data units.  This matches the :class:'~matplotlib.patches.Ellipse` scaling."
-msgstr ""
+msgstr "Hay una nueva opción de *unidades*, 'xy', que escala el elipse con las unidades de datos. Esto coincide con el escalado :class:'~matplotlib.patches.Ellipse'."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:51
 msgid "The *height* and *width* kwargs have been changed to specify the height and width, again for consistency with :class:`~matplotlib.patches.Ellipse`, and to better match their names; previously they specified the half-height and half-width."
-msgstr ""
+msgstr "Los kwargs *altura* y *ancho* se han cambiado para especificar la altura y el ancho, de nuevo para consistencia con :class:`~matplotlib. atches.Ellipse`, y para coincidir mejor con sus nombres; previamente especificaban la media altura y la media anchura."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:57
 msgid "There is a new rc parameter ``axes.color_cycle``, and the color cycle is now independent of the rc parameter ``lines.color``. ``matplotlib.Axes.set_default_color_cycle`` is deprecated."
-msgstr ""
+msgstr "Hay un nuevo parámetro rc ``axes.color_cycle``, y el ciclo de color es ahora independiente del parámetro rc ``lines.color``. ``matplotlib.Axes.set_default_color_cycle`` está obsoleto."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:61
 msgid "You can now print several figures to one pdf file and modify the document information dictionary of a pdf file. See the docstrings of the class :class:`matplotlib.backends.backend_pdf.PdfPages` for more information."
-msgstr ""
+msgstr "Ahora puede imprimir varias cifras en un archivo pdf y modificar el diccionario de información de documentos de un archivo pdf. Vea los documentos de la clase :class:`matplotlib.backends.backend_pdf.PdfPages` para más información."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:66
 msgid "Removed configobj_ and `enthought.traits`_ packages, which are only required by the experimental traited config and are somewhat out of date. If needed, install them independently."
-msgstr ""
+msgstr "Se eliminaron los paquetes configobj_ y `enthough, ht.traits`_, los cuales sólo son requeridos por la configuración experimental traited y están algo desactualizados. Si es necesario, instálalos independientemente."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:73
 msgid "The new rc parameter ``savefig.extension`` sets the filename extension that is used by :meth:`matplotlib.figure.Figure.savefig` if its *fname* argument lacks an extension."
-msgstr ""
+msgstr "El nuevo parámetro rc ``savefig.extension`` establece la extensión de nombre de archivo que es usada por :meth:`matplotlib.figure.Figure.savefig` si su argumento *fname* carece de una extensión."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:77
 msgid "In an effort to simplify the backend API, all clipping rectangles and paths are now passed in using GraphicsContext objects, even on collections and images.  Therefore::"
@@ -92,21 +92,21 @@ msgstr "In an effort to simplify the backend API, all clipping rectangles and pa
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:111
 msgid "There are four new Axes methods with corresponding pyplot functions that deal with unstructured triangular grids:"
-msgstr ""
+msgstr "Hay cuatro nuevos métodos de ejes con las correspondientes funciones de pyplot que tratan con rejillas triangulares no estructuradas:"
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:114
 msgid ":meth:`matplotlib.axes.Axes.tricontour` draws contour lines on a triangular grid."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.tricontour` dibuja líneas de contorno en una cuadrícula triangular."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:117
 msgid ":meth:`matplotlib.axes.Axes.tricontourf` draws filled contours on a triangular grid."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.tricontourf` dibuja contornos llenados en una cuadrícula triangular."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:120
 msgid ":meth:`matplotlib.axes.Axes.tripcolor` draws a pseudocolor plot on a triangular grid."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.tripcolor` dibuja una gráfica pseudocolor en una cuadrícula triangular."
 
 #: ../../api/prev_api_changes/api_changes_0.99.x.rst:123
 msgid ":meth:`matplotlib.axes.Axes.triplot` draws a triangular grid as lines and/or markers."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.triplot` dibuja una cuadrícula triangular como líneas y/o marcadores."
 

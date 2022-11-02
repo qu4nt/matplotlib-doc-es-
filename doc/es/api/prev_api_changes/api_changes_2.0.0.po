@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:46\n"
+"PO-Revision-Date: 2022-11-02 14:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,83 +20,83 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:3
 msgid "API Changes in 2.0.0"
-msgstr ""
+msgstr "Cambios de API en 2.0.0"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:6
 msgid "Deprecation and removal"
-msgstr ""
+msgstr "Deprecación y eliminación"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:9
 msgid "Color of Axes"
-msgstr ""
+msgstr "Color de los ejes"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:10
 msgid "The ``axisbg`` and ``axis_bgcolor`` properties on *Axes* have been deprecated in favor of ``facecolor``."
-msgstr ""
+msgstr "Las propiedades ``axisbg`` y ``axis_bgcolor`` en *Ejes* han sido obsoletas a favor de ``facecolor``."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:14
 msgid "GTK and GDK backends deprecated"
-msgstr ""
+msgstr "Los backends de GTK y GDK están obsoletos"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:15
 msgid "The GDK and GTK backends have been deprecated. These obsolete backends allow figures to be rendered via the GDK API to files and GTK2 figures. They are untested and known to be broken, and their use has been discouraged for some time.  Instead, use the ``GTKAgg`` and ``GTKCairo`` backends for rendering to GTK2 windows."
-msgstr ""
+msgstr "Los backends GDK y GTK han sido obsoletos. Estos backends obsoletos permiten que las figuras sean renderizadas a través de la API GDK a archivos y cifras GTK2. No se han probado y se sabe que se han roto, y su uso ha sido desalentado durante algún tiempo. En su lugar, utilice los backends ``GTKAgg`` y ``GTKCairo`` para renderizar a las ventanas GTK2."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:22
 msgid "WX backend deprecated"
-msgstr ""
+msgstr "backend WX obsoleto"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:23
 msgid "The WX backend has been deprecated.  It is untested, and its use has been discouraged for some time. Instead, use the ``WXAgg`` backend for rendering figures to WX windows."
-msgstr ""
+msgstr "El backend WX ha sido obsoleto. No está probado, y su uso ha sido desaconsejado durante algún tiempo. En su lugar, utilice el backend ``WXAgg`` para renderizar figuras en ventanas WX."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:28
 msgid "CocoaAgg backend removed"
-msgstr ""
+msgstr "backend de CocoaAgg eliminado"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:29
 msgid "The deprecated and not fully functional CocoaAgg backend has been removed."
-msgstr ""
+msgstr "Se ha eliminado el backend de CocoaAgg obsoleto y no totalmente funcional."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:32
 msgid "`round` removed from TkAgg Backend"
-msgstr ""
+msgstr "`round` eliminado del backend de TkAgg"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:33
 msgid "The TkAgg backend had its own implementation of the `round` function. This was unused internally and has been removed. Instead, use either the `round` builtin function or `numpy.around`."
-msgstr ""
+msgstr "El backend de TkAgg tenía su propia implementación de la función 'ronda'. Esto no fue usado internamente y ha sido eliminado. En su lugar, usa la función incorporada `round` o `numpy.around`."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:40
 msgid "'hold' functionality deprecated"
-msgstr ""
+msgstr "funcionalidad 'mantener' obsoleta"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:41
 msgid "The 'hold' keyword argument and all functions and methods related to it are deprecated, along with the ``axes.hold`` rcParams entry. The behavior will remain consistent with the default ``hold=True`` state that has long been in place.  Instead of using a function or keyword argument (``hold=False``) to change that behavior, explicitly clear the axes or figure as needed prior to subsequent plotting commands."
-msgstr ""
+msgstr "El argumento de la palabra clave 'hold' y todas las funciones y métodos relacionados con ella están obsoletos, junto con los ``axes'. viejo`` entrada rcParams. El comportamiento permanecerá consistente con el estado predeterminado ``hold=True`` que ha estado en su lugar. En lugar de usar una función o argumento de palabra clave (``hold=False``) para cambiar ese comportamiento, limpiar explícitamente los ejes o figuras según sea necesario antes de los siguientes comandos de trazado."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:51
 msgid "`.Artist.update` has return value"
-msgstr ""
+msgstr "`.Artist.update` tiene valor devuelto"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:53
 msgid "The methods `matplotlib.artist.Artist.set`, `matplotlib.artist.Artist.update`, and the function `matplotlib.artist.setp` now use a common codepath to look up how to update the given artist properties (either using the setter methods or an attribute/property)."
-msgstr ""
+msgstr "Los métodos `matplotlib.artist.Artist.set`, `matplotlib.artist.Artist.update`, y la función `matplotlib.artist. etp` ahora usa una ruta de código común para buscar cómo actualizar las propiedades del artista (ya sea usando los métodos setter o un atributo/propiedad)."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:58
 msgid "The behavior of `matplotlib.artist.Artist.update` is slightly changed to return a list of the values returned from the setter methods to avoid changing the API of `matplotlib.artist.Artist.set` and `matplotlib.artist.setp`."
-msgstr ""
+msgstr "El comportamiento de `matplotlib.artist.Artist. pdate` se cambia ligeramente para devolver una lista de los valores devueltos de los métodos setter para evitar cambiar la API de `matplotlib. rtist.Artist.set` y `matplotlib.artist.setp`."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:62
 msgid "The keys passed into `matplotlib.artist.Artist.update` are now converted to lower case before being processed, to match the behavior of `matplotlib.artist.Artist.set` and `matplotlib.artist.setp`.  This should not break any user code because there are no set methods with capitals in their names, but this puts a constraint on naming properties in the future."
-msgstr ""
+msgstr "Las claves pasadas a `matplotlib.artist.Artist.update` ahora se convierten a minúsculas antes de ser procesadas, para coincidir con el comportamiento de `matplotlib.artist.Artist.set` y `matplotlib. rtist.setp`. Esto no debería romper ningún código de usuario porque no hay métodos con mayúsculas en sus nombres, pero esto pone una restricción sobre las propiedades de nombre en el futuro."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:70
 msgid "`.Legend` initializers gain *edgecolor* and *facecolor* keyword arguments"
-msgstr ""
+msgstr "`.Legend` inicializadores ganan argumentos de palabra clave *edgecolor* y *facecolor*"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:72
 msgid "The :class:`~matplotlib.legend.Legend` background patch (or 'frame') can have its ``edgecolor`` and ``facecolor`` determined by the corresponding keyword arguments to the :class:`matplotlib.legend.Legend` initializer, or to any of the methods or functions that call that initializer.  If left to their default values of `None`, their values will be taken from ``matplotlib.rcParams``.  The previously-existing ``framealpha`` kwarg still controls the alpha transparency of the patch."
-msgstr ""
+msgstr "El parche de fondo :class:`~matplotlib.legend.Legend` (o 'frame') puede tener su ``edgecolor`` y ``facecolor`` determinados por los argumentos de la palabra clave correspondiente al :class:`matplotlib.legend. egend` inicializador, o a cualquiera de los métodos o funciones que llaman a ese inicializador. Si se deja a sus valores predeterminados de `Ninguno`, sus valores serán tomados de ``matplotlib. cParams``. El kwarg ``framealpha`` anterior todavía controla la transparencia alfa del parche."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:83
 msgid "Qualitative colormaps"
@@ -104,109 +104,109 @@ msgstr "Mapas cualitativos de colores"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:85
 msgid "Colorbrewer's qualitative/discrete colormaps (\"Accent\", \"Dark2\", \"Paired\", \"Pastel1\", \"Pastel2\", \"Set1\", \"Set2\", \"Set3\") are now implemented as `.ListedColormap` instead of `.LinearSegmentedColormap`."
-msgstr ""
+msgstr "Los mapas de colores cualitativos/discretos (\"Accent\", \"Dark2\", \"Paired\", \"Pastel1\", \"Pastel2\", \"Set1\", \"Set2\", \"Set3\") ahora se implementan como `.ListedColormap` en lugar de `.LinearSegmentedColormap`."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:89
 msgid "To use these for images where categories are specified as integers, for instance, use::"
-msgstr ""
+msgstr "Para usarlos para imágenes donde las categorías se especifican como enteros, por ejemplo, use::"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:96
 msgid "Change in the ``draw_image`` backend API"
-msgstr ""
+msgstr "Cambiar en la API de backend de ``draw_image``"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:98
 msgid "The ``draw_image`` method implemented by backends has changed its interface."
-msgstr ""
+msgstr "El método ``draw_image`` implementado por los backends ha cambiado su interfaz."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:100
 msgid "This change is only relevant if the backend declares that it is able to transform images by returning ``True`` from ``option_scale_image``. See the ``draw_image`` docstring for more information."
-msgstr ""
+msgstr "Este cambio sólo es relevante si el backend declara que es capaz de transformar imágenes devolviendo ``True`` desde ``option_scale_image``. Vea la docstring ``draw_image`` para más información."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:107
 msgid "``matplotlib.ticker.LinearLocator`` algorithm update"
-msgstr ""
+msgstr "Actualizar algoritmo ``matplotlib.ticker.LinearLocator``"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:109
 msgid "The `matplotlib.ticker.LinearLocator` is used to define the range and location of axis ticks when the user wants an exact number of ticks. ``LinearLocator`` thus differs from the default locator ``MaxNLocator``, for which the user specifies a maximum number of intervals rather than a precise number of ticks."
-msgstr ""
+msgstr "El `matplotlib.ticker.LinearLocator` se utiliza para definir el rango y la ubicación de ticks de ejes cuando el usuario quiere un número exacto de ticks. Por lo tanto, ``LinearLocator`` difiere del localizador predeterminado ``MaxNLocator``, para el cual el usuario especifica un número máximo de intervalos en lugar de un número preciso de ticks."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:115
 msgid "The view range algorithm in ``matplotlib.ticker.LinearLocator`` has been changed so that more convenient tick locations are chosen. The new algorithm returns a plot view range that is a multiple of the user-requested number of ticks. This ensures tick marks will be located at whole integers more consistently. For example, when both y-axes of a``twinx`` plot use ``matplotlib.ticker.LinearLocator`` with the same number of ticks, their y-tick locations and grid lines will coincide."
-msgstr ""
+msgstr "El algoritmo del rango de vistas en ``matplotlib.ticker.LinearLocator`` ha sido cambiado para que se elijan ubicaciones de ticks más convenientes. El nuevo algoritmo devuelve un rango de vista de parcela que es un múltiplo del número de ticks solicitado por el usuario. Esto asegura que las marcas de tick se ubicarán en enteros de forma más consistente. Por ejemplo, cuando ambos ejes de un trazo ``twinx`` usan ``matplotlib. icker.LinearLocator`` con el mismo número de ticks, coincidirán sus ubicaciones de y-tick y líneas de cuadrícula."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:124
 msgid "`matplotlib.ticker.LogLocator` gains numticks kwarg"
-msgstr ""
+msgstr "`matplotlib.ticker.LogLocator` gana números kwarg"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:126
 msgid "The maximum number of ticks generated by the `~matplotlib.ticker.LogLocator` can now be controlled explicitly via setting the new 'numticks' kwarg to an integer.  By default the kwarg is None which internally sets it to the 'auto' string, triggering a new algorithm for adjusting the maximum according to the axis length relative to the ticklabel font size."
-msgstr ""
+msgstr "El número máximo de ticks generados por el `~matplotlib.ticker.LogLocator` ahora puede controlarse explícitamente estableciendo el nuevo kwarg 'numticks' a un entero. Por defecto el kwarg es Ninguno que internamente lo establece a la cadena 'auto', activando un nuevo algoritmo para ajustar el máximo de acuerdo con la longitud del eje relativa al tamaño de la fuente de la etiqueta ticklab."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:134
 msgid "`matplotlib.ticker.LogFormatter`: two new kwargs"
-msgstr ""
+msgstr "`matplotlib.ticker.LogFormatter`: dos nuevos kwargs"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:136
 msgid "Previously, minor ticks on log-scaled axes were not labeled by default.  An algorithm has been added to the `~matplotlib.ticker.LogFormatter` to control the labeling of ticks between integer powers of the base.  The algorithm uses two parameters supplied in a kwarg tuple named 'minor_thresholds'. See the docstring for further explanation."
-msgstr ""
+msgstr "Anteriormente, los ticks menores en los ejes escalados en el registro no fueron etiquetados por defecto. Un algoritmo ha sido añadido al `~matplotlib. icker.LogFormatter` para controlar el etiquetado de ticks entre potencias enteras de la base. El algoritmo usa dos parámetros suministrados en una tupla kwarg llamada 'minor_parallholds'."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:143
 msgid "To improve support for axes using `~matplotlib.ticker.SymmetricalLogLocator`, a *linthresh* keyword argument was added."
-msgstr ""
+msgstr "Para mejorar el soporte de ejes usando `~matplotlib.ticker.SymmetricalLogLocator`, se añadió un argumento de palabra clave *linuto*."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:148
 msgid "New defaults for 3D quiver function in mpl_toolkits.mplot3d.axes3d.py"
-msgstr ""
+msgstr "Nuevo valor predeterminado para la función 3D quiver en mpl_toolkits.mplot3d.axes3d.py"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:150
 msgid "Matplotlib has both a 2D and a 3D ``quiver`` function. These changes affect only the 3D function and make the default behavior of the 3D function match the 2D version. There are two changes:"
-msgstr ""
+msgstr "Matplotlib tiene tanto una función 2D como una ``quiver`` 3D. Estos cambios afectan sólo a la función 3D y hacen que el comportamiento predeterminado de la función 3D coincida con la versión 2D. Hay dos cambios:"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:154
 msgid "The 3D quiver function previously normalized the arrows to be the same length, which makes it unusable for situations where the arrows should be different lengths and does not match the behavior of the 2D function. This normalization behavior is now controlled with the ``normalize`` keyword, which defaults to False."
-msgstr ""
+msgstr "La función de carcaj 3D anteriormente normalizó las flechas para que tuvieran la misma longitud, lo que lo hace inutilizable para situaciones en las que las flechas deben tener diferentes longitudes y no coincide con el comportamiento de la función 2D. Este comportamiento de normalización ahora se controla con la palabra clave ``normalize``, que por defecto es False."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:160
 msgid "The ``pivot`` keyword now defaults to ``tail`` instead of ``tip``. This was done in order to match the default behavior of the 2D quiver function."
-msgstr ""
+msgstr "La palabra clave ``pivot`` ahora es ``tail`` en lugar de ``tip``. Esto se hizo para que coincida con el comportamiento predeterminado de la función quiver 2D."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:164
 msgid "To obtain the previous behavior with the 3D quiver function, one can call the function with ::"
-msgstr ""
+msgstr "Para obtener el comportamiento anterior con la función 3D quiver, se puede llamar a la función con ::"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:169
 msgid "where \"ax\" is an ``Axes3d`` object created with something like ::"
-msgstr ""
+msgstr "donde \"ej\" es un objeto ``Ejes3d`` creado con algo como ::"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:176
 msgid "Stale figure behavior"
-msgstr ""
+msgstr "Comportamiento de figura obsoleto"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:178
 msgid "Attempting to draw the figure will now mark it as not stale (independent if the draw succeeds).  This change is to prevent repeatedly trying to re-draw a figure which is raising an error on draw.  The previous behavior would only mark a figure as not stale after a full re-draw succeeded."
-msgstr ""
+msgstr "Intentar dibujar la figura ahora lo marcará como no obsoleto (independiente si el sorteo tiene éxito). Este cambio tiene por objeto evitar que se intente volver a dibujar una cifra que está provocando un error de dibujo. El comportamiento anterior sólo marcaría una figura como no obsoleta después de que un re-sorteo completo tuviera éxito."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:185
 msgid "The spectral colormap is now nipy_spectral"
-msgstr ""
+msgstr "El mapa de colores espectral ahora es nipy_spectral"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:187
 msgid "The colormaps formerly known as ``spectral`` and ``spectral_r`` have been replaced by ``nipy_spectral`` and ``nipy_spectral_r`` since Matplotlib 1.3.0. Even though the colormap was deprecated in Matplotlib 1.3.0, it never raised a warning. As of Matplotlib 2.0.0, using the old names raises a deprecation warning. In the future, using the old names will raise an error."
-msgstr ""
+msgstr "Los mapas de colores anteriormente conocidos como ``espectral`` y ``spectral_r`` han sido reemplazados por ``nipy_spectral`` y ``nipy_spectral_r`` desde Matplotlib 1. .0. Aunque el mapa de colores estaba obsoleto en Matplotlib 1. .0, nunca levantó una advertencia. A partir de Matplotlib 2.0.0, usar los nombres antiguos plantea una advertencia de desaprobación. En el futuro, el uso de los nombres antiguos provocará un error."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:194
 msgid "Default install no longer includes test images"
-msgstr ""
+msgstr "La instalación por defecto ya no incluye imágenes de prueba"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:196
 msgid "To reduce the size of wheels and source installs, the tests and baseline images are no longer included by default."
-msgstr ""
+msgstr "Para reducir el tamaño de las ruedas y la instalación de la fuente, las pruebas y las imágenes básicas ya no están incluidas por defecto."
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:199
 msgid "To restore installing the tests and images, use a :file:`setup.cfg` with ::"
-msgstr ""
+msgstr "Para restaurar la instalación de las pruebas e imágenes, usa un :file:`setup.cfg` con ::"
 
 #: ../../api/prev_api_changes/api_changes_2.0.0.rst:205
 msgid "in the source directory at build/install time."
-msgstr ""
+msgstr "en el directorio de origen al momento de compilar/instalar."
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:45\n"
+"PO-Revision-Date: 2022-11-02 14:08\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,60 +20,60 @@ msgstr ""
 
 #: ../../api/backend_bases_api.rst:3
 msgid ":mod:`matplotlib.backend_bases`"
-msgstr ""
+msgstr ":mod:`matplotlib.backend_bases`"
 
 #: matplotlib.backend_bases:1 of
 msgid "Abstract base classes define the primitives that renderers and graphics contexts must implement to serve as a Matplotlib backend."
-msgstr ""
+msgstr "Las clases base abstractas definen los primitivos que los renderizadores y los contextos gráficos deben implementar para servir como backend de Matplotlib."
 
 #: matplotlib.backend_bases:5 of
 msgid "`RendererBase`"
-msgstr ""
+msgstr "`RenderBase`"
 
 #: matplotlib.backend_bases:5 matplotlib.backend_bases.RendererBase:2 of
 msgid "An abstract base class to handle drawing/rendering operations."
-msgstr ""
+msgstr "Una clase base abstracta para manejar operaciones de dibujo/renderizado."
 
 #: matplotlib.backend_bases:9 of
 msgid "`FigureCanvasBase`"
-msgstr ""
+msgstr "`FigureCanvasBase`"
 
 #: matplotlib.backend_bases:8 of
 msgid "The abstraction layer that separates the `.Figure` from the backend specific details like a user interface drawing area."
-msgstr ""
+msgstr "La capa de abstracción que separa el `.Figure` de los detalles específicos del backend como un área de dibujo de interfaz de usuario."
 
 #: matplotlib.backend_bases:12 of
 msgid "`GraphicsContextBase`"
-msgstr ""
+msgstr "`Base de Contexto Gráfico`"
 
 #: matplotlib.backend_bases:12 matplotlib.backend_bases.GraphicsContextBase:2
 #: of
 msgid "An abstract base class that provides color, line styles, etc."
-msgstr ""
+msgstr "Una clase base abstracta que proporciona color, estilos de línea, etc."
 
 #: matplotlib.backend_bases:17 of
 msgid "`Event`"
-msgstr ""
+msgstr "`Evento`"
 
 #: matplotlib.backend_bases:15 of
 msgid "The base class for all of the Matplotlib event handling.  Derived classes such as `KeyEvent` and `MouseEvent` store the meta data like keys and buttons pressed, x and y locations in pixel and `~.axes.Axes` coordinates."
-msgstr ""
+msgstr "La clase base para todos los eventos de Matplotlib. Clases derivadas como `KeyEvent` y `MouseEvent` almacenan los metadatos como teclas y botones presionados, x y y ubicaciones en pixel y `~. coordenadas de xes.axes`."
 
 #: matplotlib.backend_bases:21 of
 msgid "`ShowBase`"
-msgstr ""
+msgstr "`ShowBase`"
 
 #: matplotlib.backend_bases:20 of
 msgid "The base class for the ``Show`` class of each interactive backend; the 'show' callable is then set to ``Show.__call__``."
-msgstr ""
+msgstr "La clase base para la clase ``Mostrar`` de cada backend interactivo; la llamada 'mostrar' se establece en ``Mostrar.__call__``."
 
 #: matplotlib.backend_bases:24 of
 msgid "`ToolContainerBase`"
-msgstr ""
+msgstr "`Base de Contenedor`"
 
 #: matplotlib.backend_bases:24 of
 msgid "The base class for the Toolbar class of each interactive backend."
-msgstr ""
+msgstr "La clase base para la clase Toolbar de cada backend interactivo."
 
 #: matplotlib.backend_bases.CloseEvent:1 matplotlib.backend_bases.DrawEvent:1
 #: matplotlib.backend_bases.LocationEvent:1
@@ -84,23 +84,23 @@ msgstr "Bases: :py:class:`matplotlib.backend_bases.Event`"
 
 #: matplotlib.backend_bases.CloseEvent:2 of
 msgid "An event triggered by a figure being closed."
-msgstr ""
+msgstr "Un evento activado por una figura que está siendo cerrada."
 
 #: matplotlib.backend_bases.DrawEvent:2 of
 msgid "An event triggered by a draw operation on the canvas."
-msgstr ""
+msgstr "Un evento activado por una operación de sorteo en el lienzo."
 
 #: matplotlib.backend_bases.DrawEvent:4 of
 msgid "In most backends, callbacks subscribed to this event will be fired after the rendering is complete but before the screen is updated. Any extra artists drawn to the canvas's renderer will be reflected without an explicit call to ``blit``."
-msgstr ""
+msgstr "En la mayoría de los backends, los callbacks suscritos a este evento se activarán después de que el renderizado se haya completado, pero antes de que se actualice la pantalla. Cualquier artista extra dibujado al renderizador del lienzo se reflejará sin una llamada explícita a ``blit``."
 
 #: matplotlib.backend_bases.DrawEvent:11 of
 msgid "Calling ``canvas.draw`` and ``canvas.blit`` in these callbacks may not be safe with all backends and may cause infinite recursion."
-msgstr ""
+msgstr "Llamar a ``canvas.draw`` y ``canvas.blit`` en estos callbacks puede no ser seguro con todos los backends y puede causar una recursión infinita."
 
 #: matplotlib.backend_bases.DrawEvent:14 of
 msgid "A DrawEvent has a number of special attributes in addition to those defined by the parent `Event` class."
-msgstr ""
+msgstr "Un DrawEvent tiene un número de atributos especiales además de los definidos por la clase padre `Event`."
 
 #: matplotlib.backend_bases.DrawEvent matplotlib.backend_bases.Event
 #: matplotlib.backend_bases.FigureCanvasBase
@@ -113,15 +113,15 @@ msgstr "Atributos"
 
 #: matplotlib.backend_bases.DrawEvent:33 of
 msgid "**renderer** : `RendererBase`"
-msgstr ""
+msgstr "**renderizador** : `RenderBase`"
 
 #: matplotlib.backend_bases.DrawEvent:32 of
 msgid "RendererBase"
-msgstr ""
+msgstr "RenderizarBase"
 
 #: matplotlib.backend_bases.DrawEvent:32 of
 msgid "The renderer for the draw event."
-msgstr ""
+msgstr "El renderizador para el evento de dibujo."
 
 #: matplotlib.backend_bases.Event:1 matplotlib.backend_bases.FigureCanvasBase:1
 #: matplotlib.backend_bases.FigureManagerBase:1
@@ -134,11 +134,11 @@ msgstr "Bases: :py:class:`object`"
 
 #: matplotlib.backend_bases.Event:2 of
 msgid "A Matplotlib event."
-msgstr ""
+msgstr "A Matplotlib event."
 
 #: matplotlib.backend_bases.Event:4 of
 msgid "The following attributes are defined and shown with their default values. Subclasses may define additional attributes."
-msgstr ""
+msgstr "Los siguientes atributos se definen y se muestran con sus valores predeterminados. Las subclases pueden definir atributos adicionales."
 
 #: matplotlib.backend_bases.Event:22
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:13
@@ -154,21 +154,21 @@ msgstr "str"
 
 #: matplotlib.backend_bases.Event:22 of
 msgid "The event name."
-msgstr ""
+msgstr "El nombre del evento."
 
 #: matplotlib.backend_bases.Event:25
 #: matplotlib.backend_bases.FigureManagerBase:51 of
 msgid "**canvas** : `FigureCanvasBase`"
-msgstr ""
+msgstr "**lienzo** : `FigureCanvasBase`"
 
 #: matplotlib.backend_bases.Event:24
 #: matplotlib.backend_bases.FigureManagerBase:50 of
 msgid "FigureCanvasBase"
-msgstr ""
+msgstr "Base de lienzo de figura"
 
 #: matplotlib.backend_bases.Event:25 of
 msgid "The backend-specific canvas instance generating the event."
-msgstr ""
+msgstr "La instancia de lienzo específica del backend generando el evento."
 
 #: matplotlib.backend_bases.Event:29
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event:32
@@ -180,15 +180,15 @@ msgstr "**guiEvent**"
 
 #: matplotlib.backend_bases.Event:28 of
 msgid "The GUI event that triggered the Matplotlib event."
-msgstr ""
+msgstr "El evento GUI que desencadenó el evento Matplotlib."
 
 #: matplotlib.backend_bases.FigureCanvasBase:2 of
 msgid "The canvas the figure renders into."
-msgstr ""
+msgstr "El lienzo en el que se muestra la figura."
 
 #: matplotlib.backend_bases.FigureCanvasBase:21 of
 msgid "**figure** : `matplotlib.figure.Figure`"
-msgstr ""
+msgstr "**figura** : `matplotlib.figure.Figure`"
 
 #: matplotlib.backend_bases.FigureCanvasBase:20 of
 msgid "matplotlib.figure.Figure"
@@ -196,35 +196,35 @@ msgstr "matplotlib.figure.Figure"
 
 #: matplotlib.backend_bases.FigureCanvasBase:20 of
 msgid "A high-level figure instance."
-msgstr ""
+msgstr "Un ejemplo de cifras de alto nivel."
 
 #: matplotlib.backend_bases.FigureCanvasBase.blit:2 of
 msgid "Blit the canvas in bbox (default entire canvas)."
-msgstr ""
+msgstr "Activa el lienzo en bbox (lienzo entero predeterminado)."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_press_event:2 of
 msgid "Callback processing for mouse button press events."
-msgstr ""
+msgstr "Procesamiento de llamada para eventos de pulsación del botón del ratón."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_press_event:4 of
 msgid "Backend derived classes should call this function on any mouse button press.  (*x*, *y*) are the canvas coords ((0, 0) is lower left). button and key are as defined in `MouseEvent`."
-msgstr ""
+msgstr "Las clases derivadas del backend deben llamar a esta función al presionar cualquier botón del ratón. (*x*, *y*) son las coordenadas de lienzo ((0, 0) la parte inferior izquierda) y el botón y la tecla están definidos en `MouseEvent`."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_press_event:8 of
 msgid "This method will call all functions connected to the 'button_press_event' with a `MouseEvent` instance."
-msgstr ""
+msgstr "Este método llamará a todas las funciones conectadas al 'button_press_event' con una instancia de 'MouseEvent'."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event:2 of
 msgid "Callback processing for mouse button release events."
-msgstr ""
+msgstr "Procesamiento de llamada para eventos de liberación del botón del ratón."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event:4 of
 msgid "Backend derived classes should call this function on any mouse button release."
-msgstr ""
+msgstr "Las clases derivadas del backend deben llamar a esta función en cualquier versión del botón del ratón."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event:7 of
 msgid "This method will call all functions connected to the 'button_release_event' with a `MouseEvent` instance."
-msgstr ""
+msgstr "Este método llamará a todas las funciones conectadas al 'button_release_event' con una instancia de 'MouseEvent'."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event
 #: matplotlib.backend_bases.FigureCanvasBase.enter_notify_event
@@ -273,7 +273,7 @@ msgstr "float"
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event:13
 #: matplotlib.backend_bases.FigureCanvasBase.motion_notify_event:13 of
 msgid "The canvas coordinates where 0=left."
-msgstr ""
+msgstr "El lienzo coordenadas donde 0=izquierda."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event:16
 #: matplotlib.backend_bases.FigureCanvasBase.motion_notify_event:16
@@ -285,26 +285,26 @@ msgstr "**y**"
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event:16
 #: matplotlib.backend_bases.FigureCanvasBase.motion_notify_event:16 of
 msgid "The canvas coordinates where 0=bottom."
-msgstr ""
+msgstr "El lienzo coordina donde 0=inferior."
 
 #: matplotlib.backend_bases.FigureCanvasBase.button_release_event:19
 #: matplotlib.backend_bases.FigureCanvasBase.enter_notify_event:10
 #: matplotlib.backend_bases.FigureCanvasBase.leave_notify_event:10
 #: matplotlib.backend_bases.FigureCanvasBase.motion_notify_event:19 of
 msgid "The native UI event that generated the Matplotlib event."
-msgstr ""
+msgstr "El evento nativo de la interfaz de usuario que generó el evento Matplotlib."
 
 #: matplotlib.backend_bases.FigureCanvasBase.close_event:2 of
 msgid "Pass a `CloseEvent` to all functions connected to ``close_event``."
-msgstr ""
+msgstr "Pase un `CloseEvent` a todas las funciones conectadas a ``close_event``."
 
 #: matplotlib.backend_bases.FigureCanvasBase.device_pixel_ratio:2 of
 msgid "The ratio of physical to logical pixels used for the canvas on screen."
-msgstr ""
+msgstr "La relación física a píxeles lógicos utilizados para el lienzo en la pantalla."
 
 #: matplotlib.backend_bases.FigureCanvasBase.device_pixel_ratio:4 of
 msgid "By default, this is 1, meaning physical and logical pixels are the same size. Subclasses that support High DPI screens may set this property to indicate that said ratio is different. All Matplotlib interaction, unless working directly with the canvas, remains in logical pixels."
-msgstr ""
+msgstr "Por defecto, este es 1, lo que significa que los píxeles físicos y lógicos son del mismo tamaño. Las subclases que soportan pantallas de alta DPI pueden establecer esta propiedad para indicar que dicha proporción es diferente. Todas las interacciones de Matplotlib, a menos que trabajen directamente con el lienzo, permanecen en píxeles lógicos."
 
 #: matplotlib.backend_bases.FigureCanvasBase.draw:2 of
 msgid "Render the `.Figure`."
@@ -312,11 +312,11 @@ msgstr "Renderiza la `.Figure`."
 
 #: matplotlib.backend_bases.FigureCanvasBase.draw:4 of
 msgid "It is important that this method actually walk the artist tree even if not output is produced because this will trigger deferred work (like computing limits auto-limits and tick values) that users may want access to before saving to disk."
-msgstr ""
+msgstr "Es importante que este método realmente recorra el árbol del artista incluso si no se produce la salida, ya que esto desencadenará trabajos diferidos (como la computación limita los límites automáticos y los valores de tick) a los que los usuarios pueden querer acceder antes de guardar en el disco."
 
 #: matplotlib.backend_bases.FigureCanvasBase.draw_event:2 of
 msgid "Pass a `DrawEvent` to all functions connected to ``draw_event``."
-msgstr ""
+msgstr "Pase un `DrawEvent` a todas las funciones conectadas a ``draw_event``."
 
 #: matplotlib.backend_bases.FigureCanvasBase.draw_idle:2 of
 msgid "Request a widget redraw once control returns to the GUI event loop."
@@ -324,7 +324,7 @@ msgstr "Solicitar el redibujo del widget una vez que el control vuelve al bucle 
 
 #: matplotlib.backend_bases.FigureCanvasBase.draw_idle:4 of
 msgid "Even if multiple calls to `draw_idle` occur before control returns to the GUI event loop, the figure will only be rendered once."
-msgstr ""
+msgstr "Incluso si varias llamadas a `draw_idle` ocurren antes de que el control regrese al bucle del evento GUI, la figura sólo será renderizada una vez."
 
 #: matplotlib.backend_bases.FigureCanvasBase.draw_idle:17
 #: matplotlib.backend_bases.FigureCanvasBase.get_window_title:16
@@ -340,15 +340,15 @@ msgstr "Notes"
 
 #: matplotlib.backend_bases.FigureCanvasBase.draw_idle:18 of
 msgid "Backends may choose to override the method and implement their own strategy to prevent multiple renderings."
-msgstr ""
+msgstr "Los backends pueden optar por sobreescribir el método e implementar su propia estrategia para prevenir múltiples renderizaciones."
 
 #: matplotlib.backend_bases.FigureCanvasBase.enter_notify_event:2 of
 msgid "Callback processing for the mouse cursor entering the canvas."
-msgstr ""
+msgstr "Procesamiento de llamada para el cursor del ratón que entra en el lienzo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.enter_notify_event:4 of
 msgid "Backend derived classes should call this function when entering canvas."
-msgstr ""
+msgstr "Las clases derivadas del backend deben llamar a esta función al entrar en lienzo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.enter_notify_event:26
 #: matplotlib.backend_bases.FigureCanvasBase.inaxes:8 of
@@ -361,7 +361,7 @@ msgstr "(float, float)"
 
 #: matplotlib.backend_bases.FigureCanvasBase.enter_notify_event:13 of
 msgid "The coordinate location of the pointer when the canvas is entered."
-msgstr ""
+msgstr "La posición de coordenadas del puntero cuando se introduce el lienzo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.flush_events:2 of
 msgid "Flush the GUI events for the figure."
@@ -369,40 +369,40 @@ msgstr "Limpiar los eventos de la IGU para la figura."
 
 #: matplotlib.backend_bases.FigureCanvasBase.flush_events:4 of
 msgid "Interactive backends need to reimplement this method."
-msgstr ""
+msgstr "Los backends interactivos necesitan reimplementar este método."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_default_filename:2 of
 msgid "Return a string, which includes extension, suitable for use as a default filename."
-msgstr ""
+msgstr "Devuelve una cadena, que incluye extensión, adecuada para ser usada como nombre de archivo predeterminado."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_default_filetype:2 of
 msgid "Return the default savefig file format as specified in :rc:`savefig.format`."
-msgstr ""
+msgstr "Devuelve el formato predeterminado de archivo savefig especificado en :rc:`savefig.format`."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_default_filetype:5 of
 msgid "The returned string does not include a period. This method is overridden in backends that only support a single file type."
-msgstr ""
+msgstr "La cadena devuelta no incluye un período. Este método se reemplaza en backends que sólo soportan un único tipo de archivo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_supported_filetypes:2 of
 msgid "Return dict of savefig file formats supported by this backend."
-msgstr ""
+msgstr "Devolver dictado de los formatos de archivo savefig soportados por este backend."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_supported_filetypes_grouped:2
 #: of
 msgid "Return a dict of savefig file formats supported by this backend, where the keys are a file type name, such as 'Joint Photographic Experts Group', and the values are a list of filename extensions used for that filetype, such as ['jpg', 'jpeg']."
-msgstr ""
+msgstr "Devuelve un dictado de formatos de archivo savefig soportados por este backend, donde las claves son un nombre de tipo de archivo, como 'Conjunto de Expertos Fotográficos Grup', y los valores son una lista de extensiones de nombre de archivo utilizadas para ese tipo de archivo, como ['jpg', 'jpeg']."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_width_height:2 of
 msgid "Return the figure width and height in integral points or pixels."
-msgstr ""
+msgstr "Devuelve el ancho y la altura de la figura en puntos o píxeles integrales."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_width_height:4 of
 msgid "When the figure is used on High DPI screens (and the backend supports it), the truncation to integers occurs after scaling by the device pixel ratio."
-msgstr ""
+msgstr "Cuando la figura se utiliza en pantallas High DPI (y el backend lo soporta), la truncamiento a enteros ocurre después de escalar por la proporción de píxeles del dispositivo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_width_height:13 of
 msgid "**physical**"
-msgstr ""
+msgstr "**física**"
 
 #: of
 msgid "bool, default: False"
@@ -410,7 +410,7 @@ msgstr "bool, por defecto: False"
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_width_height:11 of
 msgid "Whether to return true physical pixels or logical pixels. Physical pixels may be used by backends that support HiDPI, but still configure the canvas using its actual size."
-msgstr ""
+msgstr "Devuelve píxeles físicos verdaderos o píxeles lógicos. Los píxeles físicos pueden ser usados por los backends que soportan HiDPI, pero todavía configuran el lienzo usando su tamaño real."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_width_height
 #: matplotlib.backend_bases.FigureCanvasBase.inaxes
@@ -430,71 +430,71 @@ msgstr "int"
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_width_height:18 of
 msgid "The size of the figure, in points or pixels, depending on the backend."
-msgstr ""
+msgstr "El tamaño de la figura, en puntos o píxeles, dependiendo del backend."
 
 #: matplotlib.backend_bases.FigureCanvasBase.get_window_title:2 of
 msgid "[*Deprecated*] Return the title text of the window containing the figure, or None if there is no window (e.g., a PS backend)."
-msgstr ""
+msgstr "[*Obsoleto*] Devuelve el texto del título de la ventana que contiene la figura, o Ninguno si no hay ninguna ventana (por ejemplo, un backend PS)."
 
 #: matplotlib.backend_bases.FigureCanvasBase.grab_mouse:2 of
 msgid "Set the child `~.axes.Axes` which is grabbing the mouse events."
-msgstr ""
+msgstr "Establece el hijo `~.axes.Axes` que está agarrando los eventos del ratón."
 
 #: matplotlib.backend_bases.FigureCanvasBase.grab_mouse:4 of
 msgid "Usually called by the widgets themselves. It is an error to call this if the mouse is already grabbed by another axes."
-msgstr ""
+msgstr "Normalmente los widgets los llaman ellos mismos. Es un error llamar esto si el ratón ya está cogido por otros ejes."
 
 #: matplotlib.backend_bases.FigureCanvasBase.inaxes:2 of
 msgid "Return the topmost visible `~.axes.Axes` containing the point *xy*."
-msgstr ""
+msgstr "Devuelve el `~.axes.Axes` más visible que contiene el punto *xy*."
 
 #: matplotlib.backend_bases.FigureCanvasBase.inaxes:8 of
 msgid "(x, y) pixel positions from left/bottom of the canvas."
-msgstr ""
+msgstr "(x, y) posiciones de píxeles desde la izquierda/parte inferior del lienzo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.inaxes:25 of
 msgid "`~matplotlib.axes.Axes` or None"
-msgstr ""
+msgstr "`~matplotlib.axes.Axes` o Ninguno"
 
 #: matplotlib.backend_bases.FigureCanvasBase.inaxes:13 of
 msgid "The topmost visible axes containing the point, or None if no axes."
-msgstr ""
+msgstr "Los ejes más visibles que contienen el punto, o Ninguno si no hay ejes."
 
 #: matplotlib.backend_bases.FigureCanvasBase.is_saving:2 of
 msgid "Return whether the renderer is in the process of saving to a file, rather than rendering for an on-screen buffer."
-msgstr ""
+msgstr "Devuelve si el renderizador está en proceso de guardar en un archivo, en lugar de renderizar para un buffer en pantalla."
 
 #: matplotlib.backend_bases.FigureCanvasBase.key_press_event:2 of
 msgid "Pass a `KeyEvent` to all functions connected to ``key_press_event``."
-msgstr ""
+msgstr "Pasa un `KeyEvent` a todas las funciones conectadas a ``key_press_event``."
 
 #: matplotlib.backend_bases.FigureCanvasBase.key_release_event:2 of
 msgid "Pass a `KeyEvent` to all functions connected to ``key_release_event``."
-msgstr ""
+msgstr "Pasa un `KeyEvent` a todas las funciones conectadas a ``key_release_event``."
 
 #: matplotlib.backend_bases.FigureCanvasBase.leave_notify_event:2 of
 msgid "Callback processing for the mouse cursor leaving the canvas."
-msgstr ""
+msgstr "Procesamiento de llamada para el cursor del ratón dejando el lienzo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.leave_notify_event:4 of
 msgid "Backend derived classes should call this function when leaving canvas."
-msgstr ""
+msgstr "Las clases derivadas del backend deben llamar a esta función cuando dejen el lienzo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.motion_notify_event:2 of
 msgid "Callback processing for mouse movement events."
-msgstr ""
+msgstr "Procesamiento de llamada para eventos de movimiento del ratón."
 
 #: matplotlib.backend_bases.FigureCanvasBase.motion_notify_event:4 of
 msgid "Backend derived classes should call this function on any motion-notify-event."
-msgstr ""
+msgstr "Las clases derivadas del backend deben llamar a esta función en cualquier movimiento-notificación-evento."
 
 #: matplotlib.backend_bases.FigureCanvasBase.motion_notify_event:7 of
 msgid "This method will call all functions connected to the 'motion_notify_event' with a `MouseEvent` instance."
-msgstr ""
+msgstr "Este método llamará a todas las funciones conectadas al 'motion_notify_event' con una instancia de 'MouseEvent'."
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:2 of
 msgid "Bind function *func* to event *s*."
-msgstr ""
+msgstr "Enlazar función *función* al evento *s*."
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:23
 #: matplotlib.backend_bases.RendererBase.draw_text:17
@@ -504,7 +504,7 @@ msgstr "**s**"
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:8 of
 msgid "One of the following events ids:"
-msgstr ""
+msgstr "Uno de los siguientes eventos ids:"
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:10 of
 msgid "'button_press_event'"
@@ -564,27 +564,27 @@ msgstr "'close_event'."
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:36 of
 msgid "**func**"
-msgstr ""
+msgstr "**func**"
 
 #: of
 msgid "callable"
-msgstr ""
+msgstr "llamable"
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:26 of
 msgid "The callback function to be executed, which must have the signature::"
-msgstr ""
+msgstr "La función de callback para ser ejecutada, que debe tener la firma::"
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:31 of
 msgid "For the location events (button and key press/release), if the mouse is over the axes, the ``inaxes`` attribute of the event will be set to the `~matplotlib.axes.Axes` the event occurs is over, and additionally, the variables ``xdata`` and ``ydata`` attributes will be set to the mouse location in data coordinates.  See `.KeyEvent` and `.MouseEvent` for more info."
-msgstr ""
+msgstr "Para los eventos de ubicación (botón y tecla/liberación), si el ratón está sobre los ejes, el atributo ``inaxes`` del evento se establecerá en el `~matplotlib. xes. xes` el evento ha terminado, y adicionalmente, los atributos ``xdata`` y ``ydata`` se establecerán en la ubicación del ratón en las coordenadas de datos. Vea `.KeyEvent` y `.MouseEvent` para más información."
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:51 of
 msgid "cid"
-msgstr ""
+msgstr "cid"
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:41 of
 msgid "A connection id that can be used with `.FigureCanvasBase.mpl_disconnect`."
-msgstr ""
+msgstr "Un identificador de conexión que se puede utilizar con `.FigureCanvasBase.mpl_disconnect`."
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_connect:54
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_disconnect:17
@@ -596,15 +596,15 @@ msgstr "Ejemplos"
 
 #: matplotlib.backend_bases.FigureCanvasBase.mpl_disconnect:2 of
 msgid "Disconnect the callback with id *cid*."
-msgstr ""
+msgstr "Desconecte el callback con id *cid*."
 
 #: matplotlib.backend_bases.FigureCanvasBase.new_timer:2 of
 msgid "Create a new backend-specific subclass of `.Timer`."
-msgstr ""
+msgstr "Crea una nueva subclase específica de backend de `.Timer`."
 
 #: matplotlib.backend_bases.FigureCanvasBase.new_timer:4 of
 msgid "This is useful for getting periodic events through the backend's native event loop.  Implemented only for backends with GUIs."
-msgstr ""
+msgstr "Esto es útil para obtener eventos periódicos a través del bucle de eventos nativos del backend. Implementado sólo para backends con GUIs."
 
 #: matplotlib.backend_bases.FigureCanvasBase.new_timer:10
 #: matplotlib.backend_bases.TimerBase:50
@@ -614,133 +614,133 @@ msgstr "**intervalo**"
 
 #: matplotlib.backend_bases.FigureCanvasBase.new_timer:10 of
 msgid "Timer interval in milliseconds."
-msgstr ""
+msgstr "Intervalo de tiempo en milisegundos."
 
 #: matplotlib.backend_bases.FigureCanvasBase.new_timer:27
 #: matplotlib.backend_bases.TimerBase:69 of
 msgid "**callbacks**"
-msgstr ""
+msgstr "**callbacks**"
 
 #: of
 msgid "list[tuple[callable, tuple, dict]]"
-msgstr ""
+msgstr "lista[tuplo[llamable, tuple, dict]]"
 
 #: matplotlib.backend_bases.FigureCanvasBase.new_timer:13 of
 msgid "Sequence of (func, args, kwargs) where ``func(*args, **kwargs)`` will be executed by the timer every *interval*."
-msgstr ""
+msgstr "Secuencia de (fun, args, kwargs) donde ``func(*args, **kwargs)`` será ejecutado por el temporizador cada *intervalo*."
 
 #: matplotlib.backend_bases.FigureCanvasBase.new_timer:16 of
 msgid "Callbacks which return ``False`` or ``0`` will be removed from the timer."
-msgstr ""
+msgstr "Las llamadas que devuelvan ``False`` o ``0`` se eliminarán del temporizador."
 
 #: matplotlib.backend_bases.FigureCanvasBase.pick_event:2 of
 msgid "Callback processing for pick events."
-msgstr ""
+msgstr "Procesamiento de llamadas para eventos de selección."
 
 #: matplotlib.backend_bases.FigureCanvasBase.pick_event:4 of
 msgid "This method will be called by artists who are picked and will fire off `PickEvent` callbacks registered listeners."
-msgstr ""
+msgstr "Este método será llamado por artistas que son escogidos y despejarán los callbacks registrados de `PickEvent`."
 
 #: matplotlib.backend_bases.FigureCanvasBase.pick_event:7 of
 msgid "Note that artists are not pickable by default (see `.Artist.set_picker`)."
-msgstr ""
+msgstr "Tenga en cuenta que los artistas no son elegibles por defecto (vea `.Artist.set_picker`)."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:2 of
 msgid "Render the figure to hardcopy. Set the figure patch face and edge colors.  This is useful because some of the GUIs have a gray figure face color background and you'll probably want to override this on hardcopy."
-msgstr ""
+msgstr "Renderiza la figura a una copia dura. Establece la cara del parche y los colores del borde. Esto es útil porque algunos de los GUI tienen un fondo de color de figura gris y probablemente querrá sobreescribir esto en una copia impresa."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:11 of
 msgid "**filename**"
-msgstr ""
+msgstr "**nombre de archivo**"
 
 #: of
 msgid "str or path-like or file-like"
-msgstr ""
+msgstr "str o como ruta o archivo"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:11 of
 msgid "The file where the figure is saved."
-msgstr ""
+msgstr "El archivo donde se guarda la figura."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:14 of
 msgid "**dpi** : float, default: :rc:`savefig.dpi`"
-msgstr ""
+msgstr "**dpi** : float, por defecto: :rc:`savefig.dpi`"
 
 #: of
 msgid "float, default:"
-msgstr ""
+msgstr "flotante, por defecto:"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:14 of
 msgid "The dots per inch to save the figure in."
-msgstr ""
+msgstr "Los puntos por pulgada para guardar la figura."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:18 of
 msgid "**facecolor** : color or 'auto', default: :rc:`savefig.facecolor`"
-msgstr ""
+msgstr "**facecolor** : color o 'auto', por defecto: :rc:`savefig.facecolor`"
 
 #: of
 msgid "color or 'auto', default:"
-msgstr ""
+msgstr "color o 'auto', por defecto:"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:17 of
 msgid "The facecolor of the figure.  If 'auto', use the current figure facecolor."
-msgstr ""
+msgstr "El color de cara de la figura. Si 'auto', use el color de la figura actual."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:22 of
 msgid "**edgecolor** : color or 'auto', default: :rc:`savefig.edgecolor`"
-msgstr ""
+msgstr "**edgecolor** : color or 'auto', default: :rc:`savefig.edgecolor`"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:21 of
 msgid "The edgecolor of the figure.  If 'auto', use the current figure edgecolor."
-msgstr ""
+msgstr "El color del borde de la figura. Si 'auto', utilice el color de la figura actual."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:25 of
 msgid "**orientation**"
-msgstr ""
+msgstr "**orientación**"
 
 #: of
 msgid "{'landscape', 'portrait'}, default: 'portrait'"
-msgstr ""
+msgstr "{'landscape', 'portrait'}, por defecto: 'retrato'"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:25 of
 msgid "Only currently applies to PostScript printing."
-msgstr ""
+msgstr "Actualmente sólo se aplica a la impresión de PostScript."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:30
 #: matplotlib.backend_bases.register_backend:8 of
 msgid "**format**"
-msgstr ""
+msgstr "**formato**"
 
 #: of
 msgid "str, optional"
-msgstr ""
+msgstr "str, opcional"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:28 of
 msgid "Force a specific file format. If not given, the format is inferred from the *filename* extension, and if that fails from :rc:`savefig.format`."
-msgstr ""
+msgstr "Forzar un formato de archivo específico. Si no se proporciona, el formato se inferirá de la extensión *nombre de archivo*, y si falla de :rc:`savefig.format`."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:34 of
 msgid "**bbox_inches** : 'tight' or `.Bbox`, default: :rc:`savefig.bbox`"
-msgstr ""
+msgstr "**bbox_inches** : 'tight' o `.Bbox`, por defecto: :rc:`savefig.bbox`"
 
 #: of
 msgid "'tight' or"
-msgstr ""
+msgstr "\"apretado\" o"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:33 of
 msgid "Bounding box in inches: only the given portion of the figure is saved.  If 'tight', try to figure out the tight bbox of the figure."
-msgstr ""
+msgstr "Cuadro delimitador en pulgadas: sólo se guarda la porción dada de la figura. Si 'tight', trate de averiguar la caja apretada de la figura."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:37 of
 msgid "**pad_inches** : float, default: :rc:`savefig.pad_inches`"
-msgstr ""
+msgstr "**pad_inches** : float, por defecto: :rc:`savefig.pad_inches`"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:37 of
 msgid "Amount of padding around the figure when *bbox_inches* is 'tight'."
-msgstr ""
+msgstr "Cantidad de relleno alrededor de la figura cuando *bbox_inches* es 'apretado'."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:41 of
 msgid "**bbox_extra_artists** : list of `~matplotlib.artist.Artist`, optional"
-msgstr ""
+msgstr "**bbox_extra_artistas** : lista de `~matplotlib.artist.Artist`, opcional"
 
 #: of
 msgid "list of"
@@ -748,77 +748,77 @@ msgstr "lista de"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:40 of
 msgid "A list of extra artists that will be considered when the tight bbox is calculated."
-msgstr ""
+msgstr "Una lista de artistas adicionales que se considerarán cuando se calcule la caja ajustada."
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:62
 #: matplotlib.backend_bases.register_backend:11 of
 msgid "**backend**"
-msgstr ""
+msgstr "**backend**"
 
 #: matplotlib.backend_bases.FigureCanvasBase.print_figure:44 of
 msgid "Use a non-default backend to render the file, e.g. to render a png file with the \"cairo\" backend rather than the default \"agg\", or a pdf file with the \"pgf\" backend rather than the default \"pdf\".  Note that the default backend is normally sufficient.  See :ref:`the-builtin-backends` for a list of valid backends for each file format.  Custom backends can be referenced as \"module://...\"."
-msgstr ""
+msgstr "Utilice un backend no predeterminado para renderizar el archivo, p.ej. para renderizar un archivo png con el \"cairo\" backend en lugar de la \"agg\" predeterminada o un archivo pdf con el backend \"pgf\" en lugar del predeterminado \"pdf\". Tenga en cuenta que el backend por defecto normalmente es suficiente. Vea :ref:`the-builtin-backends` para una lista de backends válidos para cada formato de archivo. Los backends personalizados pueden ser referenciados como \"module://...\"."
 
 #: matplotlib.backend_bases.FigureCanvasBase.release_mouse:2 of
 msgid "Release the mouse grab held by the `~.axes.Axes` *ax*."
-msgstr ""
+msgstr "Libera la captación del ratón sostenida por el eje `~.axes.Axes` *."
 
 #: matplotlib.backend_bases.FigureCanvasBase.release_mouse:4 of
 msgid "Usually called by the widgets. It is ok to call this even if *ax* doesn't have the mouse grab currently."
-msgstr ""
+msgstr "Normalmente es llamado por los widgets. Es correcto llamar esto incluso si *ax* no tiene el ratón en este momento."
 
 #: matplotlib.backend_bases.FigureCanvasBase.resize:2 of
 msgid "UNUSED: Set the canvas size in pixels."
-msgstr ""
+msgstr "DESUSADO: Establezca el tamaño del lienzo en píxeles."
 
 #: matplotlib.backend_bases.FigureCanvasBase.resize:4 of
 msgid "Certain backends may implement a similar method internally, but this is not a requirement of, nor is it used by, Matplotlib itself."
-msgstr ""
+msgstr "Ciertos backends pueden implementar un método similar internamente, pero esto no es un requisito de, ni lo usa el propio Matplotlib."
 
 #: matplotlib.backend_bases.FigureCanvasBase.resize_event:2 of
 msgid "Pass a `ResizeEvent` to all functions connected to ``resize_event``."
-msgstr ""
+msgstr "Pase un `ResizeEvent` a todas las funciones conectadas a ``resize_event``."
 
 #: matplotlib.backend_bases.FigureCanvasBase.scroll_event:2 of
 msgid "Callback processing for scroll events."
-msgstr ""
+msgstr "Procesamiento de llamadas para eventos de desplazamiento."
 
 #: matplotlib.backend_bases.FigureCanvasBase.scroll_event:4 of
 msgid "Backend derived classes should call this function on any scroll wheel event.  (*x*, *y*) are the canvas coords ((0, 0) is lower left).  button and key are as defined in `MouseEvent`."
-msgstr ""
+msgstr "Las clases derivadas del backend deben llamar a esta función en cualquier evento de rueda de desplazamiento. (*x*, *y*) son las coordenadas de lienzo ((0, 0) la parte inferior izquierda) y el botón y la tecla están definidos en `MouseEvent`."
 
 #: matplotlib.backend_bases.FigureCanvasBase.scroll_event:8 of
 msgid "This method will call all functions connected to the 'scroll_event' with a `MouseEvent` instance."
-msgstr ""
+msgstr "Este método llamará a todas las funciones conectadas al 'scroll_event' con una instancia de 'MouseEvent'."
 
 #: matplotlib.backend_bases.FigureCanvasBase.set_cursor:2 of
 msgid "Set the current cursor."
-msgstr ""
+msgstr "Establecer el cursor actual."
 
 #: matplotlib.backend_bases.FigureCanvasBase.set_cursor:4 of
 msgid "This may have no effect if the backend does not display anything."
-msgstr ""
+msgstr "Esto puede no tener ningún efecto si el backend no muestra nada."
 
 #: matplotlib.backend_bases.FigureCanvasBase.set_cursor:6
 #: matplotlib.backend_bases.NavigationToolbar2.set_cursor:4 of
 msgid "If required by the backend, this method should trigger an update in the backend event loop after the cursor is set, as this method may be called e.g. before a long-running task during which the GUI is not updated."
-msgstr ""
+msgstr "Si es requerido por el backend, este método debería desencadenar una actualización en el bucle del evento backend después de que el cursor está definido, ya que este método puede ser llamado. antes de una tarea de larga duración durante la cual la GUI no se actualiza."
 
 #: matplotlib.backend_bases.FigureCanvasBase.set_cursor:28 of
 msgid "**cursor** : `.Cursors`"
-msgstr ""
+msgstr "**cursor** : `.Cursors`"
 
 #: matplotlib.backend_bases.FigureCanvasBase.set_cursor:27 of
 msgid "Cursors"
-msgstr ""
+msgstr "Cursors"
 
 #: matplotlib.backend_bases.FigureCanvasBase.set_cursor:14 of
 msgid "The cursor to display over the canvas. Note: some backends may change the cursor for the entire window."
-msgstr ""
+msgstr "El cursor para mostrar sobre el lienzo. Nota: algunos backends pueden cambiar el cursor para toda la ventana."
 
 #: matplotlib.backend_bases.FigureCanvasBase.set_window_title:2 of
 msgid "[*Deprecated*] Set the title text of the window containing the figure.  Note that this has no effect if there is no window (e.g., a PS backend)."
-msgstr ""
+msgstr "[*Desaprobado*] Establece el texto del título de la ventana que contiene la figura. Tenga en cuenta que esto no tiene efecto si no hay ninguna ventana (por ejemplo, un servidor PS)."
 
 #: matplotlib.backend_bases.FigureCanvasBase.start_event_loop:2 of
 msgid "Start a blocking event loop."
@@ -826,23 +826,23 @@ msgstr "Iniciar un bucle de eventos de bloqueo."
 
 #: matplotlib.backend_bases.FigureCanvasBase.start_event_loop:4 of
 msgid "Such an event loop is used by interactive functions, such as `~.Figure.ginput` and `~.Figure.waitforbuttonpress`, to wait for events."
-msgstr ""
+msgstr "Tal bucle de eventos es usado por funciones interactivas, como `~.Figure.ginput` y `~.Figure.waitforbuttonpress`, para esperar a los eventos."
 
 #: matplotlib.backend_bases.FigureCanvasBase.start_event_loop:8 of
 msgid "The event loop blocks until a callback function triggers `stop_event_loop`, or *timeout* is reached."
-msgstr ""
+msgstr "El bucle de eventos bloquea hasta que una función de callback activa `stop_event_loop`, o *timeout* es alcanzado."
 
 #: matplotlib.backend_bases.FigureCanvasBase.start_event_loop:11 of
 msgid "If *timeout* is 0 or negative, never timeout."
-msgstr ""
+msgstr "Si el *tiempo de espera* es 0 o negativo, nunca se agota."
 
 #: matplotlib.backend_bases.FigureCanvasBase.start_event_loop:13 of
 msgid "Only interactive backends need to reimplement this method and it relies on `flush_events` being properly implemented."
-msgstr ""
+msgstr "Sólo los backends interactivos necesitan reimplementar este método y depende de que `flush_events` esté correctamente implementado."
 
 #: matplotlib.backend_bases.FigureCanvasBase.start_event_loop:16 of
 msgid "Interactive backends should implement this in a more native way."
-msgstr ""
+msgstr "Los backends interactivos deben implementar esto de una manera más nativa."
 
 #: matplotlib.backend_bases.FigureCanvasBase.stop_event_loop:2 of
 msgid "Stop the current blocking event loop."
@@ -850,330 +850,330 @@ msgstr "Detener el bucle de eventos de bloqueo actual."
 
 #: matplotlib.backend_bases.FigureCanvasBase.stop_event_loop:4 of
 msgid "Interactive backends need to reimplement this to match `start_event_loop`"
-msgstr ""
+msgstr "Los backends interactivos necesitan reimplementar esto para que coincida con `start_event_loop`"
 
 #: matplotlib.backend_bases.FigureCanvasBase.switch_backends:2 of
 msgid "Instantiate an instance of FigureCanvasClass"
-msgstr ""
+msgstr "Instanciar una instancia de FigureCanvasClass"
 
 #: matplotlib.backend_bases.FigureCanvasBase.switch_backends:4 of
 msgid "This is used for backend switching, e.g., to instantiate a FigureCanvasPS from a FigureCanvasGTK.  Note, deep copying is not done, so any changes to one of the instances (e.g., setting figure size or line props), will be reflected in the other"
-msgstr ""
+msgstr "Esto se utiliza para cambiar de backend, por ejemplo, para instanciar un FigureCanvasPS de un FigureCanvasGTK. Nota, la copia profunda no se hace, por lo que cualquier cambio en una de las instancias (e. ., establecer tamaño de la figura o accesorios de línea), se reflejará en el otro"
 
 #: matplotlib.backend_bases.FigureManagerBase:2 of
 msgid "A backend-independent abstraction of a figure container and controller."
-msgstr ""
+msgstr "Una abstracción independiente del backend de un contenedor de figura y controlador."
 
 #: matplotlib.backend_bases.FigureManagerBase:4 of
 msgid "The figure manager is used by pyplot to interact with the window in a backend-independent way. It's an adapter for the real (GUI) framework that represents the visual figure on screen."
-msgstr ""
+msgstr "El gestor de figuras es usado por pyplot para interactuar con la ventana de una manera independiente del backend. Es un adaptador para el framework real (GUI) que representa la figura visual en pantalla."
 
 #: matplotlib.backend_bases.FigureManagerBase:8 of
 msgid "GUI backends define from this class to translate common operations such as *show* or *resize* to the GUI-specific code. Non-GUI backends do not support these operations an can just use the base class."
-msgstr ""
+msgstr "Los backends de GUI definen desde esta clase para traducir operaciones comunes como *show* o *resize* al código específico de GUI. Los backends no GUI no soportan estas operaciones un puede usar la clase base."
 
 #: matplotlib.backend_bases.FigureManagerBase:12 of
 msgid "This following basic operations are accessible:"
-msgstr ""
+msgstr "Estas siguientes operaciones básicas son accesibles:"
 
 #: matplotlib.backend_bases.FigureManagerBase:14 of
 msgid "**Window operations**"
-msgstr ""
+msgstr "**Operaciones de ventana**"
 
 #: matplotlib.backend_bases.FigureManagerBase:16 of
 msgid "`~.FigureManagerBase.show`"
-msgstr ""
+msgstr "`~.FigureManagerBase.show`"
 
 #: matplotlib.backend_bases.FigureManagerBase:17 of
 msgid "`~.FigureManagerBase.destroy`"
-msgstr ""
+msgstr "`~.FigureManagerBase.destroy`"
 
 #: matplotlib.backend_bases.FigureManagerBase:18 of
 msgid "`~.FigureManagerBase.full_screen_toggle`"
-msgstr ""
+msgstr "`~.FigureManagerBase.full_screen_toggle`"
 
 #: matplotlib.backend_bases.FigureManagerBase:19 of
 msgid "`~.FigureManagerBase.resize`"
-msgstr ""
+msgstr "`~.FigureManagerBase.resize`"
 
 #: matplotlib.backend_bases.FigureManagerBase:20 of
 msgid "`~.FigureManagerBase.get_window_title`"
-msgstr ""
+msgstr "`~.FigureManagerBase.get_window_title`"
 
 #: matplotlib.backend_bases.FigureManagerBase:21 of
 msgid "`~.FigureManagerBase.set_window_title`"
-msgstr ""
+msgstr "`~.FigureManagerBase.set_window_title`"
 
 #: matplotlib.backend_bases.FigureManagerBase:23 of
 msgid "**Key and mouse button press handling**"
-msgstr ""
+msgstr "**Pulsación de teclas y botón del ratón**"
 
 #: matplotlib.backend_bases.FigureManagerBase:25 of
 msgid "The figure manager sets up default key and mouse button press handling by hooking up the `.key_press_handler` to the matplotlib event system. This ensures the same shortcuts and mouse actions across backends."
-msgstr ""
+msgstr "El gestor de figuras configura la tecla por defecto y el botón del ratón presiona el manejo enganchando el `. ey_press_handler` al sistema de eventos matplotlib. Esto asegura los mismos atajos y acciones del ratón en los backends."
 
 #: matplotlib.backend_bases.FigureManagerBase:29 of
 msgid "**Other operations**"
-msgstr ""
+msgstr "**Otras operaciones**"
 
 #: matplotlib.backend_bases.FigureManagerBase:31 of
 msgid "Subclasses will have additional attributes and functions to access additional functionality. This is of course backend-specific. For example, most GUI backends have ``window`` and ``toolbar`` attributes that give access to the native GUI widgets of the respective framework."
-msgstr ""
+msgstr "Las subclases tendrán atributos y funciones adicionales para acceder a funciones adicionales. Esto es por supuesto específico del backend. Por ejemplo, la mayoría de los servidores GUI tienen atributos ``window`` y ``toolbar`` que dan acceso a los widgets nativos GUI del respectivo framework."
 
 #: matplotlib.backend_bases.FigureManagerBase:51 of
 msgid "The backend-specific canvas instance."
-msgstr ""
+msgstr "Instancia de lienzo específica del backend."
 
 #: matplotlib.backend_bases.FigureManagerBase:54 of
 msgid "**num**"
-msgstr ""
+msgstr "**num**"
 
 #: of
 msgid "int or str"
-msgstr ""
+msgstr "int o str"
 
 #: matplotlib.backend_bases.FigureManagerBase:54 of
 msgid "The figure number."
-msgstr ""
+msgstr "El número de la cifra."
 
 #: matplotlib.backend_bases.FigureManagerBase:61 of
 msgid "**key_press_handler_id**"
-msgstr ""
+msgstr "**key_press_handler_id**"
 
 #: matplotlib.backend_bases.FigureManagerBase:57 of
 msgid "The default key handler cid, when using the toolmanager. To disable the default key press handling use::"
-msgstr ""
+msgstr "El cid del manejador de teclas predeterminado, al usar el gestor de herramientas. Para desactivar el manejo de teclas predeterminadas, use::"
 
 #: matplotlib.backend_bases.FigureManagerBase:69 of
 msgid "**button_press_handler_id**"
-msgstr ""
+msgstr "**button_press_handler_id**"
 
 #: matplotlib.backend_bases.FigureManagerBase:64 of
 msgid "The default mouse button handler cid, when using the toolmanager. To disable the default button press handling use::"
-msgstr ""
+msgstr "El cid predeterminado del manejador del botón del ratón, al usar el gestor de herramientas. Para desactivar el botón predeterminado presione el manejo::"
 
 #: matplotlib.backend_bases.FigureManagerBase.button_press:2 of
 msgid "[*Deprecated*] The default Matplotlib button actions for extra mouse buttons."
-msgstr ""
+msgstr "[*Desaprobado*] Las acciones predeterminadas del botón Matplotlib para botones extra del ratón."
 
 #: matplotlib.backend_bases.FigureManagerBase.get_window_title:2 of
 msgid "Return the title text of the window containing the figure, or None if there is no window (e.g., a PS backend)."
-msgstr ""
+msgstr "Devuelve el texto del título de la ventana que contiene la figura, o Ninguno si no hay ninguna ventana (por ejemplo, un backend PS)."
 
 #: matplotlib.backend_bases.FigureManagerBase.key_press:2 of
 msgid "[*Deprecated*] Implement the default Matplotlib key bindings defined at :ref:`key-event-handling`."
-msgstr ""
+msgstr "[*Deprecado*] Implementar los enlaces de claves predeterminados de Matplotlib definidos en :ref:`key-event-handling`."
 
 #: matplotlib.backend_bases.FigureManagerBase.resize:2 of
 msgid "For GUI backends, resize the window (in physical pixels)."
-msgstr ""
+msgstr "Para los backends de GUI, redimensionar la ventana (en píxeles físicos)."
 
 #: matplotlib.backend_bases.FigureManagerBase.set_window_title:2 of
 msgid "Set the title text of the window containing the figure."
-msgstr ""
+msgstr "Establece el texto del título de la ventana que contiene la figura."
 
 #: matplotlib.backend_bases.FigureManagerBase.set_window_title:4 of
 msgid "This has no effect for non-GUI (e.g., PS) backends."
-msgstr ""
+msgstr "Esto no tiene efecto para los backends que no son GUI (por ejemplo, PS)."
 
 #: matplotlib.backend_bases.FigureManagerBase.show:2 of
 msgid "For GUI backends, show the figure window and redraw. For non-GUI backends, raise an exception, unless running headless (i.e. on Linux with an unset DISPLAY); this exception is converted to a warning in `.Figure.show`."
-msgstr ""
+msgstr "Para los backends de GUI, mostrar la ventana de figuras y el redibujo. en Linux con un DISPLAY sin definir); esta excepción se convierte en una advertencia en `.Figure.show`."
 
 #: matplotlib.backend_bases.GraphicsContextBase.copy_properties:2 of
 msgid "Copy properties from *gc* to self."
-msgstr ""
+msgstr "Copiar propiedades de *gc* a sí mismo."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_alpha:2 of
 msgid "Return the alpha value used for blending - not supported on all backends."
-msgstr ""
+msgstr "Devuelve el valor alfa usado para mezclar - no soportado en todos los backends."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_antialiased:2 of
 msgid "Return whether the object should try to do antialiased rendering."
-msgstr ""
+msgstr "Devuelve si el objeto debe tratar de hacer renderizado antialias."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_capstyle:2 of
 msgid "Return the `.CapStyle`."
-msgstr ""
+msgstr "Devuelve el `.CapStyle`."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_clip_path:2 of
 msgid "Return the clip path in the form (path, transform), where path is a `~.path.Path` instance, and transform is an affine transform to apply to the path before clipping."
-msgstr ""
+msgstr "Devuelve la ruta del clip en la forma (ruta, transformación), donde la ruta es un `~.path. la instancia ath`, y la transformación es una transformación de afecto para aplicar a la ruta antes de cortar."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_clip_rectangle:2 of
 msgid "Return the clip rectangle as a `~matplotlib.transforms.Bbox` instance."
-msgstr ""
+msgstr "Devuelve el rectángulo del clip como una instancia `~matplotlib.transforms.Bbox`."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_dashes:2 of
 msgid "Return the dash style as an (offset, dash-list) pair."
-msgstr ""
+msgstr "Devuelve el estilo de guión como un par (desplazamiento, lista de guiones)."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_dashes:4 of
 msgid "The dash list is a even-length list that gives the ink on, ink off in points.  See p. 107 of to PostScript `blue book`_ for more info."
-msgstr ""
+msgstr "La lista de guiones es una lista de longitud uniforme que da a la tinta encendida, tinta apagada en puntos. Vea p. 107 de a PostScript `libro azul`_ para más información."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_dashes:7 of
 msgid "Default value is (None, None)."
-msgstr ""
+msgstr "El valor por defecto es (Ninguna, Ninguna)."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_forced_alpha:2 of
 msgid "Return whether the value given by get_alpha() should be used to override any other alpha-channel values."
-msgstr ""
+msgstr "Devuelve si el valor dado por get_alpha() debe ser usado para sobreescribir cualquier otro valor alpha-canal."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_gid:2 of
 msgid "Return the object identifier if one is set, None otherwise."
-msgstr ""
+msgstr "Devuelve el identificador de objeto si uno está establecido, Ninguno lo contrario."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_hatch:2 of
 msgid "Get the current hatch style."
-msgstr ""
+msgstr "Obtener el estilo de colchón actual."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_hatch_color:2 of
 msgid "Get the hatch color."
-msgstr ""
+msgstr "Consigue el color del colchón."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_hatch_linewidth:2 of
 msgid "Get the hatch linewidth."
-msgstr ""
+msgstr "Obtener el ancho de la colchón."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_hatch_path:2 of
 msgid "Return a `.Path` for the current hatch."
-msgstr ""
+msgstr "Devuelve un `.Path` para la eclosión actual."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_joinstyle:2 of
 msgid "Return the `.JoinStyle`."
-msgstr ""
+msgstr "Devuelve el `.JoinStyle`."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_linewidth:2 of
 msgid "Return the line width in points."
-msgstr ""
+msgstr "Devuelve el ancho de la línea en puntos."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_rgb:2 of
 msgid "Return a tuple of three or four floats from 0-1."
-msgstr ""
+msgstr "Devuelve una tupla de tres o cuatro flotantes de 0-1."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_sketch_params:2 of
 msgid "Return the sketch parameters for the artist."
-msgstr ""
+msgstr "Devuelve los parámetros del croquis para el artista."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_sketch_params:29 of
 msgid "tuple or `None`"
-msgstr ""
+msgstr "tupla o `Ninguno`"
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_sketch_params:9 of
 msgid "A 3-tuple with the following elements:"
-msgstr ""
+msgstr "Una 3 tupla con los siguientes elementos:"
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_sketch_params:11 of
 msgid "``scale``: The amplitude of the wiggle perpendicular to the source line."
-msgstr ""
+msgstr "``scale``: La amplitud de la peluca perpendicular a la línea de origen."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_sketch_params:13 of
 msgid "``length``: The length of the wiggle along the line."
-msgstr ""
+msgstr "``length``: La longitud de la peluca a lo largo de la línea."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_sketch_params:14 of
 msgid "``randomness``: The scale factor by which the length is shrunken or expanded."
-msgstr ""
+msgstr "``aleatorio``: El factor de escala por el cual la longitud es reducida o ampliada."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_sketch_params:17 of
 msgid "May return `None` if no sketch parameters were set."
-msgstr ""
+msgstr "Puede devolver `Ninguno` si no se han establecido parámetros de croquis."
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_snap:2 of
 msgid "Return the snap setting, which can be:"
-msgstr ""
+msgstr "Devuelve la configuración del snap, que puede ser:"
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_snap:4
 #: matplotlib.backend_bases.GraphicsContextBase.set_snap:4 of
 msgid "True: snap vertices to the nearest pixel center"
-msgstr ""
+msgstr "Verdadera: cortar vértices al centro de píxeles más cercano"
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_snap:5
 #: matplotlib.backend_bases.GraphicsContextBase.set_snap:5 of
 msgid "False: leave vertices as-is"
-msgstr ""
+msgstr "Halla: dejar vértices como es"
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_snap:6
 #: matplotlib.backend_bases.GraphicsContextBase.set_snap:6 of
 msgid "None: (auto) If the path contains only rectilinear line segments, round to the nearest pixel center"
-msgstr ""
+msgstr "Ninguno: (automático) Si la ruta contiene sólo segmentos rectilineales, redondea al centro de píxeles más cercano"
 
 #: matplotlib.backend_bases.GraphicsContextBase.get_url:2 of
 msgid "Return a url if one is set, None otherwise."
-msgstr ""
+msgstr "Devuelve una url si una está definida, Ninguno lo contrario."
 
 #: matplotlib.backend_bases.GraphicsContextBase.restore:2 of
 msgid "Restore the graphics context from the stack - needed only for backends that save graphics contexts on a stack."
-msgstr ""
+msgstr "Restaurar el contexto gráfico de la pila - necesario sólo para los backends que guardan los contextos gráficos en una pila."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_alpha:2 of
 msgid "Set the alpha value used for blending - not supported on all backends."
-msgstr ""
+msgstr "Establece el valor alfa usado para mezclar - no soportado en todos los backends."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_alpha:4 of
 msgid "If ``alpha=None`` (the default), the alpha components of the foreground and fill colors will be used to set their respective transparencies (where applicable); otherwise, ``alpha`` will override them."
-msgstr ""
+msgstr "Si ``alpha=Ninguno`` (el valor por defecto), los componentes alfa del primer plano y los colores de relleno se utilizarán para establecer sus respectivas transparencias (cuando sea aplicable); de lo contrario, ``alpha`` los anulará."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_antialiased:2 of
 msgid "Set whether object should be drawn with antialiased rendering."
-msgstr ""
+msgstr "Define si el objeto debe ser dibujado con renderizado antialias."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_capstyle:2 of
 msgid "Set how to draw endpoints of lines."
-msgstr ""
+msgstr "Establecer cómo dibujar los extremos de las líneas."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_capstyle:21 of
 msgid "**cs** : `.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "**cs** : `.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_capstyle:20 of
 msgid "CapStyle or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "CapEstilo o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_clip_path:2 of
 msgid "Set the clip path to a `.TransformedPath` or None."
-msgstr ""
+msgstr "Establece la ruta del clip a un `.TransformedPath` o ninguno."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_clip_rectangle:2 of
 msgid "Set the clip rectangle to a `.Bbox` or None."
-msgstr ""
+msgstr "Establece el rectángulo del clip a un `.Bbox` o ninguno."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_dashes:2 of
 msgid "Set the dash style for the gc."
-msgstr ""
+msgstr "Establece el estilo de guión para el gc."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_dashes:8 of
 msgid "**dash_offset**"
-msgstr ""
+msgstr "**dash_offset**"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_dashes:8 of
 msgid "The offset (usually 0)."
-msgstr ""
+msgstr "El desplazamiento (por lo general 0)."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_dashes:19 of
 msgid "**dash_list**"
-msgstr ""
+msgstr "**lista de guiones**"
 
 #: of
 msgid "array-like or None"
-msgstr ""
+msgstr "tipo array o ninguno"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_dashes:11 of
 msgid "The on-off sequence as points.  None specifies a solid line."
-msgstr ""
+msgstr "La secuencia de encendido como puntos. Ninguna especifica una línea sólida."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_dashes:23 of
 msgid "See p. 107 of to PostScript `blue book`_ for more info."
-msgstr ""
+msgstr "Vea p. 107 de a PostScript `libro azul`_ para más información."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_foreground:2 of
 msgid "Set the foreground color."
-msgstr ""
+msgstr "Establecer el color de primer plano."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_foreground:8 of
 msgid "**fg**"
-msgstr ""
+msgstr "**fg**"
 
 #: of
 msgid "color"
@@ -1181,7 +1181,7 @@ msgstr "color"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_foreground:25 of
 msgid "**isRGBA**"
-msgstr ""
+msgstr "**isRGBA**"
 
 #: of
 msgid "bool"
@@ -1189,43 +1189,43 @@ msgstr "bool"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_foreground:11 of
 msgid "If *fg* is known to be an ``(r, g, b, a)`` tuple, *isRGBA* can be set to True to improve performance."
-msgstr ""
+msgstr "Si se sabe que *fg* es una tupla ``(r, g, b, a)``, *isRGBA* puede establecerse en True para mejorar el rendimiento."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_gid:2 of
 msgid "Set the id."
-msgstr ""
+msgstr "Definir el id."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_hatch:2 of
 msgid "Set the hatch style (for fills)."
-msgstr ""
+msgstr "Establece el estilo del colchón (para rellenos)."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_hatch_color:2 of
 msgid "Set the hatch color."
-msgstr ""
+msgstr "Establecer el color del colchón."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_joinstyle:2 of
 msgid "Set how to draw connections between line segments."
-msgstr ""
+msgstr "Establecer cómo dibujar conexiones entre segmentos de línea."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_joinstyle:21 of
 msgid "**js** : `.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "**js** : `.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_joinstyle:20 of
 msgid "JoinStyle or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "Estilo de registro o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_linewidth:2 of
 msgid "Set the linewidth in points."
-msgstr ""
+msgstr "Establecer el ancho de línea en puntos."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_sketch_params:2 of
 msgid "Set the sketch parameters."
-msgstr ""
+msgstr "Establecer los parámetros del croquis."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_sketch_params:10 of
 msgid "**scale**"
-msgstr ""
+msgstr "**escala**"
 
 #: of
 msgid "float, optional"
@@ -1233,7 +1233,7 @@ msgstr "float, opcional"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_sketch_params:8 of
 msgid "The amplitude of the wiggle perpendicular to the source line, in pixels.  If scale is `None`, or not provided, no sketch filter will be provided."
-msgstr ""
+msgstr "La amplitud de la muñeca perpendicular a la línea de origen, en píxeles. Si la escala es `Ninguno`, o no proporcionada, no se proporcionará ningún filtro de croquis."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_sketch_params:13 of
 msgid "**length**"
@@ -1245,11 +1245,11 @@ msgstr "float, por defecto: 128"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_sketch_params:13 of
 msgid "The length of the wiggle along the line, in pixels."
-msgstr ""
+msgstr "La longitud del muñeco a lo largo de la línea, en píxeles."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_sketch_params:29 of
 msgid "**randomness**"
-msgstr ""
+msgstr "**aleatoria**"
 
 #: of
 msgid "float, default: 16"
@@ -1257,15 +1257,15 @@ msgstr "float, por defecto: 16"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_sketch_params:16 of
 msgid "The scale factor by which the length is shrunken or expanded."
-msgstr ""
+msgstr "Factor de escala por el cual la longitud es reducida o ampliada."
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_snap:2 of
 msgid "Set the snap setting which may be:"
-msgstr ""
+msgstr "Ajuste el ajuste de snap que puede ser:"
 
 #: matplotlib.backend_bases.GraphicsContextBase.set_url:2 of
 msgid "Set the url for links in compatible backends."
-msgstr ""
+msgstr "Establecer la url para los enlaces en backends compatibles."
 
 #: matplotlib.backend_bases.KeyEvent:1 matplotlib.backend_bases.MouseEvent:1 of
 msgid "Bases: :py:class:`matplotlib.backend_bases.LocationEvent`"
@@ -1273,15 +1273,15 @@ msgstr "Bases: :py:class:`matplotlib.backend_bases.LocationEvent`"
 
 #: matplotlib.backend_bases.KeyEvent:2 of
 msgid "A key event (key press, key release)."
-msgstr ""
+msgstr "Un evento clave (pulsación de teclas, lanzamiento de teclas)."
 
 #: matplotlib.backend_bases.KeyEvent:4 of
 msgid "A KeyEvent has a number of special attributes in addition to those defined by the parent `Event` and `LocationEvent` classes."
-msgstr ""
+msgstr "Un KeyEvent tiene varios atributos especiales además de los definidos por las clases padre `Event` y `LocationEvent`."
 
 #: matplotlib.backend_bases.KeyEvent:18 of
 msgid "Modifier keys will be prefixed to the pressed key and will be in the order \"ctrl\", \"alt\", \"super\". The exception to this rule is when the pressed key is itself a modifier key, therefore \"ctrl+alt\" and \"alt+control\" can both be valid key values."
-msgstr ""
+msgstr "Las teclas modificadoras serán prefijadas a la tecla presionada y estarán en el orden \"ctrl\", \"alt\", \"super\". La excepción a esta regla es cuando la tecla presionada en sí misma es una tecla modificadora, por lo tanto \"ctrl+alt\" y \"alt+control\" pueden ser valores de clave válidos."
 
 #: matplotlib.backend_bases.KeyEvent:40 matplotlib.backend_bases.MouseEvent:44
 #: of
@@ -1290,19 +1290,19 @@ msgstr "**key**"
 
 #: of
 msgid "None or str"
-msgstr ""
+msgstr "Ninguno o str"
 
 #: matplotlib.backend_bases.KeyEvent:36 of
 msgid "The key(s) pressed. Could be *None*, a single case sensitive Unicode character (\"g\", \"G\", \"#\", etc.), a special key (\"control\", \"shift\", \"f1\", \"up\", etc.) or a combination of the above (e.g., \"ctrl+alt+g\", \"ctrl+alt+G\")."
-msgstr ""
+msgstr "Las teclas(es) presionadas. Podría ser *Ninguno*, un carácter Unicode sensible a mayúsculas y minúsculas (\"g\", \"G\", \"#\", etc.). , una tecla especial (\"control\", \"shift\", \"f1\", \"arriba\", etc.) o una combinación de lo anterior (por ejemplo, \"ctrl+alt+g\", \"ctrl+alt+G\")."
 
 #: matplotlib.backend_bases.LocationEvent:2 of
 msgid "An event that has a screen location."
-msgstr ""
+msgstr "Un evento que tiene una ubicación en pantalla."
 
 #: matplotlib.backend_bases.LocationEvent:4 of
 msgid "A LocationEvent has a number of special attributes in addition to those defined by the parent `Event` class."
-msgstr ""
+msgstr "Un LocationEvent tiene un número de atributos especiales además de los definidos por la clase padre `Event`."
 
 #: matplotlib.backend_bases.LocationEvent:22 of
 msgid "**x, y**"
@@ -1310,27 +1310,27 @@ msgstr "**x, y**"
 
 #: of
 msgid "int or None"
-msgstr ""
+msgstr "int o ninguno"
 
 #: matplotlib.backend_bases.LocationEvent:22 of
 msgid "Event location in pixels from bottom left of canvas."
-msgstr ""
+msgstr "Ubicación del evento en píxeles desde la parte inferior izquierda del lienzo."
 
 #: matplotlib.backend_bases.LocationEvent:25 of
 msgid "**inaxes** : `~.axes.Axes` or None"
-msgstr ""
+msgstr "**inejes** : `~.axes.Axes` o Ninguno"
 
 #: matplotlib.backend_bases.LocationEvent:24 of
 msgid "Axes or None"
-msgstr ""
+msgstr "Ejes o ninguno"
 
 #: matplotlib.backend_bases.LocationEvent:25 of
 msgid "The `~.axes.Axes` instance over which the mouse is, if any."
-msgstr ""
+msgstr "La instancia `~.axes.Axes` sobre la cual está el ratón, si existe."
 
 #: matplotlib.backend_bases.LocationEvent:30 of
 msgid "**xdata, ydata**"
-msgstr ""
+msgstr "**xdata, ydata**"
 
 #: of
 msgid "float or None"
@@ -1338,27 +1338,27 @@ msgstr "float o None"
 
 #: matplotlib.backend_bases.LocationEvent:28 of
 msgid "Data coordinates of the mouse within *inaxes*, or *None* if the mouse is not over an Axes."
-msgstr ""
+msgstr "Coordenadas de datos del ratón dentro de *inejes*, o *nunca* si el ratón no está sobre un eje."
 
 #: matplotlib.backend_bases.MouseButton:1 of
 msgid "Bases: :py:class:`enum.IntEnum`"
-msgstr ""
+msgstr "Bases: :py:class:`enum.IntEnum`"
 
 #: matplotlib.backend_bases.MouseButton:2 of
 msgid "An enumeration."
-msgstr ""
+msgstr "Una enumeración."
 
 #: matplotlib.backend_bases.MouseEvent:2 of
 msgid "A mouse event ('button_press_event', 'button_release_event', 'scroll_event', 'motion_notify_event')."
-msgstr ""
+msgstr "Un evento del ratón ('button_press_event', 'button_release_event', 'scroll_event', 'motion_notify_event')."
 
 #: matplotlib.backend_bases.MouseEvent:4 of
 msgid "A MouseEvent has a number of special attributes in addition to those defined by the parent `Event` and `LocationEvent` classes."
-msgstr ""
+msgstr "Un MouseEvent tiene varios atributos especiales además de los definidos por las clases padre `Event` y `LocationEvent`."
 
 #: matplotlib.backend_bases.MouseEvent:34 of
 msgid "**button** : None or `MouseButton` or {'up', 'down'}"
-msgstr ""
+msgstr "**botón** : Ninguno o `MouseButton` o {'up', 'down'}"
 
 #: of
 msgid "None or"
@@ -1366,213 +1366,213 @@ msgstr "None o"
 
 #: matplotlib.backend_bases.MouseEvent:30 of
 msgid "The button pressed. 'up' and 'down' are used for scroll events. Note that LEFT and RIGHT actually refer to the \"primary\" and \"secondary\" buttons, i.e. if the user inverts their left and right buttons (\"left-handed setting\") then the LEFT button will be the one physically on the right."
-msgstr ""
+msgstr "El botón presionado. 'arriba' y 'abajo' se utilizan para eventos de desplazamiento. Tenga en cuenta que LEFT y RIGHT realmente se refieren a los botones \"primario\" y \"secundario\", i. Si el usuario invierte sus botones izquierdo y derecho (\"configuración a la izquierda\") entonces el botón LEFT será el que esté físicamente a la derecha."
 
 #: matplotlib.backend_bases.MouseEvent:37 of
 msgid "The key pressed when the mouse event triggered, e.g. 'shift'. See `KeyEvent`."
-msgstr ""
+msgstr "La tecla presionada cuando se activa el evento del ratón, por ejemplo, 'shift'. Ver `KeyEvent`."
 
 #: matplotlib.backend_bases.MouseEvent:41 of
 msgid "This key is currently obtained from the last 'key_press_event' or 'key_release_event' that occurred within the canvas.  Thus, if the last change of keyboard state occurred while the canvas did not have focus, this attribute will be wrong."
-msgstr ""
+msgstr "Esta clave se obtiene actualmente de la última 'key_press_event' o 'key_release_event' que ocurrió dentro del lienzo. Por lo tanto, si el último cambio del estado del teclado ocurrió mientras que el lienzo no tenía enfoque, este atributo será incorrecto."
 
 #: matplotlib.backend_bases.MouseEvent:48 of
 msgid "**step**"
-msgstr ""
+msgstr "**paso**"
 
 #: matplotlib.backend_bases.MouseEvent:47 of
 msgid "The number of scroll steps (positive for 'up', negative for 'down'). This applies only to 'scroll_event' and defaults to 0 otherwise."
-msgstr ""
+msgstr "El número de pasos de desplazamiento (positivo para 'arriba', negativo para 'abajo'). Esto se aplica sólo a 'scroll_event' y por defecto a 0 de otra manera."
 
 #: matplotlib.backend_bases.MouseEvent:54 of
 msgid "**dblclick**"
-msgstr ""
+msgstr "**click**"
 
 #: matplotlib.backend_bases.MouseEvent:51 of
 msgid "Whether the event is a double-click. This applies only to 'button_press_event' and is False otherwise. In particular, it's not used in 'button_release_event'."
-msgstr ""
+msgstr "Si el evento es un doble clic. Esto sólo se aplica a 'button_press_event' y es False de otra manera. En particular, no se usa en 'button_release_event'."
 
 #: matplotlib.backend_bases.NavigationToolbar2:2 of
 msgid "Base class for the navigation cursor, version 2."
-msgstr ""
+msgstr "Clase base para el cursor de navegación, versión 2."
 
 #: matplotlib.backend_bases.NavigationToolbar2:4 of
 msgid "Backends must implement a canvas that handles connections for 'button_press_event' and 'button_release_event'.  See :meth:`FigureCanvasBase.mpl_connect` for more information."
-msgstr ""
+msgstr "Los backends deben implementar un lienzo que maneja conexiones para 'button_press_event' y 'button_release_event'. Vea :meth:`FigureCanvasBase.mpl_connect` para más información."
 
 #: matplotlib.backend_bases.NavigationToolbar2:8 of
 msgid "They must also define"
-msgstr ""
+msgstr "También deben definir"
 
 #: matplotlib.backend_bases.NavigationToolbar2:11 of
 msgid ":meth:`save_figure`"
-msgstr ""
+msgstr ":meth:`save_figure`"
 
 #: matplotlib.backend_bases.NavigationToolbar2:11 of
 msgid "save the current figure"
-msgstr ""
+msgstr "guardar la figura actual"
 
 #: matplotlib.backend_bases.NavigationToolbar2:14 of
 msgid ":meth:`draw_rubberband` (optional)"
-msgstr ""
+msgstr ":meth:`draw_rubberband` (opcional)"
 
 #: matplotlib.backend_bases.NavigationToolbar2:14 of
 msgid "draw the zoom to rect \"rubberband\" rectangle"
-msgstr ""
+msgstr "dibuja el zoom para rectar el rectángulo de \"Rubberband\""
 
 #: matplotlib.backend_bases.NavigationToolbar2:17 of
 msgid ":meth:`set_message` (optional)"
-msgstr ""
+msgstr ":meth:`set_message` (opcional)"
 
 #: matplotlib.backend_bases.NavigationToolbar2:17 of
 msgid "display message"
-msgstr ""
+msgstr "mostrar mensaje"
 
 #: matplotlib.backend_bases.NavigationToolbar2:21 of
 msgid ":meth:`set_history_buttons` (optional)"
-msgstr ""
+msgstr ":meth:`set_history_buttons` (opcional)"
 
 #: matplotlib.backend_bases.NavigationToolbar2:20 of
 msgid "you can change the history back / forward buttons to indicate disabled / enabled state."
-msgstr ""
+msgstr "puede cambiar el historial de volver / adelantar botones para indicar deshabilitado / estado habilitado."
 
 #: matplotlib.backend_bases.NavigationToolbar2:23 of
 msgid "and override ``__init__`` to set up the toolbar -- without forgetting to call the base-class init.  Typically, ``__init__`` needs to set up toolbar buttons connected to the `home`, `back`, `forward`, `pan`, `zoom`, and `save_figure` methods and using standard icons in the \"images\" subdirectory of the data path."
-msgstr ""
+msgstr "y anular ``__init__`` para configurar la barra de herramientas -- sin olvidar llamar a la clase base init. Normalmente, ``__init__`` necesita configurar los botones de la barra de herramientas conectados al `home`, `back`, `forward`, `pan`, `zoom`, y los métodos `save_figure` y usando iconos estándar en el subdirectorio de \"imágenes\" de la ruta de datos."
 
 #: matplotlib.backend_bases.NavigationToolbar2:29 of
 msgid "That's it, we'll do the rest!"
-msgstr ""
+msgstr "Eso es todo, vamos a hacer el resto!"
 
 #: matplotlib.backend_bases.NavigationToolbar2.back:2 of
 msgid "Move back up the view lim stack."
-msgstr ""
+msgstr "Mover hacia arriba la pila del lim de la vista."
 
 #: matplotlib.backend_bases.NavigationToolbar2.back:4
 #: matplotlib.backend_bases.NavigationToolbar2.forward:4
 #: matplotlib.backend_bases.NavigationToolbar2.home:4 of
 msgid "For convenience of being directly connected as a GUI callback, which often get passed additional parameters, this method accepts arbitrary parameters, but does not use them."
-msgstr ""
+msgstr "Para comodidad de estar conectado directamente como un callback GUI, que a menudo pasa parámetros adicionales, este método acepta parámetros arbitrarios, pero no los utiliza."
 
 #: matplotlib.backend_bases.NavigationToolbar2.drag_pan:2 of
 msgid "Callback for dragging in pan/zoom mode."
-msgstr ""
+msgstr "Llamada para arrastrar en modo pan/zoom."
 
 #: matplotlib.backend_bases.NavigationToolbar2.drag_zoom:2 of
 msgid "Callback for dragging in zoom mode."
-msgstr ""
+msgstr "Llamada para arrastrar en modo zoom."
 
 #: matplotlib.backend_bases.NavigationToolbar2.draw_rubberband:2 of
 msgid "Draw a rectangle rubberband to indicate zoom limits."
-msgstr ""
+msgstr "Dibuja un rubberband rectángulo para indicar límites de zoom."
 
 #: matplotlib.backend_bases.NavigationToolbar2.draw_rubberband:4 of
 msgid "Note that it is not guaranteed that ``x0 <= x1`` and ``y0 <= y1``."
-msgstr ""
+msgstr "Tenga en cuenta que no está garantizado que ``x0 <= x1`` y ``y0 <= y1``."
 
 #: matplotlib.backend_bases.NavigationToolbar2.forward:2 of
 msgid "Move forward in the view lim stack."
-msgstr ""
+msgstr "Avanza en la pila de la vista lim ."
 
 #: matplotlib.backend_bases.NavigationToolbar2.home:2 of
 msgid "Restore the original view."
-msgstr ""
+msgstr "Restaurar la vista original."
 
 #: matplotlib.backend_bases.NavigationToolbar2.pan:2 of
 msgid "Toggle the pan/zoom tool."
-msgstr ""
+msgstr "Alterna la herramienta pan/zoom."
 
 #: matplotlib.backend_bases.NavigationToolbar2.pan:4 of
 msgid "Pan with left button, zoom with right."
-msgstr ""
+msgstr "Despliegue con botón izquierdo, acerque a la derecha."
 
 #: matplotlib.backend_bases.NavigationToolbar2.press_pan:2 of
 msgid "Callback for mouse button press in pan/zoom mode."
-msgstr ""
+msgstr "Llamada para pulsar el botón del ratón en modo pan/zoom."
 
 #: matplotlib.backend_bases.NavigationToolbar2.press_zoom:2 of
 msgid "Callback for mouse button press in zoom to rect mode."
-msgstr ""
+msgstr "Callback para pulsar el botón del ratón en el zoom para cambiar el modo."
 
 #: matplotlib.backend_bases.NavigationToolbar2.push_current:2 of
 msgid "Push the current view limits and position onto the stack."
-msgstr ""
+msgstr "Empuja los límites de la vista actual y la posición sobre la pila."
 
 #: matplotlib.backend_bases.NavigationToolbar2.release_pan:2 of
 msgid "Callback for mouse button release in pan/zoom mode."
-msgstr ""
+msgstr "Retroceso de llamada para el lanzamiento del botón del ratón en modo pan/zoom."
 
 #: matplotlib.backend_bases.NavigationToolbar2.release_zoom:2 of
 msgid "Callback for mouse button release in zoom to rect mode."
-msgstr ""
+msgstr "Retroceso de llamada para el lanzamiento del botón del ratón en modo de acercamiento."
 
 #: matplotlib.backend_bases.NavigationToolbar2.remove_rubberband:2 of
 msgid "Remove the rubberband."
-msgstr ""
+msgstr "Eliminar la rubberband."
 
 #: matplotlib.backend_bases.NavigationToolbar2.save_figure:2 of
 msgid "Save the current figure."
-msgstr ""
+msgstr "Guardar la figura actual."
 
 #: matplotlib.backend_bases.NavigationToolbar2.set_cursor:2 of
 msgid "[*Deprecated*] Set the current cursor to one of the :class:`Cursors` enums values."
-msgstr ""
+msgstr "[*Obsoleto*] Establece el cursor actual a uno de los valores de :class:`Cursors` enums."
 
 #: matplotlib.backend_bases.NavigationToolbar2.set_history_buttons:2 of
 msgid "Enable or disable the back/forward button."
-msgstr ""
+msgstr "Activar o desactivar el botón Atrás/Adelante."
 
 #: matplotlib.backend_bases.NavigationToolbar2.set_message:2 of
 msgid "Display a message on toolbar or in status bar."
-msgstr ""
+msgstr "Mostrar un mensaje en la barra de herramientas o en la barra de estado."
 
 #: matplotlib.backend_bases.NavigationToolbar2.update:2 of
 msgid "Reset the axes stack."
-msgstr ""
+msgstr "Restablecer la pila de ejes."
 
 #: matplotlib.backend_bases.NavigationToolbar2.zoom:2 of
 msgid "Toggle zoom to rect mode."
-msgstr ""
+msgstr "Alternar zoom para cambiar el modo."
 
 #: matplotlib.backend_bases.NonGuiException:1 of
 msgid "Bases: :py:class:`Exception`"
-msgstr ""
+msgstr "Bases: :py:class:`Exception`"
 
 #: matplotlib.backend_bases.NonGuiException:2 of
 msgid "Raised when trying show a figure in a non-GUI backend."
-msgstr ""
+msgstr "Raised al intentar mostrar una figura en un backend no GUI."
 
 #: matplotlib.backend_bases.PickEvent:2 of
 msgid "A pick event."
-msgstr ""
+msgstr "Un evento de selección."
 
 #: matplotlib.backend_bases.PickEvent:4 of
 msgid "This event is fired when the user picks a location on the canvas sufficiently close to an artist that has been made pickable with `.Artist.set_picker`."
-msgstr ""
+msgstr "Este evento se dispara cuando el usuario elige una ubicación en el lienzo lo suficientemente cerca de un artista que se ha hecho elegible con `.Artist.set_picker`."
 
 #: matplotlib.backend_bases.PickEvent:8 of
 msgid "A PickEvent has a number of special attributes in addition to those defined by the parent `Event` class."
-msgstr ""
+msgstr "Un PickEvent tiene un número de atributos especiales además de los definidos por la clase padre `Event`."
 
 #: matplotlib.backend_bases.PickEvent:24 of
 msgid "Bind a function ``on_pick()`` to pick events, that prints the coordinates of the picked data point::"
-msgstr ""
+msgstr "Enlaza una función ``on_pick()`` para seleccionar eventos, que imprime las coordenadas del punto de datos seleccionado::"
 
 #: matplotlib.backend_bases.PickEvent:40 of
 msgid "**mouseevent** : `MouseEvent`"
-msgstr ""
+msgstr "**mouseevent** : `MouseEvent`"
 
 #: matplotlib.backend_bases.PickEvent:39 of
 msgid "MouseEvent"
-msgstr ""
+msgstr "Evento del ratón"
 
 #: matplotlib.backend_bases.PickEvent:40 of
 msgid "The mouse event that generated the pick."
-msgstr ""
+msgstr "El evento del ratón que generó la selección."
 
 #: matplotlib.backend_bases.PickEvent:44 of
 msgid "**artist** : `matplotlib.artist.Artist`"
-msgstr ""
+msgstr "**artist** : `matplotlib.artist.Artist`"
 
 #: matplotlib.backend_bases.PickEvent:43 of
 msgid "matplotlib.artist.Artist"
@@ -1580,84 +1580,84 @@ msgstr "matplotlib.artist.Artist"
 
 #: matplotlib.backend_bases.PickEvent:43 of
 msgid "The picked artist.  Note that artists are not pickable by default (see `.Artist.set_picker`)."
-msgstr ""
+msgstr "El artista elegido. Tenga en cuenta que los artistas no son elegibles por defecto (vea `.Artist.set_picker`)."
 
 #: matplotlib.backend_bases.PickEvent:50 of
 msgid "**other**"
-msgstr ""
+msgstr "**otro**"
 
 #: matplotlib.backend_bases.PickEvent:47 of
 msgid "Additional attributes may be present depending on the type of the picked object; e.g., a `.Line2D` pick may define different extra attributes than a `.PatchCollection` pick."
-msgstr ""
+msgstr "Atributos adicionales pueden estar presentes dependiendo del tipo de objeto escogido; p.ej. una selección `.Line2D` puede definir diferentes atributos extra que un `.PatchCollection`."
 
 #: matplotlib.backend_bases.RendererBase:4 of
 msgid "The following methods must be implemented in the backend for full functionality (though just implementing :meth:`draw_path` alone would give a highly capable backend):"
-msgstr ""
+msgstr "Los siguientes métodos deben ser implementados en el backend para una funcionalidad completa (aunque solo implementando :meth:`draw_path` solo daría un backend altamente capaz):"
 
 #: matplotlib.backend_bases.RendererBase:8 of
 msgid ":meth:`draw_path`"
-msgstr ""
+msgstr ":meth:`draw_path`"
 
 #: matplotlib.backend_bases.RendererBase:9 of
 msgid ":meth:`draw_image`"
-msgstr ""
+msgstr ":meth:`draw_image`"
 
 #: matplotlib.backend_bases.RendererBase:10 of
 msgid ":meth:`draw_gouraud_triangle`"
-msgstr ""
+msgstr ":meth:`draw_gouraud_triángulo`"
 
 #: matplotlib.backend_bases.RendererBase:12 of
 msgid "The following methods *should* be implemented in the backend for optimization reasons:"
-msgstr ""
+msgstr "Los siguientes métodos *deberían* ser implementados en el backend por razones de optimización:"
 
 #: matplotlib.backend_bases.RendererBase:15 of
 msgid ":meth:`draw_text`"
-msgstr ""
+msgstr ":meth:`dibujar_texto`"
 
 #: matplotlib.backend_bases.RendererBase:16 of
 msgid ":meth:`draw_markers`"
-msgstr ""
+msgstr ":meth:`draw_markers`"
 
 #: matplotlib.backend_bases.RendererBase:17 of
 msgid ":meth:`draw_path_collection`"
-msgstr ""
+msgstr ":meth:`draw_path_collection`"
 
 #: matplotlib.backend_bases.RendererBase:18 of
 msgid ":meth:`draw_quad_mesh`"
-msgstr ""
+msgstr ":meth:`dibujar_mesa_quad_mesh`"
 
 #: matplotlib.backend_bases.RendererBase.close_group:2 of
 msgid "Close a grouping element with label *s*."
-msgstr ""
+msgstr "Cerrar un elemento de agrupación con la etiqueta *s*."
 
 #: matplotlib.backend_bases.RendererBase.close_group:4
 #: matplotlib.backend_bases.RendererBase.open_group:4 of
 msgid "Only used by the SVG renderer."
-msgstr ""
+msgstr "Sólo usado por el renderizador SVG."
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:2 of
 msgid "Draw a Gouraud-shaded triangle."
-msgstr ""
+msgstr "Dibuja un triángulo sombreado por Gouraud."
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:8
 #: matplotlib.backend_bases.RendererBase.draw_image:8
 #: matplotlib.backend_bases.RendererBase.draw_markers:12
 #: matplotlib.backend_bases.RendererBase.draw_text:8 of
 msgid "**gc** : `.GraphicsContextBase`"
-msgstr ""
+msgstr "**gc** : `.GraphicsContextBase`"
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:7
 #: matplotlib.backend_bases.RendererBase.draw_image:7
 #: matplotlib.backend_bases.RendererBase.draw_markers:11
 #: matplotlib.backend_bases.RendererBase.draw_text:7 of
 msgid "GraphicsContextBase"
-msgstr ""
+msgstr "Contexto gráfico base"
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:8
 #: matplotlib.backend_bases.RendererBase.draw_markers:12
 #: matplotlib.backend_bases.RendererBase.draw_text:8 of
 msgid "The graphics context."
-msgstr ""
+msgstr "El contexto gráfico."
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:11
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangles:8
@@ -1667,177 +1667,177 @@ msgstr "**puntos**"
 
 #: of
 msgid "(3, 2) array-like"
-msgstr ""
+msgstr "(3, 2) matriz"
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:11 of
 msgid "Array of (x, y) points for the triangle."
-msgstr ""
+msgstr "Arreglo de puntos (x, y) para el triángulo."
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:14
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangles:11 of
 msgid "**colors**"
-msgstr ""
+msgstr "**colores**"
 
 #: of
 msgid "(3, 4) array-like"
-msgstr ""
+msgstr "(3, 4) tipo matriz"
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:14 of
 msgid "RGBA colors for each point of the triangle."
-msgstr ""
+msgstr "Colores RGBA para cada punto del triángulo."
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:30
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangles:27 of
 msgid "**transform** : `matplotlib.transforms.Transform`"
-msgstr ""
+msgstr "**transform** : `matplotlib.transforms.Transform`"
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:29
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangles:26
 #: matplotlib.backend_bases.RendererBase.draw_markers:14
 #: matplotlib.backend_bases.RendererBase.draw_markers:30 of
 msgid "matplotlib.transforms.Transform"
-msgstr ""
+msgstr "matplotlib.transforms.Transformar"
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangle:17
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangles:14 of
 msgid "An affine transform to apply to the points."
-msgstr ""
+msgstr "Una transformación de afecto para aplicar a los puntos."
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangles:2 of
 msgid "Draw a series of Gouraud triangles."
-msgstr ""
+msgstr "Dibuja una serie de triángulos de Gouraud."
 
 #: of
 msgid "(N, 3, 2) array-like"
-msgstr ""
+msgstr "(N, 3, 2) array-like"
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangles:8 of
 msgid "Array of *N* (x, y) points for the triangles."
-msgstr ""
+msgstr "Array de puntos *N* (x, y) para los triángulos."
 
 #: of
 msgid "(N, 3, 4) array-like"
-msgstr ""
+msgstr "(N, 3, 4) matriz"
 
 #: matplotlib.backend_bases.RendererBase.draw_gouraud_triangles:11 of
 msgid "Array of *N* RGBA colors for each point of the triangles."
-msgstr ""
+msgstr "Array de colores *N* RGBA para cada punto de los triángulos."
 
 #: matplotlib.backend_bases.RendererBase.draw_image:2 of
 msgid "Draw an RGBA image."
-msgstr ""
+msgstr "Draw an RGBA image."
 
 #: matplotlib.backend_bases.RendererBase.draw_image:8 of
 msgid "A graphics context with clipping information."
-msgstr ""
+msgstr "Un contexto gráfico con información de recorte."
 
 #: of
 msgid "scalar"
-msgstr ""
+msgstr "escalar"
 
 #: matplotlib.backend_bases.RendererBase.draw_image:11 of
 msgid "The distance in physical units (i.e., dots or pixels) from the left hand side of the canvas."
-msgstr ""
+msgstr "La distancia en unidades físicas (es decir, puntos o píxeles) desde el lado izquierdo del lienzo."
 
 #: matplotlib.backend_bases.RendererBase.draw_image:15 of
 msgid "The distance in physical units (i.e., dots or pixels) from the bottom side of the canvas."
-msgstr ""
+msgstr "La distancia en unidades físicas (es decir, puntos o píxeles) desde la parte inferior del lienzo."
 
 #: matplotlib.backend_bases.RendererBase.draw_image:19 of
 msgid "**im**"
-msgstr ""
+msgstr "**im**"
 
 #: of
 msgid "(N, M, 4) array-like of np.uint8"
-msgstr ""
+msgstr "(N, M, 4) array-like de np.uint8"
 
 #: matplotlib.backend_bases.RendererBase.draw_image:19 of
 msgid "An array of RGBA pixels."
-msgstr ""
+msgstr "Una matriz de píxeles RGBA."
 
 #: matplotlib.backend_bases.RendererBase.draw_image:43 of
 msgid "**transform** : `matplotlib.transforms.Affine2DBase`"
-msgstr ""
+msgstr "**transform** : `matplotlib.transforms.Affine2DBase`"
 
 #: matplotlib.backend_bases.RendererBase.draw_image:42 of
 msgid "matplotlib.transforms.Affine2DBase"
-msgstr ""
+msgstr "matplotlib.transforms.Affine2DBase"
 
 #: matplotlib.backend_bases.RendererBase.draw_image:22 of
 msgid "If and only if the concrete backend is written such that :meth:`option_scale_image` returns ``True``, an affine transformation (i.e., an `.Affine2DBase`) *may* be passed to :meth:`draw_image`.  The translation vector of the transformation is given in physical units (i.e., dots or pixels). Note that the transformation does not override *x* and *y*, and has to be applied *before* translating the result by *x* and *y* (this can be accomplished by adding *x* and *y* to the translation vector defined by *transform*)."
-msgstr ""
+msgstr "Si y solo si se escribe el backend concreto tal que :meth:`option_scale_image` devuelva ``True``, una transformación de afino (i.e. un `.Affine2DBase`) *podrá* ser pasado a :meth:`draw_image`. El vector de traducción de la transformación se da en unidades físicas (i. ., puntos o píxeles). Tenga en cuenta que la transformación no anula *x* y *y*, y tiene que ser aplicado *antes* de traducir el resultado por *x* y *y* (esto se puede lograr añadiendo *x* y *y* al vector de traducción definido por *transform*)."
 
 #: matplotlib.backend_bases.RendererBase.draw_markers:2 of
 msgid "Draw a marker at each of *path*'s vertices (excluding control points)."
-msgstr ""
+msgstr "Dibuja un marcador en cada uno de los vértices de *path* (excluyendo los puntos de control)."
 
 #: matplotlib.backend_bases.RendererBase.draw_markers:4 of
 msgid "This provides a fallback implementation of draw_markers that makes multiple calls to :meth:`draw_path`.  Some backends may want to override this method in order to draw the marker only once and reuse it multiple times."
-msgstr ""
+msgstr "Esto proporciona una implementación de draw_markers que hace varias llamadas a :meth:`draw_path`. Algunos backends pueden querer sobreescribir este método para dibujar el marcador una sola vez y reutilizarlo varias veces."
 
 #: matplotlib.backend_bases.RendererBase.draw_markers:15 of
 msgid "**marker_trans** : `matplotlib.transforms.Transform`"
-msgstr ""
+msgstr "**marker_trans** : `matplotlib.transforms.Transform`"
 
 #: matplotlib.backend_bases.RendererBase.draw_markers:15 of
 msgid "An affine transform applied to the marker."
-msgstr ""
+msgstr "Una transformación afectada aplicada al marcador."
 
 #: matplotlib.backend_bases.RendererBase.draw_markers:31 of
 msgid "**trans** : `matplotlib.transforms.Transform`"
-msgstr ""
+msgstr "**trans** : `matplotlib.transforms.Transform`"
 
 #: matplotlib.backend_bases.RendererBase.draw_markers:18 of
 msgid "An affine transform applied to the path."
-msgstr ""
+msgstr "Una transformación afectada aplicada a la ruta."
 
 #: matplotlib.backend_bases.RendererBase.draw_path:2 of
 msgid "Draw a `~.path.Path` instance using the given affine transform."
-msgstr ""
+msgstr "Dibuja una instancia `~.path.Path` usando la transforma affine dada."
 
 #: matplotlib.backend_bases.RendererBase.draw_path_collection:2 of
 msgid "Draw a collection of paths selecting drawing properties from the lists *facecolors*, *edgecolors*, *linewidths*, *linestyles* and *antialiaseds*. *offsets* is a list of offsets to apply to each of the paths.  The offsets in *offsets* are first transformed by *offsetTrans* before being applied."
-msgstr ""
+msgstr "Dibuja una colección de rutas seleccionando propiedades de las listas *colores face*, *colores*, *anchuras de línea*, *linestyles* y *antialias*. *offsets* es una lista de desplazamientos a aplicar a cada una de las rutas. Los desplazamientos en *offsets* son transformados primero por *offsetTrans* antes de ser aplicados."
 
 #: matplotlib.backend_bases.RendererBase.draw_path_collection:9 of
 msgid "*offset_position* is unused now, but the argument is kept for backwards compatibility."
-msgstr ""
+msgstr "*offset_position* no se usa ahora, pero el argumento se mantiene por compatibilidad hacia atrás."
 
 #: matplotlib.backend_bases.RendererBase.draw_path_collection:12 of
 msgid "This provides a fallback implementation of :meth:`draw_path_collection` that makes multiple calls to :meth:`draw_path`.  Some backends may want to override this in order to render each set of path data only once, and then reference that path multiple times with the different offsets, colors, styles etc.  The generator methods :meth:`_iter_collection_raw_paths` and :meth:`_iter_collection` are provided to help with (and standardize) the implementation across backends.  It is highly recommended to use those generators, so that changes to the behavior of :meth:`draw_path_collection` can be made globally."
-msgstr ""
+msgstr "Esto proporciona una implementación de respaldo de :meth:`draw_path_collection` que hace varias llamadas a :meth:`draw_path`. Algunos backends pueden querer anular esto para representar cada conjunto de datos de ruta sólo una vez, y luego referencia que ruta varias veces con los diferentes desplazamientos, colores, estilos, etc. Los métodos generadores :meth:`_iter_collection_raw_paths` y :meth:`_iter_collection` son proporcionados para ayudar con (y estandarizar) la implementación a través de los backends. Es altamente recomendable usar esos generadores, de modo que los cambios en el comportamiento de :meth:`draw_path_collection` puedan hacerse globalmente."
 
 #: matplotlib.backend_bases.RendererBase.draw_quad_mesh:2 of
 msgid "Fallback implementation of :meth:`draw_quad_mesh` that generates paths and then calls :meth:`draw_path_collection`."
-msgstr ""
+msgstr "Implementación de Fallback de :meth:`draw_quad_mesh` que genera rutas y luego llama a :meth:`draw_path_collection`."
 
 #: matplotlib.backend_bases.RendererBase.draw_text:2 of
 msgid "Draw the text instance."
-msgstr ""
+msgstr "Dibuja la instancia de texto."
 
 #: matplotlib.backend_bases.RendererBase.draw_text:11 of
 msgid "The x location of the text in display coords."
-msgstr ""
+msgstr "La posición x del texto en las coordenadas de la pantalla."
 
 #: matplotlib.backend_bases.RendererBase.draw_text:14 of
 msgid "The y location of the text baseline in display coords."
-msgstr ""
+msgstr "La ubicación y de la línea de referencia del texto en las coordenadas de la pantalla."
 
 #: matplotlib.backend_bases.RendererBase.draw_text:17 of
 msgid "The text string."
-msgstr ""
+msgstr "La cadena de texto."
 
 #: matplotlib.backend_bases.RendererBase.draw_text:20 of
 msgid "**prop** : `matplotlib.font_manager.FontProperties`"
-msgstr ""
+msgstr "**prop** : `matplotlib.font_manager.FontProperties`"
 
 #: matplotlib.backend_bases.RendererBase.draw_text:19 of
 msgid "matplotlib.font_manager.FontProperties"
-msgstr ""
+msgstr "Propiedades de fuente"
 
 #: matplotlib.backend_bases.RendererBase.draw_text:20 of
 msgid "The font properties."
-msgstr ""
+msgstr "Las propiedades de la fuente."
 
 #: matplotlib.backend_bases.RendererBase.draw_text:23 of
 msgid "**angle**"
@@ -1845,129 +1845,129 @@ msgstr "**angle**"
 
 #: matplotlib.backend_bases.RendererBase.draw_text:23 of
 msgid "The rotation angle in degrees anti-clockwise."
-msgstr ""
+msgstr "El ángulo de rotación en grados en sentido anti-reloj."
 
 #: matplotlib.backend_bases.RendererBase.draw_text:34 of
 msgid "**mtext** : `matplotlib.text.Text`"
-msgstr ""
+msgstr "**mtext** : `matplotlib.text.Text`"
 
 #: matplotlib.backend_bases.RendererBase.draw_text:33 of
 msgid "matplotlib.text.Text"
-msgstr ""
+msgstr "matplotlib.text.Texto"
 
 #: matplotlib.backend_bases.RendererBase.draw_text:26 of
 msgid "The original text object to be rendered."
-msgstr ""
+msgstr "El objeto de texto original a ser renderizado."
 
 #: matplotlib.backend_bases.RendererBase.draw_text:38 of
 msgid "**Note for backend implementers:**"
-msgstr ""
+msgstr "**Nota para implementadores de backend:**"
 
 #: matplotlib.backend_bases.RendererBase.draw_text:40 of
 msgid "When you are trying to determine if you have gotten your bounding box right (which is what enables the text layout/alignment to work properly), it helps to change the line in text.py::"
-msgstr ""
+msgstr "Cuando está intentando determinar si tiene configurado su cuadro de límite correcto (que es lo que permite que el diseño de texto/alineación funcione correctamente), ayuda a cambiar la línea en el texto. y::"
 
 #: matplotlib.backend_bases.RendererBase.draw_text:46 of
 msgid "to if 1, and then the actual bounding box will be plotted along with your text."
-msgstr ""
+msgstr "a si 1, y luego el cuadro de límite actual será trazado junto con su texto."
 
 #: matplotlib.backend_bases.RendererBase.flipy:2 of
 msgid "Return whether y values increase from top to bottom."
-msgstr ""
+msgstr "Devuelve si los valores y aumentan de arriba a abajo."
 
 #: matplotlib.backend_bases.RendererBase.flipy:4 of
 msgid "Note that this only affects drawing of texts and images."
-msgstr ""
+msgstr "Tenga en cuenta que esto sólo afecta al dibujo de textos e imágenes."
 
 #: matplotlib.backend_bases.RendererBase.get_canvas_width_height:2 of
 msgid "Return the canvas width and height in display coords."
-msgstr ""
+msgstr "Devuelve el ancho y la altura del lienzo en las coordenadas de la pantalla."
 
 #: matplotlib.backend_bases.RendererBase.get_image_magnification:2 of
 msgid "Get the factor by which to magnify images passed to :meth:`draw_image`. Allows a backend to have images at a different resolution to other artists."
-msgstr ""
+msgstr "Obtén el factor por el que magnificar las imágenes pasadas a :meth:`draw_image`. Permite que un backend tenga imágenes con una resolución diferente a otros artistas."
 
 #: matplotlib.backend_bases.RendererBase.get_texmanager:2 of
 msgid "Return the `.TexManager` instance."
-msgstr ""
+msgstr "Devuelve la instancia `.TexManager`."
 
 #: matplotlib.backend_bases.RendererBase.get_text_width_height_descent:2 of
 msgid "Get the width, height, and descent (offset from the bottom to the baseline), in display coords, of the string *s* with `.FontProperties` *prop*."
-msgstr ""
+msgstr "Obtener la anchura, la altura y el descenso (offset de la parte inferior a la línea de referencia), en las coordenadas de visualización, de la cadena *s* con `.FontProperties` *prop*."
 
 #: matplotlib.backend_bases.RendererBase.new_gc:2 of
 msgid "Return an instance of a `.GraphicsContextBase`."
-msgstr ""
+msgstr "Devuelve una instancia de un `.GraphicsContextBase`."
 
 #: matplotlib.backend_bases.RendererBase.open_group:2 of
 msgid "Open a grouping element with label *s* and *gid* (if set) as id."
-msgstr ""
+msgstr "Abre un elemento de agrupación con la etiqueta *s* y *gid* (si se establece) como id."
 
 #: matplotlib.backend_bases.RendererBase.option_image_nocomposite:2 of
 msgid "Return whether image composition by Matplotlib should be skipped."
-msgstr ""
+msgstr "Devuelve si la composición de la imagen por Matplotlib debe ser omitida."
 
 #: matplotlib.backend_bases.RendererBase.option_image_nocomposite:4 of
 msgid "Raster backends should usually return False (letting the C-level rasterizer take care of image composition); vector backends should usually return ``not rcParams[\"image.composite_image\"]``."
-msgstr ""
+msgstr "Los backends Raster generalmente deben devolver False (dejando que el rasterizador de nivel C se ocupe de la composición de la imagen); los backends de vector generalmente deben devolver ``not rcParams[\"image.composite_image\"]``."
 
 #: matplotlib.backend_bases.RendererBase.option_scale_image:2 of
 msgid "Return whether arbitrary affine transformations in :meth:`draw_image` are supported (True for most vector backends)."
-msgstr ""
+msgstr "Devuelve si las transformaciones afectadas arbitrarias en :meth:`draw_image` son soportadas (Verdadero para la mayoría de los servidores vectoriales)."
 
 #: matplotlib.backend_bases.RendererBase.points_to_pixels:2 of
 msgid "Convert points to display units."
-msgstr ""
+msgstr "Convierte puntos para mostrar unidades."
 
 #: matplotlib.backend_bases.RendererBase.points_to_pixels:4 of
 msgid "You need to override this function (unless your backend doesn't have a dpi, e.g., postscript or svg).  Some imaging systems assume some value for pixels per inch::"
-msgstr ""
+msgstr "Necesitas sobreescribir esta función (a menos que tu backend no tenga un dpi, p.ej. postscript o svg). Algunos sistemas de imágenes asumen algún valor para píxeles por pulgada::"
 
 #: of
 msgid "float or array-like"
-msgstr ""
+msgstr "flotante o matriz"
 
 #: matplotlib.backend_bases.RendererBase.points_to_pixels:13 of
 msgid "a float or a numpy array of float"
-msgstr ""
+msgstr "un float o un array numpy de float"
 
 #: matplotlib.backend_bases.RendererBase.points_to_pixels:30 of
 msgid "Points converted to pixels"
-msgstr ""
+msgstr "Puntos convertidos en píxeles"
 
 #: matplotlib.backend_bases.RendererBase.start_filter:2 of
 msgid "Switch to a temporary renderer for image filtering effects."
-msgstr ""
+msgstr "Cambie a un renderizador temporal para efectos de filtrado de imágenes."
 
 #: matplotlib.backend_bases.RendererBase.start_filter:4
 #: matplotlib.backend_bases.RendererBase.stop_filter:6 of
 msgid "Currently only supported by the agg renderer."
-msgstr ""
+msgstr "Actualmente sólo soportado por el renderizador agg."
 
 #: matplotlib.backend_bases.RendererBase.start_rasterizing:2 of
 msgid "Switch to the raster renderer."
-msgstr ""
+msgstr "Cambiar al renderizador de raster."
 
 #: matplotlib.backend_bases.RendererBase.start_rasterizing:4
 #: matplotlib.backend_bases.RendererBase.stop_rasterizing:5 of
 msgid "Used by `.MixedModeRenderer`."
-msgstr ""
+msgstr "Utilizado por `.MixedModeRenderer`."
 
 #: matplotlib.backend_bases.RendererBase.stop_filter:2 of
 msgid "Switch back to the original renderer.  The contents of the temporary renderer is processed with the *filter_func* and is drawn on the original renderer as an image."
-msgstr ""
+msgstr "Volver al renderizador original. El contenido del renderer temporal se procesa con el *filter_func* y se dibuja en el renderizador original como una imagen."
 
 #: matplotlib.backend_bases.RendererBase.stop_rasterizing:2 of
 msgid "Switch back to the vector renderer and draw the contents of the raster renderer as an image on the vector renderer."
-msgstr ""
+msgstr "Vuelve al renderizador vectorial y dibuja el contenido del renderizador raster como una imagen en el renderizador vectorial."
 
 #: matplotlib.backend_bases.ResizeEvent:2 of
 msgid "An event triggered by a canvas resize."
-msgstr ""
+msgstr "Un evento activado por un cambio de tamaño de lienzo."
 
 #: matplotlib.backend_bases.ResizeEvent:4 of
 msgid "A ResizeEvent has a number of special attributes in addition to those defined by the parent `Event` class."
-msgstr ""
+msgstr "Un ResizeEvent tiene un número de atributos especiales además de los definidos por la clase padre `Event`."
 
 #: matplotlib.backend_bases.ResizeEvent:22 of
 msgid "**width**"
@@ -1975,7 +1975,7 @@ msgstr "**width**"
 
 #: matplotlib.backend_bases.ResizeEvent:22 of
 msgid "Width of the canvas in pixels."
-msgstr ""
+msgstr "Ancho del lienzo en píxeles."
 
 #: matplotlib.backend_bases.ResizeEvent:26 of
 msgid "**height**"
@@ -1983,91 +1983,91 @@ msgstr "**height**"
 
 #: matplotlib.backend_bases.ResizeEvent:25 of
 msgid "Height of the canvas in pixels."
-msgstr ""
+msgstr "Altura del lienzo en píxeles."
 
 #: matplotlib.backend_bases.ShowBase:1 of
 msgid "Bases: :py:class:`matplotlib.backend_bases._Backend`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.backend_bases._Backend`"
 
 #: matplotlib.backend_bases.ShowBase:2 of
 msgid "Simple base class to generate a ``show()`` function in backends."
-msgstr ""
+msgstr "Clase base simple para generar una función ``show()`` en backends."
 
 #: matplotlib.backend_bases.ShowBase:4 of
 msgid "Subclass must override ``mainloop()`` method."
-msgstr ""
+msgstr "La subclase debe anular el método ``mainloop()``."
 
 #: matplotlib.backend_bases.TimerBase:2 of
 msgid "A base class for providing timer events, useful for things animations. Backends need to implement a few specific methods in order to use their own timing mechanisms so that the timer events are integrated into their event loops."
-msgstr ""
+msgstr "Una clase base para proporcionar eventos temporizadores, útil para animaciones de cosas. Los backends necesitan implementar algunos métodos específicos para utilizar sus propios mecanismos de temporización de manera que los eventos del temporizador se integren en sus bucles de eventos."
 
 #: matplotlib.backend_bases.TimerBase:7 of
 msgid "Subclasses must override the following methods:"
-msgstr ""
+msgstr "Las subclases deben sobreescribir los siguientes métodos:"
 
 #: matplotlib.backend_bases.TimerBase:9 of
 msgid "``_timer_start``: Backend-specific code for starting the timer."
-msgstr ""
+msgstr "``_timer_start``: Código específico del backend para iniciar el temporizador."
 
 #: matplotlib.backend_bases.TimerBase:10 of
 msgid "``_timer_stop``: Backend-specific code for stopping the timer."
-msgstr ""
+msgstr "``_timer_stop``: Código específico del backend para detener el temporizador."
 
 #: matplotlib.backend_bases.TimerBase:12 of
 msgid "Subclasses may additionally override the following methods:"
-msgstr ""
+msgstr "Las subclases pueden sobreescribir adicionalmente los siguientes métodos:"
 
 #: matplotlib.backend_bases.TimerBase:14 of
 msgid "``_timer_set_single_shot``: Code for setting the timer to single shot operating mode, if supported by the timer object.  If not, the `Timer` class itself will store the flag and the ``_on_timer`` method should be overridden to support such behavior."
-msgstr ""
+msgstr "``_timer_set_single_shot``: Código para establecer el temporizador en modo de operación de un solo disparo, si está soportado por el objeto del temporizador. Si no, la propia clase `Timer` almacenará la bandera y el método ``_on_timer`` debe ser anulado para soportar tal comportamiento."
 
 #: matplotlib.backend_bases.TimerBase:19 of
 msgid "``_timer_set_interval``: Code for setting the interval on the timer, if there is a method for doing so on the timer object."
-msgstr ""
+msgstr "``_timer_set_interval``: Código para establecer el intervalo en el temporizador, si hay un método para hacerlo en el objeto temporizador."
 
 #: matplotlib.backend_bases.TimerBase:22 of
 msgid "``_on_timer``: The internal function that any timer object should call, which will handle the task of running all callbacks that have been set."
-msgstr ""
+msgstr "``_on_timer``: La función interna que cualquier objeto temporizador debe llamar, la cual manejará la tarea de ejecutar todos los callbacks que se han establecido."
 
 #: of
 msgid "int, default: 1000ms"
-msgstr ""
+msgstr "int, por defecto: 1000ms"
 
 #: matplotlib.backend_bases.TimerBase:49 of
 msgid "The time between timer events in milliseconds.  Will be stored as ``timer.interval``."
-msgstr ""
+msgstr "El tiempo entre eventos temporizadores en milisegundos. Se almacenará como ``timer.interval``."
 
 #: matplotlib.backend_bases.TimerBase:53 of
 msgid "List of (func, args, kwargs) tuples that will be called upon timer events.  This list is accessible as ``timer.callbacks`` and can be manipulated directly, or the functions `add_callback` and `remove_callback` can be used."
-msgstr ""
+msgstr "Lista de tuples (fun, args, kwargs) que serán llamados en eventos de temporizador. Esta lista es accesible como ``temporizador. allbacks`` y puede ser manipulado directamente, o las funciones `add_callback` y `remove_callback` pueden ser usadas."
 
 #: matplotlib.backend_bases.TimerBase.add_callback:2 of
 msgid "Register *func* to be called by timer when the event fires. Any additional arguments provided will be passed to *func*."
-msgstr ""
+msgstr "Registrar *función* para ser llamado por temporizador cuando el evento se dispare. Cualquier argumento adicional proporcionado se pasará a *función*."
 
 #: matplotlib.backend_bases.TimerBase.add_callback:5 of
 msgid "This function returns *func*, which makes it possible to use it as a decorator."
-msgstr ""
+msgstr "Esta función devuelve *func*, lo que hace posible usarla como decorador."
 
 #: matplotlib.backend_bases.TimerBase.interval:2 of
 msgid "The time between timer events, in milliseconds."
-msgstr ""
+msgstr "El tiempo entre los eventos temporizadores, en milisegundos."
 
 #: matplotlib.backend_bases.TimerBase.remove_callback:2 of
 msgid "Remove *func* from list of callbacks."
-msgstr ""
+msgstr "Eliminar *función* de la lista de devoluciones."
 
 #: matplotlib.backend_bases.TimerBase.remove_callback:4 of
 msgid "*args* and *kwargs* are optional and used to distinguish between copies of the same function registered to be called with different arguments. This behavior is deprecated.  In the future, ``*args, **kwargs`` won't be considered anymore; to keep a specific callback removable by itself, pass it to `add_callback` as a `functools.partial` object."
-msgstr ""
+msgstr "*args* y *kwargs* son opcionales y se utilizan para distinguir entre copias de la misma función registradas para ser llamadas con diferentes argumentos. Este comportamiento está obsoleto. En el futuro, ``*args, **kwargs`` ya no se considerará; para mantener un callback específico removible por sí mismo, pasarlo a `add_callback` como una `functools. objeto artial`."
 
 #: matplotlib.backend_bases.TimerBase.single_shot:2 of
 msgid "Whether this timer should stop after a single run."
-msgstr ""
+msgstr "Si este temporizador debe detenerse después de una sola ejecución."
 
 #: matplotlib.backend_bases.TimerBase.start:2 of
 msgid "Start the timer object."
-msgstr ""
+msgstr "Iniciar el objeto temporizador."
 
 #: of
 msgid "int, optional"
@@ -2075,19 +2075,19 @@ msgstr "int, opcional"
 
 #: matplotlib.backend_bases.TimerBase.start:8 of
 msgid "Timer interval in milliseconds; overrides a previously set interval if provided."
-msgstr ""
+msgstr "Intervalo de temporizador en milisegundos; anula un intervalo previamente establecido si se proporciona."
 
 #: matplotlib.backend_bases.TimerBase.stop:2 of
 msgid "Stop the timer."
-msgstr ""
+msgstr "Detener el temporizador."
 
 #: matplotlib.backend_bases.ToolContainerBase:2 of
 msgid "Base class for all tool containers, e.g. toolbars."
-msgstr ""
+msgstr "Clase base para todos los contenedores de herramientas, por ejemplo, barras de herramientas."
 
 #: matplotlib.backend_bases.ToolContainerBase:21 of
 msgid "**toolmanager** : `.ToolManager`"
-msgstr ""
+msgstr "**toolmanager** : `.ToolManager`"
 
 #: matplotlib.backend_bases.ToolContainerBase:20 of
 msgid "ToolManager"
@@ -2095,214 +2095,214 @@ msgstr "Gestor de herramientas"
 
 #: matplotlib.backend_bases.ToolContainerBase:20 of
 msgid "The tools with which this `ToolContainer` wants to communicate."
-msgstr ""
+msgstr "Las herramientas con las que este `ToolContainer` quiere comunicarse."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_tool:2 of
 msgid "Add a tool to this container."
-msgstr ""
+msgstr "Añadir una herramienta a este contenedor."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_tool:8 of
 msgid "**tool**"
-msgstr ""
+msgstr "**herramienta**"
 
 #: of
 msgid "tool_like"
-msgstr ""
+msgstr "herramienta_como"
 
 #: matplotlib.backend_bases.ToolContainerBase.add_tool:8 of
 msgid "The tool to add, see `.ToolManager.get_tool`."
-msgstr ""
+msgstr "La herramienta para añadir, vea `.ToolManager.get_tool`."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_tool:11
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:16 of
 msgid "**group**"
-msgstr ""
+msgstr "**grupo**"
 
 #: matplotlib.backend_bases.ToolContainerBase.add_tool:11 of
 msgid "The name of the group to add this tool to."
-msgstr ""
+msgstr "El nombre del grupo al que añadir esta herramienta."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_tool:27
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:19 of
 msgid "**position**"
-msgstr ""
+msgstr "**posición**"
 
 #: of
 msgid "int, default: -1"
-msgstr ""
+msgstr "int, por defecto: -1"
 
 #: matplotlib.backend_bases.ToolContainerBase.add_tool:14 of
 msgid "The position within the group to place this tool."
-msgstr ""
+msgstr "La posición dentro del grupo para colocar esta herramienta."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:2 of
 msgid "Add a toolitem to the container."
-msgstr ""
+msgstr "Añadir un elemento de herramienta al contenedor."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:4 of
 msgid "This method must be implemented per backend."
-msgstr ""
+msgstr "Este método debe implementarse por backend."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:6 of
 msgid "The callback associated with the button click event, must be *exactly* ``self.trigger_tool(name)``."
-msgstr ""
+msgstr "El callback asociado con el evento de clic del botón debe ser *exactamente* ``self.trigger_tool(name)``."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:12 of
 msgid "Name of the tool to add, this gets used as the tool's ID and as the default label of the buttons."
-msgstr ""
+msgstr "Nombre de la herramienta a añadir, esto se utiliza como el ID de la herramienta y como la etiqueta predeterminada de los botones."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:16 of
 msgid "Name of the group that this tool belongs to."
-msgstr ""
+msgstr "Nombre del grupo al que pertenece esta herramienta."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:19 of
 msgid "Position of the tool within its group, if -1 it goes at the end."
-msgstr ""
+msgstr "Posición de la herramienta dentro de su grupo, si -1 va al final."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:22 of
 msgid "**image**"
-msgstr ""
+msgstr "**imagen**"
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:22 of
 msgid "Filename of the image for the button or `None`."
-msgstr ""
+msgstr "Nombre de archivo de la imagen para el botón o `Ninguno`."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:25
 #: matplotlib.backend_bases.register_backend:27 of
 msgid "**description**"
-msgstr ""
+msgstr "**descripción**"
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:25 of
 msgid "Description of the tool, used for the tooltips."
-msgstr ""
+msgstr "Descripción de la herramienta, usada para las descripciones."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:44 of
 msgid "**toggle**"
-msgstr ""
+msgstr "**cambiar**"
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:28 of
 msgid "`True` : The button is a toggle (change the pressed/unpressed state between consecutive clicks)."
-msgstr ""
+msgstr "`Verdadero` : El botón es un interruptor (cambia el estado presionado/no presionado entre pulsaciones consecutivas)."
 
 #: matplotlib.backend_bases.ToolContainerBase.add_toolitem:30 of
 msgid "`False` : The button is a normal button (returns to unpressed state after release)."
-msgstr ""
+msgstr "`False` : El botón es un botón normal (vuelve al estado sin pulsar después de la versión)."
 
 #: matplotlib.backend_bases.ToolContainerBase.remove_toolitem:2 of
 msgid "Remove a toolitem from the `ToolContainer`."
-msgstr ""
+msgstr "Elimina una herramienta del `ToolContainer`."
 
 #: matplotlib.backend_bases.ToolContainerBase.remove_toolitem:4 of
 msgid "This method must get implemented per backend."
-msgstr ""
+msgstr "Este método debe implementarse por backend."
 
 #: matplotlib.backend_bases.ToolContainerBase.remove_toolitem:6 of
 msgid "Called when `.ToolManager` emits a `tool_removed_event`."
-msgstr ""
+msgstr "Llamado cuando `.ToolManager` emite un `tool_removed_event`."
 
 #: matplotlib.backend_bases.ToolContainerBase.remove_toolitem:11 of
 msgid "Name of the tool to remove."
-msgstr ""
+msgstr "Nombre de la herramienta a eliminar."
 
 #: matplotlib.backend_bases.ToolContainerBase.set_message:2 of
 msgid "Display a message on the toolbar."
-msgstr ""
+msgstr "Mostrar un mensaje en la barra de herramientas."
 
 #: matplotlib.backend_bases.ToolContainerBase.set_message:8 of
 msgid "Message text."
-msgstr ""
+msgstr "Texto del mensaje."
 
 #: matplotlib.backend_bases.ToolContainerBase.toggle_toolitem:2 of
 msgid "Toggle the toolitem without firing event."
-msgstr ""
+msgstr "Alterna el objeto sin disparar el evento."
 
 #: matplotlib.backend_bases.ToolContainerBase.toggle_toolitem:8 of
 msgid "Id of the tool to toggle."
-msgstr ""
+msgstr "Id de la herramienta a cambiar."
 
 #: matplotlib.backend_bases.ToolContainerBase.toggle_toolitem:24 of
 msgid "**toggled**"
-msgstr ""
+msgstr "**toggled**"
 
 #: matplotlib.backend_bases.ToolContainerBase.toggle_toolitem:11 of
 msgid "Whether to set this tool as toggled or not."
-msgstr ""
+msgstr "Establecer esta herramienta como activada o no."
 
 #: matplotlib.backend_bases.ToolContainerBase.trigger_tool:2 of
 msgid "Trigger the tool."
-msgstr ""
+msgstr "Activar la herramienta."
 
 #: matplotlib.backend_bases.ToolContainerBase.trigger_tool:8 of
 msgid "Name (id) of the tool triggered from within the container."
-msgstr ""
+msgstr "Nombre (id) de la herramienta activada desde dentro del contenedor."
 
 #: matplotlib.backend_bases.button_press_handler:2 of
 msgid "The default Matplotlib button actions for extra mouse buttons."
-msgstr ""
+msgstr "Las acciones predeterminadas del botón Matplotlib para botones extra del ratón."
 
 #: matplotlib.backend_bases.button_press_handler:4 of
 msgid "Parameters are as for `key_press_handler`, except that *event* is a `MouseEvent`."
-msgstr ""
+msgstr "Los parámetros son como para `key_press_handler`, excepto que *event* es un `MouseEvent`."
 
 #: matplotlib.backend_bases.get_registered_canvas_class:2 of
 msgid "Return the registered default canvas for given file format. Handles deferred import of required backend."
-msgstr ""
+msgstr "Devuelve el lienzo por defecto registrado para el formato de archivo dado. Maneja la importación diferida del backend requerido."
 
 #: matplotlib.backend_bases.key_press_handler:2 of
 msgid "Implement the default Matplotlib key bindings for the canvas and toolbar described at :ref:`key-event-handling`."
-msgstr ""
+msgstr "Implementar los enlaces de teclas predeterminados de Matplotlib para el lienzo y la barra de herramientas descritos en :ref:`key-event-handling`."
 
 #: matplotlib.backend_bases.key_press_handler:9 of
 msgid "**event** : `KeyEvent`"
-msgstr ""
+msgstr "**evento** : `KeyEvent`"
 
 #: matplotlib.backend_bases.key_press_handler:8 of
 msgid "KeyEvent"
-msgstr ""
+msgstr "Evento clave"
 
 #: matplotlib.backend_bases.key_press_handler:9 of
 msgid "A key press/release event."
-msgstr ""
+msgstr "Un evento de presión/liberación."
 
 #: matplotlib.backend_bases.key_press_handler:14 of
 msgid "**canvas** : `FigureCanvasBase`, default: ``event.canvas``"
-msgstr ""
+msgstr "**canvas** : `FigureCanvasBase`, por defecto: ``event.canvas``"
 
 #: matplotlib.backend_bases.key_press_handler:13 of
 msgid "FigureCanvasBase, default: event.canvas"
-msgstr ""
+msgstr "FigureCanvasBase, por defecto: event.canvas"
 
 #: matplotlib.backend_bases.key_press_handler:12 of
 msgid "The backend-specific canvas instance.  This parameter is kept for back-compatibility, but, if set, should always be equal to ``event.canvas``."
-msgstr ""
+msgstr "La instancia de lienzo específica del backend. Este parámetro se mantiene para la compatibilidad con back, pero, si se establece, siempre debería ser igual a ``event.canvas``."
 
 #: matplotlib.backend_bases.key_press_handler:32 of
 msgid "**toolbar** : `NavigationToolbar2`, default: ``event.canvas.toolbar``"
-msgstr ""
+msgstr "**barra de herramientas** : `NavigationToolbar2`, por defecto: ``event.canvas.toolbar``"
 
 #: matplotlib.backend_bases.key_press_handler:31 of
 msgid "NavigationToolbar2, default: event.canvas.toolbar"
-msgstr ""
+msgstr "NavigationToolbar2, por defecto: event.canvas.toolbar"
 
 #: matplotlib.backend_bases.key_press_handler:17 of
 msgid "The navigation cursor toolbar.  This parameter is kept for back-compatibility, but, if set, should always be equal to ``event.canvas.toolbar``."
-msgstr ""
+msgstr "La barra de herramientas del cursor de navegación. Este parámetro se mantiene para la compatibilidad inversa, pero, si se establece, siempre debería ser igual a ``event.canvas.toolbar``."
 
 #: matplotlib.backend_bases.register_backend:2 of
 msgid "Register a backend for saving to a given file format."
-msgstr ""
+msgstr "Registre un backend para guardar en un formato de archivo determinado."
 
 #: matplotlib.backend_bases.register_backend:8 of
 msgid "File extension"
-msgstr ""
+msgstr "Extensión de archivo"
 
 #: of
 msgid "module string or canvas class"
-msgstr ""
+msgstr "clase de lona o cadena de módulo"
 
 #: matplotlib.backend_bases.register_backend:11 of
 msgid "Backend for handling file output"
-msgstr ""
+msgstr "Fondo para manejar la salida de archivos"
 
 #: of
 msgid "str, default: \"\""
@@ -2310,5 +2310,5 @@ msgstr "str, default: \"\""
 
 #: matplotlib.backend_bases.register_backend:14 of
 msgid "Description of the file type."
-msgstr ""
+msgstr "Descripción del tipo de archivo."
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:46\n"
+"PO-Revision-Date: 2022-11-02 14:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,283 +20,283 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:3
 msgid "API Changes in 1.5.0"
-msgstr ""
+msgstr "Cambios de API en 1.5.0"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:6
 msgid "Code Changes"
-msgstr ""
+msgstr "Cambios de código"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:9
 msgid "Reversed `matplotlib.cbook.ls_mapper`, added `.ls_mapper_r`"
-msgstr ""
+msgstr "Estimado `matplotlib.cbook.ls_mapper`, añadido `.ls_mapper_r`"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:11
 msgid "Formerly, `matplotlib.cbook.ls_mapper` was a dictionary with the long-form line-style names (``\"solid\"``) as keys and the short forms (``\"-\"``) as values.  This long-to-short mapping is now done by `.ls_mapper_r`, and the short-to-long mapping is done by the `.ls_mapper`."
-msgstr ""
+msgstr "Anteriormente, `matplotlib.cbook.ls_mapper` era un diccionario con los nombres de estilo de línea de forma larga (``\"sólid\"``) como claves y las formas cortas (``\"-\"``) como valores. Este mapeo long-to-short es realizado ahora por `.ls_mapper_r`, y el mapeo de corto a largo es realizado por el `.ls_mapper`."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:18
 msgid "Prevent moving artists between Axes, Property-ify Artist.axes, deprecate Artist.{get,set}_axes"
-msgstr ""
+msgstr "Impedir que los artistas se muevan entre Ejes, Propiedad de Artist.axes, Artista desaprobado.{get,set}_axes"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:20
 msgid "This was done to prevent an Artist that is already associated with an Axes from being moved/added to a different Axes. This was never supported as it causes havoc with the transform stack. The apparent support for this (as it did not raise an exception) was the source of multiple bug reports and questions on SO."
-msgstr ""
+msgstr "Esto se hizo para evitar que un artista que ya está asociado con un hacha fuera movido/agregado a un hacha diferente. Esto nunca fue soportado ya que causa estragos con la pila de transformación. El soporte aparente para esto (ya que no planteaba una excepción) fue el origen de múltiples informes de errores y preguntas sobre SO."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:26
 msgid "For almost all use-cases, the assignment of the axes to an artist should be taken care of by the axes as part of the ``Axes.add_*`` method, hence the deprecation of {get,set}_axes."
-msgstr ""
+msgstr "Para casi todos los casos de uso, la asignación de los ejes a un artista debe ser realizada por los ejes como parte de los ``ejes''. Método dd_*``, de ahí la desaprobación de {get,set}_axes."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:30
 msgid "Removing the ``set_axes`` method will also remove the 'axes' line from the ACCEPTS kwarg tables (assuming that the removal date gets here before that gets overhauled)."
-msgstr ""
+msgstr "Eliminar el método ``set_axes`` también eliminará la línea 'axes' de las tablas kwarg ACCEPTS (asumiendo que la fecha de eliminación llegue hasta aquí antes de que sea revisada)."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:35
 msgid "Tightened input validation on 'pivot' kwarg to quiver"
-msgstr ""
+msgstr "Validación de entrada mejorada en 'pivot' kwarg a quiver"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:37
 msgid "Tightened validation so that only {'tip', 'tail', 'mid', and 'middle'} (but any capitalization) are valid values for the *pivot* keyword argument in the `.Quiver` class (and hence `.axes.Axes.quiver` and `.pyplot.quiver` which both fully delegate to `.Quiver`).  Previously any input matching 'mid.*' would be interpreted as 'middle', 'tip.*' as 'tip' and any string not matching one of those patterns as 'tail'."
-msgstr ""
+msgstr "Validación reforzada para que sólo {'tip', 'tail', 'mid' y 'middle'} (pero cualquier mayúscula) sean valores válidos para el argumento de palabra clave *pivot* en el `. clase uiver` (y por lo tanto `.axes.Axes.quiver` y `. yplot.quiver` que ambos delegan plenamente en `.Quiver`). Anteriormente cualquier entrada que coincida con 'mid. ' sería interpretado como 'middle', 'tip.*' como 'tip' y cualquier cadena que no coincida con uno de esos patrones como 'tail'."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:44
 msgid "The value of `.Quiver.pivot` is normalized to be in the set {'tip', 'tail', 'middle'} in `.Quiver`."
-msgstr ""
+msgstr "El valor de `.Quiver.pivot` está normalizado para estar en el conjunto {'tip', 'tail', 'middle'} en `.Quiver`."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:48
 msgid "Reordered ``Axes.get_children``"
-msgstr ""
+msgstr "Reordenó ``Ejes.get_children``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:50
 msgid "The artist order returned by `.axes.Axes.get_children` did not match the one used by `.axes.Axes.draw`.  They now use the same order, as `.axes.Axes.draw` now calls `.axes.Axes.get_children`."
-msgstr ""
+msgstr "El orden del artista devuelto por `.axes.Axes.get_children` no coincide con el utilizado por `.axes.Axes.draw`. Ahora usan el mismo orden, como `.axes.Axes.draw` ahora llama `.axes.Axes.get_children`."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:55
 msgid "Changed behaviour of contour plots"
-msgstr ""
+msgstr "Comportamiento modificado de las parcelas de contorno"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:57
 msgid "The default behaviour of :func:`~matplotlib.pyplot.contour` and :func:`~matplotlib.pyplot.contourf` when using a masked array is now determined by the new keyword argument *corner_mask*, or if this is not specified then the new :rc:`contour.corner_mask` instead.  The new default behaviour is equivalent to using ``corner_mask=True``; the previous behaviour can be obtained using ``corner_mask=False`` or by changing the rcParam.  The example https://matplotlib.org/examples/pylab_examples/contour_corner_mask.html demonstrates the difference.  Use of the old contouring algorithm, which is obtained with ``corner_mask='legacy'``, is now deprecated."
-msgstr ""
+msgstr "El comportamiento predeterminado de :func:`~matplotlib.pyplot.contour` y :func:`~matplotlib.pyplot. ontourf` al usar una matriz enmascarada ahora está determinado por el nuevo argumento de palabra clave *corner_mask*, o si esto no se especifica, entonces el nuevo :rc:`contour. orner_mask` en su lugar. El nuevo comportamiento por defecto es equivalente al uso de ``corner_mask=True``; el comportamiento anterior se puede obtener usando ``corner_mask=False`` o cambiando el rcParam. El ejemplo https://matplotlib. rg/examples/pylab_examples/contour_corner_mask.html demuestra la diferencia."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:67
 msgid "Contour labels may now appear in different places than in earlier versions of Matplotlib."
-msgstr ""
+msgstr "Las etiquetas de contorno pueden aparecer ahora en diferentes lugares que en versiones anteriores de Matplotlib."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:70
 msgid "In addition, the keyword argument *nchunk* now applies to :func:`~matplotlib.pyplot.contour` as well as :func:`~matplotlib.pyplot.contourf`, and it subdivides the domain into subdomains of exactly *nchunk* by *nchunk* quads, whereas previously it was only roughly *nchunk* by *nchunk* quads."
-msgstr ""
+msgstr "Además, el argumento de palabra clave *nchunk* ahora se aplica a :func:`~matplotlib.pyplot.contour` así como :func:`~matplotlib.pyplot. ontourf`, y subdivide el dominio en subdominios de exactamente *nchunk* por quads *nchunk*, mientras que anteriormente sólo era aproximadamente *nchunk* por quads *nchunk*."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:76
 msgid "The C/C++ object that performs contour calculations used to be stored in the public attribute ``QuadContourSet.Cntr``, but is now stored in a private attribute and should not be accessed by end users."
-msgstr ""
+msgstr "El objeto C/C++ que realiza cálculos de contorno utilizados para ser almacenados en el atributo público ``QuadContourSet. ntr``, pero ahora se almacena en un atributo privado y los usuarios finales no deberían acceder a él."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:81
 msgid "Added set_params function to all Locator types"
-msgstr ""
+msgstr "Se añadió la función set_params a todos los tipos de localizador"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:83
 msgid "This was a bug fix targeted at making the api for Locators more consistent."
-msgstr ""
+msgstr "Esta era una corrección de errores dirigida a hacer más consistente la api para localizadores."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:85
 msgid "In the old behavior, only locators of type MaxNLocator have set_params() defined, causing its use on any other Locator to raise an AttributeError *( aside: set_params(args) is a function that sets the parameters of a Locator instance to be as specified within args)*. The fix involves moving set_params() to the Locator class such that all subtypes will have this function defined."
-msgstr ""
+msgstr "En el comportamiento antiguo, sólo los localizadores del tipo MaxNLocator tienen definidos set_params(), causando su uso en cualquier otro Locator para generar un AttributeError *( así: set_params(args) es una función que establece que los parámetros de una instancia de Locator serán especificados dentro de los args)*. La corrección implica mover set_params() a la clase Localizador de tal forma que todos los subtipos tengan definida esta función."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:91
 msgid "Since each of the Locator subtypes have their own modifiable parameters, a universal set_params() in Locator isn't ideal. Instead, a default no-operation function that raises a warning is implemented in Locator. Subtypes extending Locator will then override with their own implementations. Subtypes that do not have a need for set_params() will fall back onto their parent's implementation, which raises a warning as intended."
-msgstr ""
+msgstr "Dado que cada uno de los subtipos Locator tiene sus propios parámetros modificables, un set_params() universal en Locator no es ideal. En su lugar, una función de no-operación por defecto que levanta una advertencia está implementada en Locator. Los subtipos que extienden el Locator entonces anularán con sus propias implementaciones. Los subtipos que no tengan necesidad de set_params() caerán en la implementación de su padre, lo que plantea una advertencia como se pretende."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:98
 msgid "In the new behavior, Locator instances will not raise an AttributeError when set_params() is called. For Locators that do not implement set_params(), the default implementation in Locator is used."
-msgstr ""
+msgstr "En el nuevo comportamiento, las instancias Localizador no generarán un AttributeError cuando set_params() sea llamado. Para Locators que no implementan set_params(), se utiliza la implementación por defecto en Locator."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:103
 msgid "Disallow ``None`` as x or y value in ax.plot"
-msgstr ""
+msgstr "Rechaza el valor de «x» o «y» en ax.plot"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:105
 msgid "Do not allow ``None`` as a valid input for the ``x`` or ``y`` args in `.axes.Axes.plot`.  This may break some user code, but this was never officially supported (ex documented) and allowing ``None`` objects through can lead to confusing exceptions downstream."
-msgstr ""
+msgstr "No permita ``Ninguno`` como una entrada válida para los argumentos ``x`` o ``y`` en `.axes.Axes.plot`. Esto puede romper algún código de usuario, pero esto nunca fue soportado oficialmente (ex documentado) y permitir a través de los objetos ``Ning`` puede llevar a confusas excepciones aguas abajo."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:110
 msgid "To create an empty line use ::"
-msgstr ""
+msgstr "Para crear una línea vacía use ::"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:115
 msgid "In either case to update the data in the `.Line2D` object you must update both the ``x`` and ``y`` data."
-msgstr ""
+msgstr "En cualquier caso para actualizar los datos en el objeto `.Line2D` debe actualizar tanto los datos ``x`` como ``y``."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:120
 msgid "Removed *args* and *kwargs* from `.MicrosecondLocator.__call__`"
-msgstr ""
+msgstr "Se han eliminado *args* y *kwargs* de `.MicrosecondLocator.__call__`"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:122
 msgid "The call signature of :meth:`~matplotlib.dates.MicrosecondLocator.__call__` has changed from ``__call__(self, *args, **kwargs)`` to ``__call__(self)``. This is consistent with the superclass :class:`~matplotlib.ticker.Locator` and also all the other Locators derived from this superclass."
-msgstr ""
+msgstr "La firma de la llamada de :meth:`~matplotlib.dates.MicrosecondLocator.__call__` ha cambiado de ``__call__(yo, *args, **kwargs)`` a ``__call__(self)``. Esto es consistente con la superclase :class:`~matplotlib.ticker.Locator` y también con el resto de Locators derivados de esta superclase."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:129
 msgid "No `ValueError` for the MicrosecondLocator and YearLocator"
-msgstr ""
+msgstr "No hay 'ValueError' para el MicrosecondLocator y el Localizador de Año"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:131
 msgid "The :class:`~matplotlib.dates.MicrosecondLocator` and :class:`~matplotlib.dates.YearLocator` objects when called will return an empty list if the axes have no data or the view has no interval. Previously, they raised a `ValueError`. This is consistent with all the Date Locators."
-msgstr ""
+msgstr "El :class:`~matplotlib.dates.MicrosecondLocator` y :class:`~matplotlib.dates. los objetos earLocator` cuando son llamados devolverán una lista vacía si los ejes no tienen datos o la vista no tiene intervalo. Anteriormente, plantearon un `ValueError`. Esto es consistente con todos los Localizadores de fechas."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:138
 msgid "'OffsetBox.DrawingArea' respects the 'clip' keyword argument"
-msgstr ""
+msgstr "'OffsetBox.DrawingArea' respeta el argumento de palabra clave 'clip'"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:140
 msgid "The call signature was ``OffsetBox.DrawingArea(..., clip=True)`` but nothing was done with the *clip* argument. The object did not do any clipping regardless of that parameter. Now the object can and does clip the child `.Artist`\\ s if they are set to be clipped."
-msgstr ""
+msgstr "La firma de llamada fue ``OffsetBox.DrawingArea(..., clip=True)`` pero no se hizo nada con el argumento *clip*. El objeto no hizo ningún recorte independientemente de ese parámetro. Ahora el objeto puede y hace clip al hijo `.Artist`\\ s si están configurados para ser recortados."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:145
 msgid "You can turn off the clipping on a per-child basis using ``child.set_clip_on(False)``."
-msgstr ""
+msgstr "Puede desactivar el recorte por hijo usando ``child.set_clip_on(False)``."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:149
 msgid "Add salt to clipPath id"
-msgstr ""
+msgstr "Añadir sal al id del clipPath"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:151
 msgid "Add salt to the hash used to determine the id of the ``clipPath`` nodes.  This is to avoid conflicts when two svg documents with the same clip path are included in the same document (see https://github.com/ipython/ipython/issues/8133 and https://github.com/matplotlib/matplotlib/issues/4349 ), however this means that the svg output is no longer deterministic if the same figure is saved twice.  It is not expected that this will affect any users as the current ids are generated from an md5 hash of properties of the clip path and any user would have a very difficult time anticipating the value of the id."
-msgstr ""
+msgstr "Agrega sal al hash usado para determinar el id de los nodos ``clipPath``. Esto es para evitar conflictos cuando dos documentos svg con la misma ruta de clip son incluidos en el mismo documento (ver https://github.com/ipython/ipython/issues/8133 y https://github. om/matplotlib/matplotlib/issues/4349 ), sin embargo, esto significa que la salida svg ya no es determinista si la misma figura se guarda dos veces. No se espera que esto afecte a ningún usuario ya que los ids actuales se generan a partir de un hash md5 de propiedades de la ruta del clip y cualquier usuario tendría un tiempo muy difícil anticiparse el valor del id."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:163
 msgid "Changed snap threshold for circle markers to inf"
-msgstr ""
+msgstr "Umbral de snap cambiado para marcadores circulares a inf"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:165
 msgid "When drawing circle markers above some marker size (previously 6.0) the path used to generate the marker was snapped to pixel centers.  However, this ends up distorting the marker away from a circle.  By setting the snap threshold to inf snapping is never done on circles."
-msgstr ""
+msgstr "Al dibujar marcadores circulares por encima del tamaño de algunos marcadores (anteriormente 6.0) la ruta utilizada para generar el marcador se desplazó a los centros de píxeles. Sin embargo, esto acaba distorsionando el marcador lejos de un círculo. Al fijar el umbral del chorro a inf nunca se hace en círculos."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:170
 msgid "This change broke several tests, but is an improvement."
-msgstr ""
+msgstr "Este cambio rompió varias pruebas, pero es una mejora."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:173
 msgid "Preserve units with Text position"
-msgstr ""
+msgstr "Conservar unidades con posición de texto"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:175
 msgid "Previously the 'get_position' method on Text would strip away unit information even though the units were still present.  There was no inherent need to do this, so it has been changed so that unit data (if present) will be preserved. Essentially a call to 'get_position' will return the exact value from a call to 'set_position'."
-msgstr ""
+msgstr "Anteriormente, el método 'get_position' en Text eliminaría la información de las unidades, aunque las unidades estuvieran todavía presentes. No había ninguna necesidad inherente de hacer esto, por lo que se ha modificado para que los datos unitarios (si están presentes) se conserven. Esencialmente una llamada a 'get_position' devolverá el valor exacto de una llamada a 'set_position'."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:181
 msgid "If you wish to get the old behaviour, then you can use the new method called 'get_unitless_position'."
-msgstr ""
+msgstr "Si desea obtener el comportamiento antiguo, entonces puede utilizar el nuevo método llamado 'get_unitless_position'."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:185
 msgid "New API for custom Axes view changes"
-msgstr ""
+msgstr "Nueva API para cambios personalizados en la vista de ejes"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:187
 msgid "Interactive pan and zoom were previously implemented using a Cartesian-specific algorithm that was not necessarily applicable to custom Axes. Three new private methods, ``matplotlib.axes._base._AxesBase._get_view``, ``matplotlib.axes._base._AxesBase._set_view``, and ``matplotlib.axes._base._AxesBase._set_view_from_bbox``, allow for custom *Axes* classes to override the pan and zoom algorithms. Implementors of custom *Axes* who override these methods may provide suitable behaviour for both pan and zoom as well as the view navigation buttons on the interactive toolbars."
-msgstr ""
+msgstr "Anteriormente se implementaron pan y zoom interactivo utilizando un algoritmo específico de Cartesia que no era necesariamente aplicable a ejes personalizados. Tres nuevos métodos privados, ``matplotlib.axes._base._AxesBase._get_view``, ``matplotlib.axes._base._AxesBase._set_view``, y ``matplotlib.axes. base._AxesBase._set_view_from_bbox``, permite que las clases personalizadas de *Ejes* sobreescriban los algoritmos de desplazamiento y zoom. Los implementadores de *Ejes* personalizados que sobreescriban estos métodos pueden proporcionar un comportamiento adecuado tanto para pan como para zoom, así como los botones de navegación de vista en las barras de herramientas interactivas."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:198
 msgid "MathTex visual changes"
-msgstr ""
+msgstr "Cambios visuales de MathTex"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:200
 msgid "The spacing commands in mathtext have been changed to more closely match vanilla TeX."
-msgstr ""
+msgstr "Los comandos de espaciado en el texto de matemáticas se han cambiado para coincidir más estrechamente con el TeX de la vainilla."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:205
 msgid "Improved spacing in mathtext"
-msgstr ""
+msgstr "Espacio mejorado en matemáticas"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:207
 msgid "The extra space that appeared after subscripts and superscripts has been removed."
-msgstr ""
+msgstr "Se ha eliminado el espacio extra que apareció después de los suscriptores y las supercifras."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:211
 msgid "No annotation coordinates wrap"
-msgstr ""
+msgstr "No hay coordenadas de anotación"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:213
 msgid "In #2351 for 1.4.0 the behavior of ['axes points', 'axes pixel', 'figure points', 'figure pixel'] as coordinates was change to no longer wrap for negative values.  In 1.4.3 this change was reverted for 'axes points' and 'axes pixel' and in addition caused 'axes fraction' to wrap.  For 1.5 the behavior has been reverted to as it was in 1.4.0-1.4.2, no wrapping for any type of coordinate."
-msgstr ""
+msgstr "En #2351 para 1.4. el comportamiento de ['puntos de ejes', 'píxeles de ejes', 'puntos de figura', 'píxel de figura'] ya que las coordenadas cambiaban a no volver a envolver para valores negativos. En 1.4. este cambio fue revertido para \"puntos de ejes\" y \"píxeles de ejes\" y además hizo que \"fracción\" de \"ejes\". Para 1.5 el comportamiento ha sido revertido a como lo fue en 1.4.0-1.4.2, sin envoltura para ningún tipo de coordenada."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:221
 msgid "Deprecation"
-msgstr ""
+msgstr "Deprecación"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:224
 msgid "Deprecated ``GraphicsContextBase.set_graylevel``"
-msgstr ""
+msgstr "Obsoleto ``GraphicsContextBase.set_graylevel``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:226
 msgid "The ``GraphicsContextBase.set_graylevel`` function has been deprecated in 1.5 and will be removed in 1.6.  It has been unused.  The `.GraphicsContextBase.set_foreground` could be used instead."
-msgstr ""
+msgstr "La función ``GraphicsContextBase.set_graylevel`` ha sido obsoleta en 1.5 y será eliminada en 1.6. Ha sido inutilizada. El `.GraphicsContextBase.set_foreground` podría ser usado en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:231
 msgid "deprecated idle_event"
-msgstr ""
+msgstr "idle_event obsoleto"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:233
 msgid "The ``idle_event`` was broken or missing in most backends and causes spurious warnings in some cases, and its use in creating animations is now obsolete due to the animations module. Therefore code involving it has been removed from all but the wx backend (where it partially works), and its use is deprecated.  The `.animation` module may be used instead to create animations."
-msgstr ""
+msgstr "El ``idle_event`` se ha roto o faltado en la mayoría de los backends y causa advertencias espías en algunos casos, y su uso en la creación de animaciones es ahora obsoleto debido al módulo de animaciones. Por lo tanto, el código que lo involucra ha sido eliminado de todo excepto el backend wx (donde funciona parcialmente), y su uso está obsoleto. El módulo `.animation` puede utilizarse en su lugar para crear animaciones."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:240
 msgid "``color_cycle`` deprecated"
-msgstr ""
+msgstr "``color_ciclo`` obsoleto"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:242
 msgid "In light of the new property cycling feature, the Axes method ``set_color_cycle`` is now deprecated. Calling this method will replace the current property cycle with one that cycles just the given colors."
-msgstr ""
+msgstr "A la luz de la nueva característica de ciclo de propiedades, el método Axes ``set_color_cycle`` ahora está obsoleto. Llamar a este método reemplazará el ciclo de propiedad actual por uno que cicla sólo los colores dados."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:247
 msgid "Similarly, the rc parameter *axes.color_cycle* is also deprecated in lieu of the new :rc:`axes.prop_cycle` parameter. Having both parameters in the same rc file is not recommended as the result cannot be predicted. For compatibility, setting *axes.color_cycle* will replace the cycler in :rc:`axes.prop_cycle` with a color cycle. Accessing *axes.color_cycle* will return just the color portion of the property cycle, if it exists."
-msgstr ""
+msgstr "Del mismo modo, el parámetro rc *axes.color_cycle* también está obsoleto en lugar de los nuevos ejes :rc:`. parámetro rop_cycle`. Tener ambos parámetros en el mismo archivo rc no se recomienda como resultado no se puede predecir. Por compatibilidad, establecer *axes.color_cycle* reemplazará al ciclador en :rc:`axes.prop_cycle` con un ciclo de color. Acceder a *axes.color_cycle* devolverá sólo la porción de color del ciclo de propiedad, si existe."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:255
 msgid "Timeline for removal has not been set."
-msgstr ""
+msgstr "No se ha establecido la línea de tiempo para la eliminación."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:259
 msgid "Bundled jquery"
-msgstr ""
+msgstr "Jquery empaquetado"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:261
 msgid "The version of jquery bundled with the webagg backend has been upgraded from 1.7.1 to 1.11.3.  If you are using the version of jquery bundled with webagg you will need to update your html files as such"
-msgstr ""
+msgstr "La versión de jquery incluida con el backend de webagg se ha actualizado de 1.7.1 a 1.11.3. Si está utilizando la versión de jquery incluida con webagg necesitará actualizar sus archivos html como tal"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:272
 msgid "Code Removed"
-msgstr ""
+msgstr "Código eliminado"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:275
 msgid "Removed ``Image`` from main namespace"
-msgstr ""
+msgstr "Se ha eliminado el ``Imágenes`` del espacio de nombres principal"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:277
 msgid "``Image`` was imported from PIL/pillow to test if PIL is available, but there is no reason to keep ``Image`` in the namespace once the availability has been determined."
-msgstr ""
+msgstr "``Imagen`` fue importado desde PIL/almohada para probar si PIL está disponible, pero no hay ninguna razón para mantener ``Image`` en el espacio de nombres una vez que se haya determinado la disponibilidad."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:282
 msgid "Removed ``lod`` from Artist"
-msgstr ""
+msgstr "Se ha eliminado ``lod`` del Artista"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:284
 msgid "Removed the method ``set_lod`` and all references to the attribute ``_lod`` as they are not used anywhere else in the code base.  It appears to be a feature stub that was never built out."
-msgstr ""
+msgstr "Se ha eliminado el método ``set_lod`` y todas las referencias al atributo ``_lod`` ya que no se utilizan en ninguna otra parte en la base de código. Parece ser un stub de características que nunca fue construido."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:289
 msgid "Removed threading related classes from cbook"
-msgstr ""
+msgstr "Eliminadas clases relacionadas con hilos de cbook"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:290
 msgid "The classes ``Scheduler``, ``Timeout``, and ``Idle`` were in cbook, but are not used internally.  They appear to be a prototype for the idle event system which was not working and has recently been pulled out."
-msgstr ""
+msgstr "Las clases ``Scheduler``, ``Timeout``, y ``Idle`` estaban en cbook, pero no se usan internamente. Parecen ser un prototipo para el sistema de eventos inactivos que no funcionaba y que recientemente se ha retirado."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:295
 msgid "Removed *Lena* images from sample_data"
-msgstr ""
+msgstr "Imágenes de *Lena* eliminadas de sample_data"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:297
 msgid "The ``lena.png`` and ``lena.jpg`` images have been removed from Matplotlib's sample_data directory. The images are also no longer available from `matplotlib.cbook.get_sample_data`. We suggest using ``matplotlib.cbook.get_sample_data('grace_hopper.png')`` or ``matplotlib.cbook.get_sample_data('grace_hopper.jpg')`` instead."
-msgstr ""
+msgstr "Las imágenes ``lena.png`` y ``lena.jpg`` han sido eliminadas del directorio sample_data de Matplotlib. Las imágenes ya no están disponibles en `matplotlib.cbook. et_sample_data`. Sugerimos usar ``matplotlib.cbook.get_sample_data('grace_hopper.png')`` o ``matplotlib.cbook.get_sample_data('grace_hopper.jpg')`` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:305
 msgid "Legend"
@@ -304,133 +304,133 @@ msgstr "Leyenda"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:306
 msgid "Removed handling of *loc* as a positional argument to `.Legend`"
-msgstr ""
+msgstr "Se ha eliminado el manejo de *loc* como argumento posicional para `.Legend`"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:310
 msgid "Legend handlers"
-msgstr ""
+msgstr "Manejadores de leyendas"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:311
 msgid "Remove code to allow legend handlers to be callable.  They must now implement a method ``legend_artist``."
-msgstr ""
+msgstr "Eliminar código para permitir que los manejadores de leyendas sean llamables. Ahora deben implementar un método ``legend_artist``."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:316
 msgid "Axis"
-msgstr ""
+msgstr "Eje"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:317
 msgid "Removed method ``set_scale``.  This is now handled via a private method which should not be used directly by users.  It is called via ``Axes.set_{x,y}scale`` which takes care of ensuring the related changes are also made to the Axes object."
-msgstr ""
+msgstr "Método eliminado ``set_scale``. Esto ahora es manejado mediante un método privado que no debería ser utilizado directamente por los usuarios. Se llama a través de ``Ejes.set_{x,y}escala`` que se encarga de asegurar que los cambios relacionados también se hagan en el objeto Ejes."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:323
 msgid "finance.py"
-msgstr ""
+msgstr "finance.py"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:325
 msgid "Removed functions with ambiguous argument order from finance.py"
-msgstr ""
+msgstr "Funciones eliminadas con orden de argumentos ambiguo de finance.py"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:329
 msgid "Annotation"
-msgstr ""
+msgstr "Anuncio"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:331
 msgid "Removed ``textcoords`` and ``xytext`` proprieties from Annotation objects."
-msgstr ""
+msgstr "Se han eliminado los ``textcoords`` y ``xytext`` de los objetos de anotación."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:335
 msgid "sphinxext.ipython_*.py"
-msgstr ""
+msgstr "sphinxext.ipython_*.py"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:337
 msgid "Both ``ipython_console_highlighting`` and ``ipython_directive`` have been moved to IPython."
-msgstr ""
+msgstr "Ambos ``ipython_console_highlighting`` y ``ipython_directive`` han sido movidos a IPython."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:340
 msgid "Change your import from ``matplotlib.sphinxext.ipython_directive`` to ``IPython.sphinxext.ipython_directive`` and from ``matplotlib.sphinxext.ipython_directive`` to ``IPython.sphinxext.ipython_directive``"
-msgstr ""
+msgstr "Cambie su importación de ``matplotlib.sphinxext.ipython_directive`` a ``IPython.sphinxext.ipython_directive`` y de ``matplotlib.sphinxext.ipython_directive`` a ``IPython.sphinxext.ipython_directive``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:347
 msgid "LineCollection.color"
-msgstr ""
+msgstr "LineCollection.color"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:349
 msgid "Deprecated in 2005, use ``set_color``"
-msgstr ""
+msgstr "Obsoleto en 2005, use ``set_color``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:353
 msgid "remove ``'faceted'`` as a valid value for *shading* in ``tri.tripcolor``"
-msgstr ""
+msgstr "eliminar ``'faceted'`` como un valor válido para *sombreando* en ``tri.tripcolor``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:355
 msgid "Use *edgecolor* instead.  Added validation on *shading* to only be valid values."
-msgstr ""
+msgstr "Utilice *edgecolor* en su lugar. Se añadió la validación al *sombrear* para que sólo sea un valor válido."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:360
 msgid "Remove ``faceted`` kwarg from scatter"
-msgstr ""
+msgstr "Elimina el kwarg ``faceted`` del scatter"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:362
 msgid "Remove support for the ``faceted`` kwarg.  This was deprecated in d48b34288e9651ff95c3b8a071ef5ac5cf50bae7 (2008-04-18!) and replaced by ``edgecolor``."
-msgstr ""
+msgstr "Retire el soporte para el kwarg. Esto fue obsoleto en d48b34288e9651ff95c3b8a071ef5ac5cf50bae7 (¡2008-04-18!) y reemplazado por ``edgecolor``."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:368
 msgid "Remove ``set_colorbar`` method from ``ScalarMappable``"
-msgstr ""
+msgstr "Remover el método ``set_colorbar`` de ``ScalarMappable``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:370
 msgid "Remove ``set_colorbar`` method, use `~.cm.ScalarMappable.colorbar` attribute directly."
-msgstr ""
+msgstr "Remueve el método ``set_colorbar``, usa el atributo `~.cm.ScalarMappable.colorbar` directamente."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:375
 msgid "patheffects.svg"
-msgstr ""
+msgstr "patheffects.svg"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:377
 msgid "remove ``get_proxy_renderer`` method from ``AbstarctPathEffect`` class"
-msgstr ""
+msgstr "eliminar el método ``get_proxy_render`` de la clase ``AbstarctPathEffect``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:378
 msgid "remove ``patch_alpha`` and ``offset_xy`` from ``SimplePatchShadow``"
-msgstr ""
+msgstr "elimina ``patch_alpha`` y ``offset_xy`` de ``SimplePatchShadow``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:382
 msgid "Remove ``testing.image_util.py``"
-msgstr ""
+msgstr "Remove ``testing.image_util.py``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:383
 msgid "Contained only a no-longer used port of functionality from PIL"
-msgstr ""
+msgstr "Solo contiene un puerto de funcionalidad de PIL no más largo"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:387
 msgid "Remove ``mlab.FIFOBuffer``"
-msgstr ""
+msgstr "Remove ``mlab.FIFOBuffer``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:389
 msgid "Not used internally and not part of core mission of mpl."
-msgstr ""
+msgstr "No se utiliza internamente y no parte de la misión central del mpl."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:393
 msgid "Remove ``mlab.prepca``"
-msgstr ""
+msgstr "Eliminar ``mlab.prepca``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:394
 msgid "Deprecated in 2009."
-msgstr ""
+msgstr "Desaprobado en 2009."
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:398
 msgid "Remove ``NavigationToolbar2QTAgg``"
-msgstr ""
+msgstr "Remove ``NavigationToolbar2QTAgg``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:399
 msgid "Added no functionality over the base ``NavigationToolbar2Qt``"
-msgstr ""
+msgstr "No se ha añadido ninguna funcionalidad sobre la base ``NavigationToolbar2Qt``"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:403
 msgid "mpl.py"
-msgstr ""
+msgstr "mpl.py"
 
 #: ../../api/prev_api_changes/api_changes_1.5.0.rst:405
 msgid "Remove the module ``matplotlib.mpl``.  Deprecated in 1.3 by PR #1670 and commit 78ce67d161625833cacff23cfe5d74920248c5b2"
-msgstr ""
+msgstr "Remover el módulo ``matplotlib.mpl``. Desaprobado en 1.3 por PR #1670 y commit 78ce67d161625833cacff23cfe5d74920248c5b2"
 

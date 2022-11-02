@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:22\n"
+"PO-Revision-Date: 2022-11-02 14:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,21 +20,21 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_1.5.3.rst:2
 msgid "API Changes in 1.5.3"
-msgstr ""
+msgstr "Cambios de API en 1.5.3"
 
 #: ../../api/prev_api_changes/api_changes_1.5.3.rst:5
 msgid "``ax.plot(..., marker=None)`` gives default marker"
-msgstr ""
+msgstr "``ax.plot(..., marker=Ninguno)`` da el marcador predeterminado"
 
 #: ../../api/prev_api_changes/api_changes_1.5.3.rst:7
 msgid "Prior to 1.5.3 keyword arguments passed to `~matplotlib.axes.Axes.plot` were handled in two parts -- default keyword arguments generated internal to `~matplotlib.axes.Axes.plot` (such as the cycled styles) and user supplied keyword arguments.  The internally generated keyword arguments were passed to the `matplotlib.lines.Line2D` and the user keyword arguments were passed to ``ln.set(**kwargs)`` to update the artist after it was created.  Now both sets of keyword arguments are merged and passed to `~matplotlib.lines.Line2D`.  This change was made to allow *None* to be passed in via the user keyword arguments to mean 'do the default thing' as is the convention through out Matplotlib rather than raising an exception."
-msgstr ""
+msgstr "Antes de 1.5.3 los argumentos de palabra clave pasados a `~matplotlib.axes.Axes.plot` fueron manejados en dos partes -- los argumentos de palabra clave por defecto generados internos a `~matplotlib.axes.Axes. lot` (como los tipos cíclidos) y el usuario proporcionaron argumentos de palabras clave. Los argumentos de palabra clave generados internamente fueron pasados al `matplotlib.lines.Line2D` y los argumentos de palabra clave de usuario fueron pasados a ``ln. et(**kwargs)`` para actualizar el artista después de haber sido creado. Ahora ambos conjuntos de argumentos de palabra clave se combinan y pasan a `~matplotlib.lines.Line2D`. Este cambio se hizo para permitir que *nunca* sea pasado a través de los argumentos de palabra clave de usuario para significar 'hacer lo predeterminado' como lo es la convención a través de Matplotlib en lugar de plantear una excepción."
 
 #: ../../api/prev_api_changes/api_changes_1.5.3.rst:18
 msgid "Unlike most `~matplotlib.lines.Line2D` setter methods `~matplotlib.lines.Line2D.set_marker` did accept `None` as a valid input which was mapped to 'no marker'.  Thus, by routing this ``marker=None`` through ``__init__`` rather than ``set(...)`` the meaning of ``ax.plot(..., marker=None)`` changed from 'no markers' to 'default markers from rcparams'."
-msgstr ""
+msgstr "A diferencia de la mayoría de los métodos setter `~matplotlib.lines.Line2D` `~matplotlib.lines.Line2D.set_marker` aceptó `Every` como una entrada válida que fue mapeada a 'sin marcador'. Por lo tanto, enrutando este ``marker=delet`` a través de ``__init__`` en lugar de ``set(...)`` el significado de ``ax. lot(..., marker=deletre)`` cambió de 'sin marcadores' a 'marcadores predeterminados de rcparams'."
 
 #: ../../api/prev_api_changes/api_changes_1.5.3.rst:25
 msgid "This is change is only evident if ``mpl.rcParams['lines.marker']`` has a value other than ``'None'`` (which is string ``'None'`` which means 'no marker')."
-msgstr ""
+msgstr "Este es el cambio sólo es evidente si ``mpl.rcParams['lines.marker']`` tiene un valor distinto de ``'outer'`` (que es la cadena ``'outer'`` que significa 'no marker')."
 

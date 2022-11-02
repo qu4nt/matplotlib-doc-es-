@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:47\n"
+"PO-Revision-Date: 2022-11-02 14:11\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -64,23 +64,23 @@ msgstr "Cualquier método adicional para la comodidad o las características adi
 
 #: matplotlib.projections:31 of
 msgid "Once the projection axes is defined, it can be used in one of two ways:"
-msgstr ""
+msgstr "Una vez definidos los ejes de proyección, se puede utilizar de dos maneras:"
 
 #: matplotlib.projections:33 of
 msgid "By defining the class attribute ``name``, the projection axes can be registered with `matplotlib.projections.register_projection` and subsequently simply invoked by name::"
-msgstr ""
+msgstr "Al definir el atributo de clase ``name``, los ejes de proyección pueden ser registrados con `matplotlib.projections.register_prosection` y posteriormente simplemente invocados por nombre::"
 
 #: matplotlib.projections:39 of
 msgid "For more complex, parameterisable projections, a generic \"projection\" object may be defined which includes the method ``_as_mpl_axes``. ``_as_mpl_axes`` should take no arguments and return the projection's axes subclass and a dictionary of additional arguments to pass to the subclass' ``__init__`` method.  Subsequently a parameterised projection can be initialised with::"
-msgstr ""
+msgstr "Para proyecciones más complejas y parametrizables, se puede definir un objeto genérico de \"proyección\" que incluye el método ``_as_mpl_axes``. ``_as_mpl_axes`` no debe tomar argumentos y devolver la subclase de ejes de la proyección y un diccionario de argumentos adicionales para pasar a la subclase' `` método__init__``. Posteriormente, una proyección parametrizada puede inicializarse con::"
 
 #: matplotlib.projections:47 of
 msgid "where MyProjection is an object which implements a ``_as_mpl_axes`` method."
-msgstr ""
+msgstr "donde MyProjection es un objeto que implementa un método ``_as_mpl_axes``."
 
 #: matplotlib.projections:49 of
 msgid "A full-fledged and heavily annotated example is in :doc:`/gallery/misc/custom_projection`.  The polar plot functionality in `matplotlib.projections.polar` may also be of interest."
-msgstr ""
+msgstr "Un ejemplo completo y fuertemente anotado está en :doc:`/gallery/misc/custom_projectection`. La funcionalidad de la gráfica polar en `matplotlib.projections.polar` también puede ser de interés."
 
 #: matplotlib.projections.ProjectionRegistry:1 of
 msgid "Bases: :py:class:`object`"
@@ -88,27 +88,27 @@ msgstr "Bases: :py:class:`object`"
 
 #: matplotlib.projections.ProjectionRegistry:2 of
 msgid "A mapping of registered projection names to projection classes."
-msgstr ""
+msgstr "Mapeo de nombres de proyección registrados para clases de proyección."
 
 #: matplotlib.projections.ProjectionRegistry.get_projection_class:2 of
 msgid "Get a projection class from its *name*."
-msgstr ""
+msgstr "Obtener una clase de proyección de su *nombre*."
 
 #: matplotlib.projections.ProjectionRegistry.get_projection_names:2 of
 msgid "Return the names of all projections currently registered."
-msgstr ""
+msgstr "Devuelve los nombres de todas las proyecciones registradas actualmente."
 
 #: matplotlib.projections.ProjectionRegistry.register:2 of
 msgid "Register a new set of projections."
-msgstr ""
+msgstr "Registrar un nuevo conjunto de proyecciones."
 
 #: matplotlib.projections.get_projection_class:2 of
 msgid "Get a projection class from its name."
-msgstr ""
+msgstr "Obtener una clase de proyección de su nombre."
 
 #: matplotlib.projections.get_projection_class:4 of
 msgid "If *projection* is None, a standard rectilinear projection is returned."
-msgstr ""
+msgstr "Si la *proyección* no es Ninguna, se devuelve una proyección rectilineal estándar."
 
 #: ../../api/projections_api.rst:10
 msgid "``matplotlib.projections.polar``"
@@ -121,7 +121,7 @@ msgstr "Bases: :py:class:`matplotlib.transforms.Transform`"
 
 #: matplotlib.projections.polar.InvertedPolarTransform:2 of
 msgid "The inverse of the polar transform, mapping Cartesian coordinate space *x* and *y* back to *theta* and *r*."
-msgstr ""
+msgstr "La inversa de la transformación polar, mapeando el espacio de coordenadas Cartesianas *x* y *y* de vuelta a *theta* y *r*."
 
 #: matplotlib.projections.geo.AitoffAxes
 #: matplotlib.projections.geo.AitoffAxes.AitoffTransform.transform_non_affine
@@ -429,11 +429,11 @@ msgstr "Bases: :py:class:`matplotlib.transforms.Affine2DBase`"
 
 #: matplotlib.projections.polar.PolarAffine:2 of
 msgid "The affine part of the polar projection.  Scales the output so that maximum radius rests on the edge of the axes circle."
-msgstr ""
+msgstr "La parte afectada de la proyección polar. Escala la salida para que el radio máximo se repose en el borde del círculo de los ejes."
 
 #: matplotlib.projections.polar.PolarAffine:24 of
 msgid "*limits* is the view limit of the data.  The only part of its bounds that is used is the y limits (for the radius limits). The theta range is handled by the non-affine transform."
-msgstr ""
+msgstr "*limites* es el límite de vista de los datos. La única parte de sus límites que se utilizan son los límites y (para los límites del radio). El rango theta es manejado por la transforma no afectada."
 
 #: matplotlib.projections.polar.PolarAffine.get_matrix:2 of
 msgid "Get the matrix for the affine part of this transform."
@@ -446,11 +446,11 @@ msgstr "Bases: :py:class:`matplotlib.axes._axes.Axes`"
 
 #: matplotlib.projections.polar.PolarAxes:2 of
 msgid "A polar graph projection, where the input dimensions are *theta*, *r*."
-msgstr ""
+msgstr "Una proyección de gráfica polar, donde las dimensiones de entrada son *theta*, *r*."
 
 #: matplotlib.projections.polar.PolarAxes:4 of
 msgid "Theta starts pointing east and goes anti-clockwise."
-msgstr ""
+msgstr "Theta comienza a apuntar hacia el este y va en dirección a las agujas del reloj."
 
 #: matplotlib.projections.geo.AitoffAxes:2
 #: matplotlib.projections.geo.GeoAxes:23
@@ -459,7 +459,7 @@ msgstr ""
 #: matplotlib.projections.geo.MollweideAxes:2
 #: matplotlib.projections.polar.PolarAxes:24 of
 msgid "Build an Axes in a figure."
-msgstr ""
+msgstr "Construye un hacha en una figura."
 
 #: matplotlib.projections.geo.AitoffAxes:8
 #: matplotlib.projections.geo.GeoAxes:29
@@ -486,7 +486,7 @@ msgstr "Figura"
 #: matplotlib.projections.geo.MollweideAxes:8
 #: matplotlib.projections.polar.PolarAxes:30 of
 msgid "The Axes is built in the `.Figure` *fig*."
-msgstr ""
+msgstr "Los ejes están construidos en el `.Figure` *figura*."
 
 #: matplotlib.projections.geo.AitoffAxes:12
 #: matplotlib.projections.geo.GeoAxes:33
@@ -499,7 +499,7 @@ msgstr "**rect**"
 
 #: of
 msgid "[left, bottom, width, height]"
-msgstr ""
+msgstr "[izquierda, inferior, anchura, altura]"
 
 #: matplotlib.projections.geo.AitoffAxes:11
 #: matplotlib.projections.geo.GeoAxes:32
@@ -508,7 +508,7 @@ msgstr ""
 #: matplotlib.projections.geo.MollweideAxes:11
 #: matplotlib.projections.polar.PolarAxes:33 of
 msgid "The Axes is built in the rectangle *rect*. *rect* is in `.Figure` coordinates."
-msgstr ""
+msgstr "Los ejes están construidos en el rectángulo *rect*. *rect* está en coordenadas `.Figure`."
 
 #: matplotlib.projections.geo.AitoffAxes:16
 #: matplotlib.projections.geo.GeoAxes:37
@@ -517,7 +517,7 @@ msgstr ""
 #: matplotlib.projections.geo.MollweideAxes:16
 #: matplotlib.projections.polar.PolarAxes:38 of
 msgid "**sharex, sharey** : `~.axes.Axes`, optional"
-msgstr ""
+msgstr "**sharex, compartir** : `~.axes.Axes`, opcional"
 
 #: matplotlib.projections.geo.AitoffAxes:15
 #: matplotlib.projections.geo.GeoAxes:36
@@ -526,7 +526,7 @@ msgstr ""
 #: matplotlib.projections.geo.MollweideAxes:15
 #: matplotlib.projections.polar.PolarAxes:37 of
 msgid "Axes, optional"
-msgstr ""
+msgstr "Ejes, opcional"
 
 #: matplotlib.projections.geo.AitoffAxes:15
 #: matplotlib.projections.geo.GeoAxes:36
@@ -2371,63 +2371,63 @@ msgstr ":obj:`.Axis.get_ticklabels`"
 
 #: matplotlib.projections.polar.PolarAxes.set_rlabel_position:2 of
 msgid "Update the theta position of the radius labels."
-msgstr ""
+msgstr "Actualiza la posición theta de las etiquetas del radio."
 
 #: matplotlib.projections.polar.PolarAxes.set_rlabel_position:21 of
 msgid "**value**"
-msgstr ""
+msgstr "**valor**"
 
 #: matplotlib.projections.polar.PolarAxes.set_rlim:2 of
 msgid "See `~.polar.PolarAxes.set_ylim`."
-msgstr ""
+msgstr "Vea `~.polar.PolarAxes.set_ylim`."
 
 #: matplotlib.projections.polar.PolarAxes.set_rmax:2 of
 msgid "Set the outer radial limit."
-msgstr ""
+msgstr "Establecer el límite radial exterior."
 
 #: matplotlib.projections.polar.PolarAxes.set_rmax:21 of
 msgid "**rmax**"
-msgstr ""
+msgstr "**rmax**"
 
 #: matplotlib.projections.polar.PolarAxes.set_rmin:2 of
 msgid "Set the inner radial limit."
-msgstr ""
+msgstr "Establecer el límite radial interior."
 
 #: matplotlib.projections.polar.PolarAxes.set_rmin:21 of
 msgid "**rmin**"
-msgstr ""
+msgstr "**rmin**"
 
 #: matplotlib.projections.polar.PolarAxes.set_rorigin:2 of
 msgid "Update the radial origin."
-msgstr ""
+msgstr "Actualizar el origen radial."
 
 #: matplotlib.projections.polar.PolarAxes.set_rorigin:21 of
 msgid "**rorigin**"
-msgstr ""
+msgstr "**rorigine**"
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_direction:2 of
 msgid "Set the direction in which theta increases."
-msgstr ""
+msgstr "Establecer la dirección en la que aumenta la theta."
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_direction:5 of
 msgid "clockwise, -1:"
-msgstr ""
+msgstr "clockwise, -1:"
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_direction:22 of
 msgid "counterclockwise, anticlockwise, 1:"
-msgstr ""
+msgstr "en sentido contrario a las relojes, 1:"
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_offset:2 of
 msgid "Set the offset for the location of 0 in radians."
-msgstr ""
+msgstr "Establece el desplazamiento para la ubicación de 0 en radianes."
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:2 of
 msgid "Set the location of theta's zero."
-msgstr ""
+msgstr "Establece la ubicación del cero de theta."
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:4 of
 msgid "This simply calls `set_theta_offset` with the correct value in radians."
-msgstr ""
+msgstr "Esto simplemente llama a `set_theta_offset` con el valor correcto en radianes."
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:9 of
 msgid "**loc**"
@@ -2435,7 +2435,7 @@ msgstr "**loc**"
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:9 of
 msgid "May be one of \"N\", \"NW\", \"W\", \"SW\", \"S\", \"SE\", \"E\", or \"NE\"."
-msgstr ""
+msgstr "Puede ser uno de \"N\", \"NW\", \"W\", \"SW\", \"S\", \"SE\", \"E\", o \"NE\"."
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:27 of
 msgid "**offset**"
@@ -2447,11 +2447,11 @@ msgstr "float, default: 0"
 
 #: matplotlib.projections.polar.PolarAxes.set_theta_zero_location:12 of
 msgid "An offset in degrees to apply from the specified *loc*. **Note:** this offset is *always* applied counter-clockwise regardless of the direction setting."
-msgstr ""
+msgstr "Un desplazamiento en grados a aplicar desde el *loc* especificado. **Nota:** este desplazamiento es *siempre* aplicado en sentido contrario al reloj independientemente de la configuración de dirección."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetagrids:2 of
 msgid "Set the theta gridlines in a polar plot."
-msgstr ""
+msgstr "Establece las líneas de cuadrícula theta en una parcela polar."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetagrids:8 of
 msgid "**angles**"
@@ -2459,104 +2459,104 @@ msgstr "**Ángulos**"
 
 #: matplotlib.projections.polar.PolarAxes.set_thetagrids:8 of
 msgid "The angles of the theta gridlines."
-msgstr ""
+msgstr "Los ángulos de las cuadrícula theta."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetagrids:11 of
 msgid "The labels to use at each theta gridline. The `.projections.polar.ThetaFormatter` will be used if None."
-msgstr ""
+msgstr "Las etiquetas a usar en cada línea de gridline theta. El `.projections.polar.ThetaFormatter` se utilizará si Ninguno."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetagrids:15 of
 #, python-format
 msgid "Format string used in `matplotlib.ticker.FormatStrFormatter`. For example '%f'. Note that the angle that is used is in radians."
-msgstr ""
+msgstr "Cadena de formato usada en `matplotlib.ticker.FormatStrFormatter`. Por ejemplo '%f'. Tenga en cuenta que el ángulo que se utiliza está en radianes."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetagrids:22 of
 msgid "The theta gridlines."
-msgstr ""
+msgstr "Las cuadrícula theta."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetagrids:40 of
 msgid ":obj:`.PolarAxes.set_rgrids`"
-msgstr ""
+msgstr ":obj:`.PolarAxes.set_rgrids`"
 
 #: matplotlib.projections.polar.PolarAxes.set_thetalim:2 of
 msgid "Set the minimum and maximum theta values."
-msgstr ""
+msgstr "Establece los valores mínimos y máximos de theta."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetalim:4 of
 msgid "Can take the following signatures:"
-msgstr ""
+msgstr "Puede tomar las siguientes firmas:"
 
 #: matplotlib.projections.polar.PolarAxes.set_thetalim:6 of
 msgid "``set_thetalim(minval, maxval)``: Set the limits in radians."
-msgstr ""
+msgstr "``set_thetalim(minval, maxval)``: Establecer los límites en radianes."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetalim:7 of
 msgid "``set_thetalim(thetamin=minval, thetamax=maxval)``: Set the limits in degrees."
-msgstr ""
+msgstr "``set_thetalim(thetamin=minval, thetamax=maxval)``: Establecer los límites en grados."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetalim:10 of
 msgid "where minval and maxval are the minimum and maximum limits. Values are wrapped in to the range :math:`[0, 2\\pi]` (in radians), so for example it is possible to do ``set_thetalim(-np.pi / 2, np.pi / 2)`` to have an axes symmetric around 0. A ValueError is raised if the absolute angle difference is larger than a full circle."
-msgstr ""
+msgstr "donde minval y maxval son los límites mínimos y máximos. Los valores están envueltos en el rango :math:`[0, 2\\pi]` (en radianes), por lo que es posible hacer ``set_thetalim(-np. i / 2, np.pi / 2)`` para tener un ejes simétricos alrededor de 0. Se eleva un ValueError si la diferencia de ángulo absoluto es mayor que un círculo completo."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetamax:2 of
 msgid "Set the maximum theta limit in degrees."
-msgstr ""
+msgstr "Establecer el límite máximo de theta en grados."
 
 #: matplotlib.projections.polar.PolarAxes.set_thetamin:2 of
 msgid "Set the minimum theta limit in degrees."
-msgstr ""
+msgstr "Establecer el límite mínimo de theta en grados."
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:2 of
 msgid "Set the data limits for the radial axis."
-msgstr ""
+msgstr "Define los límites de datos para el eje radial."
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:12 of
 msgid "**bottom**"
-msgstr ""
+msgstr "**inferior**"
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:8 of
 msgid "The bottom limit (default: None, which leaves the bottom limit unchanged). The bottom and top ylims may be passed as the tuple (*bottom*, *top*) as the first positional argument (or as the *bottom* keyword argument)."
-msgstr ""
+msgstr "El límite inferior (por defecto: Ninguno, que deja el límite inferior sin cambios). El ylims inferior y superior puede ser pasado como la tupla (*inferior*, *superior*) como el primer argumento posicional (o como el argumento de palabra clave *inferior*)."
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:16 of
 msgid "**top**"
-msgstr ""
+msgstr "**arriba**"
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:15 of
 msgid "The top limit (default: None, which leaves the top limit unchanged)."
-msgstr ""
+msgstr "El límite superior (por defecto: Ninguno, que deja el límite superior sin cambios)."
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:19 of
 msgid "**emit**"
-msgstr ""
+msgstr "**Emisión**"
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:19 of
 msgid "Whether to notify observers of limit change."
-msgstr ""
+msgstr "Si notificar o no a los observadores el cambio de límite."
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:23 of
 msgid "**auto**"
-msgstr ""
+msgstr "**auto**"
 
 #: of
 msgid "bool or None, default: False"
-msgstr ""
+msgstr "libro o ninguno, por defecto: False"
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:22 of
 msgid "Whether to turn on autoscaling of the y-axis. True turns on, False turns off, None leaves unchanged."
-msgstr ""
+msgstr "Si se activa la auto-escala del eje y. Verdadero se enciende, False se apaga, Ninguno deja sin cambios."
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:29 of
 msgid "**ymin, ymax**"
-msgstr ""
+msgstr "**ymin, ymax**"
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:26 of
 msgid "These arguments are deprecated and will be removed in a future version.  They are equivalent to *bottom* and *top* respectively, and it is an error to pass both *ymin* and *bottom* or *ymax* and *top*."
-msgstr ""
+msgstr "Estos argumentos están obsoletos y serán eliminados en una versión futura. Son equivalentes a *abajo* y *arriba* respectivamente, y es un error pasar tanto *ymin* como *abajo* o *ymax* y *arriba*."
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:46 of
 msgid "**bottom, top**"
-msgstr ""
+msgstr "**abajo, arriba**"
 
 #: of
 msgid "(float, float)"
@@ -2564,12 +2564,12 @@ msgstr "(float, float)"
 
 #: matplotlib.projections.polar.PolarAxes.set_ylim:34 of
 msgid "The new y-axis limits in data coordinates."
-msgstr ""
+msgstr "Los nuevos límites del eje Y en las coordenadas de datos."
 
 #: matplotlib.projections.geo.GeoAxes.set_yscale:2
 #: matplotlib.projections.polar.PolarAxes.set_yscale:2 of
 msgid "Set the y-axis scale."
-msgstr ""
+msgstr "Define la escala del eje y."
 
 #: matplotlib.projections.geo.GeoAxes.set_yscale:8
 #: matplotlib.projections.polar.PolarAxes.set_yscale:8 of
@@ -2801,23 +2801,23 @@ msgstr "lista de flotantes"
 
 #: matplotlib.artist.RadialAxis.set:42 of
 msgid ":meth:`ticks_position <matplotlib.axis.YAxis.set_ticks_position>`"
-msgstr ""
+msgstr ":meth:`ticks_position <matplotlib.axis.YAxis.set_ticks_position>`"
 
 #: matplotlib.artist.RadialAxis.set:42 of
 msgid "{'left', 'right', 'both', 'default', 'none'}"
-msgstr ""
+msgstr "{'left', 'right', 'ambos', 'default', 'ninguno '}"
 
 #: matplotlib.artist.RadialAxis.set:44 matplotlib.artist.ThetaAxis.set:43 of
 msgid ":meth:`units <matplotlib.axis.Axis.set_units>`"
-msgstr ""
+msgstr ":meth:`unidades <matplotlib.axis.Axis.set_units>`"
 
 #: matplotlib.artist.RadialAxis.set:44 matplotlib.artist.ThetaAxis.set:43 of
 msgid "units tag"
-msgstr ""
+msgstr "etiqueta unidades"
 
 #: matplotlib.artist.RadialAxis.set:46 matplotlib.artist.ThetaAxis.set:45 of
 msgid ":meth:`view_interval <matplotlib.axis.Axis.set_view_interval>`"
-msgstr ""
+msgstr ":meth:`view_intervalo <matplotlib.axis.Axis.set_view_interval>`"
 
 #: matplotlib.projections.polar.RadialTick:1 of
 msgid "Bases: :py:class:`matplotlib.axis.YTick`"
@@ -2825,16 +2825,16 @@ msgstr "Bases: :py:class:`matplotlib.axis.YTick`"
 
 #: matplotlib.projections.polar.RadialTick:2 of
 msgid "A radial-axis tick."
-msgstr ""
+msgstr "Un tick de eje radial."
 
 #: matplotlib.projections.polar.RadialTick:4 of
 msgid "This subclass of `.YTick` provides radial ticks with some small modification to their re-positioning such that ticks are rotated based on axes limits.  This results in ticks that are correctly perpendicular to the spine. Labels are also rotated to be perpendicular to the spine, when 'auto' rotation is enabled."
-msgstr ""
+msgstr "Esta subclase de `.YTick` proporciona a los ticks radiales algunas pequeñas modificaciones a su reposicionamiento de tal manera que los ticks se roten basándose en los límites de los ejes. Esto da lugar a ticks que son correctamente perpendiculares a la columna vertebral. Las etiquetas también se rotan para ser perpendiculares a la columna vertebral, cuando la rotación 'auto' está habilitada."
 
 #: matplotlib.projections.polar.RadialTick:28
 #: matplotlib.projections.polar.ThetaTick:31 of
 msgid "bbox is the Bound2D bounding box in display coords of the Axes loc is the tick location in data coords size is the tick size in points"
-msgstr ""
+msgstr "bbox es la casilla límite 2D en coordenadas de visualización del loc de ejes es la ubicación de marca en el tamaño de coordenadas de datos es el tamaño de marca en puntos"
 
 #: matplotlib.artist.RadialTick.set:21 matplotlib.artist.ThetaTick.set:21 of
 msgid ":meth:`label <matplotlib.axis.Tick.set_label1>`"
@@ -2842,15 +2842,15 @@ msgstr ":meth:`label <matplotlib.axis.Tick.set_label1>`"
 
 #: matplotlib.artist.RadialTick.set:22 matplotlib.artist.ThetaTick.set:22 of
 msgid ":meth:`label1 <matplotlib.axis.Tick.set_label1>`"
-msgstr ""
+msgstr ":meth:`etiqueta1 <matplotlib.axis.Tick.set_label1>`"
 
 #: matplotlib.artist.RadialTick.set:23 matplotlib.artist.ThetaTick.set:23 of
 msgid ":meth:`label2 <matplotlib.axis.Tick.set_label2>`"
-msgstr ""
+msgstr ":meth:`etiqueta2 <matplotlib.axis.Tick.set_label2>`"
 
 #: matplotlib.artist.RadialTick.set:24 matplotlib.artist.ThetaTick.set:24 of
 msgid ":meth:`pad <matplotlib.axis.Tick.set_pad>`"
-msgstr ""
+msgstr ":meth:`pad <matplotlib.axis.Tick.set_pad>`"
 
 #: matplotlib.artist.RadialTick.set:31 matplotlib.artist.ThetaTick.set:31 of
 msgid ":meth:`url <matplotlib.axis.Tick.set_url>`"
@@ -2859,7 +2859,7 @@ msgstr ":meth:`url <matplotlib.axis.Tick.set_url>`"
 #: matplotlib.projections.polar.RadialTick.update_position:2
 #: matplotlib.projections.polar.ThetaTick.update_position:2 of
 msgid "Set the location of tick in data coords with scalar *loc*."
-msgstr ""
+msgstr "Establezca la ubicación de tick en coordenadas de datos con escalar *loc*."
 
 #: matplotlib.projections.polar.ThetaAxis:1 of
 msgid "Bases: :py:class:`matplotlib.axis.XAxis`"
@@ -2867,11 +2867,11 @@ msgstr "Bases: :py:class:`matplotlib.axis.XAxis`"
 
 #: matplotlib.projections.polar.ThetaAxis:2 of
 msgid "A theta Axis."
-msgstr ""
+msgstr "A theta Axis."
 
 #: matplotlib.projections.polar.ThetaAxis:4 of
 msgid "This overrides certain properties of an `.XAxis` to provide special-casing for an angular axis."
-msgstr ""
+msgstr "Esto anula ciertas propiedades de un `.XAxis` para proporcionar recuadro especial para un eje angular."
 
 #: matplotlib.artist.ThetaAxis.set:25 of
 msgid ":meth:`label_position <matplotlib.axis.XAxis.set_label_position>`"
@@ -2879,15 +2879,15 @@ msgstr ":meth:`label_position <matplotlib.axis.XAxis.set_label_position>`"
 
 #: matplotlib.artist.ThetaAxis.set:25 of
 msgid "{'top', 'bottom'}"
-msgstr ""
+msgstr "{'top', 'bottom'}"
 
 #: matplotlib.artist.ThetaAxis.set:41 of
 msgid ":meth:`ticks_position <matplotlib.axis.XAxis.set_ticks_position>`"
-msgstr ""
+msgstr ":meth:`ticks_position <matplotlib.axis.XAxis.set_ticks_position>`"
 
 #: matplotlib.artist.ThetaAxis.set:41 of
 msgid "{'top', 'bottom', 'both', 'default', 'none'}"
-msgstr ""
+msgstr "{'top', 'bottom', 'ambos', 'default', 'ninguno '}"
 
 #: matplotlib.projections.polar.ThetaTick:1 of
 msgid "Bases: :py:class:`matplotlib.axis.XTick`"
@@ -2895,19 +2895,19 @@ msgstr "Bases: :py:class:`matplotlib.axis.XTick`"
 
 #: matplotlib.projections.polar.ThetaTick:2 of
 msgid "A theta-axis tick."
-msgstr ""
+msgstr "Un tick del eje del teta."
 
 #: matplotlib.projections.polar.ThetaTick:4 of
 msgid "This subclass of `.XTick` provides angular ticks with some small modification to their re-positioning such that ticks are rotated based on tick location. This results in ticks that are correctly perpendicular to the arc spine."
-msgstr ""
+msgstr "Esta subclase de `.XTick` proporciona ticks angulares con algunas pequeñas modificaciones a su reposicionamiento de tal manera que los ticks se rotan basándose en la ubicación de tick. Esto resulta en ticks que son correctamente perpendiculares a la espina del arco."
 
 #: matplotlib.projections.polar.ThetaTick:9 of
 msgid "When 'auto' rotation is enabled, labels are also rotated to be parallel to the spine. The label padding is also applied here since it's not possible to use a generic axes transform to produce tick-specific padding."
-msgstr ""
+msgstr "Cuando la rotación 'auto' está activada, las etiquetas también se rotan para ser paralelas a la columna vertebral. El relleno de la etiqueta también se aplica aquí ya que no es posible utilizar un eje genérico transformado para producir relleno específico."
 
 #: ../../api/projections_api.rst:17
 msgid "``matplotlib.projections.geo``"
-msgstr ""
+msgstr "``matplotlib.prosections.geo``"
 
 #: matplotlib.projections.geo.AitoffAxes:1
 #: matplotlib.projections.geo.HammerAxes:1
@@ -2929,7 +2929,7 @@ msgstr "Bases: :py:class:`matplotlib.projections.geo._GeoTransform`"
 
 #: matplotlib.projections.geo.AitoffAxes.AitoffTransform:2 of
 msgid "The base Aitoff transform."
-msgstr ""
+msgstr "La transforma base de Aitoff."
 
 #: matplotlib.projections.geo.AitoffAxes.AitoffTransform:23
 #: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform:2
@@ -2939,7 +2939,7 @@ msgstr ""
 #: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform:2
 #: matplotlib.projections.geo.MollweideAxes.MollweideTransform:23 of
 msgid "Create a new geographical transform."
-msgstr ""
+msgstr "Crear una nueva transforma geográfica."
 
 #: matplotlib.projections.geo.AitoffAxes.AitoffTransform:25
 #: matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform:4
@@ -2949,25 +2949,25 @@ msgstr ""
 #: matplotlib.projections.geo.MollweideAxes.InvertedMollweideTransform:4
 #: matplotlib.projections.geo.MollweideAxes.MollweideTransform:25 of
 msgid "Resolution is the number of steps to interpolate between each input line segment to approximate its path in curved space."
-msgstr ""
+msgstr "La resolución es el número de pasos para interpolar entre cada segmento de línea de entrada para aproximar su trayectoria en espacio curvado."
 
 #: matplotlib.artist.AitoffAxes.set:33 matplotlib.artist.GeoAxes.set:33
 #: matplotlib.artist.HammerAxes.set:33 matplotlib.artist.LambertAxes.set:33
 #: matplotlib.artist.MollweideAxes.set:33 of
 msgid ":meth:`latitude_grid <matplotlib.projections.geo.GeoAxes.set_latitude_grid>`"
-msgstr ""
+msgstr ":meth:`latitude_grid <matplotlib.projections.geo.GeoAxes.set_latitude_grid>`"
 
 #: matplotlib.artist.AitoffAxes.set:34 matplotlib.artist.GeoAxes.set:34
 #: matplotlib.artist.HammerAxes.set:34 matplotlib.artist.LambertAxes.set:34
 #: matplotlib.artist.MollweideAxes.set:34 of
 msgid ":meth:`longitude_grid <matplotlib.projections.geo.GeoAxes.set_longitude_grid>`"
-msgstr ""
+msgstr ":meth:`longitude_grid <matplotlib.projections.geo.GeoAxes.set_longitude_grid>`"
 
 #: matplotlib.artist.AitoffAxes.set:35 matplotlib.artist.GeoAxes.set:35
 #: matplotlib.artist.HammerAxes.set:35 matplotlib.artist.LambertAxes.set:35
 #: matplotlib.artist.MollweideAxes.set:35 of
 msgid ":meth:`longitude_grid_ends <matplotlib.projections.geo.GeoAxes.set_longitude_grid_ends>`"
-msgstr ""
+msgstr ":meth:`longitude_grid_ends <matplotlib.projections.geo.GeoAxes.set_longitude_grid_ends>`"
 
 #: matplotlib.artist.AitoffAxes.set:52 matplotlib.artist.GeoAxes.set:52
 #: matplotlib.artist.HammerAxes.set:52 matplotlib.artist.LambertAxes.set:52
@@ -2983,55 +2983,55 @@ msgstr ":meth:`ylim <matplotlib.projections.geo.GeoAxes.set_xlim>`"
 
 #: matplotlib.projections.geo.GeoAxes:2 of
 msgid "An abstract base class for geographic projections."
-msgstr ""
+msgstr "Una clase base abstracta para proyecciones geográficas."
 
 #: matplotlib.projections.geo.GeoAxes.ThetaFormatter:2 of
 msgid "Used to format the theta tick labels.  Converts the native unit of radians into degrees and adds a degree symbol."
-msgstr ""
+msgstr "Utilizado para formatear las etiquetas de tick theta. Convierte la unidad nativa de radianes en grados y añade un símbolo de grado."
 
 #: matplotlib.projections.geo.GeoAxes.can_pan:4 of
 msgid "This axes object does not support interactive pan/zoom."
-msgstr ""
+msgstr "Este objeto de ejes no soporta pan/zoom interactivo."
 
 #: matplotlib.projections.geo.GeoAxes.can_zoom:4 of
 msgid "This axes object does not support interactive zoom box."
-msgstr ""
+msgstr "Este objeto de ejes no soporta la caja de zoom interactiva."
 
 #: matplotlib.projections.geo.GeoAxes.format_coord:2 of
 msgid "Return a format string formatting the coordinate."
-msgstr ""
+msgstr "Devuelve una cadena de formato que formatee la coordenada."
 
 #: matplotlib.projections.geo.GeoAxes.get_data_ratio:2 of
 msgid "Return the aspect ratio of the data itself."
-msgstr ""
+msgstr "Devuelve la relación de aspecto de los datos en sí."
 
 #: matplotlib.projections.geo.GeoAxes.set_latitude_grid:2 of
 msgid "Set the number of degrees between each latitude grid."
-msgstr ""
+msgstr "Establece el número de grados entre cada cuadrícula de latitud."
 
 #: matplotlib.projections.geo.GeoAxes.set_longitude_grid:2 of
 msgid "Set the number of degrees between each longitude grid."
-msgstr ""
+msgstr "Establece el número de grados entre cada cuadrícula de longitud."
 
 #: matplotlib.projections.geo.GeoAxes.set_longitude_grid_ends:2 of
 msgid "Set the latitude(s) at which to stop drawing the longitude grids."
-msgstr ""
+msgstr "Establece la(s) latitud(s) en las que dejar de dibujar las rejillas de longitud."
 
 #: matplotlib.projections.geo.GeoAxes.set_xlim:2 of
 msgid "Not supported. Please consider using Cartopy."
-msgstr ""
+msgstr "No soportado. Por favor considere el uso de Cartopy."
 
 #: matplotlib.projections.geo.GeoAxes.set_yscale:2 of
 msgid "Set the x-axis scale."
-msgstr ""
+msgstr "Define la escala del eje x."
 
 #: matplotlib.projections.geo.HammerAxes.HammerTransform:2 of
 msgid "The base Hammer transform."
-msgstr ""
+msgstr "La transforma de martillo base."
 
 #: matplotlib.projections.geo.LambertAxes.LambertTransform:2 of
 msgid "The base Lambert transform."
-msgstr ""
+msgstr "La base Lambert transforman."
 
 #: matplotlib.projections.geo.LambertAxes.LambertTransform:23 of
 msgid "Create a new Lambert transform.  Resolution is the number of steps to interpolate between each input line segment to approximate its path in curved Lambert space."

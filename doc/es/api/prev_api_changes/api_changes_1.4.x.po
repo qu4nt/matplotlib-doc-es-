@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:22\n"
+"PO-Revision-Date: 2022-11-02 14:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,257 +20,257 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:2
 msgid "API Changes in 1.4.x"
-msgstr ""
+msgstr "Cambios de API en 1.4.x"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:5
 msgid "Code changes"
-msgstr ""
+msgstr "Cambios de código"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:7
 msgid "A major refactoring of the axes module was made. The axes module has been split into smaller modules:"
-msgstr ""
+msgstr "Se ha hecho una importante refactorización del módulo de ejes. El módulo de ejes se ha dividido en módulos más pequeños:"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:10
 msgid "the ``_base`` module, which contains a new private ``_AxesBase`` class. This class contains all methods except plotting and labelling methods."
-msgstr ""
+msgstr "el módulo ``_base``, que contiene una nueva clase privada ``_AxesBase``. Esta clase contiene todos los métodos excepto los métodos de trazado y etiquetado."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:12
 msgid "the `~matplotlib.axes` module, which contains the `.axes.Axes` class. This class inherits from ``_AxesBase``, and contains all plotting and labelling methods."
-msgstr ""
+msgstr "el módulo `~matplotlib.axes`, que contiene la clase `.axes.Axes`. Esta clase hereda de ``_AxesBase``, y contiene todos los métodos de trazado y etiquetado."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:15
 msgid "the ``_subplot`` module, with all the classes concerning subplotting."
-msgstr ""
+msgstr "el módulo ``_subplot``, con todas las clases relativas a la subplotting."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:17
 msgid "There are a couple of things that do not exists in the `~matplotlib.axes` module's namespace anymore. If you use them, you need to import them from their original location:"
-msgstr ""
+msgstr "Hay un par de cosas que ya no existen en el espacio de nombres del módulo `~matplotlib.axes`. Si los usa, necesita importarlos desde su ubicación original:"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:21
 msgid "``math`` -> ``import math``"
-msgstr ""
+msgstr "``math`` -> ``importar math``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:22
 msgid "``ma`` -> ``from numpy import ma``"
-msgstr ""
+msgstr "``ma`` -> ``de importación numpy ma``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:23
 msgid "``cbook`` -> ``from matplotlib import cbook``"
-msgstr ""
+msgstr "``cbook`` -> ``from matplotlib import cbook``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:24
 msgid "``docstring`` -> ``from matplotlib import docstring``"
-msgstr ""
+msgstr "``docstring`` -> ``desde matplotlib import docstring``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:25
 msgid "``is_sequence_of_strings`` -> ``from matplotlib.cbook import is_sequence_of_strings``"
-msgstr ""
+msgstr "``is_sequence_of_strings`` -> ``desde matplotlib.cbook import is_sequence_of_strings``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:26
 msgid "``is_string_like`` -> ``from matplotlib.cbook import is_string_like``"
-msgstr ""
+msgstr "``is_string_like`` -> ``desde matplotlib.cbook import is_string_like``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:27
 msgid "``iterable`` -> ``from matplotlib.cbook import iterable``"
-msgstr ""
+msgstr "``iterable`` -> ``desde matplotlib.cbook importar iterable``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:28
 msgid "``itertools`` -> ``import itertools``"
-msgstr ""
+msgstr "``itertools`` -> ``importar itertools``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:29
 msgid "``martist`` -> ``from matplotlib import artist as martist``"
-msgstr ""
+msgstr "``martist`` -> ``desde matplotlib importar artista como martist``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:30
 msgid "``matplotlib`` -> ``import matplotlib``"
-msgstr ""
+msgstr "``matplotlib`` -> ``import matplotlib``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:31
 msgid "``mcoll`` -> ``from matplotlib import collections as mcoll``"
-msgstr ""
+msgstr "``mcoll`` -> ``de matplotlib importar colecciones como mcoll``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:32
 msgid "``mcolors`` -> ``from matplotlib import colors as mcolors``"
-msgstr ""
+msgstr "``mcolors`` -> ``desde matplotlib importar colores como mcolors``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:33
 msgid "``mcontour`` -> ``from matplotlib import contour as mcontour``"
-msgstr ""
+msgstr "``mcontour`` -> ``desde el contorno de importación de matplotlib como mcontour``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:34
 msgid "``mpatches`` -> ``from matplotlib import patches as mpatches``"
-msgstr ""
+msgstr "``mpatches`` -> ``de matplotlib importar parches como mpatches``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:35
 msgid "``mpath`` -> ``from matplotlib import path as mpath``"
-msgstr ""
+msgstr "``mpath`` -> ``de matplotlib importar ruta como mpath``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:36
 msgid "``mquiver`` -> ``from matplotlib import quiver as mquiver``"
-msgstr ""
+msgstr "``mquiver`` -> ``de matplotlib importar quiver como mquiver``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:37
 msgid "``mstack`` -> ``from matplotlib import stack as mstack``"
-msgstr ""
+msgstr "``mstack`` -> ``de matplotlib import stack como mstack``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:38
 msgid "``mstream`` -> ``from matplotlib import stream as mstream``"
-msgstr ""
+msgstr "``mstream`` -> ``desde matplotlib import stream como mstream``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:39
 msgid "``mtable`` -> ``from matplotlib import table as mtable``"
-msgstr ""
+msgstr "``mtable`` -> ``from matplotlib import table as mtable``"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:41
 msgid "As part of the refactoring to enable Qt5 support, the module ``matplotlib.backends.qt4_compat`` was renamed to ``matplotlib.backends.qt_compat``.  ``qt4_compat`` is deprecated in 1.4 and will be removed in 1.5."
-msgstr ""
+msgstr "Como parte de la refactorización para habilitar el soporte Qt5, el módulo ``matplotlib.backends.qt4_compat`` fue renombrado a ``matplotlib. ackends.qt_compat``. ``qt4_compat`` está obsoleto en 1.4 y será eliminado en 1.5."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:46
 msgid "The :func:`~matplotlib.pyplot.errorbar` method has been changed such that the upper and lower limits (*lolims*, *uplims*, *xlolims*, *xuplims*) now point in the correct direction."
-msgstr ""
+msgstr "El método :func:`~matplotlib.pyplot.errorbar` ha sido cambiado de tal manera que los límites superiores e inferiores (*lolims*, *uplims*, *xlolims*, *xuplims*) ahora apuntan en la dirección correcta."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:50
 msgid "The *fmt* kwarg for :func:`~matplotlib.pyplot.errorbar` now supports the string 'none' to suppress drawing of a line and markers; use of the *None* object for this is deprecated. The default *fmt* value is changed to the empty string (''), so the line and markers are governed by the :func:`~matplotlib.pyplot.plot` defaults."
-msgstr ""
+msgstr "El warg *fmt* para :func:`~matplotlib.pyplot. rrorbar` ahora soporta la cadena 'ninguno' para suprimir el dibujo de una línea y marcadores; el uso del objeto *Ninguno* para esto es obsoleto. El valor por defecto *fmt* se cambia a la cadena vacía (''), así que la línea y los marcadores se rigen por los valores predeterminados :func:`~matplotlib.pyplot.plot`."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:56
 msgid "A bug has been fixed in the path effects rendering of fonts, which now means that the font size is consistent with non-path effect fonts. See https://github.com/matplotlib/matplotlib/issues/2889 for more detail."
-msgstr ""
+msgstr "Se ha corregido un error en la representación de los efectos de la ruta de las fuentes, lo que ahora significa que el tamaño de la fuente es consistente con las fuentes que no son de efecto de ruta. Vea https://github.com/matplotlib/matplotlib/issues/2889 para más detalles."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:60
 msgid "The Sphinx extensions ``ipython_directive`` and ``ipython_console_highlighting`` have been moved to the IPython project itself.  While they remain in Matplotlib for this release, they have been deprecated.  Update your extensions in :file:`conf.py` to point to ``IPython.sphinxext.ipython_directive`` instead of ``matplotlib.sphinxext.ipython_directive``."
-msgstr ""
+msgstr "Las extensiones de Sphinx ``ipython_directive`` y ``ipython_console_highlighting`` se han movido al proyecto IPython en sí. Mientras permanecen en Matplotlib para esta versión, han sido desaprobados. Actualice sus extensiones en :file:`conf.py` para que apunte a ``IPython.sphinxext.ipython_directive`` en lugar de ``matplotlib.sphinxext.ipython_directive``."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:67
 msgid "In ``matplotlib.finance``, almost all functions have been deprecated and replaced with a pair of functions name ``*_ochl`` and ``*_ohlc``. The former is the 'open-close-high-low' order of quotes used previously in this module, and the latter is the 'open-high-low-close' order that is standard in finance."
-msgstr ""
+msgstr "En ``matplotlib.finance``, casi todas las funciones han sido obsoletas y reemplazadas por un par de funciones llamado ``*_ochl`` y ``*_ohlc``. El primero es el orden \"abierto-cerca-alto-bajo\" de las citas utilizadas anteriormente en este módulo, y el segundo es el orden \"abierto-alto-bajo\" que es estándar en las finanzas."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:73
 msgid "For consistency the ``face_alpha`` keyword to :class:`matplotlib.patheffects.SimplePatchShadow` has been deprecated in favour of the ``alpha`` keyword. Similarly, the keyword ``offset_xy`` is now named ``offset`` across all :class:`~matplotlib.patheffects.AbstractPathEffect`\\ s. ``matplotlib.patheffects._Base`` has been renamed to :class:`matplotlib.patheffects.AbstractPathEffect`. ``matplotlib.patheffect.ProxyRenderer`` has been renamed to :class:`matplotlib.patheffects.PathEffectRenderer` and is now a full RendererBase subclass."
-msgstr ""
+msgstr "Para consistencia la palabra clave ``face_alpha`` a :class:`matplotlib.patheffects.SimplePatchShadow` ha sido desaprobada a favor de la palabra clave ``alpha``. Asimismo, la palabra clave ``offset_xy`` ahora se llama ``offset`` a través de todos los :class:`~matplotlib.patheffects.AbstractPathEffect`\\ s. ``matplotlib.patheffects._Base`` ha sido renombrado a :class:`matplotlib.patheffects.AbstractPathEffect`. ``matplotlib.patheffect.ProxyRenderer`` ha sido renombrado a :class:`matplotlib.patheffects.PathEffectRendererer` y ahora es una subclase completa de RendererBase."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:83
 msgid "The artist used to draw the outline of a `.Figure.colorbar` has been changed from a `matplotlib.lines.Line2D` to `matplotlib.patches.Polygon`, thus `.colorbar.ColorbarBase.outline` is now a `matplotlib.patches.Polygon` object."
-msgstr ""
+msgstr "El artista usado para dibujar el contorno de una `.Figure.colorbar` ha sido cambiado de un `matplotlib.lines.Line2D` a `matplotlib.patches.Polygon`, así que `.colorbar.ColorbarBase.outline` ahora es un objeto `matplotlib.patches.Polygon`."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:88
 msgid "The legend handler interface has changed from a callable, to any object which implements the ``legend_artists`` method (a deprecation phase will see this interface be maintained for v1.4). See :doc:`/tutorials/intermediate/legend_guide` for further details. Further legend changes include:"
-msgstr ""
+msgstr "La interfaz del manejador de leyendas ha cambiado de una llamable, a cualquier objeto que implemente el método ``legend_artists`` (una fase de desaprobación verá que esta interfaz se mantiene para v1. ). Vea :doc:`/tutorials/intermediate/legend_guide` para más detalles. Los cambios adicionales incluyen:"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:94
 msgid "``matplotlib.axes.Axes._get_legend_handles`` now returns a generator of handles, rather than a list."
-msgstr ""
+msgstr "``matplotlib.axes.Axes._get_legend_handles`` ahora devuelve un generador de handles, en lugar de una lista."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:97
 msgid "The :func:`~matplotlib.pyplot.legend` function's *loc* positional argument has been deprecated. Use the *loc* keyword argument instead."
-msgstr ""
+msgstr "El argumento posicional *loc* de la función :func:`~matplotlib.pyplot.legend` ha sido desaprobado. Utilice el argumento de palabra clave *loc* en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:100
 msgid "The :rc:`savefig.transparent` has been added to control default transparency when saving figures."
-msgstr ""
+msgstr "El :rc:`savefig.transparent` ha sido añadido para controlar la transparencia predeterminada al guardar las figuras."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:103
 msgid "Slightly refactored the `.Annotation` family.  The text location in `.Annotation` is now entirely handled by the underlying `.Text` object so ``.set_position`` works as expected.  The attributes *xytext* and *textcoords* have been deprecated in favor of *xyann* and *anncoords* so that `.Annotation` and `.AnnotationBbox` can share a common sensibly named api for getting/setting the location of the text or box."
-msgstr ""
+msgstr "Se ha refactorizado ligeramente la familia `.Annotation`. La ubicación del texto en `.Annotation` ahora es completamente manejada por el objeto `.Text` subyacente, así que ``.set_position`` funciona como se esperaba. Los atributos *xytext* y *textcoords* han sido desaprobados a favor de *xyann* y *anncoords* para que `. nnotation` y `.AnnotationBbox` pueden compartir una api comúnmente nombrada para obtener/establecer la ubicación del texto o el cuadro."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:110
 msgid "*xyann* -> set the location of the annotation"
-msgstr ""
+msgstr "*xyann* -> establecer la ubicación de la anotación"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:111
 msgid "*xy* -> set where the arrow points to"
-msgstr ""
+msgstr "*xy* -> establecer a dónde apunta la flecha"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:112
 msgid "*anncoords* -> set the units of the annotation location"
-msgstr ""
+msgstr "*anncoords* -> establecer las unidades de la ubicación de anotación"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:113
 msgid "*xycoords* -> set the units of the point location"
-msgstr ""
+msgstr "*xycoords* -> establecer las unidades de la ubicación del punto"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:114
 msgid "``set_position()`` -> `.Annotation` only set location of annotation"
-msgstr ""
+msgstr "``set_position()`` -> `.Annotation` solo establece la ubicación de la anotación"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:116
 msgid "`matplotlib.mlab.specgram`, `matplotlib.mlab.psd`,  `matplotlib.mlab.csd`, `matplotlib.mlab.cohere`, ``matplotlib.mlab.cohere_pairs``, `matplotlib.pyplot.specgram`, `matplotlib.pyplot.psd`, `matplotlib.pyplot.csd`, and `matplotlib.pyplot.cohere` now raise ValueError where they previously raised AssertionError."
-msgstr ""
+msgstr "`matplotlib.mlab.specgram`, `matplotlib.mlab.psd`, `matplotlib.mlab.csd`, `matplotlib.mlab.cohere`, ``matplotlib.mlab.cohere_pairs``, `matplotlib.pyplot.specgram`, `matplotlib.pyplot.psd`, `matplotlib.pyplot.csd`, y `matplotlib.pyplot.cohere` ahora raise ValueError donde previamente aumentaron AssertionError."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:122
 msgid "For `matplotlib.mlab.psd`,  `matplotlib.mlab.csd`, `matplotlib.mlab.cohere`, ``matplotlib.mlab.cohere_pairs``, `matplotlib.pyplot.specgram`, `matplotlib.pyplot.psd`, `matplotlib.pyplot.csd`, and `matplotlib.pyplot.cohere`, in cases where a shape (n, 1) array is returned, this is now converted to a (n, ) array.  Previously, (n, m) arrays were averaged to an (n, ) array, but (n, 1) arrays were returned unchanged.  This change makes the dimensions consistent in both cases."
-msgstr ""
+msgstr "Para `matplotlib.mlab.psd`, `matplotlib.mlab.csd`, `matplotlib.mlab.cohere`, ``matplotlib.mlab.cohere_pairs``, `matplotlib.pyplot.specgram`, `matplotlib.pyplot.psd`, `matplotlib.pyplot.csd`, y `matplotlib.pyplot. ohere`, en los casos en que se retorna una matriz de forma (n, 1) ahora se convierte en un array (n, ). Anteriormente, (n, m) arrays eran promediados en un array (n, ), pero (n, 1) arrays fueron devueltos sin cambios. Este cambio hace que las dimensiones sean consistentes en ambos casos."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:131
 msgid "Added the :rc:`axes.formatter.useoffset` to control the default value of *useOffset* in `.ticker.ScalarFormatter`"
-msgstr ""
+msgstr "Se añadió el :rc:`axes.formatter.useoffset` para controlar el valor predeterminado de *useOffset* en `.ticker.ScalarFormatter`"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:134
 msgid "Added `.Formatter` sub-class `.StrMethodFormatter` which does the exact same thing as `.FormatStrFormatter`, but for new-style formatting strings."
-msgstr ""
+msgstr "Se añadió `.Formatter` sub-class `.StrMethodFormatter` que hace exactamente lo mismo que `.FormatStrFormatter`, pero para cadenas de formato de nuevo estilo."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:138
 msgid "Deprecated ``matplotlib.testing.image_util`` and the only function within, ``matplotlib.testing.image_util.autocontrast``. These will be removed completely in v1.5.0."
-msgstr ""
+msgstr "Obsoleto ``matplotlib.testing.image_util`` y la única función dentro de ``matplotlib.testing.image_util.autocontrast``. Se eliminarán completamente en la v1.5.0."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:142
 msgid "The ``fmt`` argument of :meth:`~matplotlib.axes.Axes.plot_date` has been changed from ``bo`` to just ``o``, so color cycling can happen by default."
-msgstr ""
+msgstr "El argumento ``fmt`` de :meth:`~matplotlib.axes.Axes.plot_date` ha sido cambiado de ``bo`` a sólo ``o``, así que el ciclo de color puede ocurrir por defecto."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:145
 msgid "Removed the class ``FigureManagerQTAgg`` and deprecated ``NavigationToolbar2QTAgg`` which will be removed in 1.5."
-msgstr ""
+msgstr "Eliminada la clase ``FigureManagerQTAgg`` y obsoleta ``NavigationToolbar2QTAgg`` que se eliminará en 1.5."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:148
 msgid "Removed formerly public (non-prefixed) attributes ``rect`` and ``drawRect`` from ``FigureCanvasQTAgg``; they were always an implementation detail of the (preserved) ``drawRectangle()`` function."
-msgstr ""
+msgstr "Se eliminaron los atributos públicos (no prefijados) ``rect`` y ``drawRect`` de ``FigureCanvasQTAgg``; siempre fueron un detalle de implementación de la función ``drawRectangle()``."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:152
 msgid "The function signatures of `.tight_bbox.adjust_bbox` and `.tight_bbox.process_figure_for_rasterizing` have been changed. A new *fixed_dpi* parameter allows for overriding the ``figure.dpi`` setting instead of trying to deduce the intended behaviour from the file format."
-msgstr ""
+msgstr "Las firmas de función de `.tight_bbox.adjust_bbox` y `.tight_bbox.process_figure_for_rasterizing` han sido cambiadas. Un nuevo parámetro *fixed_dpi* permite reemplazar la configuración ``figure.dpi`` en lugar de intentar deducir el comportamiento deseado del formato de archivo."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:157
 msgid "Added support for horizontal/vertical axes padding to `mpl_toolkits.axes_grid1.axes_grid.ImageGrid` --- argument *axes_pad* can now be tuple-like if separate axis padding is required. The original behavior is preserved."
-msgstr ""
+msgstr "Se ha añadido soporte para ejes horizontales/verticales de relleno a `mpl_toolkits.axes_grid1.axes_grid. mageGrid` --- argumento *axes_pad* ahora puede ser similar a tuple si se requiere un relleno de eje separado. El comportamiento original se conserva."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:162
 msgid "Added support for skewed transforms to `matplotlib.transforms.Affine2D`, which can be created using the `~.Affine2D.skew` and `~.Affine2D.skew_deg` methods."
-msgstr ""
+msgstr "Se añadió soporte para transformaciones sesgadas a `matplotlib.transforms.Affine2D`, que puede ser creado usando los métodos `~.Affine2D.skew` y `~.Affine2D.skew_ful."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:166
 msgid "Added clockwise parameter to control sectors direction in `.axes.Axes.pie`"
-msgstr ""
+msgstr "Se añadió un parámetro en sentido horario para controlar la dirección de los sectores en `.axes.Axes.pie`"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:168
 msgid "In `matplotlib.lines.Line2D` the *markevery* functionality has been extended. Previously an integer start-index and stride-length could be specified using either a two-element-list or a two-element-tuple.  Now this can only be done using a two-element-tuple.  If a two-element-list is used then it will be treated as NumPy fancy indexing and only the two markers corresponding to the given indexes will be shown."
-msgstr ""
+msgstr "En `matplotlib.lines.Line2D` se ha extendido la funcionalidad *markevery*. Anteriormente, se podía especificar un índice de inicio entero y un largo usando una lista de dos elementos o una tupla-dos elementos. Ahora esto sólo se puede hacer con una tupla de dos elementos. Si se utiliza una lista de dos elementos se tratará como índice de fantasía de NumPy y sólo se mostrarán los dos marcadores correspondientes a los índices dados."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:175
 msgid "Removed *prop* keyword argument from `mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar` call.  It was passed through to the base-class ``__init__`` and is only used for setting padding.  Now *fontproperties* (which is what is really used to set the font properties of `.AnchoredSizeBar`) is passed through in place of *prop*.  If *fontproperties* is not passed in, but *prop* is, then *prop* is used in place of *fontproperties*.  If both are passed in, *prop* is silently ignored."
-msgstr ""
+msgstr "Se eliminó el argumento de palabra clave *prop* de la llamada `mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar`. Fue pasado a través de la clase base ``__init__`` y solo se utiliza para configurar el repuesto. Ahora *fontproperties* (que es lo que realmente se utiliza para establecer las propiedades de la fuente de `. nchoredSizeBar`) es pasado en lugar de *prop*. Si *fontproperties* no es pasado en, pero *prop* lo es, entonces *prop* es usado en lugar de *fontproperties*. Si ambos son pasados, *prop* es ignorado silenciosamente."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:185
 msgid "The use of the index 0 in `.pyplot.subplot` and related commands is deprecated.  Due to a lack of validation, calling ``plt.subplots(2, 2, 0)`` does not raise an exception, but puts an axes in the _last_ position.  This is due to the indexing in subplot being 1-based (to mirror MATLAB) so before indexing into the `.GridSpec` object used to determine where the axes should go, 1 is subtracted off.  Passing in 0 results in passing -1 to `.GridSpec` which results in getting the last position back.  Even though this behavior is clearly wrong and not intended, we are going through a deprecation cycle in an abundance of caution that any users are exploiting this 'feature'. The use of 0 as an index will raise a warning in 1.4 and an exception in 1.5."
-msgstr ""
+msgstr "El uso del índice 0 en `.pyplot.subplot` y comandos relacionados está obsoleto. Debido a la falta de validación, llamando ``plt. ubplots(2, 2, 0)`` no levanta una excepción, pero coloca un eje en la posición _última_. Esto se debe a que el índice en subplot es 1 basado (al espejo MATLAB) así que antes de indexar en el `. ridSpec` objeto usado para determinar a dónde deben ir los ejes, 1 es restado. Pasar en 0 resulta pasar -1 a `.GridSpec` lo que resulta en recuperar la última posición. A pesar de que este comportamiento está claramente equivocado y no pretende, estamos pasando por un ciclo de desaprobación en una abundancia de precaución que cualquier usuario está explotando esta \"característica\". El uso de 0 como índice levantará una advertencia en 1.4 y una excepción en 1.5."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:198
 msgid "Clipping is now off by default on offset boxes."
-msgstr ""
+msgstr "El recorte está ahora apagado por defecto en las cajas de desplazamiento."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:200
 msgid "Matplotlib now uses a less-aggressive call to ``gc.collect(1)`` when closing figures to avoid major delays with large numbers of user objects in memory."
-msgstr ""
+msgstr "Matplotlib ahora usa una llamada menos agresiva a ``gc.collect(1)`` al cerrar cifras para evitar grandes retrasos con un gran número de objetos de usuario en la memoria."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:204
 msgid "The default clip value of *all* pie artists now defaults to ``False``."
-msgstr ""
+msgstr "El valor predeterminado del clip de *todos* los artistas de pie ahora es ``False``."
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:208
 msgid "Code removal"
-msgstr ""
+msgstr "Eliminación de código"
 
 #: ../../api/prev_api_changes/api_changes_1.4.x.rst:210
 msgid "Removed ``mlab.levypdf``.  The code raised a NumPy error (and has for a long time) and was not the standard form of the Levy distribution. ``scipy.stats.levy`` should be used instead"
-msgstr ""
+msgstr "Se eliminó ``mlab.levypdf``. El código planteó un error NumPy (y lo ha hecho durante mucho tiempo) y no era la forma estándar de la distribución Levy. ``scipy.stats.levy`` debe ser usado en su lugar"
 

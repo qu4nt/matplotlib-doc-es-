@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:44\n"
+"PO-Revision-Date: 2022-11-02 14:06\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,20 +20,20 @@ msgstr ""
 
 #: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.inset_axes.rst:2
 msgid "mpl\\_toolkits.axes\\_grid1.inset\\_locator.inset\\_axes"
-msgstr ""
+msgstr "mpl\\_toolkits.axes\\_grid1.inset\\_locator.inset\\_ejes"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:2 of
 msgid "Create an inset axes with a given width and height."
-msgstr ""
+msgstr "Crea un eje de recubrimiento con un ancho y altura determinados."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:4 of
 msgid "Both sizes used can be specified either in inches or percentage. For example,::"
-msgstr ""
+msgstr "Ambos tamaños usados pueden especificarse en pulgadas o porcentajes. Por ejemplo,::"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:9 of
 #, python-format
 msgid "creates in inset axes in the lower left corner of *parent_axes* which spans over 30% in height and 40% in width of the *parent_axes*. Since the usage of `.inset_axes` may become slightly tricky when exceeding such standard cases, it is recommended to read :doc:`the examples </gallery/axes_grid1/inset_locator_demo>`."
-msgstr ""
+msgstr "crea en ejes de entrada en la esquina inferior izquierda de *parent_axes*, que abarca más del 30% de altura y el 40% de ancho de los *parent_axes*. Desde el uso de `. nset_axes` puede volverse un poco complicado cuando se exceden estos casos estándar, se recomienda leer :doc:`los ejemplos </gallery/axes_grid1/inset_locator_demo>`."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes of
 msgid "Parameters"
@@ -41,7 +41,7 @@ msgstr "Parámetros"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:18 of
 msgid "**parent_axes** : `matplotlib.axes.Axes`"
-msgstr ""
+msgstr "**parent_axes** : `matplotlib.axes.Axes`"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:17 of
 msgid "matplotlib.axes.Axes"
@@ -49,7 +49,7 @@ msgstr "matplotlib.axes.Axes"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:18 of
 msgid "Axes to place the inset axes."
-msgstr ""
+msgstr "Hachas para colocar los ejes de recubrimiento."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:26 of
 msgid "**width, height**"
@@ -57,11 +57,11 @@ msgstr "**width, height**"
 
 #: of
 msgid "float or str"
-msgstr ""
+msgstr "flotante o str"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:21 of
 msgid "Size of the inset axes to create. If a float is provided, it is the size in inches, e.g. *width=1.3*. If a string is provided, it is the size in relative units, e.g. *width='40%'*. By default, i.e. if neither *bbox_to_anchor* nor *bbox_transform* are specified, those are relative to the parent_axes. Otherwise they are to be understood relative to the bounding box provided via *bbox_to_anchor*."
-msgstr ""
+msgstr "Tamaño de los ejes de entrada a crear. Si se proporciona un flotante, es el tamaño en pulgadas, por ejemplo, *ancho=1. *. Si se proporciona una cadena, es el tamaño en unidades relativas, por ejemplo, *width='40%'*. De forma predeterminada, p.e. si ni *bbox_to_anchor* ni *bbox_transform* son especificados, estos son relativos a los parent_axes. De lo contrario, deben ser entendidos en relación a la caja de límites proporcionada a través de *bbox_to_anchor*."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:34 of
 msgid "**loc**"
@@ -69,27 +69,27 @@ msgstr "**loc**"
 
 #: of
 msgid "str, default: 'upper right'"
-msgstr ""
+msgstr "str, por defecto: 'superior derecha'"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:29 of
 msgid "Location to place the inset axes.  Valid locations are 'upper left', 'upper center', 'upper right', 'center left', 'center', 'center right', 'lower left', 'lower center, 'lower right'. For backward compatibility, numeric values are accepted as well. See the parameter *loc* of `.Legend` for details."
-msgstr ""
+msgstr "Ubicación para colocar los ejes de inyección. Las ubicaciones válidas son 'superior izquierda', 'centro superior', 'derecha superior', 'centro izquierda', 'centro centro', 'centro derecha', 'centro inferior', 'centro inferior'. Para compatibilidad hacia atrás, también se aceptan valores numéricos. Consulte el parámetro *loc* de `.Legend` para más detalles."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:48 of
 msgid "**bbox_to_anchor** : tuple or `matplotlib.transforms.BboxBase`, optional"
-msgstr ""
+msgstr "**bbox_to_anchor** : tuple o `matplotlib.transforms.BboxBase`, opcional"
 
 #: of
 msgid "tuple or"
-msgstr ""
+msgstr "tupla o"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:37 of
 msgid "Bbox that the inset axes will be anchored to. If None, a tuple of (0, 0, 1, 1) is used if *bbox_transform* is set to *parent_axes.transAxes* or *parent_axes.figure.transFigure*. Otherwise, *parent_axes.bbox* is used. If a tuple, can be either [left, bottom, width, height], or [left, bottom]. If the kwargs *width* and/or *height* are specified in relative units, the 2-tuple [left, bottom] cannot be used. Note that, unless *bbox_transform* is set, the units of the bounding box are interpreted in the pixel coordinate. When using *bbox_to_anchor* with tuple, it almost always makes sense to also specify a *bbox_transform*. This might often be the axes transform *parent_axes.transAxes*."
-msgstr ""
+msgstr "Caja a la que se añadirán los ejes de entrada. Si Ninguna, se usa una tupla de (0, 0, 1, 1) si *bbox_transform* se establece en *parent_axes.transAxes* o *parent_axes. igure.transFigure*. De lo contrario, se utiliza *parent_axes.bbox*. Si una tupla, puede ser [izquierda, inferior, anchura, altura] o [izquierda, inferior]. Si los kwargs *ancho* y/o *altura* son especificados en unidades relativas, la tupla de 2 [izquierda, inferior] no puede ser usada. Tenga en cuenta que, a menos que se establezca *bbox_transform*, las unidades de la caja delimitadora se interpretan en la coordenada de píxeles. Cuando se usa *bbox_to_anchor* con tupla, casi siempre tiene sentido especificar también una *bbox_transform*."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:57 of
 msgid "**bbox_transform** : `matplotlib.transforms.Transform`, optional"
-msgstr ""
+msgstr "**bbox_transform** : `matplotlib.transforms.Transform`, opcional"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:56 of
 msgid "matplotlib.transforms.Transform, optional"
@@ -97,23 +97,23 @@ msgstr "matplotlib.transforms.Transform, opcional"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:51 of
 msgid "Transformation for the bbox that contains the inset axes. If None, a `.transforms.IdentityTransform` is used. The value of *bbox_to_anchor* (or the return value of its get_points method) is transformed by the *bbox_transform* and then interpreted as points in the pixel coordinate (which is dpi dependent). You may provide *bbox_to_anchor* in some normalized coordinate, and give an appropriate transform (e.g., *parent_axes.transAxes*)."
-msgstr ""
+msgstr "Transformación para la caja que contiene los ejes de entrada. Si no, se utiliza un `.transforms.IdentityTransform`. El valor de *bbox_to_anchor* (o el valor devuelto de su método get_point) es transformado por el *bbox_transform* y luego interpretado como puntos en la coordenada de píxeles (que es dependiente de dpi). Puede proporcionar *bbox_to_anchor* en algunas coordenadas normalizadas, y dar una transformación apropiada (por ejemplo, *parent_axes.transAxes*)."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:60 of
 msgid "**axes_class** : `matplotlib.axes.Axes` type, default: `.HostAxes`"
-msgstr ""
+msgstr "**axes_class** : `matplotlib.axes.Axes` type, default: `.HostAxes`"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:59 of
 msgid "matplotlib.axes.Axes type, default: HostAxes"
-msgstr ""
+msgstr "tipo de ejes matplotlib.axes.Ejes, por defecto: Hachas de host"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:60 of
 msgid "The type of the newly created inset axes."
-msgstr ""
+msgstr "El tipo de ejes de entrada recién creados."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:122 of
 msgid "**axes_kwargs**"
-msgstr ""
+msgstr "**axes_kwargs**"
 
 #: of
 msgid "dict, optional"
@@ -121,7 +121,7 @@ msgstr "dict, optional"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:63 of
 msgid "Keyword arguments to pass to the constructor of the inset axes. Valid arguments include:"
-msgstr ""
+msgstr "Argumentos de palabra clave para pasar al constructor de los ejes de entrada. Los argumentos válidos incluyen:"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:70 of
 msgid "Property"
@@ -469,7 +469,7 @@ msgstr "float, default: 0.5"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:125 of
 msgid "Padding between inset axes and the bbox_to_anchor. The units are axes font size, i.e. for a default font size of 10 points *borderpad = 0.5* is equivalent to a padding of 5 points."
-msgstr ""
+msgstr "Relleno entre los ejes de entrada y el bbox_to_anchor. Las unidades son el tamaño de la fuente de los ejes, p.ej. para un tamaño de fuente predeterminado de 10 puntos *borderpad = 0.5* es equivalente a un relleno de 5 puntos."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes of
 msgid "Returns"
@@ -477,15 +477,15 @@ msgstr "Devuelve"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:139 of
 msgid "**inset_axes** : *axes_class*"
-msgstr ""
+msgstr "**inset_axes** : *axes_class*"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:138 of
 msgid "axes_class"
-msgstr ""
+msgstr "axes_class"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:132 of
 msgid "Inset axes object created."
-msgstr ""
+msgstr "Objeto de ejes de entrada creado."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:142 of
 msgid "Notes"
@@ -493,15 +493,15 @@ msgstr "Notes"
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:143 of
 msgid "The meaning of *bbox_to_anchor* and *bbox_to_transform* is interpreted differently from that of legend. The value of bbox_to_anchor (or the return value of its get_points method; the default is *parent_axes.bbox*) is transformed by the bbox_transform (the default is Identity transform) and then interpreted as points in the pixel coordinate (which is dpi dependent)."
-msgstr ""
+msgstr "El significado de *bbox_to_anchor* y *bbox_to_transform* es interpretado de manera diferente al de la leyenda. El valor de bbox_to_anchor (o el valor devuelto de su método get_point; el valor predeterminado es *parent_axes. box*) es transformado por el bbox_transform (el valor por defecto es la transforma de identidad) y luego interpretado como puntos en la coordenada de píxeles (que es dependiente de dpi)."
 
 #: mpl_toolkits.axes_grid1.inset_locator.inset_axes:150 of
 msgid "Thus, following three calls are identical and creates an inset axes with respect to the *parent_axes*::"
-msgstr ""
+msgstr "Así, las siguientes tres llamadas son idénticas y crean un eje de entrada con respecto a los *ejes_parentes*::"
 
 #: ../../../../../../../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.inset_axes.examples:2
 msgid "Examples using ``mpl_toolkits.axes_grid1.inset_locator.inset_axes``"
-msgstr ""
+msgstr "Ejemplos usando ``mpl_toolkits.axes_grid1.inset_locator.inset_axes``"
 
 #: ../../api/_as_gen/mpl_toolkits.axes_grid1.inset_locator.inset_axes.examples:10
 msgid "Controlling the position and size of colorbars with Inset Axes"

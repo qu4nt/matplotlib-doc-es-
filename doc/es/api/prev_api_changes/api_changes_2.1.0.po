@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-11-01 21:46\n"
+"PO-Revision-Date: 2022-11-02 14:11\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,51 +20,51 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:4
 msgid "API Changes in 2.1.0"
-msgstr ""
+msgstr "Cambios de API en 2.1.0"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:8
 msgid "Default behavior of log scales changed to mask <= 0 values"
-msgstr ""
+msgstr "Comportamiento por defecto de escalas de registro cambiadas a máscara <= 0 valores"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:10
 msgid "Calling `matplotlib.axes.Axes.set_xscale` or `matplotlib.axes.Axes.set_yscale` now uses 'mask' as the default method to handle invalid values (as opposed to 'clip'). This means that any values <= 0 on a log scale will not be shown."
-msgstr ""
+msgstr "Llamando a `matplotlib.axes.Axes.set_xscale` o `matplotlib.axes.Axes. et_yscale` ahora usa 'mask' como método predeterminado para manejar valores no válidos (a diferencia de 'clip'). Esto significa que cualquier valor <= 0 en una escala de registro no se mostrará."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:14
 msgid "Previously they were clipped to a very small number and shown."
-msgstr ""
+msgstr "Anteriormente fueron recortados a un número muy pequeño y mostrados."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:18
 msgid ":meth:`matplotlib.cbook.CallbackRegistry.process` suppresses exceptions by default"
-msgstr ""
+msgstr ":meth:`matplotlib.cbook.CallbackRegistry.process` elimina las excepciones por defecto"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:20
 msgid "Matplotlib uses instances of :obj:`~matplotlib.cbook.CallbackRegistry` as a bridge between user input event from the GUI and user callbacks. Previously, any exceptions raised in a user call back would bubble out of the ``process`` method, which is typically in the GUI event loop.  Most GUI frameworks simple print the traceback to the screen and continue as there is not always a clear method of getting the exception back to the user.  However PyQt5 now exits the process when it receives an un-handled python exception in the event loop.  Thus, :meth:`~matplotlib.cbook.CallbackRegistry.process` now suppresses and prints tracebacks to stderr by default."
-msgstr ""
+msgstr "Matplotlib utiliza instancias de :obj:`~matplotlib.cbook.CallbackRegistry` como un puente entre el evento de entrada de usuario de la GUI y las llamadas de usuario. Anteriormente, cualquier excepción planteada en una llamada de usuario volvería a salirse del método ``process``, que típicamente está en el bucle de eventos GUI. La mayoría de los frameworks GUI simplemente imprimen el traceback a la pantalla y continúan, ya que no siempre hay un método claro de devolver la excepción al usuario. Sin embargo, PyQt5 ahora sale del proceso cuando recibe una excepción de python no manejada en el bucle de eventos. Así, :meth:`~matplotlib.cbook.CallbackRegistry.process` ahora suprime e imprime los tracebacks a stderr por defecto."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:31
 msgid "What :meth:`~matplotlib.cbook.CallbackRegistry.process` does with exceptions is now user configurable via the ``exception_handler`` attribute and kwarg.  To restore the previous behavior pass ``None`` ::"
-msgstr ""
+msgstr "Lo que hace :meth:`~matplotlib.cbook.CallbackRegistry.process` con excepciones ahora es configurable por el usuario a través del atributo ``exception_handler`` y kwarg. Para restaurar el comportamiento anterior pase ``Ninguno`` ::"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:38
 msgid "A function which take and ``Exception`` as its only argument may also be passed ::"
-msgstr ""
+msgstr "Una función que toma y ``Excepción`` como su único argumento también puede ser pasado ::"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:51
 msgid "Improved toggling of the axes grids"
-msgstr ""
+msgstr "Interruptor mejorado de las rejillas de los ejes"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:53
 msgid "The ``g`` key binding now switches the states of the ``x`` and ``y`` grids independently (by cycling through all four on/off combinations)."
-msgstr ""
+msgstr "El enlace de la clave ``g`` ahora cambia los estados de las rejillas ``x`` y ``y`` de forma independiente (mediante el cicloturismo a través de las cuatro combinaciones on/off)."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:56
 msgid "The new ``G`` key binding switches the states of the minor grids."
-msgstr ""
+msgstr "La nueva clave ``G`` cambia los estados de las rejillas menores."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:58
 msgid "Both bindings are disabled if only a subset of the grid lines (in either direction) is visible, to avoid making irreversible changes to the figure."
-msgstr ""
+msgstr "Ambos enlaces están desactivados si sólo un subconjunto de las líneas de cuadrícula (en cualquiera de las direcciones) es visible, para evitar hacer cambios irreversibles a la figura."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:63
 msgid "Ticklabels are turned off instead of being invisible"
@@ -72,155 +72,155 @@ msgstr "Etiqueta de la marca del eje se desactivan en lugar de ser invisibles"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:65
 msgid "Internally, the `.Tick`'s ``~matplotlib.axis.Tick.label1On`` attribute is now used to hide tick labels instead of setting the visibility on the tick label objects. This improves overall performance and fixes some issues. As a consequence, in case those labels ought to be shown, :func:`~matplotlib.axes.Axes.tick_params` needs to be used, e.g."
-msgstr ""
+msgstr "Internamente, el atributo ``~matplotlib.axis.Tick.label1On`` de `.Tick` ahora se utiliza para ocultar etiquetas de tick en lugar de establecer la visibilidad en los objetos de la etiqueta tick. Esto mejora el rendimiento general y soluciona algunos problemas. Como consecuencia, en caso de que estas etiquetas deban ser mostradas, :func:`~matplotlib.axes.Axes.tick_params` necesita ser usado, p.ej."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:79
 msgid "Removal of warning on empty legends"
-msgstr ""
+msgstr "Eliminación de advertencia en leyendas vacías"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:81
 msgid "`.pyplot.legend` used to issue a warning when no labeled artist could be found.  This warning has been removed."
-msgstr ""
+msgstr "`.pyplot.legend` solía emitir una advertencia cuando no se encontró ningún artista etiquetado. Esta advertencia ha sido eliminada."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:86
 msgid "More accurate legend autopositioning"
-msgstr ""
+msgstr "Autoposicionamiento de leyendas más preciso"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:88
 msgid "Automatic positioning of legends now prefers using the area surrounded by a `.Line2D` rather than placing the legend over the line itself."
-msgstr ""
+msgstr "La posición automática de las leyendas ahora prefiere usar el área rodeada por un `.Line2D` en lugar de colocar la leyenda sobre la línea misma."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:93
 msgid "Cleanup of stock sample data"
-msgstr ""
+msgstr "Limpieza de datos de muestra de stock"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:95
 msgid "The sample data of stocks has been cleaned up to remove redundancies and increase portability. The ``AAPL.dat.gz``, ``INTC.dat.gz`` and ``aapl.csv`` files have been removed entirely and will also no longer be available from `matplotlib.cbook.get_sample_data`. If a CSV file is required, we suggest using the ``msft.csv`` that continues to be shipped in the sample data. If a NumPy binary file is acceptable, we suggest using one of the following two new files. The ``aapl.npy.gz`` and ``goog.npy`` files have been replaced by ``aapl.npz`` and ``goog.npz``, wherein the first column's type has changed from `datetime.date` to `numpy.datetime64` for better portability across Python versions. Note that Matplotlib does not fully support `numpy.datetime64` as yet."
-msgstr ""
+msgstr "Los datos de muestra de las acciones se han limpiado para eliminar las redundancias y aumentar la portabilidad. Los ``AAPL.dat.gz``, ``INTC.dat.gz`` y ``aapl. los archivos sv`` han sido eliminados por completo y ya no estarán disponibles en `matplotlib.cbook.get_sample_data`. Si se requiere un archivo CSV, le sugerimos utilizar el ``msft.csv`` que continúa enviándose en los datos de muestra. Si un archivo binario NumPy es aceptable, le sugerimos que utilice uno de los siguientes dos ficheros nuevos. Los archivos ``aapl.npy.gz`` y ``goog.npy`` han sido reemplazados por ``aapl.npz`` y ``goog. pz``, donde el tipo de la primera columna ha cambiado de `datetime.date` a `numpy. atetime64` para una mejor portabilidad entre las versiones de Python. Tenga en cuenta que Matplotlib no soporta completamente `numpy.datetime64` todavía."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:109
 msgid "Updated qhull to 2015.2"
-msgstr ""
+msgstr "qhull actualizado a 2015.2"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:111
 msgid "The version of qhull shipped with Matplotlib, which is used for Delaunay triangulation, has been updated from version 2012.1 to 2015.2."
-msgstr ""
+msgstr "La versión de qhull cargada con Matplotlib, que se utiliza para triangulación de Delaunay, ha sido actualizada de la versión 2012.1 a 2015.2."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:116
 msgid "Improved Delaunay triangulations with large offsets"
-msgstr ""
+msgstr "Triangulaciones de Delaunay mejoradas con grandes desplazamientos"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:118
 msgid "Delaunay triangulations now deal with large x,y offsets in a better way. This can cause minor changes to any triangulations calculated using Matplotlib, i.e. any use of `matplotlib.tri.Triangulation` that requests that a Delaunay triangulation is calculated, which includes `matplotlib.pyplot.tricontour`, `matplotlib.pyplot.tricontourf`, `matplotlib.pyplot.tripcolor`, `matplotlib.pyplot.triplot`, ``matplotlib.mlab.griddata`` and `mpl_toolkits.mplot3d.axes3d.Axes3D.plot_trisurf`."
-msgstr ""
+msgstr "Las triangulaciones de Delaunay ahora tratan con grandes compensaciones x,y de una manera mejor. Esto puede causar cambios menores en cualquier triangulación calculada usando Matplotlib, i. . cualquier uso de `matplotlib.tri.Triangulation` que solicite que se calcule una triangulación de Delaunay, que incluye `matplotlib. yplot.tricontour`, `matplotlib.pyplot.tricontourf`, `matplotlib.pyplot.tripcolor`, `matplotlib.pyplot.triplot`, ``matplotlib.mlab.griddata`` y `mpl_toolkits.mplot3d.axes3d.Axes3D.plot_trisurf`."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:130
 msgid "Use ``backports.functools_lru_cache`` instead of ``functools32``"
-msgstr ""
+msgstr "Usar ``backports.functools_lru_cache`` en lugar de ``functools32``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:132
 msgid "It's better maintained and more widely used (by pylint, jaraco, etc)."
-msgstr ""
+msgstr "Es mejor mantenido y utilizado más ampliamente (por pylint, jaraco, etc.)."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:137
 msgid "``cbook.is_numlike`` only performs an instance check"
-msgstr ""
+msgstr "``cbook.is_numlike`` sólo realiza una comprobación de instancia"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:139
 msgid "``matplotlib.cbook.is_numlike`` now only checks that its argument is an instance of ``(numbers.Number, np.Number)``.  In particular, this means that arrays are now not num-like."
-msgstr ""
+msgstr "``matplotlib.cbook.is_numlike`` ahora sólo comprueba que su argumento es una instancia de ``(numbers.Number, np.Number)``. En particular, esto significa que ahora las matrices no son num-like."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:146
 msgid "Elliptical arcs now drawn between correct angles"
-msgstr ""
+msgstr "Arcos elípticos dibujados entre ángulos correctos"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:148
 msgid "The `matplotlib.patches.Arc` patch is now correctly drawn between the given angles."
-msgstr ""
+msgstr "El parche `matplotlib.patches.Arc` ahora se dibuja correctamente entre los ángulos dados."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:151
 msgid "Previously a circular arc was drawn and then stretched into an ellipse, so the resulting arc did not lie between *theta1* and *theta2*."
-msgstr ""
+msgstr "Anteriormente se dibujó un arco circular y luego se estiró en una elipse, por lo que el arco resultante no se encontraba entre *theta1* y *theta2*."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:157
 msgid "``-d$backend`` no longer sets the backend"
-msgstr ""
+msgstr "``-d$backend`` ya no establece el backend"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:159
 msgid "It is no longer possible to set the backend by passing ``-d$backend`` at the command line.  Use the ``MPLBACKEND`` environment variable instead."
-msgstr ""
+msgstr "Ya no es posible establecer el backend pasando ``-d$backend`` en la línea de comandos. Utilice la variable de entorno ``MPLBACKEND`` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:165
 msgid "Path.intersects_bbox always treats the bounding box as filled"
-msgstr ""
+msgstr "Path.intersects_bbox siempre trata la caja límite como llena"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:167
 msgid "Previously, when ``Path.intersects_bbox`` was called with ``filled`` set to ``False``, it would treat both the path and the bounding box as unfilled. This behavior was not well documented and it is usually not the desired behavior, since bounding boxes are used to represent more complex shapes located inside the bounding box. This behavior has now been changed: when ``filled`` is ``False``, the path will be treated as unfilled, but the bounding box is still treated as filled. The old behavior was arguably an implementation bug."
-msgstr ""
+msgstr "Anteriormente, cuando ``Path.intersects_bbox`` fue llamado con ``filled`` establecido en ``False``, trataría tanto la ruta como la caja de límites como la no llenada. Este comportamiento no estaba bien documentado y usualmente no es el comportamiento deseado, ya que las cajas delimitadoras se utilizan para representar formas más complejas situadas dentro de la caja de delimitación. Este comportamiento ha sido cambiado: cuando ``llenado`` es ``False``, la ruta será tratada como no rellenada, pero la caja de límites sigue siendo tratada como llenada. El comportamiento antiguo era argualmente un error de implementación."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:175
 msgid "When ``Path.intersects_bbox`` is called with ``filled`` set to ``True`` (the default value), there is no change in behavior. For those rare cases where ``Path.intersects_bbox`` was called with ``filled`` set to ``False`` and where the old behavior is actually desired, the suggested workaround is to call ``Path.intersects_path`` with a rectangle as the path::"
-msgstr ""
+msgstr "Cuando ``Path.intersects_bbox`` es llamado con ``filled`` establecido en ``True`` (el valor por defecto), no hay cambio de comportamiento. Para aquellos casos raros en los que ``Path`. ntersects_bbox`` fue llamado con ``filled`` establecido en ``False`` y donde el comportamiento antiguo es realmente deseado, la solución sugerida es llamar a ``Path. ntersects_path`` con un rectángulo como ruta::"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:190
 msgid "WX no longer calls generates ``IdleEvent`` events or calls ``idle_event``"
-msgstr ""
+msgstr "WX ya no genera eventos ``IdleEvent`` o llama ``idle_event``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:192
 msgid "Removed unused private method ``_onIdle`` from ``FigureCanvasWx``."
-msgstr ""
+msgstr "Se eliminó el método privado no utilizado ``_onIdle`` de ``FigureCanvasWx``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:194
 msgid "The ``IdleEvent`` class and ``FigureCanvasBase.idle_event`` method will be removed in 2.2"
-msgstr ""
+msgstr "La clase ``IdleEvent`` y el método ``FigureCanvasBase.idle_event`` se eliminarán en 2.2"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:200
 msgid "Correct scaling of ``magnitude_spectrum()``"
-msgstr ""
+msgstr "Escala correcta de ``magnitude_spectrum()``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:202
 msgid "The functions :func:`matplotlib.mlab.magnitude_spectrum()` and :func:`matplotlib.pyplot.magnitude_spectrum()` implicitly assumed the sum of windowing function values to be one. In Matplotlib and Numpy the standard windowing functions are scaled to have maximum value of one, which usually results in a sum of the order of n/2 for a n-point signal. Thus the amplitude scaling ``magnitude_spectrum()`` was off by that amount when using standard windowing functions (`Bug 8417 <https://github.com/matplotlib/matplotlib/issues/8417>`_ ). Now the behavior is consistent with :func:`matplotlib.pyplot.psd()` and :func:`scipy.signal.welch()`. The following example demonstrates the new and old scaling::"
-msgstr ""
+msgstr "Las funciones :func:`matplotlib.mlab.magnitude_spectrum()` y :func:`matplotlib.pyplot.magnitude_spectrum()` implícitamente asumieron la suma de los valores de función de ventanilla a ser uno. En Matplotlib y Numpy las funciones estándar de ventana son escaladas para tener el máximo valor de una, que normalmente resulta en una suma del orden de n/2 para una señal de punto propio. Así, la amplitud de escala ``magnitude_spectrum()`` estaba deshabilitada por esa cantidad cuando se usaban funciones de ventana estándar (`Bug 8417 <https://github.com/matplotlib/matplotlib/issues/8417>`_ ). Ahora el comportamiento es consistente con :func:`matplotlib.pyplot.psd()` y :func:`scipy.signal.welch()`. El siguiente ejemplo demuestra la nueva y antigua escala::"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:235
 msgid "Change to signatures of :meth:`~matplotlib.axes.Axes.bar` & :meth:`~matplotlib.axes.Axes.barh`"
-msgstr ""
+msgstr "Cambia a firmas de :meth:`~matplotlib.axes.Axes.bar` & :meth:`~matplotlib.axes.Axes.barh`"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:237
 msgid "For 2.0 the :ref:`default value of *align* <barbarh_align>` changed to ``'center'``.  However this caused the signature of :meth:`~matplotlib.axes.Axes.bar` and :meth:`~matplotlib.axes.Axes.barh` to be misleading as the first parameters were still *left* and *bottom* respectively::"
-msgstr ""
+msgstr "Para 2.0 el valor predeterminado :ref:de *align* <barbarh_align>` cambió a ``'center'``. Sin embargo, esto causó la firma de :meth:`~matplotlib. xes.Axes.bar` y :meth:`~matplotlib.axes.Axes.barh` para ser engañoso ya que los primeros parámetros seguían siendo *izquierdas* y *inferior* respectivamente::"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:246
 msgid "despite behaving as the center in both cases. The methods now take ``*args, **kwargs`` as input and are documented to have the primary signatures of::"
-msgstr ""
+msgstr "a pesar de comportarse como el centro en ambos casos. Los métodos ahora toman ``*args, **kwargs`` como entrada y están documentados para tener las firmas principales de::"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:253
 msgid "Passing *left* and *bottom* as keyword arguments to :meth:`~matplotlib.axes.Axes.bar` and :meth:`~matplotlib.axes.Axes.barh` respectively will warn. Support will be removed in Matplotlib 3.0."
-msgstr ""
+msgstr "Pasando *izquierda* y *abajo* como argumentos de palabra clave a :meth:`~matplotlib.axes.Axes.bar` y :meth:`~matplotlib.axes.Axes.barh` respectivamente advertirán. El soporte se eliminará en Matplotlib 3.0."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:260
 msgid "Font cache as json"
-msgstr ""
+msgstr "Caché de fuentes como json"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:262
 msgid "The font cache is now saved as json, rather than a pickle."
-msgstr ""
+msgstr "La caché de fuentes ahora se guarda como json, en lugar de como un pico."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:266
 msgid "Invalid (Non-finite) Axis Limit Error"
-msgstr ""
+msgstr "Error de límite de eje no válido (no finito)"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:268
 msgid "When using :func:`~matplotlib.axes.Axes.set_xlim` and :func:`~matplotlib.axes.Axes.set_ylim`, passing non-finite values now results in a ``ValueError``. The previous behavior resulted in the limits being erroneously reset to ``(-0.001, 0.001)``."
-msgstr ""
+msgstr "Al usar :func:`~matplotlib.axes.Axes.set_xlim` y :func:`~matplotlib.axes.Axes.set_ylim`, pasar valores no finitos ahora resulta en un ``ValueError``. El comportamiento anterior resultó en que los límites se restablecieran erróneamente a ``(-0.001, 0.001)``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:274
 msgid "``scatter`` and ``Collection`` offsets are no longer implicitly flattened"
-msgstr ""
+msgstr "Los desplazamientos ``scatter`` y ``Collection`` ya no están implícitamente aplanados"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:276
 msgid "`~matplotlib.collections.Collection` (and thus both 2D `~matplotlib.axes.Axes.scatter` and 3D `~mpl_toolkits.mplot3d.axes3d.Axes3D.scatter`) no longer implicitly flattens its offsets.  As a consequence, ``scatter``'s ``x`` and ``y`` arguments can no longer be 2+-dimensional arrays."
-msgstr ""
+msgstr "`~matplotlib.collections.Collection` (y así tanto `~matplotlib.axes.Axes.scatter` como 3D `~mpl_toolkits.mplot3d.axes3d.Axes3D. catter`) ya no aplasta implícitamente sus desplazamientos. Como consecuencia, los argumentos ``scatter'' de ``x`` y ``y`` ya no pueden ser arreglos 2+-dimensionales."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:283
 msgid "Deprecations"
@@ -228,19 +228,19 @@ msgstr "Obsolescencias"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:286
 msgid "``GraphicsContextBase``\\'s ``linestyle`` property."
-msgstr ""
+msgstr "``GraphicsContextBase``\\'s propiedad ``linestyle``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:288
 msgid "The ``GraphicsContextBase.get_linestyle`` and ``GraphicsContextBase.set_linestyle`` methods, which had no effect, have been deprecated.  All of the backends Matplotlib ships use ``GraphicsContextBase.get_dashes`` and ``GraphicsContextBase.set_dashes`` which are more general. Third-party backends should also migrate to the ``*_dashes`` methods."
-msgstr ""
+msgstr "Los métodos ``GraphicsContextBase.get_linestyle`` y ``GraphicsContextBase.set_linestyle`` que no tuvieron efecto, han sido obsoletos. Todos los backends de Matplotlib usan ``GraphicsContextBase. et_dashes`` y ``GraphicsContextBase.set_dashes`` que son más generales. Los backends de terceros también deben migrar a los métodos ``*_dashes``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:297
 msgid "``NavigationToolbar2.dynamic_update``"
-msgstr ""
+msgstr "``NavigationToolbar2.dynamic_update``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:299
 msgid "Use :meth:`.draw_idle` method on the ``Canvas`` instance instead."
-msgstr ""
+msgstr "Utilice el método :meth:`.draw_idle` en su lugar en la instancia de ``Canvas``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:303
 msgid "Testing"
@@ -248,137 +248,137 @@ msgstr "Prueba"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:305
 msgid "``matplotlib.testing.noseclasses`` is deprecated and will be removed in 2.3"
-msgstr ""
+msgstr "``matplotlib.testing.noseclasses`` está obsoleto y será eliminado en 2.3"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:309
 msgid "``EngFormatter`` *num* arg as string"
-msgstr ""
+msgstr "``EngFormatter`` *num* argumento como cadena"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:311
 msgid "Passing a string as *num* argument when calling an instance of `matplotlib.ticker.EngFormatter` is deprecated and will be removed in 2.3."
-msgstr ""
+msgstr "Pasar una cadena como argumento *num* al llamar a una instancia de `matplotlib.ticker.EngFormatter` está obsoleto y será eliminado en 2.3."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:316
 msgid "``mpl_toolkits.axes_grid`` module"
-msgstr ""
+msgstr "módulo ``mpl_toolkits.axes_grid``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:318
 msgid "All functionally from ``mpl_toolkits.axes_grid`` can be found in either `mpl_toolkits.axes_grid1` or `mpl_toolkits.axisartist`. Axes classes from ``mpl_toolkits.axes_grid`` based on ``Axis`` from `mpl_toolkits.axisartist` can be found in `mpl_toolkits.axisartist`."
-msgstr ""
+msgstr "Funcionalmente de ``mpl_toolkits.axes_grid`` se puede encontrar en `mpl_toolkits.axes_grid1` o `mpl_toolkits.axisartist`. Clases de ejes de ``mpl_toolkits.axes_grid`` basadas en ``Axis`` de `mpl_toolkits.axisartist` pueden encontrarse en `mpl_toolkits.axisartist`."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:325
 msgid "``Axes`` collision in ``Figure.add_axes``"
-msgstr ""
+msgstr "``Ejes`` colisión en ``Figure.add_axes``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:327
 msgid "Adding an axes instance to a figure by using the same arguments as for a previous axes instance currently reuses the earlier instance.  This behavior has been deprecated in Matplotlib 2.1. In a future version, a *new* instance will always be created and returned.  Meanwhile, in such a situation, a deprecation warning is raised by ``matplotlib.figure.AxesStack``."
-msgstr ""
+msgstr "Añadir una instancia de ejes a una figura utilizando los mismos argumentos que para una instancia de ejes anteriores actualmente reutiliza la instancia anterior. Este comportamiento ha sido obsoleto en Matplotlib 2. . En una versión futura, una instancia *nueva* siempre será creada y retornada. Mientras tanto, en una situación así, una advertencia de desaprobación es planteada por ``matplotlib.figure.AxesStack``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:334
 msgid "This warning can be suppressed, and the future behavior ensured, by passing a *unique* label to each axes instance.  See the docstring of :meth:`~matplotlib.figure.Figure.add_axes` for more information."
-msgstr ""
+msgstr "Esta advertencia puede ser suprimida, y el comportamiento futuro garantizado, pasando una etiqueta *única* a cada instancia de los ejes. Vea la docstring de :meth:`~matplotlib.figure.Figure.add_axes` para más información."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:338
 msgid "Additional details on the rationale behind this deprecation can be found in :ghissue:`7377` and :ghissue:`9024`."
-msgstr ""
+msgstr "Detalles adicionales sobre la clasificación detrás de esta desaprobación se pueden encontrar en :ghissue:`7377` y :ghissue:`9024`."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:343
 msgid "Former validators for ``contour.negative_linestyle``"
-msgstr ""
+msgstr "Anteriores validadores para ``contour.negative_linestyle``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:346
 msgid "The former public validation functions ``validate_negative_linestyle`` and ``validate_negative_linestyle_legacy`` will be deprecated in 2.1 and may be removed in 2.3. There are no public functions to replace them."
-msgstr ""
+msgstr "Las antiguas funciones de validación pública ``validate_negative_linestyle`` y ``validate_negative_linestyle_legacy`` serán obsoletas en 2. y puede ser eliminado en 2.3. No hay funciones públicas para reemplazarlas."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:353
 msgid "``cbook``"
-msgstr ""
+msgstr "``libro``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:355
 msgid "Many unused or near-unused :mod:`matplotlib.cbook` functions and classes have been deprecated: ``converter``, ``tostr``, ``todatetime``, ``todate``, ``tofloat``, ``toint``, ``unique``, ``is_string_like``, ``is_sequence_of_strings``, ``is_scalar``, ``Sorter``, ``Xlator``, ``soundex``, ``Null``, ``dict_delall``, ``RingBuffer``, ``get_split_ind``, ``wrap``, ``get_recursive_filelist``, ``pieces``, ``exception_to_str``, ``allequal``, ``alltrue``, ``onetrue``, ``allpairs``, ``finddir``, ``reverse_dict``, ``restrict_dict``, ``issubclass_safe``, ``recursive_remove``, ``unmasked_index_ranges``."
-msgstr ""
+msgstr "Muchos :mod:`matplotlib sin usar o casi sin usar. las funciones y clases del libro han sido desaprobadas: ``converter``, ``tostr``, ``todatetime``, ``todate``, ``tofloat``, ``toint``, ``unique``, ``is_string_like``, ``is_sequence_of_strings``, ``is_scalar``, ``Sorter``, ``Xlator``, ``soundex``, ``Null``, ``dict_delall``, ``RingBuffer``, ``get_split_ind``, ``wrap``, ``get_recursive_filelist``, ``pieces``, ``exception_to_str``, ``allequal``, ``alltrue``, ``onetrue``, ``allpairs``, ``finddir``, ``reverse_dict``, ``restrict_dict``, ``issubclass_safe``, ``recursive_remove``, ``unmasked_index_ranges``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:368
 msgid "Code Removal"
-msgstr ""
+msgstr "Eliminar código"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:371
 msgid "qt4_compat.py"
-msgstr ""
+msgstr "qt4_compat.py"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:373
 msgid "Moved to ``qt_compat.py``.  Renamed because it now handles Qt5 as well."
-msgstr ""
+msgstr "Movió a ``qt_compat.py``. Renombrado porque ahora también maneja Qt5."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:377
 msgid "Previously Deprecated methods"
-msgstr ""
+msgstr "Métodos obsoletos anteriormente"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:379
 msgid "The ``GraphicsContextBase.set_graylevel``, ``FigureCanvasBase.onHilite`` and ``mpl_toolkits.axes_grid1.mpl_axes.Axes.toggle_axisline`` methods have been removed."
-msgstr ""
+msgstr "Los métodos ``GraphicsContextBase.set_graylevel``, ``FigureCanvasBase.onHilite`` y ``mpl_toolkits.axes_grid1.mpl_axes.Axes.toggle_axisline`` han sido eliminados."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:383
 msgid "The ``ArtistInspector.findobj`` method, which was never working due to the lack of a ``get_children`` method, has been removed."
-msgstr ""
+msgstr "El método ``ArtistInspector.findobj``, que nunca funcionó debido a la falta de un método ``get_children``, ha sido eliminado."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:386
 msgid "The deprecated ``point_in_path``, ``get_path_extents``, ``point_in_path_collection``, ``path_intersects_path``, ``convert_path_to_polygons``, ``cleanup_path`` and ``clip_path_to_rect`` functions in the ``matplotlib.path`` module have been removed.  Their functionality remains exposed as methods on the ``Path`` class."
-msgstr ""
+msgstr "El ``point_in_path``, ``get_path_extents``, ``point_in_path_collection``, ``path_intersects_path``, ``convert_path_to_polygons``, ``cleanup_path`` y ``clip_path_to_rect`` funciones en el ``matplotlib. El módulo ath`` ha sido eliminado. Su funcionalidad sigue expuesta como métodos en la clase ``Path``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:392
 msgid "The deprecated ``Artist.get_axes`` and ``Artist.set_axes`` methods have been removed"
-msgstr ""
+msgstr "Los métodos obsoletos ``Artist.get_axes`` y ``Artist.set_axes`` han sido eliminados"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:396
 msgid "The ``matplotlib.backends.backend_ps.seq_allequal`` function has been removed. Use ``np.array_equal`` instead."
-msgstr ""
+msgstr "La función ``matplotlib.backends.backend_ps.seq_allequal`` ha sido eliminada. Utilice ``np.array_equal`` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:399
 msgid "The deprecated ``matplotlib.rcsetup.validate_maskedarray``, ``matplotlib.rcsetup.deprecate_savefig_extension`` and ``matplotlib.rcsetup.validate_tkpythoninspect`` functions, and associated ``savefig.extension`` and ``tk.pythoninspect`` rcparams entries have been removed."
-msgstr ""
+msgstr "Las entradas de rcparams ``matplotlib.rcsetup.validate_maskedarray``, ``matplotlib.rcsetup.deprecate_savefig_extension`` y ``matplotlib.rcsetup.validate_tkpythoninspect`` asociadas, y ``savefig.extension`` y ``tk.pythoninspect`` han sido eliminadas."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:406
 msgid "The keyword argument *resolution* of :class:`matplotlib.projections.polar.PolarAxes` has been removed. It has deprecation with no effect from version *0.98.x*."
-msgstr ""
+msgstr "El argumento de palabra clave *resolución* de :class:`matplotlib.projections.polar.PolarAxes` ha sido eliminado. Tiene desaprobación sin efecto de la versión *0.98.x*."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:412
 msgid "``Axes.set_aspect(\"normal\")``"
-msgstr ""
+msgstr "``Ejes.set_aspect(\"normal\")``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:414
 msgid "Support for setting an ``Axes``\\'s aspect to ``\"normal\"`` has been removed, in favor of the synonym ``\"auto\"``."
-msgstr ""
+msgstr "Soporte para establecer un aspecto de ``ejes``\\'s a ``\"normal\"`` ha sido eliminado, a favor del sinónimo ``\"auto\"``."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:419
 msgid "``shading`` kwarg to ``pcolor``"
-msgstr ""
+msgstr "``sombreando`` kwarg a ``pcolor``"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:421
 msgid "The ``shading`` kwarg to `~matplotlib.axes.Axes.pcolor` has been removed.  Set ``edgecolors`` appropriately instead."
-msgstr ""
+msgstr "El ``shading`` kwarg a `~matplotlib.axes.Axes.pcolor` ha sido removido. Establece ``edgecolors`` apropiadamente en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:426
 msgid "Functions removed from the `.lines` module"
-msgstr ""
+msgstr "Funciones eliminadas del módulo `.lines`"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:428
 msgid "The :mod:`matplotlib.lines` module no longer imports the ``pts_to_prestep``, ``pts_to_midstep`` and ``pts_to_poststep`` functions from :mod:`matplotlib.cbook`."
-msgstr ""
+msgstr "El módulo :mod:`matplotlib.lines` ya no importa las funciones ``pts_to_prestep``, ``pts_to_midstep`` y ``pts_to_poststep`` de :mod:`matplotlib.cbook`."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:434
 msgid "PDF backend functions"
-msgstr ""
+msgstr "Funciones de backend PDF"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:436
 msgid "The methods ``embedTeXFont`` and ``tex_font_mapping`` of :class:`matplotlib.backends.backend_pdf.PdfFile` have been removed.  It is unlikely that external users would have called these methods, which are related to the font system internal to the PDF backend."
-msgstr ""
+msgstr "Los métodos ``embedTeXFont`` y ``tex_font_mapping`` de :class:`matplotlib.backends.backend_pdf.PdfFile` han sido eliminados. Es poco probable que los usuarios externos hubieran llamado estos métodos, los cuales están relacionados con el sistema de fuentes interno del backend PDF."
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:443
 msgid "matplotlib.delaunay"
-msgstr ""
+msgstr "matplotlib.delaunay"
 
 #: ../../api/prev_api_changes/api_changes_2.1.0.rst:445
 msgid "Remove the delaunay triangulation code which is now handled by Qhull via :mod:`matplotlib.tri`."
-msgstr ""
+msgstr "Eliminar el código de triangulación delaunay que ahora es manejado por Qhull a través de :mod:`matplotlib.tri`."
 

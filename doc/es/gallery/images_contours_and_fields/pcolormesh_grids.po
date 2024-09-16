@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:26\n"
+"PO-Revision-Date: 2022-07-03 23:48\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,89 +20,89 @@ msgstr ""
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_images_contours_and_fields_pcolormesh_grids.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_images_contours_and_fields_pcolormesh_grids.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:23
 msgid "pcolormesh grids and shading"
-msgstr ""
+msgstr "cuadrículas y sombreados pcolormesh"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:25
 msgid "`.axes.Axes.pcolormesh` and `~.axes.Axes.pcolor` have a few options for how grids are laid out and the shading between the grid points."
-msgstr ""
+msgstr "`.axes.Axes.pcolormesh` y `~.axes.Axes.pcolor` tienen algunas opciones para la disposición de las cuadrículas y el sombreado entre los puntos de la cuadrícula."
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:28
 msgid "Generally, if *Z* has shape *(M, N)* then the grid *X* and *Y* can be specified with either shape *(M+1, N+1)* or *(M, N)*, depending on the argument for the ``shading`` keyword argument.  Note that below we specify vectors *x* as either length N or N+1 and *y* as length M or M+1, and `~.axes.Axes.pcolormesh` internally makes the mesh matrices *X* and *Y* from the input vectors."
-msgstr ""
+msgstr "Generalmente, si *Z* tiene forma *(M, N)* entonces la Cuadrícula *X* y *Y* pueden ser especificadas con forma *(M+1, N+1)* o *(M, N)*, dependiendo del argumento de la palabra clave ``shading``.  Ten en cuenta que a continuación especificamos los vectores *x* como longitud N o N+1 y *y* como longitud M o M+1, y `~.axes.Axes.pcolormesh` hace internamente las matrices de malla *X* y *Y* a partir de los vectores de entrada."
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:53
 msgid "Flat Shading"
-msgstr ""
+msgstr "Sombreado plano"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:55
 msgid "The grid specification with the least assumptions is ``shading='flat'`` and if the grid is one larger than the data in each dimension, i.e. has shape *(M+1, N+1)*.  In that case *X* and *Y* specify the corners of quadrilaterals that are colored with the values in *Z*. Here we specify the edges of the *(3, 5)* quadrilaterals with *X* and *Y* that are *(4, 6)*."
-msgstr ""
+msgstr "La especificación de la cuadrícula con menos supuestos es ``shading='flat'`` y si la cuadrícula es una más grande que los datos en cada dimensión, es decir, tiene forma *(M+1, N+1)*.  En ese caso *X* y *Y* especifican las esquinas de los cuadriláteros que se colorean con los valores de *Z*. Aquí especificamos las aristas de los cuadriláteros *(3, 5)* con *X* y *Y* que son *(4, 6)*."
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:102
 msgid "Flat Shading, same shape grid"
-msgstr ""
+msgstr "Sombreado plano, cuadrícula de la misma forma"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:104
 msgid "Often, however, data is provided where *X* and *Y* match the shape of *Z*. While this makes sense for other ``shading`` types, it is no longer permitted when ``shading='flat'`` (and will raise a MatplotlibDeprecationWarning as of Matplotlib v3.3). Historically, Matplotlib silently dropped the last row and column of *Z* in this case, to match Matlab's behavior. If this behavior is still desired, simply drop the last row and column manually:"
-msgstr ""
+msgstr "Sin embargo, a menudo se proporcionan datos en los que *X* y *Y* coinciden con la forma de *Z*. Mientras que esto tiene sentido para otros tipos de ``sombreado``, ya no se permite cuando ``sombreado='plano'`` (y levantará un MatplotlibDeprecationWarning a partir de Matplotlib v3.3). Históricamente, Matplotlib eliminaba silenciosamente la última fila y columna de *Z* en este caso, para coincidir con el comportamiento de Matlab. Si todavía se desea este comportamiento, simplemente elimina la última fila y columna manualmente:"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:137
 msgid "Nearest Shading, same shape grid"
-msgstr ""
+msgstr "Sombreado más cercano, cuadrícula de la misma forma"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:139
 msgid "Usually, dropping a row and column of data is not what the user means when they make *X*, *Y* and *Z* all the same shape.  For this case, Matplotlib allows ``shading='nearest'`` and centers the colored quadrilaterals on the grid points."
-msgstr ""
+msgstr "Normalmente, soltar una fila y una columna de datos no es lo que el usuario quiere decir cuando hace que *X*, *Y* y *Z* tengan la misma forma.  Para este caso, Matplotlib permite ``shading='nearest'`` y centra los cuadriláteros coloreados en los puntos de la Cuadrícula."
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:144
 msgid "If a grid that is not the correct shape is passed with ``shading='nearest'`` an error is raised."
-msgstr ""
+msgstr "Si se pasa una Cuadrícula que no tiene la forma correcta con ``shading='nearest'`` se produce un error."
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:171
 msgid "Auto Shading"
-msgstr ""
+msgstr "Sombreado automático"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:173
 msgid "It's possible that the user would like the code to automatically choose which to use, in this case ``shading='auto'`` will decide whether to use 'flat' or 'nearest' shading based on the shapes of *X*, *Y* and *Z*."
-msgstr ""
+msgstr "Es posible que el usuario quiera que el código elija automáticamente cuál usar, en este caso ``shading='auto'`` decidirá si usar el sombreado 'flat' o 'nearest' basándose en las formas de *X*, *Y* y *Z*."
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:210
 msgid "Gouraud Shading"
-msgstr ""
+msgstr "Sombreado Gouraud"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:212
 msgid "`Gouraud shading <https://en.wikipedia.org/wiki/Gouraud_shading>`_ can also be specified, where the color in the quadrilaterals is linearly interpolated between the grid points.  The shapes of *X*, *Y*, *Z* must be the same."
-msgstr ""
+msgstr "`También se puede especificar el sombreado de Gouraud <https://en.wikipedia.org/wiki/Gouraud_shading>`, donde el color en los cuadriláteros se interpola linealmente entre los puntos de la Cuadrícula.  Las formas de *X*, *Y*, *Z* deben ser las mismas."
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:242
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:244
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:247
 msgid "`matplotlib.axes.Axes.pcolormesh` / `matplotlib.pyplot.pcolormesh`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.pcolormesh` / `matplotlib.pyplot.pcolormesh`"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:252
 msgid "**Total running time of the script:** ( 0 minutes  2.067 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 2.067 segundos)"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:267
 msgid ":download:`Download Python source code: pcolormesh_grids.py <pcolormesh_grids.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: pcolormesh_grids.py <pcolormesh_grids.py>`"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:273
 msgid ":download:`Download Jupyter notebook: pcolormesh_grids.ipynb <pcolormesh_grids.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: pcolormesh_grids.ipynb <pcolormesh_grids.ipynb>`"
 
 #: ../../gallery/images_contours_and_fields/pcolormesh_grids.rst:280
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

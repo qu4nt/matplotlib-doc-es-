@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:26\n"
+"PO-Revision-Date: 2022-07-03 22:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,85 +20,85 @@ msgstr ""
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_images_contours_and_fields_image_annotated_heatmap.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_images_contours_and_fields_image_annotated_heatmap.py>` para descargar el código completo del ejemplo"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:23
 msgid "Creating annotated heatmaps"
-msgstr ""
+msgstr "Creación de mapas térmicos anotados"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:25
 msgid "It is often desirable to show data which depends on two independent variables as a color coded image plot. This is often referred to as a heatmap. If the data is categorical, this would be called a categorical heatmap."
-msgstr ""
+msgstr "A menudo es conveniente mostrar los datos que dependen de dos variables independientes como un gráfico de imagen codificado por colores. A esto se le llama frecuentemente mapa de calor. Si los datos son categóricos, esto se llamaría un mapa de calor categórico."
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:30
 msgid "Matplotlib's `~matplotlib.axes.Axes.imshow` function makes production of such plots particularly easy."
-msgstr ""
+msgstr "La función `~matplotlib.axes.Axes.imshow` de Matplotlib hace que la producción de estos gráficos sea particularmente fácil."
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:33
 msgid "The following examples show how to create a heatmap with annotations. We will start with an easy example and expand it to be usable as a universal function."
-msgstr ""
+msgstr "Los siguientes ejemplos muestran cómo crear un mapa de calor con anotaciones. Empezaremos con un ejemplo fácil y lo ampliaremos para que pueda ser utilizado como una función universal."
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:40
 msgid "A simple categorical heatmap"
-msgstr ""
+msgstr "Un simple mapa de calor categórico"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:42
 msgid "We may start by defining some data. What we need is a 2D list or array which defines the data to color code. We then also need two lists or arrays of categories; of course the number of elements in those lists need to match the data along the respective axes. The heatmap itself is an `~matplotlib.axes.Axes.imshow` plot with the labels set to the categories we have. Note that it is important to set both, the tick locations (`~matplotlib.axes.Axes.set_xticks`) as well as the tick labels (`~matplotlib.axes.Axes.set_xticklabels`), otherwise they would become out of sync. The locations are just the ascending integer numbers, while the ticklabels are the labels to show. Finally we can label the data itself by creating a `~matplotlib.text.Text` within each cell showing the value of that cell."
-msgstr ""
+msgstr "Podemos empezar por definir algunos datos. Lo que necesitamos es una lista o arreglo 2D que defina los datos a colorear. También necesitamos dos listas o arreglos de categorías; por supuesto, el número de elementos en esas listas tiene que coincidir con los datos a lo largo de los ejes respectivos. El mapa de calor en sí es un gráfico `~matplotlib.axes.Axes.imshow` con las etiquetas establecidas en las categorías que tenemos. Tenga en cuenta que es importante establecer tanto las ubicaciones de los marcadores (`~matplotlib.axes.Axes.set_xticks`) como las etiquetas de los marcadores (`~matplotlib.axes.Axes.set_xticklabels`), de lo contrario se desincronizarían. Las ubicaciones son sólo los números enteros ascendentes, mientras que las etiquetas de ticks son las etiquetas a mostrar. Finalmente podemos etiquetar los datos en sí creando un `~matplotlib.text.Text` dentro de cada celda mostrando el valor de la misma."
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:117
 msgid "Using the helper function code style"
-msgstr ""
+msgstr "Utilizando el estilo de código de la función de ayuda"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:119
 msgid "As discussed in the :ref:`Coding styles <coding_styles>` one might want to reuse such code to create some kind of heatmap for different input data and/or on different axes. We create a function that takes the data and the row and column labels as input, and allows arguments that are used to customize the plot"
-msgstr ""
+msgstr "Como se discutió en la :ref:`Estilos de codificación <coding_styles>`, uno podría querer reutilizar dicho código para crear algún tipo de mapa de calor para diferentes datos de entrada y/o en diferentes ejes. Creamos una función que toma los datos y las etiquetas de las filas y columnas como entrada, y permite argumentos que se utilizan para personalizar el gráfico"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:125
 msgid "Here, in addition to the above we also want to create a colorbar and position the labels above of the heatmap instead of below it. The annotations shall get different colors depending on a threshold for better contrast against the pixel color. Finally, we turn the surrounding axes spines off and create a grid of white lines to separate the cells."
-msgstr ""
+msgstr "Aquí, además de lo anterior, también queremos crear una barra de colores y posicionar las etiquetas por encima del mapa de calor en lugar de por debajo. Las anotaciones obtendrán diferentes colores en función de un umbral para un mejor contraste con el color del píxel. Por último, desactivamos las espinas de los ejes circundantes y creamos una Cuadrícula de líneas blancas para separar las celdas."
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:263
 msgid "The above now allows us to keep the actual plot creation pretty compact."
-msgstr ""
+msgstr "Lo anterior nos permite ahora mantener la creación de la trama real bastante compacta."
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:296
 msgid "Some more complex heatmap examples"
-msgstr ""
+msgstr "Algunos ejemplos de mapas de calor más complejos"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:298
 msgid "In the following we show the versatility of the previously created functions by applying it in different cases and using different arguments."
-msgstr ""
+msgstr "A continuación mostramos la versatilidad de las funciones anteriormente creadas aplicándolas en diferentes casos y utilizando diferentes argumentos."
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:384
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:386
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:389
 msgid "`matplotlib.axes.Axes.imshow` / `matplotlib.pyplot.imshow`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.imshow` / `matplotlib.pyplot.imshow`"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:390
 msgid "`matplotlib.figure.Figure.colorbar` / `matplotlib.pyplot.colorbar`"
-msgstr ""
+msgstr "`matplotlib.figure.Figure.colorbar` / `matplotlib.pyplot.colorbar`"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:395
 msgid "**Total running time of the script:** ( 0 minutes  2.523 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 2,523 segundos)"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:410
 msgid ":download:`Download Python source code: image_annotated_heatmap.py <image_annotated_heatmap.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: image_annotated_heatmap.py <image_annotated_heatmap.py>`"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:416
 msgid ":download:`Download Jupyter notebook: image_annotated_heatmap.ipynb <image_annotated_heatmap.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: image_annotated_heatmap.ipynb <image_annotated_heatmap.ipynb>`"
 
 #: ../../gallery/images_contours_and_fields/image_annotated_heatmap.rst:423
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

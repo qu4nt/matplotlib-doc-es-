@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-05-24 23:35\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,150 +20,150 @@ msgstr ""
 
 #: ../../tutorials/advanced/path_tutorial.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_advanced_path_tutorial.py>` to download the full example code"
-msgstr ""
+msgstr "Haz click en :ref:`aquí <sphx_glr_download_tutorials_advanced_path_tutorial.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/advanced/path_tutorial.rst:23
 msgid "Path Tutorial"
-msgstr ""
+msgstr "Tutorial de la ruta"
 
 #: ../../tutorials/advanced/path_tutorial.rst:25
 msgid "Defining paths in your Matplotlib visualization."
-msgstr ""
+msgstr "Definición de rutas en tu visualización Matplotlib."
 
 #: ../../tutorials/advanced/path_tutorial.rst:27
 msgid "The object underlying all of the :mod:`matplotlib.patches` objects is the :class:`~matplotlib.path.Path`, which supports the standard set of moveto, lineto, curveto commands to draw simple and compound outlines consisting of line segments and splines.  The ``Path`` is instantiated with a (N, 2) array of (x, y) vertices, and a N-length array of path codes.  For example to draw the unit rectangle from (0, 0) to (1, 1), we could use this code:"
-msgstr ""
+msgstr "El objeto subyacente a todos los objetos :mod:`matplotlib.patches` es el :class:`~matplotlib.path.Path`, que soporta el conjunto estándar de comandos moveto, lineto, curveto para dibujar contornos simples y compuestos formados por segmentos de línea y splines.  El ``Path`` se instancia con un arreglo (N, 2) de vértices (x, y), y un arreglo de longitud N de códigos de trayectoria.  Por ejemplo, para dibujar el rectángulo unitario de (0, 0) a (1, 1), podríamos utilizar este código:"
 
 #: ../../tutorials/advanced/path_tutorial.rst:84
 msgid "The following path codes are recognized"
-msgstr ""
+msgstr "Se reconocen los siguientes códigos de ruta"
 
 #: ../../tutorials/advanced/path_tutorial.rst:87
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 #: ../../tutorials/advanced/path_tutorial.rst:87
 msgid "Vertices"
-msgstr ""
+msgstr "Vértices"
 
 #: ../../tutorials/advanced/path_tutorial.rst:87
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../tutorials/advanced/path_tutorial.rst:89
 msgid "``STOP``"
-msgstr ""
+msgstr "``STOP``"
 
 #: ../../tutorials/advanced/path_tutorial.rst:89
 msgid "1 (ignored)"
-msgstr ""
+msgstr "1 (ignorado)"
 
 #: ../../tutorials/advanced/path_tutorial.rst:89
 msgid "A marker for the end of the entire path (currently not required and ignored)."
-msgstr ""
+msgstr "Un marcador para el final de la ruta completa (actualmente no es necesario y se ignora)."
 
 #: ../../tutorials/advanced/path_tutorial.rst:92
 msgid "``MOVETO``"
-msgstr ""
+msgstr "``MOVETO``"
 
 #: ../../tutorials/advanced/path_tutorial.rst:92
 #: ../../tutorials/advanced/path_tutorial.rst:94
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../tutorials/advanced/path_tutorial.rst:92
 msgid "Pick up the pen and move to the given vertex."
-msgstr ""
+msgstr "Toma la pluma y se mueve al vértice dado."
 
 #: ../../tutorials/advanced/path_tutorial.rst:94
 msgid "``LINETO``"
-msgstr ""
+msgstr "``LINETO``"
 
 #: ../../tutorials/advanced/path_tutorial.rst:94
 msgid "Draw a line from the current position to the given vertex."
-msgstr ""
+msgstr "Dibuja una línea desde la posición actual hasta el vértice dado."
 
 #: ../../tutorials/advanced/path_tutorial.rst:96
 msgid "``CURVE3``"
-msgstr ""
+msgstr "``CURVE3``"
 
 #: ../../tutorials/advanced/path_tutorial.rst:96
 msgid "2: 1 control point, 1 end point"
-msgstr ""
+msgstr "2: 1 punto de control, 1 punto final"
 
 #: ../../tutorials/advanced/path_tutorial.rst:96
 msgid "Draw a quadratic Bézier curve from the current position, with the given control point, to the given end point."
-msgstr ""
+msgstr "Dibuja una curva cuadrática de Bézier desde la posición actual, con el punto de control dado, hasta el punto final dado."
 
 #: ../../tutorials/advanced/path_tutorial.rst:99
 msgid "``CURVE4``"
-msgstr ""
+msgstr "``CURVE4``"
 
 #: ../../tutorials/advanced/path_tutorial.rst:99
 msgid "3: 2 control points, 1 end point"
-msgstr ""
+msgstr "3: 2 puntos de control, 1 punto final"
 
 #: ../../tutorials/advanced/path_tutorial.rst:99
 msgid "Draw a cubic Bézier curve from the current position, with the given control points, to the given end point."
-msgstr ""
+msgstr "Dibuja una curva cúbica de Bézier desde la posición actual, con los puntos de control dados, hasta el punto final dado."
 
 #: ../../tutorials/advanced/path_tutorial.rst:103
 msgid "``CLOSEPOLY``"
-msgstr ""
+msgstr "``CLOSEPOLY``"
 
 #: ../../tutorials/advanced/path_tutorial.rst:103
 msgid "1 (the point is ignored)"
-msgstr ""
+msgstr "1 (el punto se ignora)"
 
 #: ../../tutorials/advanced/path_tutorial.rst:103
 msgid "Draw a line segment to the start point of the current polyline."
-msgstr ""
+msgstr "Dibuja un segmento de línea hasta el punto de inicio de la polilínea actual."
 
 #: ../../tutorials/advanced/path_tutorial.rst:112
 msgid "Bézier example"
-msgstr ""
+msgstr "Ejemplo de Bézier"
 
 #: ../../tutorials/advanced/path_tutorial.rst:114
 msgid "Some of the path components require multiple vertices to specify them: for example CURVE 3 is a `bézier <https://en.wikipedia.org/wiki/B%C3%A9zier_curve>`_ curve with one control point and one end point, and CURVE4 has three vertices for the two control points and the end point.  The example below shows a CURVE4 Bézier spline -- the bézier curve will be contained in the convex hull of the start point, the two control points, and the end point"
-msgstr ""
+msgstr "Algunos de los componentes de la trayectoria requieren múltiples vértices para especificarlos: por ejemplo la CURVA 3 es una curva `bézier <https://es.wikipedia.org/wiki/Curva_de_B%C3%A9zier>`_ con un punto de control y un punto final, y la CURVA4 tiene tres vértices para los dos puntos de control y el punto final.  El siguiente ejemplo muestra una spline CURVE4 Bézier -- la curva bézier estará contenida en el casco convexo del punto inicial, los dos puntos de control y el punto final"
 
 #: ../../tutorials/advanced/path_tutorial.rst:177
 msgid "Compound paths"
-msgstr ""
+msgstr "Rutas compuestas"
 
 #: ../../tutorials/advanced/path_tutorial.rst:179
 msgid "All of the simple patch primitives in matplotlib, Rectangle, Circle, Polygon, etc, are implemented with simple path.  Plotting functions like :meth:`~matplotlib.axes.Axes.hist` and :meth:`~matplotlib.axes.Axes.bar`, which create a number of primitives, e.g., a bunch of Rectangles, can usually be implemented more efficiently using a compound path.  The reason ``bar`` creates a list of rectangles and not a compound path is largely historical: the :class:`~matplotlib.path.Path` code is comparatively new and ``bar`` predates it.  While we could change it now, it would break old code, so here we will cover how to create compound paths, replacing the functionality in bar, in case you need to do so in your own code for efficiency reasons, e.g., you are creating an animated bar plot."
-msgstr ""
+msgstr "Todas las primitivas de trazado simple en Matplotlib, Rectángulo, Círculo, Polígono, etc, se implementan con path simple.  Las funciones de ploteo como :meth:`~matplotlib.axes.Axes.hist` y :meth:`~matplotlib.axes.Axes.bar`, que crean un número de primitivas, por ejemplo, un montón de Rectángulos, normalmente pueden implementarse de forma más eficiente utilizando un camino compuesto.  La razón por la que ``bar`` crea una lista de rectángulos y no un camino compuesto es en gran parte histórica: el código :class:`~matplotlib.path.Path` es comparativamente nuevo y ``bar`` es anterior a él.  Aunque podríamos cambiarlo ahora, rompería el código antiguo, así que aquí cubriremos cómo crear rutas compuestas, sustituyendo la funcionalidad de bar, en caso de que necesites hacerlo en tu propio código por razones de eficiencia, por ejemplo, si estás creando un gráfico de barras animado."
 
 #: ../../tutorials/advanced/path_tutorial.rst:192
 msgid "We will make the histogram chart by creating a series of rectangles for each histogram bar: the rectangle width is the bin width and the rectangle height is the number of datapoints in that bin.  First we'll create some random normally distributed data and compute the histogram.  Because numpy returns the bin edges and not centers, the length of ``bins`` is 1 greater than the length of ``n`` in the example below::"
-msgstr ""
+msgstr "Haremos el gráfico del histograma creando una serie de rectángulos para cada barra del histograma: el ancho del rectángulo es el ancho de la bandeja y la altura del rectángulo es el número de puntos de datos en esa bandeja. Primero crearemos algunos datos aleatorios distribuidos normalmente y calcularemos el histograma.  Debido a que numpy devuelve los bordes de los recipientes y no los centros, la longitud de ``bins`` es 1 mayor que la longitud de ``n`` en el siguiente ejemplo::"
 
 #: ../../tutorials/advanced/path_tutorial.rst:204
 msgid "We'll now extract the corners of the rectangles.  Each of the ``left``, ``bottom``, etc, arrays below is ``len(n)``, where ``n`` is the array of counts for each histogram bar::"
-msgstr ""
+msgstr "Ahora extraeremos las esquinas de los rectángulos.  Cada uno de los arreglos ``izquierda``, ``inferior``, etc, a continuación es ``len(n)``, donde ``n`` es el arreglo de cuentas para cada barra del histograma::"
 
 #: ../../tutorials/advanced/path_tutorial.rst:214
 msgid "Now we have to construct our compound path, which will consist of a series of ``MOVETO``, ``LINETO`` and ``CLOSEPOLY`` for each rectangle. For each rectangle, we need 5 vertices: 1 for the ``MOVETO``, 3 for the ``LINETO``, and 1 for the ``CLOSEPOLY``.  As indicated in the table above, the vertex for the closepoly is ignored but we still need it to keep the codes aligned with the vertices::"
-msgstr ""
+msgstr "Ahora tenemos que construir nuestro camino compuesto, que consistirá en una serie de ``MOVETO``, ``LINETO`` y ``CLOSEPOLY`` para cada rectángulo. Para cada rectángulo, necesitamos 5 vértices: 1 para el ``MOVETO``, 3 para el ``LINETO`` y 1 para el ``CLOSEPOLY``.  Como se indica en la tabla anterior, el vértice para el closepoly se ignora pero aún lo necesitamos para mantener los códigos alineados con los vértices::"
 
 #: ../../tutorials/advanced/path_tutorial.rst:235
 msgid "All that remains is to create the path, attach it to a :class:`~matplotlib.patches.PathPatch`, and add it to our axes::"
-msgstr ""
+msgstr "Sólo queda crear la ruta, adjuntarla a un :class:`~matplotlib.patches.PathPatch`, y añadirla a nuestros ejes::"
 
 #: ../../tutorials/advanced/path_tutorial.rst:305
 msgid "**Total running time of the script:** ( 0 minutes  1.038 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 1.038 segundos)"
 
 #: ../../tutorials/advanced/path_tutorial.rst:320
 msgid ":download:`Download Python source code: path_tutorial.py <path_tutorial.py>`"
-msgstr ""
+msgstr ":download:`Descargar Python source code: path_tutorial.py <path_tutorial.py>`"
 
 #: ../../tutorials/advanced/path_tutorial.rst:326
 msgid ":download:`Download Jupyter notebook: path_tutorial.ipynb <path_tutorial.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar Jupyter notebook: path_tutorial.ipynb <path_tutorial.ipynb>`"
 
 #: ../../tutorials/advanced/path_tutorial.rst:333
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

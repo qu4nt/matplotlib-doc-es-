@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-25 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,699 +20,699 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:4
 msgid "What's new in Matplotlib 1.5 (Oct 29, 2015)"
-msgstr ""
+msgstr "Novedades en Matplotlib 1.5 (29 de octubre de 2015)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:8
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de Contenidos"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:12
 msgid "matplotlib 1.5 supports Python 2.7, 3.4, and 3.5"
-msgstr ""
+msgstr "matplotlib 1.5 soporta Python 2.7, 3.4 y 3.5"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:20
 msgid "Interactive OO usage"
-msgstr ""
+msgstr "Uso interactivo de OO"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:22
 msgid "All `.Artist`\\s now keep track of if their internal state has been changed but not reflected in the display ('stale') by a call to ``draw``.  It is thus possible to pragmatically determine if a given `.Figure` needs to be re-drawn in an interactive session."
-msgstr ""
+msgstr "Todos los `.Artist`s ahora llevan la cuenta de si su estado interno ha sido cambiado pero no se ha reflejado en la pantalla ('stale') por una invocación a ``draw``.  De este modo es posible determinar de forma pragmática si una determinada `.Figura` necesita ser redibujada en una sesión interactiva."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:27
 msgid "To facilitate interactive usage a ``draw_all`` method has been added to ``pyplot`` which will redraw all of the figures which are 'stale'."
-msgstr ""
+msgstr "Para facilitar el uso interactivo, se ha añadido un método ``draw_all`` a ``pyplot`` que redibujará todas las figuras que sean 'stale'."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:30
 msgid "To make this convenient for interactive use matplotlib now registers a function either with IPython's 'post_execute' event or with the displayhook in the standard python REPL to automatically call ``plt.draw_all`` just before control is returned to the REPL.  This ensures that the draw command is deferred and only called once."
-msgstr ""
+msgstr "Para hacer esto conveniente para el uso interactivo matplotlib ahora registra una función ya sea con el evento 'post_execute' de IPython o con el displayhook en el REPL estándar de python para invocar automáticamente ``plt.draw_all`` justo antes de que el control sea devuelto al REPL.  Esto asegura que el comando de dibujo es diferido y sólo invocado una vez."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:36
 msgid "The upshot of this is that for interactive backends (including ``%matplotlib notebook``) in interactive mode (with ``plt.ion()``)"
-msgstr ""
+msgstr "El resultado de esto es que para los backends interactivos (incluyendo ``%matplotlib notebook``) en modo interactivo (con ``plt.ion()``)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:48
 msgid "will automatically update the plot to be green.  Any subsequent modifications to the ``Artist`` objects will do likewise."
-msgstr ""
+msgstr "actualizará automáticamente el gráfico para que sea verde.  Cualquier modificación posterior de los objetos ``Artist`` hará lo mismo."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:51
 msgid "This is the first step of a larger consolidation and simplification of the pyplot internals."
-msgstr ""
+msgstr "Este es el primer paso de una mayor consolidación y simplificación de los internos de pyplot."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:56
 msgid "Working with labeled data like pandas DataFrames"
-msgstr ""
+msgstr "Trabajar con datos etiquetados como pandas DataFrames"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:57
 msgid "Plot methods which take arrays as inputs can now also work with labeled data and unpack such data."
-msgstr ""
+msgstr "Los métodos de gráfico que toman arreglos como entradas ahora también pueden trabajar con datos etiquetados y desempaquetar dichos datos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:60
 msgid "This means that the following two examples produce the same plot:"
-msgstr ""
+msgstr "Esto significa que los dos ejemplos siguientes producen el mismo gráfico:"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:62
 #: ../../users/prev_whats_new/whats_new_1.5.rst:68
 msgid "Example ::"
-msgstr ""
+msgstr "Ejemplo ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:72
 msgid "This works for most plotting methods, which expect arrays/sequences as inputs.  ``data`` can be anything which supports ``__getitem__`` (``dict``, ``pandas.DataFrame``, ``h5py``, ...) to access ``array`` like values with string keys."
-msgstr ""
+msgstr "Esto funciona para la mayoría de los métodos de gráfico, que esperan arreglos como entradas.  ``data`` puede ser cualquier cosa que soporte ``__getitem__`` (``dict``, ``pandas.DataFrame``, ``h5py``, ...) para acceder a valores tipo ``array`` con claves de cadena."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:77
 msgid "In addition to this, some other changes were made, which makes working with labeled data (ex ``pandas.Series``) easier:"
-msgstr ""
+msgstr "Además de esto, se han realizado algunos otros cambios que facilitan el trabajo con datos etiquetados (por ejemplo, ``pandas.Series``):"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:80
 msgid "For plotting methods with ``label`` keyword argument, one of the data inputs is designated as the label source.  If the user does not supply a ``label`` that value object will be introspected for a label, currently by looking for a ``name`` attribute.  If the value object does not have a ``name`` attribute but was specified by as a key into the ``data`` kwarg, then the key is used.  In the above examples, this results in an implicit ``label=\"var2\"`` for both cases."
-msgstr ""
+msgstr "Para los métodos de graficado con el argumento de la palabra clave ``label``, una de las entradas de datos se designa como la fuente de la etiqueta.  Si el usuario no proporciona una ``etiqueta``, el objeto de valor será introspeccionado en busca de una etiqueta, actualmente buscando un atributo ``name``.  Si el objeto de valor no tiene un atributo ``name`` pero fue especificado como una clave en el kwarg ``data``, entonces se utiliza la clave.  En los ejemplos anteriores, esto resulta en una ``label=\"var2\"`` implícita para ambos casos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:89
 msgid "``plot()`` now uses the index of a ``Series`` instead of ``np.arange(len(y))``, if no ``x`` argument is supplied."
-msgstr ""
+msgstr "``plot()`` ahora utiliza el índice de una ``Serie`` en lugar de ``np.arange(len(y))``, si no se suministra el argumento ``x``."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:94
 msgid "Added ``axes.prop_cycle`` key to rcParams"
-msgstr ""
+msgstr "Añadida la clave ``axes.prop_cycle`` a rcParams"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:96
 msgid "This is a more generic form of the now-deprecated ``axes.color_cycle`` param. Now, we can cycle more than just colors, but also linestyles, hatches, and just about any other artist property. Cycler notation is used for defining property cycles. Adding cyclers together will be like you are `zip`-ing together two or more property cycles together::"
-msgstr ""
+msgstr "Esta es una forma más genérica del ahora obsoleto parámetro ``axes.color_cycle``. Ahora, podemos ciclar no sólo los colores, sino también los estilos de línea, los sombreados, y casi cualquier otra propiedad del artista. La notación cíclica se utiliza para definir los ciclos de las propiedades. Añadir cicladores juntos será como si estuvieras `zip`-ing juntos dos o más ciclos de propiedades juntos::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:104
 msgid "You can even multiply cyclers, which is like using `itertools.product` on two or more property cycles."
-msgstr ""
+msgstr "Incluso puede multiplicar los ciclos, que es como usar `itertools.product` en dos o más ciclos de propiedades."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:113
 msgid "New Colormaps"
-msgstr ""
+msgstr "Nuevos mapas de colores"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:115
 msgid "All four of the colormaps proposed as the new default are available as ``'viridis'`` (the new default in 2.0), ``'magma'``, ``'plasma'``, and ``'inferno'``"
-msgstr ""
+msgstr "Los cuatro mapas de colores propuestos por defecto están disponibles como ``'viridis'`` (el nuevo valor por defecto en la versión 2.0), ``'magma'``, ``'plasma'``, e ``'inferno'``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_1-5-1.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-1.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_1-5-1.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:143
 msgid "Styles"
-msgstr ""
+msgstr "Estilos"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:145
 msgid "Several new styles have been added, including many styles from the Seaborn project.  Additionally, in order to prep for the upcoming 2.0 style-change release, a 'classic' and 'default' style has been added. For this release, the 'default' and 'classic' styles are identical. By using them now in your scripts, you can help ensure a smooth transition during future upgrades of matplotlib, so that you can upgrade to the snazzy new defaults when you are ready! ::"
-msgstr ""
+msgstr "Se han añadido varios estilos nuevos, incluyendo muchos estilos del proyecto Seaborn.  Además, con el fin de preparar la próxima versión de cambio de estilo 2.0, se ha añadido un estilo 'clásico' y 'por defecto'. Para esta versión, los estilos 'por defecto' y 'clásico' son idénticos. Usándolos ahora en tus scripts, puedes ayudar a asegurar una transición sin problemas durante futuras actualizaciones de matplotlib, ¡para que puedas actualizar a los nuevos y elegantes valores por defecto cuando estés listo! ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:156
 msgid "The 'default' style will give you matplotlib's latest plotting styles::"
-msgstr ""
+msgstr "El estilo 'por defecto' te dará los últimos estilos de trazado de matplotlib::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:161
 msgid "Backends"
-msgstr ""
+msgstr "Backends"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:164
 msgid "New backend selection"
-msgstr ""
+msgstr "Nueva selección de backend"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:166
 msgid "The environment variable :envvar:`MPLBACKEND` can now be used to set the matplotlib backend."
-msgstr ""
+msgstr "La variable de entorno :envvar:`MPLBACKEND` puede utilizarse ahora para establecer el backend de matplotlib."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:171
 msgid "wx backend has been updated"
-msgstr ""
+msgstr "el backend de wx ha sido actualizado"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:173
 msgid "The wx backend can now be used with both wxPython classic and `Phoenix <https://wxpython.org/Phoenix/docs/html/main.html>`__."
-msgstr ""
+msgstr "El backend de wx ahora puede ser utilizado tanto con wxPython classic como con `Phoenix <https://wxpython.org/Phoenix/docs/html/main.html>`__."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:176
 msgid "wxPython classic has to be at least version 2.8.12 and works on Python 2.x. As of May 2015 no official release of wxPython Phoenix is available but a current snapshot will work on Python 2.7+ and 3.4+."
-msgstr ""
+msgstr "wxPython classic tiene que ser al menos la versión 2.8.12 y funciona en Python 2.x. En mayo de 2015 no hay ninguna versión oficial de wxPython Phoenix, pero una instantánea actual funciona en Python 2.7+ y 3.4+."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:180
 msgid "If you have multiple versions of wxPython installed, then the user code is responsible setting the wxPython version.  How to do this is explained in the comment at the beginning of the example :doc:`/gallery/user_interfaces/embedding_in_wx2_sgskip`."
-msgstr ""
+msgstr "Si tienes varias versiones de wxPython instaladas, entonces el código de usuario es responsable de establecer la versión de wxPython.  Cómo hacer esto se explica en el comentario al principio del ejemplo :doc:`/gallery/user_interfaces/embedding_in_wx2_sgskip`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:186
 msgid "Configuration (rcParams)"
-msgstr ""
+msgstr "Configuración (rcParams)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:188
 msgid "Some parameters have been added, others have been improved."
-msgstr ""
+msgstr "Se han añadido algunos parámetros y se han mejorado otros."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:191
 msgid "Parameter"
-msgstr ""
+msgstr "Parámetro"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:191
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:193
 msgid ":rc:`xaxis.labelpad`, :rc:`yaxis.labelpad`"
-msgstr ""
+msgstr ":rc:`xaxis.labelpad`, :rc:`yaxis.labelpad`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:193
 msgid "mplot3d now respects these parameters"
-msgstr ""
+msgstr "mplot3d ahora respeta estos parámetros"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:196
 msgid ":rc:`axes.labelpad`"
-msgstr ""
+msgstr ":rc:`axes.labelpad`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:196
 msgid "Default space between the axis and the label"
-msgstr ""
+msgstr "Espacio por defecto entre el eje y la etiqueta"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:198
 msgid ":rc:`errorbar.capsize`"
-msgstr ""
+msgstr ":rc:`errorbar.capsize`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:198
 msgid "Default length of end caps on error bars"
-msgstr ""
+msgstr "Longitud por defecto de los extremos de las barras de error"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:200
 msgid ":rc:`xtick.minor.visible`, :rc:`ytick.minor.visible`"
-msgstr ""
+msgstr ":rc:`xtick.minor.visible`, :rc:`ytick.minor.visible`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:200
 msgid "Default visibility of minor x/y ticks"
-msgstr ""
+msgstr "Visibilidad por defecto de los ticks menores x/y"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:203
 msgid ":rc:`legend.framealpha`"
-msgstr ""
+msgstr ":rc:`legend.framealpha`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:203
 msgid "Default transparency of the legend frame box"
-msgstr ""
+msgstr "Transparencia por defecto del cuadro de la leyenda"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:205
 msgid ":rc:`legend.facecolor`"
-msgstr ""
+msgstr ":rc:`legend.facecolor`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:205
 msgid "Default facecolor of legend frame box (or ``'inherit'`` from :rc:`axes.facecolor`)"
-msgstr ""
+msgstr "Color facial por defecto de la caja del marco de la leyenda (o ``'inherit'`` de :rc:`axes.facecolor`)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:208
 msgid ":rc:`legend.edgecolor`"
-msgstr ""
+msgstr ":rc:`legend.edgecolor`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:208
 msgid "Default edgecolor of legend frame box (or ``'inherit'`` from :rc:`axes.edgecolor`)"
-msgstr ""
+msgstr "Color de borde por defecto del cuadro de la leyenda (o ``'inherit'`` de :rc:`axes.edgecolor`)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:211
 msgid ":rc:`figure.titlesize`"
-msgstr ""
+msgstr ":rc:`figure.titlesize`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:211
 msgid "Default font size for figure suptitles"
-msgstr ""
+msgstr "Tamaño de letra por defecto para los subtítulos de las figuras"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:213
 msgid ":rc:`figure.titleweight`"
-msgstr ""
+msgstr ":rc:`figure.titleweight`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:213
 msgid "Default font weight for figure suptitles"
-msgstr ""
+msgstr "Peso de la fuente por defecto para los subtítulos de las figuras"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:215
 msgid ":rc:`image.composite_image`"
-msgstr ""
+msgstr ":rc:`image.composite_image`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:215
 msgid "Whether a vector graphics backend should composite several images into a single image or not when saving. Useful when needing to edit the files further in Inkscape or other programs."
-msgstr ""
+msgstr "Si un backend de gráficos vectoriales debe componer varias imágenes en una sola imagen o no al guardar. Es útil cuando se necesita editar los archivos en Inkscape u otros programas."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:220
 msgid ":rc:`markers.fillstyle`"
-msgstr ""
+msgstr ":rc:`markers.fillstyle`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:220
 msgid "Default fillstyle of markers. Possible values are ``'full'`` (the default), ``'left'``, ``'right'``, ``'bottom'``, ``'top'`` and ``'none'``"
-msgstr ""
+msgstr "Estilo de relleno por defecto de los marcadores. Los valores posibles son `'full'`` (por defecto), ``'left'``, ``'right'``, ``'bottom'``, ``'top'`` y ``'none'``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:225
 msgid ":rc:`toolbar`"
-msgstr ""
+msgstr ":rc:`toolbar`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:225
 msgid "Added ``'toolmanager'`` as a valid value, enabling the experimental ``ToolManager`` feature."
-msgstr ""
+msgstr "Se ha añadido ``'toolmanager'`` como valor válido, activando la función experimental ``ToolManager``."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:232
 msgid "Widgets"
-msgstr ""
+msgstr "Widgets"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:235
 msgid "Active state of Selectors"
-msgstr ""
+msgstr "Estado activo de los selectores"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:237
 msgid "All selectors now implement ``set_active`` and ``get_active`` methods (also called when accessing the ``active`` property) to properly update and query whether they are active."
-msgstr ""
+msgstr "Todos los selectores implementan ahora los métodos ``set_active`` y ``get_active`` (también invocados al acceder a la propiedad ``active``) para actualizar y consultar correctamente si están activos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:243
 msgid "Moved ``ignore``, ``set_active``, and ``get_active`` methods to base class ``Widget``"
-msgstr ""
+msgstr "Se han trasladado los métodos ``ignore``, ``set_active`` y ``get_active`` a la clase base ``Widget``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:245
 msgid "Pushes up duplicate methods in child class to parent class to avoid duplication of code."
-msgstr ""
+msgstr "Empuja los métodos duplicados en la clase hija a la clase padre para evitar la duplicación de código."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:249
 msgid "Adds enable/disable feature to MultiCursor"
-msgstr ""
+msgstr "Añade la característica de activar/desactivar a MultiCursor"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:251
 msgid "A MultiCursor object can be disabled (and enabled) after it has been created without destroying the object. Example::"
-msgstr ""
+msgstr "Un objeto MultiCursor puede ser desactivado (y activado) después de haber sido creado sin destruir el objeto. Ejemplo::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:258
 msgid "Improved RectangleSelector and new EllipseSelector Widget"
-msgstr ""
+msgstr "Mejora del RectangleSelector y nuevo Widget EllipseSelector"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:260
 msgid "Adds an *interactive* keyword which enables visible handles for manipulating the shape after it has been drawn."
-msgstr ""
+msgstr "Añade una palabra clave *interactiva* que habilita manejadores visibles para manipular la forma después de haberla dibujado."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:262
 msgid "Adds keyboard modifiers for:"
-msgstr ""
+msgstr "Añade modificadores de teclado para:"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:264
 msgid "Moving the existing shape (default key = 'space')"
-msgstr ""
+msgstr "Mover la forma existente (tecla por defecto = 'espacio')"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:265
 msgid "Making the shape square (default 'shift')"
-msgstr ""
+msgstr "Hacer que la forma sea cuadrada (por defecto 'shift')"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:266
 msgid "Make the initial point the center of the shape (default 'control')"
-msgstr ""
+msgstr "Hacer que el punto inicial sea el centro de la forma (por defecto 'control')"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:267
 msgid "Square and center can be combined"
-msgstr ""
+msgstr "El cuadrado y el centro pueden combinarse"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:270
 msgid "Allow Artists to Display Pixel Data in Cursor"
-msgstr ""
+msgstr "Permitir a los artists mostrar los datos de los píxeles en el cursor"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:272
 msgid "Adds `~.Artist.get_cursor_data` and `~.Artist.format_cursor_data` methods to artists which can be used to add zdata to the cursor display in the status bar.  Also adds an implementation for Images."
-msgstr ""
+msgstr "Añade los métodos `~.Artist.get_cursor_data` y `~.Artist.format_cursor_data` a los artistas que se pueden utilizar para añadir zdata a la visualización del cursor en la barra de estado.  También se añade una implementación para Imágenes."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:278
 msgid "New plotting features"
-msgstr ""
+msgstr "Nuevas características de graficado"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:282
 msgid "Auto-wrapping Text"
-msgstr ""
+msgstr "Envoltura automática del texto"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:284
 msgid "Added the keyword argument \"wrap\" to Text, which automatically breaks long lines of text when being drawn.  Works for any rotated text, different modes of alignment, and for text that are either labels or titles.  This breaks at the ``Figure``, not ``Axes`` edge."
-msgstr ""
+msgstr "Se ha añadido el argumento de palabra clave \"wrap\" (envolver) a Texto, que rompe automáticamente las líneas largas de texto cuando se dibujan.  Funciona para cualquier texto rotado, diferentes modos de alineación, y para texto que son etiquetas o títulos.  Esto rompe en el borde de la ``Figura``, no en el de los ``Ejes``."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_1-5-2.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-2.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_1-5-2.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:298
 msgid "Contour plot corner masking"
-msgstr ""
+msgstr "Contorno del gráfico de enmascaramiento de las esquinas"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:300
 msgid "Ian Thomas rewrote the C++ code that calculates contours to add support for corner masking.  This is controlled by a new keyword argument ``corner_mask`` in the functions :func:`~matplotlib.pyplot.contour` and :func:`~matplotlib.pyplot.contourf`.  The previous behaviour, which is now obtained using ``corner_mask=False``, was for a single masked point to completely mask out all four quads touching that point.  The new behaviour, obtained using ``corner_mask=True``, only masks the corners of those quads touching the point; any triangular corners comprising three unmasked points are contoured as usual.  If the ``corner_mask`` keyword argument is not specified, the default value is taken from rcParams."
-msgstr ""
+msgstr "Ian Thomas reescribió el código C++ que calcula los contornos para añadir soporte para el enmascaramiento de esquinas.  Esto se controla con un nuevo argumento de palabra clave ``corner_mask`` en las funciones :func:`~matplotlib.pyplot.contour` y :func:`~matplotlib.pyplot.contourf`.  El comportamiento anterior, que ahora se obtiene utilizando ``corner_mask=False``, consistía en que un único punto enmascarado enmascaraba completamente los cuatro cuadrantes que tocaban ese punto.  El nuevo comportamiento, que se obtiene utilizando ``corner_mask=True``, sólo enmascara las esquinas de los quads que tocan el punto; cualquier esquina triangular que comprenda tres puntos no enmascarados se contornea como siempre.  Si no se especifica el argumento de la palabra clave ``corner_mask``, se toma el valor por defecto de rcParams."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:317
 msgid "Mostly unified linestyles for `.Line2D`, `.Patch` and `.Collection`"
-msgstr ""
+msgstr "Estilos de línea más unificados para `.Line2D`, `.Patch` y `.Collection`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:319
 msgid "The handling of linestyles for Lines, Patches and Collections has been unified.  Now they all support defining linestyles with short symbols, like \"--\", as well as with full names, like \"dashed\". Also the definition using a dash pattern (``(0., [3., 3.])``) is supported for all methods using `.Line2D`, `.Patch` or `.Collection`."
-msgstr ""
+msgstr "Se ha unificado el manejo de los estilos de línea para Líneas, Parches y Colecciones.  Ahora todos soportan la definición de estilos de línea con símbolos cortos, como \"--\", así como con nombres completos, como \"guiones\". También se admite la definición mediante un patrón de guiones (``(0., [3., 3.])``) para todos los métodos que utilizan `.Line2D`, `.Patch` o `.Collection`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:327
 msgid "Legend marker order"
-msgstr ""
+msgstr "Orden del marcador de leyenda"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:329
 msgid "Added ability to place the label before the marker in a legend box with ``markerfirst`` keyword"
-msgstr ""
+msgstr "Se ha añadido la posibilidad de colocar la etiqueta antes del marcador en un cuadro de leyenda con la palabra clave ``markerfirst``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:334
 msgid "Support for legend for PolyCollection and stackplot"
-msgstr ""
+msgstr "Soporte para la leyenda de PolyCollection y stackplot"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:336
 msgid "Added a :mod:`.legend_handler` for :class:`~matplotlib.collections.PolyCollection` as well as a *labels* argument to :func:`~matplotlib.axes.Axes.stackplot`."
-msgstr ""
+msgstr "Se ha añadido un :mod:`.legend_handler` para :class:`~matplotlib.collections.PolyCollection` así como un argumento *labels* a :func:`~matplotlib.axes.Axes.stackplot`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:341
 msgid "Support for alternate pivots in mplot3d quiver plot"
-msgstr ""
+msgstr "Soporte para pivotes alternativos en mplot3d quiver plot"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:343
 msgid "Added a :code:`pivot` kwarg to :func:`~mpl_toolkits.mplot3d.Axes3D.quiver` that controls the pivot point around which the quiver line rotates. This also determines the placement of the arrow head along the quiver line."
-msgstr ""
+msgstr "Se ha añadido un kwarg :code:`pivot` a :func:`~mpl_toolkits.mplot3d.Axes3D.quiver` que controla el punto de pivote alrededor del cual gira la línea del quiver. Esto también determina la ubicación de la punta de la flecha a lo largo de la línea de quiver."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:349
 msgid "Logit Scale"
-msgstr ""
+msgstr "Escala Logit"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:351
 msgid "Added support for the 'logit' axis scale, a nonlinear transformation"
-msgstr ""
+msgstr "Se ha añadido soporte para la escala del eje 'logit', una transformación no lineal"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:353
 msgid "x -> \\log10(x / (1-x))"
-msgstr ""
+msgstr "x -> \\log10(x / (1-x))"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:357
 msgid "for data between 0 and 1 excluded."
-msgstr ""
+msgstr "para datos entre 0 y 1 excluidos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:361
 msgid "Add step kwargs to fill_between"
-msgstr ""
+msgstr "Añadir kwargs de paso a fill_between"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:363
 msgid "Added ``step`` kwarg to `.Axes.fill_between` to allow to fill between lines drawn using the 'step' draw style.  The values of ``step`` match those of the ``where`` kwarg of `.Axes.step`.  The asymmetry of the kwargs names is not ideal, but `.Axes.fill_between` already has a ``where`` kwarg."
-msgstr ""
+msgstr "Se ha añadido el kwarg ``step`` a `.Axes.fill_between` para poder rellenar entre líneas dibujadas con el estilo de dibujo 'step'.  Los valores de ``step`` coinciden con los del kwarg ``where`` de `.Axes.step``.  La asimetría de los nombres de los kwargs no es ideal, pero `.Axes.fill_between` ya tiene un kwarg ``where``."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:369
 msgid "This is particularly useful for plotting pre-binned histograms."
-msgstr ""
+msgstr "Esto es especialmente útil para graficar histogramas preagrupados."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:377
 msgid "Square Plot"
-msgstr ""
+msgstr "Gráfico cuadrado"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:379
 msgid "Implemented square plots feature as a new parameter in the axis function. When argument 'square' is specified, equal scaling is set, and the limits are set such that ``xmax-xmin == ymax-ymin``."
-msgstr ""
+msgstr "Se ha implementado la función de gráficos cuadrados como un nuevo parámetro en la función de eje. Cuando se especifica el argumento 'square', se establece una escala igual, y los límites se establecen de manera que ``xmax-xmin == ymax-ymin``."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_1-5-3.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-3.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_1-5-3.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-3.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:390
 msgid "Updated figimage to take optional resize parameter"
-msgstr ""
+msgstr "Actualizado figimage para tomar el parámetro opcional de cambio de tamaño"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:392
 msgid "Added the ability to plot simple 2D-Array using ``plt.figimage(X, resize=True)``. This is useful for plotting simple 2D-Array without the Axes or whitespacing around the image."
-msgstr ""
+msgstr "Se ha añadido la posibilidad de graficar una matriz 2D simple utilizando ``plt.figimage(X, resize=True)``. Esto es útil para graficar simples arreglos 2D sin los ejes o el espacio en blanco alrededor de la imagen."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_1-5-4.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-4.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_1-5-4.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-4.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:402
 msgid "Updated Figure.savefig() can now use figure's dpi"
-msgstr ""
+msgstr "Actualizado Figure.savefig() ahora puede utilizar los dpi de la figura"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:404
 msgid "Added support to save the figure with the same dpi as the figure on the screen using ``dpi='figure'``:."
-msgstr ""
+msgstr "Se ha añadido soporte para guardar la figura con los mismos dpi que la figura en la pantalla usando ``dpi='figura'``:."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:407
 #: ../../users/prev_whats_new/whats_new_1.5.rst:423
 msgid "Example::"
-msgstr ""
+msgstr "Ejemplo::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:415
 msgid "Updated Table to control edge visibility"
-msgstr ""
+msgstr "Tabla actualizada para controlar la visibilidad de las aristas"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:417
 msgid "Added the ability to toggle the visibility of lines in Tables. Functionality added to the `.pyplot.table` factory function under the keyword argument \"edges\".  Values can be the strings \"open\", \"closed\", \"horizontal\", \"vertical\" or combinations of the letters \"L\", \"R\", \"T\", \"B\" which represent left, right, top, and bottom respectively."
-msgstr ""
+msgstr "Se ha añadido la posibilidad de alternar la visibilidad de las líneas en las tablas. Funcionalidad añadida a la función de fábrica `.pyplot.table` bajo el argumento de la palabra clave \"edges\".  Los valores pueden ser las cadenas \"open\", \"closed\", \"horizontal\", \"vertical\" o combinaciones de las letras \"L\", \"R\", \"T\", \"B\" que representan la izquierda, la derecha, la parte superior y la parte inferior respectivamente."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:431
 msgid "Zero r/cstride support in plot_wireframe"
-msgstr ""
+msgstr "Cero soporte de r/cstride en plot_wireframe"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:433
 msgid "Adam Hughes added support to mplot3d's plot_wireframe to draw only row or column line plots."
-msgstr ""
+msgstr "Adam Hughes ha añadido soporte a mplot3d's plot_wireframe para dibujar sólo gráficos de líneas de filas o columnas."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_1-5-5.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-5.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-5.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_1-5-5.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-5.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-5.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:447
 msgid "Plot bar and barh with labels"
-msgstr ""
+msgstr "Gráfico de barras y barras con etiquetas"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:449
 msgid "Added kwarg *tick_label* to `~.Axes.bar` and `~.Axes.barh` to support plotting bar graphs with a text label for each bar."
-msgstr ""
+msgstr "Se ha añadido el kwarg*tick_label* to `~.Axes.bar` y `~.Axes.barh` para poder trazar gráficos de barras con una etiqueta de texto para cada barra."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_1-5-6.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-6.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-6.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_1-5-6.py>`__, `png <../../users/prev_whats_new/whats_new_1-5-6.png>`__, `pdf <../../users/prev_whats_new/whats_new_1-5-6.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:458
 msgid "Added center and frame kwargs to pie"
-msgstr ""
+msgstr "Añadidos los kwargs del centro y del marco del círculo"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:460
 msgid "These control where the center of the pie graph are and if the Axes frame is shown."
-msgstr ""
+msgstr "Controlan dónde está el centro del gráfico circular y si se muestra el marco de los ejes."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:464
 msgid "Fixed 3D filled contour plot polygon rendering"
-msgstr ""
+msgstr "Corregido el renderizado de polígonos de contornos rellenos en 3D"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:466
 msgid "Certain cases of 3D filled contour plots that produce polygons with multiple holes produced improper rendering due to a loss of path information between :class:`~matplotlib.collections.PolyCollection` and :class:`~mpl_toolkits.mplot3d.art3d.Poly3DCollection`.  A function :func:`~matplotlib.collections.PolyCollection.set_verts_and_codes` was added to allow path information to be retained for proper rendering."
-msgstr ""
+msgstr "Algunos casos de gráficos de contorno rellenos en 3D que producen polígonos con múltiples agujeros producían un renderizado incorrecto debido a la pérdida de información de la ruta entre :class:`~matplotlib.collections.PolyCollection` y :class:`~mpl_toolkits.mplot3d.art3d.Poly3DCollection`.  Se ha añadido una función :func:`~matplotlib.collections.PolyCollection.set_verts_and_codes` para permitir que se conserve la información de la ruta para su correcta representación."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:474
 msgid "Dense colorbars are rasterized"
-msgstr ""
+msgstr "Las barras de color densas se rasterizan"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:476
 msgid "Vector file formats (pdf, ps, svg) are efficient for many types of plot element, but for some they can yield excessive file size and even rendering artifacts, depending on the renderer used for screen display.  This is a problem for colorbars that show a large number of shades, as is most commonly the case.  Now, if a colorbar is showing 50 or more colors, it will be rasterized in vector backends."
-msgstr ""
+msgstr "Los formatos de archivo vectoriales (pdf, ps, svg) son eficientes para muchos tipos de elementos de graficado, pero para algunos pueden producir un tamaño de archivo excesivo e incluso artefactos de renderizado, dependiendo del renderizador utilizado para la visualización en pantalla.  Esto es un problema para las barras de color que muestran un gran número de matices, como es el caso más común.  Ahora, si una barra de color muestra 50 o más colores, se rasterizará en los backends vectoriales."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:487
 msgid "DateFormatter strftime"
-msgstr ""
+msgstr "DateFormatter strftime"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:488
 msgid ":class:`~matplotlib.dates.DateFormatter`\\ 's ``__call__`` method will format a :class:`datetime.datetime` object with the format string passed to the formatter's constructor. This method accepts datetimes with years before 1900, unlike :meth:`datetime.datetime.strftime`."
-msgstr ""
+msgstr "El método ``__call__`` de :class:`~matplotlib.dates.DateFormatter`\\ 's formateará un objeto :class:`datetime.datetime` con la cadena de formato pasada al constructor del formateador. Este método acepta fechas anteriores a 1900, a diferencia de :meth:`datetime.datetime.strftime`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:495
 msgid "Artist-level {get,set}_usetex for text"
-msgstr ""
+msgstr "Nivel de artist {get,set}_usetex para texto"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:497
 msgid "Add ``{get,set}_usetex`` methods to :class:`~matplotlib.text.Text` objects which allow artist-level control of LaTeX rendering vs. the internal mathtex rendering."
-msgstr ""
+msgstr "Añade métodos ``{get,set}_usetex`` a los objetos :class:`~matplotlib.text.Text` que permiten el control a nivel de artist del renderizado de LaTeX frente al renderizado interno de mathtex."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:503
 msgid "``Axes.remove()`` works as expected"
-msgstr ""
+msgstr "``Axes.remove()`` funciona como se esperaba"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:505
 msgid "As with artists added to an :class:`~matplotlib.axes.Axes`, `~.axes.Axes` objects can be removed from their figure via `~.Artist.remove()`."
-msgstr ""
+msgstr "Al igual que los artistas añadidos a una :class:`~matplotlib.axes.Axes`, los objetos `~.axes.Axes` pueden ser eliminados de su figura mediante `~.Artist.remove()`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:511
 msgid "API Consistency fix within Locators set_params() function"
-msgstr ""
+msgstr "Corrección de la coherencia de la API en la función set_params() de los localizadores"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:513
 msgid ":meth:`~matplotlib.ticker.Locator.set_params` function, which sets parameters within a :class:`~matplotlib.ticker.Locator` type instance, is now available to all `.Locator` types. The implementation also prevents unsafe usage by strictly defining the parameters that a user can set."
-msgstr ""
+msgstr "La función :meth:`~matplotlib.ticker.Locator.set_params`, que establece parámetros dentro de una instancia de tipo :class:`~matplotlib.ticker.Locator`, está ahora disponible para todos los tipos `.Locator`. La implementación también evita el uso inseguro al definir estrictamente los parámetros que un usuario puede establecer."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:519
 msgid "To use, call ``set_params()`` on a `.Locator` instance with desired arguments: ::"
-msgstr ""
+msgstr "Para utilizarlo, invoca ``set_params()`` en una instancia de `.Locator` con los argumentos deseados: ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:531
 msgid "Date Locators"
-msgstr ""
+msgstr "Localizadores de fechas"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:533
 msgid "Date Locators (derived from :class:`~matplotlib.dates.DateLocator`) now implement the `~matplotlib.ticker.Locator.tick_values` method. This is expected of all Locators derived from `~matplotlib.ticker.Locator`."
-msgstr ""
+msgstr "Los localizadores de fechas (derivados de :class:`~matplotlib.dates.DateLocator`) ahora implementan el método `~matplotlib.ticker.Locator.tick_values`. Esto se espera de todos los localizadores derivados de `~matplotlib.ticker.Locator`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:537
 msgid "The Date Locators can now be used easily without creating axes ::"
-msgstr ""
+msgstr "Los localizadores de fechas pueden utilizarse ahora fácilmente sin necesidad de crear ejes ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:547
 msgid "OffsetBoxes now support clipping"
-msgstr ""
+msgstr "Los OffsetBoxes ahora soportan el recorte"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:549
 msgid "`.Artist`\\s draw onto objects of type `.OffsetBox` through `~.offsetbox.DrawingArea` and `~.offsetbox.TextArea`. The `.TextArea` calculates the required space for the text and so the text is always within the bounds, for this nothing has changed."
-msgstr ""
+msgstr "Los `.Artist` dibujados sobre objetos de tipo `.OffsetBox` a través de `~.offsetbox.DrawingArea` y `~.offsetbox.TextArea`. El `.TextArea` calcula el espacio necesario para el texto y así el texto está siempre dentro de los límites, para esto nada ha cambiado."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:554
 msgid "However, `.DrawingArea` acts as a parent for zero or more `.Artist`\\s that draw on it and may do so beyond the bounds. Now child `.Artist`\\s can be clipped to the bounds of the `.DrawingArea`."
-msgstr ""
+msgstr "Sin embargo, `.DrawingArea` actúa como padre para cero o más `.Artist` que dibujan en él y pueden hacerlo más allá de los límites. Ahora los `.Artist` hijos pueden ser recortados a los límites del `.DrawingArea`."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:560
 msgid "OffsetBoxes now considered by tight_layout"
-msgstr ""
+msgstr "OffsetBoxes ahora considerado por tight_layout"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:562
 msgid "When `~matplotlib.pyplot.tight_layout()` or `.Figure.tight_layout` or `.GridSpec.tight_layout()` is called, `.OffsetBox`\\es that are anchored outside the axes will not get chopped out. The `.OffsetBox`\\es will also not get overlapped by other axes in case of multiple subplots."
-msgstr ""
+msgstr "Cuando se invoca `~matplotlib.pyplot.tight_layout()` o `.Figure.tight_layout` o `.GridSpec.tight_layout()`, los `.OffsetBox` que están anclados fuera de los ejes no serán cortados. Los `.OffsetBox` tampoco se superpondrán a otros ejes en caso de múltiples subgráficos."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:568
 msgid "Per-page pdf notes in multi-page pdfs (PdfPages)"
-msgstr ""
+msgstr "Notas por página en pdfs de varias páginas (PdfPages)"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:570
 msgid "Add a new method :meth:`~matplotlib.backends.backend_pdf.PdfPages.attach_note` to the PdfPages class, allowing the attachment of simple text notes to pages in a multi-page pdf of figures. The new note is visible in the list of pdf annotations in a viewer that has this facility (Adobe Reader, OSX Preview, Skim, etc.). Per default the note itself is kept off-page to prevent it to appear in print-outs."
-msgstr ""
+msgstr "Añade un nuevo método :meth:`~matplotlib.backends.backend_pdf.PdfPages.attach_note` a la clase PdfPages, que permite adjuntar notas de texto simples a las páginas de un pdf de figuras de varias páginas. La nueva nota es visible en la lista de anotaciones del pdf en un visor que tenga esta facilidad (Adobe Reader, OSX Preview, Skim, etc.). Por defecto, la nota se mantiene fuera de la página para evitar que aparezca en las impresiones."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:578
 msgid "`.PdfPages.attach_note` needs to be called before `~.Figure.savefig` in order to be added to the correct figure."
-msgstr ""
+msgstr "`.PdfPages.attach_note` debe ser invocado antes de `~.Figure.savefig` para que se añada a la figura correcta."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:582
 msgid "Updated fignum_exists to take figure name"
-msgstr ""
+msgstr "Actualizado fignum_exists para tomar el nombre de la figura"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:584
 msgid "Added the ability to check the existence of a figure using its name instead of just the figure number. Example::"
-msgstr ""
+msgstr "Se ha añadido la posibilidad de comprobar la existencia de una figura utilizando su nombre en lugar de sólo el número de figura. Ejemplo::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:593
 msgid "ToolManager"
-msgstr ""
+msgstr "Gestor de herramientas"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:595
 msgid "Federico Ariza wrote the new `~matplotlib.backend_managers.ToolManager` that comes as replacement for `.NavigationToolbar2`"
-msgstr ""
+msgstr "Federico Ariza escribió el nuevo `~matplotlib.backend_managers.ToolManager` que viene a sustituir a `.NavigationToolbar2`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:598
 msgid "`.ToolManager` offers a new way of looking at the user interactions with the figures.  Before we had the `.NavigationToolbar2` with its own tools like ``zoom/pan/home/save/...`` and also we had the shortcuts like ``yscale/grid/quit/....``. `.ToolManager` relocate all those actions as Tools (located in `~matplotlib.backend_tools`), and defines a way to access/trigger/reconfigure them."
-msgstr ""
+msgstr "El `.ToolManager` ofrece una nueva forma de ver las interacciones del usuario con las figuras.  Antes teníamos la `.NavigationToolbar2` con sus propias herramientas como ``zoom/pan/home/save/...`` y también teníamos los atajos como ``yscale/grid/quit/....``. El gestor de herramientas `.ToolManager` reubica todas esas acciones como herramientas (ubicadas en `~matplotlib.backend_tools`), y define una forma de acceder/desencadenar/reconfigurarlas."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:605
 msgid "The Toolbars are replaced by `.ToolContainerBase`\\s that are just GUI interfaces to trigger the tools. But don't worry the default backends include a `.ToolContainerBase` called ``toolbar``"
-msgstr ""
+msgstr "Las barras de herramientas son reemplazadas por `.ToolContainerBase` que son sólo interfaces IGU para activar las herramientas. Pero no te preocupes, los backends por defecto incluyen un `.ToolContainerBase` llamado ``toolbar``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:611
 msgid "At the moment, we release this primarily for feedback purposes and should be treated as experimental until further notice as API changes will occur. For the moment the `.ToolManager` works only with the GTK3 and Tk backends. Make sure you use one of those. Port for the rest of the backends is coming soon."
-msgstr ""
+msgstr "Por el momento, publicamos esto principalmente con fines de retroalimentación y debe ser tratado como experimental hasta nuevo aviso, ya que se producirán cambios en la API. Por el momento el `.ToolManager` sólo funciona con los backends GTK3 y Tk. Asegúrate de utilizar uno de ellos. El puerto para el resto de los backends está por llegar."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:617
 msgid "To activate the `.ToolManager` include the following at the top of your file ::"
-msgstr ""
+msgstr "Para activar el `.ToolManager` incluya lo siguiente en la parte superior de su archivo ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:623
 msgid "Interact with the ToolContainer"
-msgstr ""
+msgstr "Interactuar con el ToolContainer"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:625
 msgid "The most important feature is the ability to easily reconfigure the ToolContainer (aka toolbar). For example, if we want to remove the \"forward\" button we would just do. ::"
-msgstr ""
+msgstr "La característica más importante es la posibilidad de reconfigurar fácilmente el ToolContainer (también conocido como barra de herramientas). Por ejemplo, si deseamos eliminar el botón de \"forward\" sólo tendríamos que hacer. ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:630
 msgid "Now if you want to programmatically trigger the \"home\" button ::"
-msgstr ""
+msgstr "Ahora bien, si desea activar mediante programación el botón \"home\" ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:636
 msgid "New Tools for ToolManager"
-msgstr ""
+msgstr "Nuevas herramientas para ToolManager"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:638
 msgid "It is possible to add new tools to the ToolManager"
-msgstr ""
+msgstr "Es posible añadir nuevas herramientas al ToolManager"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:640
 msgid "A very simple tool that prints \"You're awesome\" would be::"
-msgstr ""
+msgstr "Una herramienta muy sencilla que imprime \"You're awesome\" sería::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:648
 msgid "To add this tool to `.ToolManager`"
-msgstr ""
+msgstr "Para añadir esta herramienta a `.ToolManager`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:652
 msgid "If we want to add a shortcut (\"d\") for the tool"
-msgstr ""
+msgstr "Si deseamos añadir un acceso directo (\"d\") para la herramienta"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:657
 msgid "To add it to the toolbar inside the group 'foo'"
-msgstr ""
+msgstr "Para añadirlo a la barra de herramientas dentro del grupo 'foo'"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:662
 msgid "There is a second class of tools, \"Toggleable Tools\", this are almost the same as our basic tools, just that belong to a group, and are mutually exclusive inside that group.  For tools derived from `.ToolToggleBase` there are two basic methods `~.ToolToggleBase.enable` and `~.ToolToggleBase.disable` that are called automatically whenever it is toggled."
-msgstr ""
+msgstr "Hay una segunda clase de herramientas, \"Toggleable Tools\", estas son casi las mismas que nuestras herramientas básicas, solo que pertenecen a un grupo, y son mutuamente excluyentes dentro de ese grupo.  Para las herramientas derivadas de `.ToolToggleBase` hay dos métodos básicos `~.ToolToggleBase.enable` y `~.ToolToggleBase.disable` que son invocados automáticamente cada vez que se conmuta."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:669
 msgid "A full example is located in :doc:`/gallery/user_interfaces/toolmanager_sgskip`"
-msgstr ""
+msgstr "Un ejemplo completo se encuentra en :doc:`/gallery/user_interfaces/toolmanager_sgskip`"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:673
 msgid "cbook.is_sequence_of_strings recognizes string objects"
-msgstr ""
+msgstr "cbook.is_sequence_of_strings reconoce objetos de cadena"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:675
 msgid "This is primarily how pandas stores a sequence of strings ::"
-msgstr ""
+msgstr "Así es principalmente como pandas almacena una secuencia de cadenas ::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:689
 msgid "Previously, the last two prints returned false."
-msgstr ""
+msgstr "Anteriormente, las dos últimas impresiones devolvían falso."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:693
 msgid "New ``close-figs`` argument for plot directive"
-msgstr ""
+msgstr "Nuevo argumento ``close-figs`` para la directiva de graficado"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:695
 msgid "Matplotlib has a sphinx extension ``plot_directive`` that creates plots for inclusion in sphinx documents.  Matplotlib 1.5 adds a new option to the plot directive - ``close-figs`` - that closes any previous figure windows before creating the plots.  This can help avoid some surprising duplicates of plots when using ``plot_directive``."
-msgstr ""
+msgstr "Matplotlib tiene una extensión de sphinx ``plot_directive`` que crea gráficos para incluirlos en documentos de sphinx.  Matplotlib 1.5 añade una nueva opción a la directiva de graficado - ``close-figs`` - que cierra cualquier ventana de figura anterior antes de crear los gráfico.  Esto puede ayudar a evitar algunos duplicados sorprendentes de gráficos cuando se utiliza ``plot_directive``."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:702
 msgid "Support for URL string arguments to ``imread``"
-msgstr ""
+msgstr "Soporte para argumentos de cadena URL para ``imread``"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:704
 msgid "The :func:`~matplotlib.pyplot.imread` function now accepts URL strings that point to remote PNG files. This circumvents the generation of a HTTPResponse object directly."
-msgstr ""
+msgstr "La función :func:`~matplotlib.pyplot.imread` ahora acepta cadenas de URL que apuntan a archivos PNG remotos. Esto evita la generación de un objeto HTTPResponse directamente."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:709
 msgid "Display hook for animations in the IPython notebook"
-msgstr ""
+msgstr "Hook de visualización para animaciones en el cuaderno IPython"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:711
 msgid "`~matplotlib.animation.Animation` instances gained a ``_repr_html_`` method to support inline display of animations in the notebook. The method used to display is controlled by the ``animation.html`` rc parameter, which currently supports values of ``none`` and ``html5``. ``none`` is the default, performing no display. ``html5`` converts the animation to an h264 encoded video, which is embedded directly in the notebook."
-msgstr ""
+msgstr "Las instancias de `~matplotlib.animation.Animation` ganaron un método ``_repr_html_`` para soportar la visualización en línea de las animaciones en el cuaderno. El método utilizado para mostrar es controlado por el parámetro rc ``animation.html``, que actualmente admite valores de ``none`` y ``html5``. ``none`` es el valor por defecto, que no realiza ninguna visualización. ``html5`` convierte la animación en un vídeo codificado en h264, que se incrusta directamente en el cuaderno."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:718
 msgid "Users not wishing to use the ``_repr_html_`` display hook can also manually call the `.to_html5_video` method to get the HTML and display using IPython's ``HTML`` display class::"
-msgstr ""
+msgstr "Los usuarios que no deseen utilizar el hook de visualización ``_repr_html_`` también pueden invocar manualmente el método `.to_html5_video` para obtener el HTML y visualizarlo utilizando la clase de visualización ``HTML`` de IPython::"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:726
 msgid "Prefixed pkg-config for building"
-msgstr ""
+msgstr "Pkg-config prefijado para la construcción"
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:728
 msgid "Handling of pkg-config has been fixed in so far as it is now possible to set it using the environment variable ``PKG_CONFIG``. This is important if your toolchain is prefixed. This is done in a simpilar way as setting ``CC`` or ``CXX`` before building. An example follows."
-msgstr ""
+msgstr "Se ha corregido el manejo de pkg-config en la medida en que ahora es posible establecerlo utilizando la variable de entorno ``PKG_CONFIG``. Esto es importante si su cadena de herramientas está prefijada. Esto se hace de manera similar a la configuración de ``CC`` o ``CXX`` antes de la construcción. Un ejemplo es el siguiente."
 
 #: ../../users/prev_whats_new/whats_new_1.5.rst:733
 msgid "export PKG_CONFIG=x86_64-pc-linux-gnu-pkg-config"
-msgstr ""
+msgstr "exportar PKG_CONFIG=x86_64-pc-linux-gnu-pkg-config"
 

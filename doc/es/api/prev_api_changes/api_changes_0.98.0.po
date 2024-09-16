@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:22\n"
+"PO-Revision-Date: 2022-11-02 14:11\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,75 +20,75 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:4
 msgid "Changes for 0.98.0"
-msgstr ""
+msgstr "Cambios para 0.98.0"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:6
 msgid ":func:`matplotlib.image.imread` now no longer always returns RGBA data---if the image is luminance or RGB, it will return a MxN or MxNx3 array if possible.  Also uint8 is no longer always forced to float."
-msgstr ""
+msgstr ":func:`matplotlib.imagen. mread` ahora ya no siempre devuelve datos RGBA ---si la imagen es luminancia o RGB, devolverá una matriz MxN o MxNx3 si es posible. También uint8 ya no siempre se ve obligado a flotar."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:10
 msgid "Rewrote the :class:`matplotlib.cm.ScalarMappable` callback infrastructure to use :class:`matplotlib.cbook.CallbackRegistry` rather than custom callback handling.  Any users of ``matplotlib.cm.ScalarMappable.add_observer`` of the :class:`~matplotlib.cm.ScalarMappable` should use the :attr:`matplotlib.cm.ScalarMappable.callbacksSM` :class:`~matplotlib.cbook.CallbackRegistry` instead."
-msgstr ""
+msgstr "Reescribió la infraestructura de devolución de llamada :class:`matplotlib.cm.ScalarMappable` para usar :class:`matplotlib.cbook.CallbackRegistry` en lugar de la gestión de callback personalizada. Cualquier usuario de ``matplotlib.cm. calarMappable.add_observer`` del :class:`~matplotlib.cm.ScalarMappable` debería usar el :attr:`matplotlib.cm.ScalarMappable.callbacksSM` :class:`~matplotlib.cbook.CallbackRegistry` en su lugar."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:18
 msgid "New axes function and Axes method provide control over the plot color cycle: ``matplotlib.axes.set_default_color_cycle`` and ``matplotlib.axes.Axes.set_color_cycle``."
-msgstr ""
+msgstr "La función de ejes nuevos y el método de ejes proporcionan control sobre el ciclo de color de la parcela: ``matplotlib.axes.set_default_color_cycle`` y ``matplotlib.axes.Axes.set_color_cycle``."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:22
 msgid "Matplotlib now requires Python 2.4, so :mod:`matplotlib.cbook` will no longer provide :class:`set`, :func:`enumerate`, :func:`reversed` or ``izip`` compatibility functions."
-msgstr ""
+msgstr "Matplotlib ahora requiere Python 2.4, así que :mod:`matplotlib.cbook` ya no proporcionará las funciones de compatibilidad :class:`set`, :func:`enumerate`, :func:`reversed` o ``izip``."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:26
 msgid "In Numpy 1.0, bins are specified by the left edges only.  The axes method :meth:`matplotlib.axes.Axes.hist` now uses future Numpy 1.3 semantics for histograms.  Providing ``binedges``, the last value gives the upper-right edge now, which was implicitly set to +infinity in Numpy 1.0.  This also means that the last bin doesn't contain upper outliers any more by default."
-msgstr ""
+msgstr "En Numpy 1.0, las papeleras son especificadas únicamente por los bordes izquierdos. El método :meth:`matplotlib. xes.Axes.First` ahora usa la semántica numérica futura 1.3 para los histogramas. Proporcionando ``binedges``, el último valor da el borde superior derecho ahora, que fue establecido implícitamente a +infinity en Numpy 1. Esto también significa que la última papelera ya no contiene más atípicos superiores por defecto."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:33
 msgid "New axes method and pyplot function, :func:`~matplotlib.pyplot.hexbin`, is an alternative to :func:`~matplotlib.pyplot.scatter` for large datasets.  It makes something like a :func:`~matplotlib.pyplot.pcolor` of a 2-D histogram, but uses hexagonal bins."
-msgstr ""
+msgstr "Nuevo método de ejes y función pyplot, :func:`~matplotlib.pyplot.hexbin`, es una alternativa a :func:`~matplotlib.pyplot. catter` para conjuntos de datos grandes. Hace algo como un :func:`~matplotlib.pyplot.pcolor` de un histograma 2-D, pero usa papeles hexagonales."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:39
 msgid "New kwarg, ``symmetric``, in :class:`matplotlib.ticker.MaxNLocator` allows one require an axis to be centered around zero."
-msgstr ""
+msgstr "Nuevo kwarg, ``simétrico``, en :class:`matplotlib.ticker.MaxNLocator` permite que uno requiera un eje centrado en cero."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:42
 msgid "Toolkits must now be imported from ``mpl_toolkits`` (not ``matplotlib.toolkits``)"
-msgstr ""
+msgstr "Los kits de herramientas ahora deben importarse de ``mpl_toolkits`` (no ``matplotlib.toolkits``)"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:45
 msgid "Notes about the transforms refactoring"
-msgstr ""
+msgstr "Notas sobre la refactorización de las transformaciones"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:47
 msgid "A major new feature of the 0.98 series is a more flexible and extensible transformation infrastructure, written in Python/Numpy rather than a custom C extension."
-msgstr ""
+msgstr "Una nueva característica importante de la serie 0.98 es una infraestructura de transformación más flexible y extensible, escrita en Python/Numpy en lugar de una extensión de C personalizada."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:51
 msgid "The primary goal of this refactoring was to make it easier to extend matplotlib to support new kinds of projections.  This is mostly an internal improvement, and the possible user-visible changes it allows are yet to come."
-msgstr ""
+msgstr "El objetivo principal de esta refactorización era facilitar la extensión de matplotlib para apoyar nuevos tipos de proyecciones. Esto es principalmente una mejora interna, y los posibles cambios visibles por el usuario que permite todavía están por venir."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:56
 msgid "See :mod:`matplotlib.transforms` for a description of the design of the new transformation framework."
-msgstr ""
+msgstr "Vea :mod:`matplotlib.transforms` para una descripción del diseño del nuevo framework de transformación."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:59
 msgid "For efficiency, many of these functions return views into Numpy arrays.  This means that if you hold on to a reference to them, their contents may change.  If you want to store a snapshot of their current values, use the Numpy array method copy()."
-msgstr ""
+msgstr "Para la eficiencia, muchas de estas funciones devuelven vistas a matrices Numpy. Esto significa que si usted mantiene una referencia a ellos, su contenido puede cambiar. Si desea almacenar una instantánea de sus valores actuales, utilice el método Numpy copy()."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:64
 msgid "The view intervals are now stored only in one place -- in the :class:`matplotlib.axes.Axes` instance, not in the locator instances as well.  This means locators must get their limits from their :class:`matplotlib.axis.Axis`, which in turn looks up its limits from the :class:`~matplotlib.axes.Axes`.  If a locator is used temporarily and not assigned to an Axis or Axes, (e.g., in :mod:`matplotlib.contour`), a dummy axis must be created to store its bounds.  Call :meth:`matplotlib.ticker.TickHelper.create_dummy_axis` to do so."
-msgstr ""
+msgstr "Los intervalos de las vistas ahora solo se almacenan en un lugar -- en la instancia de :class:`matplotlib.axes.Axes`, no en las instancias del localizador también. Esto significa que los localizadores deben obtener sus límites de su :class:`matplotlib.axis.Axis`, que a su vez mira sus límites desde el :class:`~matplotlib. xes.Axes`. Si un localizador se utiliza temporalmente y no se asigna a un eje o ejes, (por ejemplo, en :mod:`matplotlib. ontour`), se debe crear un eje falso para almacenar sus límites. Llame a :meth:`matplotlib.ticker.TickHelper.create_dummy_axis` para hacerlo."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:74
 msgid "The functionality of ``Pbox`` has been merged with :class:`~matplotlib.transforms.Bbox`.  Its methods now all return copies rather than modifying in place."
-msgstr ""
+msgstr "La funcionalidad de ``Pbox`` se ha fusionado con :class:`~matplotlib.transforms.Bbox`. Ahora todos sus métodos retornan copias en lugar de modificarlas."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:78
 msgid "The following lists many of the simple changes necessary to update code from the old transformation framework to the new one.  In particular, methods that return a copy are named with a verb in the past tense, whereas methods that alter an object in place are named with a verb in the present tense."
-msgstr ""
+msgstr "A continuación se listan muchos de los cambios simples necesarios para actualizar el código desde el viejo marco de transformación hasta el nuevo. En particular, los métodos que retornan una copia son nombrados con un verbo en el pasado, mientras que los métodos que alteran un objeto en su lugar son nombrados con un verbo en el presente tenso."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:85
 msgid ":mod:`matplotlib.transforms`"
-msgstr ""
+msgstr ":mod:`matplotlib.transforms`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:88
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:164
@@ -100,7 +100,7 @@ msgstr ""
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:250
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:260
 msgid "Old method"
-msgstr ""
+msgstr "Método antiguo"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:88
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:164
@@ -112,417 +112,417 @@ msgstr ""
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:250
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:260
 msgid "New method"
-msgstr ""
+msgstr "Nuevo método"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:90
 msgid "``Bbox.get_bounds``"
-msgstr ""
+msgstr "``Bbox.get_límites``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:90
 msgid ":attr:`.transforms.Bbox.bounds`"
-msgstr ""
+msgstr ":attr:`.transforms.Bbox.límites`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:92
 msgid "``Bbox.width``"
-msgstr ""
+msgstr "``Bbox.width``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:92
 msgid ":attr:`transforms.Bbox.width <.transforms.BboxBase.width>`"
-msgstr ""
+msgstr ":attr:`transforms.Bbox.width <.transforms.BboxBase.width>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:95
 msgid "``Bbox.height``"
-msgstr ""
+msgstr "``Bbox.height``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:95
 msgid ":attr:`transforms.Bbox.height <.transforms.BboxBase.height>`"
-msgstr ""
+msgstr ":attr:`transforms.Bbox.height <.transforms.BboxBase.height>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:98
 msgid "``Bbox.intervalx().get_bounds()`` ``Bbox.intervalx().set_bounds()``"
-msgstr ""
+msgstr "``Bbox.intervalx().get_bounds()`` ``Bbox.intervalx().set_bounds()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:98
 msgid ":attr:`.transforms.Bbox.intervalx` [It is now a property.]"
-msgstr ""
+msgstr ":attr:`.transforms.Bbox.intervalx` [Ahora es una propiedad.]"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:101
 msgid "``Bbox.intervaly().get_bounds()`` ``Bbox.intervaly().set_bounds()``"
-msgstr ""
+msgstr "``Bbox.intervaly().get_bounds()`` ``Bbox.intervaly().set_bounds()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:101
 msgid ":attr:`.transforms.Bbox.intervaly` [It is now a property.]"
-msgstr ""
+msgstr ":attr:`.transforms.Bbox.intervaly` [Ahora es una propiedad.]"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:104
 msgid "``Bbox.xmin``"
-msgstr ""
+msgstr "``Bbox.xmin``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:104
 msgid ":attr:`.transforms.Bbox.x0` or :attr:`transforms.Bbox.xmin <.transforms.BboxBase.xmin>` [1]_"
-msgstr ""
+msgstr ":attr:`.transforms.Bbox.x0` o :attr:`transforms.Bbox.xmin <.transforms.BboxBase.xmin>` [1]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:108
 msgid "``Bbox.ymin``"
-msgstr ""
+msgstr "``Bbox.ymin``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:108
 msgid ":attr:`.transforms.Bbox.y0` or :attr:`transforms.Bbox.ymin <.transforms.BboxBase.ymin>` [1]_"
-msgstr ""
+msgstr ":attr:`.transforms.Bbox.y0` o :attr:`transforms.Bbox.ymin <.transforms.BboxBase.ymin>` [1]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:112
 msgid "``Bbox.xmax``"
-msgstr ""
+msgstr "``Bbox.xmax``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:112
 msgid ":attr:`.transforms.Bbox.x1` or :attr:`transforms.Bbox.xmax <.transforms.BboxBase.xmax>` [1]_"
-msgstr ""
+msgstr ":attr:`.transforms.Bbox.x1` o :attr:`transforms.Bbox.xmax <.transforms.BboxBase.xmax>` [1]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:116
 msgid "``Bbox.ymax``"
-msgstr ""
+msgstr "``Bbox.ymax``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:116
 msgid ":attr:`.transforms.Bbox.y1` or :attr:`transforms.Bbox.ymax <.transforms.BboxBase.ymax>` [1]_"
-msgstr ""
+msgstr ":attr:`.transforms.Bbox.y1` o :attr:`transforms.Bbox.ymax <.transforms.BboxBase.ymax>` [1]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:120
 msgid "``Bbox.overlaps(bboxes)``"
-msgstr ""
+msgstr "``Bbox.overlaps(bboxes)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:120
 msgid "`Bbox.count_overlaps(bboxes) <.BboxBase.count_overlaps>`"
-msgstr ""
+msgstr "`Bbox.count_overlaps(bboxes) <.BboxBase.count_overlaps>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:123
 msgid "``bbox_all(bboxes)``"
-msgstr ""
+msgstr "``bbox_all(bboxes)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:123
 msgid "`Bbox.union(bboxes) <.BboxBase.union>` [It is a staticmethod.]"
-msgstr ""
+msgstr "`Bbox.union(bboxes) <.BboxBase.union>` [Es un método estático.]"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:126
 msgid "``lbwh_to_bbox(l, b, w, h)``"
-msgstr ""
+msgstr "``lbwh_to_bbox(l, b, w, h)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:126
 msgid "`Bbox.from_bounds(x0, y0, w, h) <.Bbox.from_bounds>` [It is a staticmethod.]"
-msgstr ""
+msgstr "`Bbox.from_bounds(x0, y0, w, h) <.Bbox.from_bounds>` [Es un método estático.]"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:129
 msgid "``inverse_transform_bbox(trans, bbox)``"
-msgstr ""
+msgstr "``inverse_transform_bbox(trans, bbox)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:129
 msgid "``bbox.inverse_transformed(trans)``"
-msgstr ""
+msgstr "``bbox.inverse_transformed(trans)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:132
 msgid "``Interval.contains_open(v)``"
-msgstr ""
+msgstr "``Interval.contains_open(v)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:132
 msgid "`interval_contains_open(tuple, v) <.interval_contains_open>`"
-msgstr ""
+msgstr "`interval_contains_open(tupla, v) <.interval_contains_open>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:135
 msgid "``Interval.contains(v)``"
-msgstr ""
+msgstr "``Interval.contains(v)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:135
 msgid "`interval_contains(tuple, v) <.interval_contains>`"
-msgstr ""
+msgstr "`interval_contains(tuple, v) <.interval_contains>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:137
 msgid "``identity_transform()``"
-msgstr ""
+msgstr "``identidad_transform()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:137
 msgid ":class:`.transforms.IdentityTransform`"
-msgstr ""
+msgstr ":class:`.transforms.IdentityTransform`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:139
 msgid "``blend_xy_sep_transform(xtrans, ytrans)``"
-msgstr ""
+msgstr "``blend_xy_sep_transform(xtrans, ytrans)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:139
 msgid "`blended_transform_factory(xtrans, ytrans) <.blended_transform_factory>`"
-msgstr ""
+msgstr "`blended_transform_factory(xtrans, ytrans) <.blended_transform_factory>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:142
 msgid "``scale_transform(xs, ys)``"
-msgstr ""
+msgstr "``escala_transform(xs, ys)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:142
 msgid "`Affine2D().scale(xs[, ys]) <.Affine2D.scale>`"
-msgstr ""
+msgstr "`Affine2D().scale(xs[, ys]) <.Affine2D.scale>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:144
 msgid "``get_bbox_transform(boxin, boxout)``"
-msgstr ""
+msgstr "``get_bbox_transform(boxin, boxout)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:144
 msgid "`BboxTransform(boxin, boxout) <.BboxTransform>` or `BboxTransformFrom(boxin) <.BboxTransformFrom>` or `BboxTransformTo(boxout) <.BboxTransformTo>`"
-msgstr ""
+msgstr "`BboxTransform(boxin, boxout) <.BboxTransform>` or `BboxTransformFrom(boxin) <.BboxTransformFrom>` or `BboxTransformTo(boxout) <.BboxTransformTo>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:148
 msgid "``Transform.seq_xy_tup(points)``"
-msgstr ""
+msgstr "``Transform.seq_xy_tup(puntos)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:148
 msgid "`Transform.transform(points) <.Transform.transform>`"
-msgstr ""
+msgstr "`Transform.transform(puntos) <.Transform.transform>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:150
 msgid "``Transform.inverse_xy_tup(points)``"
-msgstr ""
+msgstr "``Transform.inverse_xy_tup(puntos)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:150
 msgid "`Transform.inverted() <.Transform.inverted>`.transform(points)"
-msgstr ""
+msgstr "`Transform.inverted() <.Transform.inverted>`.transform(puntos)"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:154
 msgid "The :class:`~matplotlib.transforms.Bbox` is bound by the points (x0, y0) to (x1, y1) and there is no defined order to these points, that is, x0 is not necessarily the left edge of the box.  To get the left edge of the :class:`.Bbox`, use the read-only property :attr:`xmin <matplotlib.transforms.BboxBase.xmin>`."
-msgstr ""
+msgstr "El :class:`~matplotlib.transforms. box` está vinculado por los puntos (x0, y0) a (x1, y1) y no hay orden definido para estos puntos, es decir, x0 no es necesariamente el borde izquierdo de la caja. Para obtener el borde izquierdo del :class:`.Bbox`, utiliza la propiedad de solo lectura :attr:`xmin <matplotlib.transforms.BboxBase.xmin>`."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:161
 msgid ":mod:`matplotlib.axes`"
-msgstr ""
+msgstr ":mod:`matplotlib.axes`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:166
 msgid "``Axes.get_position()``"
-msgstr ""
+msgstr "``Ejes.get_position()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:166
 msgid ":meth:`matplotlib.axes.Axes.get_position` [2]_"
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.get_position` [2]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:168
 msgid "``Axes.set_position()``"
-msgstr ""
+msgstr "``Ejes.set_position()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:168
 msgid ":meth:`matplotlib.axes.Axes.set_position` [3]_"
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.set_position` [3]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:170
 msgid "``Axes.toggle_log_lineary()``"
-msgstr ""
+msgstr "``Ejes.toggle_log_lineal()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:170
 msgid ":meth:`matplotlib.axes.Axes.set_yscale` [4]_"
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.set_yscale` [4]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:172
 msgid "``Subplot`` class"
-msgstr ""
+msgstr "``Subplot`` class"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:172
 msgid "removed"
-msgstr ""
+msgstr "eliminado"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:175
 msgid "The ``Polar`` class has moved to :mod:`matplotlib.projections.polar`."
-msgstr ""
+msgstr "La clase ``Polar`` se ha movido a :mod:`matplotlib.projections.polar`."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:177
 msgid ":meth:`matplotlib.axes.Axes.get_position` used to return a list of points, now it returns a :class:`matplotlib.transforms.Bbox` instance."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.get_position` usado para devolver una lista de puntos, ahora devuelve una instancia de :class:`matplotlib.transforms.Bbox`."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:181
 msgid ":meth:`matplotlib.axes.Axes.set_position` now accepts either four scalars or a :class:`matplotlib.transforms.Bbox` instance."
-msgstr ""
+msgstr ":meth:`matplotlib.axes.Axes.set_position` ahora acepta cuatro escalares o una instancia de :class:`matplotlib.transforms.Bbox`."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:184
 msgid "Since the recfactoring allows for more than two scale types ('log' or 'linear'), it no longer makes sense to have a toggle. ``Axes.toggle_log_lineary()`` has been removed."
-msgstr ""
+msgstr "Dado que la refactorización permite más de dos tipos de escala ('log' o 'lineal'), ya no tiene sentido tener un interruptor. ``Axes.toggle_log_lineary()`` ha sido eliminado."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:189
 msgid ":mod:`matplotlib.artist`"
-msgstr ""
+msgstr ":mod:`matplotlib.artist`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:194
 msgid "``Artist.set_clip_path(path)``"
-msgstr ""
+msgstr "``Artist.set_clip_path(path)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:194
 msgid "``Artist.set_clip_path(path, transform)`` [5]_"
-msgstr ""
+msgstr "``Artist.set_clip_path(ruta, transform)`` [5]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:197
 msgid ":meth:`matplotlib.artist.Artist.set_clip_path` now accepts a :class:`matplotlib.path.Path` instance and a :class:`matplotlib.transforms.Transform` that will be applied to the path immediately before clipping."
-msgstr ""
+msgstr ":meth:`matplotlib.artist.Artist.set_clip_path` ahora acepta una instancia de :class:`matplotlib.path.Path` y una :class:`matplotlib.transforms.Transform` que será aplicada a la ruta inmediatamente antes del recorte."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:203
 msgid ":mod:`matplotlib.collections`"
-msgstr ""
+msgstr ":mod:`matplotlib.collections`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:208
 msgid "*linestyle*"
-msgstr ""
+msgstr "*estilo de línea*"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:208
 msgid "*linestyles* [6]_"
-msgstr ""
+msgstr "*linestyles* [6]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:211
 msgid "Linestyles are now treated like all other collection attributes, i.e.  a single value or multiple values may be provided."
-msgstr ""
+msgstr "Los estilos de línea ahora son tratados como todos los demás atributos de la colección, es decir, un único valor o múltiples valores pueden ser proporcionados."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:216
 msgid ":mod:`matplotlib.colors`"
-msgstr ""
+msgstr ":mod:`matplotlib.colors`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:221
 msgid "``ColorConvertor.to_rgba_list(c)``"
-msgstr ""
+msgstr "``ColorConvertor.to_rgba_list(c)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:221
 msgid "``colors.to_rgba_array(c)`` [:meth:`matplotlib.colors.to_rgba_array` returns an Nx4 NumPy array of RGBA color quadruples.]"
-msgstr ""
+msgstr "``colors.to_rgba_array(c)`` [:meth:`matplotlib.colors.to_rgba_array` devuelve un arreglo numérico Nx4 de cuadruplicas de color RGBA.]"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:227
 msgid ":mod:`matplotlib.contour`"
-msgstr ""
+msgstr ":mod:`matplotlib.contour`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:232
 msgid "``Contour._segments``"
-msgstr ""
+msgstr "``Contour._segments``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:232
 msgid "``matplotlib.contour.Contour.get_paths`` [Returns a list of :class:`matplotlib.path.Path` instances.]"
-msgstr ""
+msgstr "``matplotlib.contour.Contour.get_paths`` [Devuelve una lista de las instancias :class:`matplotlib.path.Path`.]"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:237
 msgid ":mod:`matplotlib.figure`"
-msgstr ""
+msgstr ":mod:`matplotlib.figure`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:242
 msgid "``Figure.dpi.get()`` ``Figure.dpi.set()``"
-msgstr ""
+msgstr "``Figure.dpi.get()`` ``Figure.dpi.set()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:242
 msgid ":attr:`matplotlib.figure.Figure.dpi` *(a property)*"
-msgstr ""
+msgstr ":attr:`matplotlib.figure.Figure.dpi` *(una propiedad)*"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:247
 msgid ":mod:`matplotlib.patches`"
-msgstr ""
+msgstr ":mod:`matplotlib.patches`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:252
 msgid "``Patch.get_verts()``"
-msgstr ""
+msgstr "``Parch.get_verts()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:252
 msgid ":meth:`matplotlib.patches.Patch.get_path` [Returns a :class:`matplotlib.path.Path` instance]"
-msgstr ""
+msgstr ":meth:`matplotlib.patches.Patch.get_path` [Devuelve una instancia de :class:`matplotlib.path.Path`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:257
 msgid ":mod:`matplotlib.backend_bases`"
-msgstr ""
+msgstr ":mod:`matplotlib.backend_bases`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:262
 msgid "``GraphicsContext.set_clip_rectangle(tuple)``"
-msgstr ""
+msgstr "``GráficosContext.set_clip_rectángulo(tuple)``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:262
 msgid "`GraphicsContext.set_clip_rectangle(bbox) <.GraphicsContextBase.set_clip_rectangle>`"
-msgstr ""
+msgstr "`GraphicsContext.set_clip_rectangle(bbox) <.GraphicsContextBase.set_clip_rectangle>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:265
 msgid "``GraphicsContext.get_clip_path()``"
-msgstr ""
+msgstr "``GráficosContext.get_clip_path()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:265
 msgid "`GraphicsContext.get_clip_path() <.GraphicsContextBase.get_clip_path>` [7]_"
-msgstr ""
+msgstr "`GraphicsContext.get_clip_path() <.GraphicsContextBase.get_clip_path>` [7]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:268
 msgid "``GraphicsContext.set_clip_path()``"
-msgstr ""
+msgstr "``GraphicsContext.set_clip_path()``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:268
 msgid "`GraphicsContext.set_clip_path() <.GraphicsContextBase.set_clip_path>` [8]_"
-msgstr ""
+msgstr "`GraphicsContext.set_clip_path() <.GraphicsContextBase.set_clip_path>` [8]_"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:272
 msgid ":meth:`matplotlib.backend_bases.GraphicsContextBase.get_clip_path` returns a tuple of the form (*path*, *affine_transform*), where *path* is a :class:`matplotlib.path.Path` instance and *affine_transform* is a :class:`matplotlib.transforms.Affine2D` instance."
-msgstr ""
+msgstr ":meth:`matplotlib.backend_bases.GraphicsContextBase.get_clip_path` devuelve una tupla de la forma (*ruta*, *affine_transform*), donde *ruta* es una instancia de :class:`matplotlib.path.Path` y *affine_transform* es una instancia de :class:`matplotlib.transforms.Affine2D`."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:277
 msgid ":meth:`matplotlib.backend_bases.GraphicsContextBase.set_clip_path` now only accepts a :class:`matplotlib.transforms.TransformedPath` instance."
-msgstr ""
+msgstr ":meth:`matplotlib.backend_bases.GraphicsContextBase.set_clip_path` ahora solo acepta una instancia de :class:`matplotlib.transformedPath`."
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:281
 msgid ":class:`~matplotlib.backend_bases.RendererBase`"
-msgstr ""
+msgstr ":class:`~matplotlib.backend_bases.RendererBase`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:283
 msgid "New methods:"
-msgstr ""
+msgstr "Nuevos métodos:"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:285
 msgid ":meth:`draw_path(self, gc, path, transform, rgbFace) <matplotlib.backend_bases.RendererBase.draw_path>`"
-msgstr ""
+msgstr ":meth:`draw_path(self, gc, ruta, transformación, rgbFace) <matplotlib.backend_bases.RendererBase.draw_path>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:288
 msgid ":meth:`draw_markers(self, gc, marker_path, marker_trans, path, trans, rgbFace) <matplotlib.backend_bases.RendererBase.draw_markers>`"
-msgstr ""
+msgstr ":meth:`draw_markers(self, gc, marker_path, marker_trans, ruta, trans, rgbFace) <matplotlib.backend_bases.RendererBase.draw_markers>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:292
 msgid ":meth:`draw_path_collection(self, master_transform, cliprect, clippath, clippath_trans, paths, all_transforms, offsets, offsetTrans, facecolors, edgecolors, linewidths, linestyles, antialiaseds) <matplotlib.backend_bases.RendererBase.draw_path_collection>` *[optional]*"
-msgstr ""
+msgstr ":meth:`draw_path_collection(self, master_transform, cliprect, clippath, clippath_trans, paths, all_transforms, offsets, offsets, offsetTrans, facecolors, edgecolors, linewidths, linestyles, antialiaseds) <matplotlib.backend_bases.RendererBase.draw_path_collection>` *[optional]*"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:299
 msgid "Changed methods:"
-msgstr ""
+msgstr "Métodos modificados:"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:301
 msgid "``draw_image(self, x, y, im, bbox)`` is now :meth:`draw_image(self, x, y, im, bbox, clippath, clippath_trans) <matplotlib.backend_bases.RendererBase.draw_image>`"
-msgstr ""
+msgstr "``draw_image(self, x, y, im, bbox)`` es ahora :meth:`draw_image(self, x, y, im, bbox, clippath, clippath_trans) <matplotlib.backend_bases.RendererBase.draw_image>`"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:305
 msgid "Removed methods:"
-msgstr ""
+msgstr "Métodos eliminados:"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:307
 msgid "``draw_arc``"
-msgstr ""
+msgstr "``dibujar_arco``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:309
 msgid "``draw_line_collection``"
-msgstr ""
+msgstr "``dibujar línea_colección``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:311
 msgid "``draw_line``"
-msgstr ""
+msgstr "``dibujar_línea``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:313
 msgid "``draw_lines``"
-msgstr ""
+msgstr "``dibujar_líneas``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:315
 msgid "``draw_point``"
-msgstr ""
+msgstr "``punto de dibujo``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:317
 msgid "``draw_quad_mesh``"
-msgstr ""
+msgstr "``dibujar_mesa_cuadrada``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:319
 msgid "``draw_poly_collection``"
-msgstr ""
+msgstr "``dibujar_colección``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:321
 msgid "``draw_polygon``"
-msgstr ""
+msgstr "``dibujar_polígón``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:323
 msgid "``draw_rectangle``"
-msgstr ""
+msgstr "``dibujar rectángulo``"
 
 #: ../../api/prev_api_changes/api_changes_0.98.0.rst:325
 msgid "``draw_regpoly_collection``"
-msgstr ""
+msgstr "``dibujar_colección_regpoly``"
 

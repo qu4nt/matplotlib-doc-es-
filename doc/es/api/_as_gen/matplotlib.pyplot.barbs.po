@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:17\n"
+"PO-Revision-Date: 2022-11-02 14:01\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,547 +20,547 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.pyplot.barbs.rst:2
 msgid "matplotlib.pyplot.barbs"
-msgstr ""
+msgstr "matplotlib.pyplot.barbs"
 
 #: matplotlib.pyplot.barbs:2 of
 msgid "Plot a 2D field of barbs."
-msgstr ""
+msgstr "Trazar un campo 2D de barbas."
 
 #: matplotlib.pyplot.barbs:4 of
 msgid "Call signature::"
-msgstr ""
+msgstr "Firma de llamada::"
 
 #: matplotlib.pyplot.barbs:8 of
 msgid "Where *X*, *Y* define the barb locations, *U*, *V* define the barb directions, and *C* optionally sets the color."
-msgstr ""
+msgstr "Donde *X*, *Y* define las ubicaciones de las barras, *U*, *V* define las direcciones de las barras, y *C* opcionalmente establece el color."
 
 #: matplotlib.pyplot.barbs:11 of
 msgid "All arguments may be 1D or 2D. *U*, *V*, *C* may be masked arrays, but masked *X*, *Y* are not supported at present."
-msgstr ""
+msgstr "Todos los argumentos pueden ser 1D o 2D. *U*, *V*, *C* pueden ser matrices enmascaradas, pero *X*, *Y* no están soportados actualmente."
 
 #: matplotlib.pyplot.barbs:14 of
 msgid "Barbs are traditionally used in meteorology as a way to plot the speed and direction of wind observations, but can technically be used to plot any two dimensional vector quantity.  As opposed to arrows, which give vector magnitude by the length of the arrow, the barbs give more quantitative information about the vector magnitude by putting slanted lines or a triangle for various increments in magnitude, as show schematically below::"
-msgstr ""
+msgstr "Las barbas se utilizan tradicionalmente en la meteorología como forma de trazar la velocidad y dirección de las observaciones del viento, pero técnicamente se puede utilizar para trazar cualquier cantidad de vector de dos dimensiones. Al contrario que las flechas, que dan magnitud vectorial por la longitud de la flecha, las barbas proporcionan más información cuantitativa sobre la magnitud del vector poniendo líneas inclinadas o un triángulo para varios incrementos de magnitud, como mostrar esquemáticamente abajo::"
 
 #: matplotlib.pyplot.barbs:28 of
 msgid "The largest increment is given by a triangle (or \"flag\"). After those come full lines (barbs). The smallest increment is a half line.  There is only, of course, ever at most 1 half line.  If the magnitude is small and only needs a single half-line and no full lines or triangles, the half-line is offset from the end of the barb so that it can be easily distinguished from barbs with a single full line.  The magnitude for the barb shown above would nominally be 65, using the standard increments of 50, 10, and 5."
-msgstr ""
+msgstr "El incremento más grande es dado por un triángulo (o \"bandera\"). El incremento más pequeño es una línea media. Si la magnitud es pequeña y solo necesita una media línea y sin triángulos o líneas completas la media línea se distingue desde el final de la barba para que pueda distinguirse fácilmente de las barbas con una sola línea completa. La magnitud de la barba mostrada arriba sería 65, usando los incrementos estándar de 50, 10 y 5."
 
 #: matplotlib.pyplot.barbs:37 of
 msgid "See also https://en.wikipedia.org/wiki/Wind_barb."
-msgstr ""
+msgstr "Ver también https://es.wikipedia.org/wiki/Wind_barb."
 
 #: matplotlib.pyplot.barbs of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.pyplot.barbs:50 of
 msgid "**X, Y**"
-msgstr ""
+msgstr "**X, Y**"
 
 #: of
 msgid "1D or 2D array-like, optional"
-msgstr ""
+msgstr "Opcional para matrices 1D o 2D"
 
 #: matplotlib.pyplot.barbs:42 of
 msgid "The x and y coordinates of the barb locations. See *pivot* for how the barbs are drawn to the x, y positions."
-msgstr ""
+msgstr "Las coordenadas x e y de las ubicaciones de barbas. Ver *pivot* para ver cómo las barbas se dibujan en las posiciones x, y."
 
 #: matplotlib.pyplot.barbs:45 of
 msgid "If not given, they will be generated as a uniform integer meshgrid based on the dimensions of *U* and *V*."
-msgstr ""
+msgstr "Si no se dan, se generarán como una red entera uniforme basada en las dimensiones de *U* y *V*."
 
 #: matplotlib.pyplot.barbs:48 of
 msgid "If *X* and *Y* are 1D but *U*, *V* are 2D, *X*, *Y* are expanded to 2D using ``X, Y = np.meshgrid(X, Y)``. In this case ``len(X)`` and ``len(Y)`` must match the column and row dimensions of *U* and *V*."
-msgstr ""
+msgstr "Si *X* y *Y* son 1D pero *U*, *V* son 2D, *X*, *Y* se expanden a 2D usando ``X, Y = np.meshgrid(X, Y)``. En este caso ``len(X)`` y ``len(Y)`` deben coincidir con las dimensiones de columna y fila de *U* y *V*."
 
 #: matplotlib.pyplot.barbs:53 of
 msgid "**U, V**"
-msgstr ""
+msgstr "**U, V**"
 
 #: of
 msgid "1D or 2D array-like"
-msgstr ""
+msgstr "Arreglo 1D o 2D"
 
 #: matplotlib.pyplot.barbs:53 of
 msgid "The x and y components of the barb shaft."
-msgstr ""
+msgstr "Los componentes x e y del pedazo de barba."
 
 #: matplotlib.pyplot.barbs:60 of
 msgid "**C**"
-msgstr ""
+msgstr "**C**"
 
 #: matplotlib.pyplot.barbs:56 of
 msgid "Numeric data that defines the barb colors by colormapping via *norm* and *cmap*."
-msgstr ""
+msgstr "Datos numéricos que definen los colores de las barras mediante mapeo de colores mediante *normal* y *cmap*."
 
 #: matplotlib.pyplot.barbs:59 of
 msgid "This does not support explicit colors. If you want to set colors directly, use *barbcolor* instead."
-msgstr ""
+msgstr "Esto no soporta colores explícitos. Si quieres establecer colores directamente, usa *barbcolor* en su lugar."
 
 #: matplotlib.pyplot.barbs:64 of
 msgid "**length**"
-msgstr ""
+msgstr "**length**"
 
 #: of
 msgid "float, default: 7"
-msgstr ""
+msgstr "flotante, por defecto: 7"
 
 #: matplotlib.pyplot.barbs:63 of
 msgid "Length of the barb in points; the other parts of the barb are scaled against this."
-msgstr ""
+msgstr "Longitud de la barba en puntos; las otras partes de la barba están escaladas en contra de esto."
 
 #: matplotlib.pyplot.barbs:69 of
 msgid "**pivot**"
-msgstr ""
+msgstr "**pivot**"
 
 #: of
 msgid "{'tip', 'middle'} or float, default: 'tip'"
-msgstr ""
+msgstr "{'tip', 'middle'} o flotante, por defecto: 'tip'"
 
 #: matplotlib.pyplot.barbs:67 of
 msgid "The part of the arrow that is anchored to the *X*, *Y* grid. The barb rotates about this point. This can also be a number, which shifts the start of the barb that many points away from grid point."
-msgstr ""
+msgstr "La parte de la flecha que está anclada a la cuadrícula *X*, *Y*. La barba gira sobre este punto. Esto también puede ser un número, que desplaza el inicio de la barba que muchos puntos se alejan del punto de rejilla."
 
 #: matplotlib.pyplot.barbs:74 of
 msgid "**barbcolor**"
-msgstr ""
+msgstr "**barbacoa**"
 
 #: of
 msgid "color or color sequence"
-msgstr ""
+msgstr "color o secuencia de color"
 
 #: matplotlib.pyplot.barbs:72 of
 msgid "The color of all parts of the barb except for the flags.  This parameter is analogous to the *edgecolor* parameter for polygons, which can be used instead. However this parameter will override facecolor."
-msgstr ""
+msgstr "El color de todas las partes de la barba, excepto las banderas. Este parámetro es análogo al parámetro *edgecolor* para los polígonos, que puede ser usado en su lugar. Sin embargo, este parámetro anulará el color de facecolor."
 
 #: matplotlib.pyplot.barbs:81 of
 msgid "**flagcolor**"
-msgstr ""
+msgstr "**bandera**"
 
 #: matplotlib.pyplot.barbs:77 of
 msgid "The color of any flags on the barb.  This parameter is analogous to the *facecolor* parameter for polygons, which can be used instead. However, this parameter will override facecolor.  If this is not set (and *C* has not either) then *flagcolor* will be set to match *barbcolor* so that the barb has a uniform color. If *C* has been set, *flagcolor* has no effect."
-msgstr ""
+msgstr "El color de cualquier bandera en la barbacoa. Este parámetro es análogo al parámetro *facecolor* para los polígonos, que se puede usar en su lugar. Sin embargo, este parámetro anulará el color facecolor. Si esto no está establecido (y *C* tampoco lo ha hecho), entonces *flagcolor* se establecerá para que coincida con *barbcolor* para que la barba tenga un color uniforme. Si se ha establecido *C*, *bandera* no tendrá efecto."
 
 #: matplotlib.pyplot.barbs:91 of
 msgid "**sizes**"
-msgstr ""
+msgstr "**tamaños**"
 
 #: of
 msgid "dict, optional"
-msgstr ""
+msgstr "dict, optional"
 
 #: matplotlib.pyplot.barbs:84 of
 msgid "A dictionary of coefficients specifying the ratio of a given feature to the length of the barb. Only those values one wishes to override need to be included.  These features include:"
-msgstr ""
+msgstr "Un diccionario de coeficientes que especifica la proporción de una característica determinada a la longitud de la barra. Sólo los valores que uno desea anular necesitan ser incluidos. Estas características incluyen:"
 
 #: matplotlib.pyplot.barbs:88 of
 msgid "'spacing' - space between features (flags, full/half barbs)"
-msgstr ""
+msgstr "'espacio' - espacio entre características (banderas, barbas completas/medias)"
 
 #: matplotlib.pyplot.barbs:89 of
 msgid "'height' - height (distance from shaft to top) of a flag or full barb"
-msgstr ""
+msgstr "'altura' - altura (distancia desde el shaft hasta arriba) de una bandera o barba completa"
 
 #: matplotlib.pyplot.barbs:90 of
 msgid "'width' - width of a flag, twice the width of a full barb"
-msgstr ""
+msgstr "'ancho' - ancho de una bandera, el doble de ancho de una barba completa"
 
 #: matplotlib.pyplot.barbs:91 of
 msgid "'emptybarb' - radius of the circle used for low magnitudes"
-msgstr ""
+msgstr "'barba vacía' - radio del círculo utilizado para bajas magnitudes"
 
 #: matplotlib.pyplot.barbs:95 of
 msgid "**fill_empty**"
-msgstr ""
+msgstr "**vacío**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.pyplot.barbs:94 of
 msgid "Whether the empty barbs (circles) that are drawn should be filled with the flag color.  If they are not filled, the center is transparent."
-msgstr ""
+msgstr "Si las barbas vacías (círculos) que se dibujan deben llenarse con el color de la bandera. Si no se llenan, el centro es transparente."
 
 #: matplotlib.pyplot.barbs:101 of
 msgid "**rounding**"
-msgstr ""
+msgstr "**redondeando**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.pyplot.barbs:98 of
 msgid "Whether the vector magnitude should be rounded when allocating barb components.  If True, the magnitude is rounded to the nearest multiple of the half-barb increment.  If False, the magnitude is simply truncated to the next lowest multiple."
-msgstr ""
+msgstr "Si la magnitud del vector debe redondearse al asignar componentes de barbas. Si es verdadero, la magnitud se redondea al múltiplo más cercano del incremento de media barba. Si False, la magnitud simplemente se trunca al siguiente múltiplo más bajo."
 
 #: matplotlib.pyplot.barbs:110 of
 msgid "**barb_increments**"
-msgstr ""
+msgstr "**barba_incrementos**"
 
 #: matplotlib.pyplot.barbs:104 of
 msgid "A dictionary of increments specifying values to associate with different parts of the barb. Only those values one wishes to override need to be included."
-msgstr ""
+msgstr "Un diccionario de incrementos que especifican valores para asociarse con diferentes partes de la barra. Sólo los valores que uno desea anular deben ser incluidos."
 
 #: matplotlib.pyplot.barbs:108 of
 msgid "'half' - half barbs (Default is 5)"
-msgstr ""
+msgstr "'mitad' - media barba (por defecto es 5)"
 
 #: matplotlib.pyplot.barbs:109 of
 msgid "'full' - full barbs (Default is 10)"
-msgstr ""
+msgstr "'full' - Barras completas (por defecto es 10)"
 
 #: matplotlib.pyplot.barbs:110 of
 msgid "'flag' - flags (default is 50)"
-msgstr ""
+msgstr "'flag' - banderas (por defecto es 50)"
 
 #: matplotlib.pyplot.barbs:119 of
 msgid "**flip_barb**"
-msgstr ""
+msgstr "**barba_flip**"
 
 #: of
 msgid "bool or array-like of bool, default: False"
-msgstr ""
+msgstr "bool o array-like de bool, por defecto: False"
 
 #: matplotlib.pyplot.barbs:113 of
 msgid "Whether the lines and flags should point opposite to normal. Normal behavior is for the barbs and lines to point right (comes from wind barbs having these features point towards low pressure in the Northern Hemisphere)."
-msgstr ""
+msgstr "Si las líneas y banderas deben apuntar opuesto a la normalidad. El comportamiento normal es que las barbas y las líneas apunten a la derecha (viene de las barbas de viento que tienen estas características apuntan hacia la baja presión en el hemisferio norte)."
 
 #: matplotlib.pyplot.barbs:118 of
 msgid "A single value is applied to all barbs. Individual barbs can be flipped by passing a bool array of the same size as *U* and *V*."
-msgstr ""
+msgstr "Se aplica un valor único a todas las barbas. Las barbas individuales pueden ser volteadas pasando una matriz de plumas del mismo tamaño que *U* y *V*."
 
 #: matplotlib.pyplot.barbs of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.pyplot.barbs:126 of
 msgid "**barbs** : `~matplotlib.quiver.Barbs`"
-msgstr ""
+msgstr "**barbs** : `~matplotlib.quiver.Barbs`"
 
 #: matplotlib.pyplot.barbs:125 of
 msgid "Barbs"
-msgstr ""
+msgstr "Barbas"
 
 #: matplotlib.pyplot.barbs of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.pyplot.barbs:132 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.pyplot.barbs:131 of
 msgid "If given, all parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception)."
-msgstr ""
+msgstr "Si se dan, todos los parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción)."
 
 #: matplotlib.pyplot.barbs:193 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.pyplot.barbs:135 of
 msgid "The barbs can further be customized using `.PolyCollection` keyword arguments:"
-msgstr ""
+msgstr "Las barbas se pueden personalizar aún más usando `.PolyCollection` argumentos de palabra clave:"
 
 #: matplotlib.pyplot.barbs:142 of
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: matplotlib.pyplot.barbs:142 of
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: matplotlib.pyplot.barbs:144 of
 msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
-msgstr ""
+msgstr ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
 
 #: matplotlib.pyplot.barbs:144 of
 msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
-msgstr ""
+msgstr "una función de filtro, que toma un arreglo de puntos flotantes (m, n, 3) y un valor de dpi, y devuelve un arreglo (m, n, 3)"
 
 #: matplotlib.pyplot.barbs:145 of
 msgid ":meth:`alpha <matplotlib.collections.Collection.set_alpha>`"
-msgstr ""
+msgstr ":meth:`alfa <matplotlib.collections.Collection.set_alpha>`"
 
 #: matplotlib.pyplot.barbs:145 of
 msgid "array-like or scalar or None"
-msgstr ""
+msgstr "como matriz o escalar o ninguno"
 
 #: matplotlib.pyplot.barbs:146 of
 msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
-msgstr ""
+msgstr ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
 
 #: matplotlib.pyplot.barbs:146 matplotlib.pyplot.barbs:152
 #: matplotlib.pyplot.barbs:161 matplotlib.pyplot.barbs:173
 #: matplotlib.pyplot.barbs:182 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.pyplot.barbs:147 of
 msgid ":meth:`antialiased <matplotlib.collections.Collection.set_antialiased>` or aa or antialiaseds"
-msgstr ""
+msgstr ":meth:`antialias <matplotlib.collections.Collection.set_antialiased>` o aa o antialiaseds"
 
 #: matplotlib.pyplot.barbs:147 of
 msgid "bool or list of bools"
-msgstr ""
+msgstr "libro o lista de bools"
 
 #: matplotlib.pyplot.barbs:148 of
 msgid ":meth:`array <matplotlib.cm.ScalarMappable.set_array>`"
-msgstr ""
+msgstr ":meth:`array <matplotlib.cm.ScalarMappable.set_array>`"
 
 #: matplotlib.pyplot.barbs:148 of
 msgid "array-like or None"
-msgstr ""
+msgstr "tipo array o ninguno"
 
 #: matplotlib.pyplot.barbs:149 of
 msgid ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
-msgstr ""
+msgstr ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
 
 #: matplotlib.pyplot.barbs:149 of
 msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "`.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.pyplot.barbs:150 of
 msgid ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
-msgstr ""
+msgstr ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
 
 #: matplotlib.pyplot.barbs:150 of
 msgid "(vmin: float, vmax: float)"
-msgstr ""
+msgstr "(vmin: flotante, vmax: flotante)"
 
 #: matplotlib.pyplot.barbs:151 of
 msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
-msgstr ""
+msgstr ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
 
 #: matplotlib.pyplot.barbs:151 of
 msgid "`.Bbox`"
-msgstr ""
+msgstr "`.Bbox`"
 
 #: matplotlib.pyplot.barbs:152 of
 msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
-msgstr ""
+msgstr ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
 
 #: matplotlib.pyplot.barbs:153 of
 msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
-msgstr ""
+msgstr ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
 
 #: matplotlib.pyplot.barbs:153 of
 msgid "Patch or (Path, Transform) or None"
-msgstr ""
+msgstr "Patch o (Path, Transform) o None"
 
 #: matplotlib.pyplot.barbs:154 of
 msgid ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
-msgstr ""
+msgstr ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
 
 #: matplotlib.pyplot.barbs:154 of
 msgid "`.Colormap` or str or None"
-msgstr ""
+msgstr "`.Colormap` o str o ninguno"
 
 #: matplotlib.pyplot.barbs:155 of
 msgid ":meth:`color <matplotlib.collections.Collection.set_color>`"
-msgstr ""
+msgstr ":meth:`color <matplotlib.collections.Collection.set_color>`"
 
 #: matplotlib.pyplot.barbs:155 of
 msgid "color or list of rgba tuples"
-msgstr ""
+msgstr "color o lista de tubos rgba"
 
 #: matplotlib.pyplot.barbs:156 of
 msgid ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` or ec or edgecolors"
-msgstr ""
+msgstr ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` o ec o aristas colores"
 
 #: matplotlib.pyplot.barbs:156 of
 msgid "color or list of colors or 'face'"
-msgstr ""
+msgstr "color o lista de colores o 'cara'"
 
 #: matplotlib.pyplot.barbs:157 of
 msgid ":meth:`facecolor <matplotlib.collections.Collection.set_facecolor>` or facecolors or fc"
-msgstr ""
+msgstr ":meth:`carecolor <matplotlib.collections.Collection.set_facecolor>` o colores de caras o fc"
 
 #: matplotlib.pyplot.barbs:157 of
 msgid "color or list of colors"
-msgstr ""
+msgstr "color o lista de colores"
 
 #: matplotlib.pyplot.barbs:158 of
 msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
-msgstr ""
+msgstr ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
 
 #: matplotlib.pyplot.barbs:158 of
 msgid "`.Figure`"
-msgstr ""
+msgstr "`.Figure`"
 
 #: matplotlib.pyplot.barbs:159 of
 msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
-msgstr ""
+msgstr ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
 
 #: matplotlib.pyplot.barbs:159 matplotlib.pyplot.barbs:178 of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.pyplot.barbs:160 of
 msgid ":meth:`hatch <matplotlib.collections.Collection.set_hatch>`"
-msgstr ""
+msgstr ":meth:`colgante <matplotlib.collections.Collection.set_hatch>`"
 
 #: matplotlib.pyplot.barbs:160 of
 msgid "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
-msgstr ""
+msgstr "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
 
 #: matplotlib.pyplot.barbs:161 of
 msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
-msgstr ""
+msgstr ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
 
 #: matplotlib.pyplot.barbs:162 of
 msgid ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
-msgstr ""
+msgstr ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
 
 #: matplotlib.pyplot.barbs:162 of
 msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "`.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.pyplot.barbs:163 of
 msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
-msgstr ""
+msgstr ":meth:`label <matplotlib.artist.Artist.set_label>`"
 
 #: matplotlib.pyplot.barbs:163 of
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: matplotlib.pyplot.barbs:164 of
 msgid ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` or dashes or linestyles or ls"
-msgstr ""
+msgstr ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` o guiones o estilos de línea o ls"
 
 #: matplotlib.pyplot.barbs:164 of
 msgid "str or tuple or list thereof"
-msgstr ""
+msgstr "str o tuple o lista de ellos"
 
 #: matplotlib.pyplot.barbs:165 of
 msgid ":meth:`linewidth <matplotlib.collections.Collection.set_linewidth>` or linewidths or lw"
-msgstr ""
+msgstr ":meth:`ancho de línea <matplotlib.collections.Collection.set_linewidth>o ancho de línea o lw"
 
 #: matplotlib.pyplot.barbs:165 of
 msgid "float or list of floats"
-msgstr ""
+msgstr "flotante o lista de flotantes"
 
 #: matplotlib.pyplot.barbs:166 of
 msgid ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
-msgstr ""
+msgstr ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
 
 #: matplotlib.pyplot.barbs:166 of
 msgid "`.Normalize` or None"
-msgstr ""
+msgstr "`.normalize` o Ninguno"
 
 #: matplotlib.pyplot.barbs:167 of
 msgid ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
-msgstr ""
+msgstr ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
 
 #: matplotlib.pyplot.barbs:167 matplotlib.pyplot.barbs:177 of
 msgid "`.Transform`"
-msgstr ""
+msgstr "`.Transform`"
 
 #: matplotlib.pyplot.barbs:168 of
 msgid ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
-msgstr ""
+msgstr ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
 
 #: matplotlib.pyplot.barbs:168 of
 msgid "(N, 2) or (2,) array-like"
-msgstr ""
+msgstr "((N, 2) o (2,) array-like"
 
 #: matplotlib.pyplot.barbs:169 of
 msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
-msgstr ""
+msgstr ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
 
 #: matplotlib.pyplot.barbs:169 of
 msgid "`.AbstractPathEffect`"
-msgstr ""
+msgstr "`.AbstractPathEffect`"
 
 #: matplotlib.pyplot.barbs:170 of
 msgid ":meth:`paths <matplotlib.collections.PolyCollection.set_verts>`"
-msgstr ""
+msgstr ":meth:`rutas <matplotlib.collections.PolyCollection.set_verts>`"
 
 #: matplotlib.pyplot.barbs:170 matplotlib.pyplot.barbs:180 of
 msgid "list of array-like"
-msgstr ""
+msgstr "lista de matriz"
 
 #: matplotlib.pyplot.barbs:171 of
 msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
-msgstr ""
+msgstr ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
 
 #: matplotlib.pyplot.barbs:171 of
 msgid "None or bool or float or callable"
-msgstr ""
+msgstr "None o bool o float o callable"
 
 #: matplotlib.pyplot.barbs:172 of
 msgid ":meth:`pickradius <matplotlib.collections.Collection.set_pickradius>`"
-msgstr ""
+msgstr ":meth:`pickradio <matplotlib.collections.Collection.set_pickradius>`"
 
 #: matplotlib.pyplot.barbs:172 matplotlib.pyplot.barbs:183 of
 msgid "float"
-msgstr ""
+msgstr "de punto flotante (float)"
 
 #: matplotlib.pyplot.barbs:173 of
 msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
-msgstr ""
+msgstr ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
 
 #: matplotlib.pyplot.barbs:174 of
 msgid ":meth:`sizes <matplotlib.collections._CollectionWithSizes.set_sizes>`"
-msgstr ""
+msgstr ":meth:`tamaños <matplotlib.collections._CollectionWithSizes.set_sizes>`"
 
 #: matplotlib.pyplot.barbs:174 of
 msgid "ndarray or None"
-msgstr ""
+msgstr "ndarray o ninguno"
 
 #: matplotlib.pyplot.barbs:175 of
 msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
-msgstr ""
+msgstr ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
 
 #: matplotlib.pyplot.barbs:175 of
 msgid "(scale: float, length: float, randomness: float)"
-msgstr ""
+msgstr "(scale: float, length: float, randomness: float)"
 
 #: matplotlib.pyplot.barbs:176 of
 msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
-msgstr ""
+msgstr ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
 
 #: matplotlib.pyplot.barbs:176 of
 msgid "bool or None"
-msgstr ""
+msgstr "bool or None"
 
 #: matplotlib.pyplot.barbs:177 of
 msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
-msgstr ""
+msgstr ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
 
 #: matplotlib.pyplot.barbs:178 of
 msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
-msgstr ""
+msgstr ":meth:`url <matplotlib.artist.Artist.set_url>`"
 
 #: matplotlib.pyplot.barbs:179 of
 msgid ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
-msgstr ""
+msgstr ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
 
 #: matplotlib.pyplot.barbs:179 of
 msgid "list of str or None"
-msgstr ""
+msgstr "lista de str o ninguno"
 
 #: matplotlib.pyplot.barbs:180 of
 msgid ":meth:`verts <matplotlib.collections.PolyCollection.set_verts>`"
-msgstr ""
+msgstr ":meth:`verts <matplotlib.collections.PolyCollection.set_verts>`"
 
 #: matplotlib.pyplot.barbs:181 of
 msgid ":meth:`verts_and_codes <matplotlib.collections.PolyCollection.set_verts_and_codes>`"
-msgstr ""
+msgstr ":meth:`verts_and_codes <matplotlib.collections.PolyCollection.set_verts_and_codes>`"
 
 #: matplotlib.pyplot.barbs:181 of
 msgid "unknown"
-msgstr ""
+msgstr "desconocido"
 
 #: matplotlib.pyplot.barbs:182 of
 msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
-msgstr ""
+msgstr ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
 
 #: matplotlib.pyplot.barbs:183 of
 msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
-msgstr ""
+msgstr ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
 

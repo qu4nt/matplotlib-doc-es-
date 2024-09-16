@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:11\n"
+"PO-Revision-Date: 2022-11-02 13:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,367 +20,367 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.boxplot.rst:2
 msgid "matplotlib.axes.Axes.boxplot"
-msgstr ""
+msgstr "matplotlib.axes.Axes.boxplot"
 
 #: matplotlib.axes._axes.Axes.boxplot:2 of
 msgid "Draw a box and whisker plot."
-msgstr ""
+msgstr "Dibuja una caja y una parcela de whisker."
 
 #: matplotlib.axes._axes.Axes.boxplot:4 of
 msgid "The box extends from the first quartile (Q1) to the third quartile (Q3) of the data, with a line at the median.  The whiskers extend from the box by 1.5x the inter-quartile range (IQR).  Flier points are those past the end of the whiskers. See https://en.wikipedia.org/wiki/Box_plot for reference."
-msgstr ""
+msgstr "La caja se extiende desde el primer cuartil (Q1) hasta el tercer cuartil (Q3) de los datos, con una línea en la mediana. Los whiskers se extienden de la caja por 1. x el rango inter-cuartile (IQR). Los puntos voladores son los que están más allá del final de los whiskers. Vea https://es.wikipedia.org/wiki/Box_plot para referencia."
 
 #: matplotlib.axes._axes.Axes.boxplot of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.axes._axes.Axes.boxplot:24 of
 msgid "**x**"
-msgstr ""
+msgstr "**x**"
 
 #: of
 msgid "Array or a sequence of vectors."
-msgstr ""
+msgstr "Arreglo o una secuencia de vecores."
 
 #: matplotlib.axes._axes.Axes.boxplot:22 of
 msgid "The input data.  If a 2D array, a boxplot is drawn for each column in *x*.  If a sequence of 1D arrays, a boxplot is drawn for each array in *x*."
-msgstr ""
+msgstr "Los datos de entrada. Si una matriz 2D es dibujada para cada columna en *x*. Si una secuencia de matrices 1D, se dibuja una casilla para cada matriz en *x*."
 
 #: matplotlib.axes._axes.Axes.boxplot:41 of
 msgid "**notch**"
-msgstr ""
+msgstr "**notch**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.axes._axes.Axes.boxplot:27 of
 msgid "Whether to draw a notched boxplot (`True`), or a rectangular boxplot (`False`).  The notches represent the confidence interval (CI) around the median.  The documentation for *bootstrap* describes how the locations of the notches are computed by default, but their locations may also be overridden by setting the *conf_intervals* parameter."
-msgstr ""
+msgstr "Ya sea para dibujar un dibujo de boxplot (`True`), o un boxplot rectangular (`False`). Las muñecas representan el intervalo de confianza (CI) alrededor de la mediana. La documentación de *bootstrap* describe cómo las ubicaciones de las muñecas se calculan por defecto, pero sus ubicaciones también pueden ser sobreescritas estableciendo el parámetro *conf_intervals*."
 
 #: matplotlib.axes._axes.Axes.boxplot:36 of
 msgid "In cases where the values of the CI are less than the lower quartile or greater than the upper quartile, the notches will extend beyond the box, giving it a distinctive \"flipped\" appearance. This is expected behavior and consistent with other statistical visualization packages."
-msgstr ""
+msgstr "En los casos en los que los valores del CI son menores que el cuartil inferior o mayor que el cuadrilátero superior, las muelles se extenderán más allá de la caja, dándole una apariencia distintiva \"volteada\". Esto es un comportamiento esperado y consistente con otros paquetes de visualización estadística."
 
 #: matplotlib.axes._axes.Axes.boxplot:46 of
 msgid "**sym**"
-msgstr ""
+msgstr "**sym**"
 
 #: of
 msgid "str, optional"
-msgstr ""
+msgstr "str, opcional"
 
 #: matplotlib.axes._axes.Axes.boxplot:44 of
 msgid "The default symbol for flier points.  An empty string ('') hides the fliers.  If `None`, then the fliers default to 'b+'.  More control is provided by the *flierprops* parameter."
-msgstr ""
+msgstr "El símbolo por defecto para los puntos de volante. Una cadena vacía ('') oculta los fliers. Si `nunca`, entonces los volantes por defecto 'b+'. Se proporciona más control por el parámetro *flierprops*."
 
 #: matplotlib.axes._axes.Axes.boxplot:50 of
 msgid "**vert**"
-msgstr ""
+msgstr "**vert**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.axes._axes.Axes.boxplot:49 of
 msgid "If `True`, draws vertical boxes. If `False`, draw horizontal boxes."
-msgstr ""
+msgstr "Si es `Verdadero`, dibuja cajas verticales. Si `False`, dibuja cajas horizontales."
 
 #: matplotlib.axes._axes.Axes.boxplot:70 of
 msgid "**whis**"
-msgstr ""
+msgstr "**susurro**"
 
 #: of
 msgid "float or (float, float), default: 1.5"
-msgstr ""
+msgstr "flotante o (flotante), por defecto: 1.5"
 
 #: matplotlib.axes._axes.Axes.boxplot:53 of
 msgid "The position of the whiskers."
-msgstr ""
+msgstr "La posición de los whiskers."
 
 #: matplotlib.axes._axes.Axes.boxplot:55 of
 msgid "If a float, the lower whisker is at the lowest datum above ``Q1 - whis*(Q3-Q1)``, and the upper whisker at the highest datum below ``Q3 + whis*(Q3-Q1)``, where Q1 and Q3 are the first and third quartiles.  The default value of ``whis = 1.5`` corresponds to Tukey's original definition of boxplots."
-msgstr ""
+msgstr "Si un flotante, el batidor más bajo es el datum más bajo sobre ``Q1 - whis*(Q3-Q1)``, y la parte superior del whisker en el datum más alto por debajo de ``Q3 + whis*(Q3-Q1)``, donde los Q1 y los Q3 son los primeros y los tercero cuartiles. El valor predeterminado de ``whis = 1.5`` corresponde a la definición original de Tukey de las casillas."
 
 #: matplotlib.axes._axes.Axes.boxplot:61 of
 msgid "If a pair of floats, they indicate the percentiles at which to draw the whiskers (e.g., (5, 95)).  In particular, setting this to (0, 100) results in whiskers covering the whole range of the data."
-msgstr ""
+msgstr "Si un par de carrozas, indican los percentiles en los que dibujar las batidoras (por ejemplo, (5, 95)). En particular, la fijación de esto a (0, 100) da lugar a que los whiskers cubran toda la gama de datos."
 
 #: matplotlib.axes._axes.Axes.boxplot:65 of
 msgid "In the edge case where ``Q1 == Q3``, *whis* is automatically set to (0, 100) (cover the whole range of the data) if *autorange* is True."
-msgstr ""
+msgstr "En el caso donde ``Q1 == Q3``, *whis* se establece automáticamente en (0, 100) (cubre todo el rango de los datos) si *autorange* es verdadero."
 
 #: matplotlib.axes._axes.Axes.boxplot:69 of
 msgid "Beyond the whiskers, data are considered outliers and are plotted as individual points."
-msgstr ""
+msgstr "Más allá de los whiskers, los datos se consideran atípicos y se trazan como puntos individuales."
 
 #: matplotlib.axes._axes.Axes.boxplot:81 of
 msgid "**bootstrap**"
-msgstr ""
+msgstr "**bootstrap**"
 
 #: of
 msgid "int, optional"
-msgstr ""
+msgstr "int, opcional"
 
 #: matplotlib.axes._axes.Axes.boxplot:73 of
 #, python-format
 msgid "Specifies whether to bootstrap the confidence intervals around the median for notched boxplots. If *bootstrap* is None, no bootstrapping is performed, and notches are calculated using a Gaussian-based asymptotic approximation (see McGill, R., Tukey, J.W., and Larsen, W.A., 1978, and Kendall and Stuart, 1967). Otherwise, bootstrap specifies the number of times to bootstrap the median to determine its 95% confidence intervals. Values between 1000 and 10000 are recommended."
-msgstr ""
+msgstr "Especifica si arrancar o no los intervalos de confianza alrededor de la mediana para las pinceladas de boxplot. Si *bootstrap* no es Ninguna, no se realiza ningún arranque y las muelles se calculan usando una aproximación asíntica basada en Gaussiano (ver McGill, R. Tukey, J.W., y Larsen, W.A., 1978, y Kendall y Stuart, 1967). De lo contrario, el bootstrap especifica el número de veces que se inicia la mediana para determinar sus intervalos de confianza del 95%. Se recomiendan valores entre 1000 y 10000."
 
 #: matplotlib.axes._axes.Axes.boxplot:87 of
 msgid "**usermedians**"
-msgstr ""
+msgstr "**medios de usuario**"
 
 #: of
 msgid "1D array-like, optional"
-msgstr ""
+msgstr "Opcional para matriz 1D"
 
 #: matplotlib.axes._axes.Axes.boxplot:84 of
 msgid "A 1D array-like of length ``len(x)``.  Each entry that is not `None` forces the value of the median for the corresponding dataset.  For entries that are `None`, the medians are computed by Matplotlib as normal."
-msgstr ""
+msgstr "Un array 1D similar a la longitud ``len(x)``. Cada entrada que no es `Ninguna` fuerza el valor del promedio del conjunto de datos correspondiente. Para las entradas que son `Ninguno`, los medianos son calculados por Matplotlib como de costumbre."
 
 #: matplotlib.axes._axes.Axes.boxplot:94 of
 msgid "**conf_intervals**"
-msgstr ""
+msgstr "**conf_intervalos**"
 
 #: of
 msgid "array-like, optional"
-msgstr ""
+msgstr "tipo arreglo, opcional"
 
 #: matplotlib.axes._axes.Axes.boxplot:90 of
 msgid "A 2D array-like of shape ``(len(x), 2)``.  Each entry that is not None forces the location of the corresponding notch (which is only drawn if *notch* is `True`).  For entries that are `None`, the notches are computed by the method specified by the other parameters (e.g., *bootstrap*)."
-msgstr ""
+msgstr "Un array-like 2D de la forma ``(len(x), 2)``. Cada entrada que no es Ninguno fuerza la ubicación de la muñeca correspondiente (que sólo se dibuja si *notch* es `True`). Para las entradas que son `Ninguno`, las muelles son calculadas por el método especificado por los otros parámetros (por ejemplo, *bootstrap*)."
 
 #: matplotlib.axes._axes.Axes.boxplot:99 of
 msgid "**positions**"
-msgstr ""
+msgstr "**posiciones**"
 
 #: matplotlib.axes._axes.Axes.boxplot:97 of
 msgid "The positions of the boxes. The ticks and limits are automatically set to match the positions. Defaults to ``range(1, N+1)`` where N is the number of boxes to be drawn."
-msgstr ""
+msgstr "Las posiciones de las casillas. Los ticks y los límites se ajustan automáticamente para que coincidan con las posiciones. Por defecto es ``range(1, N+1)`` donde N es el número de cajas a dibujar."
 
 #: matplotlib.axes._axes.Axes.boxplot:103 of
 msgid "**widths**"
-msgstr ""
+msgstr "**widths**"
 
 #: of
 msgid "float or array-like"
-msgstr ""
+msgstr "flotante o matriz"
 
 #: matplotlib.axes._axes.Axes.boxplot:102 of
 msgid "The widths of the boxes.  The default is 0.5, or ``0.15*(distance between extreme positions)``, if that is smaller."
-msgstr ""
+msgstr "Los anchos de las cajas. El valor predeterminado es 0.5, o ``0.15*(distancia entre posiciones extremas)``, si es más pequeño."
 
 #: matplotlib.axes._axes.Axes.boxplot:107 of
 msgid "**patch_artist**"
-msgstr ""
+msgstr "**parche_artista**"
 
 #: matplotlib.axes._axes.Axes.boxplot:106 of
 msgid "If `False` produces boxes with the Line2D artist. Otherwise, boxes are drawn with Patch artists."
-msgstr ""
+msgstr "Si `False` produce cajas con el artista de Line2D. De lo contrario, las cajas se dibujan con artistas de Patch."
 
 #: matplotlib.axes._axes.Axes.boxplot:110 of
 msgid "**labels**"
-msgstr ""
+msgstr "**labels**"
 
 #: of
 msgid "sequence, optional"
-msgstr ""
+msgstr "secuencia, opcional"
 
 #: matplotlib.axes._axes.Axes.boxplot:110 of
 msgid "Labels for each dataset (one per dataset)."
-msgstr ""
+msgstr "Etiquetas para cada conjunto de datos (uno por conjunto de datos)."
 
 #: matplotlib.axes._axes.Axes.boxplot:114 of
 msgid "**manage_ticks**"
-msgstr ""
+msgstr "**manage_ticks**"
 
 #: matplotlib.axes._axes.Axes.boxplot:113 of
 msgid "If True, the tick locations and labels will be adjusted to match the boxplot positions."
-msgstr ""
+msgstr "Si es verdadero, la ubicación de la marca y las etiquetas se ajustarán para que coincidan con las posiciones de la casilla."
 
 #: matplotlib.axes._axes.Axes.boxplot:119 of
 msgid "**autorange**"
-msgstr ""
+msgstr "**autorange**"
 
 #: matplotlib.axes._axes.Axes.boxplot:117 of
 msgid "When `True` and the data are distributed such that the 25th and 75th percentiles are equal, *whis* is set to (0, 100) such that the whisker ends are at the minimum and maximum of the data."
-msgstr ""
+msgstr "Cuando `True` y los datos se distribuyen de tal forma que los percentiles 25 y 75 son iguales, *whis* se establece en (0, 100) tal que los extremos del whisker son al mínimo y máximo de los datos."
 
 #: matplotlib.axes._axes.Axes.boxplot:125 of
 msgid "**meanline**"
-msgstr ""
+msgstr "**linea**"
 
 #: matplotlib.axes._axes.Axes.boxplot:122 of
 msgid "If `True` (and *showmeans* is `True`), will try to render the mean as a line spanning the full width of the box according to *meanprops* (see below).  Not recommended if *shownotches* is also True.  Otherwise, means will be shown as points."
-msgstr ""
+msgstr "Si `True` (y *showmeans* es `True`), tratará de renderizar la media como una línea que abarca el ancho completo de la caja de acuerdo a *significados* (ver abajo). No se recomienda si las *notas* también son verdaderas. De lo contrario, se mostrará como puntos."
 
 #: matplotlib.axes._axes.Axes.boxplot:128 of
 msgid "**zorder** : float, default: ``Line2D.zorder = 2``"
-msgstr ""
+msgstr "**zorder** : float, por defecto: ``Line2D.zorder = 2``"
 
 #: of
 msgid "float, default:"
-msgstr ""
+msgstr "flotante, por defecto:"
 
 #: matplotlib.axes._axes.Axes.boxplot:128 of
 msgid "The zorder of the boxplot."
-msgstr ""
+msgstr "El zorder de la parcela de caja."
 
 #: matplotlib.axes._axes.Axes.boxplot of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.axes._axes.Axes.boxplot:154 of
 msgid "dict"
-msgstr ""
+msgstr "dict"
 
 #: matplotlib.axes._axes.Axes.boxplot:133 of
 msgid "A dictionary mapping each component of the boxplot to a list of the `.Line2D` instances created. That dictionary has the following keys (assuming vertical boxplots):"
-msgstr ""
+msgstr "Un diccionario que mapea cada componente de la boxplot a una lista de las instancias de `.Line2D` creadas. Ese diccionario tiene las siguientes teclas (asumiendo cuadros verticales):"
 
 #: matplotlib.axes._axes.Axes.boxplot:137 of
 msgid "``boxes``: the main body of the boxplot showing the quartiles and the median's confidence intervals if enabled."
-msgstr ""
+msgstr "``cajas``: el cuerpo principal de la bola mostrando los cuartiles y los intervalos de confianza del mediano si está habilitado."
 
 #: matplotlib.axes._axes.Axes.boxplot:141 of
 msgid "``medians``: horizontal lines at the median of each box."
-msgstr ""
+msgstr "``medianos``: líneas horizontales en la mediana de cada caja."
 
 #: matplotlib.axes._axes.Axes.boxplot:143 of
 msgid "``whiskers``: the vertical lines extending to the most extreme, non-outlier data points."
-msgstr ""
+msgstr "``whiskers``: las líneas verticales que se extienden a los puntos de datos más extremos y no atípicos."
 
 #: matplotlib.axes._axes.Axes.boxplot:146 of
 msgid "``caps``: the horizontal lines at the ends of the whiskers."
-msgstr ""
+msgstr "``caps``: las líneas horizontales en los extremos de los whiskers."
 
 #: matplotlib.axes._axes.Axes.boxplot:149 of
 msgid "``fliers``: points representing data that extend beyond the whiskers (fliers)."
-msgstr ""
+msgstr "``fliers``: puntos que representan datos que se extienden más allá de los whiskers (fliers)."
 
 #: matplotlib.axes._axes.Axes.boxplot:152 of
 msgid "``means``: points or lines representing the means."
-msgstr ""
+msgstr "``significa``: puntos o líneas que representan los medios."
 
 #: matplotlib.axes._axes.Axes.boxplot of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.axes._axes.Axes.boxplot:159 of
 msgid "**showcaps**"
-msgstr ""
+msgstr "**showcaps**"
 
 #: matplotlib.axes._axes.Axes.boxplot:159 of
 msgid "Show the caps on the ends of whiskers."
-msgstr ""
+msgstr "Muestra las gorras en los extremos de los whiskers."
 
 #: matplotlib.axes._axes.Axes.boxplot:162 of
 msgid "**showbox**"
-msgstr ""
+msgstr "**showbox**"
 
 #: matplotlib.axes._axes.Axes.boxplot:162 of
 msgid "Show the central box."
-msgstr ""
+msgstr "Mostrar la caja central."
 
 #: matplotlib.axes._axes.Axes.boxplot:165 of
 msgid "**showfliers**"
-msgstr ""
+msgstr "**showfliers**"
 
 #: matplotlib.axes._axes.Axes.boxplot:165 of
 msgid "Show the outliers beyond the caps."
-msgstr ""
+msgstr "Mostrar los atípicos más allá de los tapones."
 
 #: matplotlib.axes._axes.Axes.boxplot:168 of
 msgid "**showmeans**"
-msgstr ""
+msgstr "**significados mostrados**"
 
 #: matplotlib.axes._axes.Axes.boxplot:168 of
 msgid "Show the arithmetic means."
-msgstr ""
+msgstr "Mostrar los medios aritméticos."
 
 #: matplotlib.axes._axes.Axes.boxplot:171 of
 msgid "**capprops**"
-msgstr ""
+msgstr "**capprops**"
 
 #: of
 msgid "dict, default: None"
-msgstr ""
+msgstr "dictamen, predeterminado: ninguno"
 
 #: matplotlib.axes._axes.Axes.boxplot:171 of
 msgid "The style of the caps."
-msgstr ""
+msgstr "El estilo de las mayúsculas."
 
 #: matplotlib.axes._axes.Axes.boxplot:174 of
 msgid "**boxprops**"
-msgstr ""
+msgstr "**boxprops**"
 
 #: matplotlib.axes._axes.Axes.boxplot:174 of
 msgid "The style of the box."
-msgstr ""
+msgstr "El estilo de la caja."
 
 #: matplotlib.axes._axes.Axes.boxplot:177 of
 msgid "**whiskerprops**"
-msgstr ""
+msgstr "**Bigotes**"
 
 #: matplotlib.axes._axes.Axes.boxplot:177 of
 msgid "The style of the whiskers."
-msgstr ""
+msgstr "El estilo de los whiskers."
 
 #: matplotlib.axes._axes.Axes.boxplot:180 of
 msgid "**flierprops**"
-msgstr ""
+msgstr "**flierpros**"
 
 #: matplotlib.axes._axes.Axes.boxplot:180 of
 msgid "The style of the fliers."
-msgstr ""
+msgstr "El estilo de los fliers."
 
 #: matplotlib.axes._axes.Axes.boxplot:183 of
 msgid "**medianprops**"
-msgstr ""
+msgstr "**medianprops**"
 
 #: matplotlib.axes._axes.Axes.boxplot:183 of
 msgid "The style of the median."
-msgstr ""
+msgstr "El estilo de la mediana."
 
 #: matplotlib.axes._axes.Axes.boxplot:186 of
 msgid "**meanprops**"
-msgstr ""
+msgstr "**meanprops**"
 
 #: matplotlib.axes._axes.Axes.boxplot:186 of
 msgid "The style of the mean."
-msgstr ""
+msgstr "El estilo de la media."
 
 #: matplotlib.axes._axes.Axes.boxplot:193 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.axes._axes.Axes.boxplot:189 of
 msgid "If given, all parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception)."
-msgstr ""
+msgstr "Si se dan, todos los parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción)."
 
 #: matplotlib.axes._axes.Axes.boxplot:198 of
 msgid ":obj:`violinplot`"
-msgstr ""
+msgstr ":obj:`violinplot`"
 
 #: matplotlib.axes._axes.Axes.boxplot:199 of
 msgid "Draw an estimate of the probability density function."
-msgstr ""
+msgstr "Dibujar una estimación de la función de densidad de probabilidad."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.boxplot.examples:2
 msgid "Examples using ``matplotlib.axes.Axes.boxplot``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.axes.Axes.boxplot``"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.boxplot.examples:10
 msgid "Boxplots"
-msgstr ""
+msgstr "Boxplots"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.boxplot.examples:10
 #: ../../api/_as_gen/matplotlib.axes.Axes.boxplot.examples:18
 msgid ":ref:`sphx_glr_gallery_statistics_boxplot_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_statistics_boxplot_demo.py`"
 

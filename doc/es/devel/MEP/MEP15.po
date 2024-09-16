@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-13 13:03\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,65 +20,65 @@ msgstr ""
 
 #: ../../devel/MEP/MEP15.rst:3
 msgid "MEP15: Fix axis autoscaling when limits are specified for one axis only"
-msgstr ""
+msgstr "MEP15: Arregla el autoescalado de los ejes cuando se especifican los límites para un solo eje"
 
 #: ../../devel/MEP/MEP15.rst:9
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP15.rst:11
 msgid "**Discussion**"
-msgstr ""
+msgstr "**Discusión**"
 
 #: ../../devel/MEP/MEP15.rst:14
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP15.rst:16
 msgid "None so far."
-msgstr ""
+msgstr "Ninguno hasta ahora."
 
 #: ../../devel/MEP/MEP15.rst:19
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP15.rst:21
 msgid "When one Axis of a 2-dimensional plot is overridden via `~.Axes.set_xlim` or `~.Axes.set_ylim`, automatic scaling of the remaining Axis should be based on the data that falls within the specified limits of the first Axis."
-msgstr ""
+msgstr "Cuando un eje de un gráfico bidimensional se anula mediante `~.Axes.set_xlim` o `~.Axes.set_ylim`, la escala automática del eje restante debe basarse en los datos que caen dentro de los límites especificados del primer eje."
 
 #: ../../devel/MEP/MEP15.rst:26
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP15.rst:28
 msgid "When axis limits for a 2-D plot are specified for one axis only (via `~.Axes.set_xlim` or `~.Axes.set_ylim`), matplotlib currently does not currently rescale the other axis.  The result is that the displayed curves or symbols may be compressed into a tiny portion of the available area, so that the final plot conveys much less information than it would with appropriate axis scaling."
-msgstr ""
+msgstr "Cuando se especifican los límites de los ejes de un gráfico 2D para un solo eje (mediante `~.Axes.set_xlim` o `~.Axes.set_ylim`), matplotlib no reescala actualmente el otro eje.  El resultado es que las curvas o símbolos mostrados pueden ser comprimidos en una pequeña porción del área disponible, de modo que el gráfico final transmite mucha menos información de lo que lo haría con un escalado apropiado de los ejes."
 
 #: ../../devel/MEP/MEP15.rst:34
 msgid "The proposed change of behavior would make matplotlib choose the scale for the remaining axis using only the data that falls within the limits for the axis where limits were specified."
-msgstr ""
+msgstr "El cambio de comportamiento propuesto haría que matplotlib eligiera la escala para el eje restante utilizando sólo los datos que caen dentro de los límites para el eje donde se especificaron los límites."
 
 #: ../../devel/MEP/MEP15.rst:39
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP15.rst:41
 msgid "I don't know enough about the internals of matplotlib to be able to suggest an implementation."
-msgstr ""
+msgstr "No sé lo suficiente sobre los aspectos internos de matplotlib como para poder sugerir una implementación."
 
 #: ../../devel/MEP/MEP15.rst:45
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP15.rst:47
 msgid "From the standpoint of software interfaces, there would be no break in backward compatibility.  Some outputs would be different, but if the user truly desires the previous behavior, he/she can achieve this by overriding the axis scaling for both axes."
-msgstr ""
+msgstr "Desde el punto de vista de las interfaces de software, no se rompería la compatibilidad con el pasado.  Algunas salidas serían diferentes, pero si el usuario realmente desea el comportamiento anterior, puede conseguirlo anulando la escala de los ejes para ambos ejes."
 
 #: ../../devel/MEP/MEP15.rst:53
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP15.rst:55
 msgid "The only alternative that I can see is to maintain the status quo."
-msgstr ""
+msgstr "La única alternativa que veo es mantener el statu quo."
 

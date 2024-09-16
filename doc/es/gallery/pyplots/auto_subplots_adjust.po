@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:29\n"
+"PO-Revision-Date: 2022-07-17 22:33\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,85 +20,85 @@ msgstr ""
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_pyplots_auto_subplots_adjust.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_pyplots_auto_subplots_adjust.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:23
 msgid "Programmatically controlling subplot adjustment"
-msgstr ""
+msgstr "Controlar programáticamente el ajuste de las subtramas"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:27
 msgid "This example is primarily intended to show some advanced concepts in Matplotlib."
-msgstr ""
+msgstr "Este ejemplo pretende principalmente mostrar algunos conceptos avanzados de Matplotlib."
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:30
 msgid "If you are only looking for having enough space for your labels, it is almost always simpler and good enough to either set the subplot parameters manually using `.Figure.subplots_adjust`, or use one of the automatic layout mechanisms (:doc:`/tutorials/intermediate/constrainedlayout_guide` or :doc:`/tutorials/intermediate/tight_layout_guide`)."
-msgstr ""
+msgstr "Si lo único que buscas es tener espacio suficiente para tus etiquetas, casi siempre es más sencillo y suficiente configurar los parámetros de las subparcelas manualmente utilizando `.Figure.subplots_adjust`, o utilizar uno de los mecanismos de disposición automática (:doc:`/tutorials/intermediate/constrainedlayout_guide` o :doc:`/tutorials/intermediate/tight_layout_guide`)."
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:37
 msgid "This example describes a user-defined way to read out Artist sizes and set the subplot parameters accordingly. Its main purpose is to illustrate some advanced concepts like reading out text positions, working with bounding boxes and transforms and using :ref:`events <event-handling-tutorial>`. But it can also serve as a starting point if you want to automate the layouting and need more flexibility than tight layout and constrained layout."
-msgstr ""
+msgstr "Este ejemplo describe una forma definida por el usuario para leer los tamaños de los Artistas y ajustar los parámetros de las subtramas en consecuencia. Su objetivo principal es ilustrar algunos conceptos avanzados como la lectura de posiciones de texto, el trabajo con cajas delimitadoras y transformaciones y el uso de :ref:`events <event-handling-tutorial>`. Pero también puede servir como punto de partida si quieres automatizar la maquetación y necesitas más flexibilidad que la maquetación ajustada y la maquetación restringida."
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:45
 msgid "Below, we collect the bounding boxes of all y-labels and move the left border of the subplot to the right so that it leaves enough room for the union of all the bounding boxes."
-msgstr ""
+msgstr "A continuación, recogemos las cajas delimitadoras de todas las etiquetas y y movemos el borde izquierdo del subplot hacia la derecha para que deje espacio suficiente para la unión de todas las cajas delimitadoras."
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:49
 msgid "There's one catch with calculating text bounding boxes: Querying the text bounding boxes (`.Text.get_window_extent`) needs a renderer (`.RendererBase` instance), to calculate the text size. This renderer is only available after the figure has been drawn (`.Figure.draw`)."
-msgstr ""
+msgstr "El cálculo de los cuadros delimitadores de texto tiene un inconveniente: La consulta de los cuadros delimitadores del texto (`.Text.get_window_extent`) necesita un renderizador (instancia `.RendererBase`), para calcular el tamaño del texto. Este renderizador sólo está disponible después de que se haya dibujado la figura (`.Figure.draw`)."
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:54
 msgid "A solution to this is putting the adjustment logic in a draw callback. This function is executed after the figure has been drawn. It can now check if the subplot leaves enough room for the text. If not, the subplot parameters are updated and second draw is triggered."
-msgstr ""
+msgstr "Una solución a esto es poner la lógica de ajuste en un callback de dibujo. Esta función se ejecuta después de la figura se ha dibujado. Ahora puedes comprobar si la subtrama deja suficiente espacio para el texto. Si no es así, se actualizan los parámetros de la subtrama y se activa el segundo dibujo."
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:107
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:109
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:112
 msgid "`matplotlib.artist.Artist.get_window_extent`"
-msgstr ""
+msgstr "`matplotlib.artist.Artist.get_window_extent`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:113
 msgid "`matplotlib.transforms.Bbox`"
-msgstr ""
+msgstr "`matplotlib.transforms.Bbox`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:114
 msgid "`matplotlib.transforms.BboxBase.transformed`"
-msgstr ""
+msgstr "`matplotlib.transforms.BboxBase.transformed`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:115
 msgid "`matplotlib.transforms.BboxBase.union`"
-msgstr ""
+msgstr "`matplotlib.transforms.BboxBase.union`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:116
 msgid "`matplotlib.transforms.Transform.inverted`"
-msgstr ""
+msgstr "`matplotlib.transforms.Transform.inverted`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:117
 msgid "`matplotlib.figure.Figure.subplots_adjust`"
-msgstr ""
+msgstr "`matplotlib.figure.Figure.subplots_adjust`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:118
 msgid "`matplotlib.figure.SubplotParams`"
-msgstr ""
+msgstr "`matplotlib.figure.SubplotParams`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:119
 msgid "`matplotlib.backend_bases.FigureCanvasBase.mpl_connect`"
-msgstr ""
+msgstr "`matplotlib.backend_bases.FigureCanvasBase.mpl_connect`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:134
 msgid ":download:`Download Python source code: auto_subplots_adjust.py <auto_subplots_adjust.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: auto_subplots_adjust.py <auto_subplots_adjust.py>`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:140
 msgid ":download:`Download Jupyter notebook: auto_subplots_adjust.ipynb <auto_subplots_adjust.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: auto_subplots_adjust.ipynb <auto_subplots_adjust.ipynb>`"
 
 #: ../../gallery/pyplots/auto_subplots_adjust.rst:147
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

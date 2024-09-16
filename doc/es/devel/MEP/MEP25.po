@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-15 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,193 +20,193 @@ msgstr ""
 
 #: ../../devel/MEP/MEP25.rst:3
 msgid "MEP25: Serialization"
-msgstr ""
+msgstr "MEP25: Serialización"
 
 #: ../../devel/MEP/MEP25.rst:8
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP25.rst:10
 msgid "**Rejected**"
-msgstr ""
+msgstr "**Rechazado**"
 
 #: ../../devel/MEP/MEP25.rst:12
 msgid "This work is important, but this particular effort has stalled."
-msgstr ""
+msgstr "Este trabajo es importante, pero este esfuerzo en particular se ha estancado."
 
 #: ../../devel/MEP/MEP25.rst:15
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP25.rst:17
 msgid "development branches:"
-msgstr ""
+msgstr "ramas de desarrollo:"
 
 #: ../../devel/MEP/MEP25.rst:19
 msgid "related pull requests:"
-msgstr ""
+msgstr "relacionados con los pull requests:"
 
 #: ../../devel/MEP/MEP25.rst:22
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP25.rst:24
 msgid "This MEP aims at adding a serializable ``Controller`` objects to act as an ``Artist`` managers. Users would then communicate changes to an ``Artist`` via a ``Controller``. In this way, functionality of the ``Controller`` objects may be added incrementally since each ``Artist`` is still responsible for drawing everything. The goal is to create an API that is usable both by graphing libraries requiring high-level descriptions of figures and libraries requiring low-level interpretations."
-msgstr ""
+msgstr "Este MEP pretende añadir un objeto ``Controlador`` serializable para que actúe como un gestor de ``Artists``. Los usuarios comunicarían los cambios a un ``Artist`` a través de un ``Controlador``. De esta manera, la funcionalidad de los objetos ``Controller`` puede ser añadida de forma incremental ya que cada ``Artista`` sigue siendo responsable de dibujar todo. El objetivo es crear una API que pueda ser utilizada tanto por las bibliotecas de gráficos que requieren descripciones de alto nivel de las figuras como por las bibliotecas que requieren interpretaciones de bajo nivel."
 
 #: ../../devel/MEP/MEP25.rst:34
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP25.rst:36
 msgid "Matplotlib is a core plotting engine with an API that many users already understand. It's difficult/impossible for other graphing libraries to (1) get a complete figure description, (2) output raw data from the figure object as the user has provided it, (3) understand the semantics of the figure objects without heuristics, and (4) give matplotlib a complete figure description to visualize. In addition, because an ``Artist`` has no conception of its own semantics within the figure, it's difficult to interact with them in a natural way."
-msgstr ""
+msgstr "Matplotlib es un motor de trazado básico con una API que muchos usuarios ya entienden. Es difícil/imposible para otraslibrerías de gráficos (1) obtener una descripción completa de la figura, (2) dar salida a los datos en bruto del objeto figura tal y como el usuario los ha proporcionado, (3) entender la semántica de los objetos figura sin heurística, y (4) dar a matplotlib una descripción completa de la figura para visualizarla. Además, debido a que un ``Artist`` no tiene una concepción de su propia semántica dentro de la figura, es difícil interactuar con ellos de forma natural."
 
 #: ../../devel/MEP/MEP25.rst:46
 msgid "In this sense, matplotlib will adopt a standard Model-View-Controller (MVC) framework. The *Model* will be the user defined data, style, and semantics. The *Views* are the ensemble of each individual ``Artist``, which are responsible for producing the final image based on the *model*. The *Controller* will be the ``Controller`` object managing its set of ``Artist`` objects."
-msgstr ""
+msgstr "En este sentido, matplotlib adoptará unframework estándar de Modelo-Vista-Controlador (MVC). El *Modelo* serán los datos, el estilo y la semántica definidos por el usuario. Las *Vistas* son el conjunto de cada ``Artist`` individual, que son responsables de producir la imagen final basada en el *modelo*. El *Controlador* será el objeto ``Controller`` que gestiona su conjunto de objetos ``Artists``."
 
 #: ../../devel/MEP/MEP25.rst:53
 msgid "The ``Controller`` must be able to export the information that it's carrying about the figure on command, perhaps via a ``to_json`` method or similar. Because it would be extremely extraneous to duplicate all of the information in the model with the controller, only user-specified information (data + style) are explicitly kept. If a user wants more information (defaults) from the view/model, it should be able to query for it."
-msgstr ""
+msgstr "El ``Controlador`` debe ser capaz de exportar la información que lleva sobre la figura en el comando, tal vez a través de un método ``to_json`` o similar. Debido a que sería extremadamente extraño duplicar toda la información del modelo con el controlador, sólo se guarda explícitamente la información especificada por el usuario (datos + estilo). Si un usuario quiere más información (por defecto) de la vista/modelo, debería poder consultarla."
 
 #: ../../devel/MEP/MEP25.rst:61
 msgid "This might be annoying to do, non-specified kwargs are pulled from the rcParams object which is in turn created from reading a user specified file and can be dynamically changed at run time.  I suppose we could keep a dict of default defaults and compare against that. Not clear how this will interact with the style sheet [[MEP26]] - @tacaswell"
-msgstr ""
+msgstr "Esto podría ser molesto de hacer, los kwargs no especificados se extraen del objeto rcParams que a su vez se crea a partir de la lectura de un archivo especificado por el usuario y puede ser cambiado dinámicamente en tiempo de ejecución.  Supongo que podríamos mantener un dictado de valores por defecto y comparar con eso. No está claro cómo va a interactuar esto con la hoja de estilo [[MEP26]] - @tacaswell"
 
 #: ../../devel/MEP/MEP25.rst:68
 msgid "Additional Notes:"
-msgstr ""
+msgstr "Notas adicionales:"
 
 #: ../../devel/MEP/MEP25.rst:70
 msgid "The \"raw data\" does not necessarily need to be a ``list``, ``ndarray``, etc. Rather, it can more abstractly just have a method to yield data when needed."
-msgstr ""
+msgstr "Los \"datos brutos\" no tienen que ser necesariamente una ``lista``, ``ndarray``, etc. En lugar de ello, puede ser más abstracto tener un método para obtener los datos cuando sea necesario."
 
 #: ../../devel/MEP/MEP25.rst:74
 msgid "Because the ``Controller`` will contain extra information that users may not want to keep around, it should *not* be created by default. You should be able to both (a) instantiate a ``Controller`` with a figure and (b) build a figure with a ``Controller``."
-msgstr ""
+msgstr "Debido a que el ``Controlador`` contendrá información extra que los usuarios no querrán mantener, no debería ser creado por defecto. Deberías ser capaz de (a) instanciar un ``Controlador`` con una figura y (b) construir una figura con un ``Controlador``."
 
 #: ../../devel/MEP/MEP25.rst:79
 msgid "Use Cases:"
-msgstr ""
+msgstr "Casos de Uso:"
 
 #: ../../devel/MEP/MEP25.rst:81
 msgid "Export all necessary informat"
-msgstr ""
+msgstr "Exporta toda la información necesaria"
 
 #: ../../devel/MEP/MEP25.rst:82
 msgid "Serializing a matplotlib figure, saving it, and being able to rerun later."
-msgstr ""
+msgstr "Serializar una figura de matplotlib, guardarla y poder volver a ejecutarla más tarde."
 
 #: ../../devel/MEP/MEP25.rst:83
 msgid "Any other source sending an appropriately formatted representation to matplotlib to open"
-msgstr ""
+msgstr "Cualquier otra fuente que envíe una representación con el formato adecuado a matplotlib para abrir"
 
 #: ../../devel/MEP/MEP25.rst:86
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
 #: ../../devel/MEP/MEP25.rst:87
 msgid "Here are some examples of what the controllers should be able to do."
-msgstr ""
+msgstr "Estos son algunos ejemplos de lo que deberían poder hacer los controladores."
 
 #: ../../devel/MEP/MEP25.rst:89
 msgid "Instantiate a matplotlib figure from a serialized representation (e.g., JSON): ::"
-msgstr ""
+msgstr "Instanciar una figura de matplotlib a partir de una representación serializada (por ejemplo, JSON): ::"
 
 #: ../../devel/MEP/MEP25.rst:98
 msgid "Manage artists from the controller (e.g., Line2D): ::"
-msgstr ""
+msgstr "Gestionar artists desde el controlador (por ejemplo, Line2D): ::"
 
 #: ../../devel/MEP/MEP25.rst:104
 msgid "Export serializable figure representation: ::"
-msgstr ""
+msgstr "Exportación de la representación de la figura serializable: ::"
 
 #: ../../devel/MEP/MEP25.rst:111
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP25.rst:113
 msgid "Create base ``Controller`` objects that are able to manage ``Artist`` objects (e.g., ``Hist``)"
-msgstr ""
+msgstr "Crear objetos base ``Controller`` que sean capaces de gestionar objetos ``Artists`` (por ejemplo, ``Hist``)"
 
 #: ../../devel/MEP/MEP25.rst:116 ../../devel/MEP/MEP25.rst:135
 msgid "Comments:"
-msgstr ""
+msgstr "Comentarios:"
 
 #: ../../devel/MEP/MEP25.rst:118
 msgid "initialization should happen via unpacking ``**``, so we need a copy of call signature parameter for the ``Artist`` we're ultimately trying to control. Unfortunate hard-coded repetition..."
-msgstr ""
+msgstr "la inicialización debe ocurrir a través de la descomposición de ``**``, por lo que necesitamos una copia del parámetro de la firma de la llamada para el ``Artist`` que en última instancia estamos tratando de controlar. Desafortunada repetición de código duro..."
 
 #: ../../devel/MEP/MEP25.rst:122
 msgid "should the additional ``**kwargs`` accepted by each ``Artist`` be tracked at the ``Controller``"
-msgstr ""
+msgstr "¿los ``kwargs`` adicionales aceptados por cada ``Artist`` deben ser rastreados en el ``Controlador``?"
 
 #: ../../devel/MEP/MEP25.rst:124
 msgid "how does a ``Controller`` know which artist belongs where? E.g., do we need to pass ``axes`` references?"
-msgstr ""
+msgstr "¿Cómo sabe un ``Controlador`` qué artist pertenece a qué lugar? Por ejemplo, ¿hay que pasar referencias a los ``ejes``?"
 
 #: ../../devel/MEP/MEP25.rst:127
 msgid "Progress:"
-msgstr ""
+msgstr "Progreso:"
 
 #: ../../devel/MEP/MEP25.rst:129
 msgid "A simple NB demonstrating some functionality for ``Line2DController`` objects: https://nbviewer.jupyter.org/gist/theengineear/f0aa8d79f64325e767c0"
-msgstr ""
+msgstr "Un simple NB que demuestra algunas funcionalidades de los objetos ``Line2DController``: https://nbviewer.jupyter.org/gist/theengineear/f0aa8d79f64325e767c0"
 
 #: ../../devel/MEP/MEP25.rst:133
 msgid "Write in protocols for the ``Controller`` to *update* the model."
-msgstr ""
+msgstr "Escribir en protocolos para el ``Controlador`` para *actualizar* el modelo."
 
 #: ../../devel/MEP/MEP25.rst:137
 msgid "how should containers be dealt with? E.g., what happens to old patches when we re-bin a histogram?"
-msgstr ""
+msgstr "¿Cómo deben tratarse los contenedores? Por ejemplo, ¿qué ocurre con los parches antiguos cuando volvemos a incluir un histograma?"
 
 #: ../../devel/MEP/MEP25.rst:139
 msgid "in the link from (1), the old line is completely destroyed and redrawn, what if something is referencing it?"
-msgstr ""
+msgstr "en el enlace de (1), la línea antigua está completamente destruida y redibujada, ¿qué pasa si algo hace referencia a ella?"
 
 #: ../../devel/MEP/MEP25.rst:142
 msgid "Create method by which a json object can be assembled from the ``Controllers``"
-msgstr ""
+msgstr "Método de creación mediante el cual se puede ensamblar un objeto json a partir de los ``Controladores``"
 
 #: ../../devel/MEP/MEP25.rst:144
 msgid "Deal with serializing the unserializable aspects of a figure (e.g., non-affine transforms?)"
-msgstr ""
+msgstr "Tratar la serialización de los aspectos no serializables de una figura (por ejemplo, las transformaciones no afines...)"
 
 #: ../../devel/MEP/MEP25.rst:146
 msgid "Be able to instantiate from a serialized representation"
-msgstr ""
+msgstr "Ser capaz de instanciar desde una representación serializada"
 
 #: ../../devel/MEP/MEP25.rst:147
 msgid "Reimplement the existing pyplot and Axes method, e.g. ``pyplot.hist`` and ``Axes.hist`` in terms of the new controller class."
-msgstr ""
+msgstr "Reimplementar el método pyplot y Axes existente, por ejemplo ``pyplot.hist`` y ``Axes.hist`` en términos de la nueva clase de controlador."
 
 #: ../../devel/MEP/MEP25.rst:151
 msgid "> @theengineer: in #2 above, what do you mean by *get updates* from each ``Artist``?"
-msgstr ""
+msgstr "> @theengineer: en el #2 anterior, ¿qué quieres decir con *obtener actualizaciones* de cada ``Artist``?"
 
 #: ../../devel/MEP/MEP25.rst:154
 msgid "^ Yup. The ``Controller`` *shouldn't* need to get updated. This just happens in #3. Delete comments when you see this."
-msgstr ""
+msgstr "Sí. El ``Controlador`` *no debería* tener que actualizarse. Esto sólo ocurre en el #3. Borra los comentarios cuando veas esto."
 
 #: ../../devel/MEP/MEP25.rst:158
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP25.rst:160
 msgid "pickling will change"
-msgstr ""
+msgstr "la serialización cambiará"
 
 #: ../../devel/MEP/MEP25.rst:161
 msgid "non-affine transformations will require a defined pickling method"
-msgstr ""
+msgstr "las transformaciones no afines requerirán un método de serialización definido"
 
 #: ../../devel/MEP/MEP25.rst:164
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP25.rst:166
 msgid "PR #3150 suggested adding semantics by parasitically attaching extra containers to axes objects. This is a more complete solution with what should be a more developed/flexible/powerful framework."
-msgstr ""
+msgstr "El PR #3150 sugirió añadir semántica adjuntando parásitamente contenedores extra a los objetos de los ejes. Esta es una solución más completa con lo que debería ser un framework más desarrollado/flexible/potente."
 

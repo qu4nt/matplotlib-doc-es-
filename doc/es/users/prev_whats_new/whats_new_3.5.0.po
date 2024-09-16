@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-30 02:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,497 +20,497 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:3
 msgid "What's new in Matplotlib 3.5.0 (Nov 15, 2021)"
-msgstr ""
+msgstr "Novedades en Matplotlib 3.5.0 (15 de Noviembre de 2021)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:5
 msgid "For a list of all of the issues and pull requests since the last revision, see the :ref:`github-stats`."
-msgstr ""
+msgstr "Para obtener una lista de todas las incidencias y pull requests desde la última revisión, ver la :ref:`github-stats`."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:9
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de Contenidos"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:15
 msgid "Figure and Axes creation / management"
-msgstr ""
+msgstr "Creación / gestión de figuras y ejes"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:18
 msgid "``subplot_mosaic`` supports simple Axes sharing"
-msgstr ""
+msgstr "``subplot_mosaic`` permite compartir ejes de forma sencilla"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:20
 msgid "`.Figure.subplot_mosaic`, `.pyplot.subplot_mosaic` support *simple* Axes sharing (i.e., only `True`/`False` may be passed to *sharex*/*sharey*). When `True`, tick label visibility and Axis units will be shared."
-msgstr ""
+msgstr "`.Figure.subplot_mosaic`, `.pyplot.subplot_mosaic` soportan la compartición *simple* de ejes (es decir, sólo se puede pasar `True`/`False` a *sharex*/*sharey*). Cuando es `Verdadero`, la visibilidad de las etiquetas de los ticks y las unidades de los Ejes serán compartidas."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:17
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-1.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:38
 msgid "Figure now has ``draw_without_rendering`` method"
-msgstr ""
+msgstr "La figura tiene ahora el método ``draw_without_rendering``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:40
 msgid "Some aspects of a figure are only determined at draw-time, such as the exact position of text artists or deferred computation like automatic data limits. If you need these values, you can use ``figure.canvas.draw()`` to force a full draw. However, this has side effects, sometimes requires an open file, and is doing more work than is needed."
-msgstr ""
+msgstr "Algunos aspectos de una figura sólo se determinan en el momento de dibujar, como la posición exacta de los artists de texto o el cálculo diferido, como los límites de datos automáticos. Si necesita estos valores, puede utilizar ``figure.canvas.draw()`` para forzar un dibujo completo. Sin embargo, esto tiene efectos secundarios, a veces requiere un archivo abierto, y está haciendo más trabajo del necesario."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:46
 msgid "The new `.Figure.draw_without_rendering` method runs all the updates that ``draw()`` does, but skips rendering the figure. It's thus more efficient if you need the updated values to configure further aspects of the figure."
-msgstr ""
+msgstr "El nuevo método `.Figure.draw_without_rendering` ejecuta todas las actualizaciones que hace ``draw()``, pero se salta el renderizado de la figura. Por lo tanto, es más eficiente si necesitas los valores actualizados para configurar otros aspectos de la figura."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:51
 msgid "Figure ``__init__`` passes keyword arguments through to set"
-msgstr ""
+msgstr "La figura ``__init__`` pasa los argumentos de las palabras clave a set"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:53
 msgid "Similar to many other sub-classes of `~.Artist`, the `~.FigureBase`, `~.SubFigure`, and `~.Figure` classes will now pass any additional keyword arguments to `~.Artist.set` to allow properties of the newly created object to be set at initialization time. For example::"
-msgstr ""
+msgstr "Al igual que muchas otras subclases de `~.Artist`, las clases `~.FigureBase`, `~.SubFigure` y `~.Figure` pasarán ahora cualquier argumento de palabra clave adicional a `~.Artist.set` para permitir que las propiedades del objeto recién creado se establezcan en el momento de la inicialización. Por ejemplo::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:62
 msgid "Plotting methods"
-msgstr ""
+msgstr "Métodos de graficación"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:65
 msgid "Add ``Annulus`` patch"
-msgstr ""
+msgstr "Añadir el parche ``Annulus``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:67
 msgid "`.Annulus` is a new class for drawing elliptical annuli."
-msgstr ""
+msgstr "`.Annulus` es una nueva clase para dibujar anillos elípticos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-2.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:83
 msgid "``set_data`` method for ``FancyArrow`` patch"
-msgstr ""
+msgstr "Método ``set_data`` para el parche ``FancyArrow``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:85
 msgid "`.FancyArrow`, the patch returned by ``ax.arrow``, now has a ``set_data`` method that allows modifying the arrow after creation, e.g., for animation."
-msgstr ""
+msgstr "`.FancyArrow`, el parche devuelto por ``ax.arrow``, tiene ahora un método ``set_data`` que permite modificar la flecha después de su creación, por ejemplo, para su animación."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:89
 msgid "New arrow styles in ``ArrowStyle`` and ``ConnectionPatch``"
-msgstr ""
+msgstr "Nuevos estilos de flecha en ``ArrowStyle`` y ``ConnectionPatch``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:91
 msgid "The new *arrow* parameter to `.ArrowStyle` substitutes the use of the *beginarrow* and *endarrow* parameters in the creation of arrows. It receives arrows strings like ``'<-'``, ``']-[``' and ``']->``' instead of individual booleans."
-msgstr ""
+msgstr "El nuevo parámetro *arrow* de `.ArrowStyle` sustituye el uso de los parámetros *beginarrow* y *endarrow* en la creación de flechas. Recibe cadenas de flechas como ``'<-'``, ``']-[``' y ``']->``' en lugar de booleanas individuales."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:96
 msgid "Two new styles ``']->'`` and ``'<-['`` are also added via this mechanism. `.ConnectionPatch`, which accepts arrow styles though its *arrowstyle* parameter, also accepts these new styles."
-msgstr ""
+msgstr "Dos nuevos estilos ``']->'`` y ``'<-['`` también se añaden a través de este mecanismo. El parche `.ConnectionPatch`, que acepta estilos de flecha a través de su parámetro *arrowstyle*, también acepta estos nuevos estilos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-3.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-3.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:124
 msgid "Setting collection offset transform after initialization"
-msgstr ""
+msgstr "Ajuste de la transformación del desplazamiento de la colección después de la inicialización"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:126
 msgid "The added `.collections.Collection.set_offset_transform` may be used to set the offset transform after initialization. This can be helpful when creating a `.collections.Collection` outside an Axes object, and later adding it with `.Axes.add_collection()` and setting the offset transform to `.Axes.transData`."
-msgstr ""
+msgstr "La función añadida `.collections.Collection.set_offset_transform` puede utilizarse para establecer la transformación de desplazamiento después de la inicialización. Esto puede ser útil cuando se crea una `.collections.Collection` fuera de un objeto Axes, y posteriormente se añade con `.Axes.add_collection()` y se establece la transformación de desplazamiento a `.Axes.transData`."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:132
 msgid "Colors and colormaps"
-msgstr ""
+msgstr "Colores y mapas de colores"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:135
 msgid "Colormap registry (experimental)"
-msgstr ""
+msgstr "Registro de mapas de colores (experimental)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:137
 msgid "Colormaps are now managed via `matplotlib.colormaps` (or `.pyplot.colormaps`), which is a `.ColormapRegistry`. While we are confident that the API is final, we formally mark it as experimental for 3.5 because we want to keep the option to still modify the API for 3.6 should the need arise."
-msgstr ""
+msgstr "Los mapas de colores se gestionan ahora mediante `matplotlib.colormaps` (o `.pyplot.colormaps`), que es un `.ColormapRegistry`. Aunque estamos seguros de que la API es definitiva, la marcamos formalmente como experimental para la 3.5 porque queremos mantener la opción de seguir modificando la API para la 3.6 si surge la necesidad."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:142
 msgid "Colormaps can be obtained using item access::"
-msgstr ""
+msgstr "Los mapas de colores pueden obtenerse mediante el acceso a los elementos::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:147
 msgid "To register new colormaps use::"
-msgstr ""
+msgstr "Para registrar nuevos mapas de colores utilice::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:151
 msgid "We recommend to use the new API instead of the `~.cm.get_cmap` and `~.cm.register_cmap` functions for new code. `matplotlib.cm.get_cmap` and `matplotlib.cm.register_cmap` will eventually be deprecated and removed. Within `.pyplot`, ``plt.get_cmap()`` and ``plt.register_cmap()`` will continue to be supported for backward compatibility."
-msgstr ""
+msgstr "Recomendamos utilizar la nueva API en lugar de las funciones `~.cm.get_cmap` y `~.cm.register_cmap` para el código nuevo. Las funciones `matplotlib.cm.get_cmap` y `matplotlib.cm.register_cmap` serán eventualmente obsoletas y eliminadas. Dentro de `.pyplot`, ``plt.get_cmap()`` y ``plt.register_cmap()`` seguirán siendo soportados por compatibilidad con el pasado."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:158
 msgid "Image interpolation now possible at RGBA stage"
-msgstr ""
+msgstr "La interpolación de imágenes ahora es posible en la etapa RGBA"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:160
 msgid "Images in Matplotlib created via `~.axes.Axes.imshow` are resampled to match the resolution of the current canvas. It is useful to apply an auto-aliasing filter when downsampling to reduce Moiré effects. By default, interpolation is done on the data, a norm applied, and then the colormapping performed."
-msgstr ""
+msgstr "Las imágenes en Matplotlib creadas a través de `~.axes.Axes.imshow` son remuestreadas para ajustarse a la resolución del lienzo actual. Es útil aplicar un filtro de auto-aliasing cuando se remuestrea para reducir los efectos Moiré. Por defecto, la interpolación se realiza sobre los datos, se aplica una norma y luego se realiza el mapeo de color."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:165
 msgid "However, it is often desirable for the anti-aliasing interpolation to happen in RGBA space, where the colors are interpolated rather than the data. This usually leads to colors outside the colormap, but visually blends adjacent colors, and is what browsers and other image processing software do."
-msgstr ""
+msgstr "Sin embargo, a menudo es deseable que la interpolación anti-aliasing ocurra en el espacio RGBA, donde se interpolan los colores en lugar de los datos. Esto suele dar lugar a colores fuera del mapa de colores, pero mezcla visualmente los colores adyacentes, y es lo que hacen los navegadores y otros programas de procesamiento de imágenes."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:170
 msgid "A new keyword argument *interpolation_stage* is provided for `~.axes.Axes.imshow` to set the stage at which the anti-aliasing interpolation happens. The default is the current behaviour of \"data\", with the alternative being \"rgba\" for the newly-available behavior."
-msgstr ""
+msgstr "Se proporciona un nuevo argumento de palabra clave *interpolation_stage* para `~.axes.Axes.imshow` para establecer la etapa en la que se produce la interpolación antialiasing. El valor por defecto es el comportamiento actual de \"data\", siendo la alternativa \"rgba\" para el nuevo comportamiento disponible."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:178
 msgid "Example of the interpolation stage options."
-msgstr ""
+msgstr "Ejemplo de las opciones de la etapa de interpolación."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:180
 msgid "For more details see the discussion of the new keyword argument in :doc:`/gallery/images_contours_and_fields/image_antialiasing`."
-msgstr ""
+msgstr "Para más detalles, véase la discusión del argumento de la nueva palabra clave en :doc:`/gallery/images_contours_and_fields/image_antialiasing`."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:184
 msgid "``imshow`` supports half-float arrays"
-msgstr ""
+msgstr "``imshow`` admite matrices de medios flotantes"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:186
 msgid "The `~.axes.Axes.imshow` method now supports half-float arrays, i.e., NumPy arrays with dtype ``np.float16``."
-msgstr ""
+msgstr "El método `~.axes.Axes.imshow` soporta ahora arreglos half-float, es decir, arrays NumPy con dtype ``np.float16``."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:190
 msgid "A callback registry has been added to Normalize objects"
-msgstr ""
+msgstr "Se ha añadido un registro de callback a los objetos Normalize"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:192
 msgid "`.colors.Normalize` objects now have a callback registry, ``callbacks``, that can be connected to by other objects to be notified when the norm is updated. The callback emits the key ``changed`` when the norm is modified. `.cm.ScalarMappable` is now a listener and will register a change when the norm's vmin, vmax or other attributes are changed."
-msgstr ""
+msgstr "Los objetos `.colors.Normalize` tienen ahora un registro de llamadas de retorno, ``callbacks``, al que pueden conectarse otros objetos para ser notificados cuando se actualiza la norma. El callback emite la clave ``changed`` cuando se modifica la norma. La norma `.cm.ScalarMappable` es ahora un oyente y registrará un cambio cuando el vmin, vmax u otros atributos de la norma sean modificados."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:199
 msgid "Titles, ticks, and labels"
-msgstr ""
+msgstr "Títulos, ticks y etiquetas"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:202
 msgid "Settings tick positions and labels simultaneously in ``set_ticks``"
-msgstr ""
+msgstr "Configuración de las posiciones de los ticks y las etiquetas simultáneamente en ``set_ticks``"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:204
 msgid "`.Axis.set_ticks` (and the corresponding `.Axes.set_xticks` / `.Axes.set_yticks`) has a new parameter *labels* allowing to set tick positions and labels simultaneously."
-msgstr ""
+msgstr "`.Axis.set_ticks` (y los correspondientes `.Axes.set_xticks` / `.Axes.set_yticks`) tiene un nuevo parámetro *labels* que permite establecer posiciones de ticks y etiquetas simultáneamente."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:208
 msgid "Previously, setting tick labels was done using `.Axis.set_ticklabels` (or the corresponding `.Axes.set_xticklabels` / `.Axes.set_yticklabels`); this usually only makes sense if tick positions were previously fixed with `~.Axis.set_ticks`::"
-msgstr ""
+msgstr "Anteriormente, la fijación de las etiquetas de los ticks se realizaba mediante `.Axis.set_ticklabels` (o los correspondientes `.Axes.set_xticklabels` / `.Axes.set_yticklabels`); esto normalmente sólo tiene sentido si las posiciones de los ticks se fijaron previamente con `~.Axis.set_ticks`::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:216
 msgid "The combined functionality is now available in `~.Axis.set_ticks`::"
-msgstr ""
+msgstr "La funcionalidad combinada está ahora disponible en `~.Axis.set_ticks`::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:220
 msgid "The use of `.Axis.set_ticklabels` is discouraged, but it will stay available for backward compatibility."
-msgstr ""
+msgstr "Se desaconseja el uso de `.Axis.set_ticklabels`, pero seguirá estando disponible por compatibilidad con versiones anteriores."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:223
 msgid "Note: This addition makes the API of `~.Axis.set_ticks` also more similar to `.pyplot.xticks` / `.pyplot.yticks`, which already had the additional *labels* parameter."
-msgstr ""
+msgstr "Nota: Esta adición hace que la API de `~.Axis.set_ticks` también sea más similar a la de `.pyplot.xticks` / `.pyplot.yticks`, que ya tenía el parámetro adicional *labels*."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:228
 msgid "Fonts and Text"
-msgstr ""
+msgstr "Fuentes y texto"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:231
 msgid "Triple and quadruple dot mathtext accents"
-msgstr ""
+msgstr "Punto triple y cuádruple acentos de mathtext"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:233
 msgid "In addition to single and double dot accents, mathtext now supports triple and quadruple dot accents."
-msgstr ""
+msgstr "Además de los acentos de punto simple y doble, mathtext soporta ahora acentos de punto triple y cuádruple."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:11
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-4.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-4.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-4.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-4.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:244
 msgid "Font properties of legend title are configurable"
-msgstr ""
+msgstr "Las propiedades de la fuente del título de la leyenda son configurables"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:246
 msgid "Title's font properties can be set via the *title_fontproperties* keyword argument, for example:"
-msgstr ""
+msgstr "Las propiedades de la fuente del título pueden configurarse mediante el argumento de la palabra clave *title_fontproperties*, por ejemplo:"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-5.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-5.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-5.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-5.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-5.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-5.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:257
 msgid "``Text`` and ``TextBox`` added *parse_math* option"
-msgstr ""
+msgstr "``Text`` y ``TextBox`` han añadido la opción *parse_math*"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:259
 msgid "`.Text` and `.TextBox` objects now allow a *parse_math* keyword-only argument which controls whether math should be parsed from the displayed string. If *True*, the string will be parsed as a math text object. If *False*, the string will be considered a literal and no parsing will occur."
-msgstr ""
+msgstr "Los objetos `.Text` y `.TextBox` permiten ahora un argumento de palabra clave *parse_math* que controla si las matemáticas deben ser analizadas desde la cadena mostrada. Si es *True*, la cadena será analizada como un objeto de texto matemático. Si es *False*, la cadena se considerará un literal y no se realizará ningún análisis."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:265
 msgid "Text can be positioned inside TextBox widget"
-msgstr ""
+msgstr "El texto puede ser posicionado dentro del widget TextBox"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:267
 msgid "A new parameter called *textalignment* can be used to control for the position of the text inside the Axes of the `.TextBox` widget."
-msgstr ""
+msgstr "Un nuevo parámetro llamado *textalignment* puede utilizarse para controlar la posición del texto dentro de los ejes del widget `.TextBox`."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-6.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-6.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-6.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-6.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-6.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-6.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:282
 msgid "Simplifying the font setting for usetex mode"
-msgstr ""
+msgstr "Simplificación de la configuración de la fuente para el modo usetex"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:284
 msgid "Now the :rc:`font.family` accepts some font names as value for a more user-friendly setup."
-msgstr ""
+msgstr "Ahora el parámetro :rc:`font.family` acepta algunos nombres de fuentes como valor para una configuración más fácil para el usuario."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:295
 msgid "Type 42 subsetting is now enabled for PDF/PS backends"
-msgstr ""
+msgstr "El subconjunto de tipo 42 está ahora habilitado para los backends PDF/PS"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:297
 msgid "`~matplotlib.backends.backend_pdf` and `~matplotlib.backends.backend_ps` now use a unified Type 42 font subsetting interface, with the help of `fontTools <https://fonttools.readthedocs.io/en/latest/>`_"
-msgstr ""
+msgstr "`~matplotlib.backends.backend_pdf` y `~matplotlib.backends.backend_ps` ahora utilizan una interfaz unificada de subconjunto de fuentes Type 42, con la ayuda de `fontTools <https://fonttools.readthedocs.io/en/latest/>`_"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:301
 msgid "Set :rc:`pdf.fonttype` or :rc:`ps.fonttype` to ``42`` to trigger this workflow::"
-msgstr ""
+msgstr "Establezca :rc:`pdf.fonttype` o :rc:`ps.fonttype` a ``42`` para activar este flujo de trabajo::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:317
 msgid "rcParams improvements"
-msgstr ""
+msgstr "mejoras en rcParams"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:320
 msgid "Allow setting default legend labelcolor globally"
-msgstr ""
+msgstr "Permitir establecer el color de la leyenda por defecto de forma global"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:322
 msgid "A new :rc:`legend.labelcolor` sets the default *labelcolor* argument for `.Figure.legend`.  The special values  'linecolor', 'markerfacecolor' (or 'mfc'), or 'markeredgecolor' (or 'mec') will cause the legend text to match the corresponding color of marker."
-msgstr ""
+msgstr "Un nuevo :rc:`legend.labelcolor` establece el argumento *labelcolor* por defecto para `.Figure.legend`.  Los valores especiales 'linecolor', 'markerfacecolor' (o 'mfc'), o 'markeredgecolor' (o 'mec') harán que el texto de la leyenda coincida con el color correspondiente del marcador."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-7.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-7.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-7.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-7.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-7.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-7.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:345
 msgid "3D Axes improvements"
-msgstr ""
+msgstr "Mejoras en los ejes 3D"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:348
 msgid "Axes3D now allows manual control of draw order"
-msgstr ""
+msgstr "Axes3D ahora permite el control manual del orden de dibujo"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:350
 msgid "The `~mpl_toolkits.mplot3d.axes3d.Axes3D` class now has *computed_zorder* parameter. When set to False, Artists are drawn using their ``zorder`` attribute."
-msgstr ""
+msgstr "La clase `~mpl_toolkits.mplot3d.axes3d.Axes3D` tiene ahora el parámetro *computed_zorder*. Cuando se establece en False, los artists se dibujan utilizando su atributo ``zorder``."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-8.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-8.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-8.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-8.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-8.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-8.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:387
 msgid "Allow changing the vertical axis in 3d plots"
-msgstr ""
+msgstr "Permitir cambiar el eje vertical en los gráficos 3d"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:389
 msgid "`~mpl_toolkits.mplot3d.axes3d.Axes3D.view_init` now has the parameter *vertical_axis* which allows switching which axis is aligned vertically."
-msgstr ""
+msgstr "La clase `~mpl_toolkits.mplot3d.axes3d.Axes3D.view_init` tiene ahora el parámetro *vertical_axis* que permite cambiar el eje alineado verticalmente."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-9.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-9.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-9.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-9.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-9.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-9.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:415
 msgid "``plot_surface`` supports masked arrays and NaNs"
-msgstr ""
+msgstr "``plot_surface`` soporta arrays enmascarados y NaNs"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:417
 msgid "`.axes3d.Axes3D.plot_surface` supports masked arrays and NaNs, and will now hide quads that contain masked or NaN points. The behaviour is similar to `.Axes.contour` with ``corner_mask=True``."
-msgstr ""
+msgstr "`.axes3d.Axes3D.plot_surface` soporta arrays enmascarados y NaNs, y ahora ocultará los quads que contengan puntos enmascarados o NaN. El comportamiento es similar al de `.Axes.contour` con ``corner_mask=True``."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-10.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-10.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-10.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-10.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-10.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-10.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:438
 msgid "3D plotting methods support *data* keyword argument"
-msgstr ""
+msgstr "Los métodos de trazado 3D soportan el argumento de la palabra clave *data*"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:440
 msgid "To match all 2D plotting methods, the 3D Axes now support the *data* keyword argument. This allows passing arguments indirectly from a DataFrame-like structure. ::"
-msgstr ""
+msgstr "Para coincidir con todos los métodos de trazado en 2D, los Ejes 3D soportan ahora el argumento de la palabra clave *data*. Esto permite pasar argumentos indirectamente desde una estructura tipo DataFrame::"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:457
 msgid "Interactive tool improvements"
-msgstr ""
+msgstr "Mejoras en la herramienta interactiva"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:460
 msgid "Colorbars now have pan and zoom functionality"
-msgstr ""
+msgstr "Las barras de colores tienen ahora la función de desplazamiento y zoom"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:462
 msgid "Interactive plots with colorbars can now be zoomed and panned on the colorbar axis. This adjusts the *vmin* and *vmax* of the ``ScalarMappable`` associated with the colorbar. This is currently only enabled for continuous norms. Norms used with contourf and categoricals, such as ``BoundaryNorm`` and ``NoNorm``, have the interactive capability disabled by default. ``cb.ax.set_navigate()`` can be used to set whether a colorbar axes is interactive or not."
-msgstr ""
+msgstr "Los gráficos interactivos con barras de colores ahora pueden ser ampliados y desplazados en el eje de la barra de colores. Esto ajusta los valores *vmin* y *vmax* del ``ScalarMappable`` asociado a la barra de colores. Actualmente sólo está habilitado para las normas continuas. Las normas utilizadas con contourf y categóricas, como ``BoundaryNorm`` y ``NoNorm``, tienen la capacidad interactiva desactivada por defecto. Se puede utilizar ``cb.ax.set_navigate()`` para establecer si un eje de barra de colores es interactivo o no."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:470
 msgid "Updated the appearance of Slider widgets"
-msgstr ""
+msgstr "Actualizada la apariencia de los widgets Slider"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:472
 msgid "The appearance of `~.Slider` and `~.RangeSlider` widgets were updated and given new styling parameters for the added handles."
-msgstr ""
+msgstr "Se ha actualizado la apariencia de los widgets `~.Slider` y `~.RangeSlider` y se les ha dotado de nuevos parámetros de estilo para los tiradores añadidos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-11.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-11.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-11.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-5-0-11.py>`__, `png <../../users/prev_whats_new/whats_new_3-5-0-11.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-5-0-11.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:512
 msgid "Removing points on a PolygonSelector"
-msgstr ""
+msgstr "Eliminación de puntos en un PolygonSelector"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:514
 msgid "After completing a `~matplotlib.widgets.PolygonSelector`, individual points can now be removed by right-clicking on them."
-msgstr ""
+msgstr "Después de completar un `~matplotlib.widgets.PolygonSelector`, ahora se pueden eliminar puntos individuales haciendo clic con el botón derecho sobre ellos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:518
 msgid "Dragging selectors"
-msgstr ""
+msgstr "Arrastrando selectores"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:520
 msgid "The `~matplotlib.widgets.SpanSelector`, `~matplotlib.widgets.RectangleSelector` and `~matplotlib.widgets.EllipseSelector` have a new keyword argument, *drag_from_anywhere*, which when set to `True` allows you to click and drag from anywhere inside the selector to move it. Previously it was only possible to move it by either activating the move modifier button, or clicking on the central handle."
-msgstr ""
+msgstr "Los selectores `~matplotlib.widgets.SpanSelector`, `~matplotlib.widgets.RectangleSelector` y `~matplotlib.widgets.EllipseSelector` tienen un nuevo argumento de palabra clave, *drag_from_anywhere*, que cuando se establece en `True` permite hacer click y arrastrar desde cualquier lugar dentro del selector para moverlo. Anteriormente sólo era posible moverlo activando el botón modificador de movimiento, o haciendo click en el asa central."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:527
 msgid "The size of the `~matplotlib.widgets.SpanSelector` can now be changed using the edge handles."
-msgstr ""
+msgstr "El tamaño del `~matplotlib.widgets.SpanSelector` puede ahora cambiarse utilizando los tiradores de los bordes."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:531
 msgid "Clearing selectors"
-msgstr ""
+msgstr "Limpiando selectores"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:533
 msgid "The selectors (`~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, `~.widgets.RectangleSelector`, and `~.widgets.SpanSelector`) have a new method *clear*, which will clear the current selection and get the selector ready to make a new selection. This is equivalent to pressing the *escape* key."
-msgstr ""
+msgstr "Los selectores (`~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, `~.widgets.RectangleSelector`, y `~.widgets.SpanSelector`) tienen un nuevo método *clear*, que borrará la selección actual y preparará el selector para hacer una nueva selección. Esto es equivalente a pulsar la tecla *escape*."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:540
 msgid "Setting artist properties of selectors"
-msgstr ""
+msgstr "Configuración de las propiedades de artist de los selectores"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:542
 msgid "The artist properties of the `~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, `~.widgets.RectangleSelector` and `~.widgets.SpanSelector` selectors can be changed using the ``set_props`` and ``set_handle_props`` methods."
-msgstr ""
+msgstr "Las propiedades artist de los selectores `~.widgets.EllipseSelector`, `~.widgets.LassoSelector`, `~.widgets.PolygonSelector`, `~.widgets.RectangleSelector` y `~.widgets.SpanSelector` pueden modificarse mediante los métodos ``set_props`` y ``set_handle_props``."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:548
 msgid "Ignore events outside selection"
-msgstr ""
+msgstr "Ignorar eventos fuera de la selección"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:550
 msgid "The `~.widgets.EllipseSelector`, `~.widgets.RectangleSelector` and `~.widgets.SpanSelector` selectors have a new keyword argument, *ignore_event_outside*, which when set to `True` will ignore events outside of the current selection. The handles or the new dragging functionality can instead be used to change the selection."
-msgstr ""
+msgstr "Los selectores `~.widgets.EllipseSelector`, `~.widgets.RectangleSelector` y `~.widgets.SpanSelector` tienen un nuevo argumento de palabra clave, *ignore_event_outside*, que cuando se establece como `True` ignorará los eventos fuera de la selección actual. En su lugar se pueden utilizar los tiradores o la nueva funcionalidad de arrastre para cambiar la selección."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:557
 msgid "``CallbackRegistry`` objects gain a method to temporarily block signals"
-msgstr ""
+msgstr "Los objetos ``CallbackRegistry`` ganan un método para bloquear temporalmente las señales"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:559
 msgid "The context manager `~matplotlib.cbook.CallbackRegistry.blocked` can be used to block callback signals from being processed by the ``CallbackRegistry``. The optional keyword, *signal*, can be used to block a specific signal from being processed and let all other signals pass."
-msgstr ""
+msgstr "El gestor de contexto `~matplotlib.cbook.CallbackRegistry.blocked` se puede utilizar para bloquear las señales de devolución de llamada para que no sean procesadas por el ``CallbackRegistry``. La palabra clave opcional, *señal*, se puede utilizar para bloquear una señal específica para que no sea procesada y dejar pasar todas las demás señales."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:583
 msgid "Directional sizing cursors"
-msgstr ""
+msgstr "Cursores de tamaño direccional"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:585
 msgid "Canvases now support setting directional sizing cursors, i.e., horizontal and vertical double arrows. These are used in e.g., selector widgets. Try the :doc:`/gallery/widgets/mouse_cursor` example to see the cursor in your desired backend."
-msgstr ""
+msgstr "Los lienzos ahora soportan la configuración de cursores de tamaño direccional, es decir, flechas dobles horizontales y verticales. Se utilizan, por ejemplo, en los widgets de selección. Pruebe el ejemplo de :doc:`/gallery/widgets/mouse_cursor` para ver el cursor en su backend deseado."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:591
 msgid "Sphinx extensions"
-msgstr ""
+msgstr "Extensiones de Sphinx"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:594
 msgid "More configuration of ``mathmpl`` sphinx extension"
-msgstr ""
+msgstr "Más configuración de la extensión ``mathmpl`` de sphinx"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:596
 msgid "The `matplotlib.sphinxext.mathmpl` sphinx extension supports two new configuration options that may be specified in your ``conf.py``:"
-msgstr ""
+msgstr "La extensión sphinx `matplotlib.sphinxext.mathmpl` soporta dos nuevas opciones de configuración que pueden ser especificadas en su ``conf.py``:"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:599
 msgid "``mathmpl_fontsize`` (float), which sets the font size of the math text in points;"
-msgstr ""
+msgstr "``mathmpl_fontsize`` (float), que establece el tamaño de la fuente del texto matemático en puntos;"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:601
 msgid "``mathmpl_srcset`` (list of str), which provides a list of sizes to support `responsive resolution images <https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images>`__ The list should contain additional x-descriptors (``'1.5x'``, ``'2x'``, etc.) to generate (1x is the default and always included.)"
-msgstr ""
+msgstr "``mathmpl_srcset`` (lista de str), que proporciona una lista de tamaños para soportar las `imágenes de resolución adaptativa <https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images>`__ La lista debe contener descriptores x adicionales (``'1.5x``, ``'2x``, etc.) para generar (1x es el valor por defecto y siempre se incluye)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:608
 msgid "Backend-specific improvements"
-msgstr ""
+msgstr "Mejoras específicas del backend"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:611
 msgid "GTK backend"
-msgstr ""
+msgstr "Backend GTK"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:613
 msgid "A backend supporting GTK4_ has been added. Both Agg and Cairo renderers are supported. The GTK4 backends may be selected as GTK4Agg or GTK4Cairo."
-msgstr ""
+msgstr "Se ha añadido un backend compatible con GTK4_. Se soportan los renderizadores Agg y Cairo. Los backends GTK4 pueden ser seleccionados como GTK4Agg o GTK4Cairo."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:619
 msgid "Qt backends"
-msgstr ""
+msgstr "Backends de Qt"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:621
 msgid "Support for Qt6 (using either PyQt6_ or PySide6_) has been added, with either the Agg or Cairo renderers. Simultaneously, support for Qt4 has been dropped. Both Qt6 and Qt5 are supported by a combined backend (QtAgg or QtCairo), and the loaded version is determined by modules already imported, the :envvar:`QT_API` environment variable, and available packages. See :ref:`QT_API-usage` for details. The versioned Qt5 backend names (Qt5Agg or Qt5Cairo) remain supported for backwards compatibility."
-msgstr ""
+msgstr "Se ha añadido soporte para Qt6 (usando PyQt6_ o PySide6_), con los renderizadores Agg o Cairo. Simultáneamente, se ha eliminado el soporte para Qt4. Tanto Qt6 como Qt5 están soportados por un backend combinado (QtAgg o QtCairo), y la versión cargada está determinada por los módulos ya importados, la variable de entorno :envvar:`QT_API`, y los paquetes disponibles. Ver :ref:`QT_API-usage` para más detalles. Los nombres de backend Qt5 versionados (Qt5Agg o Qt5Cairo) siguen siendo soportados por compatibilidad con versiones anteriores."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:633
 msgid "HiDPI support in Cairo-based, GTK, and Tk backends"
-msgstr ""
+msgstr "Soporte HiDPI en los backends basados en Cairo, GTK y Tk"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:635
 msgid "The GTK3 backends now support HiDPI fully, including mixed monitor cases (on Wayland only). The newly added GTK4 backends also support HiDPI."
-msgstr ""
+msgstr "Los backends GTK3 ahora soportan HiDPI completamente, incluyendo casos de monitores mixtos (sólo en Wayland). Los nuevos backends GTK4 también soportan HiDPI."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:638
 msgid "The TkAgg backend now supports HiDPI **on Windows only**, including mixed monitor cases."
-msgstr ""
+msgstr "El backend TkAgg ahora soporta HiDPI **sólo en Windows**, incluyendo casos de monitores mixtos."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:641
 msgid "All Cairo-based backends correctly support HiDPI as well as their Agg counterparts did (i.e., if the toolkit supports HiDPI, then the \\*Cairo backend will now support it, but not otherwise.)"
-msgstr ""
+msgstr "Todos los backends basados en Cairo soportan correctamente HiDPI al igual que lo hacían sus homólogos de Agg (es decir, si el kit de herramientas soporta HiDPI, entonces el backend \\*Cairo lo soportará ahora, pero no en caso contrario)"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:646
 msgid "Qt figure options editor improvements"
-msgstr ""
+msgstr "Mejoras en el editor de opciones de figuras de Qt"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:648
 msgid "The figure options editor in the Qt backend now also supports editing the left and right titles (plus the existing centre title). Editing Axis limits is better supported when using a date converter. The ``symlog`` option is now available in Axis scaling options. All entries with the same label are now shown in the Curves tab."
-msgstr ""
+msgstr "El editor de opciones de figuras en el backend de Qt ahora también soporta la edición de los títulos izquierdo y derecho (además del título central existente). La edición de los límites de los ejes está mejor soportada cuando se utiliza un convertidor de fecha. La opción ``symlog`` está ahora disponible en las opciones de escala de los ejes. Todas las entradas con la misma etiqueta se muestran ahora en la pestaña Curvas."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:655
 msgid "WX backends support mouse navigation buttons"
-msgstr ""
+msgstr "Los backends WX soportan los botones de navegación del ratón"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:657
 msgid "The WX backends now support navigating through view states using the mouse forward/backward buttons, as in other backends."
-msgstr ""
+msgstr "Los backends WX ahora soportan la navegación a través de los estados de la vista usando los botones de avance/retroceso del ratón, como en otros backends."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:661
 msgid "WebAgg uses asyncio instead of Tornado"
-msgstr ""
+msgstr "WebAgg utiliza asyncio en lugar de Tornado"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:663
 msgid "The WebAgg backend defaults to using `asyncio` over Tornado for timer support. This allows using the WebAgg backend in JupyterLite."
-msgstr ""
+msgstr "El backend WebAgg utiliza por defecto `asyncio` en lugar de Tornado para el soporte de temporizadores. Esto permite usar el backend WebAgg en JupyterLite."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:667
 msgid "Version information"
-msgstr ""
+msgstr "Información de la versión"
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:669
 msgid "We switched to the `release-branch-semver`_ version scheme of setuptools-scm. This only affects the version information for development builds. Their version number now describes the targeted release, i.e. 3.5.0.dev820+g6768ef8c4c is 820 commits after the previous release and is scheduled to be officially released as 3.5.0 later."
-msgstr ""
+msgstr "Cambiamos al esquema de versión `release-branch-semver`_ de setuptools-scm. Esto sólo afecta a la información de la versión para las construcciones de desarrollo. Su número de versión ahora describe la versión prevista, es decir, 3.5.0.dev820+g6768ef8c4c es 820 commits después de la versión anterior y está programado para ser lanzado oficialmente como 3.5.0 más tarde."
 
 #: ../../users/prev_whats_new/whats_new_3.5.0.rst:675
 msgid "In addition to the string ``__version__``, there is now a namedtuple ``__version_info__`` as well, which is modelled after `sys.version_info`_. Its primary use is safely comparing version information, e.g.  ``if __version_info__ >= (3, 4, 2)``."
-msgstr ""
+msgstr "Además de la cadena ``versión__``, ahora hay también una namedtuple ``versión_info__``, que está modelada según ``sys.version_info`_. Su uso principal es la comparación segura de la información de la versión, por ejemplo, ``si __version_info__ >= (3, 4, 2)``."
 

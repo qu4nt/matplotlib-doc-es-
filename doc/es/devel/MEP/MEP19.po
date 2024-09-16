@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-13 13:03\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,241 +20,241 @@ msgstr ""
 
 #: ../../devel/MEP/MEP19.rst:3
 msgid "MEP19: Continuous Integration"
-msgstr ""
+msgstr "MEP19: Integración continua"
 
 #: ../../devel/MEP/MEP19.rst:6
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP19.rst:8
 msgid "**Completed**"
-msgstr ""
+msgstr "**Completado**"
 
 #: ../../devel/MEP/MEP19.rst:11
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP19.rst:14
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP19.rst:16
 msgid "matplotlib could benefit from better and more reliable continuous integration, both for testing and building installers and documentation."
-msgstr ""
+msgstr "matplotlib podría beneficiarse de una integración continua mejor y más fiable, tanto para las pruebas como para la construcción de instaladores y documentación."
 
 #: ../../devel/MEP/MEP19.rst:21
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP19.rst:24
 msgid "Current state-of-the-art"
-msgstr ""
+msgstr "Estado actual de la técnica"
 
 #: ../../devel/MEP/MEP19.rst:26
 msgid "**Testing**"
-msgstr ""
+msgstr "**Prueba**"
 
 #: ../../devel/MEP/MEP19.rst:28
 msgid "matplotlib currently uses Travis-CI for automated tests.  While Travis-CI should be praised for how much it does as a free service, it has a number of shortcomings:"
-msgstr ""
+msgstr "matplotlib utiliza actualmente Travis-CI para las pruebas automatizadas.  Aunque hay que alabar a Travis-CI por lo mucho que hace como servicio gratuito, tiene una serie de deficiencias:"
 
 #: ../../devel/MEP/MEP19.rst:32
 msgid "It often fails due to network timeouts when installing dependencies."
-msgstr ""
+msgstr "A menudo falla debido a los tiempos de espera de la red al instalar las dependencias."
 
 #: ../../devel/MEP/MEP19.rst:34
 msgid "It often fails for inexplicable reasons."
-msgstr ""
+msgstr "A menudo fracasa por razones inexplicables."
 
 #: ../../devel/MEP/MEP19.rst:36
 msgid "build or test products can only be saved from build off of branches on the main repo, not pull requests, so it is often difficult to \"post mortem\" analyse what went wrong.  This is particularly frustrating when the failure can not be subsequently reproduced locally."
-msgstr ""
+msgstr "los productos de construcción o de prueba sólo pueden guardarse a partir de las ramas del repositorio principal, no de los pull requests, por lo que a menudo es difícil analizar \"post mortem\" lo que ha ido mal.  Esto es especialmente frustrante cuando el fallo no puede reproducirse posteriormente a nivel local."
 
 #: ../../devel/MEP/MEP19.rst:42
 msgid "It is not extremely fast.  matplotlib's cpu and memory requirements for testing are much higher than the average Python project."
-msgstr ""
+msgstr "No es extremadamente rápido. Los requisitos de cpu y memoria de matplotlib para las pruebas son mucho más altos que los del proyecto promedio de Python."
 
 #: ../../devel/MEP/MEP19.rst:45
 msgid "It only tests on Ubuntu Linux, and we have only minimal control over the specifics of the platform.  It can be upgraded at any time outside of our control, causing unexpected delays at times that may not be convenient in our release schedule."
-msgstr ""
+msgstr "Sólo se prueba en Ubuntu Linux, y sólo tenemos un control mínimo sobre los detalles de la plataforma.  Puede actualizarse en cualquier momento fuera de nuestro control, causando retrasos inesperados en momentos que pueden no ser convenientes en nuestro calendario de lanzamientos."
 
 #: ../../devel/MEP/MEP19.rst:50
 msgid "On the plus side, Travis-CI's integration with github -- automatically testing all pending pull requests -- is exceptional."
-msgstr ""
+msgstr "En el lado positivo, la integración de Travis-CI con github - que prueba automáticamente todos los pull request pendientes - es excepcional."
 
 #: ../../devel/MEP/MEP19.rst:53
 msgid "**Builds**"
-msgstr ""
+msgstr "**Construcción**"
 
 #: ../../devel/MEP/MEP19.rst:55
 msgid "There is no centralized effort for automated binary builds for matplotlib.  However, the following disparate things are being done [If the authors mentioned here could fill in detail, that would be great!]:"
-msgstr ""
+msgstr "No existe un esfuerzo centralizado para la construcción binaria automatizada de matplotlib.  Sin embargo, se están haciendo las siguientes cosas dispares [Si los autores mencionados aquí pueden dar detalles, ¡sería genial!]:"
 
 #: ../../devel/MEP/MEP19.rst:60
 msgid "@sandrotosi: builds Debian packages"
-msgstr ""
+msgstr "@sandrotosi: construye paquetes de Debian"
 
 #: ../../devel/MEP/MEP19.rst:62
 msgid "@takluyver: Has automated Ubuntu builds on Launchpad"
-msgstr ""
+msgstr "@takluyver: Ha automatizado las construcciones de Ubuntu en Launchpad"
 
 #: ../../devel/MEP/MEP19.rst:64
 msgid "@cgohlke: Makes Windows builds (don't know how automated that is)"
-msgstr ""
+msgstr "@cgohlke: Hace compilaciones de Windows (no sé qué tan automatizado está)"
 
 #: ../../devel/MEP/MEP19.rst:66
 msgid "@r-owen: Makes OS-X builds (don't know how automated that is)"
-msgstr ""
+msgstr "@r-owen: Hace compilaciones para OS-X (no sé cómo está automatizado)"
 
 #: ../../devel/MEP/MEP19.rst:68
 msgid "**Documentation**"
-msgstr ""
+msgstr "**Documentación**"
 
 #: ../../devel/MEP/MEP19.rst:70
 msgid "Documentation of master is now built by travis and uploaded to https://matplotlib.org/devdocs/index.html"
-msgstr ""
+msgstr "La documentación del master está ahora construida por travis y subida a https://matplotlib.org/devdocs/index.html"
 
 #: ../../devel/MEP/MEP19.rst:72
 msgid "@NelleV, I believe, generates the docs automatically and posts them on the web to chart MEP10 progress."
-msgstr ""
+msgstr "Creo que @NelleV genera los documentos automáticamente y los cuelga en la web para registrar el progreso de MEP10."
 
 #: ../../devel/MEP/MEP19.rst:76
 msgid "Peculiarities of matplotlib"
-msgstr ""
+msgstr "Peculiedades de matplotlib"
 
 #: ../../devel/MEP/MEP19.rst:78
 msgid "matplotlib has complex requirements that make testing and building more taxing than many other Python projects."
-msgstr ""
+msgstr "matplotlib tiene requisitos complejos que hacen que las pruebas y la construcción sean más exigentes que muchos otros proyectos de Python."
 
 #: ../../devel/MEP/MEP19.rst:81
 msgid "The CPU time to run the tests is quite high.  It puts us beyond the free accounts of many CI services (e.g. ShiningPanda)"
-msgstr ""
+msgstr "El tiempo de CPU para ejecutar las pruebas es bastante alto.  Nos sitúa por encima de las cuentas gratuitas de muchos servicios de CI (por ejemplo, ShiningPanda)"
 
 #: ../../devel/MEP/MEP19.rst:84
 msgid "It has a large number of dependencies, and testing the full matrix of all combinations is impractical.  We need to be clever about what space we test and guarantee to support."
-msgstr ""
+msgstr "Tiene un gran número de dependencias, y probar la matriz completa de todas las combinaciones es poco práctico.  Tenemos que ser inteligentes en cuanto al espacio que probamos y garantizar el soporte."
 
 #: ../../devel/MEP/MEP19.rst:89
 msgid "Requirements"
-msgstr ""
+msgstr "Requisitos"
 
 #: ../../devel/MEP/MEP19.rst:91
 msgid "This section outlines the requirements that we would like to have."
-msgstr ""
+msgstr "En esta sección se exponen los requisitos que nos gustaría tener."
 
 #: ../../devel/MEP/MEP19.rst:93
 msgid "Testing all pull requests by hooking into the GitHub API, as Travis-CI does"
-msgstr ""
+msgstr "Comprobación de todas los pull requests conectándose a la API de GitHub, como hace Travis-CI"
 
 #: ../../devel/MEP/MEP19.rst:96
 msgid "Testing on all major platforms: Linux, Mac OS-X, MS Windows (in that order of priority, based on user survey)"
-msgstr ""
+msgstr "Pruebas en las principales plataformas: Linux, Mac OS-X, MS Windows (en ese orden de prioridad, según la encuesta de usuarios)"
 
 #: ../../devel/MEP/MEP19.rst:99
 msgid "Retain the last n days worth of build and test products, to aid in post-mortem debugging."
-msgstr ""
+msgstr "Conserve los productos de construcción y prueba de los últimos n días, para ayudar a la depuración post-mortem."
 
 #: ../../devel/MEP/MEP19.rst:102
 msgid "Automated nightly binary builds, so that users can test the bleeding edge without installing a complete compilation environment."
-msgstr ""
+msgstr "Construcciones binarias nocturnas automatizadas, para que los usuarios puedan probar el arista sin necesidad de instalar un entorno de compilación completo."
 
 #: ../../devel/MEP/MEP19.rst:106
 msgid "Automated benchmarking.  It would be nice to have a standard benchmark suite (separate from the tests) whose performance could be tracked over time, in different backends and platforms.  While this is separate from building and testing, ideally it would run on the same infrastructure."
-msgstr ""
+msgstr "Análisis comparativo automatizado.  Estaría bien disponer de un conjunto de pruebas estándar (independiente de las pruebas) cuyo rendimiento pudiera seguirse a lo largo del tiempo, en diferentes backends y plataformas.  Aunque esto es independiente de la construcción y las pruebas, lo ideal sería que se ejecutara en la misma infraestructura."
 
 #: ../../devel/MEP/MEP19.rst:112
 msgid "Automated nightly building and publishing of documentation (or as part of testing, to ensure PRs don't introduce documentation bugs). (This would not replace the static documentation for stable releases as a default)."
-msgstr ""
+msgstr "Construcción y publicación nocturna automatizada de la documentación (o como parte de las pruebas, para asegurar que los PRs no introduzcan errores en la documentación). (Esto no sustituiría a la documentación estática de las versiones estables por defecto)."
 
 #: ../../devel/MEP/MEP19.rst:117
 msgid "The test systems should be manageable by multiple developers, so that no single person becomes a bottleneck.  (Travis-CI's design does this well -- storing build configuration in the git repository, rather than elsewhere, is a very good design.)"
-msgstr ""
+msgstr "Los sistemas de prueba deben ser manejados por múltiples desarrolladores, de manera que ninguna persona se convierta en un cuello de botella. (El diseño de Travis-CI hace esto bien - almacenar la configuración de la construcción en el repositorio git, en lugar de en otro lugar, es un muy buen diseño.)"
 
 #: ../../devel/MEP/MEP19.rst:122
 msgid "Make it easy to test a large but sparse matrix of different versions of matplotlib's dependencies.  The matplotlib user survey provides some good data as to where to focus our efforts: https://docs.google.com/spreadsheets/d/1jbK0J4cIkyBNncnS-gP7pINSliNy9lI-N4JHwxlNSXE/edit"
-msgstr ""
+msgstr "Facilitar la prueba de una matriz grande pero dispersa de diferentes versiones de las dependencias de matplotlib.  La encuesta de usuarios de matplotlib proporciona algunos buenos datos sobre dónde centrar nuestros esfuerzos: https://docs.google.com/spreadsheets/d/1jbK0J4cIkyBNncnS-gP7pINSliNy9lI-N4JHwxlNSXE/edit"
 
 #: ../../devel/MEP/MEP19.rst:127
 msgid "Nice to have: A decentralized design so that those with more obscure platforms can publish build results to a central dashboard."
-msgstr ""
+msgstr "Es bueno tenerlo: Un diseño descentralizado para que aquellos con plataformas más oscuras puedan publicar los resultados de la construcción en un tablero central."
 
 #: ../../devel/MEP/MEP19.rst:131
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP19.rst:133
 msgid "This part is yet-to-be-written."
-msgstr ""
+msgstr "Esta parte todavía está por escribir."
 
 #: ../../devel/MEP/MEP19.rst:135
 msgid "However, ideally, the implementation would be a third-party service, to avoid adding system administration to our already stretched time. As we have some donated funds, this service may be a paid one if it offers significant time-saving advantages over free offerings."
-msgstr ""
+msgstr "Sin embargo, lo ideal sería que la implementación fuera un servicio de terceros, para evitar añadir la administración del sistema a nuestro ya escaso tiempo. Como tenemos algunos fondos donados, este servicio puede ser de pago si ofrece ventajas significativas de ahorro de tiempo respecto a las ofertas gratuitas."
 
 #: ../../devel/MEP/MEP19.rst:141
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP19.rst:143
 msgid "Backward compatibility is not a major concern for this MEP.  We will replace current tools and procedures with something better and throw out the old."
-msgstr ""
+msgstr "La compatibilidad con las versiones anteriores no es una preocupación importante para este MEP.  Sustituiremos las herramientas y procedimientos actuales por algo mejor y desecharemos lo antiguo."
 
 #: ../../devel/MEP/MEP19.rst:148
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP19.rst:152
 msgid "Hangout Notes"
-msgstr ""
+msgstr "Notas del Hangout"
 
 #: ../../devel/MEP/MEP19.rst:155
 msgid "CI Infrastructure"
-msgstr ""
+msgstr "Infraestructura CI"
 
 #: ../../devel/MEP/MEP19.rst:157
 msgid "We like Travis and it will probably remain part of our arsenal in any event.  The reliability issues are being looked into."
-msgstr ""
+msgstr "Nos gusta Travis y probablemente seguirá formando parte de nuestro arsenal en cualquier caso.  Las incidencias de fiabilidad se están estudiando."
 
 #: ../../devel/MEP/MEP19.rst:160
 msgid "Enable Amazon S3 uploads of testing products on Travis.  This will help with post-mortem of failures (@mdboom is looking into this now)."
-msgstr ""
+msgstr "Habilitar las subidas a Amazon S3 de los productos de prueba en Travis.  Esto ayudará con el post-mortem de los fracasos (@mdboom está investigando esto ahora)."
 
 #: ../../devel/MEP/MEP19.rst:164
 msgid "We want Mac coverage.  The best bet is probably to push Travis to enable it for our project by paying them for a Pro account (since they don't otherwise allow testing on both Linux and Mac)."
-msgstr ""
+msgstr "Queremos cobertura para Mac.  La mejor opción es probablemente presionar a Travis para que lo habilite para nuestro proyecto pagándoles una cuenta Pro (ya que de otra manera no permiten hacer pruebas tanto en Linux como en Mac)."
 
 #: ../../devel/MEP/MEP19.rst:168
 msgid "We want Windows coverage.  Shining Panda is an option there."
-msgstr ""
+msgstr "Queremos la cobertura de Windows.  Shining Panda es una opción allí."
 
 #: ../../devel/MEP/MEP19.rst:170
 msgid "Investigate finding or building a tool that would collect and synthesize test results from a number of sources and post it to GitHub using the GitHub API.  This may be of general use to the Scipy community."
-msgstr ""
+msgstr "Investigar la posibilidad de encontrar o construir una herramienta que recoja y sintetice los resultados de las pruebas de una serie de fuentes y los publique en GitHub utilizando la API de GitHub.  Esto puede ser de uso general para la comunidad Scipy."
 
 #: ../../devel/MEP/MEP19.rst:175
 msgid "For both Windows and Mac, we should document (or better yet, script) the process of setting up the machine for a build, and how to build binaries and installers.  This may require getting information from Russel Owen and Christoph Gohlke.  This is a necessary step for doing automated builds, but would also be valuable for a number of other reasons."
-msgstr ""
+msgstr "Tanto para Windows como para Mac, deberíamos documentar (o mejor aún, hacer un script) el proceso de configuración de la máquina para una compilación, y cómo construir binarios e instaladores.  Esto puede requerir obtener información de Russel Owen y Christoph Gohlke.  Este es un paso necesario para hacer construcciones automatizadas, pero también sería valioso por una serie de otras razones."
 
 #: ../../devel/MEP/MEP19.rst:183
 msgid "The test framework itself"
-msgstr ""
+msgstr "El propio marco de pruebas"
 
 #: ../../devel/MEP/MEP19.rst:185
 msgid "We should investigate ways to make it take less time"
-msgstr ""
+msgstr "Deberíamos investigar formas de hacer que se tarde menos tiempo"
 
 #: ../../devel/MEP/MEP19.rst:187
 msgid "Eliminating redundant tests, if possible"
-msgstr ""
+msgstr "Eliminar las pruebas redundantes, si es posible"
 
 #: ../../devel/MEP/MEP19.rst:189
 msgid "General performance improvements to matplotlib will help"
-msgstr ""
+msgstr "Las mejoras generales de rendimiento de matplotlib ayudarán"
 
 #: ../../devel/MEP/MEP19.rst:191
 msgid "We should be covering more things, particularly more backends"
-msgstr ""
+msgstr "Deberíamos cubrir más cosas, en particular más backends"
 
 #: ../../devel/MEP/MEP19.rst:193
 msgid "We should have more unit tests, fewer integration tests, if possible"
-msgstr ""
+msgstr "Deberíamos tener más pruebas unitarias y menos pruebas de integración, si es posible"
 

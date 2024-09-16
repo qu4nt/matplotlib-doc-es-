@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-21 15:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,59 +20,59 @@ msgstr ""
 
 #: ../../tutorials/introductory/images.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_introductory_images.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_introductory_images.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/introductory/images.rst:23
 msgid "Image tutorial"
-msgstr ""
+msgstr "Tutorial de imagen"
 
 #: ../../tutorials/introductory/images.rst:25
 msgid "A short tutorial on plotting images with Matplotlib."
-msgstr ""
+msgstr "Un breve tutorial sobre el graficado de imágenes con Matplotlib."
 
 #: ../../tutorials/introductory/images.rst:30
 msgid "Startup commands"
-msgstr ""
+msgstr "Comandos de inicio"
 
 #: ../../tutorials/introductory/images.rst:32
 msgid "First, let's start IPython.  It is a most excellent enhancement to the standard Python prompt, and it ties in especially well with Matplotlib.  Start IPython either directly at a shell, or with the Jupyter Notebook (where IPython as a running kernel)."
-msgstr ""
+msgstr "En primer lugar, vamos a empezar con IPython.  Es una excelente mejora del prompt estándar de Python, y se vincula especialmente bien con Matplotlib.  Inicie IPython ya sea directamente en un shell, o con el Cuaderno de Jupyter (donde IPython como un núcleo de ejecución)."
 
 #: ../../tutorials/introductory/images.rst:37
 msgid "With IPython started, we now need to connect to a GUI event loop.  This tells IPython where (and how) to display plots.  To connect to a GUI loop, execute the **%matplotlib** magic at your IPython prompt.  There's more detail on exactly what this does at `IPython's documentation on GUI event loops <https://ipython.readthedocs.io/en/stable/interactive/reference.html#gui-event-loop-support>`_."
-msgstr ""
+msgstr "Con IPython iniciado, ahora necesitamos conectarnos a un bucle de eventos de la IGU.  Esto le dice a IPython dónde (y cómo) mostrar los gráficos.  Para conectarse a un bucle IGU, ejecute la magia **%matplotlib** en el prompt de IPython.  Hay más detalles sobre lo que hace exactamente esto en `La documentación de IPython sobre los bucles de eventos IGU <https://ipython.readthedocs.io/en/stable/interactive/reference.html#gui-event-loop-support>`_."
 
 #: ../../tutorials/introductory/images.rst:44
 msgid "If you're using Jupyter Notebook, the same commands are available, but people commonly use a specific argument to the %matplotlib magic:"
-msgstr ""
+msgstr "Si estás usando Cuaderno de Jupyter, los mismos comandos están disponibles, pero la gente suele usar un argumento específico para la magia %matplotlib:"
 
 #: ../../tutorials/introductory/images.rst:51
 msgid "This turns on inline plotting, where plot graphics will appear in your notebook.  This has important implications for interactivity.  For inline plotting, commands in cells below the cell that outputs a plot will not affect the plot.  For example, changing the colormap is not possible from cells below the cell that creates a plot. However, for other backends, such as Qt, that open a separate window, cells below those that create the plot will change the plot - it is a live object in memory."
-msgstr ""
+msgstr "Esto activa el graficado en línea, donde los gráficos de trazado aparecerán en su cuaderno.  Esto tiene importantes implicaciones para la interactividad.  Para el trazado en línea, los comandos en las celdas por debajo de la celda que produce un trazado no afectarán al trazado.  Por ejemplo, no es posible cambiar el mapa de colores desde las celdas situadas por debajo de la celda que crea el gráfico. Sin embargo, para otros backends, como Qt, que abren una ventana separada, las celdas por debajo de las que crean el trazado cambiarán el trazado - es un objeto vivo en la memoria."
 
 #: ../../tutorials/introductory/images.rst:59
 msgid "This tutorial will use Matplotlib's imperative-style plotting interface, pyplot.  This interface maintains global state, and is very useful for quickly and easily experimenting with various plot settings.  The alternative is the object-oriented interface, which is also very powerful, and generally more suitable for large application development.  If you'd like to learn about the object-oriented interface, a great place to start is our :doc:`Usage guide </tutorials/introductory/usage>`.  For now, let's get on with the imperative-style approach:"
-msgstr ""
+msgstr "Este tutorial utilizará la interfaz de graficado de estilo imperativo de Matplotlib, pyplot.  Esta interfaz mantiene el estado global, y es muy útil para experimentar rápida y fácilmente con varias configuraciones de graficado.  La alternativa es la interfaz orientada a objetos, que también es muy potente, y generalmente más adecuada para el desarrollo de grandes aplicaciones.  Si quieres aprender sobre la interfaz orientada a objetos, un buen lugar para empezar es nuestro :doc:`Guía de usuario </tutorials/introductory/usage>`.  Por ahora, sigamos con el enfoque de estilo imperativo:"
 
 #: ../../tutorials/introductory/images.rst:89
 msgid "Importing image data into Numpy arrays"
-msgstr ""
+msgstr "Importación de datos de imágenes en arreglos Numpy"
 
 #: ../../tutorials/introductory/images.rst:91
 msgid "Matplotlib relies on the Pillow_ library to load image data."
-msgstr ""
+msgstr "Matplotlib se basa en la biblioteca Pillow_ para cargar los datos de las imágenes."
 
 #: ../../tutorials/introductory/images.rst:95
 msgid "Here's the image we're going to play with:"
-msgstr ""
+msgstr "Esta es la imagen con la que vamos a jugar:"
 
 #: ../../tutorials/introductory/images.rst:99
 msgid "It's a 24-bit RGB PNG image (8 bits for each of R, G, B).  Depending on where you get your data, the other kinds of image that you'll most likely encounter are RGBA images, which allow for transparency, or single-channel grayscale (luminosity) images.  Download `stinkbug.png <https://raw.githubusercontent.com/matplotlib/matplotlib/master/doc/_static/stinkbug.png>`_ to your computer for the rest of this tutorial."
-msgstr ""
+msgstr "Es una imagen PNG RGB de 24 bits (8 bits para cada R, G, B).  Dependiendo de dónde obtengas los datos, los otros tipos de imagen que más probablemente encontrarás son las imágenes RGBA, que permiten la transparencia, o las imágenes de un solo canal en escala de grises (luminosidad).  Descarga `stinkbug.png <https://raw.githubusercontent.com/matplotlib/matplotlib/master/doc/_static/stinkbug.png>`_ en tu computadora para el resto de este tutorial."
 
 #: ../../tutorials/introductory/images.rst:106
 msgid "And here we go..."
-msgstr ""
+msgstr "Y aquí vamos..."
 
 #: ../../tutorials/introductory/images.rst:122
 #: ../../tutorials/introductory/images.rst:273
@@ -81,125 +81,125 @@ msgstr ""
 #: ../../tutorials/introductory/images.rst:422
 #: ../../tutorials/introductory/images.rst:589
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/introductory/images.rst:181
 msgid "Note the dtype there - float32.  Matplotlib has rescaled the 8 bit data from each channel to floating point data between 0.0 and 1.0.  As a side note, the only datatype that Pillow can work with is uint8. Matplotlib plotting can handle float32 and uint8, but image reading/writing for any format other than PNG is limited to uint8 data.  Why 8 bits? Most displays can only render 8 bits per channel worth of color gradation.  Why can they only render 8 bits/channel? Because that's about all the human eye can see.  More here (from a photography standpoint): `Luminous Landscape bit depth tutorial <https://luminous-landscape.com/bit-depth/>`_."
-msgstr ""
+msgstr "Fíjate en el tipo d allí - float32.  Matplotlib ha reescalado los datos de 8 bits de cada canal a datos de punto flotante entre 0.0 y 1.0.  Como nota al margen, el único tipo de datos con el que puede trabajar Pillow es uint8. El trazado de Matplotlib puede manejar float32 y uint8, pero la lectura/escritura de imágenes para cualquier formato que no sea PNG está limitada a datos uint8.  ¿Por qué 8 bits? La mayoría de las pantallas sólo pueden renderizar 8 bits por canal de gradación de color. ¿Por qué sólo pueden renderizar 8 bits/canal? Porque eso es todo lo que el ojo humano puede ver.  Más aquí (desde el punto de vista fotográfico): `Tutorial de profundidad de bits de paisajes luminosos <https://luminous-landscape.com/bit-depth/>`_."
 
 #: ../../tutorials/introductory/images.rst:192
 msgid "Each inner list represents a pixel.  Here, with an RGB image, there are 3 values.  Since it's a black and white image, R, G, and B are all similar.  An RGBA (where A is alpha, or transparency), has 4 values per inner list, and a simple luminance image just has one value (and is thus only a 2-D array, not a 3-D array).  For RGB and RGBA images, Matplotlib supports float32 and uint8 data types.  For grayscale, Matplotlib supports only float32.  If your array data does not meet one of these descriptions, you need to rescale it."
-msgstr ""
+msgstr "Cada lista interior representa un píxel.  Aquí, con una imagen RGB, hay 3 valores.  Como es una imagen en blanco y negro, R, G y B son similares.  Una imagen RGBA (donde A es alfa, o transparencia), tiene 4 valores por lista interna, y una imagen de luminancia simple sólo tiene un valor (y por lo tanto es sólo un arreglo 2-D, no un arreglo 3-D).  Para las imágenes RGB y RGBA, Matplotlib soporta los tipos de datos float32 y uint8.  Para la escala de grises, Matplotlib sólo admite float32.  Si los datos de su arreglo no se ajustan a una de estas descripciones, deberá reescalarlos."
 
 #: ../../tutorials/introductory/images.rst:204
 msgid "Plotting numpy arrays as images"
-msgstr ""
+msgstr "Graficar arreglos de numpy como imágenes"
 
 #: ../../tutorials/introductory/images.rst:206
 msgid "So, you have your data in a numpy array (either by importing it, or by generating it).  Let's render it.  In Matplotlib, this is performed using the :func:`~matplotlib.pyplot.imshow` function.  Here we'll grab the plot object.  This object gives you an easy way to manipulate the plot from the prompt."
-msgstr ""
+msgstr "Así que, tienes tus datos en un arreglo de numpy (ya sea importándolo, o generándolo).  Vamos a renderizarlos.  En Matplotlib, esto se realiza utilizando la función :func:`~matplotlib.pyplot.imshow`.  Aquí tomaremos el objeto plot.  Este objeto nos da una forma fácil de manipular el gráfico desde el prompt."
 
 #: ../../tutorials/introductory/images.rst:233
 msgid "You can also plot any numpy array."
-msgstr ""
+msgstr "También puedes graficar cualquier arreglo de numpy."
 
 #: ../../tutorials/introductory/images.rst:238
 msgid "Applying pseudocolor schemes to image plots"
-msgstr ""
+msgstr "Aplicación de esquemas de pseudocolor a los gráficos de imágenes"
 
 #: ../../tutorials/introductory/images.rst:240
 msgid "Pseudocolor can be a useful tool for enhancing contrast and visualizing your data more easily.  This is especially useful when making presentations of your data using projectors - their contrast is typically quite poor."
-msgstr ""
+msgstr "El pseudocolor puede ser una herramienta útil para mejorar el contraste y visualizar los datos más fácilmente.  Es especialmente útil cuando se hacen presentaciones de los datos con proyectores, cuyo contraste suele ser bastante pobre."
 
 #: ../../tutorials/introductory/images.rst:245
 msgid "Pseudocolor is only relevant to single-channel, grayscale, luminosity images.  We currently have an RGB image.  Since R, G, and B are all similar (see for yourself above or in your data), we can just pick one channel of our data:"
-msgstr ""
+msgstr "El pseudocolor sólo es relevante para las imágenes de luminosidad de un solo canal, en escala de grises.  Actualmente tenemos una imagen RGB.  Dado que R, G y B son similares ( míralo tú mismo arriba o en tus datos), podemos elegir sólo un canal de nuestros datos:"
 
 #: ../../tutorials/introductory/images.rst:284
 msgid "Now, with a luminosity (2D, no color) image, the default colormap (aka lookup table, LUT), is applied.  The default is called viridis.  There are plenty of others to choose from."
-msgstr ""
+msgstr "Ahora, con una imagen de luminosidad (2D, sin color), se aplica el mapa de color por defecto (también conocido como tabla de búsqueda, LUT).  El predeterminado se llama viridis.  Hay muchos otros para elegir."
 
 #: ../../tutorials/introductory/images.rst:317
 msgid "Note that you can also change colormaps on existing plot objects using the :meth:`~matplotlib.cm.ScalarMappable.set_cmap` method:"
-msgstr ""
+msgstr "Ten en cuenta que también puedes cambiar los mapas de colores de los objetos de trazado existentes utilizando el método :meth:`~matplotlib.cm.ScalarMappable.set_cmap`:"
 
 #: ../../tutorials/introductory/images.rst:344
 msgid "However, remember that in the Jupyter Notebook with the inline backend, you can't make changes to plots that have already been rendered.  If you create imgplot here in one cell, you cannot call set_cmap() on it in a later cell and expect the earlier plot to change.  Make sure that you enter these commands together in one cell.  plt commands will not change plots from earlier cells."
-msgstr ""
+msgstr "Sin embargo, recuerda que en el Jupyter Notebook con el backend inline, no puedes hacer cambios en los gráficos que ya han sido renderizados.  Si crea un imgplot aquí en una celda, no puede llamar a set_cmap() en una celda posterior y esperar que el gráfico anterior cambie.  Asegúrese de introducir estos comandos juntos en una celda. Los comandos plt no cambiarán los gráficos de celdas anteriores."
 
 #: ../../tutorials/introductory/images.rst:351
 msgid "There are many other colormap schemes available.  See the `list and images of the colormaps <../colors/colormaps.html>`_."
-msgstr ""
+msgstr "Hay muchos otros esquemas de mapas de colores disponibles.  Consulta la `lista e imágenes de los mapas de colores <../colors/colormaps.html>`_."
 
 #: ../../tutorials/introductory/images.rst:358
 msgid "Color scale reference"
-msgstr ""
+msgstr "Referencia de la escala de colores"
 
 #: ../../tutorials/introductory/images.rst:360
 msgid "It's helpful to have an idea of what value a color represents.  We can do that by adding a color bar to your figure:"
-msgstr ""
+msgstr "Es útil tener una idea del valor que representa un color.  Podemos hacerlo añadiendo una barra de color a su figura:"
 
 #: ../../tutorials/introductory/images.rst:396
 msgid "Examining a specific data range"
-msgstr ""
+msgstr "Examinar un rango de datos específico"
 
 #: ../../tutorials/introductory/images.rst:398
 msgid "Sometimes you want to enhance the contrast in your image, or expand the contrast in a particular region while sacrificing the detail in colors that don't vary much, or don't matter.  A good tool to find interesting regions is the histogram.  To create a histogram of our image data, we use the :func:`~matplotlib.pyplot.hist` function."
-msgstr ""
+msgstr "A veces quieres mejorar el contraste de tu imagen, o ampliar el contraste en una región concreta sacrificando el detalle en los colores que no varían mucho, o que no importan.  Una buena herramienta para encontrar regiones interesantes es el histograma.  Para crear un histograma de los datos de nuestra imagen, utilizamos la función :func:`~matplotlib.pyplot.hist`."
 
 #: ../../tutorials/introductory/images.rst:526
 msgid "Most often, the \"interesting\" part of the image is around the peak, and you can get extra contrast by clipping the regions above and/or below the peak.  In our histogram, it looks like there's not much useful information in the high end (not many white things in the image).  Let's adjust the upper limit, so that we effectively \"zoom in on\" part of the histogram.  We do this by passing the clim argument to imshow.  You could also do this by calling the :meth:`~matplotlib.cm.ScalarMappable.set_clim` method of the image plot object, but make sure that you do so in the same cell as your plot command when working with the Jupyter Notebook - it will not change plots from earlier cells."
-msgstr ""
+msgstr "La mayoría de las veces, la parte \"interesante\" de la imagen se encuentra alrededor del pico, y se puede obtener un contraste adicional recortando las regiones por encima y/o por debajo del pico.  En nuestro histograma, parece que no hay mucha información útil en el extremo superior (no hay muchas cosas blancas en la imagen).  Vamos a ajustar el límite superior, para que efectivamente \"ampliemos\" parte del histograma.  Hacemos esto pasando el argumento clim a imshow. También puede hacerlo invocando el método :meth:`~matplotlib.cm.ScalarMappable.set_clim` del objeto de trazado de la imagen, pero asegúrese de hacerlo en la misma celda que su comando de trazado cuando trabaje con el Jupyter Notebook - no cambiará los trazados de celdas anteriores."
 
 #: ../../tutorials/introductory/images.rst:538
 msgid "You can specify the clim in the call to ``plot``."
-msgstr ""
+msgstr "Se puede especificar el escalado en la invocación a ``plot``."
 
 #: ../../tutorials/introductory/images.rst:561
 msgid "You can also specify the clim using the returned object"
-msgstr ""
+msgstr "También se puede especificar el escalado utilizando el objeto devuelto"
 
 #: ../../tutorials/introductory/images.rst:603
 msgid "Array Interpolation schemes"
-msgstr ""
+msgstr "Esquemas de interpolación de arreglos"
 
 #: ../../tutorials/introductory/images.rst:605
 msgid "Interpolation calculates what the color or value of a pixel \"should\" be, according to different mathematical schemes.  One common place that this happens is when you resize an image.  The number of pixels change, but you want the same information.  Since pixels are discrete, there's missing space.  Interpolation is how you fill that space. This is why your images sometimes come out looking pixelated when you blow them up.  The effect is more pronounced when the difference between the original image and the expanded image is greater.  Let's take our image and shrink it.  We're effectively discarding pixels, only keeping a select few.  Now when we plot it, that data gets blown up to the size on your screen.  The old pixels aren't there anymore, and the computer has to draw in pixels to fill that space."
-msgstr ""
+msgstr "La interpolación calcula cuál es el color o el valor de un píxel que \"debería\" ser, según diferentes esquemas matemáticos.  Un lugar común en el que esto ocurre es cuando se cambia el tamaño de una imagen.  El número de píxeles cambia, pero quieres la misma información.  Como los píxeles son discretos, falta espacio.  La interpolación es la forma de rellenar ese espacio. Por eso las imágenes a veces parecen pixeladas cuando se amplían. El efecto es más pronunciado cuando la diferencia entre la imagen original y la imagen ampliada es mayor.  Tomemos nuestra imagen y reduzcámosla.  De hecho, estamos descartando píxeles y conservando sólo unos pocos.  Ahora, cuando la trazamos, esos datos se amplían al tamaño de la pantalla.  Los antiguos píxeles ya no están ahí, y la computadora tiene que dibujar en píxeles para llenar ese espacio."
 
 #: ../../tutorials/introductory/images.rst:618
 msgid "We'll use the Pillow library that we used to load the image also to resize the image."
-msgstr ""
+msgstr "Utilizaremos la librería Pillow que hemos utilizado para cargar la imagen también para redimensionar la imagen."
 
 #: ../../tutorials/introductory/images.rst:646
 msgid "Here we have the default interpolation, bilinear, since we did not give :func:`~matplotlib.pyplot.imshow` any interpolation argument."
-msgstr ""
+msgstr "Aquí tenemos la interpolación por defecto, bilineal, ya que no hemos dado a :func:`~matplotlib.pyplot.imshow` ningún argumento de interpolación."
 
 #: ../../tutorials/introductory/images.rst:649
 msgid "Let's try some others. Here's \"nearest\", which does no interpolation."
-msgstr ""
+msgstr "Probemos otros. Aquí está \"nearest\", que no hace ninguna interpolación."
 
 #: ../../tutorials/introductory/images.rst:672
 msgid "and bicubic:"
-msgstr ""
+msgstr "y bicúbica:"
 
 #: ../../tutorials/introductory/images.rst:695
 msgid "Bicubic interpolation is often used when blowing up photos - people tend to prefer blurry over pixelated."
-msgstr ""
+msgstr "La interpolación bicúbica se utiliza a menudo cuando se amplían las fotos: la gente tiende a preferir el desenfoque al pixelado."
 
 #: ../../tutorials/introductory/images.rst:701
 msgid "**Total running time of the script:** ( 0 minutes  6.471 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** (0 minutos 6.471 segundos)"
 
 #: ../../tutorials/introductory/images.rst:716
 msgid ":download:`Download Python source code: images.py <images.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: images.py <images.py>`"
 
 #: ../../tutorials/introductory/images.rst:722
 msgid ":download:`Download Jupyter notebook: images.ipynb <images.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: images.ipynb <images.ipynb>`"
 
 #: ../../tutorials/introductory/images.rst:729
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

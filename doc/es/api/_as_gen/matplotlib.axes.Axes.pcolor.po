@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:13\n"
+"PO-Revision-Date: 2022-11-02 13:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,581 +20,581 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolor.rst:2
 msgid "matplotlib.axes.Axes.pcolor"
-msgstr ""
+msgstr "matplotlib.axes.Axes.pcolor"
 
 #: matplotlib.axes._axes.Axes.pcolor:2 of
 msgid "Create a pseudocolor plot with a non-regular rectangular grid."
-msgstr ""
+msgstr "Crea una gráfica pseudocolor con una cuadrícula rectangular no regular."
 
 #: matplotlib.axes._axes.Axes.pcolor:4 of
 msgid "Call signature::"
-msgstr ""
+msgstr "Firma de llamada::"
 
 #: matplotlib.axes._axes.Axes.pcolor:8 of
 msgid "*X* and *Y* can be used to specify the corners of the quadrilaterals."
-msgstr ""
+msgstr "*X* y *Y* pueden usarse para especificar las esquinas de los cuadriláteres."
 
 #: matplotlib.axes._axes.Axes.pcolor:12 of
 msgid "``pcolor()`` can be very slow for large arrays. In most cases you should use the similar but much faster `~.Axes.pcolormesh` instead. See :ref:`Differences between pcolor() and pcolormesh() <differences-pcolor-pcolormesh>` for a discussion of the differences."
-msgstr ""
+msgstr "``pcolor()`` puede ser muy lento para matrices grandes. En la mayoría de los casos debería usar el similar pero mucho más rápido `~.Axes. colormesh` en su lugar. Vea :ref:`Diferencias entre pcolor() y pcolormesh() <differences-pcolor-pcolormesh>` para una discusión de las diferencias."
 
 #: matplotlib.axes._axes.Axes.pcolor of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.axes._axes.Axes.pcolor:22 of
 msgid "**C**"
-msgstr ""
+msgstr "**C**"
 
 #: of
 msgid "2D array-like"
-msgstr ""
+msgstr "Arreglo 2D"
 
 #: matplotlib.axes._axes.Axes.pcolor:22 of
 msgid "The color-mapped values."
-msgstr ""
+msgstr "Los valores mapeados por colores."
 
 #: matplotlib.axes._axes.Axes.pcolor:49 of
 msgid "**X, Y**"
-msgstr ""
+msgstr "**X, Y**"
 
 #: of
 msgid "array-like, optional"
-msgstr ""
+msgstr "tipo arreglo, opcional"
 
 #: matplotlib.axes._axes.Axes.pcolor:25 of
 msgid "The coordinates of the corners of quadrilaterals of a pcolormesh::"
-msgstr ""
+msgstr "Las coordenadas de las esquinas de los cuadriláteros de una malla de color::"
 
 #: matplotlib.axes._axes.Axes.pcolor:33 of
 msgid "Note that the column index corresponds to the x-coordinate, and the row index corresponds to y. For details, see the :ref:`Notes <axes-pcolormesh-grid-orientation>` section below."
-msgstr ""
+msgstr "Tenga en cuenta que el índice de columna corresponde a la coordenada x, y el índice de registro corresponde a y. Para más detalles, vea la sección :ref:`Notas <axes-pcolormesh-grid-orientation>` a continuación."
 
 #: matplotlib.axes._axes.Axes.pcolor:37 of
 msgid "If ``shading='flat'`` the dimensions of *X* and *Y* should be one greater than those of *C*, and the quadrilateral is colored due to the value at ``C[i, j]``.  If *X*, *Y* and *C* have equal dimensions, a warning will be raised and the last row and column of *C* will be ignored."
-msgstr ""
+msgstr "Si ``sombreando='plano'` las dimensiones de *X* y *Y* deben ser una mayor que las de *C*, y el cuadrilátero se colorea debido al valor en ``C[i, j]``. Si *X*, *Y* y *C* tienen las mismas dimensiones, se levantará una advertencia y se ignorará la última fila y columna de *C*."
 
 #: matplotlib.axes._axes.Axes.pcolor:43 of
 msgid "If ``shading='nearest'``, the dimensions of *X* and *Y* should be the same as those of *C* (if not, a ValueError will be raised). The color ``C[i, j]`` will be centered on ``(X[i, j], Y[i, j])``."
-msgstr ""
+msgstr "Si ``shading='nearest'``, las dimensiones de *X* y *Y* deben ser las mismas que las de *C* (si no, un ValueError será levantado). El color ``C[i, j]`` se centrará en ``(X[i, j], Y[i, j])``."
 
 #: matplotlib.axes._axes.Axes.pcolor:47 of
 msgid "If *X* and/or *Y* are 1-D arrays or column vectors they will be expanded as needed into the appropriate 2D arrays, making a rectangular grid."
-msgstr ""
+msgstr "Si *X* y/o *Y* son arrays 1-D o vectores de columnas, se expandirán según sea necesario en las matrices 2D apropiadas, haciendo una cuadrícula rectangular."
 
 #: matplotlib.axes._axes.Axes.pcolor:67 of
 msgid "**shading** : {'flat', 'nearest', 'auto'}, default: :rc:`pcolor.shading`"
-msgstr ""
+msgstr "**sombreando** : {'flat', 'nearest', 'auto'}, por defecto: :rc:`pcolor.shading`"
 
 #: of
 msgid "{'flat', 'nearest', 'auto'}, default:"
-msgstr ""
+msgstr "{'flat', 'nearest', 'auto'}por defecto:"
 
 #: matplotlib.axes._axes.Axes.pcolor:52 of
 msgid "The fill style for the quadrilateral. Possible values:"
-msgstr ""
+msgstr "El estilo de relleno para el cuadrilateral. Posibles valores:"
 
 #: matplotlib.axes._axes.Axes.pcolor:54 of
 msgid "'flat': A solid color is used for each quad. The color of the quad (i, j), (i+1, j), (i, j+1), (i+1, j+1) is given by ``C[i, j]``. The dimensions of *X* and *Y* should be one greater than those of *C*; if they are the same as *C*, then a deprecation warning is raised, and the last row and column of *C* are dropped."
-msgstr ""
+msgstr "'plano': Se utiliza un color sólido para cada quad. El color del quad (i, j), (i+1, j), (i, j+1), (i+1, j+1) es dado por ``C[i, j]``. Las dimensiones de *X* y *Y* deben ser una mayor que las de *C*; si son lo mismo que *C*, entonces una advertencia de desaprobación es levantada, y la última fila y columna de *C* son soltadas."
 
 #: matplotlib.axes._axes.Axes.pcolor:60 of
 msgid "'nearest': Each grid point will have a color centered on it, extending halfway between the adjacent grid centers.  The dimensions of *X* and *Y* must be the same as *C*."
-msgstr ""
+msgstr "'más cercano': Cada punto de cuadrícula tendrá un color centrado en él, extendiéndose a mitad de camino entre los centros de cuadrícula adyacentes. Las dimensiones de *X* y *Y* deben ser las mismas que *C*."
 
 #: matplotlib.axes._axes.Axes.pcolor:63 of
 msgid "'auto': Choose 'flat' if dimensions of *X* and *Y* are one larger than *C*.  Choose 'nearest' if dimensions are the same."
-msgstr ""
+msgstr "'auto': Elija 'plano' si las dimensiones de *X* y *Y* son una mayor que *C*. Elija 'más cercana' si las dimensiones son las mismas."
 
 #: matplotlib.axes._axes.Axes.pcolor:66 of
 msgid "See :doc:`/gallery/images_contours_and_fields/pcolormesh_grids` for more description."
-msgstr ""
+msgstr "Vea :doc:`/gallery/images_contours_and_fields/pcolormesh_grids` para más descripción."
 
 #: matplotlib.axes._axes.Axes.pcolor:71 of
 msgid "**cmap** : str or `~matplotlib.colors.Colormap`, default: :rc:`image.cmap`"
-msgstr ""
+msgstr "**cmap** : str o `~matplotlib.colors.Colormap`, por defecto: :rc:`image.cmap`"
 
 #: of
 msgid "str or"
-msgstr ""
+msgstr "str o"
 
 #: matplotlib.axes._axes.Axes.pcolor:70 of
 msgid "A Colormap instance or registered colormap name. The colormap maps the *C* values to colors."
-msgstr ""
+msgstr "Una instancia de Colormap o nombre de mapa de color registrado. El mapa de colores asigna los valores *C* a colores."
 
 #: matplotlib.axes._axes.Axes.pcolor:76 of
 msgid "**norm** : `~matplotlib.colors.Normalize`, optional"
-msgstr ""
+msgstr "**norma** : `~matplotlib.colors.Normalize`, opcional"
 
 #: matplotlib.axes._axes.Axes.pcolor:75 of
 msgid "Normalize, optional"
-msgstr ""
+msgstr "Normalizar, opcional"
 
 #: matplotlib.axes._axes.Axes.pcolor:74 of
 msgid "The Normalize instance scales the data values to the canonical colormap range [0, 1] for mapping to colors. By default, the data range is mapped to the colorbar range using linear scaling."
-msgstr ""
+msgstr "La instancia Normalize escala los valores de datos al rango de mapa de color canónico [0, 1] para mapear a colores. De forma predeterminada, el rango de datos se asigna al rango de la barra de colores usando escalado lineal."
 
 #: matplotlib.axes._axes.Axes.pcolor:83 of
 msgid "**vmin, vmax**"
-msgstr ""
+msgstr "**vmin, vmax**"
 
 #: of
 msgid "float, default: None"
-msgstr ""
+msgstr "float, default: None"
 
 #: matplotlib.axes._axes.Axes.pcolor:79 of
 msgid "The colorbar range. If *None*, suitable min/max values are automatically chosen by the `.Normalize` instance (defaults to the respective min/max values of *C* in case of the default linear scaling). It is an error to use *vmin*/*vmax* when *norm* is given."
-msgstr ""
+msgstr "El rango de la barra de color. Si *nunca*, los valores mínimos / máximos adecuados son automáticamente elegidos por el `. instancia ormalize` (por defecto a los respectivos valores min/max de *C* en caso de la escala lineal predeterminada). Es un error usar *vmin*/*vmax* cuando se da *norma*."
 
 #: matplotlib.axes._axes.Axes.pcolor:94 of
 msgid "**edgecolors**"
-msgstr ""
+msgstr "**edgecolors**"
 
 #: of
 msgid "{'none', None, 'face', color, color sequence}, optional"
-msgstr ""
+msgstr "{'Ninguno', Ninguno, 'cara', color, secuencia de color}, opcional"
 
 #: matplotlib.axes._axes.Axes.pcolor:86 of
 msgid "The color of the edges. Defaults to 'none'. Possible values:"
-msgstr ""
+msgstr "El color de los bordes. Por defecto es 'ninguno'. Valores posibles:"
 
 #: matplotlib.axes._axes.Axes.pcolor:88 of
 msgid "'none' or '': No edge."
-msgstr ""
+msgstr "'Ninguno' o '': Sin borde."
 
 #: matplotlib.axes._axes.Axes.pcolor:89 of
 msgid "*None*: :rc:`patch.edgecolor` will be used. Note that currently :rc:`patch.force_edgecolor` has to be True for this to work."
-msgstr ""
+msgstr "*nunca*: :rc:`patch.edgecolor` será usado. Ten en cuenta que actualmente :rc:`patch.force_edgecolor` tiene que ser verdadero para que esto funcione."
 
 #: matplotlib.axes._axes.Axes.pcolor:91 of
 msgid "'face': Use the adjacent face color."
-msgstr ""
+msgstr "'cara': Usa el color de la cara adyacente."
 
 #: matplotlib.axes._axes.Axes.pcolor:92 of
 msgid "A color or sequence of colors will set the edge color."
-msgstr ""
+msgstr "Un color o secuencia de colores establecerá el color del borde."
 
 #: matplotlib.axes._axes.Axes.pcolor:94 of
 msgid "The singular form *edgecolor* works as an alias."
-msgstr ""
+msgstr "La forma singular *borde* funciona como un alias."
 
 #: matplotlib.axes._axes.Axes.pcolor:99 of
 msgid "**alpha**"
-msgstr ""
+msgstr "**alfa**"
 
 #: matplotlib.axes._axes.Axes.pcolor:97 of
 msgid "The alpha blending value of the face color, between 0 (transparent) and 1 (opaque). Note: The edgecolor is currently not affected by this."
-msgstr ""
+msgstr "El valor de mezcla alfa del color de la cara, entre 0 (transparente) y 1 (opacoe). Nota: El color del borde no se ve afectado por esto."
 
 #: matplotlib.axes._axes.Axes.pcolor:102 of
 msgid "**snap**"
-msgstr ""
+msgstr "**snap**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.axes._axes.Axes.pcolor:102 of
 msgid "Whether to snap the mesh to pixel boundaries."
-msgstr ""
+msgstr "Ajustar la malla a límites de píxeles."
 
 #: matplotlib.axes._axes.Axes.pcolor of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.axes._axes.Axes.pcolor:109 of
 msgid "`matplotlib.collections.Collection`"
-msgstr ""
+msgstr "`matplotlib.collections.Collection`"
 
 #: matplotlib.axes._axes.Axes.pcolor of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.axes._axes.Axes.pcolor:120 of
 msgid "**antialiaseds**"
-msgstr ""
+msgstr "**antialiaseds**"
 
 #: matplotlib.axes._axes.Axes.pcolor:114 of
 msgid "The default *antialiaseds* is False if the default *edgecolors*\\ =\"none\" is used.  This eliminates artificial lines at patch boundaries, and works regardless of the value of alpha. If *edgecolors* is not \"none\", then the default *antialiaseds* is taken from :rc:`patch.antialiased`. Stroking the edges may be preferred if *alpha* is 1, but will cause artifacts otherwise."
-msgstr ""
+msgstr "El *antialiaseds* por defecto es False si se usan los *edgecolors*\\ =\"none\". Esto elimina líneas artificiales en los límites de parche, y funciona independientemente del valor de alfa. Si *edgecolors* no es \"ninguno\", entonces el *antialias* predeterminado es tomado del `parche :rc:. Ntialiased`. El trazado de los bordes puede ser preferido si *alpha* es 1, pero causará artefactos de otra manera."
 
 #: matplotlib.axes._axes.Axes.pcolor:124 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.axes._axes.Axes.pcolor:123 of
 msgid "If given, all parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception)."
-msgstr ""
+msgstr "Si se dan, todos los parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción)."
 
 #: matplotlib.axes._axes.Axes.pcolor:179 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.axes._axes.Axes.pcolor:127 of
 msgid "Additionally, the following arguments are allowed. They are passed along to the `~matplotlib.collections.PolyCollection` constructor:"
-msgstr ""
+msgstr "Además, se permiten los siguientes argumentos. Se pasan al constructor `~matplotlib.collections.PolyCollection`:"
 
 #: matplotlib.axes._axes.Axes.pcolor:134 of
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: matplotlib.axes._axes.Axes.pcolor:134 of
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: matplotlib.axes._axes.Axes.pcolor:136 of
 msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
-msgstr ""
+msgstr ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:136 of
 msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
-msgstr ""
+msgstr "una función de filtro, que toma un arreglo de puntos flotantes (m, n, 3) y un valor de dpi, y devuelve un arreglo (m, n, 3)"
 
 #: matplotlib.axes._axes.Axes.pcolor:137 of
 msgid ":meth:`alpha <matplotlib.collections.Collection.set_alpha>`"
-msgstr ""
+msgstr ":meth:`alpha <matplotlib.collections.Collection.set_alpha>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:137 of
 msgid "array-like or scalar or None"
-msgstr ""
+msgstr "como matriz o escalar o ninguno"
 
 #: matplotlib.axes._axes.Axes.pcolor:138 of
 msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
-msgstr ""
+msgstr ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:138 matplotlib.axes._axes.Axes.pcolor:144
 #: matplotlib.axes._axes.Axes.pcolor:153 matplotlib.axes._axes.Axes.pcolor:165
 #: matplotlib.axes._axes.Axes.pcolor:174 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.axes._axes.Axes.pcolor:139 of
 msgid ":meth:`antialiased <matplotlib.collections.Collection.set_antialiased>` or aa or antialiaseds"
-msgstr ""
+msgstr ":meth:`antialias <matplotlib.collections.Collection.set_antialiased>` o aa o antialiaseds"
 
 #: matplotlib.axes._axes.Axes.pcolor:139 of
 msgid "bool or list of bools"
-msgstr ""
+msgstr "libro o lista de bools"
 
 #: matplotlib.axes._axes.Axes.pcolor:140 of
 msgid ":meth:`array <matplotlib.cm.ScalarMappable.set_array>`"
-msgstr ""
+msgstr ":meth:`array <matplotlib.cm.ScalarMappable.set_array>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:140 of
 msgid "array-like or None"
-msgstr ""
+msgstr "tipo array o ninguno"
 
 #: matplotlib.axes._axes.Axes.pcolor:141 of
 msgid ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
-msgstr ""
+msgstr ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:141 of
 msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "`.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.axes._axes.Axes.pcolor:142 of
 msgid ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
-msgstr ""
+msgstr ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:142 of
 msgid "(vmin: float, vmax: float)"
-msgstr ""
+msgstr "(vmin: flotante, vmax: flotante)"
 
 #: matplotlib.axes._axes.Axes.pcolor:143 of
 msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
-msgstr ""
+msgstr ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:143 of
 msgid "`.Bbox`"
-msgstr ""
+msgstr "`.Bbox`"
 
 #: matplotlib.axes._axes.Axes.pcolor:144 of
 msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
-msgstr ""
+msgstr ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:145 of
 msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
-msgstr ""
+msgstr ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:145 of
 msgid "Patch or (Path, Transform) or None"
-msgstr ""
+msgstr "Patch o (Path, Transform) o None"
 
 #: matplotlib.axes._axes.Axes.pcolor:146 of
 msgid ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
-msgstr ""
+msgstr ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:146 of
 msgid "`.Colormap` or str or None"
-msgstr ""
+msgstr "`.Colormap` o str o ninguno"
 
 #: matplotlib.axes._axes.Axes.pcolor:147 of
 msgid ":meth:`color <matplotlib.collections.Collection.set_color>`"
-msgstr ""
+msgstr ":meth:`color <matplotlib.collections.Collection.set_color>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:147 of
 msgid "color or list of rgba tuples"
-msgstr ""
+msgstr "color o lista de tubos rgba"
 
 #: matplotlib.axes._axes.Axes.pcolor:148 of
 msgid ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` or ec or edgecolors"
-msgstr ""
+msgstr ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` o ec o aristas colores"
 
 #: matplotlib.axes._axes.Axes.pcolor:148 of
 msgid "color or list of colors or 'face'"
-msgstr ""
+msgstr "color o lista de colores o 'cara'"
 
 #: matplotlib.axes._axes.Axes.pcolor:149 of
 msgid ":meth:`facecolor <matplotlib.collections.Collection.set_facecolor>` or facecolors or fc"
-msgstr ""
+msgstr ":meth:`carecolor <matplotlib.collections.Collection.set_facecolor>` o colores de caras o fc"
 
 #: matplotlib.axes._axes.Axes.pcolor:149 of
 msgid "color or list of colors"
-msgstr ""
+msgstr "color o lista de colores"
 
 #: matplotlib.axes._axes.Axes.pcolor:150 of
 msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
-msgstr ""
+msgstr ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:150 of
 msgid "`.Figure`"
-msgstr ""
+msgstr "`.Figure`"
 
 #: matplotlib.axes._axes.Axes.pcolor:151 of
 msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
-msgstr ""
+msgstr ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:151 matplotlib.axes._axes.Axes.pcolor:170
 #: of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.axes._axes.Axes.pcolor:152 of
 msgid ":meth:`hatch <matplotlib.collections.Collection.set_hatch>`"
-msgstr ""
+msgstr ":meth:`colgante <matplotlib.collections.Collection.set_hatch>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:152 of
 msgid "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
-msgstr ""
+msgstr "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
 
 #: matplotlib.axes._axes.Axes.pcolor:153 of
 msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
-msgstr ""
+msgstr ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:154 of
 msgid ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
-msgstr ""
+msgstr ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:154 of
 msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "`.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.axes._axes.Axes.pcolor:155 of
 msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
-msgstr ""
+msgstr ":meth:`label <matplotlib.artist.Artist.set_label>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:155 of
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: matplotlib.axes._axes.Axes.pcolor:156 of
 msgid ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` or dashes or linestyles or ls"
-msgstr ""
+msgstr ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` o guiones o estilos de línea o ls"
 
 #: matplotlib.axes._axes.Axes.pcolor:156 of
 msgid "str or tuple or list thereof"
-msgstr ""
+msgstr "str o tuple o lista de ellos"
 
 #: matplotlib.axes._axes.Axes.pcolor:157 of
 msgid ":meth:`linewidth <matplotlib.collections.Collection.set_linewidth>` or linewidths or lw"
-msgstr ""
+msgstr ":meth:`ancho de línea <matplotlib.collections.Collection.set_linewidth>o ancho de línea o lw"
 
 #: matplotlib.axes._axes.Axes.pcolor:157 of
 msgid "float or list of floats"
-msgstr ""
+msgstr "flotante o lista de flotantes"
 
 #: matplotlib.axes._axes.Axes.pcolor:158 of
 msgid ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
-msgstr ""
+msgstr ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:158 of
 msgid "`.Normalize` or None"
-msgstr ""
+msgstr "`.normalize` o Ninguno"
 
 #: matplotlib.axes._axes.Axes.pcolor:159 of
 msgid ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
-msgstr ""
+msgstr ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:159 matplotlib.axes._axes.Axes.pcolor:169
 #: of
 msgid "`.Transform`"
-msgstr ""
+msgstr "`.Transform`"
 
 #: matplotlib.axes._axes.Axes.pcolor:160 of
 msgid ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
-msgstr ""
+msgstr ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:160 of
 msgid "(N, 2) or (2,) array-like"
-msgstr ""
+msgstr "((N, 2) o (2,) array-like"
 
 #: matplotlib.axes._axes.Axes.pcolor:161 of
 msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
-msgstr ""
+msgstr ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:161 of
 msgid "`.AbstractPathEffect`"
-msgstr ""
+msgstr "`.AbstractPathEffect`"
 
 #: matplotlib.axes._axes.Axes.pcolor:162 of
 msgid ":meth:`paths <matplotlib.collections.PolyCollection.set_verts>`"
-msgstr ""
+msgstr ":meth:`rutas <matplotlib.collections.PolyCollection.set_verts>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:162 matplotlib.axes._axes.Axes.pcolor:172
 #: of
 msgid "list of array-like"
-msgstr ""
+msgstr "lista de matriz"
 
 #: matplotlib.axes._axes.Axes.pcolor:163 of
 msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
-msgstr ""
+msgstr ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:163 of
 msgid "None or bool or float or callable"
-msgstr ""
+msgstr "None o bool o float o callable"
 
 #: matplotlib.axes._axes.Axes.pcolor:164 of
 msgid ":meth:`pickradius <matplotlib.collections.Collection.set_pickradius>`"
-msgstr ""
+msgstr ":meth:`pickradius <matplotlib.collections.Collection.set_pickradius>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:164 matplotlib.axes._axes.Axes.pcolor:175
 #: of
 msgid "float"
-msgstr ""
+msgstr "de punto flotante (float)"
 
 #: matplotlib.axes._axes.Axes.pcolor:165 of
 msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
-msgstr ""
+msgstr ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:166 of
 msgid ":meth:`sizes <matplotlib.collections._CollectionWithSizes.set_sizes>`"
-msgstr ""
+msgstr ":meth:`tamaños <matplotlib.collections._CollectionWithSizes.set_sizes>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:166 of
 msgid "ndarray or None"
-msgstr ""
+msgstr "ndarray o ninguno"
 
 #: matplotlib.axes._axes.Axes.pcolor:167 of
 msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
-msgstr ""
+msgstr ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:167 of
 msgid "(scale: float, length: float, randomness: float)"
-msgstr ""
+msgstr "(scale: float, length: float, randomness: float)"
 
 #: matplotlib.axes._axes.Axes.pcolor:168 of
 msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
-msgstr ""
+msgstr ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:168 of
 msgid "bool or None"
-msgstr ""
+msgstr "bool or None"
 
 #: matplotlib.axes._axes.Axes.pcolor:169 of
 msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
-msgstr ""
+msgstr ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:170 of
 msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
-msgstr ""
+msgstr ":meth:`url <matplotlib.artist.Artist.set_url>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:171 of
 msgid ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
-msgstr ""
+msgstr ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:171 of
 msgid "list of str or None"
-msgstr ""
+msgstr "lista de str o ninguno"
 
 #: matplotlib.axes._axes.Axes.pcolor:172 of
 msgid ":meth:`verts <matplotlib.collections.PolyCollection.set_verts>`"
-msgstr ""
+msgstr ":meth:`verts <matplotlib.collections.PolyCollection.set_verts>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:173 of
 msgid ":meth:`verts_and_codes <matplotlib.collections.PolyCollection.set_verts_and_codes>`"
-msgstr ""
+msgstr ":meth:`verts_and_codes <matplotlib.collections.PolyCollection.set_verts_and_codes>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:173 of
 msgid "unknown"
-msgstr ""
+msgstr "desconocido"
 
 #: matplotlib.axes._axes.Axes.pcolor:174 of
 msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
-msgstr ""
+msgstr ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:175 of
 msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
-msgstr ""
+msgstr ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
 
 #: matplotlib.axes._axes.Axes.pcolor:184 of
 msgid ":obj:`pcolormesh`"
-msgstr ""
+msgstr ":obj:`pcolormesh`"
 
 #: matplotlib.axes._axes.Axes.pcolor:185 of
 msgid "for an explanation of the differences between pcolor and pcolormesh."
-msgstr ""
+msgstr "para una explicación de las diferencias entre pcolor y pcolormesh."
 
 #: matplotlib.axes._axes.Axes.pcolor:186 of
 msgid ":obj:`imshow`"
-msgstr ""
+msgstr ":obj:`imshow`"
 
 #: matplotlib.axes._axes.Axes.pcolor:187 of
 msgid "If *X* and *Y* are each equidistant, `~.Axes.imshow` can be a faster alternative."
-msgstr ""
+msgstr "Si *X* y *Y* son cada equidistantes, `~.Axes.imshow` puede ser una alternativa más rápida."
 
 #: matplotlib.axes._axes.Axes.pcolor:191 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.axes._axes.Axes.pcolor:192 of
 msgid "**Masked arrays**"
-msgstr ""
+msgstr "**Matrices enmascaradas**"
 
 #: matplotlib.axes._axes.Axes.pcolor:194 of
 msgid "*X*, *Y* and *C* may be masked arrays. If either ``C[i, j]``, or one of the vertices surrounding ``C[i, j]`` (*X* or *Y* at ``[i, j], [i+1, j], [i, j+1], [i+1, j+1]``) is masked, nothing is plotted."
-msgstr ""
+msgstr "*X*, *Y* y *C* pueden ser matrices enmascaradas. Si ``C[i, j]``, o uno de los vértices que rodean ``C[i, j]`` (*X* o *Y* en ``[i, j], [i+1, j], [i, j+1], [i+1, j+1]``) está enmascarado, nada está trazado."
 
 #: matplotlib.axes._axes.Axes.pcolor:201 of
 msgid "**Grid orientation**"
-msgstr ""
+msgstr "**Orientación de cuadrícula**"
 
 #: matplotlib.axes._axes.Axes.pcolor:203 of
 msgid "The grid orientation follows the standard matrix convention: An array *C* with shape (nrows, ncolumns) is plotted with the column number as *X* and the row number as *Y*."
-msgstr ""
+msgstr "La orientación de la cuadrícula sigue la convención estándar de la matriza: una matriz *C* con forma (nrows, ncolumns) se traza con el número de columna como *X* y el número de fila como *Y*."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.pcolor.examples:2
 msgid "Examples using ``matplotlib.axes.Axes.pcolor``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.axes.Axes.pcolor``"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolor.examples:10
 msgid "Pcolor Demo"
-msgstr ""
+msgstr "Demostración pcolor"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolor.examples:10
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolor.examples:18
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_pcolor_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_pcolor_demo.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolor.examples:29
 msgid "Controlling view limits using margins and sticky_edges"
-msgstr ""
+msgstr "Control de los límites de la vista mediante márgenes y sticky_edges"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolor.examples:29
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolor.examples:37
 msgid ":ref:`sphx_glr_gallery_subplots_axes_and_figures_axes_margins.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_subplots_axes_and_figures_axes_margins.py`"
 

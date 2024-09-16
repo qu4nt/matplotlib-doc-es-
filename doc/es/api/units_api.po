@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-11-02 13:33\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,150 +20,150 @@ msgstr ""
 
 #: ../../api/units_api.rst:3
 msgid "``matplotlib.units``"
-msgstr ""
+msgstr "``matplotlib.units``"
 
 #: matplotlib.units:1 of
 msgid "The classes here provide support for using custom classes with Matplotlib, e.g., those that do not expose the array interface but know how to convert themselves to arrays.  It also supports classes with units and units conversion.  Use cases include converters for custom objects, e.g., a list of datetime objects, as well as for objects that are unit aware.  We don't assume any particular units implementation; rather a units implementation must register with the Registry converter dictionary and provide a `ConversionInterface`.  For example, here is a complete implementation which supports plotting with native datetime objects::"
-msgstr ""
+msgstr "Las clases aquí proporcionan soporte para el uso de clases personalizadas con Matplotlib, p.ej. aquellos que no exponen la interfaz de matrices pero saben cómo convertirse a matrices. También soporta clases con conversión de unidades y unidades. una lista de objetos de fecha y hora, así como de objetos que son conscientes de unidades. No asumimos ninguna implementación de unidades en particular; más bien una implementación de unidades debe registrarse en el diccionario del convertidor del registro y proporcionar un `ConversionInterface`. Por ejemplo, aquí hay una implementación completa que soporta trazar con objetos nativos de fecha::"
 
 #: matplotlib.units.AxisInfo:1 matplotlib.units.ConversionInterface:1 of
 msgid "Bases: :py:class:`object`"
-msgstr ""
+msgstr "Bases: :py:class:`object`"
 
 #: matplotlib.units.AxisInfo:2 of
 msgid "Information to support default axis labeling, tick labeling, and limits."
-msgstr ""
+msgstr "Información para soportar etiquetas de ejes por defecto, etiquetas de tick, y límites."
 
 #: matplotlib.units.AxisInfo:4 of
 msgid "An instance of this class must be returned by `ConversionInterface.axisinfo`."
-msgstr ""
+msgstr "Una instancia de esta clase debe ser devuelta por `ConversionInterface.axisinfo`."
 
 #: matplotlib.units.AxisInfo matplotlib.units.DecimalConverter.convert of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.units.AxisInfo:31 of
 msgid "**majloc, minloc**"
-msgstr ""
+msgstr "**majloc, minloc**"
 
 #: of
 msgid "Locator, optional"
-msgstr ""
+msgstr "Localizador, opcional"
 
 #: matplotlib.units.AxisInfo:31 of
 msgid "Tick locators for the major and minor ticks."
-msgstr ""
+msgstr "Las habitaciones son muy pequeñas y el personal es muy amable."
 
 #: matplotlib.units.AxisInfo:34 of
 msgid "**majfmt, minfmt**"
-msgstr ""
+msgstr "**majfmt, minfmt**"
 
 #: of
 msgid "Formatter, optional"
-msgstr ""
+msgstr "Formato, opcional"
 
 #: matplotlib.units.AxisInfo:34 of
 msgid "Tick formatters for the major and minor ticks."
-msgstr ""
+msgstr "Tick formatters para los ticks mayores y menores."
 
 #: matplotlib.units.AxisInfo:37 of
 msgid "**label**"
-msgstr ""
+msgstr "**etiqueta**"
 
 #: of
 msgid "str, optional"
-msgstr ""
+msgstr "str, opcional"
 
 #: matplotlib.units.AxisInfo:37 of
 msgid "The default axis label."
-msgstr ""
+msgstr "La etiqueta del eje por defecto."
 
 #: matplotlib.units.AxisInfo:49 of
 msgid "**default_limits**"
-msgstr ""
+msgstr "**Por defecto_limits**"
 
 #: of
 msgid "optional"
-msgstr ""
+msgstr "opcional"
 
 #: matplotlib.units.AxisInfo:40 of
 msgid "The default min and max limits of the axis if no data has been plotted."
-msgstr ""
+msgstr "Límites mínimos y máximos por defecto del eje si no se han trazado datos."
 
 #: matplotlib.units.AxisInfo:52
 #: matplotlib.units.ConversionInterface.is_numlike:18 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.units.AxisInfo:53 of
 msgid "If any of the above are ``None``, the axis will simply use the default value."
-msgstr ""
+msgstr "Si alguno de los anteriores es ``Ninguno``, el eje simplemente utilizará el valor por defecto."
 
 #: matplotlib.units.ConversionError:1 of
 msgid "Bases: :py:class:`TypeError`"
-msgstr ""
+msgstr "Bases: :py:class:`TypeError`"
 
 #: matplotlib.units.ConversionInterface:2 of
 msgid "The minimal interface for a converter to take custom data types (or sequences) and convert them to values Matplotlib can use."
-msgstr ""
+msgstr "La interfaz mínima para un conversor para tomar tipos de datos personalizados (o secuencias) y convertirlos a valores que Matplotlib puede usar."
 
 #: matplotlib.units.ConversionInterface.axisinfo:2 of
 msgid "Return an `.AxisInfo` for the axis with the specified units."
-msgstr ""
+msgstr "Devuelve un `.AxisInfo` para el eje con las unidades especificadas."
 
 #: matplotlib.units.ConversionInterface.convert:2 of
 msgid "Convert *obj* using *unit* for the specified *axis*."
-msgstr ""
+msgstr "Convierte *obj* usando *unidad* para el *eje* especificado."
 
 #: matplotlib.units.ConversionInterface.convert:4 of
 msgid "If *obj* is a sequence, return the converted sequence.  The output must be a sequence of scalars that can be used by the numpy array layer."
-msgstr ""
+msgstr "Si *obj* es una secuencia, devuelve la secuencia convertida. La salida debe ser una secuencia de escalares que puede ser usada por la capa de matriz numpy."
 
 #: matplotlib.units.ConversionInterface.default_units:2 of
 msgid "Return the default unit for *x* or ``None`` for the given axis."
-msgstr ""
+msgstr "Devuelve la unidad por defecto para *x* o ``Ning`` para el eje dado."
 
 #: matplotlib.units.ConversionInterface.is_numlike:2 of
 msgid "[*Deprecated*] The Matplotlib datalim, autoscaling, locators etc work with scalars which are the units converted to floats given the current unit.  The converter may be passed these floats, or arrays of them, even when units are set."
-msgstr ""
+msgstr "[*Deprecado*] Los datalimento de Matplotlib, autoscaling, localizadores, etc trabajan con escalares que son las unidades convertidas a flotantes dada la unidad actual. El convertidor puede ser pasado por estos flotantes, o arrays de ellos, incluso cuando se establecen unidades."
 
 #: matplotlib.units.DecimalConverter:1 of
 msgid "Bases: :py:class:`matplotlib.units.ConversionInterface`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.units.ConversionInterface`"
 
 #: matplotlib.units.DecimalConverter:2 of
 msgid "Converter for decimal.Decimal data to float."
-msgstr ""
+msgstr "Convertidor de datos decimal.Decimal a flotante."
 
 #: matplotlib.units.DecimalConverter.convert:2 of
 msgid "Convert Decimals to floats."
-msgstr ""
+msgstr "Convierte decimales a flotantes."
 
 #: matplotlib.units.DecimalConverter.convert:4 of
 msgid "The *unit* and *axis* arguments are not used."
-msgstr ""
+msgstr "Los argumentos *unidad* y *eje* no se utilizan."
 
 #: matplotlib.units.DecimalConverter.convert:22 of
 msgid "**value**"
-msgstr ""
+msgstr "**valor**"
 
 #: of
 msgid "decimal.Decimal or iterable"
-msgstr ""
+msgstr "decimal.Decimal o iterable"
 
 #: matplotlib.units.DecimalConverter.convert:9 of
 msgid "Decimal or list of Decimal need to be converted"
-msgstr ""
+msgstr "Es necesario convertir decimales o lista de decimales"
 
 #: matplotlib.units.Registry:1 of
 msgid "Bases: :py:class:`dict`"
-msgstr ""
+msgstr "Bases: :py:class:`dict`"
 
 #: matplotlib.units.Registry:2 of
 msgid "Register types with conversion interface."
-msgstr ""
+msgstr "Registrar tipos con interfaz de conversión."
 
 #: matplotlib.units.Registry.get_converter:2 of
 msgid "Get the converter interface instance for *x*, or None."
-msgstr ""
+msgstr "Obtener la instancia del convertidor de interfaz para *x*, o ninguno."
 

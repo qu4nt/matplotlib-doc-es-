@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:18\n"
+"PO-Revision-Date: 2022-11-02 14:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,374 +20,374 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.pyplot.hist.rst:2
 msgid "matplotlib.pyplot.hist"
-msgstr ""
+msgstr "matplotlib.pyplot.hist"
 
 #: matplotlib.pyplot.hist:2 of
 msgid "Plot a histogram."
-msgstr ""
+msgstr "Trazar un histograma."
 
 #: matplotlib.pyplot.hist:4 of
 msgid "Compute and draw the histogram of *x*.  The return value is a tuple (*n*, *bins*, *patches*) or ([*n0*, *n1*, ...], *bins*, [*patches0*, *patches1*, ...]) if the input contains multiple data.  See the documentation of the *weights* parameter to draw a histogram of already-binned data."
-msgstr ""
+msgstr "Calcula y dibuja el histograma de *x*, el valor de retorno es una tupla (*n*, *bins*, *patches*) o ([*n0*, *n1*, ...], *bins*, [*patches0*, *patches1*, . .]) si la entrada contiene varios datos. Consulte la documentación del parámetro *pesos* para dibujar un histograma de datos ya binnados."
 
 #: matplotlib.pyplot.hist:10 of
 msgid "Multiple data can be provided via *x* as a list of datasets of potentially different length ([*x0*, *x1*, ...]), or as a 2D ndarray in which each column is a dataset.  Note that the ndarray form is transposed relative to the list form."
-msgstr ""
+msgstr "Múltiples datos pueden proporcionarse a través de *x* como una lista de conjuntos de datos de longitud potencialmente diferente ([*x0*, *x1*, ... ), o como un ndarray 2D en el que cada columna es un conjunto de datos. Tenga en cuenta que el formulario ndarray se transpone en relación al formulario de lista."
 
 #: matplotlib.pyplot.hist:15 of
 msgid "Masked arrays are not supported."
-msgstr ""
+msgstr "Las matrices enmascaradas no están soportadas."
 
 #: matplotlib.pyplot.hist:17 of
 msgid "The *bins*, *range*, *weights*, and *density* parameters behave as in `numpy.histogram`."
-msgstr ""
+msgstr "Los parámetros *bins*, *range*, *pesos*, y *densidad* se comportan como en `numpy.histogram`."
 
 #: matplotlib.pyplot.hist of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.pyplot.hist:24 of
 msgid "**x**"
-msgstr ""
+msgstr "**x**"
 
 #: of
 msgid "(n,) array or sequence of (n,) arrays"
-msgstr ""
+msgstr "(n,) array o secuencia de (n,) arrays"
 
 #: matplotlib.pyplot.hist:23 of
 msgid "Input values, this takes either a single array or a sequence of arrays which are not required to be of the same length."
-msgstr ""
+msgstr "Los valores de entrada, esto toma una sola matriz o una secuencia de matrices que no son obligadas a tener la misma longitud."
 
 #: matplotlib.pyplot.hist:43 of
 msgid "**bins** : int or sequence or str, default: :rc:`hist.bins`"
-msgstr ""
+msgstr "**papeles** : int o secuencia o str, por defecto: :rc:`is.bins`"
 
 #: of
 msgid "int or sequence or str, default:"
-msgstr ""
+msgstr "int o secuencia o str, por defecto:"
 
 #: matplotlib.pyplot.hist:27 of
 msgid "If *bins* is an integer, it defines the number of equal-width bins in the range."
-msgstr ""
+msgstr "Si *bins* es un entero, define el número de contenedores de ancho igual en el rango."
 
 #: matplotlib.pyplot.hist:30 of
 msgid "If *bins* is a sequence, it defines the bin edges, including the left edge of the first bin and the right edge of the last bin; in this case, bins may be unequally spaced.  All but the last (righthand-most) bin is half-open.  In other words, if *bins* is::"
-msgstr ""
+msgstr "Si *bins* es una secuencia, define los bordes de la papelera, incluyendo el borde izquierdo de la primera papelera y el borde derecho de la última papelera; en este caso, los contenedores pueden estar separados desigualmente. Todo menos la última (derecha-la mayoría) bin está medio abierta. En otras palabras, si *bins* es::"
 
 #: matplotlib.pyplot.hist:37 of
 msgid "then the first bin is ``[1, 2)`` (including 1, but excluding 2) and the second ``[2, 3)``.  The last bin, however, is ``[3, 4]``, which *includes* 4."
-msgstr ""
+msgstr "entonces la primera papelera es ``[1, 2)`` (incluyendo 1, pero excluyendo 2) y la segunda ``[2, 3)``. La última papelera, sin embargo, es ``[3, 4]``, que *incluye* 4."
 
 #: matplotlib.pyplot.hist:41 of
 msgid "If *bins* is a string, it is one of the binning strategies supported by `numpy.histogram_bin_edges`: 'auto', 'fd', 'doane', 'scott', 'stone', 'rice', 'sturges', or 'sqrt'."
-msgstr ""
+msgstr "Si *bins* es una cadena, es una de las estrategias de binning apoyadas por `numpy.histogram_bin_edges`: 'auto', 'fd', 'doane', 'scott', 'stone', 'rice', 'sturges', o 'sqrt'."
 
 #: matplotlib.pyplot.hist:52 of
 msgid "**range**"
-msgstr ""
+msgstr "**range**"
 
 #: of
 msgid "tuple or None, default: None"
-msgstr ""
+msgstr "tuple o ninguno, por defecto: ninguno"
 
 #: matplotlib.pyplot.hist:46 of
 msgid "The lower and upper range of the bins. Lower and upper outliers are ignored. If not provided, *range* is ``(x.min(), x.max())``. Range has no effect if *bins* is a sequence."
-msgstr ""
+msgstr "El rango inferior y superior de los cubos se ignora. Si no se proporciona, *rango* es ``(x.min(), x.max())``. El rango no tiene efecto si *bins* es una secuencia."
 
 #: matplotlib.pyplot.hist:50 of
 msgid "If *bins* is a sequence or *range* is specified, autoscaling is based on the specified bin range instead of the range of x."
-msgstr ""
+msgstr "Si *bins* es una secuencia o *rango* es especificado, el autoescalado se basa en el rango de bin especificado en lugar del rango de x."
 
 #: matplotlib.pyplot.hist:63 of
 msgid "**density**"
-msgstr ""
+msgstr "**densidad**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.pyplot.hist:55 of
 msgid "If ``True``, draw and return a probability density: each bin will display the bin's raw count divided by the total number of counts *and the bin width* (``density = counts / (sum(counts) * np.diff(bins))``), so that the area under the histogram integrates to 1 (``np.sum(density * np.diff(bins)) == 1``)."
-msgstr ""
+msgstr "Si es ``verdadero``, dibujar y devolver una densidad de probabilidad: cada papelera mostrará el recuento crudo de la papelera dividido por el número total de cuentas *y la anchura de la papelera* (``densidad = cuentas/ (cuentas) * np. iff(bins)``), para que el área debajo del histograma se integre a 1 (``np.sum(density * np.diff(bins)) == 1``)."
 
 #: matplotlib.pyplot.hist:62 of
 msgid "If *stacked* is also ``True``, the sum of the histograms is normalized to 1."
-msgstr ""
+msgstr "Si *apilado* es también ``True``, la suma de los histogramas se normaliza a 1."
 
 #: matplotlib.pyplot.hist:79 of
 msgid "**weights**"
-msgstr ""
+msgstr "**Pesos**"
 
 #: of
 msgid "(n,) array-like or None, default: None"
-msgstr ""
+msgstr "(n,) array-like o ninguno, por defecto: Ninguno"
 
 #: matplotlib.pyplot.hist:66 of
 msgid "An array of weights, of the same shape as *x*.  Each value in *x* only contributes its associated weight towards the bin count (instead of 1).  If *density* is ``True``, the weights are normalized, so that the integral of the density over the range remains 1."
-msgstr ""
+msgstr "Una matriz de pesos, de la misma forma que *x*. Cada valor en *x* sólo contribuye su peso asociado al recuento de bin (en lugar de 1). Si la *densidad* es ``Verdada``, los pesos son normalizados, de modo que la parte integral de la densidad en el rango sigue siendo 1."
 
 #: matplotlib.pyplot.hist:72 of
 msgid "This parameter can be used to draw a histogram of data that has already been binned, e.g. using `numpy.histogram` (by treating each bin as a single point with a weight equal to its count) ::"
-msgstr ""
+msgstr "Este parámetro se puede utilizar para dibujar un histograma de datos que ya ha sido binned, p.ej. usando `numpy.histogram` (tratando cada papelera como un solo punto con un peso igual a su cuenta) ::"
 
 #: matplotlib.pyplot.hist:79 of
 msgid "(or you may alternatively use `~.bar()`)."
-msgstr ""
+msgstr "(o puedes usar alternativamente `~.bar()`)."
 
 #: matplotlib.pyplot.hist:92 of
 msgid "**cumulative**"
-msgstr ""
+msgstr "**cumulative**"
 
 #: of
 msgid "bool or -1, default: False"
-msgstr ""
+msgstr "bool o -1, por defecto: False"
 
 #: matplotlib.pyplot.hist:82 of
 msgid "If ``True``, then a histogram is computed where each bin gives the counts in that bin plus all bins for smaller values. The last bin gives the total number of datapoints."
-msgstr ""
+msgstr "Si es ``True``, entonces un histograma es calculado donde cada papelera da los recuentos en esa papelera más todas las papeleras para valores más pequeños. La última papelera da el número total de datos indicados."
 
 #: matplotlib.pyplot.hist:86 of
 msgid "If *density* is also ``True`` then the histogram is normalized such that the last bin equals 1."
-msgstr ""
+msgstr "Si la *densidad* es también ``True`` entonces el histograma está normalizado de tal manera que la última papelera es igual a 1."
 
 #: matplotlib.pyplot.hist:89 of
 msgid "If *cumulative* is a number less than 0 (e.g., -1), the direction of accumulation is reversed.  In this case, if *density* is also ``True``, then the histogram is normalized such that the first bin equals 1."
-msgstr ""
+msgstr "Si *acumulativa* es un número menor que 0 (por ejemplo, -1), la dirección de la acumulación es invertida. En este caso, si la *densidad* es también ``True``, entonces el histograma está normalizado de tal manera que la primera papelera es igual a 1."
 
 #: matplotlib.pyplot.hist:99 of
 msgid "**bottom**"
-msgstr ""
+msgstr "**inferior**"
 
 #: of
 msgid "array-like, scalar, or None, default: None"
-msgstr ""
+msgstr ", escalar o ninguno, por defecto: ninguno"
 
 #: matplotlib.pyplot.hist:95 of
 msgid "Location of the bottom of each bin, ie. bins are drawn from ``bottom`` to ``bottom + hist(x, bins)`` If a scalar, the bottom of each bin is shifted by the same amount. If an array, each bin is shifted independently and the length of bottom must match the number of bins. If None, defaults to 0."
-msgstr ""
+msgstr "Ubicación de la parte inferior de cada papelera, ej. Las papeleras se extraen de ``bottom`` a ``bottom + medium(x, bins)`` Si un escalar, la parte inferior de cada papelera se desplaza por la misma cantidad. Si una matriz, cada papelera se desplaza de forma independiente y la longitud de la parte inferior debe coincidir con el número de papeleras. Si Ninguna, el valor predeterminado es 0."
 
 #: matplotlib.pyplot.hist:109 of
 msgid "**histtype**"
-msgstr ""
+msgstr "**Tipo**"
 
 #: of
 msgid "{'bar', 'barstacked', 'step', 'stepfilled'}, default: 'bar'"
-msgstr ""
+msgstr "{'bar', 'barstacked', 'step', 'stepfilled'}, por defecto: 'bar'"
 
 #: matplotlib.pyplot.hist:102 of
 msgid "The type of histogram to draw."
-msgstr ""
+msgstr "El tipo de histograma a dibujar."
 
 #: matplotlib.pyplot.hist:104 of
 msgid "'bar' is a traditional bar-type histogram.  If multiple data are given the bars are arranged side by side."
-msgstr ""
+msgstr "'bar' es un histograma tradicional del tipo de barra. Si se dan múltiples datos, las barras se organizan al lado del mismo."
 
 #: matplotlib.pyplot.hist:106 of
 msgid "'barstacked' is a bar-type histogram where multiple data are stacked on top of each other."
-msgstr ""
+msgstr "'barstacked' es un histograma de tipo barras en el que se acumulan múltiples datos."
 
 #: matplotlib.pyplot.hist:108 of
 msgid "'step' generates a lineplot that is by default unfilled."
-msgstr ""
+msgstr "'step' genera un diagrama de línea que por defecto está desllenado."
 
 #: matplotlib.pyplot.hist:109 of
 msgid "'stepfilled' generates a lineplot that is by default filled."
-msgstr ""
+msgstr "'stepfilled' genera un diagrama de línea que se llena por defecto."
 
 #: matplotlib.pyplot.hist:116 of
 msgid "**align**"
-msgstr ""
+msgstr "**align**"
 
 #: of
 msgid "{'left', 'mid', 'right'}, default: 'mid'"
-msgstr ""
+msgstr "{'left', 'mid', 'right'}, default: 'mid'"
 
 #: matplotlib.pyplot.hist:112 of
 msgid "The horizontal alignment of the histogram bars."
-msgstr ""
+msgstr "La alineación horizontal de las barras del histograma."
 
 #: matplotlib.pyplot.hist:114 of
 msgid "'left': bars are centered on the left bin edges."
-msgstr ""
+msgstr "'izquierda': las barras se centran en los bordes de la papelera."
 
 #: matplotlib.pyplot.hist:115 of
 msgid "'mid': bars are centered between the bin edges."
-msgstr ""
+msgstr "'mid': las barras se centran entre los bordes de la basura."
 
 #: matplotlib.pyplot.hist:116 of
 msgid "'right': bars are centered on the right bin edges."
-msgstr ""
+msgstr "'derecha': las barras se centran en los bordes de la basura derecha."
 
 #: matplotlib.pyplot.hist:120 of
 msgid "**orientation**"
-msgstr ""
+msgstr "**orientación**"
 
 #: of
 msgid "{'vertical', 'horizontal'}, default: 'vertical'"
-msgstr ""
+msgstr "{'vertical', 'horizontal'}, por defecto: 'vertical'"
 
 #: matplotlib.pyplot.hist:119 of
 msgid "If 'horizontal', `~.Axes.barh` will be used for bar-type histograms and the *bottom* kwarg will be the left edges."
-msgstr ""
+msgstr "Si es 'horizontal', `~.Axes.barh` será usado para histogramas tipo barra y el kwarg *abajo* será el borde izquierdo."
 
 #: matplotlib.pyplot.hist:126 of
 msgid "**rwidth**"
-msgstr ""
+msgstr "**rwidth**"
 
 #: of
 msgid "float or None, default: None"
-msgstr ""
+msgstr "flotante o ninguno, por defecto: ninguno"
 
 #: matplotlib.pyplot.hist:123 of
 msgid "The relative width of the bars as a fraction of the bin width.  If ``None``, automatically compute the width."
-msgstr ""
+msgstr "El ancho relativo de las barras como una fracción del ancho de la papelera. Si ``Ninguno``, calcula automáticamente el ancho."
 
 #: matplotlib.pyplot.hist:126 of
 msgid "Ignored if *histtype* is 'step' or 'stepfilled'."
-msgstr ""
+msgstr "Ignorado si el *tipo* es 'paso' o 'escalonado'."
 
 #: matplotlib.pyplot.hist:129 of
 msgid "**log**"
-msgstr ""
+msgstr "**registro**"
 
 #: matplotlib.pyplot.hist:129 of
 msgid "If ``True``, the histogram axis will be set to a log scale."
-msgstr ""
+msgstr "Si es ``True``, el eje del histograma se establecerá a una escala del registro."
 
 #: matplotlib.pyplot.hist:133 of
 msgid "**color**"
-msgstr ""
+msgstr "**color**"
 
 #: of
 msgid "color or array-like of colors or None, default: None"
-msgstr ""
+msgstr "color o estilo matriz de colores o ninguno, por defecto: ninguno"
 
 #: matplotlib.pyplot.hist:132 of
 msgid "Color or sequence of colors, one per dataset.  Default (``None``) uses the standard line color sequence."
-msgstr ""
+msgstr "Color o secuencia de colores, uno por conjunto de datos. Por defecto (``Ninguno``) utiliza la secuencia de color de línea estándar."
 
 #: matplotlib.pyplot.hist:138 of
 msgid "**label**"
-msgstr ""
+msgstr "**etiqueta**"
 
 #: of
 msgid "str or None, default: None"
-msgstr ""
+msgstr "str o ninguno, por defecto: Ninguno"
 
 #: matplotlib.pyplot.hist:136 of
 msgid "String, or sequence of strings to match multiple datasets.  Bar charts yield multiple patches per dataset, but only the first gets the label, so that `~.Axes.legend` will work as expected."
-msgstr ""
+msgstr "Cadena, o secuencia de cadenas para que coincidan con varios conjuntos de datos. Los gráficos de barras producen múltiples parches por conjunto de datos, pero sólo el primero obtiene la etiqueta, de modo que `~.Axes.legend` funcionará como se esperaba."
 
 #: matplotlib.pyplot.hist:143 of
 msgid "**stacked**"
-msgstr ""
+msgstr "**apilado**"
 
 #: matplotlib.pyplot.hist:141 of
 msgid "If ``True``, multiple data are stacked on top of each other If ``False`` multiple data are arranged side by side if histtype is 'bar' or on top of each other if histtype is 'step'"
-msgstr ""
+msgstr "Si es ``verdadero``, múltiples datos se acumulan sobre el otro. Si ``False`` múltiples datos se organizan codo con codo si el tipo de persona es 'bar' o encima si el tipo de persona es 'paso'"
 
 #: matplotlib.pyplot.hist of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.pyplot.hist:154 of
 msgid "**n**"
-msgstr ""
+msgstr "**n**"
 
 #: of
 msgid "array or list of arrays"
-msgstr ""
+msgstr "array o lista de matrices"
 
 #: matplotlib.pyplot.hist:148 of
 msgid "The values of the histogram bins. See *density* and *weights* for a description of the possible semantics.  If input *x* is an array, then this is an array of length *nbins*. If input is a sequence of arrays ``[data1, data2, ...]``, then this is a list of arrays with the values of the histograms for each of the arrays in the same order.  The dtype of the array *n* (or of its element arrays) will always be float even if no weighting or normalization is used."
-msgstr ""
+msgstr "Los valores de las bolsas de histograma, vea *densidad* y *pesos* para una descripción de los semánticos posibles. Si la entrada *x* es una matriz, entonces esta es una matriz de longitud *Textins*. Si la entrada es una secuencia de arrays ``[data1, data2, ... ``, entonces esta es una lista de matrices con los valores de los histogramas para cada una de las matrices en el mismo orden. El tipo de dtype de la matriz *n* (o de sus matrices de elementos) siempre estará flotante incluso si no se utiliza ninguna ponderación o normalización."
 
 #: matplotlib.pyplot.hist:159 of
 msgid "**bins**"
-msgstr ""
+msgstr "**Papelas**"
 
 #: of
 msgid "array"
-msgstr ""
+msgstr "array"
 
 #: matplotlib.pyplot.hist:157 of
 msgid "The edges of the bins. Length nbins + 1 (nbins left edges and right edge of last bin).  Always a single array even when multiple data sets are passed in."
-msgstr ""
+msgstr "Los bordes de los cubos de longitud. Siempre una sola matriz incluso cuando se pasan múltiples conjuntos de datos."
 
 #: matplotlib.pyplot.hist:165 of
 msgid "**patches** : `.BarContainer` or list of a single `.Polygon` or list of such objects"
-msgstr ""
+msgstr "**parches** : `.BarContainer` o lista de un solo `.Polygon` o lista de tales objetos"
 
 #: matplotlib.pyplot.hist:164 of
 msgid "BarContainer or list of a single Polygon or list of such objects"
-msgstr ""
+msgstr "Contenedor de barras o lista de un único polígono o lista de tales objetos"
 
 #: matplotlib.pyplot.hist:162 of
 msgid "Container of individual artists used to create the histogram or list of such containers if there are multiple input datasets."
-msgstr ""
+msgstr "Contenedor de artistas individuales utilizados para crear el histograma o lista de dichos contenedores si hay múltiples conjuntos de datos de entrada."
 
 #: matplotlib.pyplot.hist of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.pyplot.hist:173 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.pyplot.hist:170 of
 msgid "If given, the following parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception):"
-msgstr ""
+msgstr "Si se dan, los siguientes parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción):"
 
 #: matplotlib.pyplot.hist:173 of
 msgid "*x*, *weights*"
-msgstr ""
+msgstr "*x*, *pesos*"
 
 #: matplotlib.pyplot.hist:179 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.pyplot.hist:176 of
 msgid "`~matplotlib.patches.Patch` properties"
-msgstr ""
+msgstr "Propiedades `~matplotlib.patches.Patch`"
 
 #: matplotlib.pyplot.hist:184 of
 msgid ":obj:`hist2d`"
-msgstr ""
+msgstr ":obj:`Cadena2d`"
 
 #: matplotlib.pyplot.hist:185 of
 msgid "2D histogram with rectangular bins"
-msgstr ""
+msgstr "Histograma 2D con contenedores rectangulares"
 
 #: matplotlib.pyplot.hist:186 of
 msgid ":obj:`hexbin`"
-msgstr ""
+msgstr ":obj:`hexbin`"
 
 #: matplotlib.pyplot.hist:187 of
 msgid "2D histogram with hexagonal bins"
-msgstr ""
+msgstr "Histograma 2D con contenedores hexagonales"
 
 #: matplotlib.pyplot.hist:191 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.pyplot.hist:192 of
 msgid "For large numbers of bins (>1000), 'step' and 'stepfilled' can be significantly faster than 'bar' and 'barstacked'."
-msgstr ""
+msgstr "Para grandes cantidades de contenedores (>1000), 'step' y 'stepfilled' puede ser significativamente más rápido que 'bar' y 'barra'."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.pyplot.hist.examples:2
 msgid "Examples using ``matplotlib.pyplot.hist``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.pyplot.nb``"
 
 #: ../../api/_as_gen/matplotlib.pyplot.hist.examples:10
 msgid "SVG Histogram"
-msgstr ""
+msgstr "Histograma SVG"
 
 #: ../../api/_as_gen/matplotlib.pyplot.hist.examples:10
 #: ../../api/_as_gen/matplotlib.pyplot.hist.examples:18
 msgid ":ref:`sphx_glr_gallery_user_interfaces_svg_histogram_sgskip.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_user_interfaces_svg_histogram_sgskip.py`"
 

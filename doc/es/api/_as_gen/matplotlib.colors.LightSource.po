@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:16\n"
+"PO-Revision-Date: 2022-11-02 13:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,23 +20,23 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.rst:2
 msgid "matplotlib.colors.LightSource"
-msgstr ""
+msgstr "matplotlib.colors.LightSource"
 
 #: matplotlib.colors.LightSource:1 of
 msgid "Bases: :py:class:`object`"
-msgstr ""
+msgstr "Bases: :py:class:`object`"
 
 #: matplotlib.colors.LightSource:2 of
 msgid "Create a light source coming from the specified azimuth and elevation. Angles are in degrees, with the azimuth measured clockwise from north and elevation up from the zero plane of the surface."
-msgstr ""
+msgstr "Crea una fuente de luz proveniente del azimut y la elevación especificados. Los ángulos son en grados, con el azimut medido en sentido de las agujas del norte y la elevación desde el plano cero de la superficie."
 
 #: matplotlib.colors.LightSource:6 of
 msgid "`shade` is used to produce \"shaded\" rgb values for a data array. `shade_rgb` can be used to combine an rgb image with an elevation map. `hillshade` produces an illumination map of a surface."
-msgstr ""
+msgstr "`shade` se usa para producir valores rgb \"sombreados\" para un array de datos. `shade_rgb` puede usarse para combinar una imagen rgb con un mapa de elevación. `hillshade` produce un mapa de iluminación de una superficie."
 
 #: matplotlib.colors.LightSource:28 of
 msgid "Specify the azimuth (measured clockwise from south) and altitude (measured up from the plane of the surface) of the light source in degrees."
-msgstr ""
+msgstr "Especifique el azimut (hacia el sur en sentido de las agujas del reloj) y la altitud (medida desde el plano de la superficie) de la fuente de luz en grados."
 
 #: matplotlib.colors.LightSource matplotlib.colors.LightSource.blend_hsv
 #: matplotlib.colors.LightSource.blend_overlay
@@ -45,54 +45,54 @@ msgstr ""
 #: matplotlib.colors.LightSource.shade_normals
 #: matplotlib.colors.LightSource.shade_rgb of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.colors.LightSource:37 of
 msgid "**azdeg**"
-msgstr ""
+msgstr "**azdeg**"
 
 #: of
 msgid "float, default: 315 degrees (from the northwest)"
-msgstr ""
+msgstr "flotante, por defecto: 315 grados (desde el noroeste)"
 
 #: matplotlib.colors.LightSource:36 of
 msgid "The azimuth (0-360, degrees clockwise from North) of the light source."
-msgstr ""
+msgstr "El azimut (0-360, grados en sentido de las agujas del norte) de la fuente de luz."
 
 #: matplotlib.colors.LightSource:49 of
 msgid "**altdeg**"
-msgstr ""
+msgstr "**altdeg**"
 
 #: of
 msgid "float, default: 45 degrees"
-msgstr ""
+msgstr "flotante, por defecto: 45 grados"
 
 #: matplotlib.colors.LightSource:40 of
 msgid "The altitude (0-90, degrees up from horizontal) of the light source."
-msgstr ""
+msgstr "La altitud (0-90, grados arriba de horizontal) de la fuente de luz."
 
 #: matplotlib.colors.LightSource:52 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.colors.LightSource:53 of
 msgid "For backwards compatibility, the parameters *hsv_min_val*, *hsv_max_val*, *hsv_min_sat*, and *hsv_max_sat* may be supplied at initialization as well.  However, these parameters will only be used if \"blend_mode='hsv'\" is passed into `shade` or `shade_rgb`. See the documentation for `blend_hsv` for more details."
-msgstr ""
+msgstr "Para compatibilidad con versiones anteriores, los parámetros *hsv_min_val*, *hsv_max_val*, *hsv_min_sat*, y *hsv_max_sat* pueden ser suministrados también en la inicialización. Sin embargo, estos parámetros sólo se utilizarán si \"blend_mode='hsv'\" se pasa a `shade` o `shade_rgb`. Consulte la documentación para `blend_hsv` para más detalles."
 
 #: matplotlib.colors.LightSource.blend_hsv:2 of
 msgid "Take the input data array, convert to HSV values in the given colormap, then adjust those color values to give the impression of a shaded relief map with a specified light source.  RGBA values are returned, which can then be used to plot the shaded image with imshow."
-msgstr ""
+msgstr "Tomar el array de datos de entrada, convertir a valores HSV en el mapa de color dado, luego ajuste esos valores de color para dar la impresión de un mapa de relieve sombreado con una fuente de luz especificada. Los valores RGBA son devueltos, que pueden ser usados para dibujar la imagen sombreada con imshow."
 
 #: matplotlib.colors.LightSource.blend_hsv:7 of
 msgid "The color of the resulting image will be darkened by moving the (s, v) values (in hsv colorspace) toward (hsv_min_sat, hsv_min_val) in the shaded regions, or lightened by sliding (s, v) toward (hsv_max_sat, hsv_max_val) in regions that are illuminated.  The default extremes are chose so that completely shaded points are nearly black (s = 1, v = 0) and completely illuminated points are nearly white (s = 0, v = 1)."
-msgstr ""
+msgstr "El color de la imagen resultante se oscurecerá moviendo los valores (s, v) (en espacio de color hsv) hacia (hsv_min_sat, hsv_min_val) en las regiones sombreadas, o aligerado deslizando (s, v) hacia (hsv_max_sat, hsv_max_val) en las regiones que son iluminadas. Los extremos por defecto son elegidos para que los puntos completamente sombreados sean casi negros (s = 1, v = 0) y los puntos completamente iluminados son casi blancos (s = 0, v = 1)."
 
 #: matplotlib.colors.LightSource.blend_hsv:17
 #: matplotlib.colors.LightSource.blend_overlay:8
 #: matplotlib.colors.LightSource.blend_soft_light:9
 #: matplotlib.colors.LightSource.shade_rgb:9 of
 msgid "**rgb**"
-msgstr ""
+msgstr "**rgb**"
 
 #: matplotlib.colors.LightSource.blend_hsv:53
 #: matplotlib.colors.LightSource.blend_overlay:28
@@ -102,65 +102,65 @@ msgstr ""
 #: matplotlib.colors.LightSource.shade_normals:35
 #: matplotlib.colors.LightSource.shade_rgb:64 of
 msgid "ndarray"
-msgstr ""
+msgstr "ndarray"
 
 #: matplotlib.colors.LightSource.blend_hsv:17
 #: matplotlib.colors.LightSource.blend_overlay:8
 #: matplotlib.colors.LightSource.blend_soft_light:9 of
 msgid "An MxNx3 RGB array of floats ranging from 0 to 1 (color image)."
-msgstr ""
+msgstr "Una matriz RGB MxNx3 de flotantes que van de 0 a 1 (imagen de color)."
 
 #: matplotlib.colors.LightSource.blend_hsv:20
 #: matplotlib.colors.LightSource.blend_overlay:11
 #: matplotlib.colors.LightSource.blend_soft_light:12 of
 msgid "**intensity**"
-msgstr ""
+msgstr "**intensidad**"
 
 #: matplotlib.colors.LightSource.blend_hsv:20
 #: matplotlib.colors.LightSource.blend_overlay:11
 #: matplotlib.colors.LightSource.blend_soft_light:12 of
 msgid "An MxNx1 array of floats ranging from 0 to 1 (grayscale image)."
-msgstr ""
+msgstr "Una matriz MxNx1 de flotantes que van desde 0 a 1 (imagen en escala de gris)."
 
 #: matplotlib.colors.LightSource.blend_hsv:24 of
 msgid "**hsv_max_sat**"
-msgstr ""
+msgstr "**hsv_max_sat**"
 
 #: of
 msgid "number, default: 1"
-msgstr ""
+msgstr "número, predeterminado: 1"
 
 #: matplotlib.colors.LightSource.blend_hsv:23 of
 msgid "The maximum saturation value that the *intensity* map can shift the output image to."
-msgstr ""
+msgstr "El valor máximo de saturación al que el mapa de *intensidad* puede desplazar la imagen de salida."
 
 #: matplotlib.colors.LightSource.blend_hsv:28 of
 msgid "**hsv_min_sat**"
-msgstr ""
+msgstr "**hsv_min_sat**"
 
 #: of
 msgid "number, optional"
-msgstr ""
+msgstr "número, opcional"
 
 #: matplotlib.colors.LightSource.blend_hsv:27 of
 msgid "The minimum saturation value that the *intensity* map can shift the output image to. Defaults to 0."
-msgstr ""
+msgstr "El valor mínimo de saturación al que el mapa de *intensidad* puede desplazar la imagen de salida. Por defecto es 0."
 
 #: matplotlib.colors.LightSource.blend_hsv:32 of
 msgid "**hsv_max_val**"
-msgstr ""
+msgstr "**hsv_max_val**"
 
 #: matplotlib.colors.LightSource.blend_hsv:31 of
 msgid "The maximum value (\"v\" in \"hsv\") that the *intensity* map can shift the output image to. Defaults to 1."
-msgstr ""
+msgstr "El valor máximo (\"v\" en \"hsv\") al que el mapa de *intensidad* puede desplazar la imagen de salida. Por defecto es 1."
 
 #: matplotlib.colors.LightSource.blend_hsv:36 of
 msgid "**hsv_min_val**"
-msgstr ""
+msgstr "**hsv_min_val**"
 
 #: matplotlib.colors.LightSource.blend_hsv:35 of
 msgid "The minimum value (\"v\" in \"hsv\") that the *intensity* map can shift the output image to. Defaults to 0."
-msgstr ""
+msgstr "El valor mínimo (\"v\" en \"hsv\") al que el mapa de *intensidad* puede desplazar la imagen de salida. Por defecto es 0."
 
 #: matplotlib.colors.LightSource.blend_hsv
 #: matplotlib.colors.LightSource.blend_overlay
@@ -169,283 +169,283 @@ msgstr ""
 #: matplotlib.colors.LightSource.shade_normals
 #: matplotlib.colors.LightSource.shade_rgb of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.colors.LightSource.blend_hsv:41
 #: matplotlib.colors.LightSource.blend_overlay:16
 #: matplotlib.colors.LightSource.blend_soft_light:17 of
 msgid "An MxNx3 RGB array representing the combined images."
-msgstr ""
+msgstr "Una matriz RGB MxNx3 que representa las imágenes combinadas."
 
 #: matplotlib.colors.LightSource.blend_overlay:2 of
 msgid "Combine an rgb image with an intensity map using \"overlay\" blending."
-msgstr ""
+msgstr "Combina una imagen rgb con un mapa de intensidad usando la mezcla \"overlay\"."
 
 #: matplotlib.colors.LightSource.blend_soft_light:2 of
 msgid "Combine an rgb image with an intensity map using \"soft light\" blending, using the \"pegtop\" formula."
-msgstr ""
+msgstr "Combina una imagen rgb con un mapa de intensidad usando la mezcla de \"luz suave\", usando la fórmula \"pegtop\"."
 
 #: matplotlib.colors.LightSource.direction:2 of
 msgid "The unit vector direction towards the light source."
-msgstr ""
+msgstr "La dirección del vector unitaria hacia la fuente de luz."
 
 #: matplotlib.colors.LightSource.hillshade:2 of
 msgid "Calculate the illumination intensity for a surface using the defined azimuth and elevation for the light source."
-msgstr ""
+msgstr "Calcula la intensidad de iluminación de una superficie utilizando el azimut y la elevación definida para la fuente de luz."
 
 #: matplotlib.colors.LightSource.hillshade:5 of
 msgid "This computes the normal vectors for the surface, and then passes them on to `shade_normals`"
-msgstr ""
+msgstr "Esto calcula los vectores normales para la superficie, y luego los pasa a `shade_normals`"
 
 #: matplotlib.colors.LightSource.hillshade:11
 #: matplotlib.colors.LightSource.shade_rgb:12 of
 msgid "**elevation**"
-msgstr ""
+msgstr "**altura**"
 
 #: of
 msgid "2D array-like"
-msgstr ""
+msgstr "Arreglo 2D"
 
 #: matplotlib.colors.LightSource.hillshade:11 of
 msgid "The height values used to generate an illumination map"
-msgstr ""
+msgstr "Los valores de altura usados para generar un mapa de iluminación"
 
 #: matplotlib.colors.LightSource.hillshade:18
 #: matplotlib.colors.LightSource.shade:48
 #: matplotlib.colors.LightSource.shade_rgb:38 of
 msgid "**vert_exag**"
-msgstr ""
+msgstr "**vert_exag**"
 
 #: matplotlib.colors.LightSource.hillshade:14 of
 msgid "The amount to exaggerate the elevation values by when calculating illumination. This can be used either to correct for differences in units between the x-y coordinate system and the elevation coordinate system (e.g. decimal degrees vs. meters) or to exaggerate or de-emphasize topographic effects."
-msgstr ""
+msgstr "La cantidad a exceder los valores de elevación en el cálculo de la iluminación. Esto se puede utilizar para corregir las diferencias en unidades entre el sistema de coordenadas x-y y el sistema de coordenadas de elevación (e. . grados decimales vs. metros) o para atenuar o desenfatizar los efectos topográficos."
 
 #: matplotlib.colors.LightSource.hillshade:21
 #: matplotlib.colors.LightSource.shade:51
 #: matplotlib.colors.LightSource.shade_rgb:41 of
 msgid "**dx**"
-msgstr ""
+msgstr "**dx**"
 
 #: matplotlib.colors.LightSource.hillshade:21
 #: matplotlib.colors.LightSource.shade:51
 #: matplotlib.colors.LightSource.shade_rgb:41 of
 msgid "The x-spacing (columns) of the input *elevation* grid."
-msgstr ""
+msgstr "El espacio x (columnas) de la cuadrícula de *elevación* de entrada."
 
 #: matplotlib.colors.LightSource.hillshade:24
 #: matplotlib.colors.LightSource.shade:54
 #: matplotlib.colors.LightSource.shade_rgb:44 of
 msgid "**dy**"
-msgstr ""
+msgstr "**dy**"
 
 #: matplotlib.colors.LightSource.hillshade:24
 #: matplotlib.colors.LightSource.shade:54
 #: matplotlib.colors.LightSource.shade_rgb:44 of
 msgid "The y-spacing (rows) of the input *elevation* grid."
-msgstr ""
+msgstr "El espaciado y-(filas) de la cuadrícula de *elevación* de entrada."
 
 #: matplotlib.colors.LightSource.hillshade:31
 #: matplotlib.colors.LightSource.shade:61
 #: matplotlib.colors.LightSource.shade_normals:17
 #: matplotlib.colors.LightSource.shade_rgb:19 of
 msgid "**fraction**"
-msgstr ""
+msgstr "**fracción **"
 
 #: matplotlib.colors.LightSource.hillshade:27
 #: matplotlib.colors.LightSource.shade:57
 #: matplotlib.colors.LightSource.shade_normals:13
 #: matplotlib.colors.LightSource.shade_rgb:15 of
 msgid "Increases or decreases the contrast of the hillshade.  Values greater than one will cause intermediate values to move closer to full illumination or shadow (and clipping any values that move beyond 0 or 1). Note that this is not visually or mathematically the same as vertical exaggeration."
-msgstr ""
+msgstr "Aumenta o disminuye el contraste de la sombra del color. Valores mayores a uno causarán que los valores intermedios se acerquen a la iluminación completa o a la sombra (y recortando cualquier valor que vaya más allá de 0 o 1). Tenga en cuenta que esto no es visualmente o matemáticamente lo mismo que la fijación vertical."
 
 #: matplotlib.colors.LightSource.hillshade:36
 #: matplotlib.colors.LightSource.shade_normals:22 of
 msgid "A 2D array of illumination values between 0-1, where 0 is completely in shadow and 1 is completely illuminated."
-msgstr ""
+msgstr "Una matriz 2D de valores de iluminación entre 0-1, donde 0 está completamente en la sombra y 1 está completamente iluminado."
 
 #: matplotlib.colors.LightSource.shade:2 of
 msgid "Combine colormapped data values with an illumination intensity map (a.k.a.  \"hillshade\") of the values."
-msgstr ""
+msgstr "Combina los valores de datos asignados a color con un mapa de intensidad de iluminación (también conocido como \"hillshade\") de los valores."
 
 #: matplotlib.colors.LightSource.shade:9 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: matplotlib.colors.LightSource.shade:9 of
 msgid "The height values used to generate a shaded map."
-msgstr ""
+msgstr "Los valores de altura utilizados para generar un mapa sombreado."
 
 #: matplotlib.colors.LightSource.shade:15 of
 msgid "**cmap** : `~matplotlib.colors.Colormap`"
-msgstr ""
+msgstr "**cmap** : `~matplotlib.colors.Colormap`"
 
 #: matplotlib.colors.LightSource.shade:14 of
 msgid "Colormap"
-msgstr ""
+msgstr "Colormap"
 
 #: matplotlib.colors.LightSource.shade:12 of
 msgid "The colormap used to color the *data* array. Note that this must be a `~matplotlib.colors.Colormap` instance.  For example, rather than passing in ``cmap='gist_earth'``, use ``cmap=plt.get_cmap('gist_earth')`` instead."
-msgstr ""
+msgstr "El mapa de colores usado para colorear la matriz *data*. Tenga en cuenta que debe ser una instancia `~matplotlib.colors.Colormap`. Por ejemplo, en lugar de pasar en ``cmap='gist_earth'``, use ``cmap=plt.get_cmap('gist_earth')`` en su lugar."
 
 #: matplotlib.colors.LightSource.shade:19 of
 msgid "**norm** : `~matplotlib.colors.Normalize` instance, optional"
-msgstr ""
+msgstr "**norma** : instancia `~matplotlib.colors.Normalize`, opcional"
 
 #: matplotlib.colors.LightSource.shade:18 of
 msgid "Normalize instance, optional"
-msgstr ""
+msgstr "Normalizar la instancia, opcional"
 
 #: matplotlib.colors.LightSource.shade:18 of
 msgid "The normalization used to scale values before colormapping. If None, the input will be linearly scaled between its min and max."
-msgstr ""
+msgstr "La normalización usada para escalar valores antes del mapeo de colores. Si no, la entrada será escalada lineal entre su min y máximo."
 
 #: matplotlib.colors.LightSource.shade:31
 #: matplotlib.colors.LightSource.shade_rgb:31 of
 msgid "**blend_mode**"
-msgstr ""
+msgstr "**blend_mode**"
 
 #: of
 msgid "{'hsv', 'overlay', 'soft'} or callable, optional"
-msgstr ""
+msgstr "{'hsv', 'overlay', 'soft'} o llamable, opcional"
 
 #: matplotlib.colors.LightSource.shade:22 of
 msgid "The type of blending used to combine the colormapped data values with the illumination intensity.  Default is \"overlay\".  Note that for most topographic surfaces, \"overlay\" or \"soft\" appear more visually realistic. If a user-defined function is supplied, it is expected to combine an MxNx3 RGB array of floats (ranging 0 to 1) with an MxNx1 hillshade array (also 0 to 1).  (Call signature ``func(rgb, illum, **kwargs)``) Additional kwargs supplied to this function will be passed on to the *blend_mode* function."
-msgstr ""
+msgstr "El tipo de mezcla utilizada para combinar los valores de datos asignados a colores con la intensidad de iluminación. Por defecto es \"overlay\". Tenga en cuenta que para la mayoría de las superficies topográficas, \"overlay\" o \"soft\" aparecen más visualmente realistas. Si se suministra una función definida por el usuario, se espera que combine una matriz RGB MxNx3 de flotantes (rango 0 a 1) con una matriz de sombra MxNx1 (también 0 a 1). (Firma completa ``func(rgb, illum, **kwargs)``) Los kwargs adicionales suministrados a esta función serán pasados a la función *blend_mode*."
 
 #: matplotlib.colors.LightSource.shade:36 of
 msgid "**vmin**"
-msgstr ""
+msgstr "**vmin**"
 
 #: of
 msgid "float or None, optional"
-msgstr ""
+msgstr "flotante o ninguno, opcional"
 
 #: matplotlib.colors.LightSource.shade:34 of
 msgid "The minimum value used in colormapping *data*. If *None* the minimum value in *data* is used. If *norm* is specified, then this argument will be ignored."
-msgstr ""
+msgstr "El valor mínimo usado en el mapeo de colores *data*. Si *nunca* el valor mínimo en *data* es usado. Si se especifica *norma*, este argumento será ignorado."
 
 #: matplotlib.colors.LightSource.shade:41 of
 msgid "**vmax**"
-msgstr ""
+msgstr "**vmax**"
 
 #: matplotlib.colors.LightSource.shade:39 of
 msgid "The maximum value used in colormapping *data*. If *None* the maximum value in *data* is used. If *norm* is specified, then this argument will be ignored."
-msgstr ""
+msgstr "El valor máximo usado en el mapeo de colores *data*. Si *nunca* se usa el valor máximo en *data*. Si se especifica *norma*, este argumento será ignorado."
 
 #: matplotlib.colors.LightSource.shade:44
 #: matplotlib.colors.LightSource.shade_rgb:34 of
 msgid "The amount to exaggerate the elevation values by when calculating illumination. This can be used either to correct for differences in units between the x-y coordinate system and the elevation coordinate system (e.g. decimal degrees vs. meters) or to exaggerate or de-emphasize topography."
-msgstr ""
+msgstr "La cantidad a exceder los valores de elevación en el cálculo de la iluminación. Esto se puede utilizar para corregir las diferencias en unidades entre el sistema de coordenadas x-y y el sistema de coordenadas de elevación (e. . grados decimales vs. metros) o para acometer o des-enfatizar la topografía."
 
 #: matplotlib.colors.LightSource.shade:64
 #: matplotlib.colors.LightSource.shade_rgb:47 of
 msgid "**Additional kwargs are passed on to the *blend_mode* function.**"
-msgstr ""
+msgstr "**Los kwargs adicionales se pasan a la función *blend_mode*.**"
 
 #: matplotlib.colors.LightSource.shade:69 of
 msgid "An MxNx4 array of floats ranging between 0-1."
-msgstr ""
+msgstr "Una matriz MxNx4 de flotantes que oscilan entre 0-1."
 
 #: matplotlib.colors.LightSource.shade_normals:2 of
 msgid "Calculate the illumination intensity for the normal vectors of a surface using the defined azimuth and elevation for the light source."
-msgstr ""
+msgstr "Calcula la intensidad de iluminación de los vectores normales de una superficie utilizando el azimut definido y la elevación para la fuente de luz."
 
 #: matplotlib.colors.LightSource.shade_normals:5 of
 msgid "Imagine an artificial sun placed at infinity in some azimuth and elevation position illuminating our surface. The parts of the surface that slope toward the sun should brighten while those sides facing away should become darker."
-msgstr ""
+msgstr "Imagínese un sol artificial colocado en infinidad en una posición de azimut y elevación que ilumine nuestra superficie. Las partes de la superficie que se inclinan hacia el sol deben brillar mientras que los lados que miran hacia fuera deben volverse oscuros."
 
 #: matplotlib.colors.LightSource.shade_rgb:2 of
 msgid "Use this light source to adjust the colors of the *rgb* input array to give the impression of a shaded relief map with the given *elevation*."
-msgstr ""
+msgstr "Usa esta fuente de luz para ajustar los colores de la matriz de entrada *rgb* para dar la impresión de un mapa de relieve sombreado con la *elevación* dada."
 
 #: of
 msgid "array-like"
-msgstr ""
+msgstr "array-like"
 
 #: matplotlib.colors.LightSource.shade_rgb:9 of
 msgid "An (M, N, 3) RGB array, assumed to be in the range of 0 to 1."
-msgstr ""
+msgstr "Un arreglo (M, N, 3) RGB, asumido que está en el rango de 0 a 1."
 
 #: matplotlib.colors.LightSource.shade_rgb:12 of
 msgid "An (M, N) array of the height values used to generate a shaded map."
-msgstr ""
+msgstr "Un array (M, N) de los valores de altura utilizados para generar un mapa sombreado."
 
 #: of
 msgid "number"
-msgstr ""
+msgstr "número"
 
 #: matplotlib.colors.LightSource.shade_rgb:22 of
 msgid "The type of blending used to combine the colormapped data values with the illumination intensity.  For backwards compatibility, this defaults to \"hsv\". Note that for most topographic surfaces, \"overlay\" or \"soft\" appear more visually realistic. If a user-defined function is supplied, it is expected to combine an MxNx3 RGB array of floats (ranging 0 to 1) with an MxNx1 hillshade array (also 0 to 1).  (Call signature ``func(rgb, illum, **kwargs)``) Additional kwargs supplied to this function will be passed on to the *blend_mode* function."
-msgstr ""
+msgstr "El tipo de mezcla utilizada para combinar los valores de datos asignados a colores con la intensidad de iluminación. Para compatibilidad con versiones anteriores, este valor por defecto es \"hsv\". Tenga en cuenta que para la mayoría de las superficies topográficas, \"overlay\" o \"soft\" aparecen más realistas visualmente. Si se suministra una función definida por el usuario, se espera que combine una matriz RGB MxNx3 de flotantes (rango 0 a 1) con una matriz de sombra MxNx1 (también 0 a 1). (Firma completa ``func(rgb, illum, **kwargs)``) Los kwargs adicionales suministrados a esta función serán pasados a la función *blend_mode*."
 
 #: matplotlib.colors.LightSource.shade_rgb:52 of
 msgid "An (m, n, 3) array of floats ranging between 0-1."
-msgstr ""
+msgstr "Un array (m, n, 3) de flotantes que oscilan entre 0-1."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.colors.LightSource.examples:2
 msgid "Examples using ``matplotlib.colors.LightSource``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.colors.LightSource``"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:10
 msgid "Shading example"
-msgstr ""
+msgstr "Ejemplo de sombreado"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:10
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:18
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_shading_example.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_shading_example.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:29
 msgid "Shaded & power normalized rendering"
-msgstr ""
+msgstr "Renderizado sombreado y de potencia normalizada"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:29
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:37
 msgid ":ref:`sphx_glr_gallery_showcase_mandelbrot.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_showcase_mandelbrot.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:48
 msgid "Frontpage 3D example"
-msgstr ""
+msgstr "Ejemplo de portada 3D"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:48
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:56
 msgid ":ref:`sphx_glr_gallery_frontpage_3D.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_frontpage_3D.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:67
 msgid "AGG filter"
-msgstr ""
+msgstr "Filtro AGG"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:67
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:75
 msgid ":ref:`sphx_glr_gallery_misc_demo_agg_filter.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_misc_demo_agg_filter.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:86
 msgid "Custom hillshading in a 3D surface plot"
-msgstr ""
+msgstr "Sombreado personalizado en un gráfico de superficie 3D"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:86
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:94
 msgid ":ref:`sphx_glr_gallery_mplot3d_custom_shaded_3d_surface.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_mplot3d_custom_shaded_3d_surface.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:105
 msgid "Hillshading"
-msgstr ""
+msgstr "Hillshading"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:105
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:113
 msgid ":ref:`sphx_glr_gallery_specialty_plots_advanced_hillshading.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_specialty_plots_advanced_hillshading.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:124
 msgid "Topographic hillshading"
-msgstr ""
+msgstr "Hillshading topográfico"
 
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:124
 #: ../../api/_as_gen/matplotlib.colors.LightSource.examples:132
 msgid ":ref:`sphx_glr_gallery_specialty_plots_topographic_hillshading.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_specialty_plots_topographic_hillshading.py`"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-18 12:25\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,225 +20,225 @@ msgstr ""
 
 #: ../../devel/MEP/MEP26.rst:3
 msgid "MEP26: Artist styling"
-msgstr ""
+msgstr "MEP26: Estilo del artist"
 
 #: ../../devel/MEP/MEP26.rst:10
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP26.rst:12
 msgid "**Rejected**"
-msgstr ""
+msgstr "**Rechazado**"
 
 #: ../../devel/MEP/MEP26.rst:15
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP26.rst:18
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP26.rst:20
 msgid "This MEP proposes a new stylesheet implementation to allow more comprehensive and dynamic styling of artists."
-msgstr ""
+msgstr "Este MEP propone una nueva implementación de la hoja de estilos para permitir una estilización más completa y dinámica de los artists."
 
 #: ../../devel/MEP/MEP26.rst:23
 msgid "The current version of matplotlib (1.4.0) allows stylesheets based on the rcParams syntax to be applied before creation of a plot.  The methodology below proposes a new syntax, based on CSS, which would allow styling of individual artists and properties, which can be applied dynamically to existing objects."
-msgstr ""
+msgstr "La versión actual de matplotlib (1.4.0) permite aplicar hojas de estilo basadas en la sintaxis rcParams antes de crear un gráfico.  La metodología que se presenta a continuación propone una nueva sintaxis, basada en CSS, que permitiría estilizar artists y propiedades individuales, que pueden aplicarse dinámicamente a los objetos existentes."
 
 #: ../../devel/MEP/MEP26.rst:29
 msgid "This is related to (and makes steps toward) the overall goal of moving to a DOM/tree-like architecture."
-msgstr ""
+msgstr "Esto está relacionado con (y da pasos hacia) el objetivo general de pasar a una arquitectura tipo DOM/árbol."
 
 #: ../../devel/MEP/MEP26.rst:34
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP26.rst:36
 msgid "Currently, the look and appearance of existing artist objects (figure, axes, Line2D etc...) can only be updated via ``set_`` and ``get_`` methods on the artist object, which is quite laborious, especially if no reference to the artist(s) has been stored.  The new style sheets introduced in 1.4 allow styling before a plot is created, but do not offer any means to dynamically update plots or distinguish between artists of the same type (i.e. to specify the ``line color`` and ``line style`` separately for differing `.Line2D` objects)."
-msgstr ""
+msgstr "Actualmente, el aspecto y la apariencia de los objetos artist existentes (figura, ejes, Line2D, etc...) sólo pueden actualizarse a través de los métodos ``set_`` y ``get_`` del objeto artist, lo que resulta bastante laborioso, especialmente si no se ha almacenado ninguna referencia al artist o artists.  Las nuevas hojas de estilo introducidas en la versión 1.4 permiten la creación de estilos antes de la creación de un gráfico, pero no ofrecen ningún medio para actualizar dinámicamente los gráficos o distinguir entre artists del mismo tipo (es decir, especificar el \"color de la línea\" y el \"estilo de la línea\" por separado para diferentes objetos `.Line2D`)."
 
 #: ../../devel/MEP/MEP26.rst:45
 msgid "The initial development should concentrate on allowing styling of artist primitives (those `.Artist`\\s that do not contain other `.Artist`\\s), and further development could expand the CSS syntax rules and parser to allow more complex styling. See the appendix for a list of primitives."
-msgstr ""
+msgstr "El desarrollo inicial debería concentrarse en permitir el estilo de los primitivos de artista (aquellos `.Artist` que no contienen otros `.Artist`), y el desarrollo posterior podría ampliar las reglas de sintaxis CSS y el analizador sintáctico para permitir un estilo más complejo. Ver el apéndice para una lista de primitivas."
 
 #: ../../devel/MEP/MEP26.rst:51
 msgid "The new methodology would require development of a number of steps:"
-msgstr ""
+msgstr "La nueva metodología requeriría el desarrollo de una serie de pasos:"
 
 #: ../../devel/MEP/MEP26.rst:53
 msgid "A new stylesheet syntax (likely based on CSS) to allow selection of artists by type, class, id etc..."
-msgstr ""
+msgstr "Una nueva sintaxis de hoja de estilo (probablemente basada en CSS) para permitir la selección de artists por tipo, clase, id, etc..."
 
 #: ../../devel/MEP/MEP26.rst:55
 msgid "A mechanism by which to parse a stylesheet into a tree"
-msgstr ""
+msgstr "Un mecanismo para convertir una hoja de estilo en un árbol"
 
 #: ../../devel/MEP/MEP26.rst:56
 msgid "A mechanism by which to translate the parse-tree into something which can be used to update the properties of relevant artists. Ideally this would implement a method by which to traverse the artists in a tree-like structure."
-msgstr ""
+msgstr "Un mecanismo que traduzca el árbol de análisis sintáctico en algo que pueda utilizarse para actualizar las propiedades de los artistas pertinentes. Lo ideal sería implementar un método para recorrer los artists en una estructura de árbol."
 
 #: ../../devel/MEP/MEP26.rst:60
 msgid "A mechanism by which to generate a stylesheet from existing artist properties. This would be useful to allow a user to export a stylesheet from an existing figure (where the appearance may have been set using the matplotlib API)..."
-msgstr ""
+msgstr "Un mecanismo para generar una hoja de estilo a partir de las propiedades de los artists existentes. Esto sería útil para permitir a un usuario exportar una hoja de estilos a partir de una figura existente (donde la apariencia puede haber sido establecida usando la API de matplotlib)..."
 
 #: ../../devel/MEP/MEP26.rst:66
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP26.rst:68
 msgid "It will be easiest to allow a '3rd party' to modify/set the style of an artist if the 'style' is created as a separate class and store against the artist as a property.  The `.GraphicsContextBase` class already provides a the basis of a ``Style`` class and an artist's `~.Artist.draw` method can be refactored to use the ``Style`` class rather than setting up its own `.GraphicsContextBase` and transferring its style-related properties to it.  A minimal example of how this could be implemented is shown here: https://github.com/JamesRamm/mpl_experiment"
-msgstr ""
+msgstr "Será más fácil permitir que un 'tercero' modifique/establezca el estilo de un artista si el 'estilo' se crea como una clase separada y se almacena contra el artista como una propiedad.  La clase `.GraphicsContextBase` ya proporciona la base de una clase ``Style`` y el método `~.Artist.draw` de un artista puede ser refactorizado para utilizar la clase ``Style`` en lugar de crear su propia `.GraphicsContextBase` y transferirle sus propiedades relacionadas con el estilo.  Un ejemplo mínimo de cómo se podría implementar esto se muestra aquí: https://github.com/JamesRamm/mpl_experiment"
 
 #: ../../devel/MEP/MEP26.rst:76
 msgid "IMO, this will also make the API and code base much neater as individual get/set methods for artist style properties are now redundant...  Indirectly related would be a general drive to replace get/set methods with properties. Implementing the style class with properties would be a big stride toward this..."
-msgstr ""
+msgstr "En mi opinión, esto también hará que la API y la base de código sean mucho más ordenadas, ya que los métodos get/set individuales para las propiedades de estilo de artist son ahora redundantes...  Indirectamente relacionado sería un impulso general para reemplazar los métodos get/set con propiedades. Implementar la clase de estilo con propiedades sería un gran paso hacia esto..."
 
 #: ../../devel/MEP/MEP26.rst:82
 msgid "For initial development, I suggest developing a syntax based on a much (much much) simplified version of CSS. I am in favour of dubbing this Artist Style Sheets :+1: :"
-msgstr ""
+msgstr "Para el desarrollo inicial, sugiero desarrollar una sintaxis basada en una versión muy (muy) simplificada de CSS. Soy partidario de llamar a esto Hojas de Estilo Artist :+1: :"
 
 #: ../../devel/MEP/MEP26.rst:87
 msgid "BNF Grammar"
-msgstr ""
+msgstr "BNF Gramática"
 
 #: ../../devel/MEP/MEP26.rst:89
 msgid "I propose a very simple syntax to implement initially (like a proof of concept), which can be expanded upon in the future. The BNF form of the syntax is given below and then explained ::"
-msgstr ""
+msgstr "Propongo una sintaxis muy simple para implementar inicialmente (como una prueba de concepto), que puede ser ampliada en el futuro. La forma BNF de la sintaxis se da a continuación y luego se explica ::"
 
 #: ../../devel/MEP/MEP26.rst:105
 msgid "``ArtistIdent``, ``Ident``, ``Number`` and ``Colour`` are tokens (the basic building blocks of the expression) which are defined by regular expressions."
-msgstr ""
+msgstr "``ArtistIdent``, ``Ident``, ``Number`` y ``Colour`` son tokens (los componente básico de la expresión) que se definen mediante expresiones regulares."
 
 #: ../../devel/MEP/MEP26.rst:110
 msgid "Syntax"
-msgstr ""
+msgstr "Sintaxis"
 
 #: ../../devel/MEP/MEP26.rst:112
 msgid "A CSS stylesheet consists of a series of **rule sets** in hierarchical order (rules are applied from top to bottom). Each rule follows the syntax ::"
-msgstr ""
+msgstr "Una hoja de estilo CSS consiste en una serie de **conjuntos de reglas** en orden jerárquico (las reglas se aplican de arriba a abajo). Cada regla sigue la sintaxis ::"
 
 #: ../../devel/MEP/MEP26.rst:118
 msgid "Each rule can have any number of ``attribute: value`` pairs, and a stylesheet can have any number of rules."
-msgstr ""
+msgstr "Cada regla puede tener cualquier número de pares ``atributo: valor``, y una hoja de estilo puede tener cualquier número de reglas."
 
 #: ../../devel/MEP/MEP26.rst:121
 msgid "The initial syntax is designed only for `.Artist` primitives. It does not address the question of how to set properties on `.Container` types (whose properties may themselves be `.Artist`\\s with settable properties), however, a future solution to this could simply be nested ``RuleSet``\\s"
-msgstr ""
+msgstr "La sintaxis inicial está diseñada sólo para primitivas `.Artist`. No aborda la cuestión de cómo establecer propiedades en los tipos `.Container` (cuyas propiedades pueden ser a su vez `.Artist` con propiedades ajustables), sin embargo, una futura solución a esto podría ser simplemente ``RuleSet`` anidado"
 
 #: ../../devel/MEP/MEP26.rst:128
 msgid "Selectors"
-msgstr ""
+msgstr "Selectores"
 
 #: ../../devel/MEP/MEP26.rst:131
 msgid "Selectors define the object to which the attribute updates should be applied. As a starting point, I propose just 2 selectors to use in initial development:"
-msgstr ""
+msgstr "Los selectores definen el objeto al que se deben aplicar las actualizaciones de atributos. Como punto de partida, propongo sólo 2 selectores para utilizar en el desarrollo inicial:"
 
 #: ../../devel/MEP/MEP26.rst:137
 msgid "Artist Type Selector"
-msgstr ""
+msgstr "Selector de tipo de artist"
 
 #: ../../devel/MEP/MEP26.rst:140
 msgid "Select an `.Artist` by it's type. E.g `.Line2D` or `.Text`::"
-msgstr ""
+msgstr "Seleccione un `.Artist` por su tipo. Por ejemplo, `.Line2D` o `.Text`::"
 
 #: ../../devel/MEP/MEP26.rst:144
 msgid "The regex for matching the artist type selector (``ArtistIdent`` in the BNF grammar) would be::"
-msgstr ""
+msgstr "La expresión regular para que corresponda con el selector de tipo de artist (``ArtistIdent`` en la gramática BNF) sería::"
 
 #: ../../devel/MEP/MEP26.rst:149
 msgid "GID selector"
-msgstr ""
+msgstr "Selector GID"
 
 #: ../../devel/MEP/MEP26.rst:151
 msgid "Select an `.Artist` by its ``gid``::"
-msgstr ""
+msgstr "Seleccionar un `.Artist` por su ``gid``::"
 
 #: ../../devel/MEP/MEP26.rst:155
 msgid "A ``gid`` can be any string, so the regex could be as follows::"
-msgstr ""
+msgstr "Un ``gid`` puede ser cualquier cadena, por lo que la regex podría ser la siguiente::"
 
 #: ../../devel/MEP/MEP26.rst:160
 msgid "The above selectors roughly correspond to their CSS counterparts (http://www.w3.org/TR/CSS21/selector.html)"
-msgstr ""
+msgstr "Los selectores anteriores se corresponden aproximadamente con sus homólogos en CSS (http://www.w3.org/TR/CSS21/selector.html)"
 
 #: ../../devel/MEP/MEP26.rst:164
 msgid "Attributes and values"
-msgstr ""
+msgstr "Atributos y valores"
 
 #: ../../devel/MEP/MEP26.rst:166
 msgid "``Attributes`` are any valid (settable) property for the `.Artist` in question."
-msgstr ""
+msgstr "Los ``Atributos`` son cualquier propiedad válida (configurable) para el `.Artist` en cuestión."
 
 #: ../../devel/MEP/MEP26.rst:167
 msgid "``Values`` are any valid value for the property (Usually a string, or number)."
-msgstr ""
+msgstr "``Valores`` son cualquier valor válido para la propiedad (normalmente una cadena, o un número)."
 
 #: ../../devel/MEP/MEP26.rst:170
 msgid "Parsing"
-msgstr ""
+msgstr "Analizar"
 
 #: ../../devel/MEP/MEP26.rst:172
 msgid "Parsing would consist of breaking the stylesheet into tokens (the python cookbook gives a nice tokenizing recipe on page 66), applying the syntax rules and constructing a ``Tree``. This requires defining the grammar of the stylesheet (again, we can borrow from CSS) and writing a parser. Happily, there is a recipe for this in the python cookbook as well."
-msgstr ""
+msgstr "El análisis consistiría en dividir la hoja de estilo en tokens (el libro de cocina de python ofrece una buena receta de tokenización en la página 66), aplicando las reglas de sintaxis y construyendo un ``Árbol``. Esto requiere definir la gramática de la hoja de estilos (de nuevo, podemos tomar prestado de CSS) y escribir un analizador sintáctico. Felizmente, hay una receta para esto en el libro de cocina de python también."
 
 #: ../../devel/MEP/MEP26.rst:181
 msgid "Visitor pattern for matplotlib figure"
-msgstr ""
+msgstr "Patrón de visitantes para la figura de matplotlib"
 
 #: ../../devel/MEP/MEP26.rst:183
 msgid "In order to apply the stylesheet rules to the relevant artists, we need to 'visit' each artist in a figure and apply the relevant rule. Here is a visitor class (again, thanks to python cookbook), where each ``node`` would be an artist in the figure. A ``visit_`` method would need to be implemented for each mpl artist, to handle the different properties for each ::"
-msgstr ""
+msgstr "Para aplicar las reglas de la hoja de estilo a los artists relevantes, necesitamos 'visitar' cada artista en una figura y aplicar la regla relevante. Aquí hay una clase visitante (de nuevo, gracias al libro de cocina de python), donde cada ``nodo`` sería un artist en la figura. Habría que implementar un método ``visit_`` para cada artist mpl, para manejar las diferentes propiedades de cada uno ::"
 
 #: ../../devel/MEP/MEP26.rst:198
 msgid "An ``evaluator`` class would then take the stylesheet rules and implement the visitor on each one of them."
-msgstr ""
+msgstr "Una clase ``evaluadora`` tomaría entonces las reglas de la hoja de estilo e implementaría el visitante en cada una de ellas."
 
 #: ../../devel/MEP/MEP26.rst:204
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP26.rst:206
 msgid "Implementing a separate ``Style`` class would break backward compatibility as many get/set methods on an artist would become redundant.  While it would be possible to alter these methods to hook into the ``Style`` class (stored as a property against the artist), I would be in favor of simply removing them to both neaten/simplify the codebase and to provide a simple, uncluttered API..."
-msgstr ""
+msgstr "Implementar una clase ``Style`` separada rompería la compatibilidad con el pasado, ya que muchos métodos get/set de un artist serían redundantes.  Aunque sería posible alterar estos métodos para engancharlos a la clase ``Style`` (almacenada como una propiedad contra el artist), yo estaría a favor de eliminarlos simplemente para ordenar/simplificar el código base y proporcionar una API sencilla y despejada..."
 
 #: ../../devel/MEP/MEP26.rst:214
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP26.rst:216
 msgid "No alternatives, but some of the ground covered here overlaps with MEP25, which may assist in this development"
-msgstr ""
+msgstr "No hay alternativas, pero algunas de las cuestiones tratadas aquí se solapan con el PEM25, que puede ayudar a este desarrollo"
 
 #: ../../devel/MEP/MEP26.rst:220
 msgid "Appendix"
-msgstr ""
+msgstr "Apéndice"
 
 #: ../../devel/MEP/MEP26.rst:223
 msgid "Matplotlib primitives"
-msgstr ""
+msgstr "Primitivas de Matplotlib"
 
 #: ../../devel/MEP/MEP26.rst:225
 msgid "This will form the initial selectors which stylesheets can use."
-msgstr ""
+msgstr "Esto formará los selectores iniciales que las hojas de estilo pueden utilizar."
 
 #: ../../devel/MEP/MEP26.rst:227
 msgid "Line2D"
-msgstr ""
+msgstr "Line2D"
 
 #: ../../devel/MEP/MEP26.rst:228
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: ../../devel/MEP/MEP26.rst:229
 msgid "AxesImage"
-msgstr ""
+msgstr "AxesImage"
 
 #: ../../devel/MEP/MEP26.rst:230
 msgid "FigureImage"
-msgstr ""
+msgstr "FigureImage"
 
 #: ../../devel/MEP/MEP26.rst:231
 msgid "Patch"
-msgstr ""
+msgstr "Parche"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:19\n"
+"PO-Revision-Date: 2022-11-02 14:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,90 +20,90 @@ msgstr ""
 
 #: ../../api/_as_gen/mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.rst:2
 msgid "mpl\\_toolkits.axisartist.angle\\_helper.ExtremeFinderCycle"
-msgstr ""
+msgstr "mpl\\_toolkits.axisartist.ángulo\\_helper.ExtremeFinderCycle"
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:1 of
 msgid "Bases: :py:class:`mpl_toolkits.axisartist.grid_finder.ExtremeFinderSimple`"
-msgstr ""
+msgstr "Bases: :py:class:`mpl_toolkits.axisartist.grid_finder.ExtremeFinderSimple`"
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:2 of
 msgid "This subclass handles the case where one or both coordinates should be taken modulo 360, or be restricted to not exceed a specific range."
-msgstr ""
+msgstr "Esta subclase maneja el caso en el que una o ambas coordenadas deben ser tomadas modulo 360, o estar restringidas a no exceder un rango específico."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:9 of
 msgid "**nx, ny**"
-msgstr ""
+msgstr "**nx, ny**"
 
 #: of
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:9 of
 msgid "The number of samples in each direction."
-msgstr ""
+msgstr "El número de muestras en cada dirección."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:25 of
 msgid "**lon_cycle, lat_cycle**"
-msgstr ""
+msgstr "**lon_cycle, lat_cycle**"
 
 #: of
 msgid "360 or None"
-msgstr ""
+msgstr "360 o ninguno"
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:12 of
 msgid "If not None, values in the corresponding direction are taken modulo *lon_cycle* or *lat_cycle*; in theory this can be any number but the implementation actually assumes that it is 360 (if not None); other values give nonsensical results."
-msgstr ""
+msgstr "Si no es Ninguno, los valores en la dirección correspondiente se toman modulo *lon_cycle* o *lat_cycle*; en teoría esto puede ser cualquier número, pero la implementación en realidad asume que es 360 (si no lo es nunca); otros valores dan resultados sin sentido."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:17 of
 msgid "This is done by \"unwrapping\" the transformed grid coordinates so that jumps are less than a half-cycle; then normalizing the span to no more than a full cycle."
-msgstr ""
+msgstr "Esto se hace desenvolviendo las coordenadas de la cuadrícula transformada para que los saltos sean inferiores a la mitad del ciclo; a continuación normalizar el tramo a no más que un ciclo completo."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:21 of
 msgid "For example, if values are in the union of the [0, 2] and [358, 360] intervals (typically, angles measured modulo 360), the values in the second interval are normalized to [-2, 0] instead so that the values now cover [-2, 2].  If values are in a range of [5, 1000], this gets normalized to [5, 365]."
-msgstr ""
+msgstr "Por ejemplo, si los valores están en la unión de los intervalos [0, 2] y [358, 360] (típicamente, los ángulos medida modulo 360), los valores en el segundo intervalo son normalizados a [-2, 0] en su lugar para que los valores ahora cubran [-2, 2]. Si los valores están en un rango de [5, 1000], esto se normaliza a [5, 365]."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:42 of
 msgid "**lon_minmax, lat_minmax**"
-msgstr ""
+msgstr "**lon_minmax, lat_minmax**"
 
 #: of
 msgid "(float, float) or None"
-msgstr ""
+msgstr "(flotante, flotante) o ninguno"
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle:28 of
 msgid "If not None, the computed bounding box is clipped to the given range in the corresponding direction."
-msgstr ""
+msgstr "Si no es Ninguna, la casilla de límite calculada se recorta al rango dado en la dirección correspondiente."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.__call__:2 of
 msgid "Compute an approximation of the bounding box obtained by applying *transform_xy* to the box delimited by ``(x1, y1, x2, y2)``."
-msgstr ""
+msgstr "Calcula una aproximación de la caja de límites obtenida aplicando *transform_xy* a la caja delimitada por ``(x1, y1, x2, y2)``."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.__call__:5 of
 msgid "The intended use is to have ``(x1, y1, x2, y2)`` in axes coordinates, and have *transform_xy* be the transform from axes coordinates to data coordinates; this method then returns the range of data coordinates that span the actual axes."
-msgstr ""
+msgstr "El uso previsto es tener ``(x1, y1, x2, y2)`` en coordenadas de ejes, y *transform_xy* ser la transformación de coordenadas de ejes a coordenadas de datos; este método devuelve el rango de coordenadas de datos que abarcan los ejes reales."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.__call__:10 of
 msgid "The computation is done by sampling ``nx * ny`` equispaced points in the ``(x1, y1, x2, y2)`` box and finding the resulting points with extremal coordinates; then adding some padding to take into account the finite sampling."
-msgstr ""
+msgstr "El cálculo se hace muestreando los puntos ecualizados ``nx * ny`` en el ``(x1, y1, x2, y2)`` caja y encontrar los puntos resultantes con coordenadas extremas; a continuación, añadiendo un poco de relleno para tener en cuenta el muestreo finito."
 
 #: mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.__call__:15 of
 msgid "As each sampling step covers a relative range of *1/nx* or *1/ny*, the padding is computed by expanding the span covered by the extremal coordinates by these fractions."
-msgstr ""
+msgstr "Como cada paso de muestreo cubre un rango relativo de *1/nx* o *1/ny*, el relleno se calcula expandiendo el intervalo cubierto por las coordenadas extremas por estas fracciones."
 
 #: ../../../../../../../../api/_as_gen/mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.examples:2
 msgid "Examples using ``mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle``"
-msgstr ""
+msgstr "Ejemplos usando ``mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle``"
 
 #: ../../api/_as_gen/mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.examples:10
 msgid "floating_axis demo"
-msgstr ""
+msgstr "demo floating_axis"
 
 #: ../../api/_as_gen/mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.examples:10
 #: ../../api/_as_gen/mpl_toolkits.axisartist.angle_helper.ExtremeFinderCycle.examples:18
 msgid ":ref:`sphx_glr_gallery_axisartist_demo_floating_axis.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_axisartist_demo_floating_axis.py`"
 

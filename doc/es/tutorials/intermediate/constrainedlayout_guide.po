@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-23 03:41\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,75 +20,75 @@ msgstr ""
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_intermediate_constrainedlayout_guide.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_intermediate_constrainedlayout_guide.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:23
 msgid "Constrained Layout Guide"
-msgstr ""
+msgstr "Guía de diseño restringido"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:25
 msgid "How to use constrained-layout to fit plots within your figure cleanly."
-msgstr ""
+msgstr "Cómo usar constrained-layout para encajar los gráficos dentro de su figura de forma limpia."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:27
 msgid "*constrained_layout* automatically adjusts subplots and decorations like legends and colorbars so that they fit in the figure window while still preserving, as best they can, the logical layout requested by the user."
-msgstr ""
+msgstr "*constrained_layout* ajusta automáticamente las subtramas y las decoraciones, como las leyendas y las barras de colores, para que encajen en la ventana de la figura, preservando al mismo tiempo, lo mejor posible, la disposición lógica solicitada por el usuario."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:31
 msgid "*constrained_layout* is similar to :doc:`tight_layout</tutorials/intermediate/tight_layout_guide>`, but uses a constraint solver to determine the size of axes that allows them to fit."
-msgstr ""
+msgstr "*constrained_layout* es similar a :doc:`tight_layout</tutorials/intermediate/tight_layout_guide>`, pero utiliza un solucionador de restricciones para determinar el tamaño de los ejes que les permite encajar."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:36
 msgid "*constrained_layout* needs to be activated before any axes are added to a figure. Two ways of doing so are"
-msgstr ""
+msgstr "*constrained_layout* necesita ser activado antes de añadir cualquier eje a una figura. Dos formas de hacerlo son"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:39
 msgid "using the respective argument to :func:`~.pyplot.subplots` or :func:`~.pyplot.figure`, e.g.::"
-msgstr ""
+msgstr "utilizando el argumento respectivo de :func:`~.pyplot.subplots` o :func:`~.pyplot.figure`, por ejemplo.::"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:44
 msgid "activate it via :ref:`rcParams<customizing-with-dynamic-rc-settings>`, like::"
-msgstr ""
+msgstr "activarlo mediante :ref:`rcParams<customizing-with-dynamic-rc-settings>`, como::"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:49
 msgid "Those are described in detail throughout the following sections."
-msgstr ""
+msgstr "Estos se describen en detalle a lo largo de las siguientes secciones."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:53
 msgid "Currently Constrained Layout is **experimental**.  The behaviour and API are subject to change, or the whole functionality may be removed without a deprecation period.  If you *require* your plots to be absolutely reproducible, get the Axes positions after running Constrained Layout and use ``ax.set_position()`` in your code with ``constrained_layout=False``."
-msgstr ""
+msgstr "Actualmente el Constrained Layout es **experimental**.  El comportamiento y la API están sujetos a cambios, o toda la funcionalidad puede ser eliminada sin un periodo de depreciación.  Si *requieres* que tus gráficos sean absolutamente reproducibles, obtén las posiciones de los ejes después de ejecutar Constrained Layout y utilice ``ax.set_position()`` en tu código con ``constrained_layout=False``."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:61
 msgid "Simple Example"
-msgstr ""
+msgstr "Ejemplo simple"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:63
 msgid "In Matplotlib, the location of axes (including subplots) are specified in normalized figure coordinates. It can happen that your axis labels or titles (or sometimes even ticklabels) go outside the figure area, and are thus clipped."
-msgstr ""
+msgstr "En Matplotlib, la ubicación de los ejes (incluyendo los subplots) se especifica en coordenadas normalizadas de la figura. Puede ocurrir que las etiquetas de los ejes o los títulos (o a veces incluso las etiquetas de los puntos) se salgan del área de la figura, y por lo tanto queden recortadas."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:114
 msgid "To prevent this, the location of axes needs to be adjusted. For subplots, this can be done manually by adjusting the subplot parameters using `.Figure.subplots_adjust`. However, specifying your figure with the # ``constrained_layout=True`` keyword argument will do the adjusting # automatically."
-msgstr ""
+msgstr "Para evitar esto, es necesario ajustar la ubicación de los ejes. En el caso de los subplots, esto puede hacerse manualmente ajustando los parámetros del subplot mediante `.Figure.subplots_adjust`. Sin embargo, si se especifica la figura con el argumento # ``constrained_layout=True`` se hará el ajuste # automáticamente."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:142
 msgid "When you have multiple subplots, often you see labels of different axes overlapping each other."
-msgstr ""
+msgstr "Cuando se tienen múltiples subparcelas, a menudo se ven etiquetas de diferentes ejes superpuestas."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:168
 msgid "Specifying ``constrained_layout=True`` in the call to ``plt.subplots`` causes the layout to be properly constrained."
-msgstr ""
+msgstr "Especificar ``constrained_layout=True`` en la llamada a ``plt.subplots`` hace que el diseño se restrinja correctamente."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:195
 msgid "Colorbars"
-msgstr ""
+msgstr "Barras de colores"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:197
 msgid "If you create a colorbar with `.Figure.colorbar`, you need to make room for it.  ``constrained_layout`` does this automatically.  Note that if you specify ``use_gridspec=True`` it will be ignored because this option is made for improving the layout via ``tight_layout``."
-msgstr ""
+msgstr "Si creas una barra de color con `.Figure.colorbar`, necesitas hacer espacio para ella.  El programa ``constrained_layout`` lo hace automáticamente.  Ten en cuenta que si especifica ``use_gridspec=True`` será ignorado porque esta opción está hecha para mejorar el diseño mediante ``tight_layout``."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:205
 msgid "For the `~.axes.Axes.pcolormesh` keyword arguments (``pc_kwargs``) we use a dictionary. Below we will assign one colorbar to a number of axes each containing a `~.cm.ScalarMappable`; specifying the norm and colormap ensures the colorbar is accurate for all the axes."
-msgstr ""
+msgstr "Para los argumentos de la palabra clave `~.axes.Axes.pcolormesh` (``pc_kwargs``) utilizamos un diccionario. A continuación asignaremos una barra de color a un número de ejes, cada uno de los cuales contiene un `~.cm.ScalarMappable`; especificando la norma y el colormap se asegura que la barra de color sea precisa para todos los ejes."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:234
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:270
@@ -101,282 +101,282 @@ msgstr ""
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:993
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1033
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:245
 msgid "If you specify a list of axes (or other iterable container) to the ``ax`` argument of ``colorbar``, constrained_layout will take space from the specified axes."
-msgstr ""
+msgstr "Si especificas una lista de ejes (u otro contenedor iterable) al argumento ``ax`` de ``colorbar``, constrained_layout tomará el espacio de los ejes especificados."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:281
 msgid "If you specify a list of axes from inside a grid of axes, the colorbar will steal space appropriately, and leave a gap, but all subplots will still be the same size."
-msgstr ""
+msgstr "Si especificas una lista de ejes desde dentro de una cuadrícula de ejes, la barra de colores robará espacio apropiadamente, y dejará un hueco, pero todos los subplots seguirán teniendo el mismo tamaño."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:319
 msgid "Suptitle"
-msgstr ""
+msgstr "Suptitle"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:321
 msgid "``constrained_layout`` can also make room for `~.figure.Figure.suptitle`."
-msgstr ""
+msgstr "``constrained_layout`` también puede hacer espacio para `~.figure.Figure.suptitle`."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:357
 msgid "Legends"
-msgstr ""
+msgstr "Leyendas"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:359
 msgid "Legends can be placed outside of their parent axis. Constrained-layout is designed to handle this for :meth:`.Axes.legend`. However, constrained-layout does *not* handle legends being created via :meth:`.Figure.legend` (yet)."
-msgstr ""
+msgstr "Las leyendas pueden colocarse fuera de su eje padre. Constrained-layout está diseñado para manejar esto para :meth:`.Axes.legend`. Sin embargo, constrained-layout *no* maneja las leyendas que se crean a través de :meth:`.Figure.legend` (todavía)."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:395
 msgid "However, this will steal space from a subplot layout:"
-msgstr ""
+msgstr "Sin embargo, esto le robará espacio a un diseño de subtrama:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:429
 msgid "In order for a legend or other artist to *not* steal space from the subplot layout, we can ``leg.set_in_layout(False)``. Of course this can mean the legend ends up cropped, but can be useful if the plot is subsequently called with ``fig.savefig('outname.png', bbox_inches='tight')``.  Note, however, that the legend's ``get_in_layout`` status will have to be toggled again to make the saved file work, and we must manually trigger a draw if we want constrained_layout to adjust the size of the axes before printing."
-msgstr ""
+msgstr "Para que una leyenda u otro artist *no* robe espacio al diseño de la subtrama, podemos ``leg.set_in_layout(False)``. Por supuesto, esto puede significar que la leyenda acabe recortada, pero puede ser útil si el gráfico se llama posteriormente con ``fig.savefig('outname.png', bbox_inches='tight')``. Sin embargo, hay que tener en cuenta que habrá que volver a activar el estado ``get_in_layout`` de la leyenda para que el archivo guardado funcione, y deberemos activar manualmente un dibujo si queremos que constrained_layout ajuste el tamaño de los ejes antes de imprimir."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:474
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:509
 msgid "The saved file looks like:"
-msgstr ""
+msgstr "El archivo guardado tiene el siguiente aspecto:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:479
 msgid "A better way to get around this awkwardness is to simply use the legend method provided by `.Figure.legend`:"
-msgstr ""
+msgstr "Una mejor manera de evitar esta torpeza es simplemente utilizar el método de leyenda proporcionado por `.Figure.legend`:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:518
 msgid "Padding and Spacing"
-msgstr ""
+msgstr "Relleno y espaciado"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:520
 msgid "Padding between axes is controlled in the horizontal by *w_pad* and *wspace*, and vertical by *h_pad* and *hspace*.  These can be edited via `~.figure.Figure.set_constrained_layout_pads`.  *w/h_pad* are the minimum space around the axes in units of inches:"
-msgstr ""
+msgstr "El relleno entre ejes se controla en la horizontal mediante *w_pad* y *wspace*, y en la vertical mediante *h_pad* y *hspace*.  Estos se pueden editar mediante `~.figure.Figure.set_constrained_layout_pads`.  *w/h_pad* son el espacio mínimo alrededor de los ejes en unidades de pulgadas:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:549
 msgid "Spacing between subplots is further set by *wspace* and *hspace*. These are specified as a fraction of the size of the subplot group as a whole. If these values are smaller than *w_pad* or *h_pad*, then the fixed pads are used instead. Note in the below how the space at the edges doesn't change from the above, but the space between subplots does."
-msgstr ""
+msgstr "El espacio entre las subtramas se establece además mediante *wspace* y *hspace*. Estos se especifican como una fracción del tamaño del grupo de subparcelas en su conjunto. Si estos valores son menores que *w_pad* o *h_pad*, entonces se utilizan los pads fijos en su lugar. Observa en lo que sigue cómo el espacio en los bordes no cambia con respecto a lo anterior, pero el espacio entre las subtramas sí."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:580
 msgid "If there are more than two columns, the *wspace* is shared between them, so here the wspace is divided in 2, with a *wspace* of 0.1 between each column:"
-msgstr ""
+msgstr "Si hay más de dos columnas, el *wspace* se comparte entre ellas, así que aquí el wspace se divide en 2, con un *wspace* de 0,1 entre cada columna:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:609
 msgid "GridSpecs also have optional *hspace* and *wspace* keyword arguments, that will be used instead of the pads set by ``constrained_layout``:"
-msgstr ""
+msgstr "Los GridSpecs también tienen argumentos opcionales de palabra clave *hspace* y *wspace*, que se utilizarán en lugar de los pads establecidos por ``constrained_layout``:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:642
 msgid "Spacing with colorbars"
-msgstr ""
+msgstr "Espaciado con barras de color"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:644
 msgid "Colorbars are placed a distance *pad* from their parent, where *pad* is a fraction of the width of the parent(s).  The spacing to the next subplot is then given by *w/hspace*."
-msgstr ""
+msgstr "Las barras de color se colocan a una distancia *pad* de su padre, donde *pad* es una fracción del ancho del padre(s).  El espacio hasta la siguiente subparcela viene dado entonces por *w/hspace*."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:679
 msgid "rcParams"
-msgstr ""
+msgstr "rcParams"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:681
 msgid "There are five :ref:`rcParams<customizing-with-dynamic-rc-settings>` that can be set, either in a script or in the :file:`matplotlibrc` file. They all have the prefix ``figure.constrained_layout``:"
-msgstr ""
+msgstr "Hay cinco :ref:`rcParams<customizing-with-dynamic-rc-settings>` que se pueden establecer, ya sea en un script o en el archivo :file:`matplotlibrc`. Todas tienen el prefijo ``figure.constrained_layout``:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:685
 msgid "*use*: Whether to use constrained_layout. Default is False"
-msgstr ""
+msgstr "Hay cinco :ref:`rcParams<customizing-with-dynamic-rc-settings>` que se pueden establecer, ya sea en un script o en el archivo :file:`matplotlibrc`. Todas tienen el prefijo ``figure.constrained_layout``:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:686
 msgid "*w_pad*, *h_pad*:    Padding around axes objects. Float representing inches.  Default is 3./72. inches (3 pts)"
-msgstr ""
+msgstr "*w_pad*, *h_pad*: Relleno alrededor de los objetos de los ejes. Flotante que representa pulgadas.  Por defecto es 3./72. pulgadas (3 pts)"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:688
 msgid "*wspace*, *hspace*:  Space between subplot groups. Float representing a fraction of the subplot widths being separated. Default is 0.02."
-msgstr ""
+msgstr "*wspace*, *hspace*:  Espacio entre grupos de subparcelas. Flotante que representa una fracción del ancho de las subtramas que se separan. Por defecto es 0,02."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:717
 msgid "Use with GridSpec"
-msgstr ""
+msgstr "Uso con GridSpec"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:719
 msgid "constrained_layout is meant to be used with :func:`~matplotlib.figure.Figure.subplots` or :func:`~matplotlib.gridspec.GridSpec` and :func:`~matplotlib.figure.Figure.add_subplot`."
-msgstr ""
+msgstr "constrained_layout está pensado para ser utilizado con :func:`~matplotlib.figure.Figure.subplots` o :func:`~matplotlib.gridspec.GridSpec` y :func:`~matplotlib.figure.Figure.add_subplot`."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:724
 msgid "Note that in what follows ``constrained_layout=True``"
-msgstr ""
+msgstr "Ten en cuenta que en lo que sigue ``constrained_layout=True``"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:754
 msgid "More complicated gridspec layouts are possible.  Note here we use the convenience functions `~.Figure.add_gridspec` and `~.SubplotSpec.subgridspec`."
-msgstr ""
+msgstr "Es posible realizar diseños de gridspec más complicados. Aquí utilizamos las funciones de conveniencia `~.Figure.add_gridspec` y `~.SubplotSpec.subgridspec`."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:806
 msgid "Note that in the above the left and right columns don't have the same vertical extent.  If we want the top and bottom of the two grids to line up then they need to be in the same gridspec.  We need to make this figure larger as well in order for the axes not to collapse to zero height:"
-msgstr ""
+msgstr "Observa que en lo anterior las columnas de la izquierda y la derecha no tienen la misma extensión vertical.  Si queremos que la parte superior e inferior de las dos cuadrículas se alineen, entonces tienen que estar en la misma especificación de cuadrícula.  También tenemos que hacer esta figura más grande para que los ejes no se colapsen a una altura cero:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:857
 msgid "This example uses two gridspecs to have the colorbar only pertain to one set of pcolors.  Note how the left column is wider than the two right-hand columns because of this.  Of course, if you wanted the subplots to be the same size you only needed one gridspec."
-msgstr ""
+msgstr "Este ejemplo utiliza dos gridspecs para que la barra de colores sólo pertenezca a un conjunto de pcolores. Observa cómo la columna de la izquierda es más ancha que las dos columnas de la derecha debido a esto.  Por supuesto, si quiere que los subplots tengan el mismo tamaño sólo necesita una gridspec."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:908
 msgid "Manually setting axes positions"
-msgstr ""
+msgstr "Fijar manualmente las posiciones de los ejes"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:910
 msgid "There can be good reasons to manually set an axes position.  A manual call to `~.axes.Axes.set_position` will set the axes so constrained_layout has no effect on it anymore. (Note that ``constrained_layout`` still leaves the space for the axes that is moved)."
-msgstr ""
+msgstr "Puede haber buenas razones para establecer manualmente la posición de un eje.  Una llamada manual a `~.axes.Axes.set_position` fijará los ejes para que constrained_layout no tenga más efecto sobre ellos. (Ten en cuenta que ``constrained_layout`` sigue dejando el espacio para los ejes que se mueve)."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:939
 msgid "Manually turning off ``constrained_layout``"
-msgstr ""
+msgstr "Desactivar manualmente ``constrained_layout``"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:941
 msgid "``constrained_layout`` usually adjusts the axes positions on each draw of the figure.  If you want to get the spacing provided by ``constrained_layout`` but not have it update, then do the initial draw and then call ``fig.set_constrained_layout(False)``. This is potentially useful for animations where the tick labels may change length."
-msgstr ""
+msgstr "``constrained_layout`` normalmente ajusta las posiciones de los ejes en cada dibujo de la figura.  Si quieres obtener el espaciado proporcionado por ``constrained_layout`` pero que no se actualice, entonces haz el dibujo inicial y luego llama a ``fig.set_constrained_layout(False)``. Esto es potencialmente útil para las animaciones donde las etiquetas de los marcadores pueden cambiar de longitud."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:948
 msgid "Note that ``constrained_layout`` is turned off for ``ZOOM`` and ``PAN`` GUI events for the backends that use the toolbar.  This prevents the axes from changing position during zooming and panning."
-msgstr ""
+msgstr "Ten en cuenta que ``constrained_layout`` está desactivado para los eventos GUI ``ZOOM`` y ``PAN`` para los backends que utilizan la barra de herramientas. Esto evita que los ejes cambien de posición durante el zoom y el paneo."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:954
 msgid "Limitations"
-msgstr ""
+msgstr "Limitaciones"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:957
 msgid "Incompatible functions"
-msgstr ""
+msgstr "Funciones incompatibles"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:959
 msgid "``constrained_layout`` will work with `.pyplot.subplot`, but only if the number of rows and columns is the same for each call. The reason is that each call to `.pyplot.subplot` will create a new `.GridSpec` instance if the geometry is not the same, and ``constrained_layout``.  So the following works fine:"
-msgstr ""
+msgstr "``constrained_layout`` funcionará con `.pyplot.subplot`, pero sólo si el número de filas y columnas es el mismo en cada llamada. La razón es que cada llamada a `.pyplot.subplot` creará una nueva instancia de `.GridSpec` si la geometría no es la misma, y ``constrained_layout``. Así que lo siguiente funciona bien:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1004
 msgid "but the following leads to a poor layout:"
-msgstr ""
+msgstr "pero lo siguiente conduce a un diseño pobre:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1044
 msgid "Similarly, `~matplotlib.pyplot.subplot2grid` works with the same limitation that nrows and ncols cannot change for the layout to look good."
-msgstr ""
+msgstr "Del mismo modo, `~matplotlib.pyplot.subplot2grid` funciona con la misma limitación de que nrows y ncols no pueden cambiar para que el diseño se vea bien."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1082
 msgid "Other Caveats"
-msgstr ""
+msgstr "Otras consideraciones"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1084
 msgid "``constrained_layout`` only considers ticklabels, axis labels, titles, and legends.  Thus, other artists may be clipped and also may overlap."
-msgstr ""
+msgstr "``constrained_layout`` sólo tiene en cuenta las etiquetas de marcador, las etiquetas de los ejes, los títulos y las leyendas.  Por lo tanto, otros artists pueden ser recortados y también pueden superponerse."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1087
 msgid "It assumes that the extra space needed for ticklabels, axis labels, and titles is independent of original location of axes. This is often true, but there are rare cases where it is not."
-msgstr ""
+msgstr "Asume que el espacio extra que se necesita para las etiquetas de marcadores, etiquetas de ejes y títulos es independiente de la ubicación original de los ejes. Esto suele ser cierto, pero hay casos raros en los que no lo es."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1091
 msgid "There are small differences in how the backends handle rendering fonts, so the results will not be pixel-identical."
-msgstr ""
+msgstr "Hay pequeñas diferencias en la forma en que los backends manejan las fuentes de renderizado, por lo que los resultados no serán idénticos en cuanto a píxeles."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1094
 msgid "An artist using axes coordinates that extend beyond the axes boundary will result in unusual layouts when added to an axes. This can be avoided by adding the artist directly to the :class:`~matplotlib.figure.Figure` using :meth:`~matplotlib.figure.Figure.add_artist`. See :class:`~matplotlib.patches.ConnectionPatch` for an example."
-msgstr ""
+msgstr "Un artist que utiliza coordenadas de ejes que se extienden más allá del límite de los ejes dará lugar a diseños inusuales cuando se añade a un eje. Esto puede evitarse añadiendo el artista directamente a la :class:`~matplotlib.figure.Figure` utilizando :meth:`~matplotlib.figure.Figure.add_artist`. Ver :class:`~matplotlib.patches.ConnectionPatch` para un ejemplo."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1104
 msgid "Debugging"
-msgstr ""
+msgstr "Depuración"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1106
 msgid "Constrained-layout can fail in somewhat unexpected ways.  Because it uses a constraint solver the solver can find solutions that are mathematically correct, but that aren't at all what the user wants.  The usual failure mode is for all sizes to collapse to their smallest allowable value. If this happens, it is for one of two reasons:"
-msgstr ""
+msgstr "Constrained-layout puede fallar de forma inesperada.  Debido a que utiliza un solucionador de restricciones, el solucionador puede encontrar soluciones que son matemáticamente correctas, pero que no son en absoluto lo que el usuario quiere.  El modo de fallo habitual es que todos los tamaños se colapsen hasta su valor más pequeño permitido. Si esto sucede, es por una de estas dos razones:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1112
 msgid "There was not enough room for the elements you were requesting to draw."
-msgstr ""
+msgstr "No había suficiente espacio para los elementos que estabas solicitando dibujar."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1113
 msgid "There is a bug - in which case open an issue at https://github.com/matplotlib/matplotlib/issues."
-msgstr ""
+msgstr "Hay un error - en cuyo caso abrir un problema en https://github.com/matplotlib/matplotlib/issues."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1116
 msgid "If there is a bug, please report with a self-contained example that does not require outside data or dependencies (other than numpy)."
-msgstr ""
+msgstr "Si hay un error, por favor, informa con un ejemplo autocontenido que no requiera datos o dependencias externas (aparte de numpy)."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1122
 msgid "Notes on the algorithm"
-msgstr ""
+msgstr "Notas sobre el algoritmo"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1124
 msgid "The algorithm for the constraint is relatively straightforward, but has some complexity due to the complex ways we can layout a figure."
-msgstr ""
+msgstr "El algoritmo de la restricción es relativamente sencillo, pero tiene cierta complejidad debido a las complejas formas en que podemos maquetar una figura."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1127
 msgid "Layout in Matplotlib is carried out with gridspecs via the `.GridSpec` class. A gridspec is a logical division of the figure into rows and columns, with the relative width of the Axes in those rows and columns set by *width_ratios* and *height_ratios*."
-msgstr ""
+msgstr "El layout en Matplotlib se realiza con gridspecs a través de la clase `.GridSpec`. Una gridspec es una división lógica de la figura en filas y columnas, con la anchura relativa de los Ejes en esas filas y columnas establecidas por *width_ratios* y *height_ratios*."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1132
 msgid "In constrained_layout, each gridspec gets a *layoutgrid* associated with it.  The *layoutgrid* has a series of ``left`` and ``right`` variables for each column, and ``bottom`` and ``top`` variables for each row, and further it has a margin for each of left, right, bottom and top.  In each row, the bottom/top margins are widened until all the decorators in that row are accommodated.  Similarly for columns and the left/right margins."
-msgstr ""
+msgstr "En constrained_layout, cada gridspec tiene una *layoutgrid* asociada.  La *layoutgrid* tiene una serie de variables ``izquierda`` y ``derecha`` para cada columna, y variables ``inferior`` y ``superior`` para cada fila, y además tiene un margen para cada una de las filas izquierda, derecha, inferior y superior.  En cada fila, los márgenes inferior/superior se amplían hasta que se acomodan todos los decorados de esa fila.  Lo mismo ocurre con las columnas y los márgenes izquierdo/derecho."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1142
 msgid "Simple case: one Axes"
-msgstr ""
+msgstr "Caso simple: un Eje"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1144
 msgid "For a single Axes the layout is straight forward.  There is one parent layoutgrid for the figure consisting of one column and row, and a child layoutgrid for the gridspec that contains the axes, again consisting of one row and column. Space is made for the \"decorations\" on each side of the axes.  In the code, this is accomplished by the entries in ``do_constrained_layout()`` like::"
-msgstr ""
+msgstr "Para un solo Eje el layout es sencillo.  Hay un layoutgrid padre para la figura que consta de una columna y una fila, y un layoutgrid hijo para la gridspec que contiene los ejes, que también consta de una fila y una columna. Se hace espacio para las \"decoraciones\" a cada lado de los ejes.  En el código, esto se logra mediante las entradas en ``do_constrained_layout()`` como::"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1154
 msgid "where ``bbox`` is the tight bounding box of the axes, and ``pos`` its position.  Note how the four margins encompass the axes decorations."
-msgstr ""
+msgstr "donde ``bbox`` es la caja delimitadora de los ejes, y ``pos`` su posición.  Observe cómo los cuatro márgenes abarcan las decoraciones de los ejes."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1183
 msgid "Simple case: two Axes"
-msgstr ""
+msgstr "Caso simple: dos Ejes"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1184
 msgid "When there are multiple axes they have their layouts bound in simple ways.  In this example the left axes has much larger decorations than the right, but they share a bottom margin, which is made large enough to accommodate the larger xlabel.   Same with the shared top margin.  The left and right margins are not shared, and hence are allowed to be different."
-msgstr ""
+msgstr "Cuando hay varios ejes, éstos tienen sus diseños limitados de forma sencilla.  En este ejemplo el eje de la izquierda tiene decoraciones mucho más grandes que el de la derecha, pero comparten un margen inferior, que se hace lo suficientemente grande para acomodar la etiqueta x más grande.   Lo mismo ocurre con el margen superior compartido.  Los márgenes izquierdo y derecho no son compartidos, y por lo tanto se permite que sean diferentes."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1216
 msgid "Two Axes and colorbar"
-msgstr ""
+msgstr "Dos ejes y barra de colores"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1218
 msgid "A colorbar is simply another item that expands the margin of the parent layoutgrid cell:"
-msgstr ""
+msgstr "Una barra de color es simplemente otro elemento que expande el margen de la celda del layoutgrid padre:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1247
 msgid "Colorbar associated with a Gridspec"
-msgstr ""
+msgstr "Barra de colores asociada a una Gridspec"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1249
 msgid "If a colorbar belongs to more than one cell of the grid, then it makes a larger margin for each:"
-msgstr ""
+msgstr "Si una barra de color pertenece a más de una celda de la Cuadrícula, entonces hace un margen mayor para cada una:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1278
 msgid "Uneven sized Axes"
-msgstr ""
+msgstr "Ejes de tamaño desigual"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1280
 msgid "There are two ways to make axes have an uneven size in a Gridspec layout, either by specifying them to cross Gridspecs rows or columns, or by specifying width and height ratios."
-msgstr ""
+msgstr "Hay dos maneras de hacer que los ejes tengan un tamaño desigual en un diseño Gridspec, ya sea especificando que crucen las filas o columnas de Gridspecs, o especificando las relaciones de anchura y altura."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1284
 msgid "The first method is used here.  Note that the middle ``top`` and ``bottom`` margins are not affected by the left-hand column.  This is a conscious decision of the algorithm, and leads to the case where the two right-hand axes have the same height, but it is not 1/2 the height of the left-hand axes.  This is consietent with how ``gridspec`` works without constrained layout."
-msgstr ""
+msgstr "Aquí se utiliza el primer método.  Nótese que los márgenes centrales ``top`` y ``bottom`` no se ven afectados por la columna de la izquierda.  Esta es una decisión consciente del algoritmo, y conduce al caso en que los dos ejes de la derecha tienen la misma altura, pero no es 1/2 la altura de los ejes de la izquierda.  Esto es coherente con la forma en que ``gridspec`` funciona sin diseño restringido."
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1320
 msgid "One case that requires finessing is if margins do not have any artists constraining their width. In the case below, the right margin for column 0 and the left margin for column 3 have no margin artists to set their width, so we take the maximum width of the margin widths that do have artists. This makes all the axes have the same size:"
-msgstr ""
+msgstr "Un caso que requiere un ajuste es si los márgenes no tienen ningún artista que restrinja su anchura. En el caso de abajo, el margen derecho de la columna 0 y el margen izquierdo de la columna 3 no tienen artistas de margen que fijen su ancho, por lo que tomamos el ancho máximo de los anchos de margen que sí tienen artists. Esto hace que todos los ejes tengan el mismo tamaño:"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1354
 msgid "**Total running time of the script:** ( 0 minutes  18.128 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 18,128 segundos)"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1369
 msgid ":download:`Download Python source code: constrainedlayout_guide.py <constrainedlayout_guide.py>`"
-msgstr ""
+msgstr ":download:`Descargar código fuente de Python: constrainedlayout_guide.py <constrainedlayout_guide.py>`"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1375
 msgid ":download:`Download Jupyter notebook: constrainedlayout_guide.ipynb <constrainedlayout_guide.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar Jupyter notebook: constrainedlayout_guide.ipynb <constrainedlayout_guide.ipynb>`"
 
 #: ../../tutorials/intermediate/constrainedlayout_guide.rst:1382
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

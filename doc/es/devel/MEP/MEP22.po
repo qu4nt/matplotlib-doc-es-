@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-13 14:07\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,377 +20,377 @@ msgstr ""
 
 #: ../../devel/MEP/MEP22.rst:3
 msgid "MEP22: Toolbar rewrite"
-msgstr ""
+msgstr "MEP22: Reescritura de la barra de herramientas"
 
 #: ../../devel/MEP/MEP22.rst:9
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP22.rst:10
 msgid "**Progress**"
-msgstr ""
+msgstr "**Progreso**"
 
 #: ../../devel/MEP/MEP22.rst:14
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP22.rst:16
 msgid "Previous work:"
-msgstr ""
+msgstr "Trabajo anterior:"
 
 #: ../../devel/MEP/MEP22.rst:18
 msgid "https://github.com/matplotlib/matplotlib/pull/1849"
-msgstr ""
+msgstr "https://github.com/matplotlib/matplotlib/pull/1849"
 
 #: ../../devel/MEP/MEP22.rst:19
 msgid "https://github.com/matplotlib/matplotlib/pull/2557"
-msgstr ""
+msgstr "https://github.com/matplotlib/matplotlib/pull/2557"
 
 #: ../../devel/MEP/MEP22.rst:20
 msgid "https://github.com/matplotlib/matplotlib/pull/2465"
-msgstr ""
+msgstr "https://github.com/matplotlib/matplotlib/pull/2465"
 
 #: ../../devel/MEP/MEP22.rst:22
 msgid "Pull Requests:"
-msgstr ""
+msgstr "Pull Requests:"
 
 #: ../../devel/MEP/MEP22.rst:24
 msgid "Removing the NavigationToolbar classes https://github.com/matplotlib/matplotlib/pull/2740 **CLOSED**"
-msgstr ""
+msgstr "Eliminación de las clases NavigationToolbar https://github.com/matplotlib/matplotlib/pull/2740 **CLOSED**"
 
 #: ../../devel/MEP/MEP22.rst:26
 msgid "Keeping the NavigationToolbar classes https://github.com/matplotlib/matplotlib/pull/2759 **CLOSED**"
-msgstr ""
+msgstr "Mantener las clases NavigationToolbar https://github.com/matplotlib/matplotlib/pull/2759 **CLOSED**"
 
 #: ../../devel/MEP/MEP22.rst:27
 msgid "Navigation by events: https://github.com/matplotlib/matplotlib/pull/3652"
-msgstr ""
+msgstr "Navegación por eventos: https://github.com/matplotlib/matplotlib/pull/3652"
 
 #: ../../devel/MEP/MEP22.rst:30
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP22.rst:32
 msgid "The main goal of this MEP is to make it easier to modify (add, change, remove) the way the user interacts with the figures."
-msgstr ""
+msgstr "El objetivo principal de este MEP es facilitar la modificación (añadir, cambiar, eliminar) del modo en que el usuario interactúa con las figuras."
 
 #: ../../devel/MEP/MEP22.rst:35
 msgid "The user interaction with the figure is deeply integrated within the Canvas and Toolbar. Making extremely difficult to do any modification."
-msgstr ""
+msgstr "La interacción del usuario con la figura está profundamente integrada dentro del Canvas y la Barra de Herramientas. Haciendo extremadamente difícil cualquier modificación."
 
 #: ../../devel/MEP/MEP22.rst:38
 msgid "This MEP proposes the separation of this interaction into Toolbar, Navigation and Tools to provide independent access and reconfiguration."
-msgstr ""
+msgstr "Este MEP propone la separación de esta interacción en Barra de Herramientas, Navegación y Herramientas para proporcionar acceso y reconfiguración independientes."
 
 #: ../../devel/MEP/MEP22.rst:42
 msgid "This approach will make easier to create and share tools among users. In the far future, we can even foresee a kind of Marketplace for ``Tool``\\s where the most popular can be added into the main distribution."
-msgstr ""
+msgstr "Este enfoque facilitará la creación y el intercambio de herramientas entre los usuarios. En un futuro lejano, podemos incluso prever una especie de mercado para las \"herramientas\" en el que las más populares puedan añadirse a la distribución principal."
 
 #: ../../devel/MEP/MEP22.rst:48
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP22.rst:50
 msgid "The reconfiguration of the Toolbar is complex, most of the time it requires a custom backend."
-msgstr ""
+msgstr "La reconfiguración de la barra de herramientas es compleja, la mayoría de las veces requiere un backend personalizado."
 
 #: ../../devel/MEP/MEP22.rst:53
 msgid "The creation of custom Tools sometimes interferes with the Toolbar, as example see https://github.com/matplotlib/matplotlib/issues/2694 also the shortcuts are hardcoded and again not easily modifiable https://github.com/matplotlib/matplotlib/issues/2699"
-msgstr ""
+msgstr "La creación de herramientas personalizadas a veces interfiere con la barra de herramientas, como ejemplo ver https://github.com/matplotlib/matplotlib/issues/2694 también los accesos directos son hardcoded y otra vez no fácilmente modificable https://github.com/matplotlib/matplotlib/issues/2699"
 
 #: ../../devel/MEP/MEP22.rst:58
 msgid "The proposed solution is to take the actions out of the ``Toolbar`` and the shortcuts out of the ``Canvas``. The actions and shortcuts will be in the form of ``Tool``\\s."
-msgstr ""
+msgstr "La solución propuesta es sacar las acciones de la ``Barra de Herramientas`` y los accesos directos del ``Canvas``. Las acciones y los accesos directos tendrán la forma de ``Herramientas``."
 
 #: ../../devel/MEP/MEP22.rst:62
 msgid "A new class ``Navigation`` will be the bridge between the events from the ``Canvas`` and ``Toolbar`` and redirect them to the appropriate ``Tool``."
-msgstr ""
+msgstr "Una nueva clase ``Navigation`` será el puente entre los eventos del ``Canvas`` y la ``Toolbar`` y los redirigirá a la ``Tool`` apropiada."
 
 #: ../../devel/MEP/MEP22.rst:65
 msgid "At the end the user interaction will be divided into three classes:"
-msgstr ""
+msgstr "Al final, la interacción del usuario se dividirá en tres clases:"
 
 #: ../../devel/MEP/MEP22.rst:67
 msgid "NavigationBase: This class is instantiated for each FigureManager and connect the all user interactions with the Tools"
-msgstr ""
+msgstr "NavigationBase: Esta clase es instanciada para cada FigureManager y conecta todas las interacciones del usuario con las Herramientas"
 
 #: ../../devel/MEP/MEP22.rst:69
 msgid "ToolbarBase: This existing class is relegated only as a GUI access to Tools."
-msgstr ""
+msgstr "ToolbarBase: Esta clase existente queda relegada únicamente como acceso a la IGU de Herramientas."
 
 #: ../../devel/MEP/MEP22.rst:71
 msgid "ToolBase: Is the basic definition of Tools."
-msgstr ""
+msgstr "Base de herramientas: Es la definición básica de Herramientas."
 
 #: ../../devel/MEP/MEP22.rst:75
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP22.rst:78
 msgid "ToolBase(object)"
-msgstr ""
+msgstr "ToolBase(object)"
 
 #: ../../devel/MEP/MEP22.rst:80
 msgid "Tools can have a graphical representation as the ``SubplotTool`` or not even be present in the Toolbar as ``Quit``."
-msgstr ""
+msgstr "Las herramientas pueden tener una representación gráfica como el ``SubplotTool`` o incluso no estar presentes en la Barra de Herramientas como ``Quit``."
 
 #: ../../devel/MEP/MEP22.rst:83
 msgid "The `.ToolBase` has the following class attributes for configuration at definition time"
-msgstr ""
+msgstr "La `.ToolBase` tiene los siguientes atributos de clase para su configuración en el momento de la definición"
 
 #: ../../devel/MEP/MEP22.rst:85
 msgid "keymap = None: Key(s) to be used to trigger the tool"
-msgstr ""
+msgstr "keymap = None: Key(s) que se utilizará para activar la herramienta"
 
 #: ../../devel/MEP/MEP22.rst:86
 msgid "description = '': Small description of the tool"
-msgstr ""
+msgstr "description = '': Pequeña descripción de la herramienta"
 
 #: ../../devel/MEP/MEP22.rst:87
 msgid "image = None: Image that is used in the toolbar"
-msgstr ""
+msgstr "image = None: Imagen que se utiliza en la barra de herramientas"
 
 #: ../../devel/MEP/MEP22.rst:89
 msgid "The following instance attributes are set at instantiation:"
-msgstr ""
+msgstr "Los siguientes atributos de instancia se establecen en la instanciación:"
 
 #: ../../devel/MEP/MEP22.rst:91
 msgid "name"
-msgstr ""
+msgstr "nombre"
 
 #: ../../devel/MEP/MEP22.rst:92
 msgid "navigation"
-msgstr ""
+msgstr "navegación"
 
 #: ../../devel/MEP/MEP22.rst:95 ../../devel/MEP/MEP22.rst:138
 msgid "Methods"
-msgstr ""
+msgstr "Métodos"
 
 #: ../../devel/MEP/MEP22.rst:97
 msgid "``trigger(self, event)``: This is the main method of the Tool, it is called when the Tool is triggered by:"
-msgstr ""
+msgstr "``trigger(self, event)``: Este es el método principal de la Herramienta, es llamado cuando la Herramienta es activada por:"
 
 #: ../../devel/MEP/MEP22.rst:100
 msgid "Toolbar button click"
-msgstr ""
+msgstr "Clic en el botón de la barra de herramientas"
 
 #: ../../devel/MEP/MEP22.rst:101
 msgid "keypress associated with the Tool Keymap"
-msgstr ""
+msgstr "pulsación de la tecla asociada al mapa de teclas de la herramienta"
 
 #: ../../devel/MEP/MEP22.rst:102
 msgid "Call to navigation.trigger_tool(name)"
-msgstr ""
+msgstr "Invocar navigation.trigger_tool(name)"
 
 #: ../../devel/MEP/MEP22.rst:104
 msgid "``set_figure(self, figure)``: Set the figure and navigation attributes"
-msgstr ""
+msgstr "``set_figure(self, figure)``: Establece los atributos de figura y navegación"
 
 #: ../../devel/MEP/MEP22.rst:105
 msgid "``destroy(self, *args)``: Destroy the ``Tool`` graphical interface (if exists)"
-msgstr ""
+msgstr "``destroy(self, *args)``: Destruye la interfaz gráfica ``Tool`` (si existe)"
 
 #: ../../devel/MEP/MEP22.rst:109 ../../devel/MEP/MEP22.rst:145
 msgid "Available Tools"
-msgstr ""
+msgstr "Herramientas disponibles"
 
 #: ../../devel/MEP/MEP22.rst:111
 msgid "ToolQuit"
-msgstr ""
+msgstr "ToolQuit"
 
 #: ../../devel/MEP/MEP22.rst:112
 msgid "ToolEnableAllNavigation"
-msgstr ""
+msgstr "ToolEnableAllNavigation"
 
 #: ../../devel/MEP/MEP22.rst:113
 msgid "ToolEnableNavigation"
-msgstr ""
+msgstr "ToolEnableNavigation"
 
 #: ../../devel/MEP/MEP22.rst:114
 msgid "ToolToggleGrid"
-msgstr ""
+msgstr "ToolToggleGrid"
 
 #: ../../devel/MEP/MEP22.rst:115
 msgid "ToolToggleFullScreen"
-msgstr ""
+msgstr "ToolToggleFullScreen"
 
 #: ../../devel/MEP/MEP22.rst:116
 msgid "ToolToggleYScale"
-msgstr ""
+msgstr "ToolToggleYScale"
 
 #: ../../devel/MEP/MEP22.rst:117
 msgid "ToolToggleXScale"
-msgstr ""
+msgstr "ToolToggleXScale"
 
 #: ../../devel/MEP/MEP22.rst:118
 msgid "ToolHome"
-msgstr ""
+msgstr "ToolHome"
 
 #: ../../devel/MEP/MEP22.rst:119
 msgid "ToolBack"
-msgstr ""
+msgstr "ToolBack"
 
 #: ../../devel/MEP/MEP22.rst:120
 msgid "ToolForward"
-msgstr ""
+msgstr "ToolForward"
 
 #: ../../devel/MEP/MEP22.rst:121
 msgid "SaveFigureBase"
-msgstr ""
+msgstr "SaveFigureBase"
 
 #: ../../devel/MEP/MEP22.rst:122
 msgid "ConfigureSubplotsBase"
-msgstr ""
+msgstr "ConfigureSubplotsBase"
 
 #: ../../devel/MEP/MEP22.rst:125
 msgid "ToolToggleBase(ToolBase)"
-msgstr ""
+msgstr "ToolToggleBase(ToolBase)"
 
 #: ../../devel/MEP/MEP22.rst:127
 msgid "The `.ToolToggleBase` has the following class attributes for configuration at definition time"
-msgstr ""
+msgstr "El `.ToolToggleBase` tiene los siguientes atributos de clase para su configuración en el momento de la definición"
 
 #: ../../devel/MEP/MEP22.rst:130
 msgid "radio_group = None: Attribute to group 'radio' like tools (mutually exclusive)"
-msgstr ""
+msgstr "radio_group = None: Atributo para agrupar 'radio' como herramientas (mutuamente excluyentes)"
 
 #: ../../devel/MEP/MEP22.rst:132
 msgid "cursor = None: Cursor to use when the tool is active"
-msgstr ""
+msgstr "cursor = None: Cursor a utilizar cuando la herramienta está activa"
 
 #: ../../devel/MEP/MEP22.rst:134
 msgid "The **Toggleable** Tools, can capture keypress, mouse moves, and mouse button press"
-msgstr ""
+msgstr "Las Herramientas *conmutables*, pueden capturar la presión de las teclas, los movimientos del ratón y la presión de los botones del ratón"
 
 #: ../../devel/MEP/MEP22.rst:140
 msgid "``enable(self, event)``: Called by `.ToolToggleBase.trigger` method"
-msgstr ""
+msgstr "``enable(self, event)``: invocado por el método `.ToolToggleBase.trigger`"
 
 #: ../../devel/MEP/MEP22.rst:141
 msgid "``disable(self, event)``: Called when the tool is untoggled"
-msgstr ""
+msgstr "``disable(self, event)``: Se invoca cuando se desactiva la herramienta"
 
 #: ../../devel/MEP/MEP22.rst:142
 msgid "``toggled``: **Property** True or False"
-msgstr ""
+msgstr "``toggled``: **Property** True or False"
 
 #: ../../devel/MEP/MEP22.rst:147
 msgid "ToolZoom"
-msgstr ""
+msgstr "ToolZoom"
 
 #: ../../devel/MEP/MEP22.rst:148
 msgid "ToolPan"
-msgstr ""
+msgstr "ToolPan"
 
 #: ../../devel/MEP/MEP22.rst:151
 msgid "NavigationBase"
-msgstr ""
+msgstr "NavigationBase"
 
 #: ../../devel/MEP/MEP22.rst:153
 msgid "Defines the following attributes:"
-msgstr ""
+msgstr "Define los siguientes atributos:"
 
 #: ../../devel/MEP/MEP22.rst:155
 msgid "canvas:"
-msgstr ""
+msgstr "canvas:"
 
 #: ../../devel/MEP/MEP22.rst:156
 msgid "keypresslock: Lock to know if the ``canvas`` ``key_press_event`` is available and process it"
-msgstr ""
+msgstr "keypresslock: Bloqueo para saber si el ``canvas`` ``key_press_event`` está disponible y procesarlo"
 
 #: ../../devel/MEP/MEP22.rst:158
 msgid "messagelock: Lock to know if the message is available to write"
-msgstr ""
+msgstr "messagelock: Bloqueo para saber si el mensaje está disponible para escribir"
 
 #: ../../devel/MEP/MEP22.rst:161
 msgid "Methods (intended for the end user)"
-msgstr ""
+msgstr "Métodos (destinados al usuario final)"
 
 #: ../../devel/MEP/MEP22.rst:163
 msgid "``nav_connect(self, s, func)``: Connect to navigation for events"
-msgstr ""
+msgstr "``nav_connect(self, s, func)``: Conectar con la navegación para los eventos"
 
 #: ../../devel/MEP/MEP22.rst:164
 msgid "``nav_disconnect(self, cid)``: Disconnect from navigation event"
-msgstr ""
+msgstr "``nav_disconnect(self, cid)``: Desconectar del evento de navegación"
 
 #: ../../devel/MEP/MEP22.rst:165
 msgid "``message_event(self, message, sender=None)``: Emit a tool_message_event event"
-msgstr ""
+msgstr "``message_event(self, message, sender=None)``: Emitir un evento tool_message_event"
 
 #: ../../devel/MEP/MEP22.rst:167
 msgid "``active_toggle(self)``: **Property** The currently toggled tools or None"
-msgstr ""
+msgstr "``active_toggle(self)``: **Propiedad** Las herramientas actualmente activadas o Ninguna"
 
 #: ../../devel/MEP/MEP22.rst:169
 msgid "``get_tool_keymap(self, name)``: Return a list of keys that are associated with the tool"
-msgstr ""
+msgstr "``get_tool_keymap(self, name)``: Devuelve una lista de claves que están asociadas a la herramienta"
 
 #: ../../devel/MEP/MEP22.rst:171
 msgid "``set_tool_keymap(self, name, ``*keys``)``: Set the keys for the given tool"
-msgstr ""
+msgstr "``set_tool_keymap(self, name, ``*keys``)``: Establece las claves de la herramienta dada"
 
 #: ../../devel/MEP/MEP22.rst:172
 msgid "``remove_tool(self, name)``: Removes tool from the navigation control."
-msgstr ""
+msgstr "``remove_tool(self, name)``: Elimina la herramienta del control de navegación."
 
 #: ../../devel/MEP/MEP22.rst:173
 msgid "``add_tools(self, tools)``: Add multiple tools to ``Navigation``"
-msgstr ""
+msgstr "``add_tools(self, tools)``: Añade múltiples herramientas a la ``Navegación``"
 
 #: ../../devel/MEP/MEP22.rst:174
 msgid "``add_tool(self, name, tool, group=None, position=None)``: Add a tool to the ``Navigation``"
-msgstr ""
+msgstr "``add_tool(self, name, tool, group=None, position=None)``: Añade una herramienta a la ``Navegación``"
 
 #: ../../devel/MEP/MEP22.rst:176
 msgid "``tool_trigger_event(self, name, sender=None, canvasevent=None, data=None)``: Trigger a tool and fire the event"
-msgstr ""
+msgstr "``tool_trigger_event(self, name, sender=None, canvasevent=None, data=None)``: Activar una herramienta y disparar el evento"
 
 #: ../../devel/MEP/MEP22.rst:178
 msgid "``tools``:  **Property** A dict with available tools with corresponding keymaps, descriptions and objects"
-msgstr ""
+msgstr "``tools``:  **Property** Un dict con las herramientas disponibles con sus correspondientes keymaps, descripciones y objetos"
 
 #: ../../devel/MEP/MEP22.rst:180
 msgid "``get_tool(self, name)``: Return the tool object"
-msgstr ""
+msgstr "``get_tool(self name)``: Devuelve el objeto de herramienta"
 
 #: ../../devel/MEP/MEP22.rst:183
 msgid "ToolbarBase"
-msgstr ""
+msgstr "Barra de herramientas"
 
 #: ../../devel/MEP/MEP22.rst:186
 msgid "Methods (for backend implementation)"
-msgstr ""
+msgstr "Métodos (para la implementación del backend)"
 
 #: ../../devel/MEP/MEP22.rst:188
 msgid "``add_toolitem(self, name, group, position, image, description, toggle)``: Add a toolitem to the toolbar. This method is a callback from ``tool_added_event`` (emitted by navigation)"
-msgstr ""
+msgstr "``add_toolitem(self, name, group, position, image, description, toggle)``: Añade un elemento de herramienta a la barra de herramientas. Este método es un callback de ``tool_added_event`` (emitido por la navegación)"
 
 #: ../../devel/MEP/MEP22.rst:191
 msgid "``set_message(self, s)``: Display a message on toolbar or in status bar"
-msgstr ""
+msgstr "``set_message(self, s)``: Mostrar un mensaje en la barra de herramientas o en la barra de estado"
 
 #: ../../devel/MEP/MEP22.rst:192
 msgid "``toggle_toolitem(self, name)``: Toggle the toolitem without firing event."
-msgstr ""
+msgstr "``toggle_toolitem(self, name)``: Alterna el elemento de la herramienta sin disparar el evento."
 
 #: ../../devel/MEP/MEP22.rst:193
 msgid "``remove_toolitem(self, name)``: Remove a toolitem from the ``Toolbar``"
-msgstr ""
+msgstr "``remove_toolitem(self, name)``: Elimina un elemento de herramienta de la ``Barra de herramientas``"
 
 #: ../../devel/MEP/MEP22.rst:197
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP22.rst:199
 msgid "For backward compatibility added 'navigation' to the list of values supported by :rc:`toolbar`, that is used for ``Navigation`` classes instantiation instead of the NavigationToolbar classes"
-msgstr ""
+msgstr "Por compatibilidad con versiones anteriores se ha añadido 'navigation' a la lista de valores soportados por :rc:`toolbar`, que se utiliza para la instanciación de las clases ``Navigation`` en lugar de las clases NavigationToolbar"
 
 #: ../../devel/MEP/MEP22.rst:203
 msgid "With this parameter, it makes it transparent to anyone using the existing backends."
-msgstr ""
+msgstr "Con este parámetro, lo hace transparente para cualquiera que utilice los backends existentes."
 
 #: ../../devel/MEP/MEP22.rst:206
 msgid "[@pelson comment: This also gives us an opportunity to avoid needing to implement all of this in the same PR - some backends can potentially exist without the new functionality for a short while (but it must be done at some point).]"
-msgstr ""
+msgstr "[Comentario de @pelson: Esto también nos da la oportunidad de evitar la necesidad de implementar todo esto en el mismo PR - algunos backends pueden potencialmente existir sin la nueva funcionalidad por un corto tiempo (pero debe hacerse en algún momento).]"
 

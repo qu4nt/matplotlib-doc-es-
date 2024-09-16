@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-13 22:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,145 +20,145 @@ msgstr ""
 
 #: ../../devel/MEP/MEP23.rst:3
 msgid "MEP23: Multiple Figures per GUI window"
-msgstr ""
+msgstr "MEP23: Múltiples Figuras por ventana de IGU"
 
 #: ../../devel/MEP/MEP23.rst:11
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP23.rst:13
 msgid "**Discussion**"
-msgstr ""
+msgstr "**Discusión**"
 
 #: ../../devel/MEP/MEP23.rst:16
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP23.rst:18
 msgid "**Previous work** - https://github.com/matplotlib/matplotlib/pull/2465 **To-delete**"
-msgstr ""
+msgstr "**Trabajo anterior** - https://github.com/matplotlib/matplotlib/pull/2465 **To-delete**"
 
 #: ../../devel/MEP/MEP23.rst:23
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP23.rst:25
 msgid "Add the possibility to have multiple figures grouped under the same `~.backend_template.FigureManager`"
-msgstr ""
+msgstr "Añadir la posibilidad de tener múltiples figuras agrupadas bajo el mismo `~.backend_template.FigureManager`"
 
 #: ../../devel/MEP/MEP23.rst:29
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP23.rst:31
 msgid "Under the current structure, every canvas has its own window."
-msgstr ""
+msgstr "En la estructura actual, cada lienzo tiene su propia ventana."
 
 #: ../../devel/MEP/MEP23.rst:33
 msgid "This is and may continue to be the desired method of operation for most use cases."
-msgstr ""
+msgstr "Este es y puede seguir siendo el método de funcionamiento deseado para la mayoría de los casos de uso."
 
 #: ../../devel/MEP/MEP23.rst:36
 msgid "Sometimes when there are too many figures open at the same time, it is desirable to be able to group these under the same window [see](https://github.com/matplotlib/matplotlib/issues/2194)."
-msgstr ""
+msgstr "A veces, cuando hay demasiadas figuras abiertas al mismo tiempo, es deseable poder agruparlas bajo la misma ventana [see] (https://github.com/matplotlib/matplotlib/issues/2194)."
 
 #: ../../devel/MEP/MEP23.rst:40
 msgid "The proposed solution modifies `.FigureManagerBase` to contain and manage more than one ``Canvas``. The settings parameter :rc:`backend.multifigure` control when the **MultiFigure** behaviour is desired."
-msgstr ""
+msgstr "La solución propuesta modifica `.FigureManagerBase` para contener y gestionar más de un ``Canvas``. El parámetro de configuración :rc:`backend.multifigure` controla cuando se desea el comportamiento **MultiFigure**."
 
 #: ../../devel/MEP/MEP23.rst:44
 msgid "**Note**"
-msgstr ""
+msgstr "**Nota**"
 
 #: ../../devel/MEP/MEP23.rst:46
 msgid "It is important to note, that the proposed solution, assumes that the [MEP22](https://github.com/matplotlib/matplotlib/wiki/Mep22) is already in place. This is simply because the actual implementation of the ``Toolbar`` makes it pretty hard to switch between canvases."
-msgstr ""
+msgstr "Es importante señalar, que la solución propuesta, asume que el [MEP22](https://github.com/matplotlib/matplotlib/wiki/Mep22) ya está en su lugar. Esto es simplemente porque la implementación actual de la ``Barra de Herramientas`` hace que sea bastante difícil cambiar entre lienzos."
 
 #: ../../devel/MEP/MEP23.rst:52
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP23.rst:54
 msgid "The first implementation will be done in GTK3 using a Notebook as canvas container."
-msgstr ""
+msgstr "La primera implementación se hará en GTK3 utilizando un Notebook como contenedor del lienzo."
 
 #: ../../devel/MEP/MEP23.rst:58
 msgid "``FigureManagerBase``"
-msgstr ""
+msgstr "``FigureManagerBase``"
 
 #: ../../devel/MEP/MEP23.rst:60
 msgid "will add the following new methods"
-msgstr ""
+msgstr "añadirá los siguientes nuevos métodos"
 
 #: ../../devel/MEP/MEP23.rst:62
 msgid "``add_canvas``: To add a canvas to an existing `~.backend_template.FigureManager` object"
-msgstr ""
+msgstr "``add_canvas``: Para añadir un lienzo a un objeto existente `~.backend_template.FigureManager`"
 
 #: ../../devel/MEP/MEP23.rst:64
 msgid "``remove_canvas``: To remove a canvas from a `~.backend_template.FigureManager` object, if it is the last one, it will be destroyed"
-msgstr ""
+msgstr "``remove_canvas``: Para eliminar un lienzo de un objeto `~.backend_template.FigureManager`, si es el último, será destruido"
 
 #: ../../devel/MEP/MEP23.rst:67
 msgid "``move_canvas``: To move a canvas from one `~.backend_template.FigureManager` to another."
-msgstr ""
+msgstr "``move_canvas``: Para mover un lienzo de un `~.backend_template.FigureManager` a otro."
 
 #: ../../devel/MEP/MEP23.rst:69
 msgid "``set_canvas_title``: To change the title associated with a specific canvas container"
-msgstr ""
+msgstr "``set_canvas_title``: Para cambiar el título asociado a un contenedor de lienzo específico"
 
 #: ../../devel/MEP/MEP23.rst:71
 msgid "``get_canvas_title``: To get the title associated with a specific canvas container"
-msgstr ""
+msgstr "``get_canvas_title``: Para obtener el título asociado a un contenedor de lienzo específico"
 
 #: ../../devel/MEP/MEP23.rst:73
 msgid "``get_active_canvas``: To get the canvas that is in the foreground and is subject to the gui events. There is no ``set_active_canvas`` because the active canvas, is defined when ``show`` is called on a ``Canvas`` object."
-msgstr ""
+msgstr "``get_active_canvas``: Para obtener el lienzo que está en primer plano y está sujeto a los eventos de igu. No hay ``set_active_canvas`` porque el lienzo activo, se define cuando se llama a ``show`` en un objeto ``Canvas``."
 
 #: ../../devel/MEP/MEP23.rst:79
 msgid "``new_figure_manager``"
-msgstr ""
+msgstr "``new_figure_manager``"
 
 #: ../../devel/MEP/MEP23.rst:81
 msgid "To control which `~.backend_template.FigureManager` will contain the new figures, an extra optional parameter *figuremanager* will be added, this parameter value will be passed to ``new_figure_manager_given_figure``."
-msgstr ""
+msgstr "Para controlar que `~.backend_template.FigureManager` contendrá las nuevas figuras, se añadirá un parámetro opcional extra *figuremanager*, el valor de este parámetro se pasará a ``new_figure_manager_given_figure``."
 
 #: ../../devel/MEP/MEP23.rst:86
 msgid "``new_figure_manager_given_figure``"
-msgstr ""
+msgstr "``new_figure_manager_given_figure``"
 
 #: ../../devel/MEP/MEP23.rst:88
 msgid "If *figuremanager* parameter is given, this `~.backend_template.FigureManager` object will be used instead of creating a new one."
-msgstr ""
+msgstr "Si se da el parámetro *figuremanager*, se utilizará este objeto `~.backend_template.FigureManager` en lugar de crear uno nuevo."
 
 #: ../../devel/MEP/MEP23.rst:91
 msgid "If ``rcParams['backend.multifigure']`` is True: The last `~.backend_template.FigureManager` object will be used instead of creating a new one."
-msgstr ""
+msgstr "Si ``rcParams['backend.multifigure']`` es True: Se utilizará el último objeto `~.backend_template.FigureManager` en lugar de crear uno nuevo."
 
 #: ../../devel/MEP/MEP23.rst:96
 msgid "``NavigationBase``"
-msgstr ""
+msgstr "``NavigationBase``"
 
 #: ../../devel/MEP/MEP23.rst:98
 msgid "Modifies the ``NavigationBase`` to keep a list of canvases, directing the actions to the active one."
-msgstr ""
+msgstr "Modifica la ``NavigationBase`` para mantener una lista de lienzos, dirigiendo las acciones al activo."
 
 #: ../../devel/MEP/MEP23.rst:102
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP23.rst:104
 msgid "For the **MultiFigure** properties to be visible, the user has to activate them directly setting ``rcParams['backend.multifigure'] = True``"
-msgstr ""
+msgstr "Para que las propiedades **MultiFigure** sean visibles, el usuario tiene que activarlas directamente estableciendo ``rcParams['backend.multifigure'] = True``"
 
 #: ../../devel/MEP/MEP23.rst:108
 msgid "It should be backwards compatible for backends that adhere to the current `.FigureManagerBase` structure even if they have not implemented the **MultiFigure** magic yet."
-msgstr ""
+msgstr "Debería ser compatible con los backends que se adhieren a la estructura actual `.FigureManagerBase` incluso si no han implementado la magia **MultiFigure** todavía."
 
 #: ../../devel/MEP/MEP23.rst:114
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP23.rst:116
 msgid "Instead of modifying the `.FigureManagerBase` it could be possible to add a parallel class, that handles the cases where ``rcParams['backend.multifigure'] = True``.  This will warranty that there won't be any problems with custom made backends, but also makes bigger the code, and more things to maintain."
-msgstr ""
+msgstr "En lugar de modificar el `.FigureManagerBase` podría ser posible añadir una clase paralela, que maneje los casos en los que ``rcParams['backend.multifigure'] = True``.  Esto garantizará que no habrá problemas con los backends hechos a medida, pero también hace más grande el código, y más cosas que mantener."
 

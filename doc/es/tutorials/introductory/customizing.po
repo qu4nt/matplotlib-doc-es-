@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-18 21:59\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,208 +20,208 @@ msgstr ""
 
 #: ../../tutorials/introductory/customizing.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_introductory_customizing.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_introductory_customizing.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/introductory/customizing.rst:25
 msgid "Customizing Matplotlib with style sheets and rcParams"
-msgstr ""
+msgstr "Personalizar Matplotlib con hojas de estilo y rcParams"
 
 #: ../../tutorials/introductory/customizing.rst:27
 msgid "Tips for customizing the properties and default styles of Matplotlib."
-msgstr ""
+msgstr "Consejos para personalizar las propiedades y los estilos por defecto de Matplotlib."
 
 #: ../../tutorials/introductory/customizing.rst:29
 msgid "There are three ways to customize Matplotlib:"
-msgstr ""
+msgstr "Hay tres formas de personalizar Matplotlib:"
 
 #: ../../tutorials/introductory/customizing.rst:31
 msgid ":ref:`Setting rcParams at runtime<customizing-with-dynamic-rc-settings>`."
-msgstr ""
+msgstr ":ref:`Configuración de rcParams en tiempo de ejecución<customizing-with-dynamic-rc-settings>`."
 
 #: ../../tutorials/introductory/customizing.rst:32
 msgid ":ref:`Using style sheets<customizing-with-style-sheets>`."
-msgstr ""
+msgstr ":ref:`Uso de hojas de estilo<customizing-with-style-sheets>`."
 
 #: ../../tutorials/introductory/customizing.rst:33
 msgid ":ref:`Changing your matplotlibrc file<customizing-with-matplotlibrc-files>`."
-msgstr ""
+msgstr ":ref:`Cambio del archivo matplotlibrc<customizing-with-matplotlibrc-files>`."
 
 #: ../../tutorials/introductory/customizing.rst:35
 msgid "Setting rcParams at runtime takes precedence over style sheets, style sheets take precedence over :file:`matplotlibrc` files."
-msgstr ""
+msgstr "La configuración de rcParams en tiempo de ejecución tiene prioridad sobre las hojas de estilo, las hojas de estilo tienen prioridad sobre los archivos :file:`matplotlibrc`."
 
 #: ../../tutorials/introductory/customizing.rst:41
 msgid "Runtime rc settings"
-msgstr ""
+msgstr "Configuración de rc en tiempo real"
 
 #: ../../tutorials/introductory/customizing.rst:43
 msgid "You can dynamically change the default rc (runtime configuration) settings in a python script or interactively from the python shell. All rc settings are stored in a dictionary-like variable called :data:`matplotlib.rcParams`, which is global to the matplotlib package. See `matplotlib.rcParams` for a full list of configurable rcParams. rcParams can be modified directly, for example:"
-msgstr ""
+msgstr "Puedes cambiar dinámicamente la configuración rc (runtime configuration) por defecto en un script de python o de forma interactiva desde el terminal de python. Todos los ajustes rc se almacenan en una variable tipo diccionario llamada :data:`matplotlib.rcParams`, que es global para el paquete matplotlib. Ver `matplotlib.rcParams` para una lista completa de rcParams configurables. rcParams puede ser modificado directamente, por ejemplo:"
 
 #: ../../tutorials/introductory/customizing.rst:75
 #: ../../tutorials/introductory/customizing.rst:108
 #: ../../tutorials/introductory/customizing.rst:142
 #: ../../tutorials/introductory/customizing.rst:274
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/introductory/customizing.rst:86
 msgid "Note, that in order to change the usual `~.Axes.plot` color you have to change the *prop_cycle* property of *axes*:"
-msgstr ""
+msgstr "Ten en cuenta que para cambiar el color habitual de `~.Axes.plot` tienes que cambiar la propiedad *prop_cycle* de *axes*:"
 
 #: ../../tutorials/introductory/customizing.rst:119
 msgid "Matplotlib also provides a couple of convenience functions for modifying rc settings. `matplotlib.rc` can be used to modify multiple settings in a single group at once, using keyword arguments:"
-msgstr ""
+msgstr "Matplotlib también proporciona un par de funciones de conveniencia para modificar la configuración de rc. `matplotlib.rc` se puede utilizar para modificar múltiples ajustes en un solo grupo a la vez, utilizando argumentos de palabras clave:"
 
 #: ../../tutorials/introductory/customizing.rst:154
 msgid "Temporary rc settings"
-msgstr ""
+msgstr "Ajustes temporales de rc"
 
 #: ../../tutorials/introductory/customizing.rst:156
 msgid "The :data:`matplotlib.rcParams` object can also be changed temporarily using the `matplotlib.rc_context` context manager:"
-msgstr ""
+msgstr "El objeto :data:`matplotlib.rcParams` también puede cambiarse temporalmente utilizando el gestor de contexto `matplotlib.rc_context`:"
 
 #: ../../tutorials/introductory/customizing.rst:181
 msgid "`matplotlib.rc_context` can also be used as a decorator to modify the defaults within a function:"
-msgstr ""
+msgstr "`matplotlib.rc_context` también se puede utilizar como un decorador para modificar los valores predeterminados dentro de una función:"
 
 #: ../../tutorials/introductory/customizing.rst:210
 msgid "`matplotlib.rcdefaults` will restore the standard Matplotlib default settings."
-msgstr ""
+msgstr "`matplotlib.rcdefaults` restaurará la configuración estándar de Matplotlib por defecto."
 
 #: ../../tutorials/introductory/customizing.rst:213
 msgid "There is some degree of validation when setting the values of rcParams, see :mod:`matplotlib.rcsetup` for details."
-msgstr ""
+msgstr "Hay un cierto grado de validación al establecer los valores de rcParams, ver :mod:`matplotlib.rcsetup` para más detalles."
 
 #: ../../tutorials/introductory/customizing.rst:221
 msgid "Using style sheets"
-msgstr ""
+msgstr "Uso de hojas de estilo"
 
 #: ../../tutorials/introductory/customizing.rst:223
 msgid "Another way to change the visual appearance of plots is to set the rcParams in a so-called style sheet and import that style sheet with `matplotlib.style.use`. In this way you can switch easily between different styles by simply changing the imported style sheet. A style sheets looks the same as a :ref:`matplotlibrc<matplotlibrc-sample>` file, but in a style sheet you can only set rcParams that are related to the actual style of a plot. Other rcParams, like *backend*, will be ignored. :file:`matplotlibrc` files support all rcParams. The rationale behind this is to make style sheets portable between different machines without having to worry about dependencies which might or might not be installed on another machine. For a full list of rcParams see `matplotlib.rcParams`. For a list of rcParams that are ignored in style sheets see `matplotlib.style.use`."
-msgstr ""
+msgstr "Otra forma de cambiar la apariencia visual de los gráficos es establecer los rcParams en una hoja de estilo e importar esa hoja de estilo con `matplotlib.style.use`. De esta manera se puede cambiar fácilmente entre diferentes estilos simplemente cambiando la hoja de estilo importada. Una hoja de estilo tiene el mismo aspecto que un archivo :ref:`matplotlibrc<matplotlibrc-sample>`, pero en una hoja de estilo sólo se pueden establecer rcParams que estén relacionados con el estilo real de un gráfico. Otros rcParams, como *backend*, serán ignorados. Los archivos :file:`matplotlibrc` soportan todos los rcParams. La razón de ser de esto es hacer que las hojas de estilo sean portables entre diferentes máquinas sin tener que preocuparse por las dependencias que puedan o no estar instaladas en otra máquina. Para una lista completa de rcParams ver `matplotlib.rcParams`. Para una lista de rcParams que se ignoran en las hojas de estilo ver `matplotlib.style.use`."
 
 #: ../../tutorials/introductory/customizing.rst:237
 msgid "There are a number of pre-defined styles :doc:`provided by Matplotlib </gallery/style_sheets/style_sheets_reference>`. For example, there's a pre-defined style called \"ggplot\", which emulates the aesthetics of ggplot_ (a popular plotting package for R_). To use this style, add:"
-msgstr ""
+msgstr "Hay una serie de estilos predefinidos :doc:`proporcionados por Matplotlib </gallery/style_sheets/style_sheets_reference>`. Por ejemplo, hay un estilo predefinido llamado \"ggplot\", que emula la estética de ggplot_ (un popular paquete de trazado para R_). Para utilizar este estilo, añada:"
 
 #: ../../tutorials/introductory/customizing.rst:259
 msgid "To list all available styles, use:"
-msgstr ""
+msgstr "Para listar todos los estilos disponibles, utiliza:"
 
 #: ../../tutorials/introductory/customizing.rst:286
 msgid "Defining your own style"
-msgstr ""
+msgstr "Definir tu propio estilo"
 
 #: ../../tutorials/introductory/customizing.rst:288
 msgid "You can create custom styles and use them by calling `.style.use` with the path or URL to the style sheet."
-msgstr ""
+msgstr "Puedes crear estilos personalizados y utilizarlos llamando a `.style.use` con la ruta o URL de la hoja de estilo."
 
 #: ../../tutorials/introductory/customizing.rst:291
 msgid "For example, you might want to create ``./images/presentation.mplstyle`` with the following::"
-msgstr ""
+msgstr "Por ejemplo, puedes querer crear ``./imágenes/presentación.mplstyle`` con lo siguiente::"
 
 #: ../../tutorials/introductory/customizing.rst:301
 msgid "Then, when you want to adapt a plot designed for a paper to one that looks good in a presentation, you can just add::"
-msgstr ""
+msgstr "Luego, cuando quiera adaptar un gráfico diseñado para un papel a uno que quede bien en una presentación, sólo tienes que añadir::"
 
 #: ../../tutorials/introductory/customizing.rst:307
 msgid "Alternatively, you can make your style known to Matplotlib by placing your ``<style-name>.mplstyle`` file into ``mpl_configdir/stylelib``.  You can then load your custom style sheet with a call to ``style.use(<style-name>)``.  By default ``mpl_configdir`` should be ``~/.config/matplotlib``, but you can check where yours is with `matplotlib.get_configdir()`; you may need to create this directory. You also can change the directory where Matplotlib looks for the stylelib/ folder by setting the :envvar:`MPLCONFIGDIR` environment variable, see :ref:`locating-matplotlib-config-dir`."
-msgstr ""
+msgstr "Alternativamente, puedes dar a conocer tu estilo a Matplotlib colocando tu archivo ``<style-name>.mplstyle`` en ``mpl_configdir/stylelib``.  Entonces puede cargar su hoja de estilo personalizada con una llamada a ``style.use(<style-name>)``.  Por defecto ``mpl_configdir`` debe ser ``~/.config/matplotlib``, pero puedes comprobar dónde está el tuyo con `matplotlib.get_configdir()`; puede que necesites crear este directorio. También puedes cambiar el directorio donde Matplotlib busca la carpeta stylelib/ estableciendo la variable de entorno :envvar:`MPLCONFIGDIR`, ver :ref:`locating-matplotlib-config-dir`."
 
 #: ../../tutorials/introductory/customizing.rst:317
 msgid "Note that a custom style sheet in ``mpl_configdir/stylelib`` will override a style sheet defined by Matplotlib if the styles have the same name."
-msgstr ""
+msgstr "Ten en cuenta que una hoja de estilo personalizada en ``mpl_configdir/stylelib`` anulará una hoja de estilo definida por Matplotlib si los estilos tienen el mismo nombre."
 
 #: ../../tutorials/introductory/customizing.rst:320
 msgid "Once your ``<style-name>.mplstyle`` file is in the appropriate ``mpl_configdir`` you can specify your style with::"
-msgstr ""
+msgstr "Una vez que tu archivo ``<style-name>.mplstyle`` esté en el directorio ``mpl_configdir`` apropiado, puedes especificar tu estilo con::"
 
 #: ../../tutorials/introductory/customizing.rst:328
 msgid "Composing styles"
-msgstr ""
+msgstr "Estilos de composición"
 
 #: ../../tutorials/introductory/customizing.rst:330
 msgid "Style sheets are designed to be composed together. So you can have a style sheet that customizes colors and a separate style sheet that alters element sizes for presentations. These styles can easily be combined by passing a list of styles::"
-msgstr ""
+msgstr "Las hojas de estilo están diseñadas para ser compuestas conjuntamente. Así, puedes tener una hoja de estilo que personalice los colores y otra hoja de estilo que altere el tamaño de los elementos para las presentaciones. Estos estilos pueden combinarse fácilmente pasando una lista de estilos::"
 
 #: ../../tutorials/introductory/customizing.rst:338
 msgid "Note that styles further to the right will overwrite values that are already defined by styles on the left."
-msgstr ""
+msgstr "Ten en cuenta que los estilos situados más a la derecha sobrescribirán los valores ya definidos por los estilos de la izquierda."
 
 #: ../../tutorials/introductory/customizing.rst:343
 msgid "Temporary styling"
-msgstr ""
+msgstr "Estilo temporal"
 
 #: ../../tutorials/introductory/customizing.rst:345
 msgid "If you only want to use a style for a specific block of code but don't want to change the global styling, the style package provides a context manager for limiting your changes to a specific scope. To isolate your styling changes, you can write something like the following:"
-msgstr ""
+msgstr "Si sólo quieres utilizar un estilo para un bloque de código específico pero no quieres cambiar el estilo global, el paquete de estilo proporciona un gestor de contexto para limitar tus cambios a un ámbito específico. Para aislar sus cambios de estilo, puedes escribir algo como lo siguiente:"
 
 #: ../../tutorials/introductory/customizing.rst:376
 msgid "The :file:`matplotlibrc` file"
-msgstr ""
+msgstr "El archivo :file:`matplotlibrc`"
 
 #: ../../tutorials/introductory/customizing.rst:378
 msgid "Matplotlib uses :file:`matplotlibrc` configuration files to customize all kinds of properties, which we call 'rc settings' or 'rc parameters'. You can control the defaults of almost every property in Matplotlib: figure size and DPI, line width, color and style, axes, axis and grid properties, text and font properties and so on. The :file:`matplotlibrc` is read at startup to configure Matplotlib. Matplotlib looks for :file:`matplotlibrc` in four locations, in the following order:"
-msgstr ""
+msgstr "Matplotlib utiliza archivos de configuración :file:`matplotlibrc` para personalizar todo tipo de propiedades, que llamamos 'rc settings' o 'rc parameters'. Puedes controlar los valores por defecto de casi todas las propiedades de Matplotlib: tamaño de la figura y DPI, ancho de línea, color y estilo, ejes, propiedades de los ejes y de la malla, propiedades del texto y de la fuente, etc. El archivo :file:`matplotlibrc` se lee al inicio para configurar Matplotlib. Matplotlib busca :file:`matplotlibrc` en cuatro lugares, en el siguiente orden:"
 
 #: ../../tutorials/introductory/customizing.rst:386
 msgid ":file:`matplotlibrc` in the current working directory, usually used for specific customizations that you do not want to apply elsewhere."
-msgstr ""
+msgstr ":file:`matplotlibrc` en el directorio de trabajo actual, normalmente se utiliza para personalizaciones específicas que no se quieren aplicar en otro lugar."
 
 #: ../../tutorials/introductory/customizing.rst:389
 msgid ":file:`$MATPLOTLIBRC` if it is a file, else :file:`$MATPLOTLIBRC/matplotlibrc`."
-msgstr ""
+msgstr ":file:`$MATPLOTLIBRC` si es un archivo, sino :file:`$MATPLOTLIBRC/matplotlibrc`."
 
 #: ../../tutorials/introductory/customizing.rst:392
 msgid "It next looks in a user-specific place, depending on your platform:"
-msgstr ""
+msgstr "A continuación, busca en un lugar específico para el usuario, dependiendo de su plataforma:"
 
 #: ../../tutorials/introductory/customizing.rst:394
 msgid "On Linux and FreeBSD, it looks in :file:`.config/matplotlib/matplotlibrc` (or :file:`$XDG_CONFIG_HOME/matplotlib/matplotlibrc`) if you've customized your environment."
-msgstr ""
+msgstr "En Linux y FreeBSD, busca en :file:`.config/matplotlib/matplotlibrc` (o :file:`$XDG_CONFIG_HOME/matplotlib/matplotlibrc`) si ha personalizado su entorno."
 
 #: ../../tutorials/introductory/customizing.rst:399
 msgid "On other platforms, it looks in :file:`.matplotlib/matplotlibrc`."
-msgstr ""
+msgstr "En otras plataformas, busca en :file:`.matplotlib/matplotlibrc`."
 
 #: ../../tutorials/introductory/customizing.rst:401
 msgid "See :ref:`locating-matplotlib-config-dir`."
-msgstr ""
+msgstr "Vea :ref:`locating-matplotlib-config-dir`."
 
 #: ../../tutorials/introductory/customizing.rst:403
 msgid ":file:`{INSTALL}/matplotlib/mpl-data/matplotlibrc`, where :file:`{INSTALL}` is something like :file:`/usr/lib/python3.7/site-packages` on Linux, and maybe :file:`C:\\\\Python37\\\\Lib\\\\site-packages` on Windows. Every time you install matplotlib, this file will be overwritten, so if you want your customizations to be saved, please move this file to your user-specific matplotlib directory."
-msgstr ""
+msgstr ":file:`{INSTALL}/matplotlib/mpl-data/matplotlibrc`, donde :file:`{INSTALL}` es algo así como :file:`/usr/lib/python3.7/site-packages` en Linux, y quizás :file:`C:`\\Python37\\Lib\\site-packages` en Windows. Cada vez que instales matplotlib, este archivo se sobrescribirá, así que si quieres que tus personalizaciones se guarden, por favor mueve este archivo a tu directorio matplotlib específico para el usuario."
 
 #: ../../tutorials/introductory/customizing.rst:411
 msgid "Once a :file:`matplotlibrc` file has been found, it will *not* search any of the other paths. When a :ref:`style sheet<customizing-with-style-sheets>` is given with ``style.use('<path>/<style-name>.mplstyle')``, settings specified in the style sheet take precedence over settings in the :file:`matplotlibrc` file."
-msgstr ""
+msgstr "Una vez que se ha encontrado un archivo :file:`matplotlibrc`, *no* se buscará en ninguna de las otras rutas. Cuando se da una hoja de estilo :ref:`style sheet<customizing-with-style-sheets>` con ``style.use('<path>/<style-name>.mplstyle')``, los ajustes especificados en la hoja de estilo tienen prioridad sobre los ajustes del archivo :file:`matplotlibrc`."
 
 #: ../../tutorials/introductory/customizing.rst:418
 msgid "To display where the currently active :file:`matplotlibrc` file was loaded from, one can do the following::"
-msgstr ""
+msgstr "Para mostrar de dónde se cargó el archivo :file:`matplotlibrc` actualmente activo, se puede hacer lo siguiente::"
 
 #: ../../tutorials/introductory/customizing.rst:425
 msgid "See below for a sample :ref:`matplotlibrc file<matplotlibrc-sample>` and see `matplotlib.rcParams` for a full list of configurable rcParams."
-msgstr ""
+msgstr "Ver abajo un ejemplo :ref:`archivomatplotlibrc<matplotlibrc-sample>` y ver `matplotlib.rcParams` para una lista completa de rcParams configurables."
 
 #: ../../tutorials/introductory/customizing.rst:431
 msgid "The default :file:`matplotlibrc` file"
-msgstr ""
+msgstr "El archivo :file:`matplotlibrc` por defecto"
 
 #: ../../tutorials/introductory/customizing.rst:442
 msgid "**Total running time of the script:** ( 0 minutes  1.921 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** (0 minutos 1.921 segundos)"
 
 #: ../../tutorials/introductory/customizing.rst:457
 msgid ":download:`Download Python source code: customizing.py <customizing.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: customizing.py <customizing.py>`"
 
 #: ../../tutorials/introductory/customizing.rst:463
 msgid ":download:`Download Jupyter notebook: customizing.ipynb <customizing.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: customizing.ipynb <customizing.ipynb>`"
 
 #: ../../tutorials/introductory/customizing.rst:470
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

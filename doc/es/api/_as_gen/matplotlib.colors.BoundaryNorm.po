@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:15\n"
+"PO-Revision-Date: 2022-11-02 13:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,157 +20,157 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.colors.BoundaryNorm.rst:2
 msgid "matplotlib.colors.BoundaryNorm"
-msgstr ""
+msgstr "matplotlib.colors.BoundaryNorm"
 
 #: matplotlib.colors.BoundaryNorm:1 of
 msgid "Bases: :py:class:`matplotlib.colors.Normalize`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.colors.Normalize`"
 
 #: matplotlib.colors.BoundaryNorm:2 of
 msgid "Generate a colormap index based on discrete intervals."
-msgstr ""
+msgstr "Genera un índice de mapa de colores basado en intervalos discretos."
 
 #: matplotlib.colors.BoundaryNorm:4 of
 msgid "Unlike `Normalize` or `LogNorm`, `BoundaryNorm` maps values to integers instead of to the interval 0-1."
-msgstr ""
+msgstr "A diferencia de `Normalize` o `LogNorm`, `BoundaryNorm` asigna valores a enteros en lugar del intervalo 0-1."
 
 #: matplotlib.colors.BoundaryNorm:7 of
 msgid "Mapping to the 0-1 interval could have been done via piece-wise linear interpolation, but using integers seems simpler, and reduces the number of conversions back and forth between integer and floating point."
-msgstr ""
+msgstr "El mapeo al intervalo 0-1 podría haberse hecho a través de una interpolación lineal en sentido pedido, pero el uso de enteros parece más simple, y reduce el número de conversiones entre enteros y coma flotante."
 
 #: matplotlib.colors.BoundaryNorm matplotlib.colors.BoundaryNorm.__call__ of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.colors.BoundaryNorm:35 of
 msgid "**boundaries**"
-msgstr ""
+msgstr "**límites**"
 
 #: of
 msgid "array-like"
-msgstr ""
+msgstr "array-like"
 
 #: matplotlib.colors.BoundaryNorm:35 of
 msgid "Monotonically increasing sequence of at least 2 boundaries."
-msgstr ""
+msgstr "Monótonamente creciente secuencia de al menos 2 límites."
 
 #: matplotlib.colors.BoundaryNorm:38 of
 msgid "**ncolors**"
-msgstr ""
+msgstr "**colores**"
 
 #: of
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: matplotlib.colors.BoundaryNorm:38 of
 msgid "Number of colors in the colormap to be used."
-msgstr ""
+msgstr "Cantidad de colores en el mapa de colores a utilizar."
 
 #: matplotlib.colors.BoundaryNorm:48 matplotlib.colors.BoundaryNorm.__call__:21
 #: of
 msgid "**clip**"
-msgstr ""
+msgstr "**clip**"
 
 #: of
 msgid "bool, optional"
-msgstr ""
+msgstr "bool, optional"
 
 #: matplotlib.colors.BoundaryNorm:41 of
 msgid "If clip is ``True``, out of range values are mapped to 0 if they are below ``boundaries[0]`` or mapped to ``ncolors - 1`` if they are above ``boundaries[-1]``."
-msgstr ""
+msgstr "Si el clip es ``Verdadero``, los valores fuera del rango se asignan a 0 si están por debajo de ``límites[0]`` o mapeados a ``ncolors - 1`` si están por encima de ``límites[-1]``."
 
 #: matplotlib.colors.BoundaryNorm:45 of
 msgid "If clip is ``False``, out of range values are mapped to -1 if they are below ``boundaries[0]`` or mapped to *ncolors* if they are above ``boundaries[-1]``. These are then converted to valid indices by `Colormap.__call__`."
-msgstr ""
+msgstr "Si el clip es ``False``, los valores fuera del rango se asignan a -1 si están por debajo de ``límites[0]`` o se asignan a *ncolors* si están por encima de ``límites[-1]``. Estos son luego convertidos a índices válidos por `Colormap.__call__`."
 
 #: matplotlib.colors.BoundaryNorm:57 of
 msgid "**extend**"
-msgstr ""
+msgstr "**extensión**"
 
 #: of
 msgid "{'neither', 'both', 'min', 'max'}, default: 'neither'"
-msgstr ""
+msgstr "{'ninguno de los dos', 'ambos', 'min', 'max'}, por defecto: 'ninguno'"
 
 #: matplotlib.colors.BoundaryNorm:51 of
 msgid "Extend the number of bins to include one or both of the regions beyond the boundaries.  For example, if ``extend`` is 'min', then the color to which the region between the first pair of boundaries is mapped will be distinct from the first color in the colormap, and by default a `~matplotlib.colorbar.Colorbar` will be drawn with the triangle extension on the left or lower end."
-msgstr ""
+msgstr "Extender el número de cubos para incluir una o ambas regiones más allá de los límites. Por ejemplo, si ``extend`` es 'min', entonces el color al que se asigna la región entre el primer par de límites será distinto del primer color en el mapa de color, y por defecto un `~matplotlib. olorbar.Colorbar` se dibujará con la extensión del triángulo en el extremo izquierdo o inferior."
 
 #: matplotlib.colors.BoundaryNorm of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.colors.BoundaryNorm:69 of
 msgid "int16 scalar or array"
-msgstr ""
+msgstr "escalar int16 o matriz"
 
 #: matplotlib.colors.BoundaryNorm:72 matplotlib.colors.BoundaryNorm.__call__:24
 #: of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.colors.BoundaryNorm:73 of
 msgid "*boundaries* defines the edges of bins, and data falling within a bin is mapped to the color with the same index."
-msgstr ""
+msgstr "*límites* define los bordes de las papeleras, y los datos que caen dentro de una papelera se mapean al color con el mismo índice."
 
 #: matplotlib.colors.BoundaryNorm:76 of
 msgid "If the number of bins, including any extensions, is less than *ncolors*, the color index is chosen by linear interpolation, mapping the ``[0, nbins - 1]`` range onto the ``[0, ncolors - 1]`` range."
-msgstr ""
+msgstr "Si el número de papeleras, incluyendo cualquier extensión, es menor que *ncolors*, el índice de color es elegido por interpolación lineal, mapeando el rango ``[0, Textins - 1]`` en el rango ``[0, ncolors - 1]``."
 
 #: matplotlib.colors.BoundaryNorm.__call__:2 of
 msgid "Normalize *value* data in the ``[vmin, vmax]`` interval into the ``[0.0, 1.0]`` interval and return it."
-msgstr ""
+msgstr "Normaliza los datos de *valor* en el intervalo ``[vmin, vmax]`` en el intervalo ``[0.0, 1.0]`` y devuelve."
 
 #: matplotlib.colors.BoundaryNorm.__call__:9 of
 msgid "**value**"
-msgstr ""
+msgstr "**valor**"
 
 #: matplotlib.colors.BoundaryNorm.__call__:9 of
 msgid "Data to normalize."
-msgstr ""
+msgstr "Datos a normalizar."
 
 #: of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.colors.BoundaryNorm.__call__:12 of
 msgid "If ``None``, defaults to ``self.clip`` (which defaults to ``False``)."
-msgstr ""
+msgstr "Si ``ninguno``, el valor predeterminado es ``self.clip`` (que por defecto es ``False``)."
 
 #: matplotlib.colors.BoundaryNorm.__call__:25 of
 msgid "If not already initialized, ``self.vmin`` and ``self.vmax`` are initialized using ``self.autoscale_None(value)``."
-msgstr ""
+msgstr "Si no se ha inicializado, ``self.vmin`` y ``self.vmax`` son inicializados usando ``self.autoscale_ichard (value)``."
 
 #: matplotlib.colors.BoundaryNorm.inverse of
 msgid "Raises"
-msgstr ""
+msgstr "Plantea"
 
 #: matplotlib.colors.BoundaryNorm.inverse:22 of
 msgid "ValueError"
-msgstr ""
+msgstr "ValueError"
 
 #: matplotlib.colors.BoundaryNorm.inverse:13 of
 msgid "BoundaryNorm is not invertible, so calling this method will always raise an error"
-msgstr ""
+msgstr "LimundaryNorm no es inverso, por lo que llamar a este método siempre generará un error"
 
 #: ../../../../../../../../api/_as_gen/matplotlib.colors.BoundaryNorm.examples:2
 msgid "Examples using ``matplotlib.colors.BoundaryNorm``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.colors.BoundaryNorm``"
 
 #: ../../api/_as_gen/matplotlib.colors.BoundaryNorm.examples:10
 msgid "Creating annotated heatmaps"
-msgstr ""
+msgstr "Creación de mapas térmicos anotados"
 
 #: ../../api/_as_gen/matplotlib.colors.BoundaryNorm.examples:10
 #: ../../api/_as_gen/matplotlib.colors.BoundaryNorm.examples:18
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_image_annotated_heatmap.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_image_annotated_heatmap.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.BoundaryNorm.examples:29
 msgid "Colormap Normalizations"
-msgstr ""
+msgstr "Normalizaciones del mapa de colores"
 
 #: ../../api/_as_gen/matplotlib.colors.BoundaryNorm.examples:29
 #: ../../api/_as_gen/matplotlib.colors.BoundaryNorm.examples:37
 msgid ":ref:`sphx_glr_gallery_userdemo_colormap_normalizations.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_userdemo_colormap_normalizations.py`"
 

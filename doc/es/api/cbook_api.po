@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:22\n"
+"PO-Revision-Date: 2022-11-02 14:09\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,28 +20,28 @@ msgstr ""
 
 #: ../../api/cbook_api.rst:3
 msgid "``matplotlib.cbook``"
-msgstr ""
+msgstr "``matplotlib.cbook``"
 
 #: matplotlib.cbook:1 of
 msgid "A collection of utility functions and classes.  Originally, many (but not all) were from the Python Cookbook -- hence the name cbook."
-msgstr ""
+msgstr "Una colección de funciones y clases de utilidad. Originalmente, muchas (pero no todas) eran de Python Cookbook -- de ahí el nombre del libro."
 
 #: matplotlib.cbook:4 of
 msgid "This module is safe to import from anywhere within Matplotlib; it imports Matplotlib only at runtime."
-msgstr ""
+msgstr "Este módulo es seguro para importar desde cualquier lugar dentro de Matplotlib; importa Matplotlib sólo en tiempo de ejecución."
 
 #: matplotlib.cbook.CallbackRegistry:1 matplotlib.cbook.Grouper:1
 #: matplotlib.cbook.Stack:1 of
 msgid "Bases: :py:class:`object`"
-msgstr ""
+msgstr "Bases: :py:class:`object`"
 
 #: matplotlib.cbook.CallbackRegistry:2 of
 msgid "Handle registering, processing, blocking, and disconnecting for a set of signals and callbacks:"
-msgstr ""
+msgstr "Maneja el registro, procesar, bloquear y desconectar para un conjunto de señales y callbacks:"
 
 #: matplotlib.cbook.CallbackRegistry:30 of
 msgid "In practice, one should always disconnect all callbacks when they are no longer needed to avoid dangling references (and thus memory leaks). However, real code in Matplotlib rarely does so, and due to its design, it is rather difficult to place this kind of code.  To get around this, and prevent this class of memory leaks, we instead store weak references to bound methods only, so when the destination object needs to die, the CallbackRegistry won't keep it alive."
-msgstr ""
+msgstr "En la práctica, siempre se deben desconectar todos los callbacks cuando ya no son necesarios para evitar referencias peligrosas (y por lo tanto fugas de memoria). Sin embargo, el código real en Matplotlib rara vez lo hace, y debido a su diseño, es bastante difícil colocar este tipo de código. Para evitar esto, y evitar esta clase de fugas de memoria, almacenamos referencias débiles sólo a métodos enlazados, así que cuando el objeto de destino necesita morir, el CallbackRegistry no lo mantendrá vivo."
 
 #: matplotlib.cbook.CallbackRegistry matplotlib.cbook.CallbackRegistry.blocked
 #: matplotlib.cbook.boxplot_stats matplotlib.cbook.index_of
@@ -50,882 +50,882 @@ msgstr ""
 #: matplotlib.cbook.pts_to_prestep matplotlib.cbook.simple_linear_interpolation
 #: matplotlib.cbook.to_filehandle matplotlib.cbook.violin_stats of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.cbook.CallbackRegistry:61 of
 msgid "**exception_handler**"
-msgstr ""
+msgstr "**excepcion_handler**"
 
 #: of
 msgid "callable, optional"
-msgstr ""
+msgstr "llamable, opcional"
 
 #: matplotlib.cbook.CallbackRegistry:41 of
 msgid "If not None, *exception_handler* must be a function that takes an `Exception` as single parameter.  It gets called with any `Exception` raised by the callbacks during `CallbackRegistry.process`, and may either re-raise the exception or handle it in another manner."
-msgstr ""
+msgstr "Si no es Ninguno, *exception_handler* debe ser una función que tome una `Exception` como un solo parámetro. Se llama con cualquier 'Excepción' levantada por los callbacks durante 'CallbackRegistry.process', y puede volver a levantar la excepción o manejarla de otra manera."
 
 #: matplotlib.cbook.CallbackRegistry:46 of
 msgid "The default handler prints the exception (with `traceback.print_exc`) if an interactive event loop is running; it re-raises the exception if no interactive event loop is running."
-msgstr ""
+msgstr "El manejador predeterminado imprime la excepción (con `traceback. rint_exc`) si se está ejecutando un bucle de eventos interactivo; vuelve a levantar la excepción si no se está ejecutando un bucle de eventos interactivo."
 
 #: matplotlib.cbook.CallbackRegistry.blocked:2 of
 msgid "Block callback signals from being processed."
-msgstr ""
+msgstr "Bloquea que las señales de callback sean procesadas."
 
 #: matplotlib.cbook.CallbackRegistry.blocked:4 of
 msgid "A context manager to temporarily block/disable callback signals from being processed by the registered listeners."
-msgstr ""
+msgstr "Un gestor de contexto para bloquear/desactivar temporalmente las señales de callback de ser procesadas por los oyentes registrados."
 
 #: matplotlib.cbook.CallbackRegistry.blocked:23 of
 msgid "**signal**"
-msgstr ""
+msgstr "**señal**"
 
 #: of
 msgid "str, optional"
-msgstr ""
+msgstr "str, opcional"
 
 #: matplotlib.cbook.CallbackRegistry.blocked:10 of
 msgid "The callback signal to block. The default is to block all signals."
-msgstr ""
+msgstr "La señal de callback a bloquear. El valor por defecto es bloquear todas las señales."
 
 #: matplotlib.cbook.CallbackRegistry.connect:2 of
 msgid "Register *func* to be called when signal *signal* is generated."
-msgstr ""
+msgstr "Registrar *función* para ser llamado cuando se genera la señal *señal*."
 
 #: matplotlib.cbook.CallbackRegistry.disconnect:2 of
 msgid "Disconnect the callback registered with callback id *cid*."
-msgstr ""
+msgstr "Desconecte el callback registrado con el identificador de callback *cid*."
 
 #: matplotlib.cbook.CallbackRegistry.disconnect:4 of
 msgid "No error is raised if such a callback does not exist."
-msgstr ""
+msgstr "No se produce ningún error si este callback no existe."
 
 #: matplotlib.cbook.CallbackRegistry.process:2 of
 msgid "Process signal *s*."
-msgstr ""
+msgstr "Procesar señal *s*."
 
 #: matplotlib.cbook.CallbackRegistry.process:4 of
 msgid "All of the functions registered to receive callbacks on *s* will be called with ``*args`` and ``**kwargs``."
-msgstr ""
+msgstr "Todas las funciones registradas para recibir llamadas en *s* serán llamadas con ``*args`` y ``**kwargs``."
 
 #: matplotlib.cbook.Grouper:2 of
 msgid "A disjoint-set data structure."
-msgstr ""
+msgstr "Una estructura de datos dis-set."
 
 #: matplotlib.cbook.Grouper:4 of
 msgid "Objects can be joined using :meth:`join`, tested for connectedness using :meth:`joined`, and all disjoint sets can be retrieved by using the object as an iterator."
-msgstr ""
+msgstr "Los objetos pueden ser unidos usando :meth:`join`, probados para la conexión usando :meth:`joined`, y todos los conjuntos de desarticulaciones pueden ser recuperados usando el objeto como iterador."
 
 #: matplotlib.cbook.Grouper:8 of
 msgid "The objects being joined must be hashable and weak-referenceable."
-msgstr ""
+msgstr "Los objetos que se unen deben ser difíciles y de referencia débil."
 
 #: matplotlib.cbook.Grouper:22 matplotlib.cbook.pts_to_midstep:34
 #: matplotlib.cbook.pts_to_poststep:34 matplotlib.cbook.pts_to_prestep:34 of
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
 #: matplotlib.cbook.Grouper.clean:2 of
 msgid "Clean dead weak references from the dictionary."
-msgstr ""
+msgstr "Limpiar las referencias muertas débiles del diccionario."
 
 #: matplotlib.cbook.Grouper.get_siblings:2 of
 msgid "Return all of the items joined with *a*, including itself."
-msgstr ""
+msgstr "Devuelve todos los objetos unidos con *a*, incluyendo a sí mismo."
 
 #: matplotlib.cbook.Grouper.join:2 of
 msgid "Join given arguments into the same set.  Accepts one or more arguments."
-msgstr ""
+msgstr "Unir argumentos dados en el mismo conjunto. Acepta uno o más argumentos."
 
 #: matplotlib.cbook.Grouper.joined:2 of
 msgid "Return whether *a* and *b* are members of the same set."
-msgstr ""
+msgstr "Devuelve si *a* y *b* son miembros del mismo conjunto."
 
 #: matplotlib.cbook.Stack:2 of
 msgid "Stack of elements with a movable cursor."
-msgstr ""
+msgstr "Pila de elementos con un cursor móvil."
 
 #: matplotlib.cbook.Stack:4 of
 msgid "Mimics home/back/forward in a web browser."
-msgstr ""
+msgstr "Mimica home/back/forward en un navegador web."
 
 #: matplotlib.cbook.Stack.back:2 of
 msgid "Move the position back and return the current element."
-msgstr ""
+msgstr "Mueve la posición hacia atrás y devuelve el elemento actual."
 
 #: matplotlib.cbook.Stack.bubble:2 of
 msgid "Raise all references of *o* to the top of the stack, and return it."
-msgstr ""
+msgstr "Aumenta todas las referencias de *o* a la parte superior de la pila y devuelve la pila."
 
 #: matplotlib.cbook.Stack.bubble matplotlib.cbook.Stack.remove
 #: matplotlib.cbook.normalize_kwargs of
 msgid "Raises"
-msgstr ""
+msgstr "Plantea"
 
 #: matplotlib.cbook.Stack.bubble:21 matplotlib.cbook.Stack.remove:21 of
 msgid "ValueError"
-msgstr ""
+msgstr "ValueError"
 
 #: matplotlib.cbook.Stack.bubble:13 matplotlib.cbook.Stack.remove:13 of
 msgid "If *o* is not in the stack."
-msgstr ""
+msgstr "Si *o* no está en la pila."
 
 #: matplotlib.cbook.Stack.clear:2 of
 msgid "Empty the stack."
-msgstr ""
+msgstr "Vaciar la pila."
 
 #: matplotlib.cbook.Stack.empty:2 of
 msgid "Return whether the stack is empty."
-msgstr ""
+msgstr "Devuelve si la pila está vacía."
 
 #: matplotlib.cbook.Stack.forward:2 of
 msgid "Move the position forward and return the current element."
-msgstr ""
+msgstr "Mueve la posición hacia adelante y devuelve el elemento actual."
 
 #: matplotlib.cbook.Stack.home:2 of
 msgid "Push the first element onto the top of the stack."
-msgstr ""
+msgstr "Empuja el primer elemento en la parte superior de la pila."
 
 #: matplotlib.cbook.Stack.home:4 of
 msgid "The first element is returned."
-msgstr ""
+msgstr "El primer elemento es devuelto."
 
 #: matplotlib.cbook.Stack.push:2 of
 msgid "Push *o* to the stack at current position.  Discard all later elements."
-msgstr ""
+msgstr "Push *o* a la pila en la posición actual. Descartar todos los elementos posteriores."
 
 #: matplotlib.cbook.Stack.push:4 of
 msgid "*o* is returned."
-msgstr ""
+msgstr "*o* es devuelto."
 
 #: matplotlib.cbook.Stack.remove:2 of
 msgid "Remove *o* from the stack."
-msgstr ""
+msgstr "Eliminar *o* de la pila."
 
 #: matplotlib.cbook.boxplot_stats:2 of
 msgid "Return a list of dictionaries of statistics used to draw a series of box and whisker plots using `~.Axes.bxp`."
-msgstr ""
+msgstr "Devuelve una lista de diccionarios de estadísticas utilizadas para dibujar una serie de parcelas de caja y whisker usando `~.Axes.bxp`."
 
 #: matplotlib.cbook.boxplot_stats:10 matplotlib.cbook.violin_stats:17 of
 msgid "**X**"
-msgstr ""
+msgstr "**X**"
 
 #: of
 msgid "array-like"
-msgstr ""
+msgstr "array-like"
 
 #: matplotlib.cbook.boxplot_stats:9 of
 msgid "Data that will be represented in the boxplots. Should have 2 or fewer dimensions."
-msgstr ""
+msgstr "Datos que serán representados en las casillas. Debe tener 2 o menos dimensiones."
 
 #: matplotlib.cbook.boxplot_stats:29 of
 msgid "**whis**"
-msgstr ""
+msgstr "**susurro**"
 
 #: of
 msgid "float or (float, float), default: 1.5"
-msgstr ""
+msgstr "flotante o (flotante), por defecto: 1.5"
 
 #: matplotlib.cbook.boxplot_stats:13 of
 msgid "The position of the whiskers."
-msgstr ""
+msgstr "La posición de los whiskers."
 
 #: matplotlib.cbook.boxplot_stats:15 of
 msgid "If a float, the lower whisker is at the lowest datum above ``Q1 - whis*(Q3-Q1)``, and the upper whisker at the highest datum below ``Q3 + whis*(Q3-Q1)``, where Q1 and Q3 are the first and third quartiles.  The default value of ``whis = 1.5`` corresponds to Tukey's original definition of boxplots."
-msgstr ""
+msgstr "Si un flotante, el batidor más bajo es el datum más bajo sobre ``Q1 - whis*(Q3-Q1)``, y la parte superior del whisker en el datum más alto por debajo de ``Q3 + whis*(Q3-Q1)``, donde los Q1 y los Q3 son los primeros y los tercero cuartiles. El valor predeterminado de ``whis = 1.5`` corresponde a la definición original de Tukey de las casillas."
 
 #: matplotlib.cbook.boxplot_stats:21 of
 msgid "If a pair of floats, they indicate the percentiles at which to draw the whiskers (e.g., (5, 95)).  In particular, setting this to (0, 100) results in whiskers covering the whole range of the data."
-msgstr ""
+msgstr "Si un par de carrozas, indican los percentiles en los que dibujar las batidoras (por ejemplo, (5, 95)). En particular, la fijación de esto a (0, 100) da lugar a que los whiskers cubran toda la gama de datos."
 
 #: matplotlib.cbook.boxplot_stats:25 of
 msgid "In the edge case where ``Q1 == Q3``, *whis* is automatically set to (0, 100) (cover the whole range of the data) if *autorange* is True."
-msgstr ""
+msgstr "En el caso donde ``Q1 == Q3``, *whis* se establece automáticamente en (0, 100) (cubre todo el rango de los datos) si *autorange* es verdadero."
 
 #: matplotlib.cbook.boxplot_stats:28 of
 msgid "Beyond the whiskers, data are considered outliers and are plotted as individual points."
-msgstr ""
+msgstr "Más allá de los whiskers, los datos se consideran atípicos y se trazan como puntos individuales."
 
 #: matplotlib.cbook.boxplot_stats:33 of
 msgid "**bootstrap**"
-msgstr ""
+msgstr "**bootstrap**"
 
 #: of
 msgid "int, optional"
-msgstr ""
+msgstr "int, opcional"
 
 #: matplotlib.cbook.boxplot_stats:32 of
 msgid "Number of times the confidence intervals around the median should be bootstrapped (percentile method)."
-msgstr ""
+msgstr "Número de veces que los intervalos de confianza alrededor de la mediana deben ser arrancados (método percentil)."
 
 #: matplotlib.cbook.boxplot_stats:37 of
 msgid "**labels**"
-msgstr ""
+msgstr "**labels**"
 
 #: of
 msgid "array-like, optional"
-msgstr ""
+msgstr "tipo arreglo, opcional"
 
 #: matplotlib.cbook.boxplot_stats:36 of
 msgid "Labels for each dataset. Length must be compatible with dimensions of *X*."
-msgstr ""
+msgstr "Etiquetas para cada conjunto de datos. La longitud debe ser compatible con dimensiones de *X*."
 
 #: matplotlib.cbook.boxplot_stats:42 of
 msgid "**autorange**"
-msgstr ""
+msgstr "**autorange**"
 
 #: of
 msgid "bool, optional (False)"
-msgstr ""
+msgstr "bool, opcional (False)"
 
 #: matplotlib.cbook.boxplot_stats:40 of
 msgid "When `True` and the data are distributed such that the 25th and 75th percentiles are equal, ``whis`` is set to (0, 100) such that the whisker ends are at the minimum and maximum of the data."
-msgstr ""
+msgstr "Cuando `True` y los datos se distribuyen de tal forma que los percentiles 25 y 75 son iguales, ``whis`` está establecido en (0, 100) tal que los extremos del whisker son al mínimo y máximo de los datos."
 
 #: matplotlib.cbook.boxplot_stats matplotlib.cbook.index_of
 #: matplotlib.cbook.pts_to_midstep matplotlib.cbook.pts_to_poststep
 #: matplotlib.cbook.pts_to_prestep matplotlib.cbook.simple_linear_interpolation
 #: matplotlib.cbook.to_filehandle matplotlib.cbook.violin_stats of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.cbook.boxplot_stats:70 matplotlib.cbook.violin_stats:61 of
 msgid "list of dict"
-msgstr ""
+msgstr "lista de dictado"
 
 #: matplotlib.cbook.boxplot_stats:47 of
 msgid "A list of dictionaries containing the results for each column of data. Keys of each dictionary are the following:"
-msgstr ""
+msgstr "Una lista de diccionarios que contienen los resultados de cada columna de datos. Las claves de cada diccionario son las siguientes:"
 
 #: matplotlib.cbook.boxplot_stats:51 of
 msgid "Key"
-msgstr ""
+msgstr "Clave"
 
 #: matplotlib.cbook.boxplot_stats:51 of
 msgid "Value Description"
-msgstr ""
+msgstr "Descripción del valor"
 
 #: matplotlib.cbook.boxplot_stats:53 of
 msgid "label"
-msgstr ""
+msgstr "etiqueta"
 
 #: matplotlib.cbook.boxplot_stats:53 of
 msgid "tick label for the boxplot"
-msgstr ""
+msgstr "etiqueta de tick para el boxplot"
 
 #: matplotlib.cbook.boxplot_stats:54 of
 msgid "mean"
-msgstr ""
+msgstr "media"
 
 #: matplotlib.cbook.boxplot_stats:54 of
 msgid "arithmetic mean value"
-msgstr ""
+msgstr "valor medio aritmético"
 
 #: matplotlib.cbook.boxplot_stats:55 of
 msgid "med"
-msgstr ""
+msgstr "med"
 
 #: matplotlib.cbook.boxplot_stats:55 of
 msgid "50th percentile"
-msgstr ""
+msgstr "Percentil 50"
 
 #: matplotlib.cbook.boxplot_stats:56 of
 msgid "q1"
-msgstr ""
+msgstr "q1"
 
 #: matplotlib.cbook.boxplot_stats:56 of
 msgid "first quartile (25th percentile)"
-msgstr ""
+msgstr "primer cuartil (percentil 25)"
 
 #: matplotlib.cbook.boxplot_stats:57 of
 msgid "q3"
-msgstr ""
+msgstr "q3"
 
 #: matplotlib.cbook.boxplot_stats:57 of
 msgid "third quartile (75th percentile)"
-msgstr ""
+msgstr "tercer cuartil (75º percentile)"
 
 #: matplotlib.cbook.boxplot_stats:58 of
 msgid "cilo"
-msgstr ""
+msgstr "cilo"
 
 #: matplotlib.cbook.boxplot_stats:58 of
 msgid "lower notch around the median"
-msgstr ""
+msgstr "nitidez inferior alrededor de la media"
 
 #: matplotlib.cbook.boxplot_stats:59 of
 msgid "cihi"
-msgstr ""
+msgstr "cihi"
 
 #: matplotlib.cbook.boxplot_stats:59 of
 msgid "upper notch around the median"
-msgstr ""
+msgstr "muelle superior alrededor de la media"
 
 #: matplotlib.cbook.boxplot_stats:60 of
 msgid "whislo"
-msgstr ""
+msgstr "whislo"
 
 #: matplotlib.cbook.boxplot_stats:60 of
 msgid "end of the lower whisker"
-msgstr ""
+msgstr "extremo de la batidora inferior"
 
 #: matplotlib.cbook.boxplot_stats:61 of
 msgid "whishi"
-msgstr ""
+msgstr "whishi"
 
 #: matplotlib.cbook.boxplot_stats:61 of
 msgid "end of the upper whisker"
-msgstr ""
+msgstr "extremo de la batidora superior"
 
 #: matplotlib.cbook.boxplot_stats:62 of
 msgid "fliers"
-msgstr ""
+msgstr "plumas"
 
 #: matplotlib.cbook.boxplot_stats:62 of
 msgid "outliers"
-msgstr ""
+msgstr "atípicos"
 
 #: matplotlib.cbook.boxplot_stats:73 matplotlib.cbook.deprecated:15
 #: matplotlib.cbook.maxdict:15 matplotlib.cbook.report_memory:15
 #: matplotlib.cbook.warn_deprecated:15 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.cbook.boxplot_stats:74 of
 msgid "Non-bootstrapping approach to confidence interval uses Gaussian-based asymptotic approximation:"
-msgstr ""
+msgstr "La aproximación asíntotica basada en Gaussiano no es el método de arranque para el intervalo de confianza:"
 
 #: matplotlib.cbook.boxplot_stats:77 of
 msgid "\\mathrm{med} \\pm 1.57 \\times \\frac{\\mathrm{iqr}}{\\sqrt{N}}"
-msgstr ""
+msgstr "\\mathrm{med} \\pm 1.57 \\times \\frac{\\mathrm{iqr}}{\\sqrt{N}}"
 
 #: matplotlib.cbook.boxplot_stats:81 of
 msgid "General approach from: McGill, R., Tukey, J.W., and Larsen, W.A. (1978) \"Variations of Boxplots\", The American Statistician, 32:12-16."
-msgstr ""
+msgstr "General approach from : McGill, R., Tukey, J.W., and Larsen, W.A. (1978) \"Variations of Boxplots\", The American Statistician, 32:12-16."
 
 #: matplotlib.cbook.contiguous_regions:2 of
 msgid "Return a list of (ind0, ind1) such that ``mask[ind0:ind1].all()`` is True and we cover all such regions."
-msgstr ""
+msgstr "Devuelve una lista de (ind0, ind1) tales que ``mask[ind0:ind1].all()`` es True y cubrimos todas esas regiones."
 
 #: matplotlib.cbook.delete_masked_points:2 of
 msgid "Find all masked and/or non-finite points in a set of arguments, and return the arguments with only the unmasked points remaining."
-msgstr ""
+msgstr "Encontrar todos los puntos enmascarados y/o no finitos en un conjunto de argumentos, y devolver los argumentos con sólo los puntos sin enmascarar restantes."
 
 #: matplotlib.cbook.delete_masked_points:5 of
 msgid "Arguments can be in any of 5 categories:"
-msgstr ""
+msgstr "Los argumentos pueden estar en cualquiera de 5 categorías:"
 
 #: matplotlib.cbook.delete_masked_points:7 of
 msgid "1-D masked arrays"
-msgstr ""
+msgstr "Arreglos enmascarados 1-D"
 
 #: matplotlib.cbook.delete_masked_points:8 of
 msgid "1-D ndarrays"
-msgstr ""
+msgstr "1-D ndarrays"
 
 #: matplotlib.cbook.delete_masked_points:9 of
 msgid "ndarrays with more than one dimension"
-msgstr ""
+msgstr "ndarrays con más de una dimensión"
 
 #: matplotlib.cbook.delete_masked_points:10 of
 msgid "other non-string iterables"
-msgstr ""
+msgstr "otros iterables que no son cadenas"
 
 #: matplotlib.cbook.delete_masked_points:11 of
 msgid "anything else"
-msgstr ""
+msgstr "cualquier otra cosa"
 
 #: matplotlib.cbook.delete_masked_points:13 of
 msgid "The first argument must be in one of the first four categories; any argument with a length differing from that of the first argument (and hence anything in category 5) then will be passed through unchanged."
-msgstr ""
+msgstr "El primer argumento debe ser en una de las cuatro primeras categorías; cualquier argumento con una longitud diferente de la del primer argumento (y por lo tanto cualquier argumento de la categoría 5) entonces será pasado sin cambios."
 
 #: matplotlib.cbook.delete_masked_points:18 of
 msgid "Masks are obtained from all arguments of the correct length in categories 1, 2, and 4; a point is bad if masked in a masked array or if it is a nan or inf.  No attempt is made to extract a mask from categories 2, 3, and 4 if `numpy.isfinite` does not yield a Boolean array."
-msgstr ""
+msgstr "Las máscaras se obtienen de todos los argumentos de la longitud correcta en las categorías 1, 2 y 4; un punto es malo si está enmascarado en una matriz enmascarada o si es un nan o inf. No se intenta extraer una máscara de las categorías 2, 3 y 4 si `numpy.isfinite` no produce una matriz booleana."
 
 #: matplotlib.cbook.delete_masked_points:24 of
 msgid "All input arguments that are not passed unchanged are returned as ndarrays after removing the points or rows corresponding to masks in any of the arguments."
-msgstr ""
+msgstr "Todos los argumentos de entrada que no se pasan sin cambios se devuelven como ndarrays después de eliminar los puntos o filas correspondientes a las máscaras en cualquiera de los argumentos."
 
 #: matplotlib.cbook.delete_masked_points:28 of
 msgid "A vastly simpler version of this function was originally written as a helper for Axes.scatter()."
-msgstr ""
+msgstr "Una versión mucho más simple de esta función fue escrita originalmente como un ayudante para Axes.scatter()."
 
 #: matplotlib.cbook.deprecated:2 matplotlib.cbook.warn_deprecated:2 of
 msgid "[*Deprecated*]"
-msgstr ""
+msgstr "[*Deprecated*]"
 
 #: matplotlib.cbook.deprecated:16 matplotlib.cbook.warn_deprecated:16 of
 msgid "\\"
-msgstr ""
+msgstr "\\"
 
 #: matplotlib.cbook.file_requires_unicode:2 of
 msgid "Return whether the given writable file-like object requires Unicode to be written to it."
-msgstr ""
+msgstr "Devuelve si el objeto de tipo archivo escribible requiere Unicode para escribirlo."
 
 #: matplotlib.cbook.flatten:2 of
 msgid "Return a generator of flattened nested containers."
-msgstr ""
+msgstr "Devuelve un generador de contenedores anidados aplanados."
 
 #: matplotlib.cbook.flatten:4 of
 msgid "For example:"
-msgstr ""
+msgstr "Por ejemplo:"
 
 #: matplotlib.cbook.flatten:11 of
 msgid "By: Composite of Holger Krekel and Luther Blissett From: https://code.activestate.com/recipes/121294/ and Recipe 1.12 in cookbook"
-msgstr ""
+msgstr "Por: Compuesto de Holger Krekel y Luther Blissett De: https://code.activestate.com/recipes/121294/ y Receta 1.12 en libro de cocina"
 
 #: matplotlib.cbook.get_sample_data:2 of
 msgid "Return a sample data file.  *fname* is a path relative to the :file:`mpl-data/sample_data` directory.  If *asfileobj* is `True` return a file object, otherwise just a file path."
-msgstr ""
+msgstr "Devuelve un archivo de datos de ejemplo. *fname* es una ruta relativa al directorio :file:`mpl-data/sample_data`. Si *asfileobj* es `True` devuelve un objeto de archivo, de lo contrario sólo una ruta de archivo."
 
 #: matplotlib.cbook.get_sample_data:6 of
 msgid "Sample data files are stored in the 'mpl-data/sample_data' directory within the Matplotlib package."
-msgstr ""
+msgstr "Los archivos de datos de ejemplo se almacenan en el directorio 'mpl-data/sample_data' dentro del paquete Matplotlib."
 
 #: matplotlib.cbook.get_sample_data:9 of
 msgid "If the filename ends in .gz, the file is implicitly ungzipped.  If the filename ends with .npy or .npz, *asfileobj* is True, and *np_load* is True, the file is loaded with `numpy.load`.  *np_load* currently defaults to False but will default to True in a future release."
-msgstr ""
+msgstr "Si el nombre del archivo termina en .gz, el archivo se desgziped implícitamente. pz, *asfileobj* es True, y *np_load* es True, el archivo está cargado con `numpy.load`. *np_load* actualmente está por defecto en False pero por defecto será True en una versión futura."
 
 #: matplotlib.cbook.index_of:2 of
 msgid "A helper function to create reasonable x values for the given *y*."
-msgstr ""
+msgstr "Una función de ayuda para crear valores x razonables para el *y* dado."
 
 #: matplotlib.cbook.index_of:4 of
 msgid "This is used for plotting (x, y) if x values are not explicitly given."
-msgstr ""
+msgstr "Esto se usa para trazar (x, y) si los valores x no se dan explícitamente."
 
 #: matplotlib.cbook.index_of:6 of
 msgid "First try ``y.index`` (assuming *y* is a `pandas.Series`), if that fails, use ``range(len(y))``."
-msgstr ""
+msgstr "Primero intente ``y.index`` (asumiendo que *y* es un `pandas.Series`), si eso falla, use ``range(len(y))``."
 
 #: matplotlib.cbook.index_of:9 of
 msgid "This will be extended in the future to deal with more types of labeled data."
-msgstr ""
+msgstr "Esto se ampliará en el futuro para tratar con más tipos de datos etiquetados."
 
 #: matplotlib.cbook.index_of:15 of
 msgid "**y**"
-msgstr ""
+msgstr "**y**"
 
 #: of
 msgid "float or array-like"
-msgstr ""
+msgstr "flotante o matriz"
 
 #: matplotlib.cbook.index_of:32 of
 msgid "**x, y**"
-msgstr ""
+msgstr "**x, y**"
 
 #: of
 msgid "ndarray"
-msgstr ""
+msgstr "ndarray"
 
 #: matplotlib.cbook.index_of:20 of
 msgid "The x and y values to plot."
-msgstr ""
+msgstr "Los valores x e y a trazar."
 
 #: matplotlib.cbook.is_math_text:2 of
 msgid "Return whether the string *s* contains math expressions."
-msgstr ""
+msgstr "Devuelve si la cadena *s* contiene expresiones matemáticas."
 
 #: matplotlib.cbook.is_math_text:4 of
 msgid "This is done by checking whether *s* contains an even number of non-escaped dollar signs."
-msgstr ""
+msgstr "Esto se hace comprobando si *s* contiene un número par de signos en dólares no escapados."
 
 #: matplotlib.cbook.is_scalar_or_string:2 of
 msgid "Return whether the given object is a scalar or string like."
-msgstr ""
+msgstr "Devuelve si el objeto dado es escalar o como una cadena."
 
 #: matplotlib.cbook.is_writable_file_like:2 of
 msgid "Return whether *obj* looks like a file object with a *write* method."
-msgstr ""
+msgstr "Devuelve si *obj* se parece a un objeto de archivo con un método de *escritura*."
 
 #: ../../docstring matplotlib.cbook.ls_mapper:2 of
 msgid "Maps short codes for line style to their full name used by backends."
-msgstr ""
+msgstr "Mapea códigos cortos para el estilo de línea a su nombre completo utilizado por los backends."
 
 #: ../../docstring matplotlib.cbook.ls_mapper_r:2 of
 msgid "Maps full names for line styles used by backends to their short codes."
-msgstr ""
+msgstr "Mapa los nombres completos de los estilos de línea utilizados por los backends a sus códigos cortos."
 
 #: matplotlib.cbook.maxdict:1 of
 msgid "Bases: :py:class:`dict`"
-msgstr ""
+msgstr "Bases: :py:class:`dict`"
 
 #: matplotlib.cbook.maxdict:2 of
 msgid "A dictionary with a maximum size."
-msgstr ""
+msgstr "Un diccionario con un tamaño máximo."
 
 #: matplotlib.cbook.maxdict:16 of
 msgid "This doesn't override all the relevant methods to constrain the size, just ``__setitem__``, so use with caution."
-msgstr ""
+msgstr "Esto no anula todos los métodos relevantes para restringir el tamaño, solo ``__setitem__``, así que usa con precaución."
 
 #: matplotlib.cbook.normalize_kwargs:2 of
 msgid "Helper function to normalize kwarg inputs."
-msgstr ""
+msgstr "Función de ayuda para normalizar las entradas de kwarg."
 
 #: matplotlib.cbook.normalize_kwargs:10 of
 msgid "**kw**"
-msgstr ""
+msgstr "**kw**"
 
 #: of
 msgid "dict or None"
-msgstr ""
+msgstr "dict o None"
 
 #: matplotlib.cbook.normalize_kwargs:8 of
 msgid "A dict of keyword arguments.  None is explicitly supported and treated as an empty dict, to support functions with an optional parameter of the form ``props=None``."
-msgstr ""
+msgstr "Un dictado de argumentos de palabras clave. Ninguno es explícitamente soportado y tratado como un dictado vacío, para soportar funciones con un parámetro opcional de la forma ``props=Every``."
 
 #: matplotlib.cbook.normalize_kwargs:24 of
 msgid "**alias_mapping**"
-msgstr ""
+msgstr "**alias_mapeo**"
 
 #: of
 msgid "dict or Artist subclass or Artist instance, optional"
-msgstr ""
+msgstr "dictar o subclase del artista o instancia del artista, opcional"
 
 #: matplotlib.cbook.normalize_kwargs:13 of
 msgid "A mapping between a canonical name to a list of aliases, in order of precedence from lowest to highest."
-msgstr ""
+msgstr "Un mapeo entre un nombre canónico a una lista de alias, en orden de precedencia de menor a mayor."
 
 #: matplotlib.cbook.normalize_kwargs:16 of
 msgid "If the canonical value is not in the list it is assumed to have the highest priority."
-msgstr ""
+msgstr "Si el valor canónico no está en la lista, se asume que tiene la máxima prioridad."
 
 #: matplotlib.cbook.normalize_kwargs:19 of
 msgid "If an Artist subclass or instance is passed, use its properties alias mapping."
-msgstr ""
+msgstr "Si se pasa una subclase o instancia del Artista, utilice el mapeo de alias de sus propiedades."
 
 #: matplotlib.cbook.normalize_kwargs:38 of
 msgid "TypeError"
-msgstr ""
+msgstr "TypeError"
 
 #: matplotlib.cbook.normalize_kwargs:29 of
 msgid "To match what Python raises if invalid arguments/keyword arguments are passed to a callable."
-msgstr ""
+msgstr "Para hacer coincidir lo que Python plantea si se pasan argumentos no válidos/palabra clave a una llamada."
 
 #: matplotlib.cbook.open_file_cm:2 of
 msgid "Pass through file objects and context-manage path-likes."
-msgstr ""
+msgstr "Pasar a través de objetos de archivo y archivos de gestión de rutas similares."
 
 #: matplotlib.cbook.print_cycles:2 of
 msgid "Print loops of cyclic references in the given *objects*."
-msgstr ""
+msgstr "Imprime bucles de referencias cíclicas en los *objetos* dados."
 
 #: matplotlib.cbook.print_cycles:4 of
 msgid "It is often useful to pass in ``gc.garbage`` to find the cycles that are preventing some objects from being garbage collected."
-msgstr ""
+msgstr "A menudo es útil pasar en ``gc.garbage`` para encontrar los ciclos que impiden que algunos objetos sean recolectados en basura."
 
 #: matplotlib.cbook.print_cycles:10 of
 msgid "**objects**"
-msgstr ""
+msgstr "**objetos**"
 
 #: matplotlib.cbook.print_cycles:10 of
 msgid "A list of objects to find cycles in."
-msgstr ""
+msgstr "Una lista de objetos en los que encontrar ciclos."
 
 #: matplotlib.cbook.print_cycles:13 of
 msgid "**outstream**"
-msgstr ""
+msgstr "**outstream**"
 
 #: matplotlib.cbook.print_cycles:13 of
 msgid "The stream for output."
-msgstr ""
+msgstr "El flujo de salida."
 
 #: matplotlib.cbook.print_cycles:29 of
 msgid "**show_progress**"
-msgstr ""
+msgstr "**mostrar_progreso**"
 
 #: of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.cbook.print_cycles:16 of
 msgid "If True, print the number of objects reached as they are found."
-msgstr ""
+msgstr "Si es verdadero, imprima el número de objetos alcanzados como se encuentran."
 
 #: matplotlib.cbook.pts_to_midstep:2 of
 msgid "Convert continuous line to mid-steps."
-msgstr ""
+msgstr "Convierte línea continua a pasos intermedios."
 
 #: matplotlib.cbook.pts_to_midstep:4 of
 msgid "Given a set of ``N`` points convert to ``2N`` points which when connected linearly give a step function which changes values at the middle of the intervals."
-msgstr ""
+msgstr "Dado un conjunto de puntos ``N`` convertir a puntos ``2N`` que cuando se conectan linealmente dan una función de paso que cambia los valores en medio de los intervalos."
 
 #: matplotlib.cbook.pts_to_midstep:11 matplotlib.cbook.pts_to_poststep:11
 #: matplotlib.cbook.pts_to_prestep:11 of
 msgid "**x**"
-msgstr ""
+msgstr "**x**"
 
 #: matplotlib.cbook.pts_to_midstep:31 matplotlib.cbook.pts_to_poststep:31
 #: matplotlib.cbook.pts_to_prestep:31
 #: matplotlib.cbook.simple_linear_interpolation:30 of
 msgid "array"
-msgstr ""
+msgstr "array"
 
 #: matplotlib.cbook.pts_to_midstep:11 matplotlib.cbook.pts_to_poststep:11
 #: matplotlib.cbook.pts_to_prestep:11 of
 msgid "The x location of the steps. May be empty."
-msgstr ""
+msgstr "La posición x de los pasos. Puede estar vacía."
 
 #: matplotlib.cbook.pts_to_midstep:15 matplotlib.cbook.pts_to_poststep:14
 #: matplotlib.cbook.pts_to_prestep:14 of
 msgid "**y1, ..., yp**"
-msgstr ""
+msgstr "**y1, ..., yp**"
 
 #: matplotlib.cbook.pts_to_midstep:14 matplotlib.cbook.pts_to_poststep:14
 #: matplotlib.cbook.pts_to_prestep:14 of
 msgid "y arrays to be turned into steps; all must be the same length as ``x``."
-msgstr ""
+msgstr "arrays y se convertirán en pasos; todos deben ser de la misma longitud que ``x``."
 
 #: matplotlib.cbook.pts_to_midstep:20 of
 msgid "The x and y values converted to steps in the same order as the input; can be unpacked as ``x_out, y1_out, ..., yp_out``.  If the input is length ``N``, each of these arrays will be length ``2N``."
-msgstr ""
+msgstr "Los valores x e y convertidos a pasos en el mismo orden que la entrada; pueden ser desempaquetados como ``x_out, y1_out, . ., yp_out``. Si la entrada es longitud ``N``, cada una de estas matrices será de longitud ``2N``."
 
 #: matplotlib.cbook.pts_to_poststep:2 of
 msgid "Convert continuous line to post-steps."
-msgstr ""
+msgstr "Convierte línea continua a pasos posteriores."
 
 #: matplotlib.cbook.pts_to_poststep:4 of
 msgid "Given a set of ``N`` points convert to ``2N + 1`` points, which when connected linearly give a step function which changes values at the end of the intervals."
-msgstr ""
+msgstr "Dado un conjunto de puntos ``N`` convertidos a puntos ``2N + 1``, que cuando se conecta linealmente dan una función de paso que cambia los valores al final de los intervalos."
 
 #: matplotlib.cbook.pts_to_poststep:19 matplotlib.cbook.pts_to_prestep:19 of
 msgid "The x and y values converted to steps in the same order as the input; can be unpacked as ``x_out, y1_out, ..., yp_out``.  If the input is length ``N``, each of these arrays will be length ``2N + 1``. For ``N=0``, the length will be 0."
-msgstr ""
+msgstr "Los valores x e y convertidos a pasos en el mismo orden que la entrada; pueden ser desempaquetados como ``x_out, y1_out, ..., yp_out``. Si la entrada es longitud ``N``, cada una de estas matrices será de longitud ``2N + 1``. Para ``N=0``, la longitud será 0."
 
 #: matplotlib.cbook.pts_to_prestep:2 of
 msgid "Convert continuous line to pre-steps."
-msgstr ""
+msgstr "Convierte línea continua a pasos previos."
 
 #: matplotlib.cbook.pts_to_prestep:4 of
 msgid "Given a set of ``N`` points, convert to ``2N - 1`` points, which when connected linearly give a step function which changes values at the beginning of the intervals."
-msgstr ""
+msgstr "Dado un conjunto de puntos ``N``, convertir a puntos ``2N - 1``. que cuando se conecta linealmente dan una función de paso que cambia los valores al principio de los intervalos."
 
 #: matplotlib.cbook.report_memory:2 of
 msgid "[*Deprecated*] Return the memory consumed by the process."
-msgstr ""
+msgstr "[*Obsoleto*] Devuelve la memoria consumida por el proceso."
 
 #: matplotlib.cbook.safe_first_element:2 of
 msgid "Return the first element in *obj*."
-msgstr ""
+msgstr "Devuelve el primer elemento en *obj*."
 
 #: matplotlib.cbook.safe_first_element:4 of
 msgid "This is an type-independent way of obtaining the first element, supporting both index access and the iterator protocol."
-msgstr ""
+msgstr "Esta es una forma independiente de obtener el primer elemento, que apoya tanto el acceso al índice como el protocolo del iterador."
 
 #: matplotlib.cbook.sanitize_sequence:2 of
 msgid "Convert dictview objects to list. Other inputs are returned unchanged."
-msgstr ""
+msgstr "Convierte objetos dictview a la lista. Otras entradas son devueltas sin cambios."
 
 #: matplotlib.cbook.silent_list:1 of
 msgid "Bases: :py:class:`list`"
-msgstr ""
+msgstr "Bases: :py:class:`list`"
 
 #: matplotlib.cbook.silent_list:2 of
 msgid "A list with a short ``repr()``."
-msgstr ""
+msgstr "Una lista con un breve ``repr()``."
 
 #: matplotlib.cbook.silent_list:4 of
 msgid "This is meant to be used for a homogeneous list of artists, so that they don't cause long, meaningless output."
-msgstr ""
+msgstr "Esto está pensado para ser usado para una lista homogénea de artistas, de modo que no causen una salida larga y sin sentido."
 
 #: matplotlib.cbook.silent_list:7 of
 msgid "Instead of ::"
-msgstr ""
+msgstr "En lugar de ::"
 
 #: matplotlib.cbook.silent_list:13 of
 msgid "one will get ::"
-msgstr ""
+msgstr "uno obtendrá ::"
 
 #: matplotlib.cbook.silent_list:17 of
 msgid "If ``self.type`` is None, the type name is obtained from the first item in the list (if any)."
-msgstr ""
+msgstr "Si ``self.type`` no es Ninguno, el nombre del tipo se obtiene del primer elemento de la lista (si existe)."
 
 #: matplotlib.cbook.simple_linear_interpolation:2 of
 msgid "Resample an array with ``steps - 1`` points between original point pairs."
-msgstr ""
+msgstr "Ejemplo de una matriz con puntos ``steps - 1`` entre pares de puntos originales."
 
 #: matplotlib.cbook.simple_linear_interpolation:4 of
 msgid "Along each column of *a*, ``(steps - 1)`` points are introduced between each original values; the values are linearly interpolated."
-msgstr ""
+msgstr "A lo largo de cada columna de *a*, los puntos ``(pasos - 1)`` se introducen entre cada valor original; los valores se interpolan linealmente."
 
 #: matplotlib.cbook.simple_linear_interpolation:10 of
 msgid "**a**"
-msgstr ""
+msgstr "**un**"
 
 #: of
 msgid "array, shape (n, ...)"
-msgstr ""
+msgstr "array, forma (n, ...)"
 
 #: matplotlib.cbook.simple_linear_interpolation:13 of
 msgid "**steps**"
-msgstr ""
+msgstr "**Pasos**"
 
 #: of
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: matplotlib.cbook.simple_linear_interpolation:18 of
 msgid "shape ``((n - 1) * steps + 1, ...)``"
-msgstr ""
+msgstr "forma ``((n - 1) * pasos + 1, ...)``"
 
 #: matplotlib.cbook.strip_math:2 of
 msgid "Remove latex formatting from mathtext."
-msgstr ""
+msgstr "Remueve el formato de latex del texto matemático."
 
 #: matplotlib.cbook.strip_math:4 of
 msgid "Only handles fully math and fully non-math strings."
-msgstr ""
+msgstr "Sólo maneja cadenas completamente matemáticas y no matemáticas."
 
 #: matplotlib.cbook.to_filehandle:2 of
 msgid "Convert a path to an open file handle or pass-through a file-like object."
-msgstr ""
+msgstr "Convierte una ruta a un manejador de archivos abierto o pase a través de un objeto tipo archivo."
 
 #: matplotlib.cbook.to_filehandle:4 of
 msgid "Consider using `open_file_cm` instead, as it allows one to properly close newly created file objects more easily."
-msgstr ""
+msgstr "Considere usar `open_file_cm` en su lugar, ya que permite cerrar correctamente los objetos de archivo recién creados con mayor facilidad."
 
 #: matplotlib.cbook.to_filehandle:11 of
 msgid "**fname**"
-msgstr ""
+msgstr "**fname**"
 
 #: of
 msgid "str or path-like or file-like"
-msgstr ""
+msgstr "str o como ruta o archivo"
 
 #: matplotlib.cbook.to_filehandle:10 of
 msgid "If `str` or `os.PathLike`, the file is opened using the flags specified by *flag* and *encoding*.  If a file-like object, it is passed through."
-msgstr ""
+msgstr "Si `str` o `os.Path.U`, el archivo se abre usando las banderas especificadas por *flag* y *encoding*. Si un objeto similar a un archivo, se pasa a través."
 
 #: matplotlib.cbook.to_filehandle:15 of
 msgid "**flag**"
-msgstr ""
+msgstr "**bandera**"
 
 #: of
 msgid "str, default: 'r'"
-msgstr ""
+msgstr "str, por defecto: 'r'"
 
 #: matplotlib.cbook.to_filehandle:14 matplotlib.cbook.to_filehandle:23 of
 msgid "Passed as the *mode* argument to `open` when *fname* is `str` or `os.PathLike`; ignored if *fname* is file-like."
-msgstr ""
+msgstr "Pasado como el argumento *mode* a `open` cuando *fname* es `str` o `os.Path.U`; ignorado si *fname* es como archivo."
 
 #: matplotlib.cbook.to_filehandle:20 of
 msgid "**return_opened**"
-msgstr ""
+msgstr "**devolución_abierta**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.cbook.to_filehandle:18 of
 msgid "If True, return both the file object and a boolean indicating whether this was a new file (that the caller needs to close).  If False, return only the new file."
-msgstr ""
+msgstr "Si es verdadero, devuelve tanto el objeto de archivo como un booleano indicando si este era un nuevo archivo (que la persona que llama necesita cerrar). Si False, devuelve sólo el nuevo archivo."
 
 #: matplotlib.cbook.to_filehandle:24 of
 msgid "**encoding**"
-msgstr ""
+msgstr "**codificando**"
 
 #: of
 msgid "str or None, default: None"
-msgstr ""
+msgstr "str o ninguno, por defecto: Ninguno"
 
 #: matplotlib.cbook.to_filehandle:29 of
 msgid "**fh**"
-msgstr ""
+msgstr "**fh**"
 
 #: of
 msgid "file-like"
-msgstr ""
+msgstr "como archivo"
 
 #: matplotlib.cbook.to_filehandle:44 of
 msgid "**opened**"
-msgstr ""
+msgstr "**abierto**"
 
 #: matplotlib.cbook.to_filehandle:32 of
 msgid "*opened* is only returned if *return_opened* is True."
-msgstr ""
+msgstr "*abierto* sólo se devuelve si *return_opened* es True."
 
 #: matplotlib.cbook.violin_stats:2 of
 msgid "Return a list of dictionaries of data which can be used to draw a series of violin plots."
-msgstr ""
+msgstr "Devuelve una lista de diccionarios de datos que se pueden utilizar para dibujar una serie de parcelas de violín."
 
 #: matplotlib.cbook.violin_stats:5 of
 msgid "See the ``Returns`` section below to view the required keys of the dictionary."
-msgstr ""
+msgstr "Vea la sección ``Devuelve`` de abajo para ver las claves requeridas del diccionario."
 
 #: matplotlib.cbook.violin_stats:8 of
 msgid "Users can skip this function and pass a user-defined set of dictionaries with the same keys to `~.axes.Axes.violinplot` instead of using Matplotlib to do the calculations. See the *Returns* section below for the keys that must be present in the dictionaries."
-msgstr ""
+msgstr "Los usuarios pueden omitir esta función y pasar un conjunto definido por el usuario de diccionarios con las mismas claves a `~.axes.Axes. iolinplot` en lugar de usar Matplotlib para hacer los cálculos. Vea la sección *Devuelve* de abajo para las claves que deben estar presentes en los diccionarios."
 
 #: matplotlib.cbook.violin_stats:16 of
 msgid "Sample data that will be used to produce the gaussian kernel density estimates. Must have 2 or fewer dimensions."
-msgstr ""
+msgstr "Datos de ejemplo que se usarán para producir las estimaciones de densidad del núcleo gaussiano. Debe tener 2 o menos dimensiones."
 
 #: matplotlib.cbook.violin_stats:23 of
 msgid "**method**"
-msgstr ""
+msgstr "**método**"
 
 #: of
 msgid "callable"
-msgstr ""
+msgstr "llamable"
 
 #: matplotlib.cbook.violin_stats:20 of
 msgid "The method used to calculate the kernel density estimate for each column of data. When called via ``method(v, coords)``, it should return a vector of the values of the KDE evaluated at the values specified in coords."
-msgstr ""
+msgstr "El método utilizado para calcular la estimación de densidad del núcleo para cada columna de datos. Cuando se llama a través de ``method(v, coords)``, debe devolver un vector de los valores de KDE evaluados en los valores especificados en coordenadas."
 
 #: matplotlib.cbook.violin_stats:27 of
 msgid "**points**"
-msgstr ""
+msgstr "**puntos**"
 
 #: of
 msgid "int, default: 100"
-msgstr ""
+msgstr "int, por defecto: 100"
 
 #: matplotlib.cbook.violin_stats:26 of
 msgid "Defines the number of points to evaluate each of the gaussian kernel density estimates at."
-msgstr ""
+msgstr "Define el número de puntos en los que evaluar cada una de las estimaciones de densidad del núcleo gaussiano."
 
 #: matplotlib.cbook.violin_stats:33 of
 msgid "**quantiles**"
-msgstr ""
+msgstr "**cantidades**"
 
 #: of
 msgid "array-like, default: None"
-msgstr ""
+msgstr "como array-like, default: ninguno"
 
 #: matplotlib.cbook.violin_stats:30 of
 msgid "Defines (if not None) a list of floats in interval [0, 1] for each column of data, which represents the quantiles that will be rendered for that column of data. Must have 2 or fewer dimensions. 1D array will be treated as a singleton list containing them."
-msgstr ""
+msgstr "Define (si no ninguno) una lista de flotantes en el intervalo [0, 1] para cada columna de datos, que representa las cantidades que serán renderizadas para esa columna de datos. Debe tener 2 o menos dimensiones. La matriz 1D será tratada como una lista de singleton que las contiene."
 
 #: matplotlib.cbook.violin_stats:38 of
 msgid "A list of dictionaries containing the results for each column of data. The dictionaries contain at least the following:"
-msgstr ""
+msgstr "Una lista de diccionarios que contienen los resultados de cada columna de datos. Los diccionarios contienen al menos lo siguiente:"
 
 #: matplotlib.cbook.violin_stats:41 of
 msgid "coords: A list of scalars containing the coordinates this particular kernel density estimate was evaluated at."
-msgstr ""
+msgstr "coordenadas: Una lista de escalares que contienen las coordenadas en las que se evaluó esta estimación de densidad del núcleo en particular."
 
 #: matplotlib.cbook.violin_stats:43 of
 msgid "vals: A list of scalars containing the values of the kernel density estimate at each of the coordinates given in *coords*."
-msgstr ""
+msgstr "vals: Una lista de escalares que contienen los valores de la estimación de densidad del núcleo en cada una de las coordenadas dadas en *coords*."
 
 #: matplotlib.cbook.violin_stats:45 of
 msgid "mean: The mean value for this column of data."
-msgstr ""
+msgstr "significado: El valor promedio de esta columna de datos."
 
 #: matplotlib.cbook.violin_stats:46 of
 msgid "median: The median value for this column of data."
-msgstr ""
+msgstr "mediana: El valor medio para esta columna de datos."
 
 #: matplotlib.cbook.violin_stats:47 of
 msgid "min: The minimum value for this column of data."
-msgstr ""
+msgstr "min: El valor mínimo para esta columna de datos."
 
 #: matplotlib.cbook.violin_stats:48 of
 msgid "max: The maximum value for this column of data."
-msgstr ""
+msgstr "max: El valor máximo para esta columna de datos."
 
 #: matplotlib.cbook.violin_stats:49 of
 msgid "quantiles: The quantile values for this column of data."
-msgstr ""
+msgstr "quantiles: Los valores cuantitativos para esta columna de datos."
 

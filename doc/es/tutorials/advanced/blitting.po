@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-05-24 21:09\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,105 +20,105 @@ msgstr ""
 
 #: ../../tutorials/advanced/blitting.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_advanced_blitting.py>` to download the full example code"
-msgstr ""
+msgstr "Haz click en :ref:`aquí <sphx_glr_download_tutorials_advanced_blitting.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/advanced/blitting.rst:23
 msgid "Faster rendering by using blitting"
-msgstr ""
+msgstr "Renderización más rápida mediante el uso de blitting"
 
 #: ../../tutorials/advanced/blitting.rst:25
 msgid "*Blitting* is a `standard technique <https://en.wikipedia.org/wiki/Bit_blit>`__ in raster graphics that, in the context of Matplotlib, can be used to (drastically) improve performance of interactive figures. For example, the :mod:`.animation` and :mod:`.widgets` modules use blitting internally. Here, we demonstrate how to implement your own blitting, outside of these classes."
-msgstr ""
+msgstr "*Blitting* es una `técnica estándar <https://en.wikipedia.org/wiki/Bit_blit>` en gráficos rasterizados que, en el contexto de Matplotlib, puede utilizarse para mejorar (drásticamente) el rendimiento de las figuras interactivas. Por ejemplo, los módulos :mod:`.animation` y :mod:`.widgets` utilizan el blitting internamente. Aquí, demostramos cómo implementar tu propio blitting, fuera de estas clases."
 
 #: ../../tutorials/advanced/blitting.rst:33
 msgid "Blitting speeds up repetitive drawing by rendering all non-changing graphic elements into a background image once. Then, for every draw, only the changing elements need to be drawn onto this background. For example, if the limits of an Axes have not changed, we can render the empty Axes including all ticks and labels once, and only draw the changing data later."
-msgstr ""
+msgstr "El Blitting acelera el dibujo repetitivo al renderizar todos los elementos gráficos que no cambian en una imagen de fondo una sola vez. Entonces, para cada dibujo, sólo los elementos que cambian necesitan ser dibujados en este fondo. Por ejemplo, si los límites de un Eje no han cambiado, podemos renderizar los Ejes vacíos incluyendo todos los marcadores y etiquetas una vez, y sólo dibujar los datos cambiantes después."
 
 #: ../../tutorials/advanced/blitting.rst:39
 msgid "The strategy is"
-msgstr ""
+msgstr "La estrategia es"
 
 #: ../../tutorials/advanced/blitting.rst:41
 msgid "Prepare the constant background:"
-msgstr ""
+msgstr "Preparar el fondo constante:"
 
 #: ../../tutorials/advanced/blitting.rst:43
 msgid "Draw the figure, but exclude all artists that you want to animate by marking them as *animated* (see `.Artist.set_animated`)."
-msgstr ""
+msgstr "Dibuja la figura, pero excluye todos los artistas que quieras animar marcándolos como *animados* (ver `.Artist.set_animated`)."
 
 #: ../../tutorials/advanced/blitting.rst:45
 msgid "Save a copy of the RBGA buffer."
-msgstr ""
+msgstr "Guarda una copia del buffer RBGA."
 
 #: ../../tutorials/advanced/blitting.rst:47
 msgid "Render the individual images:"
-msgstr ""
+msgstr "Renderizar las imágenes individuales:"
 
 #: ../../tutorials/advanced/blitting.rst:49
 msgid "Restore the copy of the RGBA buffer."
-msgstr ""
+msgstr "Restaurar la copia del buffer RGBA."
 
 #: ../../tutorials/advanced/blitting.rst:50
 msgid "Redraw the animated artists using `.Axes.draw_artist` / `.Figure.draw_artist`."
-msgstr ""
+msgstr "Redibuja los artistas animados usando `.Axes.draw_artist` / `.Figure.draw_artist`."
 
 #: ../../tutorials/advanced/blitting.rst:52
 msgid "Show the resulting image on the screen."
-msgstr ""
+msgstr "Mostrar la imagen resultante en la pantalla."
 
 #: ../../tutorials/advanced/blitting.rst:54
 msgid "One consequence of this procedure is that your animated artists are always drawn on top of the static artists."
-msgstr ""
+msgstr "Una consecuencia de este procedimiento es que tus artistas animados se dibujan siempre encima de los artistas estáticos."
 
 #: ../../tutorials/advanced/blitting.rst:57
 msgid "Not all backends support blitting.  You can check if a given canvas does via the `.FigureCanvasBase.supports_blit` property."
-msgstr ""
+msgstr "No todos los backends soportan blitting.  Puedes comprobar si un lienzo determinado lo hace a través de la propiedad `.FigureCanvasBase.supports_blit`."
 
 #: ../../tutorials/advanced/blitting.rst:62
 msgid "This code does not work with the OSX backend (but does work with other GUI backends on mac)."
-msgstr ""
+msgstr "Este código no funciona con el backend de OSX (pero sí con otros backends de IGU en mac)."
 
 #: ../../tutorials/advanced/blitting.rst:66
 msgid "Minimal example"
-msgstr ""
+msgstr "Ejemplo mínimo"
 
 #: ../../tutorials/advanced/blitting.rst:68
 msgid "We can use the `.FigureCanvasAgg` methods `~.FigureCanvasAgg.copy_from_bbox` and `~.FigureCanvasAgg.restore_region` in conjunction with setting ``animated=True`` on our artist to implement a minimal example that uses blitting to accelerate rendering"
-msgstr ""
+msgstr "Podemos utilizar los métodos `.FigureCanvasAgg` `~.FigureCanvasAgg.copy_from_bbox` y `~.FigureCanvasAgg.restore_region` junto con la configuración de ``animated=True`` en nuestro artista para implementar un ejemplo mínimo que utiliza el blitting para acelerar el renderizado"
 
 #: ../../tutorials/advanced/blitting.rst:139
 msgid "This example works and shows a simple animation, however because we are only grabbing the background once, if the size of the figure in pixels changes (due to either the size or dpi of the figure changing) , the background will be invalid and result in incorrect (but sometimes cool looking!) images.  There is also a global variable and a fair amount of boiler plate which suggests we should wrap this in a class."
-msgstr ""
+msgstr "Este ejemplo funciona y muestra una animación simple, sin embargo, debido a que sólo estamos tomando el fondo una vez, si el tamaño de la figura en píxeles cambia (debido a que el tamaño o los ppp de la figura cambian), el fondo no será válido y resultará en imágenes incorrectas (¡pero a veces de aspecto genial!).  También hay una variable global y una buena cantidad de información que sugiere que debemos incluir esto en una clase."
 
 #: ../../tutorials/advanced/blitting.rst:148
 msgid "Class-based example"
-msgstr ""
+msgstr "Ejemplo basado en clases"
 
 #: ../../tutorials/advanced/blitting.rst:150
 msgid "We can use a class to encapsulate the boilerplate logic and state of restoring the background, drawing the artists, and then blitting the result to the screen.  Additionally, we can use the ``'draw_event'`` callback to capture a new background whenever a full re-draw happens to handle resizes correctly."
-msgstr ""
+msgstr "Podemos utilizar una clase para encapsular la lógica y el estado de la restauración del fondo, el dibujo de los artistas, y luego blitting el resultado a la pantalla.  Además, podemos utilizar la llamada de retorno ``'draw_event'`` para capturar un nuevo fondo cada vez que se produzca un redibujado completo para manejar correctamente los cambios de tamaño."
 
 #: ../../tutorials/advanced/blitting.rst:244
 msgid "Here is how we would use our class.  This is a slightly more complicated example than the first case as we add a text frame counter as well."
-msgstr ""
+msgstr "A continuación se muestra cómo utilizaríamos nuestra clase.  Este es un ejemplo un poco más complicado que el primer caso ya que añadimos también un contador de marcos de texto."
 
 #: ../../tutorials/advanced/blitting.rst:293
 msgid "This class does not depend on `.pyplot` and is suitable to embed into larger GUI application."
-msgstr ""
+msgstr "Esta clase no depende de `.pyplot` y es adecuada para incrustar en una aplicación GUI más grande."
 
 #: ../../tutorials/advanced/blitting.rst:299
 msgid "**Total running time of the script:** ( 0 minutes  1.271 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 1.271 segundos)"
 
 #: ../../tutorials/advanced/blitting.rst:314
 msgid ":download:`Download Python source code: blitting.py <blitting.py>`"
-msgstr ""
+msgstr ":download:`Descargar Python source code: blitting.py <blitting.py>`"
 
 #: ../../tutorials/advanced/blitting.rst:320
 msgid ":download:`Download Jupyter notebook: blitting.ipynb <blitting.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar notebook de Jupyter: blitting.ipynb <blitting.ipynb>`"
 
 #: ../../tutorials/advanced/blitting.rst:327
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

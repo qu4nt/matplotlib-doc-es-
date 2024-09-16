@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:13\n"
+"PO-Revision-Date: 2022-11-02 13:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,234 +20,234 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolorfast.rst:2
 msgid "matplotlib.axes.Axes.pcolorfast"
-msgstr ""
+msgstr "matplotlib.axes.Axes.pcolorfast"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:2 of
 msgid "Create a pseudocolor plot with a non-regular rectangular grid."
-msgstr ""
+msgstr "Crea una gráfica pseudocolor con una cuadrícula rectangular no regular."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:4 of
 msgid "Call signature::"
-msgstr ""
+msgstr "Firma de llamada::"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:8 of
 msgid "This method is similar to `~.Axes.pcolor` and `~.Axes.pcolormesh`. It's designed to provide the fastest pcolor-type plotting with the Agg backend. To achieve this, it uses different algorithms internally depending on the complexity of the input grid (regular rectangular, non-regular rectangular or arbitrary quadrilateral)."
-msgstr ""
+msgstr "Este método es similar a `~.Axes.pcolor` y `~.Axes.pcolormesh`. Está diseñado para proporcionar la plotación de tipo pcolor más rápida con el backend Agg. Para lograr esto, utiliza diferentes algoritmos internamente dependiendo de la complejidad de la rejilla de entrada (rectangular regular, rectangular no regular o arbitrario)."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:16 of
 msgid "This method is experimental. Compared to `~.Axes.pcolor` or `~.Axes.pcolormesh` it has some limitations:"
-msgstr ""
+msgstr "Este método es experimental. Comparado con `~.Axes.pcolor` o `~.Axes.pcolormesh` tiene algunas limitaciones:"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:19 of
 msgid "It supports only flat shading (no outlines)"
-msgstr ""
+msgstr "Sólo soporta sombreado plano (sin contornos)"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:20 of
 msgid "It lacks support for log scaling of the axes."
-msgstr ""
+msgstr "Carece de soporte para la escalada de troncos de los ejes."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:21 of
 msgid "It does not have a have a pyplot wrapper."
-msgstr ""
+msgstr "No tiene un envoltorio con pyplot."
 
 #: matplotlib.axes._axes.Axes.pcolorfast of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:37 of
 msgid "**C**"
-msgstr ""
+msgstr "**C**"
 
 #: of
 msgid "array-like"
-msgstr ""
+msgstr "array-like"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:26 of
 msgid "The image data. Supported array shapes are:"
-msgstr ""
+msgstr "Los datos de la imagen. Formas de matriz soportadas son:"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:28 of
 msgid "(M, N): an image with scalar data. The data is visualized using a colormap."
-msgstr ""
+msgstr "(M, N): una imagen con datos escalares. Los datos se visualizan usando un mapa de colores."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:30 of
 msgid "(M, N, 3): an image with RGB values (0-1 float or 0-255 int)."
-msgstr ""
+msgstr "(M, N, 3): una imagen con valores RGB (0-1 float o 0-255 int)."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:31 of
 msgid "(M, N, 4): an image with RGBA values (0-1 float or 0-255 int), i.e. including transparency."
-msgstr ""
+msgstr "(M, N, 4): una imagen con valores RGBA (0-1 float o 0-255 int), es decir, con transparencia."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:34 of
 msgid "The first two dimensions (M, N) define the rows and columns of the image."
-msgstr ""
+msgstr "Las dos primeras dimensiones (M, N) definen las filas y columnas de la imagen."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:37 of
 msgid "This parameter can only be passed positionally."
-msgstr ""
+msgstr "Este parámetro sólo se puede pasar posicionalmente."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:70 of
 msgid "**X, Y** : tuple or array-like, default: ``(0, N)``, ``(0, M)``"
-msgstr ""
+msgstr "**X, Y** : tupla o tipo matriz, por defecto: ``(0, N)``, ``(0, M)``"
 
 #: of
 msgid "tuple or array-like, default:"
-msgstr ""
+msgstr "tuple o tipo matriz por defecto:"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:40 of
 msgid "*X* and *Y* are used to specify the coordinates of the quadrilaterals. There are different ways to do this:"
-msgstr ""
+msgstr "*X* y *Y* se utilizan para especificar las coordenadas de los cuadriláteros. Hay diferentes maneras de hacer esto:"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:43 of
 msgid "Use tuples ``X=(xmin, xmax)`` and ``Y=(ymin, ymax)`` to define a *uniform rectangular grid*."
-msgstr ""
+msgstr "Usa tuples ``X=(xmin, xmax)`` y ``Y=(ymin, ymax)`` para definir una *cuadrícula rectangular uniforme*."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:46 of
 msgid "The tuples define the outer edges of the grid. All individual quadrilaterals will be of the same size. This is the fastest version."
-msgstr ""
+msgstr "Las tuberías definen los bordes externos de la cuadrícula. Todos los cuadriláteros individuales tendrán el mismo tamaño. Esta es la versión más rápida."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:50 of
 msgid "Use 1D arrays *X*, *Y* to specify a *non-uniform rectangular grid*."
-msgstr ""
+msgstr "Utilice arrays 1D *X*, *Y* para especificar una *cuadrícula rectangular no uniforme*."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:53 of
 msgid "In this case *X* and *Y* have to be monotonic 1D arrays of length *N+1* and *M+1*, specifying the x and y boundaries of the cells."
-msgstr ""
+msgstr "En este caso *X* y *Y* tienen que ser arreglos monotónicos 1D de longitud *N+1* y *M+1*, especificar los límites x e y de las células."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:56 of
 msgid "The speed is intermediate. Note: The grid is checked, and if found to be uniform the fast version is used."
-msgstr ""
+msgstr "La velocidad es intermedia. Nota: La cuadrícula está marcada, y si se descubre que es uniforme se utiliza la versión rápida."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:59 of
 msgid "Use 2D arrays *X*, *Y* if you need an *arbitrary quadrilateral grid* (i.e. if the quadrilaterals are not rectangular)."
-msgstr ""
+msgstr "Utilice arrays 2D *X*, *Y* si necesita una *cuadrícula cuadrilátero arbitraria* (es decir, si los cuadriláteros no son rectangulares)."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:62 of
 msgid "In this case *X* and *Y* are 2D arrays with shape (M + 1, N + 1), specifying the x and y coordinates of the corners of the colored quadrilaterals."
-msgstr ""
+msgstr "En este caso *X* y *Y* son arrays 2D con forma (M + 1, N + 1), especificar las coordenadas x e y de las esquinas de los cuadriláteros de color."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:66 of
 msgid "This is the most general, but the slowest to render.  It may produce faster and more compact output using ps, pdf, and svg backends, however."
-msgstr ""
+msgstr "Este es el más general, pero el más bajo de renderizar. Puede producir una salida más rápida y compacta usando ps, pdf y svg backends."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:70 of
 msgid "These arguments can only be passed positionally."
-msgstr ""
+msgstr "Estos argumentos sólo se pueden pasar por alto."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:74 of
 msgid "**cmap** : str or `~matplotlib.colors.Colormap`, default: :rc:`image.cmap`"
-msgstr ""
+msgstr "**cmap** : str o `~matplotlib.colors.Colormap`, por defecto: :rc:`image.cmap`"
 
 #: of
 msgid "str or"
-msgstr ""
+msgstr "str o"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:73 of
 msgid "A Colormap instance or registered colormap name. The colormap maps the *C* values to colors."
-msgstr ""
+msgstr "Una instancia de Colormap o nombre de mapa de color registrado. El mapa de colores asigna los valores *C* a colores."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:79 of
 msgid "**norm** : `~matplotlib.colors.Normalize`, optional"
-msgstr ""
+msgstr "**norma** : `~matplotlib.colors.Normalize`, opcional"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:78 of
 msgid "Normalize, optional"
-msgstr ""
+msgstr "Normalizar, opcional"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:77 of
 msgid "The Normalize instance scales the data values to the canonical colormap range [0, 1] for mapping to colors. By default, the data range is mapped to the colorbar range using linear scaling."
-msgstr ""
+msgstr "La instancia Normalize escala los valores de datos al rango de mapa de color canónico [0, 1] para mapear a colores. De forma predeterminada, el rango de datos se asigna al rango de la barra de colores usando escalado lineal."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:86 of
 msgid "**vmin, vmax**"
-msgstr ""
+msgstr "**vmin, vmax**"
 
 #: of
 msgid "float, default: None"
-msgstr ""
+msgstr "float, default: None"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:82 of
 msgid "The colorbar range. If *None*, suitable min/max values are automatically chosen by the `.Normalize` instance (defaults to the respective min/max values of *C* in case of the default linear scaling). It is an error to use *vmin*/*vmax* when *norm* is given."
-msgstr ""
+msgstr "El rango de la barra de color. Si *nunca*, los valores mínimos / máximos adecuados son automáticamente elegidos por el `. instancia ormalize` (por defecto a los respectivos valores min/max de *C* en caso de la escala lineal predeterminada). Es un error usar *vmin*/*vmax* cuando se da *norma*."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:89 of
 msgid "**alpha**"
-msgstr ""
+msgstr "**alfa**"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:89 of
 msgid "The alpha blending value, between 0 (transparent) and 1 (opaque)."
-msgstr ""
+msgstr "El valor de mezcla alfa, entre 0 (transparente) y 1 (opaco)."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:92 of
 msgid "**snap**"
-msgstr ""
+msgstr "**snap**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:92 of
 msgid "Whether to snap the mesh to pixel boundaries."
-msgstr ""
+msgstr "Ajustar la malla a límites de píxeles."
 
 #: matplotlib.axes._axes.Axes.pcolorfast of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:103 of
 msgid "`.AxesImage` or `.PcolorImage` or `.QuadMesh`"
-msgstr ""
+msgstr "`.AxesImage` o `.PcolorImage` o `.QuadMesh`"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:97 of
 msgid "The return type depends on the type of grid:"
-msgstr ""
+msgstr "El tipo de retorno depende del tipo de cuadrícula:"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:99 of
 msgid "`.AxesImage` for a regular rectangular grid."
-msgstr ""
+msgstr "`.AxesImage` para una cuadrícula rectangular regular."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:100 of
 msgid "`.PcolorImage` for a non-regular rectangular grid."
-msgstr ""
+msgstr "`.PcolorImage` para una cuadrícula rectangular no regular."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:101 of
 msgid "`.QuadMesh` for a non-rectangular grid."
-msgstr ""
+msgstr "`.QuadMesh` para una cuadrícula no rectangular."
 
 #: matplotlib.axes._axes.Axes.pcolorfast of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:109 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:108 of
 msgid "If given, all parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception)."
-msgstr ""
+msgstr "Si se dan, todos los parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción)."
 
 #: matplotlib.axes._axes.Axes.pcolorfast:122 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.axes._axes.Axes.pcolorfast:112 of
 msgid "Supported additional parameters depend on the type of grid. See return types of *image* for further description."
-msgstr ""
+msgstr "Los parámetros adicionales soportados dependen del tipo de cuadrícula. Vea los tipos de *imagen* para más descripción."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.pcolorfast.examples:2
 msgid "Examples using ``matplotlib.axes.Axes.pcolorfast``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.axes.Axes.pcolorfast``"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolorfast.examples:10
 msgid "Pcolor Demo"
-msgstr ""
+msgstr "Demostración pcolor"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolorfast.examples:10
 #: ../../api/_as_gen/matplotlib.axes.Axes.pcolorfast.examples:18
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_pcolor_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_pcolor_demo.py`"
 

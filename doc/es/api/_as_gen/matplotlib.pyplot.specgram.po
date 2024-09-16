@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:18\n"
+"PO-Revision-Date: 2022-11-02 14:04\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,293 +20,293 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.pyplot.specgram.rst:2
 msgid "matplotlib.pyplot.specgram"
-msgstr ""
+msgstr "matplotlib.pyplot.specgram"
 
 #: matplotlib.pyplot.specgram:2 of
 msgid "Plot a spectrogram."
-msgstr ""
+msgstr "Trazar un espectrográfico."
 
 #: matplotlib.pyplot.specgram:4 of
 msgid "Compute and plot a spectrogram of data in *x*.  Data are split into *NFFT* length segments and the spectrum of each section is computed.  The windowing function *window* is applied to each segment, and the amount of overlap of each segment is specified with *noverlap*. The spectrogram is plotted as a colormap (using imshow)."
-msgstr ""
+msgstr "Calcula y grafica un espectrograma de datos en *x*, los datos se dividen en segmentos de longitud *NFT* y se calcula el espectro de cada sección. La función de ventana *window* se aplica a cada segmento, y la cantidad de superposición de cada segmento se especifica con *noverlap*. El espectrograma está trazado como mapa de colores (usando imshow)."
 
 #: matplotlib.pyplot.specgram of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.pyplot.specgram:14 of
 msgid "**x**"
-msgstr ""
+msgstr "**x**"
 
 #: of
 msgid "1-D array or sequence"
-msgstr ""
+msgstr "Arreglo o secuencia 1-D"
 
 #: matplotlib.pyplot.specgram:14 of
 msgid "Array or sequence containing the data."
-msgstr ""
+msgstr "Arreglo o secuencia que contiene los datos."
 
 #: matplotlib.pyplot.specgram:18 of
 msgid "**Fs**"
-msgstr ""
+msgstr "**Fs**"
 
 #: of
 msgid "float, default: 2"
-msgstr ""
+msgstr "float, default: 2"
 
 #: matplotlib.pyplot.specgram:17 of
 msgid "The sampling frequency (samples per time unit).  It is used to calculate the Fourier frequencies, *freqs*, in cycles per time unit."
-msgstr ""
+msgstr "La frecuencia de muestreo (muestras por unidad de tiempo).  Se utiliza para calcular las frecuencias de Fourier, *freqs*, en ciclos por unidad de tiempo."
 
 #: matplotlib.pyplot.specgram:25 of
 msgid "**window** : callable or ndarray, default: `.window_hanning`"
-msgstr ""
+msgstr "**window** : callable o ndarray, default: `.window_hanning`"
 
 #: of
 msgid "callable or ndarray, default:"
-msgstr ""
+msgstr "callable o ndarray, default:"
 
 #: matplotlib.pyplot.specgram:21 of
 msgid "A function or a vector of length *NFFT*.  To create window vectors see `.window_hanning`, `.window_none`, `numpy.blackman`, `numpy.hamming`, `numpy.bartlett`, `scipy.signal`, `scipy.signal.get_window`, etc.  If a function is passed as the argument, it must take a data segment as an argument and return the windowed version of the segment."
-msgstr ""
+msgstr "Una función o un vector de longitud *NFFT*.  Para crear vectores ventana, ver `.window_hanning`, `.window_none`, `numpy.blackman`, `numpy.hamming`, `numpy.bartlett`, `scipy.signal`, `scipy.signal.get_window`, etc.  Si se pasa una función como argumento, debe tomar un segmento de datos como argumento y devolver la versión con ventana del segmento."
 
 #: matplotlib.pyplot.specgram:30 of
 msgid "**sides**"
-msgstr ""
+msgstr "**sides**"
 
 #: of
 msgid "{'default', 'onesided', 'twosided'}, optional"
-msgstr ""
+msgstr "{'default', 'onesided', 'twosided'}, opcional"
 
 #: matplotlib.pyplot.specgram:28 of
 msgid "Which sides of the spectrum to return. 'default' is one-sided for real data and two-sided for complex data. 'onesided' forces the return of a one-sided spectrum, while 'twosided' forces two-sided."
-msgstr ""
+msgstr "Qué lados del espectro devolver. 'default' es de un solo lado para datos reales y de dos lados para datos complejos. 'onesided' fuerza la devolución de un espectro de un solo lado, mientras que 'twosided' fuerza dos lados."
 
 #: matplotlib.pyplot.specgram:39 of
 msgid "**pad_to**"
-msgstr ""
+msgstr "**pad_to**"
 
 #: of
 msgid "int, optional"
-msgstr ""
+msgstr "int, opcional"
 
 #: matplotlib.pyplot.specgram:33 of
 msgid "The number of points to which the data segment is padded when performing the FFT.  This can be different from *NFFT*, which specifies the number of data points used.  While not increasing the actual resolution of the spectrum (the minimum distance between resolvable peaks), this can give more points in the plot, allowing for more detail. This corresponds to the *n* parameter in the call to fft(). The default is None, which sets *pad_to* equal to *NFFT*"
-msgstr ""
+msgstr "El número de puntos a los que se rellena el segmento de datos al realizar la FFT.  Esto puede ser diferente de *NFFT*, que especifica el número de puntos de datos utilizados.  Aunque no aumenta la resolución real del espectro (la distancia mínima entre los picos resolubles), esto puede dar más puntos en el gráfico, permitiendo más detalles. Esto corresponde al parámetro *n* en la llamada a fft(). El valor por defecto es None, que establece *pad_to* igual a *NFFT*"
 
 #: matplotlib.pyplot.specgram:44 of
 msgid "**NFFT**"
-msgstr ""
+msgstr "**NFFT**"
 
 #: of
 msgid "int, default: 256"
-msgstr ""
+msgstr "int, default: 256"
 
 #: matplotlib.pyplot.specgram:42 of
 msgid "The number of data points used in each block for the FFT.  A power 2 is most efficient.  This should *NOT* be used to get zero padding, or the scaling of the result will be incorrect; use *pad_to* for this instead."
-msgstr ""
+msgstr "El número de puntos de datos utilizados en cada bloque para la FFT.  Una potencia 2 es lo más eficiente.  Esto debe *NO* usarse para obtener el relleno de cero, o el escalado del resultado será incorrecto; use *pad_to* para esto en su lugar."
 
 #: matplotlib.pyplot.specgram:53 of
 msgid "**detrend**"
-msgstr ""
+msgstr "**detrend**"
 
 #: of
 msgid "{'none', 'mean', 'linear'} or callable, default: 'none'"
-msgstr ""
+msgstr "{'none', 'mean', 'linear'} or callable, default: 'none'"
 
 #: matplotlib.pyplot.specgram:47 of
 msgid "The function applied to each segment before fft-ing, designed to remove the mean or linear trend.  Unlike in MATLAB, where the *detrend* parameter is a vector, in Matplotlib it is a function.  The :mod:`~matplotlib.mlab` module defines `.detrend_none`, `.detrend_mean`, and `.detrend_linear`, but you can use a custom function as well.  You can also use a string to choose one of the functions: 'none' calls `.detrend_none`. 'mean' calls `.detrend_mean`. 'linear' calls `.detrend_linear`."
-msgstr ""
+msgstr "La función aplicada a cada segmento antes de fft-ing, diseñada para eliminar la media o la tendencia lineal.  A diferencia de MATLAB, donde el parámetro *detrend* es un vector, en Matplotlib es una función.  El módulo :mod:`~matplotlib.mlab` define `.detrend_none`, `.detrend_mean` y `.detrend_linear`, pero también se puede utilizar una función personalizada.  También puede utilizar una cadena para elegir una de las funciones: \"none\" llama a `.detrend_none`. 'mean' invoca a `.detrend_mean`. 'linear' llama a `.detrend_linear`."
 
 #: matplotlib.pyplot.specgram:59 of
 msgid "**scale_by_freq**"
-msgstr ""
+msgstr "**scale_by_freq**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.pyplot.specgram:56 of
 msgid "Whether the resulting density values should be scaled by the scaling frequency, which gives density in units of Hz^-1.  This allows for integration over the returned frequency values.  The default is True for MATLAB compatibility."
-msgstr ""
+msgstr "Si los valores de densidad resultantes deben ser escalados por la frecuencia de escalado, que da la densidad en unidades de Hz^-1.  Esto permite la integración sobre los valores de frecuencia devueltos.  El valor por defecto es True para la compatibilidad con MATLAB."
 
 #: matplotlib.pyplot.specgram:65 of
 msgid "**mode**"
-msgstr ""
+msgstr "**mode**"
 
 #: of
 msgid "{'default', 'psd', 'magnitude', 'angle', 'phase'}"
-msgstr ""
+msgstr "{'default', 'psd', 'magnitude', 'angle', 'phase'}"
 
 #: matplotlib.pyplot.specgram:62 of
 msgid "What sort of spectrum to use.  Default is 'psd', which takes the power spectral density.  'magnitude' returns the magnitude spectrum.  'angle' returns the phase spectrum without unwrapping. 'phase' returns the phase spectrum with unwrapping."
-msgstr ""
+msgstr "¿Qué tipo de espectro utilizar. Por defecto es 'psd', que toma la densidad espectral de potencia. 'magnitud' devuelve el espectro de magnitud. 'ángulo' devuelve el espectro de fases sin desenvolver. 'fase' devuelve el espectro de la fase con el desenvuelto."
 
 #: matplotlib.pyplot.specgram:68 of
 msgid "**noverlap**"
-msgstr ""
+msgstr "**noverlap**"
 
 #: of
 msgid "int, default: 128"
-msgstr ""
+msgstr "int, por defecto: 128"
 
 #: matplotlib.pyplot.specgram:68 of
 msgid "The number of points of overlap between blocks."
-msgstr ""
+msgstr "El número de puntos de solapamiento entre bloques."
 
 #: matplotlib.pyplot.specgram:76 of
 msgid "**scale**"
-msgstr ""
+msgstr "**escala**"
 
 #: of
 msgid "{'default', 'linear', 'dB'}"
-msgstr ""
+msgstr "{'default', 'linear', 'dB'}"
 
 #: matplotlib.pyplot.specgram:71 of
 msgid "The scaling of the values in the *spec*.  'linear' is no scaling. 'dB' returns the values in dB scale.  When *mode* is 'psd', this is dB power (10 * log10).  Otherwise this is dB amplitude (20 * log10). 'default' is 'dB' if *mode* is 'psd' or 'magnitude' and 'linear' otherwise.  This must be 'linear' if *mode* is 'angle' or 'phase'."
-msgstr ""
+msgstr "La escala de los valores en la *spec*. 'lineal' no es una escala. 'dB' devuelve los valores en escala dB. Cuando *mode* es 'psd', es dB power (10 * log10). De lo contrario, es amplitud dB (20 * log10). 'default' es 'dB' si *mode* es 'psd' o 'magnitude' y 'lineal' de otra manera. Esto debe ser \"lineal\" si *mode* es \"ángulo\" o \"fase\"."
 
 #: matplotlib.pyplot.specgram:81 of
 msgid "**Fc**"
-msgstr ""
+msgstr "**Fc**"
 
 #: of
 msgid "int, default: 0"
-msgstr ""
+msgstr "int, por defecto: 0"
 
 #: matplotlib.pyplot.specgram:79 of
 msgid "The center frequency of *x*, which offsets the x extents of the plot to reflect the frequency range used when a signal is acquired and then filtered and downsampled to baseband."
-msgstr ""
+msgstr "La frecuencia central de *x*, que compensa la extensión x de la parcela para reflejar el rango de frecuencia utilizado cuando una señal es adquirida y luego filtrada y mostrada a la baseband."
 
 #: matplotlib.pyplot.specgram:84 of
 msgid "**cmap** : `.Colormap`, default: :rc:`image.cmap`"
-msgstr ""
+msgstr "**cmap** : `.Colormap`, default: :rc:`image.cmap`"
 
 #: matplotlib.pyplot.specgram:83 of
 msgid "Colormap, default: rcParams[\"image.cmap\"] (default: 'viridis')"
-msgstr ""
+msgstr "Colormap, por defecto: rcParams[\"image.cmap\"] (por defecto: 'viridis')"
 
 #: matplotlib.pyplot.specgram:90 of
 msgid "**xextent** : *None* or (xmin, xmax)"
-msgstr ""
+msgstr "**xextent** : *Ninguno* o (xmin, xmax)"
 
 #: matplotlib.pyplot.specgram:89 of
 msgid "None or (xmin, xmax)"
-msgstr ""
+msgstr "Ninguno o (xmin, xmax)"
 
 #: matplotlib.pyplot.specgram:87 of
 msgid "The image extent along the x-axis. The default sets *xmin* to the left border of the first bin (*spectrum* column) and *xmax* to the right border of the last bin. Note that for *noverlap>0* the width of the bins is smaller than those of the segments."
-msgstr ""
+msgstr "La extensión de la imagen a lo largo del eje x. El valor por defecto establece *xmin* en el borde izquierdo de la primera bin (columna *espectro* ) y *xmax* en el borde derecho de la última papelera. Tenga en cuenta que para *noverlap>0* el ancho de los contenedores es menor que los de los segmentos."
 
 #: matplotlib.pyplot.specgram:96 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.pyplot.specgram:93 of
 msgid "If given, the following parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception):"
-msgstr ""
+msgstr "Si se dan, los siguientes parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción):"
 
 #: matplotlib.pyplot.specgram:96 of
 msgid "*x*"
-msgstr ""
+msgstr "*x*"
 
 #: matplotlib.pyplot.specgram:101 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.pyplot.specgram:99 of
 msgid "Additional keyword arguments are passed on to `~.axes.Axes.imshow` which makes the specgram image. The origin keyword argument is not supported."
-msgstr ""
+msgstr "Argumentos adicionales de palabras clave son pasados a `~.axes.Axes.imshow` que hace la imagen del especgrama. El argumento de palabra clave de origen no es compatible."
 
 #: matplotlib.pyplot.specgram of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.pyplot.specgram:106 of
 msgid "**spectrum**"
-msgstr ""
+msgstr "**spectrum**"
 
 #: of
 msgid "2D array"
-msgstr ""
+msgstr "Arreglo 2D"
 
 #: matplotlib.pyplot.specgram:106 of
 msgid "Columns are the periodograms of successive segments."
-msgstr ""
+msgstr "Las columnas son los periodogramos de segmentos sucesivos."
 
 #: matplotlib.pyplot.specgram:109 of
 msgid "**freqs**"
-msgstr ""
+msgstr "**freqs**"
 
 #: of
 msgid "1-D array"
-msgstr ""
+msgstr "Arreglo 1-D"
 
 #: matplotlib.pyplot.specgram:109 of
 msgid "The frequencies corresponding to the rows in *spectrum*."
-msgstr ""
+msgstr "Las frecuencias correspondientes a las filas en *spectrum*."
 
 #: matplotlib.pyplot.specgram:113 of
 msgid "**t**"
-msgstr ""
+msgstr "**t**"
 
 #: matplotlib.pyplot.specgram:112 of
 msgid "The times corresponding to midpoints of segments (i.e., the columns in *spectrum*)."
-msgstr ""
+msgstr "Los tiempos correspondientes a medias de segmentos (por ejemplo, las columnas en *spectrum*)."
 
 #: matplotlib.pyplot.specgram:122 of
 msgid "**im** : `.AxesImage`"
-msgstr ""
+msgstr "**im** : `.AxesImage`"
 
 #: matplotlib.pyplot.specgram:121 of
 msgid "AxesImage"
-msgstr ""
+msgstr "AxesImage"
 
 #: matplotlib.pyplot.specgram:116 of
 msgid "The image created by imshow containing the spectrogram."
-msgstr ""
+msgstr "La imagen creada por imshow que contiene el espectrográfico."
 
 #: matplotlib.pyplot.specgram:127 of
 msgid ":obj:`psd`"
-msgstr ""
+msgstr ":obj:`psd`"
 
 #: matplotlib.pyplot.specgram:128 of
 msgid "Differs in the default overlap; in returning the mean of the segment periodograms; in not returning times; and in generating a line plot instead of colormap."
-msgstr ""
+msgstr "Diferencias en la superposición predeterminada; al devolver la media de los periodogramas de segmento; en tiempos no retornables; y en la generación de una gráfica de línea en lugar del mapa de color."
 
 #: matplotlib.pyplot.specgram:129 of
 msgid ":obj:`magnitude_spectrum`"
-msgstr ""
+msgstr ":obj:`magnitude_spectrum`"
 
 #: matplotlib.pyplot.specgram:130 of
 msgid "A single spectrum, similar to having a single segment when *mode* is 'magnitude'. Plots a line instead of a colormap."
-msgstr ""
+msgstr "Un solo espectro, similar a tener un solo segmento cuando *mode* es 'magnitude'. Trae una línea en lugar de un mapa de color."
 
 #: matplotlib.pyplot.specgram:131 of
 msgid ":obj:`angle_spectrum`"
-msgstr ""
+msgstr ":obj:`angle_spectrum`"
 
 #: matplotlib.pyplot.specgram:132 of
 msgid "A single spectrum, similar to having a single segment when *mode* is 'angle'. Plots a line instead of a colormap."
-msgstr ""
+msgstr "Un solo espectro, similar a tener un solo segmento cuando *mode* es 'ángulo'. Trae una línea en lugar de un mapa de color."
 
 #: matplotlib.pyplot.specgram:133 of
 msgid ":obj:`phase_spectrum`"
-msgstr ""
+msgstr ":obj:`phase_spectrum`"
 
 #: matplotlib.pyplot.specgram:134 of
 msgid "A single spectrum, similar to having a single segment when *mode* is 'phase'. Plots a line instead of a colormap."
-msgstr ""
+msgstr "Un solo espectro, similar a tener un solo segmento cuando *mode* es 'fase'. Trae una línea en lugar de un mapa de color."
 
 #: matplotlib.pyplot.specgram:138 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.pyplot.specgram:139 of
 msgid "The parameters *detrend* and *scale_by_freq* do only apply when *mode* is set to 'psd'."
-msgstr ""
+msgstr "Los parámetros *detrend* y *scale_by_freq* sólo se aplican cuando *mode* está establecido en 'psd'."
 

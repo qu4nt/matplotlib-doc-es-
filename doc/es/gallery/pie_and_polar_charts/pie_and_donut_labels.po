@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:28\n"
+"PO-Revision-Date: 2022-07-17 22:33\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,85 +20,85 @@ msgstr ""
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_pie_and_polar_charts_pie_and_donut_labels.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_pie_and_polar_charts_pie_and_donut_labels.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:23
 msgid "Labeling a pie and a donut"
-msgstr ""
+msgstr "Etiquetado de una tarta y un donut"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:25
 msgid "Welcome to the Matplotlib bakery. We will create a pie and a donut chart through the `pie method <matplotlib.axes.Axes.pie>` and show how to label them with a `legend <matplotlib.axes.Axes.legend>` as well as with `annotations <matplotlib.axes.Axes.annotate>`."
-msgstr ""
+msgstr "Bienvenidos a la fábrica de pasteles de Matplotlib. Vamos a crear un gráfico de tartas y otro de rosquillas mediante el método `pie <matplotlib.axes.Axes.pie>` y mostraremos cómo etiquetarlos con una `leyenda <matplotlib.axes.Axes.legend>` así como con `anotaciones <matplotlib.axes.Axes.annotate>`."
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:32
 msgid "As usual we would start by defining the imports and create a figure with subplots. Now it's time for the pie. Starting with a pie recipe, we create the data and a list of labels from it."
-msgstr ""
+msgstr "Como normalmente empezaríamos definiendo las importaciones y creando una figura con subtramas. Ahora es el momento de la tarta. Partiendo de una receta de tarta, creamos los datos y una lista de etiquetas a partir de ella."
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:37
 msgid "We can provide a function to the ``autopct`` argument, which will expand automatic percentage labeling by showing absolute values; we calculate the latter back from relative data and the known sum of all values."
-msgstr ""
+msgstr "Podemos proporcionar una función al argumento ``autopct``, que ampliará el etiquetado automático de los porcentajes mostrando los valores absolutos; estos últimos los calculamos de nuevo a partir de los datos relativos y la suma conocida de todos los valores."
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:41
 msgid "We then create the pie and store the returned objects for later.  The first returned element of the returned tuple is a list of the wedges.  Those are `matplotlib.patches.Wedge` patches, which can directly be used as the handles for a legend. We can use the legend's ``bbox_to_anchor`` argument to position the legend outside of the pie. Here we use the axes coordinates ``(1, 0, 0.5, 1)`` together with the location ``\"center left\"``; i.e. the left central point of the legend will be at the left central point of the bounding box, spanning from ``(1, 0)`` to ``(1.5, 1)`` in axes coordinates."
-msgstr ""
+msgstr "A continuación, creamos la tarta y almacenamos los objetos devueltos para más adelante. El primer elemento devuelto de la tupla devuelta es una lista de las cuñas. Se trata de los parches `matplotlib.patches.Wedge`, que pueden utilizarse directamente como asas de una leyenda. Podemos utilizar el argumento ``bbox_to_anchor`` de la leyenda para posicionar la leyenda fuera de la tarta. Aquí utilizamos las coordenadas de los ejes ``(1, 0, 0.5, 1)`` junto con la ubicación ``\"centro izquierda\"``; es decir, el punto central izquierdo de la leyenda estará en el punto central izquierdo de la caja delimitadora, que abarca desde ``(1, 0)`` hasta ``(1.5, 1)`` en coordenadas de los ejes."
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:103
 msgid "Now it's time for the donut. Starting with a donut recipe, we transcribe the data to numbers (converting 1 egg to 50 g), and directly plot the pie. The pie? Wait... it's going to be donut, is it not? Well, as we see here, the donut is a pie, having a certain ``width`` set to the wedges, which is different from its radius. It's as easy as it gets. This is done via the ``wedgeprops`` argument."
-msgstr ""
+msgstr "Ahora es el momento de la rosquilla. Partiendo de una receta de donuts, transcribimos los datos a números (convirtiendo 1 huevo en 50 g), y trazamos directamente el pastel. ¿El pastel? Espera... va a ser un donut, ¿no? Bueno, como vemos aquí, el donut es una tarta, que tiene una determinada ``anchura`` fijada a las cuñas, que es diferente de su radio. Más fácil imposible. Esto se hace a través del argumento ``wedgeprops``."
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:110
 msgid "We then want to label the wedges via `annotations <matplotlib.axes.Axes.annotate>`. We first create some dictionaries of common properties, which we can later pass as keyword argument. We then iterate over all wedges and for each"
-msgstr ""
+msgstr "A continuación queremos etiquetar las cuñas mediante `anotaciones <matplotlib.axes.Axes.annotate>`. Primero creamos algunos diccionarios de propiedades comunes, que luego podemos pasar como argumento de palabra clave. Luego iteramos sobre todas las cuñas y para cada una"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:115
 msgid "calculate the angle of the wedge's center,"
-msgstr ""
+msgstr "calcular el ángulo del centro de la cuña,"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:116
 msgid "from that obtain the coordinates of the point at that angle on the circumference,"
-msgstr ""
+msgstr "a partir de eso obtener las coordenadas del punto en ese ángulo de la circunferencia,"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:118
 msgid "determine the horizontal alignment of the text, depending on which side of the circle the point lies,"
-msgstr ""
+msgstr "determinan la alineación horizontal del texto, según el lado del círculo en el que se encuentre el punto,"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:120
 msgid "update the connection style with the obtained angle to have the annotation arrow point outwards from the donut,"
-msgstr ""
+msgstr "actualizar el estilo de conexión con el ángulo obtenido para que la flecha de anotación apunte hacia fuera del donut,"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:122
 msgid "finally, create the annotation with all the previously determined parameters."
-msgstr ""
+msgstr "finalmente, crea la anotación con todos los parámetros previamente determinados."
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:176
 msgid "And here it is, the donut. Note however, that if we were to use this recipe, the ingredients would suffice for around 6 donuts - producing one huge donut is untested and might result in kitchen errors."
-msgstr ""
+msgstr "Y aquí está, el donut. Ten en cuenta, sin embargo, que si fuéramos a utilizar esta receta, los ingredientes serían suficientes para unos 6 donuts - generar un donut enorme no está probado y podría dar lugar a errores de cocina."
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:182
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:184
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:187
 msgid "`matplotlib.axes.Axes.pie` / `matplotlib.pyplot.pie`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.pie` / `matplotlib.pyplot.pie`"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:188
 msgid "`matplotlib.axes.Axes.legend` / `matplotlib.pyplot.legend`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.legend` / `matplotlib.pyplot.legend`"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:203
 msgid ":download:`Download Python source code: pie_and_donut_labels.py <pie_and_donut_labels.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: pie_and_donut_labels.py <pie_and_donut_labels.py>`"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:209
 msgid ":download:`Download Jupyter notebook: pie_and_donut_labels.ipynb <pie_and_donut_labels.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: pie_and_donut_labels.ipynb <pie_and_donut_labels.ipynb>`"
 
 #: ../../gallery/pie_and_polar_charts/pie_and_donut_labels.rst:216
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

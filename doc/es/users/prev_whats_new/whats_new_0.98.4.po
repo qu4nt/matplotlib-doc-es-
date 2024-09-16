@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-04-16 02:48\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,77 +20,77 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:4
 msgid "What's new in Matplotlib 0.98.4"
-msgstr ""
+msgstr "Novedades en Matplotlib 0.98.4"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:9
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de Contenidos"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:11
 msgid "It's been four months since the last matplotlib release, and there are a lot of new features and bug-fixes."
-msgstr ""
+msgstr "Han pasado cuatro meses desde la última versión de matplotlib, y hay un montón de nuevas características y correcciones de errores."
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:14
 msgid "Thanks to Charlie Moad for testing and preparing the source release, including binaries for OS X and Windows for python 2.4 and 2.5 (2.6 and 3.0 will not be available until numpy is available on those releases).  Thanks to the many developers who contributed to this release, with contributions from Jae-Joon Lee, Michael Droettboom, Ryan May, Eric Firing, Manuel Metz, Jouni K. Seppänen, Jeff Whitaker, Darren Dale, David Kaplan, Michiel de Hoon and many others who submitted patches"
-msgstr ""
+msgstr "Gracias a Charlie Moad por probar y preparar el lanzamiento de la fuente, incluyendo binarios para OS X y Windows para python 2.4 y 2.5 (2.6 y 3.0 no estarán disponibles hasta que numpy esté disponible en esas versiones).  Gracias a los numerosos desarrolladores que han contribuido a esta versión, con aportaciones de Jae-Joon Lee, Michael Droettboom, Ryan May, Eric Firing, Manuel Metz, Jouni K. Seppänen, Jeff Whitaker, Darren Dale, David Kaplan, Michiel de Hoon y muchos otros que enviaron parches"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:26
 msgid "Legend enhancements"
-msgstr ""
+msgstr "Mejoras en la leyenda"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:28
 msgid "Jae-Joon has rewritten the legend class, and added support for multiple columns and rows, as well as fancy box drawing.  See :func:`~matplotlib.pyplot.legend` and :class:`matplotlib.legend.Legend`."
-msgstr ""
+msgstr "Jae-Joon ha reescrito la clase de leyenda, y ha añadido soporte para múltiples columnas y filas, así como el dibujo de cajas de fantasía.  Ver :func:`~matplotlib.pyplot.legend` y :class:`matplotlib.legend.Legend`."
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_0-98-4-1.py>`__, `png <../../users/prev_whats_new/whats_new_0-98-4-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_0-98-4-1.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_0-98-4-1.py>`__, `png <../../users/prev_whats_new/whats_new_0-98-4-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_0-98-4-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:49
 msgid "Fancy annotations and arrows"
-msgstr ""
+msgstr "Anotaciones y flechas de fantasía"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:51
 msgid "Jae-Joon has added lots of support to annotations for drawing fancy boxes and connectors in annotations.  See :func:`~matplotlib.pyplot.annotate` and :class:`~matplotlib.patches.BoxStyle`, :class:`~matplotlib.patches.ArrowStyle`, and :class:`~matplotlib.patches.ConnectionStyle`."
-msgstr ""
+msgstr "Jae-Joon ha añadido mucho soporte a las anotaciones para dibujar cajas y conectores de fantasía en las anotaciones.  Ver :func:`~matplotlib.pyplot.annotate` y :class:`~matplotlib.patches.BoxStyle`, :class:`~matplotlib.patches.ArrowStyle`, y :class:`~matplotlib.patches.ConnectionStyle`."
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_0-98-4-2.py>`__, `png <../../users/prev_whats_new/whats_new_0-98-4-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_0-98-4-2.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_0-98-4-2.py>`__, `png <../../users/prev_whats_new/whats_new_0-98-4-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_0-98-4-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:117
 msgid "Native OS X backend"
-msgstr ""
+msgstr "Backend nativo de OS X"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:119
 msgid "Michiel de Hoon has provided a native Mac OSX backend that is almost completely implemented in C. The backend can therefore use Quartz directly and, depending on the application, can be orders of magnitude faster than the existing backends. In addition, no third-party libraries are needed other than Python and NumPy. The backend is interactive from the usual terminal application on Mac using regular Python. It hasn't been tested with ipython yet, but in principle it should to work there as well.  Set 'backend : macosx' in your matplotlibrc file, or run your script with::"
-msgstr ""
+msgstr "Michiel de Hoon ha proporcionado un backend nativo para Mac OSX que está implementado casi por completo en C. El backend puede por tanto utilizar Quartz directamente y, dependiendo de la aplicación, puede ser órdenes de magnitud más rápido que los backends existentes. Además, no se necesitan librerías de terceros aparte de Python y NumPy. El backend es interactivo desde la aplicación de terminal habitual en Mac utilizando Python normal. Todavía no se ha probado con ipython, pero en principio también debería funcionar allí.  Establezca 'backend : macosx' en su archivo matplotlibrc, o ejecute su script con::"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:135
 msgid "psd amplitude scaling"
-msgstr ""
+msgstr "escalado de amplitud psd"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:137
 msgid "Ryan May did a lot of work to rationalize the amplitude scaling of :func:`~matplotlib.pyplot.psd` and friends.  See :doc:`/gallery/lines_bars_and_markers/psd_demo`. The changes should increase MATLAB compatibility and increase scaling options."
-msgstr ""
+msgstr "Ryan May ha trabajado mucho para racionalizar el escalado de amplitud de :func:`~matplotlib.pyplot.psd` y sus amigos.  Ver :doc:`/gallery/lines_bars_and_markers/psd_demo`. Los cambios deberían aumentar la compatibilidad con MATLAB y aumentar las opciones de escalado."
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:146
 msgid "Fill between"
-msgstr ""
+msgstr "Relleno entre"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:148
 msgid "Added a :func:`~matplotlib.pyplot.fill_between` function to make it easier to do shaded region plots in the presence of masked data.  You can pass an *x* array and a *ylower* and *yupper* array to fill between, and an optional *where* argument which is a logical mask where you want to do the filling."
-msgstr ""
+msgstr "Se ha añadido una función :func:`~matplotlib.pyplot.fill_between` para facilitar la realización de gráficos de regiones sombreadas en presencia de datos enmascarados.  Puedes pasar un array *x* y un array *ylower* y *yupper* para rellenar entre ellos, y un argumento opcional *where* que es una máscara lógica donde quieres hacer el relleno."
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_0-98-4-3.py>`__, `png <../../users/prev_whats_new/whats_new_0-98-4-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_0-98-4-3.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_0-98-4-3.py>`__, `png <../../users/prev_whats_new/whats_new_0-98-4-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_0-98-4-3.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:170
 msgid "Lots more"
-msgstr ""
+msgstr "Mucho más"
 
 #: ../../users/prev_whats_new/whats_new_0.98.4.rst:172
 msgid "Here are the 0.98.4 notes from the CHANGELOG::"
-msgstr ""
+msgstr "Aquí están las notas de 0.98.4 del CHANGELOG::"
 

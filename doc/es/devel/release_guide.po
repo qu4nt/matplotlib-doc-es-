@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:25\n"
+"PO-Revision-Date: 2022-06-23 16:20\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,389 +20,389 @@ msgstr ""
 
 #: ../../devel/release_guide.rst:7
 msgid "Release guide"
-msgstr ""
+msgstr "Guía de publicación"
 
 #: ../../devel/release_guide.rst:10
 msgid "This document is only relevant for Matplotlib release managers."
-msgstr ""
+msgstr "Este documento sólo es relevante para los gestores de la versión de Matplotlib."
 
 #: ../../devel/release_guide.rst:12
 msgid "A guide for developers who are doing a Matplotlib release."
-msgstr ""
+msgstr "Una guía para los desarrolladores que están haciendo un lanzamiento de Matplotlib."
 
 #: ../../devel/release_guide.rst:17
 msgid "This assumes that a read-only remote for the canonical repository is ``remote`` and a read/write remote is ``DANGER``"
-msgstr ""
+msgstr "Esto supone que un remoto de sólo lectura para el repositorio canónico es ``remote`` y un remoto de lectura/escritura es ``DANGER``"
 
 #: ../../devel/release_guide.rst:24
 msgid "Testing"
-msgstr ""
+msgstr "Prueba"
 
 #: ../../devel/release_guide.rst:26
 msgid "We use `GitHub Actions <https://github.com/matplotlib/matplotlib/actions>`__ for continuous integration.  When preparing for a release, the final tagged commit should be tested locally before it is uploaded::"
-msgstr ""
+msgstr "Utilizamos `GitHub Actions <https://github.com/matplotlib/matplotlib/actions>`__ para la integración continua.  Cuando se prepara un lanzamiento, el commit final etiquetado debe ser probado localmente antes de ser subido::"
 
 #: ../../devel/release_guide.rst:33
 msgid "In addition the following test should be run and manually inspected::"
-msgstr ""
+msgstr "Además, debe ejecutarse la siguiente prueba e inspeccionarse manualmente::"
 
 #: ../../devel/release_guide.rst:38
 msgid "In addition the following should be run and manually inspected, but is currently broken::"
-msgstr ""
+msgstr "Además, se debe ejecutar e inspeccionar manualmente lo siguiente, pero actualmente está roto::"
 
 #: ../../devel/release_guide.rst:49
 msgid "GitHub statistics"
-msgstr ""
+msgstr "Estadísticas de GitHub"
 
 #: ../../devel/release_guide.rst:52
 msgid "We automatically extract GitHub issue, PRs, and authors from GitHub via the API.  Copy the current :file:`doc/users/github_stats.rst` to :file:`doc/users/prev_whats_new/github_stats_X.Y.Z.rst`, changing the link target at the top of the file, and removing the \"Previous GitHub Stats\" section at the end."
-msgstr ""
+msgstr "Extraemos automáticamente de GitHub lss incidencias, PRs y autores a través de la API.  Copia el actual :file:`doc/users/github_stats.rst` a :file:`doc/users/prev_whats_new/github_stats_X.Y.Z.rst`, cambiando el objetivo del enlace en la parte superior del archivo, y eliminando la sección \"Previous GitHub Stats\" al final."
 
 #: ../../devel/release_guide.rst:58
 msgid "For example, when updating from v3.2.0 to v3.2.1::"
-msgstr ""
+msgstr "Por ejemplo, al actualizar de v3.2.0 a v3.2.1::"
 
 #: ../../devel/release_guide.rst:65
 msgid "Then re-generate the updated stats::"
-msgstr ""
+msgstr "A continuación, vuelva a generar las estadísticas actualizadas::"
 
 #: ../../devel/release_guide.rst:69
 msgid "Review and commit changes.  Some issue/PR titles may not be valid reST (the most common issue is ``*`` which is interpreted as unclosed markup)."
-msgstr ""
+msgstr "Revisa y confirma los cambios.  Algunos títulos de incidencias/PR pueden no ser reST válidos (la cuestión más común es ``*`` que se interpreta como marca no cerrada)."
 
 #: ../../devel/release_guide.rst:74
 msgid "Make sure you authenticate against the GitHub API.  If you do not you will get blocked by GitHub for going over the API rate limits.  You can authenticate in one of two ways:"
-msgstr ""
+msgstr "Asegúrate de autenticarte en la API de GitHub.  Si no lo haces, GitHub te bloqueará por superar los límites de velocidad de la API.  Puedes autenticarte de dos maneras:"
 
 #: ../../devel/release_guide.rst:78
 msgid "using the ``keyring`` package; ``pip install keyring`` and then when running the stats script, you will be prompted for user name and password, that will be stored in your system keyring, or,"
-msgstr ""
+msgstr "utilizar el paquete ``keyring``; ``pip install keyring`` y luego al ejecutar el script de estadísticas, se le pedirá el nombre de usuario y la contraseña, que se almacenará en su llavero del sistema, o,"
 
 #: ../../devel/release_guide.rst:81
 msgid "using a personal access token; generate a new token `on this GitHub page <https://github.com/settings/tokens>`__ with the ``repo:public_repo`` scope and place the token in :file:`~/.ghoauth`."
-msgstr ""
+msgstr "utilizando un token de acceso personal; genera un nuevo token `en esta página de GitHub <https://github.com/settings/tokens>`__ con el ámbito ``repo:public_repo`` y coloca el token en :file:`~/.ghoauth`."
 
 #: ../../devel/release_guide.rst:89
 msgid "Update and validate the docs"
-msgstr ""
+msgstr "Actualizar y validar los documentos"
 
 #: ../../devel/release_guide.rst:92
 msgid "Merge ``*-doc`` branch"
-msgstr ""
+msgstr "Fusionar la rama ``*-doc``"
 
 #: ../../devel/release_guide.rst:94
 msgid "Merge the most recent 'doc' branch (e.g., ``v3.2.0-doc``) into the branch you are going to tag on and delete the doc branch on GitHub."
-msgstr ""
+msgstr "Fusiona la rama 'doc' más reciente (por ejemplo, ``v3.2.0-doc``) en la rama en la que vas a etiquetar y elimina la rama doc en GitHub."
 
 #: ../../devel/release_guide.rst:98
 msgid "Update supported versions in Security Policy"
-msgstr ""
+msgstr "Actualizar las versiones admitidas en la política de seguridad"
 
 #: ../../devel/release_guide.rst:100
 msgid "When making major or minor releases, update the supported versions in the Security Policy in :file:`SECURITY.md`.  Commonly, this may be one or two previous minor releases, but is dependent on release managers."
-msgstr ""
+msgstr "Cuando se realicen versiones mayores o menores, actualice las versiones soportadas en la Política de Seguridad en :file:`SECURITY.md`.  Normalmente, esto puede ser una o dos versiones menores anteriores, pero depende de los gestores de versiones."
 
 #: ../../devel/release_guide.rst:105
 msgid "Update release notes"
-msgstr ""
+msgstr "Actualizar las notas de publicación"
 
 #: ../../devel/release_guide.rst:108
 msgid "What's new"
-msgstr ""
+msgstr "Novedades"
 
 #: ../../devel/release_guide.rst:110
 msgid "*Only needed for major and minor releases. Bugfix releases should not have new features.*"
-msgstr ""
+msgstr "*Sólo es necesario para las versiones mayores y menores. Las versiones de corrección de errores no deben tener nuevas características.*"
 
 #: ../../devel/release_guide.rst:113
 msgid "Merge the contents of all the files in :file:`doc/users/next_whats_new/` into a single file :file:`doc/users/prev_whats_new/whats_new_X.Y.0.rst` and delete the individual files."
-msgstr ""
+msgstr "Fusiona el contenido de todos los archivos en :file:`doc/users/next_whats_new/` en un único archivo :file:`doc/users/prev_whats_new/whats_new_X.Y.0.rst` y elimina los archivos individuales."
 
 #: ../../devel/release_guide.rst:118
 msgid "API changes"
-msgstr ""
+msgstr "Cambios del API"
 
 #: ../../devel/release_guide.rst:120
 msgid "*Primarily needed for major and minor releases. We may sometimes have API changes in bugfix releases.*"
-msgstr ""
+msgstr "*Se necesita principalmente para las versiones mayores y menores. A veces podemos tener cambios en la API en las versiones de corrección de errores.*"
 
 #: ../../devel/release_guide.rst:123
 msgid "Merge the contents of all the files in :file:`doc/api/next_api_changes/` into a single file :file:`doc/api/prev_api_changes/api_changes_X.Y.Z.rst` and delete the individual files."
-msgstr ""
+msgstr "Fusiona el contenido de todos los archivos de :file:`doc/api/next_api_changes/` en un único archivo :file:`doc/api/prev_api_changes/api_changes_X.Y.Z.rst` y elimina los archivos individuales."
 
 #: ../../devel/release_guide.rst:128
 msgid "Release notes TOC"
-msgstr ""
+msgstr "Notas de publicación TOC"
 
 #: ../../devel/release_guide.rst:130
 msgid "Update :file:`doc/users/release_notes.rst`:"
-msgstr ""
+msgstr "Actualizar :file:`doc/users/release_notes.rst`:"
 
 #: ../../devel/release_guide.rst:132
 msgid "For major and minor releases add a new section"
-msgstr ""
+msgstr "Para las versiones mayores y menores añade una nueva sección"
 
 #: ../../devel/release_guide.rst:145
 msgid "For bugfix releases add the GitHub stats and (if present) the API changes to the existing X.Y section"
-msgstr ""
+msgstr "Para las versiones de corrección de errores, añada las estadísticas de GitHub y (si están presentes) los cambios de la API a la sección X.Y existente"
 
 #: ../../devel/release_guide.rst:154
 msgid "Verify that docs build"
-msgstr ""
+msgstr "Verificar que los documentos se construyan"
 
 #: ../../devel/release_guide.rst:156
 msgid "Finally, make sure that the docs build cleanly ::"
-msgstr ""
+msgstr "Por último, asegúrese de que los documentos se construyan limpiamente ::"
 
 #: ../../devel/release_guide.rst:160
 msgid "After the docs are built, check that all of the links, internal and external, are still valid.  We use ``linkchecker`` for this, which has not been ported to Python3 yet.  You will need to create a Python2 environment with ``requests==2.9.0`` and linkchecker ::"
-msgstr ""
+msgstr "Después de construir los documentos, comprueba que todos los enlaces, internos y externos, siguen siendo válidos.  Para ello utilizamos ``linkchecker``, que aún no ha sido portado a Python3.  Necesitarás crear un entorno Python2 con ``requests==2.9.0`` y linkchecker ::"
 
 #: ../../devel/release_guide.rst:172
 msgid "Address any issues which may arise.  The internal links are checked on Circle CI, this should only flag failed external links."
-msgstr ""
+msgstr "Abordar cualquier incidencia que pueda surgir.  Los enlaces internos se comprueban en Circle CI, esto sólo debería indicar los enlaces externos fallidos."
 
 #: ../../devel/release_guide.rst:177
 msgid "Update supported versions in SECURITY.md"
-msgstr ""
+msgstr "Actualice las versiones compatibles en SECURITY.md"
 
 #: ../../devel/release_guide.rst:179
 msgid "For minor version release update the table in :file:`SECURITY.md` to specify that the 2 most recent minor releases in the current major version series are supported."
-msgstr ""
+msgstr "Para las versiones menores actualice la tabla en :file:`SECURITY.md` para especificar que se soportan las 2 versiones menores más recientes de la serie de versiones mayores actual."
 
 #: ../../devel/release_guide.rst:183
 msgid "For a major version release update the table in :file:`SECURITY.md` to specify that the last minor version in the previous major version series is still supported.  Dropping support for the last version of a major version series will be handled on an ad-hoc basis."
-msgstr ""
+msgstr "Para una versión mayor, actualice la tabla en :file:`SECURITY.md` para especificar que la última versión menor de la serie de versiones mayores anterior sigue siendo soportada.  El abandono del soporte de la última versión de una serie de versiones mayores se gestionará de forma ad-hoc."
 
 #: ../../devel/release_guide.rst:191
 msgid "Create release commit and tag"
-msgstr ""
+msgstr "Crear la confirmación de commit y la etiqueta"
 
 #: ../../devel/release_guide.rst:193
 msgid "To create the tag, first create an empty commit with a very terse set of the release notes in the commit message ::"
-msgstr ""
+msgstr "Para crear la etiqueta, primero hay que crear un commit vacío con un conjunto muy escueto de las notas de la versión en el mensaje del commit ::"
 
 #: ../../devel/release_guide.rst:198
 msgid "and then create a signed, annotated tag with the same text in the body message ::"
-msgstr ""
+msgstr "y luego crear una etiqueta firmada y anotada con el mismo texto en el cuerpo del mensaje ::"
 
 #: ../../devel/release_guide.rst:203
 msgid "which will prompt you for your GPG key password and an annotation.  For pre releases it is important to follow :pep:`440` so that the build artifacts will sort correctly in PyPI."
-msgstr ""
+msgstr "que le pedirá la contraseña de su clave GPG y una anotación.  Para las versiones anteriores es importante seguir :pep:`440` para que los artefactos de construcción se ordenen correctamente en PyPI."
 
 #: ../../devel/release_guide.rst:207
 msgid "To prevent issues with any down-stream builders which download the tarball from GitHub it is important to move all branches away from the commit with the tag [#]_::"
-msgstr ""
+msgstr "Para evitar incidencias con cualquier constructor posterior que descargue el tarball de GitHub es importante mover todas las ramas fuera del commit con la etiqueta [#]_::"
 
 #: ../../devel/release_guide.rst:213
 msgid "Finally, push the tag to GitHub::"
-msgstr ""
+msgstr "Por último, hacemos push en la etiqueta a GitHub::"
 
 #: ../../devel/release_guide.rst:217
 msgid "Congratulations, the scariest part is done!"
-msgstr ""
+msgstr "Felicidades, ¡la parte más aterradora ya está hecha!"
 
 #: ../../devel/release_guide.rst:219
 msgid "The tarball that is provided by GitHub is produced using `git archive`_. We use setuptools_scm_ which uses a format string in :file:`lib/matplotlib/_version.py` to have ``git`` insert a list of references to exported commit (see :file:`.gitattributes` for the configuration).  This string is then used by ``setuptools_scm`` to produce the correct version, based on the git tag, when users install from the tarball. However, if there is a branch pointed at the tagged commit, then the branch name will also be included in the tarball. When the branch eventually moves, anyone how checked the hash of the tarball before the branch moved will have an incorrect hash."
-msgstr ""
+msgstr "El tarball que proporciona GitHub se produce utilizando `git archive`_. Usamos setuptools_scm_ que utiliza una cadena de formato en :file:`lib/matplotlib/_version.py` para que ``git`` inserte una lista de referencias al commit exportado (ver :file:`.gitattributes` para la configuración). Esta cadena es utilizada por ``setuptools_scm`` para producir la versión correcta, basada en la etiqueta git, cuando los usuarios instalan desde el tarball. Sin embargo, si hay una rama que apunta al commit etiquetado, entonces el nombre de la rama también se incluirá en el tarball. Cuando la rama se mueva, cualquiera que haya comprobado el hash del tarball antes de que la rama se moviera tendrá un hash incorrecto."
 
 #: ../../devel/release_guide.rst:232
 msgid "To generate the file that GitHub does use ::"
-msgstr ""
+msgstr "Para generar el archivo que hace GitHub utiliza ::"
 
 #: ../../devel/release_guide.rst:239
 msgid "If this is a final release, also create a 'doc' branch (this is not done for pre-releases)::"
-msgstr ""
+msgstr "Si se trata de una versión final, crea también una rama \"doc\" (esto no se hace para las versiones preliminares)::"
 
 #: ../../devel/release_guide.rst:245
 msgid "and if this is a major or minor release, also create a bug-fix branch (a micro release will be cut from this branch)::"
-msgstr ""
+msgstr "y si se trata de una versión mayor o menor, cree también una rama de corrección de errores (una microlanzamiento se cortará de esta rama)::"
 
 #: ../../devel/release_guide.rst:250
 msgid "On this branch un-comment the globs from :ref:`release_chkdocs`.  And then ::"
-msgstr ""
+msgstr "En esta rama deshaga el comentario de los globos de :ref:`release_chkdocs`.  Y luego ::"
 
 #: ../../devel/release_guide.rst:260
 msgid "Release management / DOI"
-msgstr ""
+msgstr "Gestión de versiones / DOI"
 
 #: ../../devel/release_guide.rst:262
 msgid "Via the `GitHub UI <https://github.com/matplotlib/matplotlib/releases>`__, turn the newly pushed tag into a release.  If this is a pre-release remember to mark it as such."
-msgstr ""
+msgstr "A través de la `GitHub UI <https://github.com/matplotlib/matplotlib/releases>`__, convierta la etiqueta recién empujada en una versión.  Si se trata de una versión preliminar, recuerde marcarla como tal."
 
 #: ../../devel/release_guide.rst:267
 msgid "For final releases, also get the DOI from `zenodo <https://zenodo.org/>`__ (which will automatically produce one once the tag is pushed).  Add the doi post-fix and version to the dictionary in :file:`tools/cache_zenodo_svg.py` and run the script."
-msgstr ""
+msgstr "Para las versiones finales, obtenga también el DOI de `zenodo <https://zenodo.org/>`__ (que producirá automáticamente uno una vez que la etiqueta sea empujada).  Añade el post-fix doi y la versión al diccionario en :file:`tools/cache_zenodo_svg.py` y ejecuta el script."
 
 #: ../../devel/release_guide.rst:273
 msgid "This will download the new svg to the :file:`_static` directory in the docs and edit :file:`doc/citing.rst`.  Commit the new svg, the change to :file:`tools/cache_zenodo_svg.py`, and the changes to :file:`doc/citing.rst` to the VER-doc branch and push to GitHub. ::"
-msgstr ""
+msgstr "Esto descargará el nuevo svg al directorio :file:`_static` en los docs y editará :file:`doc/citing.rst`.  Confirma el nuevo svg, el cambio en :file:`tools/cache_zenodo_svg.py`, y los cambios en :file:`doc/citing.rst` en la rama VER-doc y empuja a GitHub. ::"
 
 #: ../../devel/release_guide.rst:288
 msgid "Building binaries"
-msgstr ""
+msgstr "Construir binarios"
 
 #: ../../devel/release_guide.rst:290
 msgid "We distribute macOS, Windows, and many Linux wheels as well as a source tarball via PyPI.  Most builders should trigger automatically once the tag is pushed to GitHub:"
-msgstr ""
+msgstr "Distribuimos macOS, Windows y muchos wheels de Linux, así como un tarball de origen a través de PyPI.  La mayoría de los constructores deberían activarse automáticamente una vez que la etiqueta es empujada a GitHub:"
 
 #: ../../devel/release_guide.rst:294
 msgid "Windows, macOS and manylinux wheels are built on GitHub Actions.  Builds are triggered by the GitHub Action defined in :file:`.github/workflows/cibuildwheel.yml`, and wheels will be available as artifacts of the build."
-msgstr ""
+msgstr "Los wheels de Windows, macOS y manylinux se construyen con Acciones de GitHub.  Las construcciones se activan mediante la Acción GitHub definida en :file:`.github/workflows/cibuildwheel.yml`, y los wheels estarán disponibles como artefactos de la construcción."
 
 #: ../../devel/release_guide.rst:298
 msgid "Alternative Windows wheels are built by Christoph Gohlke automatically and will be `available at his site <https://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib>`__ once built."
-msgstr ""
+msgstr "Los wheels alternativas para Windows son construidas por Christoph Gohlke automáticamente y estarán `disponibles en su sitio <https://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib>`__ una vez construidas."
 
 #: ../../devel/release_guide.rst:301
 msgid "The auto-tick bot should open a pull request into the `conda-forge feedstock <https://github.com/conda-forge/matplotlib-feedstock>`__.  Review and merge (if you have the power to)."
-msgstr ""
+msgstr "El bot de auto-tick debería abrir un pull request en el `conda-forge feedstock <https://github.com/conda-forge/matplotlib-feedstock>`__.  Revisa y fusiona (si tienes el poder de hacerlo)."
 
 #: ../../devel/release_guide.rst:307
 msgid "Because this is automated, it is extremely important to bump all branches away from the tag as discussed in :ref:`release_tag`."
-msgstr ""
+msgstr "Debido a que esto está automatizado, es extremadamente importante eliminar todas las ramas de la etiqueta como se discute en :ref:`release_tag`."
 
 #: ../../devel/release_guide.rst:310
 msgid "If this is a final release the following downstream packagers should be contacted:"
-msgstr ""
+msgstr "Si se trata de una versión final, hay que ponerse en contacto con los siguientes empaquetadores:"
 
 #: ../../devel/release_guide.rst:312
 msgid "Debian"
-msgstr ""
+msgstr "Debian"
 
 #: ../../devel/release_guide.rst:313
 msgid "Fedora"
-msgstr ""
+msgstr "Fedora"
 
 #: ../../devel/release_guide.rst:314
 msgid "Arch"
-msgstr ""
+msgstr "Arch"
 
 #: ../../devel/release_guide.rst:315
 msgid "Gentoo"
-msgstr ""
+msgstr "Gentoo"
 
 #: ../../devel/release_guide.rst:316
 msgid "Macports"
-msgstr ""
+msgstr "Macports"
 
 #: ../../devel/release_guide.rst:317
 msgid "Homebrew"
-msgstr ""
+msgstr "Homebrew"
 
 #: ../../devel/release_guide.rst:318
 msgid "Continuum"
-msgstr ""
+msgstr "Continuum"
 
 #: ../../devel/release_guide.rst:319
 msgid "Enthought"
-msgstr ""
+msgstr "Enthought"
 
 #: ../../devel/release_guide.rst:321
 msgid "This can be done ahead of collecting all of the binaries and uploading to pypi."
-msgstr ""
+msgstr "Esto puede hacerse antes de recoger todos los binarios y subirlos a pypi."
 
 #: ../../devel/release_guide.rst:327
 msgid "Make distribution and upload to PyPI"
-msgstr ""
+msgstr "Hacer la distribución y subirla a PyPI"
 
 #: ../../devel/release_guide.rst:329
 msgid "Once you have collected all of the wheels (expect this to take about a day), generate the tarball ::"
-msgstr ""
+msgstr "Una vez que haya reunido todas los wheels (es de esperar que esto lleve aproximadamente un día), genere el archivo tarball ::"
 
 #: ../../devel/release_guide.rst:336
 msgid "and copy all of the wheels into :file:`dist` directory.  First, check that the dist files are OK ::"
-msgstr ""
+msgstr "y copiar todas los wheels en el directorio :file:`dist`.  Primero, comprueba que los archivos dist están bien ::"
 
 #: ../../devel/release_guide.rst:341
 msgid "and then use ``twine`` to upload all of the files to pypi ::"
-msgstr ""
+msgstr "y luego usar ``twine`` para subir todos los archivos a pypi ::"
 
 #: ../../devel/release_guide.rst:346
 msgid "Congratulations, you have now done the second scariest part!"
-msgstr ""
+msgstr "Felicidades, ¡ahora has hecho la segunda parte más aterradora!"
 
 #: ../../devel/release_guide.rst:352
 msgid "Build and deploy documentation"
-msgstr ""
+msgstr "Construir y desplegar la documentación"
 
 #: ../../devel/release_guide.rst:354
 msgid "To build the documentation you must have the tagged version installed, but build the docs from the ``ver-doc`` branch.  An easy way to arrange this is::"
-msgstr ""
+msgstr "Para construir la documentación debe tener la versión etiquetada instalada, pero construir los documentos de la rama ``ver-doc``.  Una manera fácil de organizar esto es::"
 
 #: ../../devel/release_guide.rst:363
 msgid "which will build both the html and pdf version of the documentation."
-msgstr ""
+msgstr "que construirá tanto la versión html como la pdf de la documentación."
 
 #: ../../devel/release_guide.rst:366
 msgid "The built documentation exists in the `matplotlib.github.com <https://github.com/matplotlib/matplotlib.github.com/>`__ repository. Pushing changes to master automatically updates the website."
-msgstr ""
+msgstr "La documentación construida existe en el repositorio `matplotlib.github.com <https://github.com/matplotlib/matplotlib.github.com/>`__. Al enviar los cambios al master se actualiza automáticamente el sitio web."
 
 #: ../../devel/release_guide.rst:370
 msgid "The documentation is organized by version.  At the root of the tree is always the documentation for the latest stable release.  Under that, there are directories containing the documentation for older versions.  The documentation for current master is built on Circle CI and pushed to the `devdocs <https://github.com/matplotlib/devdocs/>`__ repository.  These are available at `matplotlib.org/devdocs <https://matplotlib.org/devdocs/>`__."
-msgstr ""
+msgstr "La documentación está organizada por versiones.  En la raíz del árbol está siempre la documentación de la última versión estable.  Debajo de ella, hay directorios que contienen la documentación de versiones anteriores.  La documentación para la versión maestra actual se construye en Circle CI y se envía al repositorio `devdocs <https://github.com/matplotlib/devdocs/>`__.  Está disponible en `matplotlib.org/devdocs <https://matplotlib.org/devdocs/>`__."
 
 #: ../../devel/release_guide.rst:377
 msgid "Assuming you have this repository checked out in the same directory as matplotlib ::"
-msgstr ""
+msgstr "Asumiendo que tienes este repositorio comprobado en el mismo directorio que matplotlib ::"
 
 #: ../../devel/release_guide.rst:385
 msgid "which will copy the built docs over.  If this is a final release, link the ``stable`` subdirectory to the newest version::"
-msgstr ""
+msgstr "que copiará los documentos construidos.  Si se trata de una versión final, vincule el subdirectorio ``stable`` a la versión más reciente::"
 
 #: ../../devel/release_guide.rst:392
 msgid "You will need to manually edit :file:`versions.html` to show the last 3 tagged versions.  You will also need to edit :file:`sitemap.xml` to include the newly released version.  Now commit and push everything to GitHub ::"
-msgstr ""
+msgstr "Tendrá que editar manualmente :file:`versions.html` para mostrar las 3 últimas versiones etiquetadas.  También tendrás que editar :file:`sitemap.xml` para incluir la nueva versión.  Ahora confirma y empuja todo a GitHub ::"
 
 #: ../../devel/release_guide.rst:400
 msgid "Congratulations you have now done the third scariest part!"
-msgstr ""
+msgstr "Felicidades, ya has hecho la tercera parte más aterradora."
 
 #: ../../devel/release_guide.rst:402
 msgid "If you have access, clear the Cloudflare caches."
-msgstr ""
+msgstr "Si tienes acceso, borra las cachés de Cloudflare."
 
 #: ../../devel/release_guide.rst:404
 msgid "It typically takes about 5-10 minutes for GitHub to process the push and update the live web page (remember to clear your browser cache)."
-msgstr ""
+msgstr "GitHub suele tardar entre 5 y 10 minutos en procesar el push y actualizar la página web en directo (recuerda borrar la caché del navegador)."
 
 #: ../../devel/release_guide.rst:409
 msgid "Announcing"
-msgstr ""
+msgstr "Anuncio"
 
 #: ../../devel/release_guide.rst:411
 msgid "The final step is to announce the release to the world.  A short version of the release notes along with acknowledgments should be sent to"
-msgstr ""
+msgstr "El último paso es anunciar el lanzamiento al mundo.  Hay que enviar una versión corta de las notas de publicación junto con los agradecimientos a"
 
 #: ../../devel/release_guide.rst:414
 msgid "matplotlib-users@python.org"
-msgstr ""
+msgstr "matplotlib-users@python.org"
 
 #: ../../devel/release_guide.rst:415
 msgid "matplotlib-devel@python.org"
-msgstr ""
+msgstr "matplotlib-devel@python.org"
 
 #: ../../devel/release_guide.rst:416
 msgid "matplotlib-announce@python.org"
-msgstr ""
+msgstr "matplotlib-announce@python.org"
 
 #: ../../devel/release_guide.rst:418
 msgid "For final releases announcements should also be sent to the numpy/scipy/scikit-image mailing lists."
-msgstr ""
+msgstr "Para las versiones finales, los anuncios deben enviarse también a las listas de correo numpy/scipy/scikit-image."
 
 #: ../../devel/release_guide.rst:421
 msgid "In addition, announcements should be made on social networks (twitter via the ``@matplotlib`` account, any other via personal accounts). `NumFOCUS <https://numfocus.org/>`__ should be contacted for inclusion in their newsletter."
-msgstr ""
+msgstr "Además, los anuncios deben hacerse en las redes sociales (twitter a través de la cuenta ``@matplotlib``, cualquier otra a través de cuentas personales). Se debe contactar con `NumFOCUS <https://numfocus.org/>`__ para incluirlo en su boletín."
 
 #: ../../devel/release_guide.rst:428
 msgid "Conda packages"
-msgstr ""
+msgstr "Paquetes Conda"
 
 #: ../../devel/release_guide.rst:430
 msgid "The Matplotlib project itself does not release conda packages. In particular, the Matplotlib release manager is not responsible for conda packaging."
-msgstr ""
+msgstr "El propio proyecto Matplotlib no libera paquetes de conda. En particular, el gestor de liberación de Matplotlib no es responsable del empaquetado de conda."
 
 #: ../../devel/release_guide.rst:433
 msgid "For information on the packaging of Matplotlib for conda-forge see https://github.com/conda-forge/matplotlib-feedstock."
-msgstr ""
+msgstr "Para obtener información sobre el empaquetado de Matplotlib para conda-forge, consulta https://github.com/conda-forge/matplotlib-feedstock."
 

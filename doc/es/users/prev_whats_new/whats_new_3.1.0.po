@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-29 10:39\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,305 +20,305 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:4
 msgid "What's new in Matplotlib 3.1 (May 18, 2019)"
-msgstr ""
+msgstr "Novedades en Matplotlib 3.1 (18 de mayo de 2019)"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:6
 msgid "For a list of all of the issues and pull requests since the last revision, see the :ref:`github-stats`."
-msgstr ""
+msgstr "Para ver una lista de todas las incidencias y pull requests desde la última revisión, consulta la :ref:`github-stats`."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:10
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de Contenidos"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:16
 msgid "New Features"
-msgstr ""
+msgstr "Nuevas Características"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:19
 msgid "`~.dates.ConciseDateFormatter`"
-msgstr ""
+msgstr "`~.dates.ConciseDateFormatter`"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:21
 msgid "The automatic date formatter used by default can be quite verbose.  A new formatter can be accessed that tries to make the tick labels appropriately concise."
-msgstr ""
+msgstr "El formateador automático de fechas utilizado por defecto puede ser bastante detallado.  Se puede acceder a un nuevo formateador que trata de hacer que las etiquetas de las tildes sean adecuadamente concisas."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-1-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_3-1-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-1-0-1.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-1-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_3-1-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-1-0-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:58
 msgid "Secondary x/y Axis support"
-msgstr ""
+msgstr "Soporte de eje x/y secundario"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:60
 msgid "A new method provides the ability to add a second axis to an existing axes via `.Axes.secondary_xaxis` and `.Axes.secondary_yaxis`.  See :doc:`/gallery/subplots_axes_and_figures/secondary_axis` for examples."
-msgstr ""
+msgstr "Un nuevo método permite añadir un segundo eje a un eje existente mediante `.Axes.secondary_xaxis` y `.Axes.secondary_yaxis`.  Vea los ejemplos en :doc:`/gallery/subplots_axes_and_figures/secondary_axis`."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-1-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_3-1-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-1-0-2.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-1-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_3-1-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-1-0-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:74
 msgid "`~.scale.FuncScale` for arbitrary axes scales"
-msgstr ""
+msgstr "`~.scale.FuncScale` para escalas de ejes arbitrarias"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:76
 msgid "A new `~.scale.FuncScale` class was added (and `~.scale.FuncTransform`) to allow the user to have arbitrary scale transformations without having to write a new subclass of `~.scale.ScaleBase`.  This can be accessed by::"
-msgstr ""
+msgstr "Se ha añadido una nueva clase `~.scale.FuncScale` (y `~.scale.FuncTransform`) para permitir al usuario tener transformaciones de escala arbitrarias sin tener que escribir una nueva subclase de `~.scale.ScaleBase`.  Se puede acceder a ella mediante::"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:82
 msgid "where ``forward`` and ``inverse`` are callables that return the scale transform and its inverse.  See the last example in :doc:`/gallery/scales/scales`."
-msgstr ""
+msgstr "donde ``forward`` y ``inverse`` son invocables que devuelven la transformación de escala y su inversa.  Ver el último ejemplo en :doc:`/gallery/scales/scales`."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:88
 msgid "Legend for scatter"
-msgstr ""
+msgstr "Leyenda para dispersión"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:90
 msgid "A new method for creating legends for scatter plots has been introduced.  Previously, in order to obtain a legend for a :meth:`~.axes.Axes.scatter` plot, one could either plot several scatters, each with an individual label, or create proxy artists to show in the legend manually.  Now, :class:`~.collections.PathCollection` provides a method :meth:`~.collections.PathCollection.legend_elements` to obtain the handles and labels for a scatter plot in an automated way. This makes creating a legend for a scatter plot as easy as"
-msgstr ""
+msgstr "Se ha introducido un nuevo método para crear leyendas para los gráficos de dispersión.  Anteriormente, para obtener una leyenda para un gráfico :meth:`~.axes.Axes.scatter`, había que trazar varias dispersiones, cada una con una etiqueta individual, o crear manualmente artistas proxy para mostrar en la leyenda.  Ahora, :class:`~.collections.PathCollection` proporciona un método :meth:`~.collections.PathCollection.legend_elements` para obtener los manejadores y etiquetas de un gráfico de dispersión de forma automatizada. Esto hace que la creación de una leyenda para un gráfico de dispersión sea tan fácil como"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-1-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_3-1-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-1-0-3.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-1-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_3-1-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-1-0-3.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:105
 msgid "An example can be found in :ref:`automatedlegendcreation`."
-msgstr ""
+msgstr "Se puede encontrar un ejemplo en :ref:`automatedlegendcreation`."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:109
 msgid "Matplotlib no longer requires framework app build on MacOSX backend"
-msgstr ""
+msgstr "Matplotlib ya no requiere la compilación de la aplicación framework en el backend de MacOSX"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:111
 msgid "Previous versions of matplotlib required a Framework build of python to work. The app type was updated to no longer require this, so the MacOSX backend should work with non-framework python."
-msgstr ""
+msgstr "Las versiones anteriores de matplotlib requerían una compilación de Framework de python para funcionar. El tipo de aplicación se ha actualizado para que ya no lo requiera, por lo que el backend de MacOSX debería funcionar con python sin marco."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:116
 msgid "This also adds support for the MacOSX backend for PyPy3."
-msgstr ""
+msgstr "Esto también añade soporte para el backend de MacOSX para PyPy3."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:120
 msgid "Figure, FigureCanvas, and Backends"
-msgstr ""
+msgstr "Figura, FigureCanvas y Backends"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:123
 msgid "Figure.frameon is now a direct proxy for the Figure patch visibility state"
-msgstr ""
+msgstr "Figure.frameon es ahora un proxy directo para el estado de visibilidad del parche Figure"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:124
 msgid "Accessing ``Figure.frameon`` (including via ``get_frameon`` and ``set_frameon`` now directly forwards to the visibility of the underlying Rectangle artist (``Figure.patch.get_frameon``, ``Figure.patch.set_frameon``)."
-msgstr ""
+msgstr "El acceso a ``Figure.frameon`` (incluso a través de ``get_frameon`` y ``set_frameon``) ahora remite directamente a la visibilidad del artist Rectangle subyacente (``Figure.patch.get_frameon``, ``Figure.patch.set_frameon``)."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:130
 msgid "*pil_kwargs* argument added to savefig"
-msgstr ""
+msgstr "Se ha añadido el argumento *pil_kwargs* a savefig"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:132
 msgid "Matplotlib uses Pillow to handle saving to the JPEG and TIFF formats.  The `~.Figure.savefig()` function gained a *pil_kwargs* keyword argument, which can be used to forward arguments to Pillow's `PIL.Image.Image.save`."
-msgstr ""
+msgstr "Matplotlib utiliza Pillow para manejar el guardado en los formatos JPEG y TIFF.  La función `~.Figure.savefig()` ha ganado un argumento de palabra clave *pil_kwargs*, que puede usarse para enviar argumentos a `PIL.Image.Image.save` de Pillow."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:136
 msgid "The *pil_kwargs* argument can also be used when saving to PNG.  In that case, Matplotlib also uses Pillow's `PIL.Image.Image.save` instead of going through its own builtin PNG support."
-msgstr ""
+msgstr "El argumento *pil_kwargs* también puede utilizarse cuando se guarda en PNG.  En ese caso, Matplotlib también utiliza `PIL.Image.Image.save` de Pillow en lugar de pasar por su propio soporte PNG incorporado."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:142
 msgid "Add ``inaxes`` method to `.FigureCanvasBase`"
-msgstr ""
+msgstr "Añadir el método ``inaxes`` a `.FigureCanvasBase`"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:144
 msgid "The `.FigureCanvasBase` class has now an `~.FigureCanvasBase.inaxes` method to check whether a point is in an axes and returns the topmost axes, else None."
-msgstr ""
+msgstr "La clase `.FigureCanvasBase` tiene ahora un método `~.FigureCanvasBase.inaxes` para comprobar si un punto está en un eje y devuelve el eje superior, si no, ninguno."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:149
 msgid "cairo backend defaults to pycairo instead of cairocffi"
-msgstr ""
+msgstr "el backend de cairo por defecto es pycairo en lugar de cairocffi"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:151
 msgid "This leads to faster import/runtime performance in some cases. The backend will fall back to cairocffi in case pycairo isn't available."
-msgstr ""
+msgstr "Esto conduce a un rendimiento más rápido de la importación/tiempo de ejecución en algunos casos. El backend volverá a cairocffi en caso de que pycairo no esté disponible."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:156
 msgid "Axes and Artists"
-msgstr ""
+msgstr "Ejes y Artists"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:159
 msgid "axes_grid1 and axisartist Axes no longer draw spines twice"
-msgstr ""
+msgstr "los ejes axes_grid1 y axisartist ya no dibujan las espinas dos veces"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:161
 msgid "Previously, spines of `.axes_grid1` and `.axisartist` Axes would be drawn twice, leading to a \"bold\" appearance.  This is no longer the case."
-msgstr ""
+msgstr "Anteriormente, las líneas de los ejes `.axes_grid1` y `.axisartist` se dibujaban dos veces, lo que daba un aspecto de \"negrita\".  Esto ya no es así."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:166
 msgid "Return type of ArtistInspector.get_aliases changed"
-msgstr ""
+msgstr "Se ha cambiado el tipo de retorno de ArtistInspector.get_aliases"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:167
 msgid "`.ArtistInspector.get_aliases` previously returned the set of aliases as ``{fullname: {alias1: None, alias2: None, ...}}``.  The dict-to-None mapping was used to simulate a set in earlier versions of Python.  It has now been replaced by a set, i.e. ``{fullname: {alias1, alias2, ...}}``."
-msgstr ""
+msgstr "Anteriormente, `.ArtistInspector.get_aliases` devolvía el conjunto de alias como ``{fullname: {alias1: None, alias2: None, ...}}``.  En versiones anteriores de Python se utilizaba el mapeo dict-to-None para simular un conjunto.  Ahora se ha sustituido por un conjunto, es decir, ``{fullname: {alias1, alias2, ...}}``."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:172
 msgid "This value is also stored in ``ArtistInspector.aliasd``, which has likewise changed."
-msgstr ""
+msgstr "Este valor también se almacena en ``ArtistInspector.aliasd``, que también ha cambiado."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:177
 msgid "`.ConnectionPatch` accepts arbitrary transforms"
-msgstr ""
+msgstr "`.ConnectionPatch` acepta transformaciones arbitrarias"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:179
 msgid "Alternatively to strings like ``\"data\"`` or ``\"axes fraction\"``, `.ConnectionPatch` now accepts any `~matplotlib.transforms.Transform` as input for the *coordsA* and *coordsB* arguments. This allows to draw lines between points defined in different user defined coordinate systems. Also see the :doc:`Connect Simple01 example </gallery/userdemo/connect_simple01>`."
-msgstr ""
+msgstr "Como alternativa a cadenas como ``\"datos\"`` o ``\"fracción de ejes\"``, `.ConnectionPatch` acepta ahora cualquier `~matplotlib.transforms.Transform` como entrada para los argumentos *coordsA* y *coordsB*. Esto permite dibujar líneas entre puntos definidos en diferentes sistemas de coordenadas definidos por el usuario. Véase también el :doc:`Connect Simple01 ejemplo </gallery/userdemo/connect_simple01>`."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:187
 msgid "mplot3d Line3D now allows {set,get}_data_3d"
-msgstr ""
+msgstr "mplot3d Line3D ahora permite {set,get}_data_3d"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:189
 msgid "Lines created with the 3d projection in mplot3d can now access the data using `~.mplot3d.art3d.Line3D.get_data_3d()` which returns a tuple of array_likes containing the (x, y, z) data. The equivalent `~.mplot3d.art3d.Line3D.set_data_3d` can be used to modify the data of an existing Line3D."
-msgstr ""
+msgstr "Las líneas creadas con la proyección 3d en mplot3d pueden ahora acceder a los datos utilizando `~.mplot3d.art3d.Line3D.get_data_3d()` que devuelve una tupla de array_likes que contiene los datos (x, y, z). El equivalente `~.mplot3d.art3d.Line3D.set_data_3d` puede utilizarse para modificar los datos de un Line3D existente."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:197
 msgid "``Axes3D.voxels`` now shades the resulting voxels"
-msgstr ""
+msgstr "``Axes3D.voxels`` ahora muestra los voxels resultantes"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:199
 msgid "The `.Axes3D.voxels` method now takes a *shade* parameter that defaults to `True`. This shades faces based on their orientation, behaving just like the matching parameters to :meth:`~mpl_toolkits.mplot3d.axes3d.Axes3D.plot_trisurf` and :meth:`~mpl_toolkits.mplot3d.axes3d.Axes3D.bar3d`.  The plot below shows how this affects the output."
-msgstr ""
+msgstr "El método `.Axes3D.voxels` ahora toma un parámetro *shade* que por defecto es `True`. Esto sombrea las caras basándose en su orientación, comportándose igual que los parámetros correspondientes a :meth:`~mpl_toolkits.mplot3d.axes3d.Axes3D.plot_trisurf` y :meth:`~mpl_toolkits.mplot3d.axes3d.Axes3D.bar3d`.  El siguiente gráfico muestra cómo afecta esto a la salida."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_3-1-0-4.py>`__, `png <../../users/prev_whats_new/whats_new_3-1-0-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-1-0-4.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_3-1-0-4.py>`__, `png <../../users/prev_whats_new/whats_new_3-1-0-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_3-1-0-4.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:239
 msgid "Axis and Ticks"
-msgstr ""
+msgstr "Ejes y Ticks"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:242
 msgid "Added `.Axis.get_inverted` and `.Axis.set_inverted`"
-msgstr ""
+msgstr "Añadidos `.Axis.get_inverted` y `.Axis.set_inverted`"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:243
 msgid "The `.Axis.get_inverted` and `.Axis.set_inverted` methods query and set whether the axis uses \"inverted\" orientation (i.e. increasing to the left for the x-axis and to the bottom for the y-axis)."
-msgstr ""
+msgstr "Los métodos `.Axis.get_inverted` y `.Axis.set_inverted` consultan y establecen si el eje utiliza la orientación \"invertida\" (es decir, aumentando hacia la izquierda para el eje x y hacia abajo para el eje y)."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:247
 msgid "They perform tasks similar to `.Axes.xaxis_inverted`, `.Axes.yaxis_inverted`, `.Axes.invert_xaxis`, and `.Axes.invert_yaxis`, with the specific difference that `.Axis.set_inverted` makes it easier to set the inversion of an axis regardless of whether it had previously been inverted before."
-msgstr ""
+msgstr "Realizan tareas similares a `.Axes.xaxis_inverted`, `.Axes.yaxis_inverted`, `.Axes.invert_xaxis`, y `.Axes.invert_yaxis`, con la diferencia específica de que `.Axis.set_inverted` facilita el establecimiento de la inversión de un eje con independencia de que se haya invertido previamente."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:253
 msgid "Adjust default minor tick spacing"
-msgstr ""
+msgstr "Ajustar el espaciado de los tick menores por defecto"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:255
 msgid "Default minor tick spacing was changed from 0.625 to 0.5 for major ticks spaced 2.5 units apart."
-msgstr ""
+msgstr "Se ha cambiado el espaciado por defecto de los ticks menores de 0,625 a 0,5 para los ticks mayores separados por 2,5 unidades."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:260
 msgid "`.EngFormatter` now accepts *usetex*, *useMathText* as keyword only arguments"
-msgstr ""
+msgstr "`.EngFormatter` ahora acepta *usetex*, *useMathText* como argumentos de palabra clave"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:262
 msgid "A public API has been added to `.EngFormatter` to control how the numbers in the ticklabels will be rendered. By default, *useMathText* evaluates to :rc:`axes.formatter.use_mathtext'` and *usetex* evaluates to :rc:`'text.usetex'`."
-msgstr ""
+msgstr "Se ha añadido una API pública a `.EngFormatter` para controlar cómo se representarán los números en las etiquetas de verificación. Por defecto, *useMathText* se evalúa como :rc:`axes.formatter.use_mathtext` y *usetex* se evalúa como :rc:`'text.usetex'`."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:267
 msgid "If either is `True` then the numbers will be encapsulated by ``$`` signs.  When using ``TeX`` this implies that the numbers will be shown in TeX's math font. When using mathtext, the ``$`` signs around numbers will ensure Unicode rendering (as implied by mathtext). This will make sure that the minus signs in the ticks are rendered as the Unicode minus (U+2212) when using mathtext (without relying on the `~.Formatter.fix_minus` method)."
-msgstr ""
+msgstr "Si cualquiera de los dos es `True` entonces los números serán encapsulados por los signos ``$``.  Cuando se utiliza ``TeX`` esto implica que los números se mostrarán en la fuente matemática de TeX. Cuando se utiliza mathtext, los signos ``$`` alrededor de los números asegurarán la representación Unicode (como implica mathtext). Esto asegurará que los signos menos en los ticks se rendericen como el menos de Unicode (U+2212) cuando se utilice mathtext (sin depender del método `~.Formatter.fix_minus`)."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:278
 msgid "Animation and Interactivity"
-msgstr ""
+msgstr "Animación e interactividad"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:281
 msgid "Support for forward/backward mouse buttons"
-msgstr ""
+msgstr "Soporte para los botones de avance/retroceso del ratón"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:283
 msgid "Figure managers now support a ``button_press`` event for mouse buttons, similar to the ``key_press`` events. This allows binding actions to mouse buttons (see `.MouseButton`) The first application of this mechanism is support of forward/backward mouse buttons in figures created with the Qt5 backend."
-msgstr ""
+msgstr "Los gestores de figuras ahora soportan un evento ``button_press`` para los botones del ratón, similar a los eventos ``key_press``. Esto permite vincular acciones a los botones del ratón (ver `.MouseButton`). La primera aplicación de este mecanismo es el soporte de botones de avance/retroceso en figuras creadas con el backend Qt5."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:291
 msgid "*progress_callback* argument to `~.Animation.save()`"
-msgstr ""
+msgstr "Argumento *progress_callback* para `~.Animation.save()`"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:293
 msgid "The method `.Animation.save` gained an optional *progress_callback* argument to notify the saving progress."
-msgstr ""
+msgstr "El método `.Animation.save` ganó un argumento opcional *progress_callback* para notificar el progreso de guardado."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:298
 msgid "Add ``cache_frame_data`` keyword-only argument into `.animation.FuncAnimation`"
-msgstr ""
+msgstr "Añadir el argumento ``cache_frame_data`` como palabra clave en `.animation.FuncAnimation`"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:300
 msgid "`.matplotlib.animation.FuncAnimation` has been caching frame data by default; however, this caching is not ideal in certain cases e.g. When `.FuncAnimation` needs to be only drawn(not saved) interactively and memory required by frame data is quite large. By adding *cache_frame_data* keyword-only argument, users can now disable this caching; thereby, this new argument provides a fix for issue :ghissue:`8528`."
-msgstr ""
+msgstr "`.matplotlib.animation.FuncAnimation` ha estado almacenando en caché los datos de los fotogramas por defecto; sin embargo, este almacenamiento en caché no es ideal en ciertos casos, por ejemplo, cuando `.FuncAnimation` sólo necesita ser dibujado (no guardado) interactivamente y la memoria requerida por los datos de los fotogramas es bastante grande. Añadiendo el argumento *cache_frame_data*, los usuarios pueden desactivar el almacenamiento en caché; este nuevo argumento soluciona el problema :ghissue:`8528`."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:310
 msgid "Endless Looping GIFs with PillowWriter"
-msgstr ""
+msgstr "GIFs en bucle sin fin con PillowWriter"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:312
 msgid "We acknowledge that most people want to watch a GIF more than once. Saving an animation as a GIF with PillowWriter now produces an endless looping GIF."
-msgstr ""
+msgstr "Sabemos que la mayoría de la gente quiere ver un GIF más de una vez. Guardar una animación como un GIF con PillowWriter ahora produce un GIF de bucle infinito."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:318
 msgid "Adjusted `.matplotlib.widgets.Slider` to have vertical orientation"
-msgstr ""
+msgstr "Ajustado `.matplotlib.widgets.Slider` para que tenga orientación vertical"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:320
 msgid "The :class:`matplotlib.widgets.Slider` widget now takes an optional argument *orientation* which indicates the direction (``'horizontal'`` or ``'vertical'``) that the slider should take."
-msgstr ""
+msgstr "El widget :class:`matplotlib.widgets.Slider` ahora toma un argumento opcional *orientación* que indica la dirección (``'horizontal`` o ``'vertical``) que debe tomar el deslizador."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:325
 msgid "Improved formatting of image values under cursor when a colorbar is present"
-msgstr ""
+msgstr "Mejora del formato de los valores de la imagen bajo el cursor cuando hay una barra de colores"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:327
 msgid "When a colorbar is present, its formatter is now used to format the image values under the mouse cursor in the status bar.  For example, for an image displaying the values 10,000 and 10,001, the statusbar will now (using default settings) display the values as ``10000`` and ``10001``), whereas both values were previously displayed as ``1e+04``."
-msgstr ""
+msgstr "Cuando hay una barra de colores, ahora se utiliza su formateador para dar formato a los valores de la imagen bajo el cursor del ratón en la barra de estado.  Por ejemplo, para una imagen que muestre los valores 10.000 y 10.001, la barra de estado mostrará ahora (utilizando la configuración por defecto) los valores como ``10000`` y ``10001``, mientras que antes ambos valores se mostraban como ``1e+04``."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:334
 msgid "MouseEvent button attribute is now an IntEnum"
-msgstr ""
+msgstr "El atributo de botón de MouseEvent es ahora un IntEnum"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:336
 msgid "The ``button`` attribute of `~.MouseEvent` instances can take the values None, 1 (left button), 2 (middle button), 3 (right button), \"up\" (scroll), and \"down\" (scroll).  For better legibility, the 1, 2, and 3 values are now represented using the `enum.IntEnum` class `matplotlib.backend_bases.MouseButton`, with the values `.MouseButton.LEFT` (``== 1``), `.MouseButton.MIDDLE` (``== 2``), and `.MouseButton.RIGHT` (``== 3``)."
-msgstr ""
+msgstr "El atributo ``button`` de las instancias `~.MouseEvent` puede tomar los valores Ninguno, 1 (botón izquierdo), 2 (botón central), 3 (botón derecho), \"arriba\" (desplazamiento) y \"abajo\" (desplazamiento).  Para una mejor legibilidad, los valores 1, 2 y 3 se representan ahora usando la clase `enum.IntEnum` `matplotlib.backend_bases.MouseButton`, con los valores `.MouseButton.LEFT` (``== 1``), `.MouseButton.MIDDLE` (``== 2``), y `.MouseButton.RIGHT` (``== 3``)."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:345
 msgid "Configuration, Install, and Development"
-msgstr ""
+msgstr "Configuración, instalación y desarrollo"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:348
 msgid "The MATPLOTLIBRC environment variable can now point to any \"file\" path"
-msgstr ""
+msgstr "La variable de entorno MATPLOTLIBRC ahora puede apuntar a cualquier ruta de \"archivo\""
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:349
 msgid "This includes device files; in particular, on Unix systems, one can set ``MATPLOTLIBRC`` to ``/dev/null`` to ignore the user's matplotlibrc file and fall back to Matplotlib's defaults."
-msgstr ""
+msgstr "Esto incluye los archivos de dispositivo; en particular, en los sistemas Unix, se puede establecer ``MATPLOTLIBRC`` a ``/dev/null`` para ignorar el archivo matplotlibrc del usuario y volver a los valores por defecto de Matplotlib."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:353
 msgid "As a reminder, if ``MATPLOTLIBRC`` points to a directory, Matplotlib will try to load the matplotlibrc file from ``$MATPLOTLIBRC/matplotlibrc``."
-msgstr ""
+msgstr "Como recordatorio, si ``MATPLOTLIBRC`` apunta a un directorio, Matplotlib intentará cargar el archivo matplotlibrc desde ``$MATPLOTLIBRC/matplotlibrc``."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:358
 msgid "Allow LaTeX code ``pgf.preamble`` and ``text.latex.preamble`` in MATPLOTLIBRC file"
-msgstr ""
+msgstr "Permitir el código LaTeX ``pgf.preamble`` y ``text.latex.preamble`` en el archivo MATPLOTLIBRC"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:360
 msgid "Previously, the rc file keys :rc:`pgf.preamble` and :rc:`text.latex.preamble` were parsed using commas as separators. This would break valid LaTeX code, such as::"
-msgstr ""
+msgstr "Anteriormente, las claves del archivo rc :rc:`pgf.preamble` y :rc:`text.latex.preamble` se analizaban utilizando comas como separadores. Esto rompería el código LaTeX válido, como::"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:366
 msgid "The parsing has been modified to pass the complete line to the LaTeX system, keeping all commas. Passing a list of strings from within a Python script still works as it used to."
-msgstr ""
+msgstr "El análisis sintáctico se ha modificado para pasar la línea completa al sistema LaTeX, manteniendo todas las comas. Pasar una lista de cadenas desde un script de Python sigue funcionando como antes."
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:373
 msgid "New logging API"
-msgstr ""
+msgstr "Nueva API de registro"
 
 #: ../../users/prev_whats_new/whats_new_3.1.0.rst:375
 msgid "`matplotlib.set_loglevel` / `.pyplot.set_loglevel` can be called to display more (or less) detailed logging output."
-msgstr ""
+msgstr "Se puede llamar a `matplotlib.set_loglevel` / `.pyplot.set_loglevel` para mostrar una salida de registro más (o menos) detallada."
 

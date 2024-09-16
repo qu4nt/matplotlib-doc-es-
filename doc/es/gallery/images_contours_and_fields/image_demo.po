@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:26\n"
+"PO-Revision-Date: 2022-07-03 23:47\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,97 +20,97 @@ msgstr ""
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_images_contours_and_fields_image_demo.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_images_contours_and_fields_image_demo.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:23
 msgid "Image Demo"
-msgstr ""
+msgstr "Imagen de demostración"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:25
 msgid "Many ways to plot images in Matplotlib."
-msgstr ""
+msgstr "Muchas formas de trazar imágenes en Matplotlib."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:27
 msgid "The most common way to plot images in Matplotlib is with `~.axes.Axes.imshow`. The following examples demonstrate much of the functionality of imshow and the many images you can create."
-msgstr ""
+msgstr "La forma más común de trazar imágenes en Matplotlib es con `~.axes.Axes.imshow`. Los siguientes ejemplos demuestran gran parte de la funcionalidad de imshow y las muchas imágenes que se pueden crear."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:56
 msgid "First we'll generate a simple bivariate normal distribution."
-msgstr ""
+msgstr "Primero generaremos una distribución normal bivariada simple."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:92
 msgid "It is also possible to show images of pictures."
-msgstr ""
+msgstr "También es posible mostrar imágenes de cuadros."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:143
 msgid "Interpolating images"
-msgstr ""
+msgstr "Interpolación de imágenes"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:145
 msgid "It is also possible to interpolate images before displaying them. Be careful, as this may manipulate the way your data looks, but it can be helpful for achieving the look you want. Below we'll display the same (small) array, interpolated with three different interpolation methods."
-msgstr ""
+msgstr "También es posible interpolar las imágenes antes de mostrarlas. Hay que tener cuidado, ya que esto puede manipular el aspecto de los datos, pero puede ser útil para conseguir el aspecto deseado. A continuación mostraremos el mismo arreglo (pequeño), interpolado con tres métodos de interpolación diferentes."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:150
 msgid "The center of the pixel at A[i, j] is plotted at (i+0.5, i+0.5).  If you are using interpolation='nearest', the region bounded by (i, j) and (i+1, j+1) will have the same color.  If you are using interpolation, the pixel center will have the same color as it does with nearest, but other pixels will be interpolated between the neighboring pixels."
-msgstr ""
+msgstr "El centro del píxel en A[i, j] se traza en (i+0,5, i+0,5).  Si está utilizando interpolación='más cercano', la región delimitada por (i, j) y (i+1, j+1) tendrá el mismo color.  Si utiliza la interpolación, el centro del píxel tendrá el mismo color que con nearest, pero los demás píxeles se interpolarán entre los píxeles vecinos."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:156
 msgid "To prevent edge effects when doing interpolation, Matplotlib pads the input array with identical pixels around the edge: if you have a 5x5 array with colors a-y as below::"
-msgstr ""
+msgstr "Para evitar los efectos de los bordes al hacer la interpolación, Matplotlib rellena el arreglo de entrada con píxeles idénticos alrededor del borde: si tienes un arreglo de 5x5 con colores a-y como el siguiente::"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:166
 msgid "Matplotlib computes the interpolation and resizing on the padded array ::"
-msgstr ""
+msgstr "Matplotlib calcula la interpolación y el redimensionamiento en el arreglo acolchado ::"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:176
 msgid "and then extracts the central region of the result.  (Extremely old versions of Matplotlib (<0.63) did not pad the array, but instead adjusted the view limits to hide the affected edge areas.)"
-msgstr ""
+msgstr "y luego extrae la región central del resultado.  (Las versiones extremadamente antiguas de Matplotlib (<0.63) no acolchaban el arreglo, sino que ajustaban los límites de la vista para ocultar las áreas de los bordes afectados)."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:180
 msgid "This approach allows plotting the full extent of an array without edge effects, and for example to layer multiple images of different sizes over one another with different interpolation methods -- see :doc:`/gallery/images_contours_and_fields/layer_images`.  It also implies a performance hit, as this new temporary, padded array must be created. Sophisticated interpolation also implies a performance hit; for maximal performance or very large images, interpolation='nearest' is suggested."
-msgstr ""
+msgstr "Este enfoque permite trazar toda la extensión de un arreglo sin efectos de borde y, por ejemplo, superponer múltiples imágenes de diferentes tamaños con diferentes métodos de interpolación -- ver :doc:`/gallery/images_contours_and_fields/layer_images`.  También implica un impacto en el rendimiento, ya que este nuevo arreglo temporal y acolchado debe ser creado. La interpolación sofisticada también implica un impacto en el rendimiento; para un rendimiento máximo o imágenes muy grandes, se sugiere interpolación='nearest'."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:218
 msgid "You can specify whether images should be plotted with the array origin x[0, 0] in the upper left or lower right by using the origin parameter. You can also control the default setting image.origin in your :ref:`matplotlibrc file <customizing-with-matplotlibrc-files>`. For more on this topic see the :doc:`complete guide on origin and extent </tutorials/intermediate/imshow_extent>`."
-msgstr ""
+msgstr "Puede especificar si las imágenes deben ser trazadas con el arreglo origen x[0, 0] en la parte superior izquierda o inferior derecha utilizando el parámetro origen. También puede controlar la configuración por defecto image.origin en su archivo :ref:`matplotlibrc <customizing-with-matplotlibrc-files>`. Para más información sobre este tema, consulte la :doc:`guía completa sobre origen y extensión </tutorials/intermediate/imshow_extent>`."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:256
 msgid "Finally, we'll show an image using a clip path."
-msgstr ""
+msgstr "Por último, mostraremos una imagen utilizando una ruta de clip."
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:297
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:299
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:302
 msgid "`matplotlib.axes.Axes.imshow` / `matplotlib.pyplot.imshow`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.imshow` / `matplotlib.pyplot.imshow`"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:303
 msgid "`matplotlib.artist.Artist.set_clip_path`"
-msgstr ""
+msgstr "`matplotlib.artist.Artist.set_clip_path`"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:304
 msgid "`matplotlib.patches.PathPatch`"
-msgstr ""
+msgstr "`matplotlib.patches.PathPatch`"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:309
 msgid "**Total running time of the script:** ( 0 minutes  2.059 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 2.059 segundos)"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:324
 msgid ":download:`Download Python source code: image_demo.py <image_demo.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: image_demo.py <image_demo.py>`"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:330
 msgid ":download:`Download Jupyter notebook: image_demo.ipynb <image_demo.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: image_demo.ipynb <image_demo.ipynb>`"
 
 #: ../../gallery/images_contours_and_fields/image_demo.rst:337
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:21\n"
+"PO-Revision-Date: 2022-11-02 14:09\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,193 +20,193 @@ msgstr ""
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:3
 msgid "Changes for 0.54"
-msgstr ""
+msgstr "Cambios de 0.54"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:6
 msgid "MATLAB interface"
-msgstr ""
+msgstr "Interfaz MATLAB"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:9
 msgid "dpi"
-msgstr ""
+msgstr "dpi"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:11
 msgid "Several of the backends used a PIXELS_PER_INCH hack that I added to try and make images render consistently across backends.  This just complicated matters.  So you may find that some font sizes and line widths appear different than before.  Apologies for the inconvenience. You should set the dpi to an accurate value for your screen to get true sizes."
-msgstr ""
+msgstr "Varios de los backends usaron un hack PIXELS_PER_INCH que añadí para intentar hacer que las imágenes se rendericen consistentemente a través de los backends. Así que es posible que algunos tamaños de fuentes y anchos de línea aparezcan diferentes a los anteriores. Disculpe las molestias. Debe ajustar el dpi a un valor exacto para su pantalla para obtener tamaños verdaderos."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:20
 msgid "pcolor and scatter"
-msgstr ""
+msgstr "color y dispersión"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:22
 msgid "There are two changes to the MATLAB interface API, both involving the patch drawing commands.  For efficiency, pcolor and scatter have been rewritten to use polygon collections, which are a new set of objects from matplotlib.collections designed to enable efficient handling of large collections of objects.  These new collections make it possible to build large scatter plots or pcolor plots with no loops at the python level, and are significantly faster than their predecessors. The original pcolor and scatter functions are retained as pcolor_classic and scatter_classic."
-msgstr ""
+msgstr "Hay dos cambios en la API de la interfaz MATLAB, ambos relacionados con los comandos de dibujo de parches. Para la eficiencia, se han reescrito pcolor y scatter para utilizar colecciones de poligón, que son un nuevo conjunto de objetos de matplotlib. ollections designed to enable efficient handling of large collections of objects. Estas nuevas colecciones permiten construir grandes parcelas de dispersión o parcelas de color sin bucles en el nivel de python, y son significativamente más rápidos que sus predecesores. Las funciones originales pcolor y scatter se mantienen como pcolor_classic y scatter_classic."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:32
 msgid "The return value from pcolor is a PolyCollection.  Most of the properties that are available on rectangles or other patches are also available on PolyCollections, e.g., you can say::"
-msgstr ""
+msgstr "El valor devuelto de pcolor es una PolyCollection. La mayoría de las propiedades que están disponibles en rectángulos u otros parches también están disponibles en PolyColtions, por ejemplo, puedes decir::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:41
 msgid "or::"
-msgstr ""
+msgstr "o::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:47
 msgid "Because the collection is a single object, you no longer need to loop over the return value of scatter or pcolor to set properties for the entire list."
-msgstr ""
+msgstr "Porque la colección es un solo objeto, ya no necesita volver sobre el valor devuelto de scatter o pcolor para establecer propiedades para toda la lista."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:51
 msgid "If you want the different elements of a collection to vary on a property, e.g., to have different line widths, see matplotlib.collections for a discussion on how to set the properties as a sequence."
-msgstr ""
+msgstr "Si desea que los diferentes elementos de una colección varían en una propiedad, p.ej. para tener diferentes anchos de línea, vea matplotlib.collections para una discusión sobre cómo configurar las propiedades como una secuencia."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:55
 msgid "For scatter, the size argument is now in points^2 (the area of the symbol in points) as in MATLAB and is not in data coords as before. Using sizes in data coords caused several problems.  So you will need to adjust your size arguments accordingly or use scatter_classic."
-msgstr ""
+msgstr "Para scatter, el argumento de tamaño está ahora en puntos^2 (el área del símbolo en puntos) como en MATLAB y no está en coordenadas de datos como antes. El uso de tamaños en las coordenadas de datos causó varios problemas. Así que necesitará ajustar sus argumentos de tamaño en consecuencia o usar scatter_classic."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:61
 msgid "mathtext spacing"
-msgstr ""
+msgstr "espaciado de mathtext"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:63
 msgid "For reasons not clear to me (and which I'll eventually fix) spacing no longer works in font groups.  However, I added three new spacing commands which compensate for this '\\ ' (regular space), '\\/' (small space) and '\\hspace{frac}' where frac is a fraction of fontsize in points.  You will need to quote spaces in font strings, is::"
-msgstr ""
+msgstr "Por razones que no están claras para mí (y que finalmente voy a arreglar) el espaciado ya no funciona en grupos de fuentes. Sin embargo, añadí tres nuevos comandos de espaciado que compensan este '\\ ' (espacio regular), '\\/' (pequeño espacio) y '\\hspace{frac}' donde la fracción es una fracción del tamaño de fuente en puntos. Necesitarás comillas de espacios en las cadenas de fuentes, es::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:74
 msgid "Object interface - Application programmers"
-msgstr ""
+msgstr "Interfaz de objetos - Programadores de aplicaciones"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:77
 msgid "Autoscaling"
-msgstr ""
+msgstr "Autoescalado"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:79
 msgid "The x and y axis instances no longer have autoscale view.  These are handled by axes.autoscale_view"
-msgstr ""
+msgstr "Las instancias de ejes x e y ya no tienen vista autoescalada. Estos son manejados por ejes.autoscale_view"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:83
 msgid "Axes creation"
-msgstr ""
+msgstr "Creación de ejes"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:85
 msgid "You should not instantiate your own Axes any more using the OO API. Rather, create a Figure as before and in place of::"
-msgstr ""
+msgstr "Ya no debes crear una instancia de tus propios ejes usando la API OO. Más bien, crea una Figura como antes y en lugar de::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:92
 msgid "use::"
-msgstr ""
+msgstr "usar::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:97
 msgid "That is, add_axis no longer exists and is replaced by::"
-msgstr ""
+msgstr "Es decir, add_axis ya no existe y se sustituye por::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:103
 msgid "Artist methods"
-msgstr ""
+msgstr "Métodos del artista"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:105
 msgid "If you define your own Artists, you need to rename the _draw method to draw"
-msgstr ""
+msgstr "Si defines tus propios artistas, necesitas renombrar el método _draw para dibujar"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:109
 msgid "Bounding boxes"
-msgstr ""
+msgstr "Cajas delimitadoras"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:111
 msgid "matplotlib.transforms.Bound2D is replaced by matplotlib.transforms.Bbox.  If you want to construct a bbox from left, bottom, width, height (the signature for Bound2D), use matplotlib.transforms.lbwh_to_bbox, as in"
-msgstr ""
+msgstr "matplotlib.transforms.Bound2D es reemplazado por matplotlib.transforms.Bbox. Si desea construir un bbox desde la izquierda, abajo, ancho, altura (la firma de Bound2D), use matplotlib.transforms.lbwh_to_bbox, como en"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:116
 msgid "bbox = clickBBox = lbwh_to_bbox(left, bottom, width, height)"
-msgstr ""
+msgstr "bbox = clickBBox = lbwh_to_bbox(izquierda, abajo, ancho, altura)"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:118
 msgid "The Bbox has a different API than the Bound2D.  e.g., if you want to get the width and height of the bbox"
-msgstr ""
+msgstr "El Bbox tiene una API diferente que el Bound2D. Por ejemplo, si desea obtener el ancho y la altura del bbox"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:123
 msgid "OLD::"
-msgstr ""
+msgstr "OLD::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:122
 msgid "width  = fig.bbox.x.interval() height = fig.bbox.y.interval()"
-msgstr ""
+msgstr "width = fig.bbox.x.interval() altura = figura.bbox.y.interval()"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:130
 msgid "New::"
-msgstr ""
+msgstr "Nuevo::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:126
 msgid "width  = fig.bbox.width() height = fig.bbox.height()"
-msgstr ""
+msgstr "width  = fig.bbox.width() height = fig.bbox.height()"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:133
 msgid "Object constructors"
-msgstr ""
+msgstr "Constructores de objetos"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:135
 msgid "You no longer pass the bbox, dpi, or transforms to the various Artist constructors.  The old way or creating lines and rectangles was cumbersome because you had to pass so many attributes to the Line2D and Rectangle classes not related directly to the geometry and properties of the object.  Now default values are added to the object when you call axes.add_line or axes.add_patch, so they are hidden from the user."
-msgstr ""
+msgstr "Ya no pasas el bbox, dpi, o transformas a los diversos constructores de Artistas. La antigua forma o creación de líneas y rectángulos era engorrosa porque tenía que pasar tantos atributos a las clases Line2D y Rectángulo no relacionados directamente con la geometría y propiedades del objeto. Ahora los valores por defecto se añaden al objeto cuando se llama axes.add_line o axes.add_patch, por lo que se ocultan al usuario."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:143
 msgid "If you want to define a custom transformation on these objects, call o.set_transform(trans) where trans is a Transformation instance."
-msgstr ""
+msgstr "Si desea definir una transformación personalizada en estos objetos, llame a o.set_transform(trans) donde trans es una instancia de Transformación."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:146
 msgid "In prior versions of you wanted to add a custom line in data coords, you would have to do"
-msgstr ""
+msgstr "En versiones anteriores de usted quería agregar una línea personalizada en coordenadas de datos, usted tendría que hacer"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:153
 msgid "l =  Line2D(dpi, bbox, x, y,"
-msgstr ""
+msgstr "l =  Line2D(dpi, bbox, x, y,"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:150
 msgid "color = color, transx = transx, transy = transy, )"
-msgstr ""
+msgstr "color = color, transx = transx, transy = transy, )"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:155
 msgid "now all you need is"
-msgstr ""
+msgstr "ahora todo lo que necesitas es"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:157
 msgid "l =  Line2D(x, y, color=color)"
-msgstr ""
+msgstr "l = Line2D(x, y, color=color)"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:159
 msgid "and the axes will set the transformation for you (unless you have set your own already, in which case it will eave it unchanged)"
-msgstr ""
+msgstr "y los ejes te asignarán la transformación (a menos que hayas establecido la tuya propia, en cuyo caso la guardará sin cambios)"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:163
 msgid "Transformations"
-msgstr ""
+msgstr "Transformaciones"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:165
 msgid "The entire transformation architecture has been rewritten. Previously the x and y transformations where stored in the xaxis and yaxis instances.  The problem with this approach is it only allows for separable transforms (where the x and y transformations don't depend on one another).  But for cases like polar, they do.  Now transformations operate on x,y together.  There is a new base class matplotlib.transforms.Transformation and two concrete implementations, matplotlib.transforms.SeparableTransformation and matplotlib.transforms.Affine.  The SeparableTransformation is constructed with the bounding box of the input (this determines the rectangular coordinate system of the input, i.e., the x and y view limits), the bounding box of the display, and possibly nonlinear transformations of x and y.  The 2 most frequently used transformations, data coordinates -> display and axes coordinates -> display are available as ax.transData and ax.transAxes.  See alignment_demo.py which uses axes coords."
-msgstr ""
+msgstr "La arquitectura de transformación completa ha sido reescrita. Anteriormente las transformaciones x e y donde se almacenan en instancias xaxis y yax. El problema con este enfoque es que sólo permite transformas separables (donde las transformaciones x e y no dependen unas de otras). Pero para casos como el polar, lo hacen. Ahora las transformaciones funcionan en x,y juntos. Hay una nueva clase base matplotlib. ransforms.Transformation and two concrete implementations, matplotlib.transforms. eparableTransformation y matplotlib.transforms.Affine. los límites de vista x e y), la caja de límites de la pantalla, y posiblemente transformaciones no lineales de x y y. Las 2 transformaciones más usadas, coordenadas de datos -> mostrar y ejes coordenadas -> mostrar están disponibles como ax. ransData y ax.transaxes. Vea alignment_demo.py que utiliza coordenadas de ejes."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:182
 msgid "Also, the transformations should be much faster now, for two reasons"
-msgstr ""
+msgstr "Además, las transformaciones deberían ser mucho más rápidas ahora, por dos razones"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:184
 msgid "they are written entirely in extension code"
-msgstr ""
+msgstr "están escritos enteramente en el código de extensión"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:186
 msgid "because they operate on x and y together, they can do the entire transformation in one loop.  Earlier I did something along the lines of::"
-msgstr ""
+msgstr "porque funcionan en x y y juntos, pueden hacer toda la transformación en un bucle. Antes hice algo en la línea de::"
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:193
 msgid "Although this was done in numerix, it still involves 6 length(x) for-loops (the multiply, add, and function evaluation each for x and y).  Now all of that is done in a single pass."
-msgstr ""
+msgstr "Aunque esto se hizo en numerix, todavía involucra 6 longitud(x) para bucles (multiplicar, sumar y evaluar función cada uno para x y y). Ahora todo eso se hace en un solo paso."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:198
 msgid "If you are using transformations and bounding boxes to get the cursor position in data coordinates, the method calls are a little different now.  See the updated examples/coords_demo.py which shows you how to do this."
-msgstr ""
+msgstr "Si está usando transformaciones y cajas de límites para obtener la posición del cursor en las coordenadas de datos, las llamadas a métodos son un poco diferentes ahora. Vea los ejemplos actualizados que muestran cómo hacer esto."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:203
 msgid "Likewise, if you are using the artist bounding boxes to pick items on the canvas with the GUI, the bbox methods are somewhat different.  You will need to see the updated examples/object_picker.py."
-msgstr ""
+msgstr "De la misma manera, si estás usando las cajas de límites del artista para elegir objetos en el lienzo con la GUI, los métodos de la caja son algo diferentes. Necesitará ver los ejemplos actualizados/object_picker.py."
 
 #: ../../api/prev_api_changes/api_changes_0.54.rst:208
 msgid "See unit/transforms_unit.py for many examples using the new transformations."
-msgstr ""
+msgstr "Vea unit/transforms_unit.py muchos ejemplos usando las nuevas transformaciones."
 

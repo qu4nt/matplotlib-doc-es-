@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-07 19:57\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,165 +20,165 @@ msgstr ""
 
 #: ../../devel/MEP/MEP10.rst:3
 msgid "MEP10: Docstring consistency"
-msgstr ""
+msgstr "MEP10: Coherencia de la cadena de documentación"
 
 #: ../../devel/MEP/MEP10.rst:8
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP10.rst:10
 msgid "**Progress**"
-msgstr ""
+msgstr "**Progreso**"
 
 #: ../../devel/MEP/MEP10.rst:12
 msgid "This is still an on-going effort"
-msgstr ""
+msgstr "Esto sigue siendo un esfuerzo en curso"
 
 #: ../../devel/MEP/MEP10.rst:15
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP10.rst:19
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP10.rst:21
 msgid "matplotlib has a great deal of inconsistency between docstrings.  This not only makes the docs harder to read, but it is harder on contributors, because they don't know which specifications to follow. There should be a clear docstring convention that is followed consistently."
-msgstr ""
+msgstr "matplotlib tiene una gran inconsistencia entre cadenas de documentación.  Esto no sólo hace que los documentos sean más difíciles de leer, sino que es más difícil para los colaboradores, porque no saben qué especificaciones seguir. Debería haber una convención clara de cadenas de documentación que se siguiera de forma consistente."
 
 #: ../../devel/MEP/MEP10.rst:27
 msgid "The organization of the API documentation is difficult to follow. Some pages, such as pyplot and axes, are enormous and hard to browse. There should instead be short summary tables that link to detailed documentation.  In addition, some of the docstrings themselves are quite long and contain redundant information."
-msgstr ""
+msgstr "La organización de la documentación de la API es difícil de seguir. Algunas páginas, como pyplot y axes, son enormes y difíciles de navegar. En su lugar, debería haber tablas resumidas breves que enlazaran con la documentación detallada.  Además, algunas de las cadenas de documentación son bastante largas y contienen información redundante."
 
 #: ../../devel/MEP/MEP10.rst:33
 msgid "Building the documentation takes a long time and uses a :file:`make.py` script rather than a Makefile."
-msgstr ""
+msgstr "La construcción de la documentación lleva mucho tiempo y utiliza un script :file:`make.py` en lugar de un Makefile."
 
 #: ../../devel/MEP/MEP10.rst:37
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP10.rst:39
 msgid "There are number of new tools and conventions available since matplotlib started using Sphinx that make life easier.  The following is a list of proposed changes to docstrings, most of which involve these new features."
-msgstr ""
+msgstr "Hay una serie de nuevas herramientas y convenciones disponibles desde que matplotlib comenzó a usar Sphinx que hacen la vida más fácil.  La siguiente es una lista de los cambios propuestos a las cadenas de documentación, la mayoría de los cuales implican estas nuevas características."
 
 #: ../../devel/MEP/MEP10.rst:45
 msgid "Numpy docstring format"
-msgstr ""
+msgstr "Formato Numpy de la cadena de documentación"
 
 #: ../../devel/MEP/MEP10.rst:47
 msgid "`Numpy docstring format <https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt>`_: This format divides the docstring into clear sections, each having different parsing rules that make the docstring easy to read both as raw text and as HTML.  We could consider alternatives, or invent our own, but this is a strong choice, as it's well used and understood in the Numpy/Scipy community."
-msgstr ""
+msgstr "`Formato de cadena de documentación Numpy <https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt>`_: Este formato divide la cadena de documentación en secciones claras, cada una de las cuales tiene diferentes reglas de análisis que hacen que la cadena de documentación sea fácil de leer tanto como texto en bruto como en HTML.  Podríamos considerar alternativas, o inventar las nuestras, pero esta es una opción fuerte, ya que es bien utilizada y entendida en la comunidad Numpy/Scipy."
 
 #: ../../devel/MEP/MEP10.rst:56
 msgid "Cross references"
-msgstr ""
+msgstr "Referencias cruzadas"
 
 #: ../../devel/MEP/MEP10.rst:58
 msgid "Most of the docstrings in matplotlib use explicit \"roles\" when linking to other items, for example: ``:func:`myfunction```.  As of Sphinx 0.4, there is a \"default_role\" that can be set to \"obj\", which will polymorphically link to a Python object of any type.  This allows one to write ```myfunction``` instead.  This makes docstrings much easier to read and edit as raw text.  Additionally, Sphinx allows for setting a current module, so links like ```~matplotlib.axes.Axes.set_xlim``` could be written as ```~axes.Axes.set_xlim```."
-msgstr ""
+msgstr "La mayoría de las cadenas de documentación en matplotlib utilizan \"roles\" explícitos cuando se vinculan a otros elementos, por ejemplo: ``:func:`myfunction```.  A partir de Sphinx 0.4, hay un \"default_role\" que se puede establecer como \"obj\", que enlazará polimórficamente a un objeto Python de cualquier tipo.  Esto permite escribir ```myfunction``` en su lugar.  Esto hace que las cadenas de documentación sean mucho más fáciles de leer y editar como texto crudo.  Además, Sphinx permite establecer un módulo actual, por lo que enlaces como ```~matplotlib.axes.Axes.set_xlim``` podrían ser escritos como ```~axes.Axes.set_xlim```."
 
 #: ../../devel/MEP/MEP10.rst:68
 msgid "Overriding signatures"
-msgstr ""
+msgstr "Anulación de firmas"
 
 #: ../../devel/MEP/MEP10.rst:70
 msgid "Many methods in matplotlib use the ``*args`` and ``**kwargs`` syntax to dynamically handle the keyword arguments that are accepted by the function, or to delegate on to another function.  This, however, is often not useful as a signature in the documentation.  For this reason, many matplotlib methods include something like::"
-msgstr ""
+msgstr "Muchos métodos en matplotlib utilizan la sintaxis ``*args`` y ``**kwargs`` para manejar dinámicamente los argumentos de la palabra clave que son aceptados por la función, o para delegar en otra función.  Sin embargo, esto no suele ser útil como firma en la documentación.  Por esta razón, muchos métodos de matplotlib incluyen algo como::"
 
 #: ../../devel/MEP/MEP10.rst:87
 msgid "This can't be parsed by Sphinx, and is rather verbose in raw text.  As of Sphinx 1.1, if the ``autodoc_docstring_signature`` config value is set to True, Sphinx will extract a replacement signature from the first line of the docstring, allowing this::"
-msgstr ""
+msgstr "Esto no puede ser analizado por Sphinx, y es bastante verboso en texto crudo.  A partir de Sphinx 1.1, si el valor de configuración ``autodoc_docstring_signature`` se establece en True, Sphinx extraerá una firma de reemplazo de la primera línea de la cadena de documentación, permitiendo esto::"
 
 #: ../../devel/MEP/MEP10.rst:101
 msgid "The explicit signature will replace the actual Python one in the generated documentation."
-msgstr ""
+msgstr "La firma explícita sustituirá a la real de Python en la documentación generada."
 
 #: ../../devel/MEP/MEP10.rst:105
 msgid "Linking rather than duplicating"
-msgstr ""
+msgstr "Enlazar en lugar de duplicar"
 
 #: ../../devel/MEP/MEP10.rst:107
 msgid "Many of the docstrings include long lists of accepted keywords by interpolating things into the docstring at load time.  This makes the docstrings very long.  Also, since these tables are the same across many docstrings, it inserts a lot of redundant information in the docs -- particularly a problem in the printed version."
-msgstr ""
+msgstr "Muchas de las cadenas de documentación incluyen largas listas de palabras clave aceptadas interpolando cosas en la cadena de documentación en el momento de la carga.  Esto hace que las cadenas de documentación sean muy largas.  Además, como estas tablas son las mismas en muchas cadenas de documentación, se inserta mucha información redundante en los documentos, lo que es un problema especialmente en la versión impresa."
 
 #: ../../devel/MEP/MEP10.rst:113
 msgid "These tables should be moved to docstrings on functions whose only purpose is for help.  The docstrings that refer to these tables should link to them, rather than including them verbatim."
-msgstr ""
+msgstr "Estas tablas deberían trasladarse a las cadenas de documentación de las funciones cuyo único objetivo es la ayuda.  Las cadenas de documentación que hacen referencia a estas tablas deberían enlazarlas, en lugar de incluirlas textualmente."
 
 #: ../../devel/MEP/MEP10.rst:118
 msgid "autosummary extension"
-msgstr ""
+msgstr "extensión de autosummary"
 
 #: ../../devel/MEP/MEP10.rst:120
 msgid "The Sphinx autosummary extension should be used to generate summary tables, that link to separate pages of documentation.  Some classes that have many methods (e.g. `~.axes.Axes`) should be documented with one method per page, whereas smaller classes should have all of their methods together."
-msgstr ""
+msgstr "La extensión autosummary de Sphinx debería utilizarse para generar tablas de resumen, que enlazan con páginas separadas de documentación.  Algunas clases que tienen muchos métodos (por ejemplo, `~.axes.Axes`) deben ser documentadas con un método por página, mientras que las clases más pequeñas deben tener todos sus métodos juntos."
 
 #: ../../devel/MEP/MEP10.rst:127
 msgid "Examples linking to relevant documentation"
-msgstr ""
+msgstr "Ejemplos que enlazan con la documentación pertinente"
 
 #: ../../devel/MEP/MEP10.rst:129
 msgid "The examples, while helpful at illustrating how to use a feature, do not link back to the relevant docstrings.  This could be addressed by adding module-level docstrings to the examples, and then including that docstring in the parsed content on the example page.  These docstrings could easily include references to any other part of the documentation."
-msgstr ""
+msgstr "Los ejemplos, aunque son útiles para ilustrar el uso de una característica, no enlazan con las cadenas de documentación pertinentes.  Esto podría solucionarse añadiendo cadenas de documentación a nivel de módulo a los ejemplos, y luego incluyendo esa cadena de documentación en el contenido analizado de la página de ejemplo.  Estas cadenas de documentación podrían incluir fácilmente referencias a cualquier otra parte de la documentación."
 
 #: ../../devel/MEP/MEP10.rst:137
 msgid "Documentation using help() vs. a browser"
-msgstr ""
+msgstr "Documentación mediante help() frente a un navegador"
 
 #: ../../devel/MEP/MEP10.rst:139
 msgid "Using Sphinx markup in the source allows for good-looking docs in your browser, but the markup also makes the raw text returned using help() look terrible. One of the aims of improving the docstrings should be to make both methods of accessing the docs look good."
-msgstr ""
+msgstr "El uso del marcado Sphinx en el código fuente permite que los documentos se vean bien en el navegador, pero el marcado también hace que el texto crudo devuelto usando help() se vea terrible. Uno de los objetivos de la mejora de las cadenas de documentación debe ser hacer que ambos métodos de acceso a los documentos se vean bien."
 
 #: ../../devel/MEP/MEP10.rst:145
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP10.rst:147
 msgid "The numpydoc extensions should be turned on for matplotlib.  There is an important question as to whether these should be included in the matplotlib source tree, or used as a dependency.  Installing Numpy is not sufficient to get the numpydoc extensions -- it's a separate install procedure.  In any case, to the extent that they require customization for our needs, we should endeavor to submit those changes upstream and not fork them."
-msgstr ""
+msgstr "Las extensiones numpydoc deberían estar activadas para matplotlib.  Hay una cuestión importante en cuanto a si éstas deben ser incluidas en el árbol de fuentes de matplotlib, o usadas como una dependencia.  La instalación de Numpy no es suficiente para obtener las extensiones numpydoc -- es un procedimiento de instalación separado.  En cualquier caso, en la medida en que requieran una personalización para nuestras necesidades, deberíamos esforzarnos por enviar esos cambios a la fuente y no bifurcarlos."
 
 #: ../../devel/MEP/MEP10.rst:155
 msgid "Manually go through all of the docstrings and update them to the new format and conventions.  Updating the cross references (from ```:func:`myfunc``` to ```func```) may be able to be semi-automated.  This is a lot of busy work, and perhaps this labor should be divided on a per-module basis so no single developer is over-burdened by it."
-msgstr ""
+msgstr "Revisa manualmente todas las cadenas de documentación y actualízalas al nuevo formato y convenciones.  La actualización de las referencias cruzadas (de ```:func:`myfunc`` a ```func```) puede ser semiautomatizada.  Esto es mucho trabajo, y tal vez esta labor debería dividirse por módulos para que ningún desarrollador se vea sobrecargado por ello."
 
 #: ../../devel/MEP/MEP10.rst:162
 msgid "Reorganize the API docs using autosummary and ``sphinx-autogen``. This should hopefully have minimal impact on the narrative documentation."
-msgstr ""
+msgstr "Reorganizar la documentación de la API utilizando autosummary y ``sphinx-autogen``. Esto debería tener un impacto mínimo en la documentación narrativa."
 
 #: ../../devel/MEP/MEP10.rst:166
 msgid "Modify the example page generator (:file:`gen_rst.py`) so that it extracts the module docstring from the example and includes it in a non-literal part of the example page."
-msgstr ""
+msgstr "Modificar el generador de páginas de ejemplo (:file:`gen_rst.py`) para que extraiga la cadena de documentación del módulo del ejemplo y la incluya en una parte no literal de la página de ejemplo."
 
 #: ../../devel/MEP/MEP10.rst:170
 msgid "Use ``sphinx-quickstart`` to generate a new-style Sphinx Makefile. The following features in the current :file:`make.py` will have to be addressed in some other way:"
-msgstr ""
+msgstr "Utilice ``sphinx-quickstart`` para generar un Makefile de Sphinx de nuevo estilo. Las siguientes características en el actual :file:`make.py` tendrán que ser abordadas de alguna otra manera:"
 
 #: ../../devel/MEP/MEP10.rst:174
 msgid "Copying of some static content"
-msgstr ""
+msgstr "Copia de algunos contenidos estáticos"
 
 #: ../../devel/MEP/MEP10.rst:176
 msgid "Specifying a \"small\" build (only low-resolution PNG files for examples)"
-msgstr ""
+msgstr "Especificar una compilación \"pequeña\" (sólo archivos PNG de baja resolución para los ejemplos)"
 
 #: ../../devel/MEP/MEP10.rst:178
 msgid "Steps 1, 2, and 3 are interdependent.  4 and 5 may be done independently, though 5 has some dependency on 3."
-msgstr ""
+msgstr "Los pasos 1, 2 y 3 son interdependientes.  Los pasos 4 y 5 pueden realizarse de forma independiente, aunque el 5 tiene cierta dependencia del 3."
 
 #: ../../devel/MEP/MEP10.rst:182
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con el pasado"
 
 #: ../../devel/MEP/MEP10.rst:184
 msgid "As this mainly involves docstrings, there should be minimal impact on backward compatibility."
-msgstr ""
+msgstr "Como se trata principalmente de cadenas de documentación, el impacto en la compatibilidad con versiones anteriores debería ser mínimo."
 
 #: ../../devel/MEP/MEP10.rst:188
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP10.rst:190
 msgid "None yet discussed."
-msgstr ""
+msgstr "No se ha discutido todavía."
 

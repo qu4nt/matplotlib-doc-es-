@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-23 05:07\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,123 +20,123 @@ msgstr ""
 
 #: ../../tutorials/intermediate/legend_guide.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_intermediate_legend_guide.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_intermediate_legend_guide.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/intermediate/legend_guide.rst:23
 msgid "Legend guide"
-msgstr ""
+msgstr "Guía de leyendas"
 
 #: ../../tutorials/intermediate/legend_guide.rst:25
 msgid "Generating legends flexibly in Matplotlib."
-msgstr ""
+msgstr "Generación de leyendas de forma flexible en Matplotlib."
 
 #: ../../tutorials/intermediate/legend_guide.rst:29
 msgid "This legend guide is an extension of the documentation available at :func:`~matplotlib.pyplot.legend` - please ensure you are familiar with contents of that documentation before proceeding with this guide."
-msgstr ""
+msgstr "Esta guía de leyendas es una extensión de la documentación disponible en :func:`~matplotlib.pyplot.legend` - por favor, asegúrate de que te es familiar el contenido de esa documentación antes de continuar con esta guía."
 
 #: ../../tutorials/intermediate/legend_guide.rst:34
 msgid "This guide makes use of some common terms, which are documented here for clarity:"
-msgstr ""
+msgstr "Esta guía hace uso de algunos términos comunes, que se documentan aquí para mayor claridad:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:38
 msgid "legend entry"
-msgstr ""
+msgstr "entrada de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:40
 msgid "A legend is made up of one or more legend entries. An entry is made up of exactly one key and one label."
-msgstr ""
+msgstr "Una leyenda se compone de una o más entradas de leyenda. Una entrada se compone exactamente de una clave y una etiqueta."
 
 #: ../../tutorials/intermediate/legend_guide.rst:42
 msgid "legend key"
-msgstr ""
+msgstr "clave de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:44
 msgid "The colored/patterned marker to the left of each legend label."
-msgstr ""
+msgstr "El marcador de color/patrón a la izquierda de cada etiqueta de leyenda."
 
 #: ../../tutorials/intermediate/legend_guide.rst:45
 msgid "legend label"
-msgstr ""
+msgstr "etiqueta de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:47
 msgid "The text which describes the handle represented by the key."
-msgstr ""
+msgstr "El texto que describe el mango representado por la llave."
 
 #: ../../tutorials/intermediate/legend_guide.rst:48
 msgid "legend handle"
-msgstr ""
+msgstr "manejo de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:50
 msgid "The original object which is used to generate an appropriate entry in the legend."
-msgstr ""
+msgstr "El objeto original que se utiliza para generar una entrada apropiada en la leyenda."
 
 #: ../../tutorials/intermediate/legend_guide.rst:55
 msgid "Controlling the legend entries"
-msgstr ""
+msgstr "Control de las entradas de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:57
 msgid "Calling :func:`legend` with no arguments automatically fetches the legend handles and their associated labels. This functionality is equivalent to::"
-msgstr ""
+msgstr "Al llamar a :func:`legend` sin argumentos se obtienen automáticamente los manejadores de la leyenda y sus etiquetas asociadas. Esta funcionalidad es equivalente a::"
 
 #: ../../tutorials/intermediate/legend_guide.rst:63
 msgid "The :meth:`~matplotlib.axes.Axes.get_legend_handles_labels` function returns a list of handles/artists which exist on the Axes which can be used to generate entries for the resulting legend - it is worth noting however that not all artists can be added to a legend, at which point a \"proxy\" will have to be created (see :ref:`proxy_legend_handles` for further details)."
-msgstr ""
+msgstr "La función :meth:`~matplotlib.axes.Axes.get_legend_handles_labels` devuelve una lista de handles/artistas que existen en los Ejes y que pueden ser utilizados para generar entradas para la leyenda resultante - vale la pena señalar, sin embargo, que no todos los artists pueden ser añadidos a una leyenda, en cuyo caso habrá que crear un \"proxy\" (ver :ref:`proxy_legend_handles` para más detalles)."
 
 #: ../../tutorials/intermediate/legend_guide.rst:69
 msgid "Those artists with an empty string as label or with a label starting with \"_\" will be ignored."
-msgstr ""
+msgstr "Aquellos artistas con una cadena vacía como etiqueta o con una etiqueta que empiece por \"_\" serán ignorados."
 
 #: ../../tutorials/intermediate/legend_guide.rst:72
 msgid "For full control of what is being added to the legend, it is common to pass the appropriate handles directly to :func:`legend`::"
-msgstr ""
+msgstr "Para tener un control total de lo que se añade a la leyenda, es habitual pasar los manejadores adecuados directamente a :func:`legend`::"
 
 #: ../../tutorials/intermediate/legend_guide.rst:80
 msgid "In some cases, it is not possible to set the label of the handle, so it is possible to pass through the list of labels to :func:`legend`::"
-msgstr ""
+msgstr "En algunos casos, no es posible establecer la etiqueta del manejador, por lo que es posible pasar por la lista de etiquetas a :func:`legend`::"
 
 #: ../../tutorials/intermediate/legend_guide.rst:92
 msgid "Creating artists specifically for adding to the legend (aka. Proxy artists)"
-msgstr ""
+msgstr "Creación de artistas específicamente para añadir a la leyenda (aka. Proxy artists)"
 
 #: ../../tutorials/intermediate/legend_guide.rst:94
 msgid "Not all handles can be turned into legend entries automatically, so it is often necessary to create an artist which *can*. Legend handles don't have to exist on the Figure or Axes in order to be used."
-msgstr ""
+msgstr "No todos los manejadores pueden convertirse en entradas de leyenda automáticamente, por lo que a menudo es necesario crear un artista que *pueda*. Los manejadores de leyenda no tienen que existir en la Figura o en los Ejes para poder ser utilizados."
 
 #: ../../tutorials/intermediate/legend_guide.rst:98
 msgid "Suppose we wanted to create a legend which has an entry for some data which is represented by a red color:"
-msgstr ""
+msgstr "Supongamos que queremos crear una leyenda que tenga una entrada para algún dato que se represente con un color rojo:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:129
 msgid "There are many supported legend handles. Instead of creating a patch of color we could have created a line with a marker:"
-msgstr ""
+msgstr "Hay muchos manejadores de leyendas soportados. En lugar de crear un parche de color podríamos haber creado una línea con un marcador:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:161
 msgid "Legend location"
-msgstr ""
+msgstr "Ubicación de la leyenda"
 
 #: ../../tutorials/intermediate/legend_guide.rst:163
 msgid "The location of the legend can be specified by the keyword argument *loc*. Please see the documentation at :func:`legend` for more details."
-msgstr ""
+msgstr "La ubicación de la leyenda se puede especificar mediante el argumento de palabra clave *loc*. Consulte la documentación en :func:`legend` para más detalles."
 
 #: ../../tutorials/intermediate/legend_guide.rst:166
 msgid "The ``bbox_to_anchor`` keyword gives a great degree of control for manual legend placement. For example, if you want your axes legend located at the figure's top right-hand corner instead of the axes' corner, simply specify the corner's location and the coordinate system of that location::"
-msgstr ""
+msgstr "La palabra clave ``bbox_to_anchor`` da un gran grado de control para la colocación manual de la leyenda. Por ejemplo, si quieres que la leyenda de los ejes se sitúe en la esquina superior derecha de la figura en lugar de la esquina de los ejes, simplemente especifica la ubicación de la esquina y el sistema de coordenadas de esa ubicación::"
 
 #: ../../tutorials/intermediate/legend_guide.rst:174
 msgid "More examples of custom legend placement:"
-msgstr ""
+msgstr "Más ejemplos de colocación de leyendas personalizadas:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:213
 msgid "Multiple legends on the same Axes"
-msgstr ""
+msgstr "Múltiples leyendas en los mismos ejes"
 
 #: ../../tutorials/intermediate/legend_guide.rst:215
 msgid "Sometimes it is more clear to split legend entries across multiple legends. Whilst the instinctive approach to doing this might be to call the :func:`legend` function multiple times, you will find that only one legend ever exists on the Axes. This has been done so that it is possible to call :func:`legend` repeatedly to update the legend to the latest handles on the Axes. To keep old legend instances, we must add them manually to the Axes:"
-msgstr ""
+msgstr "A veces es más claro dividir las entradas de la leyenda en varias leyendas. Mientras que el enfoque instintivo para hacer esto podría ser llamar a la función :func:`legend` varias veces, encontrarás que sólo una leyenda siempre existe en los Ejes. Esto se ha hecho para que sea posible llamar a :func:`legend` repetidamente para actualizar la leyenda a los últimos manejadores en los Ejes. Para mantener las instancias de leyenda antiguas, debemos añadirlas manualmente a los Ejes:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:258
 msgid "Legend Handlers"
-msgstr ""
+msgstr "Manejadores de leyendas"
 
 #: ../../tutorials/intermediate/legend_guide.rst:260
 msgid "In order to create legend entries, handles are given as an argument to an appropriate :class:`~matplotlib.legend_handler.HandlerBase` subclass. The choice of handler subclass is determined by the following rules:"
@@ -144,80 +144,80 @@ msgstr ""
 
 #: ../../tutorials/intermediate/legend_guide.rst:264
 msgid "Update :func:`~matplotlib.legend.Legend.get_legend_handler_map` with the value in the ``handler_map`` keyword."
-msgstr ""
+msgstr "Actualización :func:`~matplotlib.legend.Legend.get_legend_handler_map` con el valor de la palabra clave ``handler_map``."
 
 #: ../../tutorials/intermediate/legend_guide.rst:266
 msgid "Check if the ``handle`` is in the newly created ``handler_map``."
-msgstr ""
+msgstr "Comprueba si el ``handle`` está en el recién creado ``handler_map``."
 
 #: ../../tutorials/intermediate/legend_guide.rst:267
 msgid "Check if the type of ``handle`` is in the newly created ``handler_map``."
-msgstr ""
+msgstr "Comprueba si el tipo de ``manejo`` está en el recién creado ``handler_map``."
 
 #: ../../tutorials/intermediate/legend_guide.rst:268
 msgid "Check if any of the types in the ``handle``'s mro is in the newly created ``handler_map``."
-msgstr ""
+msgstr "Comprueba si alguno de los tipos del mro de ``handle`` está en el recién creado ``handler_map``."
 
 #: ../../tutorials/intermediate/legend_guide.rst:271
 msgid "For completeness, this logic is mostly implemented in :func:`~matplotlib.legend.Legend.get_legend_handler`."
-msgstr ""
+msgstr "Para completar, esta lógica se implementa principalmente en :func:`~matplotlib.legend.Legend.get_legend_handler`."
 
 #: ../../tutorials/intermediate/legend_guide.rst:274
 msgid "All of this flexibility means that we have the necessary hooks to implement custom handlers for our own type of legend key."
-msgstr ""
+msgstr "Toda esta flexibilidad hace que tengamos los ganchos necesarios para implementar manejadores personalizados para nuestro propio tipo de clave de leyenda."
 
 #: ../../tutorials/intermediate/legend_guide.rst:277
 msgid "The simplest example of using custom handlers is to instantiate one of the existing `.legend_handler.HandlerBase` subclasses. For the sake of simplicity, let's choose `.legend_handler.HandlerLine2D` which accepts a *numpoints* argument (numpoints is also a keyword on the :func:`legend` function for convenience). We can then pass the mapping of instance to Handler as a keyword to legend."
-msgstr ""
+msgstr "El ejemplo más sencillo de usar manejadores personalizados es instanciar una de las subclases existentes de `.legend_handler.HandlerBase`. Para simplificar, vamos a elegir `.legend_handler.HandlerLine2D` que acepta un argumento *numpoints* (numpoints es también una palabra clave en la función :func:`legend` para mayor comodidad). Podemos entonces pasar el mapeo de la instancia al Handler como una palabra clave a la leyenda."
 
 #: ../../tutorials/intermediate/legend_guide.rst:308
 #: ../../tutorials/intermediate/legend_guide.rst:356
 #: ../../tutorials/intermediate/legend_guide.rst:445
 #: ../../tutorials/intermediate/legend_guide.rst:506
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:319
 msgid "As you can see, \"Line 1\" now has 4 marker points, where \"Line 2\" has 2 (the default). Try the above code, only change the map's key from ``line1`` to ``type(line1)``. Notice how now both `.Line2D` instances get 4 markers."
-msgstr ""
+msgstr "Como puede ver, la \"Línea 1\" tiene ahora 4 puntos de marcador, mientras que la \"Línea 2\" tiene 2 (el valor por defecto). Prueba el código anterior, sólo cambia la clave del mapa de ``línea1`` a ``tipo(línea1)``. Observa cómo ahora ambas instancias de `.Line2D` tienen 4 marcadores."
 
 #: ../../tutorials/intermediate/legend_guide.rst:323
 msgid "Along with handlers for complex plot types such as errorbars, stem plots and histograms, the default ``handler_map`` has a special ``tuple`` handler (`.legend_handler.HandlerTuple`) which simply plots the handles on top of one another for each item in the given tuple. The following example demonstrates combining two legend keys on top of one another:"
-msgstr ""
+msgstr "Junto con los manejadores para tipos de gráficos complejos como barras de error, gráficos de tallo e histogramas, el ``handler_map`` por defecto tiene un manejador especial de ``tupla`` (`.legend_handler.HandlerTuple`) que simplemente traza los manejadores uno encima de otro para cada elemento de la tupla dada. El siguiente ejemplo demuestra la combinación de dos claves de leyenda una encima de la otra:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:367
 msgid "The `.legend_handler.HandlerTuple` class can also be used to assign several legend keys to the same entry:"
-msgstr ""
+msgstr "La clase `.legend_handler.HandlerTuple` también se puede utilizar para asignar varias claves de leyenda a la misma entrada:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:399
 msgid "Implementing a custom legend handler"
-msgstr ""
+msgstr "Implementación de un manejador de leyenda personalizado"
 
 #: ../../tutorials/intermediate/legend_guide.rst:401
 msgid "A custom handler can be implemented to turn any handle into a legend key (handles don't necessarily need to be matplotlib artists).  The handler must implement a ``legend_artist`` method which returns a single artist for the legend to use. The required signature for ``legend_artist`` is documented at `~.legend_handler.HandlerBase.legend_artist`."
-msgstr ""
+msgstr "Se puede implementar un manejador personalizado para convertir cualquier manejador en una clave de leyenda (los manejadores no tienen que ser necesariamente artistas de matplotlib).  El manejador debe implementar un método ``legend_artist`` que devuelva un único artista para que la leyenda lo utilice. La firma requerida para ``legend_artist`` está documentada en `~.legend_handler.HandlerBase.legend_artist`."
 
 #: ../../tutorials/intermediate/legend_guide.rst:456
 msgid "Alternatively, had we wanted to globally accept ``AnyObject`` instances without needing to manually set the *handler_map* keyword all the time, we could have registered the new handler with::"
-msgstr ""
+msgstr "Alternativamente, si hubiéramos querido aceptar globalmente instancias de ``AnyObject`` sin necesidad de establecer manualmente la palabra clave *handler_map* todo el tiempo, podríamos haber registrado el nuevo manejador con::"
 
 #: ../../tutorials/intermediate/legend_guide.rst:463
 msgid "Whilst the power here is clear, remember that there are already many handlers implemented and what you want to achieve may already be easily possible with existing classes. For example, to produce elliptical legend keys, rather than rectangular ones:"
-msgstr ""
+msgstr "Aunque el poder aquí es claro, recuerda que ya hay muchos manejadores implementados y lo que quieres lograr ya puede ser fácilmente posible con las clases existentes. Por ejemplo, para producir claves de leyenda elípticas, en lugar de rectangulares:"
 
 #: ../../tutorials/intermediate/legend_guide.rst:518
 msgid "**Total running time of the script:** ( 0 minutes  3.237 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 3.237 segundos)"
 
 #: ../../tutorials/intermediate/legend_guide.rst:533
 msgid ":download:`Download Python source code: legend_guide.py <legend_guide.py>`"
-msgstr ""
+msgstr ":download:`Descargar código fuente de Python: legend_guide.py <legend_guide.py>`"
 
 #: ../../tutorials/intermediate/legend_guide.rst:539
 msgid ":download:`Download Jupyter notebook: legend_guide.ipynb <legend_guide.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar Jupyter notebook: legend_guide.ipynb <legend_guide.ipynb>`"
 
 #: ../../tutorials/intermediate/legend_guide.rst:546
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

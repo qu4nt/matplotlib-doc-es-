@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:11\n"
+"PO-Revision-Date: 2022-11-02 13:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,531 +20,531 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.csd.rst:2
 msgid "matplotlib.axes.Axes.csd"
-msgstr ""
+msgstr "matplotlib.axes.Axes.csd"
 
 #: matplotlib.axes._axes.Axes.csd:2 of
 msgid "Plot the cross-spectral density."
-msgstr ""
+msgstr "Trazar la densidad espectral cruzada."
 
 #: matplotlib.axes._axes.Axes.csd:4 of
 msgid "The cross spectral density :math:`P_{xy}` by Welch's average periodogram method.  The vectors *x* and *y* are divided into *NFFT* length segments.  Each segment is detrended by function *detrend* and windowed by function *window*.  *noverlap* gives the length of the overlap between segments.  The product of the direct FFTs of *x* and *y* are averaged over each segment to compute :math:`P_{xy}`, with a scaling to correct for power loss due to windowing."
-msgstr ""
+msgstr "La densidad espectral cruzada :math:`P_{xy}` por el método del periodograma medio de Welch.  Los vectores *x* e *y* se dividen en segmentos de longitud *NFFT*.  Cada segmento se detrae con la función *detrend* y se abre con la función *window*.  *noverlap* da la longitud del solapamiento entre segmentos.  El producto de las FFTs directas de *x* y *y* se promedia sobre cada segmento para calcular :math:`P_{xy}`, con una escala para corregir la pérdida de potencia debido a la ventana."
 
 #: matplotlib.axes._axes.Axes.csd:13 of
 msgid "If len(*x*) < *NFFT* or len(*y*) < *NFFT*, they will be zero padded to *NFFT*."
-msgstr ""
+msgstr "Si len(*x*) < *NFFT* o len(*y*) < *NFFT*, se rellenarán de cero a *NFFT*."
 
 #: matplotlib.axes._axes.Axes.csd of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.axes._axes.Axes.csd:19 of
 msgid "**x, y**"
-msgstr ""
+msgstr "**x, y**"
 
 #: of
 msgid "1-D arrays or sequences"
-msgstr ""
+msgstr "Arreglos o secuencias 1-D"
 
 #: matplotlib.axes._axes.Axes.csd:19 of
 msgid "Arrays or sequences containing the data."
-msgstr ""
+msgstr "Arreglos o secuencias que contienen los datos."
 
 #: matplotlib.axes._axes.Axes.csd:23 of
 msgid "**Fs**"
-msgstr ""
+msgstr "**Fs**"
 
 #: of
 msgid "float, default: 2"
-msgstr ""
+msgstr "float, default: 2"
 
 #: matplotlib.axes._axes.Axes.csd:22 of
 msgid "The sampling frequency (samples per time unit).  It is used to calculate the Fourier frequencies, *freqs*, in cycles per time unit."
-msgstr ""
+msgstr "La frecuencia de muestreo (muestras por unidad de tiempo).  Se utiliza para calcular las frecuencias de Fourier, *freqs*, en ciclos por unidad de tiempo."
 
 #: matplotlib.axes._axes.Axes.csd:30 of
 msgid "**window** : callable or ndarray, default: `.window_hanning`"
-msgstr ""
+msgstr "**window** : callable o ndarray, default: `.window_hanning`"
 
 #: of
 msgid "callable or ndarray, default:"
-msgstr ""
+msgstr "callable o ndarray, default:"
 
 #: matplotlib.axes._axes.Axes.csd:26 of
 msgid "A function or a vector of length *NFFT*.  To create window vectors see `.window_hanning`, `.window_none`, `numpy.blackman`, `numpy.hamming`, `numpy.bartlett`, `scipy.signal`, `scipy.signal.get_window`, etc.  If a function is passed as the argument, it must take a data segment as an argument and return the windowed version of the segment."
-msgstr ""
+msgstr "Una función o un vector de longitud *NFFT*.  Para crear vectores ventana, ver `.window_hanning`, `.window_none`, `numpy.blackman`, `numpy.hamming`, `numpy.bartlett`, `scipy.signal`, `scipy.signal.get_window`, etc.  Si se pasa una función como argumento, debe tomar un segmento de datos como argumento y devolver la versión con ventana del segmento."
 
 #: matplotlib.axes._axes.Axes.csd:35 of
 msgid "**sides**"
-msgstr ""
+msgstr "**sides**"
 
 #: of
 msgid "{'default', 'onesided', 'twosided'}, optional"
-msgstr ""
+msgstr "{'default', 'onesided', 'twosided'}, opcional"
 
 #: matplotlib.axes._axes.Axes.csd:33 of
 msgid "Which sides of the spectrum to return. 'default' is one-sided for real data and two-sided for complex data. 'onesided' forces the return of a one-sided spectrum, while 'twosided' forces two-sided."
-msgstr ""
+msgstr "Qué lados del espectro devolver. 'default' es de un solo lado para datos reales y de dos lados para datos complejos. 'onesided' fuerza la devolución de un espectro de un solo lado, mientras que 'twosided' fuerza dos lados."
 
 #: matplotlib.axes._axes.Axes.csd:44 of
 msgid "**pad_to**"
-msgstr ""
+msgstr "**pad_to**"
 
 #: of
 msgid "int, optional"
-msgstr ""
+msgstr "int, opcional"
 
 #: matplotlib.axes._axes.Axes.csd:38 of
 msgid "The number of points to which the data segment is padded when performing the FFT.  This can be different from *NFFT*, which specifies the number of data points used.  While not increasing the actual resolution of the spectrum (the minimum distance between resolvable peaks), this can give more points in the plot, allowing for more detail. This corresponds to the *n* parameter in the call to fft(). The default is None, which sets *pad_to* equal to *NFFT*"
-msgstr ""
+msgstr "El número de puntos a los que se rellena el segmento de datos al realizar la FFT.  Esto puede ser diferente de *NFFT*, que especifica el número de puntos de datos utilizados.  Aunque no aumenta la resolución real del espectro (la distancia mínima entre los picos resolubles), esto puede dar más puntos en el gráfico, permitiendo más detalles. Esto corresponde al parámetro *n* en la llamada a fft(). El valor por defecto es None, que establece *pad_to* igual a *NFFT*"
 
 #: matplotlib.axes._axes.Axes.csd:49 of
 msgid "**NFFT**"
-msgstr ""
+msgstr "**NFFT**"
 
 #: of
 msgid "int, default: 256"
-msgstr ""
+msgstr "int, default: 256"
 
 #: matplotlib.axes._axes.Axes.csd:47 of
 msgid "The number of data points used in each block for the FFT.  A power 2 is most efficient.  This should *NOT* be used to get zero padding, or the scaling of the result will be incorrect; use *pad_to* for this instead."
-msgstr ""
+msgstr "El número de puntos de datos utilizados en cada bloque para la FFT.  Una potencia 2 es lo más eficiente.  Esto debe *NO* usarse para obtener el relleno de cero, o el escalado del resultado será incorrecto; use *pad_to* para esto en su lugar."
 
 #: matplotlib.axes._axes.Axes.csd:58 of
 msgid "**detrend**"
-msgstr ""
+msgstr "**detrend**"
 
 #: of
 msgid "{'none', 'mean', 'linear'} or callable, default: 'none'"
-msgstr ""
+msgstr "{'none', 'mean', 'linear'} or callable, default: 'none'"
 
 #: matplotlib.axes._axes.Axes.csd:52 of
 msgid "The function applied to each segment before fft-ing, designed to remove the mean or linear trend.  Unlike in MATLAB, where the *detrend* parameter is a vector, in Matplotlib it is a function.  The :mod:`~matplotlib.mlab` module defines `.detrend_none`, `.detrend_mean`, and `.detrend_linear`, but you can use a custom function as well.  You can also use a string to choose one of the functions: 'none' calls `.detrend_none`. 'mean' calls `.detrend_mean`. 'linear' calls `.detrend_linear`."
-msgstr ""
+msgstr "La función aplicada a cada segmento antes de fft-ing, diseñada para eliminar la media o la tendencia lineal.  A diferencia de MATLAB, donde el parámetro *detrend* es un vector, en Matplotlib es una función.  El módulo :mod:`~matplotlib.mlab` define `.detrend_none`, `.detrend_mean` y `.detrend_linear`, pero también se puede utilizar una función personalizada.  También puede utilizar una cadena para elegir una de las funciones: \"none\" llama a `.detrend_none`. 'mean' invoca a `.detrend_mean`. 'linear' llama a `.detrend_linear`."
 
 #: matplotlib.axes._axes.Axes.csd:64 of
 msgid "**scale_by_freq**"
-msgstr ""
+msgstr "**scale_by_freq**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.axes._axes.Axes.csd:61 of
 msgid "Whether the resulting density values should be scaled by the scaling frequency, which gives density in units of Hz^-1.  This allows for integration over the returned frequency values.  The default is True for MATLAB compatibility."
-msgstr ""
+msgstr "Si los valores de densidad resultantes deben ser escalados por la frecuencia de escalado, que da la densidad en unidades de Hz^-1.  Esto permite la integración sobre los valores de frecuencia devueltos.  El valor por defecto es True para la compatibilidad con MATLAB."
 
 #: matplotlib.axes._axes.Axes.csd:67 of
 msgid "**noverlap**"
-msgstr ""
+msgstr "**noverlap**"
 
 #: of
 msgid "int, default: 0 (no overlap)"
-msgstr ""
+msgstr "int, default: 0 (no overlap)"
 
 #: matplotlib.axes._axes.Axes.csd:67 of
 msgid "The number of points of overlap between segments."
-msgstr ""
+msgstr "El número de puntos de solapamiento entre segmentos."
 
 #: matplotlib.axes._axes.Axes.csd:72 of
 msgid "**Fc**"
-msgstr ""
+msgstr "**Fc**"
 
 #: of
 msgid "int, default: 0"
-msgstr ""
+msgstr "int, por defecto: 0"
 
 #: matplotlib.axes._axes.Axes.csd:70 of
 msgid "The center frequency of *x*, which offsets the x extents of the plot to reflect the frequency range used when a signal is acquired and then filtered and downsampled to baseband."
-msgstr ""
+msgstr "La frecuencia central de *x*, que compensa la extensión x de la parcela para reflejar el rango de frecuencia utilizado cuando una señal es adquirida y luego filtrada y mostrada a la baseband."
 
 #: matplotlib.axes._axes.Axes.csd:75 of
 msgid "**return_line**"
-msgstr ""
+msgstr "**retorno_línea**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.axes._axes.Axes.csd:75 of
 msgid "Whether to include the line object plotted in the returned values."
-msgstr ""
+msgstr "Si incluir o no el objeto de línea trazado en los valores devueltos."
 
 #: matplotlib.axes._axes.Axes.csd of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.axes._axes.Axes.csd:81 of
 msgid "**Pxy**"
-msgstr ""
+msgstr "**Pxy**"
 
 #: of
 msgid "1-D array"
-msgstr ""
+msgstr "Arreglo 1-D"
 
 #: matplotlib.axes._axes.Axes.csd:80 of
 msgid "The values for the cross spectrum :math:`P_{xy}` before scaling (complex valued)."
-msgstr ""
+msgstr "Los valores para el espectro cruzado :math:`P_{xy}` antes de escalar (valor complejo)."
 
 #: matplotlib.axes._axes.Axes.csd:84 of
 msgid "**freqs**"
-msgstr ""
+msgstr "**freqs**"
 
 #: matplotlib.axes._axes.Axes.csd:84 of
 msgid "The frequencies corresponding to the elements in *Pxy*."
-msgstr ""
+msgstr "Las frecuencias correspondientes a los elementos de *Pxy*."
 
 #: matplotlib.axes._axes.Axes.csd:90 of
 msgid "**line** : `~matplotlib.lines.Line2D`"
-msgstr ""
+msgstr "**line** : `~matplotlib.lines.Line2D`"
 
 #: matplotlib.axes._axes.Axes.csd:89 of
 msgid "Line2D"
-msgstr ""
+msgstr "Line2D"
 
 #: matplotlib.axes._axes.Axes.csd:87 of
 msgid "The line created by this function. Only returned if *return_line* is True."
-msgstr ""
+msgstr "La línea creada por esta función. Sólo se devuelve si *return_line* es True."
 
 #: matplotlib.axes._axes.Axes.csd of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.axes._axes.Axes.csd:98 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.axes._axes.Axes.csd:95 of
 msgid "If given, the following parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception):"
-msgstr ""
+msgstr "Si se dan, los siguientes parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción):"
 
 #: matplotlib.axes._axes.Axes.csd:98 of
 msgid "*x*, *y*"
-msgstr ""
+msgstr "*x*, *y*"
 
 #: matplotlib.axes._axes.Axes.csd:153 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.axes._axes.Axes.csd:101 of
 msgid "Keyword arguments control the `.Line2D` properties:"
-msgstr ""
+msgstr "Los argumentos de palabra clave controlan las propiedades `.Line2D`:"
 
 #: matplotlib.axes._axes.Axes.csd:107 of
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: matplotlib.axes._axes.Axes.csd:107 of
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: matplotlib.axes._axes.Axes.csd:109 of
 msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
-msgstr ""
+msgstr ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
 
 #: matplotlib.axes._axes.Axes.csd:109 of
 msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
-msgstr ""
+msgstr "una función de filtro, que toma un arreglo de puntos flotantes (m, n, 3) y un valor de dpi, y devuelve un arreglo (m, n, 3)"
 
 #: matplotlib.axes._axes.Axes.csd:110 of
 msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
-msgstr ""
+msgstr ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
 
 #: matplotlib.axes._axes.Axes.csd:110 of
 msgid "scalar or None"
-msgstr ""
+msgstr "escalar o None"
 
 #: matplotlib.axes._axes.Axes.csd:111 of
 msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
-msgstr ""
+msgstr ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
 
 #: matplotlib.axes._axes.Axes.csd:111 matplotlib.axes._axes.Axes.csd:112
 #: matplotlib.axes._axes.Axes.csd:114 matplotlib.axes._axes.Axes.csd:125
 #: matplotlib.axes._axes.Axes.csd:139 matplotlib.axes._axes.Axes.csd:146 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.axes._axes.Axes.csd:112 of
 msgid ":meth:`antialiased <matplotlib.lines.Line2D.set_antialiased>` or aa"
-msgstr ""
+msgstr ":meth:`antialias <matplotlib.lines.Line2D.set_antialiased>` o aa"
 
 #: matplotlib.axes._axes.Axes.csd:113 of
 msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
-msgstr ""
+msgstr ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
 
 #: matplotlib.axes._axes.Axes.csd:113 of
 msgid "`.Bbox`"
-msgstr ""
+msgstr "`.Bbox`"
 
 #: matplotlib.axes._axes.Axes.csd:114 of
 msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
-msgstr ""
+msgstr ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
 
 #: matplotlib.axes._axes.Axes.csd:115 of
 msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
-msgstr ""
+msgstr ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
 
 #: matplotlib.axes._axes.Axes.csd:115 of
 msgid "Patch or (Path, Transform) or None"
-msgstr ""
+msgstr "Patch o (Path, Transform) o None"
 
 #: matplotlib.axes._axes.Axes.csd:116 of
 msgid ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
-msgstr ""
+msgstr ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
 
 #: matplotlib.axes._axes.Axes.csd:116 matplotlib.axes._axes.Axes.csd:130
 #: matplotlib.axes._axes.Axes.csd:132 matplotlib.axes._axes.Axes.csd:133 of
 msgid "color"
-msgstr ""
+msgstr "color"
 
 #: matplotlib.axes._axes.Axes.csd:117 of
 msgid ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
-msgstr ""
+msgstr ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
 
 #: matplotlib.axes._axes.Axes.csd:117 matplotlib.axes._axes.Axes.csd:142 of
 msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "`.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.axes._axes.Axes.csd:118 of
 msgid ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
-msgstr ""
+msgstr ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
 
 #: matplotlib.axes._axes.Axes.csd:118 matplotlib.axes._axes.Axes.csd:143 of
 msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "`.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.axes._axes.Axes.csd:119 of
 msgid ":meth:`dashes <matplotlib.lines.Line2D.set_dashes>`"
-msgstr ""
+msgstr ":meth:`guiones <matplotlib.lines.Line2D.set_dashes>`"
 
 #: matplotlib.axes._axes.Axes.csd:119 of
 msgid "sequence of floats (on/off ink in points) or (None, None)"
-msgstr ""
+msgstr "secuencia de flotantes (tinta encendida/apagada en puntos) o (Ninguna, Ninguna)"
 
 #: matplotlib.axes._axes.Axes.csd:120 of
 msgid ":meth:`data <matplotlib.lines.Line2D.set_data>`"
-msgstr ""
+msgstr ":meth:`data <matplotlib.lines.Line2D.set_data>`"
 
 #: matplotlib.axes._axes.Axes.csd:120 of
 msgid "(2, N) array or two 1D arrays"
-msgstr ""
+msgstr "(2, N) array o dos matrices 1D"
 
 #: matplotlib.axes._axes.Axes.csd:121 of
 msgid ":meth:`drawstyle <matplotlib.lines.Line2D.set_drawstyle>` or ds"
-msgstr ""
+msgstr ":meth:`estilo de dibujo <matplotlib.lines.Line2D.set_drawstyle>` o ds"
 
 #: matplotlib.axes._axes.Axes.csd:121 of
 msgid "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
-msgstr ""
+msgstr "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
 
 #: matplotlib.axes._axes.Axes.csd:122 of
 msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
-msgstr ""
+msgstr ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
 
 #: matplotlib.axes._axes.Axes.csd:122 of
 msgid "`.Figure`"
-msgstr ""
+msgstr "`.Figure`"
 
 #: matplotlib.axes._axes.Axes.csd:123 of
 msgid ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
-msgstr ""
+msgstr ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
 
 #: matplotlib.axes._axes.Axes.csd:123 of
 msgid "{'full', 'left', 'right', 'bottom', 'top', 'none'}"
-msgstr ""
+msgstr "{'full', 'left', 'right', 'bottom', 'top', 'ninguno '}"
 
 #: matplotlib.axes._axes.Axes.csd:124 of
 msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
-msgstr ""
+msgstr ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
 
 #: matplotlib.axes._axes.Axes.csd:124 matplotlib.axes._axes.Axes.csd:145 of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.axes._axes.Axes.csd:125 of
 msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
-msgstr ""
+msgstr ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
 
 #: matplotlib.axes._axes.Axes.csd:126 of
 msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
-msgstr ""
+msgstr ":meth:`label <matplotlib.artist.Artist.set_label>`"
 
 #: matplotlib.axes._axes.Axes.csd:126 of
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: matplotlib.axes._axes.Axes.csd:127 of
 msgid ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` or ls"
-msgstr ""
+msgstr ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` o ls"
 
 #: matplotlib.axes._axes.Axes.csd:127 of
 msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
-msgstr ""
+msgstr "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
 
 #: matplotlib.axes._axes.Axes.csd:128 of
 msgid ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
-msgstr ""
+msgstr ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
 
 #: matplotlib.axes._axes.Axes.csd:128 matplotlib.axes._axes.Axes.csd:131
 #: matplotlib.axes._axes.Axes.csd:134 matplotlib.axes._axes.Axes.csd:138
 #: matplotlib.axes._axes.Axes.csd:149 of
 msgid "float"
-msgstr ""
+msgstr "de punto flotante (float)"
 
 #: matplotlib.axes._axes.Axes.csd:129 of
 msgid ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
-msgstr ""
+msgstr ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
 
 #: matplotlib.axes._axes.Axes.csd:129 of
 msgid "marker style string, `~.path.Path` or `~.markers.MarkerStyle`"
-msgstr ""
+msgstr "marker style string, `~.path.Path` o `~.markers.MarkerStyle`"
 
 #: matplotlib.axes._axes.Axes.csd:130 of
 msgid ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` or mec"
-msgstr ""
+msgstr ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` o mec"
 
 #: matplotlib.axes._axes.Axes.csd:131 of
 msgid ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` or mew"
-msgstr ""
+msgstr ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` o mío"
 
 #: matplotlib.axes._axes.Axes.csd:132 of
 msgid ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` or mfc"
-msgstr ""
+msgstr ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` o mfc"
 
 #: matplotlib.axes._axes.Axes.csd:133 of
 msgid ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` or mfcalt"
-msgstr ""
+msgstr ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` o mfcalt"
 
 #: matplotlib.axes._axes.Axes.csd:134 of
 msgid ":meth:`markersize <matplotlib.lines.Line2D.set_markersize>` or ms"
-msgstr ""
+msgstr ":meth:`tamaño de marcador <matplotlib.lines.Line2D.set_markersize>` o ms"
 
 #: matplotlib.axes._axes.Axes.csd:135 of
 msgid ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
-msgstr ""
+msgstr ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
 
 #: matplotlib.axes._axes.Axes.csd:135 of
 msgid "None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]"
-msgstr ""
+msgstr "Ninguno o int o (int, int) o rebanada o lista[int] o decimal o (float, float) o lista[bool]"
 
 #: matplotlib.axes._axes.Axes.csd:136 of
 msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
-msgstr ""
+msgstr ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
 
 #: matplotlib.axes._axes.Axes.csd:136 of
 msgid "`.AbstractPathEffect`"
-msgstr ""
+msgstr "`.AbstractPathEffect`"
 
 #: matplotlib.axes._axes.Axes.csd:137 of
 msgid ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
-msgstr ""
+msgstr ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
 
 #: matplotlib.axes._axes.Axes.csd:137 of
 msgid "float or callable[[Artist, Event], tuple[bool, dict]]"
-msgstr ""
+msgstr "decimal o llamable[[Artista, Evento], tuple[bool, dict]]"
 
 #: matplotlib.axes._axes.Axes.csd:138 of
 msgid ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
-msgstr ""
+msgstr ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
 
 #: matplotlib.axes._axes.Axes.csd:139 of
 msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
-msgstr ""
+msgstr ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
 
 #: matplotlib.axes._axes.Axes.csd:140 of
 msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
-msgstr ""
+msgstr ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
 
 #: matplotlib.axes._axes.Axes.csd:140 of
 msgid "(scale: float, length: float, randomness: float)"
-msgstr ""
+msgstr "(scale: float, length: float, randomness: float)"
 
 #: matplotlib.axes._axes.Axes.csd:141 of
 msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
-msgstr ""
+msgstr ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
 
 #: matplotlib.axes._axes.Axes.csd:141 of
 msgid "bool or None"
-msgstr ""
+msgstr "bool or None"
 
 #: matplotlib.axes._axes.Axes.csd:142 of
 msgid ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
-msgstr ""
+msgstr ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
 
 #: matplotlib.axes._axes.Axes.csd:143 of
 msgid ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
-msgstr ""
+msgstr ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
 
 #: matplotlib.axes._axes.Axes.csd:144 of
 msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
-msgstr ""
+msgstr ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
 
 #: matplotlib.axes._axes.Axes.csd:144 of
 msgid "unknown"
-msgstr ""
+msgstr "desconocido"
 
 #: matplotlib.axes._axes.Axes.csd:145 of
 msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
-msgstr ""
+msgstr ":meth:`url <matplotlib.artist.Artist.set_url>`"
 
 #: matplotlib.axes._axes.Axes.csd:146 of
 msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
-msgstr ""
+msgstr ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
 
 #: matplotlib.axes._axes.Axes.csd:147 of
 msgid ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
-msgstr ""
+msgstr ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
 
 #: matplotlib.axes._axes.Axes.csd:147 matplotlib.axes._axes.Axes.csd:148 of
 msgid "1D array"
-msgstr ""
+msgstr "Matriz 1D"
 
 #: matplotlib.axes._axes.Axes.csd:148 of
 msgid ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
-msgstr ""
+msgstr ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
 
 #: matplotlib.axes._axes.Axes.csd:149 of
 msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
-msgstr ""
+msgstr ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
 
 #: matplotlib.axes._axes.Axes.csd:158 of
 msgid ":obj:`psd`"
-msgstr ""
+msgstr ":obj:`psd`"
 
 #: matplotlib.axes._axes.Axes.csd:159 of
 msgid "is equivalent to setting ``y = x``."
-msgstr ""
+msgstr "es equivalente a la configuración ``y = x``."
 
 #: matplotlib.axes._axes.Axes.csd:163 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.axes._axes.Axes.csd:164 of
 msgid "For plotting, the power is plotted as :math:`10 \\log_{10}(P_{xy})` for decibels, though :math:`P_{xy}` itself is returned."
-msgstr ""
+msgstr "Para plotar, el poder está trazado como :math:`10 \\log_{10}(P_{xy})` para decibelos, aunque :math:`P_{xy}` en sí mismo es devuelto."
 
 #: matplotlib.axes._axes.Axes.csd:169 of
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: matplotlib.axes._axes.Axes.csd:170 of
 msgid "Bendat & Piersol -- Random Data: Analysis and Measurement Procedures, John Wiley & Sons (1986)"
-msgstr ""
+msgstr "Bendat & Piersol -- Datos aleatorios: Analysis and Measurement Procedures, John Wiley & Sons (1986)"
 
 #: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.csd.examples:2
 msgid "Examples using ``matplotlib.axes.Axes.csd``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.axes.Axes.csd``"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.csd.examples:10
 msgid "CSD Demo"
-msgstr ""
+msgstr "CSD Demo"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.csd.examples:10
 #: ../../api/_as_gen/matplotlib.axes.Axes.csd.examples:18
 msgid ":ref:`sphx_glr_gallery_lines_bars_and_markers_csd_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_lines_bars_and_markers_csd_demo.py`"
 

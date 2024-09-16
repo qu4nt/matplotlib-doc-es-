@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-18 14:38\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,93 +20,93 @@ msgstr ""
 
 #: ../../devel/MEP/MEP29.rst:3
 msgid "MEP29: Text light markup"
-msgstr ""
+msgstr "MEP29: Marcado de la luz del texto"
 
 #: ../../devel/MEP/MEP29.rst:10
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP29.rst:12
 msgid "Discussion"
-msgstr ""
+msgstr "Discusión"
 
 #: ../../devel/MEP/MEP29.rst:16
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP29.rst:18
 msgid "None at the moment, proof of concept only."
-msgstr ""
+msgstr "Por el momento, sólo una prueba de concepto."
 
 #: ../../devel/MEP/MEP29.rst:21
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP29.rst:23
 msgid "This MEP proposes to add lightweight markup to the text artist."
-msgstr ""
+msgstr "Este MEP propone añadir marcas ligeras al artist del texto."
 
 #: ../../devel/MEP/MEP29.rst:26
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP29.rst:28
 msgid "Using different size/color/family in a text annotation is difficult because the `~.Axes.text` method accepts argument for size/color/family/weight/etc. that are used for the whole text. But, if one wants, for example, to have different colors, one has to look at the gallery where one such example is provided: :doc:`/gallery/text_labels_and_annotations/rainbow_text`"
-msgstr ""
+msgstr "Utilizar diferentes tamaños/colores/familias en una anotación de texto es difícil porque el método `~.Axes.text` acepta argumentos para el tamaño/color/familia/peso/etc. que se utilizan para todo el texto. Pero, si uno quiere, por ejemplo, tener diferentes colores, hay que mirar la galería donde se proporciona un ejemplo de este tipo: :doc:`/gallery/text_labels_and_annotations/rainbow_text`"
 
 #: ../../devel/MEP/MEP29.rst:34
 msgid "This example takes a list of strings as well as a list of colors which makes it cumbersome to use. An alternative would be to use a restricted set of pango_-like markup and to interpret this markup."
-msgstr ""
+msgstr "Este ejemplo toma una lista de cadenas así como una lista de colores, lo que hace que su uso sea engorroso. Una alternativa sería utilizar un conjunto restringido de marcas tipo pango_ e interpretar estas marcas."
 
 #: ../../devel/MEP/MEP29.rst:39
 msgid "Some markup examples::"
-msgstr ""
+msgstr "Algunos ejemplos de marcado::"
 
 #: ../../devel/MEP/MEP29.rst:46
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP29.rst:48
 msgid "A proof of concept is provided in `markup_example.py <https://github.com/rougier/matplotlib/blob/markup/examples/text_labels_and_annotations/markup.py>`_ but it currently only handles the horizontal direction."
-msgstr ""
+msgstr "Se proporciona una prueba de concepto en `markup_example.py <https://github.com/rougier/matplotlib/blob/markup/examples/text_labels_and_annotations/markup.py>`_ pero actualmente sólo maneja la dirección horizontal."
 
 #: ../../devel/MEP/MEP29.rst:51
 msgid "Improvements"
-msgstr ""
+msgstr "Mejoras"
 
 #: ../../devel/MEP/MEP29.rst:53
 msgid "This proof of concept uses regex to parse the text but it may be better to use the html.parser from the standard library."
-msgstr ""
+msgstr "Esta prueba de concepto utiliza regex para analizar el texto, pero puede ser mejor utilizar el html.parser de la biblioteca estándar."
 
 #: ../../devel/MEP/MEP29.rst:56
 msgid "Computation of text fragment positions could benefit from the OffsetFrom class. See for example item 5 in `Using Complex Coordinates with Annotations <https://matplotlib.org/devdocs/tutorials/text/annotations.html#using-complex-coordinates-with-annotations>`_"
-msgstr ""
+msgstr "El cálculo de las posiciones de los fragmentos de texto podría beneficiarse de la clase OffsetFrom. Ver, por ejemplo, el punto 5 en `Usar coordenadas complejas con anotaciones <https://matplotlib.org/devdocs/tutorials/text/annotations.html#using-complex-coordinates-with-annotations>`_"
 
 #: ../../devel/MEP/MEP29.rst:60
 msgid "Problems"
-msgstr ""
+msgstr "Problemas"
 
 #: ../../devel/MEP/MEP29.rst:62
 msgid "One serious problem is how to deal with text having both LaTeX and HTML-like tags. For example, consider the following::"
-msgstr ""
+msgstr "Un problema grave es cómo tratar el texto que tiene etiquetas de tipo LaTeX y HTML. Por ejemplo, considere lo siguiente::"
 
 #: ../../devel/MEP/MEP29.rst:67
 msgid "Recommendation would be to have mutual exclusion."
-msgstr ""
+msgstr "La recomendación sería tener una exclusión mutua."
 
 #: ../../devel/MEP/MEP29.rst:71
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP29.rst:73
 msgid "None at the moment since it is only a proof of concept"
-msgstr ""
+msgstr "Ninguno por el momento, ya que es sólo una prueba de concepto"
 
 #: ../../devel/MEP/MEP29.rst:77
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP29.rst:79
 msgid "As proposed by @anntzer, this could be also implemented as improvements to mathtext. For example::"
-msgstr ""
+msgstr "Como propone @anntzer, esto también podría implementarse como mejoras en mathtext. Por ejemplo::"
 

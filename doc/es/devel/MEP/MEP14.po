@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-07-13 13:03\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,269 +20,269 @@ msgstr ""
 
 #: ../../devel/MEP/MEP14.rst:3
 msgid "MEP14: Text handling"
-msgstr ""
+msgstr "MEP14: Manejo de texto"
 
 #: ../../devel/MEP/MEP14.rst:10
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: ../../devel/MEP/MEP14.rst:12
 msgid "**Discussion**"
-msgstr ""
+msgstr "**Discusión**"
 
 #: ../../devel/MEP/MEP14.rst:15
 msgid "Branches and Pull requests"
-msgstr ""
+msgstr "Ramas y Pull requests"
 
 #: ../../devel/MEP/MEP14.rst:17
 msgid "Issue #253 demonstrates a bug where using the bounding box rather than the advance width of text results in misaligned text.  This is a minor point in the grand scheme of things, but it should be addressed as part of this MEP."
-msgstr ""
+msgstr "La incidencia #253 demuestra un error en el que el uso de la caja delimitadora en lugar del ancho de avance del texto da lugar a un texto mal alineado.  Este es un punto menor en el gran esquema de las cosas, pero debe ser abordado como parte de este MEP."
 
 #: ../../devel/MEP/MEP14.rst:23
 msgid "Abstract"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../devel/MEP/MEP14.rst:25
 msgid "By reorganizing how text is handled, this MEP aims to:"
-msgstr ""
+msgstr "Mediante la reorganización del tratamiento del texto, este MEP pretende:"
 
 #: ../../devel/MEP/MEP14.rst:27
 msgid "improve support for Unicode and non-ltr languages"
-msgstr ""
+msgstr "mejorar la compatibilidad con Unicode y los idiomas no ltr"
 
 #: ../../devel/MEP/MEP14.rst:28
 msgid "improve text layout (especially multi-line text)"
-msgstr ""
+msgstr "mejorar layout del texto (especialmente el de varias líneas)"
 
 #: ../../devel/MEP/MEP14.rst:29
 msgid "allow support for more fonts, especially non-Apple-format TrueType fonts and OpenType fonts."
-msgstr ""
+msgstr "permitir la compatibilidad con más fuentes, especialmente las fuentes TrueType que no son de formato Apple y las fuentes OpenType."
 
 #: ../../devel/MEP/MEP14.rst:31
 msgid "make the font configuration easier and more transparent"
-msgstr ""
+msgstr "facilitar la configuración de la fuente y hacerla más transparente"
 
 #: ../../devel/MEP/MEP14.rst:34
 msgid "Detailed description"
-msgstr ""
+msgstr "Descripción detallada"
 
 #: ../../devel/MEP/MEP14.rst:36
 msgid "**Text layout**"
-msgstr ""
+msgstr "**Layout del texto**"
 
 #: ../../devel/MEP/MEP14.rst:38
 msgid "At present, matplotlib has two different ways to render text: \"built-in\" (based on FreeType and our own Python code), and \"usetex\" (based on calling out to a TeX installation).  Adjunct to the \"built-in\" renderer there is also the Python-based \"mathtext\" system for rendering mathematical equations using a subset of the TeX language without having a TeX installation available.  Support for these two engines in strewn about many source files, including every backend, where one finds clauses like ::"
-msgstr ""
+msgstr "En la actualidad, matplotlib tiene dos formas diferentes de representar el texto: \"built-in\" (basado en FreeType y nuestro propio código Python), y \"usetex\" (basado en invocar una instalación TeX).  Además del renderizador \"incorporado\", existe el sistema \"mathtext\", basado en Python, para renderizar ecuaciones matemáticas utilizando un subconjunto del lenguaje TeX sin tener una instalación TeX disponible.  El soporte para estos dos motores está esparcido por muchos archivos fuente, incluyendo cada backend, donde uno encuentra cláusulas como ::"
 
 #: ../../devel/MEP/MEP14.rst:49
 msgid "Adding a third text rendering approach (more on that later) would require editing all of these places as well, and therefore doesn't scale."
-msgstr ""
+msgstr "Añadir un tercer enfoque de renderizado de texto (más adelante) requeriría editar todos estos lugares también, y por lo tanto no es escalable."
 
 #: ../../devel/MEP/MEP14.rst:53
 msgid "Instead, this MEP proposes adding a concept of \"text engines\", where the user could select one of many different approaches for rendering text.  The implementations of each of these would be localized to their own set of modules, and not have little pieces around the whole source tree."
-msgstr ""
+msgstr "En su lugar, este MEP propone añadir un concepto de \"motores de texto\", en el que el usuario podría seleccionar uno de los muchos enfoques diferentes para renderizar el texto.  Las implementaciones de cada uno de ellos estarían localizadas en su propio conjunto de módulos, y no tendrían trocitos alrededor de todo el árbol de fuentes."
 
 #: ../../devel/MEP/MEP14.rst:59
 msgid "Why add more text rendering engines?  The \"built-in\" text rendering has a number of shortcomings."
-msgstr ""
+msgstr "¿Por qué añadir más motores de renderizado de texto?  El renderizado de texto \"incorporado\" tiene una serie de deficiencias."
 
 #: ../../devel/MEP/MEP14.rst:62
 msgid "It only handles right-to-left languages, and doesn't handle many special features of Unicode, such as combining diacriticals."
-msgstr ""
+msgstr "Sólo maneja idiomas de derecha a izquierda, y no maneja muchas características especiales de Unicode, como la combinación de diacríticos."
 
 #: ../../devel/MEP/MEP14.rst:64
 msgid "The multiline support is imperfect and only supports manual line-breaking -- it can not break up a paragraph into lines of a certain length."
-msgstr ""
+msgstr "El soporte multilínea es imperfecto y sólo admite el salto de línea manual -- no puede dividir un párrafo en líneas de cierta longitud."
 
 #: ../../devel/MEP/MEP14.rst:67
 msgid "It also does not handle inline formatting changes in order to support something like Markdown, reStructuredText or HTML.  (Though rich-text formatting is contemplated in this MEP, since we want to make sure this design allows it, the specifics of a rich-text formatting implementation is outside of the scope of this MEP.)"
-msgstr ""
+msgstr "Tampoco maneja los cambios de formato en línea para soportar algo como Markdown, reStructuredText o HTML.  (Aunque el formato de texto enriquecido se contempla en este MEP, ya que queremos asegurarnos de que este diseño lo permite, los detalles de una implementación de formato de texto enriquecido están fuera del alcance de este MEP.)"
 
 #: ../../devel/MEP/MEP14.rst:73
 msgid "Supporting these things is difficult, and is the \"full-time job\" of a number of other projects:"
-msgstr ""
+msgstr "Apoyar estas cosas es difícil, y es el \"trabajo a tiempo completo\" de una serie de otros proyectos:"
 
 #: ../../devel/MEP/MEP14.rst:76
 msgid "pango_/harfbuzz_"
-msgstr ""
+msgstr "pango_/harfbuzz_"
 
 #: ../../devel/MEP/MEP14.rst:77
 msgid "QtTextLayout_"
-msgstr ""
+msgstr "QtTextLayout_"
 
 #: ../../devel/MEP/MEP14.rst:78
 msgid "`Microsoft DirectWrite`_"
-msgstr ""
+msgstr "`Microsoft DirectWrite`_"
 
 #: ../../devel/MEP/MEP14.rst:79
 msgid "`Apple Core Text`_"
-msgstr ""
+msgstr "`Apple Core Text`_"
 
 #: ../../devel/MEP/MEP14.rst:87
 msgid "Of the above options, it should be noted that harfbuzz_ is designed from the start as a cross platform option with minimal dependencies, so therefore is a good candidate for a single option to support."
-msgstr ""
+msgstr "De las opciones anteriores, cabe destacar que harfbuzz_ está diseñado desde el principio como una opción multiplataforma con dependencias mínimas, por lo que es un buen candidato para una única opción de apoyo."
 
 #: ../../devel/MEP/MEP14.rst:91
 msgid "Additionally, for supporting rich text, we could consider using `WebKit <https://webkit.org/>`_, and possibly whether than represents a good single cross-platform option.  Again, however, rich text formatting is outside of the scope of this project."
-msgstr ""
+msgstr "Además, para el soporte de texto enriquecido, podríamos considerar el uso de `WebKit <https://webkit.org/>`_, y posiblemente si eso representa una buena opción única multiplataforma.  De nuevo, sin embargo, el formato de texto enriquecido está fuera del alcance de este proyecto."
 
 #: ../../devel/MEP/MEP14.rst:96
 msgid "Rather than trying to reinvent the wheel and add these features to matplotlib's \"built-in\" text renderer, we should provide a way to leverage these projects to get more powerful text layout.  The \"built-in\" renderer will still need to exist for reasons of ease of installation, but its feature set will be more limited compared to the others.  [TODO: This MEP should clearly decide what those limited features are, and fix any bugs to bring the implementation into a state of working correctly in all cases that we want it to work.  I know @leejjoon has some thoughts on this.]"
-msgstr ""
+msgstr "En lugar de intentar reinventar wheel y añadir estas características al renderizador de texto \"incorporado\" de matplotlib, deberíamos proporcionar una forma de aprovechar estos proyectos para obtener un layout de texto más potente.  El renderizador \"incorporado\" seguirá existiendo por razones de facilidad de instalación, pero su conjunto de características será más limitado en comparación con los otros.  [TODO: Este MEP debería decidir claramente cuáles son esas características limitadas, y arreglar cualquier error para que la implementación funcione correctamente en todos los casos que queremos que funcione.  Sé que @leejjoon tiene algunas ideas al respecto.]"
 
 #: ../../devel/MEP/MEP14.rst:106
 msgid "**Font selection**"
-msgstr ""
+msgstr "**Selección de la fuente**"
 
 #: ../../devel/MEP/MEP14.rst:108
 msgid "Going from an abstract description of a font to a file on disk is the task of the font selection algorithm -- it turns out to be much more complicated than it seems at first."
-msgstr ""
+msgstr "Pasar de una descripción abstracta de una fuente a un archivo en el disco es la tarea del algoritmo de selección de fuentes -- resulta ser mucho más complicado de lo que parece al principio."
 
 #: ../../devel/MEP/MEP14.rst:112
 msgid "The \"built-in\" and \"usetex\" renderers have very different ways of handling font selection, given their different technologies.  TeX requires the installation of TeX-specific font packages, for example, and can not use TrueType fonts directly.  Unfortunately, despite the different semantics for font selection, the same set of font properties are used for each.  This is true of both the `.FontProperties` class and the font-related `.rcParams` (which basically share the same code underneath).  Instead, we should define a core set of font selection parameters that will work across all text engines, and have engine-specific configuration to allow the user to do engine-specific things when required.  For example, it is possible to directly select a font by name in the \"built-in\" using :rc:`font.family`, but the same is not possible with \"usetex\".  It may be possible to make it easier to use TrueType fonts by using XeTeX, but users will still want to use the traditional metafonts through TeX font packages.  So the issue still stands that different text engines will need engine-specific configuration, and it should be more obvious to the user which configuration will work across text engines and which are engine-specific."
-msgstr ""
+msgstr "Los renderizadores \"built-in\" y \"usetex\" tienen formas muy diferentes de manejar la selección de fuentes, dadas sus diferentes tecnologías.  TeX requiere la instalación de paquetes de fuentes específicos para TeX, por ejemplo, y no puede utilizar fuentes TrueType directamente.  Desafortunadamente, a pesar de la diferente semántica para la selección de fuentes, se utiliza el mismo conjunto de propiedades de fuentes para cada uno.  Esto es cierto tanto para la clase `.FontProperties` como para la relacionada con las fuentes `.rcParams` (que básicamente comparten el mismo código por debajo). En su lugar, deberíamos definir un conjunto básico de parámetros de selección de fuentes que funcione en todos los motores de texto, y tener una configuración específica del motor para permitir al usuario hacer cosas específicas del motor cuando sea necesario.  Por ejemplo, es posible seleccionar directamente una fuente por su nombre en el \"built-in\" utilizando :rc:`font.family`, pero no es posible hacer lo mismo con \"usetex\".  Puede que sea posible facilitar el uso de fuentes TrueType utilizando XeTeX, pero los usuarios seguirán queriendo utilizar las metafontas tradicionales a través de los paquetes de fuentes TeX.  Por lo tanto, la incidencia sigue siendo que los diferentes motores de texto necesitarán una configuración específica para cada motor, y debería ser más obvio para el usuario qué configuración funcionará en todos los motores de texto y cuál es específica para cada motor."
 
 #: ../../devel/MEP/MEP14.rst:132
 msgid "Note that even excluding \"usetex\", there are different ways to find fonts.  The default is to use the font list cache in :mod:`.font_manager` which matches fonts using our own algorithm based on the `CSS font matching algorithm <http://www.w3.org/TR/CSS2/fonts.html#algorithm>`_. It doesn't always do the same thing as the native font selection algorithms on Linux (fontconfig_), Mac and Windows, and it doesn't always find all of the fonts on the system that the OS would normally pick up.  However, it is cross-platform, and always finds the fonts that ship with matplotlib.  The Cairo and MacOSX backends (and presumably a future HTML5-based backend) currently bypass this mechanism and use the OS-native ones.  The same is true when not embedding fonts in SVG, PS or PDF files and opening them in a third-party viewer.  A downside there is that (at least with Cairo, need to confirm with MacOSX) they don't always find the fonts we ship with matplotlib.  (It may be possible to add the fonts to their search path, though, or we may need to find a way to install our fonts to a location the OS expects to find them)."
-msgstr ""
+msgstr "Ten en cuenta que incluso excluyendo \"usetex\", hay diferentes maneras de encontrar fuentes.  Por defecto, se utiliza el caché de la lista de fuentes en :mod:`.font_manager` que hace coincidir las fuentes utilizando nuestro propio algoritmo basado en el algoritmo de coincidencia de fuentes de `CSS <http://www.w3.org/TR/CSS2/fonts.html#algorithm>`_. No siempre hace lo mismo que los algoritmos nativos de selección de fuentes en Linux (fontconfig_), Mac y Windows, y no siempre encuentra todas las fuentes del sistema que el SO normalmente recogería.  Sin embargo, es multiplataforma, y siempre encuentra las fuentes que vienen con matplotlib.  Los backends de Cairo y MacOSX (y presumiblemente un futuro backend basado en HTML5) actualmente se saltan este mecanismo y utilizan los nativos del sistema operativo.  Lo mismo ocurre cuando no se incrustan fuentes en archivos SVG, PS o PDF y se abren en un visor de terceros.  Una desventaja es que (al menos con Cairo, hay que confirmarlo con MacOSX) no siempre encuentran las fuentes que enviamos con matplotlib.  (Sin embargo, puede ser posible añadir las fuentes a su ruta de búsqueda, o puede que tengamos que encontrar una manera de instalar nuestras fuentes en un lugar donde el sistema operativo espera encontrarlas)."
 
 #: ../../devel/MEP/MEP14.rst:152
 msgid "There are also special modes in the PS and PDF to only use the core fonts that are always available to those formats.  There, the font lookup mechanism must only match against those fonts.  It is unclear whether the OS-native font lookup systems can handle this case."
-msgstr ""
+msgstr "También hay modos especiales en el PS y el PDF para utilizar sólo las fuentes principales que siempre están disponibles para esos formatos.  En este caso, el mecanismo de búsqueda de fuentes sólo debe coincidir con esas fuentes.  No está claro si los sistemas de búsqueda de fuentes nativos del sistema operativo pueden manejar este caso."
 
 #: ../../devel/MEP/MEP14.rst:157
 msgid "There is also experimental support for using fontconfig_ for font selection in matplotlib, turned off by default.  fontconfig is the native font selection algorithm on Linux, but is also cross platform and works well on the other platforms (though obviously is an additional dependency there)."
-msgstr ""
+msgstr "También hay soporte experimental para usar fontconfig_ para la selección de fuentes en matplotlib, desactivado por defecto. fontconfig es el algoritmo de selección de fuentes nativo en Linux, pero también es multiplataforma y funciona bien en las otras plataformas (aunque obviamente es una dependencia adicional allí)."
 
 #: ../../devel/MEP/MEP14.rst:163
 msgid "Many of the text layout libraries proposed above (pango, QtTextLayout, DirectWrite and CoreText etc.) insist on using the font selection library from their own ecosystem."
-msgstr ""
+msgstr "Muchas de las bibliotecas de layout de texto propuestas anteriormente (pango, QtTextLayout, DirectWrite y CoreText, etc.) insisten en utilizar la biblioteca de selección de fuentes de su propio ecosistema."
 
 #: ../../devel/MEP/MEP14.rst:167
 msgid "All of the above seems to suggest that we should move away from our self-written font selection algorithm and use the native APIs where possible.  That's what Cairo and MacOSX backends already want to use, and it will be a requirement of any complex text layout library.  On Linux, we already have the bones of a fontconfig_ implementation (which could also be accessed through pango).  On Windows and Mac we may need to write custom wrappers.  The nice thing is that the API for font lookup is relatively small, and essentially consist of \"given a dictionary of font properties, give me a matching font file\"."
-msgstr ""
+msgstr "Todo lo anterior parece sugerir que deberíamos alejarnos de nuestro algoritmo de selección de fuentes autoescrito y utilizar las APIs nativas siempre que sea posible.  Eso es lo que los backends de Cairo y MacOSX ya quieren usar, y será un requisito de cualquier biblioteca compleja de diseño de texto.  En Linux, ya tenemos los huesos de una implementación de fontconfig_ (a la que también se podría acceder a través de pango).  En Windows y Mac puede que tengamos que escribir envoltorios personalizados.  Lo bueno es que la API para la búsqueda de fuentes es relativamente pequeña, y esencialmente consiste en \"dado un diccionario de propiedades de fuentes, dame un archivo de fuentes que corresponda\"."
 
 #: ../../devel/MEP/MEP14.rst:177
 msgid "**Font subsetting**"
-msgstr ""
+msgstr "**Subconjunto de fuentes**"
 
 #: ../../devel/MEP/MEP14.rst:179
 msgid "Font subsetting is currently handled using ttconv.  ttconv was a standalone commandline utility for converting TrueType fonts to subsetted Type 3 fonts (among other features) written in 1995, which matplotlib (well, I) forked in order to make it work as a library.  It only handles Apple-style TrueType fonts, not ones with the Microsoft (or other vendor) encodings.  It doesn't handle OpenType fonts at all. This means that even though the STIX fonts come as .otf files, we have to convert them to .ttf files to ship them with matplotlib.  The Linux packagers hate this -- they'd rather just depend on the upstream STIX fonts.  ttconv has also been shown to have a few bugs that have been difficult to fix over time."
-msgstr ""
+msgstr "El subconjunto de fuentes se maneja actualmente usando ttconv. ttconv era una utilidad independiente de línea de comandos para convertir fuentes TrueType a fuentes Type 3 subconjuntas (entre otras características) escrita en 1995, que matplotlib (bueno, yo) bifurcó para hacerla funcionar como una biblioteca.  Sólo maneja fuentes TrueType al estilo de Apple, no las que tienen la codificación de Microsoft (u otro proveedor).  No maneja fuentes OpenType en absoluto. Esto significa que aunque las fuentes STIX vienen como archivos .otf, tenemos que convertirlas en archivos .ttf para enviarlas con matplotlib.  Los empaquetadores de Linux odian esto - prefieren depender de las fuentes STIX de la corriente principal. ttconv también ha demostrado tener algunos errores que han sido difíciles de arreglar con el tiempo."
 
 #: ../../devel/MEP/MEP14.rst:191
 msgid "Instead, we should be able to use FreeType to get the font outlines and write our own code (probably in Python) to output subsetted fonts (Type 3 on PS and PDF and paths on SVG).  Freetype, as a popular and well-maintained project, handles a wide variety of fonts in the wild. This would remove a lot of custom C code, and remove some code duplication between backends."
-msgstr ""
+msgstr "En su lugar, deberíamos ser capaces de utilizar FreeType para obtener los contornos de las fuentes y escribir nuestro propio código (probablemente en Python) para dar salida a las fuentes subconjuntas (Type 3 en PS y PDF y paths en SVG).  Freetype, como proyecto popular y bien mantenido, maneja una amplia variedad de fuentes en la naturaleza. Esto eliminaría una gran cantidad de código C personalizado, y eliminaría cierta duplicación de código entre los backends."
 
 #: ../../devel/MEP/MEP14.rst:198
 msgid "Note that subsetting fonts this way, while the easiest route, does lose the hinting in the font, so we will need to continue, as we do now, provide a way to embed the entire font in the file where possible."
-msgstr ""
+msgstr "Ten en cuenta que el subconjunto de fuentes de esta manera, aunque es la ruta más fácil, pierde la insinuación en la fuente, por lo que tendremos que seguir, como hacemos ahora, proporcionando una manera de incrustar la fuente completa en el archivo cuando sea posible."
 
 #: ../../devel/MEP/MEP14.rst:203
 msgid "Alternative font subsetting options include using the subsetting built-in to Cairo (not clear if it can be used without the rest of Cairo), or using fontforge_ (which is a heavy and not terribly cross-platform dependency)."
-msgstr ""
+msgstr "Las opciones alternativas de subconjunto de fuentes incluyen el subconjunto incorporado a Cairo (no está claro si se puede utilizar sin el resto de Cairo), o el uso de fontforge_ (que es una dependencia pesada y no terriblemente multiplataforma)."
 
 #: ../../devel/MEP/MEP14.rst:210
 msgid "**Freetype wrappers**"
-msgstr ""
+msgstr "**Envoltorios Freetype**"
 
 #: ../../devel/MEP/MEP14.rst:212
 msgid "Our FreeType wrapper could really use a reworking.  It defines its own image buffer class (when a Numpy array would be easier).  While FreeType can handle a huge diversity of font files, there are limitations to our wrapper that make it much harder to support non-Apple-vendor TrueType files, and certain features of OpenType files.  (See #2088 for a terrible result of this, just to support the fonts that ship with Windows 7 and 8).  I think a fresh rewrite of this wrapper would go a long way."
-msgstr ""
+msgstr "Nuestra envoltura de FreeType podría necesitar una revisión.  Define su propia clase de búfer de imagen (cuando un arreglo Numpy sería más fácil).  Mientras que FreeType puede manejar una gran diversidad de archivos de fuentes, hay limitaciones en nuestra envoltura que hacen que sea mucho más difícil soportar archivos TrueType que no sean de Apple, y ciertas características de los archivos OpenType.  (Ver #2088 para un resultado terrible de esto, sólo para apoyar a las fuentes que vienen con Windows 7 y 8).  Creo que una nueva reescritura de esta envoltura iría muy lejos."
 
 #: ../../devel/MEP/MEP14.rst:221
 msgid "**Text anchoring and alignment and rotation**"
-msgstr ""
+msgstr "**Anclaje, alineación y rotación del texto**"
 
 #: ../../devel/MEP/MEP14.rst:223
 msgid "The handling of baselines was changed in 1.3.0 such that the backends are now given the location of the baseline of the text, not the bottom of the text.  This is probably the correct behavior, and the MEP refactoring should also follow this convention."
-msgstr ""
+msgstr "El manejo de las líneas de base fue cambiado en 1.3.0 de tal manera que ahora se le da a los backends la ubicación de la línea de base del texto, no la parte inferior del texto.  Este es probablemente el comportamiento correcto, y la refactorización de MEP también debería seguir esta convención."
 
 #: ../../devel/MEP/MEP14.rst:228
 msgid "In order to support alignment on multi-line text, it should be the responsibility of the (proposed) text engine to handle text alignment. For a given chunk of text, each engine calculates a bounding box for that text and the offset of the anchor point within that box. Therefore, if the va of a block was \"top\", the anchor point would be at the top of the box."
-msgstr ""
+msgstr "Para poder alinear un texto de varias líneas, debería ser responsabilidad del motor de texto (propuesto) manejar la alineación del texto. Para una determinada porción de texto, cada motor calcula un cuadro delimitador para ese texto y el desplazamiento del punto de anclaje dentro de esa caja. Por lo tanto, si el va de un bloque fuera \"top\", el punto de anclaje estaría en la parte superior de la caja."
 
 #: ../../devel/MEP/MEP14.rst:235
 msgid "Rotating of text should always be around the anchor point.  I'm not sure that lines up with current behavior in matplotlib, but it seems like the sanest/least surprising choice.  [This could be revisited once we have something working].  Rotation of text should not be handled by the text engine -- that should be handled by a layer between the text engine and the rendering backend so it can be handled in a uniform way.  [I don't see any advantage to rotation being handled by the text engines individually...]"
-msgstr ""
+msgstr "La rotación del texto debería ser siempre alrededor del punto de anclaje.  No estoy seguro de que se alinee con el comportamiento actual en matplotlib, pero parece la opción más sana/menos sorprendente.  [Esto podría ser revisado una vez que tengamos algo que funcione].  La rotación del texto no debería ser manejada por el motor de texto -- eso debería ser manejado por una capa entre el motor de texto y el backend de renderizado para que pueda ser manejado de manera uniforme.  [No veo ninguna ventaja en que la rotación sea manejada por los motores de texto individualmente...]"
 
 #: ../../devel/MEP/MEP14.rst:244
 msgid "There are other problems with text alignment and anchoring that should be resolved as part of this work.  [TODO: enumerate these]."
-msgstr ""
+msgstr "Hay otros problemas con la alineación y el anclaje del texto que deberían resolverse como parte de este trabajo.  [TODO: enumerarlas]."
 
 #: ../../devel/MEP/MEP14.rst:247
 msgid "**Other minor problems to fix**"
-msgstr ""
+msgstr "**Otros problemas menores a arreglar**"
 
 #: ../../devel/MEP/MEP14.rst:249
 msgid "The mathtext code has backend-specific code -- it should instead provide its output as just another text engine.  However, it's still desirable to have mathtext layout inserted as part of a larger layout performed by another text engine, so it should be possible to do this. It's an open question whether embedding the text layout of an arbitrary text engine in another should be possible."
-msgstr ""
+msgstr "El código de mathtext tiene un código específico de backend -- en su lugar debería proporcionar su salida como otro motor de texto.  Sin embargo, sigue siendo deseable que el diseño de mathtext se inserte como parte de un diseño mayor realizado por otro motor de texto, por lo que debería ser posible hacerlo. Es una cuestión abierta si el embedding del layout de texto de un motor de texto arbitrario en otro debería ser posible."
 
 #: ../../devel/MEP/MEP14.rst:256
 msgid "The text mode is currently set by a global rcParam (\"text.usetex\") so it's either all on or all off.  We should continue to have a global rcParam to choose the text engine (\"text.layout_engine\"), but it should under the hood be an overridable property on the `.Text` object, so the same figure can combine the results of multiple text layout engines if necessary."
-msgstr ""
+msgstr "El modo de texto se establece actualmente mediante un rcParam global (\"text.usetex\"), de modo que está todo activado o todo desactivado.  Deberíamos seguir teniendo un rcParam global para elegir el motor de texto (\"text.layout_engine\"), pero debería ser una propiedad anulable en el objeto `.Text`, para que la misma figura pueda combinar los resultados de múltiples motores de diseño de texto si es necesario."
 
 #: ../../devel/MEP/MEP14.rst:265
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #: ../../devel/MEP/MEP14.rst:267
 msgid "A concept of a \"text engine\" will be introduced.  Each text engine will implement a number of abstract classes.  The ``TextFont`` interface will represent text for a given set of font properties.  It isn't necessarily limited to a single font file -- if the layout engine supports rich text, it may handle a number of font files in a family. Given a ``TextFont`` instance, the user can get a ``TextLayout`` instance, which represents the layout for a given string of text in a given font.  From a ``TextLayout``, an iterator over ``TextSpan``\\ s is returned so the engine can output raw editable text using as few spans as possible.  If the engine would rather get individual characters, they can be obtained from the ``TextSpan`` instance::"
-msgstr ""
+msgstr "Se introducirá el concepto de \"motor de texto\".  Cada motor de texto implementará una serie de clases abstractas.  La interfaz ``TextFont`` representará el texto para un conjunto dado de propiedades de fuentes.  No está necesariamente limitada a un único archivo de fuentes - si el motor de diseño soporta texto enriquecido, puede manejar varios archivos de fuentes en una familia. Dada una instancia de ``TextFont``, el usuario puede obtener una instancia de ``TextLayout``, que representa el layout para una cadena de texto dada en una fuente determinada.  A partir de un ``TextLayout``, se devuelve un iterador sobre ``TextSpan`` para que el motor pueda producir texto editable en bruto utilizando el menor número posible de espacios.  Si el motor prefiere obtener caracteres individuales, pueden obtenerse de la instancia ``TextSpan``::"
 
 #: ../../devel/MEP/MEP14.rst:371
 msgid "Graphic backends that want to output subset of fonts would likely build up a file-global dictionary of characters where the keys are (fontname, glyph_id) and the values are the paths so that only one copy of the path for each character will be stored in the file."
-msgstr ""
+msgstr "Los backends gráficos que quieran dar salida a un subconjunto de fuentes probablemente construirán un diccionario global de caracteres en el que las claves sean (fontname, glyph_id) y los valores sean las rutas, de modo que sólo se almacene en el archivo una copia de la ruta para cada carácter."
 
 #: ../../devel/MEP/MEP14.rst:376
 msgid "Special casing: The \"usetex\" functionality currently is able to get Postscript directly from TeX to insert directly in a Postscript file, but for other backends, parses a DVI file and generates something more abstract.  For a case like this, ``TextLayout`` would implement ``get_spans`` for most backends, but add ``get_ps`` for the Postscript backend, which would look for the presence of this method and use it if available, or fall back to ``get_spans``.  This kind of special casing may also be necessary, for example, when the graphics backend and text engine belong to the same ecosystem, e.g. Cairo and Pango, or MacOSX and CoreText."
-msgstr ""
+msgstr "Casos especiales: La funcionalidad \"usetex\" actualmente es capaz de obtener Postscript directamente de TeX para insertarlo directamente en un archivo Postscript, pero para otros backends, analiza un archivo DVI y genera algo más abstracto.  Para un caso como este, ``TextLayout`` implementaría ``get_spans`` para la mayoría de los backends, pero añadiría ``get_ps`` para el backend Postscript, que buscaría la presencia de este método y lo usaría si está disponible, o volvería a ``get_spans``.  Este tipo de casing especial también puede ser necesario, por ejemplo, cuando el backend gráfico y el motor de texto pertenecen al mismo ecosistema, por ejemplo, Cairo y Pango, o MacOSX y CoreText."
 
 #: ../../devel/MEP/MEP14.rst:387
 msgid "There are three main pieces to the implementation:"
-msgstr ""
+msgstr "Hay tres piezas principales en la aplicación:"
 
 #: ../../devel/MEP/MEP14.rst:389
 msgid "Rewriting the freetype wrapper, and removing ttconv."
-msgstr ""
+msgstr "Reescribiendo la envoltura de freetype y eliminando ttconv."
 
 #: ../../devel/MEP/MEP14.rst:391
 msgid "Once (1) is done, as a proof of concept, we can move to the upstream STIX .otf fonts"
-msgstr ""
+msgstr "Una vez hecho (1), como prueba de concepto, podemos pasar a las fuentes STIX .otf de la fuente superior"
 
 #: ../../devel/MEP/MEP14.rst:394
 msgid "Add support for web fonts loaded from a remote URL.  (Enabled by using freetype for font subsetting)."
-msgstr ""
+msgstr "Añade soporte para fuentes web cargadas desde una URL remota.  (Habilitado mediante el uso de freetype para el subconjunto de fuentes)."
 
 #: ../../devel/MEP/MEP14.rst:396
 msgid "Refactoring the existing \"builtin\" and \"usetex\" code into separate text engines and to follow the API outlined above."
-msgstr ""
+msgstr "Refactorizar el código existente de \"builtin\" y \"usetex\" para convertirlos en motores de texto separados y seguir la API descrita anteriormente."
 
 #: ../../devel/MEP/MEP14.rst:398
 msgid "Implementing support for advanced text layout libraries."
-msgstr ""
+msgstr "Implementación de la compatibilidad con las bibliotecas de layout de texto avanzado."
 
 #: ../../devel/MEP/MEP14.rst:401
 msgid "(1) and (2) are fairly independent, though having (1) done first will allow (2) to be simpler.  (3) is dependent on (1) and (2), but even if it doesn't get done (or is postponed), completing (1) and (2) will make it easier to move forward with improving the \"builtin\" text engine."
-msgstr ""
+msgstr "(1) y (2) son bastante independientes, aunque si (1) se hace primero, (2) será más sencillo.  (3) depende de (1) y (2), pero incluso si no se hace (o se pospone), completar (1) y (2) hará más fácil avanzar en la mejora del motor de texto \"builtin\"."
 
 #: ../../devel/MEP/MEP14.rst:408
 msgid "Backward compatibility"
-msgstr ""
+msgstr "Compatibilidad con versiones anteriores"
 
 #: ../../devel/MEP/MEP14.rst:410
 msgid "The layout of text with respect to its anchor and rotation will change in hopefully small, but improved, ways.  The layout of multiline text will be much better, as it will respect horizontal alignment.  The layout of bidirectional text or other advanced Unicode features will now work inherently, which may break some things if users are currently using their own workarounds."
-msgstr ""
+msgstr "La disposición del texto con respecto a su anclaje y su rotación cambiará de forma pequeña, pero mejorada.  La disposición del texto multilínea será mucho mejor, ya que respetará la alineación horizontal.  La disposición del texto bidireccional u otras características avanzadas de Unicode funcionarán ahora de forma inherente, lo que puede romper algunas cosas si los usuarios están utilizando actualmente sus propias soluciones."
 
 #: ../../devel/MEP/MEP14.rst:417
 msgid "Fonts will be selected differently.  Hacks that used to sort of work between the \"builtin\" and \"usetex\" text rendering engines may no longer work.  Fonts found by the OS that weren't previously found by matplotlib may be selected."
-msgstr ""
+msgstr "Las fuentes se seleccionarán de forma diferente.  Los trucos que solían funcionar entre los motores de renderizado de texto \"builtin\" y \"usetex\" pueden dejar de funcionar.  Las fuentes encontradas por el sistema operativo que no fueron encontradas previamente por matplotlib pueden ser seleccionadas."
 
 #: ../../devel/MEP/MEP14.rst:423
 msgid "Alternatives"
-msgstr ""
+msgstr "Alternativas"
 
 #: ../../devel/MEP/MEP14.rst:425
 msgid "TBD"
-msgstr ""
+msgstr "TBD"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:24\n"
+"PO-Revision-Date: 2022-11-02 14:12\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,347 +20,347 @@ msgstr ""
 
 #: ../../api/testing_api.rst:3
 msgid "``matplotlib.testing``"
-msgstr ""
+msgstr "``matplotlib.testing``"
 
 #: ../../api/testing_api.rst:7
 msgid ":func:`matplotlib.test`"
-msgstr ""
+msgstr ":func:`matplotlib.test`"
 
 #: matplotlib.test:2 of
 msgid "[*Deprecated*] Run the matplotlib test suite."
-msgstr ""
+msgstr "[*Desaprobado*] Ejecute la suite de pruebas matplotlib."
 
 #: matplotlib.test:15 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: ../../api/testing_api.rst:12
 msgid ":mod:`matplotlib.testing`"
-msgstr ""
+msgstr ":mod:`matplotlib.testing`"
 
 #: matplotlib.testing:1 of
 msgid "Helper functions for testing."
-msgstr ""
+msgstr "Funciones auxiliares para pruebas."
 
 #: ../../api/testing_api.rst:21
 msgid ":mod:`matplotlib.testing.compare`"
-msgstr ""
+msgstr ":mod:`matplotlib.testing.compare`"
 
 #: matplotlib.testing.compare:1 of
 msgid "Utilities for comparing image results."
-msgstr ""
+msgstr "Utilidades para comparar los resultados de la imagen."
 
 #: matplotlib.testing.compare.calculate_rms:2 of
 msgid "Calculate the per-pixel errors, then compute the root mean square error."
-msgstr ""
+msgstr "Calcula los errores por píxel, luego calcula el error de la raíz media cuadrada."
 
 #: matplotlib.testing.compare.comparable_formats:2 of
 msgid "Return the list of file formats that `.compare_images` can compare on this system."
-msgstr ""
+msgstr "Devuelve la lista de formatos de archivo que `.compare_images` puede comparar en este sistema."
 
 #: matplotlib.testing.compare.comparable_formats
 #: matplotlib.testing.compare.compare_images of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.testing.compare.comparable_formats:22 of
 msgid "list of str"
-msgstr ""
+msgstr "lista de str"
 
 #: matplotlib.testing.compare.comparable_formats:10 of
 msgid "E.g. ``['png', 'pdf', 'svg', 'eps']``."
-msgstr ""
+msgstr "P.e. ``['png', 'pdf', 'svg', 'eps']``."
 
 #: matplotlib.testing.compare.compare_images:2 of
 msgid "Compare two \"image\" files checking differences within a tolerance."
-msgstr ""
+msgstr "Compara dos archivos de \"imagen\" comprobando diferencias dentro de una tolerancia."
 
 #: matplotlib.testing.compare.compare_images:4 of
 msgid "The two given filenames may point to files which are convertible to PNG via the `.converter` dictionary. The underlying RMS is calculated with the `.calculate_rms` function."
-msgstr ""
+msgstr "Los dos nombres de archivo dados pueden apuntar a archivos que son convertibles a PNG a través del `. diccionario onverter`. El RMS subyacente se calcula con la función `.calculate_rms`."
 
 #: matplotlib.testing.compare.compare_images
 #: matplotlib.testing.decorators.check_figures_equal
 #: matplotlib.testing.decorators.cleanup
 #: matplotlib.testing.decorators.image_comparison of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.testing.compare.compare_images:11 of
 msgid "**expected**"
-msgstr ""
+msgstr "**esperado**"
 
 #: of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.testing.compare.compare_images:11 of
 msgid "The filename of the expected image."
-msgstr ""
+msgstr "El nombre de archivo de la imagen esperada."
 
 #: matplotlib.testing.compare.compare_images:14 of
 msgid "**actual**"
-msgstr ""
+msgstr "**real**"
 
 #: matplotlib.testing.compare.compare_images:14 of
 msgid "The filename of the actual image."
-msgstr ""
+msgstr "El nombre de archivo de la imagen real."
 
 #: matplotlib.testing.compare.compare_images:19
 #: matplotlib.testing.decorators.check_figures_equal:21
 #: matplotlib.testing.decorators.image_comparison:35 of
 msgid "**tol**"
-msgstr ""
+msgstr "**tó**"
 
 #: of
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: matplotlib.testing.compare.compare_images:17 of
 msgid "The tolerance (a color value difference, where 255 is the maximal difference).  The test fails if the average pixel difference is greater than this value."
-msgstr ""
+msgstr "La tolerancia (una diferencia de valor de color, donde 255 es la diferencia máxima) La prueba falla si la diferencia promedio de píxeles es mayor que este valor."
 
 #: matplotlib.testing.compare.compare_images:23 of
 msgid "**in_decorator**"
-msgstr ""
+msgstr "**in_decorador**"
 
 #: of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.testing.compare.compare_images:22 of
 msgid "Determines the output format. If called from image_comparison decorator, this should be True. (default=False)"
-msgstr ""
+msgstr "Determina el formato de salida. Si se llama desde el decorador image_comparation, este debe ser True. (por defecto=False)"
 
 #: matplotlib.testing.compare.compare_images:50 of
 msgid "None or dict or str"
-msgstr ""
+msgstr "Ninguno o dictado o str"
 
 #: matplotlib.testing.compare.compare_images:28 of
 msgid "Return *None* if the images are equal within the given tolerance."
-msgstr ""
+msgstr "Devuelve *nunca* si las imágenes son iguales dentro de la tolerancia dada."
 
 #: matplotlib.testing.compare.compare_images:30 of
 msgid "If the images differ, the return value depends on  *in_decorator*. If *in_decorator* is true, a dict with the following entries is returned:"
-msgstr ""
+msgstr "Si las imágenes difieren, el valor devuelto depende de *in_decorator*. Si *in_decorator* es verdadero, se retorna un dict con las siguientes entradas:"
 
 #: matplotlib.testing.compare.compare_images:34 of
 msgid "*rms*: The RMS of the image difference."
-msgstr ""
+msgstr "*rms*: El RMS de la diferencia de imagen."
 
 #: matplotlib.testing.compare.compare_images:35 of
 msgid "*expected*: The filename of the expected image."
-msgstr ""
+msgstr "*esperado*: El nombre de archivo de la imagen esperada."
 
 #: matplotlib.testing.compare.compare_images:36 of
 msgid "*actual*: The filename of the actual image."
-msgstr ""
+msgstr "*actual*: El nombre del archivo de la imagen real."
 
 #: matplotlib.testing.compare.compare_images:37 of
 msgid "*diff_image*: The filename of the difference image."
-msgstr ""
+msgstr "*diff_image*: El nombre del archivo de la imagen de diferencia."
 
 #: matplotlib.testing.compare.compare_images:38 of
 msgid "*tol*: The comparison tolerance."
-msgstr ""
+msgstr "*tol*: La tolerancia a la comparación."
 
 #: matplotlib.testing.compare.compare_images:40 of
 msgid "Otherwise, a human-readable multi-line string representation of this information is returned."
-msgstr ""
+msgstr "De lo contrario, se devuelve una representación de cadena multi-línea legible por el hombre."
 
 #: matplotlib.testing.compare.compare_images:53
 #: matplotlib.testing.decorators.check_figures_equal:35 of
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
 #: ../../api/testing_api.rst:30
 msgid ":mod:`matplotlib.testing.decorators`"
-msgstr ""
+msgstr ":mod:`matplotlib.testing.decorators`"
 
 #: matplotlib.testing.decorators.CleanupTestCase:1 of
 msgid "Bases: :py:class:`unittest.case.TestCase`"
-msgstr ""
+msgstr "Bases: :py:class:`unittest.case.TestCase`"
 
 #: matplotlib.testing.decorators.CleanupTestCase:2 of
 msgid "A wrapper for unittest.TestCase that includes cleanup operations."
-msgstr ""
+msgstr "Un envoltorio para unittest.TestCase que incluye operaciones de limpieza."
 
 #: matplotlib.testing.decorators.CleanupTestCase:23 of
 msgid "Create an instance of the class that will use the named test method when executed. Raises a ValueError if the instance does not have a method with the specified name."
-msgstr ""
+msgstr "Crea una instancia de la clase que usará el método de prueba nombrado cuando se ejecute. Aumenta un ValueError si la instancia no tiene un método con el nombre especificado."
 
 #: matplotlib.testing.decorators.CleanupTestCase.setUpClass:2 of
 msgid "Hook method for setting up class fixture before running tests in the class."
-msgstr ""
+msgstr "Método Hook para configurar el dispositivo de clase antes de ejecutar pruebas en la clase."
 
 #: matplotlib.testing.decorators.CleanupTestCase.tearDownClass:2 of
 msgid "Hook method for deconstructing the class fixture after running all tests in the class."
-msgstr ""
+msgstr "Método Hook para deconstruir el aparato de clase después de ejecutar todas las pruebas en la clase."
 
 #: matplotlib.testing.decorators.check_figures_equal:2 of
 msgid "Decorator for test cases that generate and compare two figures."
-msgstr ""
+msgstr "Decorador para casos de prueba que generan y comparan dos cifras."
 
 #: matplotlib.testing.decorators.check_figures_equal:4 of
 msgid "The decorated function must take two keyword arguments, *fig_test* and *fig_ref*, and draw the test and reference images on them. After the function returns, the figures are saved and compared."
-msgstr ""
+msgstr "La función decorada debe tomar dos argumentos de palabra clave, *fig_test* y *fig_ref*, y dibujar las imágenes de prueba y referencia en ellos. Después de que la función regrese, las cifras se guardan y comparan."
 
 #: matplotlib.testing.decorators.check_figures_equal:8 of
 msgid "This decorator should be preferred over `image_comparison` when possible in order to keep the size of the test suite from ballooning."
-msgstr ""
+msgstr "Este decorador debe ser preferido sobre `image_comparison` cuando sea posible para mantener el tamaño de la suite de pruebas del globo."
 
 #: matplotlib.testing.decorators.check_figures_equal:14
 #: matplotlib.testing.decorators.image_comparison:29 of
 msgid "**extensions**"
-msgstr ""
+msgstr "**extensiones**"
 
 #: of
 msgid "list, default: [\"png\", \"pdf\", \"svg\"]"
-msgstr ""
+msgstr "lista, por defecto: [\"png\", \"pdf\", \"svg\"]"
 
 #: matplotlib.testing.decorators.check_figures_equal:14 of
 msgid "The extensions to test."
-msgstr ""
+msgstr "Las extensiones a prueba."
 
 #: matplotlib.testing.decorators.check_figures_equal:17
 #: matplotlib.testing.decorators.image_comparison:32 of
 msgid "The RMS threshold above which the test is considered failed."
-msgstr ""
+msgstr "El umbral RMS por encima del cual se considera que la prueba ha fallado."
 
 #: matplotlib.testing.decorators.check_figures_equal of
 msgid "Raises"
-msgstr ""
+msgstr "Plantea"
 
 #: matplotlib.testing.decorators.check_figures_equal:32 of
 msgid "RuntimeError"
-msgstr ""
+msgstr "Error de ejecución"
 
 #: matplotlib.testing.decorators.check_figures_equal:26 of
 msgid "If any new figures are created (and not subsequently closed) inside the test function."
-msgstr ""
+msgstr "Si se crean nuevas cifras (y no se cierran) dentro de la función de prueba."
 
 #: matplotlib.testing.decorators.check_figures_equal:36 of
 msgid "Check that calling `.Axes.plot` with a single argument plots it against ``[0, 1, 2, ...]``::"
-msgstr ""
+msgstr "Comprueba que llamar a `.Axes.plot` con un solo argumento lo traza contra ``[0, 1, 2, ...]``::"
 
 #: matplotlib.testing.decorators.cleanup:2 of
 msgid "A decorator to ensure that any global state is reset before running a test."
-msgstr ""
+msgstr "Un decorador para asegurar que cualquier estado global se reinicie antes de ejecutar una prueba."
 
 #: matplotlib.testing.decorators.cleanup:23
 #: matplotlib.testing.decorators.image_comparison:68 of
 msgid "**style**"
-msgstr ""
+msgstr "**style**"
 
 #: of
 msgid "str, dict, or list, optional"
-msgstr ""
+msgstr "str, dictar o listar, opcional"
 
 #: matplotlib.testing.decorators.cleanup:9 of
 msgid "The style(s) to apply.  Defaults to ``[\"classic\", \"_classic_test_patch\"]``."
-msgstr ""
+msgstr "El estilo(s) a aplicar. Por defecto es ``[\"clásico\", \"_classic_test_patch\"]``."
 
 #: matplotlib.testing.decorators.image_comparison:2 of
 msgid "Compare images generated by the test with those specified in *baseline_images*, which must correspond, else an `ImageComparisonFailure` exception will be raised."
-msgstr ""
+msgstr "Compara las imágenes generadas por la prueba con las especificadas en *baseline_images*, que deben corresponder, de lo contrario se levantará una excepción `ImageComparisonFailure`."
 
 #: matplotlib.testing.decorators.image_comparison:15 of
 msgid "**baseline_images**"
-msgstr ""
+msgstr "**baseline_images**"
 
 #: of
 msgid "list or None"
-msgstr ""
+msgstr "lista o ninguno"
 
 #: matplotlib.testing.decorators.image_comparison:10 of
 msgid "A list of strings specifying the names of the images generated by calls to `.Figure.savefig`."
-msgstr ""
+msgstr "Una lista de cadenas que especifica los nombres de las imágenes generadas por llamadas a `.Figure.savefig`."
 
 #: matplotlib.testing.decorators.image_comparison:13 of
 msgid "If *None*, the test function must use the ``baseline_images`` fixture, either as a parameter or with `pytest.mark.usefixtures`. This value is only allowed when using pytest."
-msgstr ""
+msgstr "Si *nunca*, la función de prueba debe usar la característica ``baseline_images``, ya sea como parámetro o con `pytest.mark.usefixtures`. Este valor solo está permitido cuando se usa pytest."
 
 #: of
 msgid "None or list of str"
-msgstr ""
+msgstr "Ninguno o lista de str"
 
 #: matplotlib.testing.decorators.image_comparison:18 of
 msgid "The list of extensions to test, e.g. ``['png', 'pdf']``."
-msgstr ""
+msgstr "La lista de extensiones a test, por ejemplo, ``['png', 'pdf']``."
 
 #: matplotlib.testing.decorators.image_comparison:20 of
 msgid "If *None*, defaults to all supported extensions: png, pdf, and svg."
-msgstr ""
+msgstr "Si *Ninguno*, el valor predeterminado de todas las extensiones soportadas: png, pdf y svg."
 
 #: matplotlib.testing.decorators.image_comparison:22 of
 msgid "When testing a single extension, it can be directly included in the names passed to *baseline_images*.  In that case, *extensions* must not be set."
-msgstr ""
+msgstr "Cuando se prueba una sola extensión, se puede incluir directamente en los nombres pasados a *baseline_images*."
 
 #: matplotlib.testing.decorators.image_comparison:26 of
 msgid "In order to keep the size of the test suite from ballooning, we only include the ``svg`` or ``pdf`` outputs if the test is explicitly exercising a feature dependent on that backend (see also the `check_figures_equal` decorator for that purpose)."
-msgstr ""
+msgstr "Con el fin de mantener el tamaño de la suite de pruebas del globo, sólo incluimos las salidas ``svg`` o ``pdf`` si la prueba está ejerciendo explícitamente una característica dependiente de ese backend (ver también el decorador `check_figures_equal`)."
 
 #: of
 msgid "float, default: 0"
-msgstr ""
+msgstr "float, default: 0"
 
 #: matplotlib.testing.decorators.image_comparison:34 of
 msgid "Due to expected small differences in floating-point calculations, on 32-bit systems an additional 0.06 is added to this threshold."
-msgstr ""
+msgstr "Debido a las pequeñas diferencias esperadas en los cálculos de coma flotante, en sistemas de 32 bits se añade un 0,06 adicional a este umbral."
 
 #: matplotlib.testing.decorators.image_comparison:39 of
 msgid "**freetype_version**"
-msgstr ""
+msgstr "**versión freetype**"
 
 #: of
 msgid "str or tuple"
-msgstr ""
+msgstr "str o tupla"
 
 #: matplotlib.testing.decorators.image_comparison:38 of
 msgid "The expected freetype version or range of versions for this test to pass."
-msgstr ""
+msgstr "La versión freetype esperada o el rango de versiones para que esta prueba pase."
 
 #: matplotlib.testing.decorators.image_comparison:47 of
 msgid "**remove_text**"
-msgstr ""
+msgstr "**remover texto**"
 
 #: matplotlib.testing.decorators.image_comparison:42 of
 msgid "Remove the title and tick text from the figure before comparison.  This is useful to make the baseline images independent of variations in text rendering between different versions of FreeType."
-msgstr ""
+msgstr "Elimina el título y marca el texto de la figura antes de la comparación. Esto es útil para hacer que las imágenes de línea base sean independientes de las variaciones en la representación de texto entre diferentes versiones de FreeType."
 
 #: matplotlib.testing.decorators.image_comparison:46 of
 msgid "This does not remove other, more deliberate, text, such as legends and annotations."
-msgstr ""
+msgstr "Esto no elimina otro texto más deliberado, como leyendas y anotaciones."
 
 #: matplotlib.testing.decorators.image_comparison:50 of
 msgid "**savefig_kwarg**"
-msgstr ""
+msgstr "**savefig_kwarg**"
 
 #: of
 msgid "dict"
-msgstr ""
+msgstr "dict"
 
 #: matplotlib.testing.decorators.image_comparison:50 of
 msgid "Optional arguments that are passed to the savefig method."
-msgstr ""
+msgstr "Argumentos opcionales que se pasan al método savehig."
 
 #: of
 msgid "str, dict, or list"
-msgstr ""
+msgstr "str, dictar o lista"
 
 #: matplotlib.testing.decorators.image_comparison:53 of
 msgid "The optional style(s) to apply to the image test. The test itself can also apply additional styles if desired. Defaults to ``[\"classic\", \"_classic_test_patch\"]``."
-msgstr ""
+msgstr "El estilo(s) opcional a aplicar a la prueba de imagen. La prueba misma también puede aplicar estilos adicionales si así lo desea. Por defecto es ``[\"clásico\", \"_classic_test_patch\"]``."
 
 #: ../../api/testing_api.rst:39
 msgid ":mod:`matplotlib.testing.exceptions`"
-msgstr ""
+msgstr ":mod:`matplotlib.testing.exceptions`"
 
 #: matplotlib.testing.exceptions.ImageComparisonFailure:1 of
 msgid "Bases: :py:class:`AssertionError`"
-msgstr ""
+msgstr "Bases: :py:class:`AssertionError`"
 
 #: matplotlib.testing.exceptions.ImageComparisonFailure:2 of
 msgid "Raise this exception to mark a test as a comparison between two images."
-msgstr ""
+msgstr "Aumenta esta excepción para marcar una prueba como una comparación entre dos imágenes."
 

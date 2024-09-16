@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-05-09 23:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,87 +20,87 @@ msgstr ""
 
 #: ../../tutorials/colors/colorbar_only.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_colors_colorbar_only.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_colors_colorbar_only.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/colors/colorbar_only.rst:23
 msgid "Customized Colorbars Tutorial"
-msgstr ""
+msgstr "Tutorial de barras de colores personalizadas"
 
 #: ../../tutorials/colors/colorbar_only.rst:25
 msgid "This tutorial shows how to build and customize standalone colorbars, i.e. without an attached plot."
-msgstr ""
+msgstr "Este tutorial muestra cómo construir y personalizar barras de color independientes, es decir, sin un gráfico adjunto."
 
 #: ../../tutorials/colors/colorbar_only.rst:29
 msgid "Customized Colorbars"
-msgstr ""
+msgstr "Barra de colores personalizada"
 
 #: ../../tutorials/colors/colorbar_only.rst:31
 msgid "A `~.Figure.colorbar` needs a \"mappable\" (`matplotlib.cm.ScalarMappable`) object (typically, an image) which indicates the colormap and the norm to be used.  In order to create a colorbar without an attached image, one can instead use a `.ScalarMappable` with no associated data."
-msgstr ""
+msgstr "Una barra de colores `~.Figure.colorbar` necesita un objeto \"mapeable\" (`matplotlib.cm.ScalarMappable`) (normalmente, una imagen) que indique el mapa de colores y la norma a utilizar.  Para crear una barra de color sin una imagen adjunta, se puede utilizar un `.ScalarMappable` sin datos asociados."
 
 #: ../../tutorials/colors/colorbar_only.rst:37
 msgid "Basic continuous colorbar"
-msgstr ""
+msgstr "Barra de color continua básica"
 
 #: ../../tutorials/colors/colorbar_only.rst:39
 msgid "Here we create a basic continuous colorbar with ticks and labels."
-msgstr ""
+msgstr "Aquí creamos una barra de color continua básica con ticks y etiquetas."
 
 #: ../../tutorials/colors/colorbar_only.rst:41
 msgid "The arguments to the `~.Figure.colorbar` call are the `.ScalarMappable` (constructed using the *norm* and *cmap* arguments), the axes where the colorbar should be drawn, and the colorbar's orientation."
-msgstr ""
+msgstr "Los argumentos de la llamada a `~.Figure.colorbar` son el `.ScalarMappable` (construido con los argumentos *norm* y *cmap*), los ejes en los que debe dibujarse la barra de colores y la orientación de la misma."
 
 #: ../../tutorials/colors/colorbar_only.rst:45
 msgid "For more information see the :mod:`~matplotlib.colorbar` API."
-msgstr ""
+msgstr "Para más información ver la API :mod:`~matplotlib.colorbar`."
 
 #: ../../tutorials/colors/colorbar_only.rst:76
 #: ../../tutorials/colors/colorbar_only.rst:120
 #: ../../tutorials/colors/colorbar_only.rst:191
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/colors/colorbar_only.rst:88
 msgid "Extended colorbar with continuous colorscale"
-msgstr ""
+msgstr "Barra de colores extendida con escala de color continua"
 
 #: ../../tutorials/colors/colorbar_only.rst:90
 msgid "The second example shows how to make a discrete colorbar based on a continuous cmap. With the \"extend\" keyword argument the appropriate colors are chosen to fill the colorspace, including the extensions:"
-msgstr ""
+msgstr "El segundo ejemplo muestra cómo hacer una barra de color discreta basada en un cmap continuo. Con el argumento de la palabra clave \"extend\" se eligen los colores adecuados para llenar el espacio de color, incluyendo las extensiones:"
 
 #: ../../tutorials/colors/colorbar_only.rst:132
 msgid "Discrete intervals colorbar"
-msgstr ""
+msgstr "Barra de color de intervalos discretos"
 
 #: ../../tutorials/colors/colorbar_only.rst:134
 msgid "The third example illustrates the use of a :class:`~matplotlib.colors.ListedColormap` which generates a colormap from a set of listed colors, `.colors.BoundaryNorm` which generates a colormap index based on discrete intervals and extended ends to show the \"over\" and \"under\" value colors. Over and under are used to display data outside of the normalized [0, 1] range. Here we pass colors as gray shades as a string encoding a float in the 0-1 range."
-msgstr ""
+msgstr "El tercer ejemplo ilustra el uso de una :class:`~matplotlib.colors.ListedColormap` que genera un mapa de colores a partir de un conjunto de colores listados, `.colors.BoundaryNorm` que genera un índice de mapa de colores basado en intervalos discretos y extremos extendidos para mostrar los colores de valor \"over\" y \"under\". Over y under se utilizan para mostrar los datos fuera del rango normalizado [0, 1]. Aquí pasamos los colores como tonos de gris como una cadena que codifica un punto flotante (float) en el rango 0-1."
 
 #: ../../tutorials/colors/colorbar_only.rst:142
 msgid "If a :class:`~matplotlib.colors.ListedColormap` is used, the length of the bounds array must be one greater than the length of the color list. The bounds must be monotonically increasing."
-msgstr ""
+msgstr "Si se utiliza un :class:`~matplotlib.colors.ListedColormap`, la longitud del arreglo de límites debe ser uno mayor que la longitud de la lista de colores. Los límites deben ser monotónicamente crecientes."
 
 #: ../../tutorials/colors/colorbar_only.rst:146
 msgid "This time we pass additional arguments to `~.Figure.colorbar`. For the out-of-range values to display on the colorbar without using the *extend* keyword with `.colors.BoundaryNorm`, we have to use the *extend* keyword argument directly in the colorbar call, and supply an additional boundary on each end of the range.  Here we also use the spacing argument to make the length of each colorbar segment proportional to its corresponding interval."
-msgstr ""
+msgstr "Esta vez pasamos argumentos adicionales a `~.Figure.colorbar`. Para que los valores fuera de rango se muestren en la barra de colores sin usar la palabra clave *extend* con `.colors.BoundaryNorm`, tenemos que usar el argumento de la palabra clave *extend* directamente en la invocación de la barra de colores, y suministrar un límite adicional en cada extremo del rango.  Aquí también utilizamos el argumento espaciado para que la longitud de cada segmento de la barra de colores sea proporcional a su correspondiente intervalo."
 
 #: ../../tutorials/colors/colorbar_only.rst:203
 msgid "Colorbar with custom extension lengths"
-msgstr ""
+msgstr "Barra de color con longitudes de extensión personalizadas"
 
 #: ../../tutorials/colors/colorbar_only.rst:205
 msgid "Here we illustrate the use of custom length colorbar extensions, on a colorbar with discrete intervals. To make the length of each extension the same as the length of the interior colors, use ``extendfrac='auto'``."
-msgstr ""
+msgstr "Aquí ilustramos el uso de extensiones de barras de color de longitud personalizada, en una barra de color con intervalos discretos. Para que la longitud de cada extensión sea la misma que la de los colores interiores, utilice ``extendfrac='auto'``."
 
 #: ../../tutorials/colors/colorbar_only.rst:260
 msgid ":download:`Download Python source code: colorbar_only.py <colorbar_only.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: colorbar_only.py <colorbar_only.py>`"
 
 #: ../../tutorials/colors/colorbar_only.rst:266
 msgid ":download:`Download Jupyter notebook: colorbar_only.ipynb <colorbar_only.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: colorbar_only.ipynb <colorbar_only.ipynb>`"
 
 #: ../../tutorials/colors/colorbar_only.rst:273
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

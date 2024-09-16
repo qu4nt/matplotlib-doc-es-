@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:24\n"
+"PO-Revision-Date: 2022-08-09 01:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,85 +20,85 @@ msgstr ""
 
 #: ../../devel/gitwash/maintainer_workflow.rst:7
 msgid "Maintainer workflow"
-msgstr ""
+msgstr "Flujo de trabajo del mantenedor"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:9
 msgid "This page is for maintainers |emdash| those of us who merge our own or other peoples' changes into the upstream repository."
-msgstr ""
+msgstr "Esta página es para los mantenedores |emdash| aquellos que fusionamos nuestros propios cambios o los de otras personas en el repositorio upstream."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:12
 msgid "Being as how you're a maintainer, you are completely on top of the basic stuff in :ref:`development-workflow`."
-msgstr ""
+msgstr "Siendo como eres un mantenedor, estás completamente al tanto de las cosas básicas en :ref:`development-workflow`."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:15
 msgid "The instructions in :ref:`linking-to-upstream` add a remote that has read-only access to the upstream repo.  Being a maintainer, you've got read-write access."
-msgstr ""
+msgstr "Las instrucciones de :ref:`linking-to-upstream` añaden un remoto que tiene acceso de sólo lectura al repo de aguas arriba.  Siendo un mantenedor, tienes acceso de lectura-escritura."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:18
 msgid "It's good to have your upstream remote have a scary name, to remind you that it's a read-write remote::"
-msgstr ""
+msgstr "Es bueno que tu upstream remoto tenga un nombre que asuste, para recordar que es un remoto de lectura-escritura::"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:26
 msgid "Integrating changes"
-msgstr ""
+msgstr "Integrando los cambios"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:28
 msgid "Let's say you have some changes that need to go into trunk (``upstream-rw/master``)."
-msgstr ""
+msgstr "Digamos que tienes algunos cambios que necesitan ir al trunk (``upstream-rw/master``)."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:31
 msgid "The changes are in some branch that you are currently on.  For example, you are looking at someone's changes like this::"
-msgstr ""
+msgstr "Los cambios están en alguna rama en la que te encuentras actualmente. Por ejemplo, estás viendo los cambios de alguien así::"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:39
 msgid "So now you are on the branch with the changes to be incorporated upstream.  The rest of this section assumes you are on this branch."
-msgstr ""
+msgstr "Así que ahora estás en la rama con los cambios que se van a incorporar aguas arriba. El resto de esta sección asume que estás en esta rama."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:43
 msgid "A few commits"
-msgstr ""
+msgstr "Algunos commits"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:45
 msgid "If there are only a few commits, consider rebasing to upstream::"
-msgstr ""
+msgstr "Si sólo hay unos pocos commits, considera la posibilidad de rebasar a upstream::"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:52
 msgid "Remember that, if you do a rebase, and push that, you'll have to close any github pull requests manually, because github will not be able to detect the changes have already been merged."
-msgstr ""
+msgstr "Recuerda que, si haces un rebase, y haces push, tendrás que cerrar cualquier pull request de github manualmente, porque github no podrá detectar que los cambios ya han sido fusionados."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:57
 msgid "A long series of commits"
-msgstr ""
+msgstr "Una larga serie de commits"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:59
 msgid "If there are a longer series of related commits, consider a merge instead::"
-msgstr ""
+msgstr "Si hay una serie larga de confirmaciones relacionadas, considere una fusión en su lugar::"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:64
 msgid "The merge will be detected by github, and should close any related pull requests automatically."
-msgstr ""
+msgstr "La fusión será detectada por github, y debería cerrar cualquier pull request relacionado automáticamente."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:67
 msgid "Note the ``--no-ff`` above.  This forces git to make a merge commit, rather than doing a fast-forward, so that these set of commits branch off trunk then rejoin the main history with a merge, rather than appearing to have been made directly on top of trunk."
-msgstr ""
+msgstr "Fíjate en el ``no-ff`` de arriba.  Esto obliga a git a hacer una confirmación de fusión, en lugar de hacer un avance rápido, de modo que este conjunto de confirmaciones se ramifican fuera del tronco y luego se reúnen en la historia principal con una fusión, en lugar de parecer que se han hecho directamente en la parte superior del tronco."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:73
 msgid "Check the history"
-msgstr ""
+msgstr "Comprobar el historial"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:75
 msgid "Now, in either case, you should check that the history is sensible and you have the right commits::"
-msgstr ""
+msgstr "Ahora, en cualquiera de los casos, debes comprobar que el historial es sensato y que tienes los commits correctos::"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:81
 msgid "The first line above just shows the history in a compact way, with a text representation of the history graph. The second line shows the log of commits excluding those that can be reached from trunk (``upstream-rw/master``), and including those that can be reached from current HEAD (implied with the ``..`` at the end). So, it shows the commits unique to this branch compared to trunk. The ``-p`` option shows the diff for these commits in patch form."
-msgstr ""
+msgstr "La primera línea de arriba sólo muestra el historial de forma compacta, con una representación de texto del gráfico del historial. La segunda línea muestra el registro de los commits excluyendo los que se pueden alcanzar desde el tronco (``upstream-rw/master``), e incluyendo los que se pueden alcanzar desde el HEAD actual (implícito con el ``..`` al final). Así, muestra los commits exclusivos de esta rama en comparación con el tronco. La opción ``-p`` muestra el diff de estos commits en forma de parche."
 
 #: ../../devel/gitwash/maintainer_workflow.rst:89
 msgid "Push to trunk"
-msgstr ""
+msgstr "Push al trunk"
 
 #: ../../devel/gitwash/maintainer_workflow.rst:95
 msgid "This pushes the ``my-new-feature`` branch in this repository to the ``master`` branch in the ``upstream-rw`` repository."
-msgstr ""
+msgstr "Esto hace push a la rama ``mi-nueva-característica`` en este repositorio a la rama ``master`` en el repositorio ``upstream-rw``."
 

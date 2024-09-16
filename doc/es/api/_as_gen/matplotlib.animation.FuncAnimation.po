@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:10\n"
+"PO-Revision-Date: 2022-11-02 13:44\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,244 +20,244 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.animation.FuncAnimation.rst:2
 msgid "matplotlib.animation.FuncAnimation"
-msgstr ""
+msgstr "matplotlib.animation.FuncAnimation"
 
 #: matplotlib.animation.FuncAnimation:2 of
 msgid "Makes an animation by repeatedly calling a function *func*."
-msgstr ""
+msgstr "Hace una animación llamando repetidamente a una función *func*."
 
 #: matplotlib.animation.FuncAnimation:6 of
 msgid "You must store the created Animation in a variable that lives as long as the animation should run. Otherwise, the Animation object will be garbage-collected and the animation stops."
-msgstr ""
+msgstr "Debes almacenar la Animación creada en una variable que vive siempre y cuando la animación deba ejecutarse. De lo contrario, el objeto de Animación será recolectado de basura y la animación se detiene."
 
 #: matplotlib.animation.FuncAnimation of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.animation.FuncAnimation:13 of
 msgid "**fig** : `~matplotlib.figure.Figure`"
-msgstr ""
+msgstr "**fig** : `~matplotlib.figure.Figure`"
 
 #: matplotlib.animation.FuncAnimation:12 of
 msgid "Figure"
-msgstr ""
+msgstr "Figura"
 
 #: matplotlib.animation.FuncAnimation:13 of
 msgid "The figure object used to get needed events, such as draw or resize."
-msgstr ""
+msgstr "El objeto figura utilizado para obtener eventos necesarios, como dibujar o redimensionar."
 
 #: matplotlib.animation.FuncAnimation:28 of
 msgid "**func**"
-msgstr ""
+msgstr "**func**"
 
 #: of
 msgid "callable"
-msgstr ""
+msgstr "llamable"
 
 #: matplotlib.animation.FuncAnimation:16 of
 msgid "The function to call at each frame.  The first argument will be the next value in *frames*.   Any additional positional arguments can be supplied via the *fargs* parameter."
-msgstr ""
+msgstr "La función a llamar en cada fotograma. El primer argumento será el siguiente valor en *frames*. Cualquier argumento posicional adicional se puede suministrar a través del parámetro *fargs*."
 
 #: matplotlib.animation.FuncAnimation:20 matplotlib.animation.FuncAnimation:52
 #: of
 msgid "The required signature is::"
-msgstr ""
+msgstr "La firma requerida es::"
 
 #: matplotlib.animation.FuncAnimation:24 of
 msgid "If ``blit == True``, *func* must return an iterable of all artists that were modified or created. This information is used by the blitting algorithm to determine which parts of the figure have to be updated. The return value is unused if ``blit == False`` and may be omitted in that case."
-msgstr ""
+msgstr "Si ``blit == True``, *func* debe devolver un iterable de todos los artistas que fueron modificados o creados. Esta información es utilizada por el algoritmo de flitting para determinar qué partes de la figura deben ser actualizadas. El valor de retorno no se utiliza si ``blit == False`` y puede ser omitido en ese caso."
 
 #: matplotlib.animation.FuncAnimation:45 of
 msgid "**frames**"
-msgstr ""
+msgstr "**frames**"
 
 #: of
 msgid "iterable, int, generator function, or None, optional"
-msgstr ""
+msgstr "iterable, int, función generadora o ninguna, opcional"
 
 #: matplotlib.animation.FuncAnimation:31 of
 msgid "Source of data to pass *func* and each frame of the animation"
-msgstr ""
+msgstr "Fuente de datos para pasar *función* y cada fotograma de la animación"
 
 #: matplotlib.animation.FuncAnimation:33 of
 msgid "If an iterable, then simply use the values provided.  If the iterable has a length, it will override the *save_count* kwarg."
-msgstr ""
+msgstr "Si un iterable, simplemente use los valores proporcionados. Si el iterable tiene una longitud, anulará el kwarg."
 
 #: matplotlib.animation.FuncAnimation:36 of
 msgid "If an integer, then equivalent to passing ``range(frames)``"
-msgstr ""
+msgstr "Si un entero, entonces equivalente a pasar ``range(frames)``"
 
 #: matplotlib.animation.FuncAnimation:38 of
 msgid "If a generator function, then must have the signature::"
-msgstr ""
+msgstr "Si una función generadora, entonces debe tener la firma::"
 
 #: matplotlib.animation.FuncAnimation:42 of
 msgid "If *None*, then equivalent to passing ``itertools.count``."
-msgstr ""
+msgstr "Si *nunca*, entonces equivalente a pasar ``itertools.count``."
 
 #: matplotlib.animation.FuncAnimation:44 of
 msgid "In all of these cases, the values in *frames* is simply passed through to the user-supplied *func* and thus can be of any type."
-msgstr ""
+msgstr "En todos estos casos, los valores en *frames* son pasados simplemente a la *función* suministrada por el usuario y por lo tanto pueden ser de cualquier tipo."
 
 #: matplotlib.animation.FuncAnimation:59 of
 msgid "**init_func**"
-msgstr ""
+msgstr "**init_func**"
 
 #: of
 msgid "callable, optional"
-msgstr ""
+msgstr "llamable, opcional"
 
 #: matplotlib.animation.FuncAnimation:48 of
 msgid "A function used to draw a clear frame. If not given, the results of drawing from the first item in the frames sequence will be used. This function will be called once before the first frame."
-msgstr ""
+msgstr "Una función usada para dibujar un marco claro. Si no se proporciona, se utilizarán los resultados de la extracción del primer elemento de la secuencia de fotogramas. Esta función será llamada una vez antes del primer fotograma."
 
 #: matplotlib.animation.FuncAnimation:56 of
 msgid "If ``blit == True``, *init_func* must return an iterable of artists to be re-drawn. This information is used by the blitting algorithm to determine which parts of the figure have to be updated.  The return value is unused if ``blit == False`` and may be omitted in that case."
-msgstr ""
+msgstr "Si ``blit == True``, *init_func* debe devolver un iterable de artistas para volver a dibujar. Esta información es utilizada por el algoritmo de flitting para determinar qué partes de la figura deben ser actualizadas. El valor de retorno no se utiliza si ``blit == False`` y puede ser omitido en ese caso."
 
 #: matplotlib.animation.FuncAnimation:62 of
 msgid "**fargs**"
-msgstr ""
+msgstr "**fargs**"
 
 #: of
 msgid "tuple or None, optional"
-msgstr ""
+msgstr "tupla o ninguno, opcional"
 
 #: matplotlib.animation.FuncAnimation:62 of
 msgid "Additional arguments to pass to each call to *func*."
-msgstr ""
+msgstr "Argumentos adicionales para pasar a cada llamada a *func*."
 
 #: matplotlib.animation.FuncAnimation:67 of
 msgid "**save_count**"
-msgstr ""
+msgstr "**guardar_cuenta**"
 
 #: of
 msgid "int, default: 100"
-msgstr ""
+msgstr "int, por defecto: 100"
 
 #: matplotlib.animation.FuncAnimation:65 of
 msgid "Fallback for the number of values from *frames* to cache. This is only used if the number of frames cannot be inferred from *frames*, i.e. when it's an iterator without length or a generator."
-msgstr ""
+msgstr "Retroceder al número de valores de *frames* a la caché. Esto sólo se utiliza si el número de fotogramas no se puede inferir de *frames*, es decir, cuando es un iterador sin longitud ni generador."
 
 #: matplotlib.animation.FuncAnimation:70 of
 msgid "**interval**"
-msgstr ""
+msgstr "**intervalo**"
 
 #: of
 msgid "int, default: 200"
-msgstr ""
+msgstr "int, por defecto: 200"
 
 #: matplotlib.animation.FuncAnimation:70 of
 msgid "Delay between frames in milliseconds."
-msgstr ""
+msgstr "Retraso entre fotogramas en milisegundos."
 
 #: matplotlib.animation.FuncAnimation:74 of
 msgid "**repeat_delay**"
-msgstr ""
+msgstr "**Repetir_retraso**"
 
 #: of
 msgid "int, default: 0"
-msgstr ""
+msgstr "int, por defecto: 0"
 
 #: matplotlib.animation.FuncAnimation:73 of
 msgid "The delay in milliseconds between consecutive animation runs, if *repeat* is True."
-msgstr ""
+msgstr "El retraso en milisegundos entre la animación consecutiva se ejecuta, si *repetir* es verdadero."
 
 #: matplotlib.animation.FuncAnimation:77 of
 msgid "**repeat**"
-msgstr ""
+msgstr "**repetir**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.animation.FuncAnimation:77 of
 msgid "Whether the animation repeats when the sequence of frames is completed."
-msgstr ""
+msgstr "Si la animación se repite cuando se completa la secuencia de fotogramas."
 
 #: matplotlib.animation.FuncAnimation:83 of
 msgid "**blit**"
-msgstr ""
+msgstr "**blit**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.animation.FuncAnimation:80 of
 msgid "Whether blitting is used to optimize drawing.  Note: when using blitting, any animated artists will be drawn according to their zorder; however, they will be drawn on top of any previous artists, regardless of their zorder."
-msgstr ""
+msgstr "Si el chorro se utiliza para optimizar el dibujo. Nota: al usar blitting, cualquier artista animado será dibujado de acuerdo a su zorder; sin embargo, serán dibujados encima de cualquier artista anterior, independientemente de su zorder."
 
 #: matplotlib.animation.FuncAnimation:100 of
 msgid "**cache_frame_data**"
-msgstr ""
+msgstr "**cache_frame_data**"
 
 #: matplotlib.animation.FuncAnimation:86 of
 msgid "Whether frame data is cached.  Disabling cache might be helpful when frames contain large objects."
-msgstr ""
+msgstr "Si los datos de fotogramas se almacenan en caché. Deshabilitar caché puede ser útil cuando los fotogramas contienen objetos grandes."
 
 #: ../../api/_as_gen/matplotlib.animation.FuncAnimation.rst:13
 msgid "Methods"
-msgstr ""
+msgstr "Métodos"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid ":py:obj:`__init__ <matplotlib.animation.FuncAnimation.__init__>`\\ \\(fig\\, func\\[\\, frames\\, init\\_func\\, ...\\]\\)"
-msgstr ""
+msgstr ":py:obj:`__init__ <matplotlib.animation.FuncAnimation.__init__>`\\ \\(fig\\, func\\[\\, frames\\, init\\_func\\, ...\\]\\)"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid ":py:obj:`new_frame_seq <matplotlib.animation.FuncAnimation.new_frame_seq>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`new_frame_seq <matplotlib.animation.FuncAnimation.new_frame_seq>`\\ \\(\\)"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:2
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid "Return a new sequence of frame information."
-msgstr ""
+msgstr "Devuelve una nueva secuencia de información de fotogramas."
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid ":py:obj:`new_saved_frame_seq <matplotlib.animation.FuncAnimation.new_saved_frame_seq>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`new_saved_frame_seq <matplotlib.animation.FuncAnimation.new_saved_frame_seq>`\\ \\(\\)"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1
 #: matplotlib.animation.FuncAnimation.new_saved_frame_seq:2 of
 msgid "Return a new sequence of saved/cached frame information."
-msgstr ""
+msgstr "Devolver una nueva secuencia de información del fotograma guardado/caché."
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid ":py:obj:`pause <matplotlib.animation.FuncAnimation.pause>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`pause <matplotlib.animation.FuncAnimation.pause>`\\ \\(\\)"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid "Pause the animation."
-msgstr ""
+msgstr "Pausar la animación."
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid ":py:obj:`resume <matplotlib.animation.FuncAnimation.resume>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`resume <matplotlib.animation.FuncAnimation.resume>`\\ \\(\\)"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid "Resume the animation."
-msgstr ""
+msgstr "Reanudar la animación."
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid ":py:obj:`save <matplotlib.animation.FuncAnimation.save>`\\ \\(filename\\[\\, writer\\, fps\\, dpi\\, codec\\, ...\\]\\)"
-msgstr ""
+msgstr ":py:obj:`save <matplotlib.animation.FuncAnimation.save>`\\ \\(filename\\[\\, writer\\, fps\\, dpi\\, codec\\, ...\\]\\)"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid "Save the animation as a movie file by drawing every frame."
-msgstr ""
+msgstr "Guarda la animación como un archivo de película dibujando cada fotograma."
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid ":py:obj:`to_html5_video <matplotlib.animation.FuncAnimation.to_html5_video>`\\ \\(\\[embed\\_limit\\]\\)"
-msgstr ""
+msgstr ":py:obj:`to_html5_video <matplotlib.animation.FuncAnimation.to_html5_video>`\\ \\(\\[embed\\_limit\\]\\)"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid "Convert the animation to an HTML5 ``<video>`` tag."
-msgstr ""
+msgstr "Convierte la animación a una etiqueta HTML5 ``<video>`."
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid ":py:obj:`to_jshtml <matplotlib.animation.FuncAnimation.to_jshtml>`\\ \\(\\[fps\\, embed\\_frames\\, default\\_mode\\]\\)"
-msgstr ""
+msgstr ":py:obj:`to_jshtml <matplotlib.animation.FuncAnimation.to_jshtml>`\\ \\(\\[fps\\, embed\\_frames\\, default\\_mode\\]\\)"
 
 #: matplotlib.animation.FuncAnimation.new_frame_seq:1:<autosummary>:1 of
 msgid "Generate HTML representation of the animation."
-msgstr ""
+msgstr "Generar representación HTML de la animación."
 

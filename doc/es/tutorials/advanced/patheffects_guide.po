@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-05-24 23:35\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,77 +20,77 @@ msgstr ""
 
 #: ../../tutorials/advanced/patheffects_guide.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_advanced_patheffects_guide.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_advanced_patheffects_guide.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:23
 msgid "Path effects guide"
-msgstr ""
+msgstr "Guía de efectos de trayectoria"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:25
 msgid "Defining paths that objects follow on a canvas."
-msgstr ""
+msgstr "Definir las rutas que siguen los objetos en un lienzo."
 
 #: ../../tutorials/advanced/patheffects_guide.rst:29
 msgid "Matplotlib's :mod:`.patheffects` module provides functionality to apply a multiple draw stage to any Artist which can be rendered via a `.path.Path`."
-msgstr ""
+msgstr "El módulo :mod:`.patheffects` de Matplotlib proporciona una funcionalidad para aplicar una etapa de dibujo múltiple a cualquier Artist que pueda ser renderizado a través de un `.path.Path`."
 
 #: ../../tutorials/advanced/patheffects_guide.rst:32
 msgid "Artists which can have a path effect applied to them include `.patches.Patch`, `.lines.Line2D`, `.collections.Collection` and even `.text.Text`. Each artist's path effects can be controlled via the `.Artist.set_path_effects` method, which takes an iterable of `AbstractPathEffect` instances."
-msgstr ""
+msgstr "Los artists a los que se les puede aplicar un efecto de trayectoria son `.patches.Patch`, `.lines.Line2D`, `.collections.Collection` e incluso `.text.Text`. Los efectos de trayectoria de cada artist pueden controlarse mediante el método `.Artist.set_path_effects`, que toma una iterable de instancias `AbstractPathEffect`."
 
 #: ../../tutorials/advanced/patheffects_guide.rst:37
 msgid "The simplest path effect is the `Normal` effect, which simply draws the artist without any effect:"
-msgstr ""
+msgstr "El efecto de trayectoria más sencillo es el efecto `Normal`, que simplemente dibuja al artista sin ningún efecto:"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:69
 msgid "Whilst the plot doesn't look any different to what you would expect without any path effects, the drawing of the text has now been changed to use the path effects framework, opening up the possibilities for more interesting examples."
-msgstr ""
+msgstr "Mientras que el gráfico no se ve diferente a lo que se esperaría sin efectos de trayectoria, el dibujo del texto ha sido cambiado para usar el marco de efectos de trayectoria, abriendo las posibilidades para ejemplos más interesantes."
 
 #: ../../tutorials/advanced/patheffects_guide.rst:75
 msgid "Adding a shadow"
-msgstr ""
+msgstr "Añadir una sombra"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:77
 msgid "A far more interesting path effect than `Normal` is the drop-shadow, which we can apply to any of our path based artists. The classes `SimplePatchShadow` and `SimpleLineShadow` do precisely this by drawing either a filled patch or a line patch below the original artist:"
-msgstr ""
+msgstr "Un efecto de trayectoria mucho más interesante que el `Normal` es el drop-shadow, que podemos aplicar a cualquiera de nuestros artists basados en la trayectoria. Las clases `SimplePatchShadow` y `SimpleLineShadow` hacen precisamente esto dibujando un parche relleno o un parche de línea debajo del artist original:"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:111
 msgid "Notice the two approaches to setting the path effects in this example. The first uses the ``with*`` classes to include the desired functionality automatically followed with the \"normal\" effect, whereas the latter explicitly defines the two path effects to draw."
-msgstr ""
+msgstr "Observe los dos enfoques para establecer los efectos de ruta en este ejemplo. El primero utiliza las clases ``with*`` para incluir la funcionalidad deseada automáticamente seguida del efecto \"normal\", mientras que el segundo define explícitamente los dos efectos de trayectoria a dibujar."
 
 #: ../../tutorials/advanced/patheffects_guide.rst:117
 msgid "Making an artist stand out"
-msgstr ""
+msgstr "Cómo hacer que un artist destaque"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:119
 msgid "One nice way of making artists visually stand out is to draw an outline in a bold color below the actual artist. The :class:`Stroke` path effect makes this a relatively simple task:"
-msgstr ""
+msgstr "Una buena forma de hacer que los artists destaquen visualmente es dibujar un contorno en un color llamativo debajo del artist real. El efecto de trayectoria :class:`Stroke` hace que esto sea una tarea relativamente sencilla:"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:150
 msgid "It is important to note that this effect only works because we have drawn the text path twice; once with a thick black line, and then once with the original text path on top."
-msgstr ""
+msgstr "Es importante tener en cuenta que este efecto sólo funciona porque hemos dibujado el trazado del texto dos veces; una con una línea negra gruesa, y otra con el trazado del texto original encima."
 
 #: ../../tutorials/advanced/patheffects_guide.rst:154
 msgid "You may have noticed that the keywords to `Stroke` and `SimplePatchShadow` and `SimpleLineShadow` are not the usual Artist keywords (*facecolor* *edgecolor*, etc.). This is because with these path effects we are operating at lower level of Matplotlib. In fact, the keywords which are accepted are those for a `matplotlib.backend_bases.GraphicsContextBase` instance, which have been designed for making it easy to create new backends - and not for its user interface."
-msgstr ""
+msgstr "Habrás notado que las palabras clave para `Stroke`, `SimplePatchShadow` y `SimpleLineShadow` no son las palabras clave habituales de Artist (*facecolor* *edgecolor*, etc.). Esto se debe a que con estos efectos de trayectoria estamos operando a un nivel inferior de Matplotlib. De hecho, las palabras clave que se aceptan son las de una instancia de `matplotlib.backend_bases.GraphicsContextBase`, que han sido diseñadas para facilitar la creación de nuevos backends - y no para su interfaz de usuario."
 
 #: ../../tutorials/advanced/patheffects_guide.rst:164
 msgid "Greater control of the path effect artist"
-msgstr ""
+msgstr "Mayor control del artist de efectos de trayectoria"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:166
 msgid "As already mentioned, some of the path effects operate at a lower level than most users will be used to, meaning that setting keywords such as *facecolor* and *edgecolor* raise an AttributeError. Luckily there is a generic `PathPatchEffect` path effect which creates a `.patches.PathPatch` class with the original path.  The keywords to this effect are identical to those of `.patches.PathPatch`:"
-msgstr ""
+msgstr "Como ya se ha mencionado, algunos de los efectos de ruta operan a un nivel más bajo del que la mayoría de los usuarios están acostumbrados, lo que significa que la configuración de palabras clave como *facecolor* y *edgecolor* genera un AttributeError. Por suerte, existe un efecto de trayectoria genérico `PathPatchEffect` que crea una clase `.patches.PathPatch` con la trayectoria original.  Las palabras clave de este efecto son idénticas a las de `.patches.PathPatch`:"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:223
 msgid ":download:`Download Python source code: patheffects_guide.py <patheffects_guide.py>`"
-msgstr ""
+msgstr ":download:`Descargar código fuente de Python: patheffects_guide.py <patheffects_guide.py>`"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:229
 msgid ":download:`Download Jupyter notebook: patheffects_guide.ipynb <patheffects_guide.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar Jupyter notebook: patheffects_guide.ipynb <patheffects_guide.ipynb>`"
 
 #: ../../tutorials/advanced/patheffects_guide.rst:236
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

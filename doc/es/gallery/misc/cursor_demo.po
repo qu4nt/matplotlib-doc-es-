@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:28\n"
+"PO-Revision-Date: 2022-07-17 12:50\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,82 +20,82 @@ msgstr ""
 
 #: ../../gallery/misc/cursor_demo.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_misc_cursor_demo.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_misc_cursor_demo.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/misc/cursor_demo.rst:23
 msgid "Cross hair cursor"
-msgstr ""
+msgstr "Cursor en forma de cruz"
 
 #: ../../gallery/misc/cursor_demo.rst:25
 msgid "This example adds a cross hair as a data cursor.  The cross hair is implemented as regular line objects that are updated on mouse move."
-msgstr ""
+msgstr "Este ejemplo añade una cruceta como cursor de datos.  La cruceta se implementa como objetos de línea regulares que se actualizan al mover el ratón."
 
 #: ../../gallery/misc/cursor_demo.rst:28
 msgid "We show three implementations:"
-msgstr ""
+msgstr "Mostramos tres implementaciones:"
 
 #: ../../gallery/misc/cursor_demo.rst:30
 msgid "A simple cursor implementation that redraws the figure on every mouse move. This is a bit slow and you may notice some lag of the cross hair movement."
-msgstr ""
+msgstr "Una implementación simple del cursor que redibuja la figura en cada movimiento del ratón. Esto es un poco lento y puedes notar algo de retraso en el movimiento de la cruz."
 
 #: ../../gallery/misc/cursor_demo.rst:32
 msgid "A cursor that uses blitting for speedup of the rendering."
-msgstr ""
+msgstr "Un cursor que utiliza el blitting para acelerar el renderizado."
 
 #: ../../gallery/misc/cursor_demo.rst:33
 msgid "A cursor that snaps to data points."
-msgstr ""
+msgstr "Un cursor que se ajusta a los puntos de datos."
 
 #: ../../gallery/misc/cursor_demo.rst:35
 msgid "Faster cursoring is possible using native GUI drawing, as in :doc:`/gallery/user_interfaces/wxcursor_demo_sgskip`."
-msgstr ""
+msgstr "Es posible realizar un cursor más rápido utilizando el dibujo nativo de la GUI, como en :doc:`/gallery/user_interfaces/wxcursor_demo_sgskip`."
 
 #: ../../gallery/misc/cursor_demo.rst:38
 msgid "The mpldatacursor__ and mplcursors__ third-party packages can be used to achieve a similar effect."
-msgstr ""
+msgstr "Los paquetes de terceros mpldatacursor__ y mplcursors__ pueden utilizarse para conseguir un efecto similar."
 
 #: ../../gallery/misc/cursor_demo.rst:107
 #: ../../gallery/misc/cursor_demo.rst:214
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../gallery/misc/cursor_demo.rst:119
 msgid "Faster redrawing using blitting"
-msgstr ""
+msgstr "Redibujo más rápido usando blitting"
 
 #: ../../gallery/misc/cursor_demo.rst:120
 msgid "This technique stores the rendered plot as a background image. Only the changed artists (cross hair lines and text) are rendered anew. They are combined with the background using blitting."
-msgstr ""
+msgstr "Esta técnica almacena el gráfico renderizado como imagen de fondo. Sólo los artists modificados (líneas de cruces y texto) se renderizan de nuevo. Se combinan con el fondo utilizando el blitting."
 
 #: ../../gallery/misc/cursor_demo.rst:124
 msgid "This technique is significantly faster. It requires a bit more setup because the background has to be stored without the cross hair lines (see ``create_new_background()``). Additionally, a new background has to be created whenever the figure changes. This is achieved by connecting to the ``'draw_event'``."
-msgstr ""
+msgstr "Esta técnica es significativamente más rápida. Requiere un poco más de configuración porque el fondo tiene que ser almacenado sin las líneas del pelo cruzado (ver ``create_new_background()``). Además, hay que crear un nuevo fondo cada vez que la figura cambia. Esto se consigue conectando con el ``'draw_event``."
 
 #: ../../gallery/misc/cursor_demo.rst:226
 msgid "Snapping to data points"
-msgstr ""
+msgstr "Ajustar a los puntos de datos"
 
 #: ../../gallery/misc/cursor_demo.rst:227
 msgid "The following cursor snaps its position to the data points of a `.Line2D` object."
-msgstr ""
+msgstr "El siguiente cursor ajusta su posición a los puntos de datos de un objeto `.Line2D`."
 
 #: ../../gallery/misc/cursor_demo.rst:230
 msgid "To save unnecessary redraws, the index of the last indicated data point is saved in ``self._last_index``. A redraw is only triggered when the mouse moves far enough so that another data point must be selected. This reduces the lag due to many redraws. Of course, blitting could still be added on top for additional speedup."
-msgstr ""
+msgstr "Para ahorrar redibujos innecesarios, el índice del último punto de datos indicado se guarda en ``self._last_index``. Un redibujo sólo se activa cuando el ratón se mueve lo suficientemente lejos como para que otro punto de datos deba ser seleccionado. Esto reduce el retraso debido a muchos redibujos. Por supuesto, se puede añadir el blitting para aumentar la velocidad."
 
 #: ../../gallery/misc/cursor_demo.rst:310
 msgid "**Total running time of the script:** ( 0 minutes  1.161 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 1.161 segundos)"
 
 #: ../../gallery/misc/cursor_demo.rst:325
 msgid ":download:`Download Python source code: cursor_demo.py <cursor_demo.py>`"
-msgstr ""
+msgstr ":download:`Descargar el código fuente de Python: cursor_demo.py <cursor_demo.py>`"
 
 #: ../../gallery/misc/cursor_demo.rst:331
 msgid ":download:`Download Jupyter notebook: cursor_demo.ipynb <cursor_demo.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: cursor_demo.ipynb <cursor_demo.ipynb>`"
 
 #: ../../gallery/misc/cursor_demo.rst:338
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

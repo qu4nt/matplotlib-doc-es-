@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:19\n"
+"PO-Revision-Date: 2022-11-02 14:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,299 +20,299 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.quiver.Barbs.rst:2
 msgid "matplotlib.quiver.Barbs"
-msgstr ""
+msgstr "matplotlib.quiver.Barbs"
 
 #: matplotlib.quiver.Barbs:1 of
 msgid "Bases: :py:class:`matplotlib.collections.PolyCollection`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.collections.PolyCollection`"
 
 #: matplotlib.quiver.Barbs:2 of
 msgid "Specialized PolyCollection for barbs."
-msgstr ""
+msgstr "PolyCollection Especializada para barbas."
 
 #: matplotlib.quiver.Barbs:4 of
 msgid "The only API method is :meth:`set_UVC`, which can be used to change the size, orientation, and color of the arrows.  Locations are changed using the :meth:`set_offsets` collection method. Possibly this method will be useful in animations."
-msgstr ""
+msgstr "El único método API es :meth:`set_UVC`, que puede ser usado para cambiar el tamaño, orientación y color de las flechas. Las ubicaciones se cambian usando el método :meth:de colección `set_offsets`. Posiblemente este método será útil en las animaciones."
 
 #: matplotlib.quiver.Barbs:9 of
 msgid "There is one internal function :meth:`_find_tails` which finds exactly what should be put on the barb given the vector magnitude. From there :meth:`_make_barbs` is used to find the vertices of the polygon to represent the barb based on this information."
-msgstr ""
+msgstr "Hay una función interna :meth:`_find_tails` que encuentra exactamente lo que se debe poner en la barrera dada la magnitud del vector. A partir de ahí, el :meth:`_make_barbs` se utiliza para encontrar los vértices del polígono para representar la barrera basada en esta información."
 
 #: matplotlib.quiver.Barbs:32 of
 msgid "The constructor takes one required argument, an Axes instance, followed by the args and kwargs described by the following pyplot interface documentation:"
-msgstr ""
+msgstr "El constructor toma un argumento requerido, una instancia de ejes, seguido por los argumentos y kwargs descritos por la siguiente documentación de interfaz de pyplot:"
 
 #: matplotlib.quiver.Barbs:36 of
 msgid "Plot a 2D field of barbs."
-msgstr ""
+msgstr "Trazar un campo 2D de barbas."
 
 #: matplotlib.quiver.Barbs:38 of
 msgid "Call signature::"
-msgstr ""
+msgstr "Firma de llamada::"
 
 #: matplotlib.quiver.Barbs:42 of
 msgid "Where *X*, *Y* define the barb locations, *U*, *V* define the barb directions, and *C* optionally sets the color."
-msgstr ""
+msgstr "Donde *X*, *Y* define las ubicaciones de las barras, *U*, *V* define las direcciones de las barras, y *C* opcionalmente establece el color."
 
 #: matplotlib.quiver.Barbs:45 of
 msgid "All arguments may be 1D or 2D. *U*, *V*, *C* may be masked arrays, but masked *X*, *Y* are not supported at present."
-msgstr ""
+msgstr "Todos los argumentos pueden ser 1D o 2D. *U*, *V*, *C* pueden ser matrices enmascaradas, pero *X*, *Y* no están soportados actualmente."
 
 #: matplotlib.quiver.Barbs:48 of
 msgid "Barbs are traditionally used in meteorology as a way to plot the speed and direction of wind observations, but can technically be used to plot any two dimensional vector quantity.  As opposed to arrows, which give vector magnitude by the length of the arrow, the barbs give more quantitative information about the vector magnitude by putting slanted lines or a triangle for various increments in magnitude, as show schematically below::"
-msgstr ""
+msgstr "Las barbas se utilizan tradicionalmente en la meteorología como forma de trazar la velocidad y dirección de las observaciones del viento, pero técnicamente se puede utilizar para trazar cualquier cantidad de vector de dos dimensiones. Al contrario que las flechas, que dan magnitud vectorial por la longitud de la flecha, las barbas proporcionan más información cuantitativa sobre la magnitud del vector poniendo líneas inclinadas o un triángulo para varios incrementos de magnitud, como mostrar esquemáticamente abajo::"
 
 #: matplotlib.quiver.Barbs:62 of
 msgid "The largest increment is given by a triangle (or \"flag\"). After those come full lines (barbs). The smallest increment is a half line.  There is only, of course, ever at most 1 half line.  If the magnitude is small and only needs a single half-line and no full lines or triangles, the half-line is offset from the end of the barb so that it can be easily distinguished from barbs with a single full line.  The magnitude for the barb shown above would nominally be 65, using the standard increments of 50, 10, and 5."
-msgstr ""
+msgstr "El incremento más grande es dado por un triángulo (o \"bandera\"). El incremento más pequeño es una línea media. Si la magnitud es pequeña y solo necesita una media línea y sin triángulos o líneas completas la media línea se distingue desde el final de la barba para que pueda distinguirse fácilmente de las barbas con una sola línea completa. La magnitud de la barba mostrada arriba sería 65, usando los incrementos estándar de 50, 10 y 5."
 
 #: matplotlib.quiver.Barbs:71 of
 msgid "See also https://en.wikipedia.org/wiki/Wind_barb."
-msgstr ""
+msgstr "Ver también https://es.wikipedia.org/wiki/Wind_barb."
 
 #: matplotlib.quiver.Barbs matplotlib.quiver.Barbs.set_offsets of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.quiver.Barbs:84 of
 msgid "**X, Y**"
-msgstr ""
+msgstr "**X, Y**"
 
 #: of
 msgid "1D or 2D array-like, optional"
-msgstr ""
+msgstr "Opcional para matrices 1D o 2D"
 
 #: matplotlib.quiver.Barbs:76 of
 msgid "The x and y coordinates of the barb locations. See *pivot* for how the barbs are drawn to the x, y positions."
-msgstr ""
+msgstr "Las coordenadas x e y de las ubicaciones de barbas. Ver *pivot* para ver cómo las barbas se dibujan en las posiciones x, y."
 
 #: matplotlib.quiver.Barbs:79 of
 msgid "If not given, they will be generated as a uniform integer meshgrid based on the dimensions of *U* and *V*."
-msgstr ""
+msgstr "Si no se dan, se generarán como una red entera uniforme basada en las dimensiones de *U* y *V*."
 
 #: matplotlib.quiver.Barbs:82 of
 msgid "If *X* and *Y* are 1D but *U*, *V* are 2D, *X*, *Y* are expanded to 2D using ``X, Y = np.meshgrid(X, Y)``. In this case ``len(X)`` and ``len(Y)`` must match the column and row dimensions of *U* and *V*."
-msgstr ""
+msgstr "Si *X* y *Y* son 1D pero *U*, *V* son 2D, *X*, *Y* se expanden a 2D usando ``X, Y = np.meshgrid(X, Y)``. En este caso ``len(X)`` y ``len(Y)`` deben coincidir con las dimensiones de columna y fila de *U* y *V*."
 
 #: matplotlib.quiver.Barbs:87 of
 msgid "**U, V**"
-msgstr ""
+msgstr "**U, V**"
 
 #: of
 msgid "1D or 2D array-like"
-msgstr ""
+msgstr "Arreglo 1D o 2D"
 
 #: matplotlib.quiver.Barbs:87 of
 msgid "The x and y components of the barb shaft."
-msgstr ""
+msgstr "Los componentes x e y del pedazo de barba."
 
 #: matplotlib.quiver.Barbs:94 of
 msgid "**C**"
-msgstr ""
+msgstr "**C**"
 
 #: matplotlib.quiver.Barbs:90 of
 msgid "Numeric data that defines the barb colors by colormapping via *norm* and *cmap*."
-msgstr ""
+msgstr "Datos numéricos que definen los colores de las barras mediante mapeo de colores mediante *normal* y *cmap*."
 
 #: matplotlib.quiver.Barbs:93 of
 msgid "This does not support explicit colors. If you want to set colors directly, use *barbcolor* instead."
-msgstr ""
+msgstr "Esto no soporta colores explícitos. Si quieres establecer colores directamente, usa *barbcolor* en su lugar."
 
 #: matplotlib.quiver.Barbs:98 of
 msgid "**length**"
-msgstr ""
+msgstr "**length**"
 
 #: of
 msgid "float, default: 7"
-msgstr ""
+msgstr "flotante, por defecto: 7"
 
 #: matplotlib.quiver.Barbs:97 of
 msgid "Length of the barb in points; the other parts of the barb are scaled against this."
-msgstr ""
+msgstr "Longitud de la barba en puntos; las otras partes de la barba están escaladas en contra de esto."
 
 #: matplotlib.quiver.Barbs:103 of
 msgid "**pivot**"
-msgstr ""
+msgstr "**pivot**"
 
 #: of
 msgid "{'tip', 'middle'} or float, default: 'tip'"
-msgstr ""
+msgstr "{'tip', 'middle'} o flotante, por defecto: 'tip'"
 
 #: matplotlib.quiver.Barbs:101 of
 msgid "The part of the arrow that is anchored to the *X*, *Y* grid. The barb rotates about this point. This can also be a number, which shifts the start of the barb that many points away from grid point."
-msgstr ""
+msgstr "La parte de la flecha que está anclada a la cuadrícula *X*, *Y*. La barba gira sobre este punto. Esto también puede ser un número, que desplaza el inicio de la barba que muchos puntos se alejan del punto de rejilla."
 
 #: matplotlib.quiver.Barbs:108 of
 msgid "**barbcolor**"
-msgstr ""
+msgstr "**barbacoa**"
 
 #: of
 msgid "color or color sequence"
-msgstr ""
+msgstr "color o secuencia de color"
 
 #: matplotlib.quiver.Barbs:106 of
 msgid "The color of all parts of the barb except for the flags.  This parameter is analogous to the *edgecolor* parameter for polygons, which can be used instead. However this parameter will override facecolor."
-msgstr ""
+msgstr "El color de todas las partes de la barba, excepto las banderas. Este parámetro es análogo al parámetro *edgecolor* para los polígonos, que puede ser usado en su lugar. Sin embargo, este parámetro anulará el color de facecolor."
 
 #: matplotlib.quiver.Barbs:115 of
 msgid "**flagcolor**"
-msgstr ""
+msgstr "**bandera**"
 
 #: matplotlib.quiver.Barbs:111 of
 msgid "The color of any flags on the barb.  This parameter is analogous to the *facecolor* parameter for polygons, which can be used instead. However, this parameter will override facecolor.  If this is not set (and *C* has not either) then *flagcolor* will be set to match *barbcolor* so that the barb has a uniform color. If *C* has been set, *flagcolor* has no effect."
-msgstr ""
+msgstr "El color de cualquier bandera en la barbacoa. Este parámetro es análogo al parámetro *facecolor* para los polígonos, que se puede usar en su lugar. Sin embargo, este parámetro anulará el color facecolor. Si esto no está establecido (y *C* tampoco lo ha hecho), entonces *flagcolor* se establecerá para que coincida con *barbcolor* para que la barba tenga un color uniforme. Si se ha establecido *C*, *bandera* no tendrá efecto."
 
 #: matplotlib.quiver.Barbs:125 of
 msgid "**sizes**"
-msgstr ""
+msgstr "**tamaños**"
 
 #: of
 msgid "dict, optional"
-msgstr ""
+msgstr "dict, optional"
 
 #: matplotlib.quiver.Barbs:118 of
 msgid "A dictionary of coefficients specifying the ratio of a given feature to the length of the barb. Only those values one wishes to override need to be included.  These features include:"
-msgstr ""
+msgstr "Un diccionario de coeficientes que especifica la proporción de una característica determinada a la longitud de la barra. Sólo los valores que uno desea anular necesitan ser incluidos. Estas características incluyen:"
 
 #: matplotlib.quiver.Barbs:122 of
 msgid "'spacing' - space between features (flags, full/half barbs)"
-msgstr ""
+msgstr "'espacio' - espacio entre características (banderas, barbas completas/medias)"
 
 #: matplotlib.quiver.Barbs:123 of
 msgid "'height' - height (distance from shaft to top) of a flag or full barb"
-msgstr ""
+msgstr "'altura' - altura (distancia desde el shaft hasta arriba) de una bandera o barba completa"
 
 #: matplotlib.quiver.Barbs:124 of
 msgid "'width' - width of a flag, twice the width of a full barb"
-msgstr ""
+msgstr "'ancho' - ancho de una bandera, el doble de ancho de una barba completa"
 
 #: matplotlib.quiver.Barbs:125 of
 msgid "'emptybarb' - radius of the circle used for low magnitudes"
-msgstr ""
+msgstr "'barba vacía' - radio del círculo utilizado para bajas magnitudes"
 
 #: matplotlib.quiver.Barbs:129 of
 msgid "**fill_empty**"
-msgstr ""
+msgstr "**vacío**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.quiver.Barbs:128 of
 msgid "Whether the empty barbs (circles) that are drawn should be filled with the flag color.  If they are not filled, the center is transparent."
-msgstr ""
+msgstr "Si las barbas vacías (círculos) que se dibujan deben llenarse con el color de la bandera. Si no se llenan, el centro es transparente."
 
 #: matplotlib.quiver.Barbs:135 of
 msgid "**rounding**"
-msgstr ""
+msgstr "**redondeando**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.quiver.Barbs:132 of
 msgid "Whether the vector magnitude should be rounded when allocating barb components.  If True, the magnitude is rounded to the nearest multiple of the half-barb increment.  If False, the magnitude is simply truncated to the next lowest multiple."
-msgstr ""
+msgstr "Si la magnitud del vector debe redondearse al asignar componentes de barbas. Si es verdadero, la magnitud se redondea al múltiplo más cercano del incremento de media barba. Si False, la magnitud simplemente se trunca al siguiente múltiplo más bajo."
 
 #: matplotlib.quiver.Barbs:144 of
 msgid "**barb_increments**"
-msgstr ""
+msgstr "**barba_incrementos**"
 
 #: matplotlib.quiver.Barbs:138 of
 msgid "A dictionary of increments specifying values to associate with different parts of the barb. Only those values one wishes to override need to be included."
-msgstr ""
+msgstr "Un diccionario de incrementos que especifican valores para asociarse con diferentes partes de la barra. Sólo los valores que uno desea anular deben ser incluidos."
 
 #: matplotlib.quiver.Barbs:142 of
 msgid "'half' - half barbs (Default is 5)"
-msgstr ""
+msgstr "'mitad' - media barba (por defecto es 5)"
 
 #: matplotlib.quiver.Barbs:143 of
 msgid "'full' - full barbs (Default is 10)"
-msgstr ""
+msgstr "'full' - Barras completas (por defecto es 10)"
 
 #: matplotlib.quiver.Barbs:144 of
 msgid "'flag' - flags (default is 50)"
-msgstr ""
+msgstr "'flag' - banderas (por defecto es 50)"
 
 #: matplotlib.quiver.Barbs:153 of
 msgid "**flip_barb**"
-msgstr ""
+msgstr "**barba_flip**"
 
 #: of
 msgid "bool or array-like of bool, default: False"
-msgstr ""
+msgstr "bool o array-like de bool, por defecto: False"
 
 #: matplotlib.quiver.Barbs:147 of
 msgid "Whether the lines and flags should point opposite to normal. Normal behavior is for the barbs and lines to point right (comes from wind barbs having these features point towards low pressure in the Northern Hemisphere)."
-msgstr ""
+msgstr "Si las líneas y banderas deben apuntar opuesto a la normalidad. El comportamiento normal es que las barbas y las líneas apunten a la derecha (viene de las barbas de viento que tienen estas características apuntan hacia la baja presión en el hemisferio norte)."
 
 #: matplotlib.quiver.Barbs:152 of
 msgid "A single value is applied to all barbs. Individual barbs can be flipped by passing a bool array of the same size as *U* and *V*."
-msgstr ""
+msgstr "Se aplica un valor único a todas las barbas. Las barbas individuales pueden ser volteadas pasando una matriz de plumas del mismo tamaño que *U* y *V*."
 
 #: matplotlib.quiver.Barbs of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.quiver.Barbs:160 of
 msgid "**barbs** : `~matplotlib.quiver.Barbs`"
-msgstr ""
+msgstr "**barbs** : `~matplotlib.quiver.Barbs`"
 
 #: matplotlib.quiver.Barbs:159 of
 msgid "Barbs"
-msgstr ""
+msgstr "Barbas"
 
 #: matplotlib.quiver.Barbs of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.quiver.Barbs:165 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.quiver.Barbs:165 of
 msgid "DATA_PARAMETER_PLACEHOLDER"
-msgstr ""
+msgstr "PLAYLACEHOLDER"
 
 #: matplotlib.quiver.Barbs:226 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.quiver.Barbs:168 of
 msgid "The barbs can further be customized using `.PolyCollection` keyword arguments:"
-msgstr ""
+msgstr "Las barbas se pueden personalizar aún más usando `.PolyCollection` argumentos de palabra clave:"
 
 #: matplotlib.artist.Barbs.set:10 matplotlib.quiver.Barbs:175 of
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: matplotlib.artist.Barbs.set:10 matplotlib.quiver.Barbs:175 of
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: matplotlib.artist.Barbs.set:13 matplotlib.quiver.Barbs:177 of
 msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
-msgstr ""
+msgstr ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
 
 #: matplotlib.artist.Barbs.set:13 matplotlib.quiver.Barbs:177 of
 msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
-msgstr ""
+msgstr "una función de filtro, que toma un arreglo de puntos flotantes (m, n, 3) y un valor de dpi, y devuelve un arreglo (m, n, 3)"
 
 #: matplotlib.artist.Barbs.set:14 matplotlib.quiver.Barbs:178 of
 msgid ":meth:`alpha <matplotlib.collections.Collection.set_alpha>`"
-msgstr ""
+msgstr ":meth:`alfa <matplotlib.collections.Collection.set_alpha>`"
 
 #: matplotlib.artist.Barbs.set:14 matplotlib.quiver.Barbs:178 of
 msgid "array-like or scalar or None"
-msgstr ""
+msgstr "como matriz o escalar o ninguno"
 
 #: matplotlib.artist.Barbs.set:15 matplotlib.quiver.Barbs:179 of
 msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
-msgstr ""
+msgstr ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
 
 #: matplotlib.artist.Barbs.set:15 matplotlib.artist.Barbs.set:21
 #: matplotlib.artist.Barbs.set:30 matplotlib.artist.Barbs.set:42
@@ -320,302 +320,302 @@ msgstr ""
 #: matplotlib.quiver.Barbs:185 matplotlib.quiver.Barbs:194
 #: matplotlib.quiver.Barbs:206 matplotlib.quiver.Barbs:215 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.artist.Barbs.set:16 matplotlib.quiver.Barbs:180 of
 msgid ":meth:`antialiased <matplotlib.collections.Collection.set_antialiased>` or aa or antialiaseds"
-msgstr ""
+msgstr ":meth:`antialias <matplotlib.collections.Collection.set_antialiased>` o aa o antialiaseds"
 
 #: matplotlib.artist.Barbs.set:16 matplotlib.quiver.Barbs:180 of
 msgid "bool or list of bools"
-msgstr ""
+msgstr "libro o lista de bools"
 
 #: matplotlib.artist.Barbs.set:17 matplotlib.quiver.Barbs:181 of
 msgid ":meth:`array <matplotlib.cm.ScalarMappable.set_array>`"
-msgstr ""
+msgstr ":meth:`array <matplotlib.cm.ScalarMappable.set_array>`"
 
 #: matplotlib.artist.Barbs.set:17 matplotlib.quiver.Barbs:181 of
 msgid "array-like or None"
-msgstr ""
+msgstr "tipo array o ninguno"
 
 #: matplotlib.artist.Barbs.set:18 matplotlib.quiver.Barbs:182 of
 msgid ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
-msgstr ""
+msgstr ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
 
 #: matplotlib.artist.Barbs.set:18 matplotlib.quiver.Barbs:182 of
 msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "`.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.artist.Barbs.set:19 matplotlib.quiver.Barbs:183 of
 msgid ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
-msgstr ""
+msgstr ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
 
 #: matplotlib.artist.Barbs.set:19 matplotlib.quiver.Barbs:183 of
 msgid "(vmin: float, vmax: float)"
-msgstr ""
+msgstr "(vmin: flotante, vmax: flotante)"
 
 #: matplotlib.artist.Barbs.set:20 matplotlib.quiver.Barbs:184 of
 msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
-msgstr ""
+msgstr ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
 
 #: matplotlib.artist.Barbs.set:20 matplotlib.quiver.Barbs:184 of
 msgid "`.Bbox`"
-msgstr ""
+msgstr "`.Bbox`"
 
 #: matplotlib.artist.Barbs.set:21 matplotlib.quiver.Barbs:185 of
 msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
-msgstr ""
+msgstr ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
 
 #: matplotlib.artist.Barbs.set:22 matplotlib.quiver.Barbs:186 of
 msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
-msgstr ""
+msgstr ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
 
 #: matplotlib.artist.Barbs.set:22 matplotlib.quiver.Barbs:186 of
 msgid "Patch or (Path, Transform) or None"
-msgstr ""
+msgstr "Patch o (Path, Transform) o None"
 
 #: matplotlib.artist.Barbs.set:23 matplotlib.quiver.Barbs:187 of
 msgid ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
-msgstr ""
+msgstr ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
 
 #: matplotlib.artist.Barbs.set:23 matplotlib.quiver.Barbs:187 of
 msgid "`.Colormap` or str or None"
-msgstr ""
+msgstr "`.Colormap` o str o ninguno"
 
 #: matplotlib.artist.Barbs.set:24 matplotlib.quiver.Barbs:188 of
 msgid ":meth:`color <matplotlib.collections.Collection.set_color>`"
-msgstr ""
+msgstr ":meth:`color <matplotlib.collections.Collection.set_color>`"
 
 #: matplotlib.artist.Barbs.set:24 matplotlib.quiver.Barbs:188 of
 msgid "color or list of rgba tuples"
-msgstr ""
+msgstr "color o lista de tubos rgba"
 
 #: matplotlib.artist.Barbs.set:25 matplotlib.quiver.Barbs:189 of
 msgid ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` or ec or edgecolors"
-msgstr ""
+msgstr ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` o ec o aristas colores"
 
 #: matplotlib.artist.Barbs.set:25 matplotlib.quiver.Barbs:189 of
 msgid "color or list of colors or 'face'"
-msgstr ""
+msgstr "color o lista de colores o 'cara'"
 
 #: matplotlib.artist.Barbs.set:26 matplotlib.quiver.Barbs:190 of
 msgid ":meth:`facecolor <matplotlib.collections.Collection.set_facecolor>` or facecolors or fc"
-msgstr ""
+msgstr ":meth:`carecolor <matplotlib.collections.Collection.set_facecolor>` o colores de caras o fc"
 
 #: matplotlib.artist.Barbs.set:26 matplotlib.quiver.Barbs:190 of
 msgid "color or list of colors"
-msgstr ""
+msgstr "color o lista de colores"
 
 #: matplotlib.artist.Barbs.set:27 matplotlib.quiver.Barbs:191 of
 msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
-msgstr ""
+msgstr ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
 
 #: matplotlib.artist.Barbs.set:27 matplotlib.quiver.Barbs:191 of
 msgid "`.Figure`"
-msgstr ""
+msgstr "`.Figure`"
 
 #: matplotlib.artist.Barbs.set:28 matplotlib.quiver.Barbs:192 of
 msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
-msgstr ""
+msgstr ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
 
 #: matplotlib.artist.Barbs.set:28 matplotlib.artist.Barbs.set:47
 #: matplotlib.quiver.Barbs:192 matplotlib.quiver.Barbs:211 of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.artist.Barbs.set:29 matplotlib.quiver.Barbs:193 of
 msgid ":meth:`hatch <matplotlib.collections.Collection.set_hatch>`"
-msgstr ""
+msgstr ":meth:`colgante <matplotlib.collections.Collection.set_hatch>`"
 
 #: matplotlib.artist.Barbs.set:29 matplotlib.quiver.Barbs:193 of
 msgid "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
-msgstr ""
+msgstr "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
 
 #: matplotlib.artist.Barbs.set:30 matplotlib.quiver.Barbs:194 of
 msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
-msgstr ""
+msgstr ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
 
 #: matplotlib.artist.Barbs.set:31 matplotlib.quiver.Barbs:195 of
 msgid ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
-msgstr ""
+msgstr ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
 
 #: matplotlib.artist.Barbs.set:31 matplotlib.quiver.Barbs:195 of
 msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "`.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.artist.Barbs.set:32 matplotlib.quiver.Barbs:196 of
 msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
-msgstr ""
+msgstr ":meth:`label <matplotlib.artist.Artist.set_label>`"
 
 #: matplotlib.artist.Barbs.set:32 matplotlib.quiver.Barbs:196 of
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: matplotlib.artist.Barbs.set:33 matplotlib.quiver.Barbs:197 of
 msgid ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` or dashes or linestyles or ls"
-msgstr ""
+msgstr ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` o guiones o estilos de línea o ls"
 
 #: matplotlib.artist.Barbs.set:33 matplotlib.quiver.Barbs:197 of
 msgid "str or tuple or list thereof"
-msgstr ""
+msgstr "str o tuple o lista de ellos"
 
 #: matplotlib.artist.Barbs.set:34 matplotlib.quiver.Barbs:198 of
 msgid ":meth:`linewidth <matplotlib.collections.Collection.set_linewidth>` or linewidths or lw"
-msgstr ""
+msgstr ":meth:`ancho de línea <matplotlib.collections.Collection.set_linewidth>o ancho de línea o lw"
 
 #: matplotlib.artist.Barbs.set:34 matplotlib.quiver.Barbs:198 of
 msgid "float or list of floats"
-msgstr ""
+msgstr "flotante o lista de flotantes"
 
 #: matplotlib.artist.Barbs.set:35 matplotlib.quiver.Barbs:199 of
 msgid ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
-msgstr ""
+msgstr ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
 
 #: matplotlib.artist.Barbs.set:35 matplotlib.quiver.Barbs:199 of
 msgid "`.Normalize` or None"
-msgstr ""
+msgstr "`.normalize` o Ninguno"
 
 #: matplotlib.artist.Barbs.set:36 matplotlib.quiver.Barbs:200 of
 msgid ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
-msgstr ""
+msgstr ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
 
 #: matplotlib.artist.Barbs.set:36 matplotlib.artist.Barbs.set:46
 #: matplotlib.quiver.Barbs:200 matplotlib.quiver.Barbs:210 of
 msgid "`.Transform`"
-msgstr ""
+msgstr "`.Transform`"
 
 #: matplotlib.quiver.Barbs:201 of
 msgid ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
-msgstr ""
+msgstr ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
 
 #: matplotlib.quiver.Barbs:201 of
 msgid "(N, 2) or (2,) array-like"
-msgstr ""
+msgstr "((N, 2) o (2,) array-like"
 
 #: matplotlib.artist.Barbs.set:38 matplotlib.quiver.Barbs:202 of
 msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
-msgstr ""
+msgstr ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
 
 #: matplotlib.artist.Barbs.set:38 matplotlib.quiver.Barbs:202 of
 msgid "`.AbstractPathEffect`"
-msgstr ""
+msgstr "`.AbstractPathEffect`"
 
 #: matplotlib.artist.Barbs.set:39 matplotlib.quiver.Barbs:203 of
 msgid ":meth:`paths <matplotlib.collections.PolyCollection.set_verts>`"
-msgstr ""
+msgstr ":meth:`rutas <matplotlib.collections.PolyCollection.set_verts>`"
 
 #: matplotlib.artist.Barbs.set:39 matplotlib.artist.Barbs.set:49
 #: matplotlib.quiver.Barbs:203 matplotlib.quiver.Barbs:213 of
 msgid "list of array-like"
-msgstr ""
+msgstr "lista de matriz"
 
 #: matplotlib.artist.Barbs.set:40 matplotlib.quiver.Barbs:204 of
 msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
-msgstr ""
+msgstr ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
 
 #: matplotlib.artist.Barbs.set:40 matplotlib.quiver.Barbs:204 of
 msgid "None or bool or float or callable"
-msgstr ""
+msgstr "None o bool o float o callable"
 
 #: matplotlib.artist.Barbs.set:41 matplotlib.quiver.Barbs:205 of
 msgid ":meth:`pickradius <matplotlib.collections.Collection.set_pickradius>`"
-msgstr ""
+msgstr ":meth:`pickradio <matplotlib.collections.Collection.set_pickradius>`"
 
 #: matplotlib.artist.Barbs.set:41 matplotlib.artist.Barbs.set:52
 #: matplotlib.quiver.Barbs:205 matplotlib.quiver.Barbs:216 of
 msgid "float"
-msgstr ""
+msgstr "de punto flotante (float)"
 
 #: matplotlib.artist.Barbs.set:42 matplotlib.quiver.Barbs:206 of
 msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
-msgstr ""
+msgstr ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
 
 #: matplotlib.artist.Barbs.set:43 matplotlib.quiver.Barbs:207 of
 msgid ":meth:`sizes <matplotlib.collections._CollectionWithSizes.set_sizes>`"
-msgstr ""
+msgstr ":meth:`tamaños <matplotlib.collections._CollectionWithSizes.set_sizes>`"
 
 #: matplotlib.artist.Barbs.set:43 matplotlib.quiver.Barbs:207 of
 msgid "ndarray or None"
-msgstr ""
+msgstr "ndarray o ninguno"
 
 #: matplotlib.artist.Barbs.set:44 matplotlib.quiver.Barbs:208 of
 msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
-msgstr ""
+msgstr ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
 
 #: matplotlib.artist.Barbs.set:44 matplotlib.quiver.Barbs:208 of
 msgid "(scale: float, length: float, randomness: float)"
-msgstr ""
+msgstr "(scale: float, length: float, randomness: float)"
 
 #: matplotlib.artist.Barbs.set:45 matplotlib.quiver.Barbs:209 of
 msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
-msgstr ""
+msgstr ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
 
 #: matplotlib.artist.Barbs.set:45 matplotlib.quiver.Barbs:209 of
 msgid "bool or None"
-msgstr ""
+msgstr "bool or None"
 
 #: matplotlib.artist.Barbs.set:46 matplotlib.quiver.Barbs:210 of
 msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
-msgstr ""
+msgstr ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
 
 #: matplotlib.artist.Barbs.set:47 matplotlib.quiver.Barbs:211 of
 msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
-msgstr ""
+msgstr ":meth:`url <matplotlib.artist.Artist.set_url>`"
 
 #: matplotlib.artist.Barbs.set:48 matplotlib.quiver.Barbs:212 of
 msgid ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
-msgstr ""
+msgstr ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
 
 #: matplotlib.artist.Barbs.set:48 matplotlib.quiver.Barbs:212 of
 msgid "list of str or None"
-msgstr ""
+msgstr "lista de str o ninguno"
 
 #: matplotlib.artist.Barbs.set:49 matplotlib.quiver.Barbs:213 of
 msgid ":meth:`verts <matplotlib.collections.PolyCollection.set_verts>`"
-msgstr ""
+msgstr ":meth:`verts <matplotlib.collections.PolyCollection.set_verts>`"
 
 #: matplotlib.artist.Barbs.set:50 matplotlib.quiver.Barbs:214 of
 msgid ":meth:`verts_and_codes <matplotlib.collections.PolyCollection.set_verts_and_codes>`"
-msgstr ""
+msgstr ":meth:`verts_and_codes <matplotlib.collections.PolyCollection.set_verts_and_codes>`"
 
 #: matplotlib.artist.Barbs.set:12 matplotlib.artist.Barbs.set:50
 #: matplotlib.quiver.Barbs:214 of
 msgid "unknown"
-msgstr ""
+msgstr "desconocido"
 
 #: matplotlib.artist.Barbs.set:51 matplotlib.quiver.Barbs:215 of
 msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
-msgstr ""
+msgstr ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
 
 #: matplotlib.artist.Barbs.set:52 matplotlib.quiver.Barbs:216 of
 msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
-msgstr ""
+msgstr ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
 
 #: matplotlib.artist.Barbs.set:2 of
 msgid "Set multiple properties at once."
-msgstr ""
+msgstr "Establece varias propiedades a la vez."
 
 #: matplotlib.artist.Barbs.set:4 of
 msgid "Supported properties are"
-msgstr ""
+msgstr "Las propiedades admitidas son"
 
 #: matplotlib.artist.Barbs.set:12 of
 msgid ":meth:`UVC <matplotlib.quiver.Barbs.set_UVC>`"
-msgstr ""
+msgstr ":meth:`UVC <matplotlib.quiver.Barbs.set_UVC>`"
 
 #: matplotlib.artist.Barbs.set:37 of
 msgid ":meth:`offsets <matplotlib.quiver.Barbs.set_offsets>`"
-msgstr ""
+msgstr ":meth:`offsets <matplotlib.quiver.Barbs.set_offsets>`"
 
 #: matplotlib.artist.Barbs.set:37 of
 msgid "sequence of pairs of floats"
-msgstr ""
+msgstr "secuencia de pares de flotantes"
 
 #: matplotlib.quiver.Barbs.set_offsets:2 of
 msgid "Set the offsets for the barb polygons.  This saves the offsets passed in and masks them as appropriate for the existing U/V data."
-msgstr ""
+msgstr "Establece los desplazamientos para los polígonos de barbas. Esto guarda los desplazamientos pasados y los enmascara como apropiado para los datos existentes de U/V."
 
 #: matplotlib.quiver.Barbs.set_offsets:22 of
 msgid "**xy**"
-msgstr ""
+msgstr "**xy**"
 

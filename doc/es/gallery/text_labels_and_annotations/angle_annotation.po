@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:30\n"
+"PO-Revision-Date: 2022-06-11 12:01\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,109 +20,109 @@ msgstr ""
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_text_labels_and_annotations_angle_annotation.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_text_labels_and_annotations_angle_annotation.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:23
 msgid "Scale invariant angle label"
-msgstr ""
+msgstr "Etiqueta de ángulo invariante de la escala"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:25
 msgid "This example shows how to create a scale invariant angle annotation. It is often useful to mark angles between lines or inside shapes with a circular arc. While Matplotlib provides an `~.patches.Arc`, an inherent problem when directly using it for such purposes is that an arc being circular in data space is not necessarily circular in display space. Also, the arc's radius is often best defined in a coordinate system which is independent of the actual data coordinates - at least if you want to be able to freely zoom into your plot without the annotation growing to infinity."
-msgstr ""
+msgstr "Este ejemplo muestra cómo crear una anotación de ángulo invariante de escala. A menudo es útil marcar ángulos entre líneas o dentro de formas con un arco circular. Aunque Matplotlib proporciona un `~.patches.Arc`, un problema inherente al utilizarlo directamente para tales fines es que un arco que es circular en el espacio de datos no es necesariamente circular en el espacio de visualización. Además, el radio del arco a menudo se define mejor en un sistema de coordenadas que es independiente de las coordenadas de los datos reales - al menos si quieres ser capaz de ampliar libremente en su parcela sin la anotación de crecer hasta el infinito."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:34
 msgid "This calls for a solution where the arc's center is defined in data space, but its radius in a physical unit like points or pixels, or as a ratio of the Axes dimension. The following ``AngleAnnotation`` class provides such solution."
-msgstr ""
+msgstr "Esto requiere una solución en la que el centro del arco se define en el espacio de datos, pero su radio en una unidad física como puntos o píxeles, o como un ratio de la dimensión Ejes. La siguiente clase ``AngleAnnotation`` proporciona dicha solución."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:38
 msgid "The example below serves two purposes:"
-msgstr ""
+msgstr "El ejemplo siguiente sirve para dos propósitos:"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:40
 msgid "It provides a ready-to-use solution for the problem of easily drawing angles in graphs."
-msgstr ""
+msgstr "Proporciona una solución lista para usar para el problema de dibujar fácilmente ángulos en los gráficos."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:42
 msgid "It shows how to subclass a Matplotlib artist to enhance its functionality, as well as giving a hands-on example on how to use Matplotlib's :doc:`transform system </tutorials/advanced/transforms_tutorial>`."
-msgstr ""
+msgstr "Muestra cómo subclasificar un artista de Matplotlib para mejorar su funcionalidad, además de dar un ejemplo práctico sobre cómo utilizar el sistema de transformaciones de Matplotlib :doc:`tutorials/advanced/transforms_tutorial>`."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:46
 msgid "If mainly interested in the former, you may copy the below class and jump to the :ref:`angle-annotation-usage` section."
-msgstr ""
+msgstr "Si te interesa principalmente lo primero, puedes copiar la clase de abajo y saltar a la sección :ref:`angle-annotation-usage`."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:52
 msgid "AngleAnnotation class"
-msgstr ""
+msgstr "Clase AngleAnnotation"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:53
 msgid "The essential idea here is to subclass `~.patches.Arc` and set its transform to the `~.transforms.IdentityTransform`, making the parameters of the arc defined in pixel space. We then override the ``Arc``'s attributes ``_center``, ``theta1``, ``theta2``, ``width`` and ``height`` and make them properties, coupling to internal methods that calculate the respective parameters each time the attribute is accessed and thereby ensuring that the arc in pixel space stays synchronized with the input points and size. For example, each time the arc's drawing method would query its ``_center`` attribute, instead of receiving the same number all over again, it will instead receive the result of the ``get_center_in_pixels`` method we defined in the subclass. This method transforms the center in data coordinates to pixels via the Axes transform ``ax.transData``. The size and the angles are calculated in a similar fashion, such that the arc changes its shape automatically when e.g. zooming or panning interactively."
-msgstr ""
+msgstr "La idea esencial aquí es subclasificar `~.patches.Arc` y establecer su transformación a la `~.transforms.IdentityTransform`, haciendo que los parámetros del arco se definan en el espacio de los píxeles. A continuación, sobrescribimos los atributos ``Arc``, ``theta1``, ``theta2``, ``width`` y ``height`` y los convertimos en propiedades, acoplando los métodos internos que calculan los respectivos parámetros cada vez que se accede al atributo y asegurando así que el arco en el espacio de píxeles se mantiene sincronizado con los puntos de entrada y el tamaño. Por ejemplo, cada vez que el método de dibujo del arco consulte su atributo ``center``, en lugar de recibir el mismo número de nuevo, recibirá el resultado del método ``get_center_in_pixels`` que hemos definido en la subclase. Este método transforma el centro en coordenadas de datos a píxeles mediante la transformación de ejes ``ax.transData``. El tamaño y los ángulos se calculan de forma similar, de manera que el arco cambia su forma automáticamente cuando, por ejemplo, se hace zoom o se hace un paneo interactivo."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:69
 msgid "The functionality of this class allows to annotate the arc with a text. This text is a `~.text.Annotation` stored in an attribute ``text``. Since the arc's position and radius are defined only at draw time, we need to update the text's position accordingly. This is done by reimplementing the ``Arc``'s ``draw()`` method to let it call an updating method for the text."
-msgstr ""
+msgstr "La funcionalidad de esta clase permite anotar el arco con un texto. Este texto es una `~.text.Annotation` almacenada en un atributo ``text``. Dado que la posición y el radio del arco se definen sólo en el momento de dibujar, tenemos que actualizar la posición del texto en consecuencia. Esto se hace reimplementando el método ``Arc`` de ``draw()`` para que llame a un método de actualización del texto."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:75
 msgid "The arc and the text will be added to the provided Axes at instantiation: it is hence not strictly necessary to keep a reference to it."
-msgstr ""
+msgstr "El arco y el texto se añadirán a los ejes proporcionados en la instanciación: por lo tanto, no es estrictamente necesario mantener una referencia a ella."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:250
 msgid "Usage"
-msgstr ""
+msgstr "Uso"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:252
 msgid "Required arguments to ``AngleAnnotation`` are the center of the arc, *xy*, and two points, such that the arc spans between the two vectors connecting *p1* and *p2* with *xy*, respectively. Those are given in data coordinates. Further arguments are the *size* of the arc and its *unit*. Additionally, a *text* can be specified, that will be drawn either in- or outside of the arc, according to the value of *textposition*. Usage of those arguments is shown below."
-msgstr ""
+msgstr "Los argumentos necesarios para ``AngleAnnotation`` son el centro del arco, *xy*, y dos puntos, tales que el arco abarca entre los dos vectores que conectan *p1* y *p2* con *xy*, respectivamente. Estos se dan en coordenadas de datos. Otros argumentos son el *tamaño* del arco y su *unidad*. Además, se puede especificar un *texto*, que se dibujará dentro o fuera del arco, según el valor de *posición del texto*. El uso de estos argumentos se muestra a continuación."
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:307
 msgid "``AngleLabel`` options"
-msgstr ""
+msgstr "Opciones de ``AngleLabel``"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:309
 msgid "The *textposition* and *unit* keyword arguments may be used to modify the location of the text label, as shown below:"
-msgstr ""
+msgstr "Los argumentos de la palabra clave *textposition* y *unit* pueden utilizarse para modificar la ubicación de la etiqueta de texto, como se muestra a continuación:"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:383
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:385
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:388
 msgid "`matplotlib.patches.Arc`"
-msgstr ""
+msgstr "`matplotlib.patches.Arc`"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:389
 msgid "`matplotlib.axes.Axes.annotate` / `matplotlib.pyplot.annotate`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.annotate` / `matplotlib.pyplot.annotate`"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:390
 msgid "`matplotlib.text.Annotation`"
-msgstr ""
+msgstr "`matplotlib.text.Annotation`"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:391
 msgid "`matplotlib.transforms.IdentityTransform`"
-msgstr ""
+msgstr "`matplotlib.transforms.IdentityTransform`"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:392
 msgid "`matplotlib.transforms.TransformedBbox`"
-msgstr ""
+msgstr "`matplotlib.transforms.TransformedBbox`"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:393
 msgid "`matplotlib.transforms.Bbox`"
-msgstr ""
+msgstr "`matplotlib.transforms.Bbox`"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:408
 msgid ":download:`Download Python source code: angle_annotation.py <angle_annotation.py>`"
-msgstr ""
+msgstr ":download:`Descargar el código fuente de Python: angle_annotation.py <angle_annotation.py>`"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:414
 msgid ":download:`Download Jupyter notebook: angle_annotation.ipynb <angle_annotation.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar el cuaderno Jupyter: angle_annotation.ipynb <angle_annotation.ipynb>`"
 
 #: ../../gallery/text_labels_and_annotations/angle_annotation.rst:421
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-05-11 15:30\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,125 +20,125 @@ msgstr ""
 
 #: ../../tutorials/colors/colormapnorms.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_colors_colormapnorms.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_colors_colormapnorms.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/colors/colormapnorms.rst:22
 msgid "Colormap Normalization"
-msgstr ""
+msgstr "Normalización del mapa de colores"
 
 #: ../../tutorials/colors/colormapnorms.rst:24
 msgid "Objects that use colormaps by default linearly map the colors in the colormap from data values *vmin* to *vmax*.  For example::"
-msgstr ""
+msgstr "Los objetos que utilizan mapas de colores por defecto asignan linealmente los colores en el mapa de colores desde los valores de datos *vmin* a *vmax*.  Por ejemplo::"
 
 #: ../../tutorials/colors/colormapnorms.rst:29
 msgid "will map the data in *Z* linearly from -1 to +1, so *Z=0* will give a color at the center of the colormap *RdBu_r* (white in this case)."
-msgstr ""
+msgstr "mapeará los datos en *Z* linealmente de -1 a +1, por lo que *Z=0* dará un color en el centro del mapa de colores *RdBu_r* (blanco en este caso)."
 
 #: ../../tutorials/colors/colormapnorms.rst:33
 msgid "Matplotlib does this mapping in two steps, with a normalization from the input data to [0, 1] occurring first, and then mapping onto the indices in the colormap.  Normalizations are classes defined in the :func:`matplotlib.colors` module.  The default, linear normalization is :func:`matplotlib.colors.Normalize`."
-msgstr ""
+msgstr "Matplotlib hace este mapeo en dos pasos, con una normalización de los datos de entrada a [0, 1] que ocurre primero, y luego el mapeo en los índices en el mapa de colores.  Las normalizaciones son clases definidas en el módulo :func:`matplotlib.colors`.  La normalización lineal por defecto es :func:`matplotlib.colors.Normalize`."
 
 #: ../../tutorials/colors/colormapnorms.rst:39
 msgid "Artists that map data to color pass the arguments *vmin* and *vmax* to construct a :func:`matplotlib.colors.Normalize` instance, then call it:"
-msgstr ""
+msgstr "Los artists que mapean datos a color pasan los argumentos *vmin* y *vmax* para construir una instancia :func:`matplotlib.colors.Normalize`, y luego la llaman:"
 
 #: ../../tutorials/colors/colormapnorms.rst:51
 msgid "However, there are sometimes cases where it is useful to map data to colormaps in a non-linear fashion."
-msgstr ""
+msgstr "Sin embargo, a veces hay casos en los que es útil asignar datos a mapas de colores de forma no lineal."
 
 #: ../../tutorials/colors/colormapnorms.rst:55
 msgid "Logarithmic"
-msgstr ""
+msgstr "Logarítmico"
 
 #: ../../tutorials/colors/colormapnorms.rst:57
 msgid "One of the most common transformations is to plot data by taking its logarithm (to the base-10).  This transformation is useful to display changes across disparate scales.  Using `.colors.LogNorm` normalizes the data via :math:`log_{10}`.  In the example below, there are two bumps, one much smaller than the other. Using `.colors.LogNorm`, the shape and location of each bump can clearly be seen:"
-msgstr ""
+msgstr "Una de las transformaciones más comunes es representar los datos tomando su logaritmo (en base 10).  Esta transformación es útil para mostrar los cambios a través de escalas dispares.  El uso de `.colors.LogNorm` normaliza los datos mediante :math:`log_{10}`.  En el ejemplo siguiente, hay dos topes, uno mucho más pequeño que la otro. Usando `.colors.LogNorm`, la forma y la ubicación de cada tope se puede ver claramente:"
 
 #: ../../tutorials/colors/colormapnorms.rst:110
 msgid "Centered"
-msgstr ""
+msgstr "Centrado"
 
 #: ../../tutorials/colors/colormapnorms.rst:112
 msgid "In many cases, data is symmetrical around a center, for example, positive and negative anomalies around a center 0. In this case, we would like the center to be mapped to 0.5 and the datapoint with the largest deviation from the center to be mapped to 1.0, if its value is greater than the center, or 0.0 otherwise. The norm `.colors.CenteredNorm` creates such a mapping automatically. It is well suited to be combined with a divergent colormap which uses different colors edges that meet in the center at an unsaturated color."
-msgstr ""
+msgstr "En muchos casos, los datos son simétricos alrededor de un centro, por ejemplo, anomalías positivas y negativas alrededor de un centro 0. En este caso, nos gustaría que el centro se mapeara a 0,5 y que el punto de datos con la mayor desviación del centro se mapeara a 1,0, si su valor es mayor que el centro, o 0,0 en caso contrario. La norma `.colors.CenteredNorm` crea este tipo de mapeo automáticamente. Es muy adecuada para ser combinada con un mapa de color divergente que utiliza aristas de colores diferentes que se encuentran en el centro en un color no saturado."
 
 #: ../../tutorials/colors/colormapnorms.rst:121
 msgid "If the center of symmetry is different from 0, it can be set with the *vcenter* argument. For logarithmic scaling on both sides of the center, see `.colors.SymLogNorm` below; to apply a different mapping above and below the center, use `.colors.TwoSlopeNorm` below."
-msgstr ""
+msgstr "Si el centro de simetría es diferente de 0, se puede establecer con el argumento *vcenter*. Para una escala logarítmica a ambos lados del centro, consulta `.colors.SymLogNorm` más abajo; para aplicar un mapeo diferente por encima y por debajo del centro, utiliza `.colors.TwoSlopeNorm` más abajo."
 
 #: ../../tutorials/colors/colormapnorms.rst:168
 msgid "Symmetric logarithmic"
-msgstr ""
+msgstr "Logártmica simétrica"
 
 #: ../../tutorials/colors/colormapnorms.rst:170
 msgid "Similarly, it sometimes happens that there is data that is positive and negative, but we would still like a logarithmic scaling applied to both.  In this case, the negative numbers are also scaled logarithmically, and mapped to smaller numbers; e.g., if ``vmin=-vmax``, then the negative numbers are mapped from 0 to 0.5 and the positive from 0.5 to 1."
-msgstr ""
+msgstr "Del mismo modo, a veces ocurre que hay datos que son positivos y negativos, pero aún así queremos que se aplique una escala logarítmica a ambos.  En este caso, los números negativos también se escalan logarítmicamente y se asignan a números más pequeños; por ejemplo, si ``vmin=-vmax``, los números negativos se asignan de 0 a 0,5 y los positivos de 0,5 a 1."
 
 #: ../../tutorials/colors/colormapnorms.rst:177
 msgid "Since the logarithm of values close to zero tends toward infinity, a small range around zero needs to be mapped linearly.  The parameter *linthresh* allows the user to specify the size of this range (-*linthresh*, *linthresh*).  The size of this range in the colormap is set by *linscale*.  When *linscale* == 1.0 (the default), the space used for the positive and negative halves of the linear range will be equal to one decade in the logarithmic range."
-msgstr ""
+msgstr "Dado que el logaritmo de los valores cercanos a cero tiende a infinito, es necesario mapear linealmente un pequeño rango alrededor de cero.  El parámetro *linthresh* permite al usuario especificar el tamaño de este rango (-*linthresh*, *linthresh*).  El tamaño de este rango en el mapa de colores se establece mediante *linscale*.  Cuando *linscale* == 1,0 (el valor por defecto), el espacio utilizado para las mitades positiva y negativa del rango lineal será igual a una década en el rango logarítmico."
 
 #: ../../tutorials/colors/colormapnorms.rst:223
 msgid "Power-law"
-msgstr ""
+msgstr "Ley de potencia"
 
 #: ../../tutorials/colors/colormapnorms.rst:225
 msgid "Sometimes it is useful to remap the colors onto a power-law relationship (i.e. :math:`y=x^{\\gamma}`, where :math:`\\gamma` is the power).  For this we use the `.colors.PowerNorm`.  It takes as an argument *gamma* (*gamma* == 1.0 will just yield the default linear normalization):"
-msgstr ""
+msgstr "A veces es útil reasignar los colores en una relación de ley de potencia (es decir, :math:`y=x^{\\gamma}`, donde :math:`\\gamma` es la potencia).  Para ello utilizamos el programa `.colors.PowerNorm`.  Toma como argumento *gamma* (*gamma* == 1.0 dará la normalización lineal por defecto):"
 
 #: ../../tutorials/colors/colormapnorms.rst:233
 msgid "There should probably be a good reason for plotting the data using this type of transformation.  Technical viewers are used to linear and logarithmic axes and data transformations.  Power laws are less common, and viewers should explicitly be made aware that they have been used."
-msgstr ""
+msgstr "Probablemente debería haber una buena razón para graficar los datos utilizando este tipo de transformación.  Los espectadores técnicos están acostumbrados a los ejes lineales y logarítmicos y a las transformaciones de datos.  Las leyes de potencia son menos comunes, y los espectadores deben saber explícitamente que se han utilizado."
 
 #: ../../tutorials/colors/colormapnorms.rst:275
 msgid "Discrete bounds"
-msgstr ""
+msgstr "Límites discretos"
 
 #: ../../tutorials/colors/colormapnorms.rst:277
 msgid "Another normalization that comes with Matplotlib is `.colors.BoundaryNorm`. In addition to *vmin* and *vmax*, this takes as arguments boundaries between which data is to be mapped.  The colors are then linearly distributed between these \"bounds\".  It can also take an *extend* argument to add upper and/or lower out-of-bounds values to the range over which the colors are distributed. For instance:"
-msgstr ""
+msgstr "Otra normalización que viene con Matplotlib es `.colors.BoundaryNorm`. Además de *vmin* y *vmax*, toma como argumentos los límites entre los que se van a mapear los datos.  Los colores se distribuyen linealmente entre estos \"límites\".  También puede tomar un argumento *extend* para añadir valores superiores y/o inferiores fuera de los límites al rango sobre el que se distribuyen los colores. Por ejemplo:"
 
 #: ../../tutorials/colors/colormapnorms.rst:295
 msgid "Note: Unlike the other norms, this norm returns values from 0 to *ncolors*-1."
-msgstr ""
+msgstr "Nota: A diferencia de las otras normas, esta norma devuelve valores de 0 a *ncolors*-1."
 
 #: ../../tutorials/colors/colormapnorms.rst:354
 msgid "TwoSlopeNorm: Different mapping on either side of a center"
-msgstr ""
+msgstr "TwoSlopeNorm: Diferente mapeo a ambos lados de un centro"
 
 #: ../../tutorials/colors/colormapnorms.rst:356
 msgid "Sometimes we want to have a different colormap on either side of a conceptual center point, and we want those two colormaps to have different linear scales.  An example is a topographic map where the land and ocean have a center at zero, but land typically has a greater elevation range than the water has depth range, and they are often represented by a different colormap."
-msgstr ""
+msgstr "A veces queremos tener un mapa de colores diferente a cada lado de un punto central conceptual, y queremos que esos dos mapas de colores tengan diferentes escalas lineales.  Un ejemplo es un mapa topográfico en el que la tierra y el océano tienen un centro en cero, pero la tierra suele tener un mayor rango de elevación que el agua tiene un rango de profundidad, y a menudo están representados por un mapa de color diferente."
 
 #: ../../tutorials/colors/colormapnorms.rst:412
 msgid "FuncNorm: Arbitrary function normalization"
-msgstr ""
+msgstr "FuncNorm: Normalización arbitraria de funciones"
 
 #: ../../tutorials/colors/colormapnorms.rst:414
 msgid "If the above norms do not provide the normalization you want, you can use `~.colors.FuncNorm` to define your own.  Note that this example is the same as `~.colors.PowerNorm` with a power of 0.5:"
-msgstr ""
+msgstr "Si las normas anteriores no proporcionan la normalización que desea, puedes utilizar `~.colors.FuncNorm` para definir la tuya propia.  Ten en cuenta que este ejemplo es el mismo que `~.colors.PowerNorm` con una potencia de 0,5:"
 
 #: ../../tutorials/colors/colormapnorms.rst:456
 msgid "Custom normalization: Manually implement two linear ranges"
-msgstr ""
+msgstr "Normalización personalizada: Implementar manualmente dos rangos lineales"
 
 #: ../../tutorials/colors/colormapnorms.rst:458
 msgid "The `.TwoSlopeNorm` described above makes a useful example for defining your own norm.  Note for the colorbar to work, you must define an inverse for your norm:"
-msgstr ""
+msgstr "La norma `.TwoSlopeNorm` descrita anteriormente es un ejemplo útil para definir su propia norma.  Ten en cuenta que para que la barra de colores funcione, debe definir una inversa para su norma:"
 
 #: ../../tutorials/colors/colormapnorms.rst:512
 msgid "**Total running time of the script:** ( 0 minutes  5.486 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** (0 minutos 5.486 segundos)"
 
 #: ../../tutorials/colors/colormapnorms.rst:527
 msgid ":download:`Download Python source code: colormapnorms.py <colormapnorms.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: colormapnorms.py <colormapnorms.py>`"
 
 #: ../../tutorials/colors/colormapnorms.rst:533
 msgid ":download:`Download Jupyter notebook: colormapnorms.ipynb <colormapnorms.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: colormapnorms.ipynb <colormapnorms.ipynb>`"
 
 #: ../../tutorials/colors/colormapnorms.rst:540
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

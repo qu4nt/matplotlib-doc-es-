@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:25\n"
+"PO-Revision-Date: 2022-06-23 14:39\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,233 +20,233 @@ msgstr ""
 
 #: ../../devel/testing.rst:5
 msgid "Testing"
-msgstr ""
+msgstr "Prueba"
 
 #: ../../devel/testing.rst:7
 msgid "Matplotlib uses the pytest_ framework."
-msgstr ""
+msgstr "Matplotlib utiliza el framework pytest_."
 
 #: ../../devel/testing.rst:9
 msgid "The tests are in :file:`lib/matplotlib/tests`, and customizations to the pytest testing infrastructure are in :mod:`matplotlib.testing`."
-msgstr ""
+msgstr "Las pruebas están en :file:`lib/matplotlib/tests`, y las personalizaciones de la infraestructura de pruebas de pytest están en :mod:`matplotlib.testing`."
 
 #: ../../devel/testing.rst:19
 msgid "Requirements"
-msgstr ""
+msgstr "Requisitos"
 
 #: ../../devel/testing.rst:21
 msgid "To run the tests you will need to :ref:`set up Matplotlib for development <installing_for_devs>`. Note in particular the :ref:`additional dependencies <test-dependencies>` for testing."
-msgstr ""
+msgstr "Para ejecutar las pruebas tendrá que :ref:`configurar Matplotlib para el desarrollo <installing_for_devs>`. Tenga en cuenta, en particular, la :ref:`dependencias adicionales <test-dependencies>` para las pruebas."
 
 #: ../../devel/testing.rst:27
 msgid "We will assume that you want to run the tests in a development setup."
-msgstr ""
+msgstr "Asumiremos que quieres ejecutar las pruebas en una configuración de desarrollo."
 
 #: ../../devel/testing.rst:29
 msgid "While you can run the tests against a regular installed version of Matplotlib, this is a far less common use case. You still need the :ref:`additional dependencies <test-dependencies>` for testing. You have to additionally get the reference images from the repository, because they are not distributed with pre-built Matplotlib packages."
-msgstr ""
+msgstr "Aunque puede ejecutar las pruebas contra una versión normal instalada de Matplotlib, este es un caso de uso mucho menos común. Todavía necesita las :ref:`dependencias adicionales <test-dependencies>` para las pruebas. Tienes que obtener adicionalmente las imágenes de referencia del repositorio, porque no se distribuyen con los paquetes pre-construidos de Matplotlib."
 
 #: ../../devel/testing.rst:36
 msgid "Running the tests"
-msgstr ""
+msgstr "Ejecución de pruebas"
 
 #: ../../devel/testing.rst:38
 msgid "In the root directory of your development repository run::"
-msgstr ""
+msgstr "En el directorio raíz de su repositorio de desarrollo ejecute::"
 
 #: ../../devel/testing.rst:43
 msgid "pytest can be configured via a lot of `command-line parameters`_. Some particularly useful ones are:"
-msgstr ""
+msgstr "pytest puede ser configurado a través de un montón de `command-line parameters`_. Algunos particularmente útiles son:"
 
 #: ../../devel/testing.rst:47
 msgid "``-v`` or ``--verbose``"
-msgstr ""
+msgstr "``-v`` o ``--verbose``"
 
 #: ../../devel/testing.rst:47
 msgid "Be more verbose"
-msgstr ""
+msgstr "Ser más verbose"
 
 #: ../../devel/testing.rst:48
 msgid "``-n NUM``"
-msgstr ""
+msgstr "``-n NUM``"
 
 #: ../../devel/testing.rst:48
 msgid "Run tests in parallel over NUM processes (requires pytest-xdist_)"
-msgstr ""
+msgstr "Ejecutar pruebas en paralelo sobre procesos NUM (requiere pytest-xdist_)"
 
 #: ../../devel/testing.rst:50
 msgid "``--capture=no`` or ``-s``"
-msgstr ""
+msgstr "``--capture=no`` o ``-s``"
 
 #: ../../devel/testing.rst:50
 msgid "Do not capture stdout"
-msgstr ""
+msgstr "No captura stdout"
 
 #: ../../devel/testing.rst:53
 msgid "To run a single test from the command line, you can provide a file path, optionally followed by the function separated by two colons, e.g., (tests do not need to be installed, but Matplotlib should be)::"
-msgstr ""
+msgstr "Para ejecutar una sola prueba desde la línea de comandos, puede proporcionar una ruta de archivo, opcionalmente seguida de la función separada por dos dos puntos, por ejemplo, (las pruebas no necesitan estar instaladas, pero Matplotlib debería estarlo)::"
 
 #: ../../devel/testing.rst:64
 msgid "Writing a simple test"
-msgstr ""
+msgstr "Escribir una prueba sencilla"
 
 #: ../../devel/testing.rst:66
 msgid "Many elements of Matplotlib can be tested using standard tests. For example, here is a test from :file:`matplotlib/tests/test_basic.py`::"
-msgstr ""
+msgstr "Muchos elementos de Matplotlib pueden ser probados utilizando tests estándar. Por ejemplo, aquí hay una prueba de :file:`matplotlib/tests/test_basic.py`::"
 
 #: ../../devel/testing.rst:75
 msgid "Pytest determines which functions are tests by searching for files whose names begin with ``\"test_\"`` and then within those files for functions beginning with ``\"test\"`` or classes beginning with ``\"Test\"``."
-msgstr ""
+msgstr "Pytest determina qué funciones son pruebas buscando archivos cuyo nombre empiece por ``\"test_\"`` y luego, dentro de esos archivos, funciones que empiecen por ``\"test\"`` o clases que empiecen por ``\"Test\"``."
 
 #: ../../devel/testing.rst:79
 msgid "Some tests have internal side effects that need to be cleaned up after their execution (such as created figures or modified `.rcParams`). The pytest fixture ``matplotlib.testing.conftest.mpl_test_settings`` will automatically clean these up; there is no need to do anything further."
-msgstr ""
+msgstr "Algunas pruebas tienen efectos secundarios internos que necesitan ser limpiados después de su ejecución (como figuras creadas o `.rcParams` modificados). El fixture de pytest ``matplotlib.testing.conftest.mpl_test_settings`` los limpiará automáticamente; no es necesario hacer nada más."
 
 #: ../../devel/testing.rst:85
 msgid "Random data in tests"
-msgstr ""
+msgstr "Datos aleatorios en las pruebas"
 
 #: ../../devel/testing.rst:87
 msgid "Random data is a very convenient way to generate data for examples, however the randomness is problematic for testing (as the tests must be deterministic!).  To work around this set the seed in each test. For numpy use::"
-msgstr ""
+msgstr "Los datos aleatorios son una forma muy conveniente de generar datos para los ejemplos, sin embargo la aleatoriedad es problemática para las pruebas (¡ya que las pruebas deben ser deterministas!).  Para evitarlo, hay que establecer la semilla en cada prueba. Para numpy usa::"
 
 #: ../../devel/testing.rst:95
 msgid "The seed is John Hunter's birthday."
-msgstr ""
+msgstr "La semilla es el cumpleaños de John Hunter."
 
 #: ../../devel/testing.rst:98
 msgid "Writing an image comparison test"
-msgstr ""
+msgstr "Escribir una prueba de comparación de imágenes"
 
 #: ../../devel/testing.rst:100
 msgid "Writing an image-based test is only slightly more difficult than a simple test. The main consideration is that you must specify the \"baseline\", or expected, images in the `~matplotlib.testing.decorators.image_comparison` decorator. For example, this test generates a single image and automatically tests it::"
-msgstr ""
+msgstr "Escribir una prueba basada en imágenes es sólo ligeramente más difícil que una prueba simple. La principal consideración es que debe especificar las imágenes \"de referencia\", o esperadas, en el decorador `~matplotlib.testing.decorators.image_comparison`. Por ejemplo, esta prueba genera una sola imagen y la prueba automáticamente::"
 
 #: ../../devel/testing.rst:115
 msgid "The first time this test is run, there will be no baseline image to compare against, so the test will fail.  Copy the output images (in this case :file:`result_images/test_lines/test_line_dashes.png`) to the correct subdirectory of :file:`baseline_images` tree in the source directory (in this case :file:`lib/matplotlib/tests/baseline_images/test_lines`).  Put this new file under source code revision control (with ``git add``).  When rerunning the tests, they should now pass."
-msgstr ""
+msgstr "La primera vez que se ejecute esta prueba, no habrá ninguna imagen de referencia con la que comparar, por lo que la prueba fallará.  Copia las imágenes de salida (en este caso :file:`result_images/test_lines/test_line_dashes.png`) al subdirectorio correcto del árbol :file:`baseline_images` en el directorio fuente (en este caso :file:`lib/matplotlib/tests/baseline_images/test_lines`).  Poner este nuevo archivo bajo control de revisión del código fuente (con ``git add``).  Al volver a ejecutar las pruebas, éstas deberían pasar."
 
 #: ../../devel/testing.rst:123
 msgid "Baseline images take a lot of space in the Matplotlib repository. An alternative approach for image comparison tests is to use the `~matplotlib.testing.decorators.check_figures_equal` decorator, which should be used to decorate a function taking two `.Figure` parameters and draws the same images on the figures using two different methods (the tested method and the baseline method).  The decorator will arrange for setting up the figures and then collect the drawn results and compare them."
-msgstr ""
+msgstr "Las imágenes de referencia ocupan mucho espacio en el repositorio de Matplotlib. Un enfoque alternativo para las pruebas de comparación de imágenes es utilizar el decorador `~matplotlib.testing.decorators.check_figures_equal`, que debe utilizarse para decorar una función que toma dos parámetros `.Figure` y dibuja las mismas imágenes en las figuras utilizando dos métodos diferentes (el método probado y el método de línea de base).  El decorador se encargará de configurar las figuras y luego recogerá los resultados dibujados y los comparará."
 
 #: ../../devel/testing.rst:131
 msgid "See the documentation of `~matplotlib.testing.decorators.image_comparison` and `~matplotlib.testing.decorators.check_figures_equal` for additional information about their use."
-msgstr ""
+msgstr "Consulte la documentación de `~matplotlib.testing.decorators.image_comparison` y `~matplotlib.testing.decorators.check_figures_equal` para obtener información adicional sobre su uso."
 
 #: ../../devel/testing.rst:136
 msgid "Creating a new module in matplotlib.tests"
-msgstr ""
+msgstr "Creación de un nuevo módulo en matplotlib.tests"
 
 #: ../../devel/testing.rst:138
 msgid "We try to keep the tests categorized by the primary module they are testing.  For example, the tests related to the ``mathtext.py`` module are in ``test_mathtext.py``."
-msgstr ""
+msgstr "Intentamos mantener las pruebas clasificadas por el módulo principal que están probando.  Por ejemplo, las pruebas relacionadas con el módulo ``mathtext.py`` están en ``test_mathtext.py``."
 
 #: ../../devel/testing.rst:143
 msgid "Using GitHub Actions for CI"
-msgstr ""
+msgstr "Uso de las acciones de GitHub para el CI"
 
 #: ../../devel/testing.rst:145
 msgid "`GitHub Actions <https://docs.github.com/en/actions>`_ is a hosted CI system \"in the cloud\"."
-msgstr ""
+msgstr "`GitHub Actions <https://docs.github.com/en/actions>`_ es un sistema de CI alojado \"en la nube\"."
 
 #: ../../devel/testing.rst:148
 msgid "GitHub Actions is configured to receive notifications of new commits to GitHub repos and to run builds or tests when it sees these new commits. It looks for a YAML files in ``.github/workflows`` to see how to test the project."
-msgstr ""
+msgstr "GitHub Actions está configurado para recibir notificaciones de nuevos commits en los repos de GitHub y para ejecutar builds o tests cuando vea estos nuevos commits. Busca un archivo YAML en ``.github/workflows`` para ver cómo probar el proyecto."
 
 #: ../../devel/testing.rst:152
 msgid "GitHub Actions is already enabled for the `main Matplotlib GitHub repository <https://github.com/matplotlib/matplotlib/>`_ -- for example, see `the Tests workflows <https://github.com/matplotlib/matplotlib/actions?query=workflow%3ATests>`_."
-msgstr ""
+msgstr "Las Acciones de GitHub ya están activadas para el `repositorio principal de Matplotlib en GitHub <https://github.com/matplotlib/matplotlib/>`_ -- por ejemplo, ver `los flujos de trabajo de Pruebas <https://github.com/matplotlib/matplotlib/actions?query=workflow%3ATests>`_."
 
 #: ../../devel/testing.rst:157
 msgid "GitHub Actions should be automatically enabled for your personal Matplotlib fork once the YAML workflow files are in it. It generally isn't necessary to look at these workflows, since any pull request submitted against the main Matplotlib repository will be tested."
-msgstr ""
+msgstr "Las acciones de GitHub deberían activarse automáticamente para su fork personal de Matplotlib una vez que los archivos de flujo de trabajo YAML estén en él. Generalmente no es necesario mirar estos flujos de trabajo, ya que cualquier pull request enviado contra el repositorio principal de Matplotlib será probado."
 
 #: ../../devel/testing.rst:162
 msgid "You can see the GitHub Actions results at https://github.com/your_GitHub_user_name/matplotlib/actions -- here's `an example <https://github.com/QuLogic/matplotlib/actions>`_."
-msgstr ""
+msgstr "Puedes ver los resultados de las acciones de GitHub en https://github.com/your_GitHub_user_name/matplotlib/actions -- aquí tienes `un ejemplo <https://github.com/QuLogic/matplotlib/actions>`_."
 
 #: ../../devel/testing.rst:168
 msgid "Using tox"
-msgstr ""
+msgstr "Uso de tox"
 
 #: ../../devel/testing.rst:170
 msgid "`Tox <https://tox.readthedocs.io/en/latest/>`_ is a tool for running tests against multiple Python environments, including multiple versions of Python (e.g., 3.6, 3.7) and even different Python implementations altogether (e.g., CPython, PyPy, Jython, etc.), as long as all these versions are available on your system's $PATH (consider using your system package manager, e.g. apt-get, yum, or Homebrew, to install them)."
-msgstr ""
+msgstr "`Tox <https://tox.readthedocs.io/en/latest/>`_ es una herramienta para ejecutar pruebas contra múltiples entornos de Python, incluyendo múltiples versiones de Python (por ejemplo, 3.6, 3.7) e incluso diferentes implementaciones de Python en conjunto (por ejemplo, CPython, PyPy, Jython, etc.), siempre y cuando todas estas versiones estén disponibles en el $PATH de su sistema (considere el uso de su gestor de paquetes del sistema, por ejemplo, apt-get, yum, o Homebrew, para instalarlos)."
 
 #: ../../devel/testing.rst:177
 msgid "tox makes it easy to determine if your working copy introduced any regressions before submitting a pull request. Here's how to use it:"
-msgstr ""
+msgstr "tox hace que sea fácil determinar si su copia de trabajo introdujo alguna regresión antes de enviar un pull request. Así es como se usa:"
 
 #: ../../devel/testing.rst:185
 msgid "You can also run tox on a subset of environments:"
-msgstr ""
+msgstr "También puede ejecutar tox en un subconjunto de entornos:"
 
 #: ../../devel/testing.rst:191
 msgid "Tox processes everything serially so it can take a long time to test several environments. To speed it up, you might try using a new, parallelized version of tox called ``detox``. Give this a try:"
-msgstr ""
+msgstr "Tox procesa todo en serie, por lo que puede llevar mucho tiempo probar varios entornos. Para acelerarlo, puedes intentar usar una nueva versión paralela de tox llamada ``detox``. Pruébalo:"
 
 #: ../../devel/testing.rst:200
 msgid "Tox is configured using a file called ``tox.ini``. You may need to edit this file if you want to add new environments to test (e.g., ``py33``) or if you want to tweak the dependencies or the way the tests are run. For more info on the ``tox.ini`` file, see the `Tox Configuration Specification <https://tox.readthedocs.io/en/latest/config.html>`_."
-msgstr ""
+msgstr "Tox se configura mediante un archivo llamado ``tox.ini``. Es posible que tengas que editar este archivo si quieres añadir nuevos entornos para probar (por ejemplo, ``py33``) o si quieres modificar las dependencias o la forma de ejecutar las pruebas. Para más información sobre el archivo ``tox.ini``, consulta la `Especificación de configuración de Tox <https://tox.readthedocs.io/en/latest/config.html>`_."
 
 #: ../../devel/testing.rst:208
 msgid "Building old versions of Matplotlib"
-msgstr ""
+msgstr "Construir versiones antiguas de Matplotlib"
 
 #: ../../devel/testing.rst:210
 msgid "When running a ``git bisect`` to see which commit introduced a certain bug, you may (rarely) need to build very old versions of Matplotlib.  The following constraints need to be taken into account:"
-msgstr ""
+msgstr "Cuando se ejecuta un ``git bisect`` para ver qué commit introdujo un determinado error, es posible que (raramente) se necesite construir versiones muy antiguas de Matplotlib.  Hay que tener en cuenta las siguientes limitaciones:"
 
 #: ../../devel/testing.rst:214
 msgid "Matplotlib 1.3 (or earlier) requires numpy 1.8 (or earlier)."
-msgstr ""
+msgstr "Matplotlib 1.3 (o anterior) requiere numpy 1.8 (o anterior)."
 
 #: ../../devel/testing.rst:217
 msgid "Testing released versions of Matplotlib"
-msgstr ""
+msgstr "Prueba de las versiones liberadas de Matplotlib"
 
 #: ../../devel/testing.rst:218
 msgid "Running the tests on an installation of a released version (e.g. PyPI package or conda package) also requires additional setup."
-msgstr ""
+msgstr "Ejecutar las pruebas en una instalación de una versión liberada (por ejemplo, el paquete PyPI o el paquete conda) también requiere una configuración adicional."
 
 #: ../../devel/testing.rst:223
 msgid "For an end-user, there is usually no need to run the tests on released versions of Matplotlib. Official releases are tested before publishing."
-msgstr ""
+msgstr "Para un usuario final, normalmente no hay necesidad de ejecutar las pruebas en las versiones liberadas de Matplotlib. Las versiones oficiales se prueban antes de su publicación."
 
 #: ../../devel/testing.rst:227
 msgid "Install additional dependencies"
-msgstr ""
+msgstr "Instalar dependencias adicionales"
 
 #: ../../devel/testing.rst:228
 msgid "Install the :ref:`additional dependencies for testing <test-dependencies>`."
-msgstr ""
+msgstr "Instala las :ref:`dependencias adicionales para probar <test-dependencies>`."
 
 #: ../../devel/testing.rst:231
 msgid "Obtain the reference images"
-msgstr ""
+msgstr "Obtener las imágenes de referencia"
 
 #: ../../devel/testing.rst:232
 msgid "Many tests compare the plot result against reference images. The reference images are not part of the regular packaged versions (pip wheels or conda packages). If you want to run tests with reference images, you need to obtain the reference images matching the version of Matplotlib you want to test."
-msgstr ""
+msgstr "Muchas pruebas comparan el resultado del gráfico con imágenes de referencia. Las imágenes de referencia no forman parte de las versiones regulares empaquetadas (wheels pip o paquetes conda). Si quieres ejecutar pruebas con imágenes de referencia, necesitas obtener las imágenes de referencia que correspondan con la versión de Matplotlib que quieres probar."
 
 #: ../../devel/testing.rst:237
 msgid "To do so, either download the matching source distribution ``matplotlib-X.Y.Z.tar.gz`` from `PyPI <https://pypi.org/project/matplotlib/>`_ or alternatively, clone the git repository and ``git checkout vX.Y.Z``. Copy the folder :file:`lib/matplotlib/tests/baseline_images` to the folder :file:`matplotlib/tests` of your the matplotlib installation to test. The correct target folder can be found using::"
-msgstr ""
+msgstr "Para ello, descarga la distribución fuente correspondiente ``matplotlib-X.Y.Z.tar.gz`` de `PyPI <https://pypi.org/project/matplotlib/>`_ o bien clona el repositorio git y ``git checkout vX.Y.Z``. Copia la carpeta :file:`lib/matplotlib/tests/baseline_images` a la carpeta :file:`matplotlib/tests` de su instalación de matplotlib a probar. La carpeta de destino correcta se puede encontrar utilizando::"
 
 #: ../../devel/testing.rst:246
 msgid "An analogous copying of :file:`lib/mpl_toolkits/tests/baseline_images` is necessary for testing ``mpl_toolkits``."
-msgstr ""
+msgstr "Una copia análoga de :file:`lib/mpl_toolkits/tests/baseline_images` es necesaria para probar ``mpl_toolkits``."
 
 #: ../../devel/testing.rst:250
 msgid "Run the tests"
-msgstr ""
+msgstr "Ejecutar las pruebas"
 
 #: ../../devel/testing.rst:251
 msgid "To run the all the tests on your installed version of Matplotlib::"
-msgstr ""
+msgstr "Para ejecutar todas las pruebas en su versión instalada de Matplotlib::"
 
 #: ../../devel/testing.rst:255
 msgid "The test discovery scope can be narrowed to single test modules or even single functions::"
-msgstr ""
+msgstr "El alcance de la detección de pruebas puede limitarse a módulos de prueba individuales o incluso a funciones individuales::"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:23\n"
+"PO-Revision-Date: 2022-11-02 14:10\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,47 +20,47 @@ msgstr ""
 
 #: ../../api/legend_handler_api.rst:3
 msgid "``matplotlib.legend_handler``"
-msgstr ""
+msgstr "``matplotlib.legend_handler``"
 
 #: matplotlib.legend_handler:1 of
 msgid "Default legend handlers."
-msgstr ""
+msgstr "Manejadores de leyendas predeterminados."
 
 #: matplotlib.legend_handler:5 of
 msgid "This is a low-level legend API, which most end users do not need."
-msgstr ""
+msgstr "Esta es una API de bajo nivel de leyenda, que la mayoría de los usuarios finales no necesitan."
 
 #: matplotlib.legend_handler:7 of
 msgid "We recommend that you are familiar with the :doc:`legend guide </tutorials/intermediate/legend_guide>` before reading this documentation."
-msgstr ""
+msgstr "Te recomendamos que estés familiarizado con la :doc:`guía de leyenda </tutorials/intermediate/legend_guide>` antes de leer esta documentación."
 
 #: matplotlib.legend_handler:10 of
 msgid "Legend handlers are expected to be a callable object with a following signature. ::"
-msgstr ""
+msgstr "Se espera que los manejadores de leyendas sean un objeto llamable con una siguiente firma. ::"
 
 #: matplotlib.legend_handler:15 of
 msgid "Where *legend* is the legend itself, *orig_handle* is the original plot, *fontsize* is the fontsize in pixels, and *handlebox* is a OffsetBox instance. Within the call, you should create relevant artists (using relevant properties from the *legend* and/or *orig_handle*) and add them into the handlebox. The artists needs to be scaled according to the fontsize (note that the size is in pixel, i.e., this is dpi-scaled value)."
-msgstr ""
+msgstr "Donde la *leyenda* es la leyenda misma, *orig_handle* es la gráfica original, *fontsize* es el tamaño de la fuente en píxeles y *handlebox* es una instancia de OffsetBox. Dentro de la llamada, debe crear artistas relevantes (usando propiedades relevantes de la *leyend* y/o *origin_handle*) y agregarlos al handlebox. Los artistas deben ser escalados según el tamaño de la fuente (tenga en cuenta que el tamaño está en píxeles, es decir, este es el valor escalado en dpi)."
 
 #: matplotlib.legend_handler:23 of
 msgid "This module includes definition of several legend handler classes derived from the base class (HandlerBase) with the following method::"
-msgstr ""
+msgstr "Este módulo incluye la definición de varias clases manejadoras de leyendas derivadas de la clase base (HandlerBase) con el siguiente método::"
 
 #: matplotlib.legend_handler.HandlerBase:2 of
 msgid "A Base class for default legend handlers."
-msgstr ""
+msgstr "Una clase Base para los manejadores de leyendas predeterminados."
 
 #: matplotlib.legend_handler.HandlerBase:4 of
 msgid "The derived classes are meant to override *create_artists* method, which has a following signature.::"
-msgstr ""
+msgstr "Las clases derivadas están destinadas a anular el método *create_artists*, el cual tiene una firma siguiente.::"
 
 #: matplotlib.legend_handler.HandlerBase:11 of
 msgid "The overridden method needs to create artists of the given transform that fits in the given dimension (xdescent, ydescent, width, height) that are scaled by fontsize if necessary."
-msgstr ""
+msgstr "El método sobreescrito necesita crear artistas de la transformación dada que se ajusta a la dimensión dada (xdescent, Ascenso, ancho, altura) que son escalados por tamaño de fuente si es necesario."
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:2 of
 msgid "Return the artist that this HandlerBase generates for the given original artist/handle."
-msgstr ""
+msgstr "Devuelve el artista que esta Base de HandlerBase genera para el artista/asa original dado."
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist
 #: matplotlib.legend_handler.HandlerCircleCollection
@@ -76,59 +76,59 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerStem matplotlib.legend_handler.HandlerTuple
 #: of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:9 of
 msgid "**legend** : `~matplotlib.legend.Legend`"
-msgstr ""
+msgstr "**leyenda** : `~matplotlib.legend.Legend`"
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:8 of
 msgid "Legend"
-msgstr ""
+msgstr "Leyenda"
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:9 of
 msgid "The legend for which these legend artists are being created."
-msgstr ""
+msgstr "La leyenda para la que se crean estos artistas leyendas."
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:12 of
 msgid "**orig_handle** : :class:`matplotlib.artist.Artist` or similar"
-msgstr ""
+msgstr "**orig_handle** : :class:`matplotlib.artist.Artist` o similar"
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:11 of
 msgid "matplotlib.artist.Artist or similar"
-msgstr ""
+msgstr "matplotlib.artist.Artista o similar"
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:12 of
 msgid "The object for which these legend artists are being created."
-msgstr ""
+msgstr "El objeto para el que se crean estos artistas leyendas."
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:16 of
 msgid "**fontsize**"
-msgstr ""
+msgstr "**fontsize**"
 
 #: of
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:15 of
 msgid "The fontsize in pixels. The artists being created should be scaled according to the given fontsize."
-msgstr ""
+msgstr "El tamaño de fuente en píxeles. Los artistas que se están creando deben escalarse de acuerdo con el tamaño de fuente dado."
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:34 of
 msgid "**handlebox** : `matplotlib.offsetbox.OffsetBox`"
-msgstr ""
+msgstr "**handlebox** : `matplotlib.offsetbox.OffsetBox`"
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:33 of
 msgid "matplotlib.offsetbox.OffsetBox"
-msgstr ""
+msgstr "matplotlib.offsetbox.OffsetBox"
 
 #: matplotlib.legend_handler.HandlerBase.legend_artist:19 of
 msgid "The box which has been created to hold this legend entry's artists. Artists created in the `legend_artist` method must be added to this handlebox inside this method."
-msgstr ""
+msgstr "La caja que se ha creado para albergar a los artistas de esta leyenda. Los artistas creados en el método `legend_artist` deben ser añadidos a este handlebox dentro de este método."
 
 #: matplotlib.legend_handler.HandlerCircleCollection:2 of
 msgid "Handler for `.CircleCollection`\\s."
-msgstr ""
+msgstr "Manejador para `.CircleCollection`\\s."
 
 #: matplotlib.legend_handler.HandlerCircleCollection:29
 #: matplotlib.legend_handler.HandlerErrorbar:32
@@ -141,7 +141,7 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerRegularPolyCollection:29
 #: matplotlib.legend_handler.HandlerStem:32 of
 msgid "**numpoints**"
-msgstr ""
+msgstr "**numpoints**"
 
 #: matplotlib.legend_handler.HandlerCircleCollection:29
 #: matplotlib.legend_handler.HandlerErrorbar:32
@@ -154,7 +154,7 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerRegularPolyCollection:29
 #: matplotlib.legend_handler.HandlerStem:32 of
 msgid "Number of points to show in legend entry."
-msgstr ""
+msgstr "Número de puntos a mostrar en la entrada de la leyenda."
 
 #: matplotlib.legend_handler.HandlerCircleCollection:33
 #: matplotlib.legend_handler.HandlerNpointsYoffsets:34
@@ -162,11 +162,11 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerRegularPolyCollection:33
 #: matplotlib.legend_handler.HandlerStem:39 of
 msgid "**yoffsets**"
-msgstr ""
+msgstr "**yoffsets**"
 
 #: of
 msgid "array of floats"
-msgstr ""
+msgstr "array de flotantes"
 
 #: matplotlib.legend_handler.HandlerCircleCollection:32
 #: matplotlib.legend_handler.HandlerNpointsYoffsets:33
@@ -174,7 +174,7 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerRegularPolyCollection:32
 #: matplotlib.legend_handler.HandlerStem:38 of
 msgid "Length *numpoints* list of y offsets for each point in legend entry."
-msgstr ""
+msgstr "Largo *numpoints* lista de compensaciones y por cada punto en entrada de leyenda."
 
 #: matplotlib.legend_handler.HandlerCircleCollection:49
 #: matplotlib.legend_handler.HandlerErrorbar:48
@@ -189,7 +189,7 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerStem:55
 #: matplotlib.legend_handler.HandlerTuple:49 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.legend_handler.HandlerCircleCollection:36
 #: matplotlib.legend_handler.HandlerErrorbar:35
@@ -200,11 +200,11 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerPathCollection:36
 #: matplotlib.legend_handler.HandlerRegularPolyCollection:36 of
 msgid "Keyword arguments forwarded to `.HandlerNpoints`."
-msgstr ""
+msgstr "Argumentos de palabra clave enviados a `.HandlerNpoints`."
 
 #: matplotlib.legend_handler.HandlerErrorbar:2 of
 msgid "Handler for Errorbars."
-msgstr ""
+msgstr "Manejador de barras de error."
 
 #: matplotlib.legend_handler.HandlerErrorbar:29
 #: matplotlib.legend_handler.HandlerLine2D:35
@@ -213,11 +213,11 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerNpoints:29
 #: matplotlib.legend_handler.HandlerStem:29 of
 msgid "**marker_pad**"
-msgstr ""
+msgstr "**marker_pad**"
 
 #: of
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: matplotlib.legend_handler.HandlerErrorbar:29
 #: matplotlib.legend_handler.HandlerLine2D:35
@@ -226,131 +226,131 @@ msgstr ""
 #: matplotlib.legend_handler.HandlerNpoints:29
 #: matplotlib.legend_handler.HandlerStem:29 of
 msgid "Padding between points in legend entry."
-msgstr ""
+msgstr "Rellenar entre puntos en la entrada de la leyenda."
 
 #: matplotlib.legend_handler.HandlerLine2D:2 of
 msgid "Handler for `.Line2D` instances."
-msgstr ""
+msgstr "Handler para instancias `.Line2D`."
 
 #: matplotlib.legend_handler.HandlerLine2D:16 of
 msgid ":obj:`HandlerLine2DCompound`"
-msgstr ""
+msgstr ":obj:`HandlerLine2DCompound`"
 
 #: matplotlib.legend_handler.HandlerLine2D:17 of
 msgid "An earlier handler implementation, which used one artist for the line and another for the marker(s)."
-msgstr ""
+msgstr "Una implementación anterior del manejador, que utilizó un artista para la línea y otro para los marcador(es)."
 
 #: matplotlib.legend_handler.HandlerLine2DCompound:2 of
 msgid "Original handler for `.Line2D` instances, that relies on combining a line-only with a marker-only artist.  May be deprecated in the future."
-msgstr ""
+msgstr "Manejador original para instancias `.Line2D`, que se basa en la combinación de una línea sólo con un artista con marcadores. Puede estar obsoleto en el futuro."
 
 #: matplotlib.legend_handler.HandlerLineCollection:2 of
 msgid "Handler for `.LineCollection` instances."
-msgstr ""
+msgstr "Manejador para instancias de `.LineCollection`."
 
 #: matplotlib.legend_handler.HandlerNpoints:2 of
 msgid "A legend handler that shows *numpoints* points in the legend entry."
-msgstr ""
+msgstr "Un manejador de leyendas que muestra puntos *numpoints* en la entrada de la leyenda."
 
 #: matplotlib.legend_handler.HandlerNpoints:35
 #: matplotlib.legend_handler.HandlerPatch:40
 #: matplotlib.legend_handler.HandlerTuple:36 of
 msgid "Keyword arguments forwarded to `.HandlerBase`."
-msgstr ""
+msgstr "Argumentos de palabra clave enviados a `.HandlerBase`."
 
 #: matplotlib.legend_handler.HandlerNpointsYoffsets:2 of
 msgid "A legend handler that shows *numpoints* in the legend, and allows them to be individually offset in the y-direction."
-msgstr ""
+msgstr "Un manejador de leyendas que muestra *entumecimientos* en la leyenda, y les permite ser compensados individualmente en la dirección y-."
 
 #: matplotlib.legend_handler.HandlerPatch:2 of
 msgid "Handler for `.Patch` instances."
-msgstr ""
+msgstr "Handler para instancias `.Patch`."
 
 #: matplotlib.legend_handler.HandlerPatch:37 of
 msgid "**patch_func**"
-msgstr ""
+msgstr "**parche_función**"
 
 #: of
 msgid "callable, optional"
-msgstr ""
+msgstr "llamable, opcional"
 
 #: matplotlib.legend_handler.HandlerPatch:29 of
 msgid "The function that creates the legend key artist. *patch_func* should have the signature::"
-msgstr ""
+msgstr "La función que crea el artista clave de la leyenda. *patch_func* debe tener la firma::"
 
 #: matplotlib.legend_handler.HandlerPatch:36 of
 msgid "Subsequently the created artist will have its ``update_prop`` method called and the appropriate transform will be applied."
-msgstr ""
+msgstr "Posteriormente, el artista creado tendrá su método ``update_prop`` llamado y se aplicará la transformación apropiada."
 
 #: matplotlib.legend_handler.HandlerPathCollection:2 of
 msgid "Handler for `.PathCollection`\\s, which are used by `~.Axes.scatter`."
-msgstr ""
+msgstr "Handler para `.PathCollection`\\s, que son usados por `~.Axes.scatter`."
 
 #: matplotlib.legend_handler.HandlerPolyCollection:2 of
 msgid "Handler for `.PolyCollection` used in `~.Axes.fill_between` and `~.Axes.stackplot`."
-msgstr ""
+msgstr "Manejador para `.PolyCollection` usado en `~.Axes.fill_between` y `~.Axes.stackplot`."
 
 #: matplotlib.legend_handler.HandlerRegularPolyCollection:2 of
 msgid "Handler for `.RegularPolyCollection`\\s."
-msgstr ""
+msgstr "Manejador para `.RegularPolyCollection`\\s."
 
 #: matplotlib.legend_handler.HandlerStem:2 of
 msgid "Handler for plots produced by `~.Axes.stem`."
-msgstr ""
+msgstr "Handler para parcelas producidas por `~.Axes.stem`."
 
 #: of
 msgid "float, default: 0.3"
-msgstr ""
+msgstr "float, default: 0.3"
 
 #: of
 msgid "int, optional"
-msgstr ""
+msgstr "int, opcional"
 
 #: matplotlib.legend_handler.HandlerStem:35 of
 msgid "**bottom**"
-msgstr ""
+msgstr "**inferior**"
 
 #: of
 msgid "float, optional"
-msgstr ""
+msgstr "float, opcional"
 
 #: of
 msgid "array of floats, optional"
-msgstr ""
+msgstr "array de flotantes, opcional"
 
 #: matplotlib.legend_handler.HandlerStem:42 of
 msgid "Keyword arguments forwarded to `.HandlerNpointsYoffsets`."
-msgstr ""
+msgstr "Argumentos de palabra clave enviados a `.HandlerNpointsYoffsets`."
 
 #: matplotlib.legend_handler.HandlerStepPatch:2 of
 msgid "Handler for `~.matplotlib.patches.StepPatch` instances."
-msgstr ""
+msgstr "Manejador para instancias `~.matplotlib.patches.StepPatch`."
 
 #: matplotlib.legend_handler.HandlerTuple:2 of
 msgid "Handler for Tuple."
-msgstr ""
+msgstr "Manejador para Tuple."
 
 #: matplotlib.legend_handler.HandlerTuple:30 of
 msgid "**ndivide**"
-msgstr ""
+msgstr "**ndivide**"
 
 #: of
 msgid "int, default: 1"
-msgstr ""
+msgstr "int, por defecto: 1"
 
 #: matplotlib.legend_handler.HandlerTuple:29 of
 msgid "The number of sections to divide the legend area into.  If None, use the length of the input tuple."
-msgstr ""
+msgstr "El número de secciones en las que dividir el área de la leyenda. Si no, use la longitud de la tupla de entrada."
 
 #: matplotlib.legend_handler.HandlerTuple:33 of
 msgid "**pad** : float, default: :rc:`legend.borderpad`"
-msgstr ""
+msgstr "**pad** : float, por defecto: :rc:`legend.borderpad`"
 
 #: of
 msgid "float, default:"
-msgstr ""
+msgstr "flotante, por defecto:"
 
 #: matplotlib.legend_handler.HandlerTuple:33 of
 msgid "Padding in units of fraction of font size."
-msgstr ""
+msgstr "Rellenar unidades de fracción de tamaño de fuente."
 

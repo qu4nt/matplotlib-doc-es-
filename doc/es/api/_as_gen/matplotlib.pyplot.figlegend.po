@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:17\n"
+"PO-Revision-Date: 2022-11-02 14:00\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,565 +20,565 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.pyplot.figlegend.rst:2
 msgid "matplotlib.pyplot.figlegend"
-msgstr ""
+msgstr "matplotlib.pyplot.figlegend"
 
 #: matplotlib.pyplot.figlegend:2 of
 msgid "Place a legend on the figure."
-msgstr ""
+msgstr "Coloca una leyenda en la figura."
 
 #: matplotlib.pyplot.figlegend:4 of
 msgid "Call signatures::"
-msgstr ""
+msgstr "Firma de llamadas::"
 
 #: matplotlib.pyplot.figlegend:11 of
 msgid "The call signatures correspond to the following different ways to use this method:"
-msgstr ""
+msgstr "Las firmas de llamada corresponden a las siguientes formas diferentes de usar este método:"
 
 #: matplotlib.pyplot.figlegend:14 of
 msgid "**1. Automatic detection of elements to be shown in the legend**"
-msgstr ""
+msgstr "**1. Detección automática de elementos a mostrar en la leyenda**"
 
 #: matplotlib.pyplot.figlegend:16 of
 msgid "The elements to be added to the legend are automatically determined, when you do not pass in any extra arguments."
-msgstr ""
+msgstr "Los elementos a añadir a la leyenda se determinan automáticamente, cuando no se pasa ningún argumento extra."
 
 #: matplotlib.pyplot.figlegend:19 of
 msgid "In this case, the labels are taken from the artist. You can specify them either at artist creation or by calling the :meth:`~.Artist.set_label` method on the artist::"
-msgstr ""
+msgstr "En este caso, las etiquetas son tomadas del artista. Puedes especificarlos ya sea en la creación del artista o llamando al método :meth:`~.Artist.set_label` en el artista::"
 
 #: matplotlib.pyplot.figlegend:26 of
 msgid "or::"
-msgstr ""
+msgstr "o::"
 
 #: matplotlib.pyplot.figlegend:32 of
 msgid "Specific lines can be excluded from the automatic legend element selection by defining a label starting with an underscore. This is default for all artists, so calling `.Figure.legend` without any arguments and without setting the labels manually will result in no legend being drawn."
-msgstr ""
+msgstr "Líneas específicas pueden ser excluidas de la selección automática de elementos de leyenda definiendo una etiqueta que comience con un guión bajo. Esto es por defecto para todos los artistas, así que llamar a `.Figure.legend` sin ningún argumento y sin establecer las etiquetas manualmente resultará en que no se dibuje ninguna leyenda."
 
 #: matplotlib.pyplot.figlegend:38 of
 msgid "**2. Explicitly listing the artists and labels in the legend**"
-msgstr ""
+msgstr "**2. Listar explícitamente los artistas y etiquetas en la leyenda**"
 
 #: matplotlib.pyplot.figlegend:40 of
 msgid "For full control of which artists have a legend entry, it is possible to pass an iterable of legend artists followed by an iterable of legend labels respectively::"
-msgstr ""
+msgstr "Para un control total del cual los artistas tienen una entrada de leyenda, es posible pasar un iterable de los artistas leyendas seguido por un iterable de las etiquetas respectivamente::"
 
 #: matplotlib.pyplot.figlegend:46 of
 msgid "**3. Explicitly listing the artists in the legend**"
-msgstr ""
+msgstr "**3. Listar explícitamente los artistas en la leyenda**"
 
 #: matplotlib.pyplot.figlegend:48 of
 msgid "This is similar to 2, but the labels are taken from the artists' label properties. Example::"
-msgstr ""
+msgstr "Esto es similar a 2, pero las etiquetas se toman de las propiedades de la etiqueta de los artistas. Ejemplo::"
 
 #: matplotlib.pyplot.figlegend:55 of
 msgid "**4. Labeling existing plot elements**"
-msgstr ""
+msgstr "**4. Etiquetando elementos de parcela existentes**"
 
 #: matplotlib.pyplot.figlegend:57 of
 msgid "Discouraged"
-msgstr ""
+msgstr "Desanimado"
 
 #: matplotlib.pyplot.figlegend:59 of
 msgid "This call signature is discouraged, because the relation between plot elements and labels is only implicit by their order and can easily be mixed up."
-msgstr ""
+msgstr "Esta firma de llamada se desanima, porque la relación entre los elementos de la parcela y las etiquetas sólo es implícita por su orden y se puede mezclar fácilmente."
 
 #: matplotlib.pyplot.figlegend:63 of
 msgid "To make a legend for all artists on all Axes, call this function with an iterable of strings, one for each legend item. For example::"
-msgstr ""
+msgstr "Para hacer una leyenda para todos los artistas en todos los ejes, llama a esta función con una cadena iterable, una para cada objeto de leyenda. Por ejemplo::"
 
 #: matplotlib.pyplot.figlegend of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.pyplot.figlegend:80 of
 msgid "**handles** : list of `.Artist`, optional"
-msgstr ""
+msgstr "**handles** : lista de `.Artist`, opcional"
 
 #: of
 msgid "list of"
-msgstr ""
+msgstr "lista de"
 
 #: matplotlib.pyplot.figlegend:74 of
 msgid "A list of Artists (lines, patches) to be added to the legend. Use this together with *labels*, if you need full control on what is shown in the legend and the automatic mechanism described above is not sufficient."
-msgstr ""
+msgstr "Una lista de Artistas (líneas, parches) a añadir a la leyenda. Usa esto junto con *etiquetas*, si necesita un control completo sobre lo que se muestra en la leyenda y el mecanismo automático descrito anteriormente no es suficiente."
 
 #: matplotlib.pyplot.figlegend:79 of
 msgid "The length of handles and labels should be the same in this case. If they are not, they are truncated to the smaller length."
-msgstr ""
+msgstr "La longitud de las asas y las etiquetas debe ser la misma en este caso, si no lo son, se truncan a la menor longitud."
 
 #: matplotlib.pyplot.figlegend:86 of
 msgid "**labels**"
-msgstr ""
+msgstr "**labels**"
 
 #: of
 msgid "list of str, optional"
-msgstr ""
+msgstr "lista de str, opcional"
 
 #: matplotlib.pyplot.figlegend:83 of
 msgid "A list of labels to show next to the artists. Use this together with *handles*, if you need full control on what is shown in the legend and the automatic mechanism described above is not sufficient."
-msgstr ""
+msgstr "Una lista de etiquetas para mostrar junto a los artistas. Usa esto junto con *handles*, si necesita un control completo sobre lo que se muestra en la leyenda y el mecanismo automático descrito anteriormente no es suficiente."
 
 #: matplotlib.pyplot.figlegend of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.pyplot.figlegend:93 of
 msgid "`~matplotlib.legend.Legend`"
-msgstr ""
+msgstr "`~matplotlib.legend.Legend`"
 
 #: matplotlib.pyplot.figlegend of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.pyplot.figlegend:138 of
 msgid "**loc** : str or pair of floats, default: :rc:`legend.loc` ('best' for axes, 'upper right' for figures)"
-msgstr ""
+msgstr "**loc** : str o par de floats, por defecto: :rc:`legend.loc` ('mejor' para ejes, 'superior derecha' para figuras)"
 
 #: of
 msgid "str or pair of floats, default:"
-msgstr ""
+msgstr "str o par de flotantes, por defecto:"
 
 #: matplotlib.pyplot.figlegend:98 of
 msgid "The location of the legend."
-msgstr ""
+msgstr "La ubicación de la leyenda."
 
 #: matplotlib.pyplot.figlegend:100 of
 msgid "The strings ``'upper left', 'upper right', 'lower left', 'lower right'`` place the legend at the corresponding corner of the axes/figure."
-msgstr ""
+msgstr "Las cadenas ``'superior izquierda', 'superior derecha', 'inferior izquierda', 'inferior derecha'`` colocan la leyenda en la esquina correspondiente de los ejes/figura."
 
 #: matplotlib.pyplot.figlegend:104 of
 msgid "The strings ``'upper center', 'lower center', 'center left', 'center right'`` place the legend at the center of the corresponding edge of the axes/figure."
-msgstr ""
+msgstr "Las cadenas ``'centro superior', 'centro inferior', 'centro izquierda', 'centro derecha'`` colocan la leyenda en el centro del borde correspondiente de los ejes/figura."
 
 #: matplotlib.pyplot.figlegend:109 of
 msgid "The string ``'center'`` places the legend at the center of the axes/figure."
-msgstr ""
+msgstr "La cadena ``'center'`` coloca la leyenda en el centro de los ejes/figura."
 
 #: matplotlib.pyplot.figlegend:111 of
 msgid "The string ``'best'`` places the legend at the location, among the nine locations defined so far, with the minimum overlap with other drawn artists.  This option can be quite slow for plots with large amounts of data; your plotting speed may benefit from providing a specific location."
-msgstr ""
+msgstr "La cadena ``'mejor'`` coloca la leyenda en la ubicación, entre los nueve lugares definidos hasta ahora, con la superposición mínima con otros artistas dibujados. Esta opción puede ser bastante lenta para parcelas con grandes cantidades de datos; su velocidad de trazado puede beneficiarse al proporcionar una ubicación específica."
 
 #: matplotlib.pyplot.figlegend:116 of
 msgid "The location can also be a 2-tuple giving the coordinates of the lower-left corner of the legend in axes coordinates (in which case *bbox_to_anchor* will be ignored)."
-msgstr ""
+msgstr "La ubicación también puede ser una doble tupla dando las coordenadas de la esquina inferior izquierda de la leyenda en las coordenadas de los ejes (en cuyo caso se ignorará *bbox_to_anchor*)."
 
 #: matplotlib.pyplot.figlegend:120 of
 msgid "For back-compatibility, ``'center right'`` (but no other location) can also be spelled ``'right'``, and each \"string\" locations can also be given as a numeric value:"
-msgstr ""
+msgstr "Para back-compatibility, ``'center right'`` (pero ninguna otra ubicación) también puede ser escrita ``'right'``, y cada ubicación \"string\" también puede ser dada como un valor numérico:"
 
 #: matplotlib.pyplot.figlegend:125 of
 msgid "Location String"
-msgstr ""
+msgstr "Cadena de ubicación"
 
 #: matplotlib.pyplot.figlegend:125 of
 msgid "Location Code"
-msgstr ""
+msgstr "Código de ubicación"
 
 #: matplotlib.pyplot.figlegend:127 of
 msgid "'best'"
-msgstr ""
+msgstr "\"Mejor\""
 
 #: matplotlib.pyplot.figlegend:127 of
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: matplotlib.pyplot.figlegend:128 of
 msgid "'upper right'"
-msgstr ""
+msgstr "\"superior derecha\""
 
 #: matplotlib.pyplot.figlegend:128 of
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: matplotlib.pyplot.figlegend:129 of
 msgid "'upper left'"
-msgstr ""
+msgstr "'superior izquierda'"
 
 #: matplotlib.pyplot.figlegend:129 of
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: matplotlib.pyplot.figlegend:130 of
 msgid "'lower left'"
-msgstr ""
+msgstr "'inferior izquierda'"
 
 #: matplotlib.pyplot.figlegend:130 of
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: matplotlib.pyplot.figlegend:131 of
 msgid "'lower right'"
-msgstr ""
+msgstr "\"bajar derecha\""
 
 #: matplotlib.pyplot.figlegend:131 of
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: matplotlib.pyplot.figlegend:132 of
 msgid "'right'"
-msgstr ""
+msgstr "\"derecha\""
 
 #: matplotlib.pyplot.figlegend:132 of
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: matplotlib.pyplot.figlegend:133 of
 msgid "'center left'"
-msgstr ""
+msgstr "'centro izquierda'"
 
 #: matplotlib.pyplot.figlegend:133 of
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: matplotlib.pyplot.figlegend:134 of
 msgid "'center right'"
-msgstr ""
+msgstr "'centro derecha'"
 
 #: matplotlib.pyplot.figlegend:134 of
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: matplotlib.pyplot.figlegend:135 of
 msgid "'lower center'"
-msgstr ""
+msgstr "'centro inferior'"
 
 #: matplotlib.pyplot.figlegend:135 of
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: matplotlib.pyplot.figlegend:136 of
 msgid "'upper center'"
-msgstr ""
+msgstr "'centro superior'"
 
 #: matplotlib.pyplot.figlegend:136 of
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: matplotlib.pyplot.figlegend:137 of
 msgid "'center'"
-msgstr ""
+msgstr "'centro'"
 
 #: matplotlib.pyplot.figlegend:137 of
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: matplotlib.pyplot.figlegend:161 of
 msgid "**bbox_to_anchor** : `.BboxBase`, 2-tuple, or 4-tuple of floats"
-msgstr ""
+msgstr "**bbox_to_anchor** : `.BboxBase`, 2-tuple, o 4-tuple de puntos flotantes (floats)"
 
 #: matplotlib.pyplot.figlegend:160 of
 msgid "BboxBase, 2-tuple, or 4-tuple of floats"
-msgstr ""
+msgstr "BboxBase, 2-tuple, o 4-tuple de puntos flotantes (floats)"
 
 #: matplotlib.pyplot.figlegend:141 of
 msgid "Box that is used to position the legend in conjunction with *loc*. Defaults to `axes.bbox` (if called as a method to `.Axes.legend`) or `figure.bbox` (if `.Figure.legend`).  This argument allows arbitrary placement of the legend."
-msgstr ""
+msgstr "Caja que se utiliza para colocar la leyenda en conjunto con *loc*. Por defecto es `axes.bbox` (si se llama como método a `. xes.legend`) o `figure.bbox` (si `.Figure.legend`). Este argumento permite la colocación arbitraria de la leyenda."
 
 #: matplotlib.pyplot.figlegend:146 of
 msgid "Bbox coordinates are interpreted in the coordinate system given by *bbox_transform*, with the default transform Axes or Figure coordinates, depending on which ``legend`` is called."
-msgstr ""
+msgstr "Las coordenadas de la caja se interpretan en el sistema de coordenadas dado por *bbox_transform*, con las coordenadas de transformación por defecto de los ejes o Figuras, dependiendo de qué ``leyend``."
 
 #: matplotlib.pyplot.figlegend:150 of
 msgid "If a 4-tuple or `.BboxBase` is given, then it specifies the bbox ``(x, y, width, height)`` that the legend is placed in. To put the legend in the best location in the bottom right quadrant of the axes (or figure)::"
-msgstr ""
+msgstr "Si se da un 4-tuple o `.BboxBase`, entonces especifica el bbox ``(x, y, anchura, altura)`` en el que se coloca la leyenda. Poner la leyenda en la mejor ubicación en el cuadrante inferior derecho de los ejes (o figura)::"
 
 #: matplotlib.pyplot.figlegend:157 of
 msgid "A 2-tuple ``(x, y)`` places the corner of the legend specified by *loc* at x, y.  For example, to put the legend's upper right-hand corner in the center of the axes (or figure) the following keywords can be used::"
-msgstr ""
+msgstr "Una 2-tupla ``(x, y)`` coloca la esquina de la leyenda especificada por *loc* en x, y. Por ejemplo, para colocar la esquina superior derecha de la leyenda en el centro de los ejes (o figura) se pueden utilizar las siguientes palabras clave::"
 
 #: matplotlib.pyplot.figlegend:164 of
 msgid "**ncol**"
-msgstr ""
+msgstr "**ncol**"
 
 #: of
 msgid "int, default: 1"
-msgstr ""
+msgstr "int, por defecto: 1"
 
 #: matplotlib.pyplot.figlegend:164 of
 msgid "The number of columns that the legend has."
-msgstr ""
+msgstr "El número de columnas que tiene la leyenda."
 
 #: matplotlib.pyplot.figlegend:168 of
 msgid "**prop** : None or `matplotlib.font_manager.FontProperties` or dict"
-msgstr ""
+msgstr "**prop** : Ninguno o `matplotlib.font_manager.FontProperties` o dictado"
 
 #: of
 msgid "None or"
-msgstr ""
+msgstr "None o"
 
 #: matplotlib.pyplot.figlegend:167 of
 msgid "The font properties of the legend. If None (default), the current :data:`matplotlib.rcParams` will be used."
-msgstr ""
+msgstr "Las propiedades de fuente de la leyenda. Si ninguna (por defecto), se utilizará el :data:actual `matplotlib.rcParams`."
 
 #: matplotlib.pyplot.figlegend:173 of
 msgid "**fontsize**"
-msgstr ""
+msgstr "**fontsize**"
 
 #: of
 msgid "int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}"
-msgstr ""
+msgstr "int o {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}"
 
 #: matplotlib.pyplot.figlegend:171 of
 msgid "The font size of the legend. If the value is numeric the size will be the absolute font size in points. String values are relative to the current default font size. This argument is only used if *prop* is not specified."
-msgstr ""
+msgstr "El tamaño de fuente de la leyenda. Si el valor es numérico el tamaño será el tamaño absoluto de la fuente en puntos. Los valores de cadena son relativos al tamaño de fuente predeterminado actual. Este argumento sólo se utiliza si *prop* no se especifica."
 
 #: matplotlib.pyplot.figlegend:182 of
 msgid "**labelcolor** : str or list, default: :rc:`legend.labelcolor`"
-msgstr ""
+msgstr "**labelcolor** : str o lista, por defecto: :rc:`legend.labelcolor`"
 
 #: of
 msgid "str or list, default:"
-msgstr ""
+msgstr "str o lista, por defecto:"
 
 #: matplotlib.pyplot.figlegend:176 of
 msgid "The color of the text in the legend. Either a valid color string (for example, 'red'), or a list of color strings. The labelcolor can also be made to match the color of the line or marker using 'linecolor', 'markerfacecolor' (or 'mfc'), or 'markeredgecolor' (or 'mec')."
-msgstr ""
+msgstr "El color del texto en la leyenda. Una cadena de color válida (por ejemplo, 'rojo'), o una lista de cadenas de colores. El color de la etiqueta también puede ser hecho para que coincida con el color de la línea o marcador usando 'color lineal', 'color marcador' (o 'mfc'), o 'color marcador' (o 'mec')."
 
 #: matplotlib.pyplot.figlegend:181 of
 msgid "Labelcolor can be set globally using :rc:`legend.labelcolor`. If None, use :rc:`text.color`."
-msgstr ""
+msgstr "El color de etiqueta puede establecerse globalmente usando :rc:`legend.labelcolor`. Si no, utilice :rc:`text.color`."
 
 #: matplotlib.pyplot.figlegend:186 of
 msgid "**numpoints** : int, default: :rc:`legend.numpoints`"
-msgstr ""
+msgstr "**numpoints** : int, por defecto: :rc:`legend.numpoints`"
 
 #: of
 msgid "int, default:"
-msgstr ""
+msgstr "int, por defecto:"
 
 #: matplotlib.pyplot.figlegend:185 of
 msgid "The number of marker points in the legend when creating a legend entry for a `.Line2D` (line)."
-msgstr ""
+msgstr "El número de puntos de marcador en la leyenda al crear una entrada de leyenda para un `.Line2D` (línea)."
 
 #: matplotlib.pyplot.figlegend:190 of
 msgid "**scatterpoints** : int, default: :rc:`legend.scatterpoints`"
-msgstr ""
+msgstr "**scatterpoints** : int, por defecto: :rc:`legend.scatterpoints`"
 
 #: matplotlib.pyplot.figlegend:189 of
 msgid "The number of marker points in the legend when creating a legend entry for a `.PathCollection` (scatter plot)."
-msgstr ""
+msgstr "El número de puntos marcadores en la leyenda cuando se crea una entrada de leyenda para un `.PathCollection` (diagrama de dispersión)."
 
 #: matplotlib.pyplot.figlegend:196 of
 msgid "**scatteryoffsets** : iterable of floats, default: ``[0.375, 0.5, 0.3125]``"
-msgstr ""
+msgstr "**scatteryoffsets** : iterable de flotantes, por defecto: ``[0.375, 0.5, 0.3125]``"
 
 #: of
 msgid "iterable of floats, default:"
-msgstr ""
+msgstr "iterable de flotantes, por defecto:"
 
 #: matplotlib.pyplot.figlegend:193 of
 msgid "The vertical offset (relative to the font size) for the markers created for a scatter plot legend entry. 0.0 is at the base the legend text, and 1.0 is at the top. To draw all markers at the same height, set to ``[0.5]``."
-msgstr ""
+msgstr "El desplazamiento vertical (relativo al tamaño de la fuente) para los marcadores creados para una entrada de leyenda de diapositivas scatter. está en la base del texto de la leyenda, y 1.0 está en la parte superior. Para dibujar todos los marcadores a la misma altura, ajusta a ``[0.5]``."
 
 #: matplotlib.pyplot.figlegend:200 of
 msgid "**markerscale** : float, default: :rc:`legend.markerscale`"
-msgstr ""
+msgstr "**markerscale** : float, por defecto: :rc:`legend.markerscale`"
 
 #: of
 msgid "float, default:"
-msgstr ""
+msgstr "flotante, por defecto:"
 
 #: matplotlib.pyplot.figlegend:199 of
 msgid "The relative size of legend markers compared with the originally drawn ones."
-msgstr ""
+msgstr "El tamaño relativo de los marcadores de leyenda en comparación con los originalmente dibujados."
 
 #: matplotlib.pyplot.figlegend:204 of
 msgid "**markerfirst**"
-msgstr ""
+msgstr "**markerfirst**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.pyplot.figlegend:203 of
 msgid "If *True*, legend marker is placed to the left of the legend label. If *False*, legend marker is placed to the right of the legend label."
-msgstr ""
+msgstr "Si *Verdadero*, el marcador de leyenda se coloca a la izquierda de la etiqueta de leyenda. Si *False*, el marcador de leyenda se coloca a la derecha de la etiqueta de la leyenda."
 
 #: matplotlib.pyplot.figlegend:207 of
 msgid "**frameon** : bool, default: :rc:`legend.frameon`"
-msgstr ""
+msgstr "**frameon** : bool, por defecto: :rc:`legend.frameon`"
 
 #: of
 msgid "bool, default:"
-msgstr ""
+msgstr "bool, default:"
 
 #: matplotlib.pyplot.figlegend:207 of
 msgid "Whether the legend should be drawn on a patch (frame)."
-msgstr ""
+msgstr "Si la leyenda debe ser dibujada en un parche (fotograma)."
 
 #: matplotlib.pyplot.figlegend:211 of
 msgid "**fancybox** : bool, default: :rc:`legend.fancybox`"
-msgstr ""
+msgstr "**fancybox** : bool, default: :rc:`legend.fancybox`"
 
 #: matplotlib.pyplot.figlegend:210 of
 msgid "Whether round edges should be enabled around the `.FancyBboxPatch` which makes up the legend's background."
-msgstr ""
+msgstr "Si los bordes redondos deben estar habilitados alrededor del `.FancyBboxPatch` que forma el fondo de la leyenda."
 
 #: matplotlib.pyplot.figlegend:214 of
 msgid "**shadow** : bool, default: :rc:`legend.shadow`"
-msgstr ""
+msgstr "**shadow** : bool, default: :rc:`legend.shadow`"
 
 #: matplotlib.pyplot.figlegend:214 of
 msgid "Whether to draw a shadow behind the legend."
-msgstr ""
+msgstr "Dibujar una sombra detrás de la leyenda."
 
 #: matplotlib.pyplot.figlegend:219 of
 msgid "**framealpha** : float, default: :rc:`legend.framealpha`"
-msgstr ""
+msgstr "**framealpha** : float, por defecto: :rc:`legend.framealpha`"
 
 #: matplotlib.pyplot.figlegend:217 of
 msgid "The alpha transparency of the legend's background. If *shadow* is activated and *framealpha* is ``None``, the default value is ignored."
-msgstr ""
+msgstr "La transparencia alfa del fondo de la leyenda. Si *sombra* está activado y *framealpha* es ``Ninguno``, el valor por defecto es ignorado."
 
 #: matplotlib.pyplot.figlegend:223 of
 msgid "**facecolor** : \"inherit\" or color, default: :rc:`legend.facecolor`"
-msgstr ""
+msgstr "**facecolor** : \"hereda\" o color, por defecto: :rc:`legend.facecolor`"
 
 #: of
 msgid "\"inherit\" or color, default:"
-msgstr ""
+msgstr "\"hereda\" o color, por defecto:"
 
 #: matplotlib.pyplot.figlegend:222 of
 msgid "The legend's background color. If ``\"inherit\"``, use :rc:`axes.facecolor`."
-msgstr ""
+msgstr "Color de fondo de la leyenda. Si es ``\"hereda\"``, usa :rc:`axes.facecolor`."
 
 #: matplotlib.pyplot.figlegend:227 of
 msgid "**edgecolor** : \"inherit\" or color, default: :rc:`legend.edgecolor`"
-msgstr ""
+msgstr "**edgecolor** : \"hereda\" o color, por defecto: :rc:`legend.edgecolor`"
 
 #: matplotlib.pyplot.figlegend:226 of
 msgid "The legend's background patch edge color. If ``\"inherit\"``, use take :rc:`axes.edgecolor`."
-msgstr ""
+msgstr "Color del borde del parche de fondo de la leyenda. Si es ``\"heredad\"``, usa tomar :rc:`axes.edgecolor`."
 
 #: matplotlib.pyplot.figlegend:232 of
 msgid "**mode**"
-msgstr ""
+msgstr "**mode**"
 
 #: of
 msgid "{\"expand\", None}"
-msgstr ""
+msgstr "{\"expandido\" (expandido)}"
 
 #: matplotlib.pyplot.figlegend:230 of
 msgid "If *mode* is set to ``\"expand\"`` the legend will be horizontally expanded to fill the axes area (or *bbox_to_anchor* if defines the legend's size)."
-msgstr ""
+msgstr "Si *mode* está establecido en ``\"ampliar\"`` la leyenda se expandirá horizontalmente para llenar el área de los ejes (o *bbox_to_anchor* si define el tamaño de la leyenda)."
 
 #: matplotlib.pyplot.figlegend:237 of
 msgid "**bbox_transform** : None or `matplotlib.transforms.Transform`"
-msgstr ""
+msgstr "**bbox_transform** : None o `matplotlib.transforms.Transform`"
 
 #: matplotlib.pyplot.figlegend:235 of
 msgid "The transform for the bounding box (*bbox_to_anchor*). For a value of ``None`` (default) the Axes' :data:`~matplotlib.axes.Axes.transAxes` transform will be used."
-msgstr ""
+msgstr "La transformación para la caja de límites (*bbox_to_anchor*). Para un valor de ``Ninguno`` (por defecto) se usarán los ejes :data:`~matplotlib.axes.Axes.transAxes` transformación."
 
 #: matplotlib.pyplot.figlegend:240 of
 msgid "**title**"
-msgstr ""
+msgstr "**título**"
 
 #: of
 msgid "str or None"
-msgstr ""
+msgstr "str o None"
 
 #: matplotlib.pyplot.figlegend:240 of
 msgid "The legend's title. Default is no title (``None``)."
-msgstr ""
+msgstr "Título de la leyenda. Por defecto no es ningún título (``Ninguno``)."
 
 #: matplotlib.pyplot.figlegend:245 of
 msgid "**title_fontproperties** : None or `matplotlib.font_manager.FontProperties` or dict"
-msgstr ""
+msgstr "**title_fontproperties** : Ninguno o `matplotlib.font_manager.FontProperties` o dictado"
 
 #: matplotlib.pyplot.figlegend:243 of
 msgid "The font properties of the legend's title. If None (default), the *title_fontsize* argument will be used if present; if *title_fontsize* is also None, the current :rc:`legend.title_fontsize` will be used."
-msgstr ""
+msgstr "Las propiedades de la fuente del título de la leyenda. Si Ninguno (predeterminado), se utilizará el argumento *title_fontsize* si está presente; si *title_fontsize* también es Ninguno, se usará el :rc:`legend.title_fontsize` actual."
 
 #: matplotlib.pyplot.figlegend:251 of
 msgid "**title_fontsize** : int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, default: :rc:`legend.title_fontsize`"
-msgstr ""
+msgstr "**title_fontsize** : int o {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, por defecto: :rc:`legend.title_fontsize`"
 
 #: of
 msgid "int or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, default:"
-msgstr ""
+msgstr "int o {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}, por defecto:"
 
 #: matplotlib.pyplot.figlegend:248 of
 msgid "The font size of the legend's title. Note: This cannot be combined with *title_fontproperties*. If you want to set the fontsize alongside other font properties, use the *size* parameter in *title_fontproperties*."
-msgstr ""
+msgstr "El tamaño de la fuente del título de la leyenda. Nota: Esto no puede combinarse con *title_fontproperties*. Si desea establecer el tamaño de la fuente junto con otras propiedades de la fuente, utilice el parámetro *size* en *title_fontproperties*."
 
 #: matplotlib.pyplot.figlegend:254 of
 msgid "**borderpad** : float, default: :rc:`legend.borderpad`"
-msgstr ""
+msgstr "**borderpad** : float, por defecto: :rc:`legend.borderpad`"
 
 #: matplotlib.pyplot.figlegend:254 of
 msgid "The fractional whitespace inside the legend border, in font-size units."
-msgstr ""
+msgstr "El espacio en blanco fraccional dentro del borde de la leyenda, en unidades de tamaño de fuente."
 
 #: matplotlib.pyplot.figlegend:257 of
 msgid "**labelspacing** : float, default: :rc:`legend.labelspacing`"
-msgstr ""
+msgstr "**espacio de etiquetas** : flotante, por defecto: :rc:`legend.labelspacing`"
 
 #: matplotlib.pyplot.figlegend:257 of
 msgid "The vertical space between the legend entries, in font-size units."
-msgstr ""
+msgstr "El espacio vertical entre las entradas de la leyenda, en unidades de tamaño fuente."
 
 #: matplotlib.pyplot.figlegend:260 of
 msgid "**handlelength** : float, default: :rc:`legend.handlelength`"
-msgstr ""
+msgstr "**handlelength** : float, por defecto: :rc:`legend.handlelength`"
 
 #: matplotlib.pyplot.figlegend:260 of
 msgid "The length of the legend handles, in font-size units."
-msgstr ""
+msgstr "La longitud de la leyenda se mantiene, en unidades de tamaño de fuente."
 
 #: matplotlib.pyplot.figlegend:263 of
 msgid "**handleheight** : float, default: :rc:`legend.handleheight`"
-msgstr ""
+msgstr "**handleheight** : float, por defecto: :rc:`legend.handleheight`"
 
 #: matplotlib.pyplot.figlegend:263 of
 msgid "The height of the legend handles, in font-size units."
-msgstr ""
+msgstr "La altura de la leyenda se mantiene, en unidades de tamaño fuente."
 
 #: matplotlib.pyplot.figlegend:266 of
 msgid "**handletextpad** : float, default: :rc:`legend.handletextpad`"
-msgstr ""
+msgstr "**handletextpad** : float, por defecto: :rc:`legend.handletextpad`"
 
 #: matplotlib.pyplot.figlegend:266 of
 msgid "The pad between the legend handle and text, in font-size units."
-msgstr ""
+msgstr "La almohadilla entre el manejador de la leyenda y el texto, en unidades de tamaño de fuente."
 
 #: matplotlib.pyplot.figlegend:269 of
 msgid "**borderaxespad** : float, default: :rc:`legend.borderaxespad`"
-msgstr ""
+msgstr "**borderaxespad** : float, predeterminado: :rc:`legend.borderaxespad`"
 
 #: matplotlib.pyplot.figlegend:269 of
 msgid "The pad between the axes and legend border, in font-size units."
-msgstr ""
+msgstr "La almohadilla entre los ejes y el borde de la leyenda, en unidades de tamaño fuente."
 
 #: matplotlib.pyplot.figlegend:272 of
 msgid "**columnspacing** : float, default: :rc:`legend.columnspacing`"
-msgstr ""
+msgstr "**columnspacing** : float, por defecto: :rc:`legend.columnspacing`"
 
 #: matplotlib.pyplot.figlegend:272 of
 msgid "The spacing between columns, in font-size units."
-msgstr ""
+msgstr "El espacio entre columnas, en unidades de tamaño de fuente."
 
 #: matplotlib.pyplot.figlegend:280 of
 msgid "**handler_map**"
-msgstr ""
+msgstr "**handler_map**"
 
 #: of
 msgid "dict or None"
-msgstr ""
+msgstr "dict o None"
 
 #: matplotlib.pyplot.figlegend:275 of
 msgid "The custom dictionary mapping instances or types to a legend handler. This *handler_map* updates the default handler map found at `matplotlib.legend.Legend.get_legend_handler_map`."
-msgstr ""
+msgstr "The custom dictionary mapping instances or types to a legend handler. This *handler_map* updates the default handler map found at `matplotlib.legend.Legend.get_legend_handler_map`."
 
 #: matplotlib.pyplot.figlegend:285 of
 msgid ":obj:`.Axes.legend`"
-msgstr ""
+msgstr ":obj:`.Axes.legend`"
 
 #: matplotlib.pyplot.figlegend:289 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.pyplot.figlegend:290 of
 msgid "Some artists are not supported by this function.  See :doc:`/tutorials/intermediate/legend_guide` for details."
-msgstr ""
+msgstr "Algunos artistas no son soportados por esta función. Vea :doc:`/tutorials/intermediate/legend_guide` para más detalles."
 

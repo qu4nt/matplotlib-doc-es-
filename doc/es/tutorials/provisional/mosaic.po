@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-13 19:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,133 +20,133 @@ msgstr ""
 
 #: ../../tutorials/provisional/mosaic.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_provisional_mosaic.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_provisional_mosaic.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/provisional/mosaic.rst:23
 msgid "Complex and semantic figure composition"
-msgstr ""
+msgstr "Composición de figuras complejas y semánticas"
 
 #: ../../tutorials/provisional/mosaic.rst:27
 msgid "This tutorial documents experimental / provisional API. We are releasing this in v3.3 to get user feedback.  We may make breaking changes in future versions with no warning."
-msgstr ""
+msgstr "Este tutorial documenta la API experimental / provisional. Lo estamos publicando en la v3.3 para obtener los comentarios de los usuarios.  Es posible que realicemos cambios de última hora en futuras versiones sin previo aviso."
 
 #: ../../tutorials/provisional/mosaic.rst:32
 msgid "Laying out Axes in a Figure in a non uniform grid can be both tedious and verbose.  For dense, even grids we have `.Figure.subplots` but for more complex layouts, such as Axes that span multiple columns / rows of the layout or leave some areas of the Figure blank, you can use `.gridspec.GridSpec` (see :doc:`/tutorials/intermediate/arranging_axes`) or manually place your axes.  `.Figure.subplot_mosaic` aims to provide an interface to visually lay out your axes (as either ASCII art or nested lists) to streamline this process."
-msgstr ""
+msgstr "La disposición de los ejes de una figura en una rejilla no uniforme puede ser tediosa y complicada.  Para rejillas densas y uniformes tenemos `.Figure.subplots` pero para disposiciones más complejas, como ejes que abarcan múltiples columnas / filas del diseño o que dejan algunas áreas de la figura en blanco, puede utilizar `.gridspec.GridSpec` (ver :doc:`/tutorials/intermediate/arranging_axes`) o colocar manualmente sus ejes.  El objetivo de `.Figure.subplot_mosaic` es proporcionar una interfaz para colocar visualmente sus ejes (como arte ASCII o listas anidadas) para agilizar este proceso."
 
 #: ../../tutorials/provisional/mosaic.rst:41
 msgid "This interface naturally supports naming your axes. `.Figure.subplot_mosaic` returns a dictionary keyed on the labels used to lay out the Figure.  By returning data structures with names, it is easier to write plotting code that is independent of the Figure layout."
-msgstr ""
+msgstr "Esta interfaz admite naturalmente el nombramiento de los ejes. El diccionario `.Figure.subplot_mosaic` devuelve un diccionario con la clave de las etiquetas utilizadas para diseñar la figura.  Al devolver estructuras de datos con nombres, es más fácil escribir código de trazado que sea independiente del diseño de la Figura."
 
 #: ../../tutorials/provisional/mosaic.rst:48
 msgid "This is inspired by a `proposed MEP <https://github.com/matplotlib/matplotlib/pull/4384>`__ and the `patchwork <https://github.com/thomasp85/patchwork>`__ library for R. While we do not implement the operator overloading style, we do provide a Pythonic API for specifying (nested) Axes layouts."
-msgstr ""
+msgstr "Está inspirado en una `propuesta de MEP <https://github.com/matplotlib/matplotlib/pull/4384>`__ y en la librería `patchwork <https://github.com/thomasp85/patchwork>`__ para R. Aunque no implementamos el estilo de sobrecarga de operadores, proporcionamos una API pitónica para especificar diseños de ejes (anidados)."
 
 #: ../../tutorials/provisional/mosaic.rst:90
 msgid "If we want a 2x2 grid we can use `.Figure.subplots` which returns a 2D array of `.axes.Axes` which we can index into to do our plotting."
-msgstr ""
+msgstr "Si queremos una malla de 2x2 podemos utilizar `.Figure.subplots` que devuelve una matriz 2D de `.axes.Axes` en la que podemos indexar para hacer nuestro trazado."
 
 #: ../../tutorials/provisional/mosaic.rst:127
 msgid "Using `.Figure.subplot_mosaic` we can produce the same mosaic but give the axes semantic names"
-msgstr ""
+msgstr "Usando `.Figure.subplot_mosaic` podemos producir el mismo mosaico pero dando nombres semánticos a los ejes"
 
 #: ../../tutorials/provisional/mosaic.rst:162
 msgid "A key difference between `.Figure.subplots` and `.Figure.subplot_mosaic` is the return value. While the former returns an array for index access, the latter returns a dictionary mapping the labels to the `.axes.Axes` instances created"
-msgstr ""
+msgstr "Una diferencia clave entre `.Figure.subplots` y `.Figure.subplot_mosaic` es el valor de retorno. Mientras que el primero devuelve un arreglo para acceder a los índices, el segundo devuelve un diccionario que asigna las etiquetas a las instancias de `.axes.Axes` creadas"
 
 #: ../../tutorials/provisional/mosaic.rst:181
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/provisional/mosaic.rst:193
 msgid "String short-hand"
-msgstr ""
+msgstr "Cadena corta"
 
 #: ../../tutorials/provisional/mosaic.rst:195
 msgid "By restricting our axes labels to single characters we can use Using we can \"draw\" the Axes we want as \"ASCII art\".  The following"
-msgstr ""
+msgstr "Restringiendo las etiquetas de nuestros ejes a caracteres simples que podemos usar Podemos \"dibujar\" los ejes que queramos como \"arte ASCII\".  Lo siguiente"
 
 #: ../../tutorials/provisional/mosaic.rst:218
 msgid "will give us 4 Axes laid out in a 2x2 grid and generates the same figure mosaic as above (but now labeled with ``{\"A\", \"B\", \"C\", \"D\"}`` rather than ``{\"bar\", \"plot\", \"hist\", \"image\"}``)."
-msgstr ""
+msgstr "nos dará 4 ejes dispuestos en una malla de 2x2 y genera el mismo mosaico de figuras que el anterior (pero ahora etiquetado con ``{\"A\", \"B\", \"C\", \"D\"}`` en lugar de ``{\"barra\", \"trama\", \"hist\", \"imagen\"}``)."
 
 #: ../../tutorials/provisional/mosaic.rst:246
 msgid "Something we can do with `.Figure.subplot_mosaic` that you can not do with `.Figure.subplots` is specify that an Axes should span several rows or columns."
-msgstr ""
+msgstr "Algo que podemos hacer con `.Figure.subplot_mosaic` que no se puede hacer con `.Figure.subplots` es especificar que un Eje debe abarcar varias filas o columnas."
 
 #: ../../tutorials/provisional/mosaic.rst:250
 msgid "If we want to re-arrange our four Axes to have C be a horizontal span on the bottom and D be a vertical span on the right we would do"
-msgstr ""
+msgstr "Si queremos reordenar nuestros cuatro Ejes para que C sea un vano horizontal en la parte inferior y D sea un vano vertical en la parte derecha haríamos"
 
 #: ../../tutorials/provisional/mosaic.rst:280
 msgid "If we do not want to fill in all the spaces in the Figure with Axes, we can specify some spaces in the grid to be blank"
-msgstr ""
+msgstr "Si no queremos rellenar todos los espacios de la Figura con Ejes, podemos especificar que algunos espacios de la malla estén en blanco"
 
 #: ../../tutorials/provisional/mosaic.rst:313
 msgid "If we prefer to use another character (rather than a period ``\".\"``) to mark the empty space, we can use *empty_sentinel* to specify the character to use."
-msgstr ""
+msgstr "Si preferimos utilizar otro carácter (en lugar de un punto ``.\"``) para marcar el espacio vacío, podemos utilizar *empty_sentinel* para especificar el carácter a utilizar."
 
 #: ../../tutorials/provisional/mosaic.rst:346
 msgid "Internally there is no meaning attached to the letters we use, any Unicode code point is valid!"
-msgstr ""
+msgstr "Internamente no hay ningún significado asociado a las letras que utilizamos, ¡cualquier punto de código Unicode es válido!"
 
 #: ../../tutorials/provisional/mosaic.rst:374
 msgid "It is not recommended to use white space as either a label or an empty sentinel with the string shorthand because it may be stripped while processing the input."
-msgstr ""
+msgstr "No se recomienda utilizar espacios en blanco ni como etiqueta ni como centinela vacío con la abreviatura de cadena porque pueden ser eliminados al procesar la entrada."
 
 #: ../../tutorials/provisional/mosaic.rst:379
 msgid "Controlling mosaic and subplot creation"
-msgstr ""
+msgstr "Control de la creación de mosaicos y subgráfico"
 
 #: ../../tutorials/provisional/mosaic.rst:381
 msgid "This feature is built on top of `.gridspec` and you can pass the keyword arguments through to the underlying `.gridspec.GridSpec` (the same as `.Figure.subplots`)."
-msgstr ""
+msgstr "Esta función está construida sobre `.gridspec` y puedes pasar los argumentos de la palabra clave a través del `.gridspec.GridSpec` subyacente (lo mismo que `.Figure.subplots`)."
 
 #: ../../tutorials/provisional/mosaic.rst:385
 msgid "In this case we want to use the input to specify the arrangement, but set the relative widths of the rows / columns via *gridspec_kw*."
-msgstr ""
+msgstr "En este caso queremos utilizar la entrada para especificar la disposición, pero establecer los anchos relativos de las filas / columnas a través de *gridspec_kw*."
 
 #: ../../tutorials/provisional/mosaic.rst:423
 msgid "Or use the {*left*, *right*, *bottom*, *top*} keyword arguments to position the overall mosaic to put multiple versions of the same mosaic in a figure"
-msgstr ""
+msgstr "O utilice los argumentos de la palabra clave {*left*, *right*, *bottom*, *top*} para posicionar el mosaico general y poner varias versiones del mismo mosaico en una figura"
 
 #: ../../tutorials/provisional/mosaic.rst:475
 msgid "Alternatively, you can use the sub-Figure functionality:"
-msgstr ""
+msgstr "También puede utilizar la función de subfigura:"
 
 #: ../../tutorials/provisional/mosaic.rst:507
 msgid "We can also pass through arguments used to create the subplots (again, the same as `.Figure.subplots`)."
-msgstr ""
+msgstr "También podemos pasar los argumentos utilizados para crear los subplots (de nuevo, lo mismo que `.Figure.subplots`)."
 
 #: ../../tutorials/provisional/mosaic.rst:537
 msgid "Nested List input"
-msgstr ""
+msgstr "Entrada de la lista anidada"
 
 #: ../../tutorials/provisional/mosaic.rst:539
 msgid "Everything we can do with the string short-hand we can also do when passing in a list (internally we convert the string shorthand to a nested list), for example using spans, blanks, and *gridspec_kw*:"
-msgstr ""
+msgstr "Todo lo que podemos hacer con la abreviatura de cadena también lo podemos hacer al pasar una lista (internamente convertimos la abreviatura de cadena en una lista anidada), por ejemplo, utilizando espacios, espacios en blanco y *gridspec_kw*:"
 
 #: ../../tutorials/provisional/mosaic.rst:573
 msgid "In addition, using the list input we can specify nested mosaics.  Any element of the inner list can be another set of nested lists:"
-msgstr ""
+msgstr "Además, utilizando la lista de entrada podemos especificar mosaicos anidados.  Cualquier elemento de la lista interior puede ser otro conjunto de listas anidadas:"
 
 #: ../../tutorials/provisional/mosaic.rst:610
 msgid "We can also pass in a 2D NumPy array to do things like"
-msgstr ""
+msgstr "También podemos pasar un arreglo 2D de NumPy para hacer cosas como"
 
 #: ../../tutorials/provisional/mosaic.rst:639
 msgid "**Total running time of the script:** ( 0 minutes  10.971 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** (0 minutos 10.971 segundos)"
 
 #: ../../tutorials/provisional/mosaic.rst:654
 msgid ":download:`Download Python source code: mosaic.py <mosaic.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: mosaic.py <mosaic.py>`"
 
 #: ../../tutorials/provisional/mosaic.rst:660
 msgid ":download:`Download Jupyter notebook: mosaic.ipynb <mosaic.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: mosaic.ipynb <mosaic.ipynb>`"
 
 #: ../../tutorials/provisional/mosaic.rst:667
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

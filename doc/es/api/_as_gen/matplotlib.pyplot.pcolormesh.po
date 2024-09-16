@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:17\n"
+"PO-Revision-Date: 2022-11-02 14:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,555 +20,555 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.pyplot.pcolormesh.rst:2
 msgid "matplotlib.pyplot.pcolormesh"
-msgstr ""
+msgstr "matplotlib.pyplot.pcolormesh"
 
 #: matplotlib.pyplot.pcolormesh:2 of
 msgid "Create a pseudocolor plot with a non-regular rectangular grid."
-msgstr ""
+msgstr "Crea una gráfica pseudocolor con una cuadrícula rectangular no regular."
 
 #: matplotlib.pyplot.pcolormesh:4 of
 msgid "Call signature::"
-msgstr ""
+msgstr "Firma de llamada::"
 
 #: matplotlib.pyplot.pcolormesh:8 of
 msgid "*X* and *Y* can be used to specify the corners of the quadrilaterals."
-msgstr ""
+msgstr "*X* y *Y* pueden usarse para especificar las esquinas de los cuadriláteres."
 
 #: matplotlib.pyplot.pcolormesh:12 of
 msgid "`~.Axes.pcolormesh` is similar to `~.Axes.pcolor`. It is much faster and preferred in most cases. For a detailed discussion on the differences see :ref:`Differences between pcolor() and pcolormesh() <differences-pcolor-pcolormesh>`."
-msgstr ""
+msgstr "`~.Axes.pcolormesh` es similar a `~.Axes.pcolor`. Es mucho más rápido y preferido en la mayoría de los casos. Para una discusión detallada sobre las diferencias ver :ref:`Diferencias entre pcolor() y pcolormesh() <differences-pcolor-pcolormesh>`."
 
 #: matplotlib.pyplot.pcolormesh of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.pyplot.pcolormesh:20 of
 msgid "**C**"
-msgstr ""
+msgstr "**C**"
 
 #: of
 msgid "2D array-like"
-msgstr ""
+msgstr "Arreglo 2D"
 
 #: matplotlib.pyplot.pcolormesh:20 of
 msgid "The color-mapped values."
-msgstr ""
+msgstr "Los valores mapeados por colores."
 
 #: matplotlib.pyplot.pcolormesh:49 of
 msgid "**X, Y**"
-msgstr ""
+msgstr "**X, Y**"
 
 #: of
 msgid "array-like, optional"
-msgstr ""
+msgstr "tipo arreglo, opcional"
 
 #: matplotlib.pyplot.pcolormesh:23 of
 msgid "The coordinates of the corners of quadrilaterals of a pcolormesh::"
-msgstr ""
+msgstr "Las coordenadas de las esquinas de los cuadriláteros de una malla de color::"
 
 #: matplotlib.pyplot.pcolormesh:31 of
 msgid "Note that the column index corresponds to the x-coordinate, and the row index corresponds to y. For details, see the :ref:`Notes <axes-pcolormesh-grid-orientation>` section below."
-msgstr ""
+msgstr "Tenga en cuenta que el índice de columna corresponde a la coordenada x, y el índice de registro corresponde a y. Para más detalles, vea la sección :ref:`Notas <axes-pcolormesh-grid-orientation>` a continuación."
 
 #: matplotlib.pyplot.pcolormesh:35 of
 msgid "If ``shading='flat'`` the dimensions of *X* and *Y* should be one greater than those of *C*, and the quadrilateral is colored due to the value at ``C[i, j]``.  If *X*, *Y* and *C* have equal dimensions, a warning will be raised and the last row and column of *C* will be ignored."
-msgstr ""
+msgstr "Si ``sombreando='plano'` las dimensiones de *X* y *Y* deben ser una mayor que las de *C*, y el cuadrilátero se colorea debido al valor en ``C[i, j]``. Si *X*, *Y* y *C* tienen las mismas dimensiones, se levantará una advertencia y se ignorará la última fila y columna de *C*."
 
 #: matplotlib.pyplot.pcolormesh:41 of
 msgid "If ``shading='nearest'`` or ``'gouraud'``, the dimensions of *X* and *Y* should be the same as those of *C* (if not, a ValueError will be raised).  For ``'nearest'`` the color ``C[i, j]`` is centered on ``(X[i, j], Y[i, j])``.  For ``'gouraud'``, a smooth interpolation is caried out between the quadrilateral corners."
-msgstr ""
+msgstr "Si ``shading='nearest'` o ``'gouraud'``, las dimensiones de *X* y *Y* deben ser las mismas que las de *C* (si no, un ValueError será levantado). Para ``'nearest'`` el color ``C[i, j]`` está centrado en ``(X[i, j], Y[i, j])``. Para ``'gouraud'``, una interpolación suave es cuidada entre los maíz cuadrilateral."
 
 #: matplotlib.pyplot.pcolormesh:47 of
 msgid "If *X* and/or *Y* are 1-D arrays or column vectors they will be expanded as needed into the appropriate 2D arrays, making a rectangular grid."
-msgstr ""
+msgstr "Si *X* y/o *Y* son arrays 1-D o vectores de columnas, se expandirán según sea necesario en las matrices 2D apropiadas, haciendo una cuadrícula rectangular."
 
 #: matplotlib.pyplot.pcolormesh:53 of
 msgid "**cmap** : str or `~matplotlib.colors.Colormap`, default: :rc:`image.cmap`"
-msgstr ""
+msgstr "**cmap** : str o `~matplotlib.colors.Colormap`, por defecto: :rc:`image.cmap`"
 
 #: of
 msgid "str or"
-msgstr ""
+msgstr "str o"
 
 #: matplotlib.pyplot.pcolormesh:52 of
 msgid "A Colormap instance or registered colormap name. The colormap maps the *C* values to colors."
-msgstr ""
+msgstr "Una instancia de Colormap o nombre de mapa de color registrado. El mapa de colores asigna los valores *C* a colores."
 
 #: matplotlib.pyplot.pcolormesh:58 of
 msgid "**norm** : `~matplotlib.colors.Normalize`, optional"
-msgstr ""
+msgstr "**norma** : `~matplotlib.colors.Normalize`, opcional"
 
 #: matplotlib.pyplot.pcolormesh:57 of
 msgid "Normalize, optional"
-msgstr ""
+msgstr "Normalizar, opcional"
 
 #: matplotlib.pyplot.pcolormesh:56 of
 msgid "The Normalize instance scales the data values to the canonical colormap range [0, 1] for mapping to colors. By default, the data range is mapped to the colorbar range using linear scaling."
-msgstr ""
+msgstr "La instancia Normalize escala los valores de datos al rango de mapa de color canónico [0, 1] para mapear a colores. De forma predeterminada, el rango de datos se asigna al rango de la barra de colores usando escalado lineal."
 
 #: matplotlib.pyplot.pcolormesh:65 of
 msgid "**vmin, vmax**"
-msgstr ""
+msgstr "**vmin, vmax**"
 
 #: of
 msgid "float, default: None"
-msgstr ""
+msgstr "float, default: None"
 
 #: matplotlib.pyplot.pcolormesh:61 of
 msgid "The colorbar range. If *None*, suitable min/max values are automatically chosen by the `.Normalize` instance (defaults to the respective min/max values of *C* in case of the default linear scaling). It is an error to use *vmin*/*vmax* when *norm* is given."
-msgstr ""
+msgstr "El rango de la barra de color. Si *nunca*, los valores mínimos / máximos adecuados son automáticamente elegidos por el `. instancia ormalize` (por defecto a los respectivos valores min/max de *C* en caso de la escala lineal predeterminada). Es un error usar *vmin*/*vmax* cuando se da *norma*."
 
 #: matplotlib.pyplot.pcolormesh:76 of
 msgid "**edgecolors**"
-msgstr ""
+msgstr "**edgecolors**"
 
 #: of
 msgid "{'none', None, 'face', color, color sequence}, optional"
-msgstr ""
+msgstr "{'Ninguno', Ninguno, 'cara', color, secuencia de color}, opcional"
 
 #: matplotlib.pyplot.pcolormesh:68 of
 msgid "The color of the edges. Defaults to 'none'. Possible values:"
-msgstr ""
+msgstr "El color de los bordes. Por defecto es 'ninguno'. Valores posibles:"
 
 #: matplotlib.pyplot.pcolormesh:70 of
 msgid "'none' or '': No edge."
-msgstr ""
+msgstr "'Ninguno' o '': Sin borde."
 
 #: matplotlib.pyplot.pcolormesh:71 of
 msgid "*None*: :rc:`patch.edgecolor` will be used. Note that currently :rc:`patch.force_edgecolor` has to be True for this to work."
-msgstr ""
+msgstr "*nunca*: :rc:`patch.edgecolor` será usado. Ten en cuenta que actualmente :rc:`patch.force_edgecolor` tiene que ser verdadero para que esto funcione."
 
 #: matplotlib.pyplot.pcolormesh:73 of
 msgid "'face': Use the adjacent face color."
-msgstr ""
+msgstr "'cara': Usa el color de la cara adyacente."
 
 #: matplotlib.pyplot.pcolormesh:74 of
 msgid "A color or sequence of colors will set the edge color."
-msgstr ""
+msgstr "Un color o secuencia de colores establecerá el color del borde."
 
 #: matplotlib.pyplot.pcolormesh:76 of
 msgid "The singular form *edgecolor* works as an alias."
-msgstr ""
+msgstr "La forma singular *borde* funciona como un alias."
 
 #: matplotlib.pyplot.pcolormesh:79 of
 msgid "**alpha**"
-msgstr ""
+msgstr "**alfa**"
 
 #: matplotlib.pyplot.pcolormesh:79 of
 msgid "The alpha blending value, between 0 (transparent) and 1 (opaque)."
-msgstr ""
+msgstr "El valor de mezcla alfa, entre 0 (transparente) y 1 (opaco)."
 
 #: matplotlib.pyplot.pcolormesh:103 of
 msgid "**shading**"
-msgstr ""
+msgstr "**sombreando**"
 
 #: of
 msgid "{'flat', 'nearest', 'gouraud', 'auto'}, optional"
-msgstr ""
+msgstr "{'flat', 'cercano', 'gouraud', 'auto'}, opcional"
 
 #: matplotlib.pyplot.pcolormesh:82 of
 msgid "The fill style for the quadrilateral; defaults to 'flat' or :rc:`pcolor.shading`. Possible values:"
-msgstr ""
+msgstr "El estilo de relleno para el cuadrilátero; por defecto es 'flat' o :rc:`pcolor.shading`. Posibles valores:"
 
 #: matplotlib.pyplot.pcolormesh:85 of
 msgid "'flat': A solid color is used for each quad. The color of the quad (i, j), (i+1, j), (i, j+1), (i+1, j+1) is given by ``C[i, j]``. The dimensions of *X* and *Y* should be one greater than those of *C*; if they are the same as *C*, then a deprecation warning is raised, and the last row and column of *C* are dropped."
-msgstr ""
+msgstr "'plano': Se utiliza un color sólido para cada quad. El color del quad (i, j), (i+1, j), (i, j+1), (i+1, j+1) es dado por ``C[i, j]``. Las dimensiones de *X* y *Y* deben ser una mayor que las de *C*; si son lo mismo que *C*, entonces una advertencia de desaprobación es levantada, y la última fila y columna de *C* son soltadas."
 
 #: matplotlib.pyplot.pcolormesh:91 of
 msgid "'nearest': Each grid point will have a color centered on it, extending halfway between the adjacent grid centers.  The dimensions of *X* and *Y* must be the same as *C*."
-msgstr ""
+msgstr "'más cercano': Cada punto de cuadrícula tendrá un color centrado en él, extendiéndose a mitad de camino entre los centros de cuadrícula adyacentes. Las dimensiones de *X* y *Y* deben ser las mismas que *C*."
 
 #: matplotlib.pyplot.pcolormesh:94 of
 msgid "'gouraud': Each quad will be Gouraud shaded: The color of the corners (i', j') are given by ``C[i', j']``. The color values of the area in between is interpolated from the corner values. The dimensions of *X* and *Y* must be the same as *C*. When Gouraud shading is used, *edgecolors* is ignored."
-msgstr ""
+msgstr "'gouraud': Cada quad será sombreado Gouraud: El color de las esquinas (i', j') son dados por ``C[i', j']``. Los valores de color del área intermedia se interpolan desde los valores de la esquina. Las dimensiones de *X* y *Y* deben ser las mismas que *C*. Cuando se utiliza el sombreado de Gouraud, se ignoran los *colores*."
 
 #: matplotlib.pyplot.pcolormesh:99 of
 msgid "'auto': Choose 'flat' if dimensions of *X* and *Y* are one larger than *C*.  Choose 'nearest' if dimensions are the same."
-msgstr ""
+msgstr "'auto': Elija 'plano' si las dimensiones de *X* y *Y* son una mayor que *C*. Elija 'más cercana' si las dimensiones son las mismas."
 
 #: matplotlib.pyplot.pcolormesh:102 of
 msgid "See :doc:`/gallery/images_contours_and_fields/pcolormesh_grids` for more description."
-msgstr ""
+msgstr "Vea :doc:`/gallery/images_contours_and_fields/pcolormesh_grids` para más descripción."
 
 #: matplotlib.pyplot.pcolormesh:106 of
 msgid "**snap**"
-msgstr ""
+msgstr "**snap**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.pyplot.pcolormesh:106 of
 msgid "Whether to snap the mesh to pixel boundaries."
-msgstr ""
+msgstr "Ajustar la malla a límites de píxeles."
 
 #: matplotlib.pyplot.pcolormesh:111 of
 msgid "**rasterized**"
-msgstr ""
+msgstr "**rasterizó**"
 
 #: of
 msgid "bool, optional"
-msgstr ""
+msgstr "bool, optional"
 
 #: matplotlib.pyplot.pcolormesh:109 of
 msgid "Rasterize the pcolormesh when drawing vector graphics.  This can speed up rendering and produce smaller files for large data sets. See also :doc:`/gallery/misc/rasterization_demo`."
-msgstr ""
+msgstr "Rasterizar la malla de color al dibujar gráficos vectoriales. Esto puede acelerar el procesamiento y producir archivos más pequeños para conjuntos de datos grandes. Vea también :doc:`/gallery/misc/rasterization_demo`."
 
 #: matplotlib.pyplot.pcolormesh of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.pyplot.pcolormesh:118 of
 msgid "`matplotlib.collections.QuadMesh`"
-msgstr ""
+msgstr "`matplotlib.collections.QuadMesh`"
 
 #: matplotlib.pyplot.pcolormesh of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.pyplot.pcolormesh:124 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.pyplot.pcolormesh:123 of
 msgid "If given, all parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception)."
-msgstr ""
+msgstr "Si se dan, todos los parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción)."
 
 #: matplotlib.pyplot.pcolormesh:175 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.pyplot.pcolormesh:127 of
 msgid "Additionally, the following arguments are allowed. They are passed along to the `~matplotlib.collections.QuadMesh` constructor:"
-msgstr ""
+msgstr "Además, se permiten los siguientes argumentos. Se pasan al constructor `~matplotlib.collections.QuadMesh`:"
 
 #: matplotlib.pyplot.pcolormesh:134 of
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: matplotlib.pyplot.pcolormesh:134 of
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: matplotlib.pyplot.pcolormesh:136 of
 msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
-msgstr ""
+msgstr ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
 
 #: matplotlib.pyplot.pcolormesh:136 of
 msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
-msgstr ""
+msgstr "una función de filtro, que toma un arreglo de puntos flotantes (m, n, 3) y un valor de dpi, y devuelve un arreglo (m, n, 3)"
 
 #: matplotlib.pyplot.pcolormesh:137 of
 msgid ":meth:`alpha <matplotlib.collections.Collection.set_alpha>`"
-msgstr ""
+msgstr ":meth:`alpha <matplotlib.collections.Collection.set_alpha>`"
 
 #: matplotlib.pyplot.pcolormesh:137 of
 msgid "array-like or scalar or None"
-msgstr ""
+msgstr "como matriz o escalar o ninguno"
 
 #: matplotlib.pyplot.pcolormesh:138 of
 msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
-msgstr ""
+msgstr ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
 
 #: matplotlib.pyplot.pcolormesh:138 matplotlib.pyplot.pcolormesh:144
 #: matplotlib.pyplot.pcolormesh:153 matplotlib.pyplot.pcolormesh:164
 #: matplotlib.pyplot.pcolormesh:170 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.pyplot.pcolormesh:139 of
 msgid ":meth:`antialiased <matplotlib.collections.Collection.set_antialiased>` or aa or antialiaseds"
-msgstr ""
+msgstr ":meth:`antialias <matplotlib.collections.Collection.set_antialiased>` o aa o antialiaseds"
 
 #: matplotlib.pyplot.pcolormesh:139 of
 msgid "bool or list of bools"
-msgstr ""
+msgstr "libro o lista de bools"
 
 #: matplotlib.pyplot.pcolormesh:140 of
 msgid ":meth:`array <matplotlib.collections.QuadMesh.set_array>`"
-msgstr ""
+msgstr ":meth:`array <matplotlib.collections.QuadMesh.set_array>`"
 
 #: matplotlib.pyplot.pcolormesh:140 of
 msgid "(M, N) array-like or M*N array-like"
-msgstr ""
+msgstr "(M, N) array-like o M*N array"
 
 #: matplotlib.pyplot.pcolormesh:141 of
 msgid ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
-msgstr ""
+msgstr ":meth:`capstyle <matplotlib.collections.Collection.set_capstyle>`"
 
 #: matplotlib.pyplot.pcolormesh:141 of
 msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "`.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.pyplot.pcolormesh:142 of
 msgid ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
-msgstr ""
+msgstr ":meth:`clim <matplotlib.cm.ScalarMappable.set_clim>`"
 
 #: matplotlib.pyplot.pcolormesh:142 of
 msgid "(vmin: float, vmax: float)"
-msgstr ""
+msgstr "(vmin: flotante, vmax: flotante)"
 
 #: matplotlib.pyplot.pcolormesh:143 of
 msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
-msgstr ""
+msgstr ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
 
 #: matplotlib.pyplot.pcolormesh:143 of
 msgid "`.Bbox`"
-msgstr ""
+msgstr "`.Bbox`"
 
 #: matplotlib.pyplot.pcolormesh:144 of
 msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
-msgstr ""
+msgstr ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
 
 #: matplotlib.pyplot.pcolormesh:145 of
 msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
-msgstr ""
+msgstr ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
 
 #: matplotlib.pyplot.pcolormesh:145 of
 msgid "Patch or (Path, Transform) or None"
-msgstr ""
+msgstr "Patch o (Path, Transform) o None"
 
 #: matplotlib.pyplot.pcolormesh:146 of
 msgid ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
-msgstr ""
+msgstr ":meth:`cmap <matplotlib.cm.ScalarMappable.set_cmap>`"
 
 #: matplotlib.pyplot.pcolormesh:146 of
 msgid "`.Colormap` or str or None"
-msgstr ""
+msgstr "`.Colormap` o str o ninguno"
 
 #: matplotlib.pyplot.pcolormesh:147 of
 msgid ":meth:`color <matplotlib.collections.Collection.set_color>`"
-msgstr ""
+msgstr ":meth:`color <matplotlib.collections.Collection.set_color>`"
 
 #: matplotlib.pyplot.pcolormesh:147 of
 msgid "color or list of rgba tuples"
-msgstr ""
+msgstr "color o lista de tubos rgba"
 
 #: matplotlib.pyplot.pcolormesh:148 of
 msgid ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` or ec or edgecolors"
-msgstr ""
+msgstr ":meth:`edgecolor <matplotlib.collections.Collection.set_edgecolor>` o ec o aristas colores"
 
 #: matplotlib.pyplot.pcolormesh:148 of
 msgid "color or list of colors or 'face'"
-msgstr ""
+msgstr "color o lista de colores o 'cara'"
 
 #: matplotlib.pyplot.pcolormesh:149 of
 msgid ":meth:`facecolor <matplotlib.collections.Collection.set_facecolor>` or facecolors or fc"
-msgstr ""
+msgstr ":meth:`carecolor <matplotlib.collections.Collection.set_facecolor>` o colores de caras o fc"
 
 #: matplotlib.pyplot.pcolormesh:149 of
 msgid "color or list of colors"
-msgstr ""
+msgstr "color o lista de colores"
 
 #: matplotlib.pyplot.pcolormesh:150 of
 msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
-msgstr ""
+msgstr ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
 
 #: matplotlib.pyplot.pcolormesh:150 of
 msgid "`.Figure`"
-msgstr ""
+msgstr "`.Figure`"
 
 #: matplotlib.pyplot.pcolormesh:151 of
 msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
-msgstr ""
+msgstr ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
 
 #: matplotlib.pyplot.pcolormesh:151 matplotlib.pyplot.pcolormesh:168 of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.pyplot.pcolormesh:152 of
 msgid ":meth:`hatch <matplotlib.collections.Collection.set_hatch>`"
-msgstr ""
+msgstr ":meth:`colgante <matplotlib.collections.Collection.set_hatch>`"
 
 #: matplotlib.pyplot.pcolormesh:152 of
 msgid "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
-msgstr ""
+msgstr "{'/', '\\\\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}"
 
 #: matplotlib.pyplot.pcolormesh:153 of
 msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
-msgstr ""
+msgstr ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
 
 #: matplotlib.pyplot.pcolormesh:154 of
 msgid ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
-msgstr ""
+msgstr ":meth:`joinstyle <matplotlib.collections.Collection.set_joinstyle>`"
 
 #: matplotlib.pyplot.pcolormesh:154 of
 msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "`.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.pyplot.pcolormesh:155 of
 msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
-msgstr ""
+msgstr ":meth:`label <matplotlib.artist.Artist.set_label>`"
 
 #: matplotlib.pyplot.pcolormesh:155 of
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: matplotlib.pyplot.pcolormesh:156 of
 msgid ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` or dashes or linestyles or ls"
-msgstr ""
+msgstr ":meth:`linestyle <matplotlib.collections.Collection.set_linestyle>` o guiones o estilos de línea o ls"
 
 #: matplotlib.pyplot.pcolormesh:156 of
 msgid "str or tuple or list thereof"
-msgstr ""
+msgstr "str o tuple o lista de ellos"
 
 #: matplotlib.pyplot.pcolormesh:157 of
 msgid ":meth:`linewidth <matplotlib.collections.Collection.set_linewidth>` or linewidths or lw"
-msgstr ""
+msgstr ":meth:`ancho de línea <matplotlib.collections.Collection.set_linewidth>o ancho de línea o lw"
 
 #: matplotlib.pyplot.pcolormesh:157 of
 msgid "float or list of floats"
-msgstr ""
+msgstr "flotante o lista de flotantes"
 
 #: matplotlib.pyplot.pcolormesh:158 of
 msgid ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
-msgstr ""
+msgstr ":meth:`norm <matplotlib.cm.ScalarMappable.set_norm>`"
 
 #: matplotlib.pyplot.pcolormesh:158 of
 msgid "`.Normalize` or None"
-msgstr ""
+msgstr "`.normalize` o Ninguno"
 
 #: matplotlib.pyplot.pcolormesh:159 of
 msgid ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
-msgstr ""
+msgstr ":meth:`offset_transform <matplotlib.collections.Collection.set_offset_transform>`"
 
 #: matplotlib.pyplot.pcolormesh:159 matplotlib.pyplot.pcolormesh:167 of
 msgid "`.Transform`"
-msgstr ""
+msgstr "`.Transform`"
 
 #: matplotlib.pyplot.pcolormesh:160 of
 msgid ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
-msgstr ""
+msgstr ":meth:`offsets <matplotlib.collections.Collection.set_offsets>`"
 
 #: matplotlib.pyplot.pcolormesh:160 of
 msgid "(N, 2) or (2,) array-like"
-msgstr ""
+msgstr "((N, 2) o (2,) array-like"
 
 #: matplotlib.pyplot.pcolormesh:161 of
 msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
-msgstr ""
+msgstr ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
 
 #: matplotlib.pyplot.pcolormesh:161 of
 msgid "`.AbstractPathEffect`"
-msgstr ""
+msgstr "`.AbstractPathEffect`"
 
 #: matplotlib.pyplot.pcolormesh:162 of
 msgid ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
-msgstr ""
+msgstr ":meth:`picker <matplotlib.artist.Artist.set_picker>`"
 
 #: matplotlib.pyplot.pcolormesh:162 of
 msgid "None or bool or float or callable"
-msgstr ""
+msgstr "None o bool o float o callable"
 
 #: matplotlib.pyplot.pcolormesh:163 of
 msgid ":meth:`pickradius <matplotlib.collections.Collection.set_pickradius>`"
-msgstr ""
+msgstr ":meth:`pickradius <matplotlib.collections.Collection.set_pickradius>`"
 
 #: matplotlib.pyplot.pcolormesh:163 matplotlib.pyplot.pcolormesh:171 of
 msgid "float"
-msgstr ""
+msgstr "de punto flotante (float)"
 
 #: matplotlib.pyplot.pcolormesh:164 of
 msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
-msgstr ""
+msgstr ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
 
 #: matplotlib.pyplot.pcolormesh:165 of
 msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
-msgstr ""
+msgstr ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
 
 #: matplotlib.pyplot.pcolormesh:165 of
 msgid "(scale: float, length: float, randomness: float)"
-msgstr ""
+msgstr "(scale: float, length: float, randomness: float)"
 
 #: matplotlib.pyplot.pcolormesh:166 of
 msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
-msgstr ""
+msgstr ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
 
 #: matplotlib.pyplot.pcolormesh:166 of
 msgid "bool or None"
-msgstr ""
+msgstr "bool or None"
 
 #: matplotlib.pyplot.pcolormesh:167 of
 msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
-msgstr ""
+msgstr ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
 
 #: matplotlib.pyplot.pcolormesh:168 of
 msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
-msgstr ""
+msgstr ":meth:`url <matplotlib.artist.Artist.set_url>`"
 
 #: matplotlib.pyplot.pcolormesh:169 of
 msgid ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
-msgstr ""
+msgstr ":meth:`urls <matplotlib.collections.Collection.set_urls>`"
 
 #: matplotlib.pyplot.pcolormesh:169 of
 msgid "list of str or None"
-msgstr ""
+msgstr "lista de str o ninguno"
 
 #: matplotlib.pyplot.pcolormesh:170 of
 msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
-msgstr ""
+msgstr ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
 
 #: matplotlib.pyplot.pcolormesh:171 of
 msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
-msgstr ""
+msgstr ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
 
 #: matplotlib.pyplot.pcolormesh:180 of
 msgid ":obj:`pcolor`"
-msgstr ""
+msgstr ":obj:`pcolor`"
 
 #: matplotlib.pyplot.pcolormesh:181 of
 msgid "An alternative implementation with slightly different features. For a detailed discussion on the differences see :ref:`Differences between pcolor() and pcolormesh() <differences-pcolor-pcolormesh>`."
-msgstr ""
+msgstr "Una implementación alternativa con características ligeramente diferentes. Para una discusión detallada sobre las diferencias ver :ref:`Diferencias entre pcolor() y pcolormesh() <differences-pcolor-pcolormesh>."
 
 #: matplotlib.pyplot.pcolormesh:182 of
 msgid ":obj:`imshow`"
-msgstr ""
+msgstr ":obj:`imshow`"
 
 #: matplotlib.pyplot.pcolormesh:183 of
 msgid "If *X* and *Y* are each equidistant, `~.Axes.imshow` can be a faster alternative."
-msgstr ""
+msgstr "Si *X* y *Y* son cada equidistantes, `~.Axes.imshow` puede ser una alternativa más rápida."
 
 #: matplotlib.pyplot.pcolormesh:187 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.pyplot.pcolormesh:188 of
 msgid "**Masked arrays**"
-msgstr ""
+msgstr "**Matrices enmascaradas**"
 
 #: matplotlib.pyplot.pcolormesh:190 of
 msgid "*C* may be a masked array. If ``C[i, j]`` is masked, the corresponding quadrilateral will be transparent. Masking of *X* and *Y* is not supported. Use `~.Axes.pcolor` if you need this functionality."
-msgstr ""
+msgstr "*C* puede ser un arreglo enmascarado. Si ``C[i, j]`` está enmascarado, el cuadrilátero correspondiente será transparente. Mask of *X* and *Y* is not supported. Use `~.Axes.pcolor` if you need this functionality."
 
 #: matplotlib.pyplot.pcolormesh:196 of
 msgid "**Grid orientation**"
-msgstr ""
+msgstr "**Orientación de cuadrícula**"
 
 #: matplotlib.pyplot.pcolormesh:198 of
 msgid "The grid orientation follows the standard matrix convention: An array *C* with shape (nrows, ncolumns) is plotted with the column number as *X* and the row number as *Y*."
-msgstr ""
+msgstr "La orientación de la cuadrícula sigue la convención estándar de la matriza: una matriz *C* con forma (nrows, ncolumns) se traza con el número de columna como *X* y el número de fila como *Y*."
 
 #: matplotlib.pyplot.pcolormesh:204 of
 msgid "**Differences between pcolor() and pcolormesh()**"
-msgstr ""
+msgstr "**Diferencias entre pcolor() y pcolormesh()**"
 
 #: matplotlib.pyplot.pcolormesh:206 of
 msgid "Both methods are used to create a pseudocolor plot of a 2D array using quadrilaterals."
-msgstr ""
+msgstr "Ambos métodos se utilizan para crear un gráfico pseudocolor de una matriz 2D usando cuadrilaterales."
 
 #: matplotlib.pyplot.pcolormesh:209 of
 msgid "The main difference lies in the created object and internal data handling: While `~.Axes.pcolor` returns a `.PolyCollection`, `~.Axes.pcolormesh` returns a `.QuadMesh`. The latter is more specialized for the given purpose and thus is faster. It should almost always be preferred."
-msgstr ""
+msgstr "La diferencia principal radica en el manejo de objetos creados y datos internos: Mientras que `~.Axes.pcolor` devuelve un `.PolyCollection`, `~.Axes. colormesh` devuelve un `.QuadMesh`. Este último es más especializado para el propósito dado y por lo tanto es más rápido. Debería ser casi siempre preferido."
 
 #: matplotlib.pyplot.pcolormesh:215 of
 msgid "There is also a slight difference in the handling of masked arrays. Both `~.Axes.pcolor` and `~.Axes.pcolormesh` support masked arrays for *C*. However, only `~.Axes.pcolor` supports masked arrays for *X* and *Y*. The reason lies in the internal handling of the masked values. `~.Axes.pcolor` leaves out the respective polygons from the PolyCollection. `~.Axes.pcolormesh` sets the facecolor of the masked elements to transparent. You can see the difference when using edgecolors. While all edges are drawn irrespective of masking in a QuadMesh, the edge between two adjacent masked quadrilaterals in `~.Axes.pcolor` is not drawn as the corresponding polygons do not exist in the PolyCollection."
-msgstr ""
+msgstr "También hay una ligera diferencia en el manejo de matrices enmascaradas. Tanto `~.Axes.pcolor` como `~.Axes.pcolormesh` soportan matrices enmascaradas para *C*. Sin embargo, sólo `~.Axes. color` soporta matrices enmascaradas para *X* y *Y*. La razón reside en el manejo interno de los valores enmascarados. `~.Axes.pcolor` deja fuera a los polígonos respectivos de la PolyCollection. `~.Axes.pcolormesh` establece el color facecolor de los elementos enmascarados a transparente. Puedes ver la diferencia cuando usas colores. Mientras que todos los bordes son dibujados independientemente de enmascarar en un QuadMesh, el borde entre dos cuadriláteros enmascarados adyacentes en `~. xes.pcolor` no se dibuja ya que los polígonos correspondientes no existen en la PolyCollection."
 
 #: matplotlib.pyplot.pcolormesh:227 of
 msgid "Another difference is the support of Gouraud shading in `~.Axes.pcolormesh`, which is not available with `~.Axes.pcolor`."
-msgstr ""
+msgstr "Otra diferencia es el soporte de Gouraud sombreado en `~.Axes.pcolormesh`, que no está disponible con `~.Axes.pcolor`."
 

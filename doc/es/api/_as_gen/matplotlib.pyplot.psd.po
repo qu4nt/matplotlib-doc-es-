@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:18\n"
+"PO-Revision-Date: 2022-11-02 14:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,534 +20,534 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.pyplot.psd.rst:2
 msgid "matplotlib.pyplot.psd"
-msgstr ""
+msgstr "matplotlib.pyplot.psd"
 
 #: matplotlib.pyplot.psd:2 of
 msgid "Plot the power spectral density."
-msgstr ""
+msgstr "Trazar la densidad espectral de potencia."
 
 #: matplotlib.pyplot.psd:4 of
 msgid "The power spectral density :math:`P_{xx}` by Welch's average periodogram method.  The vector *x* is divided into *NFFT* length segments.  Each segment is detrended by function *detrend* and windowed by function *window*.  *noverlap* gives the length of the overlap between segments.  The :math:`|\\mathrm{fft}(i)|^2` of each segment :math:`i` are averaged to compute :math:`P_{xx}`, with a scaling to correct for power loss due to windowing."
-msgstr ""
+msgstr "La densidad espectral de potencia :math:`P_{xx}` por el método de periodograma promedio de Welch. El vector *x* se divide en segmentos de longitud *NFFT*. Cada segmento se ve perjudicado por la función *detrend* y se ve en la ventana de la función *window*. *noverlap* da la longitud de la superposición entre segmentos. El :math:`|\\\\mathrm{fft}(i)|^2` de cada segmento :math:`i` están promediados para calcular :math:`P_{xx}`, con una escala a corregir para la pérdida de energía debido a la ventana."
 
 #: matplotlib.pyplot.psd:12 of
 msgid "If len(*x*) < *NFFT*, it will be zero padded to *NFFT*."
-msgstr ""
+msgstr "Si len(*x*) < *NFFT*, se rellenará de cero a *NFFT*."
 
 #: matplotlib.pyplot.psd of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.pyplot.psd:17 of
 msgid "**x**"
-msgstr ""
+msgstr "**x**"
 
 #: of
 msgid "1-D array or sequence"
-msgstr ""
+msgstr "Arreglo o secuencia 1-D"
 
 #: matplotlib.pyplot.psd:17 of
 msgid "Array or sequence containing the data"
-msgstr ""
+msgstr "Arreglo o secuencia que contiene los datos"
 
 #: matplotlib.pyplot.psd:21 of
 msgid "**Fs**"
-msgstr ""
+msgstr "**Fs**"
 
 #: of
 msgid "float, default: 2"
-msgstr ""
+msgstr "float, default: 2"
 
 #: matplotlib.pyplot.psd:20 of
 msgid "The sampling frequency (samples per time unit).  It is used to calculate the Fourier frequencies, *freqs*, in cycles per time unit."
-msgstr ""
+msgstr "La frecuencia de muestreo (muestras por unidad de tiempo).  Se utiliza para calcular las frecuencias de Fourier, *freqs*, en ciclos por unidad de tiempo."
 
 #: matplotlib.pyplot.psd:28 of
 msgid "**window** : callable or ndarray, default: `.window_hanning`"
-msgstr ""
+msgstr "**window** : callable o ndarray, default: `.window_hanning`"
 
 #: of
 msgid "callable or ndarray, default:"
-msgstr ""
+msgstr "callable o ndarray, default:"
 
 #: matplotlib.pyplot.psd:24 of
 msgid "A function or a vector of length *NFFT*.  To create window vectors see `.window_hanning`, `.window_none`, `numpy.blackman`, `numpy.hamming`, `numpy.bartlett`, `scipy.signal`, `scipy.signal.get_window`, etc.  If a function is passed as the argument, it must take a data segment as an argument and return the windowed version of the segment."
-msgstr ""
+msgstr "Una función o un vector de longitud *NFFT*.  Para crear vectores ventana, ver `.window_hanning`, `.window_none`, `numpy.blackman`, `numpy.hamming`, `numpy.bartlett`, `scipy.signal`, `scipy.signal.get_window`, etc.  Si se pasa una función como argumento, debe tomar un segmento de datos como argumento y devolver la versión con ventana del segmento."
 
 #: matplotlib.pyplot.psd:33 of
 msgid "**sides**"
-msgstr ""
+msgstr "**sides**"
 
 #: of
 msgid "{'default', 'onesided', 'twosided'}, optional"
-msgstr ""
+msgstr "{'default', 'onesided', 'twosided'}, opcional"
 
 #: matplotlib.pyplot.psd:31 of
 msgid "Which sides of the spectrum to return. 'default' is one-sided for real data and two-sided for complex data. 'onesided' forces the return of a one-sided spectrum, while 'twosided' forces two-sided."
-msgstr ""
+msgstr "Qué lados del espectro devolver. 'default' es de un solo lado para datos reales y de dos lados para datos complejos. 'onesided' fuerza la devolución de un espectro de un solo lado, mientras que 'twosided' fuerza dos lados."
 
 #: matplotlib.pyplot.psd:42 of
 msgid "**pad_to**"
-msgstr ""
+msgstr "**pad_to**"
 
 #: of
 msgid "int, optional"
-msgstr ""
+msgstr "int, opcional"
 
 #: matplotlib.pyplot.psd:36 of
 msgid "The number of points to which the data segment is padded when performing the FFT.  This can be different from *NFFT*, which specifies the number of data points used.  While not increasing the actual resolution of the spectrum (the minimum distance between resolvable peaks), this can give more points in the plot, allowing for more detail. This corresponds to the *n* parameter in the call to fft(). The default is None, which sets *pad_to* equal to *NFFT*"
-msgstr ""
+msgstr "El número de puntos a los que se rellena el segmento de datos al realizar la FFT.  Esto puede ser diferente de *NFFT*, que especifica el número de puntos de datos utilizados.  Aunque no aumenta la resolución real del espectro (la distancia mínima entre los picos resolubles), esto puede dar más puntos en el gráfico, permitiendo más detalles. Esto corresponde al parámetro *n* en la llamada a fft(). El valor por defecto es None, que establece *pad_to* igual a *NFFT*"
 
 #: matplotlib.pyplot.psd:47 of
 msgid "**NFFT**"
-msgstr ""
+msgstr "**NFFT**"
 
 #: of
 msgid "int, default: 256"
-msgstr ""
+msgstr "int, default: 256"
 
 #: matplotlib.pyplot.psd:45 of
 msgid "The number of data points used in each block for the FFT.  A power 2 is most efficient.  This should *NOT* be used to get zero padding, or the scaling of the result will be incorrect; use *pad_to* for this instead."
-msgstr ""
+msgstr "El número de puntos de datos utilizados en cada bloque para la FFT.  Una potencia 2 es lo más eficiente.  Esto debe *NO* usarse para obtener el relleno de cero, o el escalado del resultado será incorrecto; use *pad_to* para esto en su lugar."
 
 #: matplotlib.pyplot.psd:56 of
 msgid "**detrend**"
-msgstr ""
+msgstr "**detrend**"
 
 #: of
 msgid "{'none', 'mean', 'linear'} or callable, default: 'none'"
-msgstr ""
+msgstr "{'none', 'mean', 'linear'} or callable, default: 'none'"
 
 #: matplotlib.pyplot.psd:50 of
 msgid "The function applied to each segment before fft-ing, designed to remove the mean or linear trend.  Unlike in MATLAB, where the *detrend* parameter is a vector, in Matplotlib it is a function.  The :mod:`~matplotlib.mlab` module defines `.detrend_none`, `.detrend_mean`, and `.detrend_linear`, but you can use a custom function as well.  You can also use a string to choose one of the functions: 'none' calls `.detrend_none`. 'mean' calls `.detrend_mean`. 'linear' calls `.detrend_linear`."
-msgstr ""
+msgstr "La función aplicada a cada segmento antes de fft-ing, diseñada para eliminar la media o la tendencia lineal.  A diferencia de MATLAB, donde el parámetro *detrend* es un vector, en Matplotlib es una función.  El módulo :mod:`~matplotlib.mlab` define `.detrend_none`, `.detrend_mean` y `.detrend_linear`, pero también se puede utilizar una función personalizada.  También puede utilizar una cadena para elegir una de las funciones: \"none\" llama a `.detrend_none`. 'mean' invoca a `.detrend_mean`. 'linear' llama a `.detrend_linear`."
 
 #: matplotlib.pyplot.psd:62 of
 msgid "**scale_by_freq**"
-msgstr ""
+msgstr "**scale_by_freq**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.pyplot.psd:59 of
 msgid "Whether the resulting density values should be scaled by the scaling frequency, which gives density in units of Hz^-1.  This allows for integration over the returned frequency values.  The default is True for MATLAB compatibility."
-msgstr ""
+msgstr "Si los valores de densidad resultantes deben ser escalados por la frecuencia de escalado, que da la densidad en unidades de Hz^-1.  Esto permite la integración sobre los valores de frecuencia devueltos.  El valor por defecto es True para la compatibilidad con MATLAB."
 
 #: matplotlib.pyplot.psd:65 of
 msgid "**noverlap**"
-msgstr ""
+msgstr "**noverlap**"
 
 #: of
 msgid "int, default: 0 (no overlap)"
-msgstr ""
+msgstr "int, default: 0 (no overlap)"
 
 #: matplotlib.pyplot.psd:65 of
 msgid "The number of points of overlap between segments."
-msgstr ""
+msgstr "El número de puntos de solapamiento entre segmentos."
 
 #: matplotlib.pyplot.psd:70 of
 msgid "**Fc**"
-msgstr ""
+msgstr "**Fc**"
 
 #: of
 msgid "int, default: 0"
-msgstr ""
+msgstr "int, por defecto: 0"
 
 #: matplotlib.pyplot.psd:68 of
 msgid "The center frequency of *x*, which offsets the x extents of the plot to reflect the frequency range used when a signal is acquired and then filtered and downsampled to baseband."
-msgstr ""
+msgstr "La frecuencia central de *x*, que compensa la extensión x de la parcela para reflejar el rango de frecuencia utilizado cuando una señal es adquirida y luego filtrada y mostrada a la baseband."
 
 #: matplotlib.pyplot.psd:73 of
 msgid "**return_line**"
-msgstr ""
+msgstr "**retorno_línea**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.pyplot.psd:73 of
 msgid "Whether to include the line object plotted in the returned values."
-msgstr ""
+msgstr "Si incluir o no el objeto de línea trazado en los valores devueltos."
 
 #: matplotlib.pyplot.psd of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.pyplot.psd:79 of
 msgid "**Pxx**"
-msgstr ""
+msgstr "**Pxx**"
 
 #: of
 msgid "1-D array"
-msgstr ""
+msgstr "Arreglo 1-D"
 
 #: matplotlib.pyplot.psd:78 of
 msgid "The values for the power spectrum :math:`P_{xx}` before scaling (real valued)."
-msgstr ""
+msgstr "Los valores para el espectro de energía :math:`P_{xx}` antes de escalar (valor real)."
 
 #: matplotlib.pyplot.psd:82 of
 msgid "**freqs**"
-msgstr ""
+msgstr "**freqs**"
 
 #: matplotlib.pyplot.psd:82 of
 msgid "The frequencies corresponding to the elements in *Pxx*."
-msgstr ""
+msgstr "Las frecuencias correspondientes a los elementos de *Pxx*."
 
 #: matplotlib.pyplot.psd:88 of
 msgid "**line** : `~matplotlib.lines.Line2D`"
-msgstr ""
+msgstr "**line** : `~matplotlib.lines.Line2D`"
 
 #: matplotlib.pyplot.psd:87 of
 msgid "Line2D"
-msgstr ""
+msgstr "Line2D"
 
 #: matplotlib.pyplot.psd:85 of
 msgid "The line created by this function. Only returned if *return_line* is True."
-msgstr ""
+msgstr "La línea creada por esta función. Sólo se devuelve si *return_line* es True."
 
 #: matplotlib.pyplot.psd of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.pyplot.psd:96 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.pyplot.psd:93 of
 msgid "If given, the following parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception):"
-msgstr ""
+msgstr "Si se dan, los siguientes parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción):"
 
 #: matplotlib.pyplot.psd:96 of
 msgid "*x*"
-msgstr ""
+msgstr "*x*"
 
 #: matplotlib.pyplot.psd:151 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.pyplot.psd:99 of
 msgid "Keyword arguments control the `.Line2D` properties:"
-msgstr ""
+msgstr "Los argumentos de palabra clave controlan las propiedades `.Line2D`:"
 
 #: matplotlib.pyplot.psd:105 of
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: matplotlib.pyplot.psd:105 of
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: matplotlib.pyplot.psd:107 of
 msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
-msgstr ""
+msgstr ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
 
 #: matplotlib.pyplot.psd:107 of
 msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
-msgstr ""
+msgstr "una función de filtro, que toma un arreglo de puntos flotantes (m, n, 3) y un valor de dpi, y devuelve un arreglo (m, n, 3)"
 
 #: matplotlib.pyplot.psd:108 of
 msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
-msgstr ""
+msgstr ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
 
 #: matplotlib.pyplot.psd:108 of
 msgid "scalar or None"
-msgstr ""
+msgstr "escalar o None"
 
 #: matplotlib.pyplot.psd:109 of
 msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
-msgstr ""
+msgstr ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
 
 #: matplotlib.pyplot.psd:109 matplotlib.pyplot.psd:110
 #: matplotlib.pyplot.psd:112 matplotlib.pyplot.psd:123
 #: matplotlib.pyplot.psd:137 matplotlib.pyplot.psd:144 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.pyplot.psd:110 of
 msgid ":meth:`antialiased <matplotlib.lines.Line2D.set_antialiased>` or aa"
-msgstr ""
+msgstr ":meth:`antialias <matplotlib.lines.Line2D.set_antialiased>` o aa"
 
 #: matplotlib.pyplot.psd:111 of
 msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
-msgstr ""
+msgstr ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
 
 #: matplotlib.pyplot.psd:111 of
 msgid "`.Bbox`"
-msgstr ""
+msgstr "`.Bbox`"
 
 #: matplotlib.pyplot.psd:112 of
 msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
-msgstr ""
+msgstr ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
 
 #: matplotlib.pyplot.psd:113 of
 msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
-msgstr ""
+msgstr ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
 
 #: matplotlib.pyplot.psd:113 of
 msgid "Patch or (Path, Transform) or None"
-msgstr ""
+msgstr "Patch o (Path, Transform) o None"
 
 #: matplotlib.pyplot.psd:114 of
 msgid ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
-msgstr ""
+msgstr ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
 
 #: matplotlib.pyplot.psd:114 matplotlib.pyplot.psd:128
 #: matplotlib.pyplot.psd:130 matplotlib.pyplot.psd:131 of
 msgid "color"
-msgstr ""
+msgstr "color"
 
 #: matplotlib.pyplot.psd:115 of
 msgid ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
-msgstr ""
+msgstr ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
 
 #: matplotlib.pyplot.psd:115 matplotlib.pyplot.psd:140 of
 msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "`.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.pyplot.psd:116 of
 msgid ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
-msgstr ""
+msgstr ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
 
 #: matplotlib.pyplot.psd:116 matplotlib.pyplot.psd:141 of
 msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "`.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.pyplot.psd:117 of
 msgid ":meth:`dashes <matplotlib.lines.Line2D.set_dashes>`"
-msgstr ""
+msgstr ":meth:`guiones <matplotlib.lines.Line2D.set_dashes>`"
 
 #: matplotlib.pyplot.psd:117 of
 msgid "sequence of floats (on/off ink in points) or (None, None)"
-msgstr ""
+msgstr "secuencia de flotantes (tinta encendida/apagada en puntos) o (Ninguna, Ninguna)"
 
 #: matplotlib.pyplot.psd:118 of
 msgid ":meth:`data <matplotlib.lines.Line2D.set_data>`"
-msgstr ""
+msgstr ":meth:`data <matplotlib.lines.Line2D.set_data>`"
 
 #: matplotlib.pyplot.psd:118 of
 msgid "(2, N) array or two 1D arrays"
-msgstr ""
+msgstr "(2, N) array o dos matrices 1D"
 
 #: matplotlib.pyplot.psd:119 of
 msgid ":meth:`drawstyle <matplotlib.lines.Line2D.set_drawstyle>` or ds"
-msgstr ""
+msgstr ":meth:`estilo de dibujo <matplotlib.lines.Line2D.set_drawstyle>` o ds"
 
 #: matplotlib.pyplot.psd:119 of
 msgid "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
-msgstr ""
+msgstr "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
 
 #: matplotlib.pyplot.psd:120 of
 msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
-msgstr ""
+msgstr ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
 
 #: matplotlib.pyplot.psd:120 of
 msgid "`.Figure`"
-msgstr ""
+msgstr "`.Figure`"
 
 #: matplotlib.pyplot.psd:121 of
 msgid ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
-msgstr ""
+msgstr ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
 
 #: matplotlib.pyplot.psd:121 of
 msgid "{'full', 'left', 'right', 'bottom', 'top', 'none'}"
-msgstr ""
+msgstr "{'full', 'left', 'right', 'bottom', 'top', 'ninguno '}"
 
 #: matplotlib.pyplot.psd:122 of
 msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
-msgstr ""
+msgstr ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
 
 #: matplotlib.pyplot.psd:122 matplotlib.pyplot.psd:143 of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.pyplot.psd:123 of
 msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
-msgstr ""
+msgstr ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
 
 #: matplotlib.pyplot.psd:124 of
 msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
-msgstr ""
+msgstr ":meth:`label <matplotlib.artist.Artist.set_label>`"
 
 #: matplotlib.pyplot.psd:124 of
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: matplotlib.pyplot.psd:125 of
 msgid ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` or ls"
-msgstr ""
+msgstr ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` o ls"
 
 #: matplotlib.pyplot.psd:125 of
 msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
-msgstr ""
+msgstr "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
 
 #: matplotlib.pyplot.psd:126 of
 msgid ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
-msgstr ""
+msgstr ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
 
 #: matplotlib.pyplot.psd:126 matplotlib.pyplot.psd:129
 #: matplotlib.pyplot.psd:132 matplotlib.pyplot.psd:136
 #: matplotlib.pyplot.psd:147 of
 msgid "float"
-msgstr ""
+msgstr "de punto flotante (float)"
 
 #: matplotlib.pyplot.psd:127 of
 msgid ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
-msgstr ""
+msgstr ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
 
 #: matplotlib.pyplot.psd:127 of
 msgid "marker style string, `~.path.Path` or `~.markers.MarkerStyle`"
-msgstr ""
+msgstr "marker style string, `~.path.Path` o `~.markers.MarkerStyle`"
 
 #: matplotlib.pyplot.psd:128 of
 msgid ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` or mec"
-msgstr ""
+msgstr ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` o mec"
 
 #: matplotlib.pyplot.psd:129 of
 msgid ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` or mew"
-msgstr ""
+msgstr ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` o mío"
 
 #: matplotlib.pyplot.psd:130 of
 msgid ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` or mfc"
-msgstr ""
+msgstr ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` o mfc"
 
 #: matplotlib.pyplot.psd:131 of
 msgid ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` or mfcalt"
-msgstr ""
+msgstr ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` o mfcalt"
 
 #: matplotlib.pyplot.psd:132 of
 msgid ":meth:`markersize <matplotlib.lines.Line2D.set_markersize>` or ms"
-msgstr ""
+msgstr ":meth:`tamaño de marcador <matplotlib.lines.Line2D.set_markersize>` o ms"
 
 #: matplotlib.pyplot.psd:133 of
 msgid ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
-msgstr ""
+msgstr ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
 
 #: matplotlib.pyplot.psd:133 of
 msgid "None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]"
-msgstr ""
+msgstr "Ninguno o int o (int, int) o rebanada o lista[int] o decimal o (float, float) o lista[bool]"
 
 #: matplotlib.pyplot.psd:134 of
 msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
-msgstr ""
+msgstr ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
 
 #: matplotlib.pyplot.psd:134 of
 msgid "`.AbstractPathEffect`"
-msgstr ""
+msgstr "`.AbstractPathEffect`"
 
 #: matplotlib.pyplot.psd:135 of
 msgid ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
-msgstr ""
+msgstr ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
 
 #: matplotlib.pyplot.psd:135 of
 msgid "float or callable[[Artist, Event], tuple[bool, dict]]"
-msgstr ""
+msgstr "decimal o llamable[[Artista, Evento], tuple[bool, dict]]"
 
 #: matplotlib.pyplot.psd:136 of
 msgid ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
-msgstr ""
+msgstr ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
 
 #: matplotlib.pyplot.psd:137 of
 msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
-msgstr ""
+msgstr ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
 
 #: matplotlib.pyplot.psd:138 of
 msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
-msgstr ""
+msgstr ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
 
 #: matplotlib.pyplot.psd:138 of
 msgid "(scale: float, length: float, randomness: float)"
-msgstr ""
+msgstr "(scale: float, length: float, randomness: float)"
 
 #: matplotlib.pyplot.psd:139 of
 msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
-msgstr ""
+msgstr ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
 
 #: matplotlib.pyplot.psd:139 of
 msgid "bool or None"
-msgstr ""
+msgstr "bool or None"
 
 #: matplotlib.pyplot.psd:140 of
 msgid ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
-msgstr ""
+msgstr ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
 
 #: matplotlib.pyplot.psd:141 of
 msgid ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
-msgstr ""
+msgstr ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
 
 #: matplotlib.pyplot.psd:142 of
 msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
-msgstr ""
+msgstr ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
 
 #: matplotlib.pyplot.psd:142 of
 msgid "unknown"
-msgstr ""
+msgstr "desconocido"
 
 #: matplotlib.pyplot.psd:143 of
 msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
-msgstr ""
+msgstr ":meth:`url <matplotlib.artist.Artist.set_url>`"
 
 #: matplotlib.pyplot.psd:144 of
 msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
-msgstr ""
+msgstr ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
 
 #: matplotlib.pyplot.psd:145 of
 msgid ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
-msgstr ""
+msgstr ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
 
 #: matplotlib.pyplot.psd:145 matplotlib.pyplot.psd:146 of
 msgid "1D array"
-msgstr ""
+msgstr "Matriz 1D"
 
 #: matplotlib.pyplot.psd:146 of
 msgid ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
-msgstr ""
+msgstr ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
 
 #: matplotlib.pyplot.psd:147 of
 msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
-msgstr ""
+msgstr ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
 
 #: matplotlib.pyplot.psd:156 of
 msgid ":obj:`specgram`"
-msgstr ""
+msgstr ":obj:`specgram`"
 
 #: matplotlib.pyplot.psd:157 of
 msgid "Differs in the default overlap; in not returning the mean of the segment periodograms; in returning the times of the segments; and in plotting a colormap instead of a line."
-msgstr ""
+msgstr "Diferencias en la superposición predeterminada; al no devolver la media de los periodogramas de segmento; al devolver los tiempos de los segmentos; y al trazar un mapa de colores en lugar de una línea."
 
 #: matplotlib.pyplot.psd:158 of
 msgid ":obj:`magnitude_spectrum`"
-msgstr ""
+msgstr ":obj:`magnitude_spectrum`"
 
 #: matplotlib.pyplot.psd:159 of
 msgid "Plots the magnitude spectrum."
-msgstr ""
+msgstr "Traza el espectro de magnitud."
 
 #: matplotlib.pyplot.psd:160 of
 msgid ":obj:`csd`"
-msgstr ""
+msgstr ":obj:`csd`"
 
 #: matplotlib.pyplot.psd:161 of
 msgid "Plots the spectral density between two signals."
-msgstr ""
+msgstr "Traza la densidad espectral entre dos señales."
 
 #: matplotlib.pyplot.psd:165 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.pyplot.psd:166 of
 msgid "For plotting, the power is plotted as :math:`10\\log_{10}(P_{xx})` for decibels, though *Pxx* itself is returned."
-msgstr ""
+msgstr "Para trazar, el poder está graficado como :math:`10\\log_{10}(P_{xx})` para decibelios, aunque *Pxxx* en sí mismo es devuelto."
 
 #: matplotlib.pyplot.psd:171 of
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: matplotlib.pyplot.psd:172 of
 msgid "Bendat & Piersol -- Random Data: Analysis and Measurement Procedures, John Wiley & Sons (1986)"
-msgstr ""
+msgstr "Bendat & Piersol -- Datos aleatorios: Analysis and Measurement Procedures, John Wiley & Sons (1986)"
 

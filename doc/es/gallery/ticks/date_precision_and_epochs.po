@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:31\n"
+"PO-Revision-Date: 2022-06-19 04:13\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,27 +20,27 @@ msgstr ""
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_ticks_date_precision_and_epochs.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_ticks_date_precision_and_epochs.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:23
 msgid "Date Precision and Epochs"
-msgstr ""
+msgstr "Precisión de la fecha y épocas"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:25
 msgid "Matplotlib can handle `.datetime` objects and `numpy.datetime64` objects using a unit converter that recognizes these dates and converts them to floating point numbers."
-msgstr ""
+msgstr "Matplotlib puede manejar objetos `.datetime` y objetos `numpy.datetime64` utilizando un convertidor de unidades que reconoce estas fechas y las convierte en números de punto flotante."
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:29
 msgid "Before Matplotlib 3.3, the default for this conversion returns a float that was days since \"0000-12-31T00:00:00\".  As of Matplotlib 3.3, the default is days from \"1970-01-01T00:00:00\".  This allows more resolution for modern dates.  \"2020-01-01\" with the old epoch converted to 730120, and a 64-bit floating point number has a resolution of 2^{-52}, or approximately 14 microseconds, so microsecond precision was lost.  With the new default epoch \"2020-01-01\" is 10957.0, so the achievable resolution is 0.21 microseconds."
-msgstr ""
+msgstr "Antes de Matplotlib 3.3, el valor por defecto para esta conversión devuelve un flotador que es días desde \"0000-12-31T00:00:00\".  A partir de Matplotlib 3.3, el valor por defecto es días desde \"1970-01-01T00:00:00\".  Esto permite una mayor resolución para las fechas modernas.  \"2020-01-01\" con la antigua época convertida a 730120, y un número de punto flotante de 64 bits tiene una resolución de 2^{-52}, o aproximadamente 14 microsegundos, por lo que se perdió la precisión del microsegundo.  Con la nueva época por defecto \"2020-01-01\" es 10957.0, por lo que la resolución alcanzable es de 0,21 microsegundos."
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:67
 msgid "Datetime"
-msgstr ""
+msgstr "Datetime"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:69
 msgid "Python `.datetime` objects have microsecond resolution, so with the old default matplotlib dates could not round-trip full-resolution datetime objects."
-msgstr ""
+msgstr "Los objetos `.datetime` de Python tienen una resolución de microsegundos, por lo que con las antiguas fechas por defecto de matplotlib no se podían redondear los objetos datetime de resolución completa."
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:97
 #: ../../gallery/ticks/date_precision_and_epochs.rst:130
@@ -48,69 +48,69 @@ msgstr ""
 #: ../../gallery/ticks/date_precision_and_epochs.rst:198
 #: ../../gallery/ticks/date_precision_and_epochs.rst:238
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:109
 msgid "Note this is only a round-off error, and there is no problem for dates closer to the old epoch:"
-msgstr ""
+msgstr "Ten en cuenta que esto es sólo un error de redondeo, y no hay problema para las fechas más cercanas a la época antigua:"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:142
 msgid "If a user wants to use modern dates at microsecond precision, they can change the epoch using `.set_epoch`.  However, the epoch has to be set before any date operations to prevent confusion between different epochs. Trying to change the epoch later will raise a `RuntimeError`."
-msgstr ""
+msgstr "Si un usuario quiere utilizar fechas modernas con precisión de microsegundos, puede cambiar la época utilizando `.set_epoch`.  Sin embargo, la época debe establecerse antes de cualquier operación de fecha para evitar la confusión entre diferentes épocas. Si se intenta cambiar la época más tarde, se producirá un `RuntimeError`."
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:174
 msgid "For this tutorial, we reset the sentinel using a private method, but users should just set the epoch once, if at all."
-msgstr ""
+msgstr "Para este tutorial, reseteamos el centinela usando un método privado, pero los usuarios sólo deberían establecer la época una vez, si es que lo hacen."
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:211
 msgid "datetime64"
-msgstr ""
+msgstr "datetime64"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:213
 msgid "`numpy.datetime64` objects have microsecond precision for a much larger timespace than `.datetime` objects.  However, currently Matplotlib time is only converted back to datetime objects, which have microsecond resolution, and years that only span 0000 to 9999."
-msgstr ""
+msgstr "Los objetos `numpy.datetime64` tienen una precisión de microsegundos para un espacio de tiempo mucho mayor que los objetos `.datetime`.  Sin embargo, actualmente el tiempo de Matplotlib sólo se convierte a objetos datetime, que tienen una resolución de microsegundos, y años que sólo abarcan del 0000 al 9999."
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:251
 msgid "Plotting"
-msgstr ""
+msgstr "Trazando"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:253
 msgid "This all of course has an effect on plotting.  With the old default epoch the times were rounded during the internal ``date2num`` conversion, leading to jumps in the data:"
-msgstr ""
+msgstr "Todo esto, por supuesto, tiene un efecto en el trazado.  Con la anterior fecha por defecto las horas se redondeaban durante la conversión interna ``date2num``, lo que provocaba saltos en los datos:"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:295
 msgid "For dates plotted using the more recent epoch, the plot is smooth:"
-msgstr ""
+msgstr "Para las fechas trazadas utilizando la época más reciente, el gráfico es suave:"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:324
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:326
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:329
 msgid "`matplotlib.dates.num2date`"
-msgstr ""
+msgstr "`matplotlib.dates.num2date`"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:330
 msgid "`matplotlib.dates.date2num`"
-msgstr ""
+msgstr "`matplotlib.dates.date2num`"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:331
 msgid "`matplotlib.dates.set_epoch`"
-msgstr ""
+msgstr "`matplotlib.dates.set_epoch`"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:346
 msgid ":download:`Download Python source code: date_precision_and_epochs.py <date_precision_and_epochs.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: date_precision_and_epochs.py <date_precision_and_epochs.py>`"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:352
 msgid ":download:`Download Jupyter notebook: date_precision_and_epochs.ipynb <date_precision_and_epochs.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: date_precision_and_epochs.ipynb <date_precision_and_epochs.ipynb>`"
 
 #: ../../gallery/ticks/date_precision_and_epochs.rst:359
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

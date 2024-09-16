@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:11\n"
+"PO-Revision-Date: 2022-11-02 13:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,516 +20,516 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.rst:2
 msgid "matplotlib.axes.Axes.contour"
-msgstr ""
+msgstr "matplotlib.axes.Axes.contour"
 
 #: matplotlib.axes._axes.Axes.contour:2 of
 msgid "Plot contour lines."
-msgstr ""
+msgstr "Trazar líneas de contorno."
 
 #: matplotlib.axes._axes.Axes.contour:4 of
 msgid "Call signature::"
-msgstr ""
+msgstr "Firma de llamada::"
 
 #: matplotlib.axes._axes.Axes.contour:8 of
 msgid "`.contour` and `.contourf` draw contour lines and filled contours, respectively.  Except as noted, function signatures and return values are the same for both versions."
-msgstr ""
+msgstr "`.contour` y `.contourf` dibujan líneas de contorno y contornos llenados, respectivamente. Excepto como señalado, las firmas de funciones y los valores de retorno son los mismos para ambas versiones."
 
 #: matplotlib.axes._axes.Axes.contour of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.axes._axes.Axes.contour:25 of
 msgid "**X, Y**"
-msgstr ""
+msgstr "**X, Y**"
 
 #: of
 msgid "array-like, optional"
-msgstr ""
+msgstr "tipo arreglo, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:15 of
 msgid "The coordinates of the values in *Z*."
-msgstr ""
+msgstr "Las coordenadas de los valores en *Z*."
 
 #: matplotlib.axes._axes.Axes.contour:17 of
 msgid "*X* and *Y* must both be 2D with the same shape as *Z* (e.g. created via `numpy.meshgrid`), or they must both be 1-D such that ``len(X) == N`` is the number of columns in *Z* and ``len(Y) == M`` is the number of rows in *Z*."
-msgstr ""
+msgstr "*X* y *Y* deben ser 2D con la misma forma que *Z* (por ejemplo, creados mediante `numpy. eshgrid`), o ambos deben ser 1-D tal que ``len(X) == N`` es el número de columnas en *Z* y ``len(Y) == M`` es el número de filas en *Z*."
 
 #: matplotlib.axes._axes.Axes.contour:22 of
 msgid "*X* and *Y* must both be ordered monotonically."
-msgstr ""
+msgstr "*X* y *Y* deben ser ordenados monotónicamente."
 
 #: matplotlib.axes._axes.Axes.contour:24 of
 msgid "If not given, they are assumed to be integer indices, i.e. ``X = range(N)``, ``Y = range(M)``."
-msgstr ""
+msgstr "Si no se proporciona, se asumen que son índices enteros, es decir, ``X = range(N)``, ``Y = range(M)``."
 
 #: matplotlib.axes._axes.Axes.contour:28 of
 msgid "**Z**"
-msgstr ""
+msgstr "**Z**"
 
 #: of
 msgid "(M, N) array-like"
-msgstr ""
+msgstr "(M, N) matriz"
 
 #: matplotlib.axes._axes.Axes.contour:28 of
 msgid "The height values over which the contour is drawn."
-msgstr ""
+msgstr "Los valores de altura sobre los que se dibuja el contorno."
 
 #: matplotlib.axes._axes.Axes.contour:38 of
 msgid "**levels**"
-msgstr ""
+msgstr "**Niveles**"
 
 #: of
 msgid "int or array-like, optional"
-msgstr ""
+msgstr "int o tipo matriz, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:31 of
 msgid "Determines the number and positions of the contour lines / regions."
-msgstr ""
+msgstr "Determina el número y las posiciones de las líneas / regiones de contorno."
 
 #: matplotlib.axes._axes.Axes.contour:33 of
 msgid "If an int *n*, use `~matplotlib.ticker.MaxNLocator`, which tries to automatically choose no more than *n+1* \"nice\" contour levels between *vmin* and *vmax*."
-msgstr ""
+msgstr "Si un int *n*, use `~matplotlib.ticker.MaxNLocator`, que intenta elegir automáticamente no más de *n+1* niveles de contorno entre *vmin* y *vmax*."
 
 #: matplotlib.axes._axes.Axes.contour:37 of
 msgid "If array-like, draw contour lines at the specified levels. The values must be in increasing order."
-msgstr ""
+msgstr "Si al estilo de la matriz, dibuja líneas de contorno en los niveles especificados. Los valores deben estar en orden creciente."
 
 #: matplotlib.axes._axes.Axes.contour of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.axes._axes.Axes.contour:45 of
 msgid "`~.contour.QuadContourSet`"
-msgstr ""
+msgstr "`~.contour.QuadContourSet`"
 
 #: matplotlib.axes._axes.Axes.contour of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.axes._axes.Axes.contour:54 of
 msgid "**corner_mask** : bool, default: :rc:`contour.corner_mask`"
-msgstr ""
+msgstr "**corner_mask** : bool, predeterminado: :rc:`contour.corner_mask`"
 
 #: of
 msgid "bool, default:"
-msgstr ""
+msgstr "bool, default:"
 
 #: matplotlib.axes._axes.Axes.contour:50 of
 msgid "Enable/disable corner masking, which only has an effect if *Z* is a masked array.  If ``False``, any quad touching a masked point is masked out.  If ``True``, only the triangular corners of quads nearest those points are always masked out, other triangular corners comprising three unmasked points are contoured as usual."
-msgstr ""
+msgstr "Activar/desactivar la máscara de esquina, que sólo tiene efecto si *Z* es una matriz enmascarada. Si es ``False``, cualquier cuadrilátero que toque un punto enmascarado es enmascarado. Si es ``True``, sólo las esquinas triangulares de los cuadriláteros más cercanos a esos puntos siempre están enmascarados, otras esquinas triangulares que comprenden tres puntos sin enmascarar son contorneados como de costumbre."
 
 #: matplotlib.axes._axes.Axes.contour:69 of
 msgid "**colors**"
-msgstr ""
+msgstr "**colores**"
 
 #: of
 msgid "color string or sequence of colors, optional"
-msgstr ""
+msgstr "cadena de color o secuencia de colores, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:57 of
 msgid "The colors of the levels, i.e. the lines for `.contour` and the areas for `.contourf`."
-msgstr ""
+msgstr "Los colores de los niveles, es decir, las líneas para `.contour` y las áreas para `.contourf`."
 
 #: matplotlib.axes._axes.Axes.contour:60 of
 msgid "The sequence is cycled for the levels in ascending order. If the sequence is shorter than the number of levels, it's repeated."
-msgstr ""
+msgstr "La secuencia es ciclada para los niveles en orden ascendente. Si la secuencia es más corta que el número de niveles, se repite."
 
 #: matplotlib.axes._axes.Axes.contour:63 of
 msgid "As a shortcut, single color strings may be used in place of one-element lists, i.e. ``'red'`` instead of ``['red']`` to color all levels with the same color. This shortcut does only work for color strings, not for other ways of specifying colors."
-msgstr ""
+msgstr "Como un acceso directo, se pueden utilizar cadenas de color simples en lugar de listas de un elemento, i. . ``'red'`` en lugar de ``['red']`` para colorear todos los niveles con el mismo color. Este acceso directo sólo funciona para cadenas de color, no para otras formas de especificar colores."
 
 #: matplotlib.axes._axes.Axes.contour:68 of
 msgid "By default (value *None*), the colormap specified by *cmap* will be used."
-msgstr ""
+msgstr "Por defecto (valor *Ninguno*), se utilizará el mapa de colores especificado por *cmap*."
 
 #: matplotlib.axes._axes.Axes.contour:72 of
 msgid "**alpha**"
-msgstr ""
+msgstr "**alfa**"
 
 #: of
 msgid "float, default: 1"
-msgstr ""
+msgstr "float, default: 1"
 
 #: matplotlib.axes._axes.Axes.contour:72 of
 msgid "The alpha blending value, between 0 (transparent) and 1 (opaque)."
-msgstr ""
+msgstr "El valor de mezcla alfa, entre 0 (transparente) y 1 (opaco)."
 
 #: matplotlib.axes._axes.Axes.contour:78 of
 msgid "**cmap** : str or `.Colormap`, default: :rc:`image.cmap`"
-msgstr ""
+msgstr "**cmap** : str o `.Colormap`, por defecto: :rc:`image.cmap`"
 
 #: of
 msgid "str or"
-msgstr ""
+msgstr "str o"
 
 #: matplotlib.axes._axes.Axes.contour:75 of
 msgid "A `.Colormap` instance or registered colormap name. The colormap maps the level values to colors."
-msgstr ""
+msgstr "Una instancia `.Colormap` o nombre de mapa de colores registrado. El mapa de colores asigna los valores de nivel a colores."
 
 #: matplotlib.axes._axes.Axes.contour:78 of
 msgid "If both *colors* and *cmap* are given, an error is raised."
-msgstr ""
+msgstr "Si ambos *colores* y *cmap* son dados, un error es levantado."
 
 #: matplotlib.axes._axes.Axes.contour:83 of
 msgid "**norm** : `~matplotlib.colors.Normalize`, optional"
-msgstr ""
+msgstr "**norma** : `~matplotlib.colors.Normalize`, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:82 of
 msgid "Normalize, optional"
-msgstr ""
+msgstr "Normalizar, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:81 of
 msgid "If a colormap is used, the `.Normalize` instance scales the level values to the canonical colormap range [0, 1] for mapping to colors. If not given, the default linear scaling is used."
-msgstr ""
+msgstr "Si se utiliza un mapa de colores, la instancia `.Normalize` escala los valores de nivel al rango de mapa de colores canónico [0, 1] para mapear a colores. Si no se proporciona, se utiliza el escalado lineal predeterminado."
 
 #: matplotlib.axes._axes.Axes.contour:88 of
 msgid "**vmin, vmax**"
-msgstr ""
+msgstr "**vmin, vmax**"
 
 #: of
 msgid "float, optional"
-msgstr ""
+msgstr "float, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:86 of
 msgid "If not *None*, either or both of these values will be supplied to the `.Normalize` instance, overriding the default color scaling based on *levels*."
-msgstr ""
+msgstr "Si no es *nunca*, cualquiera o ambos valores serán suministrados a la instancia `.Normalize`, sobreescribiendo la escala de color predeterminada basada en *niveles*."
 
 #: matplotlib.axes._axes.Axes.contour:99 of
 msgid "**origin** : {*None*, 'upper', 'lower', 'image'}, default: None"
-msgstr ""
+msgstr "**origin** : {*Ninguno*, 'arriba', 'lower', 'image'}, por defecto: Ninguno"
 
 #: of
 msgid "{"
-msgstr ""
+msgstr "{"
 
 #: matplotlib.axes._axes.Axes.contour:91 of
 msgid "Determines the orientation and exact position of *Z* by specifying the position of ``Z[0, 0]``.  This is only relevant, if *X*, *Y* are not given."
-msgstr ""
+msgstr "Determina la orientación y posición exacta de *Z* especificando la posición de ``Z[0, 0]``. Esto sólo es relevante, si *X*, *Y* no son dados."
 
 #: matplotlib.axes._axes.Axes.contour:95 of
 msgid "*None*: ``Z[0, 0]`` is at X=0, Y=0 in the lower left corner."
-msgstr ""
+msgstr "*Ninguno*: ``Z[0, 0]`` está en X=0, Y=0 en la esquina inferior izquierda."
 
 #: matplotlib.axes._axes.Axes.contour:96 of
 msgid "'lower': ``Z[0, 0]`` is at X=0.5, Y=0.5 in the lower left corner."
-msgstr ""
+msgstr "'lower': ``Z[0, 0]`` está en X=0.5, Y=0.5 en la esquina inferior izquierda."
 
 #: matplotlib.axes._axes.Axes.contour:97 of
 msgid "'upper': ``Z[0, 0]`` is at X=N+0.5, Y=0.5 in the upper left corner."
-msgstr ""
+msgstr "'upper': ``Z[0, 0]`` está en X=N+0.5, Y=0.5 en la esquina superior izquierda."
 
 #: matplotlib.axes._axes.Axes.contour:99 of
 msgid "'image': Use the value from :rc:`image.origin`."
-msgstr ""
+msgstr "'image': Utilice el valor de :rc:`image.origin`."
 
 #: matplotlib.axes._axes.Axes.contour:109 of
 msgid "**extent**"
-msgstr ""
+msgstr "**extensión**"
 
 #: of
 msgid "(x0, x1, y0, y1), optional"
-msgstr ""
+msgstr "(x0, x1, y0, y1), opcional"
 
 #: matplotlib.axes._axes.Axes.contour:102 of
 msgid "If *origin* is not *None*, then *extent* is interpreted as in `.imshow`: it gives the outer pixel boundaries. In this case, the position of Z[0, 0] is the center of the pixel, not a corner. If *origin* is *None*, then (*x0*, *y0*) is the position of Z[0, 0], and (*x1*, *y1*) is the position of Z[-1, -1]."
-msgstr ""
+msgstr "Si *origin* no es *nunca*, entonces *extent* es interpretado como en `.imshow`: da los límites de píxeles externos. En este caso, la posición de Z[0, 0] es el centro del píxel, no una esquina. Si *origen* es *nunca*, entonces (*x0*, *y0*) es la posición de Z[0, 0], y (*x1*, *y1*) es la posición de Z[-1, -1]."
 
 #: matplotlib.axes._axes.Axes.contour:108 of
 msgid "This argument is ignored if *X* and *Y* are specified in the call to contour."
-msgstr ""
+msgstr "Este argumento es ignorado si *X* y *Y* son especificados en la llamada al contorno."
 
 #: matplotlib.axes._axes.Axes.contour:114 of
 msgid "**locator**"
-msgstr ""
+msgstr "**localizador**"
 
 #: of
 msgid "ticker.Locator subclass, optional"
-msgstr ""
+msgstr "ticker.Subclase localizador, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:112 of
 msgid "The locator is used to determine the contour levels if they are not given explicitly via *levels*. Defaults to `~.ticker.MaxNLocator`."
-msgstr ""
+msgstr "El localizador se utiliza para determinar los niveles de contorno si no se dan explícitamente a través de *niveles*. Por defecto es `~.ticker.MaxNLocator`."
 
 #: matplotlib.axes._axes.Axes.contour:150 of
 msgid "**extend**"
-msgstr ""
+msgstr "**extensión**"
 
 #: of
 msgid "{'neither', 'both', 'min', 'max'}, default: 'neither'"
-msgstr ""
+msgstr "{'ninguno de los dos', 'ambos', 'min', 'max'}, por defecto: 'ninguno'"
 
 #: matplotlib.axes._axes.Axes.contour:117 of
 msgid "Determines the ``contourf``-coloring of values that are outside the *levels* range."
-msgstr ""
+msgstr "Determina el ``contorno``-coloración de valores que están fuera del rango *niveles*."
 
 #: matplotlib.axes._axes.Axes.contour:120 of
 msgid "If 'neither', values outside the *levels* range are not colored. If 'min', 'max' or 'both', color the values below, above or below and above the *levels* range."
-msgstr ""
+msgstr "Si 'ninguno', los valores fuera del rango *niveles* no están colorados. Si 'min', 'max' o 'ambos', colorear los valores debajo, arriba o abajo y encima del rango *levels*."
 
 #: matplotlib.axes._axes.Axes.contour:124 of
 msgid "Values below ``min(levels)`` and above ``max(levels)`` are mapped to the under/over values of the `.Colormap`. Note that most colormaps do not have dedicated colors for these by default, so that the over and under values are the edge values of the colormap. You may want to set these values explicitly using `.Colormap.set_under` and `.Colormap.set_over`."
-msgstr ""
+msgstr "Valores por debajo de ``min(levels)`` y por encima de ``max(levels)`` se asignan a los valores bajo / superior del `.Colormap`. Tenga en cuenta que la mayoría de mapas de colores no tienen colores dedicados para estos de forma predeterminada, para que los valores superiores y inferiores sean los valores de borde del mapa de color. Puede querer establecer estos valores explícitamente usando `.Colormap.set_under` y `.Colormap.set_over`."
 
 #: matplotlib.axes._axes.Axes.contour:133 of
 msgid "An existing `.QuadContourSet` does not get notified if properties of its colormap are changed. Therefore, an explicit call `.QuadContourSet.changed()` is needed after modifying the colormap. The explicit call can be left out, if a colorbar is assigned to the `.QuadContourSet` because it internally calls `.QuadContourSet.changed()`."
-msgstr ""
+msgstr "Un `.QuadContourSet` existente no es notificado si las propiedades de su mapa de colores son cambiadas. Por lo tanto, se necesita una llamada explícita `.QuadContourSet.changed()` después de modificar el mapa de color. La llamada explícita puede dejarse afuera, si una barra de colores es asignada al `.QuadContourSet` porque internamente llama `.QuadContourSet.changed()`."
 
 #: matplotlib.axes._axes.Axes.contour:140 of
 msgid "Example::"
-msgstr ""
+msgstr "Ejemplo::"
 
 #: matplotlib.axes._axes.Axes.contour:154 of
 msgid "**xunits, yunits**"
-msgstr ""
+msgstr "**xunits, yunits**"
 
 #: of
 msgid "registered units, optional"
-msgstr ""
+msgstr "unidades registradas, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:153 of
 msgid "Override axis units by specifying an instance of a :class:`matplotlib.units.ConversionInterface`."
-msgstr ""
+msgstr "Anular unidades de ejes especificando una instancia de un :class:`matplotlib.units.ConversionInterface`."
 
 #: matplotlib.axes._axes.Axes.contour:159 of
 msgid "**antialiased**"
-msgstr ""
+msgstr "**antialias**"
 
 #: of
 msgid "bool, optional"
-msgstr ""
+msgstr "bool, optional"
 
 #: matplotlib.axes._axes.Axes.contour:157 of
 msgid "Enable antialiasing, overriding the defaults.  For filled contours, the default is *True*.  For line contours, it is taken from :rc:`lines.antialiased`."
-msgstr ""
+msgstr "Habilitar antialiasing, sobreescribiendo los valores predeterminados. Para los contornos rellenados, el valor predeterminado es *Verdadero*. Para contornos de línea, se toma de :rc:`lines.antialiased`."
 
 #: matplotlib.axes._axes.Axes.contour:168 of
 msgid "**nchunk**"
-msgstr ""
+msgstr "**nchunk**"
 
 #: of
 msgid "int >= 0, optional"
-msgstr ""
+msgstr "int >= 0, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:162 of
 msgid "If 0, no subdivision of the domain.  Specify a positive integer to divide the domain into subdomains of *nchunk* by *nchunk* quads. Chunking reduces the maximum length of polygons generated by the contouring algorithm which reduces the rendering workload passed on to the backend and also requires slightly less RAM.  It can however introduce rendering artifacts at chunk boundaries depending on the backend, the *antialiased* flag and value of *alpha*."
-msgstr ""
+msgstr "Si 0, no hay subdivisión del dominio. Especifique un entero positivo para dividir el dominio en subdominios de *nchunk* por cuadriláteros *nchunk*. La talla reduce la longitud máxima de los polígonos generados por el algoritmo de contornado que reduce la carga de trabajo de renderizado que pasa al backend y también requiere un poco menos de RAM. Sin embargo, puede introducir artefactos renderizadores en los límites de trozos dependiendo del backend, la bandera *antialiased* y el valor de *alpha*."
 
 #: matplotlib.axes._axes.Axes.contour:180 of
 msgid "**linewidths** : float or array-like, default: :rc:`contour.linewidth`"
-msgstr ""
+msgstr "**anchos de línea** : float o array-like default: :rc:`contour.linewidth`"
 
 #: of
 msgid "float or array-like, default:"
-msgstr ""
+msgstr "float or array-like, default:"
 
 #: matplotlib.axes._axes.Axes.contour:171
 #: matplotlib.axes._axes.Axes.contour:183 of
 msgid "*Only applies to* `.contour`."
-msgstr ""
+msgstr "*Sólo aplica a* `.contour`."
 
 #: matplotlib.axes._axes.Axes.contour:173 of
 msgid "The line width of the contour lines."
-msgstr ""
+msgstr "El ancho de la línea de las líneas de contorno."
 
 #: matplotlib.axes._axes.Axes.contour:175 of
 msgid "If a number, all levels will be plotted with this linewidth."
-msgstr ""
+msgstr "Si un número, todos los niveles serán trazados con este ancho de línea."
 
 #: matplotlib.axes._axes.Axes.contour:177 of
 msgid "If a sequence, the levels in ascending order will be plotted with the linewidths in the order specified."
-msgstr ""
+msgstr "Si una secuencia, los niveles en orden ascendente se trazarán con el ancho de línea en el orden especificado."
 
 #: matplotlib.axes._axes.Axes.contour:180 of
 msgid "If None, this falls back to :rc:`lines.linewidth`."
-msgstr ""
+msgstr "Si no, esto cae a :rc:`lines.linewidth`."
 
 #: matplotlib.axes._axes.Axes.contour:192 of
 msgid "**linestyles** : {*None*, 'solid', 'dashed', 'dashdot', 'dotted'}, optional"
-msgstr ""
+msgstr "**linestyles** : {*outer*, 'sólid', 'dashdot', 'dotted'}, opcional"
 
 #: matplotlib.axes._axes.Axes.contour:185 of
 msgid "If *linestyles* is *None*, the default is 'solid' unless the lines are monochrome.  In that case, negative contours will take their linestyle from :rc:`contour.negative_linestyle` setting."
-msgstr ""
+msgstr "Si *linestyles* es *Ninguno*, el valor por defecto es 'sólid' a menos que las líneas sean monocromáticas. En ese caso, los contornos negativos tomarán su estilo de línea del ajuste :rc:`contour.negative_linestyle`."
 
 #: matplotlib.axes._axes.Axes.contour:189 of
 msgid "*linestyles* can also be an iterable of the above strings specifying a set of linestyles to be used. If this iterable is shorter than the number of contour levels it will be repeated as necessary."
-msgstr ""
+msgstr "*linestyles* también puede ser un iterable de las cadenas anteriores especificando un conjunto de estilos de línea a utilizar. Si este iterable es menor que el número de niveles de contorno se repetirá según sea necesario."
 
 #: matplotlib.axes._axes.Axes.contour:200 of
 msgid "**hatches**"
-msgstr ""
+msgstr "**sombras**"
 
 #: of
 msgid "list[str], optional"
-msgstr ""
+msgstr "lista[str], opcional"
 
 #: matplotlib.axes._axes.Axes.contour:195 of
 msgid "*Only applies to* `.contourf`."
-msgstr ""
+msgstr "*Sólo aplica a* `.contourf`."
 
 #: matplotlib.axes._axes.Axes.contour:197 of
 msgid "A list of cross hatch patterns to use on the filled areas. If None, no hatching will be added to the contour. Hatching is supported in the PostScript, PDF, SVG and Agg backends only."
-msgstr ""
+msgstr "Una lista de patrones de cobertizo cruzado para usar en las áreas llenadas. Si Ninguna, no se añadirá ninguna eclosión al contorno. El incubamiento sólo se admite en los backends de PostScript, PDF, SVG y Agg."
 
 #: matplotlib.axes._axes.Axes.contour:208 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.axes._axes.Axes.contour:203 of
 msgid "If given, all parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception)."
-msgstr ""
+msgstr "Si se dan, todos los parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción)."
 
 #: matplotlib.axes._axes.Axes.contour:211 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.axes._axes.Axes.contour:212 of
 msgid "`.contourf` differs from the MATLAB version in that it does not draw the polygon edges. To draw edges, add line contours with calls to `.contour`."
-msgstr ""
+msgstr "`.contourf` difiere de la versión MATLAB en que no dibuja los bordes del polígono. Para dibujar los bordes, añade contornos de línea con llamadas a `.contour`."
 
 #: matplotlib.axes._axes.Axes.contour:216 of
 msgid "`.contourf` fills intervals that are closed at the top; that is, for boundaries *z1* and *z2*, the filled region is::"
-msgstr ""
+msgstr "`.contourf` rellena los intervalos que están cerrados en la parte superior; es decir, para los límites *z1* y *z2*, la región llena es::"
 
 #: matplotlib.axes._axes.Axes.contour:221 of
 msgid "except for the lowest interval, which is closed on both sides (i.e. it includes the lowest value)."
-msgstr ""
+msgstr "excepto para el intervalo más bajo, que se cierra por ambos lados (es decir, incluye el valor más bajo)."
 
 #: matplotlib.axes._axes.Axes.contour:224 of
 msgid "`.contour` and `.contourf` use a `marching squares <https://en.wikipedia.org/wiki/Marching_squares>`_ algorithm to compute contour locations.  More information can be found in the source ``src/_contour.h``."
-msgstr ""
+msgstr "`.contour` y `.contourf` usan un algoritmo `marching squares <https://en.wikipedia.org/wiki/Marching_squares>`_ para calcular las ubicaciones del contorno. Puede encontrar más información en la fuente ``src/_contour.h``."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.axes.Axes.contour.examples:2
 msgid "Examples using ``matplotlib.axes.Axes.contour``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.axes.Axes.contour``"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:10
 msgid "Contour Corner Mask"
-msgstr ""
+msgstr "Máscara de Esquina de Contorno"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:10
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:18
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_contour_corner_mask.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_contour_corner_mask.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:29
 msgid "Contour Demo"
-msgstr ""
+msgstr "Demostración de contornos"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:29
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:37
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_contour_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_contour_demo.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:48
 msgid "Contour Label Demo"
-msgstr ""
+msgstr "Demostración de la etiqueta de contorno"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:48
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:56
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_contour_label_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_contour_label_demo.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:67
 msgid "Contourf Demo"
-msgstr ""
+msgstr "Demostración de Contourf"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:67
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:75
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_contourf_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_contourf_demo.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:86
 msgid "Contourf Hatching"
-msgstr ""
+msgstr "Contorno de sombreado"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:86
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:94
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_contourf_hatching.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_contourf_hatching.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:105
 msgid "Contouring the solution space of optimizations"
-msgstr ""
+msgstr "Contornos del espacio de soluciones de las optimizaciones"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:105
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:113
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_contours_in_optimization_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_contours_in_optimization_demo.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:124
 msgid "Blend transparency with color in 2D images"
-msgstr ""
+msgstr "Mezclar la transparencia con el color en imágenes 2D"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:124
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:132
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_image_transparency_blend.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_image_transparency_blend.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:143
 msgid "Contour plot of irregularly spaced data"
-msgstr ""
+msgstr "Gráfico de contorno de datos espaciados irregularmente"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:143
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:151
 msgid ":ref:`sphx_glr_gallery_images_contours_and_fields_irregulardatagrid.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_images_contours_and_fields_irregulardatagrid.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:162
 msgid "Patheffect Demo"
-msgstr ""
+msgstr "Demostración de Patheffect"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:162
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:170
 msgid ":ref:`sphx_glr_gallery_misc_patheffect_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_misc_patheffect_demo.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:181
 msgid "TickedStroke patheffect"
-msgstr ""
+msgstr "TickedStroke patheffect"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:181
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:189
 msgid ":ref:`sphx_glr_gallery_misc_tickedstroke_demo.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_misc_tickedstroke_demo.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:200
 msgid "Demonstrates plotting contour (level) curves in 3D"
-msgstr ""
+msgstr "Demuestra el trazado de curvas de nivel en 3D"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:200
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:208
 msgid ":ref:`sphx_glr_gallery_mplot3d_contour3d.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_mplot3d_contour3d.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:219
 msgid "Demonstrates plotting contour (level) curves in 3D using the extend3d option"
-msgstr ""
+msgstr "Demuestra el trazado de curvas de nivel en 3D utilizando la opción extend3d"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:219
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:227
 msgid ":ref:`sphx_glr_gallery_mplot3d_contour3d_2.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_mplot3d_contour3d_2.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:238
 msgid "Projecting contour profiles onto a graph"
-msgstr ""
+msgstr "Proyección de perfiles de contorno en un gráfico"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:238
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:246
 msgid ":ref:`sphx_glr_gallery_mplot3d_contour3d_3.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_mplot3d_contour3d_3.py`"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:257
 msgid "contour(X, Y, Z)"
-msgstr ""
+msgstr "contour(X, Y, Z)"
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:257
 #: ../../api/_as_gen/matplotlib.axes.Axes.contour.examples:265
 msgid ":ref:`sphx_glr_plot_types_arrays_contour.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_plot_types_arrays_contour.py`"
 

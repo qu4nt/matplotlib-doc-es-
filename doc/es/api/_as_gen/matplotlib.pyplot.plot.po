@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:18\n"
+"PO-Revision-Date: 2022-11-02 14:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,859 +20,859 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.pyplot.plot.rst:2
 msgid "matplotlib.pyplot.plot"
-msgstr ""
+msgstr "matplotlib.pyplot.plot"
 
 #: matplotlib.pyplot.plot:2 of
 msgid "Plot y versus x as lines and/or markers."
-msgstr ""
+msgstr "Trazar y versus x como líneas y/o marcadores."
 
 #: matplotlib.pyplot.plot:4 of
 msgid "Call signatures::"
-msgstr ""
+msgstr "Firma de llamadas::"
 
 #: matplotlib.pyplot.plot:9 of
 msgid "The coordinates of the points or line nodes are given by *x*, *y*."
-msgstr ""
+msgstr "Las coordenadas de los puntos o nodos de línea son dadas por *x*, *y*."
 
 #: matplotlib.pyplot.plot:11 of
 msgid "The optional parameter *fmt* is a convenient way for defining basic formatting like color, marker and linestyle. It's a shortcut string notation described in the *Notes* section below."
-msgstr ""
+msgstr "El parámetro opcional *fmt* es una manera conveniente para definir el formato básico como el color, el marcador y el estilo de línea. Es una notación de cadena de acceso directo descrita en la sección *Notas* de abajo."
 
 #: matplotlib.pyplot.plot:20 of
 msgid "You can use `.Line2D` properties as keyword arguments for more control on the appearance. Line properties and *fmt* can be mixed. The following two calls yield identical results:"
-msgstr ""
+msgstr "Puedes usar las propiedades `.Line2D` como argumentos de palabras clave para más control sobre la apariencia. Las propiedades de línea y *fmt* pueden ser mezcladas. Las siguientes dos llamadas producen resultados idénticos:"
 
 #: matplotlib.pyplot.plot:28 of
 msgid "When conflicting with *fmt*, keyword arguments take precedence."
-msgstr ""
+msgstr "Cuando entra en conflicto con *fmt*, los argumentos de palabra clave tienen precedencia."
 
 #: matplotlib.pyplot.plot:30 of
 msgid "**Plotting labelled data**"
-msgstr ""
+msgstr "**Plotting etiquetados datos**"
 
 #: matplotlib.pyplot.plot:32 of
 msgid "There's a convenient way for plotting objects with labelled data (i.e. data that can be accessed by index ``obj['y']``). Instead of giving the data in *x* and *y*, you can provide the object in the *data* parameter and just give the labels for *x* and *y*::"
-msgstr ""
+msgstr "Hay una manera conveniente de trazar objetos con datos etiquetados (es decir, datos a los que se puede acceder por el índice ``obj['y']``). En lugar de dar los datos en *x* y *y*, puedes proporcionar el objeto en el parámetro *data* y dar las etiquetas de *x* y *y*::"
 
 #: matplotlib.pyplot.plot:39 of
 msgid "All indexable objects are supported. This could e.g. be a `dict`, a `pandas.DataFrame` or a structured numpy array."
-msgstr ""
+msgstr "Todos los objetos indexables son soportados. Esto podría ser un `dict`, un `pandas.DataFrame` o un arreglo numpy estructurado."
 
 #: matplotlib.pyplot.plot:42 of
 msgid "**Plotting multiple sets of data**"
-msgstr ""
+msgstr "**Plotando múltiples conjuntos de datos**"
 
 #: matplotlib.pyplot.plot:44 of
 msgid "There are various ways to plot multiple sets of data."
-msgstr ""
+msgstr "Hay varias formas de trazar múltiples conjuntos de datos."
 
 #: matplotlib.pyplot.plot:46 of
 msgid "The most straight forward way is just to call `plot` multiple times. Example:"
-msgstr ""
+msgstr "La forma más directa de avanzar es simplemente llamar a `plot` varias veces. Ejemplo:"
 
 #: matplotlib.pyplot.plot:52 of
 msgid "If *x* and/or *y* are 2D arrays a separate data set will be drawn for every column. If both *x* and *y* are 2D, they must have the same shape. If only one of them is 2D with shape (N, m) the other must have length N and will be used for every data set m."
-msgstr ""
+msgstr "Si *x* y/o *y* son matrices 2D, se dibujará un conjunto de datos separado para cada columna. Si tanto *x* como *y* son 2D, deben tener la misma forma. Si sólo uno de ellos es 2D con forma (N, m) el otro debe tener longitud N y se utilizará para cada conjunto de datos m."
 
 #: matplotlib.pyplot.plot:57 of
 msgid "Example:"
-msgstr ""
+msgstr "Ejemplo:"
 
 #: matplotlib.pyplot.plot:63 of
 msgid "is equivalent to:"
-msgstr ""
+msgstr "es equivalente a:"
 
 #: matplotlib.pyplot.plot:68 of
 msgid "The third way is to specify multiple sets of *[x]*, *y*, *[fmt]* groups::"
-msgstr ""
+msgstr "La tercera manera es especificar múltiples conjuntos de *[x]*, *y*, *[fmt]* grupos::"
 
 #: matplotlib.pyplot.plot:73 of
 msgid "In this case, any additional keyword argument applies to all datasets. Also this syntax cannot be combined with the *data* parameter."
-msgstr ""
+msgstr "En este caso, cualquier argumento adicional de palabra clave se aplica a todos los conjuntos de datos. También esta sintaxis no puede combinarse con el parámetro *data*."
 
 #: matplotlib.pyplot.plot:77 of
 msgid "By default, each line is assigned a different style specified by a 'style cycle'. The *fmt* and line property parameters are only necessary if you want explicit deviations from these defaults. Alternatively, you can also change the style cycle using :rc:`axes.prop_cycle`."
-msgstr ""
+msgstr "Por defecto, cada línea se asigna a un estilo diferente especificado por un 'ciclo de estilo'. Los parámetros *fmt* y propiedad de línea sólo son necesarios si desea desviaciones explícitas de estos valores por defecto. Alternativamente, también puede cambiar el ciclo de estilo usando :rc:`axes.prop_cycle`."
 
 #: matplotlib.pyplot.plot of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.pyplot.plot:94 of
 msgid "**x, y**"
-msgstr ""
+msgstr "**x, y**"
 
 #: of
 msgid "array-like or scalar"
-msgstr ""
+msgstr "como matriz o escalar"
 
 #: matplotlib.pyplot.plot:86 of
 msgid "The horizontal / vertical coordinates of the data points. *x* values are optional and default to ``range(len(y))``."
-msgstr ""
+msgstr "Las coordenadas horizontal/vertical de los puntos de datos. Los valores *x* son opcionales y por defecto ``range(len(y))``."
 
 #: matplotlib.pyplot.plot:89 of
 msgid "Commonly, these parameters are 1D arrays."
-msgstr ""
+msgstr "Comúnmente, estos parámetros son matrices 1D."
 
 #: matplotlib.pyplot.plot:91 of
 msgid "They can also be scalars, or two-dimensional (in that case, the columns represent separate data sets)."
-msgstr ""
+msgstr "También pueden ser escalares, o dos dimensionales (en ese caso, las columnas representan conjuntos de datos separados)."
 
 #: matplotlib.pyplot.plot:94 of
 msgid "These arguments cannot be passed as keywords."
-msgstr ""
+msgstr "Estos argumentos no se pueden pasar como palabras clave."
 
 #: matplotlib.pyplot.plot:104 of
 msgid "**fmt**"
-msgstr ""
+msgstr "**fmt**"
 
 #: of
 msgid "str, optional"
-msgstr ""
+msgstr "str, opcional"
 
 #: matplotlib.pyplot.plot:97 of
 msgid "A format string, e.g. 'ro' for red circles. See the *Notes* section for a full description of the format strings."
-msgstr ""
+msgstr "Una cadena de formato, por ejemplo, 'ro' para los círculos rojos. Vea la sección *Notas* para una descripción completa de las cadenas de formato."
 
 #: matplotlib.pyplot.plot:100 of
 msgid "Format strings are just an abbreviation for quickly setting basic line properties. All of these and more can also be controlled by keyword arguments."
-msgstr ""
+msgstr "Las cadenas de formato son sólo una abreviatura para establecer rápidamente propiedades básicas de línea."
 
 #: matplotlib.pyplot.plot:104 of
 msgid "This argument cannot be passed as keyword."
-msgstr ""
+msgstr "Este argumento no se puede pasar como palabra clave."
 
 #: matplotlib.pyplot.plot:116 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.pyplot.plot:107 of
 msgid "An object with labelled data. If given, provide the label names to plot in *x* and *y*."
-msgstr ""
+msgstr "Un objeto con datos etiquetados. Si es dado, proporcione los nombres de las etiquetas para trazar en *x* y *y*."
 
 #: matplotlib.pyplot.plot:111 of
 msgid "Technically there's a slight ambiguity in calls where the second label is a valid *fmt*. ``plot('n', 'o', data=obj)`` could be ``plt(x, y)`` or ``plt(y, fmt)``. In such cases, the former interpretation is chosen, but a warning is issued. You may suppress the warning by adding an empty format string ``plot('n', 'o', '', data=obj)``."
-msgstr ""
+msgstr "Técnicamente hay una ligera ambigüedad en llamadas donde la segunda etiqueta es un *fmt* válido. ``plot('n', 'o', data=obj)`` podría ser ``plt(x, y)`` o ``plt(y, fmt)``. En tales casos, la interpretación anterior se elige, pero se emite una advertencia. Puede suprimir la advertencia añadiendo una cadena de formato vacío ``plot('n', 'o', '', data=obj)``."
 
 #: matplotlib.pyplot.plot of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.pyplot.plot:123 of
 msgid "list of `.Line2D`"
-msgstr ""
+msgstr "lista de `.Line2D`"
 
 #: matplotlib.pyplot.plot:121 of
 msgid "A list of lines representing the plotted data."
-msgstr ""
+msgstr "Una lista de líneas que representan los datos trazados."
 
 #: matplotlib.pyplot.plot of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.pyplot.plot:129 of
 msgid "**scalex, scaley**"
-msgstr ""
+msgstr "**scalex, escala**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.pyplot.plot:128 of
 msgid "These parameters determine if the view limits are adapted to the data limits. The values are passed on to `autoscale_view`."
-msgstr ""
+msgstr "Estos parámetros determinan si los límites de la vista se adaptan a los límites de datos. Los valores se pasan a `autoscale_view`."
 
 #: matplotlib.pyplot.plot:195 of
 msgid "**\\*\\*kwargs** : `.Line2D` properties, optional"
-msgstr ""
+msgstr "**\\*\\*kwargs** : Propiedades `.Line2D`, opcional"
 
 #: matplotlib.pyplot.plot:194 of
 msgid "Line2D properties, optional"
-msgstr ""
+msgstr "Propiedades Line2D, opcional"
 
 #: matplotlib.pyplot.plot:132 of
 msgid "*kwargs* are used to specify properties like a line label (for auto legends), linewidth, antialiasing, marker face color. Example::"
-msgstr ""
+msgstr "*kwargs* se utilizan para especificar propiedades como una etiqueta de línea (para leyendas automáticas), ancho de línea, antialiasing, color de cara marcador. Ejemplo::"
 
 #: matplotlib.pyplot.plot:139 of
 msgid "If you specify multiple lines with one plot call, the kwargs apply to all those lines. In case the label object is iterable, each element is used as labels for each set of data."
-msgstr ""
+msgstr "Si especifica múltiples líneas con una sola llamada, los kwargs se aplican a todas esas líneas. En caso de que el objeto de la etiqueta sea iterable, cada elemento se utiliza como etiquetas para cada conjunto de datos."
 
 #: matplotlib.pyplot.plot:143 of
 msgid "Here is a list of available `.Line2D` properties:"
-msgstr ""
+msgstr "Aquí hay una lista de propiedades disponibles `.Line2D`:"
 
 #: matplotlib.pyplot.plot:149 of
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: matplotlib.pyplot.plot:149 of
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: matplotlib.pyplot.plot:151 of
 msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
-msgstr ""
+msgstr ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
 
 #: matplotlib.pyplot.plot:151 of
 msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
-msgstr ""
+msgstr "una función de filtro, que toma un arreglo de puntos flotantes (m, n, 3) y un valor de dpi, y devuelve un arreglo (m, n, 3)"
 
 #: matplotlib.pyplot.plot:152 of
 msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
-msgstr ""
+msgstr ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
 
 #: matplotlib.pyplot.plot:152 of
 msgid "scalar or None"
-msgstr ""
+msgstr "escalar o None"
 
 #: matplotlib.pyplot.plot:153 of
 msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
-msgstr ""
+msgstr ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
 
 #: matplotlib.pyplot.plot:153 matplotlib.pyplot.plot:154
 #: matplotlib.pyplot.plot:156 matplotlib.pyplot.plot:167
 #: matplotlib.pyplot.plot:181 matplotlib.pyplot.plot:188 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.pyplot.plot:154 of
 msgid ":meth:`antialiased <matplotlib.lines.Line2D.set_antialiased>` or aa"
-msgstr ""
+msgstr ":meth:`antialias <matplotlib.lines.Line2D.set_antialiased>` o aa"
 
 #: matplotlib.pyplot.plot:155 of
 msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
-msgstr ""
+msgstr ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
 
 #: matplotlib.pyplot.plot:155 of
 msgid "`.Bbox`"
-msgstr ""
+msgstr "`.Bbox`"
 
 #: matplotlib.pyplot.plot:156 of
 msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
-msgstr ""
+msgstr ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
 
 #: matplotlib.pyplot.plot:157 of
 msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
-msgstr ""
+msgstr ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
 
 #: matplotlib.pyplot.plot:157 of
 msgid "Patch or (Path, Transform) or None"
-msgstr ""
+msgstr "Patch o (Path, Transform) o None"
 
 #: matplotlib.pyplot.plot:158 of
 msgid ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
-msgstr ""
+msgstr ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
 
 #: matplotlib.pyplot.plot:158 matplotlib.pyplot.plot:172
 #: matplotlib.pyplot.plot:174 matplotlib.pyplot.plot:175
 #: matplotlib.pyplot.plot:275 of
 msgid "color"
-msgstr ""
+msgstr "color"
 
 #: matplotlib.pyplot.plot:159 of
 msgid ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
-msgstr ""
+msgstr ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
 
 #: matplotlib.pyplot.plot:159 matplotlib.pyplot.plot:184 of
 msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "`.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.pyplot.plot:160 of
 msgid ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
-msgstr ""
+msgstr ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
 
 #: matplotlib.pyplot.plot:160 matplotlib.pyplot.plot:185 of
 msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "`.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.pyplot.plot:161 of
 msgid ":meth:`dashes <matplotlib.lines.Line2D.set_dashes>`"
-msgstr ""
+msgstr ":meth:`guiones <matplotlib.lines.Line2D.set_dashes>`"
 
 #: matplotlib.pyplot.plot:161 of
 msgid "sequence of floats (on/off ink in points) or (None, None)"
-msgstr ""
+msgstr "secuencia de flotantes (tinta encendida/apagada en puntos) o (Ninguna, Ninguna)"
 
 #: matplotlib.pyplot.plot:162 of
 msgid ":meth:`data <matplotlib.lines.Line2D.set_data>`"
-msgstr ""
+msgstr ":meth:`data <matplotlib.lines.Line2D.set_data>`"
 
 #: matplotlib.pyplot.plot:162 of
 msgid "(2, N) array or two 1D arrays"
-msgstr ""
+msgstr "(2, N) array o dos matrices 1D"
 
 #: matplotlib.pyplot.plot:163 of
 msgid ":meth:`drawstyle <matplotlib.lines.Line2D.set_drawstyle>` or ds"
-msgstr ""
+msgstr ":meth:`estilo de dibujo <matplotlib.lines.Line2D.set_drawstyle>` o ds"
 
 #: matplotlib.pyplot.plot:163 of
 msgid "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
-msgstr ""
+msgstr "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
 
 #: matplotlib.pyplot.plot:164 of
 msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
-msgstr ""
+msgstr ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
 
 #: matplotlib.pyplot.plot:164 of
 msgid "`.Figure`"
-msgstr ""
+msgstr "`.Figure`"
 
 #: matplotlib.pyplot.plot:165 of
 msgid ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
-msgstr ""
+msgstr ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
 
 #: matplotlib.pyplot.plot:165 of
 msgid "{'full', 'left', 'right', 'bottom', 'top', 'none'}"
-msgstr ""
+msgstr "{'full', 'left', 'right', 'bottom', 'top', 'ninguno '}"
 
 #: matplotlib.pyplot.plot:166 of
 msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
-msgstr ""
+msgstr ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
 
 #: matplotlib.pyplot.plot:166 matplotlib.pyplot.plot:187 of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.pyplot.plot:167 of
 msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
-msgstr ""
+msgstr ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
 
 #: matplotlib.pyplot.plot:168 of
 msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
-msgstr ""
+msgstr ":meth:`label <matplotlib.artist.Artist.set_label>`"
 
 #: matplotlib.pyplot.plot:168 of
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: matplotlib.pyplot.plot:169 of
 msgid ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` or ls"
-msgstr ""
+msgstr ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` o ls"
 
 #: matplotlib.pyplot.plot:169 of
 msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
-msgstr ""
+msgstr "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
 
 #: matplotlib.pyplot.plot:170 of
 msgid ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
-msgstr ""
+msgstr ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
 
 #: matplotlib.pyplot.plot:170 matplotlib.pyplot.plot:173
 #: matplotlib.pyplot.plot:176 matplotlib.pyplot.plot:180
 #: matplotlib.pyplot.plot:191 of
 msgid "float"
-msgstr ""
+msgstr "de punto flotante (float)"
 
 #: matplotlib.pyplot.plot:171 of
 msgid ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
-msgstr ""
+msgstr ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
 
 #: matplotlib.pyplot.plot:171 of
 msgid "marker style string, `~.path.Path` or `~.markers.MarkerStyle`"
-msgstr ""
+msgstr "marker style string, `~.path.Path` o `~.markers.MarkerStyle`"
 
 #: matplotlib.pyplot.plot:172 of
 msgid ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` or mec"
-msgstr ""
+msgstr ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` o mec"
 
 #: matplotlib.pyplot.plot:173 of
 msgid ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` or mew"
-msgstr ""
+msgstr ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` o mío"
 
 #: matplotlib.pyplot.plot:174 of
 msgid ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` or mfc"
-msgstr ""
+msgstr ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` o mfc"
 
 #: matplotlib.pyplot.plot:175 of
 msgid ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` or mfcalt"
-msgstr ""
+msgstr ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` o mfcalt"
 
 #: matplotlib.pyplot.plot:176 of
 msgid ":meth:`markersize <matplotlib.lines.Line2D.set_markersize>` or ms"
-msgstr ""
+msgstr ":meth:`tamaño de marcador <matplotlib.lines.Line2D.set_markersize>` o ms"
 
 #: matplotlib.pyplot.plot:177 of
 msgid ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
-msgstr ""
+msgstr ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
 
 #: matplotlib.pyplot.plot:177 of
 msgid "None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]"
-msgstr ""
+msgstr "Ninguno o int o (int, int) o rebanada o lista[int] o decimal o (float, float) o lista[bool]"
 
 #: matplotlib.pyplot.plot:178 of
 msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
-msgstr ""
+msgstr ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
 
 #: matplotlib.pyplot.plot:178 of
 msgid "`.AbstractPathEffect`"
-msgstr ""
+msgstr "`.AbstractPathEffect`"
 
 #: matplotlib.pyplot.plot:179 of
 msgid ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
-msgstr ""
+msgstr ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
 
 #: matplotlib.pyplot.plot:179 of
 msgid "float or callable[[Artist, Event], tuple[bool, dict]]"
-msgstr ""
+msgstr "decimal o llamable[[Artista, Evento], tuple[bool, dict]]"
 
 #: matplotlib.pyplot.plot:180 of
 msgid ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
-msgstr ""
+msgstr ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
 
 #: matplotlib.pyplot.plot:181 of
 msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
-msgstr ""
+msgstr ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
 
 #: matplotlib.pyplot.plot:182 of
 msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
-msgstr ""
+msgstr ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
 
 #: matplotlib.pyplot.plot:182 of
 msgid "(scale: float, length: float, randomness: float)"
-msgstr ""
+msgstr "(scale: float, length: float, randomness: float)"
 
 #: matplotlib.pyplot.plot:183 of
 msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
-msgstr ""
+msgstr ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
 
 #: matplotlib.pyplot.plot:183 of
 msgid "bool or None"
-msgstr ""
+msgstr "bool or None"
 
 #: matplotlib.pyplot.plot:184 of
 msgid ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
-msgstr ""
+msgstr ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
 
 #: matplotlib.pyplot.plot:185 of
 msgid ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
-msgstr ""
+msgstr ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
 
 #: matplotlib.pyplot.plot:186 of
 msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
-msgstr ""
+msgstr ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
 
 #: matplotlib.pyplot.plot:186 of
 msgid "unknown"
-msgstr ""
+msgstr "desconocido"
 
 #: matplotlib.pyplot.plot:187 of
 msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
-msgstr ""
+msgstr ":meth:`url <matplotlib.artist.Artist.set_url>`"
 
 #: matplotlib.pyplot.plot:188 of
 msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
-msgstr ""
+msgstr ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
 
 #: matplotlib.pyplot.plot:189 of
 msgid ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
-msgstr ""
+msgstr ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
 
 #: matplotlib.pyplot.plot:189 matplotlib.pyplot.plot:190 of
 msgid "1D array"
-msgstr ""
+msgstr "Matriz 1D"
 
 #: matplotlib.pyplot.plot:190 of
 msgid ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
-msgstr ""
+msgstr ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
 
 #: matplotlib.pyplot.plot:191 of
 msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
-msgstr ""
+msgstr ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
 
 #: matplotlib.pyplot.plot:200 of
 msgid ":obj:`scatter`"
-msgstr ""
+msgstr ":obj:`scatter`"
 
 #: matplotlib.pyplot.plot:201 of
 msgid "XY scatter plot with markers of varying size and/or color ( sometimes also called bubble chart)."
-msgstr ""
+msgstr "Diagrama de dispersión XY con marcadores de tamaño y/o color variables (a veces también llamado gráfico de burbujas)."
 
 #: matplotlib.pyplot.plot:205 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.pyplot.plot:206 of
 msgid "**Format Strings**"
-msgstr ""
+msgstr "**Cadenas de formato**"
 
 #: matplotlib.pyplot.plot:208 of
 msgid "A format string consists of a part for color, marker and line::"
-msgstr ""
+msgstr "Una cadena de formato consiste en una parte para el color, el marcador y la línea::"
 
 #: matplotlib.pyplot.plot:212 of
 msgid "Each of them is optional. If not provided, the value from the style cycle is used. Exception: If ``line`` is given, but no ``marker``, the data will be a line without markers."
-msgstr ""
+msgstr "Cada uno de ellos es opcional. Si no se proporciona, se utiliza el valor del ciclo de estilo. Excepción: Si se da ``line``, pero no ``marcador``, los datos serán una línea sin marcadores."
 
 #: matplotlib.pyplot.plot:216 of
 msgid "Other combinations such as ``[color][marker][line]`` are also supported, but note that their parsing may be ambiguous."
-msgstr ""
+msgstr "Otras combinaciones como ``[color][marker][line]`` también son soportadas, pero tenga en cuenta que su análisis puede ser ambiguo."
 
 #: matplotlib.pyplot.plot:219 of
 msgid "**Markers**"
-msgstr ""
+msgstr "**Markers**"
 
 #: matplotlib.pyplot.plot:222 matplotlib.pyplot.plot:254
 #: matplotlib.pyplot.plot:275 of
 msgid "character"
-msgstr ""
+msgstr "personaje"
 
 #: matplotlib.pyplot.plot:222 matplotlib.pyplot.plot:254 of
 msgid "description"
-msgstr ""
+msgstr "descripción"
 
 #: matplotlib.pyplot.plot:224 of
 msgid "``'.'``"
-msgstr ""
+msgstr "``'.'``"
 
 #: matplotlib.pyplot.plot:224 of
 msgid "point marker"
-msgstr ""
+msgstr "punto marcador"
 
 #: matplotlib.pyplot.plot:225 of
 msgid "``','``"
-msgstr ""
+msgstr "``','``"
 
 #: matplotlib.pyplot.plot:225 of
 msgid "pixel marker"
-msgstr ""
+msgstr "marcador de píxeles"
 
 #: matplotlib.pyplot.plot:226 of
 msgid "``'o'``"
-msgstr ""
+msgstr "``'o'``"
 
 #: matplotlib.pyplot.plot:226 of
 msgid "circle marker"
-msgstr ""
+msgstr "marcador de círculo"
 
 #: matplotlib.pyplot.plot:227 of
 msgid "``'v'``"
-msgstr ""
+msgstr "``'v'``"
 
 #: matplotlib.pyplot.plot:227 of
 msgid "triangle_down marker"
-msgstr ""
+msgstr "marcador de triángulo_abajo"
 
 #: matplotlib.pyplot.plot:228 of
 msgid "``'^'``"
-msgstr ""
+msgstr "``'^'``"
 
 #: matplotlib.pyplot.plot:228 of
 msgid "triangle_up marker"
-msgstr ""
+msgstr "marcador triángulo_arriba"
 
 #: matplotlib.pyplot.plot:229 of
 msgid "``'<'``"
-msgstr ""
+msgstr "``'<'``"
 
 #: matplotlib.pyplot.plot:229 of
 msgid "triangle_left marker"
-msgstr ""
+msgstr "triángulo_marcador izquierdo"
 
 #: matplotlib.pyplot.plot:230 of
 msgid "``'>'``"
-msgstr ""
+msgstr "``'>'``"
 
 #: matplotlib.pyplot.plot:230 of
 msgid "triangle_right marker"
-msgstr ""
+msgstr "marcador derecho del triángulo"
 
 #: matplotlib.pyplot.plot:231 of
 msgid "``'1'``"
-msgstr ""
+msgstr "``'1'``"
 
 #: matplotlib.pyplot.plot:231 of
 msgid "tri_down marker"
-msgstr ""
+msgstr "marcador tri_down"
 
 #: matplotlib.pyplot.plot:232 of
 msgid "``'2'``"
-msgstr ""
+msgstr "``'2'``"
 
 #: matplotlib.pyplot.plot:232 of
 msgid "tri_up marker"
-msgstr ""
+msgstr "marcador tri_up"
 
 #: matplotlib.pyplot.plot:233 of
 msgid "``'3'``"
-msgstr ""
+msgstr "``'3'``"
 
 #: matplotlib.pyplot.plot:233 of
 msgid "tri_left marker"
-msgstr ""
+msgstr "tri_left marker"
 
 #: matplotlib.pyplot.plot:234 of
 msgid "``'4'``"
-msgstr ""
+msgstr "``'4'``"
 
 #: matplotlib.pyplot.plot:234 of
 msgid "tri_right marker"
-msgstr ""
+msgstr "marcador tri_derecho"
 
 #: matplotlib.pyplot.plot:235 of
 msgid "``'8'``"
-msgstr ""
+msgstr "``'8'``"
 
 #: matplotlib.pyplot.plot:235 of
 msgid "octagon marker"
-msgstr ""
+msgstr "marcador octágono"
 
 #: matplotlib.pyplot.plot:236 of
 msgid "``'s'``"
-msgstr ""
+msgstr "``'s'``"
 
 #: matplotlib.pyplot.plot:236 of
 msgid "square marker"
-msgstr ""
+msgstr "marcador cuadrado"
 
 #: matplotlib.pyplot.plot:237 of
 msgid "``'p'``"
-msgstr ""
+msgstr "``'p'``"
 
 #: matplotlib.pyplot.plot:237 of
 msgid "pentagon marker"
-msgstr ""
+msgstr "marcador de pentágono"
 
 #: matplotlib.pyplot.plot:238 of
 msgid "``'P'``"
-msgstr ""
+msgstr "``'P'``"
 
 #: matplotlib.pyplot.plot:238 of
 msgid "plus (filled) marker"
-msgstr ""
+msgstr "más (llenado) marcador"
 
 #: matplotlib.pyplot.plot:239 of
 msgid "``'*'``"
-msgstr ""
+msgstr "``'*'``"
 
 #: matplotlib.pyplot.plot:239 of
 msgid "star marker"
-msgstr ""
+msgstr "marcador estrella"
 
 #: matplotlib.pyplot.plot:240 of
 msgid "``'h'``"
-msgstr ""
+msgstr "``'h'``"
 
 #: matplotlib.pyplot.plot:240 of
 msgid "hexagon1 marker"
-msgstr ""
+msgstr "marcador hexagonon1"
 
 #: matplotlib.pyplot.plot:241 of
 msgid "``'H'``"
-msgstr ""
+msgstr "``'H'``"
 
 #: matplotlib.pyplot.plot:241 of
 msgid "hexagon2 marker"
-msgstr ""
+msgstr "marcador hexadecimal 2"
 
 #: matplotlib.pyplot.plot:242 of
 msgid "``'+'``"
-msgstr ""
+msgstr "``'+'``"
 
 #: matplotlib.pyplot.plot:242 of
 msgid "plus marker"
-msgstr ""
+msgstr "más marcador"
 
 #: matplotlib.pyplot.plot:243 of
 msgid "``'x'``"
-msgstr ""
+msgstr "``'x'``"
 
 #: matplotlib.pyplot.plot:243 of
 msgid "x marker"
-msgstr ""
+msgstr "x marcador"
 
 #: matplotlib.pyplot.plot:244 of
 msgid "``'X'``"
-msgstr ""
+msgstr "``'X'``"
 
 #: matplotlib.pyplot.plot:244 of
 msgid "x (filled) marker"
-msgstr ""
+msgstr "x (llenado) marcador"
 
 #: matplotlib.pyplot.plot:245 of
 msgid "``'D'``"
-msgstr ""
+msgstr "``'D'``"
 
 #: matplotlib.pyplot.plot:245 of
 msgid "diamond marker"
-msgstr ""
+msgstr "marcador de diamante"
 
 #: matplotlib.pyplot.plot:246 of
 msgid "``'d'``"
-msgstr ""
+msgstr "``'d'``"
 
 #: matplotlib.pyplot.plot:246 of
 msgid "thin_diamond marker"
-msgstr ""
+msgstr "marcador delgado_diamante"
 
 #: matplotlib.pyplot.plot:247 of
 msgid "``'|'``"
-msgstr ""
+msgstr "``'|'``"
 
 #: matplotlib.pyplot.plot:247 of
 msgid "vline marker"
-msgstr ""
+msgstr "vline marker"
 
 #: matplotlib.pyplot.plot:248 of
 msgid "``'_'``"
-msgstr ""
+msgstr "``'_'``"
 
 #: matplotlib.pyplot.plot:248 of
 msgid "hline marker"
-msgstr ""
+msgstr "marcador de hline"
 
 #: matplotlib.pyplot.plot:251 of
 msgid "**Line Styles**"
-msgstr ""
+msgstr "**Line Styles**"
 
 #: matplotlib.pyplot.plot:256 of
 msgid "``'-'``"
-msgstr ""
+msgstr "``'-'``"
 
 #: matplotlib.pyplot.plot:256 of
 msgid "solid line style"
-msgstr ""
+msgstr "estilo de línea sólida"
 
 #: matplotlib.pyplot.plot:257 of
 msgid "``'--'``"
-msgstr ""
+msgstr "``'--'``"
 
 #: matplotlib.pyplot.plot:257 of
 msgid "dashed line style"
-msgstr ""
+msgstr "estilo de línea de guiones"
 
 #: matplotlib.pyplot.plot:258 of
 msgid "``'-.'``"
-msgstr ""
+msgstr "``'-.'``"
 
 #: matplotlib.pyplot.plot:258 of
 msgid "dash-dot line style"
-msgstr ""
+msgstr "estilo línea de punto de guión"
 
 #: matplotlib.pyplot.plot:259 of
 msgid "``':'``"
-msgstr ""
+msgstr "``':'``"
 
 #: matplotlib.pyplot.plot:259 of
 msgid "dotted line style"
-msgstr ""
+msgstr "estilo de línea de puntos"
 
 #: matplotlib.pyplot.plot:262 of
 msgid "Example format strings::"
-msgstr ""
+msgstr "Ejemplo de cadenas de formato::"
 
 #: matplotlib.pyplot.plot:270 of
 msgid "**Colors**"
-msgstr ""
+msgstr "**Colores**"
 
 #: matplotlib.pyplot.plot:272 of
 msgid "The supported color abbreviations are the single letter codes"
-msgstr ""
+msgstr "Las abreviaturas de color soportadas son los códigos de una sola letra"
 
 #: matplotlib.pyplot.plot:277 of
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 #: matplotlib.pyplot.plot:277 of
 msgid "blue"
-msgstr ""
+msgstr "azul"
 
 #: matplotlib.pyplot.plot:278 of
 msgid "``'g'``"
-msgstr ""
+msgstr "``'g'``"
 
 #: matplotlib.pyplot.plot:278 of
 msgid "green"
-msgstr ""
+msgstr "verde"
 
 #: matplotlib.pyplot.plot:279 of
 msgid "``'r'``"
-msgstr ""
+msgstr "``'r'``"
 
 #: matplotlib.pyplot.plot:279 of
 msgid "red"
-msgstr ""
+msgstr "rojo"
 
 #: matplotlib.pyplot.plot:280 of
 msgid "``'c'``"
-msgstr ""
+msgstr "``'c'``"
 
 #: matplotlib.pyplot.plot:280 of
 msgid "cyan"
-msgstr ""
+msgstr "cian"
 
 #: matplotlib.pyplot.plot:281 of
 msgid "``'m'``"
-msgstr ""
+msgstr "``'m'``"
 
 #: matplotlib.pyplot.plot:281 of
 msgid "magenta"
-msgstr ""
+msgstr "magenta"
 
 #: matplotlib.pyplot.plot:282 of
 msgid "``'y'``"
-msgstr ""
+msgstr "``'y'``"
 
 #: matplotlib.pyplot.plot:282 of
 msgid "yellow"
-msgstr ""
+msgstr "amarillo"
 
 #: matplotlib.pyplot.plot:283 of
 msgid "``'k'``"
-msgstr ""
+msgstr "``'k'``"
 
 #: matplotlib.pyplot.plot:283 of
 msgid "black"
-msgstr ""
+msgstr "negro"
 
 #: matplotlib.pyplot.plot:284 of
 msgid "``'w'``"
-msgstr ""
+msgstr "``'w'``"
 
 #: matplotlib.pyplot.plot:284 of
 msgid "white"
-msgstr ""
+msgstr "blanco"
 
 #: matplotlib.pyplot.plot:287 of
 msgid "and the ``'CN'`` colors that index into the default property cycle."
-msgstr ""
+msgstr "y los colores ``'CN'`` que indexan en el ciclo de propiedad predeterminado."
 
 #: matplotlib.pyplot.plot:289 of
 msgid "If the color is the only part of the format string, you can additionally use any  `matplotlib.colors` spec, e.g. full names (``'green'``) or hex strings (``'#008000'``)."
-msgstr ""
+msgstr "Si el color es la única parte de la cadena de formato, puede utilizar adicionalmente cualquier `matplotlib. especificaciones olors`, p. ej., nombres completos (``'green'``) o cadenas hexadecimales (``'#008000'``)."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.pyplot.plot.examples:2
 msgid "Examples using ``matplotlib.pyplot.plot``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.pyplot.plot``"
 
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:10
 msgid "Frame grabbing"
-msgstr ""
+msgstr "Agarre de fotogramas"
 
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:10
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:18
 msgid ":ref:`sphx_glr_gallery_animation_frame_grabbing_sgskip.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_animation_frame_grabbing_sgskip.py`"
 
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:29
 msgid "Print Stdout"
-msgstr ""
+msgstr "Imprimir Stdout"
 
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:29
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:37
 msgid ":ref:`sphx_glr_gallery_misc_print_stdout_sgskip.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_misc_print_stdout_sgskip.py`"
 
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:48
 msgid "Tool Manager"
-msgstr ""
+msgstr "Administrador de herramientas"
 
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:48
 #: ../../api/_as_gen/matplotlib.pyplot.plot.examples:56
 msgid ":ref:`sphx_glr_gallery_user_interfaces_toolmanager_sgskip.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_user_interfaces_toolmanager_sgskip.py`"
 

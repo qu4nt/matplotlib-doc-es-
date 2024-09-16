@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-05-25 03:07\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,274 +20,274 @@ msgstr ""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_advanced_transforms_tutorial.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_advanced_transforms_tutorial.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:23
 msgid "Transformations Tutorial"
-msgstr ""
+msgstr "Tutorial de transformaciones"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:25
 #, python-format
 msgid "Like any graphics packages, Matplotlib is built on top of a transformation framework to easily move between coordinate systems, the userland *data* coordinate system, the *axes* coordinate system, the *figure* coordinate system, and the *display* coordinate system. In 95% of your plotting, you won't need to think about this, as it happens under the hood, but as you push the limits of custom figure generation, it helps to have an understanding of these objects so you can reuse the existing transformations Matplotlib makes available to you, or create your own (see :mod:`matplotlib.transforms`).  The table below summarizes the some useful coordinate systems, the transformation object you should use to work in that coordinate system, and the description of that system. In the ``Transformation Object`` column, ``ax`` is a :class:`~matplotlib.axes.Axes` instance, and ``fig`` is a :class:`~matplotlib.figure.Figure` instance."
-msgstr ""
+msgstr "Como cualquier paquete gráfico, Matplotlib está construido sobre un framework de transformación para moverse fácilmente entre sistemas de coordenadas, el sistema de coordenadas de *datos* del usuario, el sistema de coordenadas de *ejes*, el sistema de coordenadas de *figura* y el sistema de coordenadas de *visualización*. En el 95% de tus trazados, no necesitarás pensar en esto, ya que sucede tras bastidores, pero a medida que vas ampliando los límites de la generación de figuras personalizadas, ayuda a tener una comprensión de estos objetos para que puedas reutilizar las transformaciones existentes que Matplotlib pone a tu disposición, o crear las tuyas propias (ver :mod:`matplotlib.transforms`).  La siguiente tabla resume algunos sistemas de coordenadas útiles, el objeto de transformación que debes utilizar para trabajar en ese sistema de coordenadas, y la descripción de ese sistema. En la columna ``Objeto de transformación``, ``ax`` es una instancia de :class:`~matplotlib.axes.Axes`, y ``fig`` es una instancia de :class:`~matplotlib.figure.Figure`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:41
 msgid "Coordinates"
-msgstr ""
+msgstr "Coordenadas"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:41
 msgid "Transformation object"
-msgstr ""
+msgstr "Objeto de transformación"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:41
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:43
 msgid "\"data\""
-msgstr ""
+msgstr "\"datos\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:43
 msgid "``ax.transData``"
-msgstr ""
+msgstr "``ax.transData``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:43
 msgid "The coordinate system for the data, controlled by xlim and ylim."
-msgstr ""
+msgstr "El sistema de coordenadas para los datos, controlado por xlim e ylim."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:46
 msgid "\"axes\""
-msgstr ""
+msgstr "\"ejes\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:46
 msgid "``ax.transAxes``"
-msgstr ""
+msgstr "``ax.transAxes``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:46
 msgid "The coordinate system of the `~matplotlib.axes.Axes`; (0, 0) is bottom left of the axes, and (1, 1) is top right of the axes."
-msgstr ""
+msgstr "El sistema de coordenadas del `~matplotlib.axes.Axes`; (0, 0) es la parte inferior izquierda de los ejes, y (1, 1) es la parte superior derecha de los ejes."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:51
 msgid "\"subfigure\""
-msgstr ""
+msgstr "\"subfigura\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:51
 msgid "``subfigure.transSubfigure``"
-msgstr ""
+msgstr "``subfigure.transSubfigure``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:51
 msgid "The coordinate system of the `.SubFigure`; (0, 0) is bottom left of the subfigure, and (1, 1) is top right of the subfigure.  If a figure has no subfigures, this is the same as ``transFigure``."
-msgstr ""
+msgstr "El sistema de coordenadas de la `.SubFigure`; (0, 0) es la parte inferior izquierda de la subfigura, y (1, 1) es la parte superior derecha de la subfigura. Si una figura no tiene subfiguras, es lo mismo que ``transFigure``."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:58
 msgid "\"figure\""
-msgstr ""
+msgstr "\"figura\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:58
 msgid "``fig.transFigure``"
-msgstr ""
+msgstr "``fig.transFigure``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:58
 msgid "The coordinate system of the `.Figure`; (0, 0) is bottom left of the figure, and (1, 1) is top right of the figure."
-msgstr ""
+msgstr "El sistema de coordenadas de la `.Figure`; (0, 0) es la parte inferior izquierda de la figura, y (1, 1) es la parte superior derecha de la figura."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:63
 msgid "\"figure-inches\""
-msgstr ""
+msgstr "\"figure-inches\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:63
 msgid "``fig.dpi_scale_trans``"
-msgstr ""
+msgstr "``fig.dpi_scale_trans``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:63
 msgid "The coordinate system of the `.Figure` in inches; (0, 0) is bottom left of the figure, and (width, height) is the top right of the figure in inches."
-msgstr ""
+msgstr "El sistema de coordenadas de la `.Figure` en pulgadas; (0, 0) es la parte inferior izquierda de la figura, y (ancho, alto) es la parte superior derecha de la figura en pulgadas."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:69
 msgid "\"display\""
-msgstr ""
+msgstr "\"display\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:69
 msgid "``None``, or ``IdentityTransform()``"
-msgstr ""
+msgstr "``None``, o ``IdentityTransform()``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:69
 msgid "The pixel coordinate system of the display window; (0, 0) is bottom left of the window, and (width, height) is top right of the display window in pixels."
-msgstr ""
+msgstr "El sistema de coordenadas de píxeles de la ventana de visualización; (0, 0) es la parte inferior izquierda de la ventana, y (ancho, alto) es la parte superior derecha de la ventana de visualización en píxeles."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:75
 msgid "\"xaxis\", \"yaxis\""
-msgstr ""
+msgstr "\"xaxis\", \"yaxis\""
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:75
 msgid "``ax.get_xaxis_transform()``, ``ax.get_yaxis_transform()``"
-msgstr ""
+msgstr "``ax.get_xaxis_transform()``, ``ax.get_yaxis_transform()``"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:75
 msgid "Blended coordinate systems; use data coordinates on one of the axis and axes coordinates on the other."
-msgstr ""
+msgstr "Sistemas de coordenadas combinados; utiliza coordenadas de datos en uno de los ejes y coordenadas de ejes en el otro."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:80
 msgid "All of the transformation objects in the table above take inputs in their coordinate system, and transform the input to the *display* coordinate system.  That is why the *display* coordinate system has ``None`` for the ``Transformation Object`` column -- it already is in *display* coordinates.  The transformations also know how to invert themselves, to go from *display* back to the native coordinate system. This is particularly useful when processing events from the user interface, which typically occur in display space, and you want to know where the mouse click or key-press occurred in your *data* coordinate system."
-msgstr ""
+msgstr "Todos los objetos de transformación de la tabla anterior toman entradas en su sistema de coordenadas, y transforman la entrada en el sistema de coordenadas *display*.  Por eso el sistema de coordenadas de *display* tiene ``None`` para la columna ``Transformation Object`` -- ya está en coordenadas de *display*.  Las transformaciones también saben cómo invertirse a sí mismas, para pasar de *display* al sistema de coordenadas nativo. Esto es particularmente útil cuando se procesan eventos de la interfaz de usuario, que típicamente ocurren en el espacio de visualización, y se quiere saber dónde ocurrió el clic del ratón o la pulsación de una tecla en el sistema de coordenadas de *datos*."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:91
 msgid "Note that specifying objects in *display* coordinates will change their location if the ``dpi`` of the figure changes.  This can cause confusion when printing or changing screen resolution, because the object can change location and size.  Therefore it is most common for artists placed in an axes or figure to have their transform set to something *other* than the `~.transforms.IdentityTransform()`; the default when an artist is placed on an axes using `~.axes.Axes.add_artist` is for the transform to be ``ax.transData``."
-msgstr ""
+msgstr "Tenga en cuenta que al especificar los objetos en coordenadas de *display* cambiará su ubicación si cambia el ``dpi`` de la figura.  Esto puede causar confusión al imprimir o cambiar la resolución de la pantalla, ya que el objeto puede cambiar de ubicación y tamaño.  Por lo tanto, es más común que los artistas colocados en un eje o figura tengan su transformación establecida a algo *distinto* de la `~.transforms.IdentityTransform()`; el valor por defecto cuando un artista se coloca en un eje usando `~.axes.Axes.add_artist` es que la transformación sea ``ax.transData``."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:103
 msgid "Data coordinates"
-msgstr ""
+msgstr "Coordenadas de datos"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:105
 msgid "Let's start with the most commonly used coordinate, the *data* coordinate system.  Whenever you add data to the axes, Matplotlib updates the datalimits, most commonly updated with the :meth:`~matplotlib.axes.Axes.set_xlim` and :meth:`~matplotlib.axes.Axes.set_ylim` methods.  For example, in the figure below, the data limits stretch from 0 to 10 on the x-axis, and -1 to 1 on the y-axis."
-msgstr ""
+msgstr "Empecemos por la coordenada más utilizada, el sistema de coordenadas *data*.  Cada vez que se añaden datos a los ejes, Matplotlib actualiza los límites de los datos, más comúnmente actualizados con los métodos :meth:`~matplotlib.axes.Axes.set_xlim` y :meth:`~matplotlib.axes.Axes.set_ylim`. Por ejemplo, en la figura siguiente, los límites de los datos se extienden de 0 a 10 en el eje x, y de -1 a 1 en el eje y."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:145
 msgid "You can use the ``ax.transData`` instance to transform from your *data* to your *display* coordinate system, either a single point or a sequence of points as shown below:"
-msgstr ""
+msgstr "Puedes usar la instancia ``ax.transData`` para transformar desde tus *datos* a tu sistema de coordenadas de *display*, ya sea un solo punto o una secuencia de puntos como se muestra a continuación:"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:162
 msgid "You can use the :meth:`~matplotlib.transforms.Transform.inverted` method to create a transform which will take you from *display* to *data* coordinates:"
-msgstr ""
+msgstr "Puedes utilizar el método :meth:`~matplotlib.transforms.Transform.inverted` para crear una transformación que te lleve de las coordenadas de *display* a las de *datos*:"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:176
 msgid "If your are typing along with this tutorial, the exact values of the *display* coordinates may differ if you have a different window size or dpi setting.  Likewise, in the figure below, the display labeled points are probably not the same as in the ipython session because the documentation figure size defaults are different."
-msgstr ""
+msgstr "Si está escribiendo a lo largo de este tutorial, los valores exactos de las coordenadas de *display* pueden diferir si tiene un tamaño de ventana o una configuración de dpi diferente.  Igualmente, en la figura de abajo, los puntos etiquetados de la pantalla probablemente no son los mismos que en la sesión de ipython porque los valores por defecto del tamaño de la figura de la documentación son diferentes."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:235
 msgid "If you run the source code in the example above in a GUI backend, you may also find that the two arrows for the *data* and *display* annotations do not point to exactly the same point.  This is because the display point was computed before the figure was displayed, and the GUI backend may slightly resize the figure when it is created. The effect is more pronounced if you resize the figure yourself. This is one good reason why you rarely want to work in *display* space, but you can connect to the ``'on_draw'`` :class:`~matplotlib.backend_bases.Event` to update *figure* coordinates on figure draws; see :ref:`event-handling-tutorial`."
-msgstr ""
+msgstr "Si ejecuta el código fuente del ejemplo anterior en un backend de IGU, también puede encontrar que las dos flechas de las anotaciones *data* y *display* no apuntan exactamente al mismo punto.  Esto se debe a que el punto de visualización se calculó antes de que se mostrara la figura, y el backend de la IGU puede cambiar ligeramente el tamaño de la figura cuando se crea. El efecto es más pronunciado si cambias el tamaño de la figura. Esta es una buena razón por la que rara vez se quiere trabajar en el espacio de *visualización*, pero se puede conectar a la clase :``'on_draw'`` :class:`~matplotlib.backend_bases.Event` para actualizar las coordenadas de la *figura* en los dibujos de la figura; ver :ref:`event-handling-tutorial`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:246
 msgid "When you change the x or y limits of your axes, the data limits are updated so the transformation yields a new display point.  Note that when we just change the ylim, only the y-display coordinate is altered, and when we change the xlim too, both are altered.  More on this later when we talk about the :class:`~matplotlib.transforms.Bbox`."
-msgstr ""
+msgstr "Al cambiar los límites x o y de los ejes, los límites de los datos se actualizan para que la transformación produzca un nuevo punto de visualización. Ten en cuenta que cuando sólo cambiamos el ylim, sólo se altera la coordenada de visualización y, cuando cambiamos el xlim también, se alteran ambos.  Hablaremos de esto más adelante, cuando tratemos la :clase:`~matplotlib.transforms.Bbox`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:274
 msgid "Axes coordinates"
-msgstr ""
+msgstr "Coordenadas de los ejes"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:276
 msgid "After the *data* coordinate system, *axes* is probably the second most useful coordinate system.  Here the point (0, 0) is the bottom left of your axes or subplot, (0.5, 0.5) is the center, and (1.0, 1.0) is the top right.  You can also refer to points outside the range, so (-0.1, 1.1) is to the left and above your axes.  This coordinate system is extremely useful when placing text in your axes, because you often want a text bubble in a fixed, location, e.g., the upper left of the axes pane, and have that location remain fixed when you pan or zoom.  Here is a simple example that creates four panels and labels them 'A', 'B', 'C', 'D' as you often see in journals."
-msgstr ""
+msgstr "Después del sistema de coordenadas *datos*, *ejes* es probablemente el segundo sistema de coordenadas más útil.  Aquí el punto (0, 0) es la parte inferior izquierda de tus ejes o subplot, (0.5, 0.5) es el centro, y (1.0, 1.0) es la parte superior derecha.  También puedes referirte a puntos fuera del rango, por lo que (-0,1, 1,1) está a la izquierda y por encima de tus ejes.  Este sistema de coordenadas es extremadamente útil cuando se coloca texto en los ejes, porque a menudo se quiere una burbuja de texto en una ubicación fija, por ejemplo, la parte superior izquierda del panel de los ejes, y que esa ubicación permanezca fija cuando se desplaza o hace zoom.  Aquí hay un ejemplo simple que crea cuatro paneles y los etiqueta 'A', 'B', 'C', 'D' como se ve a menudo en los diarios."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:314
 msgid "You can also make lines or patches in the *axes* coordinate system, but this is less useful in my experience than using ``ax.transAxes`` for placing text.  Nonetheless, here is a silly example which plots some random dots in data space, and overlays a semi-transparent :class:`~matplotlib.patches.Circle` centered in the middle of the axes with a radius one quarter of the axes -- if your axes does not preserve aspect ratio (see :meth:`~matplotlib.axes.Axes.set_aspect`), this will look like an ellipse.  Use the pan/zoom tool to move around, or manually change the data xlim and ylim, and you will see the data move, but the circle will remain fixed because it is not in *data* coordinates and will always remain at the center of the axes."
-msgstr ""
+msgstr "También puedes hacer líneas o parches en el sistema de coordenadas de los *ejes*, pero esto es menos útil en mi experiencia que usar ``ax.transAxes`` para colocar el texto.  No obstante, aquí hay un ejemplo tonto que traza algunos puntos aleatorios en el espacio de datos, y superpone un :class:`~matplotlib.patches.Circle` semitransparente centrado en el centro de los ejes con un radio de un cuarto de los ejes -- si tus ejes no preservan la relación de aspecto (ver :meth:`~matplotlib.axes.Axes.set_aspect`), esto se verá como una elipse. Usa la herramienta pan/zoom para moverte, o cambia manualmente los datos xlim e ylim, y verás que los datos se mueven, pero el círculo permanecerá fijo porque no está en coordenadas de *datos* y siempre permanecerá en el centro de los ejes."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:357
 msgid "Blended transformations"
-msgstr ""
+msgstr "Transformaciones combinadas"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:359
 msgid "Drawing in *blended* coordinate spaces which mix *axes* with *data* coordinates is extremely useful, for example to create a horizontal span which highlights some region of the y-data but spans across the x-axis regardless of the data limits, pan or zoom level, etc.  In fact these blended lines and spans are so useful, we have built in functions to make them easy to plot (see :meth:`~matplotlib.axes.Axes.axhline`, :meth:`~matplotlib.axes.Axes.axvline`, :meth:`~matplotlib.axes.Axes.axhspan`, :meth:`~matplotlib.axes.Axes.axvspan`) but for didactic purposes we will implement the horizontal span here using a blended transformation.  This trick only works for separable transformations, like you see in normal Cartesian coordinate systems, but not on inseparable transformations like the :class:`~matplotlib.projections.polar.PolarAxes.PolarTransform`."
-msgstr ""
+msgstr "Dibujar en espacios de coordenadas *mezcladas* que combinan coordenadas de *ejes* con coordenadas de *datos* es extremadamente útil, por ejemplo para crear un tramo horizontal que resalte alguna región de los datos y pero que se extienda por el eje x independientemente de los límites de los datos, el nivel de paneo o zoom, etc. De hecho, estas líneas y tramos mezclados son tan útiles que hemos incorporado funciones para facilitar su trazado (ver :meth:`~matplotlib.axes.Axes.axhline`, :meth:`~matplotlib.axes.Axes. axvline`, :meth:`~matplotlib.axes.Axes.axhspan`, :meth:`~matplotlib.axes.Axes.axvspan`) pero por motivos didácticos implementaremos aquí el tramo horizontal utilizando una transformación combinada. Este truco sólo funciona para transformaciones separables, como las que se ven en los sistemas de coordenadas cartesianas normales, pero no en transformaciones inseparables como la :class:`~matplotlib.projections.polar.PolarAxes.PolarTransform`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:415
 msgid "The blended transformations where x is in *data* coords and y in *axes* coordinates is so useful that we have helper methods to return the versions Matplotlib uses internally for drawing ticks, ticklabels, etc. The methods are :meth:`matplotlib.axes.Axes.get_xaxis_transform` and :meth:`matplotlib.axes.Axes.get_yaxis_transform`.  So in the example above, the call to :meth:`~matplotlib.transforms.blended_transform_factory` can be replaced by ``get_xaxis_transform``::"
-msgstr ""
+msgstr "Las transformaciones mixtas en las que x está en coordenadas *datos* e y en coordenadas *ejes* son tan útiles que tenemos métodos de ayuda para devolver las versiones que Matplotlib utiliza internamente para dibujar marcadores, etiquetas de puntos, etc. Los métodos son :meth:`matplotlib.axes.Axes.get_xaxis_transform` y :meth:`matplotlib.axes.Axes.get_yaxis_transform`. Así, en el ejemplo anterior, la llamada a :meth:`~matplotlib.transforms.blended_transform_factory` puede ser sustituida por ``get_xaxis_transform``::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:429
 msgid "Plotting in physical coordinates"
-msgstr ""
+msgstr "Trazado en coordenadas físicas"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:431
 msgid "Sometimes we want an object to be a certain physical size on the plot. Here we draw the same circle as above, but in physical coordinates.  If done interactively, you can see that changing the size of the figure does not change the offset of the circle from the lower-left corner, does not change its size, and the circle remains a circle regardless of the aspect ratio of the axes."
-msgstr ""
+msgstr "A veces queremos que un objeto tenga un determinado tamaño físico en el gráfico. Aquí dibujamos el mismo círculo que antes, pero en coordenadas físicas.  Si se hace de forma interactiva, se puede ver que al cambiar el tamaño de la figura no cambia el desplazamiento del círculo desde la esquina inferior izquierda, no cambia su tamaño, y el círculo sigue siendo un círculo independientemente de la relación de aspecto de los ejes."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:466
 msgid "If we change the figure size, the circle does not change its absolute position and is cropped."
-msgstr ""
+msgstr "Si cambiamos el tamaño de la figura, el círculo no cambia su posición absoluta y se recorta."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:497
 msgid "Another use is putting a patch with a set physical dimension around a data point on the axes.  Here we add together two transforms.  The first sets the scaling of how large the ellipse should be and the second sets its position.  The ellipse is then placed at the origin, and then we use the helper transform :class:`~matplotlib.transforms.ScaledTranslation` to move it to the right place in the ``ax.transData`` coordinate system. This helper is instantiated with::"
-msgstr ""
+msgstr "Otro uso es poner un parche con una dimensión física establecida alrededor de un punto de datos en los ejes. Aquí sumamos dos transformaciones. La primera establece la escala de lo grande que debe ser la elipse y la segunda establece su posición. La elipse se coloca entonces en el origen, y luego utilizamos el helper transform :class:`~matplotlib.transforms.ScaledTranslation` para moverla al lugar correcto en el sistema de coordenadas ``ax.transData``. Este helper se instanciará con::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:508
 msgid "where *xt* and *yt* are the translation offsets, and *scale_trans* is a transformation which scales *xt* and *yt* at transformation time before applying the offsets."
-msgstr ""
+msgstr "donde *xt* y *yt* son los desplazamientos de traslación, y *scale_trans* es una transformación que escala *xt* y *yt* en tiempo de transformación antes de aplicar los desplazamientos."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:512
 msgid "Note the use of the plus operator on the transforms below. This code says: first apply the scale transformation ``fig.dpi_scale_trans`` to make the ellipse the proper size, but still centered at (0, 0), and then translate the data to ``xdata[0]`` and ``ydata[0]`` in data space."
-msgstr ""
+msgstr "Fíjate en el uso del operador plus en las transformaciones de abajo. Este código dice: primero aplica la transformación de escala ``fig.dpi_scale_trans`` para hacer que la elipse tenga el tamaño adecuado, pero aún centrada en (0, 0), y luego traduce los datos a ``xdata[0]`` y ``ydata[0]`` en el espacio de datos."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:517
 msgid "In interactive use, the ellipse stays the same size even if the axes limits are changed via zoom."
-msgstr ""
+msgstr "En el uso interactivo, la elipse se mantiene del mismo tamaño aunque se cambien los límites de los ejes mediante el zoom."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:556
 msgid "The order of transformation matters.  Here the ellipse is given the right dimensions in display space *first* and then moved in data space to the correct spot. If we had done the ``ScaledTranslation`` first, then ``xdata[0]`` and ``ydata[0]`` would first be transformed to *display* coordinates (``[ 358.4  475.2]`` on a 200-dpi monitor) and then those coordinates would be scaled by ``fig.dpi_scale_trans`` pushing the center of the ellipse well off the screen (i.e. ``[ 71680.  95040.]``)."
-msgstr ""
+msgstr "El orden de la transformación es importante. Aquí la elipse recibe las dimensiones correctas en el espacio de visualización *primero* y luego se mueve en el espacio de datos al lugar correcto. Si hubiéramos hecho primero la ``ScaledTranslation``, entonces ``xdata[0]`` y ``ydata[0]`` se transformarían primero a coordenadas de *pantalla* (``[ 358,4 475,2]`` en un monitor de 200 ppp) y luego esas coordenadas se escalarían con ``fig.dpi_scale_trans`` empujando el centro de la elipse bien lejos de la pantalla (es decir, ``[ 71680. 95040.]``)."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:569
 msgid "Using offset transforms to create a shadow effect"
-msgstr ""
+msgstr "Uso de transformaciones de desplazamiento para crear un efecto de sombra"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:571
 msgid "Another use of :class:`~matplotlib.transforms.ScaledTranslation` is to create a new transformation that is offset from another transformation, e.g., to place one object shifted a bit relative to another object.  Typically you want the shift to be in some physical dimension, like points or inches rather than in *data* coordinates, so that the shift effect is constant at different zoom levels and dpi settings."
-msgstr ""
+msgstr "Otro uso de :class:`~matplotlib.transforms.ScaledTranslation` es crear una nueva transformación desplazada respecto a otra transformación, por ejemplo, para colocar un objeto desplazado un poco respecto a otro objeto. Normalmente se quiere que el desplazamiento sea en alguna dimensión física, como puntos o pulgadas, en lugar de en coordenadas de *datos*, para que el efecto de desplazamiento sea constante en diferentes niveles de zoom y configuraciones de dpi."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:579
 msgid "One use for an offset is to create a shadow effect, where you draw one object identical to the first just to the right of it, and just below it, adjusting the zorder to make sure the shadow is drawn first and then the object it is shadowing above it."
-msgstr ""
+msgstr "Un uso de un desplazamiento es para crear un efecto de sombra, donde se dibuja un objeto idéntico al primero justo a la derecha de éste, y justo debajo de él, ajustando el zorder para asegurarse de que la sombra se dibuja primero y luego el objeto que está sombreando por encima."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:584
 msgid "Here we apply the transforms in the *opposite* order to the use of :class:`~matplotlib.transforms.ScaledTranslation` above. The plot is first made in data coordinates (``ax.transData``) and then shifted by ``dx`` and ``dy`` points using ``fig.dpi_scale_trans``.  (In typography, a `point <https://en.wikipedia.org/wiki/Point_%28typography%29>`_ is 1/72 inches, and by specifying your offsets in points, your figure will look the same regardless of the dpi resolution it is saved in.)"
-msgstr ""
+msgstr "Aquí aplicamos las transformaciones en el orden *opuesto* al uso de :class:`~matplotlib.transforms.ScaledTranslation` anterior. El gráfico se hace primero en coordenadas de datos (``ax.transData``) y luego se desplaza por puntos ``dx`` y ``dy`` utilizando ``fig.dpi_scale_trans``.  (En tipografía, un `punto <https://en.wikipedia.org/wiki/Point_%28typography%29>`_ es 1/72 pulgadas, y al especificar sus desplazamientos en puntos, su figura tendrá el mismo aspecto independientemente de la resolución de dpi en la que se guarde)"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:635
 msgid "The dpi and inches offset is a common-enough use case that we have a special helper function to create it in :func:`matplotlib.transforms.offset_copy`, which returns a new transform with an added offset. So above we could have done::"
-msgstr ""
+msgstr "El desplazamiento de dpi y pulgadas es un caso de uso tan común que tenemos una función especial de ayuda para crearlo en :func:`matplotlib.transforms.offset_copy`, que devuelve una nueva transformación con un desplazamiento añadido. Así que arriba podríamos haber hecho::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:647
 msgid "The transformation pipeline"
-msgstr ""
+msgstr "El proceso de transformación"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:649
 msgid "The ``ax.transData`` transform we have been working with in this tutorial is a composite of three different transformations that comprise the transformation pipeline from *data* -> *display* coordinates.  Michael Droettboom implemented the transformations framework, taking care to provide a clean API that segregated the nonlinear projections and scales that happen in polar and logarithmic plots, from the linear affine transformations that happen when you pan and zoom.  There is an efficiency here, because you can pan and zoom in your axes which affects the affine transformation, but you may not need to compute the potentially expensive nonlinear scales or projections on simple navigation events.  It is also possible to multiply affine transformation matrices together, and then apply them to coordinates in one step.  This is not true of all possible transformations."
-msgstr ""
+msgstr "La transformación ``ax.transData`` con la que hemos estado trabajando en este tutorial es un compuesto de tres transformaciones diferentes que comprenden la tubería de transformación de coordenadas *data* -> *display*.  Michael Droettboom implementó el framework de transformaciones, cuidando de proporcionar una API limpia que segregara las proyecciones no lineales y las escalas que ocurren en los gráficos polares y logarítmicos, de las transformaciones lineales afines que ocurren cuando se hace paneo y zoom. Hay una eficiencia aquí, porque usted puede panear y hacer zoom en sus ejes que afecta a la transformación afín, pero puede que no necesite calcular las escalas o proyecciones no lineales potencialmente costosas en eventos de navegación simples. También es posible multiplicar las matrices de transformación afín juntas, y luego aplicarlas a las coordenadas en un solo paso. Esto no es cierto para todas las transformaciones posibles."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:665
 msgid "Here is how the ``ax.transData`` instance is defined in the basic separable axis :class:`~matplotlib.axes.Axes` class::"
-msgstr ""
+msgstr "Así es como se define la instancia ``ax.transData`` en el eje básico separable :class:`~matplotlib.axes.Axes` class::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:670
 msgid "We've been introduced to the ``transAxes`` instance above in :ref:`axes-coords`, which maps the (0, 0), (1, 1) corners of the axes or subplot bounding box to *display* space, so let's look at these other two pieces."
-msgstr ""
+msgstr "Ya hemos conocido la instancia ``transAxes`` en :ref:`axes-coords`, que mapea las esquinas (0, 0), (1, 1) de la caja delimitadora de los ejes o de la subparcela al espacio de *display*, así que veamos estas otras dos piezas."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:675
 msgid "``self.transLimits`` is the transformation that takes you from *data* to *axes* coordinates; i.e., it maps your view xlim and ylim to the unit space of the axes (and ``transAxes`` then takes that unit space to display space).  We can see this in action here"
-msgstr ""
+msgstr "``self.transLimits`` es la transformación que te lleva de las coordenadas de los *datos* a las coordenadas de los *ejes*; es decir, mapea tu vista xlim e ylim al espacio unitario de los ejes (y ``transAxes`` luego lleva ese espacio unitario al espacio de visualización).  Podemos ver esto en acción aquí"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:702
 msgid "and we can use this same inverted transformation to go from the unit *axes* coordinates back to *data* coordinates."
-msgstr ""
+msgstr "y podemos utilizar esta misma transformación invertida para pasar de las coordenadas de los *ejes* unitarios a las coordenadas de los *datos*."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:710
 msgid "The final piece is the ``self.transScale`` attribute, which is responsible for the optional non-linear scaling of the data, e.g., for logarithmic axes.  When an Axes is initially setup, this is just set to the identity transform, since the basic Matplotlib axes has linear scale, but when you call a logarithmic scaling function like :meth:`~matplotlib.axes.Axes.semilogx` or explicitly set the scale to logarithmic with :meth:`~matplotlib.axes.Axes.set_xscale`, then the ``ax.transScale`` attribute is set to handle the nonlinear projection. The scales transforms are properties of the respective ``xaxis`` and ``yaxis`` :class:`~matplotlib.axis.Axis` instances.  For example, when you call ``ax.set_xscale('log')``, the xaxis updates its scale to a :class:`matplotlib.scale.LogScale` instance."
-msgstr ""
+msgstr "La última pieza es el atributo ``self.transScale``, que es responsable del escalado no lineal opcional de los datos, por ejemplo, para los ejes logarítmicos.  Cuando un eje se configura inicialmente, se establece la transformación de identidad, ya que los ejes básicos de Matplotlib tienen una escala lineal, pero cuando se llama a una función de escala logarítmica como :meth:`~matplotlib.axes.Axes.semilogx` o se establece explícitamente la escala logarítmica con :meth:`~matplotlib.axes.Axes.set_xscale`, entonces el atributo ``ax.transScale`` se establece para manejar la proyección no lineal. Las escalas de transformación son propiedades de las respectivas instancias del ``xaxis`` y del ``yaxis`` :class:`~matplotlib.axis.Axis`.  Por ejemplo, cuando se llama a ``ax.set_xscale('log')``, el eje x actualiza su escala a una instancia :class:`matplotlib.scale.LogScale`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:723
 msgid "For non-separable axes the PolarAxes, there is one more piece to consider, the projection transformation.  The ``transData`` :class:`matplotlib.projections.polar.PolarAxes` is similar to that for the typical separable matplotlib Axes, with one additional piece ``transProjection``::"
-msgstr ""
+msgstr "Para los ejes no separables, los PolarAxes, hay una pieza más a considerar, la transformación de la proyección.  La transformación ``transData`` :class:`matplotlib.projections.polar.PolarAxes` es similar a la de los típicos ejes separables de matplotlib, con una pieza adicional ``transProjection``::"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:732
 msgid "``transProjection`` handles the projection from the space, e.g., latitude and longitude for map data, or radius and theta for polar data, to a separable Cartesian coordinate system.  There are several projection examples in the :mod:`matplotlib.projections` package, and the best way to learn more is to open the source for those packages and see how to make your own, since Matplotlib supports extensible axes and projections.  Michael Droettboom has provided a nice tutorial example of creating a Hammer projection axes; see :doc:`/gallery/misc/custom_projection`."
-msgstr ""
+msgstr "``transProjection`` maneja la proyección desde el espacio, por ejemplo, latitud y longitud para datos cartográficos, o radio y theta para datos polares, a un sistema de coordenadas cartesianas separable. Hay varios ejemplos de proyecciones en el paquete :mod:`matplotlib.projections`, y la mejor manera de aprender más es abrir el código fuente de esos paquetes y ver cómo hacer el tuyo propio, ya que Matplotlib soporta ejes y proyecciones extensibles.  Michael Droettboom ha proporcionado un buen ejemplo de tutorial para crear un eje de proyección Hammer; ver :doc:`/gallery/misc/custom_projection`."
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:745
 msgid "**Total running time of the script:** ( 0 minutes  2.926 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 2.926 segundos)"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:760
 msgid ":download:`Download Python source code: transforms_tutorial.py <transforms_tutorial.py>`"
-msgstr ""
+msgstr ":download:`Descargar código fuente de Python: transforms_tutorial.py <transforms_tutorial.py>`"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:766
 msgid ":download:`Download Jupyter notebook: transforms_tutorial.ipynb <transforms_tutorial.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar Jupyter notebook: transforms_tutorial.ipynb <transforms_tutorial.ipynb>`"
 
 #: ../../tutorials/advanced/transforms_tutorial.rst:773
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

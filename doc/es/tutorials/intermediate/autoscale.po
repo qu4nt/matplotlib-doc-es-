@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-23 03:41\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,19 +20,19 @@ msgstr ""
 
 #: ../../tutorials/intermediate/autoscale.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_intermediate_autoscale.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_intermediate_autoscale.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/intermediate/autoscale.rst:22
 msgid "Autoscaling"
-msgstr ""
+msgstr "Autoescalado"
 
 #: ../../tutorials/intermediate/autoscale.rst:24
 msgid "The limits on an axis can be set manually (e.g. ``ax.set_xlim(xmin, xmax)``) or Matplotlib can set them automatically based on the data already on the axes. There are a number of options to this autoscaling behaviour, discussed below."
-msgstr ""
+msgstr "Los límites de un eje pueden establecerse manualmente (por ejemplo, ``ax.set_xlim(xmin, xmax)``) o Matplotlib puede establecerlos automáticamente basándose en los datos ya existentes en los ejes. Hay una serie de opciones para este comportamiento de autoescalado, que se discuten a continuación."
 
 #: ../../tutorials/intermediate/autoscale.rst:30
 msgid "We will start with a simple line plot showing that autoscaling extends the axis limits 5% beyond the data limits (-2π, 2π)."
-msgstr ""
+msgstr "Comenzaremos con un simple gráfico de líneas que muestra que el autoescalado extiende los límites del eje un 5% más allá de los límites de los datos (-2π, 2π)."
 
 #: ../../tutorials/intermediate/autoscale.rst:59
 #: ../../tutorials/intermediate/autoscale.rst:87
@@ -43,93 +43,93 @@ msgstr ""
 #: ../../tutorials/intermediate/autoscale.rst:356
 #: ../../tutorials/intermediate/autoscale.rst:399
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/intermediate/autoscale.rst:71
 msgid "Margins"
-msgstr ""
+msgstr "Márgenes"
 
 #: ../../tutorials/intermediate/autoscale.rst:72
 msgid "The default margin around the data limits is 5%:"
-msgstr ""
+msgstr "El margen por defecto alrededor de los límites de los datos es del 5%:"
 
 #: ../../tutorials/intermediate/autoscale.rst:98
 msgid "The margins can be made larger using `~matplotlib.axes.Axes.margins`:"
-msgstr ""
+msgstr "Los márgenes pueden hacerse más grandes usando `~matplotlib.axes.Axes.margins`:"
 
 #: ../../tutorials/intermediate/autoscale.rst:123
 msgid "In general, margins can be in the range (-0.5, ∞), where negative margins set the axes limits to a subrange of the data range, i.e. they clip data. Using a single number for margins affects both axes, a single margin can be customized using keyword arguments ``x`` or ``y``, but positional and keyword interface cannot be combined."
-msgstr ""
+msgstr "En general, los márgenes pueden estar en el rango (-0.5, ∞), donde los márgenes negativos establecen los límites de los ejes en un subrango del rango de datos, es decir, recortan los datos. El uso de un único número para los márgenes afecta a ambos ejes, un único margen puede personalizarse utilizando argumentos de palabra clave ``x`` o ``y``, pero la interfaz posicional y la de palabra clave no pueden combinarse."
 
 #: ../../tutorials/intermediate/autoscale.rst:153
 msgid "Sticky edges"
-msgstr ""
+msgstr "Bordes pegajosos"
 
 #: ../../tutorials/intermediate/autoscale.rst:154
 msgid "There are plot elements (`.Artist`\\s) that are usually used without margins. For example false-color images (e.g. created with `.Axes.imshow`) are not considered in the margins calculation."
-msgstr ""
+msgstr "Hay elementos de trazado (`.Artist`s) que normalmente se utilizan sin márgenes. Por ejemplo, las imágenes de falso color (por ejemplo, creadas con `.Axes.imshow`) no se tienen en cuenta en el cálculo de los márgenes."
 
 #: ../../tutorials/intermediate/autoscale.rst:196
 msgid "This override of margins is determined by \"sticky edges\", a property of `.Artist` class that can suppress adding margins to axis limits. The effect of sticky edges can be disabled on an Axes by changing `~matplotlib.axes.Axes.use_sticky_edges`. Artists have a property `.Artist.sticky_edges`, and the values of sticky edges can be changed by writing to ``Artist.sticky_edges.x`` or ``Artist.sticky_edges.y``."
-msgstr ""
+msgstr "Esta sobreescritura de los márgenes está determinada por \"sticky edges\", una propiedad de la clase `.Artist` que puede suprimir la adición de márgenes a los límites de los ejes. El efecto de los bordes pegajosos puede desactivarse en un eje cambiando `~matplotlib.axes.Axes.use_sticky_edges`. Los artists tienen una propiedad `.Artist.sticky_edges`, y los valores de los bordes pegajosos se pueden cambiar escribiendo en ``Artist.sticky_edges.x`` o ``Artist.sticky_edges.y``."
 
 #: ../../tutorials/intermediate/autoscale.rst:204
 msgid "The following example shows how overriding works and when it is needed."
-msgstr ""
+msgstr "El siguiente ejemplo muestra cómo funciona la sobreescritura (overriding) y cuándo es necesario."
 
 #: ../../tutorials/intermediate/autoscale.rst:245
 msgid "We can see that setting ``use_sticky_edges`` to *False* renders the image with requested margins."
-msgstr ""
+msgstr "Podemos ver que al establecer ``use_sticky_edges`` a *False* se renderiza la imagen con los márgenes solicitados."
 
 #: ../../tutorials/intermediate/autoscale.rst:248
 msgid "While sticky edges don't increase the axis limits through extra margins, negative margins are still taken into account. This can be seen in the reduced limits of the third image."
-msgstr ""
+msgstr "Aunque los bordes pegajosos no aumentan los límites de los ejes mediante márgenes adicionales, los márgenes negativos se siguen teniendo en cuenta. Esto puede verse en los límites reducidos de la tercera imagen."
 
 #: ../../tutorials/intermediate/autoscale.rst:253
 msgid "Controlling autoscale"
-msgstr ""
+msgstr "Controlando la autoescala"
 
 #: ../../tutorials/intermediate/autoscale.rst:255
 msgid "By default, the limits are recalculated every time you add a new curve to the plot:"
-msgstr ""
+msgstr "Por defecto, los límites se recalculan cada vez que se añade una nueva curva al gráfico:"
 
 #: ../../tutorials/intermediate/autoscale.rst:292
 msgid "However, there are cases when you don't want to automatically adjust the viewport to new data."
-msgstr ""
+msgstr "Sin embargo, hay casos en los que no se quiere ajustar automáticamente la ventana gráfica a los nuevos datos."
 
 #: ../../tutorials/intermediate/autoscale.rst:295
 msgid "One way to disable autoscaling is to manually set the axis limit. Let's say that we want to see only a part of the data in greater detail. Setting the ``xlim`` persists even if we add more curves to the data. To recalculate the new limits  calling `.Axes.autoscale` will toggle the functionality manually."
-msgstr ""
+msgstr "Una forma de desactivar el autoescalado es establecer manualmente el límite de los ejes. Digamos que queremos ver sólo una parte de los datos con mayor detalle. La configuración del ``xlim`` persiste incluso si añadimos más curvas a los datos. Para recalcular los nuevos límites llamando a `.Axes.autoscale` se activará la funcionalidad manualmente."
 
 #: ../../tutorials/intermediate/autoscale.rst:339
 msgid "We can check that the first plot has autoscale disabled and that the second plot has it enabled again by using `.Axes.get_autoscale_on()`:"
-msgstr ""
+msgstr "Podemos comprobar que el primer gráfico tiene la autoescala desactivada y que el segundo lo tiene activado de nuevo utilizando `.Axes.get_autoscale_on()`:"
 
 #: ../../tutorials/intermediate/autoscale.rst:368
 msgid "Arguments of the autoscale function give us precise control over the process of autoscaling. A combination of arguments ``enable``, and ``axis`` sets the autoscaling feature for the selected axis (or both). The argument ``tight`` sets the margin of the selected axis to zero. To preserve settings of either ``enable`` or ``tight`` you can set the opposite one to *None*, that way it should not be modified. However, setting ``enable`` to *None* and tight to *True* affects both axes regardless of the ``axis`` argument."
-msgstr ""
+msgstr "Los argumentos de la función autoscale nos dan un control preciso sobre el proceso de autoescalado. Una combinación de argumentos ``enable``, y ``axis`` establece la función de autoescalado para el eje seleccionado (o ambos). El argumento ``tight`` establece el margen del eje seleccionado a cero. Para preservar los ajustes de ``enable`` o ``tight`` puedes establecer el opuesto a *None*, de esta forma no se modificará. Sin embargo, establecer ``enable`` a *None* y tight a *True* afecta a ambos ejes independientemente del argumento ``axis``."
 
 #: ../../tutorials/intermediate/autoscale.rst:411
 msgid "Working with collections"
-msgstr ""
+msgstr "Trabajando con colecciones"
 
 #: ../../tutorials/intermediate/autoscale.rst:413
 msgid "Autoscale works out of the box for all lines, patches, and images added to the axes. One of the artists that it won't work with is a `.Collection`. After adding a collection to the axes, one has to manually trigger the `~matplotlib.axes.Axes.autoscale_view()` to recalculate axes limits."
-msgstr ""
+msgstr "La autoescala funciona de forma inmediata para todas las líneas, parches e imágenes añadidas a los ejes. Uno de los artists con los que no funcionará es un `.Collection`. Después de añadir una colección a los ejes, uno tiene que activar manualmente el `~matplotlib.axes.Axes.autoscale_view()` para recalcular los límites de los ejes."
 
 #: ../../tutorials/intermediate/autoscale.rst:447
 msgid "**Total running time of the script:** ( 0 minutes  4.990 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 4.990 segundos)"
 
 #: ../../tutorials/intermediate/autoscale.rst:462
 msgid ":download:`Download Python source code: autoscale.py <autoscale.py>`"
-msgstr ""
+msgstr ":download:`Descargar código fuente de Python: autoscale.py <autoscale.py>`"
 
 #: ../../tutorials/intermediate/autoscale.rst:468
 msgid ":download:`Download Jupyter notebook: autoscale.ipynb <autoscale.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar Jupyter notebook: autoscale.ipynb <autoscale.ipynb>`"
 
 #: ../../tutorials/intermediate/autoscale.rst:475
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

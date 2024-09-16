@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:26\n"
+"PO-Revision-Date: 2022-07-03 16:39\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,81 +20,81 @@ msgstr ""
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_images_contours_and_fields_image_antialiasing.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_images_contours_and_fields_image_antialiasing.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:23
 msgid "Image antialiasing"
-msgstr ""
+msgstr "Antialiasing de imágenes"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:25
 msgid "Images are represented by discrete pixels, either on the screen or in an image file.  When data that makes up the image has a different resolution than its representation on the screen we will see aliasing effects.  How noticeable these are depends on how much down-sampling takes place in the change of resolution (if any)."
-msgstr ""
+msgstr "Las imágenes están representadas por píxeles discretos, ya sea en la pantalla o en un archivo de imagen.  Cuando los datos que componen la imagen tienen una resolución diferente a su representación en la pantalla veremos efectos de aliasing.  El grado de notoriedad de estos efectos depende de la cantidad de muestreo descendente que se produzca en el cambio de resolución (si es que lo hay)."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:31
 msgid "When subsampling data, aliasing is reduced by smoothing first and then subsampling the smoothed data.  In Matplotlib, we can do that smoothing before mapping the data to colors, or we can do the smoothing on the RGB(A) data in the final image.  The difference between these is shown below, and controlled with the *interpolation_stage* keyword argument."
-msgstr ""
+msgstr "Al submuestrear los datos, el aliasing se reduce suavizando primero y luego submuestreando los datos suavizados.  En Matplotlib, podemos hacer ese suavizado antes de mapear los datos a colores, o podemos hacer el suavizado en los datos RGB(A) en la imagen final.  La diferencia entre ambos se muestra a continuación, y se controla con el argumento de la palabra clave *interpolation_stage*."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:37
 msgid "The default image interpolation in Matplotlib is 'antialiased', and it is applied to the data.  This uses a hanning interpolation on the data provided by the user for reduced aliasing in most situations. Only when there is upsampling by a factor of 1, 2 or >=3 is 'nearest' neighbor interpolation used."
-msgstr ""
+msgstr "La interpolación de imágenes por defecto en Matplotlib es 'antialiasing', y se aplica a los datos.  Esto utiliza una interpolación de Hanning en los datos proporcionados por el usuario para reducir el aliasing en la mayoría de las situaciones. Sólo cuando hay un muestreo superior por un factor de 1, 2 o >=3 se utiliza la interpolación del vecino más cercano."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:43
 msgid "Other anti-aliasing filters can be specified in `.Axes.imshow` using the *interpolation* keyword argument."
-msgstr ""
+msgstr "Se pueden especificar otros filtros de antialiasing en `.Axes.imshow` utilizando el argumento de la palabra clave *interpolación*."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:63
 msgid "First we generate a 450x450 pixel image with varying frequency content:"
-msgstr ""
+msgstr "Primero generamos una imagen de 450x450 píxeles con contenido de frecuencia variable:"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:94
 msgid "The following images are subsampled from 450 data pixels to either 125 pixels or 250 pixels (depending on your display). The Moire patterns in the 'nearest' interpolation are caused by the high-frequency data being subsampled.  The 'antialiased' imaged still has some Moire patterns as well, but they are greatly reduced."
-msgstr ""
+msgstr "Las siguientes imágenes están submuestreadas de 450 píxeles de datos a 125 píxeles o 250 píxeles (dependiendo de su pantalla). Los patrones de moiré en la interpolación 'más cercana' son causados por el submuestreo de los datos de alta frecuencia.  La imagen 'antialiased' también tiene algunos patrones de Moire, pero se reducen en gran medida."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:100
 msgid "There are substantial differences between the 'data' interpolation and the 'rgba' interpolation.  The alternating bands of red and blue on the left third of the image are subsampled.  By interpolating in 'data' space (the default) the antialiasing filter makes the stripes close to white, because the average of -1 and +1 is zero, and zero is white in this colormap."
-msgstr ""
+msgstr "Hay diferencias sustanciales entre la interpolación 'data' y la interpolación 'rgba'.  Las bandas alternas de rojo y azul del tercio izquierdo de la imagen están submuestreadas. Al interpolar en el espacio 'data' (el predeterminado) el filtro antialiasing hace que las bandas se acerquen al blanco, porque la media de -1 y +1 es cero, y el cero es blanco en este mapa de colores."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:107
 msgid "Conversely, when the anti-aliasing occurs in 'rgba' space, the red and blue are combined visually to make purple.  This behaviour is more like a typical image processing package, but note that purple is not in the original colormap, so it is no longer possible to invert individual pixels back to their data value."
-msgstr ""
+msgstr "Por el contrario, cuando el antialiasing se produce en el espacio 'rgba', el rojo y el azul se combinan visualmente para hacer el púrpura.  Este comportamiento es más parecido a un paquete típico de procesamiento de imágenes, pero tenga en cuenta que el púrpura no está en el mapa de colores original, por lo que ya no es posible invertir los píxeles individuales a su valor de datos."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:146
 msgid "Even up-sampling an image with 'nearest' interpolation will lead to Moire patterns when the upsampling factor is not integer. The following image upsamples 500 data pixels to 530 rendered pixels. You may note a grid of 30 line-like artifacts which stem from the 524 - 500 = 24 extra pixels that had to be made up. Since interpolation is 'nearest' they are the same as a neighboring line of pixels and thus stretch the image locally so that it looks distorted."
-msgstr ""
+msgstr "Incluso el sobremuestreo de una imagen con la interpolación \"más cercana\" producirá patrones de Moire cuando el factor de sobremuestreo no sea entero. La siguiente imagen aumenta la muestra de 500 píxeles de datos a 530 píxeles renderizados. Puede notar una Cuadrícula de 30 artefactos similares a líneas que se derivan de los 524 - 500 = 24 píxeles extra que tuvieron que ser compensados. Dado que la interpolación es \"más cercana\", son lo mismo que una línea de píxeles vecina y, por lo tanto, estiran la imagen localmente de modo que parece distorsionada."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:177
 msgid "Better antialiasing algorithms can reduce this effect:"
-msgstr ""
+msgstr "Mejores algoritmos de antialiasing pueden reducir este efecto:"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:202
 msgid "Apart from the default 'hanning' antialiasing, `~.Axes.imshow` supports a number of different interpolation algorithms, which may work better or worse depending on the pattern."
-msgstr ""
+msgstr "Aparte del antialiasing 'hanning' por defecto, `~.Axes.imshow` soporta una serie de algoritmos de interpolación diferentes, que pueden funcionar mejor o peor dependiendo del patrón."
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:230
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:232
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:235
 msgid "`matplotlib.axes.Axes.imshow`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.imshow`"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:240
 msgid "**Total running time of the script:** ( 0 minutes  3.876 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 3.876 segundos)"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:255
 msgid ":download:`Download Python source code: image_antialiasing.py <image_antialiasing.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: image_antialiasing.py <image_antialiasing.py>`"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:261
 msgid ":download:`Download Jupyter notebook: image_antialiasing.ipynb <image_antialiasing.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: image_antialiasing.ipynb <image_antialiasing.ipynb>`"
 
 #: ../../gallery/images_contours_and_fields/image_antialiasing.rst:268
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

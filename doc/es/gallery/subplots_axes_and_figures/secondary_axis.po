@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:30\n"
+"PO-Revision-Date: 2022-06-11 03:05\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,69 +20,69 @@ msgstr ""
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:13
 msgid "Click :ref:`here <sphx_glr_download_gallery_subplots_axes_and_figures_secondary_axis.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_gallery_subplots_axes_and_figures_secondary_axis.py>` para descargar el código de ejemplo completo"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:23
 msgid "Secondary Axis"
-msgstr ""
+msgstr "Eje secundario"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:25
 msgid "Sometimes we want a secondary axis on a plot, for instance to convert radians to degrees on the same plot.  We can do this by making a child axes with only one axis visible via `.axes.Axes.secondary_xaxis` and `.axes.Axes.secondary_yaxis`.  This secondary axis can have a different scale than the main axis by providing both a forward and an inverse conversion function in a tuple to the *functions* keyword argument:"
-msgstr ""
+msgstr "A veces queremos un eje secundario en un gráfico, por ejemplo para convertir radianes en grados en el mismo gráfico.  Podemos hacerlo haciendo un eje hijo con un solo eje visible a través de `.ejes.ejes.secundarios_eje` y `.ejes.secundarios_eje`. Este eje secundario puede tener una escala diferente a la del eje principal proporcionando una función de conversión directa e inversa en una tupla al argumento de la palabra clave *functions*:"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:78
 msgid "Here is the case of converting from wavenumber to wavelength in a log-log scale."
-msgstr ""
+msgstr "Este es el caso de la conversión de número de onda a longitud de onda en una escala log-log."
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:83
 msgid "In this case, the xscale of the parent is logarithmic, so the child is made logarithmic as well."
-msgstr ""
+msgstr "En este caso, la escala x del padre es logarítmica, por lo que el hijo se hace logarítmico también."
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:132
 msgid "Sometime we want to relate the axes in a transform that is ad-hoc from the data, and is derived empirically.  In that case we can set the forward and inverse transforms functions to be linear interpolations from the one data set to the other."
-msgstr ""
+msgstr "A veces queremos relacionar los ejes en una transformación que es ad-hoc de los datos, y se deriva empíricamente.  En ese caso podemos establecer que las funciones de transformación directa e inversa sean interpolaciones lineales de un conjunto de datos al otro."
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:139
 msgid "In order to properly handle the data margins, the mapping functions (``forward`` and ``inverse`` in this example) need to be defined beyond the nominal plot limits."
-msgstr ""
+msgstr "Para manejar adecuadamente los márgenes de los datos, las funciones de mapeo (``forward`` e ``inverse`` en este ejemplo) necesitan ser definidas más allá de los límites nominales del gráfico."
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:143
 msgid "In the specific case of the numpy linear interpolation, `numpy.interp`, this condition can be arbitrarily enforced by providing optional keyword arguments *left*, *right* such that values outside the data range are mapped well outside the plot limits."
-msgstr ""
+msgstr "En el caso específico de la interpolación lineal de numpy, `numpy.interp`, esta condición puede ser aplicada arbitrariamente proporcionando argumentos opcionales de palabra clave *izquierda*, *derecha* de tal manera que los valores fuera del rango de datos sean mapeados bien fuera de los límites del gráfico."
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:196
 msgid "A final example translates np.datetime64 to yearday on the x axis and from Celsius to Fahrenheit on the y axis.  Note the addition of a third y axis, and that it can be placed using a float for the location argument"
-msgstr ""
+msgstr "Un último ejemplo traduce np.datetime64 a yearday en el eje x y de Celsius a Fahrenheit en el eje y. Observa la adición de un tercer eje y, que puede ser colocado usando un flotador para el argumento de ubicación"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:275
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:277
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:280
 msgid "`matplotlib.axes.Axes.secondary_xaxis`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.secondary_xaxis`"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:281
 msgid "`matplotlib.axes.Axes.secondary_yaxis`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.secondary_yaxis`"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:286
 msgid "**Total running time of the script:** ( 0 minutes  6.275 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 6,275 segundos)"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:301
 msgid ":download:`Download Python source code: secondary_axis.py <secondary_axis.py>`"
-msgstr ""
+msgstr ":download:`Descarga el código fuente de Python: eje_secundario.py <eje_secundario.py>`"
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:307
 msgid ":download:`Download Jupyter notebook: secondary_axis.ipynb <secondary_axis.ipynb>`"
-msgstr ""
+msgstr ":download:`Descarga el cuaderno Jupyter: eje_secundario.ipynb <eje_secundario.ipynb>`."
 
 #: ../../gallery/subplots_axes_and_figures/secondary_axis.rst:314
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

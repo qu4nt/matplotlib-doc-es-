@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:24\n"
+"PO-Revision-Date: 2022-08-08 00:21\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,27 +20,27 @@ msgstr ""
 
 #: ../../api/transformations.rst:3
 msgid "``matplotlib.transforms``"
-msgstr ""
+msgstr "``matplotlib.transforms``"
 
 #: matplotlib.transforms:1 of
 msgid "Matplotlib includes a framework for arbitrary geometric transformations that is used determine the final position of all elements drawn on the canvas."
-msgstr ""
+msgstr "Matplotlib incluye un framework para transformaciones geométricas arbitrarias que se utiliza para determinar la posición final de todos los elementos dibujados en el lienzo."
 
 #: matplotlib.transforms:5 of
 msgid "Transforms are composed into trees of `TransformNode` objects whose actual value depends on their children.  When the contents of children change, their parents are automatically invalidated.  The next time an invalidated transform is accessed, it is recomputed to reflect those changes.  This invalidation/caching approach prevents unnecessary recomputations of transforms, and contributes to better interactive performance."
-msgstr ""
+msgstr "Las transformaciones se componen en árboles de objetos `TransformNode` cuyo valor real depende de sus hijos.  Cuando el contenido de los hijos cambia, sus padres se invalidan automáticamente.  La siguiente vez que se accede a una transformación invalidada, se vuelve a calcular para reflejar esos cambios.  Este enfoque de invalidación/almacenamiento evita recálculos innecesarios de las transformaciones, y contribuye a un mejor rendimiento interactivo."
 
 #: matplotlib.transforms:13 of
 msgid "For example, here is a graph of the transform tree used to plot data to the graph:"
-msgstr ""
+msgstr "Por ejemplo, aquí hay un gráfico del árbol de transformaciones utilizado para trazar los datos a la gráfica:"
 
 #: matplotlib.transforms:18 of
 msgid "The framework can be used for both affine and non-affine transformations.  However, for speed, we want use the backend renderers to perform affine transformations whenever possible. Therefore, it is possible to perform just the affine or non-affine part of a transformation on a set of data.  The affine is always assumed to occur after the non-affine.  For any transform::"
-msgstr ""
+msgstr "El framework puede ser utilizado tanto para transformaciones afines como no afines.  Sin embargo, para la velocidad, queremos usar los renderizadores del backend para realizar transformaciones afines siempre que sea posible. Por lo tanto, es posible realizar sólo la parte afín o no afín de una transformación en un conjunto de datos.  Se supone que la parte afín siempre ocurre después de la parte no afín.  Para cualquier transformación::"
 
 #: matplotlib.transforms:27 of
 msgid "The backends are not expected to handle non-affine transformations themselves."
-msgstr ""
+msgstr "No se espera que los backends manejen por sí mismos las transformaciones no afines."
 
 #: matplotlib.transforms.Affine2D:1
 #: matplotlib.transforms.AffineDeltaTransform:1
@@ -51,57 +51,57 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform:1
 #: matplotlib.transforms.ScaledTranslation:1 of
 msgid "Bases: :py:class:`matplotlib.transforms.Affine2DBase`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms.Affine2DBase`"
 
 #: matplotlib.transforms.Affine2D:2 of
 msgid "A mutable 2D affine transformation."
-msgstr ""
+msgstr "Una transformación afín 2D mutable."
 
 #: matplotlib.transforms.Affine2D:23 matplotlib.transforms.Affine2D.__init__:2
 #: of
 msgid "Initialize an Affine transform from a 3x3 numpy float array::"
-msgstr ""
+msgstr "Inicializar una transformación Affine a partir de un arreglo de 3x3 flotadores de numpy::"
 
 #: matplotlib.transforms.Affine2D:29 matplotlib.transforms.Affine2D.__init__:8
 #: of
 msgid "If *matrix* is None, initialize with the identity transform."
-msgstr ""
+msgstr "Si *matriz* es None, se inicializa con la transformada de identidad."
 
 #: matplotlib.transforms.Affine2D.__str__:2
 #: matplotlib.transforms.Bbox.__str__:2
 #: matplotlib.transforms._make_str_method.<locals>.<lambda>:2 of
 msgid "Return str(self)."
-msgstr ""
+msgstr "Devuelve str(self)."
 
 #: matplotlib.transforms.Affine2D.clear:2 of
 msgid "Reset the underlying matrix to the identity transform."
-msgstr ""
+msgstr "Restablecer la matriz subyacente a la transformada de identidad."
 
 #: matplotlib.transforms.Affine2D.from_values:2 of
 msgid "Create a new Affine2D instance from the given values::"
-msgstr ""
+msgstr "Crea una nueva instancia de Affine2D a partir de los valores dados::"
 
 #: matplotlib.transforms.Affine2D.from_values:8
 #: matplotlib.transforms.Affine2D.get_matrix:8
 #: matplotlib.transforms.Affine2D.set_matrix:8 of
 msgid "."
-msgstr ""
+msgstr "."
 
 #: matplotlib.transforms.Affine2D.get_matrix:2 of
 msgid "Get the underlying transformation matrix as a 3x3 numpy array::"
-msgstr ""
+msgstr "Obtener la matriz de transformación subyacente como un arreglo numpy de 3x3::"
 
 #: matplotlib.transforms.Affine2D.identity:2 of
 msgid "Return a new `Affine2D` object that is the identity transform."
-msgstr ""
+msgstr "Devuelve un nuevo objeto `Affine2D` que es la transformada de identidad."
 
 #: matplotlib.transforms.Affine2D.identity:4 of
 msgid "Unless this transform will be mutated later on, consider using the faster `IdentityTransform` class instead."
-msgstr ""
+msgstr "A menos que esta transformación vaya a ser mutada más adelante, considera usar la clase más rápida `IdentityTransform` en su lugar."
 
 #: matplotlib.transforms.Affine2D.rotate:2 of
 msgid "Add a rotation (in radians) to this transform in place."
-msgstr ""
+msgstr "Añade una rotación (en radianes) a esta transformación en su lugar."
 
 #: matplotlib.transforms.Affine2D.rotate:4
 #: matplotlib.transforms.Affine2D.rotate_around:4
@@ -111,72 +111,74 @@ msgstr ""
 #: matplotlib.transforms.Affine2D.skew_deg:7
 #: matplotlib.transforms.Affine2D.translate:4 of
 msgid "Returns *self*, so this method can easily be chained with more calls to :meth:`rotate`, :meth:`rotate_deg`, :meth:`translate` and :meth:`scale`."
-msgstr ""
+msgstr "Devuelve *self*, por lo que este método puede encadenarse fácilmente con más llamadas a :meth:`rotate`, :meth:`rotate_deg`, :meth:`translate` y :meth:`scale`."
 
 #: matplotlib.transforms.Affine2D.rotate_around:2 of
 msgid "Add a rotation (in radians) around the point (x, y) in place."
-msgstr ""
+msgstr "Añade una rotación (en radianes) alrededor del punto (x, y) en su lugar."
 
 #: matplotlib.transforms.Affine2D.rotate_deg:2 of
 msgid "Add a rotation (in degrees) to this transform in place."
-msgstr ""
+msgstr "Añade una rotación (en grados) a esta transformación en su lugar."
 
 #: matplotlib.transforms.Affine2D.rotate_deg_around:2 of
 msgid "Add a rotation (in degrees) around the point (x, y) in place."
-msgstr ""
+msgstr "Añade una rotación (en grados) alrededor del punto (x, y) en su lugar."
 
 #: matplotlib.transforms.Affine2D.scale:2 of
 msgid "Add a scale in place."
-msgstr ""
+msgstr "Añadir una escala en su lugar."
 
 #: matplotlib.transforms.Affine2D.scale:4 of
 msgid "If *sy* is None, the same scale is applied in both the *x*- and *y*-directions."
-msgstr ""
+msgstr "Si *sy* es None, se aplica la misma escala en las direcciones *x* y *y*."
 
 #: matplotlib.transforms.Affine2D.set:2 of
 msgid "Set this transformation from the frozen copy of another `Affine2DBase` object."
-msgstr ""
+msgstr "Establecer esta transformación desde la copia congelada de otro objeto `Affine2DBase`."
 
 #: matplotlib.transforms.Affine2D.set_matrix:2 of
 msgid "Set the underlying transformation matrix from a 3x3 numpy array::"
-msgstr ""
+msgstr "Establecer la matriz de transformación subyacente de un arreglo de 3x3 numpy::"
 
 #: matplotlib.transforms.Affine2D.skew:2
 #: matplotlib.transforms.Affine2D.skew_deg:2 of
 msgid "Add a skew in place."
-msgstr ""
+msgstr "Añade un skew en su lugar."
 
 #: matplotlib.transforms.Affine2D.skew:4 of
 msgid "*xShear* and *yShear* are the shear angles along the *x*- and *y*-axes, respectively, in radians."
-msgstr ""
+msgstr "*xShear* y *yShear* son los ángulos de cizalladura a lo largo de los ejes *x* y *y*, respectivamente, en radianes."
 
 #: matplotlib.transforms.Affine2D.skew_deg:4 of
 msgid "*xShear* and *yShear* are the shear angles along the *x*- and *y*-axes, respectively, in degrees."
-msgstr ""
+msgstr "*xShear* y *yShear* son los ángulos de corte a lo largo de los ejes *x* e *y*, respectivamente, en grados."
 
 #: matplotlib.transforms.Affine2D.translate:2 of
 msgid "Add a translation in place."
-msgstr ""
+msgstr "Añadir una traducción en su lugar."
 
 #: matplotlib.transforms.Affine2DBase:1 of
 msgid "Bases: :py:class:`matplotlib.transforms.AffineBase`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms.AffineBase`"
 
 #: matplotlib.transforms.Affine2DBase:2 of
 msgid "The base class of all 2D affine transformations."
-msgstr ""
+msgstr "La clase base de todas las transformaciones afines 2D."
 
 #: matplotlib.transforms.Affine2DBase:4 of
 msgid "2D affine transformations are performed using a 3x3 numpy array::"
-msgstr ""
+msgstr "\n"
+"Las transformaciones afines 2D se realizan utilizando un arreglo numpy de 3x3::"
 
 #: matplotlib.transforms.Affine2DBase:10 of
 msgid "This class provides the read-only interface.  For a mutable 2D affine transformation, use `Affine2D`."
-msgstr ""
+msgstr "Esta clase proporciona la interfaz de sólo lectura.  Para una transformación afín 2D mutable, utilice `Affine2D`."
 
 #: matplotlib.transforms.Affine2DBase:13 of
 msgid "Subclasses of this class will generally only need to override a constructor and :meth:`get_matrix` that generates a custom 3x3 matrix."
-msgstr ""
+msgstr "\n"
+"Las subclases de esta clase por lo general sólo tendrán que anular un constructor y :meth:`get_matrix` que genera una matriz 3x3 personalizada."
 
 #: matplotlib.transforms.Affine2DBase
 #: matplotlib.transforms.Affine2DBase.transform_affine
@@ -226,7 +228,7 @@ msgstr ""
 #: matplotlib.transforms.interval_contains_open
 #: matplotlib.transforms.nonsingular matplotlib.transforms.offset_copy of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.transforms.Affine2DBase:55 matplotlib.transforms.AffineBase:44
 #: matplotlib.transforms.AffineBase.__init__:23
@@ -240,11 +242,11 @@ msgstr ""
 #: matplotlib.transforms.Transform:68 matplotlib.transforms.TransformNode:47
 #: matplotlib.transforms.TransformNode.__init__:23 of
 msgid "**shorthand_name**"
-msgstr ""
+msgstr "**shorthand_name**"
 
 #: of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.transforms.Affine2DBase:40 matplotlib.transforms.AffineBase:29
 #: matplotlib.transforms.AffineBase.__init__:8
@@ -258,7 +260,7 @@ msgstr ""
 #: matplotlib.transforms.Transform:53 matplotlib.transforms.TransformNode:32
 #: matplotlib.transforms.TransformNode.__init__:8 of
 msgid "A string representing the \"name\" of the transform. The name carries no significance other than to improve the readability of ``str(transform)`` when DEBUG=True."
-msgstr ""
+msgstr "Una cadena que representa el \"nombre\" de la transformación. El nombre no tiene más significado que el de mejorar la legibilidad de ``str(transform)`` cuando DEBUG=True."
 
 #: matplotlib.transforms.Affine2DBase.frozen:2
 #: matplotlib.transforms.BlendedGenericTransform.frozen:2
@@ -267,18 +269,18 @@ msgstr ""
 #: matplotlib.transforms.TransformNode.frozen:2
 #: matplotlib.transforms.TransformWrapper.frozen:2 of
 msgid "Return a frozen copy of this transform node.  The frozen copy will not be updated when its children change.  Useful for storing a previously known state of a transform where ``copy.deepcopy()`` might normally be used."
-msgstr ""
+msgstr "Devuelve una copia congelada de este nodo de transformación.  La copia congelada no se actualizará cuando sus hijos cambien.  Útil para almacenar un estado previamente conocido de una transformación donde ``copy.deepcopy()`` podría usarse normalmente."
 
 #: ../../docstring matplotlib.transforms.Affine2DBase.has_inverse:2
 #: matplotlib.transforms.Transform.has_inverse:2 of
 msgid "True if this transform has a corresponding inverse transform."
-msgstr ""
+msgstr "Verdadero si esta transformación tiene una transformación inversa correspondiente."
 
 #: ../../docstring matplotlib.transforms.Affine2DBase.input_dims:2
 #: matplotlib.transforms.BlendedGenericTransform.input_dims:2
 #: matplotlib.transforms.Transform.input_dims:2 of
 msgid "The number of input dimensions of this transform. Must be overridden (with integers) in the subclass."
-msgstr ""
+msgstr "El número de dimensiones de entrada de esta transformación. Debe ser sobrescrito (con enteros) en la subclase."
 
 #: matplotlib.transforms.Affine2DBase.inverted:2
 #: matplotlib.transforms.BlendedGenericTransform.inverted:2
@@ -286,7 +288,7 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform.inverted:2
 #: matplotlib.transforms.Transform.inverted:2 of
 msgid "Return the corresponding inverse transformation."
-msgstr ""
+msgstr "Devuelve la transformación inversa correspondiente."
 
 #: matplotlib.transforms.Affine2DBase.inverted:4
 #: matplotlib.transforms.BlendedGenericTransform.inverted:4
@@ -294,7 +296,7 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform.inverted:4
 #: matplotlib.transforms.Transform.inverted:4 of
 msgid "It holds ``x == self.inverted().transform(self.transform(x))``."
-msgstr ""
+msgstr "Sostiene ``x == self.inverted().transform(self.transform(x))``."
 
 #: matplotlib.transforms.Affine2DBase.inverted:6
 #: matplotlib.transforms.BlendedGenericTransform.inverted:6
@@ -302,7 +304,7 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform.inverted:6
 #: matplotlib.transforms.Transform.inverted:6 of
 msgid "The return value of this method should be treated as temporary.  An update to *self* does not cause a corresponding update to its inverted copy."
-msgstr ""
+msgstr "El valor de retorno de este método debe ser tratado como temporal.  Una actualización de *self* no provoca la correspondiente actualización de su copia invertida."
 
 #: matplotlib.transforms.Affine2DBase.is_separable:2
 #: matplotlib.transforms.BlendedGenericTransform.has_inverse:2
@@ -314,7 +316,7 @@ msgstr ""
 #: matplotlib.transforms.TransformWrapper.is_affine:2
 #: matplotlib.transforms.TransformWrapper.is_separable:2 of
 msgid "bool(x) -> bool"
-msgstr ""
+msgstr "bool(x) -> bool"
 
 #: matplotlib.transforms.Affine2DBase.is_separable:4
 #: matplotlib.transforms.BlendedGenericTransform.has_inverse:4
@@ -326,17 +328,17 @@ msgstr ""
 #: matplotlib.transforms.TransformWrapper.is_affine:4
 #: matplotlib.transforms.TransformWrapper.is_separable:4 of
 msgid "Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed."
-msgstr ""
+msgstr "Devuelve True cuando el argumento x es verdadero, False en caso contrario. Los builtins True y False son las dos únicas instancias de la clase bool. La clase bool es una subclase de la clase int, y no puede ser subclasificada."
 
 #: ../../docstring matplotlib.transforms.Affine2DBase.output_dims:2
 #: matplotlib.transforms.BlendedGenericTransform.output_dims:2
 #: matplotlib.transforms.Transform.output_dims:2 of
 msgid "The number of output dimensions of this transform. Must be overridden (with integers) in the subclass."
-msgstr ""
+msgstr "El número de dimensiones de salida de esta transformación. Debe ser sobrescrito (con enteros) en la subclase."
 
 #: matplotlib.transforms.Affine2DBase.to_values:2 of
 msgid "Return the values of the matrix as an ``(a, b, c, d, e, f)`` tuple."
-msgstr ""
+msgstr "Devuelve los valores de la matriz como una tupla ``(a, b, c, d, e, f)``."
 
 #: matplotlib.transforms.Affine2DBase.transform_affine:2
 #: matplotlib.transforms.AffineBase.transform_affine:2
@@ -344,7 +346,7 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform.transform_affine:2
 #: matplotlib.transforms.Transform.transform_affine:2 of
 msgid "Apply only the affine part of this transformation on the given array of values."
-msgstr ""
+msgstr "Aplica sólo la parte afín de esta transformación sobre el arreglo de valores dado."
 
 #: matplotlib.transforms.Affine2DBase.transform_affine:5
 #: matplotlib.transforms.AffineBase.transform_affine:5
@@ -357,7 +359,7 @@ msgstr ""
 #: matplotlib.transforms.Transform.transform_affine:5
 #: matplotlib.transforms.Transform.transform_non_affine:4 of
 msgid "``transform(values)`` is always equivalent to ``transform_affine(transform_non_affine(values))``."
-msgstr ""
+msgstr "``transform(valores)`` siempre es equivalente a ``transform_affine(transform_non_affine(valores))``."
 
 #: matplotlib.transforms.Affine2DBase.transform_affine:8
 #: matplotlib.transforms.AffineBase.transform_affine:8
@@ -365,7 +367,7 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform.transform_affine:8
 #: matplotlib.transforms.Transform.transform_affine:8 of
 msgid "In non-affine transformations, this is generally a no-op.  In affine transformations, this is equivalent to ``transform(values)``."
-msgstr ""
+msgstr "En las transformaciones no afines, esto es generalmente un no-op.  En las transformaciones afines, esto es equivalente a ``transform(values)``."
 
 #: matplotlib.transforms.Affine2DBase.transform_affine:16
 #: matplotlib.transforms.AffineBase.transform:9
@@ -381,7 +383,7 @@ msgstr ""
 #: matplotlib.transforms.Transform.transform_affine:16
 #: matplotlib.transforms.Transform.transform_non_affine:15 of
 msgid "**values**"
-msgstr ""
+msgstr "**valores**"
 
 #: matplotlib.transforms.Affine2DBase.transform_affine:34
 #: matplotlib.transforms.AffineBase.transform:27
@@ -397,7 +399,7 @@ msgstr ""
 #: matplotlib.transforms.Transform.transform_affine:34
 #: matplotlib.transforms.Transform.transform_non_affine:33 of
 msgid "array"
-msgstr ""
+msgstr "array"
 
 #: matplotlib.transforms.Affine2DBase.transform_affine:15
 #: matplotlib.transforms.AffineBase.transform:8
@@ -413,7 +415,7 @@ msgstr ""
 #: matplotlib.transforms.Transform.transform_affine:15
 #: matplotlib.transforms.Transform.transform_non_affine:14 of
 msgid "The input values as NumPy array of length :attr:`input_dims` or shape (N x :attr:`input_dims`)."
-msgstr ""
+msgstr "Los valores de entrada como arreglo NumPy de longitud :attr:`input_dims` o forma (N x :attr:`input_dims`)."
 
 #: matplotlib.transforms.Affine2DBase.transform_affine
 #: matplotlib.transforms.AffineBase.transform
@@ -433,7 +435,7 @@ msgstr ""
 #: matplotlib.transforms.interval_contains_open
 #: matplotlib.transforms.nonsingular matplotlib.transforms.offset_copy of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.transforms.Affine2DBase.transform_affine:21
 #: matplotlib.transforms.AffineBase.transform:14
@@ -449,28 +451,28 @@ msgstr ""
 #: matplotlib.transforms.Transform.transform_affine:21
 #: matplotlib.transforms.Transform.transform_non_affine:20 of
 msgid "The output values as NumPy array of length :attr:`input_dims` or shape (N x :attr:`output_dims`), depending on the input."
-msgstr ""
+msgstr "Los valores de salida como arreglo NumPy de longitud :attr:`input_dims` o forma (N x :attr:`output_dims`), dependiendo de la entrada."
 
 #: matplotlib.transforms.AffineBase:1
 #: matplotlib.transforms.CompositeGenericTransform:1
 #: matplotlib.transforms.TransformWrapper:1 of
 msgid "Bases: :py:class:`matplotlib.transforms.Transform`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms.Transform`"
 
 #: matplotlib.transforms.AffineBase:2 of
 msgid "The base class of all affine transformations of any number of dimensions."
-msgstr ""
+msgstr "La clase base de todas las transformaciones afines de cualquier número de dimensiones."
 
 #: matplotlib.transforms.AffineBase.__array__:2
 #: matplotlib.transforms.Transform.__array__:2 of
 msgid "Array interface to get at this Transform's affine matrix."
-msgstr ""
+msgstr "Interfaz de arreglo para obtener la matriz afín de esta Transformación."
 
 #: matplotlib.transforms.AffineBase.__eq__:2
 #: matplotlib.transforms.CompositeGenericTransform.__eq__:2
 #: matplotlib.transforms.TransformWrapper.__eq__:2 of
 msgid "Return self==value."
-msgstr ""
+msgstr "Devuelve self==value."
 
 #: matplotlib.transforms.AffineBase.get_affine:2
 #: matplotlib.transforms.BlendedGenericTransform.get_affine:2
@@ -478,13 +480,13 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform.get_affine:2
 #: matplotlib.transforms.Transform.get_affine:2 of
 msgid "Get the affine part of this transform."
-msgstr ""
+msgstr "Obtener la parte afín de esta transformación."
 
 #: matplotlib.transforms.AffineBase.transform:2
 #: matplotlib.transforms.IdentityTransform.transform:2
 #: matplotlib.transforms.Transform.transform:2 of
 msgid "Apply this transformation on the given array of *values*."
-msgstr ""
+msgstr "Aplicar esta transformación sobre el arreglo de *valores* dado."
 
 #: matplotlib.transforms.AffineBase.transform_non_affine:2
 #: matplotlib.transforms.BlendedGenericTransform.transform_non_affine:2
@@ -492,7 +494,7 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform.transform_non_affine:2
 #: matplotlib.transforms.Transform.transform_non_affine:2 of
 msgid "Apply only the non-affine part of this transformation."
-msgstr ""
+msgstr "Aplicar sólo la parte no afín de esta transformación."
 
 #: matplotlib.transforms.AffineBase.transform_non_affine:7
 #: matplotlib.transforms.BlendedGenericTransform.transform_non_affine:7
@@ -500,25 +502,25 @@ msgstr ""
 #: matplotlib.transforms.IdentityTransform.transform_non_affine:7
 #: matplotlib.transforms.Transform.transform_non_affine:7 of
 msgid "In non-affine transformations, this is generally equivalent to ``transform(values)``.  In affine transformations, this is always a no-op."
-msgstr ""
+msgstr "En las transformaciones no afines, esto es generalmente equivalente a ``transformar(valores)``.  En las transformaciones afines, esto es siempre un no-op."
 
 #: matplotlib.transforms.AffineBase.transform_path:2
 #: matplotlib.transforms.IdentityTransform.transform_path:2
 #: matplotlib.transforms.Transform.transform_path:2 of
 msgid "Apply the transform to `.Path` *path*, returning a new `.Path`."
-msgstr ""
+msgstr "Aplica la transformación a `.Path` *ruta*, devolviendo una nueva `.Path`."
 
 #: matplotlib.transforms.AffineBase.transform_path:4
 #: matplotlib.transforms.IdentityTransform.transform_path:4
 #: matplotlib.transforms.Transform.transform_path:4 of
 msgid "In some cases, this transform may insert curves into the path that began as line segments."
-msgstr ""
+msgstr "En algunos casos, esta transformación puede insertar curvas en la trayectoria que comenzó como segmentos de línea."
 
 #: matplotlib.transforms.AffineBase.transform_path_affine:2
 #: matplotlib.transforms.IdentityTransform.transform_path_affine:2
 #: matplotlib.transforms.Transform.transform_path_affine:2 of
 msgid "Apply the affine part of this transform to `.Path` *path*, returning a new `.Path`."
-msgstr ""
+msgstr "Aplica la parte afín de esta transformación a `.Path` *path*, devolviendo un nuevo `.Path`."
 
 #: matplotlib.transforms.AffineBase.transform_path_affine:5
 #: matplotlib.transforms.AffineBase.transform_path_non_affine:5
@@ -528,30 +530,30 @@ msgstr ""
 #: matplotlib.transforms.Transform.transform_path_affine:5
 #: matplotlib.transforms.Transform.transform_path_non_affine:5 of
 msgid "``transform_path(path)`` is equivalent to ``transform_path_affine(transform_path_non_affine(values))``."
-msgstr ""
+msgstr "``transform_path(path)`` es equivalente a ``transform_path_affine(transform_path_non_affine(values))``."
 
 #: matplotlib.transforms.AffineBase.transform_path_non_affine:2
 #: matplotlib.transforms.CompositeGenericTransform.transform_path_non_affine:2
 #: matplotlib.transforms.IdentityTransform.transform_path_non_affine:2
 #: matplotlib.transforms.Transform.transform_path_non_affine:2 of
 msgid "Apply the non-affine part of this transform to `.Path` *path*, returning a new `.Path`."
-msgstr ""
+msgstr "Aplica la parte no afín de esta transformación a `.Path` *ruta*, devolviendo una nueva `.Path`."
 
 #: matplotlib.transforms.AffineDeltaTransform:2 of
 msgid "A transform wrapper for transforming displacements between pairs of points."
-msgstr ""
+msgstr "Una envoltura de transformación para transformar los desplazamientos entre pares de puntos."
 
 #: matplotlib.transforms.AffineDeltaTransform:4 of
 msgid "This class is intended to be used to transform displacements (\"position deltas\") between pairs of points (e.g., as the ``offset_transform`` of `.Collection`\\s): given a transform ``t`` such that ``t = AffineDeltaTransform(t) + offset``, ``AffineDeltaTransform`` satisfies ``AffineDeltaTransform(a - b) == AffineDeltaTransform(a) - AffineDeltaTransform(b)``."
-msgstr ""
+msgstr "Esta clase está pensada para transformar desplazamientos (\"deltas de posición\") entre pares de puntos (por ejemplo, como la ``transformación de desplazamiento`` de `.Collection`s): dada una transformación ``t`` tal que ``t = AffineDeltaTransform(t) + desplazamiento``, ``AffineDeltaTransform`` satisface ``AffineDeltaTransform(a - b) == AffineDeltaTransform(a) - AffineDeltaTransform(b)``."
 
 #: matplotlib.transforms.AffineDeltaTransform:11 of
 msgid "This is implemented by forcing the offset components of the transform matrix to zero."
-msgstr ""
+msgstr "Esto se implementa forzando los componentes de desplazamiento de la matriz de transformación a cero."
 
 #: matplotlib.transforms.AffineDeltaTransform:14 of
 msgid "This class is experimental as of 3.3, and the API may change."
-msgstr ""
+msgstr "Esta clase es experimental a partir de la versión 3.3, y la API puede cambiar."
 
 #: matplotlib.transforms.AffineDeltaTransform.get_matrix:2
 #: matplotlib.transforms.BboxTransform.get_matrix:2
@@ -564,612 +566,612 @@ msgstr ""
 #: matplotlib.transforms.ScaledTranslation.get_matrix:2
 #: matplotlib.transforms.Transform.get_matrix:2 of
 msgid "Get the matrix for the affine part of this transform."
-msgstr ""
+msgstr "Obtiene la matriz para la parte afín de esta transformación."
 
 #: matplotlib.transforms.Bbox:1 matplotlib.transforms.LockableBbox:1
 #: matplotlib.transforms.TransformedBbox:1 of
 msgid "Bases: :py:class:`matplotlib.transforms.BboxBase`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms.BboxBase`"
 
 #: matplotlib.transforms.Bbox:2 of
 msgid "A mutable bounding box."
-msgstr ""
+msgstr "Un bounding box mutable."
 
 #: matplotlib.transforms.Bbox:17 of
 msgid "Examples"
-msgstr ""
+msgstr "Ejemplos"
 
 #: matplotlib.transforms.Bbox:18 of
 msgid "**Create from known bounds**"
-msgstr ""
+msgstr "**Crear a partir de límites conocidos**"
 
 #: matplotlib.transforms.Bbox:20 of
 msgid "The default constructor takes the boundary \"points\" ``[[xmin, ymin], [xmax, ymax]]``."
-msgstr ""
+msgstr "El constructor por defecto toma los \"puntos\" de los límites ``[[xmin, ymin], [xmax, ymax]]``."
 
 #: matplotlib.transforms.Bbox:26 of
 msgid "Alternatively, a Bbox can be created from the flattened points array, the so-called \"extents\" ``(xmin, ymin, xmax, ymax)``"
-msgstr ""
+msgstr "Alternativamente, se puede crear una Bbox a partir de la matriz de puntos aplanada, los llamados \"extents\" ``(xmin, ymin, xmax, ymax)``"
 
 #: matplotlib.transforms.Bbox:32 of
 msgid "or from the \"bounds\" ``(xmin, ymin, width, height)``."
-msgstr ""
+msgstr "o de los \"bounds\" ``(xmin, ymin, width, height)``."
 
 #: matplotlib.transforms.Bbox:37 of
 msgid "**Create from collections of points**"
-msgstr ""
+msgstr "**Crear a partir de colecciones de puntos**"
 
 #: matplotlib.transforms.Bbox:39 of
 msgid "The \"empty\" object for accumulating Bboxs is the null bbox, which is a stand-in for the empty set."
-msgstr ""
+msgstr "El objeto \"vacío\" para acumular Bboxs es el bbox nulo, que es un sustituto del conjunto vacío."
 
 #: matplotlib.transforms.Bbox:45 of
 msgid "Adding points to the null bbox will give you the bbox of those points."
-msgstr ""
+msgstr "Añadiendo puntos a la bbox nula se obtiene la bbox de esos puntos."
 
 #: matplotlib.transforms.Bbox:55 of
 msgid "Setting ``ignore=True`` is equivalent to starting over from a null bbox."
-msgstr ""
+msgstr "Establecer ``ignore=True`` es equivalente a empezar de nuevo desde una bbox nula."
 
 #: matplotlib.transforms.Bbox:63 of
 msgid "It is recommended to always specify ``ignore`` explicitly.  If not, the default value of ``ignore`` can be changed at any time by code with access to your Bbox, for example using the method `~.Bbox.ignore`."
-msgstr ""
+msgstr "Se recomienda especificar siempre ``ignore`` explícitamente.  De lo contrario, el valor por defecto de ``ignore`` puede ser cambiado en cualquier momento por código con acceso a su Bbox, por ejemplo usando el método."
 
 #: matplotlib.transforms.Bbox:67 of
 msgid "**Properties of the ``null`` bbox**"
-msgstr ""
+msgstr "**Propiedades de la bbox ``nula`` **"
 
 #: matplotlib.transforms.Bbox:71 of
 msgid "The current behavior of `Bbox.null()` may be surprising as it does not have all of the properties of the \"empty set\", and as such does not behave like a \"zero\" object in the mathematical sense. We may change that in the future (with a deprecation period)."
-msgstr ""
+msgstr "El comportamiento actual de `Bbox.null()` puede ser sorprendente ya que no tiene todas las propiedades del \"conjunto vacío\", y como tal no se comporta como un objeto \"cero\" en el sentido matemático. Puede que cambiemos esto en el futuro (con un periodo de depreciación)."
 
 #: matplotlib.transforms.Bbox:76 of
 msgid "The null bbox is the identity for intersections"
-msgstr ""
+msgstr "La bbox nula es la identidad para las intersecciones"
 
 #: matplotlib.transforms.Bbox:81 of
 msgid "except with itself, where it returns the full space."
-msgstr ""
+msgstr "excepto consigo mismo, donde devuelve el espacio completo."
 
 #: matplotlib.transforms.Bbox:86 of
 msgid "A union containing null will always return the full space (not the other set!)"
-msgstr ""
+msgstr "Una unión que contenga null siempre devolverá el espacio completo (¡no el otro conjunto!)"
 
 #: matplotlib.transforms.Bbox:117 matplotlib.transforms.Bbox.__init__:21 of
 msgid "**points**"
-msgstr ""
+msgstr "**puntos**"
 
 #: of
 msgid "ndarray"
-msgstr ""
+msgstr "ndarray"
 
 #: matplotlib.transforms.Bbox:104 matplotlib.transforms.Bbox.__init__:8 of
 msgid "A 2x2 numpy array of the form ``[[x0, y0], [x1, y1]]``."
-msgstr ""
+msgstr "Una matriz numpy 2x2 de la forma ``[[x0, y0], [x1, y1]]``."
 
 #: matplotlib.transforms.Bbox.__format__:2 of
 msgid "Default object formatter."
-msgstr ""
+msgstr "Formateador de objetos por defecto."
 
 #: matplotlib.transforms.Bbox.__repr__:2 of
 msgid "Return repr(self)."
-msgstr ""
+msgstr "Devuelve repr(self)."
 
 #: matplotlib.transforms.Bbox.bounds:2 matplotlib.transforms.BboxBase.bounds:2
 #: of
 msgid "Return (:attr:`x0`, :attr:`y0`, :attr:`width`, :attr:`height`)."
-msgstr ""
+msgstr "Devuelve (:attr:`x0`, :attr:`y0`, :attr:`width`, :attr:`height`)."
 
 #: matplotlib.transforms.Bbox.from_bounds:2 of
 msgid "Create a new `Bbox` from *x0*, *y0*, *width* and *height*."
-msgstr ""
+msgstr "Crea una nueva `Bbox` a partir de *x0*, *y0*, *width* y *height*."
 
 #: matplotlib.transforms.Bbox.from_bounds:4 of
 msgid "*width* and *height* may be negative."
-msgstr ""
+msgstr "*width* y *height* pueden ser negativos."
 
 #: matplotlib.transforms.Bbox.from_extents:2 of
 msgid "Create a new Bbox from *left*, *bottom*, *right* and *top*."
-msgstr ""
+msgstr "Crea una nueva Bbox a partir de *izquierda*, *inferior*, *derecha* y *superior*."
 
 #: matplotlib.transforms.Bbox.from_extents:4 of
 msgid "The *y*-axis increases upwards."
-msgstr ""
+msgstr "El eje *y* aumenta hacia arriba."
 
 #: matplotlib.transforms.Bbox.from_extents:9 of
 msgid "**left, bottom, right, top**"
-msgstr ""
+msgstr "**izquierda, abajo, derecha, arriba**"
 
 #: of
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: matplotlib.transforms.Bbox.from_extents:9 of
 msgid "The four extents of the bounding box."
-msgstr ""
+msgstr "Las cuatro extensiones de la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.from_extents:27 of
 msgid "**minpos**"
-msgstr ""
+msgstr "**minpos**"
 
 #: of
 msgid "float or None"
-msgstr ""
+msgstr "float o None"
 
 #: matplotlib.transforms.Bbox.from_extents:12 of
 msgid "If this is supplied, the Bbox will have a minimum positive value set. This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors."
-msgstr ""
+msgstr "Si se suministra esto, la Bbox tendrá un valor mínimo positivo establecido. Esto es útil cuando se trata de escalas logarítmicas y otras escalas donde los límites negativos resultan en errores de punto flotante."
 
 #: matplotlib.transforms.Bbox.frozen:2 matplotlib.transforms.BboxBase.frozen:2
 #: matplotlib.transforms.TransformNode:2 of
 msgid "The base class for anything that participates in the transform tree and needs to invalidate its parents or be invalidated.  This includes classes that are not really transforms, such as bounding boxes, since some transforms depend on bounding boxes to compute their values."
-msgstr ""
+msgstr "La clase base para cualquier cosa que participe en el árbol de transformaciones y necesite invalidar a sus padres o ser invalidado.  Esto incluye clases que no son realmente transformaciones, como las cajas delimitadoras, ya que algunas transformaciones dependen de las cajas delimitadoras para calcular sus valores."
 
 #: matplotlib.transforms.Bbox.get_points:2 of
 msgid "Get the points of the bounding box directly as a numpy array of the form: ``[[x0, y0], [x1, y1]]``."
-msgstr ""
+msgstr "Obtener los puntos de la caja delimitadora directamente como un array numpy de la forma ``[[x0, y0], [x1, y1]]``."
 
 #: matplotlib.transforms.Bbox.ignore:2 of
 msgid "Set whether the existing bounds of the box should be ignored by subsequent calls to :meth:`update_from_data_xy`."
-msgstr ""
+msgstr "Establece si los límites existentes de la caja deben ser ignorados por posteriores llamadas a :meth:`update_from_data_xy`."
 
 #: matplotlib.transforms.Bbox.ignore:24 of
 msgid "value"
-msgstr ""
+msgstr "valor"
 
 #: matplotlib.transforms.interval_contains:28
 #: matplotlib.transforms.interval_contains_open:28 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.transforms.Bbox.ignore:6 of
 msgid "When ``True``, subsequent calls to :meth:`update_from_data_xy` will ignore the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "Cuando ``True``, las llamadas posteriores a :meth:`update_from_data_xy` ignorarán los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.ignore:9 of
 msgid "When ``False``, subsequent calls to :meth:`update_from_data_xy` will include the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "Cuando ``False``, las siguientes llamadas a :meth:`update_from_data_xy` incluirán los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.intervalx:2
 #: matplotlib.transforms.BboxBase.intervalx:2 of
 msgid "The pair of *x* coordinates that define the bounding box."
-msgstr ""
+msgstr "El par de coordenadas *x* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.intervalx:4
 #: matplotlib.transforms.BboxBase.intervalx:4 of
 msgid "This is not guaranteed to be sorted from left to right."
-msgstr ""
+msgstr "No se garantiza la ordenación de izquierda a derecha."
 
 #: matplotlib.transforms.Bbox.intervaly:2
 #: matplotlib.transforms.BboxBase.intervaly:2 of
 msgid "The pair of *y* coordinates that define the bounding box."
-msgstr ""
+msgstr "El par de coordenadas *y* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.intervaly:4
 #: matplotlib.transforms.BboxBase.intervaly:4 of
 msgid "This is not guaranteed to be sorted from bottom to top."
-msgstr ""
+msgstr "No se garantiza la ordenación de abajo a arriba."
 
 #: matplotlib.transforms.Bbox.minpos:2 of
 msgid "The minimum positive value in both directions within the Bbox."
-msgstr ""
+msgstr "El mínimo valor positivo en ambas direcciones dentro de la Bbox."
 
 #: matplotlib.transforms.Bbox.minpos:4 of
 msgid "This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum extent instead of *p0*."
-msgstr ""
+msgstr "Esto es útil cuando se trata de escalas logarítmicas y otras escalas donde los límites negativos dan lugar a errores de punto flotante, y se utilizará como la extensión mínima en lugar de *p0*."
 
 #: matplotlib.transforms.Bbox.minposx:2 of
 msgid "The minimum positive value in the *x*-direction within the Bbox."
-msgstr ""
+msgstr "El valor positivo mínimo en la dirección *x* dentro de la Bbox."
 
 #: matplotlib.transforms.Bbox.minposx:4 of
 msgid "This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum *x*-extent instead of *x0*."
-msgstr ""
+msgstr "Esto es útil cuando se trata de escalas logarítmicas y otras escalas donde los límites negativos dan lugar a errores de punto flotante, y se utilizará como el mínimo *x*-extensión en lugar de *x0*."
 
 #: matplotlib.transforms.Bbox.minposy:2 of
 msgid "The minimum positive value in the *y*-direction within the Bbox."
-msgstr ""
+msgstr "El valor positivo mínimo en la dirección *y* dentro de la Bbox."
 
 #: matplotlib.transforms.Bbox.minposy:4 of
 msgid "This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum *y*-extent instead of *y0*."
-msgstr ""
+msgstr "Esto es útil cuando se trata de escalas logarítmicas y otras escalas donde los límites negativos dan lugar a errores de punto flotante, y se utilizará como el mínimo *y*-extensión en lugar de *y0*."
 
 #: matplotlib.transforms.Bbox.mutated:2 of
 msgid "Return whether the bbox has changed since init."
-msgstr ""
+msgstr "Devuelve si la bbox ha cambiado desde init."
 
 #: matplotlib.transforms.Bbox.mutatedx:2 of
 msgid "Return whether the x-limits have changed since init."
-msgstr ""
+msgstr "Devuelve si los límites x han cambiado desde init."
 
 #: matplotlib.transforms.Bbox.mutatedy:2 of
 msgid "Return whether the y-limits have changed since init."
-msgstr ""
+msgstr "Devuelve si los límites Y han cambiado desde init."
 
 #: matplotlib.transforms.Bbox.null:2 of
 msgid "Create a new null `Bbox` from (inf, inf) to (-inf, -inf)."
-msgstr ""
+msgstr "Crea una nueva `Bbox` nula desde (inf, inf) hasta (-inf, -inf)."
 
 #: matplotlib.transforms.Bbox.p0:2 matplotlib.transforms.BboxBase.p0:2 of
 msgid "The first pair of (*x*, *y*) coordinates that define the bounding box."
-msgstr ""
+msgstr "El primer par de coordenadas (*x*, *y*) que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.p0:4 matplotlib.transforms.BboxBase.p0:4 of
 msgid "This is not guaranteed to be the bottom-left corner (for that, use :attr:`min`)."
-msgstr ""
+msgstr "No se garantiza que sea la esquina inferior izquierda (para ello, utilice :attr:`min`)."
 
 #: matplotlib.transforms.Bbox.p1:2 matplotlib.transforms.BboxBase.p1:2 of
 msgid "The second pair of (*x*, *y*) coordinates that define the bounding box."
-msgstr ""
+msgstr "El segundo par de coordenadas (*x*, *y*) que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.p1:4 matplotlib.transforms.BboxBase.p1:4 of
 msgid "This is not guaranteed to be the top-right corner (for that, use :attr:`max`)."
-msgstr ""
+msgstr "No se garantiza que sea la esquina superior derecha (para ello, utilice :attr:`max`)."
 
 #: matplotlib.transforms.Bbox.set:2 of
 msgid "Set this bounding box from the \"frozen\" bounds of another `Bbox`."
-msgstr ""
+msgstr "Establece esta caja delimitadora a partir de los límites \"congelados\" de otra `Bbox`."
 
 #: matplotlib.transforms.Bbox.set_points:2 of
 msgid "Set the points of the bounding box directly from a numpy array of the form: ``[[x0, y0], [x1, y1]]``.  No error checking is performed, as this method is mainly for internal use."
-msgstr ""
+msgstr "Establece los puntos de la caja delimitadora directamente desde un array de numpy de la forma ``[[x0, y0], [x1, y1]]``.  No se realiza ninguna comprobación de errores, ya que este método es principalmente de uso interno."
 
 #: matplotlib.transforms.Bbox.unit:2 of
 msgid "Create a new unit `Bbox` from (0, 0) to (1, 1)."
-msgstr ""
+msgstr "Crea una nueva `Bbox` unitaria desde (0, 0) hasta (1, 1)."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:2 of
 msgid "Update the x-bounds of the `Bbox` based on the passed in data. After updating, the bounds will have positive *width*, and *x0* will be the minimal value."
-msgstr ""
+msgstr "Actualiza los límites x de la `Bbox` basándose en los datos pasados. Después de la actualización, los límites tendrán *ancho* positivo, y *x0* será el valor mínimo."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:10 of
 msgid "**x**"
-msgstr ""
+msgstr "**x**"
 
 #: matplotlib.transforms.Bbox.update_from_data_x:10 of
 msgid "Array of x-values."
-msgstr ""
+msgstr "Matriz de valores x."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:28
 #: matplotlib.transforms.Bbox.update_from_data_xy:15
 #: matplotlib.transforms.Bbox.update_from_data_y:28
 #: matplotlib.transforms.Bbox.update_from_path:15 of
 msgid "**ignore**"
-msgstr ""
+msgstr "**ignorar**"
 
 #: of
 msgid "bool, optional"
-msgstr ""
+msgstr "bool, opcional"
 
 #: matplotlib.transforms.Bbox.update_from_data_x:13
 #: matplotlib.transforms.Bbox.update_from_data_xy:13
 #: matplotlib.transforms.Bbox.update_from_data_y:13 of
 msgid "When ``True``, ignore the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "Cuando ``False``, incluye los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:14
 #: matplotlib.transforms.Bbox.update_from_data_xy:14
 #: matplotlib.transforms.Bbox.update_from_data_y:14 of
 msgid "When ``False``, include the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "Cuando ``False``, incluye los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.update_from_data_x:15
 #: matplotlib.transforms.Bbox.update_from_data_xy:15
 #: matplotlib.transforms.Bbox.update_from_data_y:15 of
 msgid "When ``None``, use the last value passed to :meth:`ignore`."
-msgstr ""
+msgstr "Cuando ``None``, utiliza el último valor pasado a :meth:`ignore`."
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:2 of
 msgid "Update the bounds of the `Bbox` based on the passed in data. After updating, the bounds will have positive *width* and *height*; *x0* and *y0* will be the minimal values."
-msgstr ""
+msgstr "Actualiza los límites de la `Bbox` basándose en los datos pasados. Después de la actualización, los límites tendrán *ancho* y *altura* positivos; *x0* e *y0* serán los valores mínimos."
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:10 of
 msgid "**xy**"
-msgstr ""
+msgstr "**xy**"
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:10 of
 msgid "A numpy array of 2D points."
-msgstr ""
+msgstr "Una matriz numpy de puntos 2D."
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:31
 #: matplotlib.transforms.Bbox.update_from_path:31 of
 msgid "**updatex, updatey**"
-msgstr ""
+msgstr "**updatex, updatey**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.transforms.Bbox.update_from_data_xy:18
 #: matplotlib.transforms.Bbox.update_from_path:18 of
 msgid "When ``True``, update the x/y values."
-msgstr ""
+msgstr "Cuando ``True``, actualiza los valores x/y."
 
 #: matplotlib.transforms.Bbox.update_from_data_y:2 of
 msgid "Update the y-bounds of the `Bbox` based on the passed in data. After updating, the bounds will have positive *height*, and *y0* will be the minimal value."
-msgstr ""
+msgstr "Actualiza los límites Y de la `Bbox` basándose en los datos pasados. Después de la actualización, los límites tendrán *altura* positiva, y *y0* será el valor mínimo."
 
 #: matplotlib.transforms.Bbox.update_from_data_y:10 of
 msgid "**y**"
-msgstr ""
+msgstr "**y**"
 
 #: matplotlib.transforms.Bbox.update_from_data_y:10 of
 msgid "Array of y-values."
-msgstr ""
+msgstr "Matriz de valores y."
 
 #: matplotlib.transforms.Bbox.update_from_path:2 of
 msgid "Update the bounds of the `Bbox` to contain the vertices of the provided path. After updating, the bounds will have positive *width* and *height*; *x0* and *y0* will be the minimal values."
-msgstr ""
+msgstr "Actualiza los límites de la `Bbox` para que contenga los vértices del camino proporcionado. Tras la actualización, los límites tendrán *ancho* y *alto* positivos; *x0* e *y0* serán los valores mínimos."
 
 #: matplotlib.transforms.Bbox.update_from_path:10 of
 msgid "**path** : `~matplotlib.path.Path`"
-msgstr ""
+msgstr "**path** : `~matplotlib.path.Path`"
 
 #: matplotlib.transforms.Bbox.update_from_path:9
 #: matplotlib.transforms.TransformedPath:34
 #: matplotlib.transforms.TransformedPath.__init__:7 of
 msgid "Path"
-msgstr ""
+msgstr "Ruta"
 
 #: matplotlib.transforms.Bbox.update_from_path:13 of
 msgid "when ``True``, ignore the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "cuando es ``True``, ignorar los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.update_from_path:14 of
 msgid "when ``False``, include the existing bounds of the `Bbox`."
-msgstr ""
+msgstr "cuando es ``False``, incluir los límites existentes de la `Bbox`."
 
 #: matplotlib.transforms.Bbox.update_from_path:15 of
 msgid "when ``None``, use the last value passed to :meth:`ignore`."
-msgstr ""
+msgstr "cuando ``None``, usar el último valor pasado a :meth:`ignore`."
 
 #: matplotlib.transforms.Bbox.x0:2 matplotlib.transforms.BboxBase.x0:2 of
 msgid "The first of the pair of *x* coordinates that define the bounding box."
-msgstr ""
+msgstr "La primera del par de coordenadas *x* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.x0:4 matplotlib.transforms.BboxBase.x0:4 of
 msgid "This is not guaranteed to be less than :attr:`x1` (for that, use :attr:`xmin`)."
-msgstr ""
+msgstr "No se garantiza que sea menor que :attr:`x1` (para ello, utilice :attr:`xmin`)."
 
 #: matplotlib.transforms.Bbox.x1:2 matplotlib.transforms.BboxBase.x1:2 of
 msgid "The second of the pair of *x* coordinates that define the bounding box."
-msgstr ""
+msgstr "La segunda del par de coordenadas *x* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.x1:4 matplotlib.transforms.BboxBase.x1:4 of
 msgid "This is not guaranteed to be greater than :attr:`x0` (for that, use :attr:`xmax`)."
-msgstr ""
+msgstr "No se garantiza que sea mayor que :attr:`x0` (para ello, utilice :attr:`xmax`)."
 
 #: matplotlib.transforms.Bbox.y0:2 matplotlib.transforms.BboxBase.y0:2 of
 msgid "The first of the pair of *y* coordinates that define the bounding box."
-msgstr ""
+msgstr "La primera del par de coordenadas *y* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.y0:4 matplotlib.transforms.BboxBase.y0:4 of
 msgid "This is not guaranteed to be less than :attr:`y1` (for that, use :attr:`ymin`)."
-msgstr ""
+msgstr "No se garantiza que sea menor que :attr:`y1` (para ello, utilice :attr:`ymin`)."
 
 #: matplotlib.transforms.Bbox.y1:2 matplotlib.transforms.BboxBase.y1:2 of
 msgid "The second of the pair of *y* coordinates that define the bounding box."
-msgstr ""
+msgstr "La segunda del par de coordenadas *y* que definen la caja delimitadora."
 
 #: matplotlib.transforms.Bbox.y1:4 matplotlib.transforms.BboxBase.y1:4 of
 msgid "This is not guaranteed to be greater than :attr:`y0` (for that, use :attr:`ymax`)."
-msgstr ""
+msgstr "No se garantiza que sea mayor que :attr:`y0` (para ello, utiliza :attr:`ymax`)."
 
 #: matplotlib.transforms.BboxBase:1 matplotlib.transforms.Transform:1
 #: matplotlib.transforms.TransformedPath:1 of
 msgid "Bases: :py:class:`matplotlib.transforms.TransformNode`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms.TransformNode`"
 
 #: matplotlib.transforms.BboxBase:2 of
 msgid "The base class of all bounding boxes."
-msgstr ""
+msgstr "La clase base de todas las cajas delimitadoras."
 
 #: matplotlib.transforms.BboxBase:4 of
 msgid "This class is immutable; `Bbox` is a mutable subclass."
-msgstr ""
+msgstr "Esta clase es inmutable; `Bbox` es una subclase mutable."
 
 #: matplotlib.transforms.BboxBase:6 of
 msgid "The canonical representation is as two points, with no restrictions on their ordering.  Convenience properties are provided to get the left, bottom, right and top edges and width and height, but these are not stored explicitly."
-msgstr ""
+msgstr "La representación canónica es como dos puntos, sin restricciones en su ordenamiento.  Se proporcionan propiedades de conveniencia para obtener los bordes izquierdo, inferior, derecho y superior, así como la anchura y la altura, pero no se almacenan explícitamente."
 
 #: matplotlib.transforms.BboxBase.anchored:2 of
 msgid "Return a copy of the `Bbox` anchored to *c* within *container*."
-msgstr ""
+msgstr "Devuelve una copia de la `Bbox` anclada a *c* dentro de *contenedor*."
 
 #: matplotlib.transforms.BboxBase.anchored:10 of
 msgid "**c**"
-msgstr ""
+msgstr "**c**"
 
 #: of
 msgid "(float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}"
-msgstr ""
+msgstr "(float, float) o {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}"
 
 #: matplotlib.transforms.BboxBase.anchored:8 of
 msgid "Either an (*x*, *y*) pair of relative coordinates (0 is left or bottom, 1 is right or top), 'C' (center), or a cardinal direction ('SW', southwest, is bottom left, etc.)."
-msgstr ""
+msgstr "O bien un par (*x*, *y*) de coordenadas relativas (0 es izquierda o abajo, 1 es derecha o arriba), 'C' (centro), o una dirección cardinal ('SW', suroeste, es abajo a la izquierda, etc.)."
 
 #: matplotlib.transforms.BboxBase.anchored:21 of
 msgid "**container** : `Bbox`, optional"
-msgstr ""
+msgstr "**contenedor** : `Bbox`, opcional"
 
 #: matplotlib.transforms.BboxBase.anchored:20 of
 msgid "Bbox, optional"
-msgstr ""
+msgstr "Bbox, opcional"
 
 #: matplotlib.transforms.BboxBase.anchored:13 of
 msgid "The box within which the `Bbox` is positioned; it defaults to the initial `Bbox`."
-msgstr ""
+msgstr "La caja dentro de la cual se posiciona la `Bbox`; por defecto es la `Bbox` inicial."
 
 #: matplotlib.transforms.BboxBase.anchored:26 of
 msgid ":obj:`.Axes.set_anchor`"
-msgstr ""
+msgstr ":obj:`.Axes.set_anchor`"
 
 #: matplotlib.transforms.BboxBase.contains:2 of
 msgid "Return whether ``(x, y)`` is in the bounding box or on its edge."
-msgstr ""
+msgstr "Devuelve si ``(x, y)`` está en la caja delimitadora o en su borde."
 
 #: matplotlib.transforms.BboxBase.containsx:2 of
 msgid "Return whether *x* is in the closed (:attr:`x0`, :attr:`x1`) interval."
-msgstr ""
+msgstr "Devuelve si *x* está en el intervalo cerrado (:attr:`x0`, :attr:`x1`)."
 
 #: matplotlib.transforms.BboxBase.containsy:2 of
 msgid "Return whether *y* is in the closed (:attr:`y0`, :attr:`y1`) interval."
-msgstr ""
+msgstr "Devuelve si *y* está en el intervalo cerrado (:attr:`y0`, :attr:`y1`)."
 
 #: matplotlib.transforms.BboxBase.corners:2 of
 msgid "Return the corners of this rectangle as an array of points."
-msgstr ""
+msgstr "Devuelve las esquinas de este rectángulo como un array de puntos."
 
 #: matplotlib.transforms.BboxBase.corners:4 of
 msgid "Specifically, this returns the array ``[[x0, y0], [x0, y1], [x1, y0], [x1, y1]]``."
-msgstr ""
+msgstr "En concreto, devuelve la matriz ``[[x0, y0], [x0, y1], [x1, y0], [x1, y1]]``."
 
 #: matplotlib.transforms.BboxBase.count_contains:2 of
 msgid "Count the number of vertices contained in the `Bbox`. Any vertices with a non-finite x or y value are ignored."
-msgstr ""
+msgstr "Cuenta el número de vértices contenidos en la `Bbox`. Cualquier vértice con un valor x o y no finito se ignora."
 
 #: matplotlib.transforms.BboxBase.count_contains:22 of
 msgid "**vertices**"
-msgstr ""
+msgstr "**vertices**"
 
 #: of
 msgid "Nx2 Numpy array."
-msgstr ""
+msgstr "Matriz Nx2 Numpy."
 
 #: matplotlib.transforms.BboxBase.count_overlaps:2 of
 msgid "Count the number of bounding boxes that overlap this one."
-msgstr ""
+msgstr "Cuenta el número de cajas delimitadoras que se superponen a ésta."
 
 #: matplotlib.transforms.BboxBase.count_overlaps:21 of
 msgid "**bboxes** : sequence of `.BboxBase`"
-msgstr ""
+msgstr "**bboxes** : secuencia de `.BboxBase`"
 
 #: of
 msgid "sequence of"
-msgstr ""
+msgstr "secuencia de"
 
 #: matplotlib.transforms.BboxBase.expanded:2 of
 msgid "Construct a `Bbox` by expanding this one around its center by the factors *sw* and *sh*."
-msgstr ""
+msgstr "Construye una `Bbox` expandiendo esta alrededor de su centro por los factores *sw* y *sh*."
 
 #: matplotlib.transforms.BboxBase.extents:2 of
 msgid "Return (:attr:`x0`, :attr:`y0`, :attr:`x1`, :attr:`y1`)."
-msgstr ""
+msgstr "Devuelve (:attr:`x0`, :attr:`y0`, :attr:`x1`, :attr:`y1`)."
 
 #: matplotlib.transforms.BboxBase.fully_contains:2 of
 msgid "Return whether ``x, y`` is in the bounding box, but not on its edge."
-msgstr ""
+msgstr "Devuelve si ``x, y`` está en la caja delimitadora, pero no en su borde."
 
 #: matplotlib.transforms.BboxBase.fully_containsx:2 of
 msgid "Return whether *x* is in the open (:attr:`x0`, :attr:`x1`) interval."
-msgstr ""
+msgstr "Devuelve si *x* está en el intervalo abierto (:attr:`x0`, :attr:`x1`)."
 
 #: matplotlib.transforms.BboxBase.fully_containsy:2 of
 msgid "Return whether *y* is in the open (:attr:`y0`, :attr:`y1`) interval."
-msgstr ""
+msgstr "Devuelve si *y* está en el intervalo abierto (:attr:`y0`, :attr:`y1`)."
 
 #: matplotlib.transforms.BboxBase.fully_overlaps:2 of
 msgid "Return whether this bounding box overlaps with the other bounding box, not including the edges."
-msgstr ""
+msgstr "Devuelve si esta caja delimitadora se solapa con la otra caja delimitadora, sin incluir los bordes."
 
 #: matplotlib.transforms.BboxBase.fully_overlaps:22
 #: matplotlib.transforms.BboxBase.overlaps:21 of
 msgid "**other** : `.BboxBase`"
-msgstr ""
+msgstr "**otro** : `.BboxBase`"
 
 #: matplotlib.transforms.BboxBase.fully_overlaps:21
 #: matplotlib.transforms.BboxBase.overlaps:20 of
 msgid "BboxBase"
-msgstr ""
+msgstr "BboxBase"
 
 #: matplotlib.transforms.BboxBase.height:2 of
 msgid "The (signed) height of the bounding box."
-msgstr ""
+msgstr "La altura (con signo) de la caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.intersection:2 of
 msgid "Return the intersection of *bbox1* and *bbox2* if they intersect, or None if they don't."
-msgstr ""
+msgstr "Devuelve la intersección de *bbox1* y *bbox2* si se cruzan, o None si no lo hacen."
 
 #: matplotlib.transforms.BboxBase.max:2 of
 msgid "The top-right corner of the bounding box."
-msgstr ""
+msgstr "La esquina superior derecha de la caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.min:2 of
 msgid "The bottom-left corner of the bounding box."
-msgstr ""
+msgstr "La esquina inferior izquierda de la caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.overlaps:2 of
 msgid "Return whether this bounding box overlaps with the other bounding box."
-msgstr ""
+msgstr "Devuelve si esta caja delimitadora se solapa con la otra caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.padded:2 of
 msgid "Construct a `Bbox` by padding this one on all four sides by *p*."
-msgstr ""
+msgstr "Construye una `Bbox` rellenando ésta en sus cuatro lados por *p*."
 
 #: matplotlib.transforms.BboxBase.rotated:2 of
 msgid "Return the axes-aligned bounding box that bounds the result of rotating this `Bbox` by an angle of *radians*."
-msgstr ""
+msgstr "Devuelve la caja delimitadora alineada con los ejes que delimita el resultado de rotar esta `Bbox` en un ángulo de *radios*."
 
 #: matplotlib.transforms.BboxBase.shrunk:2 of
 msgid "Return a copy of the `Bbox`, shrunk by the factor *mx* in the *x* direction and the factor *my* in the *y* direction. The lower left corner of the box remains unchanged.  Normally *mx* and *my* will be less than 1, but this is not enforced."
-msgstr ""
+msgstr "Devuelve una copia de la `Bbox`, encogida por el factor *mx* en la dirección *x* y el factor *my* en la dirección *y*. La esquina inferior izquierda de la caja no cambia.  Normalmente *mx* y *my* serán menores que 1, pero esto no se aplica."
 
 #: matplotlib.transforms.BboxBase.shrunk_to_aspect:2 of
 msgid "Return a copy of the `Bbox`, shrunk so that it is as large as it can be while having the desired aspect ratio, *box_aspect*.  If the box coordinates are relative (i.e. fractions of a larger box such as a figure) then the physical aspect ratio of that figure is specified with *fig_aspect*, so that *box_aspect* can also be given as a ratio of the absolute dimensions, not the relative dimensions."
-msgstr ""
+msgstr "Devuelve una copia de la `Bbox`, encogida para que sea tan grande como pueda ser mientras tenga la relación de aspecto deseada, *box_aspect*.  Si las coordenadas de la caja son relativas (es decir, fracciones de una caja más grande, como una figura) entonces la relación de aspecto física de esa figura se especifica con *fig_aspect*, de modo que *box_aspect* también puede darse como una relación de las dimensiones absolutas, no de las dimensiones relativas."
 
 #: matplotlib.transforms.BboxBase.size:2 of
 msgid "The (signed) width and height of the bounding box."
-msgstr ""
+msgstr "La anchura y la altura (con signo) de la caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.splitx:2 of
 msgid "Return a list of new `Bbox` objects formed by splitting the original one with vertical lines at fractional positions given by *args*."
-msgstr ""
+msgstr "Devuelve una lista de nuevos objetos `Bbox` formados al dividir el original con líneas verticales en posiciones fraccionarias dadas por *args*."
 
 #: matplotlib.transforms.BboxBase.splity:2 of
 msgid "Return a list of new `Bbox` objects formed by splitting the original one with horizontal lines at fractional positions given by *args*."
-msgstr ""
+msgstr "Devuelve una lista de nuevos objetos `Bbox` formados al dividir el original con líneas horizontales en posiciones fraccionarias dadas por *args*."
 
 #: matplotlib.transforms.BboxBase.transformed:2 of
 msgid "Construct a `Bbox` by statically transforming this one by *transform*."
-msgstr ""
+msgstr "Construye una `Bbox` transformando estáticamente ésta por *transformación*."
 
 #: matplotlib.transforms.BboxBase.translated:2 of
 msgid "Construct a `Bbox` by translating this one by *tx* and *ty*."
-msgstr ""
+msgstr "Construye una `Bbox` traduciendo ésta por *tx* y *ty*."
 
 #: matplotlib.transforms.BboxBase.union:2 of
 msgid "Return a `Bbox` that contains all of the given *bboxes*."
-msgstr ""
+msgstr "Devuelve una `Bbox` que contiene todas las *bboxes* dadas."
 
 #: matplotlib.transforms.BboxBase.width:2 of
 msgid "The (signed) width of the bounding box."
-msgstr ""
+msgstr "El ancho (con signo) de la caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.xmax:2 of
 msgid "The right edge of the bounding box."
-msgstr ""
+msgstr "El borde derecho de la caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.xmin:2 of
 msgid "The left edge of the bounding box."
-msgstr ""
+msgstr "El borde izquierdo de la caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.ymax:2 of
 msgid "The top edge of the bounding box."
-msgstr ""
+msgstr "El borde superior de la caja delimitadora."
 
 #: matplotlib.transforms.BboxBase.ymin:2 of
 msgid "The bottom edge of the bounding box."
-msgstr ""
+msgstr "El borde inferior de la caja delimitadora."
 
 #: matplotlib.transforms.BboxTransform:2 of
 msgid "`BboxTransform` linearly transforms points from one `Bbox` to another."
-msgstr ""
+msgstr "`BboxTransform` transforma linealmente los puntos de una `Bbox` a otra."
 
 #: matplotlib.transforms.BboxTransform:23
 #: matplotlib.transforms.BboxTransform.__init__:2 of
 msgid "Create a new `BboxTransform` that linearly transforms points from *boxin* to *boxout*."
-msgstr ""
+msgstr "Crea una nueva `BboxTransform` que transforma linealmente los puntos de *boxin* a *boxout*."
 
 #: ../../docstring matplotlib.transforms.BboxTransform.is_separable:2
 #: matplotlib.transforms.BboxTransformFrom.is_separable:2
@@ -1178,42 +1180,42 @@ msgstr ""
 #: matplotlib.transforms.BlendedGenericTransform.is_separable:2
 #: matplotlib.transforms.Transform.is_separable:2 of
 msgid "True if this transform is separable in the x- and y- dimensions."
-msgstr ""
+msgstr "True si esta transformación es separable en las dimensiones x e y."
 
 #: matplotlib.transforms.BboxTransformFrom:2 of
 msgid "`BboxTransformFrom` linearly transforms points from a given `Bbox` to the unit bounding box."
-msgstr ""
+msgstr "`BboxTransformFrom` transforma linealmente los puntos de una `Bbox` dada a la caja delimitadora de la unidad."
 
 #: matplotlib.transforms.BboxTransformTo:2 of
 msgid "`BboxTransformTo` is a transformation that linearly transforms points from the unit bounding box to a given `Bbox`."
-msgstr ""
+msgstr "`BboxTransformTo` es una transformación que transforma linealmente los puntos de la caja delimitadora unitaria a una `Bbox` dada."
 
 #: matplotlib.transforms.BboxTransformTo:24
 #: matplotlib.transforms.BboxTransformTo.__init__:2
 #: matplotlib.transforms.BboxTransformToMaxOnly:24 of
 msgid "Create a new `BboxTransformTo` that linearly transforms points from the unit bounding box to *boxout*."
-msgstr ""
+msgstr "Crea un nuevo `BboxTransformTo` que transforma linealmente los puntos de la caja delimitadora de la unidad a *boxout*."
 
 #: matplotlib.transforms.BboxTransformToMaxOnly:1 of
 msgid "Bases: :py:class:`matplotlib.transforms.BboxTransformTo`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms.BboxTransformTo`"
 
 #: matplotlib.transforms.BboxTransformToMaxOnly:2 of
 msgid "`BboxTransformTo` is a transformation that linearly transforms points from the unit bounding box to a given `Bbox` with a fixed upper left of (0, 0)."
-msgstr ""
+msgstr "`BboxTransformTo` es una transformación que transforma linealmente los puntos de la caja delimitadora unitaria a una `Bbox` dada con una izquierda superior fija de (0, 0)."
 
 #: matplotlib.transforms.BlendedAffine2D:1 of
 msgid "Bases: :py:class:`matplotlib.transforms._BlendedMixin`, :py:class:`matplotlib.transforms.Affine2DBase`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms._BlendedMixin`, :py:class:`matplotlib.transforms.Affine2DBase`"
 
 #: matplotlib.transforms.BlendedAffine2D:2
 #: matplotlib.transforms.BlendedGenericTransform:2 of
 msgid "A \"blended\" transform uses one transform for the *x*-direction, and another transform for the *y*-direction."
-msgstr ""
+msgstr "Una transformación \"blended\" utiliza una transformación para la dirección *x*, y otra transformación para la dirección *y*."
 
 #: matplotlib.transforms.BlendedAffine2D:5 of
 msgid "This version is an optimization for the case where both child transforms are of type `Affine2DBase`."
-msgstr ""
+msgstr "Esta versión es una optimización para el caso en que ambas transformaciones hijas sean de tipo `Affine2DBase`."
 
 #: matplotlib.transforms.BlendedAffine2D:26
 #: matplotlib.transforms.BlendedAffine2D.__init__:2
@@ -1221,605 +1223,605 @@ msgstr ""
 #: matplotlib.transforms.BlendedGenericTransform.__init__:2
 #: matplotlib.transforms.blended_transform_factory:2 of
 msgid "Create a new \"blended\" transform using *x_transform* to transform the *x*-axis and *y_transform* to transform the *y*-axis."
-msgstr ""
+msgstr "Crea una nueva transformación \"blended\" usando *x_transform* para transformar el eje *x* y *y_transform* para transformar el eje *y*."
 
 #: matplotlib.transforms.BlendedAffine2D:29
 #: matplotlib.transforms.BlendedAffine2D.__init__:5 of
 msgid "Both *x_transform* and *y_transform* must be 2D affine transforms."
-msgstr ""
+msgstr "Tanto *x_transform* como *y_transform* deben ser transformaciones afines 2D."
 
 #: matplotlib.transforms.BlendedAffine2D:31
 #: matplotlib.transforms.BlendedAffine2D.__init__:7
 #: matplotlib.transforms.BlendedGenericTransform:29
 #: matplotlib.transforms.BlendedGenericTransform.__init__:5 of
 msgid "You will generally not call this constructor directly but use the `blended_transform_factory` function instead, which can determine automatically which kind of blended transform to create."
-msgstr ""
+msgstr "Por lo general, no se llamará a este constructor directamente, sino que se utilizará la función `blended_transform_factory` en su lugar, que puede determinar automáticamente qué tipo de transformación mezclada crear."
 
 #: matplotlib.transforms.BlendedGenericTransform:1 of
 msgid "Bases: :py:class:`matplotlib.transforms._BlendedMixin`, :py:class:`matplotlib.transforms.Transform`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms._BlendedMixin`, :py:class:`matplotlib.transforms.Transform`"
 
 #: matplotlib.transforms.BlendedGenericTransform:5 of
 msgid "This \"generic\" version can handle any given child transform in the *x*- and *y*-directions."
-msgstr ""
+msgstr "Esta versión \"genérica\" puede manejar cualquier child transform dada en las direcciones *x*- y *y*."
 
 #: matplotlib.transforms.BlendedGenericTransform.contains_branch:2
 #: matplotlib.transforms.Transform.contains_branch:2 of
 msgid "Return whether the given transform is a sub-tree of this transform."
-msgstr ""
+msgstr "Devuelve si la transformación dada es un subárbol de esta transformación."
 
 #: matplotlib.transforms.BlendedGenericTransform.contains_branch:4
 #: matplotlib.transforms.Transform.contains_branch:4 of
 msgid "This routine uses transform equality to identify sub-trees, therefore in many situations it is object id which will be used."
-msgstr ""
+msgstr "Esta rutina utiliza la igualdad de transform para identificar los subárboles, por lo que en muchas situaciones es el id del objeto el que se utilizará."
 
 #: matplotlib.transforms.BlendedGenericTransform.contains_branch:7
 #: matplotlib.transforms.Transform.contains_branch:7 of
 msgid "For the case where the given transform represents the whole of this transform, returns True."
-msgstr ""
+msgstr "Para el caso en que la transformada dada representa la totalidad de esta transformada, devuelve True."
 
 #: matplotlib.transforms.BlendedGenericTransform.depth:2
 #: matplotlib.transforms.CompositeAffine2D.depth:2
 #: matplotlib.transforms.CompositeGenericTransform.depth:2
 #: matplotlib.transforms.Transform.depth:2 of
 msgid "Return the number of transforms which have been chained together to form this Transform instance."
-msgstr ""
+msgstr "Devuelve el número de transformaciones que se han encadenado para formar esta instancia de Transform."
 
 #: matplotlib.transforms.BlendedGenericTransform.depth:7
 #: matplotlib.transforms.CompositeAffine2D.depth:7
 #: matplotlib.transforms.CompositeGenericTransform.depth:7
 #: matplotlib.transforms.Transform.depth:7 of
 msgid "For the special case of a Composite transform, the maximum depth of the two is returned."
-msgstr ""
+msgstr "Para el caso especial de una transformación compuesta, se devuelve la profundidad máxima de las dos."
 
 #: ../../docstring matplotlib.transforms.BlendedGenericTransform.pass_through:2
 #: matplotlib.transforms.CompositeGenericTransform.pass_through:2
 #: matplotlib.transforms.TransformNode.pass_through:2
 #: matplotlib.transforms.TransformWrapper.pass_through:2 of
 msgid "If pass_through is True, all ancestors will always be invalidated, even if 'self' is already invalid."
-msgstr ""
+msgstr "Si pass_through es True, todos los ancestros serán siempre invalidados, incluso si 'self' ya es inválido."
 
 #: matplotlib.transforms.CompositeAffine2D:2
 #: matplotlib.transforms.CompositeGenericTransform:2 of
 msgid "A composite transform formed by applying transform *a* then transform *b*."
-msgstr ""
+msgstr "Una transformación compuesta formada aplicando la transformación *a* y luego la transformación *b*."
 
 #: matplotlib.transforms.CompositeAffine2D:4 of
 msgid "This version is an optimization that handles the case where both *a* and *b* are 2D affines."
-msgstr ""
+msgstr "Esta versión es una optimización que maneja el caso en que tanto *a* como *b* sean afines 2D."
 
 #: matplotlib.transforms.CompositeAffine2D:25
 #: matplotlib.transforms.CompositeAffine2D.__init__:2 of
 msgid "Create a new composite transform that is the result of applying `Affine2DBase` *a* then `Affine2DBase` *b*."
-msgstr ""
+msgstr "Crea una nueva transformación compuesta que es el resultado de aplicar `Affine2DBase` *a* y luego `Affine2DBase` *b*."
 
 #: matplotlib.transforms.CompositeAffine2D:28
 #: matplotlib.transforms.CompositeAffine2D.__init__:5
 #: matplotlib.transforms.CompositeGenericTransform:29
 #: matplotlib.transforms.CompositeGenericTransform.__init__:5 of
 msgid "You will generally not call this constructor directly but write ``a + b`` instead, which will automatically choose the best kind of composite transform instance to create."
-msgstr ""
+msgstr "Por lo general, no llamarás a este constructor directamente, sino que escribirás ``a + b`` en su lugar, lo que elegirá automáticamente el mejor tipo de instancia de transformación compuesta para crear."
 
 #: matplotlib.transforms.CompositeGenericTransform:5 of
 msgid "This \"generic\" version can handle any two arbitrary transformations."
-msgstr ""
+msgstr "Esta versión \"genérica\" puede manejar dos transformaciones arbitrarias cualesquiera."
 
 #: matplotlib.transforms.CompositeGenericTransform:26
 #: matplotlib.transforms.CompositeGenericTransform.__init__:2 of
 msgid "Create a new composite transform that is the result of applying transform *a* then transform *b*."
-msgstr ""
+msgstr "Crea una nueva transformación compuesta que es el resultado de aplicar la transformación *a* y luego la transformación *b*."
 
 #: matplotlib.transforms.IdentityTransform:2 of
 msgid "A special class that does one thing, the identity transform, in a fast way."
-msgstr ""
+msgstr "Una clase especial que hace una cosa, la transformación de identidad, de forma rápida."
 
 #: matplotlib.transforms.LockableBbox:2 of
 msgid "A `Bbox` where some elements may be locked at certain values."
-msgstr ""
+msgstr "Una `Bbox` en la que algunos elementos pueden estar bloqueados en ciertos valores."
 
 #: matplotlib.transforms.LockableBbox:4 of
 msgid "When the child bounding box changes, the bounds of this bbox will update accordingly with the exception of the locked elements."
-msgstr ""
+msgstr "Cuando la caja delimitadora hija cambia, los límites de esta bbox se actualizarán en consecuencia con la excepción de los elementos bloqueados."
 
 #: matplotlib.transforms.LockableBbox:31
 #: matplotlib.transforms.LockableBbox.__init__:8
 #: matplotlib.transforms.TransformedBbox:31
 #: matplotlib.transforms.TransformedBbox.__init__:8 of
 msgid "**bbox** : `Bbox`"
-msgstr ""
+msgstr "**bbox** : `Bbox`"
 
 #: matplotlib.transforms.LockableBbox:30
 #: matplotlib.transforms.LockableBbox.__init__:7
 #: matplotlib.transforms.TransformedBbox:30
 #: matplotlib.transforms.TransformedBbox.__init__:7 of
 msgid "Bbox"
-msgstr ""
+msgstr "Bbox"
 
 #: matplotlib.transforms.LockableBbox:31
 #: matplotlib.transforms.LockableBbox.__init__:8 of
 msgid "The child bounding box to wrap."
-msgstr ""
+msgstr "El cuadro delimitador hijo a envolver."
 
 #: matplotlib.transforms.LockableBbox:34
 #: matplotlib.transforms.LockableBbox.__init__:11 of
 msgid "**x0**"
-msgstr ""
+msgstr "**x0**"
 
 #: matplotlib.transforms.LockableBbox:34
 #: matplotlib.transforms.LockableBbox.__init__:11 of
 msgid "The locked value for x0, or None to leave unlocked."
-msgstr ""
+msgstr "El valor bloqueado para x0, o None para dejarlo desbloqueado."
 
 #: matplotlib.transforms.LockableBbox:37
 #: matplotlib.transforms.LockableBbox.__init__:14 of
 msgid "**y0**"
-msgstr ""
+msgstr "**y0**"
 
 #: matplotlib.transforms.LockableBbox:37
 #: matplotlib.transforms.LockableBbox.__init__:14 of
 msgid "The locked value for y0, or None to leave unlocked."
-msgstr ""
+msgstr "El valor bloqueado para y0, o None para dejarlo desbloqueado."
 
 #: matplotlib.transforms.LockableBbox:40
 #: matplotlib.transforms.LockableBbox.__init__:17 of
 msgid "**x1**"
-msgstr ""
+msgstr "**x1**"
 
 #: matplotlib.transforms.LockableBbox:40
 #: matplotlib.transforms.LockableBbox.__init__:17 of
 msgid "The locked value for x1, or None to leave unlocked."
-msgstr ""
+msgstr "El valor bloqueado para x1, o None para dejarlo desbloqueado."
 
 #: matplotlib.transforms.LockableBbox:56
 #: matplotlib.transforms.LockableBbox.__init__:33 of
 msgid "**y1**"
-msgstr ""
+msgstr "**y1**"
 
 #: matplotlib.transforms.LockableBbox:43
 #: matplotlib.transforms.LockableBbox.__init__:20 of
 msgid "The locked value for y1, or None to leave unlocked."
-msgstr ""
+msgstr "El valor bloqueado para y1, o None para dejarlo desbloqueado."
 
 #: matplotlib.transforms.LockableBbox.locked_x0:2 of
 msgid "float or None: The value used for the locked x0."
-msgstr ""
+msgstr "float o None: El valor utilizado para el x0 bloqueado."
 
 #: matplotlib.transforms.LockableBbox.locked_x1:2 of
 msgid "float or None: The value used for the locked x1."
-msgstr ""
+msgstr "float o None: El valor utilizado para el x1 bloqueado."
 
 #: matplotlib.transforms.LockableBbox.locked_y0:2 of
 msgid "float or None: The value used for the locked y0."
-msgstr ""
+msgstr "float o None: El valor utilizado para el y0 bloqueado."
 
 #: matplotlib.transforms.LockableBbox.locked_y1:2 of
 msgid "float or None: The value used for the locked y1."
-msgstr ""
+msgstr "float o None: El valor utilizado para el y1 bloqueado."
 
 #: matplotlib.transforms.ScaledTranslation:2 of
 msgid "A transformation that translates by *xt* and *yt*, after *xt* and *yt* have been transformed by *scale_trans*."
-msgstr ""
+msgstr "Una transformación que traduce por *xt* y *yt*, después de que *xt* y *yt* hayan sido transformados por *scale_trans*."
 
 #: matplotlib.transforms.Transform:2 of
 msgid "The base class of all `TransformNode` instances that actually perform a transformation."
-msgstr ""
+msgstr "La clase base de todas las instancias de `TransformNode` que realmente realizan una transformación."
 
 #: matplotlib.transforms.Transform:5 of
 msgid "All non-affine transformations should be subclasses of this class. New affine transformations should be subclasses of `Affine2D`."
-msgstr ""
+msgstr "Todas las transformaciones no afines deben ser subclases de esta clase. Las nuevas transformaciones afines deben ser subclases de `Affine2D`."
 
 #: matplotlib.transforms.Transform:8 of
 msgid "Subclasses of this class should override the following members (at minimum):"
-msgstr ""
+msgstr "Las subclases de esta clase deberían anular los siguientes miembros (como mínimo):"
 
 #: matplotlib.transforms.Transform:11 of
 msgid ":attr:`input_dims`"
-msgstr ""
+msgstr ":attr:`input_dims`"
 
 #: matplotlib.transforms.Transform:12 of
 msgid ":attr:`output_dims`"
-msgstr ""
+msgstr ":attr:`output_dims`"
 
 #: matplotlib.transforms.Transform:13 of
 msgid ":meth:`transform`"
-msgstr ""
+msgstr ":meth:`transform`"
 
 #: matplotlib.transforms.Transform:14 of
 msgid ":meth:`inverted` (if an inverse exists)"
-msgstr ""
+msgstr ":meth:`inverted` (si existe una inversa)"
 
 #: matplotlib.transforms.Transform:16 of
 msgid "The following attributes may be overridden if the default is unsuitable:"
-msgstr ""
+msgstr "Los siguientes atributos pueden ser anulados si el valor por defecto no es adecuado:"
 
 #: matplotlib.transforms.Transform:18 of
 msgid ":attr:`is_separable` (defaults to True for 1D -> 1D transforms, False otherwise)"
-msgstr ""
+msgstr ":attr:`is_separable` (por defecto True para transformaciones 1D -> 1D, False en caso contrario)"
 
 #: matplotlib.transforms.Transform:20 of
 msgid ":attr:`has_inverse` (defaults to True if :meth:`inverted` is overridden, False otherwise)"
-msgstr ""
+msgstr ":attr:`has_inverse` (por defecto True si se anula :meth:`inverted`, False en caso contrario)"
 
 #: matplotlib.transforms.Transform:23 of
 msgid "If the transform needs to do something non-standard with `matplotlib.path.Path` objects, such as adding curves where there were once line segments, it should override:"
-msgstr ""
+msgstr "Si la transformación necesita hacer algo no estándar con los objetos `matplotlib.path.Path`, como añadir curvas donde antes había segmentos de línea, debe anular:"
 
 #: matplotlib.transforms.Transform:27 of
 msgid ":meth:`transform_path`"
-msgstr ""
+msgstr ":meth:`transform_path`"
 
 #: matplotlib.transforms.Transform.__add__:2 of
 msgid "Compose two transforms together so that *self* is followed by *other*."
-msgstr ""
+msgstr "Componer dos transformaciones juntas para que *self* sea seguido por *other*."
 
 #: matplotlib.transforms.Transform.__add__:4 of
 msgid "``A + B`` returns a transform ``C`` so that ``C.transform(x) == B.transform(A.transform(x))``."
-msgstr ""
+msgstr "``A + B`` devuelve una transformación ``C`` para que ``C.transform(x) == B.transform(A.transform(x))``."
 
 #: matplotlib.transforms.Transform.__init_subclass__:2 of
 msgid "This method is called when a class is subclassed."
-msgstr ""
+msgstr "Este método es llamado cuando una clase es subclasificada."
 
 #: matplotlib.transforms.Transform.__init_subclass__:4 of
 msgid "The default implementation does nothing. It may be overridden to extend subclasses."
-msgstr ""
+msgstr "La implementación por defecto no hace nada. Se puede anular para extender las subclases."
 
 #: matplotlib.transforms.Transform.__sub__:2 of
 msgid "Compose *self* with the inverse of *other*, cancelling identical terms if any::"
-msgstr ""
+msgstr "Componer *self* con la inversa de *other*, cancelando los términos idénticos si los hay::"
 
 #: matplotlib.transforms.Transform.__sub__:16 of
 msgid "Cancellation (rather than naively returning ``A + B.inverted()``) is important for multiple reasons:"
-msgstr ""
+msgstr "La cancelación (en lugar de devolver ingenuamente ``A + B.inverted()``) es importante por múltiples razones:"
 
 #: matplotlib.transforms.Transform.__sub__:19 of
 msgid "It avoids floating-point inaccuracies when computing the inverse of B: ``B - B`` is guaranteed to cancel out exactly (resulting in the identity transform), whereas ``B + B.inverted()`` may differ by a small epsilon."
-msgstr ""
+msgstr "Evita las imprecisiones de punto flotante al calcular la inversa de B: se garantiza que ``B - B`` se cancela exactamente (dando lugar a la transformada de identidad), mientras que ``B + B.inverted()`` puede diferir por un pequeño épsilon."
 
 #: matplotlib.transforms.Transform.__sub__:23 of
 msgid "``B.inverted()`` always returns a frozen transform: if one computes ``A + B + B.inverted()`` and later mutates ``B``, then ``B.inverted()`` won't be updated and the last two terms won't cancel out anymore; on the other hand, ``A + B - B`` will always be equal to ``A`` even if ``B`` is mutated."
-msgstr ""
+msgstr "``B.inverted()`` siempre devuelve una transformación congelada: si se calcula ``A + B + B.inverted()`` y posteriormente se muta ``B``, entonces ``B.inverted()`` no se actualizará y los dos últimos términos ya no se cancelarán; por otro lado, ``A + B - B`` siempre será igual a ``A`` aunque se mute ``B``."
 
 #: matplotlib.transforms.Transform.contains_branch_seperately:2 of
 msgid "Return whether the given branch is a sub-tree of this transform on each separate dimension."
-msgstr ""
+msgstr "Devuelve si la rama dada es un subárbol de esta transformada en cada dimensión separada."
 
 #: matplotlib.transforms.Transform.contains_branch_seperately:5 of
 msgid "A common use for this method is to identify if a transform is a blended transform containing an axes' data transform. e.g.::"
-msgstr ""
+msgstr "Un uso común para este método es identificar si una transformación es una transformación mezclada que contiene una transformación de datos de los ejes. por ejemplo.::"
 
 #: matplotlib.transforms.Transform.transform_angles:2 of
 msgid "Transform a set of angles anchored at specific locations."
-msgstr ""
+msgstr "Transformar un conjunto de ángulos anclados en lugares específicos."
 
 #: matplotlib.transforms.Transform.transform_angles:8 of
 msgid "**angles**"
-msgstr ""
+msgstr "**Ángulos**"
 
 #: of
 msgid "(N,) array-like"
-msgstr ""
+msgstr "(N,) tipo array"
 
 #: matplotlib.transforms.Transform.transform_angles:8 of
 msgid "The angles to transform."
-msgstr ""
+msgstr "Los ángulos a transformar."
 
 #: matplotlib.transforms.Transform.transform_angles:11 of
 msgid "**pts**"
-msgstr ""
+msgstr "**pts**"
 
 #: of
 msgid "(N, 2) array-like"
-msgstr ""
+msgstr "(N, 2) tipo array"
 
 #: matplotlib.transforms.Transform.transform_angles:11 of
 msgid "The points where the angles are anchored."
-msgstr ""
+msgstr "Los puntos donde se anclan los ángulos."
 
 #: matplotlib.transforms.Transform.transform_angles:14 of
 msgid "**radians**"
-msgstr ""
+msgstr "**radianes**"
 
 #: of
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, por defecto: False"
 
 #: matplotlib.transforms.Transform.transform_angles:14 of
 msgid "Whether *angles* are radians or degrees."
-msgstr ""
+msgstr "Si los *ángulos* son radianes o grados."
 
 #: matplotlib.transforms.Transform.transform_angles:21 of
 msgid "**pushoff**"
-msgstr ""
+msgstr "**pushoff**"
 
 #: matplotlib.transforms.Transform.transform_angles:17 of
 msgid "For each point in *pts* and angle in *angles*, the transformed angle is computed by transforming a segment of length *pushoff* starting at that point and making that angle relative to the horizontal axis, and measuring the angle between the horizontal axis and the transformed segment."
-msgstr ""
+msgstr "Para cada punto en *pts* y ángulo en *angles*, el ángulo transformado se calcula transformando un segmento de longitud *pushoff* que comienza en ese punto y hace ese ángulo respecto al eje horizontal, y midiendo el ángulo entre el eje horizontal y el segmento transformado."
 
 #: matplotlib.transforms.Transform.transform_angles:38 of
 msgid "(N,) array"
-msgstr ""
+msgstr "(N,) array"
 
 #: matplotlib.transforms.Transform.transform_bbox:2 of
 msgid "Transform the given bounding box."
-msgstr ""
+msgstr "Transformar la caja delimitadora dada."
 
 #: matplotlib.transforms.Transform.transform_bbox:4 of
 msgid "For smarter transforms including caching (a common requirement in Matplotlib), see `TransformedBbox`."
-msgstr ""
+msgstr "Para las transformaciones más inteligentes que incluyen el almacenamiento en caché (un requisito común en Matplotlib), ver `TransformedBbox`."
 
 #: matplotlib.transforms.Transform.transform_point:2 of
 msgid "Return a transformed point."
-msgstr ""
+msgstr "Devuelve un punto transformado."
 
 #: matplotlib.transforms.Transform.transform_point:4 of
 msgid "This function is only kept for backcompatibility; the more general `.transform` method is capable of transforming both a list of points and a single point."
-msgstr ""
+msgstr "Esta función sólo se mantiene por retrocompatibilidad; el método más general `.transform` es capaz de transformar tanto una lista de puntos como un único punto."
 
 #: matplotlib.transforms.Transform.transform_point:8 of
 msgid "The point is given as a sequence of length :attr:`input_dims`. The transformed point is returned as a sequence of length :attr:`output_dims`."
-msgstr ""
+msgstr "El punto se da como una secuencia de longitud :attr:`input_dims`. El punto transformado se devuelve como una secuencia de longitud :attr:`output_dims`."
 
 #: matplotlib.transforms.TransformNode:1 of
 msgid "Bases: :py:class:`object`"
-msgstr ""
+msgstr "Bases: :py:class:`object`"
 
 #: ../../docstring matplotlib.transforms.TransformNode.__weakref__:2 of
 msgid "list of weak references to the object (if defined)"
-msgstr ""
+msgstr "lista de referencias débiles al objeto (si está definido)"
 
 #: matplotlib.transforms.TransformNode.invalidate:2 of
 msgid "Invalidate this `TransformNode` and triggers an invalidation of its ancestors.  Should be called any time the transform changes."
-msgstr ""
+msgstr "Invalida este `TransformNode` y provoca la invalidación de sus ancestros.  Debe ser llamado cada vez que la transformación cambia."
 
 #: matplotlib.transforms.TransformNode.set_children:2 of
 msgid "Set the children of the transform, to let the invalidation system know which transforms can invalidate this transform. Should be called from the constructor of any transforms that depend on other transforms."
-msgstr ""
+msgstr "Establece los hijos de la transformación, para que el sistema de invalidación sepa qué transformaciones pueden invalidar esta transformación. Debe ser llamado desde el constructor de cualquier transformación que dependa de otras transformaciones."
 
 #: matplotlib.transforms.TransformWrapper:2 of
 msgid "A helper class that holds a single child transform and acts equivalently to it."
-msgstr ""
+msgstr "Una clase de ayuda que contiene un único transform hijo y actúa de forma equivalente a éste."
 
 #: matplotlib.transforms.TransformWrapper:5 of
 msgid "This is useful if a node of the transform tree must be replaced at run time with a transform of a different type.  This class allows that replacement to correctly trigger invalidation."
-msgstr ""
+msgstr "Esto es útil si un nodo del árbol de transformaciones debe ser reemplazado en tiempo de ejecución con una transformación de un tipo diferente.  Esta clase permite que esa sustitución active correctamente la invalidación."
 
 #: matplotlib.transforms.TransformWrapper:9 of
 msgid "`TransformWrapper` instances must have the same input and output dimensions during their entire lifetime, so the child transform may only be replaced with another child transform of the same dimensions."
-msgstr ""
+msgstr "Las instancias de `TransformWrapper` deben tener las mismas dimensiones de entrada y salida durante toda su vida, por lo que la transformación hija sólo puede ser reemplazada por otra transformación hija de las mismas dimensiones."
 
 #: matplotlib.transforms.TransformWrapper:31
 #: matplotlib.transforms.TransformWrapper.__init__:2 of
 msgid "*child*: A `Transform` instance.  This child may later be replaced with :meth:`set`."
-msgstr ""
+msgstr "*child*: Una instancia de `Transformación`. Este hijo puede ser sustituido posteriormente por :meth:`set`."
 
 #: matplotlib.transforms.TransformWrapper.set:2 of
 msgid "Replace the current child of this transform with another one."
-msgstr ""
+msgstr "Reemplazar el hijo actual de este transform por otro."
 
 #: matplotlib.transforms.TransformWrapper.set:4 of
 msgid "The new child must have the same number of input and output dimensions as the current child."
-msgstr ""
+msgstr "El nuevo hijo debe tener el mismo número de dimensiones de entrada y salida que el hijo actual."
 
 #: matplotlib.transforms.TransformedBbox:2 of
 msgid "A `Bbox` that is automatically transformed by a given transform.  When either the child bounding box or transform changes, the bounds of this bbox will update accordingly."
-msgstr ""
+msgstr "Una `Bbox` que es transformada automáticamente por una transformación dada.  Cuando la caja delimitadora hija o la transformación cambien, los límites de esta bbox se actualizarán en consecuencia."
 
 #: matplotlib.transforms.TransformedBbox:47
 #: matplotlib.transforms.TransformedBbox.__init__:24
 #: matplotlib.transforms.TransformedPath:51
 #: matplotlib.transforms.TransformedPath.__init__:24 of
 msgid "**transform** : `Transform`"
-msgstr ""
+msgstr "**transformación** : `Transformación`"
 
 #: matplotlib.transforms.TransformedBbox:46
 #: matplotlib.transforms.TransformedBbox.__init__:23
 #: matplotlib.transforms.TransformedPath:50
 #: matplotlib.transforms.TransformedPath.__init__:23 of
 msgid "Transform"
-msgstr ""
+msgstr "Transformación"
 
 #: matplotlib.transforms.TransformedPatchPath:1 of
 msgid "Bases: :py:class:`matplotlib.transforms.TransformedPath`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.transforms.TransformedPath`"
 
 #: matplotlib.transforms.TransformedPatchPath:2 of
 msgid "A `TransformedPatchPath` caches a non-affine transformed copy of the `~.patches.Patch`. This cached copy is automatically updated when the non-affine part of the transform or the patch changes."
-msgstr ""
+msgstr "Un `TransformedPatchPath` almacena en caché una copia transformada no fina del `~.patches.Patch`. Esta copia en caché se actualiza automáticamente cuando la parte no afín de la transformación o el parche cambia."
 
 #: matplotlib.transforms.TransformedPatchPath:44
 #: matplotlib.transforms.TransformedPatchPath.__init__:21 of
 msgid "**patch** : `~.patches.Patch`"
-msgstr ""
+msgstr "**patch** : `~.patches.Patch`"
 
 #: matplotlib.transforms.TransformedPatchPath:43
 #: matplotlib.transforms.TransformedPatchPath.__init__:20 of
 msgid "Patch"
-msgstr ""
+msgstr "Parche"
 
 #: matplotlib.transforms.TransformedPath:2 of
 msgid "A `TransformedPath` caches a non-affine transformed copy of the `~.path.Path`.  This cached copy is automatically updated when the non-affine part of the transform changes."
-msgstr ""
+msgstr "Un `TransformedPath` almacena en caché una copia transformada no afín del `~.path.Path`. Esta copia en caché se actualiza automáticamente cuando la parte no afín de la transformación cambia."
 
 #: matplotlib.transforms.TransformedPath:8 of
 msgid "Paths are considered immutable by this class. Any update to the path's vertices/codes will not trigger a transform recomputation."
-msgstr ""
+msgstr "Las trayectorias son consideradas inmutables por esta clase. Cualquier actualización de los vértices/códigos de la ruta no provocará un recálculo de la transformación."
 
 #: matplotlib.transforms.TransformedPath:35
 #: matplotlib.transforms.TransformedPath.__init__:8 of
 msgid "**path** : `~.path.Path`"
-msgstr ""
+msgstr "**Ruta** : `~.path.Path`"
 
 #: matplotlib.transforms.TransformedPath.get_fully_transformed_path:2 of
 msgid "Return a fully-transformed copy of the child path."
-msgstr ""
+msgstr "Devuelve una copia completamente transformada de la ruta hija."
 
 #: matplotlib.transforms.TransformedPath.get_transformed_path_and_affine:2 of
 msgid "Return a copy of the child path, with the non-affine part of the transform already applied, along with the affine part of the path necessary to complete the transformation."
-msgstr ""
+msgstr "Devuelve una copia del camino hijo, con la parte no afín de la transformación ya aplicada, junto con la parte afín del camino necesaria para completar la transformación."
 
 #: matplotlib.transforms.TransformedPath.get_transformed_points_and_affine:2 of
 msgid "Return a copy of the child path, with the non-affine part of the transform already applied, along with the affine part of the path necessary to complete the transformation.  Unlike :meth:`get_transformed_path_and_affine`, no interpolation will be performed."
-msgstr ""
+msgstr "Devuelve una copia del camino hijo, con la parte no afín de la transformación ya aplicada, junto con la parte afín del camino necesaria para completar la transformación.  A diferencia de :meth:`get_transformed_path_and_affine`, no se realizará ninguna interpolación."
 
 #: matplotlib.transforms.blended_transform_factory:5 of
 msgid "A faster version of the blended transform is returned for the case where both child transforms are affine."
-msgstr ""
+msgstr "Se devuelve una versión más rápida de la transformación mezclada para el caso en que ambas transformaciones hijas sean afines."
 
 #: matplotlib.transforms.composite_transform_factory:2 of
 msgid "Create a new composite transform that is the result of applying transform a then transform b."
-msgstr ""
+msgstr "Crea una nueva transformación compuesta que es el resultado de aplicar la transformación a y luego la transformación b."
 
 #: matplotlib.transforms.composite_transform_factory:5 of
 msgid "Shortcut versions of the blended transform are provided for the case where both child transforms are affine, or one or the other is the identity transform."
-msgstr ""
+msgstr "Se proporcionan versiones abreviadas de la transformada combinada para el caso en que ambas transformadas hijas sean afines, o una u otra sea la transformada de identidad."
 
 #: matplotlib.transforms.composite_transform_factory:9 of
 msgid "Composite transforms may also be created using the '+' operator, e.g.::"
-msgstr ""
+msgstr "Las transformaciones compuestas también pueden ser creadas usando el operador '+', por ejemplo.::"
 
 #: matplotlib.transforms.interval_contains:2 of
 msgid "Check, inclusively, whether an interval includes a given value."
-msgstr ""
+msgstr "Comprueba, de forma inclusiva, si un intervalo incluye un valor dado."
 
 #: matplotlib.transforms.interval_contains:8
 #: matplotlib.transforms.interval_contains_open:8 of
 msgid "**interval**"
-msgstr ""
+msgstr "**intervalo**"
 
 #: of
 msgid "(float, float)"
-msgstr ""
+msgstr "(float, float)"
 
 #: matplotlib.transforms.interval_contains:8
 #: matplotlib.transforms.interval_contains_open:8 of
 msgid "The endpoints of the interval."
-msgstr ""
+msgstr "Los puntos finales del intervalo."
 
 #: matplotlib.transforms.interval_contains:11
 #: matplotlib.transforms.interval_contains_open:11 of
 msgid "**val**"
-msgstr ""
+msgstr "**val**"
 
 #: matplotlib.transforms.interval_contains:11
 #: matplotlib.transforms.interval_contains_open:11 of
 msgid "Value to check is within interval."
-msgstr ""
+msgstr "El valor a comprobar está dentro del intervalo."
 
 #: matplotlib.transforms.interval_contains:16
 #: matplotlib.transforms.interval_contains_open:16 of
 msgid "Whether *val* is within the *interval*."
-msgstr ""
+msgstr "Si *val* está dentro del *intervalo*."
 
 #: matplotlib.transforms.interval_contains_open:2 of
 msgid "Check, excluding endpoints, whether an interval includes a given value."
-msgstr ""
+msgstr "Comprueba, excluyendo los puntos finales, si un intervalo incluye un valor dado."
 
 #: matplotlib.transforms.nonsingular:2 of
 msgid "Modify the endpoints of a range as needed to avoid singularities."
-msgstr ""
+msgstr "Modificar los puntos finales de un intervalo según sea necesario para evitar singularidades."
 
 #: matplotlib.transforms.nonsingular:8 matplotlib.transforms.nonsingular:41 of
 msgid "**vmin, vmax**"
-msgstr ""
+msgstr "**vmin, vmax**"
 
 #: matplotlib.transforms.nonsingular:8 of
 msgid "The initial endpoints."
-msgstr ""
+msgstr "Los puntos finales iniciales."
 
 #: matplotlib.transforms.nonsingular:12 of
 msgid "**expander**"
-msgstr ""
+msgstr "**expansor**"
 
 #: of
 msgid "float, default: 0.001"
-msgstr ""
+msgstr "float, por defecto: 0.001"
 
 #: matplotlib.transforms.nonsingular:11 of
 msgid "Fractional amount by which *vmin* and *vmax* are expanded if the original interval is too small, based on *tiny*."
-msgstr ""
+msgstr "Cantidad fraccionaria por la que *vmin* y *vmax* se expanden si el intervalo original es demasiado pequeño, basado en *tiny*."
 
 #: matplotlib.transforms.nonsingular:19 of
 msgid "**tiny**"
-msgstr ""
+msgstr "**tiny**"
 
 #: of
 msgid "float, default: 1e-15"
-msgstr ""
+msgstr "float, por defecto: 1e-15"
 
 #: matplotlib.transforms.nonsingular:15 of
 msgid "Threshold for the ratio of the interval to the maximum absolute value of its endpoints.  If the interval is smaller than this, it will be expanded.  This value should be around 1e-15 or larger; otherwise the interval will be approaching the double precision resolution limit."
-msgstr ""
+msgstr "Umbral para la relación entre el intervalo y el valor absoluto máximo de sus extremos.  Si el intervalo es menor que esto, se expandirá.  Este valor debe ser alrededor de 1e-15 o mayor; de lo contrario, el intervalo se acercará al límite de resolución de doble precisión."
 
 #: matplotlib.transforms.nonsingular:22 of
 msgid "**increasing**"
-msgstr ""
+msgstr "**incrementando**"
 
 #: matplotlib.transforms.nonsingular:22 of
 msgid "If True, swap *vmin*, *vmax* if *vmin* > *vmax*."
-msgstr ""
+msgstr "Si es True, intercambiar *vmin*, *vmax* si *vmin* > *vmax*."
 
 #: matplotlib.transforms.nonsingular:27 of
 msgid "Endpoints, expanded and/or swapped if necessary. If either input is inf or NaN, or if both inputs are 0 or very close to zero, it returns -*expander*, *expander*."
-msgstr ""
+msgstr "Puntos finales, expandidos y/o intercambiados si es necesario. Si cualquiera de las entradas es inf o NaN, o si ambas entradas son 0 o muy cercanas a cero, devuelve -*expander*, *expander*."
 
 #: matplotlib.transforms.offset_copy:2 of
 msgid "Return a new transform with an added offset."
-msgstr ""
+msgstr "Devuelve una nueva transformación con un desplazamiento añadido."
 
 #: matplotlib.transforms.offset_copy:8 of
 msgid "**trans** : `Transform` subclass"
-msgstr ""
+msgstr "**trans** : Subclase de `Transformación`"
 
 #: matplotlib.transforms.offset_copy:7 of
 msgid "Transform subclass"
-msgstr ""
+msgstr "Subclase Transform"
 
 #: matplotlib.transforms.offset_copy:8 of
 msgid "Any transform, to which offset will be applied."
-msgstr ""
+msgstr "Cualquier transformación, a la que se aplicará el offset."
 
 #: matplotlib.transforms.offset_copy:11 of
 msgid "**fig** : `~matplotlib.figure.Figure`, default: None"
-msgstr ""
+msgstr "**fig** : `~matplotlib.figure.Figure`, por defecto: None"
 
 #: matplotlib.transforms.offset_copy:10 of
 msgid "Figure, default: None"
-msgstr ""
+msgstr "Figura, por defecto: None"
 
 #: matplotlib.transforms.offset_copy:11 of
 msgid "Current figure. It can be None if *units* are 'dots'."
-msgstr ""
+msgstr "Figura actual. Puede ser None si las *unidades* son 'dots'."
 
 #: matplotlib.transforms.offset_copy:14 of
 msgid "**x, y**"
-msgstr ""
+msgstr "**x, y**"
 
 #: of
 msgid "float, default: 0.0"
-msgstr ""
+msgstr "float, por defecto: 0.0"
 
 #: matplotlib.transforms.offset_copy:14 of
 msgid "The offset to apply."
-msgstr ""
+msgstr "El desplazamiento a aplicar."
 
 #: matplotlib.transforms.offset_copy:17 of
 msgid "**units**"
-msgstr ""
+msgstr "**Unidades**"
 
 #: of
 msgid "{'inches', 'points', 'dots'}, default: 'inches'"
-msgstr ""
+msgstr "{'pulgadas', 'puntos', 'puntos'}, por defecto: 'pulgadas'"
 
 #: matplotlib.transforms.offset_copy:17 of
 msgid "Units of the offset."
-msgstr ""
+msgstr "Unidades del desplazamiento."
 
 #: matplotlib.transforms.offset_copy:34 of
 msgid "`Transform` subclass"
-msgstr ""
+msgstr "Subclase de `Transformación`"
 
 #: matplotlib.transforms.offset_copy:22 of
 msgid "Transform with applied offset."
-msgstr ""
+msgstr "Transformación con desplazamiento aplicado."
 

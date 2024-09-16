@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-28 21:54\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,313 +20,313 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:4
 msgid "What's new in Matplotlib 2.2 (Mar 06, 2018)"
-msgstr ""
+msgstr "Novedades en Matplotlib 2.2 (Mar 06, 2018)"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:7
 msgid "Constrained Layout Manager"
-msgstr ""
+msgstr "Gestor de layout restringido"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:11
 msgid "Constrained Layout is **experimental**.  The behaviour and API are subject to change, or the whole functionality may be removed without a deprecation period."
-msgstr ""
+msgstr "Constrained Layout es **experimental**. El comportamiento y la API están sujetos a cambios, o toda la funcionalidad puede ser eliminada sin un periodo de obsolescencia."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:16
 msgid "A new method to automatically decide spacing between subplots and their organizing ``GridSpec`` instances has been added.  It is meant to replace the venerable ``tight_layout`` method.  It is invoked via a new ``constrained_layout=True`` kwarg to `~.figure.Figure` or `~.Figure.subplots`."
-msgstr ""
+msgstr "Se ha añadido un nuevo método para decidir automáticamente el espaciado entre las subplots y sus instancias organizadoras ``GridSpec``.  Está pensado para sustituir al método tradicional ``tight_layout``.  Se invoca mediante un nuevo kwarg ``constrained_layout=True`` a `~.figure.Figure` o `~.Figure.subplots`."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:22
 msgid "There are new `.rcParams` for this package, and spacing can be more finely tuned with the new `~.set_constrained_layout_pads`."
-msgstr ""
+msgstr "Hay nuevos `.rcParams` para este paquete, y el espaciado puede ajustarse más finamente con el nuevo `~.set_constrained_layout_pads`."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:25
 msgid "Features include:"
-msgstr ""
+msgstr "Las características incluyen:"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:27
 msgid "Automatic spacing for subplots with a fixed-size padding in inches around subplots and all their decorators, and space between as a fraction of subplot size between subplots."
-msgstr ""
+msgstr "Espaciado automático para los subplot con un relleno de tamaño fijo en pulgadas alrededor de los subplots y todos sus decoradores, y espacio entre ellas como una fracción del tamaño de las subplots."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:30
 msgid "Spacing for `~.Figure.suptitle`, and colorbars that are attached to more than one axes."
-msgstr ""
+msgstr "Espaciado para `~.Figure.suptitle`, y barras de colores que se adjuntan a más de un eje."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:32
 msgid "Nested `~.GridSpec` layouts using `~.GridSpecFromSubplotSpec`."
-msgstr ""
+msgstr "Diseños anidados de `~.GridSpec` utilizando `~.GridSpecFromSubplotSpec`."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:34
 msgid "For more details and capabilities please see the new tutorial: :doc:`/tutorials/intermediate/constrainedlayout_guide`"
-msgstr ""
+msgstr "Para más detalles y capacidades, consulte el nuevo tutorial: :doc:`/tutorials/intermediate/constrainedlayout_guide`"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:37
 msgid "Note the new API to access this:"
-msgstr ""
+msgstr "Ten en cuenta la nueva API para acceder a esto:"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:40
 msgid "New ``plt.figure`` and ``plt.subplots`` kwarg: ``constrained_layout``"
-msgstr ""
+msgstr "Nuevo kwarg ``plt.figure`` y ``plt.subplots``: ``constrained_layout``"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:42
 msgid ":meth:`~matplotlib.pyplot.figure` and :meth:`~matplotlib.pyplot.subplots` can now be called with ``constrained_layout=True`` kwarg to enable constrained_layout."
-msgstr ""
+msgstr ":meth:`~matplotlib.pyplot.figure` y :meth:`~matplotlib.pyplot.subplots` ahora se pueden llamar con el kwarg ``constrained_layout=True`` para habilitar constrained_layout."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:47
 msgid "New ``ax.set_position`` behaviour"
-msgstr ""
+msgstr "Nuevo comportamiento de ``ax.set_position``"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:49
 msgid "`.Axes.set_position` now makes the specified axis no longer responsive to ``constrained_layout``, consistent with the idea that the user wants to place an axis manually."
-msgstr ""
+msgstr "Ahora `.Axes.set_position` hace que el eje especificado ya no responda a ``constrained_layout``, en consonancia con la idea de que el usuario quiera colocar un eje manualmente."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:53
 msgid "Internally, this means that old ``ax.set_position`` calls *inside* the library are changed to private ``ax._set_position`` calls so that ``constrained_layout`` will still work with these axes."
-msgstr ""
+msgstr "Internamente, esto significa que las antiguas llamadas a ``ax.set_position`` *dentro* de la biblioteca se cambian por llamadas privadas a ``ax._set_position`` para que ``constrained_layout`` siga funcionando con estos ejes."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:58
 msgid "New ``figure`` kwarg for ``GridSpec``"
-msgstr ""
+msgstr "Nuevo kwarg de ``figure`` para ``GridSpec`"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:60
 msgid "In order to facilitate ``constrained_layout``, ``GridSpec`` now accepts a ``figure`` keyword.  This is backwards compatible, in that not supplying this will simply cause ``constrained_layout`` to not operate on the subplots orgainzed by this ``GridSpec`` instance.  Routines that use ``GridSpec`` (e.g. ``fig.subplots``) have been modified to pass the figure to ``GridSpec``."
-msgstr ""
+msgstr "Para facilitar el uso de ``constrained_layout``, ``GridSpec`` acepta ahora la palabra clave ``figure``.  Esto es compatible con versiones anteriores, ya que si no se proporciona esta palabra, ``constrained_layout`` no funcionará en los subplots organizados por esta instancia de ``GridSpec``. Las rutinas que utilizan ``GridSpec`` (por ejemplo, ``fig.subplots``) se han modificado para pasar la figura a ``GridSpec``."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:68
 msgid "xlabels and ylabels can now be automatically aligned"
-msgstr ""
+msgstr "xlabels y ylabels ahora pueden ser alineados automáticamente"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:70
 msgid "Subplot axes ``ylabels`` can be misaligned horizontally if the tick labels are very different widths.  The same can happen to ``xlabels`` if the ticklabels are rotated on one subplot (for instance).  The new methods on the `.Figure` class: `.Figure.align_xlabels` and `.Figure.align_ylabels` will now align these labels horizontally or vertically.  If the user only wants to align some axes, a list of axes can be passed.  If no list is passed, the algorithm looks at all the labels on the figure."
-msgstr ""
+msgstr "Los ejes de los subplots ``ylabels`` pueden estar mal alineados horizontalmente si las etiquetas de las marcas son de anchos muy diferentes. Lo mismo puede ocurrir con las \"etiquetas x\" si las etiquetas de los ticks están giradas en un subplot (por ejemplo). Los nuevos métodos de la clase `.Figure`: `.Figure.align_xlabels` y `.Figure.align_ylabels` ahora alinearán estas etiquetas horizontal o verticalmente.  Si el usuario sólo quiere alinear algunos ejes, se puede pasar una lista de ejes. Si no se pasa ninguna lista, el algoritmo mira todas las etiquetas de la figura."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:78
 msgid "Only labels that have the same subplot locations are aligned.  i.e. the ylabels are aligned only if the subplots are in the same column of the subplot layout."
-msgstr ""
+msgstr "Sólo se alinean las etiquetas que tienen las mismas ubicaciones de subplot. Es decir, las etiquetas y se alinean sólo si los subplots están en la misma columna del diseño de subplot."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:82
 msgid "Alignment is persistent and automatic after these are called."
-msgstr ""
+msgstr "La alineación es persistente y automática después de llamar a estas funciones."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:84
 msgid "A convenience wrapper `.Figure.align_labels` calls both functions at once."
-msgstr ""
+msgstr "Una envoltura de conveniencia `.Figure.align_labels` llama a ambas funciones a la vez."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-2-1.py>`__, `png <../../users/prev_whats_new/whats_new_2-2-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-2-1.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_2-2-1.py>`__, `png <../../users/prev_whats_new/whats_new_2-2-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-2-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:107
 msgid "Axes legends now included in tight_bbox"
-msgstr ""
+msgstr "Las leyendas de los ejes ahora se incluyen en tight_bbox"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:109
 msgid "Legends created via ``ax.legend`` can sometimes overspill the limits of the axis.  Tools like ``fig.tight_layout()`` and ``fig.savefig(bbox_inches='tight')`` would clip these legends.  A change was made to include them in the ``tight`` calculations."
-msgstr ""
+msgstr "Las leyendas creadas a través de ``ax.legend`` a veces pueden sobrepasar los límites del eje. Herramientas como ``fig.tight_layout()`` y ``fig.savefig(bbox_inches='tight')`` recortaban estas leyendas. Se ha realizado un cambio para incluirlas en los cálculos de ``tight``."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:116
 msgid "Cividis colormap"
-msgstr ""
+msgstr "Mapa de colores Cividis"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:118
 msgid "A new dark blue/yellow colormap named 'cividis' was added. Like viridis, cividis is perceptually uniform and colorblind friendly. However, cividis also goes a step further: not only is it usable by colorblind users, it should actually look effectively identical to colorblind and non-colorblind users. For more details see `Nuñez J, Anderton C, and Renslow R: \"Optimizing colormaps with consideration for color vision deficiency to enable accurate interpretation of scientific data\" <https://doi.org/10.1371/journal.pone.0199239>`_."
-msgstr ""
+msgstr "Se ha añadido un nuevo mapa de colores azul oscuro/amarillo llamado 'cividis'. Al igual que viridis, cividis es perceptualmente uniforme y amigable con los daltónicos. Sin embargo, cividis va un paso más allá: no sólo es utilizable por los usuarios daltónicos, sino que debería parecer idéntico a los usuarios daltónicos y no daltónicos. Para más detalles, véase `Nuñez J, Anderton C, y Renslow R: \"Optimizing colormaps with consideration for color vision deficiency to enable accurate interpretation of scientific data\" <https://doi.org/10.1371/journal.pone.0199239>`_."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:7
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-2-2.py>`__, `png <../../users/prev_whats_new/whats_new_2-2-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-2-2.pdf>`__)"
-msgstr ""
+msgstr "(`Source code <../../users/prev_whats_new/whats_new_2-2-2.py>`__, `png <../../users/prev_whats_new/whats_new_2-2-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-2-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:138
 msgid "New style colorblind-friendly color cycle"
-msgstr ""
+msgstr "Nuevo estilo de ciclo de colores para daltónicos"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:140
 msgid "A new style defining a color cycle has been added, tableau-colorblind10, to provide another option for colorblind-friendly plots.  A demonstration of this new style can be found in the reference_ of style sheets. To load this color cycle in place of the default one::"
-msgstr ""
+msgstr "Se ha añadido un nuevo estilo que define un ciclo de color, tableau-colorblind10, para ofrecer otra opción para los gráficos aptos para daltónicos. Se puede encontrar una demostración de este nuevo estilo en la reference_ de las hojas de estilo. Para cargar este ciclo de color en lugar del predeterminado::"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:153
 msgid "Support for numpy.datetime64"
-msgstr ""
+msgstr "Soporte para numpy.datetime64"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:155
 msgid "Matplotlib has supported `datetime.datetime` dates for a long time in `matplotlib.dates`.  We now support `numpy.datetime64` dates as well.  Anywhere that `datetime.datetime` could be used, `numpy.datetime64` can be used.  eg::"
-msgstr ""
+msgstr "Matplotlib ha soportado las fechas `datetime.datetime` durante mucho tiempo en `matplotlib.dates`.  Ahora también soportamos las fechas `numpy.datetime64`.  En cualquier lugar donde se pueda utilizar `datetime.datetime`, se puede utilizar `numpy.datetime64`::"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:166
 msgid "Writing animations with Pillow"
-msgstr ""
+msgstr "Escribir animaciones con Pillow"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:167
 msgid "It is now possible to use Pillow as an animation writer.  Supported output formats are currently gif (Pillow>=3.4) and webp (Pillow>=5.0).  Use e.g. as ::"
-msgstr ""
+msgstr "Ahora es posible utilizar Pillow como escritor de animaciones.  Los formatos de salida soportados son actualmente gif (Pillow>=3.4) y webp (Pillow>=5.0). Utiliza, por ejemplo, como ::"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:188
 msgid "Slider UI widget can snap to discrete values"
-msgstr ""
+msgstr "El widget carrusel de la IU puede ajustarse a valores discretos"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:190
 msgid "The slider UI widget can take the optional argument *valstep*.  Doing so forces the slider to take on only discrete values, starting from *valmin* and counting up to *valmax* with steps of size *valstep*."
-msgstr ""
+msgstr "El widget de carrusel de la IU puede tomar el argumento opcional *valstep*. Esto obliga al deslizador a tomar sólo valores discretos, empezando por *valmin* y contando hasta *valmax* con pasos de tamaño *valstep*."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:194
 msgid "If *closedmax==True*, then the slider will snap to *valmax* as well."
-msgstr ""
+msgstr "Si *closedmax==True*, el carrusel también se ajustará a *valmax*."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:199
 msgid "``capstyle`` and ``joinstyle`` attributes added to `.Collection`"
-msgstr ""
+msgstr "Atributos ``capstyle`` y ``joinstyle`` añadidos a `.Collection`"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:201
 msgid "The `.Collection` class now has customizable ``capstyle`` and ``joinstyle`` attributes. This allows the user for example to set the ``capstyle`` of errorbars."
-msgstr ""
+msgstr "La clase `.Collection` tiene ahora atributos personalizables ``capstyle`` y ``joinstyle``. Esto permite al usuario, por ejemplo, establecer el ``capstyle`` de las barras de error."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:207
 msgid "*pad* kwarg added to ax.set_title"
-msgstr ""
+msgstr "Se ha añadido el kwarg *pad* a ax.set_title"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:209
 msgid "The method `.Axes.set_title` now has a *pad* kwarg, that specifies the distance from the top of an axes to where the title is drawn.  The units of *pad* is points, and the default is the value of the (already-existing) :rc:`axes.titlepad`."
-msgstr ""
+msgstr "El método `.Axes.set_title` ahora tiene un kwarg *pad*, que especifica la distancia desde la parte superior de un eje hasta donde se dibuja el título.  Las unidades de *pad* son puntos, y el valor por defecto es el valor del (ya existente) :rc:`axes.titlepad`."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:216
 msgid "Comparison of 2 colors in Matplotlib"
-msgstr ""
+msgstr "Comparación de 2 colores en Matplotlib"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:218
 msgid "As the colors in Matplotlib can be specified with a wide variety of ways, the `matplotlib.colors.same_color` method has been added which checks if two `~matplotlib.colors` are the same."
-msgstr ""
+msgstr "Como los colores en Matplotlib se pueden especificar con una amplia variedad de formas, se ha añadido el método `matplotlib.colors.same_color` que comprueba si dos `~matplotlib.colors` son iguales."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:224
 msgid "Autoscaling a polar plot snaps to the origin"
-msgstr ""
+msgstr "Ajuste automático de un gráfico polar al origen"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:226
 msgid "Setting the limits automatically in a polar plot now snaps the radial limit to zero if the automatic limit is nearby. This means plotting from zero doesn't automatically scale to include small negative values on the radial axis."
-msgstr ""
+msgstr "La configuración automática de los límites en un gráfico polar ahora ajusta el límite radial a cero si el límite automático está cerca. Esto significa que el trazado desde cero no se escala automáticamente para incluir pequeños valores negativos en el eje radial."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:230
 msgid "The limits can still be set manually in the usual way using `~.Axes.set_ylim`."
-msgstr ""
+msgstr "Los límites se pueden seguir estableciendo manualmente de la forma habitual utilizando `~.Axes.set_ylim`."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:234
 msgid "PathLike support"
-msgstr ""
+msgstr "Soporte de PathLike"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:236
 msgid "On Python 3.6+, `~matplotlib.pyplot.savefig`, `~matplotlib.pyplot.imsave`, `~matplotlib.pyplot.imread`, and animation writers now accept `os.PathLike`\\s as input."
-msgstr ""
+msgstr "En Python 3.6+, `~matplotlib.pyplot.savefig`, `~matplotlib.pyplot.imsave`, `~matplotlib.pyplot.imread`, y los creadores de animación ahora aceptan `os.PathLike` como entrada."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:242
 msgid "`.Axes.tick_params` can set gridline properties"
-msgstr ""
+msgstr "`.Axes.tick_params` puede establecer las propiedades de las líneas de la cuadrícula"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:244
 msgid "`.Tick` objects hold gridlines as well as the tick mark and its label. `.Axis.set_tick_params`, `.Axes.tick_params` and `.pyplot.tick_params` now have keyword arguments 'grid_color', 'grid_alpha', 'grid_linewidth', and 'grid_linestyle' for overriding the defaults in `.rcParams`: 'grid.color', etc."
-msgstr ""
+msgstr "Los objetos `.Tick` contienen las líneas de la rejilla así como la marca del tick y su etiqueta. Los objetos `.Axis.set_tick_params`, `.Axes.tick_params` y `.pyplot.tick_params` tienen ahora argumentos de palabra clave 'grid_color', 'grid_alpha', 'grid_linewidth', y 'grid_linestyle' para sobreescribir los valores por defecto en `.rcParams`: 'grid.color', etc."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:252
 msgid "`.Axes.imshow` clips RGB values to the valid range"
-msgstr ""
+msgstr "`.Axes.imshow` recorta los valores RGB al rango válido"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:254
 msgid "When `.Axes.imshow` is passed an RGB or RGBA value with out-of-range values, it now logs a warning and clips them to the valid range. The old behaviour, wrapping back in to the range, often hid outliers and made interpreting RGB images unreliable."
-msgstr ""
+msgstr "Cuando a `.Axes.imshow` se le pasa un valor RGB o RGBA con valores fuera de rango, ahora registra una advertencia y los ajusta al rango válido. El antiguo comportamiento, que recortaba al rango, a menudo ocultaba los valores atípicos y hacía que la interpretación de las imágenes RGB no fuera fiable."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:261
 msgid "Properties in :file:`matplotlibrc` to place xaxis and yaxis tick labels"
-msgstr ""
+msgstr "Propiedades en :file:`matplotlibrc` para colocar las etiquetas de los ejes X e Y"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:263
 msgid "Introducing four new boolean properties in :file:`matplotlibrc` for default positions of xaxis and yaxis tick labels, namely, :rc:`xtick.labeltop`, :rc:`xtick.labelbottom`, :rc:`ytick.labelright` and :rc:`ytick.labelleft`. These can also be changed in rcParams."
-msgstr ""
+msgstr "Introducimos cuatro nuevas propiedades booleanas en :file:`matplotlibrc` para las posiciones por defecto de las etiquetas de los ticks del eje x y del eje y, a saber, :rc:`xtick.labeltop`, :rc:`xtick.labelbottom`, :rc:`ytick.labelright` y :rc:`ytick.labelleft`. Estos también se pueden cambiar en rcParams."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:270
 msgid "PGI bindings for gtk3"
-msgstr ""
+msgstr "Enlaces PGI para gtk3"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:272
 msgid "The GTK3 backends can now use PGI_ instead of PyGObject_.  PGI is a fairly incomplete binding for GObject, thus its use is not recommended; its main benefit is its availability on Travis (thus allowing CI testing for the gtk3agg and gtk3cairo backends)."
-msgstr ""
+msgstr "Los backends de GTK3 ahora pueden usar PGI_ en lugar de PyGObject_. PGI es un enlace bastante incompleto para GObject, por lo que no se recomienda su uso; su principal beneficio es su disponibilidad en Travis (permitiendo así pruebas de CI para los backends gtk3agg y gtk3cairo)."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:277
 msgid "The binding selection rules are as follows: - if ``gi`` has already been imported, use it; else - if ``pgi`` has already been imported, use it; else - if ``gi`` can be imported, use it; else - if ``pgi`` can be imported, use it; else - error out."
-msgstr ""
+msgstr "Las reglas de selección de enlaces son las siguientes - si ``gi`` ya ha sido importado, úsalo; de lo contrario - si ``pgi`` ya ha sido importado, úsalo; en caso contrario - si ``gi`` puede ser importado, úsalo; de lo contrario - si ``pgi`` puede ser importado, úsalo; caso contrario - error."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:284
 msgid "Thus, to force usage of PGI when both bindings are installed, import it first."
-msgstr ""
+msgstr "Por lo tanto, para forzar el uso de PGI cuando ambos enlaces están instalados, impórtalo primero."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:292
 msgid "Cairo rendering for Qt, WX, and Tk canvases"
-msgstr ""
+msgstr "Renderizado de Cairo para lienzos Qt, WX y Tk"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:294
 msgid "The new ``Qt4Cairo``, ``Qt5Cairo``, ``WXCairo``, and ``TkCairo`` backends allow Qt, Wx, and Tk canvases to use Cairo rendering instead of Agg."
-msgstr ""
+msgstr "Los nuevos backends ``Qt4Cairo``, ``Qt5Cairo``, ``WXCairo`` y ``TkCairo`` permiten a los lienzos Qt, Wx y Tk utilizar el renderizado Cairo en lugar de Agg."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:300
 msgid "Added support for QT in new ToolManager"
-msgstr ""
+msgstr "Añadido soporte para QT en el nuevo ToolManager"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:302
 msgid "Now it is possible to use the ToolManager with Qt5 For example"
-msgstr ""
+msgstr "Ahora es posible utilizar el ToolManager con Qt5 Por ejemplo"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:305
 msgid "import matplotlib"
-msgstr ""
+msgstr "importar matplotlib"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:307
 msgid "matplotlib.use('QT5AGG') matplotlib.rcParams['toolbar'] = 'toolmanager' import matplotlib.pyplot as plt"
-msgstr ""
+msgstr "matplotlib.use('QT5AGG') matplotlib.rcParams['toolbar'] = 'toolmanager' import matplotlib.pyplot as plt"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:311
 msgid "plt.plot([1,2,3]) plt.show()"
-msgstr ""
+msgstr "plt.plot([1,2,3]) plt.show()"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:315
 msgid "Treat the new Tool classes experimental for now, the API will likely change and perhaps the rcParam as well"
-msgstr ""
+msgstr "Trata las nuevas clases de herramientas como experimentales por ahora, la API probablemente cambiará y quizás el rcParam también"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:317
 msgid "The main example :doc:`/gallery/user_interfaces/toolmanager_sgskip` shows more details, just adjust the header to use QT instead of GTK3"
-msgstr ""
+msgstr "El ejemplo principal :doc:`/gallery/user_interfaces/toolmanager_sgskip` muestra más detalles, sólo hay que ajustar la cabecera para usar QT en lugar de GTK3"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:323
 msgid "TkAgg backend reworked to support PyPy"
-msgstr ""
+msgstr "El backend de TkAgg ha sido revisado para soportar PyPy"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:325
 msgid "PyPy_ can now plot using the TkAgg backend, supported on PyPy 5.9 and greater (both PyPy for python 2.7 and PyPy for python 3.5)."
-msgstr ""
+msgstr "PyPy_ ahora puede trazar usando el backend TkAgg, soportado en PyPy 5.9 y superior (tanto PyPy para python 2.7 como PyPy para python 3.5)."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:333
 msgid "Python logging library used for debug output"
-msgstr ""
+msgstr "Biblioteca de registro de Python utilizada para la salida de depuración"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:335
 msgid "Matplotlib has in the past (sporadically) used an internal verbose-output reporter.  This version converts those calls to using the standard python `logging` library."
-msgstr ""
+msgstr "Matplotlib ha utilizado en el pasado (esporádicamente) una biblioteca interna de salida detallada.  Esta versión convierte esas llamadas en el uso de la biblioteca estándar de python `logging`."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:339
 msgid "Support for the old `.rcParams` ``verbose.level`` and ``verbose.fileo`` is dropped."
-msgstr ""
+msgstr "Se elimina el soporte para los antiguos `.rcParams` ``verbose.level`` y ``verbose.fileo``."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:342
 msgid "The command-line options ``--verbose-helpful`` and ``--verbose-debug`` are still accepted, but deprecated.  They are now equivalent to setting ``logging.INFO`` and ``logging.DEBUG``."
-msgstr ""
+msgstr "Las opciones de línea de comandos ``--verbose-helpful`` y ``--verbose-debug`` siguen siendo aceptadas, pero están obsoletas.  Ahora equivalen a establecer ``logging.INFO`` y ``logging.DEBUG``."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:346
 msgid "The logger's root name is ``matplotlib`` and can be accessed from programs as::"
-msgstr ""
+msgstr "El nombre raíz del registro es ``matplotlib`` y se puede acceder a él desde los programas como::"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:352
 msgid "Instructions for basic usage are in :ref:`troubleshooting-faq` and for developers in :ref:`contributing`."
-msgstr ""
+msgstr "Las instrucciones para el uso básico están en :ref:`troubleshooting-faq` y para quienes desarrollan en :ref:`contributing`."
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:358
 msgid "Improved `repr` for `.Transform`\\s"
-msgstr ""
+msgstr "Mejora de `repr` para `.Transform``\\s"
 
 #: ../../users/prev_whats_new/whats_new_2.2.rst:360
 msgid "`.Transform`\\s now indent their `repr`\\s in a more legible manner:"
-msgstr ""
+msgstr "Ahora los `.Transform`\\s tienen sangría en sus `repr`\\s de una manera más legible:"
 

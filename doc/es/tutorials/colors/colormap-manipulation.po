@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:34\n"
+"PO-Revision-Date: 2022-05-11 14:21\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,188 +20,188 @@ msgstr ""
 
 #: ../../tutorials/colors/colormap-manipulation.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_colors_colormap-manipulation.py>` to download the full example code"
-msgstr ""
+msgstr "Haz clic en :ref:`aquí <sphx_glr_download_tutorials_colors_colormap-manipulation.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:23
 msgid "Creating Colormaps in Matplotlib"
-msgstr ""
+msgstr "Creación de mapas de colores en Matplotlib"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:25
 msgid "Matplotlib has a number of built-in colormaps accessible via `.matplotlib.cm.get_cmap`.  There are also external libraries like palettable_ that have many extra colormaps."
-msgstr ""
+msgstr "Matplotlib tiene un número de mapas de colores incorporados accesibles a través de `.matplotlib.cm.get_cmap`.  También hay bibliotecas externas como palettable_ que tienen muchos mapas de colores adicionales."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:31
 msgid "However, we often want to create or manipulate colormaps in Matplotlib. This can be done using the class `.ListedColormap` or `.LinearSegmentedColormap`. Seen from the outside, both colormap classes map values between 0 and 1 to a bunch of colors. There are, however, slight differences, some of which are shown in the following."
-msgstr ""
+msgstr "Sin embargo, a menudo queremos crear o manipular mapas de colores en Matplotlib. Esto se puede hacer utilizando la clase `.ListedColormap` o `.LinearSegmentedColormap`. Visto desde fuera, ambas clases de mapas de colores asignan valores entre 0 y 1 a un montón de colores. Sin embargo, existen ligeras diferencias, algunas de las cuales se muestran a continuación."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:38
 msgid "Before manually creating or manipulating colormaps, let us first see how we can obtain colormaps and their colors from existing colormap classes."
-msgstr ""
+msgstr "Antes de crear o manipular manualmente los mapas de colores, veamos primero cómo podemos obtener los mapas de colores y sus colores a partir de las clases de mapas de colores existentes."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:43
 msgid "Getting colormaps and accessing their values"
-msgstr ""
+msgstr "Obtener mapas de colores y acceder a sus valores"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:45
 msgid "First, getting a named colormap, most of which are listed in :doc:`/tutorials/colors/colormaps`, may be done using `.matplotlib.cm.get_cmap`, which returns a colormap object. The second argument gives the size of the list of colors used to define the colormap, and below we use a modest value of 8 so there are not a lot of values to look at."
-msgstr ""
+msgstr "En primer lugar, la obtención de un mapa de colores con nombre, la mayoría de los cuales están listados en :doc:`/tutorials/colors/colormaps`, puede hacerse utilizando `.matplotlib.cm.get_cmap`, que devuelve un objeto colormap. El segundo argumento da el tamaño de la lista de colores utilizada para definir el mapa de colores, y a continuación utilizamos un valor modesto de 8 para que no haya muchos valores que mirar."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:73
 msgid "The object ``viridis`` is a callable, that when passed a float between 0 and 1 returns an RGBA value from the colormap:"
-msgstr ""
+msgstr "El objeto ``viridis`` es un invocable, que cuando se le pasa un punto flotante entre 0 y 1 devuelve un valor RGBA del mapa de colores:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:89
 #: ../../tutorials/colors/colormap-manipulation.rst:125
 #: ../../tutorials/colors/colormap-manipulation.rst:175
 #: ../../tutorials/colors/colormap-manipulation.rst:219
 msgid "Out:"
-msgstr ""
+msgstr "Out:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:101
 msgid "ListedColormap"
-msgstr ""
+msgstr "ListedColormap"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:103
 msgid "`.ListedColormap`\\s store their color values in a ``.colors`` attribute. The list of colors that comprise the colormap can be directly accessed using the ``colors`` property, or it can be accessed indirectly by calling  ``viridis`` with an array of values matching the length of the colormap.  Note that the returned list is in the form of an RGBA Nx4 array, where N is the length of the colormap."
-msgstr ""
+msgstr "`.ListedColormap` almacenan sus valores de color en un atributo ``.colors``. Se puede acceder directamente a la lista de colores que componen el mapa de colores utilizando la propiedad ``colors``, o se puede acceder indirectamente invocando ``viridis`` con un arreglo de valores que coincida con la longitud del mapa de colores.  Toma en cuenta que la lista devuelta está en la forma de un arreglo RGBA Nx4, donde N es la longitud del mapa de colores."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:159
 msgid "The colormap is a lookup table, so \"oversampling\" the colormap returns nearest-neighbor interpolation (note the repeated colors in the list below)"
-msgstr ""
+msgstr "El mapa de colores es una tabla de búsqueda, por lo que el \"sobremuestreo\" del mapa de colores devuelve la interpolación del vecino más cercano (observe los colores repetidos en la lista de abajo)"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:198
 msgid "LinearSegmentedColormap"
-msgstr ""
+msgstr "LinearSegmentedColormap"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:199
 msgid "`.LinearSegmentedColormap`\\s do not have a ``.colors`` attribute. However, one may still call the colormap with an integer array, or with a float array between 0 and 1."
-msgstr ""
+msgstr "`.LinearSegmentedColormap` no tienen un atributo ``.colors``. Sin embargo, se puede llamar al mapa de colores con un arreglo de enteros, o con un arreglo de puntos flotantes entre 0 y 1."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:246
 msgid "Creating listed colormaps"
-msgstr ""
+msgstr "Creación de mapas de colores listados"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:248
 msgid "Creating a colormap is essentially the inverse operation of the above where we supply a list or array of color specifications to `.ListedColormap` to make a new colormap."
-msgstr ""
+msgstr "La creación de un mapa de colores es esencialmente la operación inversa a la anterior, en la que suministramos una lista o arreglo de especificaciones de color a `.ListedColormap` para hacer un nuevo mapa de colores."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:252
 msgid "Before continuing with the tutorial, let us define a helper function that takes one of more colormaps as input, creates some random data and applies the colormap(s) to an image plot of that dataset."
-msgstr ""
+msgstr "Antes de continuar con el tutorial, definamos una función de ayuda que tome uno o más mapas de colores como entrada, cree algunos datos aleatorios y aplique el/los mapa(s) de colores a un gráfico de imagen de ese conjunto de datos."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:286
 msgid "In the simplest case we might type in a list of color names to create a colormap from those."
-msgstr ""
+msgstr "En el caso más sencillo, podríamos introducir una lista de nombres de colores para crear un mapa de colores a partir de ellos."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:311
 msgid "In fact, that list may contain any valid :doc:`Matplotlib color specification </tutorials/colors/colors>`. Particularly useful for creating custom colormaps are Nx4 numpy arrays. Because with the variety of numpy operations that we can do on a such an array, carpentry of new colormaps from existing colormaps become quite straight forward."
-msgstr ""
+msgstr "De hecho, esa lista puede contener cualquier especificación de color válida de :doc:`Matplotlib </tutorials/colors/colors>`. Especialmente útiles para crear mapas de color personalizados son los arreglos numpy Nx4. Porque con la variedad de operaciones de numpy que podemos hacer en un arreglo de este tipo, la carpintería de nuevos colormaps a partir de colormaps existentes se vuelve bastante sencilla."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:318
 msgid "For example, suppose we want to make the first 25 entries of a 256-length \"viridis\" colormap pink for some reason:"
-msgstr ""
+msgstr "Por ejemplo, supongamos que queremos que las 25 primeras entradas de un mapa de colores \"viridis\" de 256 caracteres sean de color rosa por alguna razón:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:348
 msgid "We can reduce the dynamic range of a colormap; here we choose the middle half of the colormap.  Note, however, that because viridis is a listed colormap, we will end up with 128 discrete values instead of the 256 values that were in the original colormap. This method does not interpolate in color-space to add new colors."
-msgstr ""
+msgstr "Podemos reducir el rango dinámico de un mapa de colores; aquí elegimos la mitad del mapa de colores.  Sin embargo, ten en cuenta que como viridis es un mapa de color listado, acabaremos con 128 valores discretos en lugar de los 256 valores que había en el mapa de color original. Este método no interpola en el espacio de color para añadir nuevos colores."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:377
 msgid "and we can easily concatenate two colormaps:"
-msgstr ""
+msgstr "y podemos concatenar fácilmente dos mapas de color:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:406
 msgid "Of course we need not start from a named colormap, we just need to create the Nx4 array to pass to `.ListedColormap`. Here we create a colormap that goes from brown (RGB: 90, 40, 40) to white (RGB: 255, 255, 255)."
-msgstr ""
+msgstr "Por supuesto que no necesitamos comenzar desde un mapa de colores con nombre, sólo necesitamos crear un arreglo Nx4 para pasar a `. istedColormap`. Aquí creamos un mapa de colores que va desde el marrón (RGB: 90, 40, 40) hasta blanco (RGB: 255, 255, 255)."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:438
 msgid "Creating linear segmented colormaps"
-msgstr ""
+msgstr "Creación de mapas de colores segmentados lineales"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:440
 msgid "The `.LinearSegmentedColormap` class specifies colormaps using anchor points between which RGB(A) values are interpolated."
-msgstr ""
+msgstr "La clase `.LinearSegmentedColormap` especifica mapas de color utilizando puntos de anclaje entre los que se interpolan los valores RGB(A)."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:443
 msgid "The format to specify these colormaps allows discontinuities at the anchor points. Each anchor point is specified as a row in a matrix of the form ``[x[i] yleft[i] yright[i]]``, where ``x[i]`` is the anchor, and ``yleft[i]`` and ``yright[i]`` are the values of the color on either side of the anchor point."
-msgstr ""
+msgstr "El formato para especificar estos mapas de colores permite discontinuidades en los puntos de anclaje. Cada punto de anclaje se especifica como una fila en una matriz de la forma ``[x[i] yleft[i] yright[i]]``, donde ``x[i]`` es el ancla, y ``yleft[i]`` y ``yright[i]`` son los valores del color a cada lado del punto de anclaje."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:449
 msgid "If there are no discontinuities, then ``yleft[i] == yright[i]``:"
-msgstr ""
+msgstr "Si no hay discontinuidades, entonces ``yleft[i] == yright[i]``:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:497
 msgid "In order to make a discontinuity at an anchor point, the third column is different than the second.  The matrix for each of \"red\", \"green\", \"blue\", and optionally \"alpha\" is set up as::"
-msgstr ""
+msgstr "Para hacer una discontinuidad en un punto de anclaje, la tercera columna es diferente a la segunda.  La matriz para cada uno de los colores \"rojo\", \"verde\", \"azul\" y, opcionalmente, \"alfa\" se configura como::"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:506
 msgid "and for values passed to the colormap between ``x[i]`` and ``x[i+1]``, the interpolation is between ``yright[i]`` and ``yleft[i+1]``."
-msgstr ""
+msgstr "y para los valores pasados al mapa de colores entre ``x[i]`` y ``x[i+1]``, la interpolación es entre ``yright[i]`` y ``yleft[i+1]``."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:509
 msgid "In the example below there is a discontinuity in red at 0.5.  The interpolation between 0 and 0.5 goes from 0.3 to 1, and between 0.5 and 1 it goes from 0.9 to 1.  Note that ``red[0, 1]``, and ``red[2, 2]`` are both superfluous to the interpolation because ``red[0, 1]`` (i.e., ``yleft[0]``) is the value to the left of 0, and ``red[2, 2]`` (i.e., ``yright[2]``) is the value to the right of 1, which are outside the color mapping domain."
-msgstr ""
+msgstr "En el ejemplo siguiente hay una discontinuidad en rojo en 0,5.  La interpolación entre 0 y 0,5 va de 0,3 a 1, y entre 0,5 y 1 va de 0,9 a 1.  Observe que ``rojo[0, 1]``, y ``rojo[2, 2]`` son superfluos para la interpolación porque ``rojo[0, 1]`` (es decir, ``left[0]``) es el valor a la izquierda de 0, y ``rojo[2, 2]`` (es decir, ``yright[2]``) es el valor a la derecha de 1, que están fuera del dominio de mapeo de color."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:541
 msgid "Directly creating a segmented colormap from a list"
-msgstr ""
+msgstr "Crear directamente un mapa de colores segmentado desde una lista"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:543
 msgid "The approach described above is very versatile, but admittedly a bit cumbersome to implement. For some basic cases, the use of `.LinearSegmentedColormap.from_list` may be easier. This creates a segmented colormap with equal spacings from a supplied list of colors."
-msgstr ""
+msgstr "El enfoque descrito anteriormente es muy versátil, pero hay que reconocer que es un poco engorroso de implementar. Para algunos casos básicos, el uso de `.LinearSegmentedColormap.from_list` puede ser más fácil. Esto crea un mapa de colores segmentado con espacios iguales a partir de una lista de colores suministrada."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:565
 msgid "If desired, the nodes of the colormap can be given as numbers between 0 and 1. For example, one could have the reddish part take more space in the colormap."
-msgstr ""
+msgstr "Si se desea, los nodos del mapa de colores se pueden dar como números entre 0 y 1. Por ejemplo, se puede hacer que la parte rojiza ocupe más espacio en el mapa de colores."
 
 #: ../../tutorials/colors/colormap-manipulation.rst:593
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:595
 msgid "The use of the following functions, methods, classes and modules is shown in this example:"
-msgstr ""
+msgstr "En este ejemplo se muestra el uso de las siguientes funciones, métodos, clases y módulos:"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:598
 msgid "`matplotlib.axes.Axes.pcolormesh`"
-msgstr ""
+msgstr "`matplotlib.axes.Axes.pcolormesh`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:599
 msgid "`matplotlib.figure.Figure.colorbar`"
-msgstr ""
+msgstr "`matplotlib.figure.Figure.colorbar`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:600
 msgid "`matplotlib.colors`"
-msgstr ""
+msgstr "`matplotlib.colors`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:601
 msgid "`matplotlib.colors.LinearSegmentedColormap`"
-msgstr ""
+msgstr "`matplotlib.colors.LinearSegmentedColormap`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:602
 msgid "`matplotlib.colors.ListedColormap`"
-msgstr ""
+msgstr "`matplotlib.colors.ListedColormap`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:603
 msgid "`matplotlib.cm`"
-msgstr ""
+msgstr "`matplotlib.cm`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:604
 msgid "`matplotlib.cm.get_cmap`"
-msgstr ""
+msgstr "`matplotlib.cm.get_cmap`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:609
 msgid "**Total running time of the script:** ( 0 minutes  4.607 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** (0 minutos 4.607 segundos)"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:624
 msgid ":download:`Download Python source code: colormap-manipulation.py <colormap-manipulation.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: colormap-manipulation.py <colormap-manipulation.py>`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:630
 msgid ":download:`Download Jupyter notebook: colormap-manipulation.ipynb <colormap-manipulation.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: colormap-manipulation.ipynb <colormap-manipulation.ipynb>`"
 
 #: ../../tutorials/colors/colormap-manipulation.rst:637
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

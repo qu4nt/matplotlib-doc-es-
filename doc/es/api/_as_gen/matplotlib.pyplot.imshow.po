@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:17\n"
+"PO-Revision-Date: 2022-11-02 14:02\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,346 +20,346 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.pyplot.imshow.rst:2
 msgid "matplotlib.pyplot.imshow"
-msgstr ""
+msgstr "matplotlib.pyplot.imshow"
 
 #: matplotlib.pyplot.imshow:2 of
 msgid "Display data as an image, i.e., on a 2D regular raster."
-msgstr ""
+msgstr "Mostrar datos como una imagen, es decir, en un rastro regular 2D."
 
 #: matplotlib.pyplot.imshow:4 of
 msgid "The input may either be actual RGB(A) data, or 2D scalar data, which will be rendered as a pseudocolor image. For displaying a grayscale image set up the colormapping using the parameters ``cmap='gray', vmin=0, vmax=255``."
-msgstr ""
+msgstr "La entrada puede ser datos RGB(A) reales, o datos escalares 2D, que serán renderizados como una imagen pseudocolor. Para mostrar una imagen en escala de grises, configure el mapeo de colores usando los parámetros ``cmap='gray', vmin=0, vmax=255``."
 
 #: matplotlib.pyplot.imshow:9 of
 msgid "The number of pixels used to render an image is set by the Axes size and the *dpi* of the figure. This can lead to aliasing artifacts when the image is resampled because the displayed image size will usually not match the size of *X* (see :doc:`/gallery/images_contours_and_fields/image_antialiasing`). The resampling can be controlled via the *interpolation* parameter and/or :rc:`image.interpolation`."
-msgstr ""
+msgstr "El número de píxeles usados para renderizar una imagen es establecido por el tamaño de los ejes y el *dpi* de la figura. Esto puede llevar a artefactos de aliasing cuando la imagen se vuelve a muestrear porque el tamaño de la imagen mostrada normalmente no coincidirá con el tamaño de *X* (ver :doc:`/gallery/images_contours_and_fields/image_antialiasing`). El remuestreo puede ser controlado mediante el parámetro *interpolación* y/o :rc:`image.interpolation`."
 
 #: matplotlib.pyplot.imshow of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.pyplot.imshow:32 of
 msgid "**X**"
-msgstr ""
+msgstr "**X**"
 
 #: of
 msgid "array-like or PIL image"
-msgstr ""
+msgstr "imagen de matriz o PIL"
 
 #: matplotlib.pyplot.imshow:20 of
 msgid "The image data. Supported array shapes are:"
-msgstr ""
+msgstr "Los datos de la imagen. Formas de matriz soportadas son:"
 
 #: matplotlib.pyplot.imshow:22 of
 msgid "(M, N): an image with scalar data. The values are mapped to colors using normalization and a colormap. See parameters *norm*, *cmap*, *vmin*, *vmax*."
-msgstr ""
+msgstr "(M, N): una imagen con datos escalares. Los valores se asignan a los colores usando la normalización y un mapa de color. Ver parámetros *normal*, *cmap*, *vmin*, *vmax*."
 
 #: matplotlib.pyplot.imshow:25 of
 msgid "(M, N, 3): an image with RGB values (0-1 float or 0-255 int)."
-msgstr ""
+msgstr "(M, N, 3): una imagen con valores RGB (0-1 float o 0-255 int)."
 
 #: matplotlib.pyplot.imshow:26 of
 msgid "(M, N, 4): an image with RGBA values (0-1 float or 0-255 int), i.e. including transparency."
-msgstr ""
+msgstr "(M, N, 4): una imagen con valores RGBA (0-1 float o 0-255 int), es decir, con transparencia."
 
 #: matplotlib.pyplot.imshow:29 of
 msgid "The first two dimensions (M, N) define the rows and columns of the image."
-msgstr ""
+msgstr "Las dos primeras dimensiones (M, N) definen las filas y columnas de la imagen."
 
 #: matplotlib.pyplot.imshow:32 of
 msgid "Out-of-range RGB(A) values are clipped."
-msgstr ""
+msgstr "Los valores fuera de rango RGB(A) son recortados."
 
 #: matplotlib.pyplot.imshow:36 of
 msgid "**cmap** : str or `~matplotlib.colors.Colormap`, default: :rc:`image.cmap`"
-msgstr ""
+msgstr "**cmap** : str o `~matplotlib.colors.Colormap`, por defecto: :rc:`image.cmap`"
 
 #: of
 msgid "str or"
-msgstr ""
+msgstr "str o"
 
 #: matplotlib.pyplot.imshow:35 of
 msgid "The Colormap instance or registered colormap name used to map scalar data to colors. This parameter is ignored for RGB(A) data."
-msgstr ""
+msgstr "La instancia de Colormap o nombre de mapa de color registrado utilizado para mapear datos escalares a colores. Este parámetro es ignorado para datos RGB(A)."
 
 #: matplotlib.pyplot.imshow:42 of
 msgid "**norm** : `~matplotlib.colors.Normalize`, optional"
-msgstr ""
+msgstr "**norma** : `~matplotlib.colors.Normalize`, opcional"
 
 #: matplotlib.pyplot.imshow:41 of
 msgid "Normalize, optional"
-msgstr ""
+msgstr "Normalizar, opcional"
 
 #: matplotlib.pyplot.imshow:39 of
 msgid "The `.Normalize` instance used to scale scalar data to the [0, 1] range before mapping to colors using *cmap*. By default, a linear scaling mapping the lowest value to 0 and the highest to 1 is used. This parameter is ignored for RGB(A) data."
-msgstr ""
+msgstr "La instancia `.Normalize` usada para escalar datos escalares al rango [0, 1] antes de mapear a colores usando *cmap*. De forma predeterminada, se utiliza un mapeo de escalado lineal con el valor más bajo a 0 y el más alto a 1. Este parámetro se ignora para los datos RGB(A)."
 
 #: matplotlib.pyplot.imshow:57 of
 msgid "**aspect** : {'equal', 'auto'} or float, default: :rc:`image.aspect`"
-msgstr ""
+msgstr "**aspecto** : {'equal', 'auto'} o flotante, por defecto: :rc:`image.aspect`"
 
 #: of
 msgid "{'equal', 'auto'} or float, default:"
-msgstr ""
+msgstr "{'equal', 'auto'} o flotante, por defecto:"
 
 #: matplotlib.pyplot.imshow:45 of
 msgid "The aspect ratio of the Axes.  This parameter is particularly relevant for images since it determines whether data pixels are square."
-msgstr ""
+msgstr "La relación de aspecto de los ejes. Este parámetro es particularmente relevante para las imágenes ya que determina si los píxeles de datos son cuadrados."
 
 #: matplotlib.pyplot.imshow:49 of
 msgid "This parameter is a shortcut for explicitly calling `.Axes.set_aspect`. See there for further details."
-msgstr ""
+msgstr "Este parámetro es un acceso directo para llamar explícitamente `.Axes.set_aspect`. Vea allí para más detalles."
 
 #: matplotlib.pyplot.imshow:52 of
 msgid "'equal': Ensures an aspect ratio of 1. Pixels will be square (unless pixel sizes are explicitly made non-square in data coordinates using *extent*)."
-msgstr ""
+msgstr "'igual': Asegura una relación de aspecto de 1. Los píxeles serán cuadrados (a menos que los tamaños de píxeles sean explícitamente no cuadrados en las coordenadas de datos usando *extent*)."
 
 #: matplotlib.pyplot.imshow:55 of
 msgid "'auto': The Axes is kept fixed and the aspect is adjusted so that the data fit in the Axes. In general, this will result in non-square pixels."
-msgstr ""
+msgstr "'auto': Los ejes se mantienen fijos y el aspecto se ajusta para que los datos encajen en los ejes. En general, esto resultará en píxeles no cuadrados."
 
 #: matplotlib.pyplot.imshow:89 of
 msgid "**interpolation** : str, default: :rc:`image.interpolation`"
-msgstr ""
+msgstr "**interpolación** : str, por defecto: :rc:`image.interpolation`"
 
 #: of
 msgid "str, default:"
-msgstr ""
+msgstr "str, por defecto:"
 
 #: matplotlib.pyplot.imshow:60 of
 msgid "The interpolation method used."
-msgstr ""
+msgstr "El método de interpolación utilizado."
 
 #: matplotlib.pyplot.imshow:62 of
 msgid "Supported values are 'none', 'antialiased', 'nearest', 'bilinear', 'bicubic', 'spline16', 'spline36', 'hanning', 'hamming', 'hermite', 'kaiser', 'quadric', 'catrom', 'gaussian', 'bessel', 'mitchell', 'sinc', 'lanczos', 'blackman'."
-msgstr ""
+msgstr "Los valores soportados son 'Ninguno', 'antialiased', 'cercano', 'bilinear', 'bicubic', 'spline16', 'spline36', 'hanning', 'hamming', 'hermite', 'kaiser', 'quadric', 'catrom', 'gaussian', 'bessel', 'mitchell', '/etc', 'lanczos', 'blackman'."
 
 #: matplotlib.pyplot.imshow:67 of
 msgid "If *interpolation* is 'none', then no interpolation is performed on the Agg, ps, pdf and svg backends. Other backends will fall back to 'nearest'. Note that most SVG renderers perform interpolation at rendering and that the default interpolation method they implement may differ."
-msgstr ""
+msgstr "Si la *interpolación* es 'ninguno', entonces no se realiza ninguna interpolación en los backends Agg, ps, pdf y svg. Otros backends regresarán a 'cerca'. Tenga en cuenta que la mayoría de los renderizadores SVG realizan la interpolación al renderizar y que el método de interpolación por defecto que implementan puede diferir."
 
 #: matplotlib.pyplot.imshow:73 of
 msgid "If *interpolation* is the default 'antialiased', then 'nearest' interpolation is used if the image is upsampled by more than a factor of three (i.e. the number of display pixels is at least three times the size of the data array).  If the upsampling rate is smaller than 3, or the image is downsampled, then 'hanning' interpolation is used to act as an anti-aliasing filter, unless the image happens to be upsampled by exactly a factor of two or one."
-msgstr ""
+msgstr "Si la *interpolación* es la interpolación por defecto 'antialiased', entonces la interpolación 'más cercana' se utiliza si la imagen es mostrada por más de un factor de tres (i. , el número de píxeles de visualización es al menos tres veces el tamaño de la matriz de datos). Si la tasa de muestreo es menor que 3, o la imagen es muestreada, entonces la interpolación 'hanning' se utiliza para actuar como un filtro antialiasing, a menos que la imagen se muestre exactamente por un factor de dos o uno."
 
 #: matplotlib.pyplot.imshow:81 of
 msgid "See :doc:`/gallery/images_contours_and_fields/interpolation_methods` for an overview of the supported interpolation methods, and :doc:`/gallery/images_contours_and_fields/image_antialiasing` for a discussion of image antialiasing."
-msgstr ""
+msgstr "Vea :doc:`/gallery/images_contours_and_fields/interpolation_methods` para una visión general de los métodos de interpolación soportados, y :doc:`/gallery/images_contours_and_fields/image_antialiasing` para una discusión sobre el aliasing de la imagen."
 
 #: matplotlib.pyplot.imshow:87 of
 msgid "Some interpolation methods require an additional radius parameter, which can be set by *filterrad*. Additionally, the antigrain image resize filter is controlled by the parameter *filternorm*."
-msgstr ""
+msgstr "Algunos métodos de interpolación requieren un parámetro de radio adicional, que puede ser definido por *filterrad*. Adicionalmente, el filtro de redimensionamiento de imagen antigrano está controlado por el parámetro *filternorm*."
 
 #: matplotlib.pyplot.imshow:95 of
 msgid "**interpolation_stage**"
-msgstr ""
+msgstr "**interpolación_etapa**"
 
 #: of
 msgid "{'data', 'rgba'}, default: 'data'"
-msgstr ""
+msgstr "{'data', 'rgba'}por defecto: 'datos'"
 
 #: matplotlib.pyplot.imshow:92 of
 msgid "If 'data', interpolation is carried out on the data provided by the user.  If 'rgba', the interpolation is carried out after the colormapping has been applied (visual interpolation)."
-msgstr ""
+msgstr "Si 'data', la interpolación se realiza sobre los datos proporcionados por el usuario. Si 'rgba', la interpolación se lleva a cabo después de la aplicación del mapeo de colores (interpolación visual)."
 
 #: matplotlib.pyplot.imshow:100 of
 msgid "**alpha**"
-msgstr ""
+msgstr "**alfa**"
 
 #: of
 msgid "float or array-like, optional"
-msgstr ""
+msgstr "flotante o tipo matriz, opcional"
 
 #: matplotlib.pyplot.imshow:98 of
 msgid "The alpha blending value, between 0 (transparent) and 1 (opaque). If *alpha* is an array, the alpha blending values are applied pixel by pixel, and *alpha* must have the same shape as *X*."
-msgstr ""
+msgstr "El valor de mezcla alfa, entre 0 (transparente) y 1 (opaco). Si *alpha* es una matriz, los valores de mezcla alfa son aplicados píxel por píxel, y *alpha* debe tener la misma forma que *X*."
 
 #: matplotlib.pyplot.imshow:107 of
 msgid "**vmin, vmax**"
-msgstr ""
+msgstr "**vmin, vmax**"
 
 #: of
 msgid "float, optional"
-msgstr ""
+msgstr "float, opcional"
 
 #: matplotlib.pyplot.imshow:103 of
 msgid "When using scalar data and no explicit *norm*, *vmin* and *vmax* define the data range that the colormap covers. By default, the colormap covers the complete value range of the supplied data. It is an error to use *vmin*/*vmax* when *norm* is given. When using RGB(A) data, parameters *vmin*/*vmax* are ignored."
-msgstr ""
+msgstr "Cuando se usan datos escalares y no hay *norma*, *vmin* y *vmax* definen el rango de datos que cubre el mapa de colores. Por defecto, el mapa de colores cubre el rango de valores completo de los datos suministrados. Es un error usar *vmin*/*vmax* cuando se da *norma*. Cuando se usan datos RGB(A), los parámetros *vmin*/*vmax* son ignorados."
 
 #: matplotlib.pyplot.imshow:118 of
 msgid "**origin** : {'upper', 'lower'}, default: :rc:`image.origin`"
-msgstr ""
+msgstr "**origin** : {'upper', 'lower'}, por defecto: :rc:`image.origin`"
 
 #: of
 msgid "{'upper', 'lower'}, default:"
-msgstr ""
+msgstr "{'upper', 'lower'}por defecto:"
 
 #: matplotlib.pyplot.imshow:110 of
 msgid "Place the [0, 0] index of the array in the upper left or lower left corner of the Axes. The convention (the default) 'upper' is typically used for matrices and images."
-msgstr ""
+msgstr "Coloque el índice [0, 0] de la matriz en la esquina superior izquierda o inferior de los ejes. La convención (el valor por defecto) se usa típicamente para matrices e imágenes."
 
 #: matplotlib.pyplot.imshow:114 of
 msgid "Note that the vertical axis points upward for 'lower' but downward for 'upper'."
-msgstr ""
+msgstr "Tenga en cuenta que el eje vertical apunta hacia arriba para 'inferior' pero hacia abajo para 'arriba'."
 
 #: matplotlib.pyplot.imshow:117 matplotlib.pyplot.imshow:137 of
 msgid "See the :doc:`/tutorials/intermediate/imshow_extent` tutorial for examples and a more detailed description."
-msgstr ""
+msgstr "Vea el tutorial :doc:`/tutorials/intermediate/imshow_extent` para ejemplos y una descripción más detallada."
 
 #: matplotlib.pyplot.imshow:138 of
 msgid "**extent**"
-msgstr ""
+msgstr "**extensión**"
 
 #: of
 msgid "floats (left, right, bottom, top), optional"
-msgstr ""
+msgstr "flotantes (izquierda, derecha, abajo, arriba), opcional"
 
 #: matplotlib.pyplot.imshow:121 of
 msgid "The bounding box in data coordinates that the image will fill. The image is stretched individually along x and y to fill the box."
-msgstr ""
+msgstr "La caja delimitadora en las coordenadas de datos que la imagen se llenará. La imagen se estira individualmente a lo largo de x y y para llenar la caja."
 
 #: matplotlib.pyplot.imshow:124 of
 msgid "The default extent is determined by the following conditions. Pixels have unit size in data coordinates. Their centers are on integer coordinates, and their center coordinates range from 0 to columns-1 horizontally and from 0 to rows-1 vertically."
-msgstr ""
+msgstr "El alcance por defecto está determinado por las siguientes condiciones. Los píxeles tienen tamaño de unidad en las coordenadas de datos. Sus centros están en coordenadas enteras, y sus coordenadas centradas varían de 0 a columnas 1 horizontalmente y de 0 a filas-1 verticalmente."
 
 #: matplotlib.pyplot.imshow:129 of
 msgid "Note that the direction of the vertical axis and thus the default values for top and bottom depend on *origin*:"
-msgstr ""
+msgstr "Tenga en cuenta que la dirección del eje vertical y los valores por defecto para la parte superior e inferior dependen de *origin*:"
 
 #: matplotlib.pyplot.imshow:132 of
 msgid "For ``origin == 'upper'`` the default is ``(-0.5, numcols-0.5, numrows-0.5, -0.5)``."
-msgstr ""
+msgstr "Para ``origin == 'upper'`` el valor por defecto es ``(-0.5, numcols-0.5, numrows-0.5, -0.5)``."
 
 #: matplotlib.pyplot.imshow:134 of
 msgid "For ``origin == 'lower'`` the default is ``(-0.5, numcols-0.5, -0.5, numrows-0.5)``."
-msgstr ""
+msgstr "Para ``origin == 'lower'` el valor por defecto es ``(-0.5, numcols-0.5, -0.5, numrows-0.5)``."
 
 #: matplotlib.pyplot.imshow:147 of
 msgid "**filternorm**"
-msgstr ""
+msgstr "**filtro**"
 
 #: of
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, por defecto: True"
 
 #: matplotlib.pyplot.imshow:141 of
 msgid "A parameter for the antigrain image resize filter (see the antigrain documentation).  If *filternorm* is set, the filter normalizes integer values and corrects the rounding errors. It doesn't do anything with the source floating point values, it corrects only integers according to the rule of 1.0 which means that any sum of pixel weights must be equal to 1.0.  So, the filter function must produce a graph of the proper shape."
-msgstr ""
+msgstr "Un parámetro para el filtro de redimensionamiento de imagen antigrano (ver la documentación de antigranos). Si se establece *filternorm*, el filtro normaliza los valores enteros y corrige los errores de redondeo. No hace nada con los valores de coma flotante de la fuente, corrige sólo enteros de acuerdo a la regla de 1. lo que significa que cualquier suma de peso de píxeles debe ser igual a 1.0. Por lo tanto, la función de filtro debe producir un gráfico de la forma adecuada."
 
 #: matplotlib.pyplot.imshow:151 of
 msgid "**filterrad**"
-msgstr ""
+msgstr "**filterrad**"
 
 #: of
 msgid "float > 0, default: 4.0"
-msgstr ""
+msgstr "flotante > 0, por defecto: 4.0"
 
 #: matplotlib.pyplot.imshow:150 of
 msgid "The filter radius for filters that have a radius parameter, i.e. when interpolation is one of: 'sinc', 'lanczos' or 'blackman'."
-msgstr ""
+msgstr "El radio de filtro para los filtros que tienen un parámetro de radio, es decir, cuando la interpolación es uno de: 'ías', 'lanczos' o 'blackman'."
 
 #: matplotlib.pyplot.imshow:155 of
 msgid "**resample** : bool, default: :rc:`image.resample`"
-msgstr ""
+msgstr "**resample** : bool, default: :rc:`image.resample`"
 
 #: of
 msgid "bool, default:"
-msgstr ""
+msgstr "bool, default:"
 
 #: matplotlib.pyplot.imshow:154 of
 msgid "When *True*, use a full resampling method.  When *False*, only resample when the output image is larger than the input image."
-msgstr ""
+msgstr "Cuando *True*, utilice un método de remuestreo completo. Cuando *False*, sólo vuelva a mostrar cuando la imagen de salida es más grande que la de entrada."
 
 #: matplotlib.pyplot.imshow:158 of
 msgid "**url**"
-msgstr ""
+msgstr "**url**"
 
 #: of
 msgid "str, optional"
-msgstr ""
+msgstr "str, opcional"
 
 #: matplotlib.pyplot.imshow:158 of
 msgid "Set the url of the created `.AxesImage`. See `.Artist.set_url`."
-msgstr ""
+msgstr "Establece la url del `.AxesImage`. Ver `.Artist.set_url`."
 
 #: matplotlib.pyplot.imshow of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.pyplot.imshow:165 of
 msgid "`~matplotlib.image.AxesImage`"
-msgstr ""
+msgstr "`~matplotlib.image.AxesImage`"
 
 #: matplotlib.pyplot.imshow of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.pyplot.imshow:171 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.pyplot.imshow:170 of
 msgid "If given, all parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception)."
-msgstr ""
+msgstr "Si se dan, todos los parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción)."
 
 #: matplotlib.pyplot.imshow:178 of
 msgid "**\\*\\*kwargs** : `~matplotlib.artist.Artist` properties"
-msgstr ""
+msgstr "**\\*\\*kwargs** : `~matplotlib.artist.Artist` properties"
 
 #: matplotlib.pyplot.imshow:177 of
 msgid "Artist properties"
-msgstr ""
+msgstr "Propiedades del artista"
 
 #: matplotlib.pyplot.imshow:174 of
 msgid "These parameters are passed on to the constructor of the `.AxesImage` artist."
-msgstr ""
+msgstr "Estos parámetros son pasados al constructor del artista `.AxesImage`."
 
 #: matplotlib.pyplot.imshow:183 of
 msgid ":obj:`matshow`"
-msgstr ""
+msgstr ":obj:`matshow`"
 
 #: matplotlib.pyplot.imshow:184 of
 msgid "Plot a matrix or an array as an image."
-msgstr ""
+msgstr "Trazar una matriz o una matriz como una imagen."
 
 #: matplotlib.pyplot.imshow:188 of
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: matplotlib.pyplot.imshow:189 of
 msgid "Unless *extent* is used, pixel centers will be located at integer coordinates. In other words: the origin will coincide with the center of pixel (0, 0)."
-msgstr ""
+msgstr "A menos que se utilice *extent*, los centros de píxeles se ubicarán en coordenadas enteras. En otras palabras: el origen coincidirá con el centro de píxeles (0, 0)."
 
 #: matplotlib.pyplot.imshow:193 of
 msgid "There are two common representations for RGB images with an alpha channel:"
-msgstr ""
+msgstr "Hay dos representaciones comunes para imágenes RVA con un canal alfa:"
 
 #: matplotlib.pyplot.imshow:196 of
 msgid "Straight (unassociated) alpha: R, G, and B channels represent the color of the pixel, disregarding its opacity."
-msgstr ""
+msgstr "Los canales R y G representan el color del píxel, sin tener en cuenta su opacidad."
 
 #: matplotlib.pyplot.imshow:198 of
 msgid "Premultiplied (associated) alpha: R, G, and B channels represent the color of the pixel, adjusted for its opacity by multiplication."
-msgstr ""
+msgstr "Los canales premultiplicados (asociados) del alfa: R, G y B representan el color del píxel, ajustado por su opacidad por multiplicación."
 
 #: matplotlib.pyplot.imshow:201 of
 msgid "`~matplotlib.pyplot.imshow` expects RGB images adopting the straight (unassociated) alpha representation."
-msgstr ""
+msgstr "`~matplotlib.pyplot.imshow` espera imágenes RGB adoptando la representación alfa recta (no asociada)."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.pyplot.imshow.examples:2
 msgid "Examples using ``matplotlib.pyplot.imshow``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.pyplot.imshow``"
 
 #: ../../api/_as_gen/matplotlib.pyplot.imshow.examples:10
 msgid "Hyperlinks"
-msgstr ""
+msgstr "Hipervínculos"
 
 #: ../../api/_as_gen/matplotlib.pyplot.imshow.examples:10
 #: ../../api/_as_gen/matplotlib.pyplot.imshow.examples:18
 msgid ":ref:`sphx_glr_gallery_misc_hyperlinks_sgskip.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_misc_hyperlinks_sgskip.py`"
 

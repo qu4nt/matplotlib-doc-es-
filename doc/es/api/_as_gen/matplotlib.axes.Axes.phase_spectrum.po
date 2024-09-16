@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:12\n"
+"PO-Revision-Date: 2022-11-02 13:55\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,183 +20,183 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.axes.Axes.phase_spectrum.rst:2
 msgid "matplotlib.axes.Axes.phase\\_spectrum"
-msgstr ""
+msgstr "matplotlib.axes.Ejes.phase\\_spectrum"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:2 of
 msgid "Plot the phase spectrum."
-msgstr ""
+msgstr "Trazar el espectro de la fase."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:4 of
 msgid "Compute the phase spectrum (unwrapped angle spectrum) of *x*. Data is padded to a length of *pad_to* and the windowing function *window* is applied to the signal."
-msgstr ""
+msgstr "Calcula el espectro de fases (espectro de ángulos sin envoltura) de *x*. Los datos se agregan a una longitud de *pad_to* y la función de ventana *window* se aplica a la señal."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:11 of
 msgid "**x**"
-msgstr ""
+msgstr "**x**"
 
 #: of
 msgid "1-D array or sequence"
-msgstr ""
+msgstr "Arreglo o secuencia 1-D"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:11 of
 msgid "Array or sequence containing the data"
-msgstr ""
+msgstr "Arreglo o secuencia que contiene los datos"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:15 of
 msgid "**Fs**"
-msgstr ""
+msgstr "**Fs**"
 
 #: of
 msgid "float, default: 2"
-msgstr ""
+msgstr "float, default: 2"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:14 of
 msgid "The sampling frequency (samples per time unit).  It is used to calculate the Fourier frequencies, *freqs*, in cycles per time unit."
-msgstr ""
+msgstr "La frecuencia de muestreo (muestras por unidad de tiempo).  Se utiliza para calcular las frecuencias de Fourier, *freqs*, en ciclos por unidad de tiempo."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:22 of
 msgid "**window** : callable or ndarray, default: `.window_hanning`"
-msgstr ""
+msgstr "**window** : callable o ndarray, default: `.window_hanning`"
 
 #: of
 msgid "callable or ndarray, default:"
-msgstr ""
+msgstr "callable o ndarray, default:"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:18 of
 msgid "A function or a vector of length *NFFT*.  To create window vectors see `.window_hanning`, `.window_none`, `numpy.blackman`, `numpy.hamming`, `numpy.bartlett`, `scipy.signal`, `scipy.signal.get_window`, etc.  If a function is passed as the argument, it must take a data segment as an argument and return the windowed version of the segment."
-msgstr ""
+msgstr "Una función o un vector de longitud *NFFT*.  Para crear vectores ventana, ver `.window_hanning`, `.window_none`, `numpy.blackman`, `numpy.hamming`, `numpy.bartlett`, `scipy.signal`, `scipy.signal.get_window`, etc.  Si se pasa una función como argumento, debe tomar un segmento de datos como argumento y devolver la versión con ventana del segmento."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:27 of
 msgid "**sides**"
-msgstr ""
+msgstr "**sides**"
 
 #: of
 msgid "{'default', 'onesided', 'twosided'}, optional"
-msgstr ""
+msgstr "{'default', 'onesided', 'twosided'}, opcional"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:25 of
 msgid "Which sides of the spectrum to return. 'default' is one-sided for real data and two-sided for complex data. 'onesided' forces the return of a one-sided spectrum, while 'twosided' forces two-sided."
-msgstr ""
+msgstr "Qué lados del espectro devolver. 'default' es de un solo lado para datos reales y de dos lados para datos complejos. 'onesided' fuerza la devolución de un espectro de un solo lado, mientras que 'twosided' fuerza dos lados."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:35 of
 msgid "**pad_to**"
-msgstr ""
+msgstr "**pad_to**"
 
 #: of
 msgid "int, optional"
-msgstr ""
+msgstr "int, opcional"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:30 of
 msgid "The number of points to which the data segment is padded when performing the FFT.  While not increasing the actual resolution of the spectrum (the minimum distance between resolvable peaks), this can give more points in the plot, allowing for more detail. This corresponds to the *n* parameter in the call to fft().  The default is None, which sets *pad_to* equal to the length of the input signal (i.e. no padding)."
-msgstr ""
+msgstr "El número de puntos con los que se rellena el segmento de datos al realizar la FFT.  Aunque no aumenta la resolución real del espectro (la distancia mínima entre los picos resolubles), esto puede dar más puntos en el gráfico, permitiendo más detalles. Esto corresponde al parámetro *n* en la llamada a fft().  El valor por defecto es None, que establece *pad_to* igual a la longitud de la señal de entrada (es decir, sin relleno)."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:40 of
 msgid "**Fc**"
-msgstr ""
+msgstr "**Fc**"
 
 #: of
 msgid "int, default: 0"
-msgstr ""
+msgstr "int, por defecto: 0"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:38 of
 msgid "The center frequency of *x*, which offsets the x extents of the plot to reflect the frequency range used when a signal is acquired and then filtered and downsampled to baseband."
-msgstr ""
+msgstr "La frecuencia central de *x*, que compensa la extensión x de la parcela para reflejar el rango de frecuencia utilizado cuando una señal es adquirida y luego filtrada y mostrada a la baseband."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:45 of
 msgid "**spectrum**"
-msgstr ""
+msgstr "**spectrum**"
 
 #: of
 msgid "1-D array"
-msgstr ""
+msgstr "Arreglo 1-D"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:45 of
 msgid "The values for the phase spectrum in radians (real valued)."
-msgstr ""
+msgstr "Los valores del espectro de fases en radianes (valor real)."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:48 of
 msgid "**freqs**"
-msgstr ""
+msgstr "**freqs**"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:48 of
 msgid "The frequencies corresponding to the elements in *spectrum*."
-msgstr ""
+msgstr "Las frecuencias correspondientes a los elementos en *espectro*."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:53 of
 msgid "**line** : `~matplotlib.lines.Line2D`"
-msgstr ""
+msgstr "**line** : `~matplotlib.lines.Line2D`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:52 of
 msgid "Line2D"
-msgstr ""
+msgstr "Line2D"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:51 of
 msgid "The line created by this function."
-msgstr ""
+msgstr "La línea creada por esta función."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum of
 msgid "Other Parameters"
-msgstr ""
+msgstr "Otros Parámetros"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:61 of
 msgid "**data**"
-msgstr ""
+msgstr "**data**"
 
 #: of
 msgid "indexable object, optional"
-msgstr ""
+msgstr "indexable object, optional"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:58 of
 msgid "If given, the following parameters also accept a string ``s``, which is interpreted as ``data[s]`` (unless this raises an exception):"
-msgstr ""
+msgstr "Si se dan, los siguientes parámetros también aceptan una cadena ``s``, que se interpreta como ``data[s]`` (a menos que se produzca una excepción):"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:61 of
 msgid "*x*"
-msgstr ""
+msgstr "*x*"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:116 of
 msgid "**\\*\\*kwargs**"
-msgstr ""
+msgstr "**\\*\\*kwargs**"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:64 of
 msgid "Keyword arguments control the `.Line2D` properties:"
-msgstr ""
+msgstr "Los argumentos de palabra clave controlan las propiedades `.Line2D`:"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:70 of
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:70 of
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:72 of
 msgid ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
-msgstr ""
+msgstr ":meth:`agg_filter <matplotlib.artist.Artist.set_agg_filter>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:72 of
 msgid "a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array"
-msgstr ""
+msgstr "una función de filtro, que toma un arreglo de puntos flotantes (m, n, 3) y un valor de dpi, y devuelve un arreglo (m, n, 3)"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:73 of
 msgid ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
-msgstr ""
+msgstr ":meth:`alpha <matplotlib.artist.Artist.set_alpha>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:73 of
 msgid "scalar or None"
-msgstr ""
+msgstr "escalar o None"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:74 of
 msgid ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
-msgstr ""
+msgstr ":meth:`animated <matplotlib.artist.Artist.set_animated>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:74
 #: matplotlib.axes._axes.Axes.phase_spectrum:75
@@ -205,133 +205,133 @@ msgstr ""
 #: matplotlib.axes._axes.Axes.phase_spectrum:102
 #: matplotlib.axes._axes.Axes.phase_spectrum:109 of
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:75 of
 msgid ":meth:`antialiased <matplotlib.lines.Line2D.set_antialiased>` or aa"
-msgstr ""
+msgstr ":meth:`antialias <matplotlib.lines.Line2D.set_antialiased>` o aa"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:76 of
 msgid ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
-msgstr ""
+msgstr ":meth:`clip_box <matplotlib.artist.Artist.set_clip_box>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:76 of
 msgid "`.Bbox`"
-msgstr ""
+msgstr "`.Bbox`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:77 of
 msgid ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
-msgstr ""
+msgstr ":meth:`clip_on <matplotlib.artist.Artist.set_clip_on>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:78 of
 msgid ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
-msgstr ""
+msgstr ":meth:`clip_path <matplotlib.artist.Artist.set_clip_path>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:78 of
 msgid "Patch or (Path, Transform) or None"
-msgstr ""
+msgstr "Patch o (Path, Transform) o None"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:79 of
 msgid ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
-msgstr ""
+msgstr ":meth:`color <matplotlib.lines.Line2D.set_color>` or c"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:79
 #: matplotlib.axes._axes.Axes.phase_spectrum:93
 #: matplotlib.axes._axes.Axes.phase_spectrum:95
 #: matplotlib.axes._axes.Axes.phase_spectrum:96 of
 msgid "color"
-msgstr ""
+msgstr "color"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:80 of
 msgid ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
-msgstr ""
+msgstr ":meth:`dash_capstyle <matplotlib.lines.Line2D.set_dash_capstyle>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:80
 #: matplotlib.axes._axes.Axes.phase_spectrum:105 of
 msgid "`.CapStyle` or {'butt', 'projecting', 'round'}"
-msgstr ""
+msgstr "`.CapStyle` o {'butt', 'projecting', 'round'}"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:81 of
 msgid ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
-msgstr ""
+msgstr ":meth:`dash_joinstyle <matplotlib.lines.Line2D.set_dash_joinstyle>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:81
 #: matplotlib.axes._axes.Axes.phase_spectrum:106 of
 msgid "`.JoinStyle` or {'miter', 'round', 'bevel'}"
-msgstr ""
+msgstr "`.JoinStyle` o {'miter', 'round', 'bevel'}"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:82 of
 msgid ":meth:`dashes <matplotlib.lines.Line2D.set_dashes>`"
-msgstr ""
+msgstr ":meth:`guiones <matplotlib.lines.Line2D.set_dashes>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:82 of
 msgid "sequence of floats (on/off ink in points) or (None, None)"
-msgstr ""
+msgstr "secuencia de flotantes (tinta encendida/apagada en puntos) o (Ninguna, Ninguna)"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:83 of
 msgid ":meth:`data <matplotlib.lines.Line2D.set_data>`"
-msgstr ""
+msgstr ":meth:`data <matplotlib.lines.Line2D.set_data>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:83 of
 msgid "(2, N) array or two 1D arrays"
-msgstr ""
+msgstr "(2, N) array o dos matrices 1D"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:84 of
 msgid ":meth:`drawstyle <matplotlib.lines.Line2D.set_drawstyle>` or ds"
-msgstr ""
+msgstr ":meth:`estilo de dibujo <matplotlib.lines.Line2D.set_drawstyle>` o ds"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:84 of
 msgid "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
-msgstr ""
+msgstr "{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:85 of
 msgid ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
-msgstr ""
+msgstr ":meth:`figure <matplotlib.artist.Artist.set_figure>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:85 of
 msgid "`.Figure`"
-msgstr ""
+msgstr "`.Figure`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:86 of
 msgid ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
-msgstr ""
+msgstr ":meth:`fillstyle <matplotlib.lines.Line2D.set_fillstyle>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:86 of
 msgid "{'full', 'left', 'right', 'bottom', 'top', 'none'}"
-msgstr ""
+msgstr "{'full', 'left', 'right', 'bottom', 'top', 'ninguno '}"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:87 of
 msgid ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
-msgstr ""
+msgstr ":meth:`gid <matplotlib.artist.Artist.set_gid>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:87
 #: matplotlib.axes._axes.Axes.phase_spectrum:108 of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:88 of
 msgid ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
-msgstr ""
+msgstr ":meth:`in_layout <matplotlib.artist.Artist.set_in_layout>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:89 of
 msgid ":meth:`label <matplotlib.artist.Artist.set_label>`"
-msgstr ""
+msgstr ":meth:`label <matplotlib.artist.Artist.set_label>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:89 of
 msgid "object"
-msgstr ""
+msgstr "object"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:90 of
 msgid ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` or ls"
-msgstr ""
+msgstr ":meth:`linestyle <matplotlib.lines.Line2D.set_linestyle>` o ls"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:90 of
 msgid "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
-msgstr ""
+msgstr "{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:91 of
 msgid ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
-msgstr ""
+msgstr ":meth:`linewidth <matplotlib.lines.Line2D.set_linewidth>` or lw"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:91
 #: matplotlib.axes._axes.Axes.phase_spectrum:94
@@ -339,146 +339,146 @@ msgstr ""
 #: matplotlib.axes._axes.Axes.phase_spectrum:101
 #: matplotlib.axes._axes.Axes.phase_spectrum:112 of
 msgid "float"
-msgstr ""
+msgstr "de punto flotante (float)"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:92 of
 msgid ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
-msgstr ""
+msgstr ":meth:`marker <matplotlib.lines.Line2D.set_marker>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:92 of
 msgid "marker style string, `~.path.Path` or `~.markers.MarkerStyle`"
-msgstr ""
+msgstr "marker style string, `~.path.Path` o `~.markers.MarkerStyle`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:93 of
 msgid ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` or mec"
-msgstr ""
+msgstr ":meth:`markeredgecolor <matplotlib.lines.Line2D.set_markeredgecolor>` o mec"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:94 of
 msgid ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` or mew"
-msgstr ""
+msgstr ":meth:`markeredgewidth <matplotlib.lines.Line2D.set_markeredgewidth>` o mío"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:95 of
 msgid ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` or mfc"
-msgstr ""
+msgstr ":meth:`markerfacecolor <matplotlib.lines.Line2D.set_markerfacecolor>` o mfc"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:96 of
 msgid ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` or mfcalt"
-msgstr ""
+msgstr ":meth:`markerfacecoloralt <matplotlib.lines.Line2D.set_markerfacecoloralt>` o mfcalt"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:97 of
 msgid ":meth:`markersize <matplotlib.lines.Line2D.set_markersize>` or ms"
-msgstr ""
+msgstr ":meth:`tamaño de marcador <matplotlib.lines.Line2D.set_markersize>` o ms"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:98 of
 msgid ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
-msgstr ""
+msgstr ":meth:`markevery <matplotlib.lines.Line2D.set_markevery>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:98 of
 msgid "None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]"
-msgstr ""
+msgstr "Ninguno o int o (int, int) o rebanada o lista[int] o decimal o (float, float) o lista[bool]"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:99 of
 msgid ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
-msgstr ""
+msgstr ":meth:`path_effects <matplotlib.artist.Artist.set_path_effects>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:99 of
 msgid "`.AbstractPathEffect`"
-msgstr ""
+msgstr "`.AbstractPathEffect`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:100 of
 msgid ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
-msgstr ""
+msgstr ":meth:`picker <matplotlib.lines.Line2D.set_picker>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:100 of
 msgid "float or callable[[Artist, Event], tuple[bool, dict]]"
-msgstr ""
+msgstr "decimal o llamable[[Artista, Evento], tuple[bool, dict]]"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:101 of
 msgid ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
-msgstr ""
+msgstr ":meth:`pickradius <matplotlib.lines.Line2D.set_pickradius>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:102 of
 msgid ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
-msgstr ""
+msgstr ":meth:`rasterized <matplotlib.artist.Artist.set_rasterized>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:103 of
 msgid ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
-msgstr ""
+msgstr ":meth:`sketch_params <matplotlib.artist.Artist.set_sketch_params>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:103 of
 msgid "(scale: float, length: float, randomness: float)"
-msgstr ""
+msgstr "(scale: float, length: float, randomness: float)"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:104 of
 msgid ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
-msgstr ""
+msgstr ":meth:`snap <matplotlib.artist.Artist.set_snap>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:104 of
 msgid "bool or None"
-msgstr ""
+msgstr "bool or None"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:105 of
 msgid ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
-msgstr ""
+msgstr ":meth:`solid_capstyle <matplotlib.lines.Line2D.set_solid_capstyle>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:106 of
 msgid ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
-msgstr ""
+msgstr ":meth:`solid_joinstyle <matplotlib.lines.Line2D.set_solid_joinstyle>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:107 of
 msgid ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
-msgstr ""
+msgstr ":meth:`transform <matplotlib.artist.Artist.set_transform>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:107 of
 msgid "unknown"
-msgstr ""
+msgstr "desconocido"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:108 of
 msgid ":meth:`url <matplotlib.artist.Artist.set_url>`"
-msgstr ""
+msgstr ":meth:`url <matplotlib.artist.Artist.set_url>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:109 of
 msgid ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
-msgstr ""
+msgstr ":meth:`visible <matplotlib.artist.Artist.set_visible>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:110 of
 msgid ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
-msgstr ""
+msgstr ":meth:`xdata <matplotlib.lines.Line2D.set_xdata>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:110
 #: matplotlib.axes._axes.Axes.phase_spectrum:111 of
 msgid "1D array"
-msgstr ""
+msgstr "Matriz 1D"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:111 of
 msgid ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
-msgstr ""
+msgstr ":meth:`ydata <matplotlib.lines.Line2D.set_ydata>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:112 of
 msgid ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
-msgstr ""
+msgstr ":meth:`zorder <matplotlib.artist.Artist.set_zorder>`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:121 of
 msgid ":obj:`magnitude_spectrum`"
-msgstr ""
+msgstr ":obj:`magnitude_spectrum`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:122 of
 msgid "Plots the magnitudes of the corresponding frequencies."
-msgstr ""
+msgstr "Traza las magnitudes de las frecuencias correspondientes."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:123 of
 msgid ":obj:`angle_spectrum`"
-msgstr ""
+msgstr ":obj:`angle_spectrum`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:124 of
 msgid "Plots the wrapped version of this function."
-msgstr ""
+msgstr "Traza la versión envuelta de esta función."
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:125 of
 msgid ":obj:`specgram`"
-msgstr ""
+msgstr ":obj:`specgram`"
 
 #: matplotlib.axes._axes.Axes.phase_spectrum:126 of
 msgid "Can plot the phase spectrum of segments within the signal in a colormap."
-msgstr ""
+msgstr "Puede trazar el espectro de fases de segmentos dentro de la señal en un mapa de color."
 

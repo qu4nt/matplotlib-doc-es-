@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:16\n"
+"PO-Revision-Date: 2022-11-02 14:00\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,25 +20,25 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.colors.make_norm_from_scale.rst:2
 msgid "matplotlib.colors.make\\_norm\\_from\\_scale"
-msgstr ""
+msgstr "matplotlib.colors.make\\_norma\\_from\\_escala"
 
 #: matplotlib.colors.make_norm_from_scale:2 of
 msgid "Decorator for building a `.Normalize` subclass from a `~.scale.ScaleBase` subclass."
-msgstr ""
+msgstr "Decorador para construir una subclase `.Normalize` desde una subclase `~.scale.ScaleBase`."
 
 #: matplotlib.colors.make_norm_from_scale:5 of
 msgid "After ::"
-msgstr ""
+msgstr "Después de ::"
 
 #: matplotlib.colors.make_norm_from_scale:11 of
 msgid "*norm_cls* is filled with methods so that normalization computations are forwarded to *scale_cls* (i.e., *scale_cls* is the scale that would be used for the colorbar of a mappable normalized with *norm_cls*)."
-msgstr ""
+msgstr "*norm_cls* está lleno de métodos para que los cálculos de normalización se reenvíen a *scale_cls* (i.e. *scale_cls* es la escala que se usaría para la barra de colores de un mapeable normalizado con *norm_cls*)."
 
 #: matplotlib.colors.make_norm_from_scale:15 of
 msgid "If *init* is not passed, then the constructor signature of *norm_cls* will be ``norm_cls(vmin=None, vmax=None, clip=False)``; these three parameters will be forwarded to the base class (``Normalize.__init__``), and a *scale_cls* object will be initialized with no arguments (other than a dummy axis)."
-msgstr ""
+msgstr "Si *init* no se pasa, entonces la firma del constructor de *norm_cls* será ``norm_cls(vmin=None, vmax=None, clip=False)``; estos tres parámetros serán enviados a la clase base (``Normalize.__init__``), y un objeto *scale_cls* será inicializado sin argumentos (aparte de un eje ficticio)."
 
 #: matplotlib.colors.make_norm_from_scale:21 of
 msgid "If the *scale_cls* constructor takes additional parameters, then *init* should be passed to `make_norm_from_scale`.  It is a callable which is *only* used for its signature.  First, this signature will become the signature of *norm_cls*.  Second, the *norm_cls* constructor will bind the parameters passed to it using this signature, extract the bound *vmin*, *vmax*, and *clip* values, pass those to ``Normalize.__init__``, and forward the remaining bound values (including any defaults defined by the signature) to the *scale_cls* constructor."
-msgstr ""
+msgstr "Si el constructor *scale_cls* toma parámetros adicionales, entonces *init* debería pasar a `make_norm_from_scale`. Es una llamada que es *únicamente* usada para su firma. En primer lugar, esta firma se convertirá en la firma de *norm_cls*. Segundo, el constructor *norm_cls* enlazará los parámetros pasados a él usando esta firma, extraer los valores de *vmin*, *vmax* y *clip* enlazados, pasarlos a ``normalizar.__init__``, y reenviar los valores enlazados restantes (incluyendo cualquier valor predeterminado definido por la firma) al constructor *scale_cls*."
 

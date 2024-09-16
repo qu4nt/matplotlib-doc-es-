@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-26 22:49\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,449 +20,449 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:4
 msgid "What's new in Matplotlib 2.1.0 (Oct 7, 2017)"
-msgstr ""
+msgstr "Novedades en Matplotlib 2.1.0 (7 de octubre de 2017)"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:7
 msgid "Documentation"
-msgstr ""
+msgstr "Documentación"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:9
 msgid "The examples have been migrated to use `sphinx gallery <https://sphinx-gallery.readthedocs.io/en/latest/>`__.  This allows better mixing of prose and code in the examples, provides links to download the examples as both a Python script and a Jupyter notebook, and improves the thumbnail galleries.  The examples have been re-organized into :ref:`tutorials` and a :ref:`gallery`."
-msgstr ""
+msgstr "Los ejemplos han sido migrados para utilizar `sphinx gallery <https://sphinx-gallery.readthedocs.io/en/latest/>`__.  Esto permite mezclar mejor la prosa y el código en los ejemplos, proporciona enlaces para descargar los ejemplos como un script de Python y un cuaderno de Jupyter, y mejora las galerías de miniaturas.  Los ejemplos se han reorganizado en :ref:`tutorials` y una :ref:`gallery`."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:16
 msgid "Many docstrings and examples have been clarified and improved."
-msgstr ""
+msgstr "Se han aclarado y mejorado muchas cadenas de documentaciones y ejemplos."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:20
 msgid "New features"
-msgstr ""
+msgstr "Nuevas características"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:23
 msgid "String categorical values"
-msgstr ""
+msgstr "Cadena de valores categóricos"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:25
 msgid "All plotting functions now support string categorical values as input. For example:"
-msgstr ""
+msgstr "Todas las funciones de graficación ahora soportan valores categóricos de cadena como entrada. Por ejemplo:"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:11
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-1-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-1.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_2-1-0-1.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-1.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-1.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:38
 msgid "Interactive JS widgets for animation"
-msgstr ""
+msgstr "Widgets JS interactivos para la animación"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:40
 msgid "Jake Vanderplas' JSAnimation package has been merged into Matplotlib. This adds to Matplotlib the `~matplotlib.animation.HTMLWriter` class for generating a JavaScript HTML animation, suitable for the IPython notebook. This can be activated by default by setting the ``animation.html`` rc parameter to ``jshtml``. One can also call the `~matplotlib.animation.Animation.to_jshtml` method to manually convert an animation. This can be displayed using IPython's ``HTML`` display class::"
-msgstr ""
+msgstr "El paquete JSAnimation de Jake Vanderplas se ha fusionado con Matplotlib. Esto añade a Matplotlib la clase `~matplotlib.animation.HTMLWriter` para generar una animación HTML de JavaScript, adecuada para el cuaderno IPython. Esto puede ser activado por defecto estableciendo el parámetro rc ``animation.html`` a ``jshtml``. También se puede invocar el método `~matplotlib.animation.Animation.to_jshtml` para convertir manualmente una animación. Esto puede ser mostrado usando la clase de visualización ``HTML`` de IPython::"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:51
 msgid "The `~matplotlib.animation.HTMLWriter` class can also be used to generate an HTML file by asking for the ``html`` writer."
-msgstr ""
+msgstr "La clase `~matplotlib.animation.HTMLWriter` también puede utilizarse para generar un archivo HTML solicitando el escritor ``html``."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:56
 msgid "Enhancements to polar plot"
-msgstr ""
+msgstr "Mejoras en el gráfico polar"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:58
 msgid "The polar axes transforms have been greatly re-factored to allow for more customization of view limits and tick labelling. Additional options for view limits allow for creating an annulus, a sector, or some combination of the two."
-msgstr ""
+msgstr "Las transformaciones de los ejes polares se han refactorizado en gran medida para permitir una mayor personalización de los límites de la vista y el etiquetado de tick. Las opciones adicionales para los límites de la vista permiten crear un círculo, un sector o una combinación de ambos."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:62
 msgid "The :meth:`~matplotlib.projections.polar.PolarAxes.set_rorigin` method may be used to provide an offset to the minimum plotting radius, producing an annulus."
-msgstr ""
+msgstr "El método :meth:`~matplotlib.projections.polar.PolarAxes.set_rorigin` se puede utilizar para proporcionar un desplazamiento al radio mínimo de trazado, produciendo un anillo."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:66
 msgid "The :meth:`~matplotlib.projections.polar.PolarAxes.set_theta_zero_location` method now has an optional :code:`offset` argument. This argument may be used to further specify the zero location based on the given anchor point."
-msgstr ""
+msgstr "El método :meth:`~matplotlib.projections.polar.PolarAxes.set_theta_zero_location` tiene ahora un argumento opcional :code:`offset`. Este argumento puede usarse para especificar más la ubicación del cero basándose en el punto de anclaje dado."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:75
 msgid "Polar Offset Demo"
-msgstr ""
+msgstr "Demostración del desplazamiento polar"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:77
 msgid "The :meth:`~matplotlib.projections.polar.PolarAxes.set_thetamin` and :meth:`~matplotlib.projections.polar.PolarAxes.set_thetamax` methods may be used to limit the range of angles plotted, producing sectors of a circle."
-msgstr ""
+msgstr "Los métodos :meth:`~matplotlib.projections.polar.PolarAxes.set_thetamin` y :meth:`~matplotlib.projections.polar.PolarAxes.set_thetamax` pueden utilizarse para limitar el rango de ángulos graficados, produciendo sectores de un círculo."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:86
 msgid "Polar Sector Demo"
-msgstr ""
+msgstr "Demostración del Sector Polar"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:88
 msgid "Previous releases allowed plots containing negative radii for which the negative values are simply used as labels, and the real radius is shifted by the configured minimum. This release also allows negative radii to be used for grids and ticks, which were previously silently ignored."
-msgstr ""
+msgstr "Las versiones anteriores permitían gráficos que contenían radios negativos para los cuales los valores negativos se utilizan simplemente como etiquetas, y el radio real se desplaza por el mínimo configurado. Esta versión también permite utilizar radios negativos para mallas y ticks, que antes se ignoraban silenciosamente."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:93
 msgid "Radial ticks have been modified to be parallel to the circular grid line, and angular ticks have been modified to be parallel to the grid line. It may also be useful to rotate tick *labels* to match the boundary. Calling ``ax.tick_params(rotation='auto')`` will enable the new behavior: radial tick labels will be parallel to the circular grid line, and angular tick labels will be perpendicular to the grid line (i.e., parallel to the outer boundary). Additionally, tick labels now obey the padding settings that previously only worked on Cartesian plots. Consequently, the ``frac`` argument to `.PolarAxes.set_thetagrids` is no longer applied. Tick padding can be modified with the ``pad`` argument to `.Axes.tick_params` or `.Axis.set_tick_params`."
-msgstr ""
+msgstr "Los ticks radiales se han modificado para que sean paralelos a la línea de la malla circular, y los angulares para que sean paralelos a la línea de la malla. También puede ser útil rotar las *etiquetas* de los ticks para que coincidan con el límite. Invocando ``ax.tick_params(rotation='auto')`` se activará el nuevo comportamiento: las etiquetas de los ticks radiales serán paralelas a la línea de la malla circular, y las etiquetas de los ticks angulares serán perpendiculares a la línea de la malla (es decir, paralelas al límite exterior). Además, las etiquetas de la marca del eje ahora obedecen a los ajustes de relleno que antes sólo funcionaban en los gráficos cartesianos. En consecuencia, el argumento ``frac`` para `.PolarAxes.set_thetagrids` ya no se aplica. El relleno de las marcas puede modificarse con el argumento ``pad`` de `.Axes.tick_params` o `.Axis.set_tick_params`."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:106
 msgid "``Figure`` class now has ``subplots`` method"
-msgstr ""
+msgstr "La clase ``Figure`` ahora tiene el método ``subplots``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:108
 msgid "The :class:`~matplotlib.figure.Figure` class now has a :meth:`~matplotlib.figure.Figure.subplots` method which behaves the same as :func:`.pyplot.subplots` but on an existing figure."
-msgstr ""
+msgstr "La clase :class:`~matplotlib.figure.Figure` tiene ahora un método :meth:`~matplotlib.figure.Figure.subplots` que se comporta igual que :func:`.pyplot.subplots` pero sobre una figura existente."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:114
 msgid "Metadata savefig keyword argument"
-msgstr ""
+msgstr "Argumento de la palabra clave savefig de los metadatos"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:116
 msgid ":func:`~matplotlib.pyplot.savefig` now accepts ``metadata`` as a keyword argument. It can be used to store key/value pairs in the image metadata."
-msgstr ""
+msgstr ":func:`~matplotlib.pyplot.savefig` ahora acepta ``metadata`` como argumento de palabra clave. Se puede utilizar para almacenar pares clave/valor en los metadatos de la imagen."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:120
 msgid "'png' with Agg backend"
-msgstr ""
+msgstr "'png' con Agg backend"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:121
 msgid "'pdf' with PDF backend (see :func:`~matplotlib.backends.backend_pdf.PdfFile.writeInfoDict` for a list of supported keywords)"
-msgstr ""
+msgstr "'pdf' con backend PDF (ver :func:`~matplotlib.backends.backend_pdf.PdfFile.writeInfoDict` para una lista de palabras clave soportadas)"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:124
 msgid "'eps' and 'ps' with PS backend (only 'Creator' key is accepted)"
-msgstr ""
+msgstr "'eps' y 'ps' con backend PS (sólo se acepta la clave 'Creator')"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:132
 msgid "Busy Cursor"
-msgstr ""
+msgstr "Busy Cursor"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:134
 msgid "The interactive GUI backends will now change the cursor to busy when Matplotlib is rendering the canvas."
-msgstr ""
+msgstr "Los backends de la IGU interactiva ahora cambiarán el cursor a ocupado cuando Matplotlib esté renderizando el lienzo."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:138
 msgid "PolygonSelector"
-msgstr ""
+msgstr "PolygonSelector"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:140
 msgid "A :class:`~matplotlib.widgets.PolygonSelector` class has been added to :mod:`matplotlib.widgets`.  See :doc:`/gallery/widgets/polygon_selector_demo` for details."
-msgstr ""
+msgstr "Se ha añadido una clase :class:`~matplotlib.widgets.PolygonSelector` a :mod:`matplotlib.widgets`.  Ver :doc:`/gallery/widgets/polygon_selector_demo` para más detalles."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:146
 msgid "Added `matplotlib.ticker.PercentFormatter`"
-msgstr ""
+msgstr "Se ha añadido `matplotlib.ticker.PercentFormatter`"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:148
 msgid "The new `~matplotlib.ticker.PercentFormatter` formatter has some nice features like being able to convert from arbitrary data scales to percents, a customizable percent symbol and either automatic or manual control over the decimal points."
-msgstr ""
+msgstr "El nuevo formateador `~matplotlib.ticker.PercentFormatter` tiene algunas características interesantes como poder convertir de escalas de datos arbitrarias a porcentajes, un símbolo de porcentaje personalizable y control automático o manual sobre los puntos decimales."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:155
 msgid "Reproducible PS, PDF and SVG output"
-msgstr ""
+msgstr "Resultados reproducibles en PS, PDF y SVG"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:157
 msgid "The ``SOURCE_DATE_EPOCH`` environment variable can now be used to set the timestamp value in the PS and PDF outputs. See `source date epoch <https://reproducible-builds.org/specs/source-date-epoch/>`__."
-msgstr ""
+msgstr "La variable de entorno ``SOURCE_DATE_EPOCH`` puede utilizarse ahora para establecer el valor de la marca de tiempo en las salidas PS y PDF. Ver `source date epoch <https://reproducible-builds.org/specs/source-date-epoch/>`__."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:161
 msgid "Alternatively, calling ``savefig`` with ``metadata={'CreationDate': None}`` will omit the timestamp altogether for the PDF backend."
-msgstr ""
+msgstr "Alternativamente, invocar ``savefig`` con ``metadata={'CreationDate': None}`` omitirá la marca de tiempo para el backend del PDF."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:164
 msgid "The reproducibility of the output from the PS and PDF backends has so far been tested using various plot elements but only default values of options such as ``{ps,pdf}.fonttype`` that can affect the output at a low level, and not with the mathtext or usetex features. When Matplotlib calls external tools (such as PS distillers or LaTeX) their versions need to be kept constant for reproducibility, and they may add sources of nondeterminism outside the control of Matplotlib."
-msgstr ""
+msgstr "La reproducibilidad de la salida de los backends PS y PDF ha sido probada hasta ahora usando varios elementos de gráficos pero sólo los valores por defecto de opciones como ``{ps,pdf}.fonttype`` que pueden afectar a la salida a bajo nivel, y no con las características mathtext o usetex. Cuando Matplotlib invoca herramientas externas (como destiladores PS o LaTeX) sus versiones deben mantenerse constantes para la reproducibilidad, y pueden añadir fuentes de no determinación fuera del control de Matplotlib."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:172
 msgid "For SVG output, the ``svg.hashsalt`` rc parameter has been added in an earlier release. This parameter changes some random identifiers in the SVG file to be deterministic. The downside of this setting is that if more than one file is generated using deterministic identifiers and they end up as parts of one larger document, the identifiers can collide and cause the different parts to affect each other."
-msgstr ""
+msgstr "Para la salida de SVG, se ha añadido el parámetro rc ``svg.hashsalt`` en una versión anterior. Este parámetro cambia algunos identificadores aleatorios en el archivo SVG para que sean deterministas. La desventaja de este parámetro es que si se genera más de un archivo utilizando identificadores deterministas y terminan como partes de un documento más grande, los identificadores pueden colisionar y hacer que las diferentes partes se afecten entre sí."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:179
 msgid "These features are now enabled in the tests for the PDF and SVG backends, so most test output files (but not all of them) are now deterministic."
-msgstr ""
+msgstr "Estas características están ahora activadas en las pruebas para los backends PDF y SVG, por lo que la mayoría de los archivos de salida de las pruebas (pero no todos) son ahora deterministas."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:184
 msgid "Orthographic projection for mplot3d"
-msgstr ""
+msgstr "Proyección ortográfica para mplot3d"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:185
 msgid ":class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` now accepts ``proj_type`` keyword argument and has a method :meth:`~mpl_toolkits.mplot3d.axes3d.Axes3D.set_proj_type`. The default option is ``'persp'`` as before, and supplying ``'ortho'`` enables orthographic view."
-msgstr ""
+msgstr ":class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` ahora acepta el argumento de palabra clave ``proj_type`` y tiene un método :meth:`~mpl_toolkits.mplot3d.axes3d.Axes3D.set_proj_type`. La opción por defecto es ``'persp'`` como antes, y suministrando ``'ortho'`` se activa la vista ortográfica."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:190
 msgid "Compare the z-axis which is vertical in orthographic view, but slightly skewed in the perspective view."
-msgstr ""
+msgstr "Compara el eje z, que es vertical en la vista ortográfica, pero ligeramente sesgado en la vista en perspectiva."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:22
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-1-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-2.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_2-1-0-2.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-2.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-2.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:214
 msgid "``voxels`` function for mplot3d"
-msgstr ""
+msgstr "Función ``voxels`` para mplot3d"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:215
 msgid ":class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` now has a `~mpl_toolkits.mplot3d.axes3d.Axes3D.voxels` method, for visualizing boolean 3D data. Uses could include plotting a sparse 3D heat map, or visualizing a volumetric model."
-msgstr ""
+msgstr ":class:`~mpl_toolkits.mplot3d.axes3d.Axes3D` tiene ahora un método `~mpl_toolkits.mplot3d.axes3d.Axes3D.voxels`, para visualizar datos booleanos en 3D. Los usos podrían incluir el trazado de un mapa de calor 3D disperso, o la visualización de un modelo volumétrico."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:225
 msgid "Voxel Demo"
-msgstr ""
+msgstr "Demo de Voxel"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:229
 msgid "Improvements"
-msgstr ""
+msgstr "Mejoras"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:232
 msgid "CheckButtons widget ``get_status`` function"
-msgstr ""
+msgstr "Función ``get_status`` del widget CheckButtons"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:234
 msgid "A :func:`~matplotlib.widgets.CheckButtons.get_status` method has been added to the :class:`matplotlib.widgets.CheckButtons` class. This ``get_status`` method allows user to query the status (True/False) of all of the buttons in the ``CheckButtons`` object."
-msgstr ""
+msgstr "Se ha añadido un método :func:`~matplotlib.widgets.CheckButtons.get_status` a la clase :class:`matplotlib.widgets.CheckButtons`. Este método ``get_status`` permite al usuario consultar el estado (Verdadero/Falso) de todos los botones del objeto ``CheckButtons``."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:241
 msgid "Add ``fill_bar`` argument to ``AnchoredSizeBar``"
-msgstr ""
+msgstr "Añadir el argumento ``fill_bar`` a ``AnchoredSizeBar``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:243
 msgid "The ``mpl_toolkits`` class :class:`~mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar` now has an additional ``fill_bar`` argument, which makes the size bar a solid rectangle instead of just drawing the border of the rectangle. The default is ``None``, and whether or not the bar will be filled by default depends on the value of ``size_vertical``. If ``size_vertical`` is nonzero, ``fill_bar`` will be set to ``True``. If ``size_vertical`` is zero then ``fill_bar`` will be set to ``False``. If you wish to override this default behavior, set ``fill_bar`` to ``True`` or ``False`` to unconditionally always or never use a filled patch rectangle for the size bar."
-msgstr ""
+msgstr "La clase ``mpl_toolkits`` :class:`~mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar` ahora tiene un argumento adicional ``fill_bar``, que hace que la barra de tamaño sea un rectángulo sólido en lugar de dibujar sólo el borde del rectángulo. El valor por defecto es ``None``, y si la barra se rellena o no por defecto depende del valor de ``size_vertical``. Si ``size_vertical`` es distinto de cero, ``fill_bar`` se establecerá como ``True``. Si ``size_vertical`` es cero, ``fill_bar`` se establecerá en ``False``. Si deseas anular este comportamiento por defecto, establece ``fill_bar`` como ``True`` o ``False`` para utilizar incondicionalmente siempre o nunca un rectángulo de parche relleno para la barra de tamaño."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:21
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-1-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-3.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_2-1-0-3.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-3.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-3.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:274
 msgid "Annotation can use a default arrow style"
-msgstr ""
+msgstr "La anotación puede utilizar un estilo de flecha por defecto"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:276
 msgid "Annotations now use the default arrow style when setting ``arrowprops={}``, rather than no arrow (the new behavior actually matches the documentation)."
-msgstr ""
+msgstr "Las anotaciones ahora utilizan el estilo de flecha por defecto cuando se establece ``arrowprops={}``, en lugar de ninguna flecha (el nuevo comportamiento corresponde con la documentación)."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:280
 msgid "Barbs and Quiver Support Dates"
-msgstr ""
+msgstr "Fechas de soporte Barbs y Quiver"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:282
 msgid "When using the :func:`~matplotlib.axes.Axes.quiver` and :func:`~matplotlib.axes.Axes.barbs` plotting methods, it is now possible to pass dates, just like for other methods like :func:`~matplotlib.axes.Axes.plot`. This also allows these functions to handle values that need unit-conversion applied."
-msgstr ""
+msgstr "Al utilizar los métodos de graficado :func:`~matplotlib.axes.Axes.quiver` y :func:`~matplotlib.axes.Axes.barbs`, ahora es posible pasar fechas, al igual que para otros métodos como :func:`~matplotlib.axes.Axes.plot`. Esto también permite que estas funciones manejen valores que necesitan que se les aplique la conversión de unidades."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:290
 msgid "Hexbin default line color"
-msgstr ""
+msgstr "Color de línea por defecto de Hexbin"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:292
 msgid "The default ``linecolor`` keyword argument for :func:`~matplotlib.axes.Axes.hexbin` is now ``'face'``, and supplying ``'none'`` now prevents lines from being drawn around the hexagons."
-msgstr ""
+msgstr "El argumento por defecto de la palabra clave ``linecolor`` para :func:`~matplotlib.axes.Axes.hexbin` es ahora ``'face'``, y suministrar ``'none'`` evita que se dibujen líneas alrededor de los hexágonos."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:297
 msgid "Figure.legend() can be called without arguments"
-msgstr ""
+msgstr "Figure.legend() puede invocarse sin argumentos"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:299
 msgid "Calling :meth:`.Figure.legend` can now be done with no arguments. In this case a legend will be created that contains all the artists on all the axes contained within the figure."
-msgstr ""
+msgstr "Invocar :meth:`.Figura.leyenda` puede hacerse ahora sin argumentos. En este caso se creará una leyenda que contiene todos los artists en todos los ejes contenidos en la figura."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:304
 msgid "Multiple legend keys for legend entries"
-msgstr ""
+msgstr "Múltiples claves de leyenda para las entradas de leyenda"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:306
 msgid "A legend entry can now contain more than one legend key. The extended `~matplotlib.legend_handler.HandlerTuple` class now accepts two parameters: ``ndivide`` divides the legend area in the specified number of sections; ``pad`` changes the padding between the legend keys."
-msgstr ""
+msgstr "Una entrada de leyenda ahora puede contener más de una clave de leyenda. La clase extendida `~matplotlib.legend_handler.HandlerTuple` acepta ahora dos parámetros: ``ndivide`` divide el área de la leyenda en el número especificado de secciones; ``pad`` cambia el relleno entre las claves de la leyenda."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:316
 msgid "Multiple Legend Keys"
-msgstr ""
+msgstr "Múltiples claves de leyenda"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:320
 msgid "New parameter *clear* for :func:`~matplotlib.pyplot.figure`"
-msgstr ""
+msgstr "Nuevo parámetro *clear* para :func:`~matplotlib.pyplot.figure`"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:322
 msgid "When the pyplot's function :func:`~matplotlib.pyplot.figure` is called with a ``num`` parameter, a new window is only created if no existing window with the same value exists. A new bool parameter *clear* was added for explicitly clearing its existing contents. This is particularly useful when utilized in interactive sessions. Since :func:`~matplotlib.pyplot.subplots` also accepts keyword arguments from :func:`~matplotlib.pyplot.figure`, it can also be used there::"
-msgstr ""
+msgstr "Cuando se invoca la función de pyplot :func:`~matplotlib.pyplot.figure` con un parámetro ``num``, sólo se crea una nueva ventana si no existe ninguna con el mismo valor. Se ha añadido un nuevo parámetro bool *clear* para borrar explícitamente el contenido existente. Esto es particularmente útil cuando se utiliza en sesiones interactivas. Dado que :func:`~matplotlib.pyplot.subplots` también acepta argumentos de palabra clave de :func:`~matplotlib.pyplot.figure`, también puede utilizarse allí::"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:354
 msgid "Specify minimum value to format as scalar for ``LogFormatterMathtext``"
-msgstr ""
+msgstr "Especifica el valor mínimo a formatear como escalar para ``LogFormatterMathtext``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:356
 msgid ":class:`~matplotlib.ticker.LogFormatterMathtext` now includes the option to specify a minimum value exponent to format as a scalar (i.e., 0.001 instead of 10\\ :sup:`-3`)."
-msgstr ""
+msgstr ":class:`~matplotlib.ticker.LogFormatterMathtext` incluye ahora la opción de especificar un exponente de valor mínimo para formatear como escalar (es decir, 0,001 en lugar de 10\\ :sup:`-3`)."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:362
 msgid "New quiverkey angle keyword argument"
-msgstr ""
+msgstr "Nuevo argumento de la palabra clave quiverkey angle"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:364
 msgid "Plotting a :func:`~matplotlib.axes.Axes.quiverkey` now admits the ``angle`` keyword argument, which sets the angle at which to draw the key arrow."
-msgstr ""
+msgstr "El graficado de una :func:`~matplotlib.axes.Axes.quiverkey` admite ahora el argumento de la palabra clave ``angle``, que establece el ángulo con el que se dibujará la flecha clave."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:369
 msgid "Colormap reversed method"
-msgstr ""
+msgstr "Método de inversión del mapa de colores"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:371
 msgid "The methods :meth:`matplotlib.colors.LinearSegmentedColormap.reversed` and :meth:`matplotlib.colors.ListedColormap.reversed` return a reversed instance of the Colormap. This implements a way for any Colormap to be reversed."
-msgstr ""
+msgstr "Los métodos :meth:`matplotlib.colors.LinearSegmentedColormap.reversed` y :meth:`matplotlib.colors.ListedColormap.reversed` devuelven una instancia invertida del Colormap. Esto implementa una forma de invertir cualquier Colormap."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:378
 msgid "`.artist.setp` (and `.pyplot.setp`) accept a *file* argument"
-msgstr ""
+msgstr "`.artist.setp` (y `.pyplot.setp`) aceptan un argumento *file*"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:380
 msgid "The argument is keyword-only. It allows an output file other than `sys.stdout` to be specified. It works exactly like the *file* argument to `print`."
-msgstr ""
+msgstr "El argumento es sólo de palabra clave. Permite especificar un archivo de salida distinto de `sys.stdout`. Funciona exactamente como el argumento *file* de `print`."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:386
 msgid "``streamplot`` streamline generation more configurable"
-msgstr ""
+msgstr "Generación de streamline ``streamplot`` más configurable"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:388
 msgid "The starting point, direction, and length of the stream lines can now be configured.  This allows to follow the vector field for a longer time and can enhance the visibility of the flow pattern in some use cases."
-msgstr ""
+msgstr "Ahora se puede configurar el punto de partida, la dirección y la longitud de las líneas de flujo.  Esto permite seguir el campo vectorial durante más tiempo y puede mejorar la visibilidad del patrón de flujo en algunos casos de uso."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:395
 msgid "``Axis.set_tick_params`` now responds to *rotation*"
-msgstr ""
+msgstr "``Axis.set_tick_params`` ahora responde a *rotation*"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:397
 msgid "Bulk setting of tick label rotation is now possible via :func:`~matplotlib.axes.Axes.tick_params` using the *rotation* keyword."
-msgstr ""
+msgstr "El ajuste masivo de la rotación de las etiquetas de marca de eje es ahora posible a través de :func:`~matplotlib.axes.Axes.tick_params` utilizando la palabra clave *rotation*."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:407
 msgid "Ticklabels are turned off instead of being invisible"
-msgstr ""
+msgstr "Etiqueta de la marca del eje se desactivan en lugar de ser invisibles"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:409
 msgid "Internally, the `.Tick`'s ``matplotlib.axis.Tick.label1On`` attribute is now used to hide tick labels instead of setting the visibility on the tick label objects. This improves overall performance and fixes some issues. As a consequence, in case those labels ought to be shown, :func:`~matplotlib.axes.Axes.tick_params` needs to be used, e.g."
-msgstr ""
+msgstr "Internamente, el atributo ``matplotlib.axis.Tick.label1On`` de `.Tick` se utiliza ahora para ocultar las etiquetas de las marcas del eje en lugar de establecer la visibilidad en los objetos de etiquetas de las marcas de eje. Esto mejora el rendimiento general y soluciona algunas inidencias. Como consecuencia, en caso de que esas etiquetas deban mostrarse, es necesario utilizar :func:`~matplotlib.axes.Axes.tick_params`, por ejemplo."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:423
 msgid "Shading in 3D bar plots"
-msgstr ""
+msgstr "Sombreado en gráficos de barras 3D"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:425
 msgid "A new ``shade`` parameter has been added the 3D `~mpl_toolkits.mplot3d.axes3d.Axes3D.bar` plotting method. The default behavior remains to shade the bars, but now users have the option of setting ``shade`` to ``False``."
-msgstr ""
+msgstr "Se ha añadido un nuevo parámetro ``shade`` al método de trazado 3D `~mpl_toolkits.mplot3d.axes3d.Axes3D.bar`. El comportamiento por defecto sigue siendo sombrear las barras, pero ahora los usuarios tienen la opción de establecer ``shade`` a ``False``."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:29
 msgid "(`Source code <../../users/prev_whats_new/whats_new_2-1-0-4.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-4.pdf>`__)"
-msgstr ""
+msgstr "(`Código fuente <../../users/prev_whats_new/whats_new_2-1-0-4.py>`__, `png <../../users/prev_whats_new/whats_new_2-1-0-4.png>`__, `pdf <../../users/prev_whats_new/whats_new_2-1-0-4.pdf>`__)"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:459
 msgid "New ``which`` Parameter for ``autofmt_xdate``"
-msgstr ""
+msgstr "Nuevo parámetro ``which`` para ``autofmt_xdate``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:461
 msgid "A ``which`` parameter now exists for the method :func:`~matplotlib.figure.Figure.autofmt_xdate`. This allows a user to format ``major``, ``minor`` or ``both`` tick labels selectively. The default behavior will rotate and align the ``major`` tick labels."
-msgstr ""
+msgstr "Ahora existe un parámetro ``que`` para el método :func:`~matplotlib.figure.Figure.autofmt_xdate`. Esto permite al usuario formatear selectivamente las etiquetas de las marcas ``major``, ``minor`` o ``both``. El comportamiento por defecto girará y alineará las etiquetas de marca ``major``."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:473
 msgid "New Figure Parameter for ``subplot2grid``"
-msgstr ""
+msgstr "Nuevo parámetro de figura para ``subplot2grid``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:475
 msgid "A ``fig`` parameter now exists for the function :func:`~matplotlib.pyplot.subplot2grid`. This allows a user to specify the figure where the subplots will be created. If ``fig`` is ``None`` (default) then the method will use the current figure retrieved by :func:`~matplotlib.pyplot.gcf`."
-msgstr ""
+msgstr "Ahora existe un parámetro ``fig`` para la función :func:`~matplotlib.pyplot.subplot2grid`. Esto permite al usuario especificar la figura donde se crearán los subgráficos. Si ``fig`` es ``None`` (por defecto) entonces el método utilizará la figura actual recuperada por :func:`~matplotlib.pyplot.gcf`."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:488
 msgid "Interpolation in ``fill_betweenx``"
-msgstr ""
+msgstr "Interpolación en ``fill_betweenx``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:490
 msgid "The ``interpolate`` parameter now exists for the method :func:`~matplotlib.axes.Axes.fill_betweenx`. This allows a user to interpolate the data and fill the areas in the crossover points, similarly to :func:`~matplotlib.axes.Axes.fill_between`."
-msgstr ""
+msgstr "El parámetro ``interpolate`` existe ahora para el método :func:`~matplotlib.axes.Axes.fill_betweenx`. Esto permite al usuario interpolar los datos y rellenar las áreas en los puntos de cruce, de forma similar a :func:`~matplotlib.axes.Axes.fill_between`."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:497
 msgid "New keyword argument ``sep`` for EngFormatter"
-msgstr ""
+msgstr "Nuevo argumento de palabra clave ``sep`` para EngFormatter"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:499
 msgid "A new ``sep`` keyword argument has been added to :class:`~matplotlib.ticker.EngFormatter` and provides a means to define the string that will be used between the value and its unit. The default string is ``\" \"``, which preserves the former behavior. Additionally, the separator is now present between the value and its unit even in the absence of SI prefix.  There was formerly a bug that was causing strings like ``\"3.14V\"`` to be returned instead of the expected ``\"3.14 V\"`` (with the default behavior)."
-msgstr ""
+msgstr "Se ha añadido un nuevo argumento de palabra clave ``sep`` a :class:`~matplotlib.ticker.EngFormatter` y proporciona un medio para definir la cadena que se utilizará entre el valor y su unidad. La cadena por defecto es ``\" \"``, que conserva el comportamiento anterior. Además, el separador está ahora presente entre el valor y su unidad incluso en ausencia del prefijo SI.  Antes había un error que hacía que se devolvieran cadenas como ``\"3,14V\"`` en lugar de la esperada ``\"3,14 V\"`` (con el comportamiento por defecto)."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:509
 msgid "Extend ``MATPLOTLIBRC`` behavior"
-msgstr ""
+msgstr "Ampliar el comportamiento de ``MATPLOTLIBRC``"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:511
 msgid "The environmental variable can now specify the full file path or the path to a directory containing a :file:`matplotlibrc` file."
-msgstr ""
+msgstr "La variable de entorno puede ahora especificar la ruta completa del archivo o la ruta de un directorio que contenga un archivo :file:`matplotlibrc`."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:516
 msgid "``density`` kwarg to hist"
-msgstr ""
+msgstr "``density`` kwarg a hist"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:518
 msgid "The :meth:`~matplotlib.axes.Axes.hist` method now prefers ``density`` to ``normed`` to control if the histogram should be normalized, following a change upstream to NumPy.  This will reduce confusion as the behavior has always been that the integral of the histogram is 1 (rather than sum or maximum value)."
-msgstr ""
+msgstr "El método :meth:`~matplotlib.axes.Axes.hist` ahora prefiere ``density`` a ``normed`` para controlar si el histograma debe ser normalizado, siguiendo un cambio en NumPy.  Esto reducirá la confusión, ya que el comportamiento siempre ha sido que la integral del histograma es 1 (en lugar de la suma o el valor máximo)."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:527
 msgid "Internals"
-msgstr ""
+msgstr "Interiores"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:530
 msgid "New TransformedPatchPath caching object"
-msgstr ""
+msgstr "Nuevo objeto de caché TransformedPatchPath"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:532
 msgid "A newly added :class:`~matplotlib.transforms.TransformedPatchPath` provides a means to transform a :class:`~matplotlib.patches.Patch` into a :class:`~matplotlib.path.Path` via a :class:`~matplotlib.transforms.Transform` while caching the resulting path. If neither the patch nor the transform have changed, a cached copy of the path is returned."
-msgstr ""
+msgstr "La nueva clase :class:`~matplotlib.transforms.TransformedPatchPath` proporciona un medio para transformar un :class:`~matplotlib.patches.Patch` en un :class:`~matplotlib.path.Path` a través de un :class:`~matplotlib.transforms.Transform` mientras se almacena en caché la ruta resultante. Si ni el parche ni la transformación han cambiado, se devuelve una copia en caché de la ruta."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:538
 msgid "This class differs from the older :class:`~matplotlib.transforms.TransformedPath` in that it is able to refresh itself based on the underlying patch while the older class uses an immutable path."
-msgstr ""
+msgstr "Esta clase difiere de la anterior :class:`~matplotlib.transforms.TransformedPath` en que es capaz de refrescarse a sí misma basándose en el parche subyacente mientras que la clase anterior utiliza una ruta inmutable."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:545
 msgid "Abstract base class for movie writers"
-msgstr ""
+msgstr "Clase base abstracta para escritores de películas"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:547
 msgid "The new :class:`~matplotlib.animation.AbstractMovieWriter` class defines the API required by a class that is to be used as the ``writer`` in the :meth:`matplotlib.animation.Animation.save` method. The existing :class:`~matplotlib.animation.MovieWriter` class now derives from the new abstract base class."
-msgstr ""
+msgstr "La nueva clase :class:`~matplotlib.animation.AbstractMovieWriter` define la API requerida por una clase que va a ser utilizada como ``writer`` en el método :meth:`matplotlib.animation.Animation.save`. La clase :class:`~matplotlib.animation.MovieWriter` existente deriva ahora de la nueva clase base abstracta."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:555
 msgid "Stricter validation of line style rcParams"
-msgstr ""
+msgstr "Validación más estricta del estilo de línea rcParams"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:557
 msgid "The validation of rcParams that are related to line styles (``lines.linestyle``, ``boxplot.*.linestyle``, ``grid.linestyle`` and ``contour.negative_linestyle``) now effectively checks that the values are valid line styles. Strings like ``'dashed'`` or ``'--'`` are accepted, as well as even-length sequences of on-off ink like ``[1, 1.65]``. In this latter case, the offset value is handled internally and should *not* be provided by the user."
-msgstr ""
+msgstr "La validación de los rcParams relacionados con los estilos de línea (``lines.linestyle``, ``boxplot.*.linestyle``, ``grid.linestyle`` y ``contour.negative_linestyle``) ahora comprueba efectivamente que los valores son estilos de línea válidos. Se aceptan cadenas como ``'dashed'`` o ``'--'``, así como secuencias de longitud par de tinta on-off como ``[1, 1.65]``. En este último caso, el valor del desplazamiento se maneja internamente y *no* debe ser proporcionado por el usuario."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:566
 msgid "The new validation scheme replaces the former one used for the ``contour.negative_linestyle`` rcParams, that was limited to ``'solid'`` and ``'dashed'`` line styles."
-msgstr ""
+msgstr "El nuevo esquema de validación sustituye al anterior utilizado para los rcParams ``contour.negative_linestyle``, que se limitaba a los estilos de línea ``'solid'`` y ``'dashed'``."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:570
 msgid "The validation is case-insensitive.  The following are now valid:"
-msgstr ""
+msgstr "La validación no distingue entre mayúsculas y minúsculas.  Ahora son válidos los siguientes:"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:579
 msgid "pytest"
-msgstr ""
+msgstr "pytest"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:581
 msgid "The automated tests have been switched from nose_ to pytest_."
-msgstr ""
+msgstr "Las pruebas automatizadas se han cambiado de nose_ a pytest_."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:587
 msgid "Performance"
-msgstr ""
+msgstr "Rendimiento"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:590
 msgid "Path simplification updates"
-msgstr ""
+msgstr "Actualizaciones de la simplificación de rutas"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:592
 msgid "Line simplification controlled by the ``path.simplify`` and ``path.simplify_threshold`` parameters has been improved. You should notice better rendering performance when plotting large amounts of data (as long as the above parameters are set accordingly). Only the line segment portion of paths will be simplified -- if you are also drawing markers and experiencing problems with rendering speed, you should consider using the ``markevery`` option to `~matplotlib.axes.Axes.plot`. See the :ref:`performance` section in the usage tutorial for more information."
-msgstr ""
+msgstr "Se ha mejorado la simplificación de líneas controlada por los parámetros ``path.simplify`` y ``path.simplify_threshold``. Deberías notar un mejor rendimiento de renderizado al graficar grandes cantidades de datos (siempre y cuando los parámetros anteriores estén configurados adecuadamente). Sólo se simplificará la parte de los segmentos de línea de los trazados -- si también se dibujan marcadores y se experimentan problemas con la velocidad de renderizado, se debe considerar el uso de la opción ``markevery`` de `~matplotlib.axes.Axes.plot`. Ver la sección :ref:`performance` en el tutorial de uso para más información."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:602
 msgid "The simplification works by iteratively merging line segments into a single vector until the next line segment's perpendicular distance to the vector (measured in display-coordinate space) is greater than the ``path.simplify_threshold`` parameter. Thus, higher values of ``path.simplify_threshold`` result in quicker rendering times. If you are plotting just to explore data and not for publication quality, pixel perfect plots, then a value of ``1.0`` can be safely used. If you want to make sure your plot reflects your data *exactly*, then you should set ``path.simplify`` to false and/or ``path.simplify_threshold`` to ``0``. Matplotlib currently defaults to a conservative value of ``1/9``, smaller values are unlikely to cause any visible differences in your plots."
-msgstr ""
+msgstr "La simplificación funciona fusionando iterativamente los segmentos de línea en un único vector hasta que la distancia perpendicular del siguiente segmento de línea al vector (medida en el espacio de coordenadas de la pantalla) sea mayor que el parámetro ``path.simplify_threshold``. Por lo tanto, los valores más altos de ``path.simplify_threshold`` dan lugar a tiempos de renderizado más rápidos. Si usted está trazando sólo para explorar los datos y no para la calidad de la publicación, gráficos perfectos de píxeles, entonces un valor de ``1.0`` puede ser utilizado con seguridad. Si deseas asegurarte de que tu gráfico refleja tus datos *exactamente*, entonces debes establecer ``path.simplify`` a false y/o ``path.simplify_threshold`` a ``0``. Matplotlib actualmente tiene por defecto un valor conservador de ``1/9``, valores más pequeños es poco probable que causen diferencias visibles en sus gráficos."
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:615
 msgid "Implement intersects_bbox in c++"
-msgstr ""
+msgstr "Implementar intersects_bbox en c++"
 
 #: ../../users/prev_whats_new/whats_new_2.1.0.rst:617
 msgid ":meth:`~matplotlib.path.Path.intersects_bbox` has been implemented in c++ which improves the performance of automatically placing the legend."
-msgstr ""
+msgstr ":meth:`~matplotlib.path.Path.intersects_bbox` ha sido implementado en c++ lo que mejora el rendimiento de la colocación automática de la leyenda."
 

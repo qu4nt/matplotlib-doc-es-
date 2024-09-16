@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:33\n"
+"PO-Revision-Date: 2022-05-23 03:41\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,189 +20,189 @@ msgstr ""
 
 #: ../../tutorials/intermediate/imshow_extent.rst:13
 msgid "Click :ref:`here <sphx_glr_download_tutorials_intermediate_imshow_extent.py>` to download the full example code"
-msgstr ""
+msgstr "Haga clic en :ref:`aquí <sphx_glr_download_tutorials_intermediate_imshow_extent.py>` para descargar el código de ejemplo completo"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:22
 msgid "*origin* and *extent* in `~.Axes.imshow`"
-msgstr ""
+msgstr "*origen* y *extensión* en `~.Axes.imshow`"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:24
 msgid ":meth:`~.Axes.imshow` allows you to render an image (either a 2D array which will be color-mapped (based on *norm* and *cmap*) or a 3D RGB(A) array which will be used as-is) to a rectangular region in data space.  The orientation of the image in the final rendering is controlled by the *origin* and *extent* keyword arguments (and attributes on the resulting `.AxesImage` instance) and the data limits of the axes."
-msgstr ""
+msgstr ":meth:`~.Axes.imshow` permite renderizar una imagen (ya sea un arreglo 2D que será mapeado en color (basado en *norm* y *cmap*) o un arreglo 3D RGB(A) que será usado tal cual) a una región rectangular en el espacio de datos.  La orientación de la imagen en el renderizado final está controlada por los argumentos de la palabra clave *origin* y *extent* (y los atributos de la instancia resultante `.AxesImage`) y los límites de datos de los ejes."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:31
 msgid "The *extent* keyword arguments controls the bounding box in data coordinates that the image will fill specified as ``(left, right, bottom, top)`` in **data coordinates**, the *origin* keyword argument controls how the image fills that bounding box, and the orientation in the final rendered image is also affected by the axes limits."
-msgstr ""
+msgstr "Los argumentos de la palabra clave *extent* controlan el cuadro delimitador en coordenadas de datos que la imagen llenará especificado como ``(izquierda, derecha, abajo, arriba)`` en **coordenadas de datos**, el argumento de la palabra clave *origin* controla cómo la imagen llena ese cuadro delimitador, y la orientación en la imagen renderizada final también se ve afectada por los límites de los ejes."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:37
 msgid "Most of the code below is used for adding labels and informative text to the plots. The described effects of *origin* and *extent* can be seen in the plots without the need to follow all code details."
-msgstr ""
+msgstr "La mayor parte del código siguiente se utiliza para añadir etiquetas y texto informativo a los gráficos. Los efectos descritos de *origen* y *extensión* pueden verse en los gráficos sin necesidad de seguir todos los detalles del código."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:41
 msgid "For a quick understanding, you may want to skip the code details below and directly continue with the discussion of the results."
-msgstr ""
+msgstr "Para una rápida comprensión, es posible que quieras omitir los detalles del código a continuación y continuar directamente con la discusión de los resultados."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:197
 msgid "Default extent"
-msgstr ""
+msgstr "Extensión por defecto"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:199
 msgid "First, let's have a look at the default ``extent=None``"
-msgstr ""
+msgstr "En primer lugar, vamos a echar un vistazo a la opción por defecto ``extent=None``"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:219
 msgid "Out:"
-msgstr ""
+msgstr "Salida:"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:230
 msgid "Generally, for an array of shape (M, N), the first index runs along the vertical, the second index runs along the horizontal. The pixel centers are at integer positions ranging from 0 to ``N' = N - 1`` horizontally and from 0 to ``M' = M - 1`` vertically. *origin* determines how the data is filled in the bounding box."
-msgstr ""
+msgstr "Generalmente, para un arreglo de forma (M, N), el primer índice corre a lo largo de la vertical, el segundo índice corre a lo largo de la horizontal. Los centros de los píxeles están en posiciones enteras que van de 0 a ``N' = N - 1`` horizontalmente y de 0 a ``M' = M - 1`` verticalmente. *origin* determina cómo se rellenan los datos en el cuadro delimitador."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:236
 msgid "For ``origin='lower'``:"
-msgstr ""
+msgstr "Para ``origin='lower'``:"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:238
 msgid "[0, 0] is at (left, bottom)"
-msgstr ""
+msgstr "[0, 0] está en (izquierda, abajo)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:239
 msgid "[M', 0] is at (left, top)"
-msgstr ""
+msgstr "[M', 0] está en (izquierda, arriba)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:240
 msgid "[0, N'] is at (right, bottom)"
-msgstr ""
+msgstr "[0, N'] está en (derecha, abajo)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:241
 msgid "[M', N'] is at (right, top)"
-msgstr ""
+msgstr "[M', N'] está en (derecha, arriba)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:243
 msgid "``origin='upper'`` reverses the vertical axes direction and filling:"
-msgstr ""
+msgstr "``origin='upper'`` invierte la dirección de los ejes verticales y el relleno:"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:245
 msgid "[0, 0] is at (left, top)"
-msgstr ""
+msgstr "[0, 0] está en (izquierda, arriba)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:246
 msgid "[M', 0] is at (left, bottom)"
-msgstr ""
+msgstr "[M', 0] está en (izquierda, abajo)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:247
 msgid "[0, N'] is at (right, top)"
-msgstr ""
+msgstr "[0, N'] está en (derecha, arriba)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:248
 msgid "[M', N'] is at (right, bottom)"
-msgstr ""
+msgstr "[M', N'] está en (derecha, abajo)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:250
 msgid "In summary, the position of the [0, 0] index as well as the extent are influenced by *origin*:"
-msgstr ""
+msgstr "En resumen, la posición del índice [0, 0] así como la extensión están influenciadas por *origen*:"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:254
 msgid "origin"
-msgstr ""
+msgstr "origen"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:254
 msgid "[0, 0] position"
-msgstr ""
+msgstr "Posición [0, 0]"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:254
 msgid "extent"
-msgstr ""
+msgstr "extensión"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:256
 msgid "upper"
-msgstr ""
+msgstr "superior"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:256
 msgid "top left"
-msgstr ""
+msgstr "arriba a la izquierda"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:256
 msgid "``(-0.5, numcols-0.5, numrows-0.5, -0.5)``"
-msgstr ""
+msgstr "``(-0.5, numcols-0.5, numrows-0.5, -0.5)``"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:257
 msgid "lower"
-msgstr ""
+msgstr "inferior"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:257
 msgid "bottom left"
-msgstr ""
+msgstr "abajo a la izquierda"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:257
 msgid "``(-0.5, numcols-0.5, -0.5, numrows-0.5)``"
-msgstr ""
+msgstr "``(-0.5, numcols-0.5, -0.5, numrows-0.5)``"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:260
 msgid "The default value of *origin* is set by :rc:`image.origin` which defaults to ``'upper'`` to match the matrix indexing conventions in math and computer graphics image indexing conventions."
-msgstr ""
+msgstr "El valor por defecto de *origin* es establecido por :rc:`image.origin` que por defecto es ``'upper'`` para coincidir con las convenciones de indexación de matrices en matemáticas y gráficos por ordenador."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:266
 msgid "Explicit extent"
-msgstr ""
+msgstr "Extensión explícita"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:268
 msgid "By setting *extent* we define the coordinates of the image area. The underlying image data is interpolated/resampled to fill that area."
-msgstr ""
+msgstr "Al establecer *extent* definimos las coordenadas del área de la imagen. Los datos de la imagen subyacente se interpolan/remuestrean para llenar esa área."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:271
 msgid "If the axes is set to autoscale, then the view limits of the axes are set to match the *extent* which ensures that the coordinate set by ``(left, bottom)`` is at the bottom left of the axes!  However, this may invert the axis so they do not increase in the 'natural' direction."
-msgstr ""
+msgstr "¡Si los ejes están configurados en autoescala, entonces los límites de la vista de los ejes se establecen para que coincidan con el *extento*, lo que asegura que la coordenada establecida por ``(left, bottom)`` esté en la parte inferior izquierda de los ejes!  Sin embargo, esto puede invertir los ejes para que no aumenten en la dirección \"natural\"."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:307
 msgid "Explicit extent and axes limits"
-msgstr ""
+msgstr "Límites explícitos de extensión y ejes"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:309
 msgid "If we fix the axes limits by explicitly setting `~.axes.Axes.set_xlim` / `~.axes.Axes.set_ylim`, we force a certain size and orientation of the axes. This can decouple the 'left-right' and 'top-bottom' sense of the image from the orientation on the screen."
-msgstr ""
+msgstr "Si arreglamos los límites de los ejes estableciendo explícitamente `~.axes.Axes.set_xlim` / `~.axes.Axes.set_ylim`, forzamos un determinado tamaño y orientación de los ejes. Esto puede desacoplar el sentido 'izquierda-derecha' y 'arriba-abajo' de la imagen de la orientación en la pantalla."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:314
 msgid "In the example below we have chosen the limits slightly larger than the extent (note the white areas within the Axes)."
-msgstr ""
+msgstr "En el ejemplo siguiente hemos elegido los límites ligeramente más grandes que la extensión (observe las áreas blancas dentro de los Ejes)."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:317
 msgid "While we keep the extents as in the examples before, the coordinate (0, 0) is now explicitly put at the bottom left and values increase to up and to the right (from the viewer's point of view). We can see that:"
-msgstr ""
+msgstr "Aunque mantenemos las extensiones como en los ejemplos anteriores, la coordenada (0, 0) se pone ahora explícitamente en la parte inferior izquierda y los valores aumentan hacia arriba y hacia la derecha (desde el punto de vista del espectador). Podemos ver que:"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:322
 msgid "The coordinate ``(left, bottom)`` anchors the image which then fills the box going towards the ``(right, top)`` point in data space."
-msgstr ""
+msgstr "La coordenada ``(izquierda, abajo)`` ancla la imagen que luego llena la caja yendo hacia el punto ``(derecha, arriba)`` en el espacio de datos."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:324
 msgid "The first column is always closest to the 'left'."
-msgstr ""
+msgstr "La primera columna es siempre la más cercana a la 'izquierda'."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:325
 msgid "*origin* controls if the first row is closest to 'top' or 'bottom'."
-msgstr ""
+msgstr "*origin* controla si la primera fila es la más cercana a 'top' o 'bottom'."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:326
 msgid "The image may be inverted along either direction."
-msgstr ""
+msgstr "La imagen puede ser invertida en cualquier dirección."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:327
 msgid "The 'left-right' and 'top-bottom' sense of the image may be uncoupled from the orientation on the screen."
-msgstr ""
+msgstr "El sentido 'izquierda-derecha' y 'arriba-abajo' de la imagen puede desacoplarse de la orientación en la pantalla."
 
 #: ../../tutorials/intermediate/imshow_extent.rst:354
 msgid "**Total running time of the script:** ( 0 minutes  3.394 seconds)"
-msgstr ""
+msgstr "**Tiempo total de ejecución del script:** ( 0 minutos 3.394 segundos)"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:369
 msgid ":download:`Download Python source code: imshow_extent.py <imshow_extent.py>`"
-msgstr ""
+msgstr ":download:`Descargar código fuente de Python: imshow_extent.py <imshow_extent.py>`"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:375
 msgid ":download:`Download Jupyter notebook: imshow_extent.ipynb <imshow_extent.ipynb>`"
-msgstr ""
+msgstr ":download:`Descargar Jupyter notebook: imshow_extent.ipynb <imshow_extent.ipynb>`"
 
 #: ../../tutorials/intermediate/imshow_extent.rst:382
 msgid "Keywords: matplotlib code example, codex, python plot, pyplot `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
-msgstr ""
+msgstr "Palabras clave: ejemplo de código matplotlib, codex, python plot, pyplot `Galería generada por Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_"
 

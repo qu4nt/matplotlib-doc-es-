@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:16\n"
+"PO-Revision-Date: 2022-11-02 13:58\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,167 +20,167 @@ msgstr ""
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.rst:2
 msgid "matplotlib.colors.LinearSegmentedColormap"
-msgstr ""
+msgstr "matplotlib.colors.LinearSegmentedColormap"
 
 #: matplotlib.colors.LinearSegmentedColormap:1 of
 msgid "Bases: :py:class:`matplotlib.colors.Colormap`"
-msgstr ""
+msgstr "Bases: :py:class:`matplotlib.colors.Colormap`"
 
 #: matplotlib.colors.LinearSegmentedColormap:2 of
 msgid "Colormap objects based on lookup tables using linear segments."
-msgstr ""
+msgstr "Objetos de mapa de colores basados en tablas de búsqueda usando segmentos lineales."
 
 #: matplotlib.colors.LinearSegmentedColormap:4 of
 msgid "The lookup table is generated using linear interpolation for each primary color, with the 0-1 domain divided into any number of segments."
-msgstr ""
+msgstr "La tabla de búsqueda se genera utilizando la interpolación lineal para cada color primario, con el dominio 0-1 dividido en cualquier número de segmentos."
 
 #: matplotlib.colors.LinearSegmentedColormap:26 of
 msgid "Create colormap from linear mapping segments"
-msgstr ""
+msgstr "Crear mapa de colores a partir de segmentos de mapeo lineales"
 
 #: matplotlib.colors.LinearSegmentedColormap:28 of
 msgid "segmentdata argument is a dictionary with a red, green and blue entries. Each entry should be a list of *x*, *y0*, *y1* tuples, forming rows in a table. Entries for alpha are optional."
-msgstr ""
+msgstr "El argumento segmentdata es un diccionario con entradas rojas, verdes y azules. Cada entrada debe ser una lista de *x*, *y0*, *y1* tuplas, formando registros en una tabla. Las entradas para alfa son opcionales."
 
 #: matplotlib.colors.LinearSegmentedColormap:32 of
 msgid "Example: suppose you want red to increase from 0 to 1 over the bottom half, green to do the same over the middle half, and blue over the top half.  Then you would use::"
-msgstr ""
+msgstr "Ejemplo: supongamos que queremos que el rojo aumente de 0 a 1 en la mitad inferior, el verde haga lo mismo en la mitad central y el azul en la mitad superior.  Entonces utilizarías::"
 
 #: matplotlib.colors.LinearSegmentedColormap:49 of
 msgid "Each row in the table for a given color is a sequence of *x*, *y0*, *y1* tuples.  In each sequence, *x* must increase monotonically from 0 to 1.  For any input value *z* falling between *x[i]* and *x[i+1]*, the output value of a given color will be linearly interpolated between *y1[i]* and *y0[i+1]*::"
-msgstr ""
+msgstr "Cada fila en la tabla para un color dado es una secuencia de *x*, *y0*, *y1* tuplas. En cada secuencia, *x* debe aumentar monótonamente de 0 a 1. Para cualquier valor de entrada *z* que caiga entre *x[i]* y *x[i+1]*, el valor de salida de un determinado color se interpolará linealmente entre *y1[i]* y *y0[i+1]*::"
 
 #: matplotlib.colors.LinearSegmentedColormap:60 of
 msgid "Hence y0 in the first row and y1 in the last row are never used."
-msgstr ""
+msgstr "Por lo tanto, y0 en el primer registro y y1 en el último registro nunca se utilizan."
 
 #: matplotlib.colors.LinearSegmentedColormap:73 of
 msgid ":obj:`LinearSegmentedColormap.from_list`"
-msgstr ""
+msgstr ":obj:`LinearSegmentedColormap.from_list`"
 
 #: matplotlib.colors.LinearSegmentedColormap:74 of
 msgid "Static method; factory function for generating a smoothly-varying LinearSegmentedColormap."
-msgstr ""
+msgstr "Método estático; función de fábrica para generar un mapa lineal variable."
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list:2 of
 msgid "Create a `LinearSegmentedColormap` from a list of colors."
-msgstr ""
+msgstr "Crea un `LinearSegmentedColormap` desde una lista de colores."
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list
 #: matplotlib.colors.LinearSegmentedColormap.reversed of
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list:8
 #: matplotlib.colors.LinearSegmentedColormap.reversed:9 of
 msgid "**name**"
-msgstr ""
+msgstr "**name**"
 
 #: of
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list:8 of
 msgid "The name of the colormap."
-msgstr ""
+msgstr "El nombre del mapa de colores."
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list:15 of
 msgid "**colors**"
-msgstr ""
+msgstr "**colores**"
 
 #: of
 msgid "array-like of colors or array-like of (value, color)"
-msgstr ""
+msgstr "como matriz de colores o tipo matriz (valor, color)"
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list:11 of
 msgid "If only colors are given, they are equidistantly mapped from the range :math:`[0, 1]`; i.e. 0 maps to ``colors[0]`` and 1 maps to ``colors[-1]``. If (value, color) pairs are given, the mapping is from *value* to *color*. This can be used to divide the range unevenly."
-msgstr ""
+msgstr "Si solo se dan colores, se mapean equidistantemente del rango :math:`[0, 1]`; i. . 0 mapea a ``colores[0]`` y 1 mapea a ``colores[-1]``. Si se dan pares (valor, color) el mapeo es de *valor* a *color*. Esto puede ser usado para dividir el rango de manera desigual."
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list:18 of
 msgid "**N**"
-msgstr ""
+msgstr "**N**"
 
 #: of
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list:18 of
 msgid "The number of rgb quantization levels."
-msgstr ""
+msgstr "El número de niveles de cuantificación de rgb."
 
 #: matplotlib.colors.LinearSegmentedColormap.from_list:34 of
 msgid "**gamma**"
-msgstr ""
+msgstr "**gamma**"
 
 #: of
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: matplotlib.colors.LinearSegmentedColormap.reversed:2 of
 msgid "Return a reversed instance of the Colormap."
-msgstr ""
+msgstr "Devuelve una instancia inversa del Colormap."
 
 #: of
 msgid "str, optional"
-msgstr ""
+msgstr "str, opcional"
 
 #: matplotlib.colors.LinearSegmentedColormap.reversed:8 of
 msgid "The name for the reversed colormap. If it's None the name will be the name of the parent colormap + \"_r\"."
-msgstr ""
+msgstr "El nombre del mapa de colores invertido. Si no es Ninguno el nombre será el nombre del mapa de colores padre + \"_r\"."
 
 #: matplotlib.colors.LinearSegmentedColormap.reversed of
 msgid "Returns"
-msgstr ""
+msgstr "Devuelve"
 
 #: matplotlib.colors.LinearSegmentedColormap.reversed:26 of
 msgid "LinearSegmentedColormap"
-msgstr ""
+msgstr "LinearSegmentedColormap"
 
 #: matplotlib.colors.LinearSegmentedColormap.reversed:14 of
 msgid "The reversed colormap."
-msgstr ""
+msgstr "El mapa de colores invertido."
 
 #: matplotlib.colors.LinearSegmentedColormap.set_gamma:2 of
 msgid "Set a new gamma value and regenerate colormap."
-msgstr ""
+msgstr "Establece un nuevo valor gamma y regenera el mapa de colores."
 
 #: ../../../../../../../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:2
 msgid "Examples using ``matplotlib.colors.LinearSegmentedColormap``"
-msgstr ""
+msgstr "Ejemplos usando ``matplotlib.colors.LinearSegmentedColormap``"
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:10
 msgid "Bar chart with gradients"
-msgstr ""
+msgstr "Gráfico de barras con gradientes"
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:10
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:18
 msgid ":ref:`sphx_glr_gallery_lines_bars_and_markers_gradient_bar.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_lines_bars_and_markers_gradient_bar.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:29
 msgid "Axes box aspect"
-msgstr ""
+msgstr "Aspecto de la caja de los ejes"
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:29
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:37
 msgid ":ref:`sphx_glr_gallery_subplots_axes_and_figures_axes_box_aspect.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_subplots_axes_and_figures_axes_box_aspect.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:48
 msgid "Matplotlib logo"
-msgstr ""
+msgstr "Logotipo de Matplotlib"
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:48
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:56
 msgid ":ref:`sphx_glr_gallery_misc_logos2.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_misc_logos2.py`"
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:67
 msgid "MRI With EEG"
-msgstr ""
+msgstr "MRI con EEG"
 
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:67
 #: ../../api/_as_gen/matplotlib.colors.LinearSegmentedColormap.examples:75
 msgid ":ref:`sphx_glr_gallery_specialty_plots_mri_with_eeg.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_gallery_specialty_plots_mri_with_eeg.py`"
 

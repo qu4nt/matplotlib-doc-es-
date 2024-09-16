@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: matplotlib\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 17:05-0400\n"
-"PO-Revision-Date: 2022-03-02 01:35\n"
+"PO-Revision-Date: 2022-03-23 14:38\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -20,429 +20,429 @@ msgstr ""
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:5
 msgid "What's new in Matplotlib 1.4 (Aug 25, 2014)"
-msgstr ""
+msgstr "Novedades en Matplotlib 1.4 (25 de agosto de 2014)"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:7
 msgid "Thomas A. Caswell served as the release manager for the 1.4 release."
-msgstr ""
+msgstr "Thomas A. Caswell sirvió como gestor de lanzamientos para la versión 1.4."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:12
 msgid "Table of Contents"
-msgstr ""
+msgstr "Tabla de Contenidos"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:16
 msgid "matplotlib 1.4 supports Python 2.6, 2.7, 3.3, and 3.4"
-msgstr ""
+msgstr "matplotlib 1.4 soporta Python 2.6, 2.7, 3.3 y 3.4"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:20
 msgid "New colormap"
-msgstr ""
+msgstr "Nuevo mapa de colores"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:21
 msgid "In heatmaps, a green-to-red spectrum is often used to indicate intensity of activity, but this can be problematic for the red/green colorblind. A new, colorblind-friendly colormap is now available at ``matplotlib.cm.Wistia``. This colormap maintains the red/green symbolism while achieving deuteranopic legibility through brightness variations. See `here <https://github.com/wistia/heatmap-palette>`__ for more information."
-msgstr ""
+msgstr "En los mapas de calor, a menudo se utiliza un espectro de verde a rojo para indicar la intensidad de la actividad, pero esto puede ser problemático para los daltónicos rojos/verdes. En ``matplotlib.cm.Wistia`` está disponible un nuevo mapa de colores para daltónicos. Este mapa de colores mantiene el simbolismo rojo/verde al mismo tiempo que logra la legibilidad deuteranópica a través de variaciones de brillo. Consulta ``aquí <https://github.com/wistia/heatmap-palette>`__ para más información."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:30
 msgid "The nbagg backend"
-msgstr ""
+msgstr "El backend de nbagg"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:31
 msgid "Phil Elson added a new backend, named \"nbagg\", which enables interactive figures in a live IPython notebook session. The backend makes use of the infrastructure developed for the webagg backend, which itself gives standalone server backed interactive figures in the browser, however nbagg does not require a dedicated matplotlib server as all communications are handled through the IPython Comm machinery."
-msgstr ""
+msgstr "Phil Elson ha añadido un nuevo backend, llamado \"nbagg\", que permite activar figuras interactivas en una sesión de cuaderno IPython en vivo. El backend hace uso de la infraestructura desarrollada para el backend webagg, que a su vez da figuras interactivas independientes respaldadas por el servidor en el navegador, sin embargo nbagg no requiere un servidor matplotlib dedicado ya que todas las comunicaciones se manejan a través de la maquinaria IPython Comm."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:38
 msgid "As with other backends nbagg can be enabled inside the IPython notebook with::"
-msgstr ""
+msgstr "Al igual que con otros backends nbagg puede ser activado dentro del cuaderno IPython con::"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:43
 msgid "Once figures are created and then subsequently shown, they will placed in an interactive widget inside the notebook allowing panning and zooming in the same way as any other matplotlib backend. Because figures require a connection to the IPython notebook server for their interactivity, once the notebook is saved, each figure will be rendered as a static image - thus allowing non-interactive viewing of figures on services such as `nbviewer <https://nbviewer.ipython.org/>`__."
-msgstr ""
+msgstr "Una vez que las figuras son creadas y posteriormente mostradas, se colocarán en un widget interactivo dentro del cuaderno permitiendo el paneo y el zoom de la misma manera que cualquier otro backend de matplotlib. Dado que las figuras requieren una conexión con el servidor del cuaderno IPython para su interactividad, una vez que se guarda el cuaderno, cada figura se representará como una imagen estática - permitiendo así la visualización no interactiva de las figuras en servicios como `nbviewer <https://nbviewer.ipython.org/>`__."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:54
 msgid "New plotting features"
-msgstr ""
+msgstr "Nuevas funciones de graficado"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:57
 msgid "Power-law normalization"
-msgstr ""
+msgstr "Normalización de la ley de potencia"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:58
 msgid "Ben Gamari added a power-law normalization method, :class:`~matplotlib.colors.PowerNorm`. This class maps a range of values to the interval [0,1] with power-law scaling with the exponent provided by the constructor's *gamma* argument. Power law normalization can be useful for, e.g., emphasizing small populations in a histogram."
-msgstr ""
+msgstr "Ben Gamari ha añadido un método de normalización de ley de potencia, :class:`~matplotlib.colors.PowerNorm`. Esta clase asigna un rango de valores al intervalo [0,1] con un escalado de ley de potencia con el exponente proporcionado por el argumento *gamma* del constructor. La normalización de la ley de potencia puede ser útil para, por ejemplo, enfatizar las poblaciones pequeñas en un histograma."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:65
 msgid "Fully customizable boxplots"
-msgstr ""
+msgstr "Gráficos de caja totalmente personalizables"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:66
 msgid "Paul Hobson overhauled the :func:`~matplotlib.pyplot.boxplot` method such that it is now completely customizable in terms of the styles and positions of the individual artists. Under the hood, :func:`~matplotlib.pyplot.boxplot` relies on a new function (:func:`~matplotlib.cbook.boxplot_stats`), which accepts any data structure currently compatible with :func:`~matplotlib.pyplot.boxplot`, and returns a list of dictionaries containing the positions for each element of the boxplots. Then a second method, `~.Axes.bxp` is called to draw the boxplots based on the stats."
-msgstr ""
+msgstr "Paul Hobson ha revisado el método :func:`~matplotlib.pyplot.boxplot` de forma que ahora es completamente personalizable en cuanto a los estilos y posiciones de los artists individuales. Bajo el aspecto, :func:`~matplotlib.pyplot.boxplot` se basa en una nueva función (:func:`~matplotlib.cbook.boxplot_stats`), que acepta cualquier estructura de datos actualmente compatible con :func:`~matplotlib.pyplot.boxplot`, y devuelve una lista de diccionarios que contienen las posiciones de cada elemento de los gráficos de caja. Luego se llama a un segundo método, `~.Axes.bxp` para dibujar los gráficos de caja en base a las estadísticas."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:76
 msgid "The :func:`~matplotlib.pyplot.boxplot` function can be used as before to generate boxplots from data in one step. But now the user has the flexibility to generate the statistics independently, or to modify the output of :func:`~matplotlib.cbook.boxplot_stats` prior to plotting with `~.Axes.bxp`."
-msgstr ""
+msgstr "La función :func:`~matplotlib.pyplot.boxplot` puede utilizarse como antes para generar gráficos de caja a partir de los datos en un solo paso. Pero ahora el usuario tiene la flexibilidad de generar las estadísticas de forma independiente, o de modificar la salida de :func:`~matplotlib.cbook.boxplot_stats` antes de graficar con `~.Axes.bxp`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:82
 msgid "Lastly, each artist (e.g., the box, outliers, cap, notches) can now be toggled on or off and their styles can be passed in through individual kwargs. See the examples: :doc:`/gallery/statistics/boxplot` and :doc:`/gallery/statistics/bxp`"
-msgstr ""
+msgstr "Por último, cada artist (por ejemplo, la caja, los valores atípicos, la tapa, las muescas) puede ahora activarse o desactivarse y sus estilos pueden pasarse a través de kwargs individuales. Vea los ejemplos: :doc:`/gallery/statistics/boxplot` y :doc:`/gallery/statistics/bxp`"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:88
 msgid "Added a bool kwarg, :code:`manage_xticks`, which if False disables the management of the ticks and limits on the x-axis by :func:`~matplotlib.axes.Axes.bxp`."
-msgstr ""
+msgstr "Se ha añadido un kwarg bool, :code:`manage_xticks`, que si es False desactiva la gestión de los ticks y límites en el eje x por :func:`~matplotlib.axes.Axes.bxp`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:92
 msgid "Support for datetime axes in 2d plots"
-msgstr ""
+msgstr "Soporte para los ejes de fecha en los gráficos 2d"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:93
 msgid "Andrew Dawson added support for datetime axes to :func:`~matplotlib.pyplot.contour`, :func:`~matplotlib.pyplot.contourf`, :func:`~matplotlib.pyplot.pcolormesh` and :func:`~matplotlib.pyplot.pcolor`."
-msgstr ""
+msgstr "Andrew Dawson ha añadido soporte para ejes de fecha a :func:`~matplotlib.pyplot.contour`, :func:`~matplotlib.pyplot.contourf`, :func:`~matplotlib.pyplot.pcolormesh` y :func:`~matplotlib.pyplot.pcolor`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:98
 msgid "Support for additional spectrum types"
-msgstr ""
+msgstr "Soporte para tipos de espectro adicionales"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:99
 msgid "Todd Jennings added support for new types of frequency spectrum plots: :func:`~matplotlib.pyplot.magnitude_spectrum`, :func:`~matplotlib.pyplot.phase_spectrum`, and :func:`~matplotlib.pyplot.angle_spectrum`, as well as corresponding functions in mlab."
-msgstr ""
+msgstr "Todd Jennings ha añadido soporte para nuevos tipos de gráficos de espectro de frecuencias: :func:`~matplotlib.pyplot.magnitude_spectrum`, :func:`~matplotlib.pyplot.phase_spectrum`, y :func:`~matplotlib.pyplot.angle_spectrum`, así como las funciones correspondientes en mlab."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:105
 msgid "He also added these spectrum types to :func:`~matplotlib.pyplot.specgram`, as well as adding support for linear scaling there (in addition to the existing dB scaling). Support for additional spectrum types was also added to :func:`~matplotlib.mlab.specgram`."
-msgstr ""
+msgstr "También añadió estos tipos de espectro a :func:`~matplotlib.pyplot.specgram`, además de añadir soporte para el escalado lineal allí (además del escalado en dB existente). También se añadió soporte para tipos de espectro adicionales a :func:`~matplotlib.mlab.specgram`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:110
 msgid "He also increased the performance for all of these functions and plot types."
-msgstr ""
+msgstr "También ha aumentado el rendimiento de todas estas funciones y tipos de graficación."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:113
 msgid "Support for detrending and windowing 2D arrays in mlab"
-msgstr ""
+msgstr "Soporte para la eliminación de la tendencia y las ventanas de los arreglos 2D en mlab"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:114
 msgid "Todd Jennings added support for 2D arrays in the :func:`~matplotlib.mlab.detrend_mean`, :func:`~matplotlib.mlab.detrend_none`, and :func:`~matplotlib.mlab.detrend`, as well as adding ``matplotlib.mlab.apply_window`` which support windowing 2D arrays."
-msgstr ""
+msgstr "Todd Jennings ha añadido soporte para arreglos 2D en las funciones :func:`~matplotlib.mlab.detrend_mean`, :func:`~matplotlib.mlab.detrend_none`, y :func:`~matplotlib.mlab.detrend`, así como la adición de ``matplotlib.mlab.apply_window`` que soporta la ventana de arreglos 2D."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:120
 msgid "Support for strides in mlab"
-msgstr ""
+msgstr "Apoyo a los avances en mlab"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:121
 msgid "Todd Jennings added some functions to mlab to make it easier to use NumPy strides to create memory-efficient 2D arrays.  This includes ``matplotlib.mlab.stride_repeat``, which repeats an array to create a 2D array, and :func:`~matplotlib.mlab.stride_windows`, which uses a moving window to create a 2D array from a 1D array."
-msgstr ""
+msgstr "Todd Jennings ha añadido algunas funciones a mlab para facilitar el uso de strides de NumPy para crear arreglos 2D eficientes en memoria.  Esto incluye ``matplotlib.mlab.stride_repeat``, que repite un arreglo para crear un arrelo 2D, y :func:`~matplotlib.mlab.stride_windows`, que utiliza una ventana móvil para crear un arreglo 2D a partir de un arreglo 1D."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:128
 msgid "Formatter for new-style formatting strings"
-msgstr ""
+msgstr "Formateador para cadenas de formato de nuevo estilo"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:129
 msgid "Added `.StrMethodFormatter` which does the same job as `.FormatStrFormatter`, but accepts new-style formatting strings instead of printf-style formatting strings"
-msgstr ""
+msgstr "Se ha añadido `.StrMethodFormatter` que hace el mismo trabajo que `.FormatStrFormatter`, pero acepta cadenas de formato de estilo nuevo en lugar de cadenas de formato de estilo printf"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:134
 msgid "Consistent grid sizes in streamplots"
-msgstr ""
+msgstr "Tamaños de malla coherentes en los gráficos de flujo"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:135
 msgid ":func:`~matplotlib.pyplot.streamplot` uses a base grid size of 30x30 for both ``density=1`` and ``density=(1, 1)``. Previously a grid size of 30x30 was used for ``density=1``, but a grid size of 25x25 was used for ``density=(1, 1)``."
-msgstr ""
+msgstr ":func:`~matplotlib.pyplot.streamplot` utiliza un tamaño de malla base de 30x30 tanto para ``densidad=1`` como para ``densidad=(1, 1)``. Anteriormente se utilizaba un tamaño de malla de 30x30 para ``densidad=1``, pero se utilizaba un tamaño de malla de 25x25 para ``densidad=(1, 1)``."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:140
 msgid "Get a list of all tick labels (major and minor)"
-msgstr ""
+msgstr "Obtenga una lista de todas las etiquetas de marcas del eje (mayores y menores)"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:141
 msgid "Added the kwarg 'which' to `.Axes.get_xticklabels`, `.Axes.get_yticklabels` and `.Axis.get_ticklabels`.  'which' can be 'major', 'minor', or 'both' select which ticks to return, like `~.XAxis.set_ticks_position`.  If 'which' is `None` then the old behaviour (controlled by the bool *minor*)."
-msgstr ""
+msgstr "Se ha añadido el kwarg 'which' a `.Axes.get_xticklabels`, `.Axes.get_yticklabels` y `.Axis.get_ticklabels`.  'which' puede ser 'mayor', 'menor', o 'ambos' seleccionar qué marcas devolver, como `~.XAxis.set_ticks_position`.  Si 'which' es `None` entonces el comportamiento antiguo (controlado por el bool *minor*)."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:149
 msgid "Separate horizontal/vertical axes padding support in ImageGrid"
-msgstr ""
+msgstr "Soporte de relleno de ejes horizontales/verticales separados en ImageGrid"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:150
 msgid "The kwarg 'axes_pad' to :class:`mpl_toolkits.axes_grid1.axes_grid.ImageGrid` can now be a tuple if separate horizontal/vertical padding is needed. This is supposed to be very helpful when you have a labelled legend next to every subplot and you need to make some space for legend's labels."
-msgstr ""
+msgstr "El kwarg 'axes_pad' a :class:`mpl_toolkits.axes_grid1.axes_grid.ImageGrid` ahora puede ser una tupla si se necesita un relleno horizontal/vertical separado. Esto se supone que es muy útil cuando se tiene una leyenda etiquetada junto a cada subgráfico y se necesita hacer algo de espacio para las etiquetas de la leyenda."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:156
 msgid "Support for skewed transformations"
-msgstr ""
+msgstr "Soporte para transformaciones sesgadas"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:157
 msgid "The :class:`~matplotlib.transforms.Affine2D` gained additional methods `.skew` and `.skew_deg` to create skewed transformations. Additionally, matplotlib internals were cleaned up to support using such transforms in `~matplotlib.axes.Axes`. This transform is important for some plot types, specifically the Skew-T used in meteorology."
-msgstr ""
+msgstr "La :class:`~matplotlib.transforms.Affine2D` obtuvo métodos adicionales `.skew` y `.skew_deg` para crear transformaciones sesgadas. Además, se han limpiado las funciones internas de matplotlib para permitir el uso de dichas transformaciones en `~matplotlib.axes.Axes`. Esta transformación es importante para algunos tipos de gráficos, específicamente el Skew-T utilizado en meteorología."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:169
 msgid "Support for specifying properties of wedge and text in pie charts."
-msgstr ""
+msgstr "Soporte para especificar las propiedades de la cuña y el texto en los Diagrama de sectores."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:170
 msgid "Added the kwargs 'wedgeprops' and 'textprops' to `~.Axes.pie` to accept properties for wedge and text objects in a pie. For example, one can specify wedgeprops = {'linewidth':3} to specify the width of the borders of the wedges in the pie. For more properties that the user can specify, look at the docs for the wedge and text objects."
-msgstr ""
+msgstr "Se han añadido los kwargs 'wedgeprops' y 'textprops' a `~.Axes.pie` para aceptar las propiedades de los objetos cuña y texto en un sector. Por ejemplo, se puede especificar wedgeprops = {'linewidth':3} para especificar el ancho de los bordes de las cuñas en el sector. Para ver más propiedades que el usuario puede especificar, consulte los documentos de los objetos cuña y texto."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:177
 msgid "Fixed the direction of errorbar upper/lower limits"
-msgstr ""
+msgstr "Se ha corregido la dirección de los límites superior/inferior de la barra de error"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:178
 msgid "Larry Bradley fixed the :func:`~matplotlib.pyplot.errorbar` method such that the upper and lower limits (*lolims*, *uplims*, *xlolims*, *xuplims*) now point in the correct direction."
-msgstr ""
+msgstr "Larry Bradley ha arreglado el método :func:`~matplotlib.pyplot.errorbar` para que los límites superior e inferior (*lolims*, *uplims*, *xlolims*, *xuplims*) apunten ahora en la dirección correcta."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:183
 msgid "More consistent add-object API for Axes"
-msgstr ""
+msgstr "API de adición de objetos más consistente para los ejes"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:184
 msgid "Added the Axes method `~matplotlib.axes.Axes.add_image` to put image handling on a par with artists, collections, containers, lines, patches, and tables."
-msgstr ""
+msgstr "Se ha añadido el método Axes `~matplotlib.axes.Axes.add_image` para equiparar el manejo de imágenes con el de artists, colecciones, contenedores, líneas, parches y tablas."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:189
 msgid "Violin Plots"
-msgstr ""
+msgstr "Gráficos de violín"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:190
 msgid "Per Parker, Gregory Kelsie, Adam Ortiz, Kevin Chan, Geoffrey Lee, Deokjae Donald Seo, and Taesu Terry Lim added a basic implementation for violin plots. Violin plots can be used to represent the distribution of sample data. They are similar to box plots, but use a kernel density estimation function to present a smooth approximation of the data sample used. The added features are:"
-msgstr ""
+msgstr "Per Parker, Gregory Kelsie, Adam Ortiz, Kevin Chan, Geoffrey Lee, Deokjae Donald Seo y Taesu Terry Lim han añadido una implementación básica para los gráficos de violín. Los gráficos de violín pueden utilizarse para representar la distribución de los datos de la muestra. Son similares a los gráficos de caja, pero utilizan una función de estimación de la densidad del núcleo para presentar una aproximación suave de la muestra de datos utilizada. Las características añadidas son:"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:196
 msgid "`~.Axes.violin` - Renders a violin plot from a collection of statistics. :func:`~matplotlib.cbook.violin_stats` - Produces a collection of statistics suitable for rendering a violin plot. :func:`~matplotlib.pyplot.violinplot` - Creates a violin plot from a set of sample data. This method makes use of :func:`~matplotlib.cbook.violin_stats` to process the input data, and :func:`~matplotlib.cbook.violin_stats` to do the actual rendering. Users are also free to modify or replace the output of :func:`~matplotlib.cbook.violin_stats` in order to customize the violin plots to their liking."
-msgstr ""
+msgstr "`~.Axes.violin` - Renderiza un gráfico de violín a partir de una colección de estadísticas. :func:`~matplotlib.cbook.violin_stats` - Produce una colección de estadísticas adecuadas para renderizar un gráfico de violín. :func:`~matplotlib.pyplot.violinplot` - Crea un gráfico de violín a partir de un conjunto de datos de muestra. Este método utiliza :func:`~matplotlib.cbook.violin_stats` para procesar los datos de entrada, y :func:`~matplotlib.cbook.violin_stats` para realizar la representación. Los usuarios también son libres de modificar o reemplazar la salida de :func:`~matplotlib.cbook.violin_stats` para personalizar los gráficos de violín a su gusto."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:207
 msgid "This feature was implemented for a software engineering course at the University of Toronto, Scarborough, run in Winter 2014 by Anya Tafliovich."
-msgstr ""
+msgstr "Esta característica se implementó para un curso de ingeniería de software en la Universidad de Toronto, Scarborough, dirigido en el invierno de 2014 por Anya Tafliovich."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:211
 msgid "More *markevery* options to show only a subset of markers"
-msgstr ""
+msgstr "Más opciones de *markevery* para mostrar sólo un subconjunto de marcadores"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:212
 msgid "Rohan Walker extended the *markevery* property in :class:`~matplotlib.lines.Line2D`.  You can now specify a subset of markers to show with an int, slice object, numpy fancy indexing, or float. Using a float shows markers at approximately equal display-coordinate-distances along the line."
-msgstr ""
+msgstr "Rohan Walker extendió la propiedad *markevery* en :class:`~matplotlib.lines.Line2D`.  Ahora puedes especificar un subconjunto de marcadores para mostrar con un int, un objeto slice, una indexación numpy fancy o un punto flotante (float). El uso de un punto flotante muestra marcadores a distancias de coordenadas de visualización aproximadamente iguales a lo largo de la línea."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:219
 msgid "Added size related functions to specialized `.Collection`\\s"
-msgstr ""
+msgstr "Se han añadido funciones relacionadas con el tamaño a las colecciones especializadas `.Collection`s"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:221
 msgid "Added the ``get_size`` and ``set_size`` functions to control the size of elements of specialized collections ( :class:`~matplotlib.collections.AsteriskPolygonCollection` :class:`~matplotlib.collections.BrokenBarHCollection` :class:`~matplotlib.collections.CircleCollection` :class:`~matplotlib.collections.PathCollection` :class:`~matplotlib.collections.PolyCollection` :class:`~matplotlib.collections.RegularPolyCollection` :class:`~matplotlib.collections.StarPolygonCollection`)."
-msgstr ""
+msgstr "Se han añadido las funciones ``get_size`` y ``set_size`` para controlar el tamaño de los elementos de las colecciones especializadas ( :class:`~matplotlib.collections.AsteriskPolygonCollection` :class:`~matplotlib.collections.BrokenBarHCollection` :class:`~matplotlib.collections.CircleCollection` :class:`~matplotlib.collections.PathCollection` :class:`~matplotlib.collections.PolyCollection` :class:`~matplotlib.collections.RegularPolyCollection` :class:`~matplotlib.collections.StarPolygonCollection`)."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:233
 msgid "Fixed the mouse coordinates giving the wrong theta value in Polar graph"
-msgstr ""
+msgstr "Se ha corregido el hecho de que las coordenadas del ratón den un valor de theta erróneo en el gráfico polar"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:234
 msgid "Added code to `~.polar.InvertedPolarTransform.transform_non_affine` to ensure that the calculated theta value was between the range of 0 and 2 * pi since the problem was that the value can become negative after applying the direction and rotation to the theta calculation."
-msgstr ""
+msgstr "Se ha añadido código a `~.polar.InvertedPolarTransform.transform_non_affine` para asegurar que el valor de theta calculado estaba entre el rango de 0 y 2 * pi ya que el problema era que el valor puede volverse negativo después de aplicar la dirección y la rotación al cálculo de theta."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:241
 msgid "Simple quiver plot for mplot3d toolkit"
-msgstr ""
+msgstr "Gráfico de quiver simple para el kit de herramientas mplot3d"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:242
 msgid "A team of students in an *Engineering Large Software Systems* course, taught by Prof. Anya Tafliovich at the University of Toronto, implemented a simple version of a quiver plot in 3D space for the mplot3d toolkit as one of their term project. This feature is documented in :func:`~mpl_toolkits.mplot3d.Axes3D.quiver`. The team members are: Ryan Steve D'Souza, Victor B, xbtsw, Yang Wang, David, Caradec Bisesar and Vlad Vassilovski."
-msgstr ""
+msgstr "Un equipo de estudiantes de un curso de *Ingeniería de Grandes Sistemas de Software*, impartido por la profesora Anya Tafliovich en la Universidad de Toronto, implementó una versión simple de un gráfico de quiver en el espacio 3D para el kit de herramientas mplot3d como uno de sus proyectos del trimestre. Esta función está documentada en :func:`~mpl_toolkits.mplot3d.Axes3D.quiver`. Los miembros del equipo son: Ryan Steve D'Souza, Victor B, xbtsw, Yang Wang, David, Caradec Bisesar y Vlad Vassilovski."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:255
 msgid "polar-plot r-tick locations"
-msgstr ""
+msgstr "gráfico polar ubicaciones de r-tick"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:256
 msgid "Added the ability to control the angular position of the r-tick labels on a polar plot via `~.PolarAxes.set_rlabel_position`."
-msgstr ""
+msgstr "Se ha añadido la posibilidad de controlar la posición angular de las etiquetas r-tick en un gráfico polar mediante `~.PolarAxes.set_rlabel_position`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:261
 msgid "Date handling"
-msgstr ""
+msgstr "Gestión de fechas"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:264
 msgid "n-d array support for date conversion"
-msgstr ""
+msgstr "soporte de arreglos n-d para la conversión de fechas"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:265
 msgid "Andrew Dawson added support for n-d array handling to :func:`matplotlib.dates.num2date`, :func:`matplotlib.dates.date2num` and :func:`matplotlib.dates.datestr2num`. Support is also added to the unit conversion interfaces :class:`matplotlib.dates.DateConverter` and :class:`matplotlib.units.Registry`."
-msgstr ""
+msgstr "Andrew Dawson ha añadido soporte para el manejo de arreglos n-d a :func:`matplotlib.dates.num2date`, :func:`matplotlib.dates.date2num` y :func:`matplotlib.datestr2num`. También se añade soporte a las interfaces de conversión de unidades :class:`matplotlib.dates.DateConverter` y :class:`matplotlib.units.Registry`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:273
 msgid "Configuration (rcParams)"
-msgstr ""
+msgstr "Configuración (rcParams)"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:277
 msgid "``savefig.transparent`` added"
-msgstr ""
+msgstr "``savefig.transparent`` añadido"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:278
 msgid "Controls whether figures are saved with a transparent background by default.  Previously `~.Figure.savefig` always defaulted to a non-transparent background."
-msgstr ""
+msgstr "Controla si las figuras se guardan con un fondo transparente por defecto.  Anteriormente `~.Figure.savefig` siempre tenía un fondo no transparente por defecto."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:284
 msgid "``axes.titleweight``"
-msgstr ""
+msgstr "``axes.titleweight``"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:285
 msgid "Added rcParam to control the weight of the title"
-msgstr ""
+msgstr "Añadido rcParam para controlar el peso del título"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:288
 msgid "``axes.formatter.useoffset`` added"
-msgstr ""
+msgstr "``axes.formatter.useoffset`` añadido"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:289
 msgid "Controls the default value of *useOffset* in `.ScalarFormatter`.  If `True` and the data range is much smaller than the data average, then an offset will be determined such that the tick labels are meaningful. If `False` then the full number will be formatted in all conditions."
-msgstr ""
+msgstr "Controla el valor por defecto de *useOffset* en `.ScalarFormatter`.  Si `True` y el rango de datos es mucho más pequeño que la media de los datos, entonces se determinará un desplazamiento tal que las etiquetas de las marcas del eje tengan sentido. Si `False` entonces el número completo será formateado en todas las condiciones."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:296
 msgid "``nbagg.transparent`` added"
-msgstr ""
+msgstr "``nbagg.transparent`` añadido"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:297
 msgid "Controls whether nbagg figures have a transparent background. ``nbagg.transparent`` is ``True`` by default."
-msgstr ""
+msgstr "Controla si las figuras nbagg tienen un fondo transparente. ``nbagg.transparent`` es ``True`` por defecto."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:302
 msgid "XDG compliance"
-msgstr ""
+msgstr "Cumplimiento de XDG"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:303
 msgid "Matplotlib now looks for configuration files (both rcparams and style) in XDG compliant locations."
-msgstr ""
+msgstr "Matplotlib ahora busca los archivos de configuración (tanto rcparams como style) en ubicaciones compatibles con XDG."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:307
 msgid "``style`` package added"
-msgstr ""
+msgstr "Paquete ``style`` añadido"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:308
 msgid "You can now easily switch between different styles using the new ``style`` package::"
-msgstr ""
+msgstr "Ahora puedes cambiar fácilmente entre diferentes estilos utilizando el nuevo paquete ``style``::"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:314
 msgid "Subsequent plots will use updated colors, sizes, etc. To list all available styles, use::"
-msgstr ""
+msgstr "Los gráficos posteriores utilizarán colores, tamaños, etc. actualizados. Para listar todos los estilos disponibles, utilice::"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:319
 msgid "You can add your own custom ``<style name>.mplstyle`` files to ``~/.matplotlib/stylelib`` or call ``use`` with a URL pointing to a file with ``matplotlibrc`` settings."
-msgstr ""
+msgstr "Puedes añadir tus propios archivos personalizados ``<style name>.mplstyle`` a ``~/.matplotlib/stylelib`` o invocar ``use`` con una URL que apunte a un archivo con la configuración de ``matplotlibrc``."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:323
 msgid "*Note that this is an experimental feature*, and the interface may change as users test out this new feature."
-msgstr ""
+msgstr "*Tenga en cuenta que se trata de una característica experimental*, y que la interfaz puede cambiar a medida que los usuarios prueben esta nueva característica."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:327
 msgid "Backends"
-msgstr ""
+msgstr "Backends"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:329
 msgid "Qt5 backend"
-msgstr ""
+msgstr "Qt5 backend"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:330
 msgid "Martin Fitzpatrick and Tom Badran implemented a Qt5 backend.  The differences in namespace locations between Qt4 and Qt5 was dealt with by shimming Qt4 to look like Qt5, thus the Qt5 implementation is the primary implementation. Backwards compatibility for Qt4 is maintained by wrapping the Qt5 implementation."
-msgstr ""
+msgstr "Martin Fitzpatrick y Tom Badran implementaron un backend de Qt5.  Las diferencias en las ubicaciones de los espacios de nombres entre Qt4 y Qt5 se han solucionado ajustando Qt4 para que se parezca a Qt5, por lo que la implementación de Qt5 es la principal. La compatibilidad con Qt4 se mantiene con la implementación de Qt5."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:335
 msgid "The Qt5Agg backend currently does not work with IPython's %matplotlib magic."
-msgstr ""
+msgstr "El backend Qt5Agg actualmente no funciona con la fórmula %matplotlib de IPython."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:337
 msgid "The 1.4.0 release has a known bug where the toolbar is broken.  This can be fixed by: ::"
-msgstr ""
+msgstr "La versión 1.4.0 tiene un error conocido donde la barra de herramientas está rota.  Esto puede ser arreglado por: ::"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:346
 msgid "Qt4 backend"
-msgstr ""
+msgstr "Qt4 backend"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:347
 msgid "Rudolf Höfler changed the appearance of the subplottool. All sliders are vertically arranged now, buttons for tight layout and reset were added. Furthermore, the subplottool is now implemented as a modal dialog. It was previously a QMainWindow, leaving the SPT open if one closed the plot window."
-msgstr ""
+msgstr "Rudolf Höfler ha cambiado la apariencia de la herramienta del subgráfico. Todos los carruseles están ahora dispuestos verticalmente, y se han añadido botones para layout ajustado y el reinicio. Además, las herramientas del subgráfico se implementan ahora como un diálogo modal. Anteriormente era un QMainWindow, dejando el SPT abierto si uno cerraba la ventana de gráfico."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:353
 msgid "In the figure options dialog one can now choose to (re-)generate a simple automatic legend. Any explicitly set legend entries will be lost, but changes to the curves' label, linestyle, et cetera will now be updated in the legend."
-msgstr ""
+msgstr "En el cuadro de diálogo de opciones de la figura, ahora se puede elegir (re)generar una leyenda automática simple. Cualquier entrada de la leyenda establecida explícitamente se perderá, pero los cambios en la etiqueta de las curvas, el estilo de línea, etc., se actualizarán en la leyenda."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:357
 msgid "Interactive performance of the Qt4 backend has been dramatically improved under windows."
-msgstr ""
+msgstr "El rendimiento interactivo del backend Qt4 se ha mejorado notablemente en Windows."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:360
 msgid "The mapping of key-signals from Qt to values matplotlib understands was greatly improved (For both Qt4 and Qt5)."
-msgstr ""
+msgstr "El mapeo de las señales clave de Qt a los valores que entiende matplotlib se ha mejorado mucho (tanto para Qt4 como para Qt5)."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:364
 msgid "Cairo backends"
-msgstr ""
+msgstr "Backends de Cairo"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:366
 msgid "The Cairo backends are now able to use the `cairocffi bindings <https://github.com/SimonSapin/cairocffi>`__ which are more actively maintained than the `pycairo bindings <https://www.cairographics.org/pycairo/>`__."
-msgstr ""
+msgstr "Los backends de Cairo pueden ahora utilizar los enlaces `cairocffi <https://github.com/SimonSapin/cairocffi>`__ que se mantienen más activamente que los enlaces `pycairo <https://www.cairographics.org/pycairo/>`__."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:372
 msgid "Gtk3Agg backend"
-msgstr ""
+msgstr "Backend Gtk3Agg"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:374
 msgid "The Gtk3Agg backend now works on Python 3.x, if the `cairocffi bindings <https://github.com/SimonSapin/cairocffi>`__ are installed."
-msgstr ""
+msgstr "El backend Gtk3Agg ahora funciona en Python 3.x, si el enlace `cairocffi <https://github.com/SimonSapin/cairocffi>`__ está instalado."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:378
 msgid "PDF backend"
-msgstr ""
+msgstr "Backend PDF"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:379
 msgid "Added context manager for saving to multi-page PDFs."
-msgstr ""
+msgstr "Se ha añadido un gestor de contexto para guardar en PDFs de varias páginas."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:382
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:385
 msgid "Text URLs supported by SVG backend"
-msgstr ""
+msgstr "URLs de texto compatibles con el backend SVG"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:387
 msgid "The SVG backend will now render :class:`~matplotlib.text.Text` objects' url as a link in output SVGs.  This allows one to make clickable text in saved figures using the url kwarg of the :class:`~matplotlib.text.Text` class."
-msgstr ""
+msgstr "El backend SVG ahora renderizará la url de los objetos :class:`~matplotlib.text` como un enlace en los SVG de salida.  Esto permite hacer un texto clicable en las figuras guardadas utilizando el kwarg url de la clase :class:`~matplotlib.text.Text`."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:393
 msgid "Anchored sizebar font"
-msgstr ""
+msgstr "Fuente de la barra de tamaño anclada"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:394
 msgid "Added the ``fontproperties`` kwarg to `~mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar` to control the font properties."
-msgstr ""
+msgstr "Se ha añadido el kwarg ``fontproperties`` a `~mpl_toolkits.axes_grid1.anchored_artists.AnchoredSizeBar` para controlar las propiedades de las fuentes."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:399
 msgid "Sphinx extensions"
-msgstr ""
+msgstr "Extensiones de Sphinx"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:401
 msgid "The ``:context:`` directive in the `~matplotlib.sphinxext.plot_directive` Sphinx extension can now accept an optional ``reset`` setting, which will cause the context to be reset. This allows more than one distinct context to be present in documentation. To enable this option, use ``:context: reset`` instead of ``:context:`` any time you want to reset the context."
-msgstr ""
+msgstr "La directiva ``:context:`` en la extensión de Sphinx `~matplotlib.sphinxext.plot_directive` ahora puede aceptar un ajuste opcional ``reset``, que hará que el contexto se restablezca. Esto permite que haya más de un contexto distinto en la documentación. Para activar esta opción, utilice ``:context: reset`` en lugar de ``:context:`` cada vez que desee restablecer el contexto."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:408
 msgid "Legend and PathEffects documentation"
-msgstr ""
+msgstr "Leyenda y documentación de PathEffects"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:409
 msgid "The :doc:`/tutorials/intermediate/legend_guide` and :doc:`/tutorials/advanced/patheffects_guide` have both been updated to better reflect the full potential of each of these powerful features."
-msgstr ""
+msgstr "El :doc:`/tutorials/intermediate/legend_guide` y el :doc:`/tutorials/advanced/patheffects_guide` se han actualizado para reflejar mejor todo el potencial de cada una de estas potentes características."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:414
 msgid "Widgets"
-msgstr ""
+msgstr "Widgets"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:417
 msgid "Span Selector"
-msgstr ""
+msgstr "Selector de span"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:419
 msgid "Added an option ``span_stays`` to the :class:`~matplotlib.widgets.SpanSelector` which makes the selector rectangle stay on the axes after you release the mouse."
-msgstr ""
+msgstr "Se ha añadido una opción ``span_stays`` a la :class:`~matplotlib.widgets.SpanSelector` que hace que el rectángulo del selector permanezca en los ejes después de soltar el ratón."
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:424
 msgid "GAE integration"
-msgstr ""
+msgstr "Integración de GAE"
 
 #: ../../users/prev_whats_new/whats_new_1.4.rst:425
 msgid "Matplotlib will now run on google app engine."
-msgstr ""
+msgstr "Matplotlib ahora se ejecutará en google app engine."
 
